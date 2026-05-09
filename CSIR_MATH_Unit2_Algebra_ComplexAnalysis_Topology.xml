@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- ===== CATEGORY: Unit 2 - Complex Analysis ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 2 - Algebra and Complex Analysis/Complex Analysis</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Complex Analysis - Cauchy-Riemann Equations</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f(z) = u(x,y) + iv(x,y)\) is analytic at a point \(z = x + iy\), then the Cauchy-Riemann equations require:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\dfrac{\partial u}{\partial x} = \dfrac{\partial v}{\partial y}\) and \(\dfrac{\partial u}{\partial y} = -\dfrac{\partial v}{\partial x}\)</strong></p><p>The Cauchy-Riemann (C-R) equations are necessary conditions for a complex function \(f = u + iv\) to be analytic (complex differentiable). They state: \(u_x = v_y\) and \(u_y = -v_x\). If these hold and the partial derivatives are continuous, then \(f\) is analytic. The derivative is \(f'(z) = u_x + iv_x = v_y - iu_y\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{\partial u}{\partial x} = \dfrac{\partial v}{\partial y}\) and \(\dfrac{\partial u}{\partial y} = -\dfrac{\partial v}{\partial x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\partial u}{\partial x} = -\dfrac{\partial v}{\partial y}\) and \(\dfrac{\partial u}{\partial y} = \dfrac{\partial v}{\partial x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\partial u}{\partial x} = \dfrac{\partial u}{\partial y}\) and \(\dfrac{\partial v}{\partial x} = \dfrac{\partial v}{\partial y}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u = v\) and \(u_x = v_x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Complex Analysis - Cauchy's Integral Formula</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f\) is analytic inside and on a simple closed contour \(C\), and \(z_0\) is any point inside \(C\), then Cauchy's Integral Formula states:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(f(z_0) = \dfrac{1}{2\pi i} \displaystyle\oint_C \dfrac{f(z)}{z - z_0}\, dz\)</strong></p><p>Cauchy's Integral Formula: for an analytic function \(f\) and a point \(z_0\) inside a simple closed contour \(C\) (traversed counterclockwise): \(f(z_0) = \frac{1}{2\pi i}\oint_C \frac{f(z)}{z-z_0}\,dz\). More generally, \(f^{(n)}(z_0) = \frac{n!}{2\pi i}\oint_C \frac{f(z)}{(z-z_0)^{n+1}}\,dz\). This shows that analyticity implies infinite differentiability.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(z_0) = \displaystyle\oint_C f(z)\, dz\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(z_0) = \dfrac{1}{2\pi i} \displaystyle\oint_C \dfrac{f(z)}{z - z_0}\, dz\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(z_0) = \dfrac{1}{\pi i} \displaystyle\oint_C \dfrac{f(z)}{z - z_0}\, dz\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(z_0) = \displaystyle\oint_C \dfrac{f(z)}{(z - z_0)^2}\, dz\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Complex Analysis - Liouville's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Liouville's Theorem in complex analysis states that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Every bounded entire function is constant</strong></p><p>Liouville's Theorem: if \(f\) is entire (analytic on all of \(\mathbb{C}\)) and bounded (i.e., \(|f(z)| \leq M\) for all \(z \in \mathbb{C}\)), then \(f\) is constant. This has a beautiful application: the Fundamental Theorem of Algebra (every non-constant polynomial has a root in \(\mathbb{C}\)) follows directly from Liouville's theorem.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Every analytic function on a bounded domain is constant]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every entire function is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Every bounded entire function is constant]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every entire function with a zero is constant]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Complex Analysis - Residue Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The residue of \(f(z) = \dfrac{e^z}{z^2}\) at \(z = 0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) 1</strong></p><p>\(f(z) = \dfrac{e^z}{z^2} = \dfrac{1}{z^2}\left(1 + z + \dfrac{z^2}{2!} + \cdots\right) = \dfrac{1}{z^2} + \dfrac{1}{z} + \dfrac{1}{2} + \cdots\)</p><p>The residue is the coefficient of \(1/z\) in the Laurent expansion, which is \(1\). Alternatively, since \(z=0\) is a pole of order 2: \(\text{Res}_{z=0} f = \lim_{z\to 0} \frac{d}{dz}[z^2 f(z)] = \frac{d}{dz}[e^z]\big|_{z=0} = e^0 = 1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Complex Analysis - Maximum Modulus Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Maximum Modulus Principle states that if \(f\) is analytic and non-constant on a domain \(D\), then \(|f(z)|\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Cannot attain its maximum value at any interior point of \(D\)</strong></p><p>The Maximum Modulus Principle: if \(f\) is analytic and non-constant in a domain \(D\), then \(|f|\) has no local maximum inside \(D\). The maximum of \(|f|\) on a closed bounded domain is always attained on the boundary. This is a consequence of the open mapping theorem: a non-constant analytic function maps open sets to open sets.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Attains its maximum at the center of \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is constant on \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Attains its maximum at every point of \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Cannot attain its maximum value at any interior point of \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Complex Analysis - Laurent Series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Laurent series of \(f(z) = \dfrac{1}{z(z-1)}\) valid for \(0 < |z| < 1\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(-\dfrac{1}{z} - 1 - z - z^2 - \cdots\)</strong></p><p>Using partial fractions: \(\dfrac{1}{z(z-1)} = \dfrac{-1}{z} + \dfrac{1}{z-1}\). For \(|z| < 1\): \(\dfrac{1}{z-1} = \dfrac{-1}{1-z} = -(1 + z + z^2 + \cdots)\). So \(f(z) = -\dfrac{1}{z} - 1 - z - z^2 - \cdots\) for \(0 < |z| < 1\). The residue at \(z=0\) is \(-1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(-\dfrac{1}{z} - 1 - z - z^2 - \cdots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{z} + 1 + z + z^2 + \cdots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{z^2} + \dfrac{1}{z} + 1 + z + \cdots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-1 - z - z^2 - \cdots\) (no \(1/z\) term)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Complex Analysis - Mobius Transformation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Möbius (linear fractional) transformation \(f(z) = \dfrac{az+b}{cz+d}\) (with \(ad - bc \neq 0\)) maps:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Circles and lines to circles and lines</strong></p><p>Möbius transformations are conformal maps of the Riemann sphere \(\mathbb{C} \cup \{\infty\}\) onto itself. A key property is that they map circles and lines (viewing a line as a circle through \(\infty\)) to circles and lines. They form a group under composition. Every Möbius transformation is a composition of translations, dilations, rotations, and the inversion \(z \mapsto 1/z\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Circles to circles only (not lines)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Lines to lines only (not circles)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Circles and lines to circles and lines]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Circles to ellipses]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 2 - Group Theory ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 2 - Algebra and Complex Analysis/Group Theory</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Group Theory - Lagrange's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>By Lagrange's theorem, if \(H\) is a subgroup of a finite group \(G\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(|H|\) divides \(|G|\)</strong></p><p>Lagrange's Theorem: the order of any subgroup \(H\) of a finite group \(G\) divides the order of \(G\), and \(|G| = |H| \cdot [G:H]\), where \([G:H]\) is the index (number of distinct left cosets of \(H\) in \(G\)). Note: the converse is false in general — not every divisor of \(|G|\) is the order of a subgroup (though Cauchy's theorem guarantees subgroups of prime order).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(|G|\) divides \(|H|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(|H|\) divides \(|G|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|H| = |G|/2\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|H|\) and \(|G|\) are coprime]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Group Theory - Normal Subgroup</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A subgroup \(N\) of a group \(G\) is normal if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(gNg^{-1} = N\) for all \(g \in G\)</strong></p><p>A subgroup \(N \leq G\) is normal (\(N \trianglelefteq G\)) iff \(gNg^{-1} = N\) for all \(g \in G\), equivalently \(gN = Ng\) for all \(g\) (left and right cosets coincide). Normal subgroups are exactly the kernels of group homomorphisms and allow formation of quotient groups \(G/N\). Every subgroup of an abelian group is normal.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(N\) is abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|N| = |G|/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(gNg^{-1} = N\) for all \(g \in G\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N\) contains the identity only]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Group Theory - Sylow's First Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Sylow's First Theorem states: if \(p\) is a prime and \(p^k\) divides \(|G|\), then \(G\) has a subgroup of order:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(p^k\)</strong></p><p>Sylow's First Theorem: if \(p^k\) divides \(|G|\), then \(G\) has a subgroup of order \(p^k\). In particular, if \(p^k\) is the highest power of \(p\) dividing \(|G|\), this subgroup is called a Sylow \(p\)-subgroup. Sylow's theorems (there are three) are powerful tools for classifying finite groups. The number of Sylow \(p\)-subgroups divides \(|G|\) and is congruent to 1 mod \(p\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(p^k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p^{k-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|G|/p\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Group Theory - Cayley's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Cayley's Theorem states that every group \(G\) is isomorphic to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) A subgroup of a symmetric group \(S_n\)</strong></p><p>Cayley's Theorem: every group \(G\) is isomorphic to a subgroup of the symmetric group on \(G\) (i.e., \(\text{Sym}(G)\)). If \(|G| = n\), then \(G\) embeds in \(S_n\). The proof uses the regular representation: associate to each \(g \in G\) the permutation \(\lambda_g: G \to G\) defined by left multiplication \(\lambda_g(x) = gx\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[An abelian group]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[A subgroup of a symmetric group \(S_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A cyclic group]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A quotient of \(\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Group Theory - Order of Element</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In the symmetric group \(S_3\), the order of the permutation \(\sigma = (1\;2\;3)\) (a 3-cycle) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 3</strong></p><p>The order of a permutation is the least common multiple (LCM) of the lengths of its disjoint cycles. The 3-cycle \((1\;2\;3)\) has length 3, so its order is 3. Indeed: \((1\;2\;3)^1 = (1\;2\;3)\), \((1\;2\;3)^2 = (1\;3\;2)\), \((1\;2\;3)^3 = e\) (identity). So \(\sigma^3 = e\), confirming order 3.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 2 - Ring Theory ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 2 - Algebra and Complex Analysis/Ring Theory</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Ring Theory - Integral Domain</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A commutative ring \(R\) with unity is an integral domain if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) It has no zero divisors</strong></p><p>An integral domain is a commutative ring with unity \((1 \neq 0)\) that has no zero divisors, i.e., \(ab = 0\) implies \(a = 0\) or \(b = 0\). Examples: \(\mathbb{Z}\), any field, \(\mathbb{Z}[x]\). Non-examples: \(\mathbb{Z}_6\) (since \(2 \cdot 3 = 0\)). Every finite integral domain is a field.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Every non-zero element has a multiplicative inverse]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[It has no zero divisors]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every ideal is principal]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Ring Theory - Prime and Maximal Ideals</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a commutative ring \(R\) with unity, an ideal \(M\) is maximal if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(R/M\) is a field</strong></p><p>An ideal \(M\) of a commutative ring \(R\) with unity is maximal iff \(R/M\) is a field. An ideal \(P\) is prime iff \(R/P\) is an integral domain. Every maximal ideal is prime (since every field is an integral domain), but not every prime ideal is maximal (e.g., \((0)\) in \(\mathbb{Z}\) is prime but not maximal).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(R/M\) is an integral domain]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) contains the identity element]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(R/M\) is a field]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M = \{0\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Ring Theory - UFD</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following is NOT a unique factorization domain (UFD)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(\mathbb{Z}[\sqrt{-5}]\)</strong></p><p>In \(\mathbb{Z}[\sqrt{-5}]\), we have \(6 = 2 \times 3 = (1+\sqrt{-5})(1-\sqrt{-5})\), and these give two essentially different factorizations into irreducibles, so it is not a UFD. In contrast, \(\mathbb{Z}\) is a UFD (Fundamental Theorem of Arithmetic), \(\mathbb{Q}[x]\) is a UFD (it's a PID), and \(\mathbb{Z}[x]\) is a UFD (by Gauss's lemma).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Q}[x]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}[x]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathbb{Z}[\sqrt{-5}]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Ring Theory - Irreducibility</text></name>
+  <questiontext format="html"><text><![CDATA[<p>By Eisenstein's criterion, the polynomial \(f(x) = x^4 + 2x^3 + 4x + 2\) over \(\mathbb{Q}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Irreducible over \(\mathbb{Q}\)</strong></p><p>Eisenstein's criterion with \(p = 2\): \(p = 2\) divides all coefficients except the leading one (\(2 | 2, 2 | 4, 2 | 2\) but \(2 \nmid 1\)), and \(p^2 = 4 \nmid 2\) (constant term). So by Eisenstein's criterion, \(f(x)\) is irreducible over \(\mathbb{Q}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Irreducible over \(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reducible with rational roots]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reducible as a product of two quadratics over \(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reducible over \(\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 2 - Field Theory and Number Theory ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 2 - Algebra and Complex Analysis/Field Theory and Number Theory</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Field Theory - Finite Fields</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The number of elements in a finite field \(\mathbb{F}_q\) must satisfy:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(q = p^n\) for some prime \(p\) and positive integer \(n\)</strong></p><p>By the classification of finite fields: a finite field has order \(q = p^n\) where \(p\) is the characteristic (a prime) and \(n \geq 1\). For every prime power \(p^n\), there exists a unique (up to isomorphism) finite field \(\mathbb{F}_{p^n}\) (or \(GF(p^n)\)). Fields of prime order \(p\) are isomorphic to \(\mathbb{Z}/p\mathbb{Z}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(q\) is prime]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(q = p^n\) for some prime \(p\) and positive integer \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(q\) is any positive integer]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(q\) is even]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Number Theory - Chinese Remainder Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Chinese Remainder Theorem guarantees a unique solution modulo \(mn\) to the system \(x \equiv a \pmod{m}\), \(x \equiv b \pmod{n}\) when:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\gcd(m, n) = 1\)</strong></p><p>The Chinese Remainder Theorem (CRT): if \(\gcd(m,n) = 1\) (i.e., \(m\) and \(n\) are coprime), then for any \(a, b\), the system \(x \equiv a \pmod{m}\), \(x \equiv b \pmod{n}\) has a unique solution modulo \(mn\). This generalizes to any number of pairwise coprime moduli. The CRT is fundamental in number theory and has applications in cryptography and computer arithmetic.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\gcd(m,n) = 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m = n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m\) and \(n\) are both prime]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a \equiv b \pmod{\gcd(m,n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Number Theory - Euler's Totient Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Euler's totient function \(\phi(12)\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 4</strong></p><p>\(12 = 2^2 \cdot 3\). Using the formula \(\phi(n) = n \prod_{p|n} (1 - 1/p)\): \(\phi(12) = 12 \cdot (1 - 1/2)(1 - 1/3) = 12 \cdot \frac{1}{2} \cdot \frac{2}{3} = 4\). The four integers in \(\{1,\ldots,12\}\) coprime to 12 are: 1, 5, 7, 11. Euler's theorem states \(a^{\phi(n)} \equiv 1 \pmod{n}\) when \(\gcd(a,n)=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Number Theory - Fermat's Little Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Fermat's Little Theorem states that if \(p\) is prime and \(\gcd(a,p) = 1\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(a^{p-1} \equiv 1 \pmod{p}\)</strong></p><p>Fermat's Little Theorem: if \(p\) is prime and \(p \nmid a\), then \(a^{p-1} \equiv 1 \pmod{p}\). Equivalently, \(a^p \equiv a \pmod{p}\) for all integers \(a\). This is a special case of Euler's theorem (\(\phi(p) = p-1\) for prime \(p\)). It is widely used in primality testing and modular arithmetic.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(a^p \equiv 0 \pmod{p}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(a^{p-1} \equiv 1 \pmod{p}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a^p \equiv p \pmod{a}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a^{p+1} \equiv a \pmod{p}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Number Theory - Pigeon-hole Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>By the Pigeon-hole Principle, if 13 integers are chosen from \(\{1, 2, \ldots, 24\}\), then at least two of them must:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Have a sum equal to 25</strong></p><p>Pair the integers: \(\{1,24\}, \{2,23\}, \{3,22\}, \ldots, \{12,13\}\) — 12 pairs that each sum to 25. If we choose 13 integers from \(\{1,\ldots,24\}\), by the Pigeon-hole Principle, at least two must come from the same pair, so their sum equals 25. The Pigeon-hole Principle: if \(n+1\) objects are placed in \(n\) boxes, at least one box contains \(\geq 2\) objects.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Be equal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Have the same remainder when divided by 13]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Have a product divisible by 25]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Have a sum equal to 25]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 2 - Topology ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 2 - Algebra and Complex Analysis/Topology</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Topology - Heine-Borel Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Heine-Borel theorem states that a subset \(K\) of \(\mathbb{R}^n\) is compact if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(K\) is closed and bounded</strong></p><p>The Heine-Borel Theorem (specific to \(\mathbb{R}^n\)): a subset of \(\mathbb{R}^n\) is compact iff it is closed and bounded. This is specific to finite-dimensional Euclidean spaces; in general metric spaces, compactness is equivalent to completeness and total boundedness (not just closed and bounded). For example, the closed unit ball in an infinite-dimensional Banach space is closed and bounded but not compact.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Closed]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Complete]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Closed and bounded]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Topology - Connectedness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A topological space \(X\) is connected if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) The only subsets of \(X\) that are both open and closed are \(\emptyset\) and \(X\)</strong></p><p>A space is connected iff it cannot be written as a union of two disjoint non-empty open sets, equivalently, iff the only clopen (simultaneously open and closed) sets are \(\emptyset\) and \(X\) itself. Examples of connected spaces: \(\mathbb{R}\), any interval, \(\mathbb{R}^n\). Example of disconnected space: \(\mathbb{Q}\) (every singleton is clopen in the subspace topology).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Every open cover has a finite subcover]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The only subsets that are both open and closed are \(\emptyset\) and \(X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every continuous function on \(X\) is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X\) is path-connected]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Topology - Hausdorff Space</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A topological space \(X\) is Hausdorff (T2) if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) For any two distinct points, there exist disjoint open sets separating them</strong></p><p>A space is Hausdorff (T2) if for any \(x \neq y\), there exist open sets \(U \ni x\) and \(V \ni y\) with \(U \cap V = \emptyset\). Hausdorff spaces are important because limits of sequences are unique, compact subsets are closed, and continuous functions into Hausdorff spaces are well-behaved. Metric spaces are always Hausdorff.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[For any two distinct points, there exist disjoint open sets separating them]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every open cover has a finite subcover]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every sequence has a convergent subsequence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The topology is the discrete topology]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Topology - Product Topology</text></name>
+  <questiontext format="html"><text><![CDATA[<p>By Tychonoff's theorem, the product of compact topological spaces is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Always compact (even for an infinite product)</strong></p><p>Tychonoff's Theorem: an arbitrary (possibly infinite) product of compact topological spaces is compact in the product topology. This is one of the most important theorems in topology and is equivalent to the Axiom of Choice. The product topology is the coarsest topology making all projection maps continuous, and a basis consists of products where only finitely many factors differ from the whole space.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Compact only for finite products]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Compact only if each factor is metrizable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Always compact (even for an infinite product)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not necessarily compact]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Topology - Separation Axioms</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following implications about topological spaces is TRUE?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) T2 (Hausdorff) implies T1</strong></p><p>The hierarchy of separation axioms: T0 ⊂ T1 ⊂ T2 (Hausdorff) ⊂ T3 (regular) ⊂ T4 (normal). A T1 space is one where every singleton is closed. A T2 (Hausdorff) space is T1 plus the condition that any two points can be separated by disjoint open sets. Every metric space is T4 (normal), so metric ⟹ Hausdorff ⟹ T1. The reverse implications are generally false.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[T2 (Hausdorff) implies T1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[T1 implies T2 (Hausdorff)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Compact implies Hausdorff]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Connected implies compact]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

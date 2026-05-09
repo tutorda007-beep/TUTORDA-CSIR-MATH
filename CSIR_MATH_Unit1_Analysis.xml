@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- ===== CATEGORY: Unit 1 - Analysis / Set Theory ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 1 - Analysis/Set Theory</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Set Theory - Countability of Real Numbers</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following sets is uncountable?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) The set of all real numbers \(\mathbb{R}\)</strong></p><p>By Cantor's diagonal argument, \(\mathbb{R}\) is uncountable. \(\mathbb{Z}\) (integers) and \(\mathbb{Q}\) (rationals) are countably infinite. The set of algebraic numbers is also countable (it is a countable union of countable sets). Only \(\mathbb{R}\) is uncountable among these choices.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all integers \(\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all rational numbers \(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The set of all real numbers \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all algebraic numbers]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Set Theory - Power Set Cardinality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If a set \(A\) has \(n\) elements, the number of elements in its power set \(\mathcal{P}(A)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(2^n\)</strong></p><p>The power set \(\mathcal{P}(A)\) contains all subsets of \(A\), including the empty set and \(A\) itself. For each element, we have 2 choices: include it or not. So total subsets \(= 2^n\). For example, if \(A = \{1,2\}\), then \(\mathcal{P}(A) = \{\emptyset, \{1\}, \{2\}, \{1,2\}\}\), which has \(2^2 = 4\) elements.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(2^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n!\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Set Theory - Cantor Set Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Cantor set \(C\) (middle-thirds Cantor set) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Uncountable and nowhere dense</strong></p><p>The Cantor set has the cardinality of \(\mathbb{R}\) (uncountable), yet has Lebesgue measure zero. It is a closed, nowhere dense set (its interior is empty, i.e., it contains no open interval). It is also a perfect set: every point is a limit point of \(C\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Countable and nowhere dense]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Countable and dense in \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uncountable and nowhere dense]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uncountable and dense in \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Set Theory - Union of Sets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(A \subset B\), then \(A \cup B\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(B\)</strong></p><p>Since \(A \subset B\), every element of \(A\) is already in \(B\). Therefore \(A \cup B = B\). Similarly, \(A \cap B = A\) when \(A \subset B\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(B\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A \cap B\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A \setminus B\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Set Theory - Finite Subsets of N</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following statements about countable sets is correct?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) The set of all finite subsets of \(\mathbb{N}\) is countable.</strong></p><p>The set of all finite subsets of \(\mathbb{N}\) is countable, since for each \(n\), the collection of subsets of size \(n\) is countable, and a countable union of countable sets is countable. However, the set of all infinite subsets of \(\mathbb{N}\) is uncountable (in bijection with \(\mathcal{P}(\mathbb{N})\)). Also, a countable union of countable sets remains countable, and the Cartesian product of two countable sets is countable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The union of countably many countable sets is uncountable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The Cartesian product \(\mathbb{N} \times \mathbb{N}\) is uncountable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The set of all finite subsets of \(\mathbb{N}\) is countable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all infinite subsets of \(\mathbb{N}\) is countable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 1 - Analysis / Real Number System ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 1 - Analysis/Real Number System</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Real Numbers - Archimedean Property</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Archimedean property of \(\mathbb{R}\) states that for any real number \(x > 0\), there exists a natural number \(n\) such that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(n > x\)</strong></p><p>The Archimedean property: for every real \(x > 0\), there exists \(n \in \mathbb{N}\) such that \(n > x\). This means \(\mathbb{N}\) is not bounded above in \(\mathbb{R}\). An equivalent formulation: for every \(\epsilon > 0\), there exists \(n \in \mathbb{N}\) such that \(1/n < \epsilon\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(n > x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n < x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n = x^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n \cdot x < 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Real Numbers - Supremum of a Set</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The supremum of the set \(S = \left\{1 - \dfrac{1}{n} : n \in \mathbb{N}\right\}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 1</strong></p><p>The set \(S = \{0, 1/2, 2/3, 3/4, \ldots\}\). Each element satisfies \(1 - 1/n < 1\), so 1 is an upper bound. For any \(\epsilon > 0\), choose \(n > 1/\epsilon\); then \(1 - 1/n > 1 - \epsilon\), so 1 is the least upper bound. Note that \(\sup S = 1 \notin S\), so the maximum does not exist.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Does not exist]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Real Numbers - Infimum</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The infimum of the set \(S = \left\{\dfrac{1}{n} : n \in \mathbb{N}\right\}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) 0</strong></p><p>\(\inf S = 0\). Since \(1/n > 0\) for all \(n \in \mathbb{N}\), 0 is a lower bound. For any \(\epsilon > 0\), by the Archimedean property, there exists \(n\) with \(1/n < \epsilon\), so no number greater than 0 is a lower bound. Hence \(\inf S = 0\), but \(0 \notin S\) (the minimum does not exist).</p>]]></text></globalfeedback></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Does not exist]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Real Numbers - Completeness Axiom</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A non-empty subset \(S\) of \(\mathbb{R}\) has a supremum if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(S\) is bounded above</strong></p><p>This is the completeness axiom (least upper bound property) of \(\mathbb{R}\): every non-empty subset of \(\mathbb{R}\) that is bounded above has a supremum (least upper bound) in \(\mathbb{R}\). This property distinguishes \(\mathbb{R}\) from \(\mathbb{Q}\), which does not have this property (e.g., \(\{x \in \mathbb{Q} : x^2 < 2\}\) is bounded above in \(\mathbb{Q}\) but has no supremum in \(\mathbb{Q}\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(S\) is finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(S\) is bounded above]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S\) is closed]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S\) contains its least upper bound]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Real Numbers - Density of Rationals</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Between any two distinct real numbers \(a < b\), there exists:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Both a rational and an irrational number</strong></p><p>By the density theorem: between any two distinct reals \(a < b\), there exists at least one rational number (density of \(\mathbb{Q}\) in \(\mathbb{R}\)) and at least one irrational number. In fact, there are infinitely many of both. This follows from the Archimedean property.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Only rational numbers]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only irrational numbers]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No number at all]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Both a rational and an irrational number]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 1 - Analysis / Sequences and Series ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 1 - Analysis/Sequences and Series</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Sequences - Bolzano-Weierstrass Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Bolzano-Weierstrass theorem states that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Every bounded sequence in \(\mathbb{R}\) has a convergent subsequence.</strong></p><p>The Bolzano-Weierstrass theorem is fundamental in real analysis. It guarantees that every bounded sequence in \(\mathbb{R}^n\) has at least one convergent subsequence. This is equivalent to the compactness of closed bounded subsets of \(\mathbb{R}^n\) (Heine-Borel theorem).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Every Cauchy sequence in \(\mathbb{R}\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Every bounded sequence in \(\mathbb{R}\) has a convergent subsequence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every monotone sequence in \(\mathbb{R}\) is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every sequence in a compact set has a unique limit]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Series - Basel Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The sum of the series \(\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^2}\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\dfrac{\pi^2}{6}\)</strong></p><p>This is the Basel problem, first solved by Leonhard Euler in 1734. \(\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6} \approx 1.6449\ldots\) This result can be proved using Fourier series, contour integration, or Euler's original method of the product formula for \(\sin x\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{\pi^2}{6}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\pi}{6}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Diverges]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Series - Radius of Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The radius of convergence of the power series \(\displaystyle\sum_{n=0}^{\infty} n!\, x^n\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) 0</strong></p><p>By the ratio test: \(\left|\frac{a_{n+1}}{a_n}\right| = (n+1)|x| \to \infty\) for any \(x \neq 0\). So the series converges only at \(x=0\). By the Cauchy-Hadamard formula: \(R = 1/\limsup_{n\to\infty}(n!)^{1/n}\). By Stirling's approximation, \((n!)^{1/n} \sim n/e \to \infty\), so \(R = 0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Series - Alternating Series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} = 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \cdots\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Converges conditionally to \(\ln 2\)</strong></p><p>By the Leibniz alternating series test, \(\sum (-1)^{n+1}/n\) converges since \(1/n\) is decreasing to 0. The sum equals \(\ln 2 \approx 0.693\). However, \(\sum 1/n\) (the harmonic series) diverges, so the convergence is conditional, not absolute. This is a classic example of conditional convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Diverges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges absolutely]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Converges conditionally to \(\ln 2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges absolutely to \(\ln 2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Sequences - Cauchy Criterion</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A sequence \(\{a_n\}\) in \(\mathbb{R}\) converges if and only if it is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) A Cauchy sequence</strong></p><p>Since \(\mathbb{R}\) is a complete metric space, a sequence converges if and only if it is a Cauchy sequence (i.e., for every \(\epsilon > 0\), there exists \(N\) such that \(|a_m - a_n| < \epsilon\) for all \(m, n > N\)). This equivalence holds precisely in complete metric spaces and fails in incomplete spaces like \(\mathbb{Q}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[A Cauchy sequence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Monotone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Monotone and bounded]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 1 - Analysis / Continuity and Differentiability ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 1 - Analysis/Continuity and Differentiability</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - Extreme Value Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f: [a,b] \to \mathbb{R}\) is continuous, then by the Extreme Value Theorem:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(f\) attains its maximum and minimum values on \([a,b]\)</strong></p><p>The Extreme Value Theorem (EVT): a continuous function on a closed, bounded interval \([a,b]\) is bounded and attains both its supremum and infimum. That is, there exist \(c, d \in [a,b]\) such that \(f(c) \leq f(x) \leq f(d)\) for all \(x \in [a,b]\). This fails if the interval is open or unbounded.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is differentiable on \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) attains its maximum and minimum values on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is monotone on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) has finitely many discontinuities]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - Mean Value Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>By Lagrange's Mean Value Theorem, if \(f\) is continuous on \([a,b]\) and differentiable on \((a,b)\), then there exists \(c \in (a,b)\) such that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(f'(c) = \dfrac{f(b) - f(a)}{b - a}\)</strong></p><p>The MVT states that the instantaneous rate of change at some interior point equals the average rate of change over the interval. Geometrically, the tangent at \(c\) is parallel to the secant through \((a, f(a))\) and \((b, f(b))\). The special case \(f(a) = f(b)\) gives Rolle's theorem: \(f'(c) = 0\) for some \(c\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f'(c) = \dfrac{f(b) - f(a)}{b - a}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'(c) = f(b) - f(a)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(c) = \dfrac{f(a) + f(b)}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'(c) = f(a) + f(b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - Uniform Continuity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following functions is uniformly continuous on \(\mathbb{R}\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(f(x) = \sin x\)</strong></p><p>\(\sin x\) is uniformly continuous on \(\mathbb{R}\) because \(|\sin x - \sin y| \leq |x - y|\) (it is Lipschitz with constant 1). The function \(x^2\) is continuous but not uniformly continuous on \(\mathbb{R}\) (take \(x_n = n + 1/n\), \(y_n = n\); \(|x_n - y_n| \to 0\) but \(|x_n^2 - y_n^2| \to 2\)). Similarly \(e^x\) and \(1/x\) are not uniformly continuous on their domains.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(x) = \sin x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x) = x^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x) = e^x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x) = 1/x\) on \((0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - Weierstrass Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following is an example of a function that is continuous everywhere on \(\mathbb{R}\) but differentiable nowhere?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) The Weierstrass function</strong></p><p>The Weierstrass function \(W(x) = \sum_{n=0}^{\infty} a^n \cos(b^n \pi x)\) (with \(0 < a < 1\), \(b\) a positive odd integer, and \(ab > 1 + 3\pi/2\)) is continuous everywhere but differentiable nowhere. This was a groundbreaking counterexample to the belief that continuous functions must be differentiable "almost everywhere." \(|x|\) is differentiable everywhere except at \(x = 0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x) = |x|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x) = x^{2/3}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The Weierstrass function \(W(x) = \sum_{n=0}^{\infty} a^n \cos(b^n \pi x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x) = \sin(1/x)\) extended by \(f(0)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - Intermediate Value Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f: [0,1] \to [0,1]\) be a continuous function. By the Intermediate Value Theorem (or Brouwer's fixed point theorem in 1D), which conclusion must hold?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) There exists \(c \in [0,1]\) such that \(f(c) = c\)</strong></p><p>Consider \(g(x) = f(x) - x\). Then \(g(0) = f(0) - 0 = f(0) \geq 0\) and \(g(1) = f(1) - 1 \leq 0\) (since \(f: [0,1] \to [0,1]\)). By the IVT, there exists \(c \in [0,1]\) with \(g(c) = 0\), i.e., \(f(c) = c\). This is the 1-dimensional Brouwer fixed point theorem.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is monotone on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is differentiable at some point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) attains every value in \([0,1]\) exactly once]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[There exists \(c \in [0,1]\) such that \(f(c) = c\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 1 - Analysis / Riemann Integration ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 1 - Analysis/Riemann Integration</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Basic Integral</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The value of \(\displaystyle\int_0^1 x^2\, dx\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(1/3\)</strong></p><p>\(\displaystyle\int_0^1 x^2\, dx = \left[\frac{x^3}{3}\right]_0^1 = \frac{1}{3} - 0 = \frac{1}{3}\). This follows from the power rule for integration: \(\int x^n\, dx = \dfrac{x^{n+1}}{n+1} + C\) for \(n \neq -1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Lebesgue Criterion</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A bounded function \(f: [a,b] \to \mathbb{R}\) is Riemann integrable if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) The set of discontinuities of \(f\) has Lebesgue measure zero</strong></p><p>This is Lebesgue's criterion for Riemann integrability: a bounded function \(f\) on \([a,b]\) is Riemann integrable if and only if it is continuous almost everywhere (i.e., the set of discontinuities has measure zero). This generalizes the fact that continuous functions and monotone functions are Riemann integrable, but the Dirichlet function (discontinuous everywhere) is not.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is continuous on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) has finitely many discontinuities]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The set of discontinuities of \(f\) has Lebesgue measure zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is monotone on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Dirichlet Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Dirichlet function \(f(x) = \begin{cases}1 & \text{if } x \in \mathbb{Q} \\ 0 & \text{if } x \notin \mathbb{Q}\end{cases}\) on \([0,1]\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Not Riemann integrable, but its Lebesgue integral is 0</strong></p><p>The Dirichlet function is discontinuous at every point of \([0,1]\), so its set of discontinuities has measure 1 \(\neq 0\). By Lebesgue's criterion, it is not Riemann integrable. However, since \(\mathbb{Q}\) has Lebesgue measure zero, the Lebesgue integral of \(f\) over \([0,1]\) equals 0.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Riemann integrable with integral equal to 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Riemann integrable with integral equal to 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Riemann integrable with integral equal to 1/2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Not Riemann integrable, but its Lebesgue integral is 0]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Fundamental Theorem of Calculus</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f\) is continuous on \([a,b]\) and \(F(x) = \displaystyle\int_a^x f(t)\, dt\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(F'(x) = f(x)\) for all \(x \in (a,b)\)</strong></p><p>This is Part 1 of the Fundamental Theorem of Calculus: if \(f\) is continuous on \([a,b]\), then \(F(x) = \int_a^x f(t)\,dt\) is differentiable on \((a,b)\) and \(F'(x) = f(x)\). This means integration and differentiation are inverse operations. Part 2 states: if \(G\) is any antiderivative of \(f\), then \(\int_a^b f(x)\,dx = G(b) - G(a)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(F'(x) = f(x)\) for all \(x \in (a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F(x) = f(x)\) for all \(x \in [a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F'(x) = f'(x)\) for all \(x \in (a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F\) is not differentiable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Darboux Sums</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a bounded function \(f\) on \([a,b]\) and any partition \(P\), the relationship between upper Darboux sum \(U(f,P)\) and lower Darboux sum \(L(f,P)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(L(f,P) \leq U(f,P)\)</strong></p><p>For any partition \(P\), the lower Darboux sum \(L(f,P) = \sum m_i \Delta x_i\) (where \(m_i = \inf f\) on subinterval \(i\)) and the upper Darboux sum \(U(f,P) = \sum M_i \Delta x_i\) (where \(M_i = \sup f\) on subinterval \(i\)). Since \(m_i \leq M_i\), we always have \(L(f,P) \leq U(f,P)\). The function is Riemann integrable iff \(\inf_P U(f,P) = \sup_P L(f,P)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(U(f,P) \leq L(f,P)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(L(f,P) \leq U(f,P)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(U(f,P) = L(f,P)\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(U(f,P) - L(f,P) = b - a\) always]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 1 - Analysis / Linear Algebra ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 1 - Analysis/Linear Algebra</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Linear Algebra - Rank-Nullity Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A linear transformation \(T: \mathbb{R}^5 \to \mathbb{R}^3\) has rank 2. What is the nullity of \(T\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 3</strong></p><p>By the Rank-Nullity Theorem: \(\text{rank}(T) + \text{nullity}(T) = \dim(\text{domain}) = 5\). So \(\text{nullity}(T) = 5 - 2 = 3\). The nullity is the dimension of the kernel (null space) of \(T\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Linear Algebra - Eigenvalues of Symmetric Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The eigenvalues of a real symmetric matrix are always:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Real</strong></p><p>By the Spectral Theorem for real symmetric matrices: all eigenvalues are real, and the matrix is orthogonally diagonalizable (eigenvectors corresponding to distinct eigenvalues are orthogonal). This is a fundamental result in linear algebra. Note that eigenvalues need not be positive (that would require positive definiteness) or distinct.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Positive]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Real]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Distinct]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Complex with non-zero imaginary part]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Linear Algebra - Idempotent Matrix Eigenvalues</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(A\) is an \(n \times n\) matrix satisfying \(A^2 = A\) (idempotent), the possible eigenvalues of \(A\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 0 and 1 only</strong></p><p>If \(\lambda\) is an eigenvalue with eigenvector \(\mathbf{v}\): \(A\mathbf{v} = \lambda\mathbf{v}\). Then \(A^2\mathbf{v} = \lambda^2\mathbf{v}\). But \(A^2 = A\), so \(A^2\mathbf{v} = A\mathbf{v} = \lambda\mathbf{v}\). Therefore \(\lambda^2 = \lambda\), giving \(\lambda(\lambda-1) = 0\), so \(\lambda = 0\) or \(\lambda = 1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Only 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[0 and 1 only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Any real number]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Linear Algebra - Determinant and Eigenvalues</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an \(n \times n\) matrix \(A\) with eigenvalues \(\lambda_1, \lambda_2, \ldots, \lambda_n\) (counted with multiplicity), the determinant \(\det(A)\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\lambda_1 \lambda_2 \cdots \lambda_n\)</strong></p><p>The determinant equals the product of all eigenvalues: \(\det(A) = \prod_{i=1}^n \lambda_i\). The trace equals the sum: \(\text{tr}(A) = \sum_{i=1}^n \lambda_i\). These follow from the characteristic polynomial \(\det(A - \lambda I) = (-1)^n(\lambda - \lambda_1)\cdots(\lambda-\lambda_n)\). Setting \(\lambda = 0\) gives \(\det(A) = \prod \lambda_i\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda_1 \lambda_2 \cdots \lambda_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_1 + \lambda_2 + \cdots + \lambda_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_1^2 + \lambda_2^2 + \cdots + \lambda_n^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\max(\lambda_1, \ldots, \lambda_n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Linear Algebra - Diagonalizability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An \(n \times n\) matrix \(A\) is diagonalizable if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) The geometric multiplicity equals the algebraic multiplicity for each eigenvalue</strong></p><p>A matrix is diagonalizable over \(\mathbb{C}\) iff for every eigenvalue, its geometric multiplicity (dimension of eigenspace) equals its algebraic multiplicity (multiplicity as a root of the characteristic polynomial). Equivalently, the minimal polynomial has no repeated roots. Having distinct eigenvalues is sufficient but not necessary for diagonalizability.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It is symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It has distinct eigenvalues]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is invertible]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The geometric multiplicity equals the algebraic multiplicity for each eigenvalue]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Linear Algebra - Matrix Rank</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The rank of the matrix \(A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \\ 1 & 2 & 4 \end{pmatrix}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) 2</strong></p><p>Row reduce: \(R_2 \leftarrow R_2 - 2R_1\) gives row \((0, 0, 0)\); \(R_3 \leftarrow R_3 - R_1\) gives row \((0, 0, 1)\). The row echelon form is \(\begin{pmatrix} 1 & 2 & 3 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{pmatrix}\), which has 2 non-zero rows. Therefore \(\text{rank}(A) = 2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 1 - Analysis / Metric Spaces ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 1 - Analysis/Metric Spaces</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Definition of Open Set</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A subset \(S\) of a metric space \((X, d)\) is open if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) For every \(x \in S\), there exists \(r > 0\) such that \(B(x, r) \subseteq S\)</strong></p><p>A set is open if every point is an interior point, i.e., each point has an open ball around it entirely contained in \(S\). Equivalently, \(S\) is open iff \(S = \text{int}(S)\). The complement of an open set is closed (contains all its limit points).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(S\) contains all its limit points]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[For every \(x \in S\), there exists \(r > 0\) such that \(B(x,r) \subseteq S\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S\) is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S = X\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Completeness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following is NOT a complete metric space?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\mathbb{Q}\) with the usual metric</strong></p><p>\(\mathbb{Q}\) is not complete: the sequence \(3, 3.1, 3.14, 3.141, \ldots\) (rational approximations to \(\pi\)) is Cauchy in \(\mathbb{Q}\) but converges to \(\pi \notin \mathbb{Q}\). \(\mathbb{R}\) with its usual metric is complete. \(C[0,1]\) with the sup norm is complete (by the uniform limit theorem). \(\mathbb{R}^n\) is complete for any \(n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{R}\) with the usual metric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(C[0,1]\) with the sup norm metric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathbb{Q}\) with the usual metric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{R}^n\) with the Euclidean metric]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Baire Category Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Baire Category Theorem states that in a complete metric space:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) A countable intersection of open dense sets is dense</strong></p><p>Baire Category Theorem: in a complete metric space (or a locally compact Hausdorff space), the intersection of any countable collection of open dense sets is dense. Equivalently, a complete metric space cannot be written as a countable union of nowhere dense sets (i.e., it is of second category in itself). This theorem has powerful applications in functional analysis (e.g., Open Mapping Theorem, Closed Graph Theorem).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[A countable intersection of open dense sets is dense]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every Cauchy sequence has a convergent subsequence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every complete metric space is compact]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every complete metric space is of first category]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Compactness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A metric space is compact if and only if it is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Complete and totally bounded</strong></p><p>For metric spaces, compactness is equivalent to being complete AND totally bounded (i.e., for every \(\epsilon > 0\), the space can be covered by finitely many \(\epsilon\)-balls). This generalizes the Heine-Borel theorem (which says: in \(\mathbb{R}^n\), compact \(\Leftrightarrow\) closed and bounded). Compactness also equivalent to every sequence having a convergent subsequence (sequential compactness, which coincides with compactness in metric spaces).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Complete]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Closed and bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Complete and totally bounded]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Contraction Mapping</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Banach's Fixed Point Theorem (Contraction Mapping Theorem) states that if \(T: X \to X\) is a contraction on a complete metric space \(X\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(T\) has a unique fixed point in \(X\)</strong></p><p>Banach's Fixed Point Theorem: if \((X,d)\) is a complete metric space and \(T: X \to X\) satisfies \(d(Tx, Ty) \leq k\, d(x,y)\) for some \(0 \leq k < 1\) (contraction), then \(T\) has a unique fixed point \(x^* \in X\) (i.e., \(T(x^*) = x^*\)). Moreover, the iterates \(T^n(x_0)\) converge to \(x^*\) for any starting point \(x_0\). This theorem is used to prove existence and uniqueness of solutions to ODEs (Picard's theorem).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\) has no fixed points]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(T\) has a unique fixed point in \(X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\) has infinitely many fixed points]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\) has exactly two fixed points]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

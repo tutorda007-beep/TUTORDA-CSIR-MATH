@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- ===== CATEGORY: Unit 3 - Ordinary Differential Equations ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 3 - Differential Equations and Mechanics/Ordinary Differential Equations</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>ODE - Picard's Existence and Uniqueness Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Picard's theorem guarantees a unique solution to the IVP \(y' = f(x,y)\), \(y(x_0) = y_0\), in a neighborhood of \(x_0\) if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(f\) is continuous and satisfies a Lipschitz condition in \(y\)</strong></p><p>Picard-Lindelöf Theorem: if \(f(x,y)\) is continuous in a rectangle \(|x-x_0| \leq a\), \(|y-y_0| \leq b\) and satisfies a Lipschitz condition \(|f(x,y_1)-f(x,y_2)| \leq L|y_1-y_2|\) in \(y\), then the IVP has a unique solution on some interval \(|x-x_0| \leq h\). A sufficient condition for the Lipschitz condition is that \(\partial f/\partial y\) exists and is bounded.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is differentiable with respect to \(x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) is continuous and satisfies a Lipschitz condition in \(y\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is analytic everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is bounded on all of \(\mathbb{R}^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>ODE - Second Order Linear ODE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The general solution of the ODE \(y'' - 3y' + 2y = 0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(y = c_1 e^x + c_2 e^{2x}\)</strong></p><p>The characteristic equation is \(r^2 - 3r + 2 = 0\), which factors as \((r-1)(r-2) = 0\), giving roots \(r = 1\) and \(r = 2\). Since the roots are real and distinct, the general solution is \(y = c_1 e^x + c_2 e^{2x}\), where \(c_1, c_2\) are arbitrary constants.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(y = c_1 e^x + c_2 e^{2x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y = c_1 e^{-x} + c_2 e^{-2x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y = (c_1 + c_2 x)e^x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y = c_1 \cos x + c_2 \sin x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>ODE - Variation of Parameters</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The method of variation of parameters for solving a non-homogeneous linear ODE \(y'' + p(x)y' + q(x)y = r(x)\) uses the particular solution in the form:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(y_p = u_1(x)y_1 + u_2(x)y_2\) where \(y_1, y_2\) are solutions of the homogeneous equation</strong></p><p>Variation of parameters: if \(y_1, y_2\) are linearly independent solutions of the homogeneous equation, we seek \(y_p = u_1 y_1 + u_2 y_2\) where \(u_1' = -y_2 r/W\) and \(u_2' = y_1 r/W\), with \(W = y_1 y_2' - y_1' y_2\) being the Wronskian. This method works for any continuous \(r(x)\), unlike undetermined coefficients which requires special forms.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_p = Ae^{r(x)}\) for some constant \(A\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_p = \int r(x)\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y_p = u_1(x)y_1 + u_2(x)y_2\) where \(y_1, y_2\) solve the homogeneous equation]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_p\) is assumed to have the same form as \(r(x)\) (undetermined coefficients)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>ODE - Wronskian</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Two solutions \(y_1\) and \(y_2\) of a second-order linear ODE \(y'' + p(x)y' + q(x)y = 0\) are linearly independent on an interval \(I\) if and only if their Wronskian \(W(y_1, y_2)\) satisfies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(W(y_1, y_2)(x) \neq 0\) for all \(x \in I\)</strong></p><p>Abel's theorem: the Wronskian \(W(x) = y_1 y_2' - y_1' y_2\) either vanishes identically on \(I\) or never vanishes on \(I\) (for solutions of a linear ODE with continuous coefficients). The solutions are linearly independent iff \(W \neq 0\) (at any, hence all, points). In that case, they form a fundamental set of solutions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(W(y_1, y_2)(x) = 0\) for all \(x \in I\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(W(y_1, y_2)(x) \neq 0\) for all \(x \in I\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W(y_1, y_2)(x) = 1\) for some \(x \in I\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_1(x) = y_2(x)\) for all \(x \in I\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>ODE - Sturm-Liouville Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a regular Sturm-Liouville problem \(-\dfrac{d}{dx}[p(x)y'] + q(x)y = \lambda w(x)y\) on \([a,b]\) with appropriate boundary conditions, the eigenvalues \(\lambda\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Are real, and eigenfunctions corresponding to distinct eigenvalues are orthogonal with respect to the weight function \(w(x)\)</strong></p><p>The Sturm-Liouville theory guarantees: (1) all eigenvalues are real, (2) there are infinitely many eigenvalues forming an increasing sequence \(\lambda_1 < \lambda_2 < \cdots \to \infty\), (3) eigenfunctions \(y_m\) and \(y_n\) corresponding to distinct eigenvalues are orthogonal: \(\int_a^b y_m y_n\, w(x)\,dx = 0\), (4) the eigenfunctions form a complete orthonormal basis for \(L^2([a,b], w)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Are real, and eigenfunctions for distinct eigenvalues are orthogonal w.r.t. \(w(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Are always positive]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[May be complex]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Form a finite set]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>ODE - Singular Solution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The singular solution of the ODE \((y')^2 - 4y = 0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(y = 0\)</strong></p><p>The general solution is obtained: \(y' = \pm 2\sqrt{y}\), separating variables gives \(\sqrt{y} = x - c\), so \(y = (x-c)^2\). The singular solution \(y = 0\) cannot be obtained from the general solution for any value of \(c\). Geometrically, \(y = 0\) is the envelope of the family of parabolas \(y = (x-c)^2\); it is tangent to each member of the family at the vertex.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y = x^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y = 4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y = (x-c)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 3 - Partial Differential Equations ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 3 - Differential Equations and Mechanics/Partial Differential Equations</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PDE - Classification of Second Order PDEs</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The PDE \(Au_{xx} + Bu_{xy} + Cu_{yy} + \cdots = 0\) is classified as hyperbolic if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(B^2 - 4AC > 0\)</strong></p><p>Classification of second-order linear PDEs \(Au_{xx} + Bu_{xy} + Cu_{yy} + \text{lower order} = 0\): <br>• Hyperbolic: \(B^2 - 4AC > 0\) (e.g., wave equation \(u_{tt} = c^2 u_{xx}\))<br>• Parabolic: \(B^2 - 4AC = 0\) (e.g., heat equation \(u_t = ku_{xx}\))<br>• Elliptic: \(B^2 - 4AC < 0\) (e.g., Laplace equation \(u_{xx} + u_{yy} = 0\))</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(B^2 - 4AC > 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(B^2 - 4AC = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(B^2 - 4AC < 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A = C\) and \(B = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PDE - Laplace Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Laplace equation \(\nabla^2 u = 0\) is classified as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Elliptic</strong></p><p>The Laplace equation \(u_{xx} + u_{yy} = 0\) has \(A = C = 1\), \(B = 0\), so \(B^2 - 4AC = -4 < 0\) — elliptic. Solutions (harmonic functions) satisfy the mean value property and the maximum principle. The Laplace equation arises in electrostatics, fluid mechanics, and steady-state heat distribution. Elliptic PDEs have smooth solutions and are associated with equilibrium phenomena.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Hyperbolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Parabolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Elliptic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Mixed type]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PDE - Heat Equation Solution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The heat equation \(u_t = k\, u_{xx}\), \(x \in (0,L)\), with boundary conditions \(u(0,t) = u(L,t) = 0\) and initial condition \(u(x,0) = f(x)\) has the solution (by separation of variables):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(u(x,t) = \displaystyle\sum_{n=1}^\infty B_n \sin\!\left(\frac{n\pi x}{L}\right) e^{-k(n\pi/L)^2 t}\)</strong></p><p>By separation of variables with \(u = X(x)T(t)\): \(T'/kT = X''/X = -\lambda\). With BCs, \(X_n = \sin(n\pi x/L)\) and \(\lambda_n = (n\pi/L)^2\). Then \(T_n(t) = e^{-k\lambda_n t}\). The Fourier coefficients are \(B_n = \frac{2}{L}\int_0^L f(x)\sin(n\pi x/L)\,dx\). The solution decays exponentially in time — characteristic of parabolic (diffusion) equations.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(x,t) = \displaystyle\sum_{n=1}^\infty B_n \cos\!\left(\frac{n\pi x}{L}\right) e^{-k(n\pi/L)^2 t}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(u(x,t) = \displaystyle\sum_{n=1}^\infty B_n \sin\!\left(\frac{n\pi x}{L}\right) e^{-k(n\pi/L)^2 t}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(x,t) = \displaystyle\sum_{n=1}^\infty B_n \sin\!\left(\frac{n\pi x}{L}\right) e^{k(n\pi/L)^2 t}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(x,t) = f(x - kt)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PDE - Wave Equation d'Alembert Solution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The general solution of the one-dimensional wave equation \(u_{tt} = c^2 u_{xx}\) is given by d'Alembert's formula:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(u(x,t) = f(x+ct) + g(x-ct)\) for arbitrary functions \(f\) and \(g\)</strong></p><p>D'Alembert's solution: \(u(x,t) = f(x+ct) + g(x-ct)\). The wave equation is hyperbolic, and the general solution is the superposition of two traveling waves: one moving left with speed \(c\) and one moving right with speed \(c\). Given initial conditions \(u(x,0) = \phi(x)\) and \(u_t(x,0) = \psi(x)\): \(u(x,t) = \frac{\phi(x+ct)+\phi(x-ct)}{2} + \frac{1}{2c}\int_{x-ct}^{x+ct}\psi(s)\,ds\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(u(x,t) = f(x+ct) + g(x-ct)\) for arbitrary functions \(f\) and \(g\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(x,t) = f(x) \cdot g(t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(x,t) = e^{-c^2 t} f(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(x,t) = f(x^2 - c^2 t^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PDE - Lagrange's Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Lagrange's method for solving the first-order linear PDE \(P\dfrac{\partial z}{\partial x} + Q\dfrac{\partial z}{\partial y} = R\) uses the auxiliary (Lagrange-Charpit) equations:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\dfrac{dx}{P} = \dfrac{dy}{Q} = \dfrac{dz}{R}\)</strong></p><p>Lagrange's method: the general solution of \(Pp_x + Qq_y = R\) (where \(p = \partial z/\partial x\), \(q = \partial z/\partial y\)) is found by solving the symmetric system \(dx/P = dy/Q = dz/R\). From this system, find two independent integrals \(u(x,y,z) = c_1\) and \(v(x,y,z) = c_2\). The general solution is \(F(u,v) = 0\) or \(u = \phi(v)\) for an arbitrary function \(F\) (or \(\phi\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{dx}{R} = \dfrac{dy}{P} = \dfrac{dz}{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{dP}{dx} = \dfrac{dQ}{dy} = \dfrac{dR}{dz}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{dx}{P} = \dfrac{dy}{Q} = \dfrac{dz}{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P\,dx + Q\,dy + R\,dz = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 3 - Numerical Analysis ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 3 - Differential Equations and Mechanics/Numerical Analysis</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Numerical Analysis - Newton-Raphson Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Newton-Raphson iteration for solving \(f(x) = 0\) is given by:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(x_{n+1} = x_n - \dfrac{f(x_n)}{f'(x_n)}\)</strong></p><p>Newton-Raphson method: starting from \(x_0\), iterate \(x_{n+1} = x_n - f(x_n)/f'(x_n)\). Geometrically, it uses the tangent line at \((x_n, f(x_n))\) to find the next approximation. The method has quadratic convergence near a simple root: the error roughly squares each iteration. It fails if \(f'(x_n) = 0\) or if the starting point is too far from the root.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(x_{n+1} = x_n - f(x_n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(x_{n+1} = x_n - \dfrac{f(x_n)}{f'(x_n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(x_{n+1} = x_n + \dfrac{f(x_n)}{f'(x_n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(x_{n+1} = \dfrac{x_n + f(x_n)}{f'(x_n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Numerical Analysis - Simpson's Rule Error</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Simpson's \(1/3\) rule for numerical integration \(\displaystyle\int_a^b f(x)\,dx \approx \dfrac{h}{3}\bigl[f(a) + 4f\!\left(\tfrac{a+b}{2}\right) + f(b)\bigr]\) (where \(h = (b-a)/2\)) is exact for polynomials of degree at most:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 3</strong></p><p>Simpson's rule integrates polynomials of degree \(\leq 3\) exactly (it has degree of precision 3). Although it uses only 3 points (suggesting degree 2), it coincidentally integrates all cubics exactly. The error term is \(-\frac{(b-a)^5}{90 \cdot 16} f^{(4)}(\xi)\) for some \(\xi \in [a,b]\), confirming fourth-order accuracy. In general, an \(n\)-point Newton-Cotes rule has degree of precision \(n-1\) (odd \(n\)) or \(n\) (even \(n\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Numerical Analysis - Gauss Elimination</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In Gaussian elimination, the operation that reduces a system to upper triangular form requires approximately how many arithmetic operations for an \(n \times n\) system?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(O(n^3/3)\)</strong></p><p>Gaussian elimination requires approximately \(\frac{2n^3}{3}\) multiplications/divisions and \(\frac{n^3}{3}\) additions/subtractions, totaling \(O(n^3)\) operations. More precisely, the forward elimination phase needs \(\sim \frac{n^3}{3}\) divisions and multiplications. LU decomposition (which is equivalent) also requires \(O(n^3)\) operations but allows efficient solution for multiple right-hand sides.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(n^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(O(n^3/3)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(n^4)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Numerical Analysis - Runge-Kutta Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The classical fourth-order Runge-Kutta method for \(y' = f(x,y)\) has a local truncation error of order:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(O(h^5)\)</strong></p><p>The classical RK4 method has a local truncation error of \(O(h^5)\) per step and a global error of \(O(h^4)\) (fourth-order method). The update formula is: \(k_1 = hf(x_n, y_n)\), \(k_2 = hf(x_n+h/2, y_n+k_1/2)\), \(k_3 = hf(x_n+h/2, y_n+k_2/2)\), \(k_4 = hf(x_n+h, y_n+k_3)\), and \(y_{n+1} = y_n + (k_1 + 2k_2 + 2k_3 + k_4)/6\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h^4)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(O(h^5)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h^3)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Numerical Analysis - Interpolation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Lagrange interpolating polynomial through \(n+1\) distinct points \((x_0, y_0), \ldots, (x_n, y_n)\) has degree at most:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(n\)</strong></p><p>Through \(n+1\) distinct points, there exists a unique polynomial of degree at most \(n\) (the Lagrange interpolating polynomial). The Lagrange form: \(P(x) = \sum_{i=0}^n y_i L_i(x)\) where \(L_i(x) = \prod_{j \neq i} \frac{x - x_j}{x_i - x_j}\). The error in approximating \(f\) by \(P\) is \(f[x_0,\ldots,x_n,x]\prod_{i=0}^n(x-x_i)\), where \(f[\cdot]\) is the divided difference.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(n+1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 3 - Calculus of Variations ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 3 - Differential Equations and Mechanics/Calculus of Variations</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Calculus of Variations - Euler-Lagrange Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Euler-Lagrange equation for the functional \(J[y] = \displaystyle\int_a^b F(x, y, y')\, dx\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\dfrac{\partial F}{\partial y} - \dfrac{d}{dx}\!\left(\dfrac{\partial F}{\partial y'}\right) = 0\)</strong></p><p>The Euler-Lagrange equation is the necessary condition for \(y\) to be an extremal (stationary point) of the functional \(J[y]\). It is derived by setting the first variation \(\delta J = 0\). If \(F\) does not explicitly depend on \(y\), then \(\partial F/\partial y' = \text{const}\) (Beltrami identity). If \(F\) does not depend on \(x\), the equation reduces to the Beltrami identity: \(F - y'\partial F/\partial y' = \text{const}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{\partial F}{\partial y} - \dfrac{d}{dx}\!\left(\dfrac{\partial F}{\partial y'}\right) = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\partial F}{\partial x} - \dfrac{d}{dy}\!\left(\dfrac{\partial F}{\partial y'}\right) = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{d}{dx}\!\left(\dfrac{\partial F}{\partial y}\right) = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\partial F}{\partial y'} = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Calculus of Variations - Brachistochrone Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Brachistochrone problem asks for the curve along which a particle falls (under gravity) in minimum time. The solution is a:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Cycloid</strong></p><p>The Brachistochrone problem (posed by Johann Bernoulli in 1696) was a landmark problem in the development of the calculus of variations. The curve of fastest descent under gravity is a cycloid (an arc traced by a point on a rolling circle). The parametric equations are \(x = a(\theta - \sin\theta)\), \(y = a(1 - \cos\theta)\). This problem was solved independently by Newton, Leibniz, l'Hôpital, and Jakob Bernoulli.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Straight line]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Cycloid]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Parabola]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Catenary]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Calculus of Variations - Isoperimetric Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The isoperimetric problem asks for the closed plane curve of given perimeter that encloses the maximum area. The solution is a:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Circle</strong></p><p>The isoperimetric inequality: among all closed curves of given perimeter \(L\), the circle encloses the maximum area \(A = L^2/(4\pi)\). The isoperimetric inequality states \(4\pi A \leq L^2\), with equality iff the curve is a circle. This problem is solved using calculus of variations with the constraint that the enclosed area is fixed (Lagrange multipliers in the variational setting).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Circle]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Square]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Regular hexagon]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Ellipse]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 3 - Classical Mechanics ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 3 - Differential Equations and Mechanics/Classical Mechanics</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Classical Mechanics - Lagrangian Mechanics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In Lagrangian mechanics, the Lagrangian \(L\) is defined as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(L = T - V\) (kinetic energy minus potential energy)</strong></p><p>The Lagrangian \(L = T - V\) where \(T\) is the kinetic energy and \(V\) is the potential energy. The equations of motion are given by the Euler-Lagrange equations: \(\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_i} - \frac{\partial L}{\partial q_i} = 0\) for each generalized coordinate \(q_i\). This formulation is equivalent to Newton's laws but is more powerful for constrained systems and non-Cartesian coordinates.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(L = T + V\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(L = T - V\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(L = V - T\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(L = T \cdot V\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Classical Mechanics - Hamilton's Equations</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Hamilton's canonical equations of motion are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\dot{q}_i = \dfrac{\partial H}{\partial p_i}\) and \(\dot{p}_i = -\dfrac{\partial H}{\partial q_i}\)</strong></p><p>The Hamiltonian \(H(q,p,t)\) is obtained from the Lagrangian via the Legendre transform: \(H = \sum_i p_i \dot{q}_i - L\), where the generalized momenta are \(p_i = \partial L/\partial \dot{q}_i\). Hamilton's equations give 2n first-order ODEs (compared to Lagrange's n second-order ODEs). The Hamiltonian is often \(H = T + V\) (total energy) for natural mechanical systems.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dot{q}_i = \dfrac{\partial H}{\partial p_i}\) and \(\dot{p}_i = -\dfrac{\partial H}{\partial q_i}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dot{q}_i = -\dfrac{\partial H}{\partial p_i}\) and \(\dot{p}_i = \dfrac{\partial H}{\partial q_i}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dot{q}_i = \dfrac{\partial L}{\partial p_i}\) and \(\dot{p}_i = -\dfrac{\partial L}{\partial q_i}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ddot{q}_i = -\dfrac{\partial H}{\partial q_i}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Classical Mechanics - Conservation of Energy</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a conservative mechanical system, the Hamiltonian \(H\) is conserved (constant in time) when:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(H\) does not explicitly depend on time \(t\)</strong></p><p>From Hamilton's equations, \(\frac{dH}{dt} = \frac{\partial H}{\partial t}\). Therefore, if \(\partial H/\partial t = 0\) (H has no explicit time dependence), then H is conserved. This corresponds to energy conservation: if the forces are conservative and the constraints don't depend on time, the total mechanical energy \(H = T + V\) is constant. This is Noether's theorem applied to time-translation symmetry.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(H\) does not depend on position coordinates]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(H\) does not explicitly depend on time \(t\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The momenta \(p_i\) are all zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(H\) does not depend on momenta]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Classical Mechanics - Poisson Brackets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Poisson bracket of two functions \(f\) and \(g\) of canonical variables \((q_i, p_i)\) is defined as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\{f,g\} = \displaystyle\sum_i \left(\dfrac{\partial f}{\partial q_i}\dfrac{\partial g}{\partial p_i} - \dfrac{\partial f}{\partial p_i}\dfrac{\partial g}{\partial q_i}\right)\)</strong></p><p>The Poisson bracket \(\{f,g\}\) is antisymmetric (\(\{f,g\} = -\{g,f\}\)), bilinear, and satisfies the Jacobi identity. Hamilton's equations can be written as \(\dot{q}_i = \{q_i, H\}\) and \(\dot{p}_i = \{p_i, H\}\). Fundamental Poisson brackets: \(\{q_i, q_j\} = 0\), \(\{p_i, p_j\} = 0\), \(\{q_i, p_j\} = \delta_{ij}\). Poisson brackets are the classical analog of quantum commutators.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\{f,g\} = \displaystyle\sum_i \left(\dfrac{\partial f}{\partial q_i}\dfrac{\partial g}{\partial p_i} - \dfrac{\partial f}{\partial p_i}\dfrac{\partial g}{\partial q_i}\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{f,g\} = \displaystyle\sum_i \left(\dfrac{\partial f}{\partial q_i}\dfrac{\partial g}{\partial q_i} + \dfrac{\partial f}{\partial p_i}\dfrac{\partial g}{\partial p_i}\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{f,g\} = f \cdot g - g \cdot f\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{f,g\} = \dfrac{\partial f}{\partial t}\dfrac{\partial g}{\partial t}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 3 - Linear Integral Equations ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Unit 3 - Differential Equations and Mechanics/Linear Integral Equations</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Integral Equations - Fredholm vs Volterra</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Volterra integral equation of the second kind has the form:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(y(x) = f(x) + \lambda \displaystyle\int_a^x K(x,t)y(t)\,dt\)</strong></p><p>Classification of linear integral equations:<br>• Volterra type: variable upper limit \(\int_a^x\), associated with initial value problems<br>• Fredholm type: fixed limits \(\int_a^b\), associated with boundary value problems<br>• First kind: \(f(x) = \int K y\,dt\) (unknown only under integral)<br>• Second kind: \(y(x) = f(x) + \lambda \int K y\,dt\) (unknown also outside integral)<br>Volterra equations of the second kind always have a unique solution for any \(\lambda\), while Fredholm equations may have eigenvalues.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x) = \displaystyle\int_a^b K(x,t)y(t)\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y(x) = f(x) + \lambda \displaystyle\int_a^x K(x,t)y(t)\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y(x) = f(x) + \lambda \displaystyle\int_a^b K(x,t)y(t)\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x) = \displaystyle\int_a^x K(x,t)y(t)\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Integral Equations - Neumann Series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Neumann series solution of the Fredholm integral equation of the second kind \(y = f + \lambda Ky\) converges when:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(|\lambda| < 1/\|K\|\)</strong></p><p>The Neumann series (iterative solution): \(y = f + \lambda Kf + \lambda^2 K^2 f + \cdots\) converges when \(|\lambda|\|K\| < 1\), where \(\|K\|\) is the norm of the integral operator. This is the analogue of the geometric series \(1/(1-r)\) for operators. The series gives a unique solution for small \(|\lambda|\). Beyond the radius of convergence, the equation may still have solutions (or not, at eigenvalues of \(K\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(|\lambda| < 1/\|K\|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|\lambda| > 1/\|K\|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda = 0\) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[For all values of \(\lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Integral Equations - Eigenvalues of Symmetric Kernel</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a Fredholm integral equation with a real symmetric kernel \(K(x,t) = K(t,x)\) on \([a,b]\), the eigenvalues of the corresponding integral operator are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Real</strong></p><p>For a real symmetric (self-adjoint) kernel \(K(x,t) = K(t,x)\), the Hilbert-Schmidt theorem guarantees: (1) all eigenvalues are real, (2) eigenfunctions corresponding to distinct eigenvalues are orthogonal in \(L^2[a,b]\), (3) there are at most countably many eigenvalues (which are all non-zero if \(K \neq 0\)). This is analogous to the spectral theorem for symmetric matrices.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Always positive]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always negative]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Real]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Complex in general]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>
