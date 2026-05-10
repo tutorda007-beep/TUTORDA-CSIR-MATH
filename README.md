@@ -6,7 +6,7 @@ A comprehensive MCQ question bank for **CSIR NET Mathematical Sciences** coverin
 
 ## About
 
-This repository contains **~123 multiple choice questions** organized unit-wise as per the CSIR-UGC NET Mathematical Sciences syllabus. All questions include detailed explanations in the **General Feedback** field, making them suitable for both assessment and self-study.
+This repository contains **600 multiple choice questions** (150 per unit) organized unit-wise as per the CSIR-UGC NET Mathematical Sciences syllabus. All questions include detailed explanations in the **General Feedback** field, making them suitable for both assessment and self-study.
 
 ---
 
@@ -14,10 +14,10 @@ This repository contains **~123 multiple choice questions** organized unit-wise 
 
 ```
 TUTORDA-CSIR-MATH/
-├── CSIR_MATH_Unit1_Analysis.xml
-├── CSIR_MATH_Unit2_Algebra_ComplexAnalysis_Topology.xml
-├── CSIR_MATH_Unit3_DiffEq_Mechanics.xml
-├── CSIR_MATH_Unit4_Probability_Statistics.xml
+├── CSIR_MATH_Unit1_Analysis.xml                        (150 questions)
+├── CSIR_MATH_Unit2_Algebra_ComplexAnalysis_Topology.xml (150 questions)
+├── CSIR_MATH_Unit3_DiffEq_Mechanics.xml                (150 questions)
+├── CSIR_MATH_Unit4_Probability_Statistics.xml          (150 questions)
 └── README.md
 ```
 
@@ -25,45 +25,43 @@ TUTORDA-CSIR-MATH/
 
 ## Syllabus Coverage
 
-### Unit 1 — Analysis
+### Unit 1 — Analysis (150 questions)
 | Subtopic | Questions |
 |----------|-----------|
-| Set Theory (Countability, Cantor Set) | 5 |
-| Real Number System (Archimedean Property, Supremum, Infimum) | 5 |
-| Sequences and Series (Bolzano-Weierstrass, Heine-Borel, Convergence) | 5 |
-| Continuity and Differentiability (MVT, Uniform Continuity, Weierstrass) | 5 |
-| Riemann Integration (Lebesgue Criterion, FTC, Darboux Sums) | 5 |
-| Linear Algebra (Rank-Nullity, Eigenvalues, Diagonalizability) | 6 |
-| Metric Spaces (Open Sets, Completeness, Baire Category, Compactness) | 5 |
+| Real Analysis (Sequences, Series, Continuity, Differentiability, Riemann Integration) | 40 |
+| Metric Spaces (Completeness, Compactness, Baire Category, Connectedness) | 25 |
+| Lebesgue Integration & Measure Theory | 20 |
+| Linear Algebra (Rank-Nullity, Eigenvalues, Diagonalizability, Jordan Form) | 25 |
+| Multivariable Calculus (Inverse/Implicit Function Theorems, Stokes' Theorem) | 20 |
+| Complex Analysis Basics (Cauchy-Riemann, Analytic Functions) | 20 |
 
-### Unit 2 — Algebra, Complex Analysis & Topology
+### Unit 2 — Algebra, Complex Analysis & Topology (150 questions)
 | Subtopic | Questions |
 |----------|-----------|
-| Complex Analysis (C-R Equations, Cauchy's Theorem, Liouville, Residues, Möbius) | 7 |
-| Group Theory (Lagrange, Normal Subgroups, Sylow, Cayley) | 5 |
-| Ring Theory (Integral Domains, Maximal Ideals, UFD, Eisenstein) | 4 |
-| Field Theory & Number Theory (Finite Fields, CRT, Euler's φ, Fermat, Pigeon-hole) | 5 |
-| Topology (Heine-Borel, Connectedness, Hausdorff, Tychonoff, Separation Axioms) | 5 |
+| Complex Analysis (Cauchy's Theorem, Residues, Conformal Maps, Liouville, Jensen's Formula) | 40 |
+| Group Theory (Lagrange, Sylow Theorems, Normal Subgroups, Automorphisms, S_n) | 35 |
+| Ring & Field Theory (Integral Domains, Maximal Ideals, UFD, Eisenstein, Finite Fields) | 35 |
+| Topology (Hausdorff, Connectedness, Compactness, Tychonoff, Separation Axioms) | 40 |
 
-### Unit 3 — Differential Equations & Mechanics
+### Unit 3 — Differential Equations & Mechanics (150 questions)
 | Subtopic | Questions |
 |----------|-----------|
-| Ordinary Differential Equations (Picard's Theorem, Wronskian, Variation of Parameters, Sturm-Liouville) | 6 |
-| Partial Differential Equations (Classification, Laplace, Heat, Wave, Lagrange's Method) | 5 |
-| Numerical Analysis (Newton-Raphson, Simpson's Rule, Gauss Elimination, RK4, Interpolation) | 5 |
-| Calculus of Variations (Euler-Lagrange, Brachistochrone, Isoperimetric Problem) | 3 |
-| Classical Mechanics (Lagrangian, Hamilton's Equations, Conservation, Poisson Brackets) | 4 |
-| Linear Integral Equations (Fredholm, Volterra, Neumann Series, Symmetric Kernels) | 3 |
+| Ordinary Differential Equations (Picard's Theorem, Wronskian, Sturm-Liouville, Stability) | 30 |
+| Partial Differential Equations (Classification, Heat/Wave/Laplace, Characteristics, Shocks) | 30 |
+| Numerical Analysis (Newton-Raphson, RK4, Gaussian Elimination, Interpolation, Splines) | 25 |
+| Calculus of Variations (Euler-Lagrange, Brachistochrone, Isoperimetric, Hamilton's Principle) | 25 |
+| Classical Mechanics (Lagrangian, Hamiltonian, Noether's Theorem, Rigid Body, Scattering) | 25 |
+| Linear Integral Equations (Fredholm, Volterra, Neumann Series, Hilbert-Schmidt) | 15 |
 
-### Unit 4 — Probability & Statistics
+### Unit 4 — Probability & Statistics (150 questions)
 | Subtopic | Questions |
 |----------|-----------|
-| Probability Theory (Bayes' Theorem, Independence, Chebyshev, CLT, LLN) | 5 |
-| Probability Distributions (Poisson, Normal, Exponential, Binomial, Chi-squared) | 5 |
-| Statistical Inference (MLE, Unbiased Estimators, Cramér-Rao Bound, Confidence Intervals) | 4 |
-| Testing of Hypotheses (Type I/II Errors, Neyman-Pearson Lemma, Chi-square Test, p-value) | 4 |
-| Markov Chains & Stochastic Processes (Markov Property, Stationary Distribution, Recurrence, Poisson Process) | 4 |
-| Sampling Theory (SRS, Stratified Sampling, Systematic Sampling, Spearman's Rank Correlation) | 4 |
+| Probability Theory (Borel-Cantelli, Characteristic Functions, Convergence Modes, CLT, LLN, LIL) | 35 |
+| Probability Distributions (Normal, Poisson, Exponential, Chi-squared, Extreme Value, Stable) | 30 |
+| Statistical Inference (MLE, Cramér-Rao, Sufficiency, UMVUE, Bayesian Estimation, Confidence Intervals) | 35 |
+| Testing of Hypotheses (Neyman-Pearson, UMP, Chi-square, ANOVA, Nonparametric, LRT) | 20 |
+| Stochastic Processes (Markov Chains, Brownian Motion, Martingales, Renewal Theory, CTMC, Itô Calculus) | 20 |
+| Sampling Theory (SRSWOR, Stratified, Cluster, Ratio/Regression Estimators, Bootstrap) | 10 |
 
 ---
 
@@ -73,8 +71,9 @@ TUTORDA-CSIR-MATH/
 - **Correct Answer Fraction:** `100`
 - **Wrong Answer Fraction:** `0`
 - **Answer Explanation:** Full solution provided in `<generalfeedback>` field
-- **Math Rendering:** LaTeX notation (`\(...\)`) — rendered via Moodle's MathJax filter
+- **Math Rendering:** LaTeX notation (`\(...\)` inline, `\[...\]` display) — rendered via Moodle's MathJax filter
 - **Answer Shuffling:** Enabled by default
+- **Penalty:** 0.25 (negative marking compatible)
 - **Categories:** Auto-organized in Moodle's Question Bank by Unit → Subtopic
 
 ---
@@ -87,7 +86,7 @@ TUTORDA-CSIR-MATH/
 4. Upload the desired XML file(s)
 5. Click **Import** — questions will appear in the Question Bank under the respective categories
 
-> Import one file at a time or all four to build the complete question bank.
+> Import one file at a time or all four to build the complete question bank of 600 questions.
 
 ---
 
@@ -104,7 +103,7 @@ TUTORDA-CSIR-MATH/
 ## Prerequisites for Moodle
 
 - Moodle version 3.x or higher
-- **MathJax filter** enabled (Admin → Plugins → Filters → MathJax) for proper rendering of mathematical symbols
+- **MathJax filter** enabled (Admin → Plugins → Filters → MathJax) for proper LaTeX rendering
 
 ---
 

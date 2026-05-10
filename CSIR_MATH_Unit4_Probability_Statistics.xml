@@ -349,4 +349,1516 @@
   <answer fraction="0" format="html"><text><![CDATA[\(r_s = \dfrac{6\sum d_i^2}{n(n^2-1)}\)]]></text><feedback format="html"><text></text></feedback></answer>
 </question>
 
+<!-- ===== Batch 1: Probability Theory & Distributions (Q27-Q90) ===== -->
+
+<question type="multichoice">
+  <name><text>Probability Theory - Conditional Probability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(P(A)=0.4\), \(P(B)=0.5\), and \(P(A\cap B)=0.2\), then \(P(A|B)\) equals</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 0.4</strong></p><p>\(P(A|B)=P(A\cap B)/P(B)=0.2/0.5=0.4\). Note that here \(P(A|B)=P(A)\), so \(A\) and \(B\) are independent events.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0.2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0.5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[0.4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0.8]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Bayes' Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Bayes' theorem states that \(P(A_i|B)=\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\frac{P(B|A_i)P(A_i)}{\sum_j P(B|A_j)P(A_j)}\)</strong></p><p>Bayes' formula combines the likelihood \(P(B|A_i)\) with the prior \(P(A_i)\) to give the posterior \(P(A_i|B)\). The denominator is the total probability \(P(B)\) by the law of total probability.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(A_i)P(B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{P(B|A_i)P(A_i)}{\displaystyle\sum_j P(B|A_j)P(A_j)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{P(A_i)}{P(B|A_i)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(B|A_i)+P(A_i)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Independence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Events \(A_1,A_2,\ldots,A_n\) are mutually independent if and only if for every subset \(\{i_1,\ldots,i_k\}\),</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(P(A_{i_1}\cap\cdots\cap A_{i_k})=P(A_{i_1})\cdots P(A_{i_k})\)</strong></p><p>Mutual independence requires the multiplication rule to hold for all subsets (not just pairs). Pairwise independence does not imply mutual independence — a classic counterexample involves three events where each pair is independent but all three together are not.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(A_{i_1}\cap\cdots\cap A_{i_k})=P(A_{i_1})\cdots P(A_{i_k})\) for all subsets]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(A_i\cap A_j)=P(A_i)P(A_j)\) for all \(i\neq j\) (pairwise independence only)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(A_1\cap\cdots\cap A_n)=P(A_1)\cdots P(A_n)\) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(A_i|A_j)=0\) for \(i\neq j\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Sigma Algebra</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A probability space is a triple \((\Omega,\mathcal{F},P)\) where \(\mathcal{F}\) is a \(\sigma\)-algebra, meaning it is closed under</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) complementation and countable unions</strong></p><p>A \(\sigma\)-algebra \(\mathcal{F}\) satisfies: (i) \(\Omega\in\mathcal{F}\); (ii) if \(A\in\mathcal{F}\) then \(A^c\in\mathcal{F}\); (iii) if \(A_1,A_2,\ldots\in\mathcal{F}\) then \(\bigcup_{n=1}^\infty A_n\in\mathcal{F}\). These imply closure under countable intersections as well.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Finite unions only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Complementation and finite unions]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Complementation and countable unions]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All set operations including uncountable unions]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Borel-Cantelli Lemma</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The first Borel-Cantelli lemma states that if \(\sum_{n=1}^\infty P(A_n)<\infty\), then</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(P(A_n\text{ i.o.})=0\) (almost surely only finitely many \(A_n\) occur)</strong></p><p>"i.o." means "infinitely often" = \(\limsup_n A_n=\bigcap_{n=1}^\infty\bigcup_{k=n}^\infty A_k\). By the first BC lemma, summability of probabilities implies at most finitely many events occur a.s. The second lemma (requiring independence) gives the converse under divergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(A_n\text{ i.o.})=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(A_n\text{ i.o.})=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The \(A_n\) are independent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum P(A_n)=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Characteristic Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The characteristic function of a random variable \(X\) is defined as \(\phi_X(t)=E[e^{itX}]\). It uniquely determines</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) the distribution of \(X\)</strong></p><p>The characteristic function \(\phi_X(t)=\int e^{itx}\,dF(x)\) is the Fourier transform of the distribution. By the uniqueness theorem for Fourier transforms, \(\phi_X\) uniquely determines the distribution \(F\). It always exists (unlike the moment generating function).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The distribution of \(X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only the mean and variance of \(X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The density function only if \(X\) is continuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Nothing — it need not exist]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Law of Total Expectation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The law of total expectation (tower property) states that \(E[X]=\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(E[E[X|Y]]\)</strong></p><p>The tower property: \(E[X]=E[E[X|Y]]\) for any random variable \(Y\). More generally, \(E[E[X|\mathcal{G}]]=E[X]\) for any sub-\(\sigma\)-algebra \(\mathcal{G}\). This is fundamental in conditional expectation theory.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X|Y]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X]\cdot E[Y]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(E[E[X|Y]]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X+Y]-E[Y]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Jensen's Inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Jensen's inequality states that for a convex function \(\phi\) and a random variable \(X\),</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\phi(E[X])\leq E[\phi(X)]\)</strong></p><p>Jensen's inequality: if \(\phi\) is convex, \(\phi(E[X])\leq E[\phi(X)]\). For concave \(\phi\), the inequality reverses. Applications: \(e^{E[X]}\leq E[e^X]\) (convexity of \(e^x\)), \(E[\ln X]\leq\ln E[X]\) (concavity of \(\ln\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\phi(E[X])\leq E[\phi(X)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\phi(E[X])\geq E[\phi(X)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\phi(E[X])=E[\phi(X)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[\phi(X)]=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Convergence Modes</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The correct hierarchy of convergence modes (stronger implies weaker) for sequences of random variables is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) a.s. \(\Rightarrow\) in probability \(\Rightarrow\) in distribution</strong></p><p>Implications: (i) a.s. convergence \(\Rightarrow\) convergence in probability; (ii) \(L^p\) convergence \(\Rightarrow\) convergence in probability; (iii) convergence in probability \(\Rightarrow\) convergence in distribution. None of the converses hold in general.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[In distribution \(\Rightarrow\) in probability \(\Rightarrow\) a.s.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[a.s. \(\Rightarrow\) in probability \(\Rightarrow\) in distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[In probability \(\Rightarrow\) a.s. \(\Rightarrow\) in distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All four modes are equivalent]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Strong Law of Large Numbers</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Strong Law of Large Numbers (SLLN) states that for i.i.d. random variables \(X_1,X_2,\ldots\) with \(E[|X_1|]<\infty\),</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\bar X_n=\frac{1}{n}\sum_{k=1}^n X_k\to\mu\) almost surely</strong></p><p>The SLLN (Kolmogorov): finite first moment is necessary and sufficient for a.s. convergence of the sample mean to \(\mu=E[X_1]\). This is stronger than the Weak LLN (convergence in probability), which requires only finite variance under Chebyshev's inequality.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar X_n\to\mu\) in distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar X_n\to\mu\) in \(L^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\bar X_n\to\mu\) almost surely]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar X_n\to 0\) in probability]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Central Limit Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Central Limit Theorem (Lindeberg-Lévy) states: if \(X_1,\ldots,X_n\) are i.i.d. with mean \(\mu\) and variance \(\sigma^2<\infty\), then as \(n\to\infty\),</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\frac{\sqrt{n}(\bar X_n-\mu)}{\sigma}\xrightarrow{d}N(0,1)\)</strong></p><p>The CLT: the standardized sample mean converges in distribution to the standard normal. This holds regardless of the underlying distribution (as long as finite variance exists). The convergence rate is \(O(n^{-1/2})\) (Berry-Esseen theorem).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar X_n\xrightarrow{d}N(\mu,\sigma^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{\sqrt{n}(\bar X_n-\mu)}{\sigma}\xrightarrow{d}N(0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n(\bar X_n-\mu)\xrightarrow{d}N(0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar X_n\to\mu\) a.s.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Moment Generating Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If the MGF \(M_X(t)=E[e^{tX}]\) exists in a neighborhood of \(t=0\), then the \(k\)-th moment is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(M_X^{(k)}(0)\)</strong></p><p>Differentiating \(M_X(t)=\sum_{k=0}^\infty\frac{E[X^k]}{k!}t^k\) gives \(M_X^{(k)}(0)=E[X^k]\). The MGF uniquely determines the distribution (when it exists in a neighborhood of 0) and is related to the characteristic function by \(M_X(t)=\phi_X(-it)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(M_X^{(k)}(0)=E[X^k]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M_X(k)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(kM_X(0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ln M_X^{(k)}(0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Chebyshev Inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Chebyshev's inequality states that for any random variable \(X\) with mean \(\mu\) and variance \(\sigma^2\),</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(P(|X-\mu|\geq k\sigma)\leq 1/k^2\)</strong></p><p>Chebyshev's inequality: \(P(|X-\mu|\geq\varepsilon)\leq\sigma^2/\varepsilon^2\). Setting \(\varepsilon=k\sigma\) gives \(P(|X-\mu|\geq k\sigma)\leq 1/k^2\). This is distribution-free and is used to prove the Weak Law of Large Numbers.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(|X-\mu|\geq k)\leq\sigma/k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(|X-\mu|\geq k\sigma)\leq 1/k^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(|X|\geq k)\leq E[X]/k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(|X-\mu|\leq k\sigma)\leq 1/k^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Binomial</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(X\sim\text{Binomial}(n,p)\), then \(E[X]\) and \(\text{Var}(X)\) are respectively</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(np\) and \(np(1-p)\)</strong></p><p>For \(X=\sum_{i=1}^n X_i\) with i.i.d. Bernoulli\((p)\) summands: \(E[X]=np\), \(\text{Var}(X)=np(1-p)=npq\). The variance is maximized at \(p=1/2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(np\) and \(np(1-p)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(np\) and \(np^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\) and \(p(1-p)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n/p\) and \(n(1-p)/p^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Poisson</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(X\sim\text{Poisson}(\lambda)\), then \(P(X=k)=\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\frac{e^{-\lambda}\lambda^k}{k!}\)</strong></p><p>The Poisson distribution models the number of rare events in a fixed interval. Its PMF is \(P(X=k)=e^{-\lambda}\lambda^k/k!\) for \(k=0,1,2,\ldots\) Both mean and variance equal \(\lambda\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda^k e^{-k}/k!\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^{-\lambda}\lambda^k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{e^{-\lambda}\lambda^k}{k!}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda e^{-\lambda k}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Normal Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(X\sim N(\mu,\sigma^2)\), the density is \(f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-(x-\mu)^2/(2\sigma^2)}\). The MGF of \(X\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(e^{\mu t+\sigma^2 t^2/2}\)</strong></p><p>For \(X\sim N(\mu,\sigma^2)\): \(M_X(t)=E[e^{tX}]=\exp(\mu t+\sigma^2t^2/2)\). This is derived by completing the square in the exponent. The log of the MGF, \(\mu t+\sigma^2t^2/2\), is the cumulant generating function (CGF).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^{\mu t}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(e^{\mu t+\sigma^2 t^2/2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^{\sigma^2 t^2/2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mu e^{t}+\sigma^2 e^{2t}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Exponential Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The exponential distribution \(\text{Exp}(\lambda)\) is the unique continuous distribution with the memoryless property: \(P(X>s+t|X>s)=\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(P(X>t)\)</strong></p><p>Memoryless property: \(P(X>s+t|X>s)=P(X>t)\). The exponential is the only continuous distribution with this property (the geometric distribution is the discrete analogue). Mean \(=1/\lambda\), variance \(=1/\lambda^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(X>t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(X>s)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(X>s+t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1-e^{-\lambda t}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Chi-squared Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(Z_1,\ldots,Z_n\) are i.i.d. \(N(0,1)\), then \(\sum_{i=1}^n Z_i^2\) follows</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\chi^2(n)\) (chi-squared with \(n\) degrees of freedom)</strong></p><p>The chi-squared distribution with \(n\) degrees of freedom is \(\chi^2(n)=\text{Gamma}(n/2,1/2)\). Mean \(=n\), variance \(=2n\). It is fundamental in statistics (sample variance, goodness-of-fit tests, independence tests).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(0,n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\chi^2(n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(t(n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F(n,n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Student's t</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(Z\sim N(0,1)\) and \(V\sim\chi^2(n)\) are independent, then \(T=Z/\sqrt{V/n}\) follows</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Student's \(t\)-distribution with \(n\) degrees of freedom</strong></p><p>The \(t(n)\) distribution arises from \(T=Z/\sqrt{V/n}\). It is symmetric, bell-shaped, with heavier tails than normal. As \(n\to\infty\), \(t(n)\to N(0,1)\). Used for inference about means with unknown variance.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\chi^2(n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Student's \(t\)-distribution with \(n\) degrees of freedom]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F(1,n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - F Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(U\sim\chi^2(m)\) and \(V\sim\chi^2(n)\) are independent, then \(F=\frac{U/m}{V/n}\) follows</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(F(m,n)\) distribution</strong></p><p>The \(F(m,n)\) distribution is the ratio of two independent chi-squared distributions divided by their respective degrees of freedom. It is used in ANOVA and to compare variances. Note: \(F(1,n)=t(n)^2\) and \(F(m,n)^{-1}\sim F(n,m)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(F(m,n)\) distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\chi^2(m+n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(t(m+n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(m/n,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Gamma Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Gamma distribution \(\text{Gamma}(\alpha,\beta)\) has density \(f(x)=\frac{\beta^\alpha}{\Gamma(\alpha)}x^{\alpha-1}e^{-\beta x}\) for \(x>0\). Its mean and variance are</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\alpha/\beta\) and \(\alpha/\beta^2\)</strong></p><p>For \(\text{Gamma}(\alpha,\beta)\) (rate parameterization): \(E[X]=\alpha/\beta\), \(\text{Var}(X)=\alpha/\beta^2\). Special cases: \(\text{Exp}(\lambda)=\text{Gamma}(1,\lambda)\), \(\chi^2(n)=\text{Gamma}(n/2,1/2)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\alpha\beta\) and \(\alpha\beta^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\alpha/\beta\) and \(\alpha/\beta^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\beta/\alpha\) and \(\beta/\alpha^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\alpha\) and \(\alpha^2/\beta\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Beta Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Beta distribution \(\text{Beta}(\alpha,\beta)\) on \([0,1]\) has density \(f(x)\propto x^{\alpha-1}(1-x)^{\beta-1}\). Its mean is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\alpha/(\alpha+\beta)\)</strong></p><p>For \(\text{Beta}(\alpha,\beta)\): \(E[X]=\frac{\alpha}{\alpha+\beta}\), \(\text{Var}(X)=\frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}\). The Beta distribution is the conjugate prior for the Binomial likelihood in Bayesian statistics.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\alpha/\beta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\beta/(\alpha+\beta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\alpha/(\alpha+\beta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/(\alpha+\beta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Multivariate Normal</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a multivariate normal vector \(\mathbf{X}\sim N(\boldsymbol\mu,\Sigma)\), any linear combination \(\mathbf{a}^T\mathbf{X}\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(N(\mathbf{a}^T\boldsymbol\mu,\mathbf{a}^T\Sigma\mathbf{a})\)</strong></p><p>The multivariate normal is closed under linear transformations: if \(\mathbf{X}\sim N(\boldsymbol\mu,\Sigma)\), then \(A\mathbf{X}+\mathbf{b}\sim N(A\boldsymbol\mu+\mathbf{b},A\Sigma A^T)\). For a scalar combination: \(\mathbf{a}^T\mathbf{X}\sim N(\mathbf{a}^T\boldsymbol\mu,\mathbf{a}^T\Sigma\mathbf{a})\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(N(\mathbf{a}^T\boldsymbol\mu,\,\mathbf{a}^T\Sigma\mathbf{a})\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not necessarily normal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(0,1)\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(\mathbf{a}^T\boldsymbol\mu,|\mathbf{a}|^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Geometric Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(X\) counts the number of Bernoulli trials until the first success (with success probability \(p\)), then \(E[X]=\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(1/p\)</strong></p><p>For the geometric distribution \(P(X=k)=(1-p)^{k-1}p\) (\(k=1,2,\ldots\)): \(E[X]=1/p\), \(\text{Var}(X)=(1-p)/p^2\). The geometric distribution is the discrete analogue of the exponential (memoryless: \(P(X>m+n|X>m)=P(X>n)\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((1-p)/p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p/(1-p)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Negative Binomial</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The negative binomial distribution \(\text{NB}(r,p)\) models the number of trials until the \(r\)-th success. Its mean is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(r/p\)</strong></p><p>For NB\((r,p)\): \(E[X]=r/p\), \(\text{Var}(X)=r(1-p)/p^2\). It is a generalization of the geometric (case \(r=1\)). Also arises as a Poisson-Gamma mixture (overdispersed Poisson), making it useful in count data modeling.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(r(1-p)/p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(rp\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(r/p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(r(1-p)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Uniform Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(X\sim\text{Uniform}(a,b)\), then \(\text{Var}(X)=\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \((b-a)^2/12\)</strong></p><p>For \(X\sim U(a,b)\): \(E[X]=(a+b)/2\), \(E[X^2]=(a^2+ab+b^2)/3\), \(\text{Var}(X)=E[X^2]-(E[X])^2=(b-a)^2/12\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\((b-a)^2/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\((b-a)^2/12\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((b-a)/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((b-a)^2/6\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="Probability Distributions - Cauchy Distribution">
+  <name><text>Probability Distributions - Cauchy Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Cauchy distribution \(C(0,1)\) with density \(f(x)=\frac{1}{\pi(1+x^2)}\) is notable because</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) it has no finite mean or variance</strong></p><p>The Cauchy distribution has heavy tails: \(\int_{-\infty}^\infty |x|/(1+x^2)\,dx=\infty\), so \(E[|X|]=\infty\). The sample mean of Cauchy i.i.d. variables is again Cauchy (CLT fails). The Cauchy is a stable distribution with index 1.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It has mean 0 but infinite variance]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It satisfies the CLT]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Its MGF exists everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[It has no finite mean or variance]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Hypergeometric</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A population of \(N\) items contains \(K\) successes. If \(n\) items are drawn without replacement, the number of successes \(X\) follows a hypergeometric distribution with mean</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(nK/N\)</strong></p><p>For the hypergeometric distribution: \(E[X]=nK/N\) (same as binomial with \(p=K/N\)), \(\text{Var}(X)=n\frac{K}{N}\frac{N-K}{N}\frac{N-n}{N-1}\). The factor \((N-n)/(N-1)\) is the finite population correction.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(nK/N\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(nK\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(K/N\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n/K\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Statistical Inference -->
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Unbiasedness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An estimator \(\hat\theta\) of \(\theta\) is called unbiased if</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(E[\hat\theta]=\theta\) for all \(\theta\)</strong></p><p>An estimator is unbiased if its expected value equals the true parameter for all values of \(\theta\). The bias is \(B(\hat\theta)=E[\hat\theta]-\theta\). The sample mean \(\bar X\) is unbiased for \(\mu\); the sample variance \(S^2=\sum(X_i-\bar X)^2/(n-1)\) is unbiased for \(\sigma^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\theta=\theta\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(E[\hat\theta]=\theta\) for all \(\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(\hat\theta)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\theta\to\theta\) in probability]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Cramér-Rao Bound</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Cramér-Rao lower bound states that for any unbiased estimator \(\hat\theta\),</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\text{Var}(\hat\theta)\geq 1/I(\theta)\)</strong></p><p>The CRLB: \(\text{Var}(\hat\theta)\geq[I(\theta)]^{-1}\) where \(I(\theta)=-E[\partial^2\ln f/\partial\theta^2]=E[(\partial\ln f/\partial\theta)^2]\) is the Fisher information. An estimator achieving the CRLB is called efficient (e.g., MLE for exponential families in large samples).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(\hat\theta)\geq I(\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(\hat\theta)\leq I(\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\text{Var}(\hat\theta)\geq 1/I(\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(\hat\theta)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - MLE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an i.i.d. sample from \(N(\mu,\sigma^2)\) (both unknown), the MLE of \(\sigma^2\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\hat\sigma^2=\frac{1}{n}\sum_{i=1}^n(X_i-\bar X)^2\)</strong></p><p>Maximizing the log-likelihood gives \(\hat\mu=\bar X\) and \(\hat\sigma^2=\frac{1}{n}\sum(X_i-\bar X)^2\). Note: the MLE of \(\sigma^2\) is biased (divides by \(n\), not \(n-1\)). The unbiased estimator \(S^2\) divides by \(n-1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{n-1}\displaystyle\sum_{i=1}^n(X_i-\bar X)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{1}{n}\displaystyle\sum_{i=1}^n(X_i-\bar X)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{i=1}^n(X_i-\bar X)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{n+1}\displaystyle\sum_{i=1}^n X_i^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Sufficiency</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A statistic \(T(X)\) is sufficient for \(\theta\) if the conditional distribution of \(X\) given \(T(X)\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) independent of \(\theta\)</strong></p><p>Sufficiency: \(T(X)\) is sufficient for \(\theta\) iff \(f(x|\theta)=g(T(x)|\theta)\cdot h(x)\) (Fisher-Neyman factorization theorem). Intuitively, \(T\) contains all information about \(\theta\) in the sample — knowing \(T\) renders the data uninformative about \(\theta\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Independent of \(\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equal to \(\theta\) a.s.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Normally distributed]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Unbiased for \(\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - UMVUE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Rao-Blackwell theorem states that if \(\hat\theta\) is an unbiased estimator and \(T\) is a sufficient statistic, then \(\tilde\theta=E[\hat\theta|T]\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) unbiased with \(\text{Var}(\tilde\theta)\leq\text{Var}(\hat\theta)\)</strong></p><p>Rao-Blackwell: conditioning on a sufficient statistic cannot increase variance. The Lehmann-Scheffé theorem further shows that conditioning on a complete sufficient statistic gives the UMVUE (uniformly minimum variance unbiased estimator).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Biased with smaller variance]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Unbiased with \(\text{Var}(\tilde\theta)\leq\text{Var}(\hat\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The MLE]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always equal to \(\hat\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Confidence Intervals</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A 95% confidence interval for \(\mu\) based on a sample from \(N(\mu,\sigma^2)\) with known \(\sigma^2\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\bar X\pm 1.96\,\sigma/\sqrt{n}\)</strong></p><p>Since \(\bar X\sim N(\mu,\sigma^2/n)\), the standardized statistic \(Z=(\bar X-\mu)/(\sigma/\sqrt{n})\sim N(0,1)\). The 95% CI uses \(z_{0.025}=1.96\): \(P(\bar X-1.96\sigma/\sqrt{n}\leq\mu\leq\bar X+1.96\sigma/\sqrt{n})=0.95\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar X\pm 1.645\,\sigma/\sqrt{n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar X\pm 2.576\,\sigma/\sqrt{n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\bar X\pm 1.96\,\sigma/\sqrt{n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar X\pm\sigma/\sqrt{n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Exponential Family</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A family of distributions \(\{f(x;\theta)\}\) is an exponential family if \(f(x;\theta)=h(x)\exp[\eta(\theta)T(x)-B(\theta)]\). The natural sufficient statistic is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(T(x)\)</strong></p><p>By the Neyman-Fisher factorization, \(T(x)\) is a sufficient statistic for \(\theta\) in any exponential family. Moreover, for a full-rank exponential family, \(T(x)\) is complete sufficient, so the UMVUE of any estimable function can be derived from \(T\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(h(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(T(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\eta(\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(B(\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== Batch 2: Testing of Hypotheses & Markov Chains (Q61-Q120) ===== -->
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - Neyman-Pearson Lemma</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Neyman-Pearson lemma states that for testing \(H_0:\theta=\theta_0\) vs \(H_1:\theta=\theta_1\), the most powerful test of size \(\alpha\) rejects \(H_0\) when</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) the likelihood ratio \(\Lambda=f(x;\theta_1)/f(x;\theta_0)>k\)</strong></p><p>The NP lemma guarantees that the likelihood ratio test (LRT) is the most powerful (MP) test of given size. The rejection region \(\Lambda>k\) maximizes power \(P(\text{reject }H_0|\theta_1)\) subject to \(P(\text{reject }H_0|\theta_0)=\alpha\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The sample mean exceeds a threshold]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The likelihood ratio \(\Lambda=f(x;\theta_1)/f(x;\theta_0)>k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sample variance exceeds a threshold]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The \(p\)-value exceeds \(\alpha\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - Type I and Type II Errors</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In hypothesis testing, a Type I error is rejecting \(H_0\) when it is true (probability \(\alpha\)), and a Type II error is failing to reject \(H_0\) when it is false (probability \(\beta\)). The power of a test is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(1-\beta\)</strong></p><p>Power \(=1-\beta=P(\text{reject }H_0|H_1\text{ true})\). There is a fundamental trade-off: for fixed sample size, decreasing \(\alpha\) increases \(\beta\) (decreases power). Increasing sample size reduces both errors simultaneously.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(1-\beta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\alpha\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\beta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1-\alpha\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - p-value</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The \(p\)-value of a test statistic \(T_{\text{obs}}\) is defined as</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(P(T\geq T_{\text{obs}}|H_0)\) (for a right-tailed test)</strong></p><p>The \(p\)-value is the probability, under \(H_0\), of observing a test statistic at least as extreme as the one observed. We reject \(H_0\) at level \(\alpha\) iff the \(p\)-value \(\leq\alpha\). A small \(p\)-value provides evidence against \(H_0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(H_0\text{ is true})\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The probability that \(H_1\) is true]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(T\geq T_{\text{obs}}\mid H_0)\) for a right-tailed test]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The significance level \(\alpha\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - UMP Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A uniformly most powerful (UMP) test exists for one-sided testing in exponential families with monotone likelihood ratio (MLR). For \(H_0:\theta\leq\theta_0\) vs \(H_1:\theta>\theta_0\), the UMP test rejects when</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) the sufficient statistic \(T\) exceeds a critical value \(c\)</strong></p><p>For exponential families \(f(x;\theta)\propto\exp[\eta(\theta)T(x)]\) with \(\eta\) increasing in \(\theta\) (MLR in \(T\)), the UMP test for \(H_0:\theta\leq\theta_0\) vs \(H_1:\theta>\theta_0\) rejects when \(T>c\). This is Karlin-Rubin's theorem.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The sufficient statistic \(T\) exceeds a critical value \(c\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The likelihood ratio is less than \(k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The \(p\)-value exceeds \(\alpha\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sample mean is less than \(\theta_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - Chi-squared Goodness of Fit</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Pearson's chi-squared goodness-of-fit statistic \(\chi^2=\sum_{i=1}^k\frac{(O_i-E_i)^2}{E_i}\) has, under \(H_0\), approximately a chi-squared distribution with</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(k-1-r\) degrees of freedom, where \(r\) is the number of estimated parameters</strong></p><p>For Pearson's chi-squared test with \(k\) cells: if no parameters are estimated, df \(=k-1\). If \(r\) parameters are estimated from the data (by MLE from grouped data), df \(=k-1-r\). The loss of 1 df comes from the constraint \(\sum O_i=n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(k-1\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(k-1-r\), where \(r\) is the number of estimated parameters]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n-k\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - Two-Sample t-test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For testing \(H_0:\mu_1=\mu_2\) with two independent samples from \(N(\mu_i,\sigma^2)\) (equal, unknown variance), the pooled two-sample \(t\)-statistic is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(t=\frac{\bar X_1-\bar X_2}{S_p\sqrt{1/n_1+1/n_2}}\sim t(n_1+n_2-2)\)</strong></p><p>The pooled variance estimate is \(S_p^2=[(n_1-1)S_1^2+(n_2-1)S_2^2]/(n_1+n_2-2)\). Under \(H_0\), the test statistic follows a \(t\)-distribution with \(n_1+n_2-2\) degrees of freedom.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(t=\dfrac{\bar X_1-\bar X_2}{\sqrt{S_1^2/n_1+S_2^2/n_2}}\sim t(n_1+n_2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(t=\dfrac{\bar X_1-\bar X_2}{S_p\sqrt{1/n_1+1/n_2}}\sim t(n_1+n_2-2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(t=\dfrac{\bar X_1-\bar X_2}{\sigma}\sim N(0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(t=\dfrac{\bar X_1-\bar X_2}{S_1+S_2}\sim t(n_1-1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - Likelihood Ratio Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Wilks' theorem states that under regularity conditions, the statistic \(-2\ln\Lambda\) (where \(\Lambda\) is the likelihood ratio) converges in distribution under \(H_0\) to</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\chi^2(r)\), where \(r\) is the number of constraints under \(H_0\)</strong></p><p>Wilks' theorem: \(-2\ln\Lambda=-2[\ell(\hat\theta_0)-\ell(\hat\theta)]\xrightarrow{d}\chi^2(r)\) under \(H_0\), where \(r=\dim\Theta-\dim\Theta_0\) is the number of restrictions. This provides the asymptotic basis for the generalized LRT.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(t(n-1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\chi^2(r)\), where \(r\) is the number of constraints under \(H_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F(r,n-r)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - ANOVA</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In one-way ANOVA with \(k\) groups and total \(n\) observations, the \(F\)-statistic for testing equality of group means is the ratio of</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) mean sum of squares between groups (MSB) to mean sum of squares within groups (MSW)</strong></p><p>ANOVA \(F\)-statistic: \(F=\text{MSB}/\text{MSW}\sim F(k-1,n-k)\) under \(H_0:\mu_1=\cdots=\mu_k\). MSB \(=\text{SSB}/(k-1)\), MSW \(=\text{SSW}/(n-k)\). Large \(F\) provides evidence against equal means.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Mean SS between groups (MSB) to mean SS within groups (MSW)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Total SS to within-group SS]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[MSW to MSB]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Between-group SS to total SS]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - Sign Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The sign test for the median \(M\) of a continuous distribution uses the test statistic \(B=\) number of observations greater than \(M_0\). Under \(H_0:M=M_0\),</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(B\sim\text{Binomial}(n,1/2)\)</strong></p><p>Since each observation independently exceeds \(M_0\) with probability 1/2 under \(H_0\) (continuous distribution), \(B\sim\text{Binomial}(n,1/2)\). The sign test is distribution-free (nonparametric) and valid for any continuous distribution.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(B\sim N(n/2,n/4)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(B\sim\text{Binomial}(n,1/2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(B\sim\text{Poisson}(n/2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(B\sim\chi^2(n-1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - Kolmogorov-Smirnov Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Kolmogorov-Smirnov test statistic \(D_n=\sup_x|F_n(x)-F_0(x)|\) (where \(F_n\) is the empirical CDF) is used to test</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(H_0:F=F_0\) (the distribution is \(F_0\))</strong></p><p>The KS test is a nonparametric goodness-of-fit test. Under \(H_0\), \(\sqrt{n}D_n\) converges to the Kolmogorov distribution. The test is distribution-free (for continuous \(F_0\)) and consistent against any fixed alternative.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[That two samples have equal means]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Independence of two variables]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(H_0:F=F_0\) (the population distribution is \(F_0\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Homogeneity of variances]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - Multiple Testing</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Bonferroni correction for \(m\) simultaneous tests at family-wise error rate \(\alpha\) rejects individual \(H_{0i}\) when the individual \(p\)-value satisfies</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(p_i\leq\alpha/m\)</strong></p><p>Bonferroni correction: by the union bound, \(P(\text{any false rejection})\leq\sum_{i=1}^m P(\text{reject }H_{0i}|H_{0i}\text{ true})\leq m\cdot(\alpha/m)=\alpha\). This controls the family-wise error rate (FWER) but is conservative (low power).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(p_i\leq\alpha/m\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_i\leq\alpha\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_i\leq m\alpha\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_i\leq\sqrt{\alpha/m}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - Rank Tests</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Wilcoxon rank-sum test (Mann-Whitney \(U\)-test) is a nonparametric alternative to the two-sample \(t\)-test. It is based on</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) the ranks of all observations in the combined sample</strong></p><p>The Wilcoxon test uses ranks of the combined sample. Under \(H_0\) (equal distributions), the ranks are equally likely to be any permutation. The test is distribution-free and has high efficiency relative to the \(t\)-test for heavy-tailed distributions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The absolute deviations from the median]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The ranks of all observations in the combined sample]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The signs of differences from the hypothesized median]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The squared deviations from the sample mean]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - Bayesian Testing</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In Bayesian hypothesis testing, the Bayes factor \(BF_{01}\) for comparing \(H_0\) vs \(H_1\) is defined as</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) the ratio of marginal likelihoods \(p(x|H_0)/p(x|H_1)\)</strong></p><p>The Bayes factor \(BF_{01}=p(x|H_0)/p(x|H_1)\) measures the evidence in the data for \(H_0\) relative to \(H_1\). The posterior odds equal the Bayes factor times the prior odds: \(P(H_0|x)/P(H_1|x)=BF_{01}\cdot P(H_0)/P(H_1)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The ratio of marginal likelihoods \(p(x|H_0)/p(x|H_1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The posterior probability \(P(H_0|x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The \(p\)-value under \(H_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The prior ratio \(P(H_0)/P(H_1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Markov Chains and Stochastic Processes -->
+
+<question type="multichoice">
+  <name><text>Markov Chains - Definition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A discrete-time Markov chain \(\{X_n\}\) satisfies the Markov property, which states</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(P(X_{n+1}=j|X_0,\ldots,X_n)=P(X_{n+1}=j|X_n)\)</strong></p><p>The Markov property: given the present state \(X_n\), the future \(X_{n+1},X_{n+2},\ldots\) is independent of the past \(X_0,\ldots,X_{n-1}\). This is the "memoryless" property for discrete-time processes.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(X_{n+1}=j|X_n)=P(X_n=j)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(X_{n+1}=j\mid X_0,\ldots,X_n)=P(X_{n+1}=j\mid X_n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_n\) and \(X_{n+1}\) are independent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X_{n+1}|X_n]=X_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Markov Chains - Stationary Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A probability distribution \(\pi\) is stationary for a Markov chain with transition matrix \(P\) if</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\pi P=\pi\) (equivalently \(\pi_j=\sum_i\pi_i P_{ij}\))</strong></p><p>A stationary distribution satisfies \(\pi=\pi P\): if the chain starts in distribution \(\pi\), it remains in \(\pi\) at all future times. For irreducible, positive recurrent chains, a unique stationary distribution exists. The mean return time to state \(j\) is \(1/\pi_j\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi P=\pi\) (\(\pi_j=\sum_i\pi_i P_{ij}\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P\pi=\pi\) (as column vectors)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi_j=1/|S|\) (uniform)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi P^n\to\mathbf{0}\) as \(n\to\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Markov Chains - Ergodic Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an irreducible, aperiodic, positive recurrent Markov chain, the ergodic theorem states that regardless of the initial state,</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(P_{ij}^{(n)}\to\pi_j\) as \(n\to\infty\)</strong></p><p>The ergodic (limit) theorem: for ergodic chains (irreducible + aperiodic + positive recurrent), the \(n\)-step transition probabilities converge to the unique stationary distribution: \(P^n_{ij}\to\pi_j\) for all \(i,j\). Geometrically fast for finite chains.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_n\to\infty\) almost surely]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The chain returns to its initial state infinitely often]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P_{ij}^{(n)}\to\pi_j\) as \(n\to\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P_{ij}^{(n)}=\pi_j\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Markov Chains - Recurrence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>State \(i\) of a Markov chain is recurrent if and only if</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\sum_{n=0}^\infty P_{ii}^{(n)}=\infty\)</strong></p><p>State \(i\) is recurrent iff \(\sum_n P_{ii}^{(n)}=\infty\) (the chain returns to \(i\) infinitely often a.s.), or equivalently \(f_{ii}=P(\text{return to }i|X_0=i)=1\). If \(\sum_n P_{ii}^{(n)}<\infty\), state \(i\) is transient (returns finitely many times a.s.).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum_{n=0}^\infty P_{ii}^{(n)}<\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sum_{n=0}^\infty P_{ii}^{(n)}=\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P_{ii}^{(n)}>0\) for some \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P_{ii}=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Markov Chains - Detailed Balance</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Markov chain is reversible (with respect to \(\pi\)) if it satisfies detailed balance:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\pi_i P_{ij}=\pi_j P_{ji}\) for all \(i,j\)</strong></p><p>Detailed balance (reversibility): the flux from \(i\) to \(j\) equals the flux from \(j\) to \(i\) in stationarity. If detailed balance holds, then \(\pi\) is stationary (summing over \(j\) gives \(\sum_j\pi_i P_{ij}=\sum_j\pi_j P_{ji}=\pi_i\)). Used in MCMC (Metropolis-Hastings).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi_i P_{ij}=\pi_j P_{ji}\) for all \(i,j\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi_i=\pi_j\) for all \(i,j\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P_{ij}=P_{ji}\) for all \(i,j\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi_i P_{ij}=1/|S|\) for all \(i,j\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Markov Chains - Absorption</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a Markov chain with absorbing states, the expected number of steps to absorption from transient state \(i\) is given by the \(i\)-th row sum of</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) the fundamental matrix \(N=(I-Q)^{-1}\)</strong></p><p>For a chain with transient states governed by sub-stochastic matrix \(Q\), the fundamental matrix \(N=(I-Q)^{-1}=\sum_{n=0}^\infty Q^n\). Entry \(N_{ij}\) is the expected number of visits to transient state \(j\) starting from \(i\). Row sums give expected absorption times.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The transition matrix \(P\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sub-matrix \(Q\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The fundamental matrix \(N=(I-Q)^{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The stationary distribution \(\pi\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Poisson Process</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Poisson process \(N(t)\) with rate \(\lambda\) satisfies: \(N(0)=0\), independent increments, and</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(N(t+s)-N(s)\sim\text{Poisson}(\lambda t)\)</strong></p><p>The Poisson process has stationary, independent increments with \(N(t+s)-N(s)\sim\text{Poisson}(\lambda t)\). Interarrival times are i.i.d. Exp\((\lambda)\). It is the unique counting process with stationary independent increments and no simultaneous events.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(t)\sim\text{Binomial}(t,\lambda)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(N(t+s)-N(s)\sim\text{Poisson}(\lambda t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(t)=\lambda t\) deterministically]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(t)\sim\text{Exp}(\lambda)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Brownian Motion</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Standard Brownian motion (Wiener process) \(W(t)\) is characterized by: \(W(0)=0\), continuous paths, independent increments, and</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(W(t+s)-W(s)\sim N(0,t)\)</strong></p><p>Brownian motion has Gaussian increments: \(W(t)-W(s)\sim N(0,t-s)\) for \(t>s\). It has a.s. continuous but nowhere differentiable paths, and is a martingale. Key properties: \(E[W(t)]=0\), \(\text{Var}(W(t))=t\), \(\text{Cov}(W(s),W(t))=\min(s,t)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(W(t+s)-W(s)\sim\text{Poisson}(t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W(t)\sim\text{Uniform}(0,t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(W(t+s)-W(s)\sim N(0,t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W(t)\) is differentiable everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Martingales</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A sequence \(\{X_n,\mathcal{F}_n\}\) is a martingale if \(E[|X_n|]<\infty\) and</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(E[X_{n+1}|\mathcal{F}_n]=X_n\) a.s.</strong></p><p>Martingale condition: the best prediction of \(X_{n+1}\) given past information is \(X_n\) (fair game). Sub-martingale: \(E[X_{n+1}|\mathcal{F}_n]\geq X_n\). Super-martingale: \(\leq X_n\). Examples: \(W(t)\) (Brownian motion), \(W(t)^2-t\), \(S_n=\sum X_i\) with \(E[X_i]=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(E[X_{n+1}|\mathcal{F}_n]=X_n\) a.s.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X_{n+1}|\mathcal{F}_n]=0\) a.s.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_{n+1}-X_n\) is independent of \(\mathcal{F}_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X_n]=E[X_0]\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Optional Stopping Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Doob's optional stopping theorem states that for a martingale \(\{X_n\}\) and stopping time \(\tau\), under suitable conditions,</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(E[X_\tau]=E[X_0]\)</strong></p><p>The optional stopping theorem: if \(\tau\) is a stopping time satisfying integrability conditions (e.g., bounded \(\tau\), or bounded increments, or \(E[\tau]<\infty\) with bounded increments), then \(E[X_\tau]=E[X_0]\). This rules out gambling systems that "beat" fair games.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X_\tau]=E[\tau]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(E[X_\tau]=E[X_0]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_\tau=0\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X_\tau]\geq E[X_0]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Birth-Death Chain</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A birth-death chain on \(\{0,1,2,\ldots\}\) with birth rates \(\lambda_i\) and death rates \(\mu_i\) has stationary distribution (when it exists)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\pi_n=\pi_0\prod_{i=0}^{n-1}\frac{\lambda_i}{\mu_{i+1}}\)</strong></p><p>Detailed balance for birth-death chains: \(\pi_n\lambda_n=\pi_{n+1}\mu_{n+1}\), giving \(\pi_{n+1}=(\lambda_n/\mu_{n+1})\pi_n\). Solving recursively: \(\pi_n=\pi_0\prod_{i=0}^{n-1}\lambda_i/\mu_{i+1}\). The stationary distribution exists iff \(\sum_n\pi_n<\infty\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi_n=1/\lambda_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi_n=\lambda_n/\mu_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi_n=\pi_0\displaystyle\prod_{i=0}^{n-1}\dfrac{\lambda_i}{\mu_{i+1}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi_n=(\lambda_n+\mu_n)^{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Renewal Theory</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The elementary renewal theorem states that for a renewal process with mean inter-renewal time \(\mu=E[X_1]<\infty\),</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(m(t)/t\to 1/\mu\) as \(t\to\infty\)</strong></p><p>The elementary renewal theorem: \(m(t)=E[N(t)]\sim t/\mu\) as \(t\to\infty\). The renewal reward theorem extends this: if \(R_i\) is the reward in cycle \(i\), the long-run reward rate is \(E[R]/\mu\). These are the continuous-time analogues of the ergodic theorem.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(m(t)/t\to 1/\mu\) as \(t\to\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m(t)\to\mu\) as \(t\to\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(t)\to\infty\) in probability]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m(t)=t\mu\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Itô's Formula</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Itô's formula for a smooth function \(f(t,W_t)\) where \(W_t\) is Brownian motion gives</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(df=f_t\,dt+f_W\,dW+\frac{1}{2}f_{WW}\,dt\)</strong></p><p>Itô's formula (stochastic chain rule): \(df(t,W_t)=\frac{\partial f}{\partial t}dt+\frac{\partial f}{\partial W}dW_t+\frac{1}{2}\frac{\partial^2 f}{\partial W^2}dt\). The extra \(\frac{1}{2}f_{WW}dt\) term arises because \((dW)^2=dt\) (quadratic variation of Brownian motion).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(df=f_t\,dt+f_W\,dW\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(df=f_t\,dt+f_W\,dW+\tfrac{1}{2}f_{WW}\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(df=f_W\,dW+f_{WW}\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(df=f_t\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Queuing Theory</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an M/M/1 queue with arrival rate \(\lambda\) and service rate \(\mu\), the steady-state average number of customers in the system is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\rho/(1-\rho)\) where \(\rho=\lambda/\mu\)</strong></p><p>For the M/M/1 queue, the stationary distribution is geometric: \(\pi_n=(1-\rho)\rho^n\) for \(\rho=\lambda/\mu<1\). The average number in system is \(L=\sum_{n=0}^\infty n\pi_n=\rho/(1-\rho)\). By Little's law: \(L=\lambda W\), so average sojourn time \(W=1/(\mu-\lambda)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda/\mu\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/(\lambda-\mu)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\rho/(1-\rho)\) where \(\rho=\lambda/\mu\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda/(\mu-\lambda)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Sampling Theory -->
+
+<question type="multichoice">
+  <name><text>Sampling Theory - Simple Random Sampling</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In simple random sampling without replacement from a population of size \(N\), the variance of the sample mean \(\bar y\) based on sample size \(n\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\frac{S^2}{n}\cdot\frac{N-n}{N-1}\)</strong></p><p>Variance of \(\bar y\) under SRSWOR: \(V(\bar y)=\frac{S^2}{n}\left(1-\frac{n}{N}\right)\) where \(S^2=\frac{\sum(y_i-\bar Y)^2}{N-1}\) is the population variance and \((1-n/N)=(N-n)/N\) is the finite population correction (FPC).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(S^2/n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{S^2}{n}\cdot\dfrac{N-n}{N-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S^2/(N-n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S^2\cdot n/N\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Sampling Theory - Stratified Sampling</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In stratified random sampling, the optimal (Neyman) allocation of sample size \(n_h\) to stratum \(h\) is proportional to</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(N_h S_h\) (stratum size times stratum standard deviation)</strong></p><p>Neyman allocation: \(n_h\propto N_h S_h\). This minimizes \(\text{Var}(\bar y_{st})\) for fixed total \(n=\sum n_h\). Proportional allocation uses \(n_h\propto N_h\). Optimal allocation gives smaller variance than proportional, which in turn is better than equal allocation for heterogeneous strata.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(N_h S_h\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N_h\) only (proportional allocation)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S_h\) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N_h/S_h\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Sampling Theory - Ratio Estimator</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The ratio estimator \(\hat R=\bar y/\bar x\) for the population ratio \(R=\bar Y/\bar X\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) biased but consistent</strong></p><p>The ratio estimator \(\hat R=\bar y/\bar x\) is biased (bias \(\approx-\text{Cov}(\bar y,\bar x)/\bar X+R\text{Var}(\bar x)/\bar X^2\)) but the bias is \(O(1/n)\), so \(\hat R\to R\) in probability (consistent). Bias decreases as sample size grows.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Unbiased and consistent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Unbiased but inconsistent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Biased but consistent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Biased and inconsistent]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Sampling Theory - Systematic Sampling</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In systematic sampling, the sampling interval is \(k=N/n\). The method selects units \(r, r+k, r+2k,\ldots\) where \(r\) is chosen at random from \(\{1,\ldots,k\}\). A disadvantage is that</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) it may be inefficient if the population has periodic patterns with the same period as \(k\)</strong></p><p>If the population has a periodic trend with period \(k\), systematic sampling always hits the same phase of the cycle, giving a highly non-representative sample. For random-order populations, systematic sampling is approximately as efficient as SRSWOR.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It requires a complete sampling frame sorted in a specific order]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[It may be inefficient if the population has periodic patterns matching \(k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It cannot be used for large populations]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sample mean is always biased]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Sampling Theory - Cluster Sampling</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Compared to simple random sampling of the same size, cluster sampling is generally</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) less efficient (larger variance) when units within clusters are similar</strong></p><p>Cluster sampling efficiency depends on the intra-cluster correlation \(\rho\): when clusters are internally homogeneous (units within a cluster are similar, i.e., \(\rho>0\)), cluster sampling is less efficient than SRS. The design effect is approximately \(1+(m-1)\rho\) where \(m\) is cluster size.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[More efficient always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equally efficient always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Less efficient (larger variance) when units within clusters are similar]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[More efficient when cluster sizes vary widely]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Sampling Theory - Regression Estimator</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The regression estimator of the population mean \(\bar Y\) using auxiliary variable \(x\) with known mean \(\bar X\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\hat{\bar Y}_{reg}=\bar y+\hat b(\bar X-\bar x)\)</strong></p><p>The regression estimator adjusts \(\bar y\) using the known population mean \(\bar X\) of the auxiliary variable: \(\hat{\bar Y}_{reg}=\bar y+\hat b(\bar X-\bar x)\) where \(\hat b=s_{xy}/s_x^2\). It has smaller variance than \(\bar y\) when \(|\rho_{XY}|>0\), and is approximately unbiased.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\hat{\bar Y}_{reg}=\bar y+\hat b(\bar X-\bar x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat{\bar Y}_{reg}=\bar y/\bar x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat{\bar Y}_{reg}=\bar y\cdot\bar X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat{\bar Y}_{reg}=\bar X+\bar y\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Conditional Expectation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For jointly continuous \((X,Y)\) with joint density \(f(x,y)\), the conditional expectation \(E[X|Y=y]\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\int x\frac{f(x,y)}{f_Y(y)}\,dx\)</strong></p><p>The conditional density of \(X\) given \(Y=y\) is \(f_{X|Y}(x|y)=f(x,y)/f_Y(y)\). The conditional expectation is \(E[X|Y=y]=\int x f_{X|Y}(x|y)\,dx=\int xf(x,y)\,dx/f_Y(y)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\int x f(x,y)\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\int x f_X(x)\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\int x\frac{f(x,y)}{f_Y(y)}\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\int\!\int x f(x,y)\,dx\,dy\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Markov Inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Markov's inequality states that for a non-negative random variable \(X\) and \(a>0\),</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(P(X\geq a)\leq E[X]/a\)</strong></p><p>Markov's inequality: \(P(X\geq a)\leq E[X]/a\) for \(X\geq 0\). It follows from \(E[X]\geq E[X\cdot\mathbf{1}_{X\geq a}]\geq a\cdot P(X\geq a)\). Chebyshev's inequality is derived from Markov's applied to \((X-\mu)^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(X\geq a)\leq E[X]/a\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(X\geq a)\geq E[X]/a\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(X\geq a)=e^{-a}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(X\geq a)\leq E[X^2]/a^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Bayesian Estimation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In Bayesian estimation, the posterior distribution \(\pi(\theta|x)\propto\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(L(\theta;x)\pi(\theta)\)</strong></p><p>Bayes' theorem for inference: posterior \(\propto\) likelihood \(\times\) prior. The posterior \(\pi(\theta|x)\propto L(\theta;x)\pi(\theta)\) summarizes all information about \(\theta\) after observing \(x\). Point estimates: posterior mean (minimizes squared error loss), posterior median (minimizes absolute error), posterior mode (MAP).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi(\theta)\) only (prior)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(L(\theta;x)\cdot\pi(\theta)\) (likelihood times prior)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(L(\theta;x)/\pi(\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/L(\theta;x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Log-Normal</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(X\sim N(\mu,\sigma^2)\), then \(Y=e^X\) follows a log-normal distribution. The mean of \(Y\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(e^{\mu+\sigma^2/2}\)</strong></p><p>\(E[Y]=E[e^X]=M_X(1)=e^{\mu+\sigma^2/2}\) (using the MGF of the normal). The log-normal mean exceeds the median \(e^\mu\) due to right skewness. Log-normal models incomes, stock prices, and other multiplicative phenomena.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^\mu\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mu+\sigma^2/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(e^{\mu+\sigma^2/2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^{2\mu+\sigma^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== Final 53 questions to reach 150 ===== -->
+
+<question type="multichoice">
+  <name><text>Probability Theory - Weak Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A sequence of distribution functions \(F_n\) converges weakly to \(F\) (i.e., \(F_n\xrightarrow{w}F\)) if</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(F_n(x)\to F(x)\) at every continuity point \(x\) of \(F\)</strong></p><p>Weak convergence (convergence in distribution): \(F_n\xrightarrow{w}F\) means \(F_n(x)\to F(x)\) for all continuity points of \(F\). Portmanteau theorem gives equivalent conditions: \(E[g(X_n)]\to E[g(X)]\) for all bounded continuous \(g\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(F_n(x)\to F(x)\) for all \(x\in\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(F_n(x)\to F(x)\) at every continuity point \(x\) of \(F\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sup_x|F_n(x)-F(x)|\to 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F_n(x)\to F(x)\) in \(L^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Stable Distributions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A distribution is called stable if sums of i.i.d. copies have the same distribution up to location and scale. The only stable distribution with finite variance is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) the normal distribution</strong></p><p>Stable distributions are characterized by stability index \(\alpha\in(0,2]\). Only \(\alpha=2\) gives finite variance — the normal distribution. For \(\alpha<2\), the variance is infinite (e.g., Cauchy: \(\alpha=1\), Lévy: \(\alpha=1/2\)). The generalized CLT shows sums of i.i.d. heavy-tailed variables converge to stable laws.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The normal distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The Cauchy distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The exponential distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The Poisson distribution]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Delta Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The delta method states that if \(\sqrt{n}(\hat\theta-\theta)\xrightarrow{d}N(0,\sigma^2)\), then for a smooth function \(g\),</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\sqrt{n}(g(\hat\theta)-g(\theta))\xrightarrow{d}N(0,[g'(\theta)]^2\sigma^2)\)</strong></p><p>The delta method uses a first-order Taylor expansion: \(g(\hat\theta)\approx g(\theta)+g'(\theta)(\hat\theta-\theta)\). This gives the asymptotic distribution of \(g(\hat\theta)\), useful for constructing CIs for nonlinear functions of parameters.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{n}(g(\hat\theta)-g(\theta))\xrightarrow{d}N(0,\sigma^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g(\hat\theta)\xrightarrow{d}N(g(\theta),[g'(\theta)]^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sqrt{n}(g(\hat\theta)-g(\theta))\xrightarrow{d}N(0,[g'(\theta)]^2\sigma^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g(\hat\theta)\to g(\theta)\) in \(L^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Gaussian Process</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Gaussian process \(\{X_t\}_{t\in T}\) is completely characterized by its</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) mean function \(m(t)=E[X_t]\) and covariance function \(K(s,t)=\text{Cov}(X_s,X_t)\)</strong></p><p>For a Gaussian process, all finite-dimensional distributions are multivariate normal, fully determined by the mean and covariance functions. Brownian motion: \(m(t)=0\), \(K(s,t)=\min(s,t)\). The Ornstein-Uhlenbeck process: \(K(s,t)=\frac{\sigma^2}{2\theta}e^{-\theta|t-s|}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Mean function \(m(t)\) and covariance function \(K(s,t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Variance function only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All moments of every order]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The characteristic function at each time point]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - Fisher Exact Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Fisher's exact test for a \(2\times 2\) contingency table computes the \(p\)-value using</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) the hypergeometric distribution</strong></p><p>Given fixed marginal totals, under the null of independence, the cell count \(X\) follows a hypergeometric distribution. Fisher's exact test computes the exact \(p\)-value as \(P(\text{table as extreme or more}|H_0,\text{fixed margins})\). No large-sample approximation is needed.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The chi-squared approximation]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The hypergeometric distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The binomial distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The normal approximation]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Markov Chains - Chapman-Kolmogorov</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Chapman-Kolmogorov equations state that</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(P_{ij}^{(m+n)}=\sum_k P_{ik}^{(m)}P_{kj}^{(n)}\)</strong></p><p>Chapman-Kolmogorov: the \((m+n)\)-step transition probabilities satisfy \(P^{(m+n)}=P^{(m)}P^{(n)}\) (matrix product), or componentwise \(P_{ij}^{(m+n)}=\sum_k P_{ik}^{(m)}P_{kj}^{(n)}\). This follows from the law of total probability and the Markov property.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P_{ij}^{(m+n)}=P_{ij}^{(m)}+P_{ij}^{(n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P_{ij}^{(m+n)}=P_{ij}^{(m)}\cdot P_{ij}^{(n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P_{ij}^{(m+n)}=\displaystyle\sum_k P_{ik}^{(m)}P_{kj}^{(n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P_{ij}^{(m+n)}=P_{ij}^{(\min(m,n))}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Inversion Formula</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(X\) has characteristic function \(\phi(t)\), the distribution function can be recovered by the inversion formula. For a continuous density \(f\),</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(f(x)=\frac{1}{2\pi}\int_{-\infty}^\infty e^{-itx}\phi(t)\,dt\)</strong></p><p>The Fourier inversion formula recovers the density from the characteristic function: \(f(x)=\frac{1}{2\pi}\int e^{-itx}\phi(t)\,dt\) when \(\phi\in L^1\). This is the Fourier inversion theorem applied to probability distributions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(x)=\dfrac{1}{2\pi}\displaystyle\int_{-\infty}^\infty e^{-itx}\phi(t)\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x)=\displaystyle\int_{-\infty}^\infty e^{itx}\phi(t)\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x)=\phi(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x)=|\phi(x)|^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Method of Moments</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The method of moments estimator sets the first \(k\) population moments equal to the corresponding sample moments. For the Gamma(\(\alpha,\beta\)) distribution, the MOM estimator of \(\alpha\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\hat\alpha=\bar X^2/S^2\)</strong></p><p>Gamma(\(\alpha,\beta\)): \(E[X]=\alpha/\beta\), \(\text{Var}(X)=\alpha/\beta^2\). So \(\alpha=(\mu/\sigma)^2\) and \(\beta=\mu/\sigma^2\). MOM: replace \(\mu\to\bar X\), \(\sigma^2\to S^2\), giving \(\hat\alpha=\bar X^2/S^2\) and \(\hat\beta=\bar X/S^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\alpha=\bar X/S\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\hat\alpha=\bar X^2/S^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\alpha=S^2/\bar X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\alpha=n\bar X\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Kolmogorov Zero-One Law</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Kolmogorov's zero-one law states that for independent events, any tail event \(A\) (an event in \(\bigcap_{n=1}^\infty\sigma(X_{n+1},X_{n+2},\ldots)\)) has probability</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) either 0 or 1</strong></p><p>Kolmogorov's 0-1 law: the tail \(\sigma\)-algebra of independent random variables is trivial (every tail event has probability 0 or 1). Examples: \(P(\sum X_n\text{ converges})\in\{0,1\}\), \(P(\limsup X_n/\sqrt{2\log n}\leq 1)=1\) (Law of the Iterated Logarithm).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Exactly 1/2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Any value in \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Either 0 or 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always 0]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Dirichlet Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Dirichlet distribution \(\text{Dir}(\alpha_1,\ldots,\alpha_k)\) is the conjugate prior for</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) the Multinomial distribution</strong></p><p>Dirichlet-Multinomial conjugacy: if \(\mathbf{p}\sim\text{Dir}(\boldsymbol\alpha)\) and \(\mathbf{X}|\mathbf{p}\sim\text{Multinomial}(n,\mathbf{p})\), then \(\mathbf{p}|\mathbf{X}\sim\text{Dir}(\boldsymbol\alpha+\mathbf{X})\). The Dirichlet generalizes the Beta (case \(k=2\)) and is used in LDA topic models and Bayesian nonparametrics.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The Poisson distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The Multinomial distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The Normal distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The Exponential distribution]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Ornstein-Uhlenbeck Process</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Ornstein-Uhlenbeck (OU) process \(dX_t=-\theta X_t\,dt+\sigma\,dW_t\) (\(\theta>0\)) has stationary distribution</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(N(0,\sigma^2/(2\theta))\)</strong></p><p>The OU process is the unique stationary Gaussian Markov process. Its SDE has solution \(X_t=X_0e^{-\theta t}+\sigma\int_0^t e^{-\theta(t-s)}\,dW_s\). The stationary distribution is \(N(0,\sigma^2/(2\theta))\), approached exponentially fast at rate \(\theta\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(N\!\left(0,\dfrac{\sigma^2}{2\theta}\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(0,\sigma^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Exp}(\theta/\sigma^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(\theta,\sigma^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - AIC and BIC</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Akaike's Information Criterion (AIC) selects the model minimizing \(AIC=-2\hat\ell+2k\) where \(\hat\ell\) is the maximized log-likelihood and \(k\) is the number of parameters. The \(2k\) penalty term</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) penalizes model complexity to prevent overfitting</strong></p><p>AIC balances goodness-of-fit \(-2\hat\ell\) against model complexity \(2k\). BIC uses penalty \(k\ln n\) (stronger for large \(n\)), selecting more parsimonious models. AIC targets predictive accuracy; BIC targets model identification consistency. Neither is uniformly better.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Rewards larger models]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Penalizes model complexity to prevent overfitting]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is the sample size correction]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equals the log-likelihood at the null model]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Cumulants</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The cumulants \(\kappa_r\) of a distribution are defined via \(\ln M_X(t)=\sum_{r=1}^\infty\frac{\kappa_r}{r!}t^r\). The third cumulant \(\kappa_3\) measures</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) skewness (asymmetry)</strong></p><p>Key cumulants: \(\kappa_1=\mu\) (mean), \(\kappa_2=\sigma^2\) (variance), \(\kappa_3=E[(X-\mu)^3]\) (third central moment, measures skewness), \(\kappa_4=E[(X-\mu)^4]-3\sigma^4\) (excess kurtosis). For the normal distribution, all cumulants of order \(\geq 3\) are zero.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Kurtosis (tail heaviness)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Variance]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Skewness (asymmetry of the distribution)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The mean]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Sampling Theory - Horvitz-Thompson Estimator</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In probability proportional to size (PPS) sampling, the Horvitz-Thompson estimator of the population total \(Y=\sum_{i=1}^N y_i\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\hat Y_{HT}=\sum_{i\in s}\frac{y_i}{\pi_i}\)</strong></p><p>The Horvitz-Thompson estimator: \(\hat Y_{HT}=\sum_{i\in s}y_i/\pi_i\) where \(\pi_i=P(i\in s)\) is the inclusion probability of unit \(i\). It is unbiased for \(Y\) under any design. For SRSWOR: \(\pi_i=n/N\) and \(\hat Y_{HT}=N\bar y\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat Y_{HT}=N\bar y\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\hat Y_{HT}=\displaystyle\sum_{i\in s}\dfrac{y_i}{\pi_i}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat Y_{HT}=\sum_{i\in s}y_i\pi_i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat Y_{HT}=\bar y\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Law of the Iterated Logarithm</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Law of the Iterated Logarithm (LIL) for i.i.d. \(X_i\) with mean 0 and variance 1 states</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\limsup_{n\to\infty}\frac{S_n}{\sqrt{2n\log\log n}}=1\) a.s.</strong></p><p>The LIL gives the precise fluctuation rate of random walks: \(S_n/\sqrt{2n\log\log n}\) oscillates between \(-1\) and \(+1\) infinitely often. This is sharper than the CLT (\(S_n/\sqrt{n}\to N(0,1)\)) and the SLLN (\(S_n/n\to 0\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup_{n\to\infty}\dfrac{S_n}{\sqrt{n}}=1\) a.s.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup_{n\to\infty}\dfrac{S_n}{\sqrt{n\log n}}=1\) a.s.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\limsup_{n\to\infty}\dfrac{S_n}{\sqrt{2n\log\log n}}=1\) a.s.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup_{n\to\infty}\dfrac{S_n}{n}=1\) a.s.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Consistency of MLE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Under regularity conditions, the MLE \(\hat\theta_n\) is consistent, meaning</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\hat\theta_n\xrightarrow{P}\theta_0\) as \(n\to\infty\)</strong></p><p>The MLE is consistent (converges in probability to the true \(\theta_0\)) and asymptotically normal: \(\sqrt{n}(\hat\theta_n-\theta_0)\xrightarrow{d}N(0,I(\theta_0)^{-1})\). It achieves the Cramér-Rao lower bound asymptotically (asymptotic efficiency).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\hat\theta_n\xrightarrow{P}\theta_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\theta_n=\theta_0\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\theta_n\xrightarrow{d}N(\theta_0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[\hat\theta_n]=\theta_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Lévy Continuity Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Lévy's continuity theorem states that \(X_n\xrightarrow{d}X\) if and only if</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\phi_{X_n}(t)\to\phi_X(t)\) for all \(t\), where \(\phi\) denotes the characteristic function</strong></p><p>Lévy's theorem: convergence in distribution is equivalent to pointwise convergence of characteristic functions. This is the main tool for proving the CLT: compute \(\phi_{S_n/\sqrt{n}}(t)\to e^{-t^2/2}=\phi_{N(0,1)}(t)\), hence \(S_n/\sqrt{n}\to N(0,1)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(F_n(x)\to F(x)\) for all \(x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\phi_{X_n}(t)\to\phi_X(t)\) for all \(t\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X_n]\to E[X]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M_{X_n}(t)\to M_X(t)\) for all \(t\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Order Statistics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For i.i.d. sample of size \(n\) from CDF \(F\) with density \(f\), the density of the \(k\)-th order statistic \(X_{(k)}\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\frac{n!}{(k-1)!(n-k)!}[F(x)]^{k-1}[1-F(x)]^{n-k}f(x)\)</strong></p><p>The density of \(X_{(k)}\) is derived by considering that exactly \(k-1\) observations fall below \(x\), one at \(x\), and \(n-k\) above \(x\): \(f_{X_{(k)}}(x)=\frac{n!}{(k-1)!(n-k)!}F(x)^{k-1}[1-F(x)]^{n-k}f(x)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(nf(x)[F(x)]^{k-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n!\,f(x)\,[F(x)]^{n-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{n!}{(k-1)!(n-k)!}[F(x)]^{k-1}[1-F(x)]^{n-k}f(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\binom{n}{k}f(x)^k[1-F(x)]^{n-k}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Conditional Independence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>\(X\) and \(Y\) are conditionally independent given \(Z\) if</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(f(x,y|z)=f(x|z)f(y|z)\) for all \(x,y,z\)</strong></p><p>Conditional independence: \(X\perp Y|Z\) means knowing \(Z\) renders \(X\) and \(Y\) independent. This is the basis of graphical models (Bayesian networks, Markov random fields). Note: conditional independence does not imply marginal independence and vice versa.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(x,y|z)=f(x|z)f(y|z)\) for all \(x,y,z\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x,y)=f(x)f(y)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x|y,z)=f(x|z)\) and \(f(y|z)=f(y)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X\) and \(Y\) have zero correlation given \(Z\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - Sequential Tests</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Sequential Probability Ratio Test (SPRT) of Wald continues sampling while the likelihood ratio \(\Lambda_n\) satisfies \(B<\Lambda_n<A\) and stops when</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\Lambda_n\leq B\) (accept \(H_0\)) or \(\Lambda_n\geq A\) (reject \(H_0\))</strong></p><p>Wald's SPRT: boundaries \(A=(1-\beta)/\alpha\) and \(B=\beta/(1-\alpha)\). The SPRT minimizes expected sample size among all tests with the same error rates \(\alpha,\beta\). This is the fundamental sequential testing procedure.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\Lambda_n=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\Lambda_n\leq B\) (accept \(H_0\)) or \(\Lambda_n\geq A\) (reject \(H_0\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\geq n_0\) for some fixed sample size \(n_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\Lambda_n\) exceeds the chi-squared critical value]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Markov Chains - MCMC</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Metropolis-Hastings algorithm generates a Markov chain with stationary distribution \(\pi\) by accepting proposed moves from \(q(y|x)\) with probability</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\min\!\left(1,\frac{\pi(y)q(x|y)}{\pi(x)q(y|x)}\right)\)</strong></p><p>The MH acceptance ratio ensures detailed balance \(\pi(x)q(y|x)\alpha(x,y)=\pi(y)q(x|y)\alpha(y,x)\). This guarantees \(\pi\) is stationary. Special case: symmetric proposal \(q(y|x)=q(x|y)\) gives Metropolis algorithm with \(\alpha=\min(1,\pi(y)/\pi(x))\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi(y)/\pi(x)\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(q(y|x)/q(x|y)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\min\!\left(1,\dfrac{\pi(y)q(x|y)}{\pi(x)q(y|x)}\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\) always (random walk)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Linear Regression</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In simple linear regression \(Y_i=\beta_0+\beta_1 x_i+\varepsilon_i\), the OLS estimator of \(\beta_1\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\hat\beta_1=S_{xy}/S_{xx}\) where \(S_{xy}=\sum(x_i-\bar x)(Y_i-\bar Y)\)</strong></p><p>The OLS estimator minimizes \(\sum(Y_i-\hat Y_i)^2\). The solution is \(\hat\beta_1=S_{xy}/S_{xx}\) where \(S_{xx}=\sum(x_i-\bar x)^2\). Under normal errors, this is also the MLE and the BLUE (Gauss-Markov theorem).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\hat\beta_1=S_{xy}/S_{xx}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\beta_1=\bar Y/\bar x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\beta_1=S_{xx}/S_{xy}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\beta_1=\sum Y_i x_i/\sum x_i^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Mixture Distributions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A mixture distribution \(F(x)=\sum_{k=1}^K w_k F_k(x)\) (with \(w_k>0\), \(\sum w_k=1\)) has mean</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\sum_{k=1}^K w_k\mu_k\) where \(\mu_k=E[X|Z=k]\)</strong></p><p>For a mixture with component means \(\mu_k\): \(E[X]=\sum_k w_k\mu_k\) (weighted average of component means). The variance is \(\text{Var}(X)=\sum_k w_k(\sigma_k^2+\mu_k^2)-(\sum_k w_k\mu_k)^2\) (variance + between-component variance).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\max_k\mu_k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\sum_{k=1}^K w_k\mu_k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{k=1}^K\mu_k/K\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\prod_{k=1}^K\mu_k^{w_k}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Stopping Times</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A random variable \(\tau\) is a stopping time with respect to a filtration \(\{\mathcal{F}_n\}\) if</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\{\tau=n\}\in\mathcal{F}_n\) for all \(n\)</strong></p><p>A stopping time's occurrence at time \(n\) is determined by the information available up to time \(n\). Equivalently, \(\{\tau\leq n\}\in\mathcal{F}_n\). Examples: first passage times, first time a process exceeds a threshold. Stopping times are fundamental in optional stopping and the strong Markov property.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\{\tau=n\}\in\mathcal{F}_n\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\tau\) is independent of all \(\mathcal{F}_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\tau\leq n\) for some fixed \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{\tau>n\}\in\mathcal{F}_{n+1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Bootstrap</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The bootstrap estimates the sampling distribution of a statistic \(\hat\theta\) by</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) resampling with replacement from the observed sample and computing \(\hat\theta^*\) on each resample</strong></p><p>Efron's bootstrap: draw \(B\) samples of size \(n\) with replacement from \(\{x_1,\ldots,x_n\}\), compute \(\hat\theta^*_b\) for each. The bootstrap distribution of \(\hat\theta^*-\hat\theta\) approximates the sampling distribution of \(\hat\theta-\theta\). Used for CIs, bias/variance estimation, without distributional assumptions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Using the normal approximation to the sampling distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Sampling without replacement from the population]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Resampling with replacement from the observed data and computing \(\hat\theta^*\) on each resample]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Parametric simulation from the fitted model]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Coupling</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The coupling inequality states that for two probability measures \(\mu,\nu\) and any coupling \((X,Y)\) with marginals \(\mu,\nu\),</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\|\mu-\nu\|_{TV}\leq P(X\neq Y)\)</strong></p><p>The coupling inequality: total variation distance \(\|\mu-\nu\|_{TV}=\sup_A|\mu(A)-\nu(A)|\leq P(X\neq Y)\) for any coupling. The optimal (maximal) coupling achieves equality. Coupling is a key tool in Markov chain mixing time analysis.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|\mu-\nu\|_{TV}\geq P(X\neq Y)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\|\mu-\nu\|_{TV}\leq P(X\neq Y)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(X=Y)=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|\mu-\nu\|_{TV}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Entropy</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The entropy of a discrete random variable \(X\) with PMF \(p(x)\) is \(H(X)=-\sum_x p(x)\log p(x)\). It is maximized when</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(X\) has a uniform distribution over its support</strong></p><p>Maximum entropy: over all distributions on \(k\) outcomes, the uniform distribution \(p(x)=1/k\) maximizes entropy \(H=\log k\). This is the maximum entropy principle. For continuous distributions with fixed variance, the Gaussian maximizes differential entropy.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(X\) has a uniform distribution over its support]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X\) is deterministic (one outcome has probability 1)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X\) follows a geometric distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X\) has the minimum variance]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Continuous-Time Markov Chain</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a continuous-time Markov chain (CTMC) with generator matrix \(Q\) (where \(Q_{ii}=-\lambda_i\) and \(Q_{ij}=q_{ij}\geq 0\) for \(i\neq j\)), the Kolmogorov forward equations are</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\frac{d}{dt}P(t)=P(t)Q\)</strong></p><p>The forward equations \(P'(t)=P(t)Q\) have solution \(P(t)=e^{Qt}\). The backward equations are \(P'(t)=QP(t)\). The stationary distribution \(\pi\) satisfies \(\pi Q=\mathbf{0}\), \(\sum_i\pi_i=1\). For birth-death CTMCs, detailed balance \(\pi_i q_{ij}=\pi_j q_{ji}\) applies.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{d}{dt}P(t)=QP(t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{d}{dt}P(t)=P(t)+Q\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{d}{dt}P(t)=P(t)Q\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{d}{dt}P(t)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - EM Algorithm</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The EM algorithm for maximum likelihood with incomplete data alternates between the E-step (computing \(Q(\theta|\theta^{(t)})=E[\log L(\theta;\mathbf{X}_{complete})|\mathbf{X}_{obs},\theta^{(t)}]\)) and the M-step (maximizing \(Q\)). It is guaranteed that</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) the observed-data log-likelihood \(\ell(\theta^{(t+1)})\geq\ell(\theta^{(t)})\) at each step</strong></p><p>Each EM iteration does not decrease the observed log-likelihood. This monotone ascent is proven via Jensen's inequality applied to the log. EM converges to a local maximum (or saddle point) but may converge slowly near the optimum.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It always finds the global MLE]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The observed-data log-likelihood is non-decreasing at each step]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The complete-data log-likelihood decreases at each step]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It converges in a fixed number of steps]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Compound Poisson</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A compound Poisson random variable \(S=\sum_{i=1}^{N}X_i\), where \(N\sim\text{Poisson}(\lambda)\) and \(X_i\) i.i.d. with mean \(\mu_X\) and variance \(\sigma_X^2\), has variance</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\lambda(\sigma_X^2+\mu_X^2)=\lambda E[X^2]\)</strong></p><p>For a compound Poisson: \(E[S]=\lambda\mu_X\) and \(\text{Var}(S)=\lambda E[X^2]=\lambda(\sigma_X^2+\mu_X^2)\). This follows from the law of total variance: \(\text{Var}(S)=E[N]\text{Var}(X)+\text{Var}(N)(E[X])^2=\lambda\sigma_X^2+\lambda\mu_X^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda\sigma_X^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda\mu_X^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda(\sigma_X^2+\mu_X^2)=\lambda E[X^2]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda^2\mu_X^2+\lambda\sigma_X^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Doob's Maximal Inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Doob's \(L^p\) maximal inequality for a non-negative sub-martingale \(\{X_n\}\) (\(p>1\)) states</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(E[\max_{k\leq n}X_k^p]\leq\left(\frac{p}{p-1}\right)^p E[X_n^p]\)</strong></p><p>Doob's maximal inequality bounds the expected maximum of a sub-martingale: \(\|M_n^*\|_p\leq\frac{p}{p-1}\|X_n\|_p\) where \(M_n^*=\max_{k\leq n}X_k\). For \(p=2\): \(E[(M_n^*)^2]\leq 4E[X_n^2]\). Fundamental in martingale convergence theory.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(E\!\left[\max_{k\leq n}X_k^p\right]\leq\left(\dfrac{p}{p-1}\right)^{\!p}E[X_n^p]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(\max_{k\leq n}X_k\geq\lambda)\leq E[X_n]/\lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[\max_{k\leq n}X_k]=E[X_n]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X_n^p]\leq E[X_0^p]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Testing of Hypotheses - Wald Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Wald test statistic for \(H_0:\theta=\theta_0\) (based on MLE \(\hat\theta\) with estimated Fisher information \(\hat I\)) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(W=(\hat\theta-\theta_0)^2\hat I\sim\chi^2(1)\) asymptotically under \(H_0\)</strong></p><p>The Wald statistic \(W=(\hat\theta-\theta_0)^T[\text{Var}(\hat\theta)]^{-1}(\hat\theta-\theta_0)\) is asymptotically \(\chi^2(r)\) under \(H_0\) (where \(r\) is the dimension of \(\theta\)). The Wald, score (Rao), and LR tests are asymptotically equivalent first-order.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(W=\hat\theta-\theta_0\sim N(0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(W=(\hat\theta-\theta_0)^2\hat I\sim\chi^2(1)\) asymptotically]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W=\hat\theta/\theta_0\sim F(1,n-1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W=n(\hat\theta-\theta_0)\sim t(n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Dominated Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Dominated Convergence Theorem (DCT) states: if \(X_n\to X\) a.s. and \(|X_n|\leq Y\) a.s. for all \(n\) with \(E[Y]<\infty\), then</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(E[X_n]\to E[X]\)</strong></p><p>DCT (Lebesgue): the domination condition \(|X_n|\leq Y\in L^1\) allows interchanging limit and expectation. Also: \(E[|X_n-X|]\to 0\) (convergence in \(L^1\)). The DCT is fundamental in analysis and probability, allowing interchange of limit and integral.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(E[X_n]\to E[X]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_n\to X\) in probability but not a.s.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X_n]\leq E[Y]\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(X_n)\to\text{Var}(X)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Sampling Theory - Two-Phase Sampling</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In two-phase (double) sampling, the first phase selects a large sample to estimate auxiliary information, and the second phase selects a sub-sample. This design is used when</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) auxiliary data are expensive to collect but useful for stratification or estimation</strong></p><p>Two-phase sampling: Phase 1 collects cheap auxiliary data \(x\) on a large sample \(n'\); Phase 2 collects expensive \(y\) on a sub-sample \(n\). The Phase-1 information improves Phase-2 estimation (e.g., via stratification based on \(x\), or ratio/regression estimation with Phase-1 means).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The population is very small]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Complete enumeration is required]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Auxiliary data are expensive to collect but useful for improving efficiency]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All units have equal inclusion probabilities]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Pivot</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A pivotal quantity is a function \(g(X,\theta)\) whose distribution is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) free of all unknown parameters</strong></p><p>A pivot has a known distribution not depending on \(\theta\) (or any other nuisance parameter). Example: \((\bar X-\mu)/(S/\sqrt{n})\sim t(n-1)\) for normal data — the distribution is \(t\) regardless of \(\mu,\sigma^2\). Pivots are used to construct exact confidence intervals.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Normally distributed always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Free of all unknown parameters]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A sufficient statistic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always equal to zero under \(H_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Random Sums</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(N\) is a random variable independent of i.i.d. \(X_1,X_2,\ldots\), then \(\text{Var}(\sum_{i=1}^N X_i)\) equals</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(E[N]\text{Var}(X)+\text{Var}(N)(E[X])^2\)</strong></p><p>By the law of total variance: \(\text{Var}(S_N)=E[\text{Var}(S_N|N)]+\text{Var}(E[S_N|N])=E[N\text{Var}(X)]+\text{Var}(N\mu_X)=E[N]\sigma_X^2+\mu_X^2\text{Var}(N)\). For \(N\sim\text{Poisson}(\lambda)\): \(\text{Var}(S_N)=\lambda E[X^2]\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[N^2]\text{Var}(X)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(N)\text{Var}(X)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(E[N]\text{Var}(X)+\text{Var}(N)(E[X])^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((E[N])^2\text{Var}(X)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Conditional Variance</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The law of total variance states that for random variables \(X\) and \(Y\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (b)</strong></p><p>The law of total variance (Eve's law) decomposes variance as \(\text{Var}(X)=E[\text{Var}(X|Y)]+\text{Var}(E[X|Y])\), separating within-group and between-group variation.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(X)=E[\text{Var}(X|Y)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\text{Var}(X)=E[\text{Var}(X|Y)]+\text{Var}(E[X|Y])\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(X)=\text{Var}(E[X|Y])\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(X)=E[\text{Var}(X|Y)]\cdot\text{Var}(E[X|Y])\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Multivariate Normal Conditional</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \((X_1,X_2)\sim N_2(\mu,\Sigma)\) with \(\Sigma=\begin{pmatrix}\sigma_1^2 & \rho\sigma_1\sigma_2\\ \rho\sigma_1\sigma_2 & \sigma_2^2\end{pmatrix}\). The conditional distribution of \(X_1|X_2=x_2\) is normal with mean:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (c)</strong></p><p>The conditional mean is \(\mu_1+\rho\frac{\sigma_1}{\sigma_2}(x_2-\mu_2)\) and conditional variance is \(\sigma_1^2(1-\rho^2)\). The correlation \(\rho\) governs the regression of \(X_1\) on \(X_2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mu_1+\rho\sigma_1(x_2-\mu_2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mu_1+\frac{\sigma_1}{\sigma_2}(x_2-\mu_2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mu_1+\rho\frac{\sigma_1}{\sigma_2}(x_2-\mu_2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mu_1+\rho^2\frac{\sigma_1}{\sigma_2}(x_2-\mu_2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Factorization Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>According to the Neyman-Fisher factorization theorem, a statistic \(T(X)\) is sufficient for parameter \(\theta\) if and only if the joint density can be written as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (a)</strong></p><p>The factorization criterion states \(f(x;\theta)=g(T(x);\theta)\cdot h(x)\), where \(g\) depends on \(x\) only through \(T(x)\) and \(h\) does not depend on \(\theta\). This characterizes sufficiency.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(x;\theta)=g(T(x);\theta)\cdot h(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x;\theta)=g(x;\theta)\cdot h(T(x))\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x;\theta)=g(T(x))\cdot h(\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x;\theta)=g(x)\cdot h(T(x);\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - UMVUE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Lehmann-Scheffé theorem guarantees that if \(T\) is a complete sufficient statistic and \(\delta(T)\) is an unbiased estimator of \(\theta\), then \(\delta(T)\) is the:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (b)</strong></p><p>Lehmann-Scheffé: an unbiased estimator based on a complete sufficient statistic is the Uniformly Minimum Variance Unbiased Estimator (UMVUE). Completeness rules out other unbiased functions of \(T\) with lower variance.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Maximum likelihood estimator]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uniformly minimum variance unbiased estimator (UMVUE)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bayes estimator under squared error loss]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Minimax estimator]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Coefficient of Determination</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In simple linear regression \(Y=\beta_0+\beta_1 X+\varepsilon\), the coefficient of determination \(R^2\) satisfies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (d)</strong></p><p>\(R^2=\text{SSR}/\text{SST}=1-\text{SSE}/\text{SST}\in[0,1]\). It equals the square of the sample correlation \(r^2\) in simple linear regression and measures the proportion of total variance explained by the model.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(R^2=\text{SSE}/\text{SST}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R^2\) can exceed 1 for nonlinear models]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R^2=\text{SST}/\text{SSR}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(R^2=1-\text{SSE}/\text{SST}\in[0,1]\) and equals the square of the sample correlation \(r^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Hypothesis Testing - Type I and Type II Errors</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In hypothesis testing, if the significance level is \(\alpha\) and the power of the test is \(1-\beta\), which statement is correct?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (c)</strong></p><p>The size \(\alpha=P(\text{reject }H_0|H_0\text{ true})\) is the Type I error. \(\beta=P(\text{fail to reject }H_0|H_1\text{ true})\) is the Type II error. Power \(=1-\beta\). For fixed \(n\), decreasing \(\alpha\) increases \(\beta\); they cannot both be decreased simultaneously without increasing sample size.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Decreasing \(\alpha\) decreases \(\beta\) for fixed sample size]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\beta=P(\text{reject }H_0|H_0\text{ true})\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[For fixed \(n\), decreasing \(\alpha\) increases \(\beta\); power \(=1-\beta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\alpha\) and \(\beta\) can both be made arbitrarily small without changing \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Mann-Whitney Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Mann-Whitney U test is a nonparametric test for comparing two independent samples. Under \(H_0\) that the two populations have the same distribution with samples of sizes \(m\) and \(n\), the expected value of the U statistic is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (b)</strong></p><p>The Mann-Whitney U statistic has \(E[U]=mn/2\) and \(\text{Var}(U)=mn(m+n+1)/12\) under \(H_0\). It is equivalent to the Wilcoxon rank-sum test and tests whether \(P(X>Y)=1/2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(mn\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(mn/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(mn(m+n+1)/12\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((m+n)/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Convergence in Mean</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Convergence in \(r\)-th mean (\(L^r\) convergence), \(E[|X_n-X|^r]\to 0\), and almost sure convergence are related as follows:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (a)</strong></p><p>\(L^r\) convergence implies convergence in probability. Almost sure convergence also implies convergence in probability, but \(L^r\) convergence and a.s. convergence are independent (neither implies the other in general). Convergence in probability is the weakest of the three modes.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Both \(L^r\) convergence and a.s. convergence imply convergence in probability, but neither implies the other]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Almost sure convergence implies \(L^r\) convergence for all \(r\geq 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(L^r\) convergence implies almost sure convergence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Convergence in probability implies \(L^r\) convergence]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Brownian Bridge</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Brownian bridge \(\{B_t^0\}_{0\leq t\leq 1}\) is defined as \(B_t^0=W_t-tW_1\) where \(W_t\) is standard Brownian motion. The covariance \(\text{Cov}(B_s^0,B_t^0)\) for \(s\leq t\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (c)</strong></p><p>\(\text{Cov}(B_s^0,B_t^0)=\text{Cov}(W_s-sW_1,W_t-tW_1)=s-st=s(1-t)\) for \(s\leq t\). The Brownian bridge is pinned at 0 at both \(t=0\) and \(t=1\), and appears in the Kolmogorov-Smirnov test statistic's limiting distribution.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\min(s,t)=s\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(s(1-s)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(s(1-t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(t(1-s)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Renewal Reward Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a renewal reward process where inter-renewal times have mean \(\mu\) and each renewal cycle earns reward with mean \(r\), the long-run average reward per unit time is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (a)</strong></p><p>The renewal reward theorem states: long-run average reward \(=E[\text{reward per cycle}]/E[\text{cycle length}]=r/\mu\). This generalizes the elementary renewal theorem \(m(t)/t\to1/\mu\) to processes with rewards.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(r/\mu\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mu/r\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(r\cdot\mu\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(r/\mu^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Inverse Transform Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>To simulate a random variable \(X\) with CDF \(F\), the inverse transform method generates \(U\sim\text{Uniform}(0,1)\) and sets \(X=F^{-1}(U)\). This works because:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (b)</strong></p><p>If \(U\sim U(0,1)\), then \(P(F^{-1}(U)\leq x)=P(U\leq F(x))=F(x)\), so \(F^{-1}(U)\) has CDF \(F\). This is the probability integral transform in reverse and works for any continuous CDF.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(F^{-1}(U)\) always has a normal distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(F^{-1}(U)\leq x)=P(U\leq F(x))=F(x)\), so \(F^{-1}(U)\) has CDF \(F\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F^{-1}(U)\) is uniform regardless of \(F\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It only works when \(F\) is strictly increasing on all of \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Distributions - Extreme Value - Gumbel</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Gumbel distribution arises as the limiting distribution of the maximum of \(n\) i.i.d. random variables from distributions with exponential-type tails. Its CDF is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (d)</strong></p><p>The Gumbel (Type I extreme value) CDF is \(F(x)=\exp(-e^{-x})\). The three types of extreme value distributions (Gumbel, Fréchet, Weibull) are unified in the Generalized Extreme Value (GEV) distribution. The Gumbel arises for normal, exponential, and gamma parent distributions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(F(x)=1-e^{-x}\), \(x>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F(x)=\exp(-x^{-\alpha})\), \(x>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F(x)=1-\exp(-e^x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(F(x)=\exp(-e^{-x})\), \(x\in\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Bayesian Posterior Mean</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Suppose \(X_1,\ldots,X_n|\theta\sim\text{Poisson}(\theta)\) and the prior is \(\theta\sim\text{Gamma}(\alpha,\beta)\) (mean \(\alpha\beta\)). The posterior mean of \(\theta\) given \(\bar{X}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (c)</strong></p><p>With Gamma prior \(\text{Gamma}(\alpha,\beta)\) and Poisson likelihood, the posterior is \(\text{Gamma}(\alpha+n\bar{X},\beta/(n\beta+1))\). The posterior mean is \((\alpha+n\bar{X})/(n+1/\beta)\). This is a weighted average of prior mean \(\alpha\beta\) and MLE \(\bar{X}\), demonstrating Bayesian shrinkage.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}\) (same as MLE)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\alpha\beta\) (the prior mean)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[A weighted average of \(\alpha\beta\) and \(\bar{X}\), shrinking MLE toward the prior mean]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\bar{X}/\alpha\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Statistical Inference - Likelihood Ratio Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The generalized likelihood ratio test statistic is \(\Lambda=\sup_{\theta\in\Theta_0}L(\theta)/\sup_{\theta\in\Theta}L(\theta)\). Under \(H_0\), by Wilks' theorem, \(-2\log\Lambda\) converges in distribution to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (a)</strong></p><p>Wilks' theorem: under \(H_0\) and regularity conditions, \(-2\log\Lambda\xrightarrow{d}\chi^2(r)\) where \(r=\dim\Theta-\dim\Theta_0\) is the number of restrictions. This allows construction of asymptotically valid likelihood ratio tests.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\chi^2(r)\) where \(r=\dim\Theta-\dim\Theta_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Normal \(N(0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F(r,n-r)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\chi^2(n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Zero-One Laws</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,X_2,\ldots\) be i.i.d. random variables and \(\mathcal{T}=\bigcap_{n=1}^\infty\sigma(X_{n+1},X_{n+2},\ldots)\) be the tail \(\sigma\)-algebra. By Kolmogorov's 0-1 law, for any event \(A\in\mathcal{T}\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (b)</strong></p><p>Kolmogorov's 0-1 law: for i.i.d. sequences, tail events have probability 0 or 1. Tail events (like \(\{\limsup X_n/n>c\}\), \(\{\sum X_n\text{ converges}\}\)) are independent of any finite collection of \(X_i\) and hence independent of themselves, forcing \(P(A)\in\{0,1\}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(A)=1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(A)\in\{0,1\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(A)\) can be any value in \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(A)=0\) always]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Stochastic Processes - Martingale Optional Stopping</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\{M_n\}\) be a martingale with respect to \(\{\mathcal{F}_n\}\) and \(\tau\) a stopping time. Doob's optional stopping theorem guarantees \(E[M_\tau]=E[M_0]\) provided:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (c)</strong></p><p>Doob's optional stopping requires: (i) \(E[\tau]<\infty\), (ii) increments are uniformly bounded, or (iii) \(E[\sup_n|M_{n\wedge\tau}|]<\infty\). Under these conditions, optional stopping preserves the martingale property. Without conditions, the theorem can fail (e.g., doubling strategy in gambling).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\tau\) is always finite (no additional conditions required)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M_n\geq 0\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(E[\tau]<\infty\) and increments are uniformly bounded (or \(E[\sup_{n}|M_{n\wedge\tau}|]<\infty\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\tau\leq n\) for some fixed \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Probability Theory - Characteristic Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(X\) has a Cauchy distribution with location 0 and scale 1, its characteristic function \(\phi_X(t)=E[e^{itX}]\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (a)</strong></p><p>The standard Cauchy characteristic function is \(\phi_X(t)=e^{-|t|}\). This is not differentiable at \(t=0\), consistent with the fact that Cauchy has no finite moments. The Lévy-Khintchine representation shows it is a stable distribution with index \(\alpha=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(e^{-|t|}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^{-t^2/2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\frac{1}{1+t^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^{-|t|^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
 </quiz>
