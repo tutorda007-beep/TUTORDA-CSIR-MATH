@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- ===== CATEGORY: Unit 2 / Part B / Complex Analysis ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 2 - Algebra, Complex Analysis, Topology/Part B - Complex Analysis</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Cauchy-Riemann Equations</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Let \(f(z) = u(x,y) + iv(x,y)\) be a complex function. The Cauchy-Riemann equations are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>The Cauchy-Riemann (CR) equations are \(\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}\) and \(\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}\). They are necessary conditions for complex differentiability. If the CR equations hold and the partial derivatives are continuous, then \(f\) is analytic (holomorphic).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(u_x = v_y\) and \(u_y = -v_x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u_x = -v_y\) and \(u_y = v_x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u_x = v_x\) and \(u_y = v_y\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u_x = u_y\) and \(v_x = v_y\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Cauchy's Integral Formula</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(f\) is analytic inside and on a simple closed contour \(C\), and \(a\) is a point inside \(C\), then by Cauchy's Integral Formula:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Cauchy's Integral Formula: \(f(a) = \dfrac{1}{2\pi i}\oint_C \dfrac{f(z)}{z-a}\,dz\). This shows that the value of an analytic function at any interior point is completely determined by its values on the boundary. The generalisation gives \(f^{(n)}(a) = \dfrac{n!}{2\pi i}\oint_C \dfrac{f(z)}{(z-a)^{n+1}}\,dz\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\oint_C f(z)\,dz = 2\pi i\,f(a)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(a) = \dfrac{1}{2\pi i}\oint_C \dfrac{f(z)}{z - a}\,dz\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\oint_C \dfrac{f(z)}{z-a}\,dz = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(a) = \dfrac{1}{\pi i}\oint_C f(z)\,dz\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Liouville's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Liouville's theorem in complex analysis states that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Liouville's theorem: every bounded entire function is constant. An entire function is one analytic on all of \(\mathbb{C}\). The Fundamental Theorem of Algebra is a corollary: a non-constant polynomial has a root in \(\mathbb{C}\) (if not, \(1/p(z)\) would be bounded and entire, hence constant).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Every analytic function on a domain is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every bounded function is analytic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Every bounded entire function is constant]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every entire function is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Residue Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(f\) is analytic inside and on a simple closed contour \(C\) except at finitely many isolated singularities \(z_1, z_2, \ldots, z_n\) inside \(C\), then \(\oint_C f(z)\,dz\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Residue Theorem: \(\oint_C f(z)\,dz = 2\pi i \sum_{k=1}^n \text{Res}(f, z_k)\). The residue of \(f\) at a simple pole \(z_k\) is \(\lim_{z\to z_k}(z-z_k)f(z)\). This theorem is the main tool for evaluating real integrals via contour integration.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(2\pi i \displaystyle\sum_{k=1}^n \operatorname{Res}(f,\,z_k)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi i \displaystyle\sum_{k=1}^n \operatorname{Res}(f,\,z_k)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\pi \displaystyle\sum_{k=1}^n \operatorname{Res}(f,\,z_k)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Essential Singularity (Casorati-Weierstrass)</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Near an essential singularity \(z_0\) of an analytic function \(f\), the image \(f(B(z_0, \delta) \setminus \{z_0\})\) for any \(\delta > 0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Casorati-Weierstrass theorem: near an essential singularity, the image is dense in \(\mathbb{C}\). The stronger Picard's Great Theorem says the image actually omits at most one complex value. Example: \(e^{1/z}\) has an essential singularity at \(0\) and takes every non-zero value infinitely many times near \(0\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Dense in \(\mathbb{C}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A single point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Empty]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Maximum Modulus Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The Maximum Modulus Principle for analytic functions states that if \(f\) is non-constant and analytic on a bounded domain \(D\), then \(|f(z)|\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Maximum Modulus Principle: if \(f\) is analytic and non-constant on a bounded domain \(D\), then \(|f|\) attains its maximum on the boundary \(\partial D\), not in the interior. Equivalently, a non-constant analytic function has no interior maximum of its modulus. The minimum modulus principle (for \(f \neq 0\)) is analogous.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Attains its maximum at an interior point of \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Attains its maximum on the boundary \(\partial D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is constant on \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has no maximum]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Laurent Series Region</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The Laurent series of \(f(z)\) about a singularity \(z_0\) is valid in an annulus \(r < |z - z_0| < R\). If the principal part (terms with negative powers of \(z - z_0\)) has infinitely many non-zero terms, the singularity at \(z_0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Classification via Laurent series: if the principal part has no terms, the singularity is removable; finitely many terms (up to \((z-z_0)^{-m}\)) means a pole of order \(m\); infinitely many terms means an essential singularity. Example: \(e^{1/z} = \sum_{n=0}^\infty \frac{1}{n! z^n}\) has infinitely many negative-power terms at \(z=0\), so \(0\) is essential.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Removable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A pole of finite order]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Essential]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A branch point]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Mobius Transformation</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>A Möbius transformation (linear fractional transformation) \(w = \dfrac{az+b}{cz+d}\) with \(ad - bc \neq 0\) maps:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Möbius transformations map the extended complex plane \(\hat{\mathbb{C}} = \mathbb{C} \cup \{\infty\}\) to itself bijectively. They map circles and lines to circles and lines (lines are circles through \(\infty\)). They are conformal (angle-preserving) and form a group under composition.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Circles and lines to circles and lines in \(\hat{\mathbb{C}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Lines to lines only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Circles to ellipses]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The upper half-plane to the lower half-plane only]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Analytic Function Constant if Real Part Constant</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(f = u + iv\) is analytic on a domain \(D\) and \(u\) is constant on \(D\), then \(f\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>If \(u = \text{const}\), then \(u_x = u_y = 0\). By CR equations: \(v_y = u_x = 0\) and \(v_x = -u_y = 0\). So \(v\) is also constant, and \(f = u + iv\) is constant. Similarly, if \(|f|\) is constant on a connected domain, then \(f\) is constant.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Has purely imaginary derivative]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Is constant on \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has zero imaginary part]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is not necessarily constant]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Argument Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The Argument Principle states: if \(f\) is meromorphic inside a simple closed contour \(C\) with \(N\) zeros and \(P\) poles (counted with multiplicity) inside \(C\), then \(\dfrac{1}{2\pi i}\oint_C \dfrac{f'(z)}{f(z)}\,dz\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Argument Principle: \(\frac{1}{2\pi i}\oint_C \frac{f'}{f}\,dz = N - P\), where \(N\) = number of zeros and \(P\) = number of poles inside \(C\). The left side equals the winding number of \(f(C)\) around 0, or \(\frac{1}{2\pi}\Delta_C \arg(f)\). Rouché's theorem is a corollary.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(N - P\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N + P\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N \cdot P\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 2 / Part B / Group Theory ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 2 - Algebra, Complex Analysis, Topology/Part B - Group Theory</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Lagrange's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Lagrange's theorem in group theory states that if \(H\) is a subgroup of a finite group \(G\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Lagrange's theorem: \(|H|\) divides \(|G|\), and \([G:H] = |G|/|H|\) is the index. The cosets of \(H\) partition \(G\) into \([G:H]\) disjoint equal-sized parts. Corollary: the order of any element divides \(|G|\). The converse is false in general (not every divisor of \(|G|\) gives a subgroup of that order).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(|G|\) divides \(|H|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(|H|\) divides \(|G|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|G| = |H|^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|G| = 2|H|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Sylow First Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Let \(G\) be a finite group and \(p\) a prime. If \(p^k\) divides \(|G|\), then \(G\) has a subgroup of order:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Sylow's First Theorem: if \(p^k \mid |G|\), then \(G\) has a subgroup of order \(p^k\). In particular, if \(p^m\) is the highest power of \(p\) dividing \(|G|\), there exists a subgroup of order \(p^m\) (a Sylow \(p\)-subgroup). The number of Sylow \(p\)-subgroups satisfies specific congruence conditions (Sylow's Third Theorem).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(p^k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|G|/p^k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p^k - 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Normal Subgroup Characterization</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>A subgroup \(N\) of \(G\) is normal in \(G\) if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>\(N \trianglelefteq G\) iff \(gNg^{-1} = N\) for all \(g \in G\), equivalently \(gN = Ng\) for all \(g\) (left cosets = right cosets). Normal subgroups are exactly the kernels of homomorphisms. The quotient group \(G/N\) is well-defined iff \(N\) is normal.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(gNg^{-1} = N\) for all \(g \in G\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N\) is abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|N| = |G|/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N\) has prime order]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Order of Element in Z_n</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>In the cyclic group \(\mathbb{Z}_{12}\), the order of the element \(4\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>In \(\mathbb{Z}_n\), the order of element \(k\) is \(n/\gcd(n,k)\). Here: \(\gcd(12,4) = 4\), so order\((4) = 12/4 = 3\). Verify: \(4 + 4 + 4 = 12 \equiv 0 \pmod{12}\). Subgroups of \(\mathbb{Z}_{12}\) have orders \(1, 2, 3, 4, 6, 12\) (divisors of 12).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(6\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(12\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - First Isomorphism Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Let \(\phi : G \to H\) be a group homomorphism. By the First Isomorphism Theorem:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>First Isomorphism Theorem: \(G/\ker\phi \cong \text{Im}(\phi)\). The quotient of \(G\) by the kernel is isomorphic to the image. Combined with Lagrange: \(|G| = |\ker\phi| \cdot |\text{Im}\,\phi|\) (for finite groups).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(G \cong H\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ker\phi \cong \text{Im}(\phi)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(G/\ker\phi \cong \text{Im}(\phi)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G/\text{Im}(\phi) \cong \ker\phi\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Centre of S_n for n ≥ 3</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The centre \(Z(S_n)\) of the symmetric group \(S_n\) for \(n \geq 3\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>For \(n \geq 3\), the centre \(Z(S_n) = \{e\}\) (trivial). Every non-identity permutation fails to commute with some other permutation. In contrast, \(Z(S_2) = S_2\). The alternating group \(A_n\) is simple for \(n \geq 5\), and \(Z(A_n) = \{e\}\) for \(n \geq 4\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Trivial: \(Z(S_n) = \{e\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S_n\) itself]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The alternating group \(A_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A cyclic group of order \(2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 2 / Part B / Ring and Field Theory ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 2 - Algebra, Complex Analysis, Topology/Part B - Ring and Field Theory</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Maximal Ideal in Z</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>In the ring \(\mathbb{Z}\) of integers, every maximal ideal is of the form:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>In \(\mathbb{Z}\), every ideal is of the form \((n) = n\mathbb{Z}\). An ideal \((p)\) is maximal iff \(\mathbb{Z}/(p)\) is a field, which happens iff \(p\) is prime. So maximal ideals in \(\mathbb{Z}\) are exactly the ideals generated by primes. \(\mathbb{Z}/p\mathbb{Z} \cong \mathbb{F}_p\) (the field with \(p\) elements).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\((n)\) for some positive integer \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((n)\) for some composite integer \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\((p)\) for some prime \(p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((1) = \mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Irreducibility by Eisenstein</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>By Eisenstein's criterion with the prime \(p = 2\), the polynomial \(x^4 + 2x^3 + 4x + 2\) over \(\mathbb{Q}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Eisenstein with \(p=2\): check that \(2 \nmid 1\) (leading coeff), \(2 \mid 2, 0, 4, 2\) (non-leading coefficients), and \(4 \nmid 2\) (constant term). Here the coefficients are \(1, 2, 0, 4, 2\): \(p=2\) divides \(2, 0, 4, 2\) but not the leading \(1\), and \(p^2=4\) does not divide the constant \(2\). So it is irreducible over \(\mathbb{Q}\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Irreducible over \(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reducible: factors into two quadratics over \(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reducible: has a rational root]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Irreducible over \(\mathbb{Z}\) but reducible over \(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Integral Domain has No Zero Divisors</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>A commutative ring \(R\) with unity is an integral domain if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>An integral domain has no zero divisors: \(ab = 0 \Rightarrow a=0\) or \(b=0\). Equivalently, the cancellation law holds: \(ab=ac\) and \(a\neq 0\) implies \(b=c\). Examples: \(\mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}\), and \(\mathbb{Z}[x]\). Note: \(\mathbb{Z}_6\) is NOT an integral domain since \(2\cdot3=0\) in \(\mathbb{Z}_6\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Every element has a multiplicative inverse]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[It has no zero divisors (\(ab = 0 \Rightarrow a = 0\) or \(b = 0\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is a field]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is finite]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Number of Elements in Finite Field GF(p^n)</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>A finite field exists with exactly \(q\) elements if and only if \(q\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Finite fields (Galois fields) exist with exactly \(p^n\) elements for any prime \(p\) and positive integer \(n\), and for no other cardinalities. The unique (up to isomorphism) field with \(p^n\) elements is denoted \(\mathbb{F}_{p^n}\) or \(\text{GF}(p^n)\). Any two finite fields with the same number of elements are isomorphic.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[A prime power: \(q = p^n\) for some prime \(p\) and \(n \geq 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Any prime number]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Any positive integer]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Any composite number]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 2 / Part B / Topology ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 2 - Algebra, Complex Analysis, Topology/Part B - Topology</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Hausdorff Space Separation</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>A topological space \(X\) is Hausdorff (\(T_2\)) if and only if for any two distinct points \(x, y \in X\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Hausdorff (T2) spaces: for distinct \(x, y\), there exist disjoint open sets \(U \ni x\) and \(V \ni y\). Key facts: metric spaces are Hausdorff; compact subsets of Hausdorff spaces are closed; Hausdorff implies \(T_1\) (singletons are closed). Compact Hausdorff spaces have many pleasant properties.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[There is a continuous path from \(x\) to \(y\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[There exist disjoint open sets \(U \ni x\) and \(V \ni y\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There is an open set containing both \(x\) and \(y\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X\) is metrizable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Compact Subset of Hausdorff Space is Closed</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>In a Hausdorff topological space, every compact subset is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Every compact subset of a Hausdorff space is closed. Proof: if \(K\) is compact and \(x \notin K\), for each \(k \in K\) separate \(x\) and \(k\) by disjoint open sets; use compactness to get a finite cover showing \(x\) has a neighborhood disjoint from \(K\). In non-Hausdorff spaces, compact sets need not be closed.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Closed]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Open]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Dense]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Connected]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Tychonoff Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The Tychonoff theorem states that an arbitrary product of topological spaces is compact if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Tychonoff's theorem: the product \(\prod_{\alpha} X_\alpha\) (with product topology) is compact iff every \(X_\alpha\) is compact. It holds for arbitrary (even uncountable) index sets. The proof uses the axiom of choice (Zorn's lemma). It is one of the most important theorems in topology.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Each factor space \(X_\alpha\) is compact]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The index set is finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Each factor is Hausdorff]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The product is metrizable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Connected Space Path-Connected</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Which of the following implications is TRUE for topological spaces?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Path-connected \(\Rightarrow\) connected (always true: if \(X\) is path-connected and \(X = A \cup B\) is a separation, then a path between \(a \in A\) and \(b \in B\) gives a connected set meeting both open sets, contradiction). But connected does NOT imply path-connected (counterexample: the topologist's sine curve \(\{(x,\sin(1/x)): x>0\} \cup \{0\}\times[-1,1]\) is connected but not path-connected).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Connected \(\Rightarrow\) path-connected]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Path-connected \(\Rightarrow\) connected]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Compact \(\Rightarrow\) connected]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Hausdorff \(\Rightarrow\) compact]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Quotient Topology</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The quotient space \([0,1]/\{0,1\}\) (obtained by identifying the two endpoints of \([0,1]\)) is homeomorphic to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Identifying the endpoints 0 and 1 of \([0,1]\) glues them together, creating a loop. The resulting quotient space is homeomorphic to the circle \(S^1\). Similarly, \([0,1]^2\) with opposite edges identified gives a torus.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The circle \(S^1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sphere \(S^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 2 / Part C / Complex Analysis ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 2 - Algebra, Complex Analysis, Topology/Part C - Complex Analysis</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Rouché's Theorem Application</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>By Rouché's theorem, the number of zeros of \(f(z) = z^5 + 3z + 1\) inside the circle \(|z| = 2\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Rouché's theorem: if \(|h(z)| < |g(z)|\) on \(C\), then \(g\) and \(g+h\) have the same number of zeros inside \(C\). On \(|z|=2\): \(|z^5| = 32\) and \(|3z+1| \leq 3(2)+1=7 < 32\). Take \(g=z^5\), \(h=3z+1\). So \(z^5+3z+1\) has the same number of zeros as \(z^5\) inside \(|z|=2\), which is \(5\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Residue at Essential Singularity e^(1/z)</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The residue of \(f(z) = e^{1/z}\) at \(z = 0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Laurent series: \(e^{1/z} = \sum_{n=0}^\infty \frac{1}{n!\,z^n} = 1 + \frac{1}{z} + \frac{1}{2z^2} + \cdots\). The residue is the coefficient of \(1/z\), which is \(1\). Note: \(z=0\) is an essential singularity (principal part has infinitely many terms).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Contour Integral of 1/(z^2+1)</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>Using the residue theorem, \(\displaystyle\int_{-\infty}^{\infty} \frac{dx}{1+x^2}\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>The function \(\frac{1}{1+z^2}\) has poles at \(z = \pm i\). The upper half-plane contains the pole \(z=i\). Residue at \(z=i\): \(\lim_{z\to i}(z-i)\frac{1}{(z-i)(z+i)} = \frac{1}{2i}\). By residue theorem: integral \(= 2\pi i \cdot \frac{1}{2i} = \pi\). This matches the known result \(\arctan(x)\Big|_{-\infty}^{\infty} = \pi\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\pi}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\pi\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Open Mapping Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The Open Mapping Theorem states that if \(f\) is a non-constant analytic function on a domain \(D \subset \mathbb{C}\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Open Mapping Theorem: every non-constant analytic function on a domain maps open sets to open sets. This is a deep result — it fails for real differentiable functions (e.g., \(f(x)=x^2\) maps \((-1,1)\) to \([0,1)\), which is not open). As a corollary, the image of a bounded domain cannot be contained in the boundary.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) maps open subsets of \(D\) to open subsets of \(\mathbb{C}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) maps closed sets to closed sets]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is surjective onto \(\mathbb{C}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) maps connected sets to connected sets only]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Conformal Map Upper Half-Plane to Disk</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>A conformal map from the upper half-plane \(\mathbb{H} = \{z : \text{Im}(z) > 0\}\) to the open unit disk \(\mathbb{D} = \{w : |w| < 1\}\) is given by:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>The Cayley map \(w = \frac{z-i}{z+i}\) maps \(\mathbb{H}\) conformally onto \(\mathbb{D}\). When \(\text{Im}(z) > 0\): \(|z-i|^2 = x^2+(y-1)^2 < x^2+(y+1)^2 = |z+i|^2\), so \(|w|<1\). The inverse is \(z = i\frac{1+w}{1-w}\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(w = \dfrac{z+i}{z-i}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(w = \dfrac{z-i}{z+i}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(w = \dfrac{z-1}{z+1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(w = e^{iz}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 2 / Part C / Group and Ring Theory ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 2 - Algebra, Complex Analysis, Topology/Part C - Group and Ring Theory</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Sylow Third Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>Let \(G\) be a group of order \(15\). By the Sylow theorems, \(G\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>By Sylow: the number \(n_5\) of Sylow 5-subgroups divides 3 and \(\equiv 1 \pmod 5\), so \(n_5 = 1\). Similarly \(n_3 \equiv 1 \pmod 3\) and \(n_3 \mid 5\), giving \(n_3 = 1\). Both Sylow subgroups are normal, so \(G \cong \mathbb{Z}_3 \times \mathbb{Z}_5 \cong \mathbb{Z}_{15}\), which is cyclic.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Is cyclic (isomorphic to \(\mathbb{Z}_{15}\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has a non-trivial centre]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is non-abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has exactly 3 Sylow 5-subgroups]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Simple Group A_5</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The alternating group \(A_5\) (even permutations of 5 elements) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>\(A_5\) has order \(5!/2 = 60\) and is simple (no proper non-trivial normal subgroups). It is the smallest non-abelian simple group. The simplicity of \(A_5\) shows that the general quintic polynomial is not solvable by radicals (Galois theory). \(A_n\) is simple for all \(n \geq 5\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Solvable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Simple (has no proper non-trivial normal subgroup)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cyclic]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Galois Group of x^4 - 2</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The degree of the splitting field of \(x^4 - 2\) over \(\mathbb{Q}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>The roots of \(x^4-2\) are \(\sqrt[4]{2}, i\sqrt[4]{2}, -\sqrt[4]{2}, -i\sqrt[4]{2}\). The splitting field is \(\mathbb{Q}(\sqrt[4]{2}, i)\). We have \([\mathbb{Q}(\sqrt[4]{2}):\mathbb{Q}] = 4\) (since \(x^4-2\) is irreducible by Eisenstein) and \([\mathbb{Q}(\sqrt[4]{2}, i):\mathbb{Q}(\sqrt[4]{2})] = 2\). So the degree is \(4 \times 2 = 8\), and the Galois group is the dihedral group \(D_4\) of order 8.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(16\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(8\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 2 / Part C / Topology ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 2 - Algebra, Complex Analysis, Topology/Part C - Topology</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Urysohn Metrization Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>By Urysohn's Metrization Theorem, a second-countable regular (\(T_3\)) Hausdorff space is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Urysohn's Metrization Theorem: every second-countable, regular (T3), Hausdorff space is metrizable (homeomorphic to a subset of the Hilbert cube \([0,1]^\omega\)). Equivalently, a second-countable normal Hausdorff space is metrizable. This gives a topological characterisation of metrizability in the separable case.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Compact]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Metrizable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Locally compact]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Completely metrizable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Fundamental Group of Circle</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The fundamental group \(\pi_1(S^1)\) of the circle \(S^1\) is isomorphic to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>\(\pi_1(S^1) \cong \mathbb{Z}\). Loops on \(S^1\) are classified by their winding number (an integer). The generator is a loop that winds once around the circle. For spheres: \(\pi_1(S^n) = 0\) for \(n \geq 2\). For the torus: \(\pi_1(T^2) \cong \mathbb{Z}^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The trivial group \(\{0\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z} \times \mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Connectedness of GL_n(R)</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The general linear group \(GL_n(\mathbb{R}) = \{A \in M_n(\mathbb{R}) : \det A \neq 0\}\) with the subspace topology from \(M_n(\mathbb{R}) \cong \mathbb{R}^{n^2}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>\(GL_n(\mathbb{R})\) is NOT connected: it has two connected components separated by the sign of the determinant — matrices with \(\det > 0\) (including \(I\)) and matrices with \(\det < 0\). Each component is path-connected. The component of the identity is \(GL_n^+(\mathbb{R}) = \{A : \det A > 0\}\). In contrast, \(GL_n(\mathbb{C})\) is connected.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Connected with one component]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Disconnected with exactly two path-connected components]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Compact]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Simply connected]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Compact Metric Space is Complete and Totally Bounded</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>A metric space \((X,d)\) is compact if and only if it is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>For metric spaces: compact \(\Leftrightarrow\) complete and totally bounded \(\Leftrightarrow\) sequentially compact (every sequence has a convergent subsequence). Totally bounded means: for every \(\epsilon>0\), \(X\) can be covered by finitely many balls of radius \(\epsilon\). This characterisation fails for general topological spaces.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Complete and totally bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Complete and bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded and separable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Hausdorff and bounded]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>
