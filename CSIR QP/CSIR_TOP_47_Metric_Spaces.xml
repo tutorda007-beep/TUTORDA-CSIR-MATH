@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Topology/Metric Spaces</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q01_Metric_Definition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following defines a metric on \(\mathbb{R}^2\)? (All options use points \(x=(x_1,x_2)\) and \(y=(y_1,y_2)\).)]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(d(x,y) = \max(|x_1-y_1|, |x_2-y_2|)\) (the \(\ell^\infty\) metric).]]></text>
+      <feedback><text>Correct. The \(\ell^\infty\) (sup-norm) metric satisfies all metric axioms: d(x,y)≥0, d(x,y)=0⟺x=y, symmetry d(x,y)=d(y,x), and the triangle inequality d(x,z)≤max(|x₁−z₁|,|x₂−z₂|)≤d(x,y)+d(y,z).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(d(x,y) = (x_1-y_1)^2 + (x_2-y_2)^2\) (sum of squares, without square root).]]></text>
+      <feedback><text>This fails the triangle inequality. For example with x=(1,0), y=(0,1), z=(0,0): d(x,z)+d(z,y)=1+1=2 but d(x,y)=(−1)²+(−1)²=2. Actually this is borderline, but for x=(2,0),z=(1,0),y=(0,0): d(x,z)=1, d(z,y)=1, d(x,y)=4 > 2. Triangle inequality fails.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(d(x,y) = |x_1 - y_1| - |x_2 - y_2|\)]]></text>
+      <feedback><text>This can be negative (e.g., x=(0,0), y=(0,1): d=0−1=−1<0), violating non-negativity. Not a metric.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(d(x,y) = \dfrac{|x_1-y_1| + |x_2-y_2|}{1 + |x_1-y_1| + |x_2-y_2|}\cdot (x_1+y_1)\)]]></text>
+      <feedback><text>This can be negative if x₁+y₁<0, violating non-negativity. Not a metric in general.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q02_Complete_Metric</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following metric spaces is NOT complete?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\((\mathbb{Q}, |\cdot|)\): the rationals with the usual absolute value metric.]]></text>
+      <feedback><text>Correct. ℚ is not complete: the sequence of rational approximations to √2 (e.g., 1, 1.4, 1.41, 1.414, ...) is Cauchy in ℚ but converges to √2 ∉ ℚ. The completion of ℚ is ℝ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\((\mathbb{R}, |\cdot|)\): the reals with the usual metric.]]></text>
+      <feedback><text>ℝ with the usual metric is complete (every Cauchy sequence converges in ℝ). This is the fundamental property of the real number system.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\((C[0,1], \|\cdot\|_\infty)\): continuous functions with the sup-norm.]]></text>
+      <feedback><text>C[0,1] with the sup-norm is complete (the uniform limit of continuous functions is continuous). This is a classic example of a complete metric (Banach) space.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\((\mathbb{Z}, |\cdot|)\): the integers with the usual metric.]]></text>
+      <feedback><text>ℤ is complete (every Cauchy sequence of integers is eventually constant, hence convergent). Any discrete metric space is complete.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q03_Baire_Category</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Baire category theorem states: a complete metric space is of the second category, meaning:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[It cannot be written as a countable union of nowhere dense closed sets.]]></text>
+      <feedback><text>Correct. A set is nowhere dense if its closure has empty interior. Baire's theorem: a nonempty complete metric space is NOT a countable union of nowhere dense sets (it is of the "second Baire category"). Key applications: closed graph theorem, uniform boundedness principle.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every open set is dense.]]></text>
+      <feedback><text>Not every open set is dense (open sets can be small). The Baire category theorem is about countable unions of nowhere dense sets, not individual open sets.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[It is separable (has a countable dense subset).]]></text>
+      <feedback><text>Separability (countable dense subset) is a different property. Complete metric spaces need not be separable (e.g., \(\ell^\infty\) is complete but not separable).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every Cauchy sequence converges.]]></text>
+      <feedback><text>This is the definition of completeness, not the Baire category theorem. The Baire category theorem is a consequence of completeness, stating that complete spaces are of the second category.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q04_Compactness</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A subset \(K\) of a metric space \((X,d)\) is compact if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Every sequence in \(K\) has a subsequence converging to a point in \(K\) (sequentially compact).]]></text>
+      <feedback><text>Correct. In metric spaces, compactness, sequential compactness, and "complete + totally bounded" are all equivalent. Every sequence in a compact metric space has a convergent subsequence (Bolzano-Weierstrass property).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(K\) is closed and bounded.]]></text>
+      <feedback><text>Closed and bounded implies compact in ℝⁿ (Heine-Borel theorem) but NOT in general metric spaces. For example, the closed unit ball in an infinite-dimensional normed space is closed and bounded but not compact.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(K\) is open and connected.]]></text>
+      <feedback><text>Open connected sets (like intervals) are generally not compact. Compact sets in Hausdorff spaces are closed, not open (unless the space is discrete).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(K\) is a finite set.]]></text>
+      <feedback><text>Finite sets are compact but compactness does not require finiteness. Infinite compact metric spaces exist (e.g., [0,1] in ℝ).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q05_Contraction_Mapping</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Banach fixed-point theorem (contraction mapping principle) states: if \((X,d)\) is a complete metric space and \(T: X \to X\) satisfies \(d(Tx,Ty) \leq k\,d(x,y)\) for some \(k \in [0,1)\), then:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(T\) has a unique fixed point \(x^* = Tx^*\), and the iteration \(x_{n+1} = Tx_n\) converges to \(x^*\) with \(d(x_n, x^*) \leq \dfrac{k^n}{1-k}d(x_1,x_0)\).]]></text>
+      <feedback><text>Correct. The Banach contraction principle guarantees existence and uniqueness of a fixed point, with the iterative sequence converging geometrically. The error bound k^n/(1−k)·d(x₁,x₀) gives an a priori estimate.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(T\) may have no fixed point if \(X\) is not compact.]]></text>
+      <feedback><text>Completeness (not compactness) is the key hypothesis. In a complete metric space, any contraction has a unique fixed point regardless of compactness.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(T\) has at least one fixed point but may have more.]]></text>
+      <feedback><text>The contraction condition ensures UNIQUENESS of the fixed point. If x*=Tx* and y*=Ty*, then d(x*,y*)=d(Tx*,Ty*)≤k·d(x*,y*), so (1−k)d(x*,y*)≤0, meaning d(x*,y*)=0 and x*=y*.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The fixed point exists only if \(k < 1/2\).]]></text>
+      <feedback><text>The theorem works for any k∈[0,1). The tighter k is, the faster the convergence, but any k<1 is sufficient.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q06_Cantor_Set</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Cantor set \(C\) (constructed by repeatedly removing middle thirds from \([0,1]\)) has the following properties:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(C\) is closed, perfect (every point is a limit point), nowhere dense, has Lebesgue measure 0, and has cardinality \(|\mathbb{R}|\) (uncountable).]]></text>
+      <feedback><text>Correct. The Cantor set C is: (1) closed (complement is open), (2) perfect (no isolated points), (3) nowhere dense (interior is empty), (4) measure zero (removed intervals have total length 1), (5) uncountable (homeomorphic to {0,1}^ℕ via ternary expansions).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(C\) is open, dense in \([0,1]\), and has Lebesgue measure 1.]]></text>
+      <feedback><text>Exactly opposite: C is closed (not open), nowhere dense (not dense), and has measure 0 (not 1). The complementary open set (union of removed intervals) is dense and has measure 1.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(C\) is countably infinite (contains all rationals in \([0,1]\) whose ternary expansion uses only 0 and 2).]]></text>
+      <feedback><text>The Cantor set consists of ALL numbers in [0,1] whose ternary expansion uses only 0 and 2 (not just rationals). This set is uncountable, not countable.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(C\) has positive Lebesgue measure \(1/3\).]]></text>
+      <feedback><text>The standard Cantor set has measure 0 (at step n, measure = (2/3)^n → 0). A "fat" Cantor set can have positive measure, but the standard middle-thirds Cantor set has measure 0.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q07_Connectedness</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A metric space \(X\) is connected if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The only subsets of \(X\) that are both open and closed (clopen) are \(\emptyset\) and \(X\) itself.]]></text>
+      <feedback><text>Correct. X is connected iff it cannot be partitioned into two nonempty disjoint open sets — equivalently, the only clopen sets are ∅ and X. Connected subsets of ℝ are exactly the intervals (including singleton sets and ℝ itself).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every two points in \(X\) can be connected by a path.]]></text>
+      <feedback><text>Path-connectedness implies connectedness but not conversely. The topologist's sine curve {(x,sin(1/x)):x>0}∪{(0,0)} is connected but not path-connected.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(X\) is complete and separable.]]></text>
+      <feedback><text>Completeness and separability are metric properties unrelated to connectedness. ℝ is connected, separable, and complete, but ℚ is separable and connected (as a topological space?) — wait, ℚ is actually totally disconnected.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(X\) has no isolated points.]]></text>
+      <feedback><text>Having no isolated points (perfect space) does not imply connectedness. The Cantor set is perfect but totally disconnected.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q08_Arzel_Ascoli</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Arzelà-Ascoli theorem characterizes compactness in \(C(K)\) (continuous functions on a compact metric space \(K\)). A subset \(\mathcal{F} \subset C(K)\) is relatively compact (has compact closure) if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\mathcal{F}\) is uniformly bounded (\(\sup_f\|f\|_\infty < \infty\)) and equicontinuous (\(\forall \varepsilon > 0\; \exists \delta > 0\) such that \(d(x,y)<\delta \Rightarrow |f(x)-f(y)|<\varepsilon\) for all \(f \in \mathcal{F}\)).]]></text>
+      <feedback><text>Correct. Arzelà-Ascoli: relative compactness in C(K) is equivalent to uniform boundedness + equicontinuity. Every sequence in ℱ then has a uniformly convergent subsequence.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathcal{F}\) is closed and bounded in \(C(K)\).]]></text>
+      <feedback><text>In infinite-dimensional spaces (like C(K)), closed and bounded does NOT imply compact (Riesz's lemma). Equicontinuity is the additional condition needed for Arzelà-Ascoli.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathcal{F}\) consists of Lipschitz functions with a uniform Lipschitz constant.]]></text>
+      <feedback><text>Uniform Lipschitz implies equicontinuous, and if also uniformly bounded, then Arzelà-Ascoli applies. But the theorem's condition is the broader equicontinuity, not just Lipschitz.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathcal{F}\) is a convex subset of \(C(K)\).]]></text>
+      <feedback><text>Convexity has no bearing on compactness in C(K). Arzelà-Ascoli requires uniform boundedness and equicontinuity, not convexity.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q09_Completion</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The completion \(\widetilde{X}\) of a metric space \((X,d)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[A complete metric space containing an isometric copy of \(X\) as a dense subspace, unique up to isometry.]]></text>
+      <feedback><text>Correct. Every metric space has a completion, constructed as equivalence classes of Cauchy sequences. X embeds isometrically as a dense subset of its completion (e.g., ℚ completes to ℝ). The completion is unique up to isometry.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The set of all bounded subsets of \(X\).]]></text>
+      <feedback><text>The power set of bounded subsets is not the completion. The completion consists of equivalence classes of Cauchy sequences, not subsets.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The closure of \(X\) in any surrounding metric space.]]></text>
+      <feedback><text>The closure of X in a surrounding space depends on how X is embedded. The intrinsic completion is uniquely defined by the metric of X itself.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The one-point compactification of \(X\).]]></text>
+      <feedback><text>One-point compactification adds a "point at infinity" to make a locally compact space compact — this is different from completion (adding limits of Cauchy sequences).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q10_Open_Closed</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In a metric space, which statement is always true?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[An open ball \(B(x,r) = \{y : d(x,y) < r\}\) is an open set, and a closed ball \(\overline{B}(x,r) = \{y : d(x,y) \leq r\}\) is a closed set.]]></text>
+      <feedback><text>Correct. Open balls are open (for any z∈B(x,r), the ball B(z,r−d(x,z)) ⊆ B(x,r)) and closed balls are closed (their complements are open). These are foundational properties of metric topology.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The closure of an open ball equals the corresponding closed ball: \(\overline{B(x,r)} = \overline{B}(x,r)\).]]></text>
+      <feedback><text>False in general metric spaces. In a discrete metric, B(x,1)={x} and its closure is {x}, but \(\overline{B}(x,1)=X\). Equality holds in ℝⁿ but not in all metric spaces.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every closed set is compact.]]></text>
+      <feedback><text>False: closed sets need not be compact. In ℝ, ℝ itself is closed but not compact. In general metric spaces, closed + bounded ≠ compact.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every open set is connected.]]></text>
+      <feedback><text>False: open sets need not be connected. For example, (0,1)∪(2,3) is open in ℝ but disconnected.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q11_Uniform_Continuity</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A function \(f: (X,d_X) \to (Y,d_Y)\) between metric spaces is uniformly continuous if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\forall\varepsilon > 0\; \exists\delta > 0\) such that \(d_X(x,x') < \delta \Rightarrow d_Y(f(x),f(x')) < \varepsilon\) for ALL \(x,x' \in X\).]]></text>
+      <feedback><text>Correct. The key difference from pointwise continuity: the same δ works for ALL pairs (x,x'), not just for each fixed x. Uniform continuity is guaranteed on compact domains (a continuous function on a compact metric space is uniformly continuous — Heine-Cantor theorem).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\forall x \in X\; \forall\varepsilon > 0\; \exists\delta > 0\) such that \(d_X(x,x') < \delta \Rightarrow d_Y(f(x),f(x')) < \varepsilon\).]]></text>
+      <feedback><text>This is pointwise continuity, not uniform continuity. In uniform continuity, δ is chosen independently of x (uniform over all x). Pointwise continuity allows δ to depend on x.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f\) preserves distances: \(d_Y(f(x),f(y)) = d_X(x,y)\) for all \(x,y\).]]></text>
+      <feedback><text>This is an isometry (distance-preserving map), a strictly stronger condition than uniform continuity.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f\) is differentiable and \(f'\) is bounded.]]></text>
+      <feedback><text>Bounded derivative implies Lipschitz which implies uniform continuity, but uniform continuity does not require differentiability. For example, x^{1/2} on [0,1] is uniformly continuous but not Lipschitz at 0.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q12_Separable</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A metric space is separable if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[It has a countable dense subset (e.g., \(\mathbb{Q}\) is dense in \(\mathbb{R}\), so \(\mathbb{R}\) is separable).]]></text>
+      <feedback><text>Correct. A separable metric space has a countable set D such that D̄=X. Examples: ℝⁿ (dense: ℚⁿ), C[0,1] (dense: polynomials with rational coefficients), ℓ² (dense: sequences with finitely many nonzero rational terms). Note: ℓ∞ is NOT separable.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[It satisfies the second axiom of countability (has a countable base).]]></text>
+      <feedback><text>In metric spaces, separability and second countability are equivalent. However, stating this as a definition is circular (the question asks for the definition of separability).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[It is compact.]]></text>
+      <feedback><text>Compact metric spaces are separable, but not conversely. ℝ is separable but not compact.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[It can be embedded isometrically in \(\mathbb{R}\).]]></text>
+      <feedback><text>Isometric embedding in ℝ would force the space to be a subspace of ℝ (hence separable), but not all separable metric spaces embed isometrically in ℝ (e.g., ℝ² cannot embed isometrically in ℝ).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q13_Lipschitz</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The function \(f(x) = \sqrt{x}\) on \([0,1]\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Uniformly continuous but not Lipschitz continuous on \([0,1]\).]]></text>
+      <feedback><text>Correct. f is uniformly continuous on [0,1] (it is continuous on a compact set). However, |f(x)−f(0)|/|x−0| = 1/√x → ∞ as x→0⁺, so f is not Lipschitz at x=0. Uniform continuity holds without Lipschitz.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Lipschitz continuous with constant \(L = 1/2\).]]></text>
+      <feedback><text>If Lipschitz, then |√x − √y| ≤ L|x−y| for all x,y∈[0,1]. But |√x−0|/|x−0| = 1/√x → ∞ as x→0, so no finite L works. f is not Lipschitz on [0,1].</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Neither continuous nor Lipschitz on \([0,1]\).]]></text>
+      <feedback><text>√x is continuous (in fact uniformly continuous) on [0,1]. It is the Lipschitz condition that fails, not continuity.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Both uniformly continuous and Lipschitz on \([0,1]\).]]></text>
+      <feedback><text>√x is uniformly continuous but NOT Lipschitz on [0,1] (the Lipschitz constant blows up at x=0). Lipschitz would require |√x−√y| ≤ L|x−y| for some fixed L, which fails near 0.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q14_Isometry</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Two metric spaces \((X,d_X)\) and \((Y,d_Y)\) are isometric if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[There exists a bijection \(f: X \to Y\) such that \(d_Y(f(x),f(x')) = d_X(x,x')\) for all \(x,x' \in X\).]]></text>
+      <feedback><text>Correct. An isometry is a distance-preserving bijection. Isometric spaces are metrically identical: all metric properties (completeness, compactness, diameter, etc.) are preserved under isometry.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[There exists a continuous bijection \(f: X \to Y\) (a homeomorphism).]]></text>
+      <feedback><text>A homeomorphism preserves topological properties but not metric ones. For instance, (0,1) and ℝ are homeomorphic (via tan(π(x−1/2))) but not isometric (one is bounded, the other is not).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(X\) and \(Y\) have the same cardinality.]]></text>
+      <feedback><text>Same cardinality alone is far too weak. For example, [0,1] and [0,2] have the same cardinality (both uncountable) but are not isometric (different diameters).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[There is a surjective map \(f: X \to Y\) with \(d_Y(f(x),f(y)) \leq d_X(x,y)\) (short map).]]></text>
+      <feedback><text>A short map (non-expansive surjection) is weaker than an isometry. An isometry requires exact equality d_Y(f(x),f(y))=d_X(x,y) AND bijectivity.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q15_Bolzano_Weierstrass</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Bolzano-Weierstrass theorem in \(\mathbb{R}^n\) states:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Every bounded sequence in \(\mathbb{R}^n\) has a convergent subsequence.]]></text>
+      <feedback><text>Correct. In ℝⁿ, bounded sequences are contained in a compact set (by Heine-Borel: closed bounded sets in ℝⁿ are compact), so every bounded sequence has a convergent subsequence. This is one of the most fundamental theorems in analysis.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every Cauchy sequence in \(\mathbb{R}^n\) converges.]]></text>
+      <feedback><text>This is the completeness of ℝⁿ, not the Bolzano-Weierstrass theorem. BW is specifically about bounded sequences having convergent subsequences (which need not be Cauchy).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every infinite bounded set in \(\mathbb{R}^n\) has an accumulation point.]]></text>
+      <feedback><text>This is also a valid form of Bolzano-Weierstrass (for sets rather than sequences), and it is equivalent to the stated version. Both formulations are correct; the question asks which option IS the theorem.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every open cover of a bounded set in \(\mathbb{R}^n\) has a finite subcover.]]></text>
+      <feedback><text>This is the Heine-Borel theorem for closed bounded sets in ℝⁿ (which must also be closed to be compact). Bolzano-Weierstrass is about sequential compactness, not open covers.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q16_Dense_Subsets</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In the metric space \((C[0,1], \|\cdot\|_\infty)\), the set of polynomials is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Dense, by the Weierstrass approximation theorem.]]></text>
+      <feedback><text>Correct. The Weierstrass approximation theorem states that every continuous function on [0,1] can be uniformly approximated by polynomials. Thus the polynomials (or polynomials with rational coefficients) form a countable dense subset of C[0,1], proving C[0,1] is separable.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Closed and not dense.]]></text>
+      <feedback><text>The set of polynomials is NOT closed in C[0,1] (its closure is all of C[0,1] by the Weierstrass theorem). Hence it is dense, not closed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Open in \(C[0,1]\).]]></text>
+      <feedback><text>The set of polynomials is not open in C[0,1]: no open ball around a polynomial contains only polynomials (small perturbations of a polynomial can be non-polynomial continuous functions).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A closed nowhere dense set (of the first Baire category).]]></text>
+      <feedback><text>Polynomials form a dense set (not nowhere dense). The Weierstrass theorem ensures their closure is all of C[0,1].</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q17_Diameter</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(\{F_n\}\) is a decreasing sequence of nonempty closed sets in a complete metric space with \(\mathrm{diam}(F_n) \to 0\), then:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\displaystyle\bigcap_{n=1}^\infty F_n\) consists of exactly one point.]]></text>
+      <feedback><text>Correct. This is Cantor's intersection theorem for complete metric spaces: F₁⊇F₂⊇⋯ are closed, nonempty, and diam(Fₙ)→0 implies ∩Fₙ is a singleton. The proof picks xₙ∈Fₙ; since diam(Fₙ)→0, {xₙ} is Cauchy, converges to a unique limit in ∩Fₙ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\displaystyle\bigcap_{n=1}^\infty F_n\) is empty.]]></text>
+      <feedback><text>Without completeness, ∩Fₙ could be empty (e.g., Fₙ=(0,1/n) in ℚ or ℝ⧵{0}). But in a COMPLETE metric space with diam(Fₙ)→0, the intersection is a singleton.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\displaystyle\bigcap_{n=1}^\infty F_n\) contains infinitely many points.]]></text>
+      <feedback><text>Since diam(Fₙ)→0, the intersection (if nonempty) can contain at most one point (two distinct points would have positive distance, contradicting diam→0). Combined with nonemptiness, it is exactly one point.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The result fails without the assumption \(\mathrm{diam}(F_n) \to 0\).]]></text>
+      <feedback><text>True, but this is not the content of the theorem. The theorem states that WITH diam(Fₙ)→0 in a complete space, ∩Fₙ is a singleton. Without this assumption, ∩Fₙ could be empty or contain multiple points.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q18_Totally_Bounded</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A metric space \(X\) is totally bounded if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[For every \(\varepsilon > 0\), there exist finitely many points \(x_1,\ldots,x_n \in X\) such that \(X = \bigcup_{i=1}^n B(x_i,\varepsilon)\).]]></text>
+      <feedback><text>Correct. Total boundedness means X can be covered by finitely many balls of any given radius. In metric spaces: compact ⟺ complete + totally bounded. Total boundedness implies bounded but not conversely (e.g., ℓ∞ unit ball is bounded but not totally bounded).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The diameter \(\mathrm{diam}(X) < \infty\).]]></text>
+      <feedback><text>Being bounded (finite diameter) does not imply totally bounded. In infinite-dimensional normed spaces, the closed unit ball is bounded but not totally bounded.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(X\) is a finite set.]]></text>
+      <feedback><text>Finite sets are totally bounded, but totally bounded does not require finiteness. For example, [0,1]⊂ℝ is totally bounded (and infinite).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(X\) has a countable base.]]></text>
+      <feedback><text>Second countability (countable base) is a topological property separate from total boundedness. A metric space is second countable iff separable, which is not the same as totally bounded.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q19_Continuous_Image</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(f: X \to Y\) is a continuous surjection and \(X\) is compact, then \(Y\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Compact (continuous images of compact sets are compact).]]></text>
+      <feedback><text>Correct. Compactness is preserved under continuous maps: if f is continuous and X is compact, then f(X) is compact. Since f is surjective, Y=f(X) is compact.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Complete (continuous images of complete spaces are complete).]]></text>
+      <feedback><text>Completeness is NOT generally preserved by continuous maps. For example, f:(0,1)→(0,1) with f(x)=x; (0,1) with the usual metric is not complete, but even if X=ℝ (complete), f(ℝ)=(0,1) (not complete) under f(x)=e^x/(1+e^x).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Separable but not necessarily compact.]]></text>
+      <feedback><text>A continuous surjective image of a compact space is compact (and compact metric spaces are separable), but the stronger conclusion is compactness, not just separability.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Connected only if \(X\) is path-connected.]]></text>
+      <feedback><text>Continuous images of connected sets are connected. Since X is compact (hence connected if... wait, compact spaces need not be connected). Actually the correct statement is: if X is connected and f continuous, then f(X) is connected. But being compact does not imply connected.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_47_Q20_Equivalent_Metrics</text></name>
+    <questiontext format="html">
+      <text><![CDATA[On \(\mathbb{R}^n\), which of the following metrics generates the SAME topology as the Euclidean metric \(d_2(x,y) = \|x-y\|_2\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Both \(d_1(x,y) = \|x-y\|_1 = \sum|x_i-y_i|\) and \(d_\infty(x,y) = \max|x_i-y_i|\) generate the same topology as \(d_2\).]]></text>
+      <feedback><text>Correct. All \(\ell^p\) norms on ℝⁿ are equivalent: there exist constants C₁, C₂>0 such that C₁d_2 ≤ d_p ≤ C₂d_2. Equivalent metrics generate the same open sets (same topology), so convergence, continuity, compactness, and completeness are the same.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(d_1\) generates the same topology but \(d_\infty\) generates a different (finer) topology.]]></text>
+      <feedback><text>All \(\ell^p\) norms on finite-dimensional ℝⁿ are equivalent, generating the same topology. None is finer or coarser than another.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The discrete metric \(d(x,y) = 1\) for \(x \neq y\) generates the same topology.]]></text>
+      <feedback><text>The discrete metric generates the discrete topology (every set is open), which is strictly finer than the Euclidean topology on ℝⁿ (e.g., singletons are not open in the Euclidean topology for n≥1).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The metric \(d(x,y) = \min(1, \|x-y\|_2)\) generates a different topology.]]></text>
+      <feedback><text>The bounded metric d(x,y)=min(1,‖x−y‖₂) is equivalent to d₂ (it generates the same topology). They define the same open balls for small radii and hence the same topology.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

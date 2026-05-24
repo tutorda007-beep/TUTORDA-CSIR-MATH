@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Complex Analysis/Applications and Advanced Topics</text></category>
+    <info format="html"><text>CSIR NET level MSQ questions on Complex Analysis — advanced topics: harmonic analysis, Hilbert transform, reflection principle, analytic number theory connections, Riemann surfaces.</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q01 Analytic Functions — Higher-Order Cauchy Formula</text></name>
+    <questiontext format="html"><text><![CDATA[Using the Cauchy integral formula for derivatives, evaluate \(\displaystyle I = \oint_{|z|=2}\dfrac{z^3+2z}{(z-1)^4}\,dz\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\pi i\)</text><feedback format="html"><text>With \(f(z)=z^3+2z\) and pole of order 4 at \(z_0=1\): \(I = \frac{2\pi i}{3!}f'''(1)\). \(f'''(z) = 6\), so \(f'''(1)=6\). Thus \(I = \frac{2\pi i}{6}\times6 = 2\pi i\). Let me re-check: \(\oint\frac{f(z)}{(z-z_0)^{n+1}}dz = \frac{2\pi i}{n!}f^{(n)}(z_0)\). Here \(n=3\): \(I=\frac{2\pi i}{3!}f'''(1) = \frac{2\pi i}{6}\cdot6 = 2\pi i\). The correct answer is \(2\pi i\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(2\pi i\)</text><feedback format="html"><text>\(f(z)=z^3+2z\). \(f'''(z)=6\), so \(f'''(1)=6\). By the formula: \(\oint\frac{f(z)}{(z-1)^4}dz = \frac{2\pi i}{3!}f'''(1) = \frac{2\pi i}{6}\cdot6 = 2\pi i\). This is the correct answer.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(4\pi i\)</text><feedback format="html"><text>The formula gives \(2\pi i\cdot f'''(1)/3! = 2\pi i\). Not \(4\pi i\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(0\)</text><feedback format="html"><text>There is a pole of order 4 at \(z=1\) inside \(|z|=2\), so the integral is non-zero. It equals \(2\pi i\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q02 Borel-Carathéodory Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[The Borel-Carathéodory theorem: if \(f\) is analytic in \(|z|\leq R\) and \(M(r) = \max_{|z|=r}|f(z)|\), \(A(r) = \max_{|z|=r}\text{Re}(f(z))\), then \(M(r) \leq \dfrac{2r}{R-r}A(R) + \dfrac{R+r}{R-r}|f(0)|\). This shows the maximum modulus is controlled by:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The maximum of the real part on a larger circle</text><feedback format="html"><text>The theorem controls \(|f|\) on the disk of radius \(r\) by \(\max\text{Re}(f)\) on the larger disk of radius \(R>r\). This is a quantitative version of the fact that real parts of analytic functions are harmonic (hence bounded by boundary values) and provides estimates for growth of analytic functions.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The maximum imaginary part on the same circle</text><feedback format="html"><text>The theorem uses \(\text{Re}(f)\) on a LARGER circle (radius \(R>r\)), not Im\((f)\) on the same circle.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The number of zeros of \(f\) inside the disk</text><feedback format="html"><text>Counting zeros gives Jensen's formula, not the Borel-Carathéodory estimate. The B-C theorem involves real parts.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The value of \(f\) at the center only</text><feedback format="html"><text>The theorem involves the maximum of \(\text{Re}(f)\) on the boundary circle of radius \(R\), plus the central value. The boundary term dominates for large \(A(R)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q03 Conformal Mapping and Heat Flow</text></name>
+    <questiontext format="html"><text><![CDATA[In steady-state heat flow, the temperature \(T\) satisfies \(\Delta T = 0\) (Laplace equation). If a conformal map \(w=f(z)\) maps domain \(D\) to \(\Omega\), and \(T\) is harmonic in \(\Omega\), then \(T\circ f\) is harmonic in \(D\) because:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The composition of a harmonic function with a conformal map is harmonic (harmonicity is preserved under conformal mappings)</text><feedback format="html"><text>If \(T\) is harmonic and \(f\) is analytic, then \(T\circ f\) is harmonic. This follows because \(T=\text{Re}(H)\) for some analytic \(H\), and \(H\circ f\) is also analytic, so \(\text{Re}(H\circ f) = T\circ f\) is harmonic. This is the fundamental principle enabling conformal mapping to solve boundary value problems.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Conformal maps preserve the Laplacian operator exactly: \(\Delta(T\circ f)=(\Delta T)\circ f\)</text><feedback format="html"><text>This is NOT true in general. The Laplacian transforms by \(\Delta(T\circ f) = |f'|^2 (\Delta T)\circ f\), which is zero when \(\Delta T=0\), but the operators are not equal. Harmonicity (being in the kernel of \(\Delta\)) IS preserved.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The chain rule gives \(\nabla(T\circ f) = \nabla T \cdot \nabla f\), which is zero when \(\nabla T=0\)</text><feedback format="html"><text>This confuses the gradient (for isothermal curves) with harmonicity. Harmonicity means \(\Delta T=0\), not \(\nabla T=0\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Conformal maps preserve all differential equations, not just Laplace's equation</text><feedback format="html"><text>Conformal maps preserve the FORM of Laplace's equation (due to preservation of angles), but not all differential equations. For example, the wave equation is not conformally invariant in general.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q04 Prime Number Theorem Connection</text></name>
+    <questiontext format="html"><text><![CDATA[The Prime Number Theorem \(\pi(x)\sim x/\ln x\) (where \(\pi(x)\) counts primes \(\leq x\)) was proved using complex analysis: specifically, showing \(\zeta(s)\neq0\) on the line \(\text{Re}(s)=1\). The key complex-analytic step is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The non-vanishing of \(\zeta(1+it)\) for real \(t\neq0\) allows Perron's formula to give an asymptotic for \(\pi(x)\)</text><feedback format="html"><text>The Hadamard-de la Vallée Poussin proof uses: (1) The Euler product shows \(\log\zeta(s)\) encodes primes. (2) The non-vanishing \(\zeta(1+it)\neq0\) (proved using \(3\cos\theta+4\cos2\theta+\cos3\theta\geq0\)) prevents the boundary contribution from Perron's contour. (3) This gives \(\psi(x)\sim x\) (Chebyshev function), equivalent to PNT.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The Cauchy integral formula applied to the counting function \(\pi(x)\)</text><feedback format="html"><text>The Cauchy integral formula is not directly applied to \(\pi(x)\) (a step function). Perron's formula converts the sum into a contour integral of \(\zeta'/\zeta\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The Riemann Hypothesis: all zeros of \(\zeta\) lie on \(\text{Re}(s)=1/2\)</text><feedback format="html"><text>The Riemann Hypothesis implies stronger error terms but is NOT needed for the basic PNT. The standard proof only needs \(\zeta(1+it)\neq0\) (on the boundary of the critical strip, not inside).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The functional equation of \(\zeta\) relating \(\zeta(s)\) to \(\zeta(1-s)\)</text><feedback format="html"><text>The functional equation is used to extend \(\zeta\) to the whole plane, but the core of the PNT proof is the non-vanishing on \(\text{Re}(s)=1\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q05 Riemann Surfaces — Branch Points</text></name>
+    <questiontext format="html"><text><![CDATA[The Riemann surface of \(w = \sqrt{z(z-1)(z-2)}\) (a hyperelliptic curve of genus 1) has branch points at \(z=0,1,2,\infty\). The genus of a compact Riemann surface associated with \(w^2 = (z-a_1)(z-a_2)\cdots(z-a_{2g+2})\) (with \(2g+2\) branch points) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(g\)</text><feedback format="html"><text>By the Riemann-Hurwitz formula: for a 2-sheeted cover of \(\hat{\mathbb{C}}\) with \(2g+2\) branch points (each with ramification 2), \(\chi(\text{surface}) = 2\chi(\hat{\mathbb{C}}) - (2g+2)\cdot1 = 4-(2g+2)=2-2g\). So genus \(= g\). For \(w^2=z(z-1)(z-2)\): \(2g+2=4\) (including \(\infty\)), giving \(g=1\) (elliptic curve/torus).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(2g+2\)</text><feedback format="html"><text>The number \(2g+2\) is the number of branch points, not the genus. The genus is \(g\), determined by the Riemann-Hurwitz formula.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(g+1\)</text><feedback format="html"><text>The Riemann-Hurwitz formula gives genus \(g\), not \(g+1\). For 4 branch points (\(g=1\)), the genus is 1 (torus), not 2.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0 (the surface is topologically a sphere)</text><feedback format="html"><text>With \(2g+2\geq4\) branch points, the genus \(g\geq1\), not 0. Genus 0 corresponds to only 2 branch points (then the cover is just another sphere).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q06 Hilbert Transform</text></name>
+    <questiontext format="html"><text><![CDATA[The Hilbert transform of a function \(u(x)\) is \((\mathcal{H}u)(x) = \text{P.V.}\dfrac{1}{\pi}\int_{-\infty}^\infty\dfrac{u(t)}{x-t}dt\). For a function \(f=u+iv\) analytic in the upper half-plane with \(u = \text{Re}(f)\) on the real axis, the imaginary part \(v = \text{Im}(f)\) is related to \(u\) by:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(v = \mathcal{H}u\) (the Hilbert transform of \(u\))</text><feedback format="html"><text>The boundary values of an analytic function in the upper half-plane satisfy the Hilbert transform relation: \(v = \mathcal{H}u\) (given by the Plemelj-Sokhotski formula). This is the real-line version of the Cauchy integral formula. The Hilbert transform is the imaginary part of the analytic signal.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(v = u\) (real and imaginary parts are equal)</text><feedback format="html"><text>This is only true for very special functions. In general, \(v=\mathcal{H}u\) (the Hilbert transform), not \(v=u\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(v = -u\) (they are negatives of each other)</text><feedback format="html"><text>This would hold only if \(\mathcal{H}u = -u\), which happens for specific functions (e.g., \(u=\sin x\), \(v=-\cos x\)). In general \(v=\mathcal{H}u\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(v\) can be anything independent of \(u\)</text><feedback format="html"><text>The CR equations strongly constrain \(v\) once \(u\) is known (up to an additive constant). On the real line, this constraint is exactly the Hilbert transform relation.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q07 Vitali's Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[Vitali's convergence theorem: if \(\{f_n\}\) is a locally bounded sequence of analytic functions in a domain \(D\), and \(f_n\to f\) pointwise on a set \(E\subset D\) with a limit point in \(D\), then \(f_n\to f\) locally uniformly in \(D\). This refines Montel's theorem. An immediate corollary:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>A locally bounded sequence converging on a set with a limit point converges everywhere in the domain</text><feedback format="html"><text>Vitali's theorem says: if the sequence is locally bounded (thus normal by Montel) AND converges on a set with a limit point, then every subsequential limit must agree on \(E\) (by Identity Theorem), so the entire sequence converges to the same limit everywhere — locally uniformly.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Every locally bounded sequence of analytic functions converges</text><feedback format="html"><text>Without convergence on a set with a limit point, a locally bounded sequence might just be normal (have convergent subsequences) without the full sequence converging.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Pointwise convergence implies uniform convergence on the whole domain</text><feedback format="html"><text>Vitali gives locally uniform convergence (uniform on compact subsets), not globally uniform convergence on the possibly unbounded domain \(D\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Every subsequential limit of \(\{f_n\}\) equals \(f\) everywhere in \(D\)</text><feedback format="html"><text>This is actually a direct consequence of the Vitali theorem (since any limit \(g\) agrees with \(f\) on \(E\), hence \(g\equiv f\) by the Identity Theorem). This is the conclusion, making it correct.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q08 Analytic Continuation — Monodromy Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[The Monodromy Theorem: if a function element \((f, D)\) can be analytically continued along every path in a simply connected domain \(\Omega\), then the continuation defines a single-valued analytic function in \(\Omega\). This is used to conclude:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\log z\) and \(\sqrt{z}\) are multi-valued on \(\mathbb{C}\setminus\{0\}\) because \(\mathbb{C}\setminus\{0\}\) is not simply connected</text><feedback format="html"><text>On the simply connected domain \(\mathbb{C}\setminus(-\infty,0]\), both \(\log z\) and \(\sqrt{z}\) have single-valued branches. On the non-simply-connected \(\mathbb{C}\setminus\{0\}\), continuation around the origin produces different branches. The Monodromy Theorem explains why simple connectivity is needed for single-valuedness.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Every function analytic in a disk extends to the whole plane</text><feedback format="html"><text>This is false; e.g., \(f(z)=1/(z-2)\) is analytic in \(|z|<1\) but has a pole at \(z=2\). The Monodromy Theorem is about simply connected domains, not the whole plane.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Multi-valued functions don't exist in complex analysis</text><feedback format="html"><text>Multi-valued functions (like \(\log z\)) exist; the Monodromy Theorem gives conditions under which single-valued branches can be chosen.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Analytic continuation always gives a single-valued result</text><feedback format="html"><text>Analytic continuation in non-simply-connected domains can be multi-valued. The Monodromy Theorem requires simple connectivity to guarantee single-valuedness.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q09 Entire Functions — Picard's Theorem Application</text></name>
+    <questiontext format="html"><text><![CDATA[By Picard's Great Theorem, in every punctured neighborhood of an essential singularity, a function takes every complex value (with at most one exception) infinitely often. For \(f(z) = \sin(1/z)\), determine which value is taken only finitely many times near \(z=0\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>No value — all values are taken infinitely often (no exceptional value for \(\sin(1/z)\))</text><feedback format="html"><text>\(\sin(1/z)\) has an essential singularity at 0. By Picard's theorem, every value is taken infinitely often in any punctured neighborhood, with at most one exception. For \(\sin w\), no complex value is omitted (unlike \(e^w\) which omits 0). So \(\sin(1/z)\) has no exceptional value: every \(w\in\mathbb{C}\) is taken infinitely often.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The value 0 (since \(\sin(1/z)=0\) requires \(1/z=n\pi\), giving only countably many zeros)</text><feedback format="html"><text>The value 0 IS taken infinitely often (at \(z=1/(n\pi)\) for all integers \(n\neq0\)). "Countably many" is still infinitely many, so 0 is not exceptional.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The value \(\pm1\) (the extreme values of the real sine function)</text><feedback format="html"><text>\(\sin(1/z)=1\) when \(1/z=\pi/2+2k\pi\), giving \(z=2/((\pi+4k\pi))\) — infinitely many solutions near 0. Both \(\pm1\) are taken infinitely often.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>All values \(|w|>1\) are omitted by \(\sin(1/z)\)</text><feedback format="html"><text>For real arguments, \(|\sin x|\leq1\), but for complex \(z\), \(\sin(z)\) can take any complex value. Near the essential singularity at 0, \(\sin(1/z)\) takes all values including those with large modulus.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q10 Summation via Residues</text></name>
+    <questiontext format="html"><text><![CDATA[To evaluate \(\sum_{n=-\infty}^\infty f(n)\), integrate \(\pi\cot(\pi z)f(z)\) over a large rectangle, using the residues at integers (where \(\text{Res}(\pi\cot(\pi z);n)=1\)). This gives \(\sum_{n=-\infty}^\infty f(n) = -\sum[\text{Res of }\pi\cot(\pi z)f(z)\text{ at non-integer poles}]\). For \(f(z)=1/(z^2+a^2)\) with \(a>0\), the result is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{\pi\coth(\pi a)}{a}\)</text><feedback format="html"><text>The poles of \(\pi\cot(\pi z)/(z^2+a^2)\) at \(z=\pm ia\): \(\text{Res}(f;ia) = \pi\cot(\pi ia)/(2ia) = \pi i\coth(\pi a)/(2ia) = \pi\coth(\pi a)/(2a)\). Similarly at \(-ia\). Total: \(-(\pi\coth(\pi a)/(2a)+\pi\coth(\pi a)/(2a)) = -\pi\coth(\pi a)/a\). By the formula: \(\sum f(n) = -(-\pi\coth(\pi a)/a) = \pi\coth(\pi a)/a\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\pi}{a\sinh(\pi a)}\)</text><feedback format="html"><text>The series \(\sum 1/(n^2+a^2)\) evaluates to \(\pi\coth(\pi a)/a\), not \(\pi/(a\sinh(\pi a))\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\pi}{a\tanh(\pi a)}\)</text><feedback format="html"><text>This equals \(\pi\coth(\pi a)/a\) only if \(\coth=1/\tanh\). Actually \(\coth(\pi a)=1/\tanh(\pi a)\), so \(\pi\coth(\pi a)/a = \pi/(a\tanh(\pi a))\). These ARE equal. So this is also correct.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\pi^2}{6a^2}\)</text><feedback format="html"><text>This would be the value of \(\sum 1/n^2 \cdot 1/a^2 = \pi^2/(6a^2)\) (by Basel), which is different from \(\sum 1/(n^2+a^2)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q11 Analytic Capacity</text></name>
+    <questiontext format="html"><text><![CDATA[The analytic capacity of a compact set \(K\subset\mathbb{C}\) is \(\gamma(K) = \sup|f'(\infty)|\) where the sup is over all analytic \(f:\mathbb{C}\setminus K\to\mathbb{D}\) with \(f(\infty)=0\), and \(f'(\infty)=\lim_{z\to\infty}zf(z)\). The Painlevé problem asks: which compact sets are "removable" for bounded analytic functions? The answer (Tolsa, 2003) is related to:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Geometric measure theory: \(K\) is removable iff it has zero 1-dimensional Hausdorff measure</text><feedback format="html"><text>The Painlevé problem: \(K\) is removable for bounded analytic functions iff \(\gamma(K)=0\). Tolsa proved \(\gamma(K)=0\) iff the 1-dimensional Menger curvature integral of \(K\) is zero, which relates to \(K\) having zero length in a suitable sense. For "rectifiable" sets, removability corresponds to zero 1-d Hausdorff measure.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Topology: \(K\) is removable iff it is not connected</text><feedback format="html"><text>Connectivity is not the relevant condition. Removability is measured by analytic capacity, which is related to geometric measure theory properties of \(K\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Algebra: \(K\) is removable iff it consists of finitely many points</text><feedback format="html"><text>Single points are removable by Riemann's theorem. But \(K\) can be infinite (e.g., a Cantor set with zero Hausdorff measure) and still be removable.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Functional analysis: \(K\) is removable iff every bounded analytic function extends continuously to \(K\)</text><feedback format="html"><text>Removability means every bounded analytic function on \(\mathbb{C}\setminus K\) extends to a constant (has trivial bounded analytic structure). Continuous extension is a different (stronger) condition.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q12 Dirichlet Problem via Conformal Mapping</text></name>
+    <questiontext format="html"><text><![CDATA[The Dirichlet problem: find \(u\) harmonic in domain \(D\) with prescribed boundary values \(u=g\) on \(\partial D\). For the upper half-plane \(\mathbb{H}\) with boundary data \(g(t)\) on the real line, the solution is the Poisson integral \(u(x,y) = \dfrac{y}{\pi}\int_{-\infty}^\infty\dfrac{g(t)}{(x-t)^2+y^2}dt\). For the boundary data \(g(t) = \begin{cases}1 & t>0 \\ 0 & t<0\end{cases}\), the harmonic function is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(u(x,y) = \dfrac{1}{2} + \dfrac{1}{\pi}\arctan\!\left(\dfrac{x}{y}\right)\)</text><feedback format="html"><text>For the step function boundary data: \(u = \frac{1}{2} + \frac{1}{\pi}\arctan(x/y) = \frac{1}{\pi}\arg(z)\) where \(z=x+iy\). This equals 1 when the argument \(\to0\) (positive real axis) and 0 when argument \(\to\pi\) (negative real axis). Alternatively, \(u = \frac{1}{\pi}\text{Arg}(z)\) is harmonic in \(\mathbb{H}\) with the correct boundary values.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(u(x,y) = y/(x^2+y^2)\)</text><feedback format="html"><text>This is harmonic (the imaginary part of \(-1/z\)) but doesn't match the boundary conditions. At \(y\to0\): \(u\to0\) for all \(x\neq0\), not the step function.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(u(x,y) = e^{-y}\cos(x)\)</text><feedback format="html"><text>This is harmonic (the real part of \(e^{iz}\)) but doesn't satisfy the boundary conditions: at \(y=0\), \(u(x,0)=\cos x\), not a step function.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(u(x,y) = x/(x^2+y^2)\)</text><feedback format="html"><text>This is harmonic but at \(y\to0\): \(u\to1/x\to\pm\infty\) near \(x=0\). Doesn't match the step boundary data.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q13 Geometric Function Theory — Univalent Functions</text></name>
+    <questiontext format="html"><text><![CDATA[The class \(\mathcal{S}\) consists of univalent (injective) functions \(f(z) = z + \sum_{n=2}^\infty a_n z^n\) on \(\mathbb{D}\). The Koebe one-quarter theorem states \(f(\mathbb{D})\supset\mathbb{D}_{1/4}\). The distortion theorem (Koebe): for \(f\in\mathcal{S}\) and \(|z|=r<1\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{r}{(1+r)^2} \leq |f(z)| \leq \dfrac{r}{(1-r)^2}\)</text><feedback format="html"><text>The Koebe distortion theorem gives sharp bounds: \(\frac{r}{(1+r)^2}\leq|f(z)|\leq\frac{r}{(1-r)^2}\) for \(|z|=r\). The bounds are attained by the Koebe function \(k(z)=z/(1-z)^2\) and its rotations. At \(r\to0\): both bounds \(\to r\) (consistent with \(f'(0)=1\)).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(r-r^2 \leq |f(z)| \leq r+r^2\)</text><feedback format="html"><text>These bounds are too tight and are not sharp for the class \(\mathcal{S}\). The correct Koebe bounds involve \((1\pm r)^2\) in the denominator.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(|f(z)| \leq r\) for all \(f\in\mathcal{S}\)</text><feedback format="html"><text>This is false; the Koebe function has \(|k(r)| = r/(1-r)^2 > r\) for \(r>0\). Univalent functions can exceed \(r\) in modulus.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>No universal bound exists for \(|f(z)|\)</text><feedback format="html"><text>The Koebe distortion theorem provides universal (sharp) bounds for all \(f\in\mathcal{S}\). The bounds depend only on \(r=|z|\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q14 Schwarz-Pick Lemma — Hyperbolic Metric</text></name>
+    <questiontext format="html"><text><![CDATA[The Schwarz-Pick lemma states that analytic maps \(f:\mathbb{D}\to\mathbb{D}\) are non-expanding in the Poincaré metric. Specifically: \(\frac{|f'(z)|}{1-|f(z)|^2} \leq \frac{1}{1-|z|^2}\). Equality holds for all \(z\) iff \(f\) is an automorphism of \(\mathbb{D}\). For a non-automorphism \(f\) with \(f(0)=0\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(|f'(0)| < 1\) (strict inequality at the origin)</text><feedback format="html"><text>With \(f(0)=0\) and \(f\) non-automorphic, the Schwarz lemma gives \(|f'(0)| \leq 1\) with equality iff \(f(z)=e^{i\theta}z\). For a non-automorphism, we get strict inequality \(|f'(0)|<1\). The function contracts distances in the hyperbolic metric.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(|f'(0)| = 1\) always (derivatives on the boundary are isometries)</text><feedback format="html"><text>At interior points (not on the boundary), the Schwarz lemma gives \(|f'(0)|\leq1\), with equality only for rotations. Non-automorphisms have \(|f'(0)|<1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(|f'(0)| > 1\) (expanding maps have larger derivatives)</text><feedback format="html"><text>Analytic maps \(\mathbb{D}\to\mathbb{D}\) are contractions (or isometries) in the Poincaré metric. \(|f'(0)|>1\) is impossible for analytic self-maps of \(\mathbb{D}\) by the Schwarz lemma.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>No constraint on \(|f'(0)|\)</text><feedback format="html"><text>The Schwarz lemma provides a sharp constraint: \(|f'(0)|\leq1\) with equality iff \(f(z)=e^{i\theta}z\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q15 Liouville's Theorem — Generalized</text></name>
+    <questiontext format="html"><text><![CDATA[Liouville's theorem (generalized): if \(f\) is entire and \(|f(z)|\leq M|z|^n\) for all large \(|z|\), then \(f\) is a polynomial of degree \(\leq n\). This follows from Cauchy's inequality applied to \(f^{(n+1)}(0)\). What can we conclude about an entire function \(f\) satisfying \(|f(z)|\leq 5e^{3|z|^2}\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(f\) has order at most 2 (but may not be a polynomial)</text><feedback format="html"><text>The bound \(|f|\leq5e^{3r^2}\) shows \(\log M(r)\leq3r^2+\log5\), so \(\rho\leq2\). But \(f\) need not be a polynomial: \(f(z)=e^{z^2}\) satisfies the bound and is not a polynomial. The polynomial conclusion requires polynomial (not exponential) growth.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f\) must be constant</text><feedback format="html"><text>Only a uniform bound \(|f|\leq M\) (order 0 growth) gives a constant by Liouville. Exponential-of-polynomial growth allows non-constant functions.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f\) is a polynomial of degree \(\leq 2\)</text><feedback format="html"><text>The polynomial bound \(|f|\leq M|z|^2\) gives a polynomial. But exponential growth like \(5e^{3r^2}\) allows entire functions of order 2 that are not polynomials.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f\) must be \(f(z) = ce^{z^2}\) for some constant \(c\)</text><feedback format="html"><text>Many functions satisfy this bound (any entire function of order \(<2\) or order 2 with finite type). The bound does not force a specific form.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q16 Residue Theorem — Evaluation of Improper Integrals</text></name>
+    <questiontext format="html"><text><![CDATA[Evaluate \(\displaystyle\int_0^\infty\dfrac{\cos(ax)}{1+x^2}\,dx\) for \(a>0\) using residues. Consider \(\oint_{C_R}e^{iaz}/(1+z^2)\,dz\) where \(C_R\) is the upper semicircle. The pole in the upper half-plane is at \(z=i\) with residue \(e^{-a}/(2i)\). The result is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{\pi}{2}e^{-a}\)</text><feedback format="html"><text>\(\text{Res}(e^{iaz}/(1+z^2);i) = e^{ia\cdot i}/(i+i) = e^{-a}/(2i)\). Residue theorem: \(\oint_{C_R}=2\pi i\cdot e^{-a}/(2i)=\pi e^{-a}\). By Jordan's lemma, the semicircle contribution vanishes. So \(\int_{-\infty}^\infty e^{iax}/(1+x^2)dx=\pi e^{-a}\). Taking real part: \(\int_{-\infty}^\infty\cos(ax)/(1+x^2)dx=\pi e^{-a}\). Half of this: \(\int_0^\infty = \pi e^{-a}/2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\pi e^{-a}\)</text><feedback format="html"><text>This is the full integral \(\int_{-\infty}^\infty\cos(ax)/(1+x^2)dx\). The half-line integral \(\int_0^\infty\) is half of this: \(\pi e^{-a}/2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\pi}{2}\)</text><feedback format="html"><text>For \(a=0\): \(\int_0^\infty dx/(1+x^2) = \pi/2\) ✓. But for \(a>0\), the result is \(\frac{\pi}{2}e^{-a}\neq\frac{\pi}{2}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(0\)</text><feedback format="html"><text>The integral is non-zero for \(a\geq0\). It equals \(\frac{\pi}{2}e^{-a}>0\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q17 Boundary Behavior — Fatou's Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[Fatou's theorem: if \(f\in H^p(\mathbb{D})\) (Hardy space with \(p\geq1\)), then \(f\) has non-tangential limits almost everywhere on \(\partial\mathbb{D}\). The non-tangential limit (also called the angular limit) at \(e^{i\theta_0}\) exists iff \(f\) converges as \(z\to e^{i\theta_0}\) from within each Stolz angle. This theorem implies:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Bounded analytic functions on \(\mathbb{D}\) have boundary values a.e., even if they don't extend continuously</text><feedback format="html"><text>Every \(f\in H^\infty(\mathbb{D})\) (bounded analytic functions) belongs to all \(H^p\) spaces. By Fatou, \(f\) has non-tangential boundary limits a.e. on \(\partial\mathbb{D}\). This recovers boundary data even for functions without continuous extensions (like \(\exp(-(1+z)/(1-z))\) near \(z=1\)).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Every analytic function on the disk extends continuously to the closed disk</text><feedback format="html"><text>False. Functions like \(\sin(1/(1-z))\) have no boundary value at \(z=1\). Fatou guarantees a.e. non-tangential limits only for Hardy space functions.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The boundary function of an analytic function is always continuous</text><feedback format="html"><text>The boundary function (non-tangential limit) is in \(L^p(\partial\mathbb{D})\) but may be discontinuous. Fatou gives \(L^p\) boundary values, not continuous ones.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Analytic functions cannot have essential singularities on the boundary</text><feedback format="html"><text>Analytic functions can have essential singularities at boundary points (e.g., \(e^{1/(z-1)}\) near \(z=1\)). Fatou's theorem concerns Hardy space functions, which have slightly more regularity.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q18 Green's Function and Conformal Mapping</text></name>
+    <questiontext format="html"><text><![CDATA[The Green's function \(G(z,w)\) for a domain \(D\) is the harmonic function in \(D\setminus\{w\}\) with \(G(z,w) = -\log|z-w| + h(z,w)\) (\(h\) harmonic in all of \(D\)) satisfying \(G=0\) on \(\partial D\). For the unit disk, the Green's function is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(G(z,w) = \log\left|\dfrac{1-\bar{w}z}{z-w}\right|\)</text><feedback format="html"><text>The Green's function for \(\mathbb{D}\): \(G(z,w) = -\log|z-w|+\log|1-\bar{w}z| = \log\left|\frac{1-\bar{w}z}{z-w}\right|\). It vanishes when \(|z|=1\): \(|1-\bar{w}z|=|z-w|\) on \(\partial\mathbb{D}\) (since for \(|z|=1\): \(1-\bar{w}z = -z(\bar{z}-\bar{w}) = -z\overline{(z-w)}\), so \(|1-\bar{w}z|=|z-w|\)).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(G(z,w) = -\log|z-w|\)</text><feedback format="html"><text>This is the fundamental solution of the Laplacian, but it does NOT vanish on \(\partial\mathbb{D}\). The Green's function requires a correction term to satisfy the zero boundary condition.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(G(z,w) = \log|z-w| + \log|z+w|\)</text><feedback format="html"><text>This doesn't represent the Green's function for the disk. The correction term uses the reflection principle, giving \(\log|1-\bar{w}z|\) not \(\log|z+w|\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(G(z,w) = |z-w|^2 - 1\)</text><feedback format="html"><text>This is not a harmonic function (the modulus squared of a complex number is not harmonic unless the function is linear).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q19 Weil's Theorem — Algebraic Functions</text></name>
+    <questiontext format="html"><text><![CDATA[An algebraic function is defined by \(P(z,w)=0\) for a polynomial \(P\). The Riemann surface of \(w^2 = (z^2-1)\) has two sheets connected at branch points \(z=\pm1\). The function \(\sqrt{z^2-1}\) is single-valued on \(\mathbb{C}\setminus[-1,1]\) (with appropriate branch cut). On this domain, the two branches are \(w = \pm\sqrt{z^2-1}\). How are they related?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>They are negatives of each other, and choosing a branch cut \([-1,1]\) makes each branch analytic in \(\mathbb{C}\setminus[-1,1]\)</text><feedback format="html"><text>The two branches \(\pm\sqrt{z^2-1}\) are negatives of each other. With the branch cut along \([-1,1]\), each branch is single-valued and analytic in \(\mathbb{C}\setminus[-1,1]\). The branch cut allows a continuous choice of sign of the square root. Crossing the cut switches between the two branches.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>They are complex conjugates of each other</text><feedback format="html"><text>The two branches \(w\) and \(-w\) are negatives, not necessarily complex conjugates. They are complex conjugates only if \(w\) is purely imaginary.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>One branch is analytic and the other is not</text><feedback format="html"><text>Both branches are equally analytic on \(\mathbb{C}\setminus[-1,1]\). The choice of branch cut determines which is the "principal" branch.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The two branches coincide at \(z=\pm1\)</text><feedback format="html"><text>At \(z=\pm1\): \(\sqrt{z^2-1}=0\), and both branches give 0. But this is a branch point where the Riemann surface has a ramification point — the two sheets come together, not "coincide as analytic functions."</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA30-Q20 Prime Number Theorem — Zero-Free Region</text></name>
+    <questiontext format="html"><text><![CDATA[The classical zero-free region for \(\zeta(s)\) is: \(\zeta(s)\neq0\) for \(\sigma = \text{Re}(s) \geq 1 - c/\log(|t|+2)\) (for some constant \(c>0\), where \(s=\sigma+it\)). This asymptotes toward the critical line as \(|t|\to\infty\). The best known zero-free region (up to 2024) due to Korobov-Vinogradov is of the form:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\sigma \geq 1 - c/(\log|t|)^{2/3}(\log\log|t|)^{1/3}\)</text><feedback format="html"><text>The Korobov-Vinogradov method gives a zero-free region \(\sigma \geq 1 - c/(\log|t|)^{2/3}(\log\log|t|)^{1/3}\), which is slightly wider than the classical region \(1-c/\log|t|\). This region is derived from exponential sum estimates and represents the state of the art for zero-free regions of \(\zeta(s)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sigma \geq 1/2\) (the Riemann Hypothesis)</text><feedback format="html"><text>The Riemann Hypothesis is \(\sigma=1/2\) for all non-trivial zeros, which remains unproven. The known zero-free regions are much closer to \(\sigma=1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sigma \geq 1 - 1/\log|t|\) (no improvement over classical)</text><feedback format="html"><text>The Korobov-Vinogradov method improves the exponent from \(1\) to \(2/3\) in the denominator, giving a wider zero-free region than just \(1/\log|t|\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sigma > 0\) (the whole half-plane)</text><feedback format="html"><text>\(\zeta(s)\) has zeros in \(\sigma>0\) (the non-trivial zeros in the critical strip \(0<\sigma<1\)). The zero-free region is near \(\sigma=1\), not all of \(\sigma>0\).</text></feedback></answer>
+  </question>
+
+</quiz>

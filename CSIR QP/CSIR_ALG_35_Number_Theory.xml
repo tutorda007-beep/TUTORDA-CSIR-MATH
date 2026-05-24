@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Abstract Algebra/Number Theory</text></category>
+    <info format="html"><text>CSIR NET Mathematics — Abstract Algebra: Elementary Number Theory. MCQ, 20 questions covering divisibility, congruences, quadratic residues, arithmetic functions, Diophantine equations, p-adic numbers, and algebraic number theory basics.</text></info>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q01 Euler's totient function</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>What is the value of Euler's totient function \(\phi(72)\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>24</text>
+      <feedback format="html"><text><![CDATA[
+        \(72 = 2^3 \cdot 3^2\). Using the formula \(\phi(n) = n\prod_{p\mid n}\left(1-\frac{1}{p}\right)\):<br/>
+        \(\phi(72) = 72 \cdot \left(1-\frac{1}{2}\right)\cdot\left(1-\frac{1}{3}\right) = 72 \cdot \frac{1}{2} \cdot \frac{2}{3} = 24\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>36</text>
+      <feedback format="html"><text>Incorrect. Apply the multiplicative formula: \(\phi(8)\cdot\phi(9)=4\cdot 6=24\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>18</text>
+      <feedback format="html"><text>Incorrect. \(\phi(72)=72(1-1/2)(1-1/3)=24\), not 18.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>12</text>
+      <feedback format="html"><text>Incorrect. The correct value is 24; this would be \(\phi(36)\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q02 Quadratic reciprocity</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Legendre symbol \(\left(\frac{3}{11}\right)\) equals which value? (\(3\) is a quadratic residue mod 11 iff \(x^2\equiv 3\pmod{11}\) has a solution.)</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>1 (3 is a quadratic residue mod 11)</text>
+      <feedback format="html"><text><![CDATA[
+        Check: \(5^2=25\equiv 3\pmod{11}\). So \(x=5\) is a solution and 3 is a QR mod 11. Alternatively, by Euler's criterion: \(3^{(11-1)/2}=3^5=243\equiv 243-22\cdot 11=243-242=1\pmod{11}\), confirming \(\left(\frac{3}{11}\right)=1\). The squares mod 11 are: \(1,4,9,5,3\) (from \(1^2,2^2,3^2,4^2,5^2\)), confirming 3 is a QR.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>-1 (3 is a quadratic non-residue mod 11)</text>
+      <feedback format="html"><text>Incorrect. \(5^2=25\equiv 3\pmod{11}\), so 3 is a QR mod 11.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>0 (3 is divisible by 11)</text>
+      <feedback format="html"><text>Incorrect. \(\gcd(3,11)=1\), so the Legendre symbol is \(\pm 1\), not 0.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>3 (the symbol equals the numerator)</text>
+      <feedback format="html"><text>Incorrect. The Legendre symbol takes values in \(\{-1,0,1\}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q03 Quadratic reciprocity law statement</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Law of Quadratic Reciprocity states that for distinct odd primes \(p\) and \(q\):</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Gauss's Law of Quadratic Reciprocity: \(\left(\frac{p}{q}\right)\left(\frac{q}{p}\right)=(-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}\). The exponent is 0 (hence the product is 1) unless both \(p\equiv q\equiv 3\pmod 4\). So: if at least one of \(p,q\equiv 1\pmod 4\), then \(\left(\frac{p}{q}\right)=\left(\frac{q}{p}\right)\). If both \(\equiv 3\pmod 4\), then \(\left(\frac{p}{q}\right)=-\left(\frac{q}{p}\right)\). This law allows computing Legendre symbols systematically.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\left(\frac{p}{q}\right) = \left(\frac{q}{p}\right)\) always</text>
+      <feedback format="html"><text>Incorrect. The symbols are equal only when \(p\not\equiv q\equiv 3\pmod 4\) doesn't hold simultaneously.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\left(\frac{p}{q}\right) = (-1)^{p+q}\)</text>
+      <feedback format="html"><text>Incorrect. The law involves \(\frac{p-1}{2}\cdot\frac{q-1}{2}\) in the exponent, not \(p+q\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = 1\) always</text>
+      <feedback format="html"><text>Incorrect. This would mean the symbols are always equal; they flip sign when both primes are \(\equiv 3\pmod 4\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q04 Möbius function and inversion</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Möbius function \(\mu(n)\) is defined as: \(\mu(1)=1\); \(\mu(n)=(-1)^k\) if \(n\) is squarefree with \(k\) prime factors; \(\mu(n)=0\) if \(n\) has a squared prime factor. What is \(\mu(30)\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(-1\)</text>
+      <feedback format="html"><text><![CDATA[
+        \(30 = 2\times 3\times 5\) is squarefree with \(k=3\) distinct prime factors. So \(\mu(30)=(-1)^3=-1\). The Möbius inversion formula: if \(f(n)=\sum_{d\mid n}g(d)\), then \(g(n)=\sum_{d\mid n}\mu(n/d)f(d)\). Key identity: \(\sum_{d\mid n}\mu(d)=\begin{cases}1&n=1\\0&n>1\end{cases}\), which is used to prove prime number theorem connections.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>1</text>
+      <feedback format="html"><text>Incorrect. \(30=2\times3\times5\) has an odd number (3) of prime factors, giving \((-1)^3=-1\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>0</text>
+      <feedback format="html"><text>Incorrect. \(\mu(n)=0\) only when \(n\) has a squared prime factor; 30 is squarefree.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>3</text>
+      <feedback format="html"><text>Incorrect. The Möbius function takes values in \(\{-1,0,1\}\) only.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q05 Primitive roots modulo prime</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>A primitive root modulo a prime \(p\) is a generator of the cyclic group \((\mathbb{Z}/p\mathbb{Z})^\times\). How many primitive roots exist modulo 13?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>4</text>
+      <feedback format="html"><text><![CDATA[
+        \((\mathbb{Z}/13\mathbb{Z})^\times\) is cyclic of order \(13-1=12\). The number of generators (primitive roots) is \(\phi(12)=\phi(4)\phi(3)=2\times 2=4\). The primitive roots mod 13 are those elements of order 12. One can verify that 2 is a primitive root: \(2^1=2,2^2=4,2^3=8,2^4=3,2^6=12\equiv-1,2^{12}\equiv 1\pmod{13}\), and no smaller power is 1.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>6</text>
+      <feedback format="html"><text>Incorrect. The number of primitive roots is \(\phi(p-1)=\phi(12)=4\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>12</text>
+      <feedback format="html"><text>Incorrect. This is the total number of elements in \((\mathbb{Z}/13\mathbb{Z})^\times\), not the primitive roots.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>2</text>
+      <feedback format="html"><text>Incorrect. \(\phi(12)=4\), not 2.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q06 Fermat's little theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>What is the remainder when \(3^{100}\) is divided by 7?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>4</text>
+      <feedback format="html"><text><![CDATA[
+        By Fermat's Little Theorem: \(3^6\equiv 1\pmod 7\) (since \(\gcd(3,7)=1\) and \(p-1=6\)). Write \(100=6\times 16+4\), so \(3^{100}=(3^6)^{16}\cdot 3^4\equiv 1^{16}\cdot 81\pmod 7\). Now \(81=11\times 7+4\), so \(81\equiv 4\pmod 7\). Thus \(3^{100}\equiv 4\pmod 7\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>2</text>
+      <feedback format="html"><text>Incorrect. \(3^4=81\equiv 4\pmod 7\), and \(3^{100}=3^{96+4}=(3^6)^{16}\cdot 3^4\equiv 4\pmod 7\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>1</text>
+      <feedback format="html"><text>Incorrect. \(3^{100}\not\equiv 1\pmod 7\); the order of 3 mod 7 is 6 and \(6\nmid 100\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>6</text>
+      <feedback format="html"><text>Incorrect. \(3^{100}\equiv 4\pmod 7\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q07 Sum of divisors function</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For the arithmetic function \(\sigma(n) = \sum_{d\mid n} d\) (sum of divisors), what is \(\sigma(12)\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>28</text>
+      <feedback format="html"><text><![CDATA[
+        \(12=2^2\times 3\). The divisors of 12 are 1,2,3,4,6,12. Sum: \(1+2+3+4+6+12=28\). Using the multiplicative formula: \(\sigma(12)=\sigma(4)\cdot\sigma(3)=(1+2+4)(1+3)=7\times 4=28\). A number \(n\) is perfect if \(\sigma(n)=2n\); 6 is perfect since \(\sigma(6)=1+2+3+6=12=2\times 6\). \(\sigma(12)=28>2\times 12=24\), so 12 is abundant.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>24</text>
+      <feedback format="html"><text>Incorrect. The sum \(1+2+3+4+6+12=28\), not 24.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>6</text>
+      <feedback format="html"><text>Incorrect. 6 is the number of divisors of 12 (\(\tau(12)\)), not the sum.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>16</text>
+      <feedback format="html"><text>Incorrect. The correct value is 28.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q08 Linear Diophantine equations</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The equation \(15x + 21y = 9\) has integer solutions. Find the general solution.</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(x = 2 + 7t,\; y = -1 - 5t\) for any integer \(t\)</text>
+      <feedback format="html"><text><![CDATA[
+        \(\gcd(15,21)=3\) and \(3\mid 9\), so solutions exist. Dividing by 3: \(5x+7y=3\). A particular solution: try \(x=2,y=-1\): \(5(2)+7(-1)=10-7=3\). ✓ General solution: \(x=2+7t, y=-1-5t\) (the homogeneous solution of \(5x+7y=0\) is \((7,-5)\)). Verify: \(15(2+7t)+21(-1-5t)=30+105t-21-105t=9\). ✓
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(x = 3t,\; y = -3t\) for any integer \(t\)</text>
+      <feedback format="html"><text>Incorrect. Substituting: \(15\cdot 3t+21\cdot(-3t)=45t-63t=-18t\neq 9\) in general.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>No integer solutions exist</text>
+      <feedback format="html"><text>Incorrect. Since \(\gcd(15,21)=3\) divides 9, integer solutions exist.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(x = 1 + 7t,\; y = 0 - 5t\)</text>
+      <feedback format="html"><text>Incorrect. Check: \(15(1)+21(0)=15\neq 9\) for \(t=0\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q09 p-adic valuation</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The \(p\)-adic valuation \(v_p(n)\) is the largest power of \(p\) dividing \(n\). What is \(v_2(n!)\) for general \(n\)? (Legendre's formula)</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(v_p(n!) = \sum_{k=1}^{\infty} \left\lfloor \frac{n}{p^k} \right\rfloor\)</text>
+      <feedback format="html"><text><![CDATA[
+        Legendre's formula: \(v_p(n!)=\sum_{k=1}^\infty\lfloor n/p^k\rfloor\). This counts: \(\lfloor n/p\rfloor\) multiples of \(p\), plus \(\lfloor n/p^2\rfloor\) additional multiples of \(p^2\), etc. Example: \(v_2(10!)=\lfloor 10/2\rfloor+\lfloor 10/4\rfloor+\lfloor 10/8\rfloor=5+2+1=8\). So \(2^8\mid 10!\) but \(2^9\nmid 10!\). Also: \(v_p(n!)=(n-s_p(n))/(p-1)\) where \(s_p(n)\) is the digit sum of \(n\) in base \(p\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(v_p(n!) = \lfloor n/p \rfloor\)</text>
+      <feedback format="html"><text>Incorrect. This only counts multiples of \(p\); we need to add contributions from higher powers of \(p\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(v_p(n!) = n - 1\)</text>
+      <feedback format="html"><text>Incorrect. The formula involves floor functions of \(n/p^k\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(v_p(n!) = p^{\lfloor \log_p n\rfloor}\)</text>
+      <feedback format="html"><text>Incorrect. This is not the correct formula; it is a sum of floor functions.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q10 Chinese Remainder Theorem solution</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Find the smallest positive integer \(x\) satisfying \(x\equiv 2\pmod 3\), \(x\equiv 3\pmod 5\), \(x\equiv 2\pmod 7\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>23</text>
+      <feedback format="html"><text><![CDATA[
+        By CRT (moduli 3,5,7 are pairwise coprime, \(N=105\)):<br/>
+        \(N_1=35, N_2=21, N_3=15\).<br/>
+        Inverses: \(35\equiv 2\pmod 3\Rightarrow 35^{-1}\equiv 2\pmod 3\); \(21\equiv 1\pmod 5\Rightarrow 21^{-1}\equiv 1\pmod 5\); \(15\equiv 1\pmod 7\Rightarrow 15^{-1}\equiv 1\pmod 7\).<br/>
+        \(x\equiv 2\cdot 35\cdot 2+3\cdot 21\cdot 1+2\cdot 15\cdot 1 = 140+63+30=233\pmod{105}\).<br/>
+        \(233=2\times 105+23\), so \(x\equiv 23\pmod{105}\). Check: \(23=7\cdot 3+2\checkmark\), \(23=4\cdot 5+3\checkmark\), \(23=3\cdot 7+2\checkmark\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>38</text>
+      <feedback format="html"><text>Incorrect. Check: \(38=12\times 3+2\checkmark\), \(38=7\times 5+3\checkmark\), \(38=5\times 7+3\neq 2\). So 38 fails the last congruence.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>8</text>
+      <feedback format="html"><text>Incorrect. \(8\equiv 2\pmod 3\checkmark\), \(8\equiv 3\pmod 5\checkmark\), \(8\equiv 1\pmod 7\neq 2\). Fails the last.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>53</text>
+      <feedback format="html"><text>Incorrect. \(53\equiv 2\pmod 3\checkmark\), \(53\equiv 3\pmod 5\checkmark\), \(53=7\times 7+4\equiv 4\pmod 7\neq 2\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q11 Dirichlet's theorem on primes in arithmetic progressions</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Dirichlet's theorem on primes in arithmetic progressions states that if \(\gcd(a,d)=1\), then the arithmetic progression \(a, a+d, a+2d, \ldots\) contains:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Infinitely many primes</text>
+      <feedback format="html"><text><![CDATA[
+        Dirichlet's theorem (1837): if \(\gcd(a,d)=1\), then there are infinitely many primes \(p\equiv a\pmod d\). Moreover, the primes are equidistributed among the \(\phi(d)\) reduced residue classes: the density of primes \(\equiv a\pmod d\) in all primes is \(1/\phi(d)\). The proof uses Dirichlet \(L\)-functions \(L(s,\chi)=\sum_{n=1}^\infty\chi(n)n^{-s}\) for Dirichlet characters \(\chi\) mod \(d\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Exactly \(\phi(d)\) primes</text>
+      <feedback format="html"><text>Incorrect. There are infinitely many primes in each valid progression.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>At least one prime, but possibly finitely many</text>
+      <feedback format="html"><text>Incorrect. Dirichlet proved infinitely many primes exist.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>No primes (all primes appear only in progressions starting with 2)</text>
+      <feedback format="html"><text>Incorrect. Primes are distributed among all coprime residue classes.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q12 p-adic numbers</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The \(p\)-adic integers \(\mathbb{Z}_p\) can be defined as the inverse limit \(\varprojlim \mathbb{Z}/p^n\mathbb{Z}\). Which property distinguishes \(\mathbb{Z}_p\) from \(\mathbb{Z}\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbb{Z}_p\) is uncountable, compact in the \(p\)-adic topology, and complete with respect to the \(p\)-adic metric</text>
+      <feedback format="html"><text><![CDATA[
+        \(\mathbb{Z}_p\) is an uncountable complete metric space (with metric \(d(x,y)=p^{-v_p(x-y)}\)), compact and totally disconnected. Unlike \(\mathbb{Z}\), every Cauchy sequence in \(\mathbb{Z}_p\) converges. The field of fractions is \(\mathbb{Q}_p\) (p-adic numbers). Ostrowski's theorem: the only completions of \(\mathbb{Q}\) are \(\mathbb{R}\) and \(\mathbb{Q}_p\) for primes \(p\). Elements of \(\mathbb{Z}_p\) can be written as \(\sum_{k=0}^\infty a_k p^k\) with \(0\leq a_k<p\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}_p\) is a field (every nonzero element is a unit)</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}_p\) is not a field; \(p\) is not invertible (the field of fractions is \(\mathbb{Q}_p\)).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}_p \cong \mathbb{Z}\) as rings</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}_p\) is uncountable while \(\mathbb{Z}\) is countable; they are not isomorphic.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}_p\) has characteristic \(p\)</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}_p\) has characteristic 0 (it contains \(\mathbb{Z}\) as a subring).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q13 Gauss sums</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Gauss sum \(g(\chi) = \sum_{a=0}^{p-1} \chi(a) e^{2\pi i a/p}\) for a non-principal character \(\chi\) mod prime \(p\) satisfies \(|g(\chi)|=\):</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\sqrt{p}\)</text>
+      <feedback format="html"><text><![CDATA[
+        For a non-principal character \(\chi\) mod prime \(p\): \(|g(\chi)|^2 = g(\chi)\overline{g(\chi)} = p\). Thus \(|g(\chi)|=\sqrt{p}\). For the Legendre symbol \(\chi=\left(\frac{\cdot}{p}\right)\): \(g(\chi)=\sqrt{p^*}\) where \(p^*=(-1)^{(p-1)/2}p\). Gauss sums appear in the proof of quadratic reciprocity and in the study of exponential sums in analytic number theory.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(p\)</text>
+      <feedback format="html"><text>Incorrect. \(|g(\chi)|^2=p\), so \(|g(\chi)|=\sqrt{p}\), not \(p\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>1</text>
+      <feedback format="html"><text>Incorrect. The modulus of a Gauss sum for a non-principal character is \(\sqrt{p}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>0</text>
+      <feedback format="html"><text>Incorrect. The trivial (principal) character sum gives 0 over all residues, but the Gauss sum with a non-principal character has modulus \(\sqrt{p}\neq 0\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q14 Wilson's theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Wilson's theorem states that \((p-1)!\equiv -1\pmod p\) for prime \(p\). What is \(12! \pmod{13}\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>12</text>
+      <feedback format="html"><text><![CDATA[
+        By Wilson's theorem with \(p=13\): \((13-1)! = 12!\equiv -1\equiv 12\pmod{13}\). Wilson's theorem gives a primality test: \(n\) is prime iff \((n-1)!\equiv -1\pmod n\). The converse also holds (composite \(n>4\) have \((n-1)!\equiv 0\pmod n\)). This theorem, while elegant, is impractical for primality testing since computing \((n-1)!\) is exponential.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>1</text>
+      <feedback format="html"><text>Incorrect. Wilson's theorem gives \(12!\equiv -1\equiv 12\pmod{13}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>0</text>
+      <feedback format="html"><text>Incorrect. \(12!\) is not divisible by 13 (as 13 is prime and \(12! = 1\cdot2\cdots12\) contains no factor of 13).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>6</text>
+      <feedback format="html"><text>Incorrect. Wilson's theorem gives the explicit answer: \(12!\equiv 12\pmod{13}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q15 Integer representations as sum of two squares</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>An integer \(n\geq 1\) can be expressed as a sum of two squares \(n=x^2+y^2\) (with \(x,y\in\mathbb{Z}\)) if and only if:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>In the prime factorization of \(n\), every prime \(p\equiv 3\pmod 4\) appears to an even power</text>
+      <feedback format="html"><text><![CDATA[
+        Fermat's theorem on sums of two squares: an odd prime \(p\) is a sum of two squares iff \(p\equiv 1\pmod 4\) (or \(p=2\)). Primes \(p\equiv 3\pmod 4\) are NOT sums of two squares. The general criterion (proven using Gaussian integers): \(n=x^2+y^2\) iff in the factorization of \(n\), every prime factor \(p\equiv 3\pmod 4\) appears with an even exponent. Example: \(5=1^2+2^2\) (\(5\equiv 1\pmod 4\)), \(10=1^2+3^2\), \(3\) cannot be so expressed (\(3\equiv 3\pmod 4\)).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(n\) is even</text>
+      <feedback format="html"><text>Incorrect. Odd numbers like 5 and 13 are sums of two squares.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(n\) is a perfect square</text>
+      <feedback format="html"><text>Incorrect. \(n=4=2^2+0^2=0^2+2^2\) is a perfect square and a sum of two squares, but so is \(n=5\), which is not a perfect square.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(n\) is squarefree</text>
+      <feedback format="html"><text>Incorrect. \(n=9=3^2\) is not squarefree but also fails the two-square test (\(3\equiv 3\pmod 4\) appears to odd power).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q16 Class number and ideal factorization</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The class number \(h(K)\) of a number field \(K\) measures the failure of unique factorization. Which is true about \(\mathbb{Q}(\sqrt{-5})\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(h(\mathbb{Q}(\sqrt{-5}))=2\), reflecting the non-unique factorization \(6=2\cdot 3=(1+\sqrt{-5})(1-\sqrt{-5})\)</text>
+      <feedback format="html"><text><![CDATA[
+        The ring of integers of \(\mathbb{Q}(\sqrt{-5})\) is \(\mathbb{Z}[\sqrt{-5}]\), which has class number 2. The ideal class group has order 2, generated by the prime ideal \(\mathfrak{p}=(2,1+\sqrt{-5})\) (with \(\mathfrak{p}^2=(2)\) the principal ideal generated by 2). The non-unique factorization at the element level \(6=2\cdot3=(1+\sqrt{-5})(1-\sqrt{-5})\) becomes unique at the ideal level: \((6)=\mathfrak{p}^2\mathfrak{q}^2\) where \(\mathfrak{q}=(3,1+\sqrt{-5})\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(h(\mathbb{Q}(\sqrt{-5}))=1\), so unique factorization holds</text>
+      <feedback format="html"><text>Incorrect. The failure of unique factorization (\(6=2\times3=(1+\sqrt{-5})(1-\sqrt{-5})\)) shows \(h>1\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(h(\mathbb{Q}(\sqrt{-5}))=6\)</text>
+      <feedback format="html"><text>Incorrect. The class number is 2, not 6.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Unique factorization holds since \(\mathbb{Z}[\sqrt{-5}]\) is a Euclidean domain</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}[\sqrt{-5}]\) is NOT a Euclidean domain or PID; the non-unique factorization of 6 witnesses this.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q17 Norm form and Pell's equation</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Pell's equation \(x^2 - Dy^2 = 1\) (for non-square positive integer \(D\)) always has infinitely many solutions. The fundamental solution can be found by:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Computing the continued fraction expansion of \(\sqrt{D}\) and taking its convergents</text>
+      <feedback format="html"><text><![CDATA[
+        The continued fraction expansion of \(\sqrt{D}\) is periodic: \(\sqrt{D}=[a_0;\overline{a_1,\ldots,a_r}]\). The fundamental solution \((x_1,y_1)\) of \(x^2-Dy^2=1\) comes from the convergent \(p_{r-1}/q_{r-1}\) just before the period ends. All solutions are then given by \(x_n+y_n\sqrt{D}=(x_1+y_1\sqrt{D})^n\). Connection to algebraic number theory: solutions correspond to units of norm 1 in \(\mathbb{Z}[\sqrt{D}]\) (or its ring of integers).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The equation \(x^2-Dy^2=1\) has no solutions for \(D>1\)</text>
+      <feedback format="html"><text>Incorrect. The equation always has the trivial solution \((1,0)\) and infinitely many nontrivial solutions.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Computing \(\sqrt{D}\) to sufficient decimal precision</text>
+      <feedback format="html"><text>Incorrect. The continued fraction method is exact and algorithmic; floating-point approximations are insufficient.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Using Fermat's descent to reduce to smaller solutions</text>
+      <feedback format="html"><text>Incorrect. Fermat's descent applies to showing non-solvability of some equations; Pell's equation uses continued fractions or unit group theory.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q18 Ramification in number fields</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For the extension \(\mathbb{Q}(\sqrt{-3})/\mathbb{Q}\), the prime \(p=3\) in \(\mathbb{Z}\) behaves as follows in the ring of integers \(\mathbb{Z}[\omega]\) (where \(\omega=\frac{-1+\sqrt{-3}}{2}\)):</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>3 ramifies: \((3) = (1-\omega)^2 \cdot (\text{unit})\), i.e., 3 is a square of a prime ideal times a unit</text>
+      <feedback format="html"><text><![CDATA[
+        In \(\mathbb{Z}[\omega]\) (ring of integers of \(\mathbb{Q}(\sqrt{-3})\), the Eisenstein integers), \(3=-(\sqrt{-3})^2=-(i\sqrt{3})^2\). More precisely, \(\text{disc}(\mathbb{Q}(\sqrt{-3}))=-3\). A prime \(p\) ramifies in \(\mathbb{Q}(\sqrt{d})\) iff \(p\mid\text{disc}\). Since \(3\mid -3\), the prime 3 ramifies: \((3)=\mathfrak{p}^2\) in \(\mathbb{Z}[\omega]\). The three behaviors for odd prime \(p\) in \(\mathbb{Q}(\sqrt{d})\): split (\(p\mid d\) not... actually \(\left(\frac{d}{p}\right)=1\)), inert (\(\left(\frac{d}{p}\right)=-1\)), ramified (\(p\mid\text{disc}\)).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>3 splits: \((3)=\mathfrak{p}\mathfrak{q}\) with \(\mathfrak{p}\neq\mathfrak{q}\)</text>
+      <feedback format="html"><text>Incorrect. A prime splits in \(\mathbb{Q}(\sqrt{d})\) iff \(\left(\frac{d}{p}\right)=1\); here \(p\mid\text{disc}\) implies ramification.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>3 remains prime (is inert) in \(\mathbb{Z}[\omega]\)</text>
+      <feedback format="html"><text>Incorrect. 3 divides the discriminant \(-3\), so it ramifies, not remains inert.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>3 is a unit in \(\mathbb{Z}[\omega]\)</text>
+      <feedback format="html"><text>Incorrect. Units in \(\mathbb{Z}[\omega]\) are the 6th roots of unity \(\{\pm1, \pm\omega, \pm\omega^2\}\); 3 is not among them.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q19 Waring's problem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Waring's problem asks: for each \(k\geq 1\), what is the smallest \(g(k)\) such that every positive integer is a sum of at most \(g(k)\) perfect \(k\)th powers? What is \(g(2)\) (sums of squares)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>4 (Lagrange's four-square theorem: every positive integer is a sum of four squares)</text>
+      <feedback format="html"><text><![CDATA[
+        Lagrange's four-square theorem (1770): every positive integer \(n\) is the sum of four perfect squares: \(n=a^2+b^2+c^2+d^2\). The number 4 is optimal since numbers like \(n\equiv 7\pmod 8\) (e.g., 7 = \(4+1+1+1\)) require exactly 4 squares. Known values: \(g(2)=4\), \(g(3)=9\), \(g(4)=19\). The key identity is Euler's four-square identity: \((a_1^2+a_2^2+a_3^2+a_4^2)(b_1^2+\cdots+b_4^2)=c_1^2+\cdots+c_4^2\) (used to reduce to prime case).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>2</text>
+      <feedback format="html"><text>Incorrect. Not every integer is a sum of two squares; e.g., 3 is not expressible as a sum of two squares.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>3</text>
+      <feedback format="html"><text>Incorrect. Legendre proved 3 squares are necessary for most numbers; but numbers \(\equiv 7\pmod 8\) require 4 squares.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>8</text>
+      <feedback format="html"><text>Incorrect. Lagrange's theorem gives the exact answer of 4.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>ALG35-Q20 Prime Number Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Prime Number Theorem (PNT) states that the prime-counting function \(\pi(x) = \#\{p\leq x : p\text{ prime}\}\) satisfies:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\pi(x) \sim \dfrac{x}{\ln x}\) as \(x\to\infty\)</text>
+      <feedback format="html"><text><![CDATA[
+        The Prime Number Theorem: \(\pi(x)\sim x/\ln x\), meaning \(\lim_{x\to\infty}\pi(x)/(x/\ln x)=1\). Proved independently by Hadamard and de la Vallée Poussin in 1896, using properties of the Riemann zeta function \(\zeta(s)\) — specifically the non-vanishing of \(\zeta(s)\) on the line \(\text{Re}(s)=1\). The better approximation is \(\text{li}(x)=\int_2^x dt/\ln t\). The Riemann Hypothesis (unproved) would imply a much sharper error term.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\pi(x) \sim x\) as \(x\to\infty\)</text>
+      <feedback format="html"><text>Incorrect. The prime density decreases; \(\pi(x)\) grows slower than \(x\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\pi(x) \sim \sqrt{x}\) as \(x\to\infty\)</text>
+      <feedback format="html"><text>Incorrect. Primes are denser than \(\sqrt{x}\); the correct asymptotics is \(x/\ln x\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\pi(x) \sim x\ln x\) as \(x\to\infty\)</text>
+      <feedback format="html"><text>Incorrect. \(x\ln x\) grows faster than \(x\), which would mean every integer is eventually prime — absurd.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

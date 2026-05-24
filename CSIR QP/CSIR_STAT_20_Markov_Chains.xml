@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Statistics and Probability/Markov Chains and Stochastic Processes</text></category>
+    <info format="html"><text>CSIR NET level MCQ questions on Markov Chains and Stochastic Processes</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q01 Markov Property</text></name>
+    <questiontext format="html"><text><![CDATA[A discrete-time Markov chain on state space \(S\) satisfies \(P(X_{n+1}=j|X_n=i,X_{n-1},\ldots,X_0)=P(X_{n+1}=j|X_n=i)=p_{ij}\). The matrix \(P=(p_{ij})\) is called the transition matrix. Its defining property is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>All entries \(p_{ij}\geq0\) and each row sums to 1 (stochastic matrix)</text><feedback format="html"><text>Correct. A transition matrix is a stochastic matrix: non-negative entries with row sums equal to 1.</text></feedback></answer>
+    <answer fraction="0"><text>All entries \(p_{ij}\geq0\) and each column sums to 1</text><feedback format="html"><text>Incorrect. Row sums equal 1 (not column sums) for a stochastic matrix. Column-sum-1 would be doubly stochastic.</text></feedback></answer>
+    <answer fraction="0"><text>The matrix is symmetric: \(p_{ij}=p_{ji}\)</text><feedback format="html"><text>Incorrect. General Markov chains need not have symmetric transition matrices.</text></feedback></answer>
+    <answer fraction="0"><text>The determinant equals 1</text><feedback format="html"><text>Incorrect. Stochastic matrices have determinant in \([-1,1]\), not necessarily 1.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q02 Stationary Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[A stationary distribution \(\pi\) of a Markov chain satisfies \(\pi P = \pi\) (row vector) and \(\sum_i\pi_i=1\). For the transition matrix \(P=\begin{pmatrix}0.7&0.3\\0.4&0.6\end{pmatrix}\), the stationary distribution is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\pi=(4/7, 3/7)\)]]></text><feedback format="html"><text>Correct. Solve \(\pi_1=0.7\pi_1+0.4\pi_2\) and \(\pi_1+\pi_2=1\). From first: \(0.3\pi_1=0.4\pi_2\), so \(\pi_1/\pi_2=4/3\). Normalizing: \(\pi=(4/7,3/7)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\pi=(1/2, 1/2)\)]]></text><feedback format="html"><text>Incorrect. Check: \((1/2)(0.7)+(1/2)(0.4)=0.55\neq1/2\). So \((1/2,1/2)\) is not stationary.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\pi=(0.3, 0.7)\)]]></text><feedback format="html"><text>Incorrect. \(\pi P=\pi\) gives \(\pi=(4/7,3/7)\approx(0.571,0.429)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\pi=(0.7, 0.3)\)]]></text><feedback format="html"><text>Incorrect. \(\pi=(4/7,3/7)\), not \((0.7,0.3)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q03 Irreducibility and Aperiodicity</text></name>
+    <questiontext format="html"><text><![CDATA[A Markov chain is irreducible if every state communicates with every other state. An irreducible chain on a finite state space has a unique stationary distribution. Aperiodicity (period of every state \(=1\)) plus irreducibility guarantees:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(P^n_{ij}\to\pi_j\) as \(n\to\infty\) for all \(i,j\) (ergodic theorem)]]></text><feedback format="html"><text>Correct. An irreducible, aperiodic (ergodic) Markov chain on a finite state space converges to the unique stationary distribution from any initial state.</text></feedback></answer>
+    <answer fraction="0"><text>The chain is reversible (detailed balance holds)</text><feedback format="html"><text>Incorrect. Irreducibility + aperiodicity gives ergodicity (convergence), not reversibility.</text></feedback></answer>
+    <answer fraction="0"><text>The stationary distribution is uniform</text><feedback format="html"><text>Incorrect. The stationary distribution need not be uniform; it is unique but depends on the transition probabilities.</text></feedback></answer>
+    <answer fraction="0"><text>The chain has period 2</text><feedback format="html"><text>Incorrect. Aperiodicity means period \(=1\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q04 Detailed Balance</text></name>
+    <questiontext format="html"><text><![CDATA[A Markov chain satisfies detailed balance (is reversible) with respect to distribution \(\pi\) if \(\pi_i p_{ij}=\pi_j p_{ji}\) for all \(i,j\). If detailed balance holds, then \(\pi\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Is the stationary distribution of the chain</text><feedback format="html"><text>Correct. Summing \(\pi_ip_{ij}=\pi_jp_{ji}\) over \(i\): \(\sum_i\pi_ip_{ij}=\pi_j\sum_ip_{ji}=\pi_j\), so \(\pi P=\pi\). Detailed balance implies \(\pi\) is stationary.</text></feedback></answer>
+    <answer fraction="0"><text>Is uniform on all states</text><feedback format="html"><text>Incorrect. Detailed balance can hold for non-uniform \(\pi\).</text></feedback></answer>
+    <answer fraction="0"><text>Has no unique solution</text><feedback format="html"><text>Incorrect. The stationary distribution satisfying detailed balance exists and is unique for irreducible chains.</text></feedback></answer>
+    <answer fraction="0"><text>Requires the chain to be periodic</text><feedback format="html"><text>Incorrect. Reversibility (detailed balance) is independent of periodicity.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q05 Absorption Probability</text></name>
+    <questiontext format="html"><text><![CDATA[In a Markov chain with absorbing states, the absorption probability from transient state \(i\) into absorbing state \(a\) satisfies a linear system. For a simple random walk on \(\{0,1,\ldots,N\}\) (0 and \(N\) absorbing, \(p=q=1/2\)), the probability of absorption at \(N\) starting from \(i\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(i/N\)]]></text><feedback format="html"><text>Correct. For symmetric random walk (gambler's ruin), absorption probability at \(N\) from state \(i\) is \(i/N\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(1/2\) for all \(i\)]]></text><feedback format="html"><text>Incorrect. Absorption at \(N\) depends on starting position: \(P=i/N\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\((1/2)^{N-i}\)]]></text><feedback format="html"><text>Incorrect. Absorption probability is \(i/N\) for the symmetric walk.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(1-(1/2)^i\)]]></text><feedback format="html"><text>Incorrect. Absorption probability at \(N\) is linear: \(i/N\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q06 Mean First Passage Time</text></name>
+    <questiontext format="html"><text><![CDATA[For an ergodic Markov chain, the mean return time to state \(i\) (mean first passage time \(m_{ii}\)) satisfies:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(m_{ii}=1/\pi_i\) where \(\pi_i\) is the stationary probability]]></text><feedback format="html"><text>Correct. For an ergodic chain, the mean return time to state \(i\) equals the reciprocal of the stationary probability: \(m_{ii}=1/\pi_i\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(m_{ii}=\pi_i\)]]></text><feedback format="html"><text>Incorrect. The mean return time is \(1/\pi_i\), not \(\pi_i\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(m_{ii}=|S|\) (number of states)]]></text><feedback format="html"><text>Incorrect. Mean return time \(=1/\pi_i\), which equals \(|S|\) only for the uniform stationary distribution.</text></feedback></answer>
+    <answer fraction="0"><text>The mean return time is infinite for all ergodic chains</text><feedback format="html"><text>Incorrect. Ergodic (positive recurrent) chains have finite mean return times.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q07 Branching Process Extinction</text></name>
+    <questiontext format="html"><text><![CDATA[In a Galton-Watson branching process, each individual independently produces offspring with PGF \(G(z)=E[z^X]\). The extinction probability \(q\) (probability the population eventually dies out) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>The smallest non-negative root of \(G(q)=q\)</text><feedback format="html"><text>Correct. The extinction probability \(q\) satisfies \(q=G(q)\) and is the smallest fixed point of \(G\) in \([0,1]\). If mean offspring \(\mu=G'(1)\leq1\), then \(q=1\); if \(\mu>1\), then \(q<1\).</text></feedback></answer>
+    <answer fraction="0"><text>Always equal to 1 (certain extinction)</text><feedback format="html"><text>Incorrect. For supercritical processes (\(\mu>1\)), extinction probability \(q<1\) (survival with positive probability).</text></feedback></answer>
+    <answer fraction="0"><text>Always equal to 0 (no extinction)</text><feedback format="html"><text>Incorrect. For subcritical and critical processes (\(\mu\leq1\)), extinction is certain (\(q=1\)).</text></feedback></answer>
+    <answer fraction="0"><text>\(q=1-1/\mu\) for all supercritical processes</text><feedback format="html"><text>Incorrect. This formula holds only for Geometric offspring distributions. In general, \(q\) is the smallest root of \(G(q)=q\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q08 Poisson Process Properties</text></name>
+    <questiontext format="html"><text><![CDATA[A Poisson process with rate \(\lambda\) has the property that the number of arrivals in non-overlapping intervals are independent. The waiting time \(W_n\) until the \(n\)-th arrival follows:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{Gamma}(n, 1/\lambda)\) (Erlang\((n,\lambda)\)) distribution]]></text><feedback format="html"><text>Correct. The \(n\)-th arrival time is the sum of \(n\) i.i.d. Exp\((\lambda)\) interarrival times: \(W_n\sim\text{Gamma}(n,1/\lambda)\).</text></feedback></answer>
+    <answer fraction="0"><text>Exponential\((\lambda)\)</text><feedback format="html"><text>Incorrect. The 1st arrival is Exp\((\lambda)\), but the \(n\)-th is Gamma\((n,1/\lambda)\).</text></feedback></answer>
+    <answer fraction="0"><text>Normal with mean \(n/\lambda\)</text><feedback format="html"><text>Incorrect. The exact distribution is Gamma; normal is only an approximation for large \(n\).</text></feedback></answer>
+    <answer fraction="0"><text>Uniform on \([0, n/\lambda]\)</text><feedback format="html"><text>Incorrect. Waiting times are not uniformly distributed.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q09 Random Walk Recurrence</text></name>
+    <questiontext format="html"><text><![CDATA[The simple symmetric random walk on \(\mathbb{Z}^d\) (equal probability \(1/(2d)\) to move to each neighbor) is recurrent for \(d=1,2\) and transient for \(d\geq3\). This is known as:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Pólya's theorem (1921)</text><feedback format="html"><text>Correct. Pólya proved that the symmetric random walk is recurrent in dimensions 1 and 2 ("you will always return home") but transient in dimension \(\geq3\) ("you might get lost").</text></feedback></answer>
+    <answer fraction="0"><text>Kolmogorov's theorem</text><feedback format="html"><text>Incorrect. The result is Pólya's theorem; Kolmogorov's theorems refer to various other results (extension theorem, 0-1 law, etc.).</text></feedback></answer>
+    <answer fraction="0"><text>de Moivre's theorem</text><feedback format="html"><text>Incorrect. de Moivre's theorem is about complex numbers or the CLT for binomials.</text></feedback></answer>
+    <answer fraction="0"><text>Doob's theorem</text><feedback format="html"><text>Incorrect. Doob's theorems relate to martingales; the random walk recurrence result is Pólya's.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q10 Birth-Death Chain</text></name>
+    <questiontext format="html"><text><![CDATA[A birth-death chain on \(\{0,1,2,\ldots\}\) has transition probabilities \(p_{i,i+1}=\lambda_i\) and \(p_{i,i-1}=\mu_i\) (with \(\mu_0=0\)). The stationary distribution satisfies the detailed balance equations. In the M/M/1 queue (\(\lambda_i=\lambda\), \(\mu_i=\mu\)), the stationary distribution is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[Geometric: \(\pi_n=(1-\rho)\rho^n\) where \(\rho=\lambda/\mu<1\)]]></text><feedback format="html"><text>Correct. For M/M/1 with traffic intensity \(\rho=\lambda/\mu<1\), the stationary distribution is geometric: \(\pi_n=(1-\rho)\rho^n\).</text></feedback></answer>
+    <answer fraction="0"><text>Poisson with rate \(\lambda\)</text><feedback format="html"><text>Incorrect. The M/M/1 stationary distribution is geometric, not Poisson.</text></feedback></answer>
+    <answer fraction="0"><text>Uniform on \(\{0,1,\ldots,\lfloor1/\rho\rfloor\}\)</text><feedback format="html"><text>Incorrect. The M/M/1 stationary distribution is geometric on all non-negative integers (infinite support).</text></feedback></answer>
+    <answer fraction="0"><text>No stationary distribution exists for any \(\rho\)</text><feedback format="html"><text>Incorrect. A stationary distribution exists iff \(\rho=\lambda/\mu<1\) (stable queue).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q11 Martingale Definition</text></name>
+    <questiontext format="html"><text><![CDATA[A sequence \((M_n, \mathcal{F}_n)\) is a martingale if \(E[M_{n+1}|\mathcal{F}_n]=M_n\). Which of the following is a martingale?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(M_n = S_n - n\mu\) where \(S_n=\sum_{i=1}^n X_i\), \(X_i\) i.i.d. with mean \(\mu\)]]></text><feedback format="html"><text>Correct. \(E[M_{n+1}|\mathcal{F}_n]=E[S_{n+1}-\mu(n+1)|\mathcal{F}_n]=S_n+\mu-(n+1)\mu=S_n-n\mu=M_n\). So \(M_n\) is a martingale.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(M_n = S_n^2\) where \(S_n\) is a simple symmetric random walk]]></text><feedback format="html"><text>Incorrect. \(E[S_{n+1}^2|\mathcal{F}_n]=S_n^2+1\neq S_n^2\). So \(S_n^2\) is a submartingale; \(S_n^2-n\) is a martingale.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(M_n = n^2\) (deterministic increasing sequence)]]></text><feedback format="html"><text>Incorrect. \(E[M_{n+1}|\mathcal{F}_n]=(n+1)^2\neq n^2=M_n\). This is a submartingale.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(M_n = S_n\) where \(S_n\) is a biased random walk with drift \(\mu>0\)]]></text><feedback format="html"><text>Incorrect. \(E[S_{n+1}|\mathcal{F}_n]=S_n+\mu>S_n\) for \(\mu>0\). So \(S_n\) is a submartingale, not a martingale.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q12 Optional Stopping Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[Doob's optional stopping theorem states: for a martingale \((M_n)\) and stopping time \(\tau\), \(E[M_\tau]=E[M_0]\) under appropriate conditions. Applying this to the symmetric random walk \(S_n\) and \(\tau=\min\{n:S_n\in\{-a,b\}\}\), we get:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(P(S_\tau=b)=\frac{a}{a+b}\) (probability of hitting \(b\) before \(-a\) starting from 0)]]></text><feedback format="html"><text>Correct. Since \(E[S_\tau]=0\) (OST applied to the martingale \(S_n\)): \(b\cdot P(S_\tau=b)+(-a)\cdot P(S_\tau=-a)=0\), and \(P+Q=1\). Solving: \(P=a/(a+b)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(P(S_\tau=b)=b/(a+b)\)]]></text><feedback format="html"><text>Incorrect. \(P(\text{hit }b)=a/(a+b)\) (depends on distance \(a\) to the lower barrier, not \(b\)).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(P(S_\tau=b)=1/2\) for all \(a,b\)]]></text><feedback format="html"><text>Incorrect. The probability depends on the relative positions \(a\) and \(b\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(E[S_\tau]=a-b\)]]></text><feedback format="html"><text>Incorrect. By OST on the martingale, \(E[S_\tau]=E[S_0]=0\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q13 Brownian Motion</text></name>
+    <questiontext format="html"><text><![CDATA[Standard Brownian motion \((B_t)_{t\geq0}\) satisfies: \(B_0=0\), independent increments, \(B_t-B_s\sim N(0,t-s)\) for \(s<t\), and continuous paths. Which property holds?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(B_t\) is a martingale, and \(B_t^2-t\) is also a martingale]]></text><feedback format="html"><text>Correct. \(E[B_t|\mathcal{F}_s]=B_s\) (martingale). \(E[B_t^2-t|\mathcal{F}_s]=E[(B_t-B_s+B_s)^2-t|\mathcal{F}_s]=B_s^2+(t-s)-t+B_s^2... \) simplifies to \(B_s^2-s\). So \(B_t^2-t\) is a martingale.</text></feedback></answer>
+    <answer fraction="0"><text>Brownian motion has differentiable paths a.s.</text><feedback format="html"><text>Incorrect. Brownian motion paths are a.s. nowhere differentiable (Paley-Wiener-Zygmund theorem).</text></feedback></answer>
+    <answer fraction="0"><text>\(B_t^2\) is a martingale</text><feedback format="html"><text>Incorrect. \(B_t^2\) is a submartingale; \(B_t^2-t\) is the martingale.</text></feedback></answer>
+    <answer fraction="0"><text>Brownian motion has finite variation paths a.s.</text><feedback format="html"><text>Incorrect. Brownian motion has infinite total variation paths a.s. (though finite quadratic variation).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q14 Hitting Time of BM</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(\tau_a=\inf\{t\geq0:B_t=a\}\) be the first hitting time of level \(a>0\) for standard Brownian motion. The distribution of \(\tau_a\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Inverse Gaussian (Lévy distribution): \(f(t)=\frac{a}{\sqrt{2\pi t^3}}e^{-a^2/(2t)}\)</text><feedback format="html"><text>Correct. The first passage time of BM to level \(a\) has the Lévy (inverse Gaussian with mean \(\infty\)) distribution with density \(f(t)=\frac{a}{\sqrt{2\pi t^3}}e^{-a^2/(2t)}\) for \(t>0\).</text></feedback></answer>
+    <answer fraction="0"><text>Exponential with rate \(a^2/2\)</text><feedback format="html"><text>Incorrect. The hitting time of BM is Lévy-distributed, not exponential.</text></feedback></answer>
+    <answer fraction="0"><text>Normal with mean \(a\) and variance \(a^2\)</text><feedback format="html"><text>Incorrect. The hitting time is non-negative and heavy-tailed (Lévy), not normal.</text></feedback></answer>
+    <answer fraction="0"><text>Uniform on \([0,a^2]\)</text><feedback format="html"><text>Incorrect. The hitting time is Lévy-distributed, supported on \((0,\infty)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q15 Stationary Process</text></name>
+    <questiontext format="html"><text><![CDATA[A stochastic process \((X_t)\) is wide-sense stationary (WSS) if \(E[X_t]=\mu\) (constant) and \(\text{Cov}(X_t,X_{t+h})=R(h)\) depends only on lag \(h\). The power spectral density is the Fourier transform of the autocovariance:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(S(\omega)=\int_{-\infty}^\infty R(h)e^{-i\omega h}\,dh\) (Wiener-Khinchin theorem)]]></text><feedback format="html"><text>Correct. The Wiener-Khinchin theorem: for a WSS process, the power spectral density is the Fourier transform of the autocovariance function.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(S(\omega)=|R(\omega)|^2\)]]></text><feedback format="html"><text>Incorrect. The PSD is the Fourier transform of \(R\), not the squared modulus of \(R\) in frequency domain.</text></feedback></answer>
+    <answer fraction="0"><text>\(S(\omega)=\mu^2\delta(\omega)\)</text><feedback format="html"><text>Incorrect. This would be the PSD of a constant process; for a WSS process with nontrivial \(R(h)\), the PSD is more complex.</text></feedback></answer>
+    <answer fraction="0"><text>\(S(\omega)=R(0)/2\pi\)</text><feedback format="html"><text>Incorrect. \(R(0)=\text{Var}(X_t)\) is the total power; the PSD distributes this power over frequencies.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q16 Recurrence Classification</text></name>
+    <questiontext format="html"><text><![CDATA[For a Markov chain state \(i\), define \(f_i=P(\text{chain returns to }i|\text{starts at }i)\). State \(i\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Recurrent if \(f_i=1\) (certain return), transient if \(f_i<1\) (positive probability of non-return)</text><feedback format="html"><text>Correct. A state is recurrent if \(f_i=1\) (chain returns a.s.) and transient if \(f_i<1\) (positive probability of never returning). Equivalently, state \(i\) is recurrent iff \(\sum_{n=0}^\infty P_{ii}^{(n)}=\infty\).</text></feedback></answer>
+    <answer fraction="0"><text>Recurrent if \(f_i=0\), transient if \(f_i>0\)</text><feedback format="html"><text>Incorrect. The definitions are reversed. Recurrent means \(f_i=1\).</text></feedback></answer>
+    <answer fraction="0"><text>Recurrent if mean return time is finite</text><feedback format="html"><text>Incorrect. Mean return time being finite is positive recurrence (a stronger condition). Recurrence alone requires only certain return (\(f_i=1\)).</text></feedback></answer>
+    <answer fraction="0"><text>Transient if the chain visits \(i\) infinitely often</text><feedback format="html"><text>Incorrect. Infinite visits corresponds to recurrence; transient states are visited only finitely many times.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q17 Ergodic Theorem for Markov Chains</text></name>
+    <questiontext format="html"><text><![CDATA[For an ergodic Markov chain with stationary distribution \(\pi\), the ergodic theorem states that time averages equal space averages. Specifically, for any bounded function \(g\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{1}{n}\sum_{k=1}^n g(X_k)\to\sum_i g(i)\pi_i = E_\pi[g]\) a.s.]]></text><feedback format="html"><text>Correct. The ergodic theorem for Markov chains: time averages converge almost surely to the stationary expectation, regardless of the initial state.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{n}\sum_{k=1}^n g(X_k)\to 0\) always]]></text><feedback format="html"><text>Incorrect. Time averages converge to the stationary mean \(E_\pi[g]\), not necessarily 0.</text></feedback></answer>
+    <answer fraction="0"><text>Time averages converge to the initial value \(g(X_0)\)</text><feedback format="html"><text>Incorrect. For ergodic chains, time averages converge to the stationary mean, independent of the initial state.</text></feedback></answer>
+    <answer fraction="0"><text>Convergence holds only in probability, not almost surely</text><feedback format="html"><text>Incorrect. The ergodic theorem gives almost sure convergence.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q18 Renewal Theory</text></name>
+    <questiontext format="html"><text><![CDATA[In renewal theory, if inter-renewal times \(X_1,X_2,\ldots\) are i.i.d. with mean \(\mu\), the renewal reward theorem states that as \(t\to\infty\), the number of renewals \(N(t)/t\to1/\mu\) a.s. The key elementary renewal theorem gives:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(E[N(t)]/t\to1/\mu\) as \(t\to\infty\)]]></text><feedback format="html"><text>Correct. The elementary renewal theorem: \(\lim_{t\to\infty}E[N(t)]/t=1/\mu\), the long-run renewal rate equals the reciprocal of the mean inter-renewal time.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(E[N(t)]=t\mu\)]]></text><feedback format="html"><text>Incorrect. \(E[N(t)]\approx t/\mu\) for large \(t\), not \(t\mu\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(E[N(t)]\to\mu\)]]></text><feedback format="html"><text>Incorrect. \(E[N(t)]\to\infty\) as \(t\to\infty\); the rate is \(1/\mu\).</text></feedback></answer>
+    <answer fraction="0"><text>\(N(t)\) is always Poisson distributed</text><feedback format="html"><text>Incorrect. \(N(t)\) is Poisson only for Poisson processes (Exp inter-renewals). For general renewals, \(N(t)\) has a more complex distribution.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q19 Conditional Independence in Markov Chains</text></name>
+    <questiontext format="html"><text><![CDATA[The Markov property says future is independent of past given present: \(X_{n+1}\perp\!\!\!\perp (X_0,\ldots,X_{n-1})|X_n\). This can be generalized: for \(m<n<k\), which conditional independence holds?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(X_k\perp\!\!\!\perp X_m\mid X_n\) (future independent of past given present)]]></text><feedback format="html"><text>Correct. The Markov property implies: for \(m<n<k\), the future \(X_k\) is conditionally independent of the past \(X_m\) given the present \(X_n\). This is the global Markov property.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(X_k\perp\!\!\!\perp X_m\) (marginal independence)]]></text><feedback format="html"><text>Incorrect. Future and past are not marginally independent; they are only conditionally independent given the present.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(X_n\perp\!\!\!\perp X_m\mid X_k\)]]></text><feedback format="html"><text>Incorrect. Conditioning on a future state does not make the current state independent of a past state.</text></feedback></answer>
+    <answer fraction="0"><text>\(X_k\) is independent of everything</text><feedback format="html"><text>Incorrect. \(X_k\) depends on the present state \(X_n\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT20-Q20 MCMC</text></name>
+    <questiontext format="html"><text><![CDATA[The Metropolis-Hastings algorithm constructs a Markov chain with a specified stationary distribution \(\pi\). The acceptance ratio for proposed move from \(x\) to \(y\) (with proposal density \(q(y|x)\)) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\alpha(x,y)=\min\left(1,\frac{\pi(y)q(x|y)}{\pi(x)q(y|x)}\right)\)]]></text><feedback format="html"><text>Correct. The Metropolis-Hastings acceptance ratio ensures detailed balance with respect to \(\pi\). Gibbs sampling is a special case where \(\alpha=1\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\alpha(x,y)=\pi(y)/\pi(x)\)]]></text><feedback format="html"><text>Incorrect. This is the Metropolis ratio (valid only for symmetric proposals \(q(y|x)=q(x|y)\)).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\alpha(x,y)=q(y|x)\)]]></text><feedback format="html"><text>Incorrect. The acceptance ratio must account for both the target and proposal distributions.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\alpha(x,y)=1\) always (always accept)]]></text><feedback format="html"><text>Incorrect. Always accepting would not preserve the target distribution \(\pi\) in general.</text></feedback></answer>
+  </question>
+</quiz>

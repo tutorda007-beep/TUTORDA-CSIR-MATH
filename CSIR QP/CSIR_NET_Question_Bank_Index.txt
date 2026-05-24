@@ -1,0 +1,635 @@
+================================================================================
+  CSIR NET MATHEMATICAL SCIENCES — MOODLE QUESTION BANK
+  Complete Index of All 66 XML Files
+  Total Questions: 1320 MCQs (20 per file)
+  Standard: CSIR NET Part B & Part C Level
+  Format: Moodle XML (multichoice, single=true, penalty=0.25)
+================================================================================
+
+OVERVIEW
+--------
+Each file contains exactly 20 multiple-choice questions with:
+  - 4 answer options (1 correct, 3 incorrect)
+  - Default grade: 1.0
+  - Penalty for wrong answer: 0.25
+  - LaTeX math rendering via \(...\) and \[...\]
+  - Moodle category path: $course$/CSIR NET Mathematics/<Unit>/<Topic>
+
+================================================================================
+UNIT A — REAL ANALYSIS  (Files 01–08, 160 questions)
+================================================================================
+
+FILE 01: CSIR_RA_01_Sequences_of_Real_Numbers.xml
+  Category : Real Analysis / Sequences of Real Numbers
+  Topics   : Convergence, Cauchy sequences, limsup/liminf, Bolzano-Weierstrass,
+             monotone sequences, subsequences, ratio/root tests for sequences,
+             Cesaro means, squeeze theorem, divergence to infinity.
+
+FILE 02: CSIR_RA_02_Series_of_Real_Numbers.xml
+  Category : Real Analysis / Series of Real Numbers
+  Topics   : Absolute vs conditional convergence, comparison/ratio/root/integral
+             tests, alternating series (Leibniz), rearrangement theorem (Riemann),
+             power series radius of convergence, Cauchy product, telescoping,
+             p-series, harmonic series divergence.
+
+FILE 03: CSIR_RA_03_Limits_and_Continuity.xml
+  Category : Real Analysis / Limits and Continuity
+  Topics   : Epsilon-delta definition, uniform continuity, Intermediate Value
+             Theorem, Extreme Value Theorem, Lipschitz continuity, nowhere
+             differentiable continuous functions, Cantor function, continuity
+             on compact sets, sequential continuity equivalence.
+
+FILE 04: CSIR_RA_04_Differentiability_and_MVT.xml
+  Category : Real Analysis / Differentiability and Mean Value Theorems
+  Topics   : Rolle's theorem, Lagrange MVT, Cauchy MVT, L'Hopital's rule,
+             Taylor's theorem with remainder, higher derivatives, Darboux
+             theorem (IVP for derivatives), nowhere monotone functions.
+
+FILE 05: CSIR_RA_05_Riemann_Integration.xml
+  Category : Real Analysis / Riemann Integration
+  Topics   : Riemann integrability criteria, Lebesgue criterion, improper
+             integrals, Fundamental Theorem of Calculus, integration by parts,
+             uniform convergence and integration interchange, Riemann-Stieltjes
+             integration basics.
+
+FILE 06: CSIR_RA_06_Sequences_and_Series_of_Functions.xml
+  Category : Real Analysis / Sequences and Series of Functions
+  Topics   : Pointwise vs uniform convergence, Weierstrass M-test, continuity
+             of uniform limits, term-by-term differentiation/integration,
+             Dini's theorem, power series differentiation, Arzela-Ascoli,
+             Stone-Weierstrass theorem.
+
+FILE 07: CSIR_RA_07_Metric_Spaces.xml
+  Category : Real Analysis / Metric Spaces
+  Topics   : Open/closed sets, completeness, Baire category theorem,
+             compactness (sequential + open cover equivalence), connectedness,
+             contraction mapping theorem (Banach FPT), isometries,
+             completion of metric spaces, totally bounded sets.
+
+FILE 08: CSIR_RA_08_Countability_and_Monotone_Functions.xml
+  Category : Real Analysis / Countability and Special Functions
+  Topics   : Countable/uncountable sets, Cantor set properties, monotone
+             functions (countably many discontinuities), functions of bounded
+             variation, absolute continuity, Lebesgue measure basics,
+             measurable functions, Lp spaces overview.
+
+================================================================================
+UNIT B — LINEAR ALGEBRA  (Files 09–15, 140 questions)
+================================================================================
+
+FILE 09: CSIR_LA_09_Vector_Spaces.xml
+  Category : Linear Algebra / Vector Spaces
+  Topics   : Subspaces, linear independence, bases, dimension, coordinates,
+             sum and intersection of subspaces, quotient spaces, direct sum,
+             infinite-dimensional spaces.
+
+FILE 10: CSIR_LA_10_Linear_Transformations.xml
+  Category : Linear Algebra / Linear Transformations
+  Topics   : Kernel and image, rank-nullity theorem, matrix of a transformation,
+             change of basis, isomorphisms, dual spaces, dual basis,
+             transpose/adjoint, projections.
+
+FILE 11: CSIR_LA_11_Eigenvalues_and_Eigenvectors.xml
+  Category : Linear Algebra / Eigenvalues and Eigenvectors
+  Topics   : Characteristic polynomial, algebraic/geometric multiplicity,
+             diagonalizability, Cayley-Hamilton theorem, minimal polynomial,
+             spectral radius, Gershgorin circle theorem, power method intuition.
+
+FILE 12: CSIR_LA_12_Inner_Product_Spaces.xml
+  Category : Linear Algebra / Inner Product Spaces
+  Topics   : Inner products, Cauchy-Schwarz, orthonormal bases, Gram-Schmidt,
+             orthogonal projections, Bessel's inequality, adjoint operators,
+             normal/self-adjoint/unitary matrices, spectral theorem (finite dim).
+
+FILE 13: CSIR_LA_13_Matrices_and_Determinants.xml
+  Category : Linear Algebra / Matrices and Determinants
+  Topics   : Determinant properties, cofactors, Cramer's rule, invertibility,
+             trace, rank via minors, LU decomposition, Schur complement,
+             matrix norms, positive definite matrices.
+
+FILE 14: CSIR_LA_14_Systems_of_Linear_Equations.xml
+  Category : Linear Algebra / Systems of Linear Equations
+  Topics   : Consistency (Rouche-Capelli), solution sets (homogeneous vs
+             non-homogeneous), Gaussian elimination, row echelon form,
+             overdetermined/underdetermined systems, least-squares solutions.
+
+FILE 15: CSIR_LA_15_Canonical_Forms.xml
+  Category : Linear Algebra / Canonical Forms
+  Topics   : Jordan canonical form, Jordan blocks, nilpotent operators,
+             rational canonical form, similarity invariants, Smith normal form,
+             companion matrix, invariant factor decomposition.
+
+================================================================================
+UNIT C — PROBABILITY & STATISTICS  (Files 16–24, 180 questions)
+================================================================================
+
+FILE 16: CSIR_STAT_16_Probability_Theory.xml
+  Category : Statistics / Probability Theory
+  Topics   : Axioms of probability, conditional probability, Bayes theorem,
+             independence, inclusion-exclusion, random variables (discrete &
+             continuous), CDF, PDF, expectation, variance, moments, MGF.
+
+FILE 17: CSIR_STAT_17_Discrete_Distributions.xml
+  Category : Statistics / Discrete Distributions
+  Topics   : Bernoulli, Binomial, Poisson, Geometric, Negative Binomial,
+             Hypergeometric distributions — properties, mean, variance,
+             MGF, approximations, characterization theorems.
+
+FILE 18: CSIR_STAT_18_Continuous_Distributions.xml
+  Category : Statistics / Continuous Distributions
+  Topics   : Uniform, Exponential, Normal, Gamma, Beta, Cauchy, Lognormal
+             distributions — PDF, CDF, mean, variance, MGF, memoryless
+             property, normal approximations, standardisation.
+
+FILE 19: CSIR_STAT_19_Joint_Distributions.xml
+  Category : Statistics / Joint Distributions
+  Topics   : Joint PDF/PMF, marginal distributions, conditional distributions,
+             independence, covariance and correlation, bivariate normal,
+             transformation of random variables, order statistics,
+             convolution of distributions.
+
+FILE 20: CSIR_STAT_20_Markov_Chains.xml
+  Category : Statistics / Markov Chains
+  Topics   : Transition matrices, Chapman-Kolmogorov equations, classification
+             of states (transient/recurrent/absorbing), stationary distributions,
+             period, ergodic theorem, birth-death chains, gambler's ruin.
+
+FILE 21: CSIR_STAT_21_Statistical_Estimation.xml
+  Category : Statistics / Statistical Estimation
+  Topics   : Unbiasedness, consistency, efficiency, UMVUE, Cramer-Rao bound,
+             Fisher information, MLE, method of moments, sufficiency,
+             completeness, Rao-Blackwell theorem, exponential families.
+
+FILE 22: CSIR_STAT_22_Testing_of_Hypotheses.xml
+  Category : Statistics / Testing of Hypotheses
+  Topics   : Neyman-Pearson lemma, UMP tests, likelihood ratio test, z-test,
+             t-test, chi-square test, F-test, p-values, Type I/II errors,
+             power function, non-parametric tests (sign, Wilcoxon).
+
+FILE 23: CSIR_STAT_23_Regression_and_Correlation.xml
+  Category : Statistics / Regression and Correlation
+  Topics   : Simple linear regression (OLS), residuals, R², Pearson correlation,
+             Spearman rank correlation, multiple regression overview,
+             ANOVA for regression, prediction intervals.
+
+FILE 24: CSIR_STAT_24_Sampling_Distributions.xml
+  Category : Statistics / Sampling Distributions
+  Topics   : Chi-square, t, F distributions and their derivations, central
+             limit theorem, sampling from normal populations, distribution
+             of sample mean/variance, large-sample approximations.
+
+================================================================================
+UNIT D — COMPLEX ANALYSIS  (Files 25–30, 120 questions)
+================================================================================
+
+FILE 25: CSIR_CA_25_Analytic_Functions.xml
+  Category : Complex Analysis / Analytic Functions
+  Topics   : Cauchy-Riemann equations, analyticity, harmonic functions,
+             entire functions, Liouville's theorem, Fundamental Theorem of
+             Algebra, power series, radius of convergence, exponential/trig
+             functions in the complex plane.
+
+FILE 26: CSIR_CA_26_Complex_Integration.xml
+  Category : Complex Analysis / Complex Integration
+  Topics   : Cauchy's theorem, Cauchy integral formula, higher-order derivatives
+             formula, Morera's theorem, winding number, ML-inequality,
+             homotopy invariance of integrals, computation of real integrals.
+
+FILE 27: CSIR_CA_27_Singularities_and_Series.xml
+  Category : Complex Analysis / Singularities and Laurent Series
+  Topics   : Isolated singularities (removable, poles, essential), Laurent
+             series, Casorati-Weierstrass, residue theorem, classification
+             via Laurent coefficients, meromorphic functions, argument principle.
+
+FILE 28: CSIR_CA_28_Conformal_Mappings.xml
+  Category : Complex Analysis / Conformal Mappings
+  Topics   : Angle-preserving property, Mobius (linear fractional) transformations,
+             Riemann mapping theorem, Schwarz-Christoffel, cross-ratio,
+             mappings of standard domains (disk, half-plane, strip).
+
+FILE 29: CSIR_CA_29_Special_Functions.xml
+  Category : Complex Analysis / Special Functions
+  Topics   : Gamma function (Euler's formula, reflection, duplication),
+             Riemann zeta function, Weierstrass product theorem, entire
+             functions of finite order, Hadamard factorization, Mittag-Leffler.
+
+FILE 30: CSIR_CA_30_Complex_Analysis_Applications.xml
+  Category : Complex Analysis / Applications
+  Topics   : Evaluation of real integrals via residues, summation of series
+             (residue method), Rouche's theorem, maximum modulus principle,
+             Schwarz lemma, Phragmen-Lindelof principle, Picard's theorem.
+
+================================================================================
+UNIT E — ALGEBRA  (Files 31–36, 120 questions)
+================================================================================
+
+FILE 31: CSIR_ALG_31_Group_Theory.xml
+  Category : Algebra / Group Theory
+  Topics   : Subgroups, Lagrange's theorem, normal subgroups, quotient groups,
+             homomorphism theorems, cyclic groups, symmetric groups, Sylow
+             theorems, abelian groups, simple groups, direct products.
+
+FILE 32: CSIR_ALG_32_Ring_Theory.xml
+  Category : Algebra / Ring Theory
+  Topics   : Ideals, quotient rings, homomorphism theorems, PID, UFD, ED,
+             polynomial rings (Eisenstein, Gauss's lemma), prime/maximal ideals,
+             Noetherian rings, Chinese Remainder Theorem.
+
+FILE 33: CSIR_ALG_33_Field_Theory_Galois.xml
+  Category : Algebra / Field Theory and Galois Theory
+  Topics   : Field extensions, algebraic/transcendental elements, splitting
+             fields, algebraic closure, Galois group, fundamental theorem of
+             Galois theory, solvability by radicals, finite fields.
+
+FILE 34: CSIR_ALG_34_Module_Theory.xml
+  Category : Algebra / Module Theory
+  Topics   : Modules over rings, submodules, quotient modules, free modules,
+             projective/injective modules, exact sequences, tensor product,
+             structure theorem for finitely generated modules over PID.
+
+FILE 35: CSIR_ALG_35_Number_Theory.xml
+  Category : Algebra / Number Theory
+  Topics   : Divisibility, prime factorization, congruences, Euler's theorem,
+             Fermat's little theorem, Chinese Remainder Theorem (number theory),
+             quadratic residues, Legendre symbol, Gaussian integers.
+
+FILE 36: CSIR_ALG_36_Representation_Theory.xml
+  Category : Algebra / Representation Theory
+  Topics   : Group representations, character theory, orthogonality relations,
+             Burnside's lemma, regular representation, irreducible representations,
+             Maschke's theorem, Schur's lemma.
+
+================================================================================
+UNIT F — ORDINARY DIFFERENTIAL EQUATIONS  (Files 37–41, 100 questions)
+================================================================================
+
+FILE 37: CSIR_ODE_37_First_Order_ODEs.xml
+  Category : ODEs / First Order ODEs
+  Topics   : Separable, linear, Bernoulli, exact equations, integrating factors,
+             orthogonal trajectories, existence/uniqueness (Picard-Lindelof),
+             Gronwall inequality, singular solutions.
+
+FILE 38: CSIR_ODE_38_Second_Order_ODEs.xml
+  Category : ODEs / Second Order ODEs
+  Topics   : Constant coefficient equations (characteristic equation), method
+             of undetermined coefficients, variation of parameters, Wronskian,
+             Abel's identity, reduction of order, Euler-Cauchy equations.
+
+FILE 39: CSIR_ODE_39_Systems_of_ODEs.xml
+  Category : ODEs / Systems of ODEs
+  Topics   : Matrix exponential, eigenvalue method, phase plane analysis,
+             stability (Lyapunov), critical points, linearisation, Hartman-
+             Grobman theorem, Floquet theory, Jordan form solution.
+
+FILE 40: CSIR_ODE_40_Special_ODEs.xml
+  Category : ODEs / Special ODEs
+  Topics   : Legendre equation and polynomials, Bessel equation (types),
+             Sturm-Liouville theory, self-adjoint form, eigenfunction expansions,
+             Hermite and Laguerre polynomials, generating functions.
+
+FILE 41: CSIR_ODE_41_Laplace_Transforms.xml
+  Category : ODEs / Laplace Transforms
+  Topics   : Definition, linearity, s-shifting, t-shifting, convolution theorem,
+             Heaviside function, Dirac delta, inverse Laplace, IVP solution,
+             periodic functions, initial/final value theorems.
+
+================================================================================
+UNIT G — PARTIAL DIFFERENTIAL EQUATIONS  (Files 42–46, 100 questions)
+================================================================================
+
+FILE 42: CSIR_PDE_42_First_Order_PDEs.xml
+  Category : PDEs / First Order PDEs
+  Topics   : Method of characteristics, quasi-linear PDEs (Lagrange method),
+             non-linear first order PDEs, Cauchy problem, shocks, eikonal
+             equation, Hamilton-Jacobi equation basics.
+
+FILE 43: CSIR_PDE_43_Heat_Equation.xml
+  Category : PDEs / Heat Equation
+  Topics   : Fundamental solution, maximum principle, uniqueness, separation
+             of variables, Fourier series solution, heat kernel, Duhamel's
+             principle, well-posedness, Green's function for heat equation.
+
+FILE 44: CSIR_PDE_44_Wave_Equation.xml
+  Category : PDEs / Wave Equation
+  Topics   : D'Alembert's formula, energy method, characteristics (hyperbolic),
+             domain of dependence, finite speed of propagation, Fourier series
+             for bounded domains, Kirchhoff's formula (3D), Huygens' principle.
+
+FILE 45: CSIR_PDE_45_Laplace_Equation.xml
+  Category : PDEs / Laplace and Poisson Equations
+  Topics   : Harmonic functions, mean value property, maximum principle,
+             Dirichlet/Neumann problems, Poisson kernel (disk), Green's function,
+             Kelvin transform, subharmonic functions, energy methods.
+
+FILE 46: CSIR_PDE_46_Green_Functions_PDEs.xml
+  Category : PDEs / Green's Functions and Advanced Methods
+  Topics   : Green's identities, fundamental solutions, Green's function
+             construction, method of images, Sobolev spaces (overview),
+             weak solutions, Lax-Milgram theorem application, spectral theory
+             for elliptic operators.
+
+================================================================================
+UNIT H — TOPOLOGY  (Files 47–51, 100 questions)
+================================================================================
+
+FILE 47: CSIR_TOP_47_Metric_Spaces.xml
+  Category : Topology / Metric Spaces
+  Topics   : Metric axioms, examples (discrete, p-adic, function spaces),
+             open/closed balls, completeness, completion, compactness,
+             Heine-Borel theorem, Arzela-Ascoli, Baire category, total
+             boundedness, uniform continuity.
+
+FILE 48: CSIR_TOP_48_Topological_Spaces.xml
+  Category : Topology / Topological Spaces
+  Topics   : Open/closed sets, bases, subbases, product topology (Tychonoff),
+             quotient topology, continuous maps, homeomorphisms, separation
+             axioms (T0–T4), compactness, Lindelof, second countability,
+             Urysohn's lemma, Tietze extension.
+
+FILE 49: CSIR_TOP_49_Homotopy_Fundamental_Group.xml
+  Category : Topology / Homotopy and Fundamental Group
+  Topics   : Homotopy of maps, homotopy equivalence, fundamental group π₁,
+             van Kampen's theorem, covering spaces, universal cover, lifting
+             theorem, π₁(S¹)=ℤ, π₁(Sⁿ)=0 for n≥2, deformation retracts.
+
+FILE 50: CSIR_TOP_50_Homology_Cohomology.xml
+  Category : Topology / Homology and Cohomology
+  Topics   : Singular homology, Mayer-Vietoris, Euler characteristic, Poincare
+             lemma, H*(RP²), Poincare duality, UCT, Kunneth formula (torus),
+             de Rham theorem, cup product, Lefschetz number, Klein bottle
+             H₁=ℤ⊕ℤ/2, Betti numbers, H*(RP³).
+
+FILE 51: CSIR_TOP_51_Manifolds_Differential_Topology.xml
+  Category : Topology / Manifolds and Differential Topology
+  Topics   : Smooth manifolds, tangent spaces, immersions/submersions, Sard's
+             theorem, differential forms, Stokes' theorem, Whitney embedding
+             (N=2n), Poincare-Hopf theorem, Frobenius theorem, degree of maps,
+             de Rham cohomology, Lie groups.
+
+================================================================================
+UNIT I — FUNCTIONAL ANALYSIS  (Files 52–54, 60 questions)
+================================================================================
+
+FILE 52: CSIR_FA_52_Banach_Spaces.xml
+  Category : Functional Analysis / Banach Spaces
+  Topics   : lp completeness, Hahn-Banach theorem, Uniform Boundedness
+             Principle, Open Mapping Theorem, Closed Graph Theorem, Baire
+             category, duals (lp)*=lq, reflexivity, weak convergence,
+             separability, compact operators, Schauder FPT.
+
+FILE 53: CSIR_FA_53_Hilbert_Spaces.xml
+  Category : Functional Analysis / Hilbert Spaces
+  Topics   : Inner products, Cauchy-Schwarz, parallelogram law, projection
+             theorem, Riesz representation, ONB, Parseval, Bessel's inequality,
+             Gram-Schmidt, spectral theorem for compact self-adjoint,
+             Fredholm alternative, Hilbert-Schmidt operators, Lax-Milgram.
+
+FILE 54: CSIR_FA_54_Operators_Spectral_Theory.xml
+  Category : Functional Analysis / Operators and Spectral Theory
+  Topics   : Spectrum decomposition (point/continuous/residual), spectral
+             radius, compact operator spectrum, resolvent identity, multiplication
+             operator, Fredholm operators/index, unilateral shift, polar
+             decomposition, trace class, Weyl's theorem, Hille-Yosida.
+
+================================================================================
+UNIT J — CALCULUS OF VARIATIONS  (Files 55–56, 40 questions)
+================================================================================
+
+FILE 55: CSIR_COV_55_Calculus_of_Variations.xml
+  Category : Calculus of Variations / Euler-Lagrange Theory
+  Topics   : Euler-Lagrange equation, Beltrami identity (autonomous case),
+             brachistochrone (cycloid), geodesics in R², catenary, isoperimetric
+             problem (circle), minimal surface of revolution (catenoid), natural
+             BC, E-L for double integrals (Laplace), Hamilton's principle,
+             Legendre condition, Euler-Poisson equation, Noether's theorem,
+             Jacobi condition, Weierstrass E-function, Lagrange multipliers,
+             Dirichlet principle, transversality, Sturm-Liouville Rayleigh
+             quotient, geodesics on sphere (great circles).
+
+FILE 56: CSIR_COV_56_CV_EulerLagrange_Applications.xml
+  Category : Calculus of Variations / Advanced Applications
+  Topics   : Hamilton-Jacobi equation, geodesics on S² (spherical coordinates),
+             Tonelli's theorem (coercivity + convexity), isoperimetric Lagrange
+             multiplier (constant curvature = circular arc), weak vs strong
+             extremum (C⁰ vs C¹ topology), second variation formula, Sturm-
+             Liouville Rayleigh quotient (min characterisation), geodesics on
+             cylinder (helices), Pontryagin Maximum Principle, minimal surface
+             equation (div∇u/√(1+|∇u|²)=0), constrained problem (eigenfunctions
+             of −u''=λu), natural BC (∂u/∂n=0), Noether energy conservation
+             (H = pq̇ − L), direct method (weak lower semicontinuity), Jacobi
+             equation conjugate points, brachistochrone total time, catenary
+             variational problem, Euler-Poisson equation, variational inequality
+             (obstacle problem), Euler buckling load.
+
+================================================================================
+UNIT K — NUMERICAL ANALYSIS  (Files 57–58, 40 questions)
+================================================================================
+
+FILE 57: CSIR_NUM_57_Numerical_Methods.xml
+  Category : Numerical Analysis / Root Finding and Interpolation
+  Topics   : Bisection error bound, Newton-Raphson order 2, Lagrange
+             interpolation (cardinal basis δ_kj), interpolation error formula,
+             Newton divided differences, cubic splines (C² + natural BC),
+             fixed-point iteration (contraction), secant method (order φ≈1.618),
+             Runge's phenomenon (Chebyshev nodes), minimax property (1/2ⁿ),
+             Gauss-Legendre exactness (degree 2n−1), composite trapezoidal O(h²),
+             Simpson's 1/3 rule, LU decomposition, Euler method order 1,
+             classical RK4, Gauss-Seidel convergence, power method rate, condition
+             number perturbation bound, QR algorithm eigenvalue preservation.
+
+FILE 58: CSIR_NUM_58_Numerical_ODE_LinearAlgebra.xml
+  Category : Numerical Analysis / ODE Methods and Linear Algebra
+  Topics   : Stiff systems (stability restriction h≤2/|λmax|), backward Euler
+             A-stability, Adams-Bashforth 2-step (explicit, order 2), RK4
+             stability interval (|hλ|≤2.785), Crank-Nicolson (unconditionally
+             stable, order 2), shooting method, finite difference BVP O(h²),
+             partial pivoting (numerical stability), Cholesky (SPD matrices),
+             conjugate gradient (n-step termination), SVD and Eckart-Young,
+             least squares normal equations (AᵀAx=Aᵀb), Richardson extrapolation
+             (O(h^{2p})), Dahlquist equivalence theorem, Jacobi iteration
+             (spectral radius), Galerkin FEM (weak form), gradient descent rate
+             ((κ−1)/(κ+1))², preconditioning, Romberg integration, FTCS
+             stability (r≤1/2).
+
+================================================================================
+UNIT L — LINEAR PROGRAMMING  (File 59, 20 questions)
+================================================================================
+
+FILE 59: CSIR_LP_59_Linear_Programming.xml
+  Category : Linear Programming / Simplex and Duality
+  Topics   : Fundamental theorem of LP (optimal at BFS/vertex), simplex pivot
+             (Dantzig's rule, reduced costs), LP duality construction, strong
+             duality theorem, complementary slackness, Bland's rule (anti-
+             cycling), transportation problem (m+n−1 basic variables), assignment
+             problem (TU, integer BFS), sensitivity analysis (reduced costs),
+             two-phase simplex method, Karmarkar's polynomial complexity,
+             dual simplex (post-optimality), IP vs LP relaxation (lower bound),
+             max-flow min-cut theorem, zero-sum game LP formulation, simplex
+             optimality condition (all r̄_j≥0), unboundedness detection, KKT
+             conditions (convex programs), shadow prices, polytope vertices
+             (n active constraints).
+
+================================================================================
+UNIT M — GENERAL APTITUDE / PART A  (Files 60–66, 140 questions)
+================================================================================
+
+FILE 60: CSIR_PARTA_60_General_Aptitude.xml
+  Category : Part A / General Aptitude
+  Topics   : Arithmetic progressions (S₁₀, S₅), percentage calculations,
+             work-time problems (pipes, people), age ratios, basic probability
+             (same-colour balls), permutations (MATHEMATICS with MM together),
+             logic/syllogism, speed-distance-time (train crossing bridge),
+             number series (n(n+1)), compound vs simple interest difference,
+             Venn diagrams (inclusion-exclusion), direction sense, data
+             interpretation (% change), clock angle (3:30 → 75°), coding-
+             decoding (letter values).
+
+FILE 61: CSIR_PARTA_61_General_Aptitude.xml
+  Category : Part A / General Aptitude
+  Topics   : Quadratic roots (α²+β²), average after replacement, pipes &
+             cisterns (net filling rate), AM-GM inequality, coding-decoding
+             (positional shift), chord-distance-radius (3-4-5 triangle),
+             boats and streams (simultaneous equations), binary to decimal
+             (1011010₂=90), affirming-the-consequent fallacy, function
+             composition f(g(3)), equivalence relations (congruence mod 3),
+             alligation (mixing solutions), minimum score inequality, circular
+             permutations ((n−1)!), cone volume (h=7cm), letter series (gaps
+             +2,+3,...), syllogism (No R is Q), distance formula (√113),
+             cube roots sum, probability (king or red card = 7/13).
+
+FILE 62: CSIR_PARTA_62_General_Aptitude.xml
+  Category : Part A / General Aptitude
+  Topics   : Successive mark-up and discount (12% profit), HCF-LCM product
+             rule, compound interest (3 years), relative speed (opposite
+             direction), flowchart symbols (diamond = decision), age ratio
+             problem (7:3 → 2:1), linear arrangement (6 books), set intersection
+             (only tea = 80), cylinder volume (doubled radius, halved height),
+             contrapositive of conditional, pigeon-hole principle (4 socks),
+             coordinate geometry area (triangle), greenhouse effect, Fibonacci
+             ratio (≈1.618), LP feasibility constraints, blood relation (uncle),
+             P2P network characteristics, modular arithmetic (7¹⁰⁰ mod 4 = 1),
+             power expressions (2⁴=16), Article 21A (Right to Education).
+
+FILE 63: CSIR_PARTA_63_General_Aptitude.xml
+  Category : Part A / General Aptitude
+  Topics   : Infinite geometric series (S=12), trains meeting (combined speed),
+             scaling mean and variance (×c scales mean; ×c² scales variance),
+             irrational numbers (√2+√3), data interpretation (% increase),
+             Newton's Second Law (F=dp/dt), clock coincidence (4:21 9/11),
+             control group definition, inverse proportion (men × days = const),
+             inconsistent syllogism premises, handshakes = C(n,2) = 66 → n=12,
+             analogy (decibel:sound intensity), ranking from constraints, IPR
+             copyright, absolute value graph |x−2|, renewable energy (tidal),
+             empirical relation Mode=3×Median−2×Mean, √200≈14.14, Big Data
+             (3 Vs), research misconduct (fabrication).
+
+FILE 64: CSIR_PARTA_64_General_Aptitude.xml
+  Category : Part A / General Aptitude
+  Topics   : Logarithm (log₁₀32 = 5×log₁₀2 = 1.5050), harmonic mean (HM of
+             4 and 12 = 6), permutations EXAM (4! = 24), calendar (2024 leap
+             year → 2025 Jan 1 = Wednesday), simultaneous linear equations
+             (x+y=7), tree graph (n vertices, n−1 edges), analogy Barometer:
+             Pressure::Seismograph:Earthquakes, successive discounts (28%
+             equivalent), SEND+MORE=MONEY (8 distinct digits), mode/median/mean
+             (7, 6, 50/9), 25% up then 20% down = 0% net change, family
+             relation (maternal grandfather), comparing surds (6th power method
+             → ∛5 largest), word analogy ACROBAT:TRAPEZE::ARCHER:BOW,
+             optimisation (river-border rectangle, 30×60=1800m²), reverse
+             alphabet coding CAT=57, tautology (P∨¬P), letter series AZ BY CX
+             DW → EV, scalar vs vector (temperature is scalar), octal (47)₈=39.
+
+FILE 65: CSIR_PARTA_65_General_Aptitude.xml
+  Category : Part A / General Aptitude
+  Topics   : Index notation (2ˣ=8⁴ → x=12), slab tax calculation (₹1,35,000),
+             geometric progression (ar²=8, ar⁵=64 → a=2), probability sum=8
+             on two dice (5/36), trigonometry (sinθ=3/5 → tanθ=3/4), Euclidean
+             algorithm HCF(252,105)=21, scientific notation (light travel time
+             to Sun ≈ 8.33 min), set cardinality |A∩B|=5, triangle inequality
+             (valid: 5,7,9), binomial coefficient C(5,3)=10, ratio split (₹2400
+             to B in 3:4:5), row position reasoning (0 students between), 10%
+             up then 10% down → 49500 (−1%), proof by contradiction definition,
+             harmonic mean speed (48 km/h), duplicate submission (publication
+             ethics), phishing definition, inequality |2x−3|<5 → (−1,4), CLT
+             history (de Moivre, Laplace, Lyapunov, Lindeberg), correlation ≠
+             causation (hospitals/deaths fallacy).
+
+FILE 66: CSIR_PARTA_66_General_Aptitude.xml
+  Category : Part A / General Aptitude
+  Topics   : Divisibility by 9 (digit sum), sector area (60°, r=6 → 18.86cm²),
+             number pattern (differences 3,5,7,9,11 → 38), reverse discount
+             (SP=₹1190, 15% off → MP=₹1400), experimental vs correlational
+             design, infinite GP (S∞=3, first two terms 8/3 → r=1/3), cone
+             total surface area (r=7, l=25 → 704cm²), Boolean absorption
+             (A·(A+B)=A), weighted average (79), determinant (ad−bc=−2),
+             compound interest rate (2000→2205 in 2yr → 5%), data sufficiency
+             for triangle area (three sides via Heron's formula), sum of even
+             numbers 2 to 50 = 650, negation of "some" = "none", sphere volume
+             (r=6 → 905 1/7 cm³), probability at least 2 heads (1/2),
+             biodiversity hotspots (36), unit analogy (Ampere:electric current),
+             production surplus (60 units/day → 1200 in 20 days), Madhava of
+             Sangamagrama (sin/cos/arctan series, Kerala School).
+
+================================================================================
+IMPORT INSTRUCTIONS FOR MOODLE
+================================================================================
+
+1. Log in as Administrator or Teacher with question bank editing rights.
+2. Go to: Question bank → Import
+3. Select format: "Moodle XML format"
+4. Choose category: You may import into an existing category or let the
+   category tag in each file create it automatically.
+5. Import files one by one, or use a bulk import plugin if available.
+6. After import, verify in the Question Bank that all 20 questions per
+   file appear under the correct category path:
+     $course$/CSIR NET Mathematics/<Unit>/<Topic>
+
+RECOMMENDED QUIZ SETTINGS (CSIR NET simulation):
+  - Questions per quiz : Part B = 20 Qs (2 marks each), Part C = 10 Qs (4.75 marks)
+  - Negative marking    : 0.25 of marks for wrong answer (built into penalty)
+  - Time limit          : 3 hours for full paper (180 minutes)
+  - Shuffle questions   : Yes
+  - Shuffle answers     : Yes
+
+================================================================================
+KNOWN TYPOS FIXED (Post-processing log)
+================================================================================
+
+The following `</small>` → `</single>` typos were corrected during generation:
+  - CSIR_NUM_58  Q15 (ODE linearAlgebra)
+  - CSIR_PARTA_63 Q19 (Big Data)
+
+Answer-fraction corrections applied:
+  - CSIR_PARTA_60 Q03 (work-time: correct answer is 8 days, not 10)
+  - CSIR_PARTA_60 Q06 (MATHEMATICS arrangements: correct is 907200, not 75600)
+  - CSIR_PARTA_61 Q02 (average after replacement: correct is 38, reworded Q)
+  - CSIR_PARTA_61 Q05 (coding-decoding: correct is ENPT, not ETPS)
+  - CSIR_PARTA_62 Q15 (LP feasibility: reworded with unique valid option)
+  - CSIR_PARTA_64 Q10 (median is 6, not 7, for sorted dataset)
+  - CSIR_PARTA_64 Q16 (CAT in reverse alphabet = 57, not 60)
+  - CSIR_PARTA_66 Q13 (XML tag malformed — fixed)
+  - CSIR_PARTA_66 Q15 (near-duplicate option replaced with distinct wrong answer)
+
+================================================================================
+FILE COUNTS SUMMARY
+================================================================================
+
+  Real Analysis         :  8 files (01–08),  160 questions
+  Linear Algebra        :  7 files (09–15),  140 questions
+  Probability/Statistics:  9 files (16–24),  180 questions
+  Complex Analysis      :  6 files (25–30),  120 questions
+  Algebra               :  6 files (31–36),  120 questions
+  ODEs                  :  5 files (37–41),  100 questions
+  PDEs                  :  5 files (42–46),  100 questions
+  Topology              :  5 files (47–51),  100 questions
+  Functional Analysis   :  3 files (52–54),   60 questions
+  Calculus of Variations:  2 files (55–56),   40 questions
+  Numerical Analysis    :  2 files (57–58),   40 questions
+  Linear Programming    :  1 file  (59),      20 questions
+  General Aptitude (A)  :  7 files (60–66),  140 questions
+  -------------------------------------------------------
+  TOTAL                 : 66 files          1320 questions
+
+================================================================================
+Generated for: TUTORDA LMS — CSIR NET Mathematics Version 1
+Date         : May 2026
+================================================================================

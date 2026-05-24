@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Linear Programming/Simplex and Duality</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>LP_Q01_FeasibleRegion</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A linear programming problem in standard form \(\min\, \mathbf{c}^T\mathbf{x}\) subject to \(A\mathbf{x}=\mathbf{b}\), \(\mathbf{x}\geq\mathbf{0}\) has an optimal solution. Which of the following is always true?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[There exists a basic feasible solution (BFS) that is optimal, i.e., an optimal solution can always be found at a vertex of the feasible polytope]]></text>
+      <feedback><text>Correct. The fundamental theorem of LP: if an LP has a finite optimal value, there exists a BFS (vertex of the feasible polytope) that is optimal.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The unique optimal solution is at the centroid of the feasible region]]></text>
+      <feedback><text>Optimal solutions occur at vertices (extreme points), not the centroid; the centroid is generally not feasible or optimal.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The problem always has a unique optimal solution]]></text>
+      <feedback><text>If the objective function is parallel to a binding constraint face, there are infinitely many optimal solutions along an edge or face.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The feasible region is always bounded (compact)]]></text>
+      <feedback><text>The feasible region of an LP can be unbounded even when an optimal finite solution exists (e.g., minimizing over an unbounded region in the direction of decrease).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>LP_Q02_SimplexStep</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In one pivot step of the simplex method, we move from one basic feasible solution to an adjacent one. The entering variable is chosen by]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Selecting a nonbasic variable with the most negative reduced cost \(\bar{c}_j = c_j - \mathbf{c}_B^T B^{-1} A_j < 0\) (Dantzig's rule for minimization)]]></text>
+      <feedback><text>Correct. A nonbasic variable with negative reduced cost can decrease the objective; Dantzig's rule selects the most negative to enter the basis.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Selecting the nonbasic variable with the largest coefficient in the objective function \(c_j\)]]></text>
+      <feedback><text>The original cost \(c_j\) (not the reduced cost \(\bar{c}_j\)) is not the criterion; reduced costs account for the current basis and are the relevant quantities.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Selecting the nonbasic variable with the largest value in the current BFS]]></text>
+      <feedback><text>Nonbasic variables are zero in a BFS; the entering variable choice is based on reduced costs, not variable values.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Randomly selecting any nonbasic variable with \(\bar{c}_j < 0\) and a positive ratio in the minimum ratio test]]></text>
+      <feedback><text>While any negative-reduced-cost nonbasic variable can enter (Bland's rule or random rule), Dantzig's rule selects the most negative for faster descent.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>LP_Q03_LPDuality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The dual of the LP: \(\min\,\mathbf{c}^T\mathbf{x}\) s.t. \(A\mathbf{x}\geq\mathbf{b}\), \(\mathbf{x}\geq\mathbf{0}\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\max\,\mathbf{b}^T\mathbf{y}\) s.t. \(A^T\mathbf{y}\leq\mathbf{c}\), \(\mathbf{y}\geq\mathbf{0}\)]]></text>
+      <feedback><text>Correct. The LP dual is formed by assigning dual variables \(\mathbf{y}\geq0\) to the primal constraints \(A\mathbf{x}\geq\mathbf{b}\); the dual maximizes \(\mathbf{b}^T\mathbf{y}\) subject to \(A^T\mathbf{y}\leq\mathbf{c}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\max\,\mathbf{c}^T\mathbf{y}\) s.t. \(A\mathbf{y}\leq\mathbf{b}\), \(\mathbf{y}\geq\mathbf{0}\)]]></text>
+      <feedback><text>The dual objective uses \(\mathbf{b}\) (not \(\mathbf{c}\)) and the dual constraints involve \(A^T\) (not \(A\)).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\min\,\mathbf{b}^T\mathbf{y}\) s.t. \(A^T\mathbf{y}\geq\mathbf{c}\), \(\mathbf{y}\geq\mathbf{0}\)]]></text>
+      <feedback><text>The dual of a minimization with \(\geq\) constraints is a maximization problem, not another minimization.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\max\,\mathbf{b}^T\mathbf{y}\) s.t. \(A\mathbf{y}=\mathbf{c}\), \(\mathbf{y}\) unrestricted]]></text>
+      <feedback><text>The dual constraints use \(A^T\) and inequality \(\leq\mathbf{c}\) (for primal \(\mathbf{x}\geq0\)), and \(\mathbf{y}\geq0\) (for primal \(\geq\) constraints).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>LP_Q04_StrongDuality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The strong duality theorem for linear programming states that if both the primal and dual LP are feasible, then]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Both have optimal solutions and the optimal objective values are equal: \(\mathbf{c}^T\mathbf{x}^* = \mathbf{b}^T\mathbf{y}^*\)]]></text>
+      <feedback><text>Correct. Strong duality for LP: if both primal and dual are feasible, there is no duality gap — the optimal values coincide.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The primal optimal value is always strictly less than the dual optimal value]]></text>
+      <feedback><text>Weak duality says \(\mathbf{b}^T\mathbf{y}\leq\mathbf{c}^T\mathbf{x}\) for any feasible pair; strong duality says the gap is zero at optimality.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The dual problem has a unique optimal solution whenever the primal does]]></text>
+      <feedback><text>Uniqueness of the dual optimal solution is not guaranteed; strong duality is only about the equality of optimal objective values.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The feasible regions of primal and dual are isomorphic as sets]]></text>
+      <feedback><text>Strong duality concerns the equality of optimal values, not an isomorphism between feasible regions.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>LP_Q05_ComplementarySlackness</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Complementary slackness conditions for the LP pair \(\min\,\mathbf{c}^T\mathbf{x}\) s.t. \(A\mathbf{x}=\mathbf{b}\), \(\mathbf{x}\geq0\) and dual \(\max\,\mathbf{b}^T\mathbf{y}\) s.t. \(A^T\mathbf{y}\leq\mathbf{c}\) state that a feasible pair \((\mathbf{x}^*,\mathbf{y}^*)\) is optimal iff]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(x_j^*(c_j - (A^T\mathbf{y}^*)_j) = 0\) for all \(j\): either \(x_j^*=0\) (nonbasic) or the dual constraint is tight \((A^T\mathbf{y}^*)_j = c_j\)]]></text>
+      <feedback><text>Correct. Complementary slackness: for each primal variable \(x_j\geq0\) and dual slack \(s_j = c_j - (A^T\mathbf{y})_j \geq 0\), we need \(x_j\cdot s_j=0\) — at least one must be zero.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathbf{x}^T\mathbf{y}^* = 0\) (primal and dual solutions are orthogonal)]]></text>
+      <feedback><text>The complementary slackness condition involves products of primal variables with dual slacks (not dual variables directly); \(\mathbf{x}^T\mathbf{y}=0\) is not the correct statement.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All primal variables are zero: \(\mathbf{x}^* = \mathbf{0}\)]]></text>
+      <feedback><text>Complementary slackness does not require all primal variables to vanish; it links each primal variable to the tightness of the corresponding dual constraint.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The objective functions satisfy \(\mathbf{c}^T\mathbf{x}^* + \mathbf{b}^T\mathbf{y}^* = 0\)]]></text>
+      <feedback><text>Strong duality gives \(\mathbf{c}^T\mathbf{x}^* = \mathbf{b}^T\mathbf{y}^*\) (equality), not that their sum is zero.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>LP_Q06_Degenerate_Cycling</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Cycling in the simplex method (revisiting the same BFS repeatedly) can occur when the current BFS is degenerate (some basic variables are zero). Which rule guarantees termination (no cycling)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Bland's rule: always select the entering variable with the smallest index among those with negative reduced cost, and the leaving variable with the smallest index in case of ties in the minimum ratio test]]></text>
+      <feedback><text>Correct. Bland's rule prevents cycling by a strict index-selection criterion that ensures the simplex visits each degenerate BFS at most once.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The big-M method: adding a large penalty \(M\) to artificial variable costs]]></text>
+      <feedback><text>The big-M method is used for finding an initial BFS (Phase I), not for preventing cycling in Phase II.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Perturbation method: randomly perturbing the right-hand side \(\mathbf{b}\) to make all BFS non-degenerate]]></text>
+      <feedback><text>Perturbation methods do prevent cycling (by making the LP non-degenerate), but the question asks for a specific deterministic rule; Bland's rule is the standard anti-cycling rule.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Using the interior point method instead of the simplex method]]></text>
+      <feedback><text>Interior point methods avoid the simplex path entirely, but the question asks specifically about anti-cycling rules within the simplex algorithm.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>LP_Q07_TransportationProblem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The transportation problem with \(m\) sources and \(n\) destinations has \(mn\) decision variables and \(m+n\) constraints (rows + columns sum to supply/demand). The number of basic variables in a non-degenerate BFS is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(m+n-1\) (since the \(m+n\) supply-demand constraints have rank \(m+n-1\) due to the balance condition \(\sum s_i = \sum d_j\))]]></text>
+      <feedback><text>Correct. The sum of all supply constraints equals total supply, and the sum of all demand constraints equals total demand; these are equal (balanced problem), making one constraint redundant, giving rank \(m+n-1\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(m+n\)]]></text>
+      <feedback><text>The \(m+n\) supply-demand constraints are not independent (they sum to the same total); the rank is \(m+n-1\), so a BFS has \(m+n-1\) basic variables.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(mn\)]]></text>
+      <feedback><text>A BFS has as many basic variables as constraints (rank); \(mn\) basic variables would mean all variables are basic, which is only possible if \(mn = m+n-1\) (small cases).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\min(m,n)\)]]></text>
+      <feedback><text>The number of basic variables equals the rank \(m+n-1\), not the smaller of \(m\) and \(n\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>LP_Q08_AssignmentProblem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The assignment problem (finding the minimum cost perfect matching in a bipartite graph) is a special case of the transportation problem. Its LP relaxation]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Always has an integer optimal solution, because the constraint matrix is totally unimodular (TU)]]></text>
+      <feedback><text>Correct. The constraint matrix of the assignment problem is the incidence matrix of a bipartite graph, which is TU; for TU matrices with integer \(\mathbf{b}\), every BFS is integer.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Has fractional optimal solutions in general, requiring branch-and-bound to find integer solutions]]></text>
+      <feedback><text>Due to total unimodularity, the LP relaxation of the assignment problem always has an integer optimal, so no branch-and-bound is needed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Is infeasible unless the number of workers equals the number of jobs]]></text>
+      <feedback><text>The standard assignment problem requires a square cost matrix (equal workers and jobs), but feasibility is guaranteed by the problem structure, not something that can fail.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Cannot be solved by the Hungarian algorithm, which requires integer programming]]></text>
+      <feedback><text>The Hungarian algorithm solves the assignment problem exactly and efficiently in polynomial time; it operates on the LP/combinatorial structure and does not require integer programming.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>LP_Q09_SensitivityAnalysis</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In sensitivity analysis of an LP, the range of values for cost coefficient \(c_j\) of a basic variable over which the current optimal basis remains optimal is determined by]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The range that keeps all reduced costs of nonbasic variables non-negative (for minimization): \(\bar{c}_k = c_k - \mathbf{c}_B^T B^{-1} A_k \geq 0\) for all nonbasic \(k\)]]></text>
+      <feedback><text>Correct. Changing \(c_j\) (basic variable) changes the reduced costs of all nonbasic variables; the current basis remains optimal as long as all reduced costs stay non-negative.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The range that keeps the right-hand side \(\mathbf{b}\) non-negative after updating: \(B^{-1}\mathbf{b}\geq\mathbf{0}\)]]></text>
+      <feedback><text>The condition \(B^{-1}\mathbf{b}\geq0\) ensures primal feasibility when \(\mathbf{b}\) is perturbed; sensitivity on \(c_j\) requires checking optimality (reduced costs), not primal feasibility.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Any range \((-\infty,+\infty)\) — basic variable costs never affect optimality of the basis]]></text>
+      <feedback><text>Changing \(c_j\) for a basic variable does affect the reduced costs of nonbasic variables; there is a finite range outside which the basis becomes non-optimal.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The range over which \(\det(B)\) remains nonzero]]></text>
+      <feedback><text>The determinant of the basis matrix is always nonzero (since \(B\) is a basis); optimality is determined by reduced cost signs, not the determinant.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>LP_Q10_TwoPhase</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In the two-phase simplex method, Phase I minimizes the sum of artificial variables. If the Phase I optimal objective value is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Zero, the original problem is feasible and Phase II can begin from the obtained BFS (after removing artificial variables from the basis if possible)]]></text>
+      <feedback><text>Correct. Phase I objective value zero means all artificials are driven to zero, giving a feasible BFS for the original LP; Phase II then optimizes the original objective.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Positive, the original problem has an unbounded feasible region]]></text>
+      <feedback><text>A positive Phase I objective value means the original LP is infeasible (artificials cannot be driven to zero); unboundedness is a Phase II conclusion, not Phase I.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Zero, the original problem is infeasible and Phase II is skipped]]></text>
+      <feedback><text>Phase I objective value zero indicates feasibility; infeasibility is indicated by a positive Phase I minimum.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Positive, the original LP has multiple optimal solutions]]></text>
+      <feedback><text>Multiple optimal solutions in the original LP are detected in Phase II (non-unique optimal BFS); a positive Phase I objective means infeasibility.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>LP_Q11_InteriorPoint</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Karmarkar's interior-point algorithm (1984) for LP achieves a worst-case complexity of \(O(n^{3.5}L)\) bit operations (where \(L\) is the input size). Compared to the simplex method, this means]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Interior point has polynomial worst-case complexity, while the simplex method (Klee-Minty examples) has exponential worst case — though both perform well in practice]]></text>
+      <feedback><text>Correct. The simplex method can take exponentially many pivots on pathological instances (Klee-Minty cube); Karmarkar's method has polynomial worst-case guarantees, but both are efficient in practice.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Interior point is always faster than simplex in practice for all LP instances]]></text>
+      <feedback><text>In practice, modern revised simplex implementations often outperform interior-point methods on sparse or structured LPs; neither is universally faster.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Interior point is only applicable to LPs with equality constraints; simplex handles inequality constraints]]></text>
+      <feedback><text>Interior point methods (like simplex) handle LPs in standard or inequality form; neither is restricted to only one form.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The simplex method has polynomial complexity but interior point is exponential in the worst case]]></text>
+      <feedback><text>This has the relationship reversed: the simplex method has exponential worst case (Klee-Minty), while interior point methods have polynomial worst-case complexity.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>LP_Q12_DualSimplex</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The dual simplex method maintains dual feasibility (all reduced costs \(\bar{c}_j\geq0\)) and restores primal feasibility. It is particularly suited for]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Post-optimality analysis when adding a new constraint to an LP with a known optimal solution (the current basis becomes dually feasible but possibly primal infeasible)]]></text>
+      <feedback><text>Correct. When a new constraint is added to an optimal LP, the current basis satisfies optimality (dual feasibility) but may violate the new constraint (primal infeasibility); the dual simplex restores primal feasibility.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Finding an initial basic feasible solution when no obvious feasible starting point is known]]></text>
+      <feedback><text>Finding an initial BFS is the job of Phase I or big-M methods; the dual simplex starts from a dually feasible (possibly primal infeasible) basis.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Problems where the objective function is nonlinear and the simplex pivots are modified]]></text>
+      <feedback><text>The dual simplex is designed for linear programs; nonlinear objectives require different methods (SQP, interior point for NLP).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Solving the dual LP directly without computing the primal solution]]></text>
+      <feedback><text>The dual simplex method produces both primal and dual solutions simultaneously; it does not just solve the dual.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>LP_Q13_IntegerProgramming</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In integer programming (IP), the LP relaxation (ignoring integrality) provides what kind of bound for the IP optimal value?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[A lower bound (for minimization IP): the LP relaxation optimal value \(\leq\) IP optimal value, since the LP feasible region is larger]]></text>
+      <feedback><text>Correct. Relaxing integrality enlarges the feasible set, so the LP minimum cannot exceed the IP minimum; the LP relaxation gives a lower bound for minimization IP.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[An upper bound (for minimization IP): the LP relaxation optimal value \(\geq\) IP optimal value]]></text>
+      <feedback><text>For minimization, a larger feasible region allows a smaller or equal objective; the LP bound is a lower bound on the IP optimal, not an upper bound.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The exact IP optimal value, since the LP and IP optima always coincide for well-posed problems]]></text>
+      <feedback><text>LP and IP optima coincide only for TU problems (like transportation/assignment); in general there is a gap.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[No useful bound — LP relaxations provide no information about the IP optimal]]></text>
+      <feedback><text>LP relaxation bounds are central to branch-and-bound algorithms; they are essential for solving IPs efficiently.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>LP_Q14_NetworkFlow</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The maximum flow minimum cut theorem for a directed network states]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The maximum flow from source \(s\) to sink \(t\) equals the minimum capacity of any \(s\)-\(t\) cut (set of edges whose removal disconnects \(s\) from \(t\))]]></text>
+      <feedback><text>Correct. The max-flow min-cut theorem (Ford-Fulkerson) is a fundamental result in network optimization; it is also a consequence of LP strong duality applied to the network flow LP.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The maximum flow equals the sum of all edge capacities in the network]]></text>
+      <feedback><text>The max flow is limited by bottleneck cuts, not the total edge capacity; the min-cut may be much smaller than the total capacity.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The minimum cut always passes through the edge incident to \(s\) with smallest capacity]]></text>
+      <feedback><text>The minimum cut can be anywhere in the network; it is not necessarily adjacent to the source.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The maximum flow equals the number of edge-disjoint paths from \(s\) to \(t\)]]></text>
+      <feedback><text>Menger's theorem states the maximum number of edge-disjoint paths equals the minimum edge cut (unit capacities); for general capacities the max flow equals min cut capacity, not path count.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>LP_Q15_GameTheory_LP</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A two-player zero-sum game with payoff matrix \(A\) (player I chooses row, player II chooses column; player I receives \(A_{ij}\)) has a Nash equilibrium in mixed strategies. The value \(v\) of the game and the optimal mixed strategies \(\mathbf{p}^*\) (row player) satisfy which LP?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\max_{\mathbf{p}\geq0,\,\mathbf{1}^T\mathbf{p}=1}\min_j (A^T\mathbf{p})_j\), equivalently \(\max\, v\) s.t. \(A^T\mathbf{p}\geq v\mathbf{1}\), \(\mathbf{p}\geq0\), \(\mathbf{1}^T\mathbf{p}=1\)]]></text>
+      <feedback><text>Correct. The row player maximizes the worst-case (minimum over columns) expected payoff; this is an LP equivalent to the primal game LP.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\max\, v\) s.t. \(A\mathbf{q}\leq v\mathbf{1}\), \(\mathbf{q}\geq0\), \(\mathbf{1}^T\mathbf{q}=1\) (column player's LP)]]></text>
+      <feedback><text>This is the column player's LP (minimizing the game value); the row player's LP maximizes the value subject to \(A^T\mathbf{p}\geq v\mathbf{1}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The saddle point condition \(A_{i^*j^*} \leq A_{i^*j} \leq A_{ij^*}\) for all \(i,j\), requiring a pure strategy Nash equilibrium]]></text>
+      <feedback><text>A saddle point (pure Nash) exists only if \(\max_i\min_j A_{ij}=\min_j\max_i A_{ij}\); in general, mixed strategies are needed and the LP formulation covers both cases.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The row player should choose the row with the largest row-sum regardless of the column player's strategy]]></text>
+      <feedback><text>This naive strategy ignores the column player's optimal response; the LP formulation correctly handles mixed-strategy equilibria.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>LP_Q16_SimplexTableau</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In the simplex tableau for \(\min\,\mathbf{c}^T\mathbf{x}\) s.t. \(A\mathbf{x}=\mathbf{b}\), \(\mathbf{x}\geq0\), optimality is recognized when]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[All reduced costs in the objective row are non-negative: \(\bar{c}_j \geq 0\) for all nonbasic \(j\)]]></text>
+      <feedback><text>Correct. No negative reduced cost means no improving direction exists; the current BFS is optimal for minimization.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All entries in the RHS column \(B^{-1}\mathbf{b}\) are non-negative]]></text>
+      <feedback><text>Non-negative RHS (\(B^{-1}\mathbf{b}\geq0\)) indicates primal feasibility of the current BFS, not optimality.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The objective function value equals zero]]></text>
+      <feedback><text>The objective value at an optimal BFS is generally nonzero; optimality is determined by reduced cost signs, not by the objective value being zero.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All basic variables are strictly positive (non-degenerate BFS)]]></text>
+      <feedback><text>A non-degenerate BFS has all basic variables positive, but this is a non-degeneracy condition, not an optimality condition.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>LP_Q17_Unbounded</text></name>
+    <questiontext format="html">
+      <text><![CDATA[During a simplex pivot, if an entering variable \(x_s\) is selected (with \(\bar{c}_s < 0\)) but the minimum ratio test yields no positive ratios (all \(y_{is} \leq 0\) in the pivot column), then the LP]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Is unbounded: the objective can be decreased to \(-\infty\) along the direction \(x_s \to +\infty\)]]></text>
+      <feedback><text>Correct. If all \(y_{is}\leq0\) for the entering column, increasing \(x_s\) does not violate any constraint (no basic variable hits zero), and the objective decreases without bound.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Is infeasible: the current BFS cannot be extended]]></text>
+      <feedback><text>Infeasibility is detected when the Phase I optimal is positive; a failed minimum ratio test with an entering variable indicates unboundedness, not infeasibility.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Has multiple optimal solutions along the edge through the current vertex]]></text>
+      <feedback><text>Multiple optima occur when a nonbasic variable has zero reduced cost; an unbounded LP is detected by the absence of a leaving variable.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Requires a different pivot rule (e.g., Bland's rule) to proceed]]></text>
+      <feedback><text>When no leaving variable exists, the LP is concluded to be unbounded; no further pivoting is helpful or needed.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>LP_Q18_ConvexProgramming</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The KKT (Karush-Kuhn-Tucker) conditions for the nonlinear program \(\min f(\mathbf{x})\) s.t. \(g_i(\mathbf{x})\leq0\), \(h_j(\mathbf{x})=0\) are necessary for optimality when a constraint qualification holds, and sufficient when]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(f\) is convex, each \(g_i\) is convex, and each \(h_j\) is affine (the problem is convex); then KKT conditions are both necessary and sufficient]]></text>
+      <feedback><text>Correct. For convex programs, KKT conditions are sufficient (as well as necessary under a constraint qualification); a KKT point is a global minimizer.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f\) is quadratic and all constraints are linear (quadratic programming always has globally optimal KKT points)]]></text>
+      <feedback><text>For indefinite quadratic programs (non-convex), KKT points may be saddle points or local minima, not global minima; convexity is needed for sufficiency.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Hessian of the Lagrangian is positive semi-definite at the KKT point]]></text>
+      <feedback><text>Positive semi-definite Lagrangian Hessian at a KKT point indicates a local minimum (second-order sufficiency), but global optimality requires convexity of the whole problem.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The dual variables (multipliers) are all strictly positive]]></text>
+      <feedback><text>Strict complementarity (positive dual variables) is a regularity condition, not the condition for KKT sufficiency; convexity of the problem is the key requirement.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>LP_Q19_ShadowPrice</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In LP, the shadow price (or dual variable) associated with a constraint \(\mathbf{a}_i^T\mathbf{x}\leq b_i\) at the optimum represents]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The rate of change of the optimal objective value per unit increase in \(b_i\): \(y_i^* = \frac{\partial z^*}{\partial b_i}\)]]></text>
+      <feedback><text>Correct. The dual variable (shadow price) measures the marginal value of relaxing the \(i\)-th constraint; it equals the derivative of the optimal value function with respect to \(b_i\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The cost of adding a new variable associated with the \(i\)-th constraint]]></text>
+      <feedback><text>Shadow prices relate to constraint relaxation (changing \(b_i\)), not to adding new variables.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The value of the \(i\)-th dual variable at the initial BFS before optimization]]></text>
+      <feedback><text>Shadow prices are properties of the optimal solution, not the initial BFS.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The number of simplex pivots required to process the \(i\)-th constraint]]></text>
+      <feedback><text>Shadow prices have an economic (sensitivity) interpretation; they are not counts of pivots.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>LP_Q20_PolytopeFaces</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A vertex (extreme point) of a polyhedron \(P = \{\mathbf{x}: A\mathbf{x}\leq\mathbf{b}\}\) in \(\mathbb{R}^n\) is a point at which]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(n\) linearly independent constraints are active (binding): at least \(n\) of the inequalities \(a_i^T\mathbf{x}=b_i\) hold with equality]]></text>
+      <feedback><text>Correct. An extreme point is the intersection of \(n\) linearly independent bounding hyperplanes; it corresponds to a BFS in the standard simplex framework.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The objective function achieves its maximum value over \(P\)]]></text>
+      <feedback><text>A vertex is a geometric property of the polyhedron independent of any specific objective; vertices are not defined by optimization.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All constraint coefficients \(a_{ij}\) are positive]]></text>
+      <feedback><text>The sign of constraint coefficients does not determine whether a point is a vertex; \(n\) active linearly independent constraints define a vertex.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The point cannot be written as a convex combination of other points in \(P\)]]></text>
+      <feedback><text>This is an equivalent characterization (extreme point = not a proper convex combination of points in \(P\)), but the precise algebraic characterization is the activity of \(n\) independent constraints.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

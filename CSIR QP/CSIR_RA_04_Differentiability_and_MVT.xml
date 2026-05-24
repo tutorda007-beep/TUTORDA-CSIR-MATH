@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Real Analysis/Differentiability and MVT</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>MVT - Lagrange's Mean Value Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f(x) = x^3\) on \([0,2]\). By Lagrange's Mean Value Theorem, the value of \(c \in (0,2)\) satisfying \(f'(c) = \dfrac{f(2)-f(0)}{2-0}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(2/\sqrt{3}\)</strong></p><p>\(f'(c)=3c^2\). The average rate is \(\frac{8-0}{2}=4\). So \(3c^2=4\), giving \(c^2=4/3\), hence \(c=2/\sqrt{3} \approx 1.155 \in (0,2)\). ✓ By MVT, such a \(c\) exists since \(f\) is continuous on \([0,2]\) and differentiable on \((0,2)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(2/\sqrt{3}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{3}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - Rolle's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For Rolle's theorem to apply to \(f\) on \([a,b]\), we need: \(f\) continuous on \([a,b]\), differentiable on \((a,b)\), and:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(f(a) = f(b)\)</strong></p><p>Rolle's theorem: if \(f\) is continuous on \([a,b]\), differentiable on \((a,b)\), and \(f(a)=f(b)\), then \(\exists\,c\in(a,b)\) with \(f'(c)=0\). This is a special case of the MVT (when \(f(a)=f(b)\), the average rate of change is 0). Geometrically, the tangent is horizontal at some interior point. MVT generalizes Rolle by removing the equal endpoint condition.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(a) \cdot f(b) < 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(a) = f(b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'(a) = f'(b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f''(x) > 0\) on \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>MVT - Cauchy Mean Value Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Cauchy's generalized MVT states: if \(f, g\) are continuous on \([a,b]\), differentiable on \((a,b)\), and \(g'(x) \neq 0\) on \((a,b)\), then there exists \(c \in (a,b)\) such that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\dfrac{f'(c)}{g'(c)} = \dfrac{f(b)-f(a)}{g(b)-g(a)}\)</strong></p><p>Cauchy's MVT: \(\frac{f'(c)}{g'(c)} = \frac{f(b)-f(a)}{g(b)-g(a)}\). Setting \(g(x)=x\) recovers Lagrange's MVT. Cauchy's MVT is used to prove L'Hôpital's rule. Geometrically, it says the tangent to the parametric curve \((g(t),f(t))\) at some point is parallel to the chord joining \((g(a),f(a))\) and \((g(b),f(b))\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{f'(c)}{g'(c)} = \dfrac{f(b)-f(a)}{g(b)-g(a)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'(c) = g'(c)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'(c) \cdot g'(c) = f(b) - f(a)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'(c) + g'(c) = f(b) + g(b) - f(a) - g(a)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - Taylor's Theorem Remainder</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Lagrange form of the remainder in Taylor's theorem for \(f\) expanded around \(a\) up to degree \(n\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(R_n(x) = \dfrac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}\) for some \(c\) between \(a\) and \(x\)</strong></p><p>Taylor's theorem with Lagrange remainder: \(f(x) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x-a)^k + R_n(x)\) where \(R_n(x) = \frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}\) for some \(c\) between \(a\) and \(x\). The Cauchy form is \(R_n = \frac{f^{(n+1)}(c)}{n!}(x-c)^n(x-a)\). Both are consequences of MVT applied \(n+1\) times.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(R_n(x) = \dfrac{f^{(n)}(c)}{n!}(x-a)^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(R_n(x) = \dfrac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}\) for some \(c\) between \(a\) and \(x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R_n(x) = \dfrac{f(x) - f(a)}{x-a}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R_n(x) = (x-a)^{n+1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - Darboux's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Darboux's theorem (intermediate value property for derivatives) states: if \(f\) is differentiable on \([a,b]\) and \(f'(a) < \lambda < f'(b)\), then there exists \(c \in (a,b)\) such that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(f'(c) = \lambda\)</strong></p><p>Darboux's theorem: derivatives satisfy the intermediate value property, even if \(f'\) is not continuous. This means \(f'\) cannot have jump discontinuities (but can be discontinuous in other ways, e.g., oscillatory). Example: \(f(x) = x^2\sin(1/x)\) for \(x\neq0\), \(f(0)=0\): \(f'(x) = 2x\sin(1/x)-\cos(1/x)\) for \(x\neq0\), and \(f'(0)=0\); \(f'\) is bounded but discontinuous at 0, yet it satisfies IVP.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(c) = \lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f''(c) = \lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f'(c) = \lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(c) = f'(c)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - Chain Rule</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f\) is differentiable at \(g(a)\) and \(g\) is differentiable at \(a\), then \((f \circ g)'(a) =\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(f'(g(a)) \cdot g'(a)\)</strong></p><p>The chain rule: \((f\circ g)'(a) = f'(g(a))\cdot g'(a)\). This requires differentiability (not just continuity) of both functions. A common subtlety: the proof using \(\Delta y/\Delta x = (\Delta f/\Delta g)\cdot(\Delta g/\Delta x)\) fails when \(\Delta g = 0\); the rigorous proof uses the linear approximation formulation.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'(a) \cdot g'(a)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f'(g(a)) \cdot g'(a)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'(g'(a))\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'(a) + g'(a)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>MVT - Inequality from MVT</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Using the Mean Value Theorem, which of the following inequalities is CORRECTLY derived?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(|\sin x - \sin y| \leq |x - y|\) for all \(x,y \in \mathbb{R}\)</strong></p><p>Let \(f(t)=\sin t\). Then \(|f'(t)| = |\cos t| \leq 1\) for all \(t\). By MVT: \(|\sin x - \sin y| = |f'(c)|\cdot|x-y| \leq 1\cdot|x-y| = |x-y|\). So \(\sin\) is Lipschitz with constant 1. Similarly \(|\cos x - \cos y| \leq |x-y|\). Option (B): \(\ln(1+x) \leq x\) for \(x > -1\) is also true but derived from \(f(x)=\ln(1+x)-x\) having \(f'(x)<0\) for \(x>0\), not directly MVT as stated.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(|\sin x - \sin y| \leq |x-y|\) for all \(x,y \in \mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^x \leq 1 + x\) for all \(x \in \mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(x \leq \sin x\) for all \(x > 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ln(x) \leq x-1\) for all \(x > 0\) — using MVT with a specific bound]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - Continuity vs Differentiability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The function \(f(x) = |x|\) at \(x=0\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Is continuous but not differentiable at \(x=0\)</strong></p><p>\(f(0)=0\), and \(\lim_{x\to0}|x|=0=f(0)\), so \(f\) is continuous at 0. But \(f'(0) = \lim_{h\to0}\frac{|h|-0}{h} = \lim_{h\to0}\frac{|h|}{h}\): for \(h>0\) this is 1, for \(h<0\) this is \(-1\). Since one-sided derivatives differ, \(f\) is not differentiable at 0. This is the canonical example showing continuity does not imply differentiability.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Is differentiable with \(f'(0) = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is differentiable with \(f'(0) = 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Is continuous but not differentiable at \(x=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is discontinuous at \(x=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - Second Derivative Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f'(c) = 0\) and \(f''(c) > 0\), then by the second derivative test:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(f\) has a local minimum at \(c\)</strong></p><p>Second derivative test: if \(f'(c)=0\) and \(f''(c)>0\), then \(c\) is a local minimum (the function is concave up at \(c\)). If \(f''(c)<0\), it's a local maximum. If \(f''(c)=0\), the test is inconclusive (need higher-order derivatives). Example: \(f(x)=x^4\) has \(f'(0)=0, f''(0)=0\) but \(x=0\) is still a minimum; \(f(x)=x^3\) has \(f'(0)=0, f''(0)=0\) but neither max nor min.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) has a local maximum at \(c\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) has a local minimum at \(c\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) has an inflection point at \(c\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No conclusion can be drawn]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - Convexity and Derivative</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A differentiable function \(f: (a,b) \to \mathbb{R}\) is convex if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(f'\) is non-decreasing on \((a,b)\)</strong></p><p>Equivalences for differentiable functions: \(f\) is convex iff \(f'\) is non-decreasing iff \(f''(x)\geq0\) (if \(f\) is twice differentiable) iff for all \(x,y\in(a,b)\): \(f(y)\geq f(x)+f'(x)(y-x)\) (tangent line inequality). Strict convexity: \(f'\) strictly increasing or \(f''>0\). Jensen's inequality applies to convex functions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f' > 0\) on \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'' > 0\) on \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is monotone on \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f'\) is non-decreasing on \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>MVT - Application to Boundedness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f: \mathbb{R} \to \mathbb{R}\) is differentiable with \(|f'(x)| \leq M\) for all \(x\), and \(f(0) = 0\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(|f(x)| \leq M|x|\) for all \(x\)</strong></p><p>By MVT applied to the interval \([0,x]\) (or \([x,0]\)): \(|f(x)-f(0)| = |f'(c)||x-0| \leq M|x|\). Since \(f(0)=0\), \(|f(x)|\leq M|x|\). This is the Lipschitz condition: \(|f(x)-f(y)|\leq M|x-y|\) for all \(x,y\) (apply MVT to \([x,y]\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(|f(x)| \leq M|x|\) for all \(x \in \mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is constant]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|f(x)| \leq M\) for all \(x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is bounded but \(|f(x)|\) may exceed \(M|x|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - L'Hopital Misapplication</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following is a case where L'Hôpital's rule CANNOT be directly applied?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(\displaystyle\lim_{x\to0} \frac{x^2\sin(1/x)}{\sin x}\)</strong></p><p>L'Hôpital's rule requires the limit to be of the form \(0/0\) or \(\pm\infty/\pm\infty\), AND \(\lim f'(x)/g'(x)\) must exist. For \(\frac{x^2\sin(1/x)}{\sin x}\): numerator \(\to 0\), denominator \(\to 0\), so it IS \(0/0\). But the derivative of \(x^2\sin(1/x)\) is \(2x\sin(1/x)-\cos(1/x)\), which oscillates. So L'Hôpital gives no information since \(\lim f'(x)/g'(x)\) does not exist. The actual limit is 0 (computed directly: \(\frac{x^2\sin(1/x)}{\sin x} \approx \frac{x^2}{x} = x \to 0\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\lim_{x\to0} \frac{\sin x}{x}\) (\(0/0\) form)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\lim_{x\to\infty} \frac{e^x}{x^2}\) (\(\infty/\infty\) form)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\lim_{x\to0^+} x\ln x\) (convert to \(0/0\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\lim_{x\to0} \frac{x^2\sin(1/x)}{\sin x}\) (L'H gives no info since the ratio of derivatives oscillates)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - Higher Order and Taylor Series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Taylor series of \(f(x) = \ln(1+x)\) around \(x=0\) converges for:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(-1 < x \leq 1\)</strong></p><p>\(\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots = \sum_{n=1}^{\infty}\frac{(-1)^{n+1}x^n}{n}\). The radius of convergence is 1 (ratio test). At \(x=1\): alternating harmonic series \(\sum(-1)^{n+1}/n\) converges (to \(\ln 2\)). At \(x=-1\): \(-\sum 1/n\) = harmonic series, diverges. So interval of convergence is \((-1,1]\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(|x| < 1\) only (open interval)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-1 \leq x \leq 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(-1 < x \leq 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All \(x \in \mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>MVT - Generalization and Monotonicity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f'(x) > 0\) for all \(x \in (a,b)\), then \(f\) is strictly increasing on \((a,b)\). If \(f'(x) = 0\) for all \(x \in (a,b)\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(f\) is constant on \((a,b)\)</strong></p><p>By MVT: for any \(x,y\in(a,b)\) with \(x<y\), \(f(y)-f(x) = f'(c)(y-x) = 0\cdot(y-x) = 0\). So \(f(x)=f(y)\) for all \(x,y\in(a,b)\), i.e., \(f\) is constant. This is the converse of "constant implies zero derivative": zero derivative on an INTERVAL implies constant (not just at isolated points — e.g., the Cantor function has zero derivative a.e. but is not constant, but it's not differentiable everywhere with zero derivative on an interval).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) may be non-constant (like the Cantor function)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) is constant on \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is linear on \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is zero on \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - Differentiability at a Point</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Define \(f(x) = x^2\sin(1/x)\) for \(x\neq0\) and \(f(0)=0\). Then \(f'(0)\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Exists and equals 0</strong></p><p>\(f'(0) = \lim_{h\to0}\frac{f(h)-f(0)}{h} = \lim_{h\to0}\frac{h^2\sin(1/h)}{h} = \lim_{h\to0} h\sin(1/h)\). Since \(|h\sin(1/h)|\leq|h|\to0\), the limit is 0. So \(f'(0)=0\). However, for \(x\neq0\): \(f'(x) = 2x\sin(1/x)-\cos(1/x)\), which oscillates near 0 and has no limit as \(x\to0\). So \(f'\) is differentiable everywhere but \(f'\) is discontinuous at 0.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Exists and equals 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Does not exist]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Exists and equals 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Exists and equals \(-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>MVT - Number of Roots via Rolle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The polynomial \(p(x) = x^5 + x + 1\) has exactly how many real roots?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Exactly one real root</strong></p><p>\(p'(x) = 5x^4 + 1 \geq 1 > 0\) for all \(x\). So \(p\) is strictly increasing on \(\mathbb{R}\), hence injective, hence at most one real root. Since \(p(-\infty) = -\infty\) and \(p(+\infty)=+\infty\), by IVT, exactly one real root exists. (Here \(p(0)=1>0\) and \(p(-1)=-1<0\), so the root is in \((-1,0)\).) If \(p\) had two roots, Rolle's theorem would give \(c\) with \(p'(c)=0\), contradicting \(p'>0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Three real roots]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Exactly one real root]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Five real roots]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No real roots]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - Inverse Function Theorem (1D)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f: (a,b) \to \mathbb{R}\) is differentiable, \(f'(c) \neq 0\) at some \(c\), and \(f\) is continuous, then near \(c\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(f\) is locally invertible and \((f^{-1})'(f(c)) = 1/f'(c)\)</strong></p><p>The 1D inverse function theorem: if \(f'(c)\neq0\) and \(f\) is \(C^1\) (continuously differentiable) near \(c\), then \(f\) is locally invertible near \(c\) and \((f^{-1})'(f(c))=1/f'(c)\). The condition \(f'(c)\neq0\) ensures local strict monotonicity (hence injectivity). Differentiability alone without continuity of \(f'\) still gives local invertibility if \(f'(c)\neq0\) (Darboux's theorem ensures \(f'\) doesn't change sign near \(c\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is globally invertible on \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((f^{-1})'(f(c)) = f'(c)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) is locally invertible and \((f^{-1})'(f(c)) = 1/f'(c)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f^{-1}\) exists globally but may not be differentiable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>MVT - Generalized Mean Value Estimate</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Using Taylor's theorem with Lagrange remainder, the approximation \(e \approx 1 + 1 + 1/2! + 1/3! + 1/4!\) has an error bounded by:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(e/5!\) for some \(c \in (0,1)\)</strong></p><p>For \(f(x)=e^x\) expanded at \(a=0\), evaluated at \(x=1\), with \(n=4\): \(R_4(1) = \frac{f^{(5)}(c)}{5!}(1-0)^5 = \frac{e^c}{120}\) for some \(c\in(0,1)\). Since \(e^c < e^1 = e\), the error is less than \(e/120\). Since \(e < 3\), the error is less than \(3/120 = 1/40\). The exact sum is \(e = 2.71828\ldots\) and the approximation gives \(1+1+0.5+0.1\overline{6}+0.041\overline{6} = 2.708\overline{3}\), error \(\approx 0.01\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{e^c}{5!}\) for some \(c \in (0,1)\), which is less than \(e/120\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/4!\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\) (the series converges exactly)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Differentiability - Weierstrass Nowhere Differentiable</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Weierstrass function \(W(x) = \displaystyle\sum_{n=0}^{\infty} a^n \cos(b^n \pi x)\), with \(0 < a < 1\), \(b\) a positive odd integer, and \(ab > 1 + \frac{3\pi}{2}\), is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Continuous everywhere but differentiable nowhere</strong></p><p>The Weierstrass function is a classic pathological example: the Weierstrass M-test (with \(M_n=a^n\) and \(\sum a^n < \infty\)) shows uniform convergence, hence continuity. But the high-frequency oscillations (controlled by \(b^n\)) prevent differentiability at any point. This countered the 19th century belief that continuous functions must be differentiable "almost everywhere." The condition \(ab>1+3\pi/2\) ensures non-differentiability.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Differentiable everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Discontinuous everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Continuous and differentiable almost everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Continuous everywhere but differentiable nowhere]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

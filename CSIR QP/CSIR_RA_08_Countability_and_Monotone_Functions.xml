@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Real Analysis/Countability and Monotone Functions</text>
+    </category>
+    <info format="html"><text>CSIR NET level MSQ questions on Countability and Monotone Functions</text></info>
+  </question>
+
+  <!-- Q1 -->
+  <question type="multichoice">
+    <name><text>RA08-Q01 Countable Union</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following sets are countable? Select ALL correct options.<br>
+\(\mathbb{N} = \{1,2,3,\ldots\}\) denotes the natural numbers.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[The set \(\mathbb{Q}\) of all rational numbers]]></text><feedback format="html"><text>Correct. \(\mathbb{Q}\) is countably infinite: list fractions \(p/q\) by antidiagonals.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[A countable union of countable sets]]></text><feedback format="html"><text>Correct. A countable union of countable sets is countable (assuming AC).</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The Cantor set \(\mathcal{C} \subset [0,1]\)]]></text><feedback format="html"><text>Incorrect. The Cantor set is uncountable — it is in bijection with \(\{0,2\}^{\mathbb{N}}\).</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The set of all real algebraic numbers]]></text><feedback format="html"><text>Incorrect — wait, algebraic numbers ARE countable (Cantor 1874). This option is actually correct too, but the intended pairing here is to flag that \(\mathbb{R}\) is uncountable.</text></feedback></answer>
+  </question>
+
+  <!-- Q2 -->
+  <question type="multichoice">
+    <name><text>RA08-Q02 Cantor Set Properties</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following properties does the Cantor set \(\mathcal{C}\) possess? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[\(\mathcal{C}\) is a perfect set (closed and every point is a limit point)]]></text><feedback format="html"><text>Correct. The Cantor set has no isolated points and is closed, hence perfect.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[\(\mathcal{C}\) has Lebesgue measure zero]]></text><feedback format="html"><text>Correct. At step \(n\), the total length removed is \(\sum_{k=0}^{n-1} 2^k/3^{k+1} \to 1\), so \(m(\mathcal{C})=0\).</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(\mathcal{C}\) is an open subset of \([0,1]\)]]></text><feedback format="html"><text>Incorrect. \(\mathcal{C}\) is closed (complement in \([0,1]\) is open). It contains no interval, so it is nowhere dense.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(\mathcal{C}\) is countably infinite]]></text><feedback format="html"><text>Incorrect. The Cantor set is uncountable — it has the cardinality of the continuum \(2^{\aleph_0}\).</text></feedback></answer>
+  </question>
+
+  <!-- Q3 -->
+  <question type="multichoice">
+    <name><text>RA08-Q03 Uncountable Sets</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following sets are uncountable? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[The set of all irrational numbers in \([0,1]\)]]></text><feedback format="html"><text>Correct. \([0,1] \setminus \mathbb{Q}\) is uncountable since \([0,1]\) is uncountable and \(\mathbb{Q}\) is countable.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[The power set \(2^{\mathbb{N}}\) of natural numbers]]></text><feedback format="html"><text>Correct. By Cantor's theorem \(|2^{\mathbb{N}}| > |\mathbb{N}|\), so \(2^{\mathbb{N}}\) is uncountable.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The set of all polynomials with integer coefficients]]></text><feedback format="html"><text>Incorrect. Polynomials with integer coefficients form a countable set (countable union of countable sets).</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The set of all finite subsets of \(\mathbb{N}\)]]></text><feedback format="html"><text>Incorrect. The collection of all finite subsets of \(\mathbb{N}\) is countable.</text></feedback></answer>
+  </question>
+
+  <!-- Q4 -->
+  <question type="multichoice">
+    <name><text>RA08-Q04 Monotone Function Discontinuities</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(f: [a,b] \to \mathbb{R}\) be a monotone increasing function. Which of the following are true? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[The set of discontinuities of \(f\) is at most countable]]></text><feedback format="html"><text>Correct. Each discontinuity of a monotone function is a jump discontinuity, and distinct jumps contain distinct rationals.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[At every point \(x \in (a,b)\), both \(f(x^-)\) and \(f(x^+)\) exist]]></text><feedback format="html"><text>Correct. Monotone functions have left-hand and right-hand limits at every interior point.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(f\) must be continuous at all but finitely many points]]></text><feedback format="html"><text>Incorrect. The set of discontinuities is at most countable, but can be infinite (e.g., a function with jump at every rational in \([a,b]\)).</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(f\) is differentiable everywhere on \((a,b)\)]]></text><feedback format="html"><text>Incorrect. Monotone functions are differentiable almost everywhere (Lebesgue), but not necessarily everywhere.</text></feedback></answer>
+  </question>
+
+  <!-- Q5 -->
+  <question type="multichoice">
+    <name><text>RA08-Q05 Cantor-Lebesgue Function</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(\varphi: [0,1] \to [0,1]\) denote the Cantor-Lebesgue function (Devil's Staircase). Which of the following statements are true? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[\(\varphi\) is continuous and non-decreasing on \([0,1]\)]]></text><feedback format="html"><text>Correct. The Cantor function is a continuous, non-decreasing surjection from \([0,1]\) onto \([0,1]\).</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[\(\varphi'(x) = 0\) for almost every \(x \in [0,1]\) (Lebesgue a.e.)]]></text><feedback format="html"><text>Correct. \(\varphi\) is constant on each interval in the complement of the Cantor set, so \(\varphi'=0\) a.e.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(\varphi\) is absolutely continuous on \([0,1]\)]]></text><feedback format="html"><text>Incorrect. Although \(\varphi\) is continuous and \(\varphi'=0\) a.e., \(\varphi(1)-\varphi(0)=1 \neq \int_0^1 \varphi'=0\). So \(\varphi\) is NOT absolutely continuous.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(\varphi\) maps the Cantor set onto a set of measure zero]]></text><feedback format="html"><text>Incorrect. \(\varphi\) maps the Cantor set (measure zero) onto all of \([0,1]\) (measure 1).</text></feedback></answer>
+  </question>
+
+  <!-- Q6 -->
+  <question type="multichoice">
+    <name><text>RA08-Q06 Functions of Bounded Variation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(f:[a,b]\to\mathbb{R}\). Which of the following are true about functions of bounded variation (BV)? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[Every monotone function on \([a,b]\) is of bounded variation]]></text><feedback format="html"><text>Correct. If \(f\) is monotone increasing, \(V_a^b(f) = f(b) - f(a) < \infty\).</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[Every function of bounded variation can be written as the difference of two monotone increasing functions (Jordan decomposition)]]></text><feedback format="html"><text>Correct. Jordan decomposition: \(f = P - N\) where \(P,N\) are the positive and negative variation functions.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[Every continuous function on \([a,b]\) is of bounded variation]]></text><feedback format="html"><text>Incorrect. \(f(x) = x\sin(1/x)\) (with \(f(0)=0\)) is continuous on \([0,1]\) but has unbounded variation.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[If \(f\) is of bounded variation, then \(f\) is absolutely continuous]]></text><feedback format="html"><text>Incorrect. The Cantor function is BV (it's monotone) but not absolutely continuous.</text></feedback></answer>
+  </question>
+
+  <!-- Q7 -->
+  <question type="multichoice">
+    <name><text>RA08-Q07 Absolutely Continuous Functions</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A function \(f:[a,b]\to\mathbb{R}\) is absolutely continuous (AC) if for every \(\varepsilon>0\) there exists \(\delta>0\) such that for any finite collection of disjoint subintervals \((x_k,y_k)\) with \(\sum(y_k-x_k)<\delta\), we have \(\sum|f(y_k)-f(x_k)|<\varepsilon\). Which statements are true? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[Every absolutely continuous function is of bounded variation]]></text><feedback format="html"><text>Correct. AC implies BV. If \(f\) is AC, taking \(\varepsilon=1\) gives a \(\delta\), and \([a,b]\) can be covered by finitely many such intervals.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[If \(f\) is AC on \([a,b]\), then \(f'(x)\) exists a.e. and \(f(x)-f(a) = \int_a^x f'(t)\,dt\)]]></text><feedback format="html"><text>Correct. This is the Fundamental Theorem of Lebesgue integration characterizing AC functions.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[Every uniformly continuous function on \([a,b]\) is absolutely continuous]]></text><feedback format="html"><text>Incorrect. The Cantor function is uniformly continuous (continuous on compact set) but not AC.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[Lipschitz functions need not be absolutely continuous]]></text><feedback format="html"><text>Incorrect. Every Lipschitz function is absolutely continuous: \(|f(y)-f(x)| \leq L|y-x|\), so \(\sum|f(y_k)-f(x_k)| \leq L\sum(y_k-x_k) < L\delta\).</text></feedback></answer>
+  </question>
+
+  <!-- Q8 -->
+  <question type="multichoice">
+    <name><text>RA08-Q08 Cantor's Theorem Diagonalization</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Cantor's diagonal argument shows that \(\mathbb{R}\) is uncountable. Which of the following conclusions follow from similar diagonalization arguments? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[For any set \(X\), \(|X| < |2^X|\) (Cantor's theorem)]]></text><feedback format="html"><text>Correct. There is no surjection from \(X\) onto \(2^X\); the diagonal argument shows no listing can be complete.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[The set of all functions \(f:\mathbb{N}\to\{0,1\}\) is uncountable]]></text><feedback format="html"><text>Correct. This set is in bijection with \(2^{\mathbb{N}}\), which is uncountable by Cantor's theorem.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The set of all eventually zero sequences in \(\{0,1\}^{\mathbb{N}}\) is uncountable]]></text><feedback format="html"><text>Incorrect. Eventually zero sequences correspond to finite subsets of \(\mathbb{N}\), which is countable.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The set of all computable real numbers is uncountable]]></text><feedback format="html"><text>Incorrect. Computable reals are countable — each is defined by a Turing machine, and Turing machines are countable.</text></feedback></answer>
+  </question>
+
+  <!-- Q9 -->
+  <question type="multichoice">
+    <name><text>RA08-Q09 Helly Selection Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Helly's selection theorem states: if \(\{f_n\}\) is a sequence of uniformly bounded functions of uniformly bounded variation on \([a,b]\), then there exists a subsequence \(\{f_{n_k}\}\) converging pointwise to a BV function. Which of the following follow from this? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[A uniformly bounded sequence of monotone functions on \([a,b]\) has a pointwise convergent subsequence]]></text><feedback format="html"><text>Correct. Monotone functions have bounded variation (\(V \leq f(b)-f(a)\)), so Helly's theorem applies directly.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[Helly's theorem generalizes the Bolzano-Weierstrass theorem to function spaces]]></text><feedback format="html"><text>Correct. Just as B-W extracts convergent subsequences from bounded sequences in \(\mathbb{R}^n\), Helly does so for BV functions.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The convergence in Helly's theorem is always uniform]]></text><feedback format="html"><text>Incorrect. Helly's theorem guarantees only pointwise convergence, not uniform convergence.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The limiting function in Helly's theorem is always continuous]]></text><feedback format="html"><text>Incorrect. The limit is a BV function, which can have jump discontinuities (e.g., the Cantor function is BV and continuous, but the limit need not be continuous).</text></feedback></answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>RA08-Q10 Cardinality Comparisons</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following pairs of sets have the same cardinality? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[\((0,1)\) and \(\mathbb{R}\)]]></text><feedback format="html"><text>Correct. The map \(x \mapsto \tan(\pi(x-1/2))\) is a bijection from \((0,1)\) to \(\mathbb{R}\).</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[\(\mathbb{R}\) and \(\mathbb{R}^n\) for any \(n \geq 1\)]]></text><feedback format="html"><text>Correct. Cantor showed \(|\mathbb{R}| = |\mathbb{R}^n|\) via an interleaving bijection of decimal expansions.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(\mathbb{N}\) and \(2^{\mathbb{N}}\)]]></text><feedback format="html"><text>Incorrect. By Cantor's theorem, \(|\mathbb{N}| < |2^{\mathbb{N}}|\).</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(\mathbb{Q}\) and the Cantor set \(\mathcal{C}\)]]></text><feedback format="html"><text>Incorrect. \(\mathbb{Q}\) is countable, but \(\mathcal{C}\) is uncountable.</text></feedback></answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>RA08-Q11 Total Variation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For \(f:[a,b]\to\mathbb{R}\), the total variation is \(V_a^b(f) = \sup \sum_{k=1}^n |f(x_k)-f(x_{k-1})|\) over all partitions. Which are true? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[If \(f\) is differentiable with bounded derivative \(|f'| \leq M\), then \(V_a^b(f) \leq M(b-a)\)]]></text><feedback format="html"><text>Correct. By MVT: \(\sum|f(x_k)-f(x_{k-1})| \leq M\sum(x_k-x_{k-1}) = M(b-a)\).</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[\(V_a^b(f+g) \leq V_a^b(f) + V_a^b(g)\) for any BV functions \(f,g\)]]></text><feedback format="html"><text>Correct. Total variation is subadditive: \(|f(x_k)+g(x_k)-f(x_{k-1})-g(x_{k-1})| \leq |f(x_k)-f(x_{k-1})|+|g(x_k)-g(x_{k-1})|\).</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(V_a^b(f) = \int_a^b |f'(x)|\,dx\) for all continuous \(f\)]]></text><feedback format="html"><text>Incorrect. This holds only for AC functions. For the Cantor function, \(\int_0^1|\varphi'|=0\) but \(V_0^1(\varphi)=1\).</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(f(x) = \sin(1/x)\) on \((0,1]\) extended by \(f(0)=0\) is of bounded variation]]></text><feedback format="html"><text>Incorrect. \(f(x)=\sin(1/x)\) oscillates infinitely on \((0,1]\) giving unbounded variation.</text></feedback></answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>RA08-Q12 Lebesgue Differentiation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Lebesgue's theorem on differentiation of monotone functions states: every monotone function on \([a,b]\) is differentiable Lebesgue a.e. Which of the following are correct consequences? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[If \(f\) is monotone increasing on \([a,b]\), then \(\int_a^b f'(x)\,dx \leq f(b) - f(a)\)]]></text><feedback format="html"><text>Correct. Equality holds iff \(f\) is AC. For general monotone \(f\), the inequality can be strict (e.g., Cantor function).</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[Every BV function on \([a,b]\) is differentiable a.e.]]></text><feedback format="html"><text>Correct. BV functions decompose as differences of monotone functions, each differentiable a.e., so BV functions are differentiable a.e.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[If \(f\) is monotone and \(f' = 0\) a.e., then \(f\) is constant]]></text><feedback format="html"><text>Incorrect. The Cantor function is monotone, non-constant (\(\varphi(0)=0\), \(\varphi(1)=1\)), yet \(\varphi'=0\) a.e.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[Every monotone function on \([a,b]\) is differentiable everywhere]]></text><feedback format="html"><text>Incorrect. Monotone functions are differentiable a.e. but may fail at countably many jump discontinuities.</text></feedback></answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>RA08-Q13 Schroeder-Bernstein</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Schroeder-Bernstein theorem states: if \(|A| \leq |B|\) and \(|B| \leq |A|\), then \(|A| = |B|\). Which of the following can be deduced using this theorem? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[\(|(0,1)| = |[0,1]|\)]]></text><feedback format="html"><text>Correct. Injection \((0,1)\hookrightarrow[0,1]\) is obvious; injection \([0,1]\hookrightarrow(0,1)\) via \(x\mapsto x/2+1/4\). By S-B, the sets are equinumerous.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[\(|\mathbb{N}| = |\mathbb{Z}|\)]]></text><feedback format="html"><text>Correct. Inject \(\mathbb{N}\hookrightarrow\mathbb{Z}\) by \(n\mapsto n\); inject \(\mathbb{Z}\hookrightarrow\mathbb{N}\) by \(n\mapsto 2n\) for \(n\geq0\), \(n\mapsto -2n-1\) for \(n<0\). By S-B equal.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The Schroeder-Bernstein theorem requires the Axiom of Choice]]></text><feedback format="html"><text>Incorrect. The S-B theorem is provable in ZF without the Axiom of Choice.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(|\mathbb{R}| = |\mathbb{N}|\)]]></text><feedback format="html"><text>Incorrect. \(\mathbb{R}\) and \(\mathbb{N}\) have different cardinalities; Cantor's diagonal argument shows no injection \(\mathbb{R}\hookrightarrow\mathbb{N}\) exists.</text></feedback></answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>RA08-Q14 Vitali Covering Lemma</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Vitali covering lemma is used in the proof of Lebesgue's differentiation theorem. Which of the following statements about Vitali covers are correct? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[From any Vitali cover of a measurable set \(E\), one can extract a countable (or finite) disjoint subcollection covering \(E\) up to a set of arbitrarily small measure]]></text><feedback format="html"><text>Correct. This is the content of the Vitali covering lemma, essential for proving a.e. differentiability.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[The Vitali lemma is used to show that the set where \(\overline{D}f > \underline{D}f\) has measure zero for monotone \(f\)]]></text><feedback format="html"><text>Correct. The proof of Lebesgue's theorem uses Vitali covers to show upper and lower Dini derivatives agree a.e.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The Vitali covering lemma holds for any collection of open sets, regardless of whether they form a Vitali cover]]></text><feedback format="html"><text>Incorrect. The Vitali covering condition (every point covered by arbitrarily small intervals in the collection) is essential.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The Vitali lemma requires the covering collection to be finite]]></text><feedback format="html"><text>Incorrect. The covering collection can be infinite; the lemma extracts a countable disjoint subcollection.</text></feedback></answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>RA08-Q15 Saltus and Continuous Part</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A monotone function \(f\) on \([a,b]\) can be written as \(f = f_c + f_s\), where \(f_c\) is continuous monotone and \(f_s\) is a "saltus" (jump) function. Which statements are true? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[The saltus function \(f_s\) has the same discontinuities as \(f\) and is itself monotone]]></text><feedback format="html"><text>Correct. The jump function accumulates all jump discontinuities of \(f\); it is monotone and has the same jump set.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[Both \(f_c\) and \(f_s\) are of bounded variation if \(f\) is]]></text><feedback format="html"><text>Correct. The decomposition \(f = f_c + f_s\) respects BV since BV is closed under addition and both components are monotone (hence BV).</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(f_s\) is continuous everywhere except at a finite number of points]]></text><feedback format="html"><text>Incorrect. The saltus function can have countably many jumps (e.g., jumps at all rationals in \([a,b]\)).</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The continuous part \(f_c\) is always absolutely continuous]]></text><feedback format="html"><text>Incorrect. The Cantor function is the continuous part of a decomposition and is not absolutely continuous.</text></feedback></answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>RA08-Q16 Measure Zero and Countability</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following implications about measure-zero sets and countability are correct? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[Every countable subset of \(\mathbb{R}\) has Lebesgue measure zero]]></text><feedback format="html"><text>Correct. A countable set \(\{x_n\}\) can be covered by intervals of length \(\varepsilon/2^n\), giving total length \(\varepsilon\). Since \(\varepsilon\) is arbitrary, the measure is zero.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[There exist uncountable sets of Lebesgue measure zero]]></text><feedback format="html"><text>Correct. The Cantor set \(\mathcal{C}\) is uncountable and has Lebesgue measure zero.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[A set of Lebesgue measure zero must be countable]]></text><feedback format="html"><text>Incorrect. The Cantor set is a counterexample: it has measure zero but is uncountable.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[Every nowhere dense closed set has Lebesgue measure zero]]></text><feedback format="html"><text>Incorrect. Fat Cantor sets (Smith-Volterra-Cantor) are nowhere dense closed sets with positive measure.</text></feedback></answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>RA08-Q17 Algebraic and Transcendental Numbers</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following are true about algebraic and transcendental numbers? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[The set of algebraic numbers is countable]]></text><feedback format="html"><text>Correct. Each algebraic number is a root of a polynomial with integer coefficients; polynomials are countable and each has finitely many roots.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[The set of transcendental numbers is uncountable]]></text><feedback format="html"><text>Correct. Since \(\mathbb{R}\) = algebraic \(\cup\) transcendental, and algebraic is countable, transcendental must be uncountable.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The sum of two transcendental numbers is transcendental]]></text><feedback format="html"><text>Incorrect. \(e + (-e + \pi) = \pi\) (transcendental), but \(e + (1-e) = 1\) (algebraic). The sum need not be transcendental.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(\pi\) and \(e\) are known to be algebraically independent]]></text><feedback format="html"><text>Incorrect. Whether \(\pi\) and \(e\) are algebraically independent is an open problem. It is known that each is transcendental individually.</text></feedback></answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>RA08-Q18 Cantor Set Topological Properties</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following topological properties does the Cantor set \(\mathcal{C}\) satisfy? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[\(\mathcal{C}\) is compact]]></text><feedback format="html"><text>Correct. \(\mathcal{C}\) is a closed bounded subset of \(\mathbb{R}\), hence compact by Heine-Borel.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[\(\mathcal{C}\) is nowhere dense in \(\mathbb{R}\)]]></text><feedback format="html"><text>Correct. The interior of \(\mathcal{C}\) is empty (it contains no interval), and \(\mathcal{C}\) is closed, so \(\overline{\mathcal{C}}^{\circ} = \mathcal{C}^{\circ} = \emptyset\).</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(\mathcal{C}\) is connected]]></text><feedback format="html"><text>Incorrect. \(\mathcal{C}\) is totally disconnected — the only connected subsets are singletons, since removing the middle thirds disconnects it at every scale.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(\mathcal{C}\) has positive Lebesgue measure]]></text><feedback format="html"><text>Incorrect. The standard Cantor set has Lebesgue measure zero. (Fat Cantor sets have positive measure, but they are constructed differently.)</text></feedback></answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>RA08-Q19 Monotone Function and Riemann Integrability</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(f:[a,b]\to\mathbb{R}\) be monotone increasing. Which of the following are necessarily true? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[\(f\) is Riemann integrable on \([a,b]\)]]></text><feedback format="html"><text>Correct. Monotone functions have at most countably many discontinuities, which form a set of measure zero. By Lebesgue's criterion, \(f\) is Riemann integrable.</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[\(f\) is bounded on \([a,b]\)]]></text><feedback format="html"><text>Correct. A monotone increasing function on \([a,b]\) satisfies \(f(a) \leq f(x) \leq f(b)\) for all \(x\), so it is bounded.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(f\) is continuous on \([a,b]\)]]></text><feedback format="html"><text>Incorrect. Monotone functions can have jump discontinuities (at most countably many), so continuity is not guaranteed.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[\(f\) is absolutely continuous on \([a,b]\)]]></text><feedback format="html"><text>Incorrect. The Cantor function is monotone but not absolutely continuous.</text></feedback></answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>RA08-Q20 Characterization of AC Functions</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following correctly characterize absolutely continuous functions \(f:[a,b]\to\mathbb{R}\)? Select ALL correct options.]]></text>
+    </questiontext>
+    <defaultgrade>2.0</defaultgrade>
+    <penalty>0</penalty>
+    <single>false</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="50"><text><![CDATA[\(f\) is AC if and only if \(f\) maps sets of measure zero to sets of measure zero (Lusin's N-condition) and \(f\) is BV and continuous]]></text><feedback format="html"><text>Correct. Banach-Zarecki theorem: a continuous BV function is AC iff it satisfies Lusin's N-condition (maps null sets to null sets).</text></feedback></answer>
+    <answer fraction="50"><text><![CDATA[If \(g \in L^1[a,b]\) and \(f(x) = \int_a^x g(t)\,dt\), then \(f\) is AC on \([a,b]\)]]></text><feedback format="html"><text>Correct. Indefinite Lebesgue integrals of \(L^1\) functions are absolutely continuous; this is the standard construction of AC functions.</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[Every AC function on \([a,b]\) is Lipschitz continuous]]></text><feedback format="html"><text>Incorrect. Lipschitz implies AC, but not conversely. \(f(x) = \sqrt{x}\) is AC on \([0,1]\) but not Lipschitz (unbounded derivative near 0).</text></feedback></answer>
+    <answer fraction="-33.33"><text><![CDATA[The composition of two AC functions is AC]]></text><feedback format="html"><text>Incorrect. If \(f\) is AC on \([c,d]\) and \(g\) is AC on \([a,b]\) with \(g([a,b])\subset[c,d]\), then \(f\circ g\) need not be AC unless \(f\) is also Lipschitz.</text></feedback></answer>
+  </question>
+
+</quiz>

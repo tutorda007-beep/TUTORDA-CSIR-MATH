@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Ordinary Differential Equations/Special ODEs and Special Functions</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q01_Bessel_Order</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The general solution of the Bessel equation \(x^2 y'' + xy' + (x^2 - \nu^2)y = 0\) for non-integer \(\nu > 0\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(y = c_1 J_\nu(x) + c_2 J_{-\nu}(x)\)]]></text>
+      <feedback><text>Correct. For non-integer ν, J_ν and J_{-ν} are linearly independent, giving the general solution.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(y = c_1 J_\nu(x) + c_2 Y_\nu(x)\)]]></text>
+      <feedback><text>This form is for integer ν, where Y_ν (Neumann function) is used since J_ν and J_{-ν} become linearly dependent.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(y = c_1 J_\nu(x) + c_2 x^{-\nu}\)]]></text>
+      <feedback><text>Incorrect. The second solution for non-integer ν is J_{-ν}(x), not x^{-ν}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(y = e^{-x}(c_1 + c_2 x)\)]]></text>
+      <feedback><text>This is the solution of a second-order linear ODE with constant coefficients, not Bessel's equation.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q02_Bessel_Recurrence</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following recurrence relations holds for Bessel functions \(J_\nu(x)\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(J_{\nu-1}(x) + J_{\nu+1}(x) = \dfrac{2\nu}{x} J_\nu(x)\)]]></text>
+      <feedback><text>Correct. This is the standard three-term recurrence relation for Bessel functions, derived from differentiation formulas.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(J_{\nu-1}(x) - J_{\nu+1}(x) = \dfrac{2\nu}{x} J_\nu(x)\)]]></text>
+      <feedback><text>Incorrect sign. The correct identity uses addition: J_{ν−1} + J_{ν+1} = (2ν/x) J_ν.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(J_{\nu+1}(x) = \dfrac{\nu}{x} J_\nu(x) - J_\nu'(x)\)]]></text>
+      <feedback><text>This is one of the differentiation formulas but not the three-term recurrence relation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(J_\nu(x) = J_{\nu-1}(x) \cdot J_{\nu+1}(x)\)]]></text>
+      <feedback><text>Bessel functions do not satisfy a multiplicative recurrence of this form.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q03_Legendre_Polynomial</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Legendre polynomial \(P_n(x)\) satisfies the Rodrigues' formula:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(P_n(x) = \dfrac{1}{2^n n!} \dfrac{d^n}{dx^n}(x^2-1)^n\)]]></text>
+      <feedback><text>Correct. Rodrigues' formula expresses Legendre polynomials as nth derivatives of (x²−1)ⁿ divided by 2ⁿn!.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P_n(x) = \dfrac{1}{n!} \dfrac{d^n}{dx^n}(x^2-1)^n\)]]></text>
+      <feedback><text>The factor 2ⁿ is missing in the denominator. Rodrigues' formula requires 2ⁿn! in the denominator.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P_n(x) = \dfrac{(-1)^n}{2^n n!} \dfrac{d^n}{dx^n}(1-x^2)^n\)]]></text>
+      <feedback><text>This introduces an unnecessary (−1)ⁿ factor; the standard Rodrigues' formula uses (x²−1)ⁿ with positive sign.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P_n(x) = \dfrac{1}{2^n} \dfrac{d^n}{dx^n}(x^2-1)^n\)]]></text>
+      <feedback><text>The n! factor in the denominator is missing.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q04_Legendre_Orthogonality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The orthogonality relation for Legendre polynomials on \([-1,1]\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\displaystyle\int_{-1}^{1} P_m(x) P_n(x)\, dx = \dfrac{2}{2n+1}\delta_{mn}\)]]></text>
+      <feedback><text>Correct. Legendre polynomials are orthogonal on [−1,1] and normalized so ∫P_n² dx = 2/(2n+1).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\displaystyle\int_{-1}^{1} P_m(x) P_n(x)\, dx = \delta_{mn}\)]]></text>
+      <feedback><text>Legendre polynomials are orthogonal but not orthonormal. The integral equals 2/(2n+1), not 1.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\displaystyle\int_{-1}^{1} P_m(x) P_n(x)\, dx = \dfrac{1}{2n+1}\delta_{mn}\)]]></text>
+      <feedback><text>The correct normalization is 2/(2n+1), not 1/(2n+1).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\displaystyle\int_{0}^{1} P_m(x) P_n(x)\, dx = \dfrac{2}{2n+1}\delta_{mn}\)]]></text>
+      <feedback><text>The orthogonality integral is over [−1,1], not [0,1].</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q05_SturmLiouville_Eigenvalue</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the Sturm-Liouville problem \(-y'' = \lambda y\), \(y(0) = 0\), \(y(\pi) = 0\), the eigenvalues and normalized eigenfunctions are:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\lambda_n = n^2,\quad \phi_n(x) = \sqrt{\dfrac{2}{\pi}}\sin(nx),\quad n = 1, 2, 3, \ldots\)]]></text>
+      <feedback><text>Correct. The eigenvalues are λ_n = n² and the L²-normalized eigenfunctions are √(2/π) sin(nx).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\lambda_n = n^2\pi^2,\quad \phi_n(x) = \sin(n\pi x),\quad n = 1, 2, 3, \ldots\)]]></text>
+      <feedback><text>This corresponds to the problem on [0,1], not [0,π]. On [0,π] the eigenvalues are n².</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\lambda_n = (2n-1)^2/4,\quad \phi_n(x) = \cos\!\left(\tfrac{(2n-1)x}{2}\right)\)]]></text>
+      <feedback><text>These eigenvalues arise from mixed boundary conditions, not the Dirichlet conditions y(0)=y(π)=0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\lambda_n = n^2,\quad \phi_n(x) = \cos(nx),\quad n = 0, 1, 2, \ldots\)]]></text>
+      <feedback><text>Cosines arise from Neumann boundary conditions y'(0)=y'(π)=0, not the Dirichlet conditions given.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q06_SturmLiouville_Properties</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following is NOT a property of a regular Sturm-Liouville problem \(\frac{d}{dx}[p(x)y'] + [q(x)+\lambda w(x)]y = 0\) on \([a,b]\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The eigenvalues may be complex.]]></text>
+      <feedback><text>Correct — this is NOT a property. All eigenvalues of a regular Sturm-Liouville problem are real (since the operator is self-adjoint with respect to the weight w(x)>0).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The eigenvalues form an increasing sequence \(\lambda_1 < \lambda_2 < \cdots \to +\infty\).]]></text>
+      <feedback><text>This IS a property of regular Sturm-Liouville problems: eigenvalues are real, simple, and tend to infinity.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Eigenfunctions corresponding to distinct eigenvalues are orthogonal with respect to weight \(w(x)\).]]></text>
+      <feedback><text>This IS a property: if \(\lambda_m \neq \lambda_n\), then \(\int_a^b \phi_m \phi_n w\, dx = 0\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The eigenfunctions form a complete orthonormal set in \(L^2([a,b], w)\).]]></text>
+      <feedback><text>This IS a property: the eigenfunctions are complete, so any square-integrable function can be expanded in terms of them.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q07_Bessel_Half_Integer</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Bessel function \(J_{1/2}(x)\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(J_{1/2}(x) = \sqrt{\dfrac{2}{\pi x}}\sin x\)]]></text>
+      <feedback><text>Correct. For ν=1/2, the Bessel function reduces to √(2/πx) sin x, expressible in terms of elementary functions.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(J_{1/2}(x) = \sqrt{\dfrac{2}{\pi x}}\cos x\)]]></text>
+      <feedback><text>This is J_{−1/2}(x). For ν=1/2 the Bessel function involves sin x, not cos x.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(J_{1/2}(x) = \dfrac{\sin x}{x}\)]]></text>
+      <feedback><text>Missing the √(2/π) normalization factor. The correct formula is √(2/πx) sin x.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(J_{1/2}(x) = \dfrac{x}{2}\)]]></text>
+      <feedback><text>This is not correct. J_{1/2}(x) is an oscillatory function, not a polynomial.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q08_Legendre_Generating</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The generating function for Legendre polynomials is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{1}{\sqrt{1-2xt+t^2}} = \displaystyle\sum_{n=0}^{\infty} P_n(x) t^n, \quad |t| < 1\)]]></text>
+      <feedback><text>Correct. This generating function is fundamental in potential theory and electrostatics and directly produces all Legendre polynomials as Taylor coefficients.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(e^{xt} = \displaystyle\sum_{n=0}^{\infty} P_n(x) \dfrac{t^n}{n!}\)]]></text>
+      <feedback><text>This is the generating function for Hermite polynomials (after modification), not Legendre polynomials.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{1}{1-2xt+t^2} = \displaystyle\sum_{n=0}^{\infty} P_n(x) t^n\)]]></text>
+      <feedback><text>The square root is missing. The correct generating function has (1−2xt+t²)^{−1/2}, not (1−2xt+t²)^{−1}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(e^{x(t-1/t)/2} = \displaystyle\sum_{n=-\infty}^{\infty} J_n(x) t^n\)]]></text>
+      <feedback><text>This is the generating function for Bessel functions J_n(x), not Legendre polynomials.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q09_Hermite_ODE</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Hermite equation \(y'' - 2xy' + 2ny = 0\) has a polynomial solution (Hermite polynomial \(H_n(x)\)) when \(n\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[A non-negative integer \(n = 0, 1, 2, \ldots\)]]></text>
+      <feedback><text>Correct. For n = 0,1,2,... the power series solution terminates, yielding the Hermite polynomial H_n(x). The first few are H_0=1, H_1=2x, H_2=4x²−2.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Any real positive number]]></text>
+      <feedback><text>For non-integer n, the power series does not terminate and gives an infinite series, not a polynomial.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A positive odd integer]]></text>
+      <feedback><text>Hermite polynomials exist for ALL non-negative integers n, not just odd ones.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A negative integer]]></text>
+      <feedback><text>For negative n the recursion does not terminate and no polynomial solution exists.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q10_Hypergeometric</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The hypergeometric equation is \(x(1-x)y'' + [c-(a+b+1)x]y' - aby = 0\). Its solution \({}_2F_1(a,b;c;x)\) is defined for \(c \notin \{0,-1,-2,\ldots\}\) by:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\({}_2F_1(a,b;c;x) = \displaystyle\sum_{n=0}^{\infty} \dfrac{(a)_n (b)_n}{(c)_n n!} x^n\)]]></text>
+      <feedback><text>Correct. This is the Gauss hypergeometric series, where (a)_n = a(a+1)···(a+n−1) is the Pochhammer symbol (rising factorial).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\({}_2F_1(a,b;c;x) = \displaystyle\sum_{n=0}^{\infty} \dfrac{a^n b^n}{c^n n!} x^n\)]]></text>
+      <feedback><text>This incorrectly uses powers aⁿ instead of the Pochhammer symbols (a)_n = a(a+1)···(a+n−1).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\({}_2F_1(a,b;c;x) = \displaystyle\sum_{n=0}^{\infty} \dfrac{(a+n)(b+n)}{(c+n) n!} x^n\)]]></text>
+      <feedback><text>The Pochhammer symbol is a rising factorial product, not a single shifted factor.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\({}_2F_1(a,b;c;x) = e^{ax} \cdot {}_1F_1(b;c;x)\)]]></text>
+      <feedback><text>This is not a correct relation. The hypergeometric function cannot be reduced to a confluent hypergeometric function times an exponential in general.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q11_Bessel_Integer_Order</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For integer order \(\nu = n\), the Bessel function of the second kind \(Y_n(x)\) is needed as a second solution because:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(J_n(x)\) and \(J_{-n}(x)\) are linearly dependent: \(J_{-n}(x) = (-1)^n J_n(x)\)]]></text>
+      <feedback><text>Correct. For integer n, J_{−n}(x) = (−1)ⁿ J_n(x), so they are proportional and do not form a fundamental set. The Neumann function Y_n is introduced as the independent second solution.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(J_n(x)\) is not defined for integer \(n\)]]></text>
+      <feedback><text>Incorrect. J_n(x) is perfectly well-defined for all integer n via the series expansion \(J_n(x) = \sum_{k=0}^\infty \frac{(-1)^k}{k!(n+k)!}(x/2)^{n+2k}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(J_n(x)\) diverges at \(x = 0\) for integer \(n\)]]></text>
+      <feedback><text>J_n(x) is finite at x=0 for integer n ≥ 0 (it equals 0 for n>0 and 1 for n=0). It is Y_n(x) that diverges logarithmically at x=0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Bessel equation has only one solution for integer \(\nu\)]]></text>
+      <feedback><text>The Bessel equation always has two linearly independent solutions. The issue is that J_n and J_{−n} are dependent for integer n, requiring a different choice of second solution.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q12_Legendre_Recurrence</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The three-term recurrence for Legendre polynomials is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\((n+1)P_{n+1}(x) = (2n+1)x P_n(x) - n P_{n-1}(x)\)]]></text>
+      <feedback><text>Correct. This is Bonnet's recursion formula. With P_0=1, P_1=x, it generates all higher Legendre polynomials: P_2=(3x²−1)/2, P_3=(5x³−3x)/2, etc.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P_{n+1}(x) = 2x P_n(x) - P_{n-1}(x)\)]]></text>
+      <feedback><text>This recurrence is for Chebyshev polynomials T_n(x), not Legendre polynomials.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\((n+1)P_{n+1}(x) = (2n+1)P_n(x) - nxP_{n-1}(x)\)]]></text>
+      <feedback><text>The x factor belongs with P_n(x), not P_{n−1}(x). The correct formula is (n+1)P_{n+1} = (2n+1)x·P_n − n·P_{n−1}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P_{n+1}(x) = xP_n(x) - \dfrac{n}{2n+1}P_{n-1}(x)\)]]></text>
+      <feedback><text>The coefficients are incorrect. The correct Bonnet formula has coefficients (2n+1)/(n+1) and n/(n+1).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q13_Frobenius_Indicial</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the Frobenius method applied to \(2x y'' + y' + xy = 0\), the indicial equation and its roots are:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(2r^2 - r = 0\), so \(r_1 = \tfrac{1}{2},\; r_2 = 0\)]]></text>
+      <feedback><text>Correct. Dividing by x: y'' + (1/2x)y' + (1/2)y = 0. The indicial equation from the coefficient of the lowest power is r(r−1)·2 + r = 2r²−r = r(2r−1)=0, giving r=0 or r=1/2.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(r^2 - r = 0\), so \(r_1 = 1,\; r_2 = 0\)]]></text>
+      <feedback><text>This indicial equation arises when p₀=1 (Euler equation), not p₀=1/2 as here.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(2r^2 + r = 0\), so \(r_1 = 0,\; r_2 = -\tfrac{1}{2}\)]]></text>
+      <feedback><text>Sign error: the indicial equation is 2r²−r=0, not 2r²+r=0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(r^2 = 0\), so \(r_1 = r_2 = 0\) (double root)]]></text>
+      <feedback><text>A double root arises when the coefficient of 1/x in standard form is 1 and of 1/x² is 0 (Euler equation of specific type). That is not the case here.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q14_Bessel_Zeros</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which statement about the zeros of Bessel functions is correct?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(J_\nu(x)\) has infinitely many positive real zeros, and between consecutive zeros of \(J_\nu\) there is exactly one zero of \(J_{\nu+1}\).]]></text>
+      <feedback><text>Correct. Bessel functions have infinitely many real zeros that interlace: the zeros of J_ν and J_{ν+1} alternate (interlacing property), which follows from Sturm's comparison theorem.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(J_\nu(x)\) has only finitely many zeros for each \(\nu > 0\).]]></text>
+      <feedback><text>Incorrect. J_ν(x) has infinitely many positive real zeros, accumulating at infinity (no finite accumulation point).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(J_0(x)\) and \(J_1(x)\) have the same zeros.]]></text>
+      <feedback><text>The zeros of J_0 and J_1 interlace (alternate), they do not coincide. Between consecutive zeros of J_0 there is exactly one zero of J_1.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(J_\nu(x)\) has zeros only for integer \(\nu\).]]></text>
+      <feedback><text>Bessel functions J_ν(x) have real zeros for all ν > −1, not just integer values of ν.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q15_Laguerre</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Laguerre equation \(xy'' + (1-x)y' + ny = 0\) has a polynomial solution \(L_n(x)\) when \(n\) is a non-negative integer. Using Rodrigues' formula, \(L_n(x)\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(L_n(x) = \dfrac{e^x}{n!}\dfrac{d^n}{dx^n}(x^n e^{-x})\)]]></text>
+      <feedback><text>Correct. Rodrigues' formula for Laguerre polynomials is L_n(x) = (eˣ/n!) (d/dx)ⁿ(xⁿe^{−x}). First few: L_0=1, L_1=1−x, L_2=1−2x+x²/2.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(L_n(x) = \dfrac{1}{n!}\dfrac{d^n}{dx^n}(x^n e^{-x})\)]]></text>
+      <feedback><text>The factor eˣ is missing. The correct Rodrigues formula is L_n = (eˣ/n!)(d/dx)ⁿ(xⁿe^{−x}).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(L_n(x) = \dfrac{(-1)^n}{n!}\dfrac{d^n}{dx^n}(x^n e^{-x})\)]]></text>
+      <feedback><text>The (−1)ⁿ factor is incorrect; Laguerre polynomials have positive leading coefficient (−1)ⁿ/n! times the highest power, but the Rodrigues formula itself uses eˣ, not (−1)ⁿ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(L_n(x) = e^x \dfrac{d^n}{dx^n}(x^n e^{-x})\)]]></text>
+      <feedback><text>The normalization factor 1/n! is missing from Rodrigues' formula for Laguerre polynomials.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q16_Sturm_Comparison</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Sturm's comparison theorem states: if \(u'' + p(x)u = 0\) and \(v'' + q(x)v = 0\) with \(p(x) > q(x) > 0\), then between any two consecutive zeros of \(v\):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u\) must have at least one zero.]]></text>
+      <feedback><text>Correct. Sturm's comparison theorem: if p(x) > q(x), the solution u of the equation with larger coefficient oscillates faster — it has at least one zero between consecutive zeros of v.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u\) has exactly one zero.]]></text>
+      <feedback><text>The theorem guarantees at least one zero, not exactly one. There could be more.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u\) has no zeros.]]></text>
+      <feedback><text>This reverses the conclusion. Since p > q, the solution u of the "faster" equation has MORE zeros, not fewer, compared to v.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u\) and \(v\) have the same zeros.]]></text>
+      <feedback><text>Solutions to different equations generally cannot share zeros (except at points where the equations coincide).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q17_Bessel_Wronskian</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Wronskian of \(J_\nu(x)\) and \(Y_\nu(x)\) (Bessel functions of first and second kind) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(W(J_\nu, Y_\nu)(x) = \dfrac{2}{\pi x}\)]]></text>
+      <feedback><text>Correct. The Wronskian of J_ν and Y_ν is 2/(πx), which is nonzero for x>0, confirming linear independence. This follows from Abel's formula applied to Bessel's equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(W(J_\nu, Y_\nu)(x) = \dfrac{1}{x}\)]]></text>
+      <feedback><text>The correct Wronskian is 2/(πx), not 1/x. The factor 2/π comes from the definition of Y_ν.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(W(J_\nu, Y_\nu)(x) = 1\)]]></text>
+      <feedback><text>The Wronskian of Bessel functions decays like 1/x, not constant. Only special normalizations give Wronskian ≡ 1.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(W(J_\nu, Y_\nu)(x) = \dfrac{\pi}{2x}\)]]></text>
+      <feedback><text>This has the π in the numerator rather than the denominator. The correct Wronskian is 2/(πx).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q18_Legendre_Values</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The value of \(P_n(1)\) and \(P_n(-1)\) for the Legendre polynomial \(P_n\) are:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(P_n(1) = 1\) and \(P_n(-1) = (-1)^n\)]]></text>
+      <feedback><text>Correct. From the generating function at t=1 gives 1/0... using the normalization convention P_n(1)=1. Since P_n has definite parity, P_n(−1)=(−1)ⁿ P_n(1)=(−1)ⁿ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P_n(1) = 1\) and \(P_n(-1) = 1\)]]></text>
+      <feedback><text>P_n(−1) = (−1)ⁿ, not always 1. For odd n, P_n(−1) = −1.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P_n(1) = n\) and \(P_n(-1) = (-1)^n n\)]]></text>
+      <feedback><text>P_n(1) = 1 for all n (part of the standard normalization), not n.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P_n(1) = 0\) and \(P_n(-1) = 0\)]]></text>
+      <feedback><text>P_n(1) = 1 ≠ 0 and P_n(−1) = (−1)ⁿ ≠ 0. The zeros of P_n are strictly inside (−1,1).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q19_Airy_Equation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Airy equation \(y'' - xy = 0\) has a regular singular point at:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The Airy equation has no finite singular points; \(x = \infty\) is an irregular singular point.]]></text>
+      <feedback><text>Correct. y'' − xy = 0 has coefficients p(x)=0 and q(x)=−x, both analytic for all finite x. So there are no finite singular points. The point at infinity is irregular singular, which is why the solutions (Airy functions Ai, Bi) have exponential/oscillatory behavior as x→±∞.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(x = 0\) is a regular singular point.]]></text>
+      <feedback><text>x=0 is an ordinary point of the Airy equation since both coefficient functions p(x)=0 and q(x)=−x are analytic at x=0. Power series solutions exist there.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(x = 0\) is an irregular singular point.]]></text>
+      <feedback><text>x=0 is an ordinary (not singular) point of y''−xy=0. All points x=a are ordinary points since the coefficients are polynomials.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every point \(x = a\) is a singular point of the Airy equation.]]></text>
+      <feedback><text>Since y''−xy=0 has polynomial coefficients, every finite point is an ordinary point. The only singular point is at infinity.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_40_Q20_Chebyshev</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Chebyshev polynomial of degree \(n\) is defined by \(T_n(\cos\theta) = \cos(n\theta)\). Which differential equation does \(T_n(x)\) satisfy?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\((1-x^2)y'' - xy' + n^2 y = 0\)]]></text>
+      <feedback><text>Correct. Setting x=cos θ in T_n(cos θ)=cos(nθ) and differentiating gives the Chebyshev equation (1−x²)y'' − xy' + n²y = 0. This is a Sturm-Liouville equation with weight w(x)=1/√(1−x²).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\((1-x^2)y'' - 2xy' + n(n+1) y = 0\)]]></text>
+      <feedback><text>This is the Legendre equation, not Chebyshev. The Legendre equation has coefficient −2x on y' and eigenvalue parameter n(n+1).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\((1-x^2)y'' + xy' + n^2 y = 0\)]]></text>
+      <feedback><text>Sign error on the y' term. The Chebyshev equation has −xy', not +xy'.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\((1-x^2)y'' - xy' - n^2 y = 0\)]]></text>
+      <feedback><text>Sign error on the y term. The Chebyshev equation has +n²y, not −n²y.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

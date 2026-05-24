@@ -1,0 +1,1081 @@
+================================================================================
+         CSIR NET MATHEMATICAL SCIENCES — MOODLE QUESTION BANK
+                    COMPLETE TEXT OUTLINE OF ALL CONTENT
+================================================================================
+
+  Total Files    : 66 Moodle XML files
+  Total Questions: 1,320 MCQs (exactly 20 per file)
+  Standard       : CSIR NET Part B & Part C difficulty level
+  Format         : Moodle XML (multichoice, single answer, penalty = 0.25)
+  LaTeX Support  : \(...\) inline,  \[...\]  display math, inside CDATA blocks
+  Category Path  : $course$/CSIR NET Mathematics/<Unit>/<Topic>
+
+================================================================================
+I.  STRUCTURE OVERVIEW
+================================================================================
+
+  A. Real Analysis            —  Files 01–08   (8 files,  160 questions)
+  B. Linear Algebra           —  Files 09–15   (7 files,  140 questions)
+  C. Probability & Statistics —  Files 16–24   (9 files,  180 questions)
+  D. Complex Analysis         —  Files 25–30   (6 files,  120 questions)
+  E. Algebra                  —  Files 31–36   (6 files,  120 questions)
+  F. Ordinary Differential Eq —  Files 37–41   (5 files,  100 questions)
+  G. Partial Differential Eq  —  Files 42–46   (5 files,  100 questions)
+  H. Topology                 —  Files 47–51   (5 files,  100 questions)
+  I. Functional Analysis      —  Files 52–54   (3 files,   60 questions)
+  J. Calculus of Variations   —  Files 55–56   (2 files,   40 questions)
+  K. Numerical Analysis       —  Files 57–58   (2 files,   40 questions)
+  L. Linear Programming       —  File  59      (1 file,    20 questions)
+  M. General Aptitude (Part A)—  Files 60–66   (7 files,  140 questions)
+                                                ─────────────────────────
+  GRAND TOTAL                                   66 files, 1,320 questions
+
+================================================================================
+II. UNIT-WISE DETAILED OUTLINE
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+A. REAL ANALYSIS  (Files 01–08 | 160 questions)
+────────────────────────────────────────────────────────────────────────────────
+
+  FILE 01 — Sequences of Real Numbers  [CSIR_RA_01]
+    1.  Convergence and divergence of sequences
+    2.  Cauchy sequences and Cauchy criterion
+    3.  Limit superior (limsup) and limit inferior (liminf)
+    4.  Bolzano-Weierstrass theorem (every bounded seq has convergent subseq)
+    5.  Monotone convergence theorem
+    6.  Subsequences and cluster points
+    7.  Ratio test and root test applied to sequences
+    8.  Cesaro means and their convergence
+    9.  Squeeze theorem (sandwich theorem)
+   10.  Divergence to ±∞
+
+  FILE 02 — Series of Real Numbers  [CSIR_RA_02]
+    1.  Absolute vs conditional convergence
+    2.  Comparison test, limit comparison test
+    3.  Ratio test and root test for series
+    4.  Integral test
+    5.  Alternating series (Leibniz test)
+    6.  Riemann rearrangement theorem (conditional → any sum)
+    7.  Power series and radius of convergence (Cauchy-Hadamard)
+    8.  Cauchy product of series
+    9.  Telescoping series
+   10.  p-series and harmonic series divergence
+
+  FILE 03 — Limits and Continuity  [CSIR_RA_03]
+    1.  Epsilon-delta definition of limit
+    2.  Uniform continuity (vs pointwise continuity)
+    3.  Intermediate Value Theorem (IVT)
+    4.  Extreme Value Theorem (EVT on compact sets)
+    5.  Lipschitz continuity and its relation to uniform continuity
+    6.  Nowhere differentiable continuous functions (e.g., Weierstrass)
+    7.  Cantor function (devil's staircase)
+    8.  Continuity on compact sets → uniform continuity
+    9.  Sequential characterisation of continuity
+   10.  Oscillation and removable discontinuities
+
+  FILE 04 — Differentiability and Mean Value Theorems  [CSIR_RA_04]
+    1.  Rolle's theorem
+    2.  Lagrange Mean Value Theorem
+    3.  Cauchy Mean Value Theorem
+    4.  L'Hopital's rule (0/0 and ∞/∞ forms)
+    5.  Taylor's theorem with Lagrange remainder
+    6.  Higher-order derivatives and smoothness classes
+    7.  Darboux theorem (IVP for derivatives)
+    8.  Nowhere monotone differentiable functions
+    9.  Chain rule and inverse function theorem (1D)
+   10.  Applications of MVT to inequalities and estimates
+
+  FILE 05 — Riemann Integration  [CSIR_RA_05]
+    1.  Riemann integrability criteria (Darboux)
+    2.  Lebesgue's criterion (bounded, a.e. continuous ↔ Riemann integrable)
+    3.  Improper integrals (∫₀^∞, ∫₀¹ with singularities)
+    4.  Fundamental Theorem of Calculus (Parts I and II)
+    5.  Integration by parts
+    6.  Interchange of limit and integral under uniform convergence
+    7.  Riemann-Stieltjes integration basics
+    8.  Mean value theorem for integrals
+    9.  Monotone functions and integrability
+   10.  Comparison of Riemann and Lebesgue integrals (overview)
+
+  FILE 06 — Sequences and Series of Functions  [CSIR_RA_06]
+    1.  Pointwise convergence vs uniform convergence
+    2.  Weierstrass M-test
+    3.  Continuity preserved under uniform limits
+    4.  Term-by-term integration (uniform convergence sufficient)
+    5.  Term-by-term differentiation (conditions)
+    6.  Dini's theorem (monotone + uniform on compact)
+    7.  Power series differentiation (inside radius of convergence)
+    8.  Arzela-Ascoli theorem (equicontinuity, uniform boundedness)
+    9.  Stone-Weierstrass theorem
+   10.  Convergence of Fourier series (overview)
+
+  FILE 07 — Metric Spaces  [CSIR_RA_07]
+    1.  Open sets, closed sets, interior, closure
+    2.  Completeness and complete metric spaces
+    3.  Baire Category Theorem
+    4.  Compactness: sequential compactness ↔ open cover compactness (metric)
+    5.  Connectedness and path-connectedness
+    6.  Banach Fixed Point Theorem (contraction mapping)
+    7.  Isometries between metric spaces
+    8.  Completion of a metric space
+    9.  Totally bounded sets
+   10.  Continuous bijection (compact → Hausdorff = homeomorphism)
+
+  FILE 08 — Countability and Monotone Functions  [CSIR_RA_08]
+    1.  Countable and uncountable sets
+    2.  Cantor set: uncountable, nowhere dense, measure zero
+    3.  Monotone functions: at most countably many discontinuities
+    4.  Functions of bounded variation (BV)
+    5.  Absolute continuity and the fundamental theorem of Lebesgue
+    6.  Lebesgue measure: null sets, measurable sets
+    7.  Measurable functions and their properties
+    8.  Lp spaces (overview: p=1,2,∞)
+    9.  Egoroff's theorem and Lusin's theorem (overview)
+   10.  Convergence in measure
+
+────────────────────────────────────────────────────────────────────────────────
+B. LINEAR ALGEBRA  (Files 09–15 | 140 questions)
+────────────────────────────────────────────────────────────────────────────────
+
+  FILE 09 — Vector Spaces  [CSIR_LA_09]
+    1.  Definition: vector spaces and subspaces
+    2.  Linear independence and spanning sets
+    3.  Bases and dimension
+    4.  Coordinates with respect to a basis
+    5.  Sum and intersection of subspaces; dimension formula
+    6.  Quotient spaces
+    7.  Direct sum decomposition
+    8.  Infinite-dimensional spaces (examples: polynomials, sequences)
+    9.  Affine subspaces
+   10.  Change of basis and coordinate vectors
+
+  FILE 10 — Linear Transformations  [CSIR_LA_10]
+    1.  Definition, kernel, and image
+    2.  Rank-nullity theorem
+    3.  Matrix representation relative to a basis
+    4.  Change of basis (similarity transformation)
+    5.  Isomorphisms of vector spaces
+    6.  Dual spaces and dual basis
+    7.  Transpose and adjoint
+    8.  Projections (idempotent transformations)
+    9.  Composition of linear maps
+   10.  Functional (linear functionals) and annihilators
+
+  FILE 11 — Eigenvalues and Eigenvectors  [CSIR_LA_11]
+    1.  Characteristic polynomial and eigenvalues
+    2.  Algebraic multiplicity vs geometric multiplicity
+    3.  Diagonalizability criteria
+    4.  Cayley-Hamilton theorem
+    5.  Minimal polynomial
+    6.  Spectral radius
+    7.  Gershgorin circle theorem
+    8.  Power method intuition (dominant eigenvalue)
+    9.  Triangularization over algebraically closed fields
+   10.  Simultaneous diagonalization of commuting matrices
+
+  FILE 12 — Inner Product Spaces  [CSIR_LA_12]
+    1.  Inner products (axioms, examples)
+    2.  Cauchy-Schwarz inequality
+    3.  Orthonormal bases (ONB)
+    4.  Gram-Schmidt orthogonalization
+    5.  Orthogonal projections and best approximation
+    6.  Bessel's inequality
+    7.  Adjoint of a linear operator
+    8.  Normal, self-adjoint, and unitary matrices/operators
+    9.  Spectral theorem (finite-dimensional: real symmetric / Hermitian)
+   10.  QR decomposition via Gram-Schmidt
+
+  FILE 13 — Matrices and Determinants  [CSIR_LA_13]
+    1.  Determinant: multilinearity, alternating property
+    2.  Cofactor expansion and Laplace expansion
+    3.  Cramer's rule
+    4.  Invertibility and determinant
+    5.  Trace and its connection to eigenvalues
+    6.  Rank via minors
+    7.  LU decomposition (with partial pivoting)
+    8.  Schur complement
+    9.  Matrix norms (induced, Frobenius)
+   10.  Positive definite matrices (characterizations)
+
+  FILE 14 — Systems of Linear Equations  [CSIR_LA_14]
+    1.  Consistency: Rouche-Capelli theorem (rank condition)
+    2.  Solution sets: homogeneous vs non-homogeneous
+    3.  Gaussian elimination and back substitution
+    4.  Row echelon form and reduced row echelon form
+    5.  Overdetermined systems (no solution / least squares)
+    6.  Underdetermined systems (infinitely many solutions)
+    7.  Least-squares solutions (normal equations)
+    8.  Iterative methods overview (Jacobi, Gauss-Seidel)
+    9.  Condition number and sensitivity of solutions
+   10.  Null space and particular solutions
+
+  FILE 15 — Canonical Forms  [CSIR_LA_15]
+    1.  Jordan canonical form: structure and computation
+    2.  Jordan blocks and nilpotent matrices
+    3.  Rational canonical form
+    4.  Similarity invariants
+    5.  Smith normal form for integer matrices
+    6.  Companion matrix
+    7.  Invariant factor decomposition
+    8.  Primary decomposition theorem
+    9.  Exponential of a Jordan block (eᴬ computation)
+   10.  Applications: solving linear ODEs via Jordan form
+
+────────────────────────────────────────────────────────────────────────────────
+C. PROBABILITY & STATISTICS  (Files 16–24 | 180 questions)
+────────────────────────────────────────────────────────────────────────────────
+
+  FILE 16 — Probability Theory  [CSIR_STAT_16]
+    1.  Axioms of probability (Kolmogorov)
+    2.  Conditional probability: P(A|B) = P(A∩B)/P(B)
+    3.  Bayes' theorem
+    4.  Independence of events
+    5.  Inclusion-exclusion principle
+    6.  Discrete and continuous random variables
+    7.  CDF properties, PDF/PMF
+    8.  Expectation, variance, moments
+    9.  Moment generating functions (MGF)
+   10.  Probability inequalities (Markov, Chebyshev)
+
+  FILE 17 — Discrete Distributions  [CSIR_STAT_17]
+    1.  Bernoulli and Binomial distributions
+    2.  Poisson distribution (and Poisson limit theorem)
+    3.  Geometric distribution (memoryless property)
+    4.  Negative Binomial distribution
+    5.  Hypergeometric distribution
+    6.  MGF of discrete distributions
+    7.  Characterization theorems
+    8.  Sum of independent random variables (convolution)
+    9.  Mean and variance formulas for each distribution
+   10.  Normal approximation to Binomial (CLT)
+
+  FILE 18 — Continuous Distributions  [CSIR_STAT_18]
+    1.  Uniform distribution on [a,b]
+    2.  Exponential distribution (memoryless, rate λ)
+    3.  Normal distribution N(μ,σ²): PDF, standardisation
+    4.  Gamma distribution Γ(α,β): shape, rate
+    5.  Beta distribution B(α,β)
+    6.  Cauchy distribution (no mean/variance)
+    7.  Lognormal distribution
+    8.  Normal approximations and CLT applications
+    9.  CDF and quantile function
+   10.  Transformations of continuous random variables
+
+  FILE 19 — Joint Distributions  [CSIR_STAT_19]
+    1.  Joint PDF/PMF and marginal distributions
+    2.  Conditional distributions f(x|y)
+    3.  Independence of random variables
+    4.  Covariance and correlation coefficient
+    5.  Bivariate normal distribution
+    6.  Transformation of random variables (Jacobian method)
+    7.  Order statistics (min, max, kth order)
+    8.  Convolution: density of sum Z=X+Y
+    9.  Law of total expectation / total variance
+   10.  Multinomial distribution (generalisation)
+
+  FILE 20 — Markov Chains  [CSIR_STAT_20]
+    1.  Transition probability matrix
+    2.  Chapman-Kolmogorov equations
+    3.  Classification of states: transient, null-recurrent, positive-recurrent
+    4.  Absorbing states and absorbing Markov chains
+    5.  Stationary distributions (π = πP)
+    6.  Period of a state
+    7.  Ergodic theorem (long-run average = stationary mean)
+    8.  Birth-death chains
+    9.  Gambler's ruin problem
+   10.  Poisson process and Gamma-distributed inter-arrival times
+
+  FILE 21 — Statistical Estimation  [CSIR_STAT_21]
+    1.  Unbiasedness, consistency, efficiency
+    2.  UMVUE (uniformly minimum variance unbiased estimator)
+    3.  Cramer-Rao lower bound
+    4.  Fisher information: I(θ) = E[(∂/∂θ log f)²]
+    5.  Maximum Likelihood Estimation (MLE)
+    6.  Method of moments
+    7.  Sufficiency (factorization theorem)
+    8.  Completeness
+    9.  Rao-Blackwell theorem
+   10.  Exponential families and their properties
+
+  FILE 22 — Testing of Hypotheses  [CSIR_STAT_22]
+    1.  Neyman-Pearson lemma (most powerful test)
+    2.  Uniformly Most Powerful (UMP) tests
+    3.  Likelihood Ratio Test (LRT)
+    4.  z-test and t-test (one-sample, two-sample)
+    5.  Chi-square test (goodness of fit, independence)
+    6.  F-test (equality of variances)
+    7.  p-values and their interpretation
+    8.  Type I (α) and Type II (β) errors; power = 1−β
+    9.  Power function
+   10.  Non-parametric tests: sign test, Wilcoxon signed-rank
+
+  FILE 23 — Regression and Correlation  [CSIR_STAT_23]
+    1.  Simple linear regression model: Y = β₀ + β₁X + ε
+    2.  OLS estimators (normal equations)
+    3.  Residuals and residual analysis
+    4.  Coefficient of determination R²
+    5.  Pearson correlation coefficient r
+    6.  Spearman rank correlation
+    7.  Multiple regression (overview)
+    8.  ANOVA for regression (F-statistic)
+    9.  Prediction intervals vs confidence intervals
+   10.  Gauss-Markov theorem (BLUE property of OLS)
+
+  FILE 24 — Sampling Distributions  [CSIR_STAT_24]
+    1.  Chi-square distribution χ²(n): definition via sum of squares
+    2.  Student's t-distribution t(n)
+    3.  F-distribution F(m,n): ratio of chi-squares
+    4.  Derivation of χ², t, F from normal
+    5.  Central Limit Theorem: √n(X̄−μ)/σ → N(0,1)
+    6.  Sampling from a normal population: X̄ and S²
+    7.  Independence of X̄ and S² (normal population)
+    8.  Large-sample approximations to t and F
+    9.  Non-central distributions (overview)
+   10.  Distribution of sample range and order statistics
+
+────────────────────────────────────────────────────────────────────────────────
+D. COMPLEX ANALYSIS  (Files 25–30 | 120 questions)
+────────────────────────────────────────────────────────────────────────────────
+
+  FILE 25 — Analytic Functions  [CSIR_CA_25]
+    1.  Cauchy-Riemann equations (necessary condition for analyticity)
+    2.  Sufficient conditions for analyticity
+    3.  Harmonic functions and harmonic conjugates
+    4.  Entire functions: Liouville's theorem
+    5.  Fundamental Theorem of Algebra (via Liouville)
+    6.  Power series representation of analytic functions
+    7.  Radius of convergence (Cauchy-Hadamard)
+    8.  Complex exponential, sine, cosine
+    9.  Conformal mappings (angle-preserving property)
+   10.  Identity theorem and analytic continuation
+
+  FILE 26 — Complex Integration  [CSIR_CA_26]
+    1.  Line integrals of complex functions
+    2.  Cauchy's theorem (simply connected domain)
+    3.  Cauchy Integral Formula: f(z₀) = (1/2πi)∮f(z)/(z−z₀)dz
+    4.  Cauchy formula for derivatives (nth order)
+    5.  Morera's theorem (converse of Cauchy)
+    6.  Winding number and its integer nature
+    7.  ML-inequality (|∫f dz| ≤ ML)
+    8.  Homotopy invariance of contour integrals
+    9.  Computation of real integrals via residues
+   10.  Goursat's theorem (no continuity assumption needed)
+
+  FILE 27 — Singularities and Laurent Series  [CSIR_CA_27]
+    1.  Isolated singularities: removable, poles, essential
+    2.  Classification via Laurent coefficients
+    3.  Laurent series expansion
+    4.  Casorati-Weierstrass theorem (essential singularity)
+    5.  Residue theorem
+    6.  Residue at a pole of order m
+    7.  Meromorphic functions
+    8.  Argument principle: (1/2πi)∮(f'/f)dz = Z − P
+    9.  Rouche's theorem
+   10.  Partial fraction decomposition (meromorphic)
+
+  FILE 28 — Conformal Mappings  [CSIR_CA_28]
+    1.  Definition of conformal map (angle-preserving, orientation)
+    2.  Mobius (linear fractional) transformations: (az+b)/(cz+d)
+    3.  Cross-ratio and its invariance under Mobius maps
+    4.  Riemann mapping theorem (existence, uniqueness)
+    5.  Schwarz-Christoffel formula (polygon domains)
+    6.  Maps of standard domains:
+        - Upper half-plane ↔ Unit disk
+        - Strip ↔ Half-plane
+        - Sector ↔ Half-plane
+    7.  Fixed points of Mobius transformations
+    8.  Schwarz reflection principle
+    9.  Automorphisms of the unit disk (Blaschke factors)
+   10.  Joukowski transform (applications)
+
+  FILE 29 — Special Functions  [CSIR_CA_29]
+    1.  Gamma function Γ(z): Euler's product/integral formula
+    2.  Reflection formula: Γ(z)Γ(1−z) = π/sin(πz)
+    3.  Legendre duplication formula
+    4.  Riemann zeta function ζ(s): analytic continuation, functional equation
+    5.  Weierstrass product theorem (entire functions as products)
+    6.  Order and type of an entire function
+    7.  Hadamard factorization theorem
+    8.  Mittag-Leffler theorem (meromorphic with prescribed poles)
+    9.  Bernoulli numbers and zeta function at even integers
+   10.  Stirling's approximation: ln Γ(z) ~ z ln z − z
+
+  FILE 30 — Complex Analysis Applications  [CSIR_CA_30]
+    1.  Evaluation of ∫₋∞^∞ R(x)dx via residues
+    2.  Evaluation of ∫₀^∞ R(x)cos(mx)dx (Fourier-type)
+    3.  Summation of series: Σf(n) via cot(πz) residues
+    4.  Rouche's theorem (counting zeros)
+    5.  Maximum modulus principle
+    6.  Minimum modulus principle
+    7.  Schwarz lemma and its consequences
+    8.  Phragmen-Lindelof principle
+    9.  Picard's little and great theorem
+   10.  Jensen's formula
+
+────────────────────────────────────────────────────────────────────────────────
+E. ALGEBRA  (Files 31–36 | 120 questions)
+────────────────────────────────────────────────────────────────────────────────
+
+  FILE 31 — Group Theory  [CSIR_ALG_31]
+    1.  Subgroups, cosets, Lagrange's theorem
+    2.  Normal subgroups and quotient groups
+    3.  Homomorphism theorems (1st, 2nd, 3rd)
+    4.  Cyclic groups and their subgroups
+    5.  Symmetric groups Sn and alternating groups An
+    6.  Sylow theorems (existence, conjugacy, counting)
+    7.  Classification of finitely generated abelian groups
+    8.  Simple groups (A5 is simple, non-abelian, order 60)
+    9.  Direct products and semi-direct products
+   10.  Group actions, orbits, stabilizers (Burnside lemma)
+
+  FILE 32 — Ring Theory  [CSIR_ALG_32]
+    1.  Ideals: left, right, two-sided
+    2.  Quotient rings and ring homomorphism theorems
+    3.  Principal Ideal Domains (PID) and examples
+    4.  Unique Factorisation Domains (UFD)
+    5.  Euclidean Domains (ED) → PID → UFD chain
+    6.  Polynomial rings: R[x] is UFD if R is
+    7.  Eisenstein's criterion and Gauss's lemma
+    8.  Prime and maximal ideals (and their quotients)
+    9.  Noetherian rings and Hilbert basis theorem
+   10.  Chinese Remainder Theorem for rings
+
+  FILE 33 — Field Theory and Galois Theory  [CSIR_ALG_33]
+    1.  Field extensions: degree [K:F]
+    2.  Algebraic vs transcendental elements
+    3.  Minimal polynomial of an algebraic element
+    4.  Splitting fields
+    5.  Algebraic closure (existence and uniqueness up to isomorphism)
+    6.  Galois group Gal(K/F)
+    7.  Fundamental theorem of Galois theory (lattice correspondence)
+    8.  Solvability by radicals ↔ solvable Galois group
+    9.  Finite fields: GF(pⁿ) exists and is unique
+   10.  Cyclotomic polynomials and extensions
+
+  FILE 34 — Module Theory  [CSIR_ALG_34]
+    1.  Modules over rings: axioms and examples
+    2.  Submodules and quotient modules
+    3.  Module homomorphisms and isomorphism theorems
+    4.  Free modules and their bases
+    5.  Projective modules (direct summand of free)
+    6.  Injective modules (Baer's criterion)
+    7.  Short exact sequences and their splitting
+    8.  Tensor product of modules
+    9.  Structure theorem for finitely generated modules over a PID
+   10.  Application to abelian groups and linear algebra (Jordan form)
+
+  FILE 35 — Number Theory  [CSIR_ALG_35]
+    1.  Divisibility, GCD, LCM (Euclidean algorithm)
+    2.  Prime factorization (Fundamental Theorem of Arithmetic)
+    3.  Congruences: a ≡ b (mod n)
+    4.  Euler's theorem: a^φ(n) ≡ 1 (mod n) for gcd(a,n)=1
+    5.  Fermat's Little Theorem: a^p ≡ a (mod p)
+    6.  Chinese Remainder Theorem (number-theoretic version)
+    7.  Quadratic residues and the Legendre symbol
+    8.  Quadratic reciprocity law
+    9.  Gaussian integers ℤ[i] (Euclidean domain, primes)
+   10.  Sum of two squares theorem
+
+  FILE 36 — Representation Theory  [CSIR_ALG_36]
+    1.  Group representations: definition, degree
+    2.  Irreducible representations (irreps)
+    3.  Maschke's theorem (complete reducibility for finite groups)
+    4.  Schur's lemma
+    5.  Character of a representation
+    6.  Orthogonality relations for characters
+    7.  Number of irreps = number of conjugacy classes
+    8.  Regular representation
+    9.  Burnside's lemma (counting orbits via characters)
+   10.  Character table of S₃ and C₄ (examples)
+
+────────────────────────────────────────────────────────────────────────────────
+F. ORDINARY DIFFERENTIAL EQUATIONS  (Files 37–41 | 100 questions)
+────────────────────────────────────────────────────────────────────────────────
+
+  FILE 37 — First Order ODEs  [CSIR_ODE_37]
+    1.  Separable equations: f(y)dy = g(x)dx
+    2.  Linear first-order ODEs (integrating factor)
+    3.  Bernoulli equations (substitution u = y^{1-n})
+    4.  Exact equations and integrating factors
+    5.  Orthogonal trajectories
+    6.  Existence and uniqueness: Picard-Lindelof theorem
+    7.  Gronwall inequality
+    8.  Singular solutions and envelope curves
+    9.  Riccati equations (special cases)
+   10.  Applications: mixing problems, population models
+
+  FILE 38 — Second Order ODEs  [CSIR_ODE_38]
+    1.  Constant coefficient: characteristic equation
+    2.  Cases: real distinct, repeated, complex roots
+    3.  Method of undetermined coefficients
+    4.  Variation of parameters (general method)
+    5.  Wronskian and linear independence
+    6.  Abel's identity: W(x) = W(x₀)exp(−∫p dx)
+    7.  Reduction of order (one solution known)
+    8.  Euler-Cauchy equations (x²y'' + axy' + by = 0)
+    9.  Green's function for BVP
+   10.  Self-adjoint form and comparison theorems
+
+  FILE 39 — Systems of ODEs  [CSIR_ODE_39]
+    1.  Matrix exponential eᴬᵗ
+    2.  Eigenvalue method for x' = Ax
+    3.  Phase plane analysis and portraits
+    4.  Classification of equilibria (node, spiral, saddle, center)
+    5.  Stability: Lyapunov direct method
+    6.  Critical points and linearisation
+    7.  Hartman-Grobman theorem (local structure)
+    8.  Floquet theory (periodic coefficient systems)
+    9.  Jordan form applied to matrix ODE systems
+   10.  Nonlinear systems: limit cycles, Poincare-Bendixson
+
+  FILE 40 — Special ODEs  [CSIR_ODE_40]
+    1.  Legendre equation and Legendre polynomials Pn(x)
+    2.  Rodrigues' formula: Pn(x) = (1/2ⁿn!) dⁿ/dxⁿ (x²−1)ⁿ
+    3.  Bessel equation: x²y'' + xy' + (x²−ν²)y = 0
+    4.  Bessel functions Jν(x) and Yν(x)
+    5.  Sturm-Liouville theory: self-adjoint form
+    6.  Eigenfunction expansions and completeness
+    7.  Hermite polynomials Hn(x) (quantum harmonic oscillator)
+    8.  Laguerre polynomials Ln(x)
+    9.  Generating functions for classical orthogonal polynomials
+   10.  Orthogonality relations and normalisation
+
+  FILE 41 — Laplace Transforms  [CSIR_ODE_41]
+    1.  Definition: L{f}(s) = ∫₀^∞ e^{-st} f(t) dt
+    2.  Linearity and table of standard transforms
+    3.  s-shifting: L{eᵃᵗf(t)} = F(s−a)
+    4.  t-shifting: L{u(t−a)f(t−a)} = e^{-as}F(s)
+    5.  Convolution theorem: L{f*g} = F(s)·G(s)
+    6.  Heaviside (unit step) function
+    7.  Dirac delta function δ(t−a) and its transform e^{-as}
+    8.  Inverse Laplace transform (partial fractions, Bromwich)
+    9.  IVP solution via Laplace (algebraic approach)
+   10.  Initial value theorem and final value theorem
+
+────────────────────────────────────────────────────────────────────────────────
+G. PARTIAL DIFFERENTIAL EQUATIONS  (Files 42–46 | 100 questions)
+────────────────────────────────────────────────────────────────────────────────
+
+  FILE 42 — First Order PDEs  [CSIR_PDE_42]
+    1.  Method of characteristics (Cauchy problem)
+    2.  Lagrange's method for quasi-linear PDEs
+    3.  Non-linear first-order PDEs (complete integrals)
+    4.  Cauchy-Kovalevskaya theorem (analytic data)
+    5.  Shock formation and weak solutions
+    6.  Eikonal equation (|∇u|² = c²)
+    7.  Hamilton-Jacobi equation (∂S/∂t + H = 0)
+    8.  Classification (type depends on symbol)
+    9.  Linear transport equation (ut + cux = 0)
+   10.  Burgers' equation (inviscid, viscous)
+
+  FILE 43 — Heat Equation  [CSIR_PDE_43]
+    1.  Fundamental solution: Φ(x,t) = (4πt)^{-n/2} e^{-|x|²/4t}
+    2.  Maximum principle (parabolic)
+    3.  Uniqueness (via maximum principle)
+    4.  Separation of variables (bounded domain)
+    5.  Fourier series solution on [0,L]
+    6.  Heat kernel and convolution solution
+    7.  Duhamel's principle (non-homogeneous heat equation)
+    8.  Well-posedness of the Cauchy problem
+    9.  Green's function for heat equation
+   10.  Infinite speed of propagation (vs wave equation)
+
+  FILE 44 — Wave Equation  [CSIR_PDE_44]
+    1.  D'Alembert's formula: u = f(x+ct) + g(x−ct)
+    2.  Energy method and energy conservation
+    3.  Characteristics and hyperbolic type
+    4.  Domain of dependence and range of influence
+    5.  Finite speed of propagation
+    6.  Fourier series for bounded domains (standing waves)
+    7.  Kirchhoff's formula (3D wave equation)
+    8.  Huygens' principle (sharp propagation in odd dimensions ≥3)
+    9.  Non-homogeneous wave equation (Duhamel)
+   10.  Reflection of waves at boundaries
+
+  FILE 45 — Laplace and Poisson Equations  [CSIR_PDE_45]
+    1.  Harmonic functions: Δu = 0
+    2.  Mean value property (spherical average = value at center)
+    3.  Maximum and minimum principles
+    4.  Dirichlet problem (existence via Perron's method)
+    5.  Neumann problem (compatibility condition)
+    6.  Poisson kernel for the disk: P(r,θ)
+    7.  Green's function construction (domain-dependent)
+    8.  Kelvin transform and inversion
+    9.  Subharmonic functions and their properties
+   10.  Energy methods (Dirichlet integral)
+
+  FILE 46 — Green's Functions and Advanced Methods  [CSIR_PDE_46]
+    1.  Green's first and second identities
+    2.  Fundamental solutions for Δ (n=2: log; n≥3: |x|^{2-n})
+    3.  Green's function construction (method of images)
+    4.  Sobolev spaces Hk(Ω) = Wk,2(Ω): overview
+    5.  Weak solutions and weak derivatives
+    6.  Lax-Milgram theorem (existence for elliptic equations)
+    7.  Spectral theory for elliptic operators (Sturm-Liouville in 2D)
+    8.  Elliptic regularity (interior and boundary)
+    9.  Fredholm alternative for elliptic problems
+   10.  Viscosity solutions (overview)
+
+────────────────────────────────────────────────────────────────────────────────
+H. TOPOLOGY  (Files 47–51 | 100 questions)
+────────────────────────────────────────────────────────────────────────────────
+
+  FILE 47 — Metric Spaces (Topological Perspective)  [CSIR_TOP_47]
+    1.  Metric axioms and standard examples
+    2.  Discrete metric, p-adic metric, function space metrics
+    3.  Open and closed balls; interior and closure
+    4.  Completeness and Cauchy sequences
+    5.  Completion of a metric space (canonical construction)
+    6.  Compactness: sequential ↔ open cover (metric spaces)
+    7.  Heine-Borel theorem (ℝⁿ: compact ↔ closed and bounded)
+    8.  Arzela-Ascoli theorem (equicontinuity ↔ compact subset of C[a,b])
+    9.  Baire category theorem (complete metric space)
+   10.  Total boundedness (precompactness)
+
+  FILE 48 — Topological Spaces  [CSIR_TOP_48]
+    1.  Definition: topology τ on X
+    2.  Bases and subbases for a topology
+    3.  Product topology (Tychonoff's theorem)
+    4.  Quotient topology and quotient maps
+    5.  Continuous maps and homeomorphisms
+    6.  Separation axioms: T0, T1, T2 (Hausdorff), T3, T4
+    7.  Compactness and its preservation under continuous maps
+    8.  Lindelof spaces and second countability
+    9.  Urysohn's lemma (T4 → completely regular)
+   10.  Tietze extension theorem
+
+  FILE 49 — Homotopy and Fundamental Group  [CSIR_TOP_49]
+    1.  Homotopy between continuous maps
+    2.  Homotopy equivalence of spaces
+    3.  Fundamental group π₁(X, x₀): definition via path loops
+    4.  Van Kampen's theorem
+    5.  Covering spaces and covering maps
+    6.  Universal cover (simply connected covering)
+    7.  Path lifting and homotopy lifting lemma
+    8.  π₁(S¹) = ℤ (winding number)
+    9.  π₁(Sⁿ) = 0 for n ≥ 2 (higher spheres simply connected)
+   10.  Deformation retracts and their fundamental groups
+
+  FILE 50 — Homology and Cohomology  [CSIR_TOP_50]
+    1.  Singular homology groups Hn(X; ℤ)
+    2.  Mayer-Vietoris long exact sequence
+    3.  Euler characteristic χ = Σ(−1)ⁿ rank Hn
+    4.  Homology of standard spaces (spheres, tori, RP²)
+    5.  Poincare duality (for closed orientable n-manifolds)
+    6.  Universal Coefficient Theorem (UCT)
+    7.  Kunneth formula: H*(X×Y) ≅ H*(X) ⊗ H*(Y) (+ Tor terms)
+    8.  De Rham theorem: H^k_dR(M) ≅ Hk(M; ℝ)
+    9.  Cup product in cohomology
+   10.  Lefschetz fixed-point theorem
+
+  FILE 51 — Manifolds and Differential Topology  [CSIR_TOP_51]
+    1.  Smooth manifolds: charts, atlases, smooth maps
+    2.  Tangent spaces and tangent bundle
+    3.  Immersions and submersions (rank conditions)
+    4.  Sard's theorem (regular values have measure-zero preimage set)
+    5.  Differential forms (0-forms, 1-forms, k-forms)
+    6.  Exterior derivative d and properties (d²=0)
+    7.  Stokes' theorem: ∫_M dω = ∫_{∂M} ω
+    8.  Whitney embedding theorem (N=2n into ℝ^{2n})
+    9.  Poincare-Hopf theorem (χ = sum of indices of vector field)
+   10.  Frobenius theorem (involutive distribution → integral manifold)
+
+────────────────────────────────────────────────────────────────────────────────
+I. FUNCTIONAL ANALYSIS  (Files 52–54 | 60 questions)
+────────────────────────────────────────────────────────────────────────────────
+
+  FILE 52 — Banach Spaces  [CSIR_FA_52]
+    1.  lp spaces: completeness proof (lp is Banach for 1≤p≤∞)
+    2.  Hahn-Banach theorem (extension + separation versions)
+    3.  Uniform Boundedness Principle (Banach-Steinhaus)
+    4.  Open Mapping Theorem
+    5.  Closed Graph Theorem
+    6.  Baire category theorem (application to functional analysis)
+    7.  Dual spaces: (lp)* = lq (1/p + 1/q = 1), (l¹)* = l∞
+    8.  Reflexive spaces (X** = X)
+    9.  Weak and weak* convergence
+   10.  Compact operators on Banach spaces
+
+  FILE 53 — Hilbert Spaces  [CSIR_FA_53]
+    1.  Inner products and the parallelogram law
+    2.  Cauchy-Schwarz in Hilbert space
+    3.  Projection theorem (closed subspace → orthogonal complement)
+    4.  Riesz representation theorem: every f ∈ H* ↔ unique y ∈ H
+    5.  Orthonormal bases (ONB) and Parseval's identity
+    6.  Bessel's inequality
+    7.  Gram-Schmidt process in infinite dimensions
+    8.  Spectral theorem for compact self-adjoint operators
+    9.  Fredholm alternative for compact operators
+   10.  Hilbert-Schmidt operators and their properties
+
+  FILE 54 — Operators and Spectral Theory  [CSIR_FA_54]
+    1.  Spectrum decomposition: point, continuous, residual spectrum
+    2.  Spectral radius formula: r(T) = lim ||Tⁿ||^{1/n}
+    3.  Spectrum of compact operators (only 0 or eigenvalues)
+    4.  Resolvent map and resolvent identity
+    5.  Multiplication operator on L²[0,1]
+    6.  Fredholm operators and Fredholm index
+    7.  Unilateral shift on l² (spectrum = unit disk)
+    8.  Polar decomposition: T = U|T|
+    9.  Trace class and Hilbert-Schmidt operators
+   10.  Hille-Yosida theorem (contraction semigroups)
+
+────────────────────────────────────────────────────────────────────────────────
+J. CALCULUS OF VARIATIONS  (Files 55–56 | 40 questions)
+────────────────────────────────────────────────────────────────────────────────
+
+  FILE 55 — Euler-Lagrange Theory  [CSIR_COV_55]
+    1.  Euler-Lagrange equation: Fy − d/dx Fy' = 0
+    2.  Beltrami identity (autonomous F): F − y'Fy' = C
+    3.  Brachistochrone problem → cycloid solution
+    4.  Geodesics in ℝⁿ (straight lines)
+    5.  Catenary: minimise ∫y√(1+y'²)dx
+    6.  Isoperimetric problem: circle maximises area for fixed perimeter
+    7.  Minimal surface of revolution → catenoid
+    8.  Natural boundary conditions (∂F/∂y' = 0 at free endpoint)
+    9.  Euler-Lagrange for double integrals → Laplace equation
+   10.  Hamilton's principle: δ∫(T−V)dt = 0
+   11.  Legendre (necessary) condition: Fy'y' ≥ 0
+   12.  Euler-Poisson equation (higher-order: Fy − d/dx Fy' + d²/dx² Fy'' = 0)
+   13.  Noether's theorem: symmetry → conservation law
+   14.  Jacobi condition (conjugate points and sufficiency)
+   15.  Weierstrass E-function (strong extremum condition)
+   16.  Lagrange multiplier for isoperimetric constraint
+   17.  Dirichlet principle: harmonic function minimises Dirichlet energy
+   18.  Transversality conditions
+   19.  Sturm-Liouville Rayleigh quotient (minimum = first eigenvalue)
+   20.  Geodesics on sphere S² → great circles
+
+  FILE 56 — Advanced Applications  [CSIR_COV_56]
+    1.  Hamilton-Jacobi equation: ∂S/∂t + H(q, ∂S/∂q) = 0
+    2.  Geodesics on S² (spherical coordinates formulation)
+    3.  Tonelli's theorem: coercivity + convexity → existence of minimiser
+    4.  Isoperimetric Lagrange: constant curvature ↔ circular arc
+    5.  Weak vs strong extremum (C¹ vs C⁰ topology on admissible functions)
+    6.  Second variation formula: ∫(Fyy η² + 2Fyy' ηη' + Fy'y' η'²) dx
+    7.  Rayleigh quotient minimum = first Sturm-Liouville eigenvalue
+    8.  Geodesics on cylinder → helices
+    9.  Pontryagin Maximum Principle (optimal control)
+   10.  Minimal surface PDE: div(∇u/√(1+|∇u|²)) = 0
+   11.  Eigenfunction problem: min of ∫u'²/∫u² is π² (eigenfunction sin πx)
+   12.  Natural boundary condition: ∂u/∂n = 0 on ∂Ω
+   13.  Noether time-translation → energy conservation (H = pq̇ − L)
+   14.  Direct method: weak lower semicontinuity from convexity
+   15.  Jacobi equation h'' + h = 0 → first conjugate point at x = π
+   16.  Brachistochrone: total time T = √(r/g)·θ₁
+   17.  Catenary: variational problem for potential energy
+   18.  Euler-Poisson for higher-order Lagrangians
+   19.  Obstacle problem → variational inequality
+   20.  Euler buckling load: Pcr = π²EI/L²
+
+────────────────────────────────────────────────────────────────────────────────
+K. NUMERICAL ANALYSIS  (Files 57–58 | 40 questions)
+────────────────────────────────────────────────────────────────────────────────
+
+  FILE 57 — Root Finding and Interpolation  [CSIR_NUM_57]
+    1.  Bisection method error bound: |error| ≤ (b−a)/2ⁿ
+    2.  Newton-Raphson: quadratic convergence (order 2)
+    3.  Lagrange interpolation: cardinal basis, Lk(xj) = δkj
+    4.  Interpolation error: f^{(n+1)}(ξ)/(n+1)! · ∏(x−xk)
+    5.  Newton's divided differences
+    6.  Cubic splines: C² continuity + natural BC (S''(a)=S''(b)=0)
+    7.  Fixed-point iteration: converges if |g'| ≤ L < 1
+    8.  Secant method: superlinear order φ = (1+√5)/2 ≈ 1.618
+    9.  Runge's phenomenon: high-degree polynomial interpolation diverges
+   10.  Chebyshev nodes: minimize interpolation error; minimax bound 1/2ⁿ
+   11.  Gauss-Legendre quadrature: exact for degree ≤ 2n−1
+   12.  Composite trapezoidal rule: error O(h²), coefficient −(b−a)/12·h²f''(ξ)
+   13.  Simpson's 1/3 rule: (b−a)/6[f(a) + 4f(m) + f(b)]
+   14.  LU decomposition with unit lower triangular L
+   15.  Euler method: first-order accuracy O(h) globally
+   16.  Classical Runge-Kutta 4 (RK4): weights 1,2,2,1 divided by 6
+   17.  Gauss-Seidel: converges for strictly diagonally dominant matrices
+   18.  Power method: convergence rate |λ₂/λ₁|ᵏ
+   19.  Condition number κ(A): relative error bound κ(A)·||δb||/||b||
+   20.  QR algorithm: preserves eigenvalues (orthogonal similarity)
+
+  FILE 58 — ODE Methods and Linear Algebra  [CSIR_NUM_58]
+    1.  Stiff ODEs: stability requires h ≤ 2/|λmax| for explicit methods
+    2.  Backward Euler: A-stable (|1/(1−hλ)| ≤ 1 for Re(λ) ≤ 0)
+    3.  Adams-Bashforth 2-step: explicit, order 2 (LTE ~ 5/12·h³y''')
+    4.  RK4 stability interval: |hλ| ≤ 2.785 on negative real axis
+    5.  Crank-Nicolson: unconditionally stable, O(Δt²) + O(Δx²)
+    6.  Shooting method: reduce BVP → IVP, iterate on initial slope s
+    7.  Finite difference BVP: central difference gives O(h²) accuracy
+    8.  Partial pivoting: ensures |mij| ≤ 1, improves numerical stability
+    9.  Cholesky factorisation: exists iff A is symmetric positive definite
+   10.  Conjugate gradient: terminates in ≤ n steps (exact arithmetic)
+   11.  SVD and Eckart-Young theorem: best rank-k approximation
+   12.  Normal equations: AᵀAx = Aᵀb (least squares)
+   13.  Richardson extrapolation: T* = (2ᵖT(h/2)−T(h))/(2ᵖ−1), order O(h^{2p})
+   14.  Dahlquist equivalence theorem: convergent ↔ consistent + zero-stable
+   15.  Jacobi iteration convergence ↔ spectral radius ρ(BJ) < 1
+   16.  Galerkin FEM weak form: ∫∇u·∇v dx = ∫fv dx
+   17.  Steepest descent convergence rate: ((κ−1)/(κ+1))²
+   18.  Preconditioning reduces effective condition number κ(P⁻¹A)
+   19.  Romberg integration: achieves arbitrary order via Richardson table
+   20.  FTCS explicit scheme: stable iff r = kΔt/Δx² ≤ 1/2
+
+────────────────────────────────────────────────────────────────────────────────
+L. LINEAR PROGRAMMING  (File 59 | 20 questions)
+────────────────────────────────────────────────────────────────────────────────
+
+  FILE 59 — Simplex and Duality  [CSIR_LP_59]
+    1.  Fundamental theorem of LP: optimal solution exists at a BFS (vertex)
+    2.  Simplex pivot rule: Dantzig's rule (most negative reduced cost r̄j)
+    3.  LP dual construction: min cᵀx, Ax≥b, x≥0 ↔ max bᵀy, Aᵀy≤c, y≥0
+    4.  Weak duality: primal objective ≥ dual objective
+    5.  Strong duality theorem: primal optimal = dual optimal (if finite)
+    6.  Complementary slackness: xj(cj − (Aᵀy)j) = 0 at optimality
+    7.  Bland's rule: smallest index → prevents cycling (anti-cycling)
+    8.  Transportation problem: m+n−1 basic variables (rank = m+n−1)
+    9.  Assignment problem: TU ensures integer BFS in LP relaxation
+   10.  Sensitivity analysis: reduced costs non-negative at optimality
+   11.  Two-phase simplex: Phase I min Σ artificial variables
+   12.  Karmarkar's algorithm: polynomial O(n^{3.5}L) complexity
+   13.  Dual simplex: used for post-optimality (adding new constraints)
+   14.  Integer programming: LP relaxation gives lower bound (minimisation)
+   15.  Max-flow min-cut theorem (Ford-Fulkerson)
+   16.  Zero-sum game LP: max v s.t. Aᵀp ≥ v·1, p ≥ 0, 1ᵀp = 1
+   17.  Simplex optimality: all r̄j ≥ 0 → current BFS is optimal
+   18.  Unboundedness: if pivot column has all yis ≤ 0, problem unbounded
+   19.  KKT conditions: necessary and sufficient for convex programs
+   20.  Shadow price = ∂z*/∂bi (rate of change of optimal value with RHS)
+
+────────────────────────────────────────────────────────────────────────────────
+M. GENERAL APTITUDE / PART A  (Files 60–66 | 140 questions)
+────────────────────────────────────────────────────────────────────────────────
+
+  FILE 60 — General Aptitude I  [CSIR_PARTA_60]
+    1.  Arithmetic progressions: sum S₁₀ and partial sums
+    2.  Percentage calculations (mark-up, profit, loss)
+    3.  Work-time: combined rates (pipes, people working together)
+    4.  Age ratio problems
+    5.  Basic probability (same-colour balls from a bag)
+    6.  Permutations: MATHEMATICS with MM treated as one block (907200)
+    7.  Logic and syllogisms
+    8.  Speed-distance-time: train crossing a bridge
+    9.  Number series identification: n(n+1) pattern
+   10.  Compound vs simple interest: difference formula
+   11.  Venn diagrams and inclusion-exclusion principle
+   12.  Direction sense (compass navigation)
+   13.  Data interpretation: percentage change in bar chart
+   14.  Clock angle at 3:30 (= 75°)
+   15.  Coding-decoding via letter values
+
+  FILE 61 — General Aptitude II  [CSIR_PARTA_61]
+    1.  Quadratic equations: sum of squares of roots (α²+β²)
+    2.  Average after replacement (new avg = 38)
+    3.  Pipes and cisterns: net filling/draining rate
+    4.  AM-GM inequality (a+b ≥ 2√ab)
+    5.  Coding-decoding (positional shift DOOR → ENPT)
+    6.  Chord-perpendicular-radius: 3-4-5 right triangle
+    7.  Boats and streams: simultaneous equations
+    8.  Binary to decimal conversion: 1011010₂ = 90₁₀
+    9.  Logical fallacy: affirming the consequent
+   10.  Function composition: f(g(3))
+   11.  Equivalence relations: congruence mod 3 (reflexive, symmetric, transitive)
+   12.  Alligation: mixing solutions of different concentrations
+   13.  Inequality: minimum score to achieve target average
+   14.  Circular permutations: (n−1)! formula
+   15.  Cone volume: (1/3)πr²h
+   16.  Letter series with gaps +2, +3, +4, ...
+   17.  Syllogism: No R is Q (conclusion validity)
+   18.  Coordinate geometry: distance formula (√113)
+   19.  Cube roots and their sum
+   20.  Probability: king or red card = 7/13
+
+  FILE 62 — General Aptitude III  [CSIR_PARTA_62]
+    1.  Successive markup and discount: 12% overall profit
+    2.  HCF-LCM product rule: HCF × LCM = a × b
+    3.  Compound interest over 3 years
+    4.  Relative speed: two objects in opposite directions
+    5.  Flowchart symbols: diamond shape = decision
+    6.  Age ratio problem: current ratio 7:3, future ratio 2:1
+    7.  Linear arrangement of books (permutations)
+    8.  Venn diagram: students studying only tea = 80
+    9.  Cylinder volume: effect of doubling radius, halving height
+   10.  Contrapositive of conditional statement
+   11.  Pigeon-hole principle: minimum socks to guarantee a pair
+   12.  Triangle area via coordinate geometry
+   13.  Greenhouse effect (science general awareness)
+   14.  Fibonacci sequence ratio approaches golden ratio ≈ 1.618
+   15.  LP feasibility: 50A+160B satisfies ≥200 chairs and ≤₹80,000 budget
+   16.  Blood relations: identifying uncle
+   17.  Peer-to-peer (P2P) network characteristics
+   18.  Modular arithmetic: 7¹⁰⁰ mod 4 = 1
+   19.  Power expressions: 2⁴ = 16
+   20.  Constitutional awareness: Article 21A (Right to Education)
+
+  FILE 63 — General Aptitude IV  [CSIR_PARTA_63]
+    1.  Infinite geometric series: a/(1−r) = 12
+    2.  Trains meeting: time = distance/(combined speed)
+    3.  Statistics scaling: multiplying by c scales mean by c, variance by c²
+    4.  Irrational numbers: √2 + √3 is irrational
+    5.  Data interpretation: % increase from table
+    6.  Newton's Second Law: F = dp/dt (in terms of momentum)
+    7.  Clock: next coincidence after 4:00 → 4 hr 21 9/11 min
+    8.  Control group in experiments (scientific method)
+    9.  Inverse proportion: men × days = constant (mandays)
+   10.  Syllogism: identifying inconsistent premises
+   11.  Handshakes = C(n,2) = 66 → n = 12
+   12.  Analogy: decibel is to sound intensity as ...
+   13.  Ranking from verbal constraint clues
+   14.  IPR copyright (Intellectual Property Rights)
+   15.  Absolute value graph: y = |x − 2|
+   16.  Renewable energy: tidal power
+   17.  Empirical formula: Mode = 3×Median − 2×Mean
+   18.  Square root: √200 ≈ 14.14
+   19.  Big Data: 3 Vs (Volume, Velocity, Variety)
+   20.  Research misconduct: fabrication of data
+
+  FILE 64 — General Aptitude V  [CSIR_PARTA_64]
+    1.  Logarithm: log₁₀32 = 5×log₁₀2 ≈ 1.5050
+    2.  Harmonic mean: HM(4,12) = 2/(1/4+1/12) = 6
+    3.  Permutations: EXAM → 4! = 24 arrangements
+    4.  Calendar: 2024 is leap year → Jan 1, 2025 is Wednesday
+    5.  Simultaneous linear equations: x + y = 7, ... → unique solution
+    6.  Tree graph: n vertices → n−1 edges
+    7.  Analogy: Barometer : Pressure :: Seismograph : Earthquakes
+    8.  Successive discounts: equivalent single discount (28%)
+    9.  Cryptarithmetic: SEND + MORE = MONEY (8 distinct digits)
+   10.  Mode/Median/Mean: sorted 2,3,4,5,6,7,7,7,9 → Mode=7, Median=6, Mean≈5.56
+   11.  Profit/loss: 25% up then 20% down → net 0% change
+   12.  Family relations: maternal grandfather
+   13.  Comparing surds: ∛5 vs ∜6 via 6th powers → ∛5 is largest
+   14.  Word analogy: ACROBAT:TRAPEZE :: ARCHER:BOW
+   15.  Optimisation: rectangle with one side on river, 180m fence → max area 1800m²
+   16.  Reverse alphabet coding: C=24, A=26, T=7 → sum = 57
+   17.  Tautology: P ∨ ¬P is always true
+   18.  Letter series: AZ, BY, CX, DW → EV
+   19.  Scalar vs vector: temperature is a scalar quantity
+   20.  Octal to decimal: (47)₈ = 4×8 + 7 = 39₁₀
+
+  FILE 65 — General Aptitude VI  [CSIR_PARTA_65]
+    1.  Index notation: 2ˣ = 8⁴ = 2¹² → x = 12
+    2.  Slab income tax calculation → ₹1,35,000 tax
+    3.  Geometric progression: ar² = 8, ar⁵ = 64 → a = 2, r = 2
+    4.  Probability of sum = 8 on two dice = 5/36
+    5.  Trigonometry: sinθ = 3/5 → tanθ = 3/4
+    6.  Euclidean algorithm: HCF(252, 105) = 21
+    7.  Speed of light: distance to Sun ÷ c ≈ 500 s ≈ 8.33 minutes
+    8.  Set cardinality: |A| = 15, |B| = 20, |A∪B| = 30 → |A∩B| = 5
+    9.  Triangle inequality: 5, 7, 9 (valid since 5+7 > 9)
+   10.  Binomial coefficient: C(5,3) = 10
+   11.  Ratio split: ₹2400 shared 3:4:5, B gets ₹800
+   12.  Row position reasoning: 0 students between adjacent ranks
+   13.  Population: 10% up then 10% down → 49,500 (net −1%)
+   14.  Proof by contradiction (reductio ad absurdum definition)
+   15.  Harmonic mean speed: 48 km/h (upstream + downstream)
+   16.  Duplicate submission: research/publication ethics violation
+   17.  Phishing: definition in cybersecurity
+   18.  Absolute value inequality: |2x − 3| < 5 → x ∈ (−1, 4)
+   19.  Central Limit Theorem history: de Moivre, Laplace, Lyapunov, Lindeberg
+   20.  Correlation ≠ causation (hospitals and death rate fallacy)
+
+  FILE 66 — General Aptitude VII  [CSIR_PARTA_66]
+    1.  Divisibility by 9: digit sum rule
+    2.  Sector area: (θ/360°)×πr² = (60°/360°)×π×36 ≈ 18.86 cm²
+    3.  Number pattern: differences 3, 5, 7, 9, 11 → next term = 38
+    4.  Reverse discount: SP = ₹1190, 15% off → MP = ₹1400
+    5.  Experimental vs correlational research design
+    6.  Infinite GP: S∞ = 3, first two terms 8/3, 8/9 → r = 1/3
+    7.  Cone total surface area: r = 7, l = 25 → πr(l + r) = 704 cm²
+    8.  Boolean algebra absorption: A·(A+B) = A
+    9.  Weighted average: combined mean of two groups
+   10.  Determinant: 2×2 matrix → ad − bc = −2
+   11.  Compound interest rate: ₹2000 → ₹2205 in 2 years → rate = 5%
+   12.  Data sufficiency: three sides → unique triangle area (Heron's formula)
+   13.  Sum of even numbers 2 to 50 = 650
+   14.  Negation of "some A are B" = "no A are B"
+   15.  Sphere volume: r = 6 → (4/3)πr³ = 905 1/7 cm³
+   16.  Probability of at least 2 heads from 3 fair coins = 1/2
+   17.  Biodiversity hotspots: 36 in the world
+   18.  Unit analogy: Ampere : Electric Current :: ...
+   19.  Production surplus: 60 units/day → 1200 extra units in 20 days
+   20.  Indian mathematics: Madhava of Sangamagrama (sin/cos/arctan series)
+
+================================================================================
+III. MOODLE IMPORT INSTRUCTIONS
+================================================================================
+
+  STEP 1 — Log in as Administrator or Teacher with Question Bank edit rights.
+
+  STEP 2 — Navigate to:
+            [Course] → Question bank → Import
+
+  STEP 3 — Select format:  "Moodle XML format"
+
+  STEP 4 — Import files one at a time (or use a bulk import plugin).
+            Each file auto-creates its category:
+            $course$/CSIR NET Mathematics/<Unit>/<Topic>
+
+  STEP 5 — After import, verify:
+            - 20 questions per file appear in the correct category
+            - LaTeX renders correctly (use MathJax filter in Moodle)
+            - Penalty is set to 0.25 (25% negative marking)
+
+  RECOMMENDED QUIZ SETTINGS (CSIR NET Pattern Simulation):
+    - Questions      : Part B = 20 Qs (2 marks each),
+                       Part C = 10 Qs (4.75 marks each)
+    - Time limit     : 180 minutes for full paper
+    - Shuffle Qs     : Yes
+    - Shuffle options: Yes
+    - Marking        : Negative marking 0.25 (built into penalty field)
+
+================================================================================
+IV. QUALITY CONTROL — CORRECTIONS APPLIED
+================================================================================
+
+  TAG TYPOS FIXED (</small> → </single>):
+    Files 19, 20, 21, 23, 24 (Statistics)
+    Files 25, 26, 27, 28, 29, 30 (Complex Analysis)
+    Files 33, 34, 35, 36 (Algebra)
+    File 39 (ODE Systems)
+    File 58 (Numerical ODE — Q15)
+    File 63 (General Aptitude — Q19)
+    File 07 (Metric Spaces — <single>false</single>)
+    Total: 22 tag repairs across 17 files
+
+  ANSWER CORRECTIONS (wrong fraction=100 swapped to correct answer):
+    File 60 Q03  — Work-time: correct answer is 8 days, not 10
+    File 60 Q06  — MATHEMATICS arrangements: 907200, not 75600
+    File 61 Q02  — Average after replacement: reworded Q, correct = 38
+    File 61 Q05  — Coding-decoding: DOOR → ENPT, not ETPS
+    File 62 Q15  — LP feasibility: question redesigned for unique valid option
+    File 64 Q10  — Median of sorted data = 6, not 7
+    File 64 Q16  — Reverse alphabet CAT: sum = 57, not 60
+    File 66 Q11  — Malformed LaTeX "4\%\)" fixed to "4%"
+    File 66 Q13  — Broken XML tag fixed (625) → 625]]>)
+    File 66 Q15  — Near-duplicate wrong option replaced with distinct value
+
+================================================================================
+V. FINAL COUNT SUMMARY
+================================================================================
+
+  Subject Area              Files    Questions
+  ─────────────────────────────────────────────
+  Real Analysis             01–08      160
+  Linear Algebra            09–15      140
+  Probability & Statistics  16–24      180
+  Complex Analysis          25–30      120
+  Algebra                   31–36      120
+  Ordinary Diff. Equations  37–41      100
+  Partial Diff. Equations   42–46      100
+  Topology                  47–51      100
+  Functional Analysis       52–54       60
+  Calculus of Variations    55–56       40
+  Numerical Analysis        57–58       40
+  Linear Programming           59       20
+  General Aptitude (Part A) 60–66      140
+  ─────────────────────────────────────────────
+  TOTAL                        66    1,320
+  ─────────────────────────────────────────────
+
+================================================================================
+  Generated for : TUTORDA LMS — CSIR NET Mathematics Version 1
+  Prepared by   : Claude (Anthropic) with TUTORDA team
+  Date          : May 2026
+  Format        : Plain text outline — companion to 66 Moodle XML files
+================================================================================

@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Part A/General Aptitude</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q01_GeometricSeries</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The sum of an infinite geometric series with first term 8 and common ratio \(\frac{1}{3}\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[12]]></text>
+      <feedback><text>Correct. For \(|r|<1\), sum \(S=\frac{a}{1-r}=\frac{8}{1-1/3}=\frac{8}{2/3}=12\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[24]]></text>
+      <feedback><text>\(S=8/(1-1/3)=8/(2/3)=12\), not 24.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[8\frac{1}{2}\)]]></text>
+      <feedback><text>The sum formula is \(a/(1-r)\); substituting: \(8/(2/3)=12\neq8.5\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[10]]></text>
+      <feedback><text>\(S=8/(1-1/3)=12\neq10\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q02_SpeedProblems</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Two trains start simultaneously from stations A and B, 300 km apart, towards each other. Train 1 travels at 60 km/h and Train 2 at 40 km/h. After how many hours do they meet?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[3 hours]]></text>
+      <feedback><text>Correct. Combined speed: \(60+40=100\) km/h. Time to meet: \(300/100=3\) hours.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[5 hours]]></text>
+      <feedback><text>At 5 hours, each train would have together covered \(5\times100=500\) km, far exceeding 300 km.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[4 hours]]></text>
+      <feedback><text>At 4 hours, combined distance = 400 km > 300 km; they meet at 3 hours.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[2.5 hours]]></text>
+      <feedback><text>At 2.5 hours, combined distance = 250 km < 300 km; meeting occurs at 3 hours.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q03_VarianceStdDev</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The mean of 5 numbers is 10 and their variance is 4. If each number is multiplied by 3, the new mean and variance are respectively]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Mean = 30, Variance = 36]]></text>
+      <feedback><text>Correct. Multiplying by \(c\) scales the mean by \(c\) and the variance by \(c^2\). New mean = \(3\times10=30\). New variance = \(3^2\times4=9\times4=36\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Mean = 30, Variance = 12]]></text>
+      <feedback><text>Variance scales as \(c^2\) (not \(c\)); new variance = \(9\times4=36\), not \(3\times4=12\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Mean = 30, Variance = 4]]></text>
+      <feedback><text>The variance is scale-dependent; multiplying data by 3 multiplies the variance by \(3^2=9\), giving 36.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Mean = 13, Variance = 7]]></text>
+      <feedback><text>Multiplication (not addition) of a constant: mean is multiplied (30), variance is multiplied by the square (36).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q04_RationalNumbers</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following is an irrational number?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\sqrt{2} + \sqrt{3}\)]]></text>
+      <feedback><text>Correct. Both \(\sqrt{2}\) and \(\sqrt{3}\) are irrational, and their sum \(\sqrt{2}+\sqrt{3}\) is also irrational (its minimal polynomial is \(x^4-10x^2+1\), degree 4 over ℚ).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\sqrt{4} + \sqrt{9}\)]]></text>
+      <feedback><text>\(\sqrt{4}+\sqrt{9}=2+3=5\), which is rational.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi - \pi\)]]></text>
+      <feedback><text>\(\pi-\pi=0\), which is rational (in fact, an integer).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\frac{22}{7}\)]]></text>
+      <feedback><text>\(22/7\) is a rational number (ratio of integers); it is only an approximation to \(\pi\), not equal to it.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q05_TableAnalysis</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Year-wise sales (in ₹ lakh): 2018: 120, 2019: 150, 2020: 135, 2021: 180, 2022: 160. The year with the highest percentage increase over its previous year is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[2021 (increase of 33.33% over 2020)]]></text>
+      <feedback><text>Correct. 2019: \((150-120)/120=25\%\). 2020: \((135-150)/150=-10\%\) (decrease). 2021: \((180-135)/135=45/135=33.3\%\). 2022: \((160-180)/180=-11.1\%\) (decrease). Highest increase: 2021 at 33.3%.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[2019 (increase of 25% over 2018)]]></text>
+      <feedback><text>2019 shows 25% increase, but 2021 shows 33.3% increase (the highest).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[2022 (highest absolute sales change)]]></text>
+      <feedback><text>2022 shows a decrease of 20 (from 180 to 160); the question asks for percentage increase, and 2021 is the largest positive change.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[2020 (return to growth after decline)]]></text>
+      <feedback><text>2020 shows a decrease from 150 to 135; it is not a year of percentage increase.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q06_NaturalScience</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following correctly describes Newton's Second Law of Motion?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The net force on an object equals the rate of change of its momentum: \(\mathbf{F} = \frac{d\mathbf{p}}{dt} = m\mathbf{a}\) (for constant mass)]]></text>
+      <feedback><text>Correct. Newton's Second Law: the net force equals the time-rate of change of linear momentum; for constant mass, \(\mathbf{F}=m\mathbf{a}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every action has an equal and opposite reaction]]></text>
+      <feedback><text>This is Newton's Third Law, not the Second Law.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[An object at rest stays at rest unless acted upon by an external force]]></text>
+      <feedback><text>This describes Newton's First Law (Law of Inertia), not the Second Law.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The work done by a force equals the change in kinetic energy]]></text>
+      <feedback><text>This is the work-energy theorem (a consequence of Newton's laws), not Newton's Second Law itself.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q07_Clocks_Advanced</text></name>
+    <questiontext format="html">
+      <text><![CDATA[At what time between 4 and 5 o'clock do the minute and hour hands of a clock coincide?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(4:21\frac{9}{11}\) (approximately 4:21:49)]]></text>
+      <feedback><text>Correct. At 4:00, the hour hand is at 120° (the 4). The minute hand gains on the hour hand at \(5.5°\) per minute. To coincide, it must gain \(120°\): \(t=120/5.5=240/11=21\frac{9}{11}\) minutes past 4.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[4:20]]></text>
+      <feedback><text>At 4:20, the minute hand is at 120° and the hour hand is at \(120+20\times0.5=130°\); they do not coincide at 4:20.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[4:22]]></text>
+      <feedback><text>The exact coincidence is at \(21\frac{9}{11}\approx21.818\) minutes past 4, not at 22 minutes.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[4:25]]></text>
+      <feedback><text>At 4:25, the hands are not coincident; the coincidence is at approximately 4:21:49.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q08_ResearchMethodology</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In a scientific experiment, which of the following best describes a "control group"?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[A group that does not receive the experimental treatment and serves as a baseline for comparison]]></text>
+      <feedback><text>Correct. The control group is unexposed to the independent variable (treatment), providing a reference baseline against which the experimental group is compared to isolate the effect of the treatment.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A group that receives the experimental treatment at maximum dosage]]></text>
+      <feedback><text>The group receiving maximum treatment is an experimental group; the control group receives no treatment (or a placebo).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A group used to control for environmental variables by being kept in a separate location]]></text>
+      <feedback><text>While controlling environmental variables is important, the defining characteristic of a control group is the absence of the treatment, not its location.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The group that demonstrates the expected (hypothesized) outcome]]></text>
+      <feedback><text>The control group is a baseline, not the group expected to show the hypothesized outcome; the experimental group is expected to show the treatment effect.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q09_InverseProportionWord</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If 8 men can complete a work in 15 days, how many days will 12 men take to complete the same work?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[10 days]]></text>
+      <feedback><text>Correct. Men × days = constant = \(8\times15=120\). Days for 12 men: \(120/12=10\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[12 days]]></text>
+      <feedback><text>\(12\times12=144\neq120\); the answer is \(120/12=10\) days.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[20 days]]></text>
+      <feedback><text>20 days would be the answer if 6 men (not 12) did the work: \(8\times15/6=20\neq10\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[8 days]]></text>
+      <feedback><text>\(8\times15=120=15\times8\); for 12 men: \(120/12=10\) days, not 8.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q10_SyllogismThree</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Premises: (i) All birds can fly. (ii) Penguins are birds. (iii) Penguins cannot fly. Which is the correct assessment of these premises?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The premises are inconsistent (contradictory): (i) and (ii) imply penguins can fly, which contradicts (iii)]]></text>
+      <feedback><text>Correct. From (i) all birds can fly and (ii) penguins are birds, it follows that penguins can fly — directly contradicting (iii). The three premises cannot all be true simultaneously.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The premises are consistent and the conclusion is that some birds cannot fly]]></text>
+      <feedback><text>The premises are not consistent: (i)+(ii) imply penguins fly, but (iii) says they don't; the set is contradictory.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Premise (ii) must be false since penguins cannot fly]]></text>
+      <feedback><text>In logic, we assess consistency of premises; the real-world resolution is that premise (i) is false (not all birds can fly). The problem states these as premises, making the set inconsistent.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The conclusion from all three premises is that no penguins exist]]></text>
+      <feedback><text>From an inconsistent set of premises, any conclusion can be derived (ex falso quodlibet), but the most direct assessment is that the premises are contradictory.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q11_Combinatorics_Handshakes</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In a party of \(n\) people, each person shakes hands with every other person exactly once. If there are 66 handshakes in total, how many people are at the party?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[12]]></text>
+      <feedback><text>Correct. Total handshakes \(=\binom{n}{2}=n(n-1)/2=66\Rightarrow n(n-1)=132\Rightarrow n=12\) (since \(12\times11=132\)).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[11]]></text>
+      <feedback><text>\(\binom{11}{2}=55\neq66\); \(n=12\) gives \(\binom{12}{2}=66\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[13]]></text>
+      <feedback><text>\(\binom{13}{2}=78\neq66\); the correct number is 12.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[10]]></text>
+      <feedback><text>\(\binom{10}{2}=45\neq66\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q12_Analogy_Scientific</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Richter scale : Earthquake :: Decibel : ?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Sound intensity]]></text>
+      <feedback><text>Correct. The Richter scale measures earthquake intensity; the decibel (dB) scale measures sound intensity. Both are logarithmic scales for measuring physical phenomena.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Temperature]]></text>
+      <feedback><text>Temperature is measured in Celsius, Kelvin, or Fahrenheit, not decibels.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Wind speed]]></text>
+      <feedback><text>Wind speed is measured in km/h or knots; the Beaufort scale rates wind force; decibels measure sound.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Electromagnetic radiation]]></text>
+      <feedback><text>Electromagnetic radiation is measured in various units (W/m², Tesla, etc.); decibels specifically measure sound pressure levels.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q13_PureReasoning</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Five friends A, B, C, D, E scored different marks. A scored more than B. C scored less than D but more than B. E scored less than A but more than D. Who scored the second highest?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[E]]></text>
+      <feedback><text>Correct. Conditions: A > B, D > C > B, A > E > D. Combining: A > E > D > C > B. Ranking: 1st A, 2nd E, 3rd D, 4th C, 5th B. Second highest: E.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[D]]></text>
+      <feedback><text>From A > E > D, D is third (not second); E ranks second highest.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[C]]></text>
+      <feedback><text>C is fourth in the ranking A > E > D > C > B.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A]]></text>
+      <feedback><text>A scored the highest; the question asks for the second highest, which is E.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q14_ScienceIPR</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following intellectual property rights (IPR) protects an original creative work such as a novel, painting, or musical composition?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Copyright]]></text>
+      <feedback><text>Correct. Copyright protects original works of authorship including literary, artistic, musical, and other creative works. In India it is governed by the Copyright Act, 1957.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Patent]]></text>
+      <feedback><text>Patents protect inventions and innovations (technical solutions); they do not protect creative artistic works.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Trademark]]></text>
+      <feedback><text>Trademarks protect brand names, logos, and slogans used in commerce; they do not protect creative works.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Trade secret]]></text>
+      <feedback><text>Trade secrets protect confidential business information; they do not apply to publicly shared creative works.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q15_Graphs_BasicMath</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A graph of \(y = |x - 2|\) has which of the following characteristics?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[A V-shape with vertex at \((2, 0)\), decreasing for \(x < 2\) and increasing for \(x > 2\)]]></text>
+      <feedback><text>Correct. The graph of \(y=|x-2|\) is a V with vertex at \((2,0)\); for \(x<2\), \(y=2-x\) (slope \(-1\)); for \(x>2\), \(y=x-2\) (slope \(+1\)).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A parabola with vertex at \((2, 0)\)]]></text>
+      <feedback><text>Absolute value functions are V-shaped (piecewise linear), not parabolic; the graph is not \(y=(x-2)^2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A straight line passing through the origin with slope 1]]></text>
+      <feedback><text>Without the absolute value, \(y=x-2\) is a line; with it, the graph has a kink (V-shape) at \(x=2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Always negative for \(x < 2\)]]></text>
+      <feedback><text>\(|x-2|\geq0\) always; for \(x<2\), \(y=2-x>0\), so it is positive (not negative).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q16_PowerGenerationEnvironment</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following energy sources is considered renewable?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Tidal energy, generated by the gravitational pull of the moon and sun on ocean waters]]></text>
+      <feedback><text>Correct. Tidal energy is renewable since it harnesses the perpetual gravitational interaction between Earth, Moon, and Sun; it does not deplete any resource.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Natural gas, which burns more cleanly than coal]]></text>
+      <feedback><text>Natural gas is a fossil fuel (non-renewable); its cleaner combustion does not make it renewable.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Nuclear fission energy using uranium fuel]]></text>
+      <feedback><text>Uranium is a finite resource; nuclear fission is not classified as renewable energy (though it is low-carbon).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Petroleum-based fuels derived from crude oil]]></text>
+      <feedback><text>Petroleum is a non-renewable fossil fuel formed over millions of years; it cannot be regenerated on human timescales.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q17_BasicStatistics</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For a dataset, the relationship \(\text{Mode} = 3 \times \text{Median} - 2 \times \text{Mean}\) is known as the empirical relation. If the mean is 54 and the median is 52, the mode is approximately]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[48]]></text>
+      <feedback><text>Correct. Mode \(= 3\times52 - 2\times54 = 156 - 108 = 48\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[56]]></text>
+      <feedback><text>Mode \(= 3(52)-2(54)=156-108=48\neq56\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[52]]></text>
+      <feedback><text>52 is the median; mode \(= 3(52)-2(54)=48\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[44]]></text>
+      <feedback><text>Mode \(= 156-108=48\neq44\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q18_SquareRoot_Estimation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following is closest to \(\sqrt{200}\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[14.14]]></text>
+      <feedback><text>Correct. \(\sqrt{200}=\sqrt{100\times2}=10\sqrt{2}\approx10\times1.414=14.14\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[10]]></text>
+      <feedback><text>\(10^2=100\neq200\); \(\sqrt{200}\approx14.14\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[20]]></text>
+      <feedback><text>\(20^2=400\neq200\); \(\sqrt{200}\approx14.14\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[15.5]]></text>
+      <feedback><text>\(15.5^2=240.25\neq200\); \(\sqrt{200}\approx14.14\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q19_InformationTechnology</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following correctly explains "Big Data"?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Extremely large and complex datasets that require specialized tools and techniques for storage, processing, and analysis, characterized by the "3 Vs": Volume, Velocity, and Variety]]></text>
+      <feedback><text>Correct. Big Data is defined by the 3 Vs: Volume (huge amounts of data), Velocity (high-speed generation and processing), and Variety (diverse formats — structured, semi-structured, unstructured).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Any dataset larger than 1 terabyte stored in a relational database]]></text>
+      <feedback><text>Big Data is not defined by a fixed size threshold or by requiring a relational database; it is characterized by the 3 Vs (Volume, Velocity, Variety).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Data exclusively from social media platforms used for marketing analytics]]></text>
+      <feedback><text>Big Data spans all domains (science, medicine, government, business); it is not limited to social media or marketing.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Encrypted large files that require advanced cryptographic methods to read]]></text>
+      <feedback><text>Big Data refers to characteristics of dataset scale and complexity (3 Vs), not encryption; encrypted data is a security concern, distinct from Big Data.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>PARTA4_Q20_EthicsResearch</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following practices constitutes research misconduct?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Fabrication: reporting data that was not actually collected or results that did not actually occur]]></text>
+      <feedback><text>Correct. Research misconduct includes fabrication (inventing data), falsification (manipulating data), and plagiarism (FFP). Fabrication undermines the integrity of scientific knowledge.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Replicating a published experiment to verify its findings]]></text>
+      <feedback><text>Replication is a cornerstone of scientific methodology and is encouraged, not a form of misconduct.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Acknowledging funding sources and potential conflicts of interest in a paper]]></text>
+      <feedback><text>Disclosure of funding and conflicts of interest is required ethical practice, not misconduct.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Using established methods developed by other researchers with proper citation]]></text>
+      <feedback><text>Using established methods with proper citation is standard scientific practice; it is not misconduct.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

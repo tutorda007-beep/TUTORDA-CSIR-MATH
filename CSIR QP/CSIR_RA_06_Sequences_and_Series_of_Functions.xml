@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Real Analysis/Sequences and Series of Functions</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Pointwise vs Uniform Convergence I</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f_n(x) = x^n\) on \([0,1]\). <strong>Select ALL correct statements.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (C)</strong></p><p>(A) TRUE: pointwise limit is \(f(x)=0\) for \(x\in[0,1)\) and \(f(1)=1\). (B) FALSE: convergence is NOT uniform — \(\sup_{x\in[0,1]}|f_n(x)-f(x)| = \sup_{x\in[0,1)}x^n = 1 \not\to 0\). (C) TRUE: the convergence IS uniform on \([0,r]\) for any \(r<1\) since \(\sup_{x\in[0,r]}x^n = r^n\to0\). (D) FALSE: \(f_n\) are continuous but the pointwise limit \(f\) is discontinuous at 1, confirming non-uniform convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\{f_n\}\) converges pointwise to \(f(x)=0\) for \(x\in[0,1)\) and \(f(1)=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(\{f_n\}\) converges uniformly on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\{f_n\}\) converges uniformly on \([0,r]\) for every \(r \in (0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[The pointwise limit function is continuous on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Weierstrass M-Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Weierstrass M-test states: if \(|f_n(x)| \leq M_n\) for all \(x \in E\) and \(\sum M_n < \infty\), then \(\sum f_n\) converges. <strong>Select ALL correct conclusions.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (D)</strong></p><p>(B) TRUE: M-test guarantees absolute and uniform convergence. (D) TRUE: uniform convergence of the series plus continuity of each \(f_n\) implies continuity of the sum (limit of uniform series of continuous functions is continuous). (A) FALSE: M-test gives uniform convergence, not just pointwise. (C) FALSE: M-test does not directly give differentiability term-by-term (additional conditions needed).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(\sum f_n\) converges pointwise but not necessarily uniformly]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\sum f_n\) converges absolutely and uniformly on \(E\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(\left(\sum f_n\right)' = \sum f_n'\) always holds when M-test applies]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If each \(f_n\) is continuous on \(E\), then \(\sum f_n\) is continuous on \(E\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Uniform Convergence and Integration</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f_n \to f\) uniformly on \([a,b]\), with each \(f_n\) Riemann integrable. <strong>Select ALL correct statements.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (C)</strong></p><p>(A) TRUE: the uniform limit of Riemann integrable functions on \([a,b]\) is Riemann integrable. (C) TRUE: \(\int_a^b f_n \to \int_a^b f\) — the key theorem for interchanging limit and integral under uniform convergence. (B) FALSE: pointwise (not uniform) convergence is insufficient for this interchange. (D) FALSE: differentiation requires stronger conditions (not just uniform convergence of \(f_n\)).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) is Riemann integrable on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Pointwise convergence suffices to interchange limit and integral]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\displaystyle\int_a^b f_n(x)\,dx \to \int_a^b f(x)\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f_n' \to f'\) uniformly (differentiation is preserved)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Dini's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Dini's theorem: if \(\{f_n\}\) is a sequence of continuous functions on a compact set \(K\) converging pointwise to a continuous function \(f\), and \(f_n\) is monotone (i.e., \(f_n(x) \geq f_{n+1}(x)\) for all \(x,n\)), then <strong>select ALL correct conclusions:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (D)</strong></p><p>(B) TRUE: Dini's theorem guarantees uniform convergence under these conditions (compact domain + monotone + pointwise limit continuous). (D) TRUE: since convergence is uniform, it is in particular uniform on every closed subinterval. (A) FALSE: Dini requires compactness — the theorem fails on open or unbounded sets. (C) FALSE: the sequence converges (to \(f\)), not necessarily oscillates.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Compactness of \(K\) can be replaced by openness]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The convergence \(f_n \to f\) is uniform on \(K\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(\{f_n\}\) must oscillate to satisfy Dini's conditions]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Uniform convergence holds on every compact subset of \(K\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Uniform Convergence and Differentiation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For which conditions can we conclude \(\left(\lim_{n\to\infty} f_n\right)' = \lim_{n\to\infty} f_n'\)? <strong>Select ALL correct sufficient conditions.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (C)</strong></p><p>(A) TRUE: If \(f_n \to f\) pointwise, each \(f_n\) is differentiable, and \(f_n'\) converges uniformly, then \(f\) is differentiable and \(f' = \lim f_n'\). This is the standard theorem for differentiating limit of a sequence. (C) TRUE: this is essentially the same condition stated differently. (B) FALSE: uniform convergence of \(f_n\) alone is NOT sufficient (example: \(f_n(x)=\sin(nx)/\sqrt{n}\to0\) uniformly but \(f_n'(x)=\sqrt{n}\cos(nx)\) is unbounded). (D) FALSE: pointwise convergence alone is insufficient.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(f_n \to f\) pointwise, each \(f_n'\) exists, and \(f_n'\) converges uniformly on the interval]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f_n \to f\) uniformly (no condition on \(f_n'\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f_n\) are \(C^1\) on \([a,b]\), \(f_n\to f\) at one point, and \(f_n'\) converges uniformly on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f_n \to f\) pointwise (no condition on derivatives)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Power Series Differentiation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a power series \(f(x) = \displaystyle\sum_{n=0}^{\infty} a_n x^n\) with radius of convergence \(R > 0\), <strong>select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (D)</strong></p><p>(A) TRUE: a power series can be differentiated term-by-term inside its interval of convergence, and the resulting series has the same radius of convergence \(R\). (D) TRUE: term-by-term integration also preserves radius of convergence. (B) FALSE: the radius of convergence of \(f'\) is the same \(R\), not necessarily smaller. (C) FALSE: a power series is analytic (i.e., its Taylor series converges to it) inside \(|x|<R\), but at the endpoints behavior varies.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) is differentiable on \((-R,R)\) and \(f'(x) = \sum_{n=1}^{\infty} n a_n x^{n-1}\) with the same radius \(R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[The radius of convergence of \(f'\) is strictly less than \(R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[The power series necessarily converges at both endpoints \(\pm R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\displaystyle\int_0^x f(t)\,dt = \sum_{n=0}^{\infty} \frac{a_n x^{n+1}}{n+1}\) for \(|x|<R\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Weierstrass Approximation Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>By the Weierstrass Approximation Theorem, for any continuous \(f: [a,b] \to \mathbb{R}\) and \(\epsilon > 0\), there exists a polynomial \(p\) such that \(\|f - p\|_\infty < \epsilon\). <strong>Select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (C)</strong></p><p>(B) TRUE: the theorem guarantees uniform approximation on a compact interval. (C) TRUE: polynomials are dense in \(C[a,b]\) with the sup norm. (A) FALSE: the approximation does not require the polynomial to match \(f\) at any specific point (Lagrange interpolation does this, but WAT gives uniform closeness without interpolation). (D) FALSE: WAT applies to continuous functions on closed bounded intervals, not open intervals (though Stone-Weierstrass generalizes).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[The approximating polynomial must agree with \(f\) at finitely many chosen points]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The polynomial \(p\) can be chosen to satisfy \(|f(x)-p(x)|<\epsilon\) for ALL \(x\in[a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The set of polynomials is dense in \((C[a,b], \|\cdot\|_\infty)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[The theorem applies to all continuous functions on open intervals as well]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Uniform Convergence Counterexample</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider \(f_n(x) = \dfrac{nx}{1+n^2x^2}\) on \([0,1]\). <strong>Select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (D)</strong></p><p>(A) TRUE: for each fixed \(x\): \(f_n(x) = \frac{nx}{1+n^2x^2} = \frac{x/n}{1/n^2+x^2} \to 0/x^2 = 0\) for \(x\neq0\), and \(f_n(0)=0\). So \(f_n\to0\) pointwise. (D) TRUE: \(\sup_{x\in[0,1]}f_n(x)\): setting derivative to 0 gives maximum at \(x=1/n\), where \(f_n(1/n)=\frac{n\cdot1/n}{1+1}=1/2\). So \(\|f_n\|_\infty = 1/2\not\to0\). (B) FALSE: not uniform. (C) FALSE: \(\int_0^1 f_n dx = \frac{1}{2n}\ln(1+n^2)\to\infty/2n = \frac{\ln n}{n}\to0\) (not equal to 0).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(f_n \to 0\) pointwise on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f_n \to 0\) uniformly on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(\displaystyle\int_0^1 f_n\,dx = 0\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\sup_{x\in[0,1]}f_n(x) = 1/2\) for all \(n\geq1\), showing convergence is not uniform]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Fourier Series Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\) be a \(2\pi\)-periodic function that is piecewise smooth (piecewise \(C^1\) with one-sided limits). By Dirichlet's theorem, the Fourier series of \(f\) at a point \(x_0\) converges to: <strong>Select ALL correct statements.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (C)</strong></p><p>(B) TRUE: at a point of continuity \(x_0\), the Fourier series converges to \(f(x_0)\). (C) TRUE: at a jump discontinuity, the series converges to the average \(\frac{f(x_0^+)+f(x_0^-)}{2}\) (Dirichlet's theorem). (A) FALSE: the Fourier series does not always converge uniformly (Gibbs phenomenon near jumps). (D) FALSE: divergence at the endpoints can occur for non-smooth \(f\).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[The Fourier series always converges uniformly to \(f\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[At a point of continuity \(x_0\), the Fourier series converges to \(f(x_0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[At a jump discontinuity \(x_0\), the series converges to \(\dfrac{f(x_0^+)+f(x_0^-)}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Fourier series of piecewise smooth functions always diverge at endpoints of intervals]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Uniform Convergence and Continuity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f_n \to f\) uniformly on a set \(E\) and each \(f_n\) is continuous on \(E\), then <strong>select ALL true statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (D)</strong></p><p>(A) TRUE: the uniform limit of continuous functions is continuous — the key theorem. Proof: \(|f(x)-f(a)|\leq|f(x)-f_n(x)|+|f_n(x)-f_n(a)|+|f_n(a)-f(a)|\). First and last terms \(<\epsilon/3\) by uniform convergence, middle term \(<\epsilon/3\) by continuity of \(f_n\). (D) TRUE: consequence of (A). (B) FALSE: uniform convergence does not imply differentiability. (C) FALSE: uniform convergence does not imply equicontinuity in general (though the converse direction is useful in Arzelà-Ascoli).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) is continuous on \(E\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f\) is differentiable on \(E\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(\{f_n\}\) is equicontinuous on \(E\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\lim_{x\to a}\lim_{n\to\infty}f_n(x) = \lim_{n\to\infty}\lim_{x\to a}f_n(x)\) for every \(a \in E\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Sup Norm and Uniform Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A sequence of functions \(\{f_n\}\) converges uniformly to \(f\) on \([a,b]\) if and only if <strong>select ALL equivalent conditions:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (C)</strong></p><p>(A) TRUE: \(\|f_n - f\|_\infty = \sup_{x\in[a,b]}|f_n(x)-f(x)| \to 0\) is the definition of uniform convergence. (C) TRUE: equivalent — \(\forall\epsilon>0,\exists N:\forall n>N, \forall x\in[a,b], |f_n(x)-f(x)|<\epsilon\). (B) FALSE: pointwise convergence means \(\forall x, \forall\epsilon>0, \exists N(x,\epsilon): \ldots\) — the \(N\) can depend on \(x\). (D) FALSE: \(f_n^2\to f^2\) follows from \(f_n\to f\) uniformly on bounded sets, but this is a consequence, not the definition.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\|f_n - f\|_\infty \to 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f_n(x) \to f(x)\) for every \(x \in [a,b]\) (pointwise)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[For every \(\epsilon>0\), there exists \(N\) (independent of \(x\)) such that \(n>N \Rightarrow |f_n(x)-f(x)|<\epsilon\) for all \(x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f_n^2 \to f^2\) uniformly]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Series of Functions Example</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=1}^{\infty} \frac{\cos(nx)}{n^2}\) on \(\mathbb{R}\). <strong>Select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (C)</strong></p><p>(A) TRUE: \(|\cos(nx)/n^2|\leq 1/n^2\) and \(\sum 1/n^2=\pi^2/6<\infty\), so by M-test the series converges uniformly (and absolutely) on all of \(\mathbb{R}\). (C) TRUE: each term \(\cos(nx)/n^2\) is continuous, and uniform convergence of the series implies continuity of the sum. (B) FALSE: sum is not a polynomial. (D) FALSE: term-by-term differentiation gives \(\sum (-\sin(nx)/n)\), which converges conditionally (by Dirichlet) but not absolutely nor uniformly everywhere; need more care at \(x=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[The series converges uniformly and absolutely on all of \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[The sum is a polynomial in \(\cos x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The sum function is continuous on \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[The derivative series \(\sum\frac{-\sin(nx)}{n}\) converges uniformly on \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Pointwise Convergence Non-Preservation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider \(f_n(x) = \dfrac{\sin(nx)}{n}\) on \([0,2\pi]\). <strong>Select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (D)</strong></p><p>(B) TRUE: \(\sup_{x}|\sin(nx)/n| = 1/n \to 0\), so convergence is UNIFORM to \(f\equiv0\). (D) TRUE: the derivative \(f_n'(x)=\cos(nx)\) does NOT converge to \(0' = 0\) (e.g., \(f_n'(0)=1\) for all \(n\)). This illustrates that uniform convergence of \(f_n\) does NOT imply \(f_n'\to f'\). (A) FALSE: convergence is both pointwise AND uniform. (C) FALSE: as noted, differentiation does not commute with the limit here.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f_n \to 0\) pointwise but NOT uniformly]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f_n \to 0\) uniformly on \([0,2\pi]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f_n'(x) = \cos(nx) \to 0\) uniformly (derivative of limit equals limit of derivatives)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f_n'(x) = \cos(nx)\) does NOT converge uniformly to 0, illustrating limits and derivatives do not always commute]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Stone-Weierstrass Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Stone-Weierstrass theorem generalizes Weierstrass's approximation theorem. Let \(\mathcal{A}\) be a subalgebra of \(C(K)\) (continuous functions on a compact Hausdorff space \(K\)). Then \(\mathcal{A}\) is dense in \(C(K)\) if \(\mathcal{A}\): <strong>Select ALL correct sufficient conditions.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (C)</strong></p><p>(A) TRUE: separates points (for all \(x\neq y\), there exists \(f\in\mathcal{A}\) with \(f(x)\neq f(y)\)) AND vanishes nowhere (for all \(x\), there exists \(f\in\mathcal{A}\) with \(f(x)\neq0\)) — together these are the Stone-Weierstrass conditions. (C) TRUE: for real-valued algebra, "separates points and vanishes nowhere" is sufficient. (B) FALSE: containing a non-zero constant function is needed but not sufficient alone. (D) FALSE: being closed is the conclusion (the closure is all of \(C(K)\)), not a hypothesis.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[Separates points of \(K\) and vanishes nowhere on \(K\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Contains at least one non-zero constant function (no other conditions)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Is a real subalgebra that separates points and contains the constant functions]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Is closed in the sup norm topology]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Arzelà-Ascoli Theorem Conditions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Arzelà-Ascoli theorem states: a sequence \(\{f_n\}\) of functions on a compact set \(K\) has a uniformly convergent subsequence if: <strong>Select ALL correct necessary and sufficient conditions.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (D)</strong></p><p>(B) TRUE: pointwise boundedness (bounded at each point) is necessary. (D) TRUE: equicontinuity (for every \(\epsilon>0\), \(\exists\delta>0\) independent of \(n\) and \(x\) such that \(|x-y|<\delta\Rightarrow|f_n(x)-f_n(y)|<\epsilon\)) is needed. Together — pointwise boundedness + equicontinuity on compact \(K\) — is necessary and sufficient for sequential compactness (Arzelà-Ascoli). (A) FALSE: uniform boundedness (though stronger than pointwise) alone is not sufficient. (C) FALSE: differentiability is a stronger condition not required by Arzelà-Ascoli.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Uniform boundedness alone: \(|f_n(x)|\leq M\) for all \(n,x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Pointwise boundedness: \(\sup_n|f_n(x)|<\infty\) for each \(x\in K\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Each \(f_n\) is differentiable with \(|f_n'(x)|\leq M\) for all \(n,x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Equicontinuity: for every \(\epsilon>0\), there exists \(\delta>0\) such that \(|x-y|<\delta\) implies \(|f_n(x)-f_n(y)|<\epsilon\) for ALL \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Exchanging Limit and Sum</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Suppose \(f_n: [a,b]\to\mathbb{R}\) are non-negative and measurable. By the Monotone Convergence Theorem (Lebesgue): if \(f_n \nearrow f\) (monotone increasing pointwise), then <strong>select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (C)</strong></p><p>(A) TRUE: MCT gives \(\int f = \lim \int f_n\) for non-negative monotone increasing sequences. (C) TRUE: this is an equivalent formulation of MCT — the interchange of limit and integral holds. (B) FALSE: MCT applies in the Lebesgue setting; for Riemann integrals, pointwise monotone convergence may not suffice (e.g., the pointwise limit may not be Riemann integrable). (D) FALSE: MCT does not imply uniform convergence; it's a result about Lebesgue integrals under pointwise a.e. convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\displaystyle\int f\,d\mu = \lim_{n\to\infty}\int f_n\,d\mu\) (Lebesgue integrals)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[The Riemann integral \(\int_a^b f_n\,dx \to \int_a^b f\,dx\) necessarily (Riemann integrability assumed)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\displaystyle\lim_{n\to\infty}\int f_n = \int\lim_{n\to\infty}f_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f_n \to f\) uniformly (MCT implies uniform convergence)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Convergence of Trigonometric Series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Fourier series of \(f(x) = x\) on \((-\pi,\pi)\) (extended periodically) is \(\displaystyle\sum_{n=1}^{\infty}\frac{2(-1)^{n+1}}{n}\sin(nx)\). <strong>Select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (D)</strong></p><p>(B) TRUE: by Dirichlet's theorem, the series converges to \(x\) for \(x\in(-\pi,\pi)\). (D) TRUE: at \(x=\pi\) (a jump discontinuity), the series converges to \(\frac{f(\pi^-)+f(\pi^+)}{2}=\frac{\pi+(-\pi)}{2}=0\). (A) FALSE: convergence is NOT uniform on \((-\pi,\pi)\) (Gibbs phenomenon near \(\pm\pi\)), though it is uniform on any closed subinterval \([-a,a]\) with \(a<\pi\). (C) FALSE: the series is conditionally, not absolutely, convergent (since \(\sum 2/n\) diverges).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[The series converges uniformly to \(x\) on \((-\pi,\pi)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The series converges to \(x\) for all \(x\in(-\pi,\pi)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[The series converges absolutely for all \(x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[At \(x=\pi\), the series converges to 0 (average of the jump)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Parseval's Identity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a function \(f \in L^2[-\pi,\pi]\) with Fourier coefficients \(a_n = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\cos(nx)\,dx\) and \(b_n = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\sin(nx)\,dx\), Parseval's identity states: <strong>Select ALL correct statements.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (C)</strong></p><p>(A) TRUE: Parseval's identity: \(\frac{1}{\pi}\int_{-\pi}^\pi|f|^2 = \frac{a_0^2}{2}+\sum_{n=1}^\infty(a_n^2+b_n^2)\). (C) TRUE: this is equivalent — the \(L^2\) norm squared of \(f\) equals \(\pi\) times the sum of squares of Fourier coefficients. (B) FALSE: Parseval relates the \(L^2\) norm, not pointwise values. (D) FALSE: Bessel's inequality gives \(\leq\), with equality (Parseval) only in \(L^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\dfrac{1}{\pi}\displaystyle\int_{-\pi}^{\pi}|f(x)|^2\,dx = \dfrac{a_0^2}{2} + \sum_{n=1}^{\infty}(a_n^2+b_n^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Parseval's identity gives the pointwise value of \(f\) in terms of its Fourier coefficients]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Parseval's identity says the \(L^2\) norm of \(f\) equals the \(\ell^2\) norm of its Fourier coefficients (up to a constant)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Bessel's inequality gives equality always, hence it is the same as Parseval's identity]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Uniform Limit of Riemann Integrable Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f_n \to f\) uniformly on \([a,b]\), with each \(f_n \in \mathcal{R}[a,b]\) (Riemann integrable). <strong>Select ALL correct statements.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (C) and (D)</strong></p><p>(C) TRUE: the uniform limit of Riemann integrable functions is Riemann integrable (since the set of discontinuities is a subset of the union of discontinuity sets, which has measure zero if each has measure zero — but more directly: given \(\epsilon>0\), use uniform convergence to get \(f_n\) within \(\epsilon/2(b-a)\), then use integrability of \(f_n\) to get Darboux condition). (D) TRUE: by uniform convergence, \(\int f_n \to \int f\). (A) FALSE: Riemann integrability does not transfer uniform limits automatically in all contexts (though actually it does — see (C)). (B) FALSE: \(f\) need not be continuous (e.g., monotone functions).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f\) need not be Riemann integrable — uniform convergence is insufficient]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f\) must be continuous on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f \in \mathcal{R}[a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\displaystyle\int_a^b f(x)\,dx = \lim_{n\to\infty}\int_a^b f_n(x)\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Function Sequences - Dominated Convergence Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\{f_n\}\) be measurable functions on \([0,1]\) with \(f_n \to f\) almost everywhere. If \(|f_n(x)|\leq g(x)\) for all \(n\) and \(\int g < \infty\) (integrable dominator). <strong>Select ALL correct conclusions:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (B)</strong></p><p>Lebesgue's Dominated Convergence Theorem (DCT): (A) TRUE: \(\lim \int f_n = \int f\). (B) TRUE: \(\|f_n - f\|_{L^1} \to 0\) — convergence in \(L^1\). These are the key conclusions of DCT. (C) FALSE: DCT does not give uniform convergence. (D) FALSE: \(f_n\) are not necessarily uniformly bounded; the dominator \(g\) need not be a constant — only integrable.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\displaystyle\lim_{n\to\infty}\int_0^1 f_n\,d\mu = \int_0^1 f\,d\mu\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\displaystyle\int_0^1 |f_n - f|\,d\mu \to 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f_n \to f\) uniformly on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f_n\) are uniformly bounded by a constant (the dominator must be constant)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

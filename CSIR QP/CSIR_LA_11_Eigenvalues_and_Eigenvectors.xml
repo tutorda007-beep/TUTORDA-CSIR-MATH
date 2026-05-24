@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Linear Algebra/Eigenvalues and Eigenvectors</text>
+    </category>
+    <info format="html"><text>CSIR NET level MCQ questions on Eigenvalues and Eigenvectors</text></info>
+  </question>
+
+  <!-- Q1 -->
+  <question type="multichoice">
+    <name><text>LA11-Q01 Characteristic Polynomial</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The characteristic polynomial of \(A = \begin{pmatrix}3 & 1 \\ 0 & 3\end{pmatrix}\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\((\lambda-3)^2\)]]></text><feedback format="html"><text>Correct. \(\det(A-\lambda I)=\det\begin{pmatrix}3-\lambda&1\\0&3-\lambda\end{pmatrix}=(3-\lambda)^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda^2-6\lambda+8\)]]></text><feedback format="html"><text>Incorrect. \(\text{tr}(A)=6\), \(\det(A)=9\), so the char. poly. is \(\lambda^2-6\lambda+9=(\lambda-3)^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\((\lambda-3)(\lambda-1)\)]]></text><feedback format="html"><text>Incorrect. The only eigenvalue is 3 (repeated); the characteristic polynomial is \((\lambda-3)^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda^2-9\)]]></text><feedback format="html"><text>Incorrect. \(\det(A-\lambda I) = (3-\lambda)^2 = \lambda^2-6\lambda+9\neq\lambda^2-9\).</text></feedback></answer>
+  </question>
+
+  <!-- Q2 -->
+  <question type="multichoice">
+    <name><text>LA11-Q02 Eigenvalues of Symmetric Matrix</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A real symmetric matrix must have:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>All eigenvalues real and an orthonormal basis of eigenvectors (spectral theorem)</text><feedback format="html"><text>Correct. The spectral theorem for real symmetric matrices guarantees real eigenvalues and an orthogonal eigenbasis.</text></feedback></answer>
+    <answer fraction="0"><text>All eigenvalues positive</text><feedback format="html"><text>Incorrect. Symmetric matrices can have negative or zero eigenvalues (e.g., \(\begin{pmatrix}-1&0\\0&1\end{pmatrix}\)).</text></feedback></answer>
+    <answer fraction="0"><text>All eigenvalues equal</text><feedback format="html"><text>Incorrect. A symmetric matrix can have distinct eigenvalues (e.g., the identity has all eigenvalues equal, but diagonal matrices with distinct entries are symmetric).</text></feedback></answer>
+    <answer fraction="0"><text>Exactly \(n\) distinct eigenvalues</text><feedback format="html"><text>Incorrect. Symmetric matrices can have repeated eigenvalues (e.g., the identity matrix \(I_n\) has eigenvalue 1 with multiplicity \(n\)).</text></feedback></answer>
+  </question>
+
+  <!-- Q3 -->
+  <question type="multichoice">
+    <name><text>LA11-Q03 Cayley-Hamilton Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(A = \begin{pmatrix}1 & 2 \\ 3 & 4\end{pmatrix}\). The characteristic polynomial is \(p(\lambda)=\lambda^2-5\lambda-2\). By Cayley-Hamilton, \(A^2\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(5A + 2I\)]]></text><feedback format="html"><text>Correct. Cayley-Hamilton: \(A^2 - 5A - 2I = 0\), so \(A^2 = 5A + 2I\). Verify: \(A^2=\begin{pmatrix}7&10\\15&22\end{pmatrix}\) and \(5A+2I=\begin{pmatrix}7&10\\15&22\end{pmatrix}\). ✓</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(5A - 2I\)]]></text><feedback format="html"><text>Incorrect. The characteristic polynomial is \(\lambda^2-5\lambda-2\), so \(A^2=5A+2I\), not \(5A-2I\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A + 5I\)]]></text><feedback format="html"><text>Incorrect. By Cayley-Hamilton: \(A^2 = 5A + 2I\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(2A + 5I\)]]></text><feedback format="html"><text>Incorrect. The correct relation is \(A^2 = 5A + 2I\) from \(p(A)=0\).</text></feedback></answer>
+  </question>
+
+  <!-- Q4 -->
+  <question type="multichoice">
+    <name><text>LA11-Q04 Geometric vs Algebraic Multiplicity</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For a linear operator \(T\) on a finite-dimensional space, the geometric multiplicity of an eigenvalue \(\lambda\) is \(\dim\ker(T-\lambda I)\) and algebraic multiplicity is its multiplicity as a root of the characteristic polynomial. Which always holds?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[Geometric multiplicity \(\leq\) algebraic multiplicity]]></text><feedback format="html"><text>Correct. The geometric multiplicity never exceeds the algebraic multiplicity. Equality for all eigenvalues is equivalent to diagonalizability.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Geometric multiplicity \(=\) algebraic multiplicity always]]></text><feedback format="html"><text>Incorrect. For \(A=\begin{pmatrix}3&1\\0&3\end{pmatrix}\), eigenvalue 3 has algebraic multiplicity 2 but geometric multiplicity 1.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Geometric multiplicity \(\geq\) algebraic multiplicity]]></text><feedback format="html"><text>Incorrect. This is backwards; the geometric multiplicity is bounded above by the algebraic multiplicity.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Algebraic multiplicity is always 1]]></text><feedback format="html"><text>Incorrect. Eigenvalues can have algebraic multiplicity greater than 1 (repeated roots of the characteristic polynomial).</text></feedback></answer>
+  </question>
+
+  <!-- Q5 -->
+  <question type="multichoice">
+    <name><text>LA11-Q05 Trace and Determinant</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(A\) is an \(n\times n\) matrix with eigenvalues \(\lambda_1, \lambda_2, \ldots, \lambda_n\) (counted with multiplicity), then:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{tr}(A) = \sum_{i=1}^n \lambda_i\) and \(\det(A) = \prod_{i=1}^n \lambda_i\)]]></text><feedback format="html"><text>Correct. These follow from the factored form of the characteristic polynomial: \(p(\lambda) = \prod(\lambda_i - \lambda)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{tr}(A) = \prod_{i=1}^n \lambda_i\) and \(\det(A) = \sum_{i=1}^n \lambda_i\)]]></text><feedback format="html"><text>Incorrect. Trace equals the sum of eigenvalues; determinant equals the product. These are swapped here.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{tr}(A) = n\lambda_1\) for any ordering]]></text><feedback format="html"><text>Incorrect. Trace is the sum of all eigenvalues, not \(n\) times one eigenvalue.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\det(A) = \text{tr}(A)^n\)]]></text><feedback format="html"><text>Incorrect. This is false in general; e.g., \(A=I_2\) gives \(\det=1\) and \(\text{tr}^2=4\).</text></feedback></answer>
+  </question>
+
+  <!-- Q6 -->
+  <question type="multichoice">
+    <name><text>LA11-Q06 Power of Matrix via Eigendecomposition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(A\) be diagonalizable with \(A = PDP^{-1}\) where \(D = \text{diag}(\lambda_1, \ldots, \lambda_n)\). Then \(A^k\) for positive integer \(k\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(A^k = PD^kP^{-1}\) where \(D^k = \text{diag}(\lambda_1^k,\ldots,\lambda_n^k)\)]]></text><feedback format="html"><text>Correct. \(A^k = (PDP^{-1})^k = PD^kP^{-1}\) since intermediate \(P^{-1}P = I\) terms collapse.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A^k = P^k D P^{-k}\)]]></text><feedback format="html"><text>Incorrect. \(A^k = PD^kP^{-1}\); the eigenvector matrix \(P\) appears exactly once on each side.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A^k = kPDP^{-1}\)]]></text><feedback format="html"><text>Incorrect. \(A^k = PD^kP^{-1}\), not \(k\) times \(A\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A^k = P(D+kI)P^{-1}\)]]></text><feedback format="html"><text>Incorrect. The \(k\)-th power of a diagonal matrix \(D\) raises each diagonal entry to the \(k\)-th power, not shifts by \(k\).</text></feedback></answer>
+  </question>
+
+  <!-- Q7 -->
+  <question type="multichoice">
+    <name><text>LA11-Q07 Gershgorin Circle Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Gershgorin circle theorem states: every eigenvalue of \(A = (a_{ij})\) lies in at least one Gershgorin disk \(D_i = \{\lambda : |\lambda - a_{ii}| \leq \sum_{j\neq i}|a_{ij}|\}\). For \(A = \begin{pmatrix}4 & 1 & 0 \\ 1 & 3 & 1 \\ 0 & 2 & 5\end{pmatrix}\), all eigenvalues lie in the union of disks centered at:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(4\) (radius 1), \(3\) (radius 2), \(5\) (radius 2)]]></text><feedback format="html"><text>Correct. Row sums of off-diagonals: Row 1: \(|1|+|0|=1\), Row 2: \(|1|+|1|=2\), Row 3: \(|2|+0=2\). Disks: \(|λ-4|\leq1\), \(|λ-3|\leq2\), \(|λ-5|\leq2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(1\) (radius 4), \(1\) (radius 3), \(2\) (radius 5)]]></text><feedback format="html"><text>Incorrect. The centers are the diagonal entries (4, 3, 5) and the radii are the row sums of off-diagonal absolute values.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(4\) (radius 4), \(3\) (radius 3), \(5\) (radius 5)]]></text><feedback format="html"><text>Incorrect. The radii are the off-diagonal row sums, not the diagonal entries themselves.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(0\) (radius 4), \(0\) (radius 3), \(0\) (radius 5)]]></text><feedback format="html"><text>Incorrect. The Gershgorin disks are centered at the diagonal entries, not at 0.</text></feedback></answer>
+  </question>
+
+  <!-- Q8 -->
+  <question type="multichoice">
+    <name><text>LA11-Q08 Eigenvalues of Orthogonal Matrix</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(Q\) is an orthogonal matrix (\(Q^TQ = I\)), then all eigenvalues of \(Q\) have:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Modulus equal to 1 (lie on the unit circle in \(\mathbb{C}\))</text><feedback format="html"><text>Correct. If \(Qv=\lambda v\), then \(\|Qv\|=\|v\|\) (orthogonal maps preserve norm), so \(|\lambda|\|v\|=\|v\|\), giving \(|\lambda|=1\).</text></feedback></answer>
+    <answer fraction="0"><text>All positive real values</text><feedback format="html"><text>Incorrect. Real eigenvalues of orthogonal matrices are \(\pm1\); complex eigenvalues occur in conjugate pairs on the unit circle.</text></feedback></answer>
+    <answer fraction="0"><text>All equal to 1</text><feedback format="html"><text>Incorrect. Orthogonal matrices can have eigenvalue \(-1\) (e.g., reflections) as well as complex eigenvalues of modulus 1.</text></feedback></answer>
+    <answer fraction="0"><text>Sum equal to 0</text><feedback format="html"><text>Incorrect. The trace (sum of eigenvalues) of an orthogonal matrix is the sum of diagonal entries, which can be any value in \([-n,n]\).</text></feedback></answer>
+  </question>
+
+  <!-- Q9 -->
+  <question type="multichoice">
+    <name><text>LA11-Q09 Eigenvalues of Idempotent</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(P\) be an \(n\times n\) matrix with \(P^2 = P\) (idempotent/projection). The eigenvalues of \(P\) are:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Only 0 and 1</text><feedback format="html"><text>Correct. If \(Pv=\lambda v\), then \(P^2v=\lambda^2v=Pv=\lambda v\), so \(\lambda^2=\lambda\), giving \(\lambda=0\) or \(\lambda=1\).</text></feedback></answer>
+    <answer fraction="0"><text>Only 0</text><feedback format="html"><text>Incorrect. For a non-zero projection, 1 is always an eigenvalue (any vector in the image of \(P\)).</text></feedback></answer>
+    <answer fraction="0"><text>Only 1</text><feedback format="html"><text>Incorrect. For a projection that is not the identity, 0 is always an eigenvalue (any vector in the kernel of \(P\)).</text></feedback></answer>
+    <answer fraction="0"><text>Any real number</text><feedback format="html"><text>Incorrect. The equation \(\lambda^2=\lambda\) restricts eigenvalues to 0 and 1.</text></feedback></answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>LA11-Q10 Perron-Frobenius Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Perron-Frobenius theorem states that a matrix with all positive entries has a unique largest real eigenvalue (the Perron root) with a strictly positive eigenvector. For \(A = \begin{pmatrix}2 & 1 \\ 1 & 2\end{pmatrix}\), the Perron root is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(3\), with eigenvector \((1,1)^T\)</text><feedback format="html"><text>Correct. Eigenvalues: \(\det\begin{pmatrix}2-\lambda&1\\1&2-\lambda\end{pmatrix}=(\lambda-1)(\lambda-3)=0\). So \(\lambda=3\) (Perron root) with eigenvector \((1,1)^T\) and \(\lambda=1\) with eigenvector \((1,-1)^T\).</text></feedback></answer>
+    <answer fraction="0"><text>\(1\), with eigenvector \((1,-1)^T\)</text><feedback format="html"><text>Incorrect. The Perron root is the largest eigenvalue, which is 3, not 1. The eigenvector \((1,-1)^T\) has a negative entry, not "strictly positive".</text></feedback></answer>
+    <answer fraction="0"><text>\(4\), with eigenvector \((2,2)^T\)</text><feedback format="html"><text>Incorrect. The characteristic polynomial gives eigenvalues 1 and 3, not 4.</text></feedback></answer>
+    <answer fraction="0"><text>\(2\), with eigenvector \((1,0)^T\)</text><feedback format="html"><text>Incorrect. 2 is not an eigenvalue of this matrix.</text></feedback></answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>LA11-Q11 Eigenvalues Under Similarity</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(A\) and \(B = P^{-1}AP\) be similar matrices. Which statement is FALSE?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(A\) and \(B\) have the same eigenvectors</text><feedback format="html"><text>Correct (this is FALSE). If \(Av=\lambda v\), then \(B(P^{-1}v)=\lambda(P^{-1}v)\), so the eigenvectors are related by \(P^{-1}\) but are generally different.</text></feedback></answer>
+    <answer fraction="0"><text>\(A\) and \(B\) have the same eigenvalues</text><feedback format="html"><text>Incorrect (this is TRUE). Similar matrices share the same characteristic polynomial, hence the same eigenvalues.</text></feedback></answer>
+    <answer fraction="0"><text>\(\det(A) = \det(B)\)</text><feedback format="html"><text>Incorrect (this is TRUE). \(\det(B)=\det(P^{-1}AP)=\det(P^{-1})\det(A)\det(P)=\det(A)\).</text></feedback></answer>
+    <answer fraction="0"><text>\(\text{tr}(A) = \text{tr}(B)\)</text><feedback format="html"><text>Incorrect (this is TRUE). \(\text{tr}(ABC)=\text{tr}(BCA)\), so \(\text{tr}(P^{-1}AP)=\text{tr}(APP^{-1})=\text{tr}(A)\).</text></feedback></answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>LA11-Q12 Simultaneous Diagonalization</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Two diagonalizable matrices \(A\) and \(B\) can be simultaneously diagonalized (by the same matrix \(P\)) if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(AB = BA\) (they commute)</text><feedback format="html"><text>Correct. Two diagonalizable matrices can be simultaneously diagonalized iff they commute. This follows from the fact that commuting diagonalizable matrices share an eigenbasis.</text></feedback></answer>
+    <answer fraction="0"><text>They have the same determinant</text><feedback format="html"><text>Incorrect. Equal determinants do not imply commutativity or simultaneous diagonalizability.</text></feedback></answer>
+    <answer fraction="0"><text>They have the same trace</text><feedback format="html"><text>Incorrect. Equal traces do not suffice for simultaneous diagonalizability.</text></feedback></answer>
+    <answer fraction="0"><text>They have the same rank</text><feedback format="html"><text>Incorrect. Equal rank is not the criterion; commutativity is required.</text></feedback></answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>LA11-Q13 Min Polynomial Divides Char Polynomial</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For an \(n\times n\) matrix \(A\), let \(m(\lambda)\) be the minimal polynomial and \(p(\lambda)\) the characteristic polynomial. Which of the following is always true?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(m(\lambda)\) divides \(p(\lambda)\) and they have the same roots (over the algebraic closure)]]></text><feedback format="html"><text>Correct. By Cayley-Hamilton, \(p(A)=0\) so \(m\mid p\). By Cayley-Hamilton and the definition of minimal polynomial, both polynomials have the same set of roots.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(m(\lambda) = p(\lambda)\) always]]></text><feedback format="html"><text>Incorrect. For \(A=I_n\), \(m(\lambda)=\lambda-1\) but \(p(\lambda)=(\lambda-1)^n\). These differ when \(n>1\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(p(\lambda)\) divides \(m(\lambda)\)]]></text><feedback format="html"><text>Incorrect. The minimal polynomial divides the characteristic polynomial, not the other way around.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\deg m(\lambda) = n\) always]]></text><feedback format="html"><text>Incorrect. \(\deg m = n\) iff \(A\) has a cyclic vector (e.g., companion matrix). In general, \(\deg m \leq n\).</text></feedback></answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>LA11-Q14 Positive Definite Matrix Eigenvalues</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A real symmetric matrix \(A\) is positive definite iff \(x^TAx > 0\) for all \(x\neq 0\). Equivalently, \(A\) is positive definite iff:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>All eigenvalues of \(A\) are strictly positive</text><feedback format="html"><text>Correct. By the spectral theorem, a real symmetric \(A\) is positive definite iff all its eigenvalues are positive.</text></feedback></answer>
+    <answer fraction="0"><text>\(\det(A) > 0\)</text><feedback format="html"><text>Incorrect. \(\det(A)>0\) is necessary but not sufficient (e.g., \(A=\begin{pmatrix}-1&0\\0&-1\end{pmatrix}\) has \(\det=1>0\) but is negative definite).</text></feedback></answer>
+    <answer fraction="0"><text>All diagonal entries of \(A\) are positive</text><feedback format="html"><text>Incorrect. Positive diagonal entries don't guarantee positive definiteness (off-diagonal terms matter).</text></feedback></answer>
+    <answer fraction="0"><text>\(\text{tr}(A) > 0\)</text><feedback format="html"><text>Incorrect. Positive trace (sum of eigenvalues) doesn't mean all eigenvalues are positive.</text></feedback></answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>LA11-Q15 Variational Characterization of Eigenvalues</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For a real symmetric matrix \(A\) with eigenvalues \(\lambda_1 \leq \lambda_2 \leq \cdots \leq \lambda_n\), the Rayleigh quotient \(R(x) = \frac{x^TAx}{x^Tx}\) satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\lambda_1 \leq R(x) \leq \lambda_n\) for all \(x\neq 0\), with equality achieved]]></text><feedback format="html"><text>Correct. The Rayleigh quotient is bounded by the smallest and largest eigenvalues, achieved at the corresponding eigenvectors.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(R(x) = \text{tr}(A)/n\) for all \(x\neq 0\)]]></text><feedback format="html"><text>Incorrect. The Rayleigh quotient varies with \(x\); it equals the average eigenvalue only for specific choices of \(x\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\max_{x\neq 0} R(x) = \text{tr}(A)\)]]></text><feedback format="html"><text>Incorrect. The maximum of the Rayleigh quotient is the largest eigenvalue \(\lambda_n\), not the trace.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(R(x) = \det(A)\) for the unit vector \(x\)]]></text><feedback format="html"><text>Incorrect. The Rayleigh quotient for a unit vector is \(x^TAx\), which ranges between \(\lambda_1\) and \(\lambda_n\).</text></feedback></answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>LA11-Q16 Eigenvalues of Block Triangular Matrix</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(A = \begin{pmatrix}B & C \\ 0 & D\end{pmatrix}\) be a block upper triangular matrix where \(B\) is \(p\times p\) and \(D\) is \(q\times q\). The eigenvalues of \(A\) are:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>The union of eigenvalues of \(B\) and eigenvalues of \(D\)</text><feedback format="html"><text>Correct. \(\det(A-\lambda I) = \det(B-\lambda I)\det(D-\lambda I)\), so the characteristic polynomial factors into those of \(B\) and \(D\).</text></feedback></answer>
+    <answer fraction="0"><text>The product of eigenvalues of \(B\) and eigenvalues of \(D\)</text><feedback format="html"><text>Incorrect. The eigenvalues are the union (combined set), not products of individual eigenvalues.</text></feedback></answer>
+    <answer fraction="0"><text>Only the eigenvalues of \(B\) (block \(D\) is ignored)</text><feedback format="html"><text>Incorrect. Both diagonal blocks contribute their eigenvalues to the spectrum of \(A\).</text></feedback></answer>
+    <answer fraction="0"><text>The eigenvalues of \(C\)</text><feedback format="html"><text>Incorrect. The off-diagonal block \(C\) does not contribute eigenvalues; only the diagonal blocks \(B\) and \(D\) do.</text></feedback></answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>LA11-Q17 Markov Matrix</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A stochastic matrix (Markov matrix) has all entries non-negative and all column sums equal to 1. Which statement is always true for a stochastic matrix?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(\lambda = 1\) is always an eigenvalue, and all eigenvalues satisfy \(|\lambda| \leq 1\)</text><feedback format="html"><text>Correct. Column sums = 1 means \((1,1,\ldots,1)^T\) is a left eigenvector with eigenvalue 1. By Gershgorin (or direct argument), all eigenvalues have modulus \(\leq 1\).</text></feedback></answer>
+    <answer fraction="0"><text>All eigenvalues equal 1</text><feedback format="html"><text>Incorrect. Stochastic matrices can have other eigenvalues (e.g., 0, -1, complex numbers on the unit disk).</text></feedback></answer>
+    <answer fraction="0"><text>\(\lambda = 0\) is always an eigenvalue</text><feedback format="html"><text>Incorrect. An invertible stochastic matrix (e.g., the identity) has no zero eigenvalue.</text></feedback></answer>
+    <answer fraction="0"><text>All eigenvalues are positive real numbers</text><feedback format="html"><text>Incorrect. Stochastic matrices can have complex eigenvalues or negative real eigenvalues (e.g., permutation matrices).</text></feedback></answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>LA11-Q18 Singular Value vs Eigenvalue</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The singular values of a matrix \(A\) are the non-negative square roots of eigenvalues of \(A^TA\). For a real symmetric positive definite matrix \(A\), the singular values are:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Equal to the eigenvalues of \(A\)</text><feedback format="html"><text>Correct. For symmetric positive definite \(A\), \(A^TA = A^2\) has eigenvalues \(\lambda_i^2\), so singular values are \(\sqrt{\lambda_i^2} = \lambda_i > 0\) (eigenvalues of \(A\)).</text></feedback></answer>
+    <answer fraction="0"><text>Equal to the square of the eigenvalues of \(A\)</text><feedback format="html"><text>Incorrect. Singular values equal eigenvalues (for symmetric PD), not their squares.</text></feedback></answer>
+    <answer fraction="0"><text>Always different from eigenvalues</text><feedback format="html"><text>Incorrect. For symmetric positive definite matrices, singular values equal eigenvalues.</text></feedback></answer>
+    <answer fraction="0"><text>Always equal to 1</text><feedback format="html"><text>Incorrect. Singular values of a positive definite matrix equal its positive eigenvalues, which are generally not all 1.</text></feedback></answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>LA11-Q19 Companion Matrix</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The companion matrix of a monic polynomial \(p(\lambda) = \lambda^n + a_{n-1}\lambda^{n-1}+\cdots+a_0\) is the \(n\times n\) matrix \(C\) whose characteristic polynomial is \(p(\lambda)\). If \(p(\lambda) = \lambda^3 - 6\lambda^2 + 11\lambda - 6 = (\lambda-1)(\lambda-2)(\lambda-3)\), the eigenvalues of \(C\) are:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(1, 2, 3\)</text><feedback format="html"><text>Correct. The characteristic polynomial of the companion matrix is exactly \(p(\lambda)\), so its eigenvalues are the roots of \(p\): \(\lambda = 1, 2, 3\).</text></feedback></answer>
+    <answer fraction="0"><text>\(-1, -2, -3\)</text><feedback format="html"><text>Incorrect. The eigenvalues are the roots of \(p(\lambda)\), which are 1, 2, 3 (all positive).</text></feedback></answer>
+    <answer fraction="0"><text>\(6, -11, 6\)</text><feedback format="html"><text>Incorrect. These are the (negatives of) coefficients of \(p\), not its roots.</text></feedback></answer>
+    <answer fraction="0"><text>\(0, 1, 6\)</text><feedback format="html"><text>Incorrect. The roots of \(\lambda^3-6\lambda^2+11\lambda-6\) are 1, 2, and 3.</text></feedback></answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>LA11-Q20 Eigenvalue of Inverse</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(\lambda\) is an eigenvalue of an invertible matrix \(A\), then the corresponding eigenvalue of \(A^{-1}\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(1/\lambda\), with the same eigenvector]]></text><feedback format="html"><text>Correct. If \(Av=\lambda v\) and \(\lambda\neq0\), then \(v=A^{-1}(Av)=\lambda A^{-1}v\), so \(A^{-1}v=(1/\lambda)v\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(-\lambda\), with the same eigenvector]]></text><feedback format="html"><text>Incorrect. The eigenvalue of \(A^{-1}\) is \(1/\lambda\), not \(-\lambda\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda^2\), with the same eigenvector]]></text><feedback format="html"><text>Incorrect. \(\lambda^2\) is the eigenvalue of \(A^2\), not \(A^{-1}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda - 1\), with a different eigenvector]]></text><feedback format="html"><text>Incorrect. The eigenvalue of \(A^{-1}\) is \(1/\lambda\), and the eigenvector is the same.</text></feedback></answer>
+  </question>
+
+</quiz>

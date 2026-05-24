@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Statistics and Probability/Sampling Distributions</text></category>
+    <info format="html"><text>CSIR NET level MCQ questions on Sampling Distributions: chi-square, t, F distributions, order statistics, sample mean and variance distributions, central limit theorem applications, non-central distributions.</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q01 Chi-Square Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[If \(Z_1, \ldots, Z_n \stackrel{iid}{\sim} N(0,1)\), then \(Q = \sum_{i=1}^n Z_i^2 \sim \chi^2_n\). The mean and variance of \(\chi^2_n\) are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(E[Q] = n,\quad \text{Var}(Q) = 2n\)</text><feedback format="html"><text>For \(Z\sim N(0,1)\): \(E[Z^2]=1\) and \(\text{Var}(Z^2)=E[Z^4]-(E[Z^2])^2=3-1=2\). By independence: \(E[Q]=n\) and \(\text{Var}(Q)=2n\). Also: MGF of \(\chi^2_n\) is \((1-2t)^{-n/2}\) for \(t<1/2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(E[Q] = n,\quad \text{Var}(Q) = n\)</text><feedback format="html"><text>The mean is correct but the variance of \(\chi^2_n\) is \(2n\), not \(n\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(E[Q] = n/2,\quad \text{Var}(Q) = n/4\)</text><feedback format="html"><text>These are the mean and variance of \(\text{Gamma}(n/2, 1)\) where 1 is the rate, i.e., scale \(=2\). With scale \(=2\): mean \(= n/2\times2 = n\). So mean is \(n\), not \(n/2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(E[Q] = 2n,\quad \text{Var}(Q) = 4n\)</text><feedback format="html"><text>These values are double the correct ones. Mean of \(\chi^2_n\) is \(n\) and variance is \(2n\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q02 Student's t-Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[If \(Z \sim N(0,1)\) and \(V \sim \chi^2_\nu\) are independent, then \(T = \dfrac{Z}{\sqrt{V/\nu}} \sim t_\nu\). The \(t_\nu\) distribution has mean 0 (for \(\nu > 1\)) and variance \(\dfrac{\nu}{\nu-2}\) (for \(\nu > 2\)). As \(\nu \to \infty\), the \(t_\nu\) distribution converges to:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(N(0,1)\)</text><feedback format="html"><text>As \(\nu\to\infty\), \(V/\nu \xrightarrow{P} 1\) by the LLN (since \(E[V/\nu]=1\) and \(\text{Var}(V/\nu)=2/\nu\to0\)). Thus \(T = Z/\sqrt{V/\nu} \xrightarrow{d} Z \sim N(0,1)\). Equivalently, the \(t_\nu\) variance \(\nu/(\nu-2)\to 1\) as \(\nu\to\infty\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Cauchy distribution</text><feedback format="html"><text>The Cauchy distribution equals \(t_1\) (1 degree of freedom). As \(\nu\to\infty\), \(t_\nu\to N(0,1)\), not Cauchy.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\chi^2_1\)</text><feedback format="html"><text>The chi-square distribution is non-negative and skewed. The \(t\) distribution is symmetric about 0 and converges to \(N(0,1)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Uniform\((−1, 1)\)</text><feedback format="html"><text>The limiting distribution of \(t_\nu\) as \(\nu\to\infty\) is \(N(0,1)\), not uniform.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q03 F-Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[If \(U \sim \chi^2_m\) and \(V \sim \chi^2_n\) are independent, then \(F = \dfrac{U/m}{V/n} \sim F_{m,n}\). Which relationship between \(F\) and \(t\) distributions is correct?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>If \(T \sim t_n\), then \(T^2 \sim F_{1,n}\)</text><feedback format="html"><text>\(T = Z/\sqrt{V/n}\) where \(Z\sim N(0,1)\). Then \(T^2 = Z^2/(V/n) = \chi^2_1/1 \div \chi^2_n/n \sim F_{1,n}\). Also: \(F_{m,n}\) and \(1/F_{n,m}\) have the same distribution type; if \(F\sim F_{m,n}\) then \(1/F\sim F_{n,m}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>If \(T \sim t_n\), then \(T^2 \sim F_{n,1}\)</text><feedback format="html"><text>The degrees of freedom are reversed. \(T^2 = \chi^2_1/\chi^2_n \times n \sim F_{1,n}\), not \(F_{n,1}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>If \(T \sim t_n\), then \(|T| \sim F_{1,n}\)</text><feedback format="html"><text>\(|T|\) does not follow an \(F\) distribution; \(T^2\) (not \(|T|\)) follows \(F_{1,n}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>If \(F\sim F_{1,n}\), then \(\sqrt{F}\sim t_1\)</text><feedback format="html"><text>\(\sqrt{F_{1,n}} \sim |t_n|\) (half-normal type), not \(t_1\). The \(\sqrt{F_{1,n}}\) is the absolute value of a \(t_n\) variable.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q04 Distribution of Sample Variance</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X_1, \ldots, X_n \stackrel{iid}{\sim} N(\mu, \sigma^2)\). The sample variance \(S^2 = \dfrac{1}{n-1}\sum_{i=1}^n(X_i - \bar{X})^2\). Then \(\dfrac{(n-1)S^2}{\sigma^2}\) follows:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\chi^2_{n-1}\), and is independent of \(\bar{X}\)</text><feedback format="html"><text>This follows from the spectral decomposition of the quadratic form: \(\sum(X_i-\bar{X})^2/\sigma^2 = \mathbf{Z}^T(I-J/n)\mathbf{Z}\) where \(\mathbf{Z}\sim N_n(\mathbf{0},I)\). The matrix \(I-J/n\) is idempotent of rank \(n-1\), giving \(\chi^2_{n-1}\). Independence of \(\bar{X}\) and \(S^2\) follows from Cochran's theorem.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\chi^2_n\), and is independent of \(\bar{X}\)</text><feedback format="html"><text>The degrees of freedom is \(n-1\) (one df lost for estimating \(\mu\)), not \(n\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\chi^2_{n-1}\), but is NOT independent of \(\bar{X}\)</text><feedback format="html"><text>By Cochran's theorem (or direct calculation), \(\bar{X}\) and \(S^2\) are independent for normal populations.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(F_{n-1,1}\) distribution</text><feedback format="html"><text>The ratio \((n-1)S^2/\sigma^2\) follows \(\chi^2_{n-1}\), not an \(F\) distribution.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q05 Order Statistics — Minimum and Maximum</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X_1, \ldots, X_n \stackrel{iid}{\sim} F\) with pdf \(f\). The pdf of the maximum \(X_{(n)}\) is \(f_{X_{(n)}}(x) = n[F(x)]^{n-1}f(x)\). For \(X_i \stackrel{iid}{\sim} U(0,1)\), the distribution of \(X_{(n)}\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\text{Beta}(n, 1)\)</text><feedback format="html"><text>For \(U(0,1)\): \(F(x)=x\), \(f(x)=1\). So \(f_{X_{(n)}}(x) = n\cdot x^{n-1}\cdot1 = nx^{n-1}\) on \([0,1]\). This is \(\text{Beta}(n,1)\) with \(E[X_{(n)}] = n/(n+1)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\text{Beta}(1, n)\)</text><feedback format="html"><text>\(\text{Beta}(1,n)\) has pdf \(n(1-x)^{n-1}\), which is the distribution of the minimum \(X_{(1)}\), not the maximum.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\text{Beta}(n/2, n/2)\)</text><feedback format="html"><text>This symmetric beta distribution is not the distribution of \(X_{(n)}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(U(0,1)\)</text><feedback format="html"><text>The maximum of \(n>1\) uniform random variables has a skewed right distribution concentrated near 1, not a uniform distribution.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q06 Distribution of Sample Mean — CLT</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X_1, \ldots, X_{100} \stackrel{iid}{\sim}\) distribution with mean 5 and variance 4. By the Central Limit Theorem, the approximate distribution of \(\bar{X} = \dfrac{1}{100}\sum X_i\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(N(5,\ 0.04)\)</text><feedback format="html"><text>By CLT: \(\bar{X}\approx N(\mu, \sigma^2/n) = N(5, 4/100) = N(5, 0.04)\). The standard error is \(\sigma/\sqrt{n} = 2/10 = 0.2\), so \(\bar{X}\approx N(5, 0.04)\) (variance \(=0.04\), SD \(=0.2\)).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N(5,\ 4)\)</text><feedback format="html"><text>This uses the population variance (4), not the sampling variance \(\sigma^2/n = 4/100 = 0.04\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N(5,\ 0.4)\)</text><feedback format="html"><text>The variance of \(\bar{X}\) is \(\sigma^2/n = 4/100 = 0.04\), not \(0.4\). Perhaps confused with the standard error \(\sigma/\sqrt{n} = 0.2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N(500,\ 400)\)</text><feedback format="html"><text>This is the distribution of \(\sum X_i = 100\bar{X}\), not \(\bar{X}\). Mean of sum is \(100\times5=500\), variance is \(100\times4=400\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q07 Cochran's Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[Cochran's theorem: Let \(\mathbf{X} \sim N_n(\mathbf{0}, \sigma^2 I)\) and \(\mathbf{X}^T\mathbf{X} = \sum_{i=1}^k \mathbf{X}^T A_i \mathbf{X}\) where \(A_i\) are symmetric matrices with \(\sum A_i = I\). Then the quadratic forms \(Q_i = \mathbf{X}^T A_i \mathbf{X}/\sigma^2\) are independently distributed as \(\chi^2_{r_i}\) iff \(\sum r_i = n\), where \(r_i = \text{rank}(A_i)\). In one-way ANOVA with \(k\) groups of size \(n\), the total SS decomposes as \(SS_T = SS_B + SS_W\) where \(SS_T/\sigma^2 \sim \chi^2_{kn-1}\). What are the degrees of freedom of \(SS_W/\sigma^2\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\chi^2_{k(n-1)}\)</text><feedback format="html"><text>Total df = \(kn-1\). Between df = \(k-1\). Within df = total \(-\) between \(= (kn-1)-(k-1) = k(n-1)\). By Cochran's theorem, \(SS_B/\sigma^2 \sim \chi^2_{k-1}\) and \(SS_W/\sigma^2 \sim \chi^2_{k(n-1)}\) independently.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\chi^2_{kn-k}\)</text><feedback format="html"><text>Note \(kn-k = k(n-1)\), so this is the same as the correct answer. Both expressions are equivalent.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\chi^2_{k-1}\)</text><feedback format="html"><text>This is the degrees of freedom for \(SS_B\) (between-groups), not \(SS_W\) (within-groups).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\chi^2_{kn-2}\)</text><feedback format="html"><text>Within-group df is \(N-k = kn-k = k(n-1)\), not \(kn-2\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q08 Non-Central Chi-Square Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[If \(Z_i \sim N(\mu_i, 1)\) independently, then \(\sum_{i=1}^n Z_i^2 \sim \chi^2_n(\lambda)\), the non-central chi-square with \(n\) degrees of freedom and non-centrality parameter \(\lambda = \sum_{i=1}^n \mu_i^2\). The mean is \(E[\chi^2_n(\lambda)] =\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(n + \lambda\)</text><feedback format="html"><text>\(E[Z_i^2] = \text{Var}(Z_i) + (E[Z_i])^2 = 1+\mu_i^2\). So \(E[\sum Z_i^2] = n + \sum\mu_i^2 = n+\lambda\). Similarly \(\text{Var}(\chi^2_n(\lambda)) = 2n+4\lambda\). The non-central chi-square reduces to central chi-square when \(\lambda=0\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(n\)</text><feedback format="html"><text>This is the mean of the central chi-square. For the non-central case with \(\lambda>0\), the mean is \(n+\lambda\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\lambda\)</text><feedback format="html"><text>The mean includes both the degrees of freedom \(n\) and the non-centrality \(\lambda\): mean \(= n+\lambda\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(n + 2\lambda\)</text><feedback format="html"><text>The correct mean is \(n+\lambda\). The term \(2\lambda\) appears in the variance formula, not the mean.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q09 Distribution of Sample Range</text></name>
+    <questiontext format="html"><text><![CDATA[For \(X_1, \ldots, X_n \stackrel{iid}{\sim} U(0,\theta)\), the sample range \(R = X_{(n)} - X_{(1)}\). The joint pdf of \((X_{(1)}, X_{(n)})\) is \(f(u,v) = n(n-1)(v-u)^{n-2}\theta^{-n}\) for \(0 < u < v < \theta\). What is \(E[R]\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{(n-1)\theta}{n+1}\)</text><feedback format="html"><text>For \(U(0,\theta)\): \(E[X_{(k)}] = k\theta/(n+1)\). So \(E[R] = E[X_{(n)}] - E[X_{(1)}] = n\theta/(n+1) - \theta/(n+1) = (n-1)\theta/(n+1)\). As \(n\to\infty\), \(E[R]\to\theta\) (the range approaches the full width).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{n\theta}{n+1}\)</text><feedback format="html"><text>This is \(E[X_{(n)}]\), not \(E[R] = E[X_{(n)}] - E[X_{(1)}]\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{(n-1)\theta}{n(n+1)}\)</text><feedback format="html"><text>Incorrect; divide by \(n+1\) only (not \(n(n+1)\)). The answer is \((n-1)\theta/(n+1)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\theta}{2}\)</text><feedback format="html"><text>This would be \(E[X_{(n)}]\) for \(n=1\), or would arise from an incorrect formula. The correct answer involves \((n-1)/(n+1)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q10 Beta Distribution from Order Statistics</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X_1, \ldots, X_n \stackrel{iid}{\sim} U(0,1)\). The \(k\)-th order statistic \(X_{(k)}\) has the distribution \(\text{Beta}(k, n-k+1)\). Therefore \(E[X_{(k)}] = \dfrac{k}{n+1}\) and \(\text{Var}(X_{(k)}) = \dfrac{k(n-k+1)}{(n+1)^2(n+2)}\). For \(n=4\), the median (average of \(X_{(2)}\) and \(X_{(3)}\)) has mean:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(1/2\)</text><feedback format="html"><text>\(E[X_{(2)}] = 2/5\) and \(E[X_{(3)}] = 3/5\). The sample median for \(n=4\) is \((X_{(2)}+X_{(3)})/2\), with mean \(\frac{1}{2}(2/5+3/5) = \frac{1}{2}\times1 = 1/2\). This equals the population median of \(U(0,1)\), confirming the median is unbiased for the population median.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(2/5\)</text><feedback format="html"><text>This is \(E[X_{(2)}]\) alone. The sample median is the average of \(X_{(2)}\) and \(X_{(3)}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(3/5\)</text><feedback format="html"><text>This is \(E[X_{(3)}]\) alone. Average the two middle order statistics to get the median.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(4/5\)</text><feedback format="html"><text>This would be \(E[X_{(4)}] = 4/5\), the expected value of the maximum for \(n=4\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q11 Delta Method for Sampling Distributions</text></name>
+    <questiontext format="html"><text><![CDATA[If \(\sqrt{n}(\hat{\theta} - \theta) \xrightarrow{d} N(0, \sigma^2)\), then by the delta method, for a differentiable \(g\): \(\sqrt{n}(g(\hat{\theta}) - g(\theta)) \xrightarrow{d} N(0, [g'(\theta)]^2\sigma^2)\). For \(X_1,\ldots,X_n \stackrel{iid}{\sim} \text{Poisson}(\lambda)\), the asymptotic distribution of \(\sqrt{\bar{X}}\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\sqrt{n}\left(\sqrt{\bar{X}} - \sqrt{\lambda}\right) \xrightarrow{d} N\!\left(0,\, \tfrac{1}{4}\right)\)</text><feedback format="html"><text>\(\sqrt{n}(\bar{X}-\lambda) \xrightarrow{d} N(0,\lambda)\) (CLT for Poisson). With \(g(x)=\sqrt{x}\), \(g'(\lambda)=1/(2\sqrt{\lambda})\). Delta method: \(\sqrt{n}(\sqrt{\bar{X}}-\sqrt{\lambda})\xrightarrow{d} N(0, \lambda/(4\lambda)) = N(0,1/4)\). This variance-stabilizing transformation makes inference on \(\lambda\) easier.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sqrt{n}\left(\sqrt{\bar{X}} - \sqrt{\lambda}\right) \xrightarrow{d} N(0, \lambda)\)</text><feedback format="html"><text>The asymptotic variance after the delta method is \([g'(\lambda)]^2\sigma^2 = \frac{1}{4\lambda}\cdot\lambda = \frac{1}{4}\), not \(\lambda\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sqrt{n}\left(\sqrt{\bar{X}} - \sqrt{\lambda}\right) \xrightarrow{d} N(0, 1)\)</text><feedback format="html"><text>The asymptotic variance is \(1/4\), not 1. You would divide by 2 to get a standard normal.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sqrt{n}\left(\sqrt{\bar{X}} - \sqrt{\lambda}\right) \xrightarrow{d} N\!\left(0, \tfrac{1}{4\lambda}\right)\)</text><feedback format="html"><text>The asymptotic variance is \(1/4\), not \(1/(4\lambda)\). The square root transformation stabilizes the variance to \(1/4\) regardless of \(\lambda\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q12 Extreme Value Distributions</text></name>
+    <questiontext format="html"><text><![CDATA[For i.i.d. random variables from \(U(0,1)\), the properly normalized maximum satisfies: if \(M_n = \max(X_1,\ldots,X_n)\), then \(n(1-M_n) \xrightarrow{d}\) Exp(1) as \(n\to\infty\). More generally, the Fisher-Tippett-Gnedenko theorem says the limiting distribution of normalized maxima belongs to one of three families. For the exponential distribution, the maximum falls in the domain of attraction of:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Gumbel distribution (Type I extreme value)</text><feedback format="html"><text>For distributions with exponentially decreasing tails (like exponential, normal, gamma), the properly normalized maximum converges to the Gumbel distribution \(\Lambda(x) = e^{-e^{-x}}\). Heavy-tailed distributions (Pareto, Cauchy) attract to Fréchet; bounded distributions (uniform, beta) to Weibull.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Fréchet distribution (Type II extreme value)</text><feedback format="html"><text>The Fréchet distribution attracts distributions with power-law (heavy) tails, such as Pareto and Cauchy. The exponential distribution has light tails.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Weibull distribution (Type III extreme value)</text><feedback format="html"><text>The Weibull extreme value distribution attracts bounded distributions (like uniform and beta). The exponential distribution is unbounded above.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Normal distribution</text><feedback format="html"><text>The normal distribution is the limit of sums (CLT), not of maxima. Maxima from exponential distributions converge to the Gumbel distribution.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q13 Sampling Distribution of Proportion</text></name>
+    <questiontext format="html"><text><![CDATA[In a survey, \(n=400\) people are asked a yes/no question. If the true proportion is \(p=0.6\), the sample proportion \(\hat{p}\) has an approximate normal distribution by CLT. The probability \(P(|\hat{p} - 0.6| < 0.05)\) is approximately (use \(\Phi(2.04)\approx 0.979\)):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>0.958</text><feedback format="html"><text>\(\hat{p}\approx N(0.6, p(1-p)/n) = N(0.6, 0.24/400) = N(0.6, 0.0006)\). \(\text{SD}(\hat{p}) = \sqrt{0.0006}\approx0.0245\). \(P(|\hat{p}-0.6|<0.05) = P(|Z|<0.05/0.0245) = P(|Z|<2.04) = 2\Phi(2.04)-1 = 2(0.979)-1=0.958\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.979</text><feedback format="html"><text>This is \(\Phi(2.04)\), which is one-sided. For a two-sided probability, the answer is \(2\Phi(2.04)-1 = 0.958\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.900</text><feedback format="html"><text>Incorrect calculation. Standardize: \(0.05/\text{SE} = 0.05/0.0245 \approx 2.04\), giving probability \(\approx 0.958\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.683</text><feedback format="html"><text>This would be \(P(|\hat{p}-0.6| < \text{SE}) = P(|Z|<1)\approx 0.683\), which uses one standard error, not 0.05.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q14 Exponential Family and Sufficient Statistics via Sampling</text></name>
+    <questiontext format="html"><text><![CDATA[For \(X_1, \ldots, X_n \stackrel{iid}{\sim} \text{Gamma}(\alpha, \beta)\) with both parameters unknown, the joint sufficient statistic is \((T_1, T_2) = \left(\sum X_i,\, \sum\log X_i\right)\). The Fisher information matrix \(\mathbf{I}(\alpha,\beta)\) has \(I_{11} = \psi'(\alpha)\) where \(\psi'\) is the trigamma function. The entry \(I_{12}\) (off-diagonal) equals:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(-1/\beta\) (the negative reciprocal of the scale parameter)</text><feedback format="html"><text>The log-pdf of Gamma\((\alpha,\beta)\) is \((\alpha-1)\log x - x/\beta - \alpha\log\beta - \log\Gamma(\alpha)\). Cross-derivative: \(\frac{\partial^2}{\partial\alpha\partial\beta}\log f = \frac{1}{\beta}\). So \(I_{12} = -E\!\left[\frac{\partial^2}{\partial\alpha\partial\beta}\log f\right] = -1/\beta\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0 (parameters are orthogonal)</text><feedback format="html"><text>The gamma parameters \(\alpha\) and \(\beta\) are not orthogonal; the Fisher information matrix has a non-zero off-diagonal entry \(-1/\beta\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(1/\beta^2\)</text><feedback format="html"><text>This is related to \(I_{22}\) (the \((\alpha,\alpha)\) component from the scale parameter). The off-diagonal is \(-1/\beta\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\alpha/\beta^2\)</text><feedback format="html"><text>This equals \(I_{22}\) (the Fisher information for \(\beta\) given \(\alpha\)). The off-diagonal \(I_{12} = -1/\beta\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q15 Convergence in Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X_n \sim \text{Binomial}(n, \lambda/n)\) for fixed \(\lambda > 0\). As \(n \to \infty\), the limiting distribution of \(X_n\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Poisson\((\lambda)\)</text><feedback format="html"><text>The Poisson limit theorem: \(P(X_n=k) = \binom{n}{k}(\lambda/n)^k(1-\lambda/n)^{n-k} \to e^{-\lambda}\lambda^k/k!\) as \(n\to\infty\). This is the "law of rare events" — when \(n\) is large but \(p=\lambda/n\) is small, the Binomial converges to Poisson.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N(\lambda, \lambda)\)</text><feedback format="html"><text>The normal approximation applies when \(n\to\infty\) with fixed \(p\). Here \(p\to0\) as \(n\to\infty\), giving Poisson, not normal.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N(0,1)\)</text><feedback format="html"><text>The CLT requires fixed \(p\) (with \(np\to\infty\)). For \(p=\lambda/n\to0\), the limit is Poisson(\(\lambda\)).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Geometric\((\lambda)\)</text><feedback format="html"><text>The geometric distribution arises as the limit of negative binomial, not as the Poisson limit theorem.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q16 Sampling Distribution — Ratio of Chi-Squares</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X\sim\chi^2_m\) and \(Y\sim\chi^2_n\) be independent. The ratio \(B = \dfrac{X/m}{X/m + Y/n}\) follows a \(\text{Beta}(m/2, n/2)\) distribution. This connection is used because: if \(F\sim F_{m,n}\), then in terms of a Beta-distributed variable:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(B = \dfrac{mF}{mF + n} \sim \text{Beta}(m/2,\, n/2)\)</text><feedback format="html"><text>With \(F = (X/m)/(Y/n)\): \(B = \frac{X/m}{X/m+Y/n} = \frac{F}{F+n/m} = \frac{mF}{mF+n}\). So \(P(F \leq f) = P(B \leq mf/(mf+n))\), allowing \(F\)-distribution quantiles to be computed via the incomplete beta function.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(B = mF/(n) \sim \text{Beta}(m/2, n/2)\)</text><feedback format="html"><text>Incorrect transformation. The Beta variable requires the denominator \(mF+n\), not just \(n\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(B = F/(F+1) \sim \text{Beta}(m/2, n/2)\)</text><feedback format="html"><text>This formula works only for \(F_{m,m}\) (equal degrees of freedom). In general, the formula involves \(n/m\) in the denominator.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(B = n/(mF+n) \sim \text{Beta}(m/2, n/2)\)</text><feedback format="html"><text>This gives \(1-B\) (the complement), which follows \(\text{Beta}(n/2, m/2)\), not \(\text{Beta}(m/2, n/2)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q17 Berry-Esseen Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[The Berry-Esseen theorem quantifies the rate of CLT convergence. Let \(X_1, \ldots, X_n\) be i.i.d. with mean 0, variance \(\sigma^2\), and \(E[|X|^3] = \rho < \infty\). Let \(F_n\) be the CDF of \(S_n/(\sigma\sqrt{n})\). Then: \(\sup_x|F_n(x) - \Phi(x)| \leq \dfrac{C\rho}{\sigma^3\sqrt{n}}\) for a universal constant \(C\). The best known \(C\) is approximately 0.4748. This means the CLT approximation error is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Of order \(O(1/\sqrt{n})\)</text><feedback format="html"><text>The Berry-Esseen bound is \(O(\rho/(\sigma^3\sqrt{n})) = O(1/\sqrt{n})\). This gives the rate at which the normalized sum converges to normality: the error decreases like \(n^{-1/2}\). Distributions with finite third moment have this convergence rate.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Of order \(O(1/n)\)</text><feedback format="html"><text>The rate is \(O(1/\sqrt{n})\), not \(O(1/n)\). The \(O(1/n)\) rate would correspond to the Edgeworth expansion correction.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Exactly zero for all \(n \geq 30\)</text><feedback format="html"><text>The error is never exactly zero for finite \(n\) (unless the distribution is exactly normal). The rule of thumb "\(n\geq30\)" is just a practical guideline for approximate normality.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Of order \(O(e^{-n})\)</text><feedback format="html"><text>Exponential convergence characterizes moment generating function arguments (Cramér's theorem for large deviations), not the CLT uniform convergence rate.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q18 Multivariate Normal — Marginal and Conditional</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(\begin{pmatrix}X\\Y\end{pmatrix}\sim N_2\!\left(\begin{pmatrix}\mu_X\\\mu_Y\end{pmatrix}, \begin{pmatrix}\sigma_X^2 & \rho\sigma_X\sigma_Y \\ \rho\sigma_X\sigma_Y & \sigma_Y^2\end{pmatrix}\right)\). The conditional distribution of \(Y|X=x\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(N\!\left(\mu_Y + \rho\dfrac{\sigma_Y}{\sigma_X}(x-\mu_X),\; \sigma_Y^2(1-\rho^2)\right)\)</text><feedback format="html"><text>The conditional mean is \(\mu_{Y|X} = \mu_Y + \Sigma_{YX}\Sigma_{XX}^{-1}(x-\mu_X) = \mu_Y + \rho\sigma_Y/\sigma_X\cdot(x-\mu_X)\) and conditional variance is \(\sigma_{Y|X}^2 = \sigma_Y^2 - \Sigma_{YX}\Sigma_{XX}^{-1}\Sigma_{XY} = \sigma_Y^2(1-\rho^2)\). Note: conditional variance is independent of \(x\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N\!\left(\mu_Y + \rho(x-\mu_X),\; \sigma_Y^2(1-\rho^2)\right)\)</text><feedback format="html"><text>The regression coefficient should be \(\rho\sigma_Y/\sigma_X\), not just \(\rho\). The units don't match without the ratio \(\sigma_Y/\sigma_X\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N\!\left(\mu_Y,\; \sigma_Y^2(1-\rho^2)\right)\)</text><feedback format="html"><text>The conditional mean is \(\mu_Y\) only when \(x=\mu_X\). In general, it depends on \(x\) through the regression term.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N\!\left(\mu_Y + \rho\dfrac{\sigma_Y}{\sigma_X}(x-\mu_X),\; \sigma_Y^2\right)\)</text><feedback format="html"><text>The conditional variance is \(\sigma_Y^2(1-\rho^2)\), not \(\sigma_Y^2\). Conditioning reduces uncertainty when \(\rho\neq0\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q19 Slutsky's Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[Slutsky's theorem: If \(X_n \xrightarrow{d} X\) and \(Y_n \xrightarrow{P} c\) (constant), then \(X_n + Y_n \xrightarrow{d} X + c\) and \(X_n Y_n \xrightarrow{d} cX\). For \(T_n = \dfrac{\sqrt{n}(\bar{X}-\mu)}{S}\) where \(\sqrt{n}(\bar{X}-\mu)/\sigma \xrightarrow{d} N(0,1)\) and \(S \xrightarrow{P} \sigma\), Slutsky's theorem gives \(T_n \xrightarrow{d}\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(N(0,1)\)</text><feedback format="html"><text>\(T_n = \frac{\sqrt{n}(\bar{X}-\mu)}{\sigma} \cdot \frac{\sigma}{S}\). The first factor \(\xrightarrow{d}N(0,1)\), and the second factor \(\sigma/S\xrightarrow{P}1\). By Slutsky's theorem, their product \(\xrightarrow{d}N(0,1)\). This justifies using \(t\)-critical values (approximately \(z\)-values) for large samples.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(t_n\)</text><feedback format="html"><text>The exact distribution is \(t_{n-1}\) under normality. But asymptotically (as \(n\to\infty\)), \(T_n\xrightarrow{d}N(0,1)\) by Slutsky's theorem (no normality assumption needed).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Cauchy distribution</text><feedback format="html"><text>The Cauchy distribution is the limit when the denominator has heavy tails or the numerator isn't controlled. Here the denominator \(S\to\sigma\) in probability, giving a normal limit.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N(0, \sigma^2)\)</text><feedback format="html"><text>After standardizing by \(S\), the limiting variance is 1, not \(\sigma^2\). The \(t\)-statistic is already scaled.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT24-Q20 Empirical CDF and Glivenko-Cantelli</text></name>
+    <questiontext format="html"><text><![CDATA[The empirical CDF is \(F_n(x) = \dfrac{1}{n}\sum_{i=1}^n \mathbf{1}(X_i \leq x)\). The Glivenko-Cantelli theorem states \(\sup_x|F_n(x) - F(x)| \xrightarrow{a.s.} 0\). For fixed \(x\), by the CLT, the asymptotic distribution of \(\sqrt{n}(F_n(x) - F(x))\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(N(0,\, F(x)(1-F(x)))\)</text><feedback format="html"><text>\(F_n(x) = \frac{1}{n}\sum\mathbf{1}(X_i\leq x)\) is the mean of i.i.d. Bernoulli\((F(x))\) variables. By CLT: \(\sqrt{n}(F_n(x)-F(x)) \xrightarrow{d} N(0, F(x)(1-F(x)))\). The variance \(F(x)(1-F(x))\) is maximized at \(F(x)=1/2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N(0,1)\)</text><feedback format="html"><text>The variance is \(F(x)(1-F(x))\), not 1. The \(N(0,1)\) limit would require dividing by \(\sqrt{F(x)(1-F(x))}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N(F(x),\, F(x)(1-F(x)))\)</text><feedback format="html"><text>After centering by \(F(x)\), the mean is 0. The centering \(\sqrt{n}(F_n(x)-F(x))\) has mean 0.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Uniform\((0,1)\)</text><feedback format="html"><text>The CLT gives a normal limit for the rescaled empirical CDF, not a uniform distribution.</text></feedback></answer>
+  </question>
+
+</quiz>

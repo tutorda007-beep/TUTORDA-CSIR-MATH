@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Partial Differential Equations/Green Functions and Boundary Value Problems</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q01_Green_Function_Definition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Green's function \(G(x,y)\) for the operator \(L = -\Delta\) on \(\Omega\) with Dirichlet BCs satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(-\Delta_x G(x,y) = \delta(x-y)\) in \(\Omega\),\quad \(G(x,y) = 0\) for \(x \in \partial\Omega\).]]></text>
+      <feedback><text>Correct. The Green's function is the fundamental solution corrected to satisfy zero boundary conditions. Given G, the solution to −Δu=f with u=0 on ∂Ω is u(x)=∫_Ω G(x,y)f(y)dy.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(-\Delta_x G(x,y) = 0\) in \(\Omega\), \(G(x,y) = \delta(x-y)\) on \(\partial\Omega\).]]></text>
+      <feedback><text>This reverses the roles: the delta source is in the interior, not on the boundary. The boundary condition is G=0 (Dirichlet), not G=δ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(-\Delta_x G(x,y) = 1\) (unit source everywhere)]]></text>
+      <feedback><text>A unit source everywhere corresponds to solving −Δu=1 (Poisson equation), not the Green's function which uses a point source δ(x−y).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,y) = \Phi(x-y)\) (fundamental solution, no boundary correction)]]></text>
+      <feedback><text>The fundamental solution Φ does not vanish on ∂Ω in general. The Green's function G=Φ−h^y where h^y is harmonic and chosen so G=0 on ∂Ω.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q02_Green_Symmetry</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Green's function for the Dirichlet Laplacian on a bounded domain \(\Omega\) satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(G(x,y) = G(y,x)\) (symmetry).]]></text>
+      <feedback><text>Correct. The Green's function of a self-adjoint operator (like −Δ with Dirichlet BCs) is symmetric: G(x,y)=G(y,x). This follows from Green's second identity: ∫(G(x,·)ΔG(y,·)−G(y,·)ΔG(x,·))=0 gives G(x,y)=G(y,x).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,y) = -G(y,x)\) (antisymmetry).]]></text>
+      <feedback><text>The Green's function of a self-adjoint elliptic operator is symmetric, not antisymmetric. G(x,y)=G(y,x).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,y) \geq 0\) for all \(x,y \in \Omega\) (non-negativity).]]></text>
+      <feedback><text>The Green's function IS non-negative for the Dirichlet Laplacian on bounded domains (by the maximum principle). While this is a correct statement, the specific symmetry property G(x,y)=G(y,x) is the key property asked about.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,y) = G(x+y, 0)\) (translation invariance).]]></text>
+      <feedback><text>Translation invariance holds only when Ω=ℝⁿ (or a half-space/whole space). For general bounded domains, G depends on both x and y separately, not just x+y.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q03_Neumann_Green</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Neumann Green's function (also called the Neumann function) \(N(x,y)\) for \(-\Delta\) on \(\Omega\) satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(-\Delta_x N(x,y) = \delta(x-y) - \dfrac{1}{|\Omega|}\) in \(\Omega\),\quad \dfrac{\partial N}{\partial\nu_x} = 0\) on \(\partial\Omega\).]]></text>
+      <feedback><text>Correct. For the Neumann problem, the compatibility condition requires a correction: the source is δ(x−y)−1/|Ω| (average subtracted to ensure the Neumann compatibility condition ∫(RHS)=0). The Neumann function is unique up to a constant.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(-\Delta_x N(x,y) = \delta(x-y)\) in \(\Omega\),\quad \(N = 0\) on \(\partial\Omega\)]]></text>
+      <feedback><text>This is the Dirichlet Green's function, not the Neumann function. For Neumann BCs, the normal derivative of N vanishes on ∂Ω.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(-\Delta_x N(x,y) = \delta(x-y)\) in \(\Omega\),\quad \(\dfrac{\partial N}{\partial\nu} = 0\) on \(\partial\Omega\)]]></text>
+      <feedback><text>Without the compatibility correction, −ΔN=δ(x−y) with Neumann BCs has no solution (since ∫δ(x−y)dx=1≠0=∫(∂N/∂ν)dS by the divergence theorem). The correct equation has δ(x−y)−1/|Ω| on the right.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(N(x,y) = G(x,y)\) (Dirichlet and Neumann Green's functions are the same)]]></text>
+      <feedback><text>The Dirichlet and Neumann Green's functions are different objects (different boundary conditions). They satisfy different PDEs on the boundary.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q04_Wave_Green</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The retarded Green's function for the 1D wave equation \(u_{tt} - c^2 u_{xx} = f(x,t)\) on \(\mathbb{R}\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(G(x,t;\xi,\tau) = \dfrac{1}{2c}\,\mathbf{1}_{|x-\xi| < c(t-\tau)}\,\mathbf{1}_{t>\tau}\)]]></text>
+      <feedback><text>Correct. The retarded Green's function for the 1D wave operator is (1/2c) times the indicator of the forward light cone |x−ξ|<c(t−τ). It satisfies □G=δ(x−ξ)δ(t−τ) with G=0 for t<τ. The solution by Duhamel is u=∫∫G f dξ dτ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,t;\xi,\tau) = \delta(|x-\xi| - c(t-\tau))/(2c)\)]]></text>
+      <feedback><text>This is the 1D Green's function expressed as a delta function on the light cone. In 1D this equals (1/2c)·1_{|x−ξ|=c(t−τ)}, which is the derivative of the retarded Green's function (related to the wave front, not the full cone).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,t;\xi,\tau) = \dfrac{1}{4\pi c^2(t-\tau)}\,\delta(|x-\xi| - c(t-\tau))\)]]></text>
+      <feedback><text>This is the 3D retarded Green's function (Kirchhoff kernel), not the 1D one. In 1D, G is supported on the interior of the light cone (not just the surface).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,t;\xi,\tau) = \dfrac{1}{\sqrt{4\pi c(t-\tau)}}\exp\!\left(-\dfrac{(x-\xi)^2}{4c(t-\tau)}\right)\)]]></text>
+      <feedback><text>This is the heat kernel, not the wave equation Green's function. The wave equation Green's function has compact support on the light cone, not a Gaussian.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q05_Sturm_Liouville_Green</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the Sturm-Liouville problem \(Lu = -(pu')' + qu = f\) on \([a,b]\) with Dirichlet BCs, the Green's function \(G(x,y)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(G(x,y) = \dfrac{1}{W}\begin{cases} u_1(x)\,u_2(y) & x \leq y \\ u_1(y)\,u_2(x) & x \geq y\end{cases}\), where \(u_1,u_2\) satisfy the BCs at \(a,b\) respectively and \(W = p(u_1'u_2 - u_1u_2')\).]]></text>
+      <feedback><text>Correct. The Green's function for a Sturm-Liouville BVP is built from two solutions u₁ (satisfying the left BC) and u₂ (satisfying the right BC), normalized by the Wronskian W. The jump condition from the delta source is incorporated in this formula.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,y) = u_1(x)u_2(y)\) for all \(x,y\)]]></text>
+      <feedback><text>Using u₁u₂ for all x,y without the piecewise structure violates the required symmetry G(x,y)=G(y,x) and does not satisfy the delta-source equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,y) = \displaystyle\sum_n \dfrac{\phi_n(x)\phi_n(y)}{\lambda_n}\) (spectral expansion only)]]></text>
+      <feedback><text>The spectral expansion G(x,y)=Σφₙ(x)φₙ(y)/λₙ is valid when all eigenvalues λₙ>0 and gives the same Green's function. But the piecewise formula is the direct construction using fundamental solutions.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,y) = \Phi(x-y)\) (translation-invariant fundamental solution)]]></text>
+      <feedback><text>The translation-invariant fundamental solution applies to constant coefficient operators on ℝⁿ. Sturm-Liouville operators have variable coefficients, requiring the piecewise construction.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q06_Eigenfunction_Expansion</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The solution of \(-\Delta u = f\) in \(\Omega\), \(u=0\) on \(\partial\Omega\), can be written in terms of eigenfunctions \(\phi_n\) of \(-\Delta\) as:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u = \displaystyle\sum_n \dfrac{f_n}{\lambda_n}\phi_n\), where \(f_n = \displaystyle\int_\Omega f\,\phi_n\,dx\) and \(-\Delta\phi_n = \lambda_n\phi_n\).]]></text>
+      <feedback><text>Correct. Expanding u = Σaₙφₙ and f = Σfₙφₙ in eigenfunctions, then −Δu = Σaₙλₙφₙ = Σfₙφₙ implies aₙ=fₙ/λₙ. This is valid since λₙ>0 for the Dirichlet Laplacian.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = \displaystyle\sum_n \lambda_n f_n\phi_n\)]]></text>
+      <feedback><text>Inverted: the correct formula divides by λₙ (the eigenvalue), not multiplies. Dividing corresponds to inverting the operator −Δ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = \displaystyle\sum_n f_n\phi_n = f\) (trivially).]]></text>
+      <feedback><text>This would give u=f, which satisfies −Δu=−Δf≠f in general. The eigenfunction expansion of the SOLUTION requires dividing by eigenvalues.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = \displaystyle\sum_n \dfrac{f_n}{\lambda_n^2}\phi_n\)]]></text>
+      <feedback><text>Dividing by λₙ² would arise from solving (−Δ)²u=f (biharmonic), not −Δu=f. The Laplacian requires division by λₙ, not λₙ².</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q07_Mixed_BC</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Robin (or mixed) boundary condition for the Poisson equation \(-\Delta u = f\) in \(\Omega\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\alpha u + \beta \dfrac{\partial u}{\partial\nu} = g\) on \(\partial\Omega\), with \(\alpha, \beta \geq 0\), \(\alpha+\beta > 0\).]]></text>
+      <feedback><text>Correct. Robin BCs interpolate between Dirichlet (β=0) and Neumann (α=0). They arise naturally in heat transfer (Newton's cooling law: heat flux proportional to temperature difference). For α,β>0, the problem has a unique solution.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = 0\) on part of \(\partial\Omega\) and \(\partial u/\partial\nu = 0\) on the rest (mixed Dirichlet-Neumann)]]></text>
+      <feedback><text>This is a mixed Dirichlet-Neumann condition (different BCs on different parts of ∂Ω), not the Robin condition (which is a linear combination αu+β∂u/∂ν on the same boundary portion).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Delta u = 0\) on \(\partial\Omega\) (harmonic boundary condition)]]></text>
+      <feedback><text>This is not a standard boundary condition for elliptic PDEs. Boundary conditions specify u or ∂u/∂ν (or linear combinations) on ∂Ω, not values of Δu there.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x) = u(x+\ell)\) (periodic boundary condition)]]></text>
+      <feedback><text>This is a periodic boundary condition, used for torus domains. The Robin condition is αu+β∂u/∂ν=g, not a periodicity requirement.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q08_Heat_Green</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Green's function for the heat equation \(u_t - k\Delta u = f\) on \(\Omega \times (0,T)\) with \(u=0\) on \(\partial\Omega\) and \(u(x,0)=0\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(G(x,t;\xi,\tau) = \displaystyle\sum_n e^{-k\lambda_n(t-\tau)}\phi_n(x)\phi_n(\xi)\,\mathbf{1}_{t>\tau}\)]]></text>
+      <feedback><text>Correct. The heat kernel on Ω with Dirichlet BCs expands in eigenfunctions: G(x,t;ξ,τ) = Σ_n e^{−kλₙ(t−τ)} φₙ(x)φₙ(ξ) for t>τ, using the eigenvalues/eigenfunctions of −Δ with Dirichlet BCs.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,t;\xi,\tau) = \dfrac{1}{(4\pi k(t-\tau))^{n/2}}\exp\!\left(-\dfrac{|x-\xi|^2}{4k(t-\tau)}\right)\)]]></text>
+      <feedback><text>This is the free-space heat kernel on ℝⁿ. For bounded Ω with Dirichlet BCs, the Green's function must vanish on ∂Ω and involves the eigenfunction expansion, not the full-space Gaussian.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,t;\xi,\tau) = \delta(x-\xi)\,e^{-k\lambda_1(t-\tau)}\)]]></text>
+      <feedback><text>Using only the first eigenmode is not the complete Green's function. All modes contribute: G = Σₙ e^{−kλₙ(t−τ)}φₙ(x)φₙ(ξ).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,t;\xi,\tau) = G(x,t-\tau;\xi,0)\) (time-translation invariant only, no spatial component)]]></text>
+      <feedback><text>While G is time-translation invariant (depends on t−τ, not t and τ separately), this statement alone does not specify what G is. The complete formula involves the eigenfunction expansion.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q09_Spectral_Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the Dirichlet Laplacian \(-\Delta\) on a bounded domain \(\Omega \subset \mathbb{R}^n\), the spectral theorem asserts:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The eigenvalues \(0 < \lambda_1 \leq \lambda_2 \leq \cdots \to \infty\) are positive and the eigenfunctions \(\phi_n\) form a complete orthonormal basis for \(L^2(\Omega)\).]]></text>
+      <feedback><text>Correct. The Dirichlet Laplacian is a positive self-adjoint operator with compact resolvent on bounded Ω. Its spectrum consists of positive eigenvalues accumulating at +∞, and the eigenfunctions form a complete ONB for L²(Ω).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The eigenvalues can be negative, zero, or positive depending on \(\Omega\).]]></text>
+      <feedback><text>For the Dirichlet Laplacian (with Dirichlet BCs u=0 on ∂Ω), all eigenvalues are strictly positive. This follows from the energy identity ∫|∇φ|² = λ∫φ² (so λ=‖∇φ‖²/‖φ‖²>0 for φ≢0).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[There are only finitely many eigenvalues for bounded \(\Omega\).]]></text>
+      <feedback><text>There are infinitely many eigenvalues, accumulating at +∞. The operator has compact resolvent, which implies a discrete (not finite) spectrum.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The eigenfunctions are polynomials restricted to \(\Omega\).]]></text>
+      <feedback><text>Eigenfunctions are not polynomials in general; they satisfy −Δφ=λφ with Dirichlet BCs. For simple domains (rectangles, balls, spheres), they are products of trigonometric/Bessel functions, not polynomials.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q10_Weyl_Law</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Weyl's law describes the asymptotic distribution of eigenvalues of \(-\Delta\) on a bounded domain \(\Omega \subset \mathbb{R}^n\): the counting function \(N(\lambda) = \#\{n : \lambda_n \leq \lambda\}\) satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(N(\lambda) \sim \dfrac{\omega_n}{(2\pi)^n}|\Omega|\,\lambda^{n/2}\) as \(\lambda \to \infty\)]]></text>
+      <feedback><text>Correct. Weyl's law: N(λ) ~ (ωₙ/(2π)ⁿ)|Ω|λ^{n/2} where ωₙ is the volume of the unit ball in ℝⁿ. Equivalently, λₙ ~ (2π)²(n/ωₙ|Ω|)^{2/n}·n^{2/n}. This shows eigenvalue density depends on the volume of Ω.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(N(\lambda) \sim C\,e^{\lambda}\) (exponential growth)]]></text>
+      <feedback><text>The eigenvalue counting function grows polynomially (λ^{n/2}), not exponentially. Exponential growth would occur for infinite-dimensional problems, not the finite-volume Laplacian.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(N(\lambda) \sim C\,\lambda\) in all dimensions (linear growth)]]></text>
+      <feedback><text>Linear growth N~Cλ is Weyl's law only in n=2. In general dimension n, N(λ)~Cλ^{n/2}. For n=1: N~Cλ^{1/2}, for n=3: N~Cλ^{3/2}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(N(\lambda) = |\partial\Omega|\,\lambda^{(n-1)/2}\) (perimeter-dependent)]]></text>
+      <feedback><text>The leading term in Weyl's law depends on the volume |Ω|, not the perimeter. Perimeter (surface area) appears in the second term of the Weyl expansion (Weyl conjecture, now a theorem).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q11_Inhomogeneous_BC</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The solution of \(-\Delta u = 0\) in \(\Omega\), \(u = g\) on \(\partial\Omega\) via the Green's function is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x) = -\displaystyle\oint_{\partial\Omega} g(y)\dfrac{\partial G}{\partial\nu_y}(x,y)\,dS_y\)]]></text>
+      <feedback><text>Correct. For the Laplace equation with Dirichlet boundary data g, Green's formula gives u(x) = −∮_{∂Ω} g(y)(∂G/∂ν_y)(x,y)dS_y. The normal derivative of G (Poisson kernel) acts as the reproducing kernel for boundary data.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x) = \displaystyle\oint_{\partial\Omega} G(x,y)\,g(y)\,dS_y\)]]></text>
+      <feedback><text>G(x,y)=0 for y∈∂Ω (Dirichlet Green's function), so this integral is identically 0. The correct formula uses the normal derivative ∂G/∂ν_y (Poisson kernel), not G itself.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x) = \displaystyle\int_\Omega G(x,y)\,g(y)\,dy\)]]></text>
+      <feedback><text>Volume integrals with G give solutions when there is a volume source. For boundary data with no interior source, the formula uses the boundary integral with ∂G/∂ν.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x) = g(x)\) restricted to \(\Omega\)]]></text>
+      <feedback><text>g is defined on ∂Ω (boundary data), not on Ω. The solution u is the harmonic extension of g into the interior, computed via the Poisson kernel integral.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q12_BVP_Half_Space</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Poisson kernel for the upper half-space \(\mathbb{R}^n_+ = \{x : x_n > 0\}\) (solving \(\Delta u=0\) with \(u(x',0)=f(x')\)) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x',x_n) = \dfrac{2x_n}{\omega_n}\displaystyle\int_{\mathbb{R}^{n-1}} \dfrac{f(y')}{(|x'-y'|^2+x_n^2)^{n/2}}\,dy'\)]]></text>
+      <feedback><text>Correct. The Poisson kernel for the upper half-space is P(x',x_n;y') = 2x_n/(ωₙ(|x'−y'|²+x_n²)^{n/2}). In 3D: P = x₃/(2π(|x'−y'|²+x₃²)^{3/2}). This kernel satisfies ΔP=0, P→0 as x_n→∞, and P→δ(x'−y') as x_n→0⁺.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x',x_n) = \displaystyle\int_{\mathbb{R}^{n-1}} f(y')\,\delta(x'-y')\,dy' = f(x')\) (trivially)]]></text>
+      <feedback><text>The solution to Laplace's equation cannot be trivially f(x') in the interior (that would mean u has no xₙ-dependence, violating harmonicity unless f is harmonic itself).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x',x_n) = e^{-x_n}f(x')\) (exponential decay)]]></text>
+      <feedback><text>e^{−xₙ}f(x') satisfies u_{x_nx_n}=e^{−xₙ}f(x'), which combines with the x' Laplacian term to give Δu=e^{−xₙ}(f−Δ_{x'}f)≠0 unless f is harmonic. This is not the Poisson formula.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x',x_n) = \dfrac{1}{(4\pi x_n)^{(n-1)/2}}\displaystyle\int e^{-|x'-y'|^2/(4x_n)}f(y')\,dy'\)]]></text>
+      <feedback><text>This is the heat kernel convolution with time = xₙ, solving the heat equation (not Laplace's equation). The Poisson formula for the half-space uses the algebraic Poisson kernel, not the Gaussian.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q13_Well_Posedness_BVP</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the Dirichlet problem \(-\Delta u = f\) in \(\Omega\), \(u=g\) on \(\partial\Omega\), the Lax-Milgram theorem guarantees a unique weak solution \(u \in H^1_0(\Omega)\) when:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(f \in H^{-1}(\Omega)\) (the dual of \(H^1_0(\Omega)\)) and \(g = 0\) on \(\partial\Omega\) (or \(g \in H^{1/2}(\partial\Omega)\) in general).]]></text>
+      <feedback><text>Correct. The bilinear form a(u,v)=∫∇u·∇v dx is coercive and continuous on H¹₀(Ω) by Poincaré's inequality. Lax-Milgram then gives a unique u∈H¹₀ for each f∈H⁻¹. Non-zero Dirichlet data requires lifting to homogeneous BCs.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f \in C(\Omega)\) (continuous \(f\)) and \(g \in C(\partial\Omega)\)]]></text>
+      <feedback><text>Classical continuity is sufficient for the classical solution (using maximum principle and Schauder estimates), but Lax-Milgram works in the Sobolev space framework with f∈H⁻¹, broader than C(Ω).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Omega\) must be convex for the Lax-Milgram theorem to apply.]]></text>
+      <feedback><text>Lax-Milgram applies to any bounded Lipschitz domain Ω. Convexity gives additional regularity (u∈H²) but is not required for existence of the weak solution.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The theorem fails for \(-\Delta\) (it only applies to first-order operators).]]></text>
+      <feedback><text>Lax-Milgram applies to any bounded, coercive bilinear form on a Hilbert space. The bilinear form for −Δ (Dirichlet problem) is a(u,v)=∫∇u·∇v, which is coercive by Poincaré's inequality.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q14_Integral_Equations</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The double layer potential \(u(x) = \displaystyle\oint_{\partial\Omega} \dfrac{\partial\Phi}{\partial\nu_y}(x-y)\,\phi(y)\,dS_y\) (for \(x \in \Omega\)) satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\Delta u = 0\) in \(\Omega\) (harmonic in the interior).]]></text>
+      <feedback><text>Correct. Both single and double layer potentials are harmonic in the complement of the boundary ∂Ω (since Φ(x−y) is harmonic in x for x≠y). They are used in boundary integral equation methods to solve Laplace's equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Delta u = \phi\) on \(\partial\Omega\) (source on boundary).]]></text>
+      <feedback><text>The layer potential is harmonic in the INTERIOR (and exterior) of Ω. The source density φ lives on ∂Ω and the jump conditions relate the boundary values of u to φ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Delta u = 1\) throughout \(\Omega\) (uniform source).]]></text>
+      <feedback><text>Layer potentials are harmonic (Δu=0), not uniformly sourced (Δu=1). Newton potentials (volume integrals with Φ) produce Poisson equations.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The double layer potential is not harmonic; it satisfies the heat equation.]]></text>
+      <feedback><text>The double layer potential for Laplace's equation is harmonic (Δu=0) in the interior and exterior of ∂Ω. Heat equation solutions require a heat kernel, not the Laplace fundamental solution.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q15_Jump_Conditions</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The jump condition for the double layer potential \(u(x) = \displaystyle\oint_{\partial\Omega} \dfrac{\partial\Phi(x-y)}{\partial\nu_y}\phi(y)\,dS_y\) as \(x \to x_0 \in \partial\Omega\) from inside \(\Omega\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u^+(x_0) = \tfrac{1}{2}\phi(x_0) + \displaystyle\oint_{\partial\Omega} \dfrac{\partial\Phi}{\partial\nu_y}(x_0-y)\phi(y)\,dS_y\)]]></text>
+      <feedback><text>Correct. The double layer potential has a jump of ±φ/2 across ∂Ω. The limiting value from inside ("+") is u⁺(x₀) = φ(x₀)/2 + P.V.∮(∂Φ/∂ν_y)φ dS. From outside: u⁻(x₀) = −φ(x₀)/2 + P.V.∮(∂Φ/∂ν_y)φ dS.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u^+(x_0) = u^-(x_0)\) (no jump — the double layer potential is continuous)]]></text>
+      <feedback><text>The double layer potential has a jump discontinuity of φ(x₀) across ∂Ω. It is the normal derivative of the single layer potential that may be continuous (or have a jump).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u^+(x_0) = \phi(x_0)\) (limit equals the density)]]></text>
+      <feedback><text>The limit equals (1/2)φ(x₀) plus the principal value integral, not just φ(x₀) alone.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u^+(x_0) = 0\) (double layer potential vanishes on \(\partial\Omega\))]]></text>
+      <feedback><text>The double layer potential does not vanish on ∂Ω in general; it has a well-defined (but jumpy) boundary trace involving φ and a principal value integral.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q16_Fredholm_BIE</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Seeking a solution of the interior Dirichlet problem as a double layer potential \(u = K\phi\) leads to the Fredholm integral equation of the second kind:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\tfrac{1}{2}\phi(x) + \displaystyle\oint_{\partial\Omega} \dfrac{\partial\Phi(x-y)}{\partial\nu_y}\phi(y)\,dS_y = g(x)\), \(x \in \partial\Omega\)]]></text>
+      <feedback><text>Correct. Applying the boundary data condition u⁺=g and using the jump relation gives the Fredholm second kind integral equation (I/2 + K)φ = g where K is the double layer operator. This can be solved by Fredholm theory (compact perturbation of identity).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\displaystyle\oint_{\partial\Omega} \dfrac{\partial\Phi(x-y)}{\partial\nu_y}\phi(y)\,dS_y = g(x)\) (Fredholm first kind)]]></text>
+      <feedback><text>First kind equations (no φ(x) outside the integral) are typically ill-posed. The double layer approach gives a second kind equation with the (1/2)φ(x) term from the jump condition.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\phi(x) = g(x)\) (trivial — no integral equation needed)]]></text>
+      <feedback><text>The density φ is not equal to the boundary data g directly. The integral equation relating φ and g must be solved to find φ, then u is reconstructed from φ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Delta\phi + g = 0\) (PDE for the density \(\phi\))]]></text>
+      <feedback><text>The density φ lives on ∂Ω (a 1-codimensional manifold) and satisfies an integral equation, not a PDE in Ω.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q17_Capacity</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The capacity (or logarithmic capacity in 2D) of a compact set \(K \subset \mathbb{R}^n\) is related to the Green's function \(G_K\) by:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The equilibrium measure on \(K\) minimizes the energy \(\displaystyle\iint \log\dfrac{1}{|x-y|}d\mu(x)d\mu(y)\) over probability measures supported on \(K\).]]></text>
+      <feedback><text>Correct. The logarithmic capacity in 2D is defined via the equilibrium problem: the capacity C(K)=exp(−min energy) where the energy is the logarithmic energy. In higher dimensions, the Riesz s-energy and Newton capacity play analogous roles.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The capacity equals the volume \(|K|\) of the compact set.]]></text>
+      <feedback><text>Capacity is a potential-theoretic concept, not the Lebesgue measure. A set can have zero Lebesgue measure but positive capacity (e.g., a smooth hypersurface in ℝⁿ).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Sets of zero capacity can support Dirichlet boundary conditions for the Laplacian.]]></text>
+      <feedback><text>Sets of zero capacity are "negligible" for the Laplacian — the Dirichlet problem cannot use them as boundary since solutions cannot detect such sets. Only sets of positive capacity can carry meaningful boundary conditions.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The capacity of a ball \(B(0,r)\) in \(\mathbb{R}^3\) is proportional to \(r^2\).]]></text>
+      <feedback><text>The Newtonian capacity of B(0,r) in ℝ³ is proportional to r (not r²). The capacity of a ball scales like r^{n−2} in ℝⁿ for n≥3.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q18_Regularity_Boundary</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A boundary point \(x_0 \in \partial\Omega\) is called regular (for the Dirichlet problem) if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The Perron solution \(u\) satisfies \(u(x) \to g(x_0)\) as \(x \to x_0\) from inside \(\Omega\), for every continuous boundary data \(g\).]]></text>
+      <feedback><text>Correct. A boundary point is regular if the Perron solution takes the prescribed boundary value there. Regular points are characterized by the existence of a barrier (a local superharmonic function vanishing at x₀). Irregular points arise at cusps, cracks, or isolated points (Lebesgue's thorn example).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\partial\Omega\) is smooth (C¹) near \(x_0\).]]></text>
+      <feedback><text>C¹ smooth boundary points are regular, but regularity is a weaker condition. For example, points on a Lipschitz boundary (not necessarily C¹) are also regular.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(x_0\) is an interior point of \(\Omega\).]]></text>
+      <feedback><text>Regularity is a concept for BOUNDARY points x₀∈∂Ω. Interior points always satisfy the Perron property by the mean value theorem.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Green's function \(G(x,x_0) \to \infty\) as \(x \to x_0\).]]></text>
+      <feedback><text>The fundamental solution Φ(x−y)→∞ as x→y, but this is a property of the source point (interior), not the boundary regularity. Boundary regularity concerns the behavior of harmonic functions near ∂Ω.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q19_Poincare_Inequality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Poincaré's inequality states: for \(u \in H^1_0(\Omega)\) (bounded \(\Omega \subset \mathbb{R}^n\)):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\|u\|_{L^2(\Omega)} \leq C_P\|\nabla u\|_{L^2(\Omega)}\), where \(C_P\) depends only on \(\Omega\).]]></text>
+      <feedback><text>Correct. Poincaré's inequality: for functions vanishing on ∂Ω, the L² norm is controlled by the gradient norm. C_P = 1/√λ₁ where λ₁ is the first Dirichlet eigenvalue. This is crucial for the coercivity of the bilinear form in Lax-Milgram.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\|\nabla u\|_{L^2} \leq C_P\|u\|_{L^2}\) (gradient controlled by function)]]></text>
+      <feedback><text>This is the reverse direction — not Poincaré's inequality. In general, ‖∇u‖ can be much larger than ‖u‖ (consider high-frequency oscillations).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\|u\|_{H^2} \leq C\|f\|_{L^2}\) when \(-\Delta u = f\)]]></text>
+      <feedback><text>This is an elliptic regularity estimate, not Poincaré's inequality. Poincaré's inequality relates ‖u‖_{L²} to ‖∇u‖_{L²} for functions with zero boundary values.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Poincaré's inequality holds only in 1D.]]></text>
+      <feedback><text>Poincaré's inequality holds in all dimensions n≥1 for bounded domains and functions in H¹₀(Ω). It is one of the fundamental inequalities in Sobolev space theory.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_46_Q20_Sobolev_Embedding</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Sobolev embedding theorem states: for \(u \in H^k(\Omega)\) with \(k > n/2\) (\(n\) = dimension of \(\Omega\)):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u \in C(\overline{\Omega})\) (continuous), and the embedding \(H^k \hookrightarrow C^{k-\lfloor n/2\rfloor-1}(\overline{\Omega})\) is compact.]]></text>
+      <feedback><text>Correct. When k>n/2, H^k functions have enough Sobolev regularity to be continuous (and more). Specifically H^k↪C^{k−⌊n/2⌋−1} (Morrey's inequality). For n=1: H¹↪C⁰ (k>1/2 so k=1 gives continuity). For n=3: H²↪C⁰ (k>3/2 so k=2 gives continuity).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u \in L^\infty(\Omega)\) only (bounded but not necessarily continuous).]]></text>
+      <feedback><text>When k>n/2, H^k functions are not just L^∞ but actually continuous (and Hölder). L^∞ alone would correspond to weaker conditions.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u \in H^{k+1}(\Omega)\) (gaining one more derivative).]]></text>
+      <feedback><text>Sobolev embeddings relate H^k to C^m or L^p spaces (not to higher Sobolev spaces). Moving between H^k spaces of different orders requires elliptic regularity, not just the embedding theorem.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The embedding fails for \(k > n/2\); higher \(k\) gives worse regularity.]]></text>
+      <feedback><text>Higher k gives BETTER regularity via Sobolev embedding. The critical threshold is k = n/2: below it H^k need not be continuous; above it H^k embeds into C^{k−⌊n/2⌋−1}.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

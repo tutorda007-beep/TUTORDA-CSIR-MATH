@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category>
+    <text>$course$/CSIR NET Mathematics/Calculus of Variations/Euler-Lagrange Theory</text>
+  </category>
+</question>
+
+<!-- Q01: Euler-Lagrange equation -->
+<question type="multichoice">
+  <name><text>COV55_Q01_EulerLagrange</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Consider the functional \(J[y] = \int_a^b F(x,y,y')\,dx\) with fixed endpoints \(y(a) = A\), \(y(b) = B\). Setting the first variation \(\delta J = 0\) for all admissible variations \(\eta\) (with \(\eta(a)=\eta(b)=0\)) gives the <strong>Euler-Lagrange equation</strong>:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\dfrac{\partial F}{\partial y} - \dfrac{d}{dx}\!\left(\dfrac{\partial F}{\partial y'}\right) = 0\) on \([a,b]\)]]></text>
+    <feedback><text>Correct. Integrating by parts in \(\delta J = \int_a^b (F_y \eta + F_{y'}\eta')\,dx = 0\) and using \(\eta(a)=\eta(b)=0\) gives \(\int_a^b (F_y - \frac{d}{dx}F_{y'})\eta\,dx = 0\). The fundamental lemma yields the E-L equation.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dfrac{\partial F}{\partial y} + \dfrac{d}{dx}\!\left(\dfrac{\partial F}{\partial y'}\right) = 0\)]]></text>
+    <feedback><text>Incorrect. The correct sign is a minus: \(F_y - \frac{d}{dx}F_{y'} = 0\). Integration by parts introduces the minus sign when moving from \(\eta'\) to \(\eta\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dfrac{\partial^2 F}{\partial y^2} = 0\) (second derivative condition)]]></text>
+    <feedback><text>Incorrect. The Euler-Lagrange equation involves the total derivative \(\frac{d}{dx}F_{y'}\), not \(\partial^2 F/\partial y^2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dfrac{\partial F}{\partial y'} = 0\) (only the derivative of \(F\) with respect to \(y'\) vanishes)]]></text>
+    <feedback><text>Incorrect. \(F_{y'} = 0\) is the natural boundary condition (for free endpoints), not the Euler-Lagrange equation. The full equation is \(F_y - \frac{d}{dx}F_{y'} = 0\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q02: Beltrami identity -->
+<question type="multichoice">
+  <name><text>COV55_Q02_BeltramiIdentity</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>If the Lagrangian \(F = F(y, y')\) does not depend explicitly on \(x\), then along any extremal the <strong>Beltrami identity</strong> holds:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(F - y'\dfrac{\partial F}{\partial y'} = c\) (constant along the extremal)]]></text>
+    <feedback><text>Correct. Differentiating \(F(y,y')\) along the extremal: \(\frac{d}{dx}(F - y'F_{y'}) = F_y y' + F_{y'}y'' - y''F_{y'} - y'\frac{d}{dx}F_{y'} = y'(F_y - \frac{d}{dx}F_{y'}) = 0\), using the E-L equation.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(F + y'\dfrac{\partial F}{\partial y'} = c\)]]></text>
+    <feedback><text>Incorrect. The Beltrami identity has a minus sign: \(F - y'F_{y'} = c\). This is analogous to the Hamiltonian \(H = p\dot{q} - L\) in classical mechanics, with a sign difference.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dfrac{\partial F}{\partial y} = c\) (partial derivative with respect to \(y\) is constant)]]></text>
+    <feedback><text>Incorrect. When \(F\) is independent of \(y\) (not \(x\)), then \(F_{y'}= c\) (constant). The Beltrami identity applies when \(F\) is independent of \(x\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dfrac{dF}{dx} = 0\) (total derivative with respect to \(x\) vanishes)]]></text>
+    <feedback><text>Incorrect. \(dF/dx = F_y y' + F_{y'}y'' \neq 0\) in general. The Beltrami identity says \(F - y'F_{y'} = \text{const}\), not that \(dF/dx = 0\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q03: Brachistochrone -->
+<question type="multichoice">
+  <name><text>COV55_Q03_Brachistochrone</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>brachistochrone problem</strong> (Johann Bernoulli, 1696) asks: find the curve from point \(A = (0,0)\) to \(B = (b, -h)\) (\(h > 0\)) along which a particle sliding under gravity (no friction) takes the minimum time. The time functional is:</p>
+    <p>\[T[y] = \int_0^b \sqrt{\frac{1 + y'^2}{-2gy}}\,dx \quad (y \leq 0).\]</p>
+    <p>The solution curve is a:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Cycloid: \(x = a(\theta - \sin\theta)\), \(y = a(1 - \cos\theta) \cdot (-1) = -a(1-\cos\theta)\) for some \(a > 0\)]]></text>
+    <feedback><text>Correct. Applying the Beltrami identity to \(F = \sqrt{(1+y'^2)/(-2gy)}\) yields \(y(1+y'^2) = c\) (constant). The parametric solution is the cycloid generated by rolling a circle of radius \(a = c/2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A straight line segment from \(A\) to \(B\)]]></text>
+    <feedback><text>Incorrect. The straight line is the shortest path but not the fastest. The cycloid descends more steeply at first, gaining speed, and is faster despite being longer.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A parabola \(y = cx^2\)]]></text>
+    <feedback><text>Incorrect. The solution to the brachistochrone is a cycloid, not a parabola. The catenary (for minimum surface area) and parabola arise in different variational problems.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A circular arc from \(A\) to \(B\)]]></text>
+    <feedback><text>Incorrect. A circular arc is not the brachistochrone. The cycloid provides strictly less travel time than any circular arc between the same endpoints.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q04: Geodesics in R^2 -->
+<question type="multichoice">
+  <name><text>COV55_Q04_GeodesicsR2</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The arc-length functional in \(\mathbb{R}^2\) is \(J[y] = \int_a^b \sqrt{1 + y'^2}\,dx\). The Euler-Lagrange equation for this functional gives:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(y'' = 0\), so the extremals are straight lines \(y = mx + c\) (geodesics in Euclidean space are straight lines)]]></text>
+    <feedback><text>Correct. Here \(F = \sqrt{1+y'^2}\), \(F_y = 0\), \(F_{y'} = y'/\sqrt{1+y'^2}\). The E-L equation gives \(\frac{d}{dx}(y'/\sqrt{1+y'^2}) = 0\), hence \(y'/\sqrt{1+y'^2} = c\), i.e., \(y' = \text{const}\), so \(y'' = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(y'' = -y'^3\), giving curves of constant curvature]]></text>
+    <feedback><text>Incorrect. The E-L equation for arc length gives \(y'' = 0\), not \(y'' = -y'^3\). Curves of constant nonzero curvature are circles, arising from a different functional.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(1 + y'^2 = \text{const}\), which has no solution in general]]></text>
+    <feedback><text>Incorrect. The Beltrami identity gives \(F - y'F_{y'} = \sqrt{1+y'^2} - y'^2/\sqrt{1+y'^2} = 1/\sqrt{1+y'^2} = \text{const}\), implying \(y' = \text{const}\). This is consistent with \(y'' = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(y = 0\) (the x-axis is the only geodesic)]]></text>
+    <feedback><text>Incorrect. Every straight line \(y = mx + c\) is a geodesic; \(y = 0\) is just one special case.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q05: Catenary -->
+<question type="multichoice">
+  <name><text>COV55_Q05_Catenary</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A flexible uniform chain of fixed length \(L\) hangs between two fixed points under gravity. The chain minimizes its potential energy \(V[y] = \int_a^b y\sqrt{1+y'^2}\,dx\) subject to the length constraint \(\int_a^b \sqrt{1+y'^2}\,dx = L\). The solution is the <strong>catenary</strong>:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(y = a\cosh\!\left(\dfrac{x - b}{a}\right)\) for constants \(a > 0\) and \(b\)]]></text>
+    <feedback><text>Correct. The constrained Euler-Lagrange equation (with multiplier \(\lambda\)) for \(y\sqrt{1+y'^2} - \lambda\sqrt{1+y'^2}\) gives \((y-\lambda)/\sqrt{1+y'^2} = a\), leading to \(y - \lambda = a\cosh((x-b)/a)\). Shifting: \(y = a\cosh((x-b)/a) + \lambda\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A parabola \(y = ax^2 + bx + c\)]]></text>
+    <feedback><text>Incorrect. The parabola arises in the bending of beams (minimizing curvature energy) or in projectile motion, not for the hanging chain. The catenary \(y = a\cosh(x/a)\) is the correct solution.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A circular arc \(y = \sqrt{R^2 - x^2}\)]]></text>
+    <feedback><text>Incorrect. A circular arc minimizes enclosed area for fixed arc length, not the potential energy of a hanging chain. The chain hangs as a catenary.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A straight line segment (minimum energy configuration)]]></text>
+    <feedback><text>Incorrect. A straight horizontal line would minimize \(y\) (lowest center of mass) but cannot satisfy a length constraint longer than the horizontal distance. The catenary is the constrained minimum.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q06: Isoperimetric problem -->
+<question type="multichoice">
+  <name><text>COV55_Q06_Isoperimetric</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>isoperimetric problem</strong>: among all closed plane curves of fixed perimeter \(L\), which encloses the greatest area? The constrained functional is \(A = \frac{1}{2}\oint(x\,dy - y\,dx)\) subject to \(\oint ds = L\). The solution is:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[A circle of radius \(r = L/(2\pi)\), with maximum enclosed area \(A = L^2/(4\pi)\). The isoperimetric inequality states \(4\pi A \leq L^2\) with equality only for circles.]]></text>
+    <feedback><text>Correct. The Euler-Lagrange equations for the constrained problem (with Lagrange multiplier) give constant curvature \(\kappa = \lambda\) (constant), which characterizes circles.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A square of side \(L/4\), which has greater area than a circle of same perimeter]]></text>
+    <feedback><text>Incorrect. A square of side \(s = L/4\) has area \(L^2/16 \approx 0.0625 L^2\), while a circle of perimeter \(L\) has area \(L^2/(4\pi) \approx 0.0796 L^2\). The circle has strictly greater area.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[An equilateral triangle, which maximizes area among polygons]]></text>
+    <feedback><text>Incorrect. While an equilateral triangle has more area than other triangles of the same perimeter, it has less area than a circle. The global maximum is always the circle.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[There is no solution: the supremum \(L^2/(4\pi)\) is not achieved by any smooth curve]]></text>
+    <feedback><text>Incorrect. The supremum is achieved by the circle. Smooth closed curves exist (the circle is smooth) and maximize the enclosed area for fixed perimeter.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q07: Minimal surface of revolution -->
+<question type="multichoice">
+  <name><text>COV55_Q07_MinimalSurface</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The area of the surface of revolution generated by rotating \(y = f(x) \geq 0\) about the \(x\)-axis is \(A[y] = 2\pi\int_a^b y\sqrt{1 + y'^2}\,dx\). The extremals (solutions to the E-L equation) are:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Catenaries: \(y = c_1\cosh\!\left(\dfrac{x - c_2}{c_1}\right)\), and the minimal surface of revolution (between two coaxial circles) is the <strong>catenoid</strong>]]></text>
+    <feedback><text>Correct. The Lagrangian \(F = y\sqrt{1+y'^2}\) is autonomous. Beltrami: \(F - y'F_{y'} = y/\sqrt{1+y'^2} = c_1\). Solving gives \(y = c_1\cosh((x-c_2)/c_1)\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Straight lines: \(y = mx + b\) (cylinders)]]></text>
+    <feedback><text>Incorrect. Straight lines give cones or cylinders under rotation, not the minimal surface of revolution. The E-L equation for surface area gives catenaries, not lines.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Circles: \(y = \sqrt{R^2 - (x-a)^2}\) (spheres under rotation)]]></text>
+    <feedback><text>Incorrect. Rotating a circular arc gives a sphere. While spheres are minimal surfaces in the sense of having zero mean curvature, they are not the extremals of surface-area-of-revolution functionals between two circles on an axis.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Parabolas: \(y = (x-c)^2/a\) (paraboloids)]]></text>
+    <feedback><text>Incorrect. The E-L equation for surface area of revolution does not give parabolas. The solutions are catenaries.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q08: Natural boundary conditions -->
+<question type="multichoice">
+  <name><text>COV55_Q08_NaturalBC</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Consider \(J[y] = \int_a^b F(x,y,y')\,dx\) where \(y(a) = A\) is fixed but \(y(b)\) is <strong>free</strong> (not prescribed). The condition at \(x = b\) that must hold at an extremal is:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[The <strong>natural boundary condition</strong>: \(\dfrac{\partial F}{\partial y'}\bigg|_{x=b} = 0\)]]></text>
+    <feedback><text>Correct. With \(\eta(b)\) free (arbitrary), the boundary term in the integration by parts gives \(F_{y'}|_{x=b}\cdot\eta(b) = 0\) for all \(\eta(b)\), forcing \(F_{y'}(b) = 0\). This is the natural (Neumann-type) boundary condition.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(y(b) = 0\) (the free endpoint must vanish)]]></text>
+    <feedback><text>Incorrect. "Free endpoint" means \(y(b)\) is not prescribed (not necessarily zero). The natural boundary condition is on the derivative of \(F\): \(F_{y'}|_{x=b} = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(F\bigl(b, y(b), y'(b)\bigr) = 0\) (the Lagrangian vanishes at the free endpoint)]]></text>
+    <feedback><text>Incorrect. The natural boundary condition is \(F_{y'}|_b = 0\), not \(F|_b = 0\). These are completely different conditions.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(y'(b) = 0\) (the slope vanishes at the free endpoint)]]></text>
+    <feedback><text>Incorrect. \(y'(b) = 0\) is not the general natural BC; it holds only in special cases (e.g., when \(F_{y'} = Cy'\)). The general condition is \(F_{y'}(b, y(b), y'(b)) = 0\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q09: E-L for multiple integrals -->
+<question type="multichoice">
+  <name><text>COV55_Q09_MultipleIntegrals</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>For the functional \(J[u] = \iint_\Omega F(x,y,u,u_x,u_y)\,dx\,dy\) with \(u\) prescribed on \(\partial\Omega\), the Euler-Lagrange equation is:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\dfrac{\partial F}{\partial u} - \dfrac{\partial}{\partial x}\!\left(\dfrac{\partial F}{\partial u_x}\right) - \dfrac{\partial}{\partial y}\!\left(\dfrac{\partial F}{\partial u_y}\right) = 0\)]]></text>
+    <feedback><text>Correct. The variational derivative of \(J[u]\) gives the 2D Euler-Lagrange equation. For \(F = |\nabla u|^2 = u_x^2 + u_y^2\) (Dirichlet energy), this gives \(\Delta u = 0\) (Laplace's equation).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dfrac{\partial F}{\partial u} - \dfrac{\partial^2 F}{\partial x^2} - \dfrac{\partial^2 F}{\partial y^2} = 0\)]]></text>
+    <feedback><text>Incorrect. The correct form involves \(\partial/\partial x(F_{u_x})\) and \(\partial/\partial y(F_{u_y})\), not second partial derivatives of \(F\) itself.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dfrac{\partial F}{\partial u} = 0\)]]></text>
+    <feedback><text>Incorrect. This would be the condition if \(u_x = u_y = 0\) were forced, but in general the full divergence terms \(\partial_x F_{u_x} + \partial_y F_{u_y}\) must be included.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dfrac{\partial F}{\partial u_x} + \dfrac{\partial F}{\partial u_y} = 0\)]]></text>
+    <feedback><text>Incorrect. The E-L equation requires total derivatives \(\frac{d}{dx}(F_{u_x})\), not partial derivatives \(\partial F/\partial u_x\) alone.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q10: Hamilton's principle -->
+<question type="multichoice">
+  <name><text>COV55_Q10_HamiltonPrinciple</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Hamilton's principle of stationary action states: the physical trajectory \(q(t)\) of a mechanical system with Lagrangian \(L(q, \dot{q}, t) = T - V\) is an extremal of the action:</p>
+    <p>\[S[q] = \int_{t_1}^{t_2} L(q, \dot{q}, t)\,dt.\]</p>
+    <p>The resulting Euler-Lagrange equations are equivalent to:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Newton's second law \(m\ddot{q} = -\partial V/\partial q\) (for a particle in potential \(V\)): the E-L equation \(\frac{d}{dt}(m\dot{q}) = -\partial V/\partial q\) is exactly Newton's law]]></text>
+    <feedback><text>Correct. With \(L = \frac{1}{2}m\dot{q}^2 - V(q)\): E-L gives \(\partial L/\partial q - \frac{d}{dt}(\partial L/\partial \dot{q}) = -V_q - m\ddot{q} = 0\), i.e., \(m\ddot{q} = -V_q = F\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The conservation of energy \(E = T + V = \text{const}\) (energy is always conserved along any trajectory)]]></text>
+    <feedback><text>Incorrect. Energy conservation is a consequence when \(L\) has no explicit time dependence, but it is not the same as Hamilton's principle itself. The E-L equations are Newton's laws, from which energy conservation follows if \(\partial L/\partial t = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Hamilton's equations: \(\dot{q} = \partial H/\partial p\), \(\dot{p} = -\partial H/\partial q\) directly (without passing through E-L)]]></text>
+    <feedback><text>Incorrect. Hamilton's equations are derived from the Lagrangian E-L equations via the Legendre transform \(H = p\dot{q} - L\). They are equivalent but require an extra step, not immediate from the variational principle.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The trajectory is a geodesic of the configuration space (without reference to Newton's laws)]]></text>
+    <feedback><text>Incorrect. Trajectories are geodesics only in special cases (Jacobi principle in energy surfaces, or Riemannian mechanics). In general, Hamilton's principle gives Newton's laws, not geodesics.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q11: Second variation (Legendre condition) -->
+<question type="multichoice">
+  <name><text>COV55_Q11_LegendreCondition</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>second variation</strong> of \(J[y] = \int_a^b F(x,y,y')\,dx\) is:</p>
+    <p>\[\delta^2 J = \int_a^b \bigl(F_{yy}\eta^2 + 2F_{yy'}\eta\eta' + F_{y'y'}\eta'^2\bigr)\,dx.\]</p>
+    <p>The <strong>Legendre necessary condition</strong> for \(y^*\) to be a (weak) minimum requires:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(F_{y'y'}(x, y^*, y^{*\prime}) \geq 0\) for all \(x \in [a,b]\)]]></text>
+    <feedback><text>Correct. For the second variation to be nonnegative (necessary for a minimum), the coefficient of \(\eta'^2\) must be nonneg. If \(F_{y'y'} < 0\) at some point, choose \(\eta\) concentrated near that point to make \(\delta^2 J < 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(F_{yy}(x, y^*, y^{*\prime}) \geq 0\) for all \(x \in [a,b]\)]]></text>
+    <feedback><text>Incorrect. The Legendre condition is on \(F_{y'y'}\) (coefficient of \(\eta'^2\)), not \(F_{yy}\). The \(F_{yy}\) term involves \(\eta^2\) which can be made small, while \(\eta'\) can be large independently.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(F_{y'y'} = 0\) everywhere (the Lagrangian is linear in \(y'\))]]></text>
+    <feedback><text>Incorrect. \(F_{y'y'} = 0\) means the functional is degenerate (linear in \(y'\)), making it indefinite. For a minimum, we need \(F_{y'y'} \geq 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(F_{yy} F_{y'y'} - F_{yy'}^2 \geq 0\) (the Hessian of \(F\) with respect to \((y,y')\) is positive semi-definite)]]></text>
+    <feedback><text>Incorrect. The Hessian condition is sufficient but stronger than necessary. The necessary Legendre condition is only \(F_{y'y'} \geq 0\), not the full Hessian positivity.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q12: Euler-Poisson equation -->
+<question type="multichoice">
+  <name><text>COV55_Q12_EulerPoisson</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>For the functional \(J[y] = \int_a^b F(x, y, y', y'')\,dx\) involving second derivatives, the Euler-Poisson equation is obtained by setting the first variation to zero. It is:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\dfrac{\partial F}{\partial y} - \dfrac{d}{dx}\!\left(\dfrac{\partial F}{\partial y'}\right) + \dfrac{d^2}{dx^2}\!\left(\dfrac{\partial F}{\partial y''}\right) = 0\)]]></text>
+    <feedback><text>Correct. Two integrations by parts for the \(F_{y''}\eta''\) term give a second-order total derivative. The general pattern: for \(\int F(x,y,\ldots,y^{(n)})dx\), the E-L equation is \(\sum_{k=0}^n (-1)^k \frac{d^k}{dx^k}F_{y^{(k)}} = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dfrac{\partial F}{\partial y} - \dfrac{d}{dx}\!\left(\dfrac{\partial F}{\partial y'}\right) - \dfrac{d^2}{dx^2}\!\left(\dfrac{\partial F}{\partial y''}\right) = 0\)]]></text>
+    <feedback><text>Incorrect. The signs alternate: for the \(y''\) term, two integrations by parts give \(+\frac{d^2}{dx^2}F_{y''}\) (positive), not negative.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dfrac{\partial^2 F}{\partial y^2} - \dfrac{\partial^2 F}{\partial y'^2} + \dfrac{\partial^2 F}{\partial y''^2} = 0\)]]></text>
+    <feedback><text>Incorrect. The E-L equation involves total (not partial) derivatives: \(\frac{d^k}{dx^k}(\partial F/\partial y^{(k)})\). These are not the same as \(\partial^2 F/\partial (y^{(k)})^2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dfrac{\partial F}{\partial y''} = 0\) (the derivative with respect to \(y''\) vanishes)]]></text>
+    <feedback><text>Incorrect. This would be the case if \(y''\) appeared linearly in \(F\) and there were no \(y\) and \(y'\) terms. The full Euler-Poisson equation includes contributions from all orders.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q13: Noether's theorem -->
+<question type="multichoice">
+  <name><text>COV55_Q13_NoetherThm</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p><strong>Noether's theorem</strong> states: if the functional \(J[y] = \int F(x,y,y')\,dx\) is invariant under a one-parameter family of transformations \((x, y) \to (\bar{x}, \bar{y})\), then there is a conserved quantity (first integral). If \(F\) is invariant under translation in \(x\) (i.e., independent of \(x\)), which quantity is conserved?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(F - y'\dfrac{\partial F}{\partial y'} = \text{const}\) (the Beltrami first integral, analogous to energy conservation in mechanics)]]></text>
+    <feedback><text>Correct. Translation invariance in \(x\) (time translation in mechanics) corresponds to energy conservation. The conserved quantity is the Beltrami expression \(F - y'F_{y'}\), analogous to the Hamiltonian \(H = p\dot{q} - L\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dfrac{\partial F}{\partial y'} = \text{const}\) (the generalized momentum is conserved)]]></text>
+    <feedback><text>Incorrect. \(F_{y'} = \text{const}\) (momentum conservation) arises when \(F\) is independent of \(y\) (translation invariance in \(y\), by Noether's theorem applied to \(y\)-translations). Independence of \(x\) gives the Beltrami integral.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(F = \text{const}\) (the Lagrangian itself is conserved)]]></text>
+    <feedback><text>Incorrect. The Lagrangian \(F\) is not generally constant along extremals; what is constant is \(F - y'F_{y'}\) (for \(F\) independent of \(x\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(y\dfrac{\partial F}{\partial y'} = \text{const}\) (angular momentum analog)]]></text>
+    <feedback><text>Incorrect. The conserved quantity from \(x\)-translation invariance is \(F - y'F_{y'}\), not \(yF_{y'}\). The quantity \(yF_{y'}\) would come from scaling invariance or a different symmetry.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q14: Jacobi condition -->
+<question type="multichoice">
+  <name><text>COV55_Q14_JacobiCondition</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Jacobi condition</strong> concerns conjugate points. A point \(x^* \in (a, b)\) is <strong>conjugate</strong> to \(a\) along the extremal \(y^*(x)\) if there exists a nontrivial solution \(u\) of the Jacobi equation:</p>
+    <p>\[-\dfrac{d}{dx}(P u') + Q u = 0, \quad P = F_{y'y'},\; Q = F_{yy} - \dfrac{d}{dx}F_{yy'},\]</p>
+    <p>with \(u(a) = 0\). The Jacobi necessary condition for \(y^*\) to be a minimum states:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[There should be no conjugate point to \(a\) in the open interval \((a, b)\): if a conjugate point exists in \((a,b)\), the extremal is not a minimum]]></text>
+    <feedback><text>Correct. The Jacobi condition: if there exists a conjugate point \(x^* \in (a,b)\), one can construct a variation that decreases \(J\), so \(y^*\) is not a (local) minimum.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The Jacobi equation must have the trivial solution \(u \equiv 0\) for the extremal to be a minimum]]></text>
+    <feedback><text>Incorrect. The Jacobi equation always has the trivial solution \(u = 0\). The condition is that the Jacobi equation has no non-trivial solution vanishing at both \(a\) and any interior point of \((a,b)\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[There must be exactly one conjugate point in \((a, b)\) for the extremal to be a minimum]]></text>
+    <feedback><text>Incorrect. The condition for a minimum requires NO conjugate point in \((a,b)\). The presence of any conjugate point means the extremal is not a minimum.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The Jacobi condition is independent of the Legendre condition (\(F_{y'y'} \geq 0\))]]></text>
+    <feedback><text>Incorrect. The Jacobi equation involves \(P = F_{y'y'}\), so the Legendre condition is needed for the Jacobi equation to be of elliptic type (for \(P > 0\)), making the Jacobi condition meaningful.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q15: Weierstrass E-function -->
+<question type="multichoice">
+  <name><text>COV55_Q15_WeierstrassE</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Weierstrass excess function</strong> \(\mathcal{E}\) is defined as:</p>
+    <p>\[\mathcal{E}(x, y, y', p) = F(x, y, p) - F(x, y, y') - (p - y')\,F_{y'}(x, y, y').\]</p>
+    <p>The sufficient condition for \(y^*\) to be a <strong>strong</strong> minimum is:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\mathcal{E}(x, y^*, y^{*\prime}, p) \geq 0\) for all \(p\) and all \(x \in [a,b]\) (along the extremal)]]></text>
+    <feedback><text>Correct. The Weierstrass sufficient condition for a strong minimum: the excess function is nonneg for all directions \(p\) (not just nearby ones). This is equivalent to convexity of \(F\) in \(p = y'\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\mathcal{E}(x, y^*, y^{*\prime}, p) = 0\) for all \(p\) (the excess function vanishes identically)]]></text>
+    <feedback><text>Incorrect. \(\mathcal{E} = 0\) for all \(p\) would mean \(F\) is affine in \(p\), making the functional degenerate. The sufficient condition requires \(\mathcal{E} \geq 0\), not \(= 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\mathcal{E}(x, y^*, y^{*\prime}, p) \leq 0\) for all \(p\) (nonpositive excess function for strong minimum)]]></text>
+    <feedback><text>Incorrect. The condition for a minimum (not maximum) requires \(\mathcal{E} \geq 0\). \(\mathcal{E} \leq 0\) everywhere would be the condition for a strong maximum.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\mathcal{E}\) is needed only for weak minima; strong minima require only the Legendre condition]]></text>
+    <feedback><text>Incorrect. The Legendre condition \(F_{y'y'} \geq 0\) is necessary for weak minima. The Weierstrass condition \(\mathcal{E} \geq 0\) is needed (and sufficient, together with Jacobi) for strong minima.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q16: Lagrange multiplier method -->
+<question type="multichoice">
+  <name><text>COV55_Q16_LagrangeMultiplier</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The constrained variational problem: extremize \(J[y] = \int_a^b F(x,y,y')\,dx\) subject to the isoperimetric constraint \(K[y] = \int_a^b G(x,y,y')\,dx = \ell\). The <strong>Lagrange multiplier method</strong> requires finding extremals of:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[The augmented functional \(\int_a^b (F + \lambda G)\,dx\) for some constant \(\lambda\), giving the E-L equation: \((F+\lambda G)_y - \frac{d}{dx}(F + \lambda G)_{y'} = 0\)]]></text>
+    <feedback><text>Correct. The constrained problem is reduced to an unconstrained one by introducing a Lagrange multiplier \(\lambda\). The constant \(\lambda\) is determined by the constraint \(K[y] = \ell\). This is the infinite-dimensional analogue of Lagrange multipliers in calculus.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Maximizing \(J[y] - \lambda K[y]\) pointwise for each \(x\), finding \(y(x)\) that maximizes the integrand]]></text>
+    <feedback><text>Incorrect. Calculus of variations extremization is not pointwise. One forms the augmented functional \(\int(F + \lambda G)dx\) and applies the E-L equation to the entire integrand.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Setting \(\delta J = 0\) and \(\delta K = 0\) simultaneously, giving two separate E-L equations]]></text>
+    <feedback><text>Incorrect. Two separate equations would over-determine the problem. The Lagrange method combines them into one E-L equation for \(F + \lambda G\), with the multiplier \(\lambda\) as an unknown constant.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The constraint must be incorporated into the boundary conditions: set \(y(a) = 0\) and \(\int_a^b G\,dx = \ell\)]]></text>
+    <feedback><text>Incorrect. Boundary conditions and integral constraints are different. Integral constraints (isoperimetric) are handled by Lagrange multipliers in the functional, not by modifying boundary conditions.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q17: Dirichlet principle -->
+<question type="multichoice">
+  <name><text>COV55_Q17_DirichletPrinciple</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Dirichlet principle</strong> states: among all functions \(u \in C^1(\Omega)\) with \(u = g\) on \(\partial\Omega\), the harmonic function (solution of \(\Delta u = 0\)) minimizes the <strong>Dirichlet energy</strong>:</p>
+    <p>\[D[u] = \int_\Omega |\nabla u|^2\,dx.\]</p>
+    <p>What is the Euler-Lagrange equation for \(D[u]\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\Delta u = u_{xx} + u_{yy} = 0\) (Laplace's equation): harmonic functions are the extremals of Dirichlet energy]]></text>
+    <feedback><text>Correct. With \(F = u_x^2 + u_y^2 = |\nabla u|^2\): the 2D E-L equation gives \(\partial_u F - \partial_x F_{u_x} - \partial_y F_{u_y} = 0 - 2u_{xx} - 2u_{yy} = 0\), i.e., \(\Delta u = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\Delta^2 u = 0\) (biharmonic equation): minimizing Dirichlet energy gives biharmonic functions]]></text>
+    <feedback><text>Incorrect. \(\Delta^2 u = 0\) is the E-L equation for minimizing the bending energy \(\int |\Delta u|^2\,dx\) (thin plate problem), not the Dirichlet energy.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(-\Delta u = f\) (Poisson equation with some source \(f\))]]></text>
+    <feedback><text>Incorrect. The Poisson equation arises when minimizing \(\int |\nabla u|^2 - 2fu\,dx\), giving E-L: \(-\Delta u = f\). For Dirichlet energy alone (\(f = 0\)), the E-L is Laplace's equation.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(|\nabla u| = \text{const}\) (gradient has constant magnitude)]]></text>
+    <feedback><text>Incorrect. The E-L equation for Dirichlet energy is Laplace's equation \(\Delta u = 0\), not a constant-gradient condition. Constant-gradient implies a linear function, which is a special case of harmonic, not the general E-L equation.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q18: Transversality condition -->
+<question type="multichoice">
+  <name><text>COV55_Q18_Transversality</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>If the right endpoint of the extremal lies on a prescribed curve \(\Psi(x, y) = 0\) (rather than at a fixed point), the <strong>transversality condition</strong> at the endpoint \((x_1, y_1)\) is:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\left(F - y' F_{y'}\right)\Psi_x + F_{y'}\Psi_y = 0\) at \((x_1, y_1)\)]]></text>
+    <feedback><text>Correct. When the endpoint is free to move along the curve \(\Psi = 0\), the transversality condition generalizes the natural BC. For a free endpoint on a vertical line \(x = b\), this reduces to \(F_{y'}|_{x=b} = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(y'(x_1) = -\Psi_x/\Psi_y\) (the extremal is tangent to the curve \(\Psi = 0\))]]></text>
+    <feedback><text>Incorrect. The extremal being tangent to \(\Psi = 0\) is not the transversality condition; transversality typically means the extremal meets the curve at a specific angle determined by \(F\), which is the condition stated above.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(F_{y'}|_{(x_1,y_1)} = 0\) always (the natural BC applies regardless of the constraint curve)]]></text>
+    <feedback><text>Incorrect. The natural BC \(F_{y'} = 0\) applies when the endpoint is on a vertical line. For a general curve, the full transversality condition involving both \(\Psi_x\) and \(\Psi_y\) is required.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\Psi_x F + \Psi_y F_{y'} = 0\) at the endpoint]]></text>
+    <feedback><text>Incorrect. This mixes up the coefficients. The correct transversality condition is \((F - y'F_{y'})\Psi_x + F_{y'}\Psi_y = 0\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q19: Sturm-Liouville via variational -->
+<question type="multichoice">
+  <name><text>COV55_Q19_SLVariational</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The first eigenvalue of the Sturm-Liouville problem \(-(py')' + qy = \lambda w y\) on \([a,b]\) with Dirichlet conditions can be characterized variationally by the <strong>Rayleigh quotient</strong>:</p>
+    <p>\[\lambda_1 = \min_{y \neq 0,\; y(a)=y(b)=0} R[y], \quad R[y] = \frac{\int_a^b (p\,y'^2 + q\,y^2)\,dx}{\int_a^b w\,y^2\,dx}.\]</p>
+    <p>What does this variational characterization imply about \(\lambda_1\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\lambda_1 \leq R[y]\) for any admissible test function \(y\); equality holds iff \(y\) is the first eigenfunction. Any \(y\) provides an upper bound for \(\lambda_1\).]]></text>
+    <feedback><text>Correct. The Rayleigh-Ritz principle: \(\lambda_1 = \inf R[y]\), so any test function gives an upper bound. The infimum is achieved at the first eigenfunction (by Sturm-Liouville theory and compactness).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\lambda_1 = R[y]\) for all admissible \(y\) (the Rayleigh quotient is constant)]]></text>
+    <feedback><text>Incorrect. The Rayleigh quotient is constant only when \(y\) is an eigenfunction. For general \(y\), \(R[y] \geq \lambda_1\), with equality only at the first eigenfunction.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\lambda_1\) equals the maximum of \(R[y]\) over all admissible \(y\)]]></text>
+    <feedback><text>Incorrect. \(\lambda_1\) is the minimum (infimum) of the Rayleigh quotient, not the maximum. The supremum of \(R[y]\) over all \(y\) is \(+\infty\) (for smooth functions with large derivatives).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\lambda_1 = 0\) whenever \(q(x) = 0\) identically (no zeroth-order term)]]></text>
+    <feedback><text>Incorrect. Even with \(q = 0\), \(\lambda_1 = \min \int p y'^2\,dx / \int wy^2\,dx > 0\) for \(p > 0\) and Dirichlet BCs (by Poincaré inequality). The first eigenvalue is strictly positive for Dirichlet BCs with \(p > 0\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q20: Geodesics on a sphere -->
+<question type="multichoice">
+  <name><text>COV55_Q20_GeodesicsOnSphere</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>On the unit sphere with metric \(ds^2 = d\theta^2 + \sin^2\theta\,d\phi^2\) (standard spherical coordinates), the geodesics (length-minimizing curves) satisfy the Euler-Lagrange equations for arc length. The geodesics on \(S^2\) are:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Great circles (intersections of \(S^2\) with planes through the origin \(\mathbf{0}\)); each great circle arc of length \(\leq \pi\) is the unique shortest path between its endpoints]]></text>
+    <feedback><text>Correct. Great circles satisfy the geodesic equations \(\nabla_{\dot\gamma}\dot\gamma = 0\) on \(S^2\). The shortest path between two non-antipodal points is the minor great circle arc of length less than \(\pi\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Small circles (parallels of latitude: \(\theta = \text{const}\)), which minimize arc length in the \(\phi\)-direction]]></text>
+    <feedback><text>Incorrect. Parallels of latitude (except the equator) are not geodesics: they curve away from being "straight" on the sphere. Only the equator (a great circle) is a geodesic among parallels.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Loxodromes (rhumb lines), which cross each meridian at a constant angle]]></text>
+    <feedback><text>Incorrect. Loxodromes (rhumb lines) are constant-bearing curves used in navigation but are not geodesics (shortest paths) on the sphere. They spiral toward the poles.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[There are no geodesics on the sphere since it has positive curvature]]></text>
+    <feedback><text>Incorrect. Geodesics exist on all Riemannian manifolds, including the sphere. Positive curvature means geodesics eventually converge (great circles intersect at antipodal points), not that they don't exist.</text></feedback>
+  </answer>
+</question>
+
+</quiz>

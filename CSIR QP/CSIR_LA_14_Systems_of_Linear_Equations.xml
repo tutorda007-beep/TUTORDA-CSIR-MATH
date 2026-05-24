@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Linear Algebra/Systems of Linear Equations</text>
+    </category>
+    <info format="html"><text>CSIR NET level MCQ questions on Systems of Linear Equations</text></info>
+  </question>
+
+  <!-- Q1 -->
+  <question type="multichoice">
+    <name><text>LA14-Q01 Consistency Condition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The system \(Ax = b\) (with \(A\) an \(m\times n\) matrix) is consistent (has at least one solution) if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{rank}(A) = \text{rank}([A \mid b])\) (the augmented matrix has the same rank as \(A\))]]></text><feedback format="html"><text>Correct. By the Rouché-Capelli theorem, \(Ax=b\) is consistent iff \(\text{rank}(A)=\text{rank}(A|b)\), i.e., \(b\) is in the column space of \(A\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\det(A) \neq 0\)]]></text><feedback format="html"><text>Incorrect. Consistency requires \(b\in\text{col}(A)\); invertibility is sufficient but not necessary (rectangular systems can be consistent).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{rank}(A) = n\) (full column rank)]]></text><feedback format="html"><text>Incorrect. Full column rank ensures at most one solution, not existence.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{rank}(A) = m\) (full row rank)]]></text><feedback format="html"><text>Incorrect. Full row rank guarantees consistency for every \(b\), but consistency for a specific \(b\) requires only \(\text{rank}(A)=\text{rank}(A|b)\).</text></feedback></answer>
+  </question>
+
+  <!-- Q2 -->
+  <question type="multichoice">
+    <name><text>LA14-Q02 Solution Structure</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(x_p\) is a particular solution of \(Ax=b\) and \(x_h\) is the general solution of \(Ax=0\), then the general solution of \(Ax=b\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(x = x_p + x_h\)]]></text><feedback format="html"><text>Correct. The complete solution is a particular solution plus the null space of \(A\): \(\{x_p + x_h : x_h\in\ker A\}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(x = x_p \cdot x_h\)]]></text><feedback format="html"><text>Incorrect. Solutions are added (affine translation), not multiplied.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(x = x_p - x_h\)]]></text><feedback format="html"><text>Incorrect. Since \(x_h\) represents all homogeneous solutions (which form a subspace closed under negation), this is equivalent to \(x_p+x_h\)—but subtracting doesn't change the set, just the representation.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(x = x_h\) (particular solution is irrelevant)]]></text><feedback format="html"><text>Incorrect. The particular solution is essential; without it, we only have solutions to \(Ax=0\), not \(Ax=b\).</text></feedback></answer>
+  </question>
+
+  <!-- Q3 -->
+  <question type="multichoice">
+    <name><text>LA14-Q03 Unique Solution</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The system \(Ax=b\) (\(A\) is \(n\times n\)) has a unique solution for every \(b\in\mathbb{R}^n\) if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(A\) is invertible (\(\det A\neq0\), equivalently \(\text{rank}(A)=n\))]]></text><feedback format="html"><text>Correct. A square system has a unique solution for every \(b\) iff \(A\) is invertible: then \(x=A^{-1}b\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A\) is symmetric]]></text><feedback format="html"><text>Incorrect. Symmetry does not guarantee invertibility.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{tr}(A)\neq0\)]]></text><feedback format="html"><text>Incorrect. Nonzero trace does not ensure invertibility.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(b\neq0\)]]></text><feedback format="html"><text>Incorrect. The uniqueness of the solution depends on the matrix \(A\), not on \(b\).</text></feedback></answer>
+  </question>
+
+  <!-- Q4 -->
+  <question type="multichoice">
+    <name><text>LA14-Q04 Row Echelon Form</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The augmented matrix \([A\mid b] = \begin{pmatrix}1&2&3&|&1\\0&1&2&|&2\\0&0&0&|&1\end{pmatrix}\). The system is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Inconsistent (no solution)</text><feedback format="html"><text>Correct. The last row gives \(0=1\), a contradiction. So \(\text{rank}(A)=2\) but \(\text{rank}([A|b])=3\); the system is inconsistent.</text></feedback></answer>
+    <answer fraction="0"><text>Consistent with a unique solution</text><feedback format="html"><text>Incorrect. The equation \(0x_1+0x_2+0x_3=1\) is impossible; there is no solution.</text></feedback></answer>
+    <answer fraction="0"><text>Consistent with infinitely many solutions</text><feedback format="html"><text>Incorrect. The last row \(0=1\) is a contradiction, making the system inconsistent.</text></feedback></answer>
+    <answer fraction="0"><text>Consistent with exactly two solutions</text><feedback format="html"><text>Incorrect. Linear systems have 0, 1, or infinitely many solutions. The system here has 0 solutions.</text></feedback></answer>
+  </question>
+
+  <!-- Q5 -->
+  <question type="multichoice">
+    <name><text>LA14-Q05 Free Variables</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A consistent system \(Ax=b\) with \(A\) being \(m\times n\) of rank \(r\) has how many free variables?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(n - r\) free variables]]></text><feedback format="html"><text>Correct. By rank-nullity: the number of free variables equals the nullity = \(n - \text{rank}(A) = n-r\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(m - r\) free variables]]></text><feedback format="html"><text>Incorrect. Free variables count is based on columns minus rank: \(n-r\), not \(m-r\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(r\) free variables]]></text><feedback format="html"><text>Incorrect. There are \(r\) pivot variables and \(n-r\) free variables.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(n\) free variables]]></text><feedback format="html"><text>Incorrect. There are \(n-r\) free variables; only when \(r=0\) are all \(n\) variables free.</text></feedback></answer>
+  </question>
+
+  <!-- Q6 -->
+  <question type="multichoice">
+    <name><text>LA14-Q06 Homogeneous System Nontrivial Solution</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The homogeneous system \(Ax=0\) with \(A\) an \(m\times n\) matrix always has a nontrivial solution when:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(n > m\) (more unknowns than equations)]]></text><feedback format="html"><text>Correct. If \(n>m\), then \(\text{rank}(A)\leq m < n\), so nullity \(= n-\text{rank}(A)\geq n-m>0\). There is always a nontrivial solution.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(n = m\)]]></text><feedback format="html"><text>Incorrect. When \(n=m\), \(Ax=0\) has only the trivial solution iff \(A\) is invertible. Nontrivial solutions exist only when \(\det(A)=0\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(n < m\)]]></text><feedback format="html"><text>Incorrect. When \(n<m\), \(\text{rank}(A)\leq n\), and if \(\text{rank}(A)=n\), the only solution is trivial.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(m = 1\)]]></text><feedback format="html"><text>Incorrect. With one equation and \(n\geq2\) unknowns there are nontrivial solutions, but the condition is \(n>m\) in general.</text></feedback></answer>
+  </question>
+
+  <!-- Q7 -->
+  <question type="multichoice">
+    <name><text>LA14-Q07 Least Squares Solution</text></name>
+    <questiontext format="html">
+      <text><![CDATA[When \(Ax=b\) is inconsistent, the least squares solution minimizes \(\|Ax-b\|^2\). It satisfies the normal equations:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(A^TA\hat{x} = A^Tb\)]]></text><feedback format="html"><text>Correct. Minimizing \(\|Ax-b\|^2\) gives the normal equations \(A^TAx=A^Tb\). The solution is \(\hat{x}=(A^TA)^{-1}A^Tb\) when \(A\) has full column rank.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(AA^T\hat{x} = b\)]]></text><feedback format="html"><text>Incorrect. The normal equations for least squares are \(A^TAx=A^Tb\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A\hat{x} = b\)]]></text><feedback format="html"><text>Incorrect. The original system \(Ax=b\) is inconsistent, so we solve the normal equations \(A^TAx=A^Tb\) instead.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A^T\hat{x} = b\)]]></text><feedback format="html"><text>Incorrect. The normal equations are \(A^TA\hat{x}=A^Tb\).</text></feedback></answer>
+  </question>
+
+  <!-- Q8 -->
+  <question type="multichoice">
+    <name><text>LA14-Q08 Overdetermined System</text></name>
+    <questiontext format="html">
+      <text><![CDATA[An overdetermined system (\(m > n\)) \(Ax = b\) (full column rank \(A\)):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Has at most one solution (unique if consistent); the least squares solution is unique and given by \(\hat{x}=(A^TA)^{-1}A^Tb\)</text><feedback format="html"><text>Correct. Full column rank implies \(A^TA\) is invertible, giving a unique least squares solution. The system itself may be inconsistent.</text></feedback></answer>
+    <answer fraction="0"><text>Always has infinitely many solutions</text><feedback format="html"><text>Incorrect. Full column rank means the null space is trivial; at most one solution exists.</text></feedback></answer>
+    <answer fraction="0"><text>Is always consistent</text><feedback format="html"><text>Incorrect. Overdetermined systems are generically inconsistent.</text></feedback></answer>
+    <answer fraction="0"><text>Has no solution and no best approximation</text><feedback format="html"><text>Incorrect. Even if inconsistent, the least squares solution provides the best approximation.</text></feedback></answer>
+  </question>
+
+  <!-- Q9 -->
+  <question type="multichoice">
+    <name><text>LA14-Q09 Parametric Solution</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The system \(x_1 + x_2 + x_3 = 1\) and \(x_1 - x_2 = 0\) has general solution (setting \(x_3 = t\) free):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(x_1 = \frac{1-t}{2},\; x_2 = \frac{1-t}{2},\; x_3 = t\) for \(t\in\mathbb{R}\)]]></text><feedback format="html"><text>Correct. From \(x_1=x_2\) and \(2x_1+x_3=1\): \(x_1=x_2=\frac{1-t}{2}\). Verify: \(\frac{1-t}{2}+\frac{1-t}{2}+t=1\)✓.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(x_1 = 1, x_2 = 0, x_3 = 0\) (unique solution)]]></text><feedback format="html"><text>Incorrect. With 3 unknowns and 2 equations (rank 2), there is one free variable, giving infinitely many solutions.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(x_1 = t, x_2 = 1-t, x_3 = 0\) for \(t\in\mathbb{R}\)]]></text><feedback format="html"><text>Incorrect. This satisfies \(x_1+x_2+x_3=t+(1-t)+0=1\)✓ but not \(x_1-x_2=t-(1-t)=2t-1\neq0\) generally.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(x_1 = 0, x_2 = 0, x_3 = 1\)]]></text><feedback format="html"><text>Incorrect. This is one particular solution, not the general solution.</text></feedback></answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>LA14-Q10 Gaussian Elimination Complexity</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Gaussian elimination on an \(n\times n\) system requires approximately how many arithmetic operations?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(O(n^3)\)]]></text><feedback format="html"><text>Correct. Gaussian elimination requires \(\frac{2}{3}n^3 + O(n^2)\) operations, i.e., \(O(n^3)\) complexity.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(O(n^2)\)]]></text><feedback format="html"><text>Incorrect. \(O(n^2)\) is the complexity of matrix-vector multiplication, not full elimination.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(O(n)\)]]></text><feedback format="html"><text>Incorrect. \(O(n)\) operations would solve the system in linear time, which is not achievable for general dense systems.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(O(2^n)\)]]></text><feedback format="html"><text>Incorrect. Gaussian elimination is polynomial (\(O(n^3)\)), not exponential.</text></feedback></answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>LA14-Q11 Underdetermined System</text></name>
+    <questiontext format="html">
+      <text><![CDATA[An underdetermined consistent system \(Ax=b\) (\(m < n\), \(\text{rank}(A)=m\)) has:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Infinitely many solutions; the minimum-norm solution is \(\hat{x} = A^T(AA^T)^{-1}b\)</text><feedback format="html"><text>Correct. Underdetermined consistent systems (full row rank) have infinitely many solutions. The minimum-norm solution uses the right pseudoinverse \(A^+=A^T(AA^T)^{-1}\).</text></feedback></answer>
+    <answer fraction="0"><text>Exactly \(m\) solutions</text><feedback format="html"><text>Incorrect. Underdetermined consistent systems have infinitely many solutions (a whole affine subspace).</text></feedback></answer>
+    <answer fraction="0"><text>No solution (inconsistent by definition)</text><feedback format="html"><text>Incorrect. With full row rank, \(b\in\text{col}(A)\) for any \(b\), so the system is always consistent.</text></feedback></answer>
+    <answer fraction="0"><text>A unique solution when \(b=0\)</text><feedback format="html"><text>Incorrect. The homogeneous underdetermined system (\(b=0\)) has infinitely many solutions (nontrivial null space).</text></feedback></answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>LA14-Q12 Column Space Membership</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For \(A = \begin{pmatrix}1&0\\0&1\\1&1\end{pmatrix}\), which vector \(b\) makes \(Ax=b\) consistent?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(b = (1,2,3)^T\)]]></text><feedback format="html"><text>Correct. We need \(b\in\text{col}(A)\), i.e., \(b_3=b_1+b_2\). Check: \(3=1+2\)✓. Solution: \(x=(1,2)^T\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(b = (1,2,4)^T\)]]></text><feedback format="html"><text>Incorrect. Consistency requires \(b_3=b_1+b_2=1+2=3\neq4\). This system is inconsistent.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(b = (0,0,1)^T\)]]></text><feedback format="html"><text>Incorrect. \(b_1+b_2=0+0=0\neq1=b_3\). This system is inconsistent.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(b = (1,1,3)^T\)]]></text><feedback format="html"><text>Incorrect. \(b_1+b_2=1+1=2\neq3=b_3\). This system is inconsistent.</text></feedback></answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>LA14-Q13 Iterative Methods</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Gauss-Seidel iterative method for solving \(Ax=b\) converges if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(A\) is strictly diagonally dominant (each diagonal entry exceeds the sum of absolute values of off-diagonal entries in its row)</text><feedback format="html"><text>Correct. Strict diagonal dominance is a sufficient condition for convergence of both Jacobi and Gauss-Seidel iterations.</text></feedback></answer>
+    <answer fraction="0"><text>\(A\) is singular</text><feedback format="html"><text>Incorrect. If \(A\) is singular, \(Ax=b\) either has no solution or infinitely many, and iterative methods would not converge to a unique solution.</text></feedback></answer>
+    <answer fraction="0"><text>\(A\) is symmetric with positive trace</text><feedback format="html"><text>Incorrect. Positive trace is not a convergence criterion. Gauss-Seidel converges for symmetric positive definite \(A\), not just positive trace.</text></feedback></answer>
+    <answer fraction="0"><text>The spectral radius of \(A\) is less than 1</text><feedback format="html"><text>Incorrect. The spectral radius condition applies to the iteration matrix \(M^{-1}N\) (from the splitting \(A=M-N\)), not to \(A\) itself.</text></feedback></answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>LA14-Q14 Rank Conditions</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For a \(4\times6\) matrix \(A\) with \(\text{rank}(A)=3\), the system \(Ax=b\) (when consistent) has a general solution with how many free parameters?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(3\) free parameters</text><feedback format="html"><text>Correct. Nullity \(= n - \text{rank} = 6-3=3\). The solution space is a particular solution plus a 3-dimensional null space.</text></feedback></answer>
+    <answer fraction="0"><text>\(1\) free parameter</text><feedback format="html"><text>Incorrect. Nullity \(= 6-3=3\), giving 3 free parameters.</text></feedback></answer>
+    <answer fraction="0"><text>\(4\) free parameters</text><feedback format="html"><text>Incorrect. The number of free parameters equals the nullity \(= n-r = 6-3=3\).</text></feedback></answer>
+    <answer fraction="0"><text>\(6\) free parameters</text><feedback format="html"><text>Incorrect. There are 3 pivot variables and \(6-3=3\) free variables.</text></feedback></answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>LA14-Q15 Integer Solutions</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The system of linear equations \(2x + 4y = 6\) and \(3x + 6y = 9\) has:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Infinitely many solutions: \(x = 3 - 2t,\; y = t\) for any \(t\in\mathbb{R}\)</text><feedback format="html"><text>Correct. Both equations reduce to \(x+2y=3\). Free parameter \(y=t\) gives \(x=3-2t\). The system has rank 1 (equations are proportional).</text></feedback></answer>
+    <answer fraction="0"><text>No solution</text><feedback format="html"><text>Incorrect. Both equations are equivalent (\(3\times\) eq.1 = \(2\times\) eq.2), so there are infinitely many solutions.</text></feedback></answer>
+    <answer fraction="0"><text>Exactly one solution: \(x=1, y=1\)</text><feedback format="html"><text>Incorrect. With rank 1 and 2 unknowns, there is one free variable, giving infinitely many solutions.</text></feedback></answer>
+    <answer fraction="0"><text>Exactly two solutions</text><feedback format="html"><text>Incorrect. Linear systems cannot have exactly 2 solutions; they have 0, 1, or infinitely many.</text></feedback></answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>LA14-Q16 Perturbation and Condition Number</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The condition number \(\kappa(A) = \|A\|\|A^{-1}\|\) of a matrix measures sensitivity of \(Ax=b\) to perturbations. If \(\kappa(A)\) is large, then:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Small relative changes in \(b\) can cause large relative changes in the solution \(x\) (ill-conditioned system)</text><feedback format="html"><text>Correct. The bound \(\frac{\|\delta x\|}{\|x\|}\leq\kappa(A)\frac{\|\delta b\|}{\|b\|}\) shows that a large condition number amplifies relative errors.</text></feedback></answer>
+    <answer fraction="0"><text>The system always has no solution</text><feedback format="html"><text>Incorrect. A large condition number means the system is ill-conditioned but still has a unique solution (if \(A\) is invertible).</text></feedback></answer>
+    <answer fraction="0"><text>The matrix \(A\) is singular</text><feedback format="html"><text>Incorrect. \(\kappa(A)=\infty\) for singular matrices, but a large finite \(\kappa\) means nearly-singular (ill-conditioned), not exactly singular.</text></feedback></answer>
+    <answer fraction="0"><text>The system cannot be solved numerically</text><feedback format="html"><text>Incorrect. Ill-conditioned systems can still be solved numerically, but solutions may have large numerical errors.</text></feedback></answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>LA14-Q17 System Over Finite Field</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Over the field \(\mathbb{F}_2 = \{0,1\}\) (arithmetic mod 2), the system \(\begin{pmatrix}1&1\\1&0\end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}1\\1\end{pmatrix}\) has solution:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(x=1, y=0\)]]></text><feedback format="html"><text>Correct. From row 2: \(x=1\). From row 1: \(1+y=1\pmod{2}\), so \(y=0\). Verify: \((1+0,1+0)=(1,1)\)✓ mod 2.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(x=0, y=1\)]]></text><feedback format="html"><text>Incorrect. Row 2: \(x+0\cdot y=x=1\neq0\pmod{2}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(x=1, y=1\)]]></text><feedback format="html"><text>Incorrect. Row 2: \(x=1\)✓. Row 1: \(1+1=0\neq1\pmod{2}\). So this fails.</text></feedback></answer>
+    <answer fraction="0"><text>No solution over \(\mathbb{F}_2\)</text><feedback format="html"><text>Incorrect. The matrix has \(\det=0\cdot1-1\cdot1=-1=1\pmod{2}\neq0\), so it is invertible and the system has a unique solution.</text></feedback></answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>LA14-Q18 Consistent Parametric System</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For what value(s) of \(\lambda\) does the system \(x+y=1\), \(2x+\lambda y=2\) have infinitely many solutions?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\lambda = 2\)]]></text><feedback format="html"><text>Correct. \(\det\begin{pmatrix}1&1\\2&\lambda\end{pmatrix}=\lambda-2=0\) gives \(\lambda=2\). When \(\lambda=2\), equation 2 becomes \(2(x+y)=2\), identical to equation 1, giving infinitely many solutions.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda = 0\)]]></text><feedback format="html"><text>Incorrect. When \(\lambda=0\), \(\det=0-2=-2\neq0\), so the system has a unique solution.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda = 1\)]]></text><feedback format="html"><text>Incorrect. When \(\lambda=1\), \(\det=1-2=-1\neq0\), giving a unique solution.</text></feedback></answer>
+    <answer fraction="0"><text>All \(\lambda\in\mathbb{R}\)</text><feedback format="html"><text>Incorrect. Only \(\lambda=2\) makes the determinant zero, yielding infinitely many solutions.</text></feedback></answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>LA14-Q19 Linear Dependence of Equations</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A system of \(m\) equations in \(n\) unknowns over \(\mathbb{R}\) with coefficient matrix of rank \(r\). The number of linearly independent equations is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(r\) (the rank of the coefficient matrix)]]></text><feedback format="html"><text>Correct. The rank equals the number of linearly independent rows (equations), which is the dimension of the row space.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(m\) always]]></text><feedback format="html"><text>Incorrect. If some equations are linear combinations of others, the number of independent equations is less than \(m\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(n\) always]]></text><feedback format="html"><text>Incorrect. The number of independent equations is the rank \(r\leq\min(m,n)\), not necessarily \(n\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(m-n\) if \(m>n\)]]></text><feedback format="html"><text>Incorrect. The number of independent equations is the rank \(r\), not \(m-n\).</text></feedback></answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>LA14-Q20 Homogeneous vs Inhomogeneous</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(S\) be the solution set of \(Ax=b\) (nonempty) and \(S_0\) be the solution set of \(Ax=0\). Which is true?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(S\) is an affine subspace (coset of \(S_0\)): \(S = x_p + S_0\) for any particular solution \(x_p\)]]></text><feedback format="html"><text>Correct. The solution set of a consistent system is a coset (affine subspace) of the null space: \(S=x_p+\ker A\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(S\) is a vector subspace (closed under addition and scalar multiplication)]]></text><feedback format="html"><text>Incorrect. \(S\) is a vector subspace only when \(b=0\). For \(b\neq0\), \(0\notin S\), so \(S\) is not a subspace.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(S\) and \(S_0\) are always disjoint]]></text><feedback format="html"><text>Incorrect. If \(b=0\), then \(S=S_0\). For \(b\neq0\), they are disjoint, but the claim "always" is wrong.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(|S| = |S_0| + 1\) (one more element)]]></text><feedback format="html"><text>Incorrect. \(S\) and \(S_0\) have the same cardinality (both infinite or both trivial).</text></feedback></answer>
+  </question>
+
+</quiz>

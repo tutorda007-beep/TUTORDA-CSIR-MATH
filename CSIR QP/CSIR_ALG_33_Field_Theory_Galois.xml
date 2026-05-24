@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Abstract Algebra/Field Theory and Galois Theory</text></category>
+    <info format="html"><text>CSIR NET Mathematics — Abstract Algebra: Field Theory and Galois Theory. MCQ, 20 questions covering field extensions, minimal polynomials, splitting fields, algebraic closures, Galois groups, solvability by radicals, finite fields, and cyclotomic fields.</text></info>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q01 Galois group of x^4-2 over Q</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>What is the Galois group \(\text{Gal}(\mathbb{Q}(\sqrt[4]{2},i)/\mathbb{Q})\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The dihedral group \(D_4\) of order 8</text>
+      <feedback format="html"><text><![CDATA[
+        The splitting field of \(x^4-2\) over \(\mathbb{Q}\) is \(\mathbb{Q}(\sqrt[4]{2},i)\) of degree 8. The Galois group has order 8. Generators are: \(\sigma: \sqrt[4]{2}\mapsto i\sqrt[4]{2},\; i\mapsto i\) (rotation, order 4) and \(\tau: \sqrt[4]{2}\mapsto \sqrt[4]{2},\; i\mapsto -i\) (reflection, order 2). These satisfy \(\sigma^4=\tau^2=e\) and \(\tau\sigma\tau^{-1}=\sigma^{-1}\), giving the dihedral group \(D_4\). Since \(D_4\) is solvable, \(x^4-2\) is solvable by radicals.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The cyclic group \(\mathbb{Z}_8\)</text>
+      <feedback format="html"><text>Incorrect. The Galois group is non-abelian (dihedral), not cyclic.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The symmetric group \(S_4\)</text>
+      <feedback format="html"><text>Incorrect. \(|S_4|=24\neq 8\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The quaternion group \(Q_8\)</text>
+      <feedback format="html"><text>Incorrect. While \(|Q_8|=8\), the Galois group here is \(D_4\), distinguished by having elements of order 4 that square to the generator of the center.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q02 Finite field structure</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For which values of \(q\) does a finite field \(\mathbb{F}_q\) exist?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Exactly when \(q = p^n\) for a prime \(p\) and positive integer \(n\)</text>
+      <feedback format="html"><text><![CDATA[
+        By the classification of finite fields: a finite field exists with \(q\) elements iff \(q = p^n\) for some prime \(p\) and \(n \geq 1\). Moreover, for each such \(q\) there is (up to isomorphism) exactly one field \(\mathbb{F}_q\). It is the splitting field of \(x^q - x\) over \(\mathbb{F}_p\). The multiplicative group \(\mathbb{F}_q^\times\) is cyclic of order \(q-1\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Exactly when \(q\) is prime</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{F}_4, \mathbb{F}_8, \mathbb{F}_9\) are all valid finite fields but their orders are not prime.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>For all positive integers \(q\)</text>
+      <feedback format="html"><text>Incorrect. For example, there is no field with 6 elements since \(6=2\times 3\) is not a prime power.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Exactly when \(q\) is a perfect square</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{F}_2, \mathbb{F}_3, \mathbb{F}_5\) are valid fields but not perfect squares.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q03 Fundamental theorem of Galois theory</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Let \(K/F\) be a finite Galois extension with Galois group \(G = \text{Gal}(K/F)\). The Fundamental Theorem of Galois Theory establishes a bijection between:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Subgroups of \(G\) and intermediate fields \(F \subseteq E \subseteq K\), reversing inclusion</text>
+      <feedback format="html"><text><![CDATA[
+        The Fundamental Theorem: there is an inclusion-reversing bijection \(H \mapsto K^H\) (fixed field) from subgroups of \(G\) to intermediate fields of \(K/F\). Under this bijection: \([K:K^H] = |H|\), \([K^H:F] = [G:H]\). Moreover, \(H \trianglelefteq G\) iff \(K^H/F\) is Galois, and then \(\text{Gal}(K^H/F) \cong G/H\). The correspondence reverses inclusion: larger subgroup \(\leftrightarrow\) smaller field.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Subgroups of \(G\) and intermediate fields, preserving inclusion</text>
+      <feedback format="html"><text>Incorrect. The Galois correspondence reverses (not preserves) inclusion.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Normal subgroups of \(G\) and all intermediate fields</text>
+      <feedback format="html"><text>Incorrect. Normal subgroups correspond only to those intermediate fields \(E\) for which \(E/F\) is Galois.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Subgroups of \(G\) and ideals of \(K\)</text>
+      <feedback format="html"><text>Incorrect. The correspondence is with intermediate fields, not ideals.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q04 Galois group of cyclotomic field</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>What is the Galois group \(\text{Gal}(\mathbb{Q}(\zeta_p)/\mathbb{Q})\), where \(\zeta_p = e^{2\pi i/p}\) is a primitive \(p\)th root of unity and \(p\) is an odd prime?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Cyclic group \(\mathbb{Z}/(p-1)\mathbb{Z}\), of order \(p-1\)</text>
+      <feedback format="html"><text><![CDATA[
+        The minimal polynomial of \(\zeta_p\) over \(\mathbb{Q}\) is the cyclotomic polynomial \(\Phi_p(x) = x^{p-1}+\cdots+1\), of degree \(p-1\). So \([\mathbb{Q}(\zeta_p):\mathbb{Q}]=p-1\) and the extension is Galois. The Galois group consists of automorphisms \(\sigma_k: \zeta_p \mapsto \zeta_p^k\) for \(k\in(\mathbb{Z}/p\mathbb{Z})^\times\). Since this latter group is cyclic of order \(p-1\) (the multiplicative group of a prime field is cyclic), \(\text{Gal}(\mathbb{Q}(\zeta_p)/\mathbb{Q}) \cong (\mathbb{Z}/p\mathbb{Z})^\times \cong \mathbb{Z}_{p-1}\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Symmetric group \(S_{p-1}\)</text>
+      <feedback format="html"><text>Incorrect. The Galois group is abelian of order \(p-1\), while \(|S_{p-1}|=(p-1)!\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Cyclic group \(\mathbb{Z}/p\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. The Galois group has order \(p-1\), not \(p\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Trivial group \(\{e\}\)</text>
+      <feedback format="html"><text>Incorrect. The extension has degree \(p-1\geq 2\), so the Galois group is nontrivial.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q05 Solvability by radicals</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>According to Galois theory, a polynomial \(f(x)\in\mathbb{Q}[x]\) is solvable by radicals if and only if:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The Galois group of \(f\) over \(\mathbb{Q}\) is a solvable group</text>
+      <feedback format="html"><text><![CDATA[
+        Galois's theorem: \(f\) is solvable by radicals iff \(\text{Gal}(f/\mathbb{Q})\) is a solvable group (has a composition series with abelian factors). For degree \(\leq 4\) polynomials: Galois groups are subgroups of \(S_4\), which is solvable (since \(S_4 \supset A_4 \supset V_4 \supset \{e\}\)). For degree 5+: general polynomials have Galois group \(S_5\), which contains the simple non-abelian group \(A_5\), hence is not solvable. This explains why there is no quintic formula.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The Galois group of \(f\) over \(\mathbb{Q}\) is abelian</text>
+      <feedback format="html"><text>Incorrect. Abelian Galois group is sufficient but not necessary; solvable (weaker than abelian) is the correct condition.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(f\) has degree at most 4</text>
+      <feedback format="html"><text>Incorrect. Degree \(\leq 4\) guarantees solvability, but some degree 5+ polynomials are also solvable by radicals if their Galois group is solvable.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The Galois group of \(f\) is the trivial group</text>
+      <feedback format="html"><text>Incorrect. Trivial Galois group means \(f\) splits over \(\mathbb{Q}\) already; solvability allows a wider class.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q06 Algebraic closure</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Which of the following statements about the algebraic closure \(\overline{\mathbb{Q}}\) of \(\mathbb{Q}\) is correct?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\overline{\mathbb{Q}}\) is algebraically closed and is an algebraic extension of \(\mathbb{Q}\), but is countable and strictly contained in \(\mathbb{C}\)</text>
+      <feedback format="html"><text><![CDATA[
+        \(\overline{\mathbb{Q}}\) consists of all algebraic numbers (roots of polynomials in \(\mathbb{Q}[x]\)). It is: (1) algebraically closed (every nonconstant polynomial over \(\overline{\mathbb{Q}}\) has a root in \(\overline{\mathbb{Q}}\)); (2) an algebraic extension of \(\mathbb{Q}\); (3) countable (countable union of finite sets); (4) strictly contained in \(\mathbb{C}\) (transcendental numbers like \(\pi, e\) are in \(\mathbb{C}\setminus\overline{\mathbb{Q}}\)).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\overline{\mathbb{Q}} = \mathbb{C}\)</text>
+      <feedback format="html"><text>Incorrect. \(\overline{\mathbb{Q}}\) consists only of algebraic numbers; transcendental reals/complex numbers are not in \(\overline{\mathbb{Q}}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\overline{\mathbb{Q}}\) is a finite extension of \(\mathbb{Q}\)</text>
+      <feedback format="html"><text>Incorrect. \(\overline{\mathbb{Q}}\) contains \(\sqrt[n]{p}\) for all primes \(p\) and integers \(n\), giving an infinite extension.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\overline{\mathbb{Q}}\) is uncountable</text>
+      <feedback format="html"><text>Incorrect. \(\overline{\mathbb{Q}}\) is countable (a countable union of finite sets — roots of polynomials with rational coefficients).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q07 Frobenius automorphism of finite field</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Let \(\mathbb{F}_{p^n}\) be the finite field with \(p^n\) elements. The Frobenius automorphism \(\phi: x\mapsto x^p\) generates which group?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The full Galois group \(\text{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) \cong \mathbb{Z}/n\mathbb{Z}\)</text>
+      <feedback format="html"><text><![CDATA[
+        The Frobenius map \(\phi(x)=x^p\) is an automorphism of \(\mathbb{F}_{p^n}\) fixing \(\mathbb{F}_p\). Its order is \(n\) (since \(\phi^n = \text{id}\) and \(\phi^k=\text{id}\) iff \(p^k\equiv 1\pmod{p^n-1}\) requires \(n\mid k\)). Since \(|\text{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)|=n\), the Frobenius generates the entire Galois group, which is cyclic of order \(n\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A subgroup of order \(p\) in \(\text{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)\)</text>
+      <feedback format="html"><text>Incorrect. The Frobenius generates the full Galois group of order \(n\), not \(p\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The trivial group (Frobenius is the identity)</text>
+      <feedback format="html"><text>Incorrect. \(\phi=\text{id}\) only on \(\mathbb{F}_p\) itself; on \(\mathbb{F}_{p^n}\) for \(n>1\), \(\phi\) is a nontrivial automorphism.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The symmetric group \(S_n\)</text>
+      <feedback format="html"><text>Incorrect. The Galois group is cyclic of order \(n\), not \(S_n\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q08 Primitive element theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Primitive Element Theorem states that if \(K/F\) is a finite separable extension, then:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(K = F(\alpha)\) for some \(\alpha \in K\) (i.e., \(K\) is a simple extension of \(F\))</text>
+      <feedback format="html"><text><![CDATA[
+        The Primitive Element Theorem (also called Artin's theorem): every finite separable extension is simple. An element \(\alpha\) with \(K=F(\alpha)\) is called a primitive element. For example, \(\mathbb{Q}(\sqrt{2},\sqrt{3})=\mathbb{Q}(\sqrt{2}+\sqrt{3})\) (one can verify the minimal polynomial of \(\sqrt{2}+\sqrt{3}\) over \(\mathbb{Q}\) has degree 4). The theorem fails for inseparable extensions (e.g., \(\mathbb{F}_p(t^{1/p})\) over \(\mathbb{F}_p(t)\)).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(K\) is a Galois extension of \(F\)</text>
+      <feedback format="html"><text>Incorrect. Separable finite extensions are simple (have a primitive element) but need not be normal/Galois.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\([K:F]\) is a prime number</text>
+      <feedback format="html"><text>Incorrect. The degree can be any positive integer; the theorem says nothing about primality.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Every element of \(K\) is a root of a separable polynomial over \(F\)</text>
+      <feedback format="html"><text>Incorrect. This is the definition of \(K/F\) being separable, which is the hypothesis, not the conclusion.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q09 Insolvability of quintic</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The polynomial \(f(x) = x^5 - x - 1\) over \(\mathbb{Q}\) has Galois group \(S_5\). What is the consequence for solvability?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(f(x)\) is not solvable by radicals, since \(S_5\) is not solvable</text>
+      <feedback format="html"><text><![CDATA[
+        \(S_5\) is not solvable because its derived series \(S_5 \supset A_5 \supset A_5 \supset \cdots\) does not reach \(\{e\}\) (as \(A_5\) is perfect: \([A_5,A_5]=A_5\)). By Galois's theorem, \(f\) is solvable by radicals iff \(\text{Gal}(f)\) is solvable. Since \(\text{Gal}(f)\cong S_5\) is not solvable, \(f\) cannot be solved by radicals. This generalizes Abel-Ruffini: "no general formula exists for degree-5 polynomials."
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(f(x)\) is solvable by radicals since it has degree 5</text>
+      <feedback format="html"><text>Incorrect. The converse of "degree \(\leq 4\) implies solvable" is not true; degree 5 is insufficient information.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(f(x)\) is solvable by radicals since \(S_5\) is abelian</text>
+      <feedback format="html"><text>Incorrect. \(S_5\) is non-abelian for \(n\geq 3\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(f(x)\) has no real roots</text>
+      <feedback format="html"><text>Incorrect. \(f(x)=x^5-x-1\) has exactly one real root (by sign changes: \(f(0)=-1<0\), \(f(2)=29>0\)).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q10 Normal extension</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>An algebraic extension \(K/F\) is normal if and only if:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(K\) is the splitting field of some polynomial over \(F\)</text>
+      <feedback format="html"><text><![CDATA[
+        A finite extension \(K/F\) is normal iff it is the splitting field of a polynomial \(f\in F[x]\). Equivalently: whenever an irreducible \(p(x)\in F[x]\) has one root in \(K\), all its roots lie in \(K\). For example: \(\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}\) is NOT normal (the irreducible \(x^3-2\) has one root \(\sqrt[3]{2}\in\mathbb{Q}(\sqrt[3]{2})\) but the complex roots \(\sqrt[3]{2}\omega, \sqrt[3]{2}\omega^2\) do not lie in \(\mathbb{Q}(\sqrt[3]{2})\subset\mathbb{R}\)).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(K/F\) is a separable extension</text>
+      <feedback format="html"><text>Incorrect. Separability is a different property; normal means splitting field condition.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\([K:F]\) is a prime</text>
+      <feedback format="html"><text>Incorrect. Extensions of prime degree are not automatically normal.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\text{Gal}(K/F)\) is abelian</text>
+      <feedback format="html"><text>Incorrect. Normality is about roots; abelian Galois group is a separate property.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q11 Degree of min poly and tower law</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The element \(\alpha = \sqrt{2} + \sqrt[3]{3}\) is algebraic over \(\mathbb{Q}\). What is \([\mathbb{Q}(\alpha):\mathbb{Q}]\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>6</text>
+      <feedback format="html"><text><![CDATA[
+        \([\mathbb{Q}(\sqrt{2}):\mathbb{Q}]=2\) and \([\mathbb{Q}(\sqrt[3]{3}):\mathbb{Q}]=3\). The tower law gives \([\mathbb{Q}(\sqrt{2},\sqrt[3]{3}):\mathbb{Q}] = 2\times 3=6\) (since \(\gcd(2,3)=1\) forces the degrees to multiply). By the primitive element theorem, \(\mathbb{Q}(\sqrt{2},\sqrt[3]{3})=\mathbb{Q}(\sqrt{2}+\sqrt[3]{3})=\mathbb{Q}(\alpha)\). So \([\mathbb{Q}(\alpha):\mathbb{Q}]=6\) and the minimal polynomial of \(\alpha\) over \(\mathbb{Q}\) has degree 6.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>5</text>
+      <feedback format="html"><text>Incorrect. The degree is \(\text{lcm}(2,3)=6\) (actually \(2\times 3=6\) since the degrees are coprime).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>2</text>
+      <feedback format="html"><text>Incorrect. Adjoining both \(\sqrt{2}\) and \(\sqrt[3]{3}\) requires degree 6 over \(\mathbb{Q}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>3</text>
+      <feedback format="html"><text>Incorrect. The degree of \(\sqrt[3]{3}\) alone over \(\mathbb{Q}\) is 3; adding \(\sqrt{2}\) increases it to 6.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q12 Transcendental extensions</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Which of the following is a transcendental extension of \(\mathbb{Q}\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbb{Q}(\pi)\), the field generated by the transcendental number \(\pi\)</text>
+      <feedback format="html"><text><![CDATA[
+        Since \(\pi\) is transcendental over \(\mathbb{Q}\) (Lindemann's theorem, 1882), there is no polynomial \(f\in\mathbb{Q}[x]\) with \(f(\pi)=0\). Thus \(\mathbb{Q}(\pi)\cong\mathbb{Q}(x)\) (rational functions), a transcendental extension of infinite degree. By contrast, \(\mathbb{Q}(\sqrt{2})\), \(\mathbb{Q}(e^{2\pi i/n})\), \(\mathbb{Q}(\sqrt[n]{a})\) are algebraic extensions.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Q}(\sqrt{2})\)</text>
+      <feedback format="html"><text>Incorrect. \(\sqrt{2}\) is algebraic (root of \(x^2-2\)), so this is an algebraic extension of degree 2.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Q}(\zeta_{17})\) where \(\zeta_{17}\) is a primitive 17th root of unity</text>
+      <feedback format="html"><text>Incorrect. Roots of unity are algebraic; this is an algebraic extension of degree 16.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Q}(\sqrt[5]{2})\)</text>
+      <feedback format="html"><text>Incorrect. \(\sqrt[5]{2}\) satisfies \(x^5-2=0\), so this is algebraic of degree 5.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q13 Galois group of x^3-2 over Q</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>What is the Galois group of \(x^3 - 2\) over \(\mathbb{Q}\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(S_3\), the symmetric group of order 6</text>
+      <feedback format="html"><text><![CDATA[
+        The roots of \(x^3-2\) are \(\sqrt[3]{2}, \omega\sqrt[3]{2}, \omega^2\sqrt[3]{2}\) where \(\omega = e^{2\pi i/3}\). The splitting field is \(\mathbb{Q}(\sqrt[3]{2},\omega)\) of degree 6 over \(\mathbb{Q}\). The Galois group permutes the three roots, embedding into \(S_3\). Since the degree equals \(|S_3|=6\), the Galois group is all of \(S_3\). It is generated by \(\sigma:\sqrt[3]{2}\mapsto\omega\sqrt[3]{2}, \omega\mapsto\omega\) (order 3) and \(\tau:\sqrt[3]{2}\mapsto\sqrt[3]{2}, \omega\mapsto\omega^2\) (complex conjugation, order 2).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}_3\)</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}_3\) has order 3 but the Galois group has order 6.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}_6\)</text>
+      <feedback format="html"><text>Incorrect. The Galois group is \(S_3\), which has order 6 but is non-abelian; \(\mathbb{Z}_6\) is abelian.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}_2\)</text>
+      <feedback format="html"><text>Incorrect. The splitting field has degree 6, not 2.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q14 Fixed field of Galois group</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Let \(K = \mathbb{Q}(\sqrt{2},\sqrt{3})\) and \(G = \text{Gal}(K/\mathbb{Q}) \cong \mathbb{Z}_2\times\mathbb{Z}_2\). The subgroup \(H = \{e, \sigma\}\) where \(\sigma(\sqrt{2})=-\sqrt{2}, \sigma(\sqrt{3})=\sqrt{3}\) has fixed field:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbb{Q}(\sqrt{3})\)</text>
+      <feedback format="html"><text><![CDATA[
+        The fixed field \(K^H\) consists of elements fixed by all of \(H=\{e,\sigma\}\). Since \(\sigma(\sqrt{2})=-\sqrt{2}\) and \(\sigma(\sqrt{3})=\sqrt{3}\), the element \(\sqrt{3}\) is fixed by \(\sigma\), and all elements of \(\mathbb{Q}(\sqrt{3})\) are fixed. The fixed field has degree \([K:K^H]=|H|=2\) and \([K^H:\mathbb{Q}]=[G:H]=2\). So \(K^H=\mathbb{Q}(\sqrt{3})\). (By Galois correspondence, the subgroup sending \(\sqrt{2}\to-\sqrt{2}\) fixes \(\sqrt{3}\) and corresponds to the intermediate field generated by \(\sqrt{3}\).)
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Q}(\sqrt{2})\)</text>
+      <feedback format="html"><text>Incorrect. \(\sigma(\sqrt{2})=-\sqrt{2}\neq\sqrt{2}\), so \(\sqrt{2}\) is not fixed by \(\sigma\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Q}(\sqrt{6})\)</text>
+      <feedback format="html"><text>Incorrect. \(\sigma(\sqrt{6})=\sigma(\sqrt{2})\sigma(\sqrt{3})=(-\sqrt{2})(\sqrt{3})=-\sqrt{6}\neq\sqrt{6}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Q}\)</text>
+      <feedback format="html"><text>Incorrect. The fixed field of the trivial subgroup would be all of \(K\), and the fixed field of the whole group would be \(\mathbb{Q}\); here \(H\) is an intermediate subgroup.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q15 Number of elements of given order in finite field</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>In the finite field \(\mathbb{F}_{16}\), how many elements have multiplicative order exactly 5?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>4</text>
+      <feedback format="html"><text><![CDATA[
+        \(\mathbb{F}_{16}^\times\) is cyclic of order \(16-1=15=3\times 5\). The number of elements of order exactly \(d\) in a cyclic group of order \(n\) is \(\phi(d)\) if \(d\mid n\), else 0. Since \(5\mid 15\), the number of elements of order 5 is \(\phi(5)=4\). These are the primitive 5th roots of unity in \(\mathbb{F}_{16}^\times\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>5</text>
+      <feedback format="html"><text>Incorrect. The count is \(\phi(5)=4\), not 5.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>3</text>
+      <feedback format="html"><text>Incorrect. \(\phi(5)=4\), since 5 is prime and \(\phi(p)=p-1\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>15</text>
+      <feedback format="html"><text>Incorrect. 15 is the total order of \(\mathbb{F}_{16}^\times\), not the count of order-5 elements.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q16 Discriminant and Galois group</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For a cubic polynomial \(f(x) = x^3 + px + q\) over \(\mathbb{Q}\) with discriminant \(\Delta = -4p^3 - 27q^2\), when is \(\text{Gal}(f/\mathbb{Q}) \cong A_3 \cong \mathbb{Z}_3\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>When \(\Delta > 0\) and \(\Delta\) is a perfect square in \(\mathbb{Q}\)</text>
+      <feedback format="html"><text><![CDATA[
+        For an irreducible cubic over \(\mathbb{Q}\): if \(\Delta > 0\), all three roots are real and distinct; if \(\Delta < 0\), one real and two complex conjugate roots. The Galois group is \(A_3\cong\mathbb{Z}_3\) iff \(\sqrt{\Delta}\in\mathbb{Q}\), i.e., \(\Delta\) is a perfect square in \(\mathbb{Q}\); otherwise it is \(S_3\). Example: \(x^3-3x+1\) has \(\Delta=81=9^2\), so \(\text{Gal}=\mathbb{Z}_3\). This root determines the splitting field has degree 3.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>When \(\Delta < 0\)</text>
+      <feedback format="html"><text>Incorrect. When \(\Delta<0\), the polynomial has one real and two complex roots, and the Galois group is \(S_3\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>When \(\Delta = 0\)</text>
+      <feedback format="html"><text>Incorrect. \(\Delta=0\) means the polynomial has a repeated root, making it reducible.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Always, for any irreducible cubic</text>
+      <feedback format="html"><text>Incorrect. The generic irreducible cubic has Galois group \(S_3\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q17 Separable extensions and characteristic</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Over which types of fields are all algebraic extensions automatically separable?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Perfect fields (including all fields of characteristic 0 and all finite fields)</text>
+      <feedback format="html"><text><![CDATA[
+        A field \(F\) is perfect if every algebraic extension is separable. This holds for: (1) all fields of characteristic 0 (e.g., \(\mathbb{Q},\mathbb{R},\mathbb{C}\)); (2) all finite fields \(\mathbb{F}_q\) (the Frobenius is surjective); (3) algebraically closed fields. Inseparable extensions arise only over imperfect fields of characteristic \(p>0\), e.g., the extension \(\mathbb{F}_p(t^{1/p})/\mathbb{F}_p(t)\) is purely inseparable.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Only fields of characteristic 0</text>
+      <feedback format="html"><text>Incorrect. Finite fields are perfect despite having positive characteristic.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Only algebraically closed fields</text>
+      <feedback format="html"><text>Incorrect. All characteristic-0 fields and finite fields are also perfect.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>All fields of positive characteristic</text>
+      <feedback format="html"><text>Incorrect. Infinite fields of positive characteristic (like \(\mathbb{F}_p(t)\)) can have inseparable extensions.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q18 Subfields of F_p^n</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Which are the subfields of \(\mathbb{F}_{p^{12}}\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbb{F}_{p^d}\) for each divisor \(d\) of 12: \(d\in\{1,2,3,4,6,12\}\)</text>
+      <feedback format="html"><text><![CDATA[
+        The subfields of \(\mathbb{F}_{p^n}\) correspond bijectively to divisors of \(n\): for each \(d\mid n\), there is a unique subfield \(\mathbb{F}_{p^d}\). The divisors of 12 are 1,2,3,4,6,12, giving 6 subfields: \(\mathbb{F}_p, \mathbb{F}_{p^2}, \mathbb{F}_{p^3}, \mathbb{F}_{p^4}, \mathbb{F}_{p^6}, \mathbb{F}_{p^{12}}\). This corresponds (via the Galois correspondence) to the subgroups of \(\mathbb{Z}_{12}\), which are also indexed by divisors of 12.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{F}_{p^d}\) for \(d\in\{1,2,4,12\}\) (only the powers of 2 dividing 12)</text>
+      <feedback format="html"><text>Incorrect. The subfields correspond to ALL divisors of 12, including 3 and 6.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Only \(\mathbb{F}_p\) and \(\mathbb{F}_{p^{12}}\)</text>
+      <feedback format="html"><text>Incorrect. There are multiple intermediate subfields corresponding to all divisors of 12.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{F}_{p^d}\) for all \(d \leq 12\)</text>
+      <feedback format="html"><text>Incorrect. Only subfields corresponding to divisors of 12 exist; \(\mathbb{F}_{p^5}\) is not a subfield of \(\mathbb{F}_{p^{12}}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q19 Kummer extension</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>A Kummer extension \(K = F(\alpha)\) where \(\alpha^n = a \in F\) and \(F\) contains a primitive \(n\)th root of unity has Galois group:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A cyclic group, \(\text{Gal}(K/F) \cong \mathbb{Z}/d\mathbb{Z}\) where \(d = [K:F]\) divides \(n\)</text>
+      <feedback format="html"><text><![CDATA[
+        Kummer theory: if \(F\) contains a primitive \(n\)th root of unity \(\zeta_n\), then the splitting field of \(x^n - a\) is a Kummer extension with cyclic Galois group. Any automorphism \(\sigma\) is determined by \(\sigma(\alpha) = \zeta_n^k\alpha\) for some \(k\); these form a cyclic group. More precisely, \(\text{Gal}(K/F)\hookrightarrow\mathbb{Z}/n\mathbb{Z}\), so it is cyclic of some order \(d\mid n\). Conversely, by Kummer's theorem, all cyclic extensions of degree \(d\mid n\) arise this way.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Always the full symmetric group \(S_n\)</text>
+      <feedback format="html"><text>Incorrect. Kummer extensions have abelian (specifically cyclic) Galois groups.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A non-abelian group</text>
+      <feedback format="html"><text>Incorrect. Kummer extensions are always abelian extensions.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Trivial (i.e., \(K = F\) always)</text>
+      <feedback format="html"><text>Incorrect. \(K=F\) only when \(a\) is already an \(n\)th power in \(F\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>ALG33-Q20 Constructibility and field extensions</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>A real number \(\alpha\) is constructible with compass and straightedge if and only if:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\([\mathbb{Q}(\alpha):\mathbb{Q}]\) is a power of 2</text>
+      <feedback format="html"><text><![CDATA[
+        A number is constructible iff its minimal polynomial over \(\mathbb{Q}\) has degree a power of 2, equivalently \([\mathbb{Q}(\alpha):\mathbb{Q}]=2^k\) for some \(k\geq 0\). Applications: (1) Doubling the cube requires \(\sqrt[3]{2}\) with \([\mathbb{Q}(\sqrt[3]{2}):\mathbb{Q}]=3\) — not a power of 2, so impossible. (2) Regular \(n\)-gon is constructible iff \(n=2^k p_1\cdots p_r\) where each \(p_i\) is a distinct Fermat prime. (3) Trisecting a general angle requires \(\cos(20°)\) with minimal poly degree 3 — impossible.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\alpha\) is algebraic over \(\mathbb{Q}\)</text>
+      <feedback format="html"><text>Incorrect. Algebraic numbers like \(\sqrt[3]{2}\) are not constructible; the degree must be a power of 2.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\([\mathbb{Q}(\alpha):\mathbb{Q}]\) is any finite number</text>
+      <feedback format="html"><text>Incorrect. The degree must specifically be a power of 2 for constructibility.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\alpha\) is a rational number</text>
+      <feedback format="html"><text>Incorrect. All rationals are constructible, but so are irrationals like \(\sqrt{2}\). Rational is sufficient but not necessary.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

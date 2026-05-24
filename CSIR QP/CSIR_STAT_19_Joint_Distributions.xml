@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Statistics and Probability/Joint Distributions and Expectations</text></category>
+    <info format="html"><text>CSIR NET level MCQ questions on Joint Distributions and Conditional Expectations</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q01 Joint to Marginal</text></name>
+    <questiontext format="html"><text><![CDATA[The joint density of \((X,Y)\) is \(f(x,y)=6xy^2\) for \(0<x<1, 0<y<1\). The marginal density of \(X\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(f_X(x)=2x\) for \(0<x<1\)]]></text><feedback format="html"><text>Correct. \(f_X(x)=\int_0^1 6xy^2\,dy=6x\cdot[y^3/3]_0^1=6x\cdot(1/3)=2x\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f_X(x)=6x\)]]></text><feedback format="html"><text>Incorrect. \(\int_0^1 6xy^2\,dy=2x\), not \(6x\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f_X(x)=3x^2\)]]></text><feedback format="html"><text>Incorrect. The marginal is obtained by integrating over \(y\): \(\int_0^1 6xy^2\,dy=2x\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f_X(x)=1\)]]></text><feedback format="html"><text>Incorrect. \(f_X(x)=\int_0^1 6xy^2\,dy=2x\neq1\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q02 Conditional Expectation</text></name>
+    <questiontext format="html"><text><![CDATA[Using the joint density \(f(x,y)=6xy^2\) for \(0<x,y<1\), the conditional density of \(Y\mid X=x\) is \(f_{Y|X}(y|x)=3y^2\). The conditional expectation \(E[Y\mid X=x]\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(3/4\)</text><feedback format="html"><text>Correct. \(E[Y|X=x]=\int_0^1 y\cdot3y^2\,dy=3\int_0^1 y^3\,dy=3/4\). Note: this does not depend on \(x\), meaning \(X\) and \(Y\) are independent here.</text></feedback></answer>
+    <answer fraction="0"><text>\(x/2\)</text><feedback format="html"><text>Incorrect. \(E[Y|X=x]=\int_0^1 y\cdot 3y^2\,dy=3/4\) (independent of \(x\)).</text></feedback></answer>
+    <answer fraction="0"><text>\(2/3\)</text><feedback format="html"><text>Incorrect. \(\int_0^1 y\cdot3y^2\,dy=[3y^4/4]_0^1=3/4\).</text></feedback></answer>
+    <answer fraction="0"><text>\(3x/4\)</text><feedback format="html"><text>Incorrect. The conditional expectation does not depend on \(x\) for this joint density.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q03 Covariance and Correlation</text></name>
+    <questiontext format="html"><text><![CDATA[For random variables \(X\) and \(Y\), \(\text{Cov}(X,Y)=E[XY]-E[X]E[Y]\). If \(X\) and \(Y\) are independent, then:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(\text{Cov}(X,Y)=0\), but the converse is false in general</text><feedback format="html"><text>Correct. Independence implies zero covariance. However, zero covariance (uncorrelated) does not imply independence. Example: \(X\sim N(0,1)\), \(Y=X^2\); they are uncorrelated but dependent.</text></feedback></answer>
+    <answer fraction="0"><text>\(\text{Cov}(X,Y)=1\)</text><feedback format="html"><text>Incorrect. Independent random variables have zero covariance.</text></feedback></answer>
+    <answer fraction="0"><text>\(\text{Cov}(X,Y)=0\) and the converse also holds</text><feedback format="html"><text>Incorrect. Zero covariance does not imply independence (it only holds for jointly normal variables).</text></feedback></answer>
+    <answer fraction="0"><text>\(\text{Cov}(X,Y)=E[X]E[Y]\)</text><feedback format="html"><text>Incorrect. \(\text{Cov}(X,Y)=E[XY]-E[X]E[Y]=0\) when independent, since \(E[XY]=E[X]E[Y]\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q04 Tower Property</text></name>
+    <questiontext format="html"><text><![CDATA[The tower property (law of iterated expectations) states \(E[X]=E[E[X|Y]]\). If \(E[X|Y=y]=2y+1\) and \(Y\sim N(3,4)\), then \(E[X]\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(7\)</text><feedback format="html"><text>Correct. \(E[X]=E[E[X|Y]]=E[2Y+1]=2E[Y]+1=2\times3+1=7\).</text></feedback></answer>
+    <answer fraction="0"><text>\(3\)</text><feedback format="html"><text>Incorrect. \(E[X]=E[2Y+1]=2E[Y]+1=7\).</text></feedback></answer>
+    <answer fraction="0"><text>\(9\)</text><feedback format="html"><text>Incorrect. \(E[X]=2\times3+1=7\neq9\).</text></feedback></answer>
+    <answer fraction="0"><text>\(13\)</text><feedback format="html"><text>Incorrect. \(E[Y]=3\), so \(E[X]=2(3)+1=7\neq13\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q05 Variance Decomposition</text></name>
+    <questiontext format="html"><text><![CDATA[The law of total variance states \(\text{Var}(X)=E[\text{Var}(X|Y)]+\text{Var}(E[X|Y])\). This splits total variance into:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Within-group variance (expected conditional variance) + between-group variance (variance of conditional means)</text><feedback format="html"><text>Correct. The ANOVA decomposition: total variance = within-group (expected conditional variance) + between-group (variance of conditional means). This is the law of total variance (Eve's law).</text></feedback></answer>
+    <answer fraction="0"><text>Signal variance + noise variance (always equal)</text><feedback format="html"><text>Incorrect. The two components need not be equal.</text></feedback></answer>
+    <answer fraction="0"><text>Always equal to zero</text><feedback format="html"><text>Incorrect. Total variance equals the sum of the two non-negative components.</text></feedback></answer>
+    <answer fraction="0"><text>The product of conditional variances</text><feedback format="html"><text>Incorrect. Total variance is a sum, not a product.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q06 Bivariate Normal Independence</text></name>
+    <questiontext format="html"><text><![CDATA[For a bivariate normal distribution, \(X\) and \(Y\) are independent if and only if:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>The correlation coefficient \(\rho=0\)</text><feedback format="html"><text>Correct. For jointly normal random variables, zero correlation is equivalent to independence. This is special to the normal distribution (not true for general distributions).</text></feedback></answer>
+    <answer fraction="0"><text>\(E[X]=E[Y]=0\)</text><feedback format="html"><text>Incorrect. Zero means are not related to independence.</text></feedback></answer>
+    <answer fraction="0"><text>\(\sigma_X=\sigma_Y\)</text><feedback format="html"><text>Incorrect. Equal variances do not imply independence.</text></feedback></answer>
+    <answer fraction="0"><text>The joint density is symmetric</text><feedback format="html"><text>Incorrect. Symmetry of the joint density is not equivalent to independence.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q07 Joint MGF</text></name>
+    <questiontext format="html"><text><![CDATA[The joint MGF of \((X,Y)\) is \(M(s,t)=E[e^{sX+tY}]\). If \(X\) and \(Y\) are independent, then \(M(s,t)\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(M(s,t)=M_X(s)\cdot M_Y(t)\) (product of marginal MGFs)]]></text><feedback format="html"><text>Correct. If \(X,Y\) independent: \(E[e^{sX+tY}]=E[e^{sX}]E[e^{tY}]=M_X(s)M_Y(t)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(M(s,t)=M_X(s)+M_Y(t)\)]]></text><feedback format="html"><text>Incorrect. The joint MGF factors as a product (not sum) for independent variables.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(M(s,t)=M_X(s+t)\)]]></text><feedback format="html"><text>Incorrect. The joint MGF involves both \(s\) and \(t\) separately.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(M(s,t)=0\)]]></text><feedback format="html"><text>Incorrect. \(M(0,0)=1\neq0\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q08 Convolution Formula</text></name>
+    <questiontext format="html"><text><![CDATA[If \(X\) and \(Y\) are independent with densities \(f_X\) and \(f_Y\), the density of \(Z=X+Y\) is the convolution:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(f_Z(z)=\int_{-\infty}^\infty f_X(z-y)f_Y(y)\,dy = (f_X * f_Y)(z)\)]]></text><feedback format="html"><text>Correct. The density of the sum of independent random variables is the convolution of their individual densities.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f_Z(z)=f_X(z)f_Y(z)\)]]></text><feedback format="html"><text>Incorrect. The product \(f_X(z)f_Y(z)\) would be the joint density evaluated on the diagonal, not the density of the sum.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f_Z(z)=f_X(z)+f_Y(z)\)]]></text><feedback format="html"><text>Incorrect. Densities do not simply add for sums of random variables.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f_Z(z)=f_X(z/2)f_Y(z/2)/2\)]]></text><feedback format="html"><text>Incorrect. The density of the sum is the convolution, not a product of scaled densities.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q09 Jacobian Transformation</text></name>
+    <questiontext format="html"><text><![CDATA[Let \((X,Y)\) have joint density \(f(x,y)\). Under transformation \(U=g_1(X,Y)\), \(V=g_2(X,Y)\) with inverse \(x=h_1(u,v)\), \(y=h_2(u,v)\), the joint density of \((U,V)\) involves the Jacobian:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(f_{U,V}(u,v)=f_{X,Y}(h_1,h_2)\cdot\left|\frac{\partial(x,y)}{\partial(u,v)}\right|\)]]></text><feedback format="html"><text>Correct. The change-of-variables formula multiplies the original density by the absolute Jacobian of the inverse transformation.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f_{U,V}(u,v)=f_{X,Y}(h_1,h_2)/\left|\frac{\partial(x,y)}{\partial(u,v)}\right|\)]]></text><feedback format="html"><text>Incorrect. The Jacobian appears as a multiplicative factor (absolute value), not as a divisor.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f_{U,V}(u,v)=f_{X,Y}(h_1,h_2)\)]]></text><feedback format="html"><text>Incorrect. Without the Jacobian, the density would not integrate to 1 after a nonlinear transformation.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f_{U,V}(u,v)=f_{X,Y}(g_1(u,v), g_2(u,v))\)]]></text><feedback format="html"><text>Incorrect. The transformation formula uses the inverse functions \((h_1,h_2)\), not the forward functions \((g_1,g_2)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q10 Stein's Lemma</text></name>
+    <questiontext format="html"><text><![CDATA[Stein's lemma: if \(X\sim N(\mu,\sigma^2)\) and \(g\) is a differentiable function with \(E[|g'(X)|]<\infty\), then \(E[(X-\mu)g(X)]=\sigma^2 E[g'(X)]\). Applying this with \(g(x)=x\), we get:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(E[(X-\mu)X]=\sigma^2\), confirming \(\text{Var}(X)=\sigma^2\)]]></text><feedback format="html"><text>Correct. With \(g(x)=x\), \(g'(x)=1\): \(E[(X-\mu)X]=\sigma^2\cdot E[1]=\sigma^2\). But \(E[(X-\mu)X]=E[X^2-\mu X]=E[X^2]-\mu E[X]=E[X^2]-\mu^2=\text{Var}(X)=\sigma^2\).</text></feedback></answer>
+    <answer fraction="0"><text>\(E[X^2]=\mu^2\)</text><feedback format="html"><text>Incorrect. \(E[X^2]=\mu^2+\sigma^2\) (second moment = variance + squared mean).</text></feedback></answer>
+    <answer fraction="0"><text>\(E[X]=0\) always</text><feedback format="html"><text>Incorrect. Stein's lemma does not imply \(E[X]=0\); mean is \(\mu\).</text></feedback></answer>
+    <answer fraction="0"><text>\(\text{Var}(X)=\mu\)</text><feedback format="html"><text>Incorrect. Stein's lemma confirms \(\text{Var}(X)=\sigma^2\), the parameter, not \(\mu\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q11 Copulas</text></name>
+    <questiontext format="html"><text><![CDATA[Sklar's theorem states: for any joint CDF \(F(x,y)\) with marginals \(F_X\) and \(F_Y\), there exists a copula \(C:[0,1]^2\to[0,1]\) such that \(F(x,y)=C(F_X(x),F_Y(y))\). The independence copula is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(C(u,v)=uv\) (product copula)</text><feedback format="html"><text>Correct. For independent \(X,Y\): \(F(x,y)=F_X(x)F_Y(y)=C(F_X(x),F_Y(y))\) implies \(C(u,v)=uv\), the independence (product) copula.</text></feedback></answer>
+    <answer fraction="0"><text>\(C(u,v)=\min(u,v)\)</text><feedback format="html"><text>Incorrect. \(\min(u,v)\) is the Fréchet upper bound (comonotone copula for perfect positive dependence).</text></feedback></answer>
+    <answer fraction="0"><text>\(C(u,v)=\max(u+v-1,0)\)</text><feedback format="html"><text>Incorrect. This is the Fréchet lower bound (countermonotone copula for perfect negative dependence).</text></feedback></answer>
+    <answer fraction="0"><text>\(C(u,v)=(u+v)/2\)</text><feedback format="html"><text>Incorrect. \((u+v)/2\) is not a valid copula (doesn't satisfy \(C(1,v)=v\) and \(C(u,1)=u\)).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q12 Conditional Variance</text></name>
+    <questiontext format="html"><text><![CDATA[If \(X|N=n\sim\text{Bin}(n,p)\) and \(N\sim\text{Poisson}(\lambda)\), then \(\text{Var}(X)=\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\lambda p\)]]></text><feedback format="html"><text>Correct. By law of total variance: \(\text{Var}(X)=E[\text{Var}(X|N)]+\text{Var}(E[X|N])=E[Np(1-p)]+\text{Var}(Np)=\lambda p(1-p)+\lambda p^2=\lambda p\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda p(1-p)\)]]></text><feedback format="html"><text>Incorrect. Full variance = \(E[Np(1-p)]+\text{Var}(Np)=\lambda p(1-p)+\lambda p^2=\lambda p\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda p^2\)]]></text><feedback format="html"><text>Incorrect. \(\text{Var}(X)=\lambda p(1-p)+\lambda p^2=\lambda p\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda^2p^2\)]]></text><feedback format="html"><text>Incorrect. \(\text{Var}(X)=\lambda p\) (linear in \(\lambda\) and \(p\)).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q13 Exchangeability</text></name>
+    <questiontext format="html"><text><![CDATA[A sequence \(X_1,X_2,\ldots\) is exchangeable if every finite sub-sequence has the same joint distribution under any permutation. By de Finetti's theorem, an infinite exchangeable sequence of \(\{0,1\}\)-valued random variables is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>A mixture of Bernoulli i.i.d. sequences (conditional on a parameter \(\theta\), the \(X_i\) are i.i.d. Bernoulli\((\theta)\))</text><feedback format="html"><text>Correct. de Finetti's theorem: any infinite exchangeable binary sequence is conditionally i.i.d. given a mixing parameter \(\theta\) drawn from some distribution on \([0,1]\).</text></feedback></answer>
+    <answer fraction="0"><text>Always i.i.d.</text><feedback format="html"><text>Incorrect. Exchangeability is weaker than independence. De Finetti shows it is only conditionally i.i.d.</text></feedback></answer>
+    <answer fraction="0"><text>A Markov chain</text><feedback format="html"><text>Incorrect. Exchangeable sequences need not be Markovian.</text></feedback></answer>
+    <answer fraction="0"><text>A martingale sequence</text><feedback format="html"><text>Incorrect. Exchangeability does not imply the martingale property.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q14 Multivariate Transformations</text></name>
+    <questiontext format="html"><text><![CDATA[If \(X\) and \(Y\) are independent Exp\((1)\), the distribution of \(U=X/(X+Y)\) and \(V=X+Y\) are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(U\sim\text{Uniform}(0,1)\) and \(V\sim\text{Gamma}(2,1)\), and \(U,V\) are independent</text><feedback format="html"><text>Correct. For independent Exp\((1)\) variables, \(U=X/(X+Y)\sim\text{Uniform}(0,1)\) and \(V=X+Y\sim\text{Gamma}(2,1)\), and they are independent. This is a standard result in Gamma/Beta relationships.</text></feedback></answer>
+    <answer fraction="0"><text>\(U\sim\text{Beta}(2,2)\) and \(V\sim\text{Exp}(1)\)</text><feedback format="html"><text>Incorrect. \(U\sim\text{Uniform}(0,1)=\text{Beta}(1,1)\) and \(V\sim\text{Gamma}(2,1)\).</text></feedback></answer>
+    <answer fraction="0"><text>\(U\) and \(V\) are dependent</text><feedback format="html"><text>Incorrect. A fundamental property of exponentials/gamma: the ratio and sum are independent.</text></feedback></answer>
+    <answer fraction="0"><text>\(U\sim\text{Cauchy}\)</text><feedback format="html"><text>Incorrect. \(X/(X+Y)\in(0,1)\) cannot be Cauchy (which has support \((-\infty,\infty)\)).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q15 Correlation Inequality</text></name>
+    <questiontext format="html"><text><![CDATA[For random variables \(X,Y\) with finite second moments, the correlation \(\rho(X,Y)=\text{Cov}(X,Y)/(\sigma_X\sigma_Y)\) satisfies:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(-1\leq\rho\leq1\), with \(|\rho|=1\) iff \(Y=aX+b\) a.s. for some \(a\neq0,b\)</text><feedback format="html"><text>Correct. By Cauchy-Schwarz, \(|\text{Cov}(X,Y)|\leq\sigma_X\sigma_Y\), so \(|\rho|\leq1\). Equality holds iff the variables are linearly dependent.</text></feedback></answer>
+    <answer fraction="0"><text>\(0\leq\rho\leq1\) (correlation is non-negative)</text><feedback format="html"><text>Incorrect. Correlation can be negative (e.g., \(\rho=-1\) for \(Y=-X\)).</text></feedback></answer>
+    <answer fraction="0"><text>\(\rho\in\mathbb{R}\) with no restriction</text><feedback format="html"><text>Incorrect. Cauchy-Schwarz guarantees \(|\rho|\leq1\).</text></feedback></answer>
+    <answer fraction="0"><text>\(|\rho|<1\) always (equality is never achieved)</text><feedback format="html"><text>Incorrect. \(|\rho|=1\) is achieved for any perfectly linear relationship \(Y=aX+b\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q16 Conditional Expectation as Projection</text></name>
+    <questiontext format="html"><text><![CDATA[The conditional expectation \(E[X|\mathcal{G}]\) (for sub-\(\sigma\)-algebra \(\mathcal{G}\)) is the best \(L^2\)-projection of \(X\) onto \(\mathcal{G}\)-measurable functions. This means:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(E[X|\mathcal{G}]\) minimizes \(E[(X-Z)^2]\) over all \(\mathcal{G}\)-measurable \(Z\)]]></text><feedback format="html"><text>Correct. The conditional expectation is the \(L^2\)-orthogonal projection. For any \(\mathcal{G}\)-measurable \(Z\): \(E[(X-E[X|\mathcal{G}])^2]\leq E[(X-Z)^2]\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(E[X|\mathcal{G}]=X\) always]]></text><feedback format="html"><text>Incorrect. \(E[X|\mathcal{G}]=X\) only when \(X\) is already \(\mathcal{G}\)-measurable.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(E[X|\mathcal{G}]=E[X]\) always]]></text><feedback format="html"><text>Incorrect. \(E[X|\mathcal{G}]=E[X]\) only when \(X\) is independent of \(\mathcal{G}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(E[X|\mathcal{G}]\) maximizes \(E[(X-Z)^2]\)]]></text><feedback format="html"><text>Incorrect. The conditional expectation minimizes (not maximizes) the mean squared error.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q17 Radon-Nikodym Derivative</text></name>
+    <questiontext format="html"><text><![CDATA[The Radon-Nikodym theorem: if measure \(\nu\) is absolutely continuous w.r.t. \(\mu\) (\(\nu\ll\mu\)), there exists a non-negative measurable function \(dν/d\mu\) (the Radon-Nikodym derivative) such that \(\nu(A)=\int_A\frac{d\nu}{d\mu}\,d\mu\) for all measurable \(A\). In probability, if \(P,Q\) are probability measures with \(Q\ll P\), then \(E_Q[h]=\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(E_P\left[h\cdot\frac{dQ}{dP}\right]\)]]></text><feedback format="html"><text>Correct. The Radon-Nikodym derivative serves as the likelihood ratio: \(E_Q[h]=\int h\,dQ=\int h\frac{dQ}{dP}\,dP=E_P[h\frac{dQ}{dP}]\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(E_P[h]+E_P\left[\frac{dQ}{dP}\right]\)]]></text><feedback format="html"><text>Incorrect. The formula involves a product inside the expectation, not a sum of expectations.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(E_P[h]\cdot E_P\left[\frac{dQ}{dP}\right]\)]]></text><feedback format="html"><text>Incorrect. The Radon-Nikodym derivative is inside the expectation as a multiplicative weight.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(E_P[h]/E_P\left[\frac{dQ}{dP}\right]\)]]></text><feedback format="html"><text>Incorrect. The correct formula is \(E_Q[h]=E_P[h\cdot dQ/dP]\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q18 Bivariate MGF</text></name>
+    <questiontext format="html"><text><![CDATA[For \((X,Y)\sim\) Bivariate Normal with means \(\mu_X,\mu_Y\), variances \(\sigma_X^2,\sigma_Y^2\), correlation \(\rho\), the joint MGF is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(M(s,t)=\exp\left(s\mu_X+t\mu_Y+\frac{1}{2}(s^2\sigma_X^2+2st\rho\sigma_X\sigma_Y+t^2\sigma_Y^2)\right)\)]]></text><feedback format="html"><text>Correct. The joint MGF of the bivariate normal contains the cross term \(2st\rho\sigma_X\sigma_Y\) that encodes the correlation.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(M(s,t)=e^{s\mu_X+s^2\sigma_X^2/2}\cdot e^{t\mu_Y+t^2\sigma_Y^2/2}\)]]></text><feedback format="html"><text>Incorrect. This is the product of marginal MGFs (valid only when \(\rho=0\)). The joint MGF has the additional term \(st\rho\sigma_X\sigma_Y\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(M(s,t)=e^{(s+t)\mu+\sigma^2(s+t)^2/2}\)]]></text><feedback format="html"><text>Incorrect. This would apply if \(X=Y\), not for general bivariate normal.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(M(s,t)=1+s\mu_X+t\mu_Y\)]]></text><feedback format="html"><text>Incorrect. The MGF is an exponential function, not a first-order polynomial.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q19 Conditional Independence</text></name>
+    <questiontext format="html"><text><![CDATA[Random variables \(X\) and \(Y\) are conditionally independent given \(Z\) if \(P(X\in A, Y\in B|Z)=P(X\in A|Z)\cdot P(Y\in B|Z)\) a.s. Which is true?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Conditional independence given \(Z\) does not imply marginal independence of \(X\) and \(Y\)</text><feedback format="html"><text>Correct. Conditional independence is different from marginal independence. Examples: \(X,Y\) can be marginally dependent but conditionally independent given a common cause \(Z\).</text></feedback></answer>
+    <answer fraction="0"><text>Conditional independence given \(Z\) implies \(X\perp\!\!\!\perp Y\) marginally</text><feedback format="html"><text>Incorrect. Conditional independence does not imply marginal independence.</text></feedback></answer>
+    <answer fraction="0"><text>Marginal independence of \(X,Y\) implies conditional independence given any \(Z\)</text><feedback format="html"><text>Incorrect. Marginal independence can be destroyed by conditioning (Berkson's paradox / explaining away).</text></feedback></answer>
+    <answer fraction="0"><text>Conditional and marginal independence are equivalent</text><feedback format="html"><text>Incorrect. They are distinct concepts; neither implies the other in general.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT19-Q20 Variance of Sample Mean</text></name>
+    <questiontext format="html"><text><![CDATA[If \(X_1,\ldots,X_n\) are identically distributed (not necessarily independent) with common variance \(\sigma^2\) and pairwise correlation \(\rho\), the variance of \(\bar{X}=\frac{1}{n}\sum X_i\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{\sigma^2}{n}(1+(n-1)\rho)\)]]></text><feedback format="html"><text>Correct. \(\text{Var}(\bar{X})=\frac{1}{n^2}[n\sigma^2+n(n-1)\rho\sigma^2]=\frac{\sigma^2}{n}[1+(n-1)\rho]\). When \(\rho=0\), reduces to \(\sigma^2/n\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{\sigma^2}{n}\)]]></text><feedback format="html"><text>Incorrect. This holds only when \(\rho=0\) (independence). For correlated observations, additional terms appear.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\sigma^2(1+\rho)\)]]></text><feedback format="html"><text>Incorrect. The variance of the sample mean involves \((1+(n-1)\rho)/n\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{\sigma^2\rho}{n}\)]]></text><feedback format="html"><text>Incorrect. \(\text{Var}(\bar{X})=\frac{\sigma^2}{n}[1+(n-1)\rho]\).</text></feedback></answer>
+  </question>
+</quiz>

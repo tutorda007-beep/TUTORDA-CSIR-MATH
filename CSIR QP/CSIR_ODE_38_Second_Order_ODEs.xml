@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Ordinary Differential Equations/Second Order ODEs</text></category>
+    <info format="html"><text>CSIR NET Mathematics — ODEs: Second Order ODEs. MCQ, 20 questions covering constant coefficients, Cauchy-Euler, method of undetermined coefficients, variation of parameters, power series, Wronskian, and oscillation theory.</text></info>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q01 Characteristic equation — constant coefficients</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Find the general solution of \(y'' - 5y' + 6y = 0\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y = C_1 e^{2x} + C_2 e^{3x}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Characteristic equation: \(r^2-5r+6=0\), factoring: \((r-2)(r-3)=0\), roots \(r=2,3\). General solution: \(y=C_1e^{2x}+C_2e^{3x}\). The Wronskian \(W(e^{2x},e^{3x})=3e^{5x}-2e^{5x}=e^{5x}\neq 0\), confirming linear independence.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = C_1 e^{-2x} + C_2 e^{-3x}\)</text>
+      <feedback format="html"><text>Incorrect. The roots of \(r^2-5r+6=0\) are \(r=2\) and \(r=3\) (both positive).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = (C_1 + C_2 x)e^{5x/2}\)</text>
+      <feedback format="html"><text>Incorrect. This is the form for a repeated root; \(r^2-5r+6=(r-2)(r-3)\) has two distinct roots.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = e^{5x/2}(C_1\cos x + C_2\sin x)\)</text>
+      <feedback format="html"><text>Incorrect. Complex roots arise when the discriminant is negative; here \(\Delta=25-24=1>0\), giving real roots.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q02 Complex roots — underdamped oscillation</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Find the general solution of \(y'' + 4y' + 13y = 0\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y = e^{-2x}(C_1\cos 3x + C_2\sin 3x)\)</text>
+      <feedback format="html"><text><![CDATA[
+        Characteristic equation: \(r^2+4r+13=0\). Discriminant: \(16-52=-36<0\). Roots: \(r=\frac{-4\pm\sqrt{-36}}{2}=-2\pm 3i\). General solution for complex roots \(\alpha\pm\beta i\): \(y=e^{\alpha x}(C_1\cos\beta x+C_2\sin\beta x)\). Here \(\alpha=-2,\beta=3\), so \(y=e^{-2x}(C_1\cos 3x+C_2\sin 3x)\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = e^{2x}(C_1\cos 3x + C_2\sin 3x)\)</text>
+      <feedback format="html"><text>Incorrect. The real part of the roots is \(-2\) (negative, damping), not \(+2\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = e^{-2x}(C_1\cosh 3x + C_2\sinh 3x)\)</text>
+      <feedback format="html"><text>Incorrect. Hyperbolic functions arise for real roots; complex roots give trigonometric functions.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = C_1 e^{(-2+3i)x} + C_2 e^{(-2-3i)x}\)</text>
+      <feedback format="html"><text>Incorrect. While formally correct, real solutions use the real basis \(e^{-2x}\cos 3x\) and \(e^{-2x}\sin 3x\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q03 Repeated roots solution</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Solve \(y'' - 6y' + 9y = 0\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y = (C_1 + C_2 x)e^{3x}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Characteristic equation: \(r^2-6r+9=(r-3)^2=0\). Repeated root \(r=3\). For repeated root \(r_0\), general solution is \(y=(C_1+C_2 x)e^{r_0 x}\). The Wronskian of \(e^{3x}\) and \(xe^{3x}\) is \(e^{6x}\neq 0\), confirming independence. The repeated root arises from critical damping in mechanical systems.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = C_1 e^{3x} + C_2 e^{-3x}\)</text>
+      <feedback format="html"><text>Incorrect. The roots are both \(+3\) (not \(\pm 3\)); for \(r^2-6r+9=(r-3)^2=0\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = C_1 e^{3x} + C_2 x^2 e^{3x}\)</text>
+      <feedback format="html"><text>Incorrect. For a double root, the two solutions are \(e^{3x}\) and \(xe^{3x}\) (not \(x^2e^{3x}\)).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = e^{3x}(C_1\cos 3x + C_2\sin 3x)\)</text>
+      <feedback format="html"><text>Incorrect. Complex root form applies when roots are complex; here the double root \(r=3\) is real.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q04 Undetermined coefficients — resonance</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Find a particular solution of \(y'' + 4y = \sin 2x\) (resonance case).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y_p = -\dfrac{x\cos 2x}{4}\)</text>
+      <feedback format="html"><text><![CDATA[
+        The homogeneous solution is \(y_h=C_1\cos 2x+C_2\sin 2x\). Since \(\sin 2x\) is part of \(y_h\) (resonance), we multiply by \(x\): try \(y_p=x(A\cos 2x+B\sin 2x)\). Computing \(y_p''\) and substituting into \(y_p''+4y_p=\sin 2x\): \(y_p'=A\cos 2x+B\sin 2x+x(-2A\sin 2x+2B\cos 2x)\); \(y_p''=-4A\sin 2x+4B\cos 2x+x(-4A\cos 2x-4B\sin 2x)-2A\sin 2x+2B\cos 2x+2B\cos 2x... \)After full calculation: \(-4A\sin 2x+4B\cos 2x=\sin 2x\), giving \(A=-1/4, B=0\). So \(y_p=-\frac{x\cos 2x}{4}\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_p = \dfrac{\sin 2x}{4}\)</text>
+      <feedback format="html"><text>Incorrect. Since \(\sin 2x\) is a homogeneous solution (resonance), the simple trial function fails; multiply by \(x\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_p = -\dfrac{\sin 2x}{8}\)</text>
+      <feedback format="html"><text>Incorrect. For resonance, the correct form is \(y_p=x(A\cos 2x+B\sin 2x)\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_p = x\sin 2x\)</text>
+      <feedback format="html"><text>Incorrect. While the form is partially correct (multiply by \(x\)), the coefficient works out to \(A=-1/4\) and \(B=0\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q05 Variation of parameters</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Using variation of parameters, find a particular solution of \(y'' + y = \sec x\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y_p = x\sin x + \cos x\ln|\cos x|\)</text>
+      <feedback format="html"><text><![CDATA[
+        Homogeneous: \(y_h=C_1\cos x+C_2\sin x\). Wronskian: \(W=\cos x\cdot\cos x-\sin x\cdot(-\sin x)=1\). Variation of parameters: \(u_1'=-\frac{y_2 g}{W}=-\sin x\cdot\sec x=-\tan x\), so \(u_1=\ln|\cos x|\). \(u_2'=\frac{y_1 g}{W}=\cos x\cdot\sec x=1\), so \(u_2=x\). Thus \(y_p=u_1\cos x+u_2\sin x=\cos x\ln|\cos x|+x\sin x\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_p = \ln|\cos x|\)</text>
+      <feedback format="html"><text>Incorrect. The variation of parameters formula gives \(y_p=u_1\cos x+u_2\sin x\); both terms contribute.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_p = x\cos x\)</text>
+      <feedback format="html"><text>Incorrect. Check: \((x\cos x)''+(x\cos x)=(-2\sin x-x\cos x)+(x\cos x)=-2\sin x\neq\sec x\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_p = \sin x\ln|\sin x|\)</text>
+      <feedback format="html"><text>Incorrect. The correct formula gives \(\ln|\cos x|\) (from \(u_1=\int(-\tan x)dx=\ln|\cos x|\)), multiplied by \(\cos x\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q06 Cauchy-Euler equation</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Find the general solution of the Cauchy-Euler equation \(x^2 y'' + 2xy' - 6y = 0\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y = C_1 x^2 + C_2 x^{-3}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Substitute \(y=x^m\): \(m(m-1)+2m-6=0\), i.e., \(m^2+m-6=0\), factoring: \((m+3)(m-2)=0\), roots \(m=2,-3\). General solution: \(y=C_1x^2+C_2x^{-3}\). Check: for \(y=x^2\): \(x^2\cdot 2+2x\cdot 2x-6x^2=2x^2+4x^2-6x^2=0\). ✓
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = C_1 x^3 + C_2 x^{-2}\)</text>
+      <feedback format="html"><text>Incorrect. The characteristic equation \(m^2+m-6=0\) has roots \(m=2\) and \(m=-3\), not \(m=3\) and \(m=-2\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = C_1 e^{2x} + C_2 e^{-3x}\)</text>
+      <feedback format="html"><text>Incorrect. Cauchy-Euler solutions are power functions \(x^m\), not exponentials.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = (C_1 + C_2\ln x)x^2\)</text>
+      <feedback format="html"><text>Incorrect. The logarithmic form appears for repeated roots; here the roots are distinct (\(m=2,-3\)).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q07 Wronskian and linear independence</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Wronskian of \(y_1=e^x\sin x\) and \(y_2=e^x\cos x\) is:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(-e^{2x}\)</text>
+      <feedback format="html"><text><![CDATA[
+        \(W(y_1,y_2)=y_1y_2'-y_2y_1'\). \(y_1'=e^x(\sin x+\cos x)\), \(y_2'=e^x(\cos x-\sin x)\). \(W=e^x\sin x\cdot e^x(\cos x-\sin x)-e^x\cos x\cdot e^x(\sin x+\cos x)\) \(=e^{2x}[\sin x\cos x-\sin^2 x-\cos x\sin x-\cos^2 x]=e^{2x}[-\sin^2 x-\cos^2 x]=-e^{2x}\). Since \(W\neq 0\), the functions are linearly independent.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(e^{2x}\)</text>
+      <feedback format="html"><text>Incorrect. The Wronskian is \(-e^{2x}\) (note the sign).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>0</text>
+      <feedback format="html"><text>Incorrect. \(W=0\) would imply linear dependence; but \(e^x\sin x\) and \(e^x\cos x\) are linearly independent.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(2e^{2x}\)</text>
+      <feedback format="html"><text>Incorrect. Careful computation gives \(W=-e^{2x}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q08 Abel's formula for Wronskian</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Abel's theorem states that the Wronskian of two solutions of \(y'' + p(x)y' + q(x)y=0\) satisfies:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(W(x) = C\exp\!\left(-\int p(x)\,dx\right)\)</text>
+      <feedback format="html"><text><![CDATA[
+        Abel's identity: differentiating \(W=y_1y_2'-y_2y_1'\): \(W'=y_1y_2''-y_2y_1''\). Using the ODE: \(y_i''=-py_i'-qy_i\). Substituting: \(W'=y_1(-py_2'-qy_2)-y_2(-py_1'-qy_1)=-p(y_1y_2'-y_2y_1')=-pW\). Thus \(W'+pW=0\), giving \(W=Ce^{-\int p\,dx}\). Consequence: \(W\) is either identically 0 (linearly dependent) or never 0 (linearly independent) on an interval where \(p\) is continuous.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(W(x) = C\exp\!\left(\int p(x)\,dx\right)\)</text>
+      <feedback format="html"><text>Incorrect. The sign: \(W'+pW=0\) gives \(W=Ce^{-\int p\,dx}\) (negative sign in the exponent).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(W(x) = C\) (constant)</text>
+      <feedback format="html"><text>Incorrect. \(W\) is constant only when \(p(x)=0\); in general, \(W=Ce^{-\int p\,dx}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(W(x) = Ce^{q(x)}\)</text>
+      <feedback format="html"><text>Incorrect. The Wronskian depends on \(p(x)\), not \(q(x)\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q09 Power series solution — ordinary point</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For the ODE \(y'' - xy' - y = 0\), \(x=0\) is an ordinary point. The power series solution \(y=\sum_{n=0}^\infty a_n x^n\) gives the recurrence:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(a_{n+2} = \dfrac{(n+1)a_n}{(n+2)(n+1)}\) for \(n\geq 0\), simplifying to \(a_{n+2}=\dfrac{a_n}{n+2}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Substituting \(y=\sum a_nx^n\): \(y''=\sum_{n=2}n(n-1)a_nx^{n-2}=\sum_{n=0}(n+2)(n+1)a_{n+2}x^n\). \(xy'=\sum na_nx^n\). \(y=\sum a_nx^n\). The ODE becomes: \(\sum_{n=0}[(n+2)(n+1)a_{n+2}-na_n-a_n]x^n=0\). So \((n+2)(n+1)a_{n+2}=(n+1)a_n\), giving \(a_{n+2}=\frac{a_n}{n+2}\). Two families: even-index from \(a_0\) and odd-index from \(a_1\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(a_{n+2} = \dfrac{n\,a_n}{(n+1)(n+2)}\)</text>
+      <feedback format="html"><text>Incorrect. The recurrence from \(y''-xy'-y=0\) gives \((n+2)(n+1)a_{n+2}=(n+1)a_n\), so \(a_{n+2}=a_n/(n+2)\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(a_{n+2} = -\dfrac{a_n}{(n+2)(n+1)}\)</text>
+      <feedback format="html"><text>Incorrect. The sign is positive: \((n+2)(n+1)a_{n+2}=(n+1)a_n>0\) (for \(n\geq 0\)).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(a_{n+2} = \dfrac{a_{n+1}}{n+2}\)</text>
+      <feedback format="html"><text>Incorrect. The recurrence relates \(a_{n+2}\) to \(a_n\) (skipping one index), not \(a_{n+1}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q10 Frobenius method — regular singular point</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For the Bessel equation of order zero: \(xy'' + y' + xy = 0\), what is the indicial equation at the regular singular point \(x=0\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(r^2 = 0\) (double root \(r = 0\))</text>
+      <feedback format="html"><text><![CDATA[
+        Writing in standard Frobenius form: \(y''+(1/x)y'+y=0\). Here \(p(x)=1/x\) and \(q(x)=1\). \(x\to 0\): \(p_0=\lim_{x\to 0}xp(x)=1\), \(q_0=\lim_{x\to 0}x^2q(x)=0\). Indicial equation: \(r(r-1)+p_0 r+q_0=0\), i.e., \(r(r-1)+r=r^2=0\). Double root \(r=0\). The two solutions are \(J_0(x)\) (Bessel function) and \(Y_0(x)\) (Neumann function, contains \(\ln x\)).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(r^2 - 1 = 0\) (roots \(r=\pm 1\))</text>
+      <feedback format="html"><text>Incorrect. The indicial equation uses \(p_0=1\) and \(q_0=0\): \(r^2-r+r+0=r^2=0\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(r(r+1) = 0\) (roots \(r=0,-1\))</text>
+      <feedback format="html"><text>Incorrect. The indicial equation for Bessel order 0 is \(r^2=0\), not \(r(r+1)=0\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(r^2 - r = 0\) (roots \(r=0,1\))</text>
+      <feedback format="html"><text>Incorrect. The indicial equation is \(r^2=0\); the \(-r\) term cancels with \(p_0 r=r\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q11 Green's function for BVP</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Green's function \(G(x,t)\) for the BVP \(-y''=f(x)\), \(y(0)=y(1)=0\) is:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(G(x,t) = \begin{cases} t(1-x) & 0\leq t\leq x\leq 1 \\ x(1-t) & 0\leq x\leq t\leq 1 \end{cases}\)</text>
+      <feedback format="html"><text><![CDATA[
+        For \(-y''=f\) with \(y(0)=y(1)=0\): Homogeneous solutions \(y_1=x\) (satisfies \(y(0)=0\)) and \(y_2=1-x\) (satisfies \(y(1)=0\)). Wronskian: \(W(y_1,y_2)=x(-1)-(1-x)(1)=-1\). Green's function: for \(t<x\): \(G=y_1(t)y_2(x)/(-W\cdot(-1))=t(1-x)\); for \(t>x\): \(G=y_1(x)y_2(t)=x(1-t)\). The solution is \(y(x)=\int_0^1 G(x,t)f(t)\,dt\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(G(x,t) = x(1-t)\) for all \(0\leq x,t\leq 1\)</text>
+      <feedback format="html"><text>Incorrect. The Green's function is piecewise defined with different expressions for \(x\leq t\) and \(x\geq t\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(G(x,t) = \sin(\pi x)\sin(\pi t)\)</text>
+      <feedback format="html"><text>Incorrect. This would be the kernel for eigenfunction expansions, not the Green's function directly.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(G(x,t) = |x-t|/2\)</text>
+      <feedback format="html"><text>Incorrect. The Dirichlet boundary conditions modify the form from the full-line Green's function.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q12 Oscillation theorem — Sturm comparison</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Sturm's comparison theorem: if \(q_1(x)>q_2(x)\) on \((a,b)\) and \(u,v\) solve \(u''+q_1(x)u=0\) and \(v''+q_2(x)v=0\) respectively, then between any two consecutive zeros of \(v\) there is:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>At least one zero of \(u\)</text>
+      <feedback format="html"><text><![CDATA[
+        Sturm's comparison theorem: if \(q_1>q_2\) on \((a,b)\), the solutions of the equation with larger coefficient \(q_1\) oscillate at least as rapidly as those with \(q_2\). More precisely: between any two consecutive zeros of \(v\), there is at least one zero of \(u\). Application: comparing \(y''+y=0\) (solutions: \(\sin x\)) with \(y''+\frac{1}{4}y=0\) (solutions: \(\sin(x/2)\)) — \(\sin x\) zeros are denser than \(\sin(x/2)\) zeros, consistent with \(1>1/4\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>No zero of \(u\)</text>
+      <feedback format="html"><text>Incorrect. The opposite is true: larger coefficient means faster oscillation, so more zeros.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Exactly one zero of \(u\)</text>
+      <feedback format="html"><text>Incorrect. Sturm guarantees at least one, not exactly one.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Exactly two zeros of \(u\)</text>
+      <feedback format="html"><text>Incorrect. The theorem guarantees at least one zero; there could be more.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q13 Undetermined coefficients — polynomial RHS</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Find a particular solution of \(y'' - 3y' + 2y = 3x^2\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y_p = \dfrac{3}{2}x^2 + \dfrac{9}{2}x + \dfrac{21}{4}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Try \(y_p=Ax^2+Bx+C\). Then \(y_p''=2A\), \(y_p'=2Ax+B\). Substituting: \(2A-3(2Ax+B)+2(Ax^2+Bx+C)=3x^2\). Matching coefficients: \(x^2\): \(2A=3\Rightarrow A=3/2\). \(x^1\): \(-6A+2B=0\Rightarrow B=3A=9/2\). \(x^0\): \(2A-3B+2C=0\Rightarrow 3-27/2+2C=0\Rightarrow 2C=21/2\Rightarrow C=21/4\). So \(y_p=\frac{3}{2}x^2+\frac{9}{2}x+\frac{21}{4}\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_p = \dfrac{3}{2}x^2\)</text>
+      <feedback format="html"><text>Incorrect. Matching lower-degree terms is necessary; the complete particular solution has \(x\) and constant terms.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_p = x^3\)</text>
+      <feedback format="html"><text>Incorrect. The particular solution should match the degree of the right side (degree 2).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_p = 3x^2 - 9x\)</text>
+      <feedback format="html"><text>Incorrect. The coefficients from matching give \(A=3/2\), \(B=9/2\), \(C=21/4\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q14 Boundary value problem — eigenvalues</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The eigenvalue problem \(y'' + \lambda y = 0\), \(y(0)=0\), \(y(\pi)=0\) has eigenvalues:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\lambda_n = n^2\) for \(n = 1, 2, 3, \ldots\) with eigenfunctions \(y_n = \sin(nx)\)</text>
+      <feedback format="html"><text><![CDATA[
+        For \(\lambda>0\): general solution \(y=A\cos(\sqrt\lambda x)+B\sin(\sqrt\lambda x)\). \(y(0)=0\Rightarrow A=0\). \(y(\pi)=0\Rightarrow B\sin(\sqrt\lambda\pi)=0\). For nontrivial solution: \(\sqrt\lambda\pi=n\pi\), so \(\lambda=n^2\), \(n=1,2,3,\ldots\) For \(\lambda\leq 0\): only trivial solution. Eigenfunctions: \(y_n=\sin(nx)\), forming an orthonormal basis for \(L^2(0,\pi)\). This is the foundation of Fourier sine series.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\lambda_n = n^2\pi^2\) for \(n=1,2,3,\ldots\)</text>
+      <feedback format="html"><text>Incorrect. The interval is \([0,\pi]\), so \(\sqrt\lambda\pi=n\pi\) gives \(\lambda=n^2\) (not \(n^2\pi^2\)).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\lambda_n = n\) for \(n=1,2,3,\ldots\)</text>
+      <feedback format="html"><text>Incorrect. The eigenvalues are perfect squares: \(\lambda_n=n^2\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>All real \(\lambda\) are eigenvalues</text>
+      <feedback format="html"><text>Incorrect. Only \(\lambda=n^2\) for positive integers \(n\) give nontrivial solutions satisfying both boundary conditions.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q15 Airy equation</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Airy equation \(y'' - xy = 0\) has \(x=0\) as an ordinary point. The two linearly independent power series solutions can be expressed in terms of Airy functions \(Ai(x)\) and \(Bi(x)\). The recurrence relation for coefficients \(a_n\) in \(y=\sum a_n x^n\) is:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(a_{n+3} = \dfrac{a_{n}}{(n+3)(n+2)}\) for \(n \geq 0\)</text>
+      <feedback format="html"><text><![CDATA[
+        Substituting \(y=\sum a_nx^n\) into \(y''=xy\): \(\sum_{n=2}n(n-1)a_nx^{n-2}=x\sum a_nx^n=\sum a_nx^{n+1}\). Reindexing: \(\sum_{n=0}(n+2)(n+1)a_{n+2}x^n=\sum_{n=0}a_{n-1}x^n\) (with \(a_{-1}=0\)). Matching \(n\geq 1\): \((n+2)(n+1)a_{n+2}=a_{n-1}\), i.e., \(a_{n+3}=\frac{a_n}{(n+3)(n+2)}\) (shifting \(n\to n+1\)). This gives solutions from \(a_0\) (with \(a_1=a_2=0\)) and from \(a_1\) (with \(a_0=a_2=0\)).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(a_{n+2} = \dfrac{a_{n-1}}{(n+2)(n+1)}\)</text>
+      <feedback format="html"><text>Incorrect. While equivalent (just different indexing), the standard form using \(a_{n+3}=\frac{a_n}{(n+3)(n+2)}\) is more transparent.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(a_{n+2} = \dfrac{n\,a_n}{(n+2)!}\)</text>
+      <feedback format="html"><text>Incorrect. This does not correctly capture the skip-2 recurrence of the Airy equation.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(a_{n+1} = \dfrac{a_n}{n+1}\)</text>
+      <feedback format="html"><text>Incorrect. This recurrence (for the exponential function) does not apply here; the Airy equation gives a 3-step recurrence.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q16 Variation of parameters for second-order</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For \(y'' + p(x)y' + q(x)y = g(x)\) with fundamental solutions \(y_1, y_2\), the variation of parameters formulas for \(u_1', u_2'\) (where \(y_p=u_1y_1+u_2y_2\)) are:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(u_1' = -\dfrac{y_2 g}{W}\) and \(u_2' = \dfrac{y_1 g}{W}\), where \(W = y_1y_2'-y_2y_1'\)</text>
+      <feedback format="html"><text><![CDATA[
+        The system for \(u_1', u_2'\) is: \(u_1'y_1+u_2'y_2=0\) and \(u_1'y_1'+u_2'y_2'=g\). By Cramer's rule: \(u_1'=\frac{-y_2 g}{W}\) and \(u_2'=\frac{y_1 g}{W}\) where \(W=y_1y_2'-y_2y_1'\neq 0\). Then \(y_p=u_1y_1+u_2y_2=-y_1\int\frac{y_2 g}{W}dx+y_2\int\frac{y_1 g}{W}dx\). This method works for any continuous \(g\), unlike undetermined coefficients.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(u_1' = \dfrac{y_2 g}{W}\) and \(u_2' = -\dfrac{y_1 g}{W}\)</text>
+      <feedback format="html"><text>Incorrect. The signs are swapped; Cramer's rule gives \(u_1'=-y_2g/W\) and \(u_2'=y_1g/W\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(u_1' = \dfrac{y_1 g}{W}\) and \(u_2' = \dfrac{y_2 g}{W}\)</text>
+      <feedback format="html"><text>Incorrect. The formula requires the other solution in the numerator (cross terms), with alternating signs.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(u_1' = u_2' = \dfrac{g}{W}\)</text>
+      <feedback format="html"><text>Incorrect. The two variations have different numerators \(y_2\) and \(y_1\) respectively.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q17 Damped harmonic oscillator</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For the damped oscillator \(my'' + cy' + ky = 0\) with \(m=1, c=4, k=3\), the system is classified as:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Overdamped (characteristic roots are real, negative, and distinct)</text>
+      <feedback format="html"><text><![CDATA[
+        Characteristic equation: \(r^2+4r+3=0\), discriminant \(\Delta=16-12=4>0\). Roots: \(r=(-4\pm 2)/2=-1\) and \(-3\). Both real and negative. General solution: \(y=C_1e^{-t}+C_2e^{-3t}\). The system is overdamped: \(c^2>4mk\) (i.e., \(16>12\)). Solution decays without oscillation. Critical damping: \(c^2=4mk\). Underdamping: \(c^2<4mk\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Underdamped (roots are complex with negative real part)</text>
+      <feedback format="html"><text>Incorrect. \(\Delta=16-12=4>0\), so roots are real. Underdamped requires \(\Delta<0\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Critically damped (repeated root)</text>
+      <feedback format="html"><text>Incorrect. Critical damping requires \(\Delta=0\), i.e., \(c^2=4mk=12\). Here \(c^2=16\neq 12\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Unstable (roots have positive real part)</text>
+      <feedback format="html"><text>Incorrect. Both roots \(-1\) and \(-3\) are negative, so the system is stable and decays.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q18 Non-homogeneous Cauchy-Euler</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Find a particular solution of \(x^2 y'' - 2y = x^3\) using variation of parameters (homogeneous solutions are \(y_1=x^2\) and \(y_2=x^{-1}\)).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y_p = \dfrac{x^3}{4}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Rewrite as \(y''-2x^{-2}y=x\). Wronskian: \(W(x^2,x^{-1})=x^2\cdot(-x^{-2})-x^{-1}\cdot 2x=-1-2=-3\). Variation of parameters with \(g(x)=x\): \(u_1'=\frac{-y_2\cdot g}{W}=\frac{-x^{-1}\cdot x}{-3}=\frac{1}{3}\), so \(u_1=x/3\). \(u_2'=\frac{y_1\cdot g}{W}=\frac{x^2\cdot x}{-3}=-x^3/3\), so \(u_2=-x^4/12\). Thus \(y_p=\frac{x}{3}\cdot x^2+(-\frac{x^4}{12})\cdot x^{-1}=\frac{x^3}{3}-\frac{x^3}{12}=\frac{x^3}{4}\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_p = x^3\)</text>
+      <feedback format="html"><text>Incorrect. Check: \(x^2(6x)-2x^3=6x^3-2x^3=4x^3\neq x^3\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_p = \dfrac{x^3}{6}\)</text>
+      <feedback format="html"><text>Incorrect. The variation of parameters calculation gives \(y_p=x^3/4\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_p = x^2\ln x\)</text>
+      <feedback format="html"><text>Incorrect. Logarithmic terms appear for Cauchy-Euler with repeated roots; here the homogeneous solutions are \(x^2\) and \(x^{-1}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q19 Sturm-Liouville operator — self-adjointness</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Sturm-Liouville operator \(Ly = -(py')' + qy\) on \([a,b]\) with appropriate boundary conditions is self-adjoint. Its eigenvalues have which property?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>All eigenvalues are real, and eigenfunctions corresponding to distinct eigenvalues are orthogonal with respect to the weight function \(w(x)\)</text>
+      <feedback format="html"><text><![CDATA[
+        For the regular Sturm-Liouville problem \(-(py')'+qy=\lambda wy\) with \(p>0\) and appropriate self-adjoint boundary conditions: (1) All eigenvalues \(\lambda_n\) are real. (2) Eigenvalues form a discrete sequence \(\lambda_1<\lambda_2<\cdots\to\infty\). (3) Eigenfunctions \(\phi_n\) are orthogonal: \(\int_a^b w\phi_m\phi_n\,dx=0\) for \(m\neq n\). (4) Eigenfunctions form a complete basis for \(L^2_w(a,b)\). This unifies Fourier series, Legendre polynomials, Bessel functions, etc.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Eigenvalues can be complex</text>
+      <feedback format="html"><text>Incorrect. Self-adjoint operators on real Hilbert spaces have only real eigenvalues.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>There are finitely many eigenvalues</text>
+      <feedback format="html"><text>Incorrect. Regular Sturm-Liouville problems have infinitely many eigenvalues accumulating at \(+\infty\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>All eigenfunctions are constant</text>
+      <feedback format="html"><text>Incorrect. Eigenfunctions are generally oscillatory; only the zero eigenfunction (if it exists) could be constant.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>ODE38-Q20 General solution structure</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For a second-order linear ODE \(y'' + p(x)y' + q(x)y = g(x)\), the general solution is:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y = y_h + y_p\), where \(y_h = C_1y_1 + C_2y_2\) is the general homogeneous solution and \(y_p\) is any particular solution</text>
+      <feedback format="html"><text><![CDATA[
+        The superposition principle: for a linear ODE, the general solution of the non-homogeneous equation is the sum of the general solution of the homogeneous equation (with two arbitrary constants \(C_1, C_2\)) plus any particular solution of the non-homogeneous equation. This follows from linearity: if \(y_p\) satisfies \(Ly_p=g\) and \(y_h\) satisfies \(Ly_h=0\), then \(L(y_h+y_p)=0+g=g\). All solutions have this form.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = y_p\) (only the particular solution)</text>
+      <feedback format="html"><text>Incorrect. Without the homogeneous component, we cannot satisfy general initial conditions.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = C\cdot y_p\) for some constant \(C\)</text>
+      <feedback format="html"><text>Incorrect. Scaling a particular solution generally doesn't give another solution to the non-homogeneous equation.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = y_1 y_2 + y_p\) (product of homogeneous solutions plus particular)</text>
+      <feedback format="html"><text>Incorrect. The product of two solutions is generally not a solution. The homogeneous part is a linear combination \(C_1y_1+C_2y_2\).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

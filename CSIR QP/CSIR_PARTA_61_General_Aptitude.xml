@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Part A/General Aptitude</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q01_QuadraticEquation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(\alpha\) and \(\beta\) are the roots of \(x^2 - 5x + 6 = 0\), what is the value of \(\alpha^2 + \beta^2\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[13]]></text>
+      <feedback><text>Correct. \(\alpha+\beta=5\), \(\alpha\beta=6\). \(\alpha^2+\beta^2=(\alpha+\beta)^2-2\alpha\beta=25-12=13\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[25]]></text>
+      <feedback><text>\(25=(\alpha+\beta)^2\), but we need \(\alpha^2+\beta^2=(\alpha+\beta)^2-2\alpha\beta=25-12=13\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[12]]></text>
+      <feedback><text>12 is \(2\alpha\beta\), which is subtracted, not the answer itself.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[7]]></text>
+      <feedback><text>\(\alpha^2+\beta^2=(\alpha+\beta)^2-2\alpha\beta=25-12=13\), not 7.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q02_AverageProblems</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The average of 5 numbers is 30. If one number equal to 15 is replaced by 55, what is the new average?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[38]]></text>
+      <feedback><text>Correct. Original sum: \(5\times30=150\). New sum: \(150-15+55=190\). New average: \(190/5=38\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[40]]></text>
+      <feedback><text>40 would require new sum = 200; actual new sum = 150-15+55 = 190, giving average 38.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[35]]></text>
+      <feedback><text>35 would require new sum = 175; the increase from replacing 15 with 55 is +40, giving new sum 190 and average 38.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[41]]></text>
+      <feedback><text>New sum = 190, so new average = 190/5 = 38, not 41.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q03_Pipes_Cisterns</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Pipe A fills a tank in 15 hours and Pipe B empties it in 20 hours. If both pipes are opened simultaneously, how many hours will it take to fill the tank (starting from empty)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[60 hours]]></text>
+      <feedback><text>Correct. Net filling rate: \(1/15 - 1/20 = 4/60 - 3/60 = 1/60\) per hour. Time to fill: 60 hours.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[35 hours]]></text>
+      <feedback><text>35 would be the time if the pipes were combined additively (1/15+1/20); but B empties, so the net rate is \(1/15-1/20=1/60\), giving 60 hours.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[12 hours]]></text>
+      <feedback><text>12 hours = LCM(15,20)/something; the net filling rate gives 60 hours, not 12.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The tank can never be filled]]></text>
+      <feedback><text>Since A's filling rate (1/15) exceeds B's emptying rate (1/20), the net is positive and the tank fills in 60 hours.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q04_Inequality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following is always true for positive real numbers \(a, b\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{a+b}{2} \geq \sqrt{ab}\) (AM ≥ GM)]]></text>
+      <feedback><text>Correct. The AM-GM inequality states that the arithmetic mean is at least the geometric mean for positive reals: \((a+b)/2\geq\sqrt{ab}\), with equality iff \(a=b\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\sqrt{ab} \geq \dfrac{a+b}{2}\) (GM ≥ AM)]]></text>
+      <feedback><text>This is the reverse of AM-GM and is false in general; equality holds only when \(a=b\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(a^2 + b^2 \leq (a+b)^2/2\)]]></text>
+      <feedback><text>\((a+b)^2/2 = (a^2+2ab+b^2)/2\). We need to compare with \(a^2+b^2\): \((a^2+b^2)-(a^2+2ab+b^2)/2=(a^2+b^2-2ab)/2=(a-b)^2/2\geq0\). So \(a^2+b^2\geq(a+b)^2/2\), meaning this inequality is false.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\((a+b)^2 \leq 4ab\)]]></text>
+      <feedback><text>\((a+b)^2=a^2+2ab+b^2\geq4ab\) iff \((a-b)^2\geq0\), so \((a+b)^2\geq4ab\), not \(\leq4ab\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q05_Coding_Decoding</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In a certain code, BOOK is written as CNPM. How is DOOR written in the same code?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[ENPT]]></text>
+      <feedback><text>Correct. The shift pattern from BOOK→CNPM: position 1: +1 (B→C), position 2: −1 (O→N), position 3: +1 (O→P), position 4: +2 (K→M). Applying to DOOR: D+1=E, O−1=N, O+1=P, R+2=T → ENPT.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[ETPS]]></text>
+      <feedback><text>This does not follow the positional shift pattern (+1,−1,+1,+2) derived from BOOK→CNPM.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[EPPS]]></text>
+      <feedback><text>Applying the shift pattern (+1,−1,+1,+2) to DOOR gives ENPT, not EPPS.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[CPPS]]></text>
+      <feedback><text>This does not follow the coding pattern established by BOOK→CNPM.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q06_Geometry_Circle</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A chord of a circle is 8 cm long and is at a distance of 3 cm from the centre. What is the radius of the circle?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[5 cm]]></text>
+      <feedback><text>Correct. The perpendicular from the centre bisects the chord, creating a right triangle with legs 3 (distance) and 4 (half-chord = 8/2). Radius: \(\sqrt{3^2+4^2}=\sqrt{9+16}=\sqrt{25}=5\) cm.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[7 cm]]></text>
+      <feedback><text>The radius is \(\sqrt{9+16}=5\) cm; \(\sqrt{9+40}=7\) would require a half-chord of \(\sqrt{40}\approx6.32\), not 4.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\sqrt{73}\) cm]]></text>
+      <feedback><text>This would arise from \(\sqrt{8^2+3^2}=\sqrt{73}\), but the correct approach uses half the chord: \(\sqrt{4^2+3^2}=5\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[4 cm]]></text>
+      <feedback><text>4 cm is half the chord length; the radius (hypotenuse of the 3-4-5 right triangle) is 5 cm.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q07_Boats_Streams</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A boat travels 30 km upstream and 44 km downstream in 10 hours. It also travels 40 km upstream and 55 km downstream in 13 hours. What is the speed of the boat in still water?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[8 km/h]]></text>
+      <feedback><text>Correct. Let upstream speed = \(u\), downstream = \(v\). Equations: \(30/u + 44/v = 10\) and \(40/u + 55/v = 13\). Let \(x=1/u, y=1/v\): \(30x+44y=10\), \(40x+55y=13\). From first: \(x=(10-44y)/30\). Substituting: \(40(10-44y)/30+55y=13\Rightarrow(400-1760y)/30+55y=13\Rightarrow400-1760y+1650y=390\Rightarrow400-110y=390\Rightarrow y=1/11\), so \(v=11\). Then \(x=(10-4)/30=6/30=1/5\), so \(u=5\). Boat speed in still water: \((u+v)/2=(5+11)/2=8\) km/h.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[11 km/h]]></text>
+      <feedback><text>11 km/h is the downstream speed, not the speed in still water; still water speed = (upstream + downstream)/2 = (5+11)/2 = 8 km/h.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[5 km/h]]></text>
+      <feedback><text>5 km/h is the upstream speed; still water speed = (5+11)/2 = 8 km/h.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[3 km/h]]></text>
+      <feedback><text>3 km/h = (11-5)/2 is the stream speed, not the still water speed.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q08_BinaryConversion</text></name>
+    <questiontext format="html">
+      <text><![CDATA[What is the decimal equivalent of the binary number \((1011010)_2\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[90]]></text>
+      <feedback><text>Correct. \(1011010_2 = 1\times64 + 0\times32 + 1\times16 + 1\times8 + 0\times4 + 1\times2 + 0\times1 = 64+16+8+2=90\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[82]]></text>
+      <feedback><text>\(1010010_2=64+16+2=82\neq1011010_2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[94]]></text>
+      <feedback><text>\(1011110_2=64+16+8+4+2=94\neq1011010_2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[74]]></text>
+      <feedback><text>\(1001010_2=64+8+2=74\neq1011010_2\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q09_CriticalReasoning</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Argument: "Students who study more get better grades. Rahul got very good grades. Therefore, Rahul must have studied a lot." This reasoning is an example of]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Affirming the consequent (a logical fallacy), because good grades could result from other causes besides studying more]]></text>
+      <feedback><text>Correct. The argument has the form: P→Q, Q, therefore P — this is the fallacy of affirming the consequent. Rahul could have good grades for other reasons (prior knowledge, easy exam, etc.).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Modus ponens (valid deductive reasoning)]]></text>
+      <feedback><text>Modus ponens has the form P→Q, P, therefore Q — here we affirm P to conclude Q. The argument instead starts with Q (good grades) to conclude P (studied a lot), which is affirming the consequent.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Modus tollens (valid deductive reasoning)]]></text>
+      <feedback><text>Modus tollens: P→Q, ¬Q, therefore ¬P. This argument does not deny the consequent; it affirms it, making it a fallacy.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A valid inductive argument based on empirical evidence]]></text>
+      <feedback><text>The argument attempts deduction (from premises about studying to a specific conclusion), not induction; and it is invalid due to the fallacy of affirming the consequent.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q10_Functions_Basic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(f(x) = 2x + 3\) and \(g(x) = x^2 - 1\), what is \(f(g(3))\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[19]]></text>
+      <feedback><text>Correct. \(g(3)=9-1=8\). \(f(8)=2(8)+3=19\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[35]]></text>
+      <feedback><text>35 = \(f(3)^2-1=7^2-1\); the composition is \(f(g(3))=f(8)=19\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[8]]></text>
+      <feedback><text>8 is \(g(3)\); applying \(f\) to this gives \(f(8)=19\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[14]]></text>
+      <feedback><text>\(f(g(3))=f(8)=2(8)+3=19\neq14\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q11_Relation_Types</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following relations on \(\mathbb{Z}\) (the set of integers) is an equivalence relation?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(a \sim b \iff a - b \text{ is divisible by } 3\)]]></text>
+      <feedback><text>Correct. This is congruence mod 3: reflexive (\(a-a=0\) divisible by 3), symmetric (if \(3|(a-b)\) then \(3|(b-a)\)), transitive (if \(3|(a-b)\) and \(3|(b-c)\) then \(3|(a-c)\)).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(a \sim b \iff a < b\)]]></text>
+      <feedback><text>Strict inequality is irreflexive (\(a\not<a\)) and antisymmetric; it is not an equivalence relation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(a \sim b \iff |a - b| \leq 1\)]]></text>
+      <feedback><text>This is reflexive and symmetric but not transitive: \(1\sim2\) and \(2\sim3\) but \(1\not\sim3\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(a \sim b \iff a \cdot b > 0\)]]></text>
+      <feedback><text>This is symmetric and transitive on nonzero integers, but fails reflexivity for \(a=0\) (since \(0\cdot0=0\not>0\)) and is not defined for negative×positive products.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q12_Alligation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In what ratio should a 30% alcohol solution be mixed with a 70% alcohol solution to get a 45% alcohol solution?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[5 : 3]]></text>
+      <feedback><text>Correct. By alligation: \(70-45=25\) (quantity of 30% solution) and \(45-30=15\) (quantity of 70% solution). Ratio = 25:15 = 5:3.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[3 : 5]]></text>
+      <feedback><text>The rule of alligation gives 30% : 70% solutions in ratio 25:15 = 5:3, not 3:5.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[1 : 1]]></text>
+      <feedback><text>Equal amounts would give \((30+70)/2=50\%\), not 45%; the required mixture is richer in the 30% solution.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[2 : 3]]></text>
+      <feedback><text>Alligation gives \((70-45):(45-30)=25:15=5:3\), not 2:3.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q13_InequationWord</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A student needs to score at least 360 marks in 5 subjects to pass. The student scored 72, 68, 74, and 80 in four subjects. What is the minimum score needed in the fifth subject to pass?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[66]]></text>
+      <feedback><text>Correct. Sum of four subjects: \(72+68+74+80=294\). Minimum fifth subject score: \(360-294=66\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[72]]></text>
+      <feedback><text>\(294+72=366>360\), so 72 is more than needed; the minimum is \(360-294=66\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[60]]></text>
+      <feedback><text>\(294+60=354<360\); the student would not pass with 60. The minimum is 66.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[70]]></text>
+      <feedback><text>\(294+70=364\geq360\), so 70 would work but 66 is the minimum required.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q14_Permutation_Circular</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In how many ways can 6 people be seated around a circular table?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[120]]></text>
+      <feedback><text>Correct. Circular arrangements of \(n\) people: \((n-1)! = 5! = 120\). One position is fixed (rotational symmetry), and the remaining 5 are arranged in \(5!\) ways.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[720]]></text>
+      <feedback><text>720 = 6! is the number of linear arrangements; for circular arrangements, divide by \(n\) to account for rotational equivalence: \(6!/6=5!=120\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[60]]></text>
+      <feedback><text>60 = (6-1)!/2 applies only when reflections are also considered equivalent (necklace problem); for seated people, distinct rotations are counted, giving 120.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[30]]></text>
+      <feedback><text>30 = 5!/4 has no standard combinatorial interpretation for this problem; the answer is \((n-1)!=5!=120\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q15_Pyramid_Volume</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The volume of a cone with base radius \(r\) and height \(h\) is \(\frac{1}{3}\pi r^2 h\). If a cone has base radius 6 cm and volume 264 cm³, what is its height? (Use \(\pi \approx \frac{22}{7}\))]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[7 cm]]></text>
+      <feedback><text>Correct. \(\frac{1}{3}\times\frac{22}{7}\times36\times h=264\Rightarrow\frac{22\times36}{21}h=264\Rightarrow\frac{792}{21}h=264\Rightarrow h=264\times21/792=5544/792=7\) cm.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[6 cm]]></text>
+      <feedback><text>With \(h=6\): \(\frac{1}{3}\times\frac{22}{7}\times36\times6=\frac{22\times36\times6}{21}=\frac{4752}{21}\approx226.3\neq264\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[8 cm]]></text>
+      <feedback><text>With \(h=8\): \(\frac{22\times36\times8}{21}=\frac{6336}{21}\approx301.7\neq264\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[5 cm]]></text>
+      <feedback><text>With \(h=5\): volume \(\approx188.6\neq264\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q16_LetterPattern</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which letter comes next in the series: B, D, G, K, P, ?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[V]]></text>
+      <feedback><text>Correct. Differences in alphabetical position: D-B=2, G-D=3, K-G=4, P-K=5, next difference=6: P+6=V (P is the 16th letter, V is the 22nd: 16+6=22).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[U]]></text>
+      <feedback><text>U is the 21st letter (P=16, +5=21=U); but the pattern of differences is 2,3,4,5,6, so the next is +6, giving V (22nd letter).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[W]]></text>
+      <feedback><text>W is the 23rd letter (P+7=W); the differences are 2,3,4,5,6 (not 7), so next is P+6=V.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[T]]></text>
+      <feedback><text>T is the 20th letter (P+4=T); but the gap after P should be 6 (increasing pattern 2,3,4,5,6), giving V.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q17_TrueOrFalse_Logic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If "No P is Q" and "All R is P", which of the following conclusions is valid?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[No R is Q]]></text>
+      <feedback><text>Correct. All R is P (R ⊆ P) and No P is Q (P ∩ Q = ∅). Therefore R ∩ Q ⊆ P ∩ Q = ∅, so No R is Q.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Some Q is R]]></text>
+      <feedback><text>This contradicts the valid conclusion; since No R is Q, no Q is R.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All P is R]]></text>
+      <feedback><text>We are told All R is P (R ⊆ P), not the converse; P may contain elements outside R.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Some P is Q]]></text>
+      <feedback><text>"No P is Q" means P and Q are disjoint; "Some P is Q" directly contradicts this premise.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q18_Distance_Formula</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The distance between the points \((3, -4)\) and \((-5, 3)\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\sqrt{113}\)]]></text>
+      <feedback><text>Correct. Distance \(=\sqrt{(3-(-5))^2+(-4-3)^2}=\sqrt{64+49}=\sqrt{113}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\sqrt{65}\)]]></text>
+      <feedback><text>\(\sqrt{65}=\sqrt{1+64}\) or \(\sqrt{16+49}\); neither matches: \((3-(-5))^2+(-4-3)^2=64+49=113\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\sqrt{85}\)]]></text>
+      <feedback><text>\(\sqrt{85}\) would require differences of \(\pm2\) and \(\pm9\) or similar; the actual differences are 8 and 7.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[15]]></text>
+      <feedback><text>\(|3-(-5)|+|-4-3|=8+7=15\) is the Manhattan distance, not the Euclidean distance \(\sqrt{64+49}=\sqrt{113}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q19_CubeRoots</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The value of \(\sqrt[3]{125} + \sqrt[3]{-27} + \sqrt[3]{8}\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[4]]></text>
+      <feedback><text>Correct. \(\sqrt[3]{125}=5\), \(\sqrt[3]{-27}=-3\), \(\sqrt[3]{8}=2\). Sum: \(5+(-3)+2=4\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[7]]></text>
+      <feedback><text>\(5+(-3)+2=4\neq7\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[10]]></text>
+      <feedback><text>\(5+3+2=10\) ignores the negative sign; \(\sqrt[3]{-27}=-3\), giving sum 4.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[0]]></text>
+      <feedback><text>\(5-3+2=4\neq0\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>PARTA2_Q20_Probability_Cards</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A card is drawn at random from a well-shuffled deck of 52 cards. What is the probability that it is either a king or a red card?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{7}{13}\)]]></text>
+      <feedback><text>Correct. Red cards: 26. Kings: 4. Red kings: 2. By inclusion-exclusion: \(26+4-2=28\). Probability: \(28/52=7/13\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{1}{2}\)]]></text>
+      <feedback><text>\(1/2=26/52\) counts only red cards; adding the two black kings gives \(28/52=7/13\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{15}{26}\)]]></text>
+      <feedback><text>\(15/26=30/52\) is incorrect; the count is \(26+4-2=28\) giving \(28/52=7/13\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{2}{13}\)]]></text>
+      <feedback><text>\(2/13=8/52\) counts only the 4 kings (or similar small set); the correct count is 28 favorable cards.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

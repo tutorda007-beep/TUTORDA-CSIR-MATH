@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Part A/General Aptitude</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q01_Profit_Loss_Advanced</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A trader marks up the price of goods by 40% and then gives a discount of 20%. What is the net profit or loss percentage?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[12% profit]]></text>
+      <feedback><text>Correct. Let CP = 100. MP = 140. After 20% discount: SP = \(140 \times 0.80 = 112\). Profit = \(112 - 100 = 12\), i.e., 12% profit.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[20% loss]]></text>
+      <feedback><text>The markup of 40% more than compensates for the 20% discount; there is a net 12% profit, not a loss.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[10% profit]]></text>
+      <feedback><text>Net multiplier = \(1.4 \times 0.8 = 1.12\), giving 12% profit, not 10%.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[8% profit]]></text>
+      <feedback><text>SP = \(100 \times 1.4 \times 0.8 = 112\), so profit = 12%, not 8%.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q02_LCM_HCF</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The HCF and LCM of two numbers are 12 and 180 respectively. If one of the numbers is 36, what is the other number?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[60]]></text>
+      <feedback><text>Correct. Product of two numbers = HCF × LCM = \(12 \times 180 = 2160\). Other number = \(2160 / 36 = 60\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[72]]></text>
+      <feedback><text>HCF(36,72) = 36 ≠ 12; the other number is \(2160/36 = 60\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[48]]></text>
+      <feedback><text>\(36 \times 48 = 1728 \neq 2160\); the correct answer is 60.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[54]]></text>
+      <feedback><text>\(36 \times 54 = 1944 \neq 2160\); the other number is \(2160/36 = 60\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q03_Compound_Interest</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A sum of ₹5000 is invested at 10% per annum compounded annually. What is the amount after 3 years?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[₹6655]]></text>
+      <feedback><text>Correct. \(A = 5000 \times (1.1)^3 = 5000 \times 1.331 = 6655\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹6500]]></text>
+      <feedback><text>₹6500 would be the amount after 3 years under simple interest (₹1500 SI); compound interest gives ₹6655.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹6610]]></text>
+      <feedback><text>\(5000 \times 1.331 = 6655\), not 6610.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹6050]]></text>
+      <feedback><text>₹6050 = \(5000 \times 1.21^{0.5}\) approximately; the correct amount is \(5000 \times 1.331 = 6655\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q04_TimeAndDistance_Relative</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Two cyclists start from the same point in opposite directions at speeds of 18 km/h and 22 km/h respectively. After how many minutes will they be 20 km apart?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[30 minutes]]></text>
+      <feedback><text>Correct. Relative speed (opposite directions) = \(18 + 22 = 40\) km/h. Time to cover 20 km: \(20/40 = 0.5\) hours = 30 minutes.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[24 minutes]]></text>
+      <feedback><text>At 40 km/h relative speed, 20 km takes \(20/40 \times 60 = 30\) minutes, not 24.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[40 minutes]]></text>
+      <feedback><text>40 minutes would require covering only \(40/60 \times 40 = 26.67\) km, exceeding the 20 km target; the answer is 30 minutes.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[45 minutes]]></text>
+      <feedback><text>At 40 km/h relative speed: 45 min → 30 km apart; 20 km apart occurs at 30 minutes.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q05_FlowChart_Algorithm</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In a flowchart, a diamond (rhombus) shape represents]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[A decision or conditional branch (Yes/No question)]]></text>
+      <feedback><text>Correct. In standard flowchart notation, the diamond shape represents a decision point with two (or more) possible paths (e.g., Yes/No or True/False).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A process or computation step]]></text>
+      <feedback><text>Process steps are represented by rectangles; diamonds are reserved for decision points.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Start or end of the flowchart]]></text>
+      <feedback><text>Start/end (terminal) points are represented by ovals or rounded rectangles (stadium shapes); diamonds are decision symbols.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Data input/output]]></text>
+      <feedback><text>Input/output is represented by a parallelogram; diamonds denote decisions.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q06_Ages_Problem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The ratio of father's age to son's age is 7:3. After 10 years the ratio will be 2:1. What is the father's present age?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[70 years]]></text>
+      <feedback><text>Correct. Let ages be \(7x\) and \(3x\). After 10 years: \(\frac{7x+10}{3x+10} = \frac{2}{1}\Rightarrow 7x+10 = 6x+20 \Rightarrow x = 10\). Father's age: \(7 \times 10 = 70\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[56 years]]></text>
+      <feedback><text>If father is 56, son is 24 (ratio 7:3); after 10 years: 66 and 34, ratio \(66/34 \approx 1.94 \neq 2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[42 years]]></text>
+      <feedback><text>If father is 42, son is 18; after 10 years: 52 and 28, ratio \(52/28 \approx 1.86 \neq 2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[63 years]]></text>
+      <feedback><text>\(x = 10\) gives father = 70, not 63 (which would require \(x = 9\) giving ratio \((73)/(37) \neq 2\)).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q07_MatrixArrangement</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Six books — P, Q, R, S, T, U — are placed on a shelf. Q is to the right of P. S is to the left of T. R is between Q and S. U is at one of the ends. If U is at the right end, the arrangement from left to right is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[P, Q, R, S, T, U]]></text>
+      <feedback><text>Correct. Constraints: Q is right of P → P...Q. R is between Q and S → Q,R,S. S is left of T → S...T. U is rightmost. Combining: P, Q, R, S, T, U.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[T, S, R, Q, P, U]]></text>
+      <feedback><text>This reverses the relative order: Q must be right of P, not left.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[P, Q, S, R, T, U]]></text>
+      <feedback><text>R must be between Q and S (i.e., Q, R, S), not S before R.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[U, P, Q, R, S, T]]></text>
+      <feedback><text>This places U at the left end, but the problem states U is at the right end.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q08_SetsIntersection</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In a survey of 200 people: 120 like tea, 80 like coffee, and 40 like both. How many people like only tea (but not coffee)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[80]]></text>
+      <feedback><text>Correct. Only tea = Tea − Both = \(120 - 40 = 80\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[120]]></text>
+      <feedback><text>120 is the total number who like tea, including those who also like coffee; only tea = \(120 - 40 = 80\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[40]]></text>
+      <feedback><text>40 is the number who like both; only tea = \(120 - 40 = 80\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[60]]></text>
+      <feedback><text>Only coffee = \(80 - 40 = 40\); only tea = \(120 - 40 = 80\), not 60.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q09_Mensuration_Cylinder</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The radius of a cylinder is doubled while its height is halved. By what factor does the volume change?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The volume doubles (increases by factor 2)]]></text>
+      <feedback><text>Correct. \(V = \pi r^2 h\). New volume: \(\pi(2r)^2(h/2) = \pi \cdot 4r^2 \cdot h/2 = 2\pi r^2 h = 2V\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The volume quadruples (increases by factor 4)]]></text>
+      <feedback><text>Doubling radius multiplies volume by \(4\), but halving height divides by 2; net factor = \(4/2 = 2\), not 4.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The volume remains the same]]></text>
+      <feedback><text>The radius change (+factor 4) outweighs the height change (÷2), giving a net factor of 2; volume doubles.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The volume is halved]]></text>
+      <feedback><text>Halving the height alone would halve the volume, but doubling the radius contributes a factor of 4; net effect = ×2 (volume doubles).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q10_Conditional_Propositions</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The contrapositive of the statement "If it rains, the match is cancelled" is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[If the match is not cancelled, then it did not rain]]></text>
+      <feedback><text>Correct. The contrapositive of "If P then Q" is "If not-Q then not-P". Here P = "it rains", Q = "match is cancelled"; contrapositive: "If match is not cancelled, then it did not rain."</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[If it does not rain, the match is not cancelled]]></text>
+      <feedback><text>This is the inverse of the original statement (If not-P then not-Q), which is not logically equivalent to the original.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[If the match is cancelled, then it rained]]></text>
+      <feedback><text>This is the converse (If Q then P), which is not logically equivalent to the original or its contrapositive.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The match is cancelled and it rains]]></text>
+      <feedback><text>This is not a conditional statement at all; it is a conjunction, not the contrapositive.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q11_PigeonHole</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A drawer contains 6 red socks, 8 blue socks, and 4 green socks. What is the minimum number of socks that must be drawn (in the dark, without looking) to guarantee at least 2 socks of the same colour?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[4]]></text>
+      <feedback><text>Correct. There are 3 colours. By the pigeonhole principle, drawing 4 socks guarantees at least 2 of the same colour (worst case: 1 of each colour in 3 draws, then the 4th must match one).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[2]]></text>
+      <feedback><text>Drawing 2 socks could give one of each of two different colours; a matching pair is not guaranteed until the 4th draw.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[3]]></text>
+      <feedback><text>Drawing 3 socks could yield one red, one blue, and one green (all different); 4 socks guarantee a matching pair.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[7]]></text>
+      <feedback><text>7 would guarantee at least 3 of one colour in some formulations, but only 4 are needed to guarantee at least 2 of the same colour.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q12_AreaTriangle</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The vertices of a triangle are at \((0,0)\), \((6,0)\), and \((3,4)\). What is the area of the triangle?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[12 sq. units]]></text>
+      <feedback><text>Correct. Base = 6 (along x-axis). Height = 4 (y-coordinate of apex). Area = \(\frac{1}{2} \times 6 \times 4 = 12\) sq. units.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[24 sq. units]]></text>
+      <feedback><text>24 is \(\frac{1}{2}\) missing: base × height = \(6 \times 4 = 24\), but area = half that = 12.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[18 sq. units]]></text>
+      <feedback><text>Area = \(\frac{1}{2}|x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)| = \frac{1}{2}|0+6\times4+3\times0| = 12\), not 18.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[10 sq. units]]></text>
+      <feedback><text>Area = \(\frac{1}{2} \times 6 \times 4 = 12\), not 10.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q13_EnvironmentScience</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The "greenhouse effect" refers to which of the following phenomena?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The trapping of heat by atmospheric gases (CO₂, CH₄, water vapour), preventing its escape and warming the Earth's surface]]></text>
+      <feedback><text>Correct. Greenhouse gases absorb outgoing infrared radiation and re-emit it back towards the surface, warming the Earth — analogous to the glass panels of a greenhouse.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The cooling of the Earth's surface caused by the reflection of sunlight by clouds]]></text>
+      <feedback><text>Cloud reflection (albedo) has a cooling effect; the greenhouse effect refers to heat trapping by atmospheric gases, not cloud cooling.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The depletion of the ozone layer allowing harmful UV radiation to reach the surface]]></text>
+      <feedback><text>Ozone depletion and the greenhouse effect are distinct phenomena; the greenhouse effect concerns infrared heat trapping, not UV radiation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Acid rain caused by sulphur dioxide and nitrogen oxide emissions]]></text>
+      <feedback><text>Acid rain is a different environmental issue; the greenhouse effect specifically involves heat retention by certain gases.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q14_FloodFill_Recursion</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Fibonacci sequence is 1, 1, 2, 3, 5, 8, 13, 21, … What is the ratio of the 10th term to the 9th term (to 3 decimal places)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[1.618 (approximately equal to the golden ratio \(\phi\))]]></text>
+      <feedback><text>Correct. The Fibonacci sequence: 1,1,2,3,5,8,13,21,34,55. 10th term = 55, 9th = 34. Ratio = 55/34 ≈ 1.6176 ≈ 1.618. Consecutive Fibonacci ratios converge to the golden ratio \(\phi = (1+\sqrt5)/2 \approx 1.618\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[2.000]]></text>
+      <feedback><text>Consecutive Fibonacci ratios converge to \(\approx 1.618\), not 2.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[1.500]]></text>
+      <feedback><text>The ratio 3/2 = 1.5 occurs between the 4th and 3rd terms; later ratios converge to \(\approx 1.618\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[1.414]]></text>
+      <feedback><text>1.414 ≈ \(\sqrt{2}\), which is not the Fibonacci ratio; \(F_{10}/F_9 = 55/34 \approx 1.618\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q15_Inequality_Word</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A school needs to buy at least 200 chairs. Chair type A costs ₹600 each and type B costs ₹300 each. The total budget is ₹80,000. Which combination satisfies BOTH constraints (at least 200 chairs AND within budget)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[50 type A + 160 type B: 210 chairs, cost ₹78,000]]></text>
+      <feedback><text>Correct. 50×600 + 160×300 = 30,000 + 48,000 = ₹78,000 ≤ ₹80,000 ✓; 210 chairs ≥ 200 ✓. Both constraints satisfied.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[100 type A + 120 type B: 220 chairs, cost ₹96,000]]></text>
+      <feedback><text>100×600 + 120×300 = 60,000 + 36,000 = ₹96,000 > ₹80,000 ✗. Exceeds budget.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[133 type A + 0 type B: 133 chairs, cost ₹79,800]]></text>
+      <feedback><text>Within budget ✓, but 133 chairs < 200 ✗. Fails the quantity requirement.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[80 type A + 100 type B: 180 chairs, cost ₹78,000]]></text>
+      <feedback><text>Cost ₹78,000 ✓, but only 180 chairs < 200 ✗. Fails the minimum quantity requirement.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q16_Reasoning_Blood</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Pointing to a woman, a man says, "Her mother is the only daughter of my mother." How is the man related to the woman?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Uncle (maternal)]]></text>
+      <feedback><text>Correct. "The only daughter of my mother" = the man's sister. So the woman's mother is the man's sister. Therefore the man is the woman's maternal uncle.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Father]]></text>
+      <feedback><text>The woman's mother is the man's sister (not his wife), so he is her uncle, not her father.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Brother]]></text>
+      <feedback><text>The man is the uncle (mother's brother) of the woman, not her brother.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Grandfather]]></text>
+      <feedback><text>The man's mother is the woman's grandmother, so the man is the woman's uncle (not grandfather).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q17_DigitalLiteracy</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following is a characteristic of a peer-to-peer (P2P) network?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Each node can act as both a client and a server, sharing resources directly without a central server]]></text>
+      <feedback><text>Correct. In a P2P network, all nodes (peers) have equal status and can both request and provide resources, eliminating the need for a dedicated central server.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All data passes through a central server that controls access and authentication]]></text>
+      <feedback><text>This describes a client-server architecture; in P2P networks, communication is direct between peers without a central controller.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[P2P networks require more bandwidth than client-server networks for the same number of nodes]]></text>
+      <feedback><text>P2P networks often distribute bandwidth load across all peers, making them more efficient for large-scale sharing, not less efficient.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Only one node at a time can transfer data in a P2P network]]></text>
+      <feedback><text>P2P networks allow simultaneous transfers between multiple pairs of nodes; this is one of their key advantages over some centralized systems.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q18_Modular_Arithmetic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[What is the remainder when \(7^{100}\) is divided by 4?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[1]]></text>
+      <feedback><text>Correct. \(7 \equiv 3 \pmod{4}\). \(3^2 = 9 \equiv 1 \pmod{4}\). Since 100 is even: \(7^{100} = (7^2)^{50} \equiv 1^{50} = 1 \pmod{4}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[3]]></text>
+      <feedback><text>\(7^1 \equiv 3\), \(7^2 \equiv 1\), so odd powers give remainder 3 and even powers give 1; since 100 is even, remainder is 1.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[0]]></text>
+      <feedback><text>7 is odd and not divisible by 4; \(7^{100}\) has remainder 1 when divided by 4, not 0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[2]]></text>
+      <feedback><text>\(7^{100} \equiv 3^{100} = (3^2)^{50} \equiv 1^{50} = 1 \pmod{4}\), not 2.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q19_PowerExpression</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Simplify: \(\dfrac{4^5 \times 2^3}{8^3}\)]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[16]]></text>
+      <feedback><text>Correct. \(4^5 = 2^{10}\), \(2^3 = 2^3\), \(8^3 = 2^9\). So: \(\frac{2^{10} \times 2^3}{2^9} = \frac{2^{13}}{2^9} = 2^4 = 16\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[32]]></text>
+      <feedback><text>\(2^{13}/2^9 = 2^4 = 16\), not \(2^5 = 32\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[8]]></text>
+      <feedback><text>\(2^4 = 16 \neq 8 = 2^3\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[64]]></text>
+      <feedback><text>\(2^{13}/2^9 = 2^4 = 16\), not \(2^6 = 64\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>PARTA3_Q20_IndianConstitution</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which Article of the Indian Constitution guarantees the Right to Education as a fundamental right for children aged 6–14 years?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Article 21A]]></text>
+      <feedback><text>Correct. Article 21A was inserted by the 86th Constitutional Amendment (2002), making free and compulsory education a fundamental right for children aged 6–14 years. It is implemented through the Right to Education (RTE) Act, 2009.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Article 45]]></text>
+      <feedback><text>Article 45 (Directive Principle) originally dealt with free and compulsory education but was a directive, not a fundamental right; Article 21A elevated it to a fundamental right.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Article 29]]></text>
+      <feedback><text>Article 29 protects cultural and educational rights of minorities, not the universal right to elementary education.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Article 14]]></text>
+      <feedback><text>Article 14 guarantees equality before the law and equal protection of laws; education as a fundamental right is in Article 21A.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

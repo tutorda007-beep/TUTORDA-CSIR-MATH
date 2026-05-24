@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Partial Differential Equations/Heat Equation</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q01_Heat_Fourier</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The solution of the heat equation \(u_t = k\,u_{xx}\) on \(0 < x < L\) with \(u(0,t) = u(L,t) = 0\) and \(u(x,0) = f(x)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x,t) = \displaystyle\sum_{n=1}^{\infty} B_n \sin\!\left(\dfrac{n\pi x}{L}\right) e^{-k(n\pi/L)^2 t}\), where \(B_n = \dfrac{2}{L}\displaystyle\int_0^L f(x)\sin\!\left(\dfrac{n\pi x}{L}\right)dx\)]]></text>
+      <feedback><text>Correct. Separation of variables gives X_n(x)=sin(nπx/L), T_n(t)=exp(−k(nπ/L)²t). Fourier sine series coefficients are B_n = (2/L)∫₀ᴸ f(x)sin(nπx/L)dx.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = \displaystyle\sum_{n=0}^{\infty} B_n \cos\!\left(\dfrac{n\pi x}{L}\right) e^{-k(n\pi/L)^2 t}\)]]></text>
+      <feedback><text>Cosine series arises from Neumann (u_x=0) boundary conditions, not Dirichlet (u=0). The zero BCs require sine series.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = f(x) e^{-kt}\)]]></text>
+      <feedback><text>This satisfies u_t=−ku but not u_t=ku_{xx} in general unless f''=f, which is not assumed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = f(x - kt)\)]]></text>
+      <feedback><text>f(x−kt) solves u_t+ku_x=0 (transport), not the heat equation u_t=ku_{xx}.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q02_Fundamental_Solution</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The fundamental solution (heat kernel) of \(u_t = k\,u_{xx}\) on \(\mathbb{R}\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\Phi(x,t) = \dfrac{1}{\sqrt{4\pi k t}}\exp\!\left(-\dfrac{x^2}{4kt}\right),\quad t > 0\)]]></text>
+      <feedback><text>Correct. The heat kernel Φ is the fundamental solution with initial data δ(x). It satisfies ∫Φ dx=1 for all t>0 and Φ→δ(x) as t→0⁺. The solution with initial data f is u(x,t)=∫Φ(x−y,t)f(y)dy.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Phi(x,t) = \dfrac{1}{2\pi k t}\exp\!\left(-\dfrac{x^2}{2kt}\right)\)]]></text>
+      <feedback><text>Incorrect normalization: the heat kernel has (4πkt)^{1/2} in the denominator and x²/(4kt) in the exponent, not 2πkt and x²/(2kt).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Phi(x,t) = \dfrac{1}{\sqrt{2\pi t}}\exp\!\left(-\dfrac{x^2}{2t}\right)\)]]></text>
+      <feedback><text>This is the standard normal density (k=1/2). For general k, the exponent denominator is 4kt (not 2t) and normalization is 1/√(4πkt).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Phi(x,t) = e^{-k t}\sin(x)\)]]></text>
+      <feedback><text>This satisfies the heat equation (Φ_t = −ke^{−kt}sin x = kΦ_{xx}) on a bounded domain but is not the fundamental solution on ℝ (it doesn't approach δ(x) as t→0⁺).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q03_Maximum_Principle</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The maximum principle for the heat equation \(u_t = k\,u_{xx}\) on the rectangle \(Q_T = (0,L) \times (0,T]\) states:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The maximum (and minimum) of \(u\) over \(\overline{Q_T}\) is attained on the parabolic boundary \(\Gamma_T = \{t=0\} \cup \{x=0\} \cup \{x=L\}\).]]></text>
+      <feedback><text>Correct. The parabolic maximum principle states that the maximum of a solution of the heat equation is attained on the initial/boundary data (the parabolic boundary), not in the interior or at t=T. This implies uniqueness and stability of the heat equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The maximum of \(u\) is attained at \(t = T\) (the final time).]]></text>
+      <feedback><text>Heat diffuses over time; the maximum is on the parabolic boundary (t=0 or spatial boundaries), not at the final time t=T.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The maximum of \(u\) can occur anywhere inside \(Q_T\).]]></text>
+      <feedback><text>The maximum principle specifically rules this out for solutions of the heat equation with no source term.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The maximum principle does not hold for the heat equation.]]></text>
+      <feedback><text>The maximum principle does hold for the heat equation and is one of its most important properties, implying uniqueness and continuous dependence on data.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q04_Energy_Method</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the heat equation \(u_t = u_{xx}\) on \((0,1)\) with \(u(0,t)=u(1,t)=0\), define the energy \(E(t) = \displaystyle\int_0^1 u^2\,dx\). Then \(E'(t)\):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(E'(t) = -2\displaystyle\int_0^1 u_x^2\,dx \leq 0\)]]></text>
+      <feedback><text>Correct. E'(t) = 2∫uu_t dx = 2∫uu_{xx}dx. Integrating by parts: 2[uu_x]₀¹ − 2∫u_x²dx = 0 − 2∫u_x²dx ≤ 0. So E is non-increasing, proving solutions decay to zero.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(E'(t) = 2\displaystyle\int_0^1 u_{xx}^2\,dx \geq 0\)]]></text>
+      <feedback><text>Sign error: integration by parts gives −2∫u_x²dx ≤ 0, showing energy decreases. The heat equation is dissipative.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(E'(t) = 0\) (energy is conserved).]]></text>
+      <feedback><text>Energy is NOT conserved for the heat equation; it strictly decreases (dissipation). Conservation of energy is a property of wave equations, not heat equations.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(E'(t) = -2u(1,t)u_x(1,t) + 2u(0,t)u_x(0,t)\)]]></text>
+      <feedback><text>This is the boundary term from integration by parts, but with Dirichlet BCs u(0,t)=u(1,t)=0, this vanishes. The full answer includes the −2∫u_x²dx term.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q05_Neumann_BC</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The heat equation \(u_t = k\,u_{xx}\) on \((0,L)\) with Neumann conditions \(u_x(0,t) = u_x(L,t) = 0\) and \(u(x,0) = f(x)\). The steady-state limit \(\lim_{t\to\infty} u(x,t)\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{1}{L}\displaystyle\int_0^L f(x)\,dx\) (the spatial average of the initial data)]]></text>
+      <feedback><text>Correct. With insulated boundaries (Neumann BCs), total heat ∫u dx is conserved. As t→∞ all modes except n=0 decay exponentially, leaving the constant a₀/2 = (1/L)∫f dx. Heat spreads to uniform temperature.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(0\)]]></text>
+      <feedback><text>Zero is the steady state for Dirichlet BCs (u=0 on boundary). With insulated Neumann BCs, the heat is conserved and equilibrates to the average temperature.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f(L/2)\)]]></text>
+      <feedback><text>The midpoint value of f is not generally the steady state. The equilibrium is the spatial average (1/L)∫₀ᴸ f dx.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\max_{x \in [0,L]} f(x)\)]]></text>
+      <feedback><text>The maximum of f is not the steady-state temperature. Heat diffusion brings all points to the average temperature.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q06_Uniqueness</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Uniqueness of the solution to the heat equation IVP \(u_t = k u_{xx}\), \(u(x,0)=f(x)\) on \(\mathbb{R} \times (0,\infty)\) within the class of functions satisfying \(|u(x,t)| \leq M e^{a x^2}\) follows from:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The Tychonoff uniqueness theorem (requiring at most Gaussian growth \(|u| \leq Me^{ax^2}\)).]]></text>
+      <feedback><text>Correct. Without growth conditions, the heat equation on ℝ has non-unique solutions (Tychonoff's example of a non-trivial solution with f≡0). Uniqueness holds in the class |u|≤Me^{ax²}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Cauchy-Kovalevskaya theorem (analytic data).]]></text>
+      <feedback><text>Cauchy-Kovalevskaya gives local existence of analytic solutions but not global uniqueness for the heat equation. Also, the heat equation with CK data may not capture non-analytic behavior.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The maximum principle (valid on bounded domains only).]]></text>
+      <feedback><text>On bounded domains, the maximum principle gives uniqueness. For the whole line ℝ, a growth condition like Tychonoff's is needed in addition.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Uniqueness always holds on \(\mathbb{R}\) with no growth condition.]]></text>
+      <feedback><text>False. Tychonoff (1935) constructed a non-trivial solution of the heat equation with zero initial data, showing that without a growth condition uniqueness fails on ℝ.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q07_Self_Similar</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A self-similar solution of \(u_t = u_{xx}\) of the form \(u(x,t) = t^{-1/2} f(\xi)\) with \(\xi = x/\sqrt{t}\) satisfies the ODE:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(f'' + \dfrac{\xi}{2} f' + \dfrac{1}{2} f = 0\)]]></text>
+      <feedback><text>Correct. Substituting u=t^{−1/2}f(ξ) into u_t=u_{xx}: u_t = t^{−3/2}(−f/2 − ξf'/2), u_{xx}=t^{−3/2}f''. Setting equal: f'' = −f/2 − ξf'/2, i.e., f''+ξf'/2+f/2=0. Solutions involve the error function erf.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f'' - \dfrac{\xi}{2} f' = 0\)]]></text>
+      <feedback><text>Missing the f/2 term. The correct ODE is f''+ξf'/2+f/2=0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f'' + \xi f' = 0\)]]></text>
+      <feedback><text>The coefficient of f' should be ξ/2 and there is also an f/2 term. This is incorrect.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f'' - f = 0\)]]></text>
+      <feedback><text>This is a constant coefficient ODE unrelated to the similarity reduction. The correct ODE has variable coefficients involving ξ.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q08_Duhamel</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Duhamel's principle for the non-homogeneous heat equation \(u_t = k\,u_{xx} + g(x,t)\), \(u(x,0)=0\), on \(\mathbb{R}\), gives:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x,t) = \displaystyle\int_0^t \!\!\int_{-\infty}^{\infty} \Phi(x-y, t-\tau)\, g(y,\tau)\, dy\, d\tau\)]]></text>
+      <feedback><text>Correct. Duhamel's principle represents the solution as a superposition of heat kernels: each forcing g(y,τ) at time τ acts as an initial condition for a new heat kernel propagated from time τ to t.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = \displaystyle\int_0^t g(x,\tau)\,d\tau\)]]></text>
+      <feedback><text>This integrates the source without spatial diffusion. Duhamel's principle must include the heat kernel to account for diffusion of the forcing.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = g(x,t) * \Phi(x,t)\) (spatial convolution only)]]></text>
+      <feedback><text>The convolution must be over both space AND time (from 0 to t), not just space. The temporal integral is essential in Duhamel's principle.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = \Phi(x,t) \cdot \displaystyle\int_0^\infty g(x,\tau)\,d\tau\)]]></text>
+      <feedback><text>This incorrectly separates spatial diffusion from temporal integration. The correct form uses a space-time convolution of g with the heat kernel.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q09_Heat_Semigroup</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The solution operator \(S(t)\) for the heat equation \(u_t = k\Delta u\) on \(\mathbb{R}^n\) forms a semigroup. Which property does it satisfy?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(S(t+s) = S(t) \circ S(s)\) for all \(t, s \geq 0\) (semigroup property).]]></text>
+      <feedback><text>Correct. The heat semigroup satisfies S(t+s)=S(t)S(s) (convolution of kernels corresponds to time translation). This is the semigroup property; combined with S(0)=I it defines a C₀-semigroup on L²(ℝⁿ).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(S(t) = S(-t)^{-1}\) (invertibility with time-reversal).]]></text>
+      <feedback><text>The heat equation is NOT time-reversible. S(t) is not invertible in L² for t>0 because the backward heat equation is ill-posed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\|S(t)f\|_{L^2} = \|f\|_{L^2}\) (energy conservation).]]></text>
+      <feedback><text>The heat semigroup is contractive: ‖S(t)f‖ ≤ ‖f‖, with strict inequality for t>0. Energy is not conserved; it decreases (dissipation).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(S(t)f \to \infty\) as \(t \to \infty\) for any nonzero \(f\).]]></text>
+      <feedback><text>The opposite holds: on bounded domains with Dirichlet BCs, S(t)f→0 as t→∞. On ℝⁿ, ‖S(t)f‖_{L^∞}→0.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q10_Backward_Heat</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The backward heat equation \(u_t = -k\,u_{xx}\) (or equivalently, the heat equation run backward in time) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Ill-posed (in the sense of Hadamard): small perturbations in the final data lead to arbitrarily large errors in the solution.]]></text>
+      <feedback><text>Correct. The backward heat equation is a classic example of an ill-posed problem. High-frequency modes grow exponentially backward in time (e^{kn²t}), so arbitrarily small perturbations are amplified without bound.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Well-posed but only on bounded domains.]]></text>
+      <feedback><text>The backward heat equation is ill-posed even on bounded domains. The exponential growth of Fourier modes backward in time makes it ill-posed for any domain.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Equivalent to the forward heat equation by time-reversal symmetry.]]></text>
+      <feedback><text>The heat equation is NOT time-reversible. The backward problem is ill-posed while the forward problem is well-posed—they are fundamentally different.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Well-posed for analytic initial data.]]></text>
+      <feedback><text>Even for analytic data, small perturbations (which may not be analytic) destroy solutions. The ill-posedness is in the Hadamard sense: lack of continuous dependence on data.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q11_Infinite_Speed</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A fundamental qualitative difference between the heat equation and the wave equation is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The heat equation has infinite speed of propagation: a localized disturbance at \(t=0\) is felt everywhere for \(t > 0\). The wave equation has finite speed \(c\).]]></text>
+      <feedback><text>Correct. The heat kernel Φ(x,t)>0 for all x when t>0, meaning information propagates instantaneously. In contrast, the wave equation's d'Alembert solution u=f(x−ct)+g(x+ct) propagates with speed c (finite).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The heat equation is time-reversible while the wave equation is not.]]></text>
+      <feedback><text>This is reversed. The wave equation IS time-reversible (replace t by −t). The heat equation is NOT (backward heat equation is ill-posed).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The heat equation conserves energy while the wave equation dissipates it.]]></text>
+      <feedback><text>This is backward. The heat equation dissipates energy (‖u‖² decreases). The wave equation conserves energy (kinetic + potential energy is constant).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The heat equation has real characteristics while the wave equation has complex characteristics.]]></text>
+      <feedback><text>The parabolic heat equation has no real characteristics (the discriminant B²−4AC=0 gives a degenerate case). The wave equation (hyperbolic) has two families of real characteristics.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q12_Heat_Fourier_Transform</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Applying the Fourier transform in \(x\) to the heat equation \(u_t = k\,u_{xx}\) on \(\mathbb{R}\) yields the ODE:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\hat{u}_t(\xi,t) = -k\xi^2 \hat{u}(\xi,t)\), so \(\hat{u}(\xi,t) = \hat{f}(\xi)\,e^{-k\xi^2 t}\)]]></text>
+      <feedback><text>Correct. Fourier transform: ℱ{u_xx} = (iξ)²û = −ξ²û. So û_t = −kξ²û with solution û(ξ,t) = f̂(ξ)e^{−kξ²t}. Inverting gives u = (f * Φ)(x,t) (convolution with heat kernel).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\hat{u}_t = k\xi^2 \hat{u}\), so \(\hat{u}(\xi,t) = \hat{f}(\xi)\,e^{k\xi^2 t}\)]]></text>
+      <feedback><text>Sign error: ℱ{u_{xx}} = −ξ²û (the factor (iξ)² = −ξ² gives a minus sign). Growing modes e^{kξ²t} would make the heat equation ill-posed forward in time.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\hat{u}(\xi,t) = \hat{f}(\xi)\cos(\xi\sqrt{k}t)\)]]></text>
+      <feedback><text>Cosine solutions arise from the wave equation û_{tt} = −kξ²û. For the heat equation, the solution decays exponentially: e^{−kξ²t}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\hat{u}(\xi,t) = \hat{f}(\xi)\,e^{-\xi t}\)]]></text>
+      <feedback><text>Missing the factor kξ in the exponent. The heat equation gives û = f̂ e^{−kξ²t}, not e^{−ξt}.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q13_Green_Function_Heat</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Green's function \(G(x,t;\xi,\tau)\) for the heat equation on \((0,\infty)\times(0,\infty)\) with \(G(0,t;\xi,\tau)=0\) (Dirichlet BC) is given by:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(G = \Phi(x-\xi,t-\tau) - \Phi(x+\xi,t-\tau)\) (method of images)]]></text>
+      <feedback><text>Correct. The method of images places an image source at −ξ with opposite sign. The combination Φ(x−ξ)−Φ(x+ξ) vanishes at x=0 for all t>τ, satisfying the Dirichlet BC.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G = \Phi(x-\xi,t-\tau) + \Phi(x+\xi,t-\tau)\) (method of images)]]></text>
+      <feedback><text>Adding (not subtracting) the image gives G(0,t;ξ,τ) = 2Φ(ξ,t−τ) ≠ 0. The minus sign is needed for the Dirichlet BC.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G = \Phi(x-\xi, t-\tau)\) (no image needed)]]></text>
+      <feedback><text>The free-space heat kernel does not satisfy the Dirichlet BC at x=0. The method of images adds an image term to enforce the boundary condition.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G = 2\,\Phi(x+\xi,t-\tau)\)]]></text>
+      <feedback><text>This would give G(0,t;ξ,τ)=2Φ(ξ,t−τ)≠0 and does not account for the point source at ξ correctly.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q14_Smoothing_Effect</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which property characterizes the smoothing effect of the heat equation?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[For any \(f \in L^1(\mathbb{R})\) (or \(L^2\)), the solution \(u(\cdot,t) = \Phi(\cdot,t) * f \in C^\infty(\mathbb{R})\) for all \(t > 0\).]]></text>
+      <feedback><text>Correct. The heat kernel Φ(·,t) is C^∞ for t>0, so convolution with any L¹ (or L²) initial data immediately produces a smooth solution. This is the regularizing (smoothing) effect of parabolic equations.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The solution \(u\) has the same regularity as the initial data \(f\) for all \(t > 0\).]]></text>
+      <feedback><text>The heat equation strictly improves regularity: even discontinuous initial data becomes C^∞ for t>0. The solution is more regular than the data.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Discontinuities in \(f\) propagate along characteristics for all \(t > 0\).]]></text>
+      <feedback><text>This describes hyperbolic equations (like the wave equation). The heat equation has no real characteristics and instantly smooths all discontinuities.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The solution \(u\) remains in \(L^\infty\) but does not become smoother.]]></text>
+      <feedback><text>The solution becomes C^∞ for any t>0, regardless of the initial data's regularity. The heat equation is a prime example of a smoothing (hypoelliptic) operator.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q15_Separation_Nonzero_BC</text></name>
+    <questiontext format="html">
+      <text><![CDATA[To solve the heat equation \(u_t = k\,u_{xx}\) on \((0,L)\) with non-homogeneous steady BCs \(u(0,t)=T_1\), \(u(L,t)=T_2\), the standard approach is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Write \(u = v + w\) where \(w(x) = T_1 + \dfrac{T_2-T_1}{L}x\) is the steady state, then solve for \(v\) with homogeneous BCs \(v(0,t)=v(L,t)=0\).]]></text>
+      <feedback><text>Correct. The steady state w satisfies w_{xx}=0 with w(0)=T₁, w(L)=T₂: it is the linear interpolant. The remainder v=u−w satisfies the heat equation with zero BCs and IC v(x,0)=f(x)−w(x), solvable by Fourier sine series.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Apply separation of variables directly with \(u(x,t) = X(x)T(t)\) — no decomposition needed.]]></text>
+      <feedback><text>Direct separation of variables fails for non-homogeneous BCs since X(0)T(t)=T₁ cannot hold for a product solution with T(t) variable. Homogeneous BCs are required for separation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Use Fourier cosine series since the boundary conditions are non-homogeneous.]]></text>
+      <feedback><text>The type of Fourier series (sine or cosine) is determined by the BCs on the remainder v, not on the original problem. After subtracting the steady state, the BCs are homogeneous Dirichlet, requiring sine series.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Apply a Laplace transform in \(x\) to handle the non-homogeneous BCs.]]></text>
+      <feedback><text>Laplace transforms in x are used for semi-infinite domains. For a finite interval with non-homogeneous BCs, the standard approach is to subtract the steady state and use Fourier series for the remainder.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q16_Pointwise_Bound</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the heat equation solution \(u(x,t) = \displaystyle\int_{-\infty}^{\infty} \Phi(x-y,t) f(y)\,dy\) with \(f \in L^1(\mathbb{R})\), the pointwise bound is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(|u(x,t)| \leq \dfrac{\|f\|_{L^1}}{\sqrt{4\pi k t}}\)]]></text>
+      <feedback><text>Correct. Since |Φ(x−y,t)| ≤ 1/√(4πkt) (the maximum of the Gaussian), |u(x,t)| ≤ (1/√(4πkt))·∫|f|dy = ‖f‖_{L¹}/√(4πkt). This shows the L^∞ norm decays like t^{−1/2}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(|u(x,t)| \leq \|f\|_{L^1}\)]]></text>
+      <feedback><text>This bound misses the decay factor. The correct bound is ‖f‖_{L¹}/√(4πkt), which decays to 0 as t→∞.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(|u(x,t)| \leq \|f\|_{L^\infty}\)]]></text>
+      <feedback><text>For f∈L^∞ (not necessarily L¹), the maximum principle gives |u|≤‖f‖_{L^∞}. But with f∈L¹, the relevant bound involves the L¹ norm scaled by 1/√(4πkt).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(|u(x,t)| \leq \dfrac{\|f\|_{L^2}}{\sqrt{2\pi k t}}\)]]></text>
+      <feedback><text>The L² norm appears in other estimates (e.g., via Cauchy-Schwarz), but the direct supremum of Φ gives the L¹ estimate ‖f‖_{L¹}/√(4πkt).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q17_Mean_Value</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The mean value property for the heat equation states: if \(u_t = k\,u_{xx}\) in a heat ball \(\mathcal{H}(x_0,t_0;r)\), then:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x_0,t_0) = \dfrac{1}{4kr^2}\displaystyle\iint_{\mathcal{H}} u(x,t)\,\dfrac{|x-x_0|^2}{(t_0-t)^2}\,dx\,dt\)]]></text>
+      <feedback><text>Correct. The parabolic mean value property integrates u against a specific weight (not just over the ball) to recover the value at the center. This is the heat equation analogue of the harmonic mean value property.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x_0,t_0) = \dfrac{1}{|\mathcal{H}|}\displaystyle\iint_{\mathcal{H}} u(x,t)\,dx\,dt\) (uniform average over heat ball)]]></text>
+      <feedback><text>The parabolic mean value property uses a non-uniform weight |x−x₀|²/(t₀−t)² rather than a simple average. The heat ball is not averaged uniformly.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x_0,t_0) = \dfrac{1}{|B_r|}\displaystyle\int_{B_r(x_0)} u(x,t_0)\,dx\) (spatial average at time \(t_0\))]]></text>
+      <feedback><text>This is the Euclidean mean value property for harmonic functions (Laplace equation), not the parabolic heat equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The heat equation has no mean value property.]]></text>
+      <feedback><text>The heat equation does have a mean value property, but it is more complex than the elliptic case, involving a weighted integral over the heat ball.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q18_Decay_Rate</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the heat equation \(u_t = k\,u_{xx}\) on \((0,1)\) with Dirichlet BCs, the \(L^2\) norm of the solution satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\|u(\cdot,t)\|_{L^2}^2 \leq e^{-2k\pi^2 t}\|f\|_{L^2}^2\)]]></text>
+      <feedback><text>Correct. The slowest-decaying mode is n=1 with decay rate k(π/L)²=kπ² (for L=1). All modes decay at rate kn²π²≥kπ², so ‖u‖²≤e^{−2kπ²t}‖f‖². The sharp constant involves the smallest eigenvalue λ₁=π².</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\|u(\cdot,t)\|_{L^2} = \|f\|_{L^2}\) for all \(t > 0\).]]></text>
+      <feedback><text>The L² norm is not preserved; it decays exponentially. Only the Neumann (insulated) problem preserves the spatial average (not the L² norm even then).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\|u(\cdot,t)\|_{L^2} \leq \dfrac{\|f\|_{L^2}}{\sqrt{t}}\) (algebraic decay)]]></text>
+      <feedback><text>On a bounded domain with Dirichlet BCs, the decay is exponential (e^{−kπ²t}), much faster than algebraic 1/√t. Algebraic decay occurs on ℝ (unbounded domain).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\|u(\cdot,t)\|_{L^2} \to \infty\) as \(t \to \infty\).]]></text>
+      <feedback><text>With Dirichlet BCs, the solution decays to zero exponentially fast. ‖u‖ cannot grow.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q19_Heat_3D</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The heat kernel in \(\mathbb{R}^n\) for \(u_t = k\Delta u\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\Phi_n(x,t) = \dfrac{1}{(4\pi k t)^{n/2}}\exp\!\left(-\dfrac{|x|^2}{4kt}\right)\)]]></text>
+      <feedback><text>Correct. In n dimensions, the heat kernel is the product of n one-dimensional kernels, giving (4πkt)^{−n/2} exp(−|x|²/(4kt)). It satisfies ∫ Φ_n dx = 1 for all t>0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Phi_n(x,t) = \dfrac{1}{4\pi k t}\exp\!\left(-\dfrac{|x|^2}{4kt}\right)\)]]></text>
+      <feedback><text>The normalization (4πkt)^{−1} is correct only for n=2. In general dimension n, it is (4πkt)^{−n/2}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Phi_n(x,t) = \dfrac{1}{(2\pi k t)^{n/2}}\exp\!\left(-\dfrac{|x|^2}{2kt}\right)\)]]></text>
+      <feedback><text>This would be the probability density of N(0,ktI_n), with variance kt per coordinate. The heat equation solution uses (4πkt)^{−n/2}exp(−|x|²/(4kt)).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Phi_n(x,t) = \dfrac{e^{-|x|^2/(4kt)}}{4\pi k t \cdot |x|^{n-2}}\)]]></text>
+      <feedback><text>The factor |x|^{n−2} would appear in the Green's function for the Laplace equation (fundamental solution), not the heat kernel.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_43_Q20_Stefan_Problem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Stefan problem models a phase transition (melting ice) and leads to a free boundary problem. The key interface condition (Stefan condition) relates:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The jump in the heat flux at the interface to the speed of the moving boundary: \(k_1 u_x^- - k_2 u_x^+ = L\,\dot{s}(t)\), where \(L\) is latent heat and \(s(t)\) is the interface position.]]></text>
+      <feedback><text>Correct. The Stefan condition is an energy balance at the moving interface: the difference in heat fluxes from both sides equals the latent heat released/absorbed times the interface speed. This is a free boundary PDE problem of great physical importance.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The temperature is discontinuous at the interface with a fixed jump \([u] = L\).]]></text>
+      <feedback><text>Temperature is continuous at the interface (both phases are at the melting temperature T_m). It is the heat flux that has a jump proportional to the interface speed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The heat flux is continuous at the interface and the interface is stationary.]]></text>
+      <feedback><text>The interface moves (that is the point of the Stefan problem), and the flux has a jump determined by the Stefan condition.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The temperature at the interface equals the ambient temperature.]]></text>
+      <feedback><text>The temperature at the melting interface is fixed at the melting temperature T_m, not the ambient temperature. The Stefan condition involves derivatives, not values.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

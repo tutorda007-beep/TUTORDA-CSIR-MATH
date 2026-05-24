@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Statistics and Probability/Continuous Distributions</text></category>
+    <info format="html"><text>CSIR NET level MCQ questions on Continuous Probability Distributions</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q01 Normal Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[If \(X\sim N(\mu,\sigma^2)\), then \(P(\mu-\sigma<X<\mu+\sigma)\approx\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(0.6827\) (approximately 68.27%)</text><feedback format="html"><text>Correct. For a normal distribution, approximately 68.27% of the probability lies within 1 standard deviation of the mean.</text></feedback></answer>
+    <answer fraction="0"><text>\(0.9545\)</text><feedback format="html"><text>Incorrect. 95.45% lies within 2 standard deviations.</text></feedback></answer>
+    <answer fraction="0"><text>\(0.5\)</text><feedback format="html"><text>Incorrect. Only 50% lies on either side of the mean, but 68.27% lies within 1 standard deviation.</text></feedback></answer>
+    <answer fraction="0"><text>\(0.9973\)</text><feedback format="html"><text>Incorrect. 99.73% lies within 3 standard deviations.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q02 Exponential Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[For \(X\sim\text{Exp}(\lambda)\) with density \(f(x)=\lambda e^{-\lambda x}\) (\(x>0\)), the median is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{\ln 2}{\lambda}\)]]></text><feedback format="html"><text>Correct. \(F(m)=1/2\Rightarrow 1-e^{-\lambda m}=1/2\Rightarrow e^{-\lambda m}=1/2\Rightarrow m=\ln2/\lambda\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{\lambda}\)]]></text><feedback format="html"><text>Incorrect. \(1/\lambda\) is the mean of the exponential distribution; the median is \(\ln2/\lambda\approx0.693/\lambda\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{2}{\lambda}\)]]></text><feedback format="html"><text>Incorrect. The median is \(\ln2/\lambda\), not \(2/\lambda\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{2\lambda}\)]]></text><feedback format="html"><text>Incorrect. The median is \(\ln2/\lambda\approx0.693/\lambda\neq0.5/\lambda\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q03 Gamma Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[If \(X\sim\Gamma(\alpha,\beta)\) with density \(f(x)\propto x^{\alpha-1}e^{-x/\beta}\), then the mean and variance are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(E[X]=\alpha\beta\) and \(\text{Var}(X)=\alpha\beta^2\)]]></text><feedback format="html"><text>Correct. For Gamma\((\alpha,\beta)\) with scale \(\beta\): mean \(=\alpha\beta\) and variance \(=\alpha\beta^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(E[X]=\alpha/\beta\) and \(\text{Var}(X)=\alpha/\beta^2\)]]></text><feedback format="html"><text>Incorrect. These formulas apply when \(\beta\) is the rate parameter (not the scale).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(E[X]=\beta\) and \(\text{Var}(X)=\alpha\)]]></text><feedback format="html"><text>Incorrect. Mean \(=\alpha\beta\) and Var \(=\alpha\beta^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(E[X]=\alpha+\beta\) and \(\text{Var}(X)=\alpha+\beta^2\)]]></text><feedback format="html"><text>Incorrect. Mean and variance of Gamma\((\alpha,\beta)\) are \(\alpha\beta\) and \(\alpha\beta^2\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q04 Beta Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[For \(X\sim\text{Beta}(\alpha,\beta)\) on \([0,1]\), the mean is \(\frac{\alpha}{\alpha+\beta}\). For a symmetric Beta with \(\alpha=\beta=2\), the variance is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{1}{20}\)]]></text><feedback format="html"><text>Correct. \(\text{Var}=\frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}=\frac{4}{16\times5}=\frac{4}{80}=\frac{1}{20}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{12}\)]]></text><feedback format="html"><text>Incorrect. \(1/12\) is the variance of Uniform\((0,1)\) (Beta\((1,1)\)), not Beta\((2,2)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{4}\)]]></text><feedback format="html"><text>Incorrect. \(\text{Var}=\frac{2\times2}{4^2\times5}=\frac{4}{80}=1/20\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{2}\)]]></text><feedback format="html"><text>Incorrect. The variance of Beta\((2,2)\) is \(1/20\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q05 Chi-squared Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[If \(Z_1,\ldots,Z_n\) are i.i.d. \(N(0,1)\), then \(\sum_{i=1}^n Z_i^2\sim\chi^2(n)\). The mean and variance of \(\chi^2(n)\) are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[Mean \(=n\) and Variance \(=2n\)]]></text><feedback format="html"><text>Correct. \(\chi^2(n)=\Gamma(n/2,2)\), so mean \(=(n/2)\times2=n\) and variance \(=(n/2)\times4=2n\).</text></feedback></answer>
+    <answer fraction="0"><text>Mean \(=n/2\) and Variance \(=n\)</text><feedback format="html"><text>Incorrect. Mean of \(\chi^2(n)\) is \(n\) (not \(n/2\)) and variance is \(2n\).</text></feedback></answer>
+    <answer fraction="0"><text>Mean \(=n\) and Variance \(=n^2\)</text><feedback format="html"><text>Incorrect. Variance of \(\chi^2(n)\) is \(2n\), not \(n^2\).</text></feedback></answer>
+    <answer fraction="0"><text>Mean \(=0\) and Variance \(=n\)</text><feedback format="html"><text>Incorrect. \(\chi^2\) is non-negative; mean \(=n>0\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q06 Student's t Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[If \(Z\sim N(0,1)\) and \(V\sim\chi^2(\nu)\) are independent, then \(T=Z/\sqrt{V/\nu}\) follows a \(t\)-distribution with \(\nu\) degrees of freedom. The variance of \(T\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{\nu}{\nu-2}\) for \(\nu>2\)]]></text><feedback format="html"><text>Correct. The variance of \(t(\nu)\) is \(\nu/(\nu-2)\) for \(\nu>2\). For \(\nu\leq2\), the variance is infinite.</text></feedback></answer>
+    <answer fraction="0"><text>\(1\) for all \(\nu\)</text><feedback format="html"><text>Incorrect. Variance \(=1\) only as \(\nu\to\infty\) (when \(t\to N(0,1)\)).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\nu\)]]></text><feedback format="html"><text>Incorrect. Variance of \(t(\nu)\) is \(\nu/(\nu-2)\), not \(\nu\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{\nu-2}\)]]></text><feedback format="html"><text>Incorrect. Variance \(=\nu/(\nu-2)\), not \(1/(\nu-2)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q07 F Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[If \(U\sim\chi^2(m)\) and \(V\sim\chi^2(n)\) are independent, then \(F=\frac{U/m}{V/n}\sim F(m,n)\). If \(T\sim t(n)\), then \(T^2\sim\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(F(1,n)\)]]></text><feedback format="html"><text>Correct. \(T=Z/\sqrt{V/n}\), so \(T^2=Z^2/(V/n)\sim\chi^2(1)/\chi^2(n)/n\cdot n=\chi^2(1)/1\div\chi^2(n)/n=F(1,n)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(F(n,1)\)]]></text><feedback format="html"><text>Incorrect. \(T^2\sim F(1,n)\), not \(F(n,1)\). Note \(F(1,n)\neq F(n,1)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\chi^2(n)\)]]></text><feedback format="html"><text>Incorrect. \(T^2\sim F(1,n)\), which is related to but distinct from \(\chi^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(t(n)^2\) has no standard distribution]]></text><feedback format="html"><text>Incorrect. \(T^2\sim F(1,n)\), a well-known result.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q08 Log-Normal Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[If \(Y=e^X\) where \(X\sim N(\mu,\sigma^2)\), then \(Y\) is log-normal. The mean of \(Y\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(e^{\mu+\sigma^2/2}\)]]></text><feedback format="html"><text>Correct. \(E[Y]=E[e^X]=M_X(1)=e^{\mu+\sigma^2/2}\) (using the MGF of the normal distribution).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(e^{\mu}\)]]></text><feedback format="html"><text>Incorrect. Jensen's inequality: \(E[e^X]>e^{E[X]}=e^\mu\) (strict inequality since \(e^x\) is strictly convex). Correct mean is \(e^{\mu+\sigma^2/2}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\mu\)]]></text><feedback format="html"><text>Incorrect. \(\mu=E[X]=E[\ln Y]\), not \(E[Y]\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(e^{\mu+\sigma^2}\)]]></text><feedback format="html"><text>Incorrect. Mean of log-normal is \(e^{\mu+\sigma^2/2}\), not \(e^{\mu+\sigma^2}\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q09 Pareto Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[The Pareto distribution with shape \(\alpha>0\) and scale \(x_m>0\) has CDF \(F(x)=1-(x_m/x)^\alpha\) for \(x\geq x_m\). The mean exists iff \(\alpha>1\) and equals:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{\alpha x_m}{\alpha-1}\) for \(\alpha>1\)]]></text><feedback format="html"><text>Correct. \(E[X]=\int_{x_m}^\infty x\cdot\frac{\alpha x_m^\alpha}{x^{\alpha+1}}\,dx=\frac{\alpha x_m}{\alpha-1}\) for \(\alpha>1\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(x_m/\alpha\)]]></text><feedback format="html"><text>Incorrect. Mean of Pareto is \(\alpha x_m/(\alpha-1)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\alpha x_m\)]]></text><feedback format="html"><text>Incorrect. Mean is \(\alpha x_m/(\alpha-1)\neq\alpha x_m\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(x_m+1/\alpha\)]]></text><feedback format="html"><text>Incorrect. Mean of Pareto is \(\alpha x_m/(\alpha-1)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q10 Cauchy Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[The standard Cauchy distribution has density \(f(x)=\frac{1}{\pi(1+x^2)}\). Which statement is true?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>The mean does not exist (the integral \(\int_{-\infty}^\infty x f(x)\,dx\) diverges)</text><feedback format="html"><text>Correct. The Cauchy distribution has no finite moments of any positive order. The integral for the mean diverges (the tails are too heavy).</text></feedback></answer>
+    <answer fraction="0"><text>Mean \(=0\) by symmetry</text><feedback format="html"><text>Incorrect. While the density is symmetric, the mean does not exist as a Lebesgue integral (the positive and negative parts both diverge).</text></feedback></answer>
+    <answer fraction="0"><text>Mean \(=\pi\)</text><feedback format="html"><text>Incorrect. The Cauchy mean does not exist.</text></feedback></answer>
+    <answer fraction="0"><text>Variance \(=1\)</text><feedback format="html"><text>Incorrect. The Cauchy distribution has no finite variance (nor finite mean).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q11 Uniform Order Statistics</text></name>
+    <questiontext format="html"><text><![CDATA[For \(n\) i.i.d. Uniform\((0,1)\) random variables, the distribution of the \(k\)-th order statistic \(X_{(k)}\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{Beta}(k, n-k+1)\)]]></text><feedback format="html"><text>Correct. For Uniform\((0,1)\) samples, \(X_{(k)}\sim\text{Beta}(k,n-k+1)\) with mean \(k/(n+1)\).</text></feedback></answer>
+    <answer fraction="0"><text>Uniform\((0,1)\)</text><feedback format="html"><text>Incorrect. Order statistics of uniform samples follow Beta distributions, not Uniform.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{Beta}(n-k, k+1)\)]]></text><feedback format="html"><text>Incorrect. The \(k\)-th order statistic is Beta\((k, n-k+1)\), not Beta\((n-k,k+1)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{Beta}(k/(n+1), 1-k/(n+1))\)]]></text><feedback format="html"><text>Incorrect. The parameters are integers \(k\) and \(n-k+1\), not fractions.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q12 Normal Sum</text></name>
+    <questiontext format="html"><text><![CDATA[If \(X_1,\ldots,X_n\) are i.i.d. \(N(\mu,\sigma^2)\), then \(\bar{X}=\frac{1}{n}\sum X_i\) follows:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(N(\mu, \sigma^2/n)\)]]></text><feedback format="html"><text>Correct. The sample mean of i.i.d. normals is normal: \(\bar{X}\sim N(\mu,\sigma^2/n)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(N(\mu, \sigma^2)\)]]></text><feedback format="html"><text>Incorrect. The variance of \(\bar{X}\) is \(\sigma^2/n\), not \(\sigma^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(N(n\mu, n\sigma^2)\)]]></text><feedback format="html"><text>Incorrect. That is the distribution of \(\sum X_i\), not \(\bar{X}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\chi^2(n)\)]]></text><feedback format="html"><text>Incorrect. The sample mean is normal; \(\chi^2(n)\) relates to the sum of squared standard normals.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q13 Weibull Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[The Weibull distribution with shape \(k>0\) and scale \(\lambda>0\) has CDF \(F(x)=1-e^{-(x/\lambda)^k}\). When \(k=1\), this reduces to:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>The exponential distribution with rate \(1/\lambda\)</text><feedback format="html"><text>Correct. Weibull\((1,\lambda)\) is Exp\((1/\lambda)\): \(F(x)=1-e^{-x/\lambda}\), the exponential CDF.</text></feedback></answer>
+    <answer fraction="0"><text>The normal distribution</text><feedback format="html"><text>Incorrect. Weibull with \(k=1\) gives exponential, not normal.</text></feedback></answer>
+    <answer fraction="0"><text>The uniform distribution on \([0,\lambda]\)</text><feedback format="html"><text>Incorrect. Weibull\((1,\lambda)\) is exponential with mean \(\lambda\).</text></feedback></answer>
+    <answer fraction="0"><text>The Gamma\((2,\lambda)\) distribution</text><feedback format="html"><text>Incorrect. \(k=1\) gives the exponential (Gamma\((1,\lambda)\)), not Gamma\((2,\lambda)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q14 Transformations of Random Variables</text></name>
+    <questiontext format="html"><text><![CDATA[If \(X\sim\text{Exp}(1)\), the distribution of \(Y=-\ln(X)\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Gumbel distribution (extreme value distribution)</text><feedback format="html"><text>Correct. If \(X\sim\text{Exp}(1)\), then \(Y=-\ln X\) has CDF \(P(Y\leq y)=P(X\geq e^{-y})=e^{-e^{-y}}\), which is the Gumbel (standard extreme value type I) distribution.</text></feedback></answer>
+    <answer fraction="0"><text>Normal distribution</text><feedback format="html"><text>Incorrect. \(-\ln(\text{Exp}(1))\) follows the Gumbel distribution, not normal.</text></feedback></answer>
+    <answer fraction="0"><text>Uniform\((0,1)\)</text><feedback format="html"><text>Incorrect. \(-\ln(\text{Exp}(1))\) can take all real values; it cannot be uniform on \((0,1)\).</text></feedback></answer>
+    <answer fraction="0"><text>Gamma distribution</text><feedback format="html"><text>Incorrect. \(-\ln X\) where \(X\sim\text{Exp}(1)\) is Gumbel-distributed.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q15 Multivariate Normal</text></name>
+    <questiontext format="html"><text><![CDATA[For a bivariate normal \((X,Y)\) with correlation \(\rho\), the conditional distribution of \(Y\mid X=x\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[Normal with mean \(\mu_Y+\rho\frac{\sigma_Y}{\sigma_X}(x-\mu_X)\) and variance \(\sigma_Y^2(1-\rho^2)\)]]></text><feedback format="html"><text>Correct. The conditional distribution in a bivariate normal is normal with the given conditional mean (linear regression on \(x\)) and conditional variance \(\sigma_Y^2(1-\rho^2)\).</text></feedback></answer>
+    <answer fraction="0"><text>Normal with mean \(\mu_Y\) and variance \(\sigma_Y^2\) (unchanged)</text><feedback format="html"><text>Incorrect. Conditioning on \(X=x\) shifts the mean and reduces the variance (unless \(\rho=0\)).</text></feedback></answer>
+    <answer fraction="0"><text>Chi-squared distribution</text><feedback format="html"><text>Incorrect. The conditional distribution in a bivariate normal is always normal.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Normal with variance \(\sigma_Y^2(1+\rho^2)\)]]></text><feedback format="html"><text>Incorrect. The conditional variance is \(\sigma_Y^2(1-\rho^2)\), which is less than \(\sigma_Y^2\) (conditioning reduces uncertainty).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q16 Quantile Function</text></name>
+    <questiontext format="html"><text><![CDATA[The median of an Exponential\((\lambda)\) random variable via the quantile function (inverse CDF) is \(F^{-1}(1/2)\). Since \(F(x)=1-e^{-\lambda x}\), we get median \(=\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{\ln 2}{\lambda}\)]]></text><feedback format="html"><text>Correct. Set \(1-e^{-\lambda m}=1/2\), giving \(e^{-\lambda m}=1/2\), so \(m=\ln2/\lambda\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{\lambda}\)]]></text><feedback format="html"><text>Incorrect. \(1/\lambda\) is the mean; median \(=\ln2/\lambda\approx0.693/\lambda\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{2}{\lambda\ln 2}\)]]></text><feedback format="html"><text>Incorrect. Median \(=\ln2/\lambda\).</text></feedback></answer>
+    <answer fraction="0"><text>\(0\)</text><feedback format="html"><text>Incorrect. The support of Exp is \((0,\infty)\); the median is \(\ln2/\lambda>0\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q17 Dirichlet Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[The Dirichlet distribution with parameters \((\alpha_1,\ldots,\alpha_k)\) generalizes the Beta distribution to \(k\) categories. The marginal distribution of \(X_i\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{Beta}\left(\alpha_i, \sum_{j\neq i}\alpha_j\right)\)]]></text><feedback format="html"><text>Correct. Each marginal of a Dirichlet is Beta: \(X_i\sim\text{Beta}(\alpha_i, \alpha_0-\alpha_i)\) where \(\alpha_0=\sum_j\alpha_j\).</text></feedback></answer>
+    <answer fraction="0"><text>Uniform\((0,1)\)</text><feedback format="html"><text>Incorrect. Marginals are Beta distributions, uniform only when all \(\alpha_i=1\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{Beta}(\alpha_i, \alpha_i)\)]]></text><feedback format="html"><text>Incorrect. The second Beta parameter is the sum of all other \(\alpha_j\), not \(\alpha_i\).</text></feedback></answer>
+    <answer fraction="0"><text>Exponential\((\alpha_i)\)</text><feedback format="html"><text>Incorrect. Marginals of Dirichlet are Beta, not exponential.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q18 Survival Function</text></name>
+    <questiontext format="html"><text><![CDATA[The hazard rate (failure rate) of a continuous distribution is \(h(x)=f(x)/S(x)\) where \(S(x)=1-F(x)\). For exponential distribution Exp\((\lambda)\), \(h(x)\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Constant: \(h(x)=\lambda\) (memoryless property)</text><feedback format="html"><text>Correct. \(h(x)=\lambda e^{-\lambda x}/e^{-\lambda x}=\lambda\) (constant). Constant hazard rate characterizes the exponential distribution and corresponds to its memoryless property.</text></feedback></answer>
+    <answer fraction="0"><text>Increasing: \(h(x)=\lambda x\)</text><feedback format="html"><text>Incorrect. Increasing hazard rate corresponds to Weibull with \(k>1\), not exponential.</text></feedback></answer>
+    <answer fraction="0"><text>Decreasing: \(h(x)=\lambda/x\)</text><feedback format="html"><text>Incorrect. Decreasing hazard rate corresponds to Weibull with \(k<1\).</text></feedback></answer>
+    <answer fraction="0"><text>\(h(x)=1/\lambda\)</text><feedback format="html"><text>Incorrect. The hazard rate is \(\lambda\) (the rate parameter), not \(1/\lambda\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q19 Truncated Normal</text></name>
+    <questiontext format="html"><text><![CDATA[The truncated normal (truncated to \(x>0\)) has density \(f(x)=\frac{\phi(x)}{1-\Phi(0)}\) for \(x>0\) where \(\phi\) and \(\Phi\) are the standard normal PDF and CDF. For the standard normal, \(\Phi(0)=1/2\), so the truncated mean is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{2\phi(0)}{1} = \sqrt{2/\pi}\approx0.798\)]]></text><feedback format="html"><text>Correct. For the half-normal (standard normal truncated to positive values): \(E[X|X>0]=\frac{\phi(0)}{1-\Phi(0)}=\frac{1/\sqrt{2\pi}}{1/2}=\frac{2}{\sqrt{2\pi}}=\sqrt{2/\pi}\approx0.798\).</text></feedback></answer>
+    <answer fraction="0"><text>\(0\)</text><feedback format="html"><text>Incorrect. The half-normal has positive mean \(\sqrt{2/\pi}\approx0.798\).</text></feedback></answer>
+    <answer fraction="0"><text>\(1\)</text><feedback format="html"><text>Incorrect. Mean of the half-normal is \(\sqrt{2/\pi}\approx0.798<1\).</text></feedback></answer>
+    <answer fraction="0"><text>\(\pi/2\)</text><feedback format="html"><text>Incorrect. Mean is \(\sqrt{2/\pi}\approx0.798\neq\pi/2\approx1.571\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT18-Q20 Lévy Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[The Lévy distribution is a stable distribution with index \(\alpha=1/2\). Its density on \((0,\infty)\) is \(f(x)=\sqrt{c/(2\pi)}\cdot x^{-3/2}e^{-c/(2x)}\). This distribution appears in the context of:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>First passage times of Brownian motion (the time to first hit a level)</text><feedback format="html"><text>Correct. The first passage time of a standard Brownian motion to level \(c>0\) follows a Lévy distribution, making it fundamental in stochastic processes.</text></feedback></answer>
+    <answer fraction="0"><text>The sum of independent exponential random variables</text><feedback format="html"><text>Incorrect. Sums of i.i.d. exponentials give Gamma distributions, not Lévy.</text></feedback></answer>
+    <answer fraction="0"><text>The distribution of the sample mean</text><feedback format="html"><text>Incorrect. The sample mean distribution (by CLT) is approximately normal, not Lévy.</text></feedback></answer>
+    <answer fraction="0"><text>The distribution of the maximum of normal random variables</text><feedback format="html"><text>Incorrect. The maximum of normals follows a Gumbel (extreme value) distribution, not Lévy.</text></feedback></answer>
+  </question>
+</quiz>

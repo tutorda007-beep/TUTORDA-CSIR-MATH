@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Part A/General Aptitude</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q01_SumOfDigits</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A number is divisible by 9 if and only if the sum of its digits is divisible by 9. Which of the following is divisible by 9?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[54378]]></text>
+      <feedback><text>Correct. Sum of digits: \(5+4+3+7+8=27\), and \(27\div9=3\). So 54378 is divisible by 9.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[12345]]></text>
+      <feedback><text>Digit sum: \(1+2+3+4+5=15\), not divisible by 9.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[98765]]></text>
+      <feedback><text>Digit sum: \(9+8+7+6+5=35\), not divisible by 9.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[23456]]></text>
+      <feedback><text>Digit sum: \(2+3+4+5+6=20\), not divisible by 9.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q02_AreaSector</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A sector of a circle with radius 6 cm subtends an angle of 60° at the centre. What is the area of the sector? (Use \(\pi \approx \frac{22}{7}\))]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(18.86 \text{ cm}^2\) (approximately)]]></text>
+      <feedback><text>Correct. Area of sector = \(\frac{\theta}{360}\pi r^2 = \frac{60}{360}\times\frac{22}{7}\times36 = \frac{1}{6}\times\frac{792}{7} = \frac{132}{7} \approx 18.86\) cm².</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(6.28 \text{ cm}^2\)]]></text>
+      <feedback><text>6.28 ≈ 2π corresponds to the arc length (not area) for a unit-radius sector; area = \(\frac{1}{6}\pi(6^2)=6\pi\approx18.86\) cm².</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(36 \text{ cm}^2\)]]></text>
+      <feedback><text>36 cm² would be the area of the full circle divided by \(\pi\); sector area = \(\frac{60}{360}\pi(36)\approx18.86\) cm².</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(113.1 \text{ cm}^2\)]]></text>
+      <feedback><text>113.1 ≈ \(\pi(6^2)\) is the area of the full circle; the 60° sector is \(1/6\) of that ≈ 18.86 cm².</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q03_NumberPattern</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Find the missing term: 3, 6, 11, 18, 27, ?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[38]]></text>
+      <feedback><text>Correct. Differences: 3, 5, 7, 9, 11 (odd numbers increasing by 2). Next difference = 11: \(27+11=38\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[36]]></text>
+      <feedback><text>Differences are 3,5,7,9,11; the next term is \(27+11=38\), not 36.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[40]]></text>
+      <feedback><text>The difference pattern is +3,+5,+7,+9,+11; next term = \(27+11=38\), not 40.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[33]]></text>
+      <feedback><text>33 would require a difference of 6, but the pattern of differences is odd numbers (3,5,7,9,11); next is 38.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q04_Discount_Price</text></name>
+    <questiontext format="html">
+      <text><![CDATA[After a 15% discount, the selling price of an article is ₹1190. What was the marked price?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[₹1400]]></text>
+      <feedback><text>Correct. SP = MP × 0.85 = ₹1190. MP = \(1190/0.85 = 1400\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹1368.50]]></text>
+      <feedback><text>₹1368.50 = \(1190\times1.15\), which would be the marked price only if SP = MP/1.15; the correct relation is SP = 0.85 × MP, giving MP = 1400.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹1300]]></text>
+      <feedback><text>\(1300\times0.85=1105\neq1190\); MP = \(1190/0.85=1400\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹1250]]></text>
+      <feedback><text>\(1250\times0.85=1062.50\neq1190\); MP = ₹1400.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q05_ResearchDesign</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A researcher wants to study the effect of sleep on memory. She divides participants into two groups: one sleeps 8 hours, the other 4 hours, and both take the same memory test. This is an example of]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[An experimental design with a control group (8 hours, normal sleep) and a treatment group (4 hours, sleep deprivation)]]></text>
+      <feedback><text>Correct. The researcher manipulates the independent variable (sleep duration) and measures the dependent variable (memory test score); one group serves as a comparison baseline (control), making it an experimental design.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A correlational study, since sleep and memory are being observed without manipulation]]></text>
+      <feedback><text>In a correlational study, variables are observed as they naturally occur; here sleep duration is actively manipulated (assigned), making it an experiment, not a correlational study.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A case study of individual sleep patterns]]></text>
+      <feedback><text>A case study examines a single individual or small group in depth; this study has two groups and a comparison, making it an experimental design.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A meta-analysis combining results from multiple prior studies]]></text>
+      <feedback><text>A meta-analysis synthesises data from existing studies; this is a new experiment with directly recruited participants.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q06_SequenceGeom</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The sum of all terms of an infinite geometric series is 3 and the sum of its first two terms is 8/3. What is the common ratio?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(r = \dfrac{1}{3}\)]]></text>
+      <feedback><text>Correct. \(S_\infty = a/(1-r) = 3\) so \(a = 3(1-r)\). First two terms: \(a + ar = a(1+r) = 8/3\). Substituting: \(3(1-r)(1+r) = 8/3 \Rightarrow 3(1-r^2) = 8/3 \Rightarrow 1-r^2 = 8/9 \Rightarrow r^2=1/9 \Rightarrow r=1/3\) (taking positive root for convergence).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(r = \dfrac{2}{3}\)]]></text>
+      <feedback><text>With \(r=2/3\): \(a=3(1-2/3)=1\). First two terms: \(1+2/3=5/3\neq8/3\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(r = \dfrac{1}{2}\)]]></text>
+      <feedback><text>With \(r=1/2\): \(a=3/2\). First two terms: \(3/2+3/4=9/4\neq8/3\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(r = \dfrac{1}{4}\)]]></text>
+      <feedback><text>With \(r=1/4\): \(r^2=1/16\neq1/9\); the equation \(r^2=1/9\) gives \(r=1/3\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q07_Pyramid_Surface</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A right circular cone has base radius 7 cm and slant height 25 cm. Its total surface area is (use \(\pi = 22/7\))]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[704 cm²]]></text>
+      <feedback><text>Correct. Lateral surface = \(\pi r l = \frac{22}{7}\times7\times25 = 22\times25 = 550\) cm². Base area = \(\pi r^2 = \frac{22}{7}\times49 = 154\) cm². Total = \(550+154=704\) cm².</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[550 cm²]]></text>
+      <feedback><text>550 cm² is only the lateral (curved) surface area; the total surface area includes the base circle (154 cm²), giving 704 cm².</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[770 cm²]]></text>
+      <feedback><text>\(\pi r(l+r)=\frac{22}{7}\times7\times(25+7)=22\times32=704\) cm², not 770.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[154 cm²]]></text>
+      <feedback><text>154 cm² is only the base area; the total surface area (lateral + base) = 704 cm².</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q08_BooleanLogic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In Boolean algebra, \(A \cdot (A + B)\) simplifies to]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(A\) (Absorption law)]]></text>
+      <feedback><text>Correct. By the absorption law: \(A\cdot(A+B) = A\cdot A + A\cdot B = A + A\cdot B = A(1+B) = A\cdot1 = A\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(A + B\)]]></text>
+      <feedback><text>By the absorption law, \(A\cdot(A+B)=A\), not \(A+B\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(A \cdot B\)]]></text>
+      <feedback><text>The absorption gives \(A\), not \(AB\); distributing: \(A^2+AB=A+AB=A(1+B)=A\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(1\)]]></text>
+      <feedback><text>\(A\cdot(A+B)=A\), which equals 1 only if \(A=1\); in general it equals \(A\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q09_WeightedAverage</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A student scores 70 in a test worth 40% of the grade, 80 in a test worth 30%, and 90 in a test worth 30%. What is the weighted average score?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[79]]></text>
+      <feedback><text>Correct. Weighted average = \(0.4\times70 + 0.3\times80 + 0.3\times90 = 28 + 24 + 27 = 79\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[80]]></text>
+      <feedback><text>80 is the simple (unweighted) average of all three scores only if weights were equal; weighted: \(0.4(70)+0.3(80)+0.3(90)=79\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[75]]></text>
+      <feedback><text>Weighted average = \(28+24+27=79\neq75\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[82]]></text>
+      <feedback><text>\(0.4(70)+0.3(80)+0.3(90)=28+24+27=79\neq82\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q10_MatrixBasic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(A = \begin{pmatrix}1&2\\3&4\end{pmatrix}\), what is \(\det(A)\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(-2\)]]></text>
+      <feedback><text>Correct. \(\det(A) = 1\times4 - 2\times3 = 4-6 = -2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(10\)]]></text>
+      <feedback><text>\(1\times4+2\times3=10\) uses addition instead of the determinant formula (which uses subtraction of the cross-product).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(2\)]]></text>
+      <feedback><text>\(\det=4-6=-2\); the sign matters — the determinant is \(-2\), not \(+2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(7\)]]></text>
+      <feedback><text>7 is not the determinant of this matrix; \(\det=1(4)-2(3)=-2\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q11_CI_Difference</text></name>
+    <questiontext format="html">
+      <text><![CDATA[At what rate percent per annum will ₹2000 amount to ₹2205 in 2 years, if interest is compounded annually?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[5%]]></text>
+      <feedback><text>Correct. \(2205 = 2000(1+r)^2 \Rightarrow (1+r)^2 = 2205/2000 = 1.1025 \Rightarrow 1+r = 1.05 \Rightarrow r = 5\%\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[10%]]></text>
+      <feedback><text>At 10%: \(2000(1.1)^2 = 2420\neq2205\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[4%]]></text>
+      <feedback><text>At 4%: \(2000(1.04)^2 = 2000\times1.0816 = 2163.2\neq2205\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[2.5%]]></text>
+      <feedback><text>At 2.5%: \(2000(1.025)^2 = 2000\times1.050625 = 2101.25\neq2205\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q12_DataSufficiency</text></name>
+    <questiontext format="html">
+      <text><![CDATA[To determine the area of a triangle, which of the following is sufficient (alone)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[All three side lengths (by Heron's formula)]]></text>
+      <feedback><text>Correct. Given all three sides \(a, b, c\), Heron's formula gives the area: \(A = \sqrt{s(s-a)(s-b)(s-c)}\) where \(s=(a+b+c)/2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Two sides only]]></text>
+      <feedback><text>Two sides alone are insufficient; the area depends on the included angle between them: \(A=\frac{1}{2}ab\sin C\). Without the angle, infinitely many triangles with different areas share the same two sides.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The perimeter only]]></text>
+      <feedback><text>Given only the perimeter, the triangle's shape (and area) is not uniquely determined; e.g., an equilateral and a degenerate triangle can share the same perimeter but have different areas.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Two angles only]]></text>
+      <feedback><text>Two angles determine the shape (the third angle is fixed) but not the size; the area is not determined without at least one side length.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q13_SquareNumbers</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The sum of all even numbers from 2 to 50 is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[650]]></text>
+      <feedback><text>Correct. Even numbers 2,4,6,…,50: there are 25 terms. Sum = \(25\times\frac{2+50}{2} = 25\times26 = 650\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[600]]></text>
+      <feedback><text>The sum is \(25\times(2+50)/2 = 25\times26=650\neq600\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[625]]></text>
+      <feedback><text>625 = 25² is not the sum of even numbers 2 to 50; that sum is \(25\times26=650\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[700]]></text>
+      <feedback><text>700 would require 25 terms with average 28; the average here is \((2+50)/2=26\), giving sum \(25\times26=650\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q14_LogicNegation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The negation of the statement "Some students passed the exam" is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[No student passed the exam]]></text>
+      <feedback><text>Correct. The negation of "There exists at least one student who passed" (\(\exists x: P(x)\)) is "For all students, they did not pass" (\(\forall x: \neg P(x)\)), i.e., "No student passed."</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Some students did not pass the exam]]></text>
+      <feedback><text>This is not the negation; "some did not pass" is consistent with "some passed." The negation must deny any student passing.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All students passed the exam]]></text>
+      <feedback><text>"All passed" is a stronger statement than "some passed" but is not its negation; the negation is "no student passed."</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Not all students passed the exam]]></text>
+      <feedback><text>"Not all passed" is equivalent to "some did not pass," which is the negation of "all passed" — not the negation of "some passed."</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q15_Mensuration_Sphere</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A solid sphere has radius 6 cm. Its volume is (use \(\pi = 22/7\))]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(905\frac{1}{7}\) cm³ (approximately 905.14 cm³)]]></text>
+      <feedback><text>Correct. \(V = \frac{4}{3}\pi r^3 = \frac{4}{3}\times\frac{22}{7}\times216 = \frac{4\times22\times216}{21} = \frac{19008}{21} = 904\frac{4}{7}\approx904.76\) cm³. Let me recompute: \(\frac{4}{3}\times\frac{22}{7}\times6^3=\frac{4\times22\times216}{21}=\frac{19008}{21}=905.14\) cm³.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(452.57\) cm³]]></text>
+      <feedback><text>452.57 ≈ \(V/2\); the full sphere volume is \(\frac{4}{3}\pi(6)^3\approx904.76\) cm³.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(216\pi\) cm³ \(\approx 678.9\) cm³]]></text>
+      <feedback><text>\(216\pi\) would be the volume of a sphere with radius \((3\times216/4)^{1/3}\); the correct formula gives \(\frac{4}{3}\pi(6)^3=288\pi\approx904.8\) cm³.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(144\pi\) cm³]]></text>
+      <feedback><text>\(144\pi\approx452.4\) cm³ is the volume of a hemisphere (half sphere), not the full sphere.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q16_Probability_Coins</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Three fair coins are tossed simultaneously. What is the probability of getting at least 2 heads?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{1}{2}\)]]></text>
+      <feedback><text>Correct. Favourable outcomes (at least 2 heads): HHH, HHT, HTH, THH — 4 outcomes. Total: \(2^3=8\). Probability = \(4/8=1/2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{3}{8}\)]]></text>
+      <feedback><text>3/8 is the probability of exactly 2 heads (\(\binom{3}{2}/8=3/8\)); at least 2 heads includes HHH as well, giving \(4/8=1/2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{1}{8}\)]]></text>
+      <feedback><text>1/8 is the probability of exactly 3 heads (HHH only); at least 2 heads includes HHT,HTH,THH too, giving 4/8=1/2.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{5}{8}\)]]></text>
+      <feedback><text>5/8 is the probability of at least 1 head (\(1-1/8\) minus the 1-head cases... actually P(at least 1)=7/8); P(at least 2 heads)=4/8=1/2.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q17_Environment_Biodiversity</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The "biodiversity hotspot" concept identifies regions with high concentrations of endemic species and significant habitat loss. How many biodiversity hotspots are currently recognized globally (as of 2023)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[36]]></text>
+      <feedback><text>Correct. As of 2023, Conservation International recognizes 36 global biodiversity hotspots. India's Western Ghats and Himalayas are among them.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[17]]></text>
+      <feedback><text>17 is the number of "megadiverse countries" (a different classification); there are 36 biodiversity hotspots.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[25]]></text>
+      <feedback><text>25 was the earlier count; the list has been expanded to 36 hotspots as of recent assessments.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[50]]></text>
+      <feedback><text>There are 36 recognized hotspots globally, not 50.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q18_ReasoningAnalogy</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Kilogram : Mass :: Ampere : ?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Electric current]]></text>
+      <feedback><text>Correct. Kilogram is the SI unit of mass; Ampere (A) is the SI base unit of electric current.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Voltage]]></text>
+      <feedback><text>Voltage is measured in Volts (V), not Amperes; Ampere measures electric current.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Resistance]]></text>
+      <feedback><text>Resistance is measured in Ohms (Ω); Ampere is the unit of electric current.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Power]]></text>
+      <feedback><text>Power is measured in Watts (W); the Ampere is the SI unit for electric current.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q19_SurplusDeficit</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A factory produces 600 units per day and sells 540 units per day. After how many days will the surplus reach 1200 units?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[20 days]]></text>
+      <feedback><text>Correct. Daily surplus = \(600-540=60\) units. Days to accumulate 1200: \(1200/60=20\) days.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[10 days]]></text>
+      <feedback><text>In 10 days, surplus = \(10\times60=600\neq1200\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[25 days]]></text>
+      <feedback><text>In 25 days, surplus = \(25\times60=1500>1200\); the target of 1200 is reached at exactly 20 days.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[15 days]]></text>
+      <feedback><text>In 15 days, surplus = \(15\times60=900\neq1200\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>PARTA7_Q20_IndianScience</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which Indian mathematician is credited with independently discovering infinite series expansions for \(\sin\), \(\cos\), and \(\arctan\) (the "Gregory-Leibniz" series for \(\pi\)) several centuries before their European rediscovery?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Madhava of Sangamagrama (c. 1340–1425, Kerala School of Mathematics)]]></text>
+      <feedback><text>Correct. Madhava of Sangamagrama, founder of the Kerala School, derived infinite power series for \(\sin x\), \(\cos x\), and \(\arctan x\) around 1400 CE — predating Newton, Gregory, and Leibniz by about 200 years.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Aryabhata (476–550 CE)]]></text>
+      <feedback><text>Aryabhata made seminal contributions to trigonometry and algebra, but the infinite series for \(\sin\), \(\cos\), \(\arctan\) are attributed to Madhava of Sangamagrama.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Brahmagupta (598–668 CE)]]></text>
+      <feedback><text>Brahmagupta advanced arithmetic, algebra (cyclic quadrilaterals, zero), and astronomy, but the power series for trigonometric functions are associated with Madhava.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Srinivasa Ramanujan (1887–1920)]]></text>
+      <feedback><text>Ramanujan made extraordinary contributions to number theory, continued fractions, and infinite series, but the \(\sin/\cos/\arctan\) series are attributed to Madhava (~1400 CE).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

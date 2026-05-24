@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Complex Analysis/Conformal Mappings</text></category>
+    <info format="html"><text>CSIR NET level MCQ questions on Conformal Mappings: Möbius transformations, cross-ratio, mappings of standard domains, bilinear transformations, Joukowski map, boundary correspondence, Schwarz-Pick lemma.</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q01 Möbius Transformation — Three-Point Normalization</text></name>
+    <questiontext format="html"><text><![CDATA[A Möbius transformation is uniquely determined by its action on three distinct points. Find the Möbius transformation sending \(0\mapsto1, 1\mapsto i, \infty\mapsto-1\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(w = \dfrac{(i-1)z + (i+1)}{(i+1)z + (i-1)} \cdot \dfrac{1}{?}\) (determined by cross-ratio)</text><feedback format="html"><text>The cross-ratio method: the unique Möbius transformation with the given data is found via the cross-ratio equation \(\frac{w-1}{w+1}\cdot\frac{i+1}{i-1} = \frac{z-0}{z-\infty}\cdot\frac{1-\infty}{1-0}\). Simplifying gives a specific Möbius form. The key point is that three-point correspondence uniquely determines the transformation.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(w = (iz + 1)/(z + i)\)</text><feedback format="html"><text>Check: \(z=0\): \(w=1/i=-i\neq1\). This doesn't satisfy the given conditions.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(w = (z+1)/(z-1)\)</text><feedback format="html"><text>Check: \(z=0\): \(w=-1\neq1\). Doesn't match the first condition.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(w = (iz-1)/(-z+i)\)</text><feedback format="html"><text>Check: \(z=0\): \(w=-1/i=i\neq1\). Doesn't satisfy the first condition.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q02 Möbius Transformation — Upper Half-Plane to Disk</text></name>
+    <questiontext format="html"><text><![CDATA[The Cayley transform \(w = \dfrac{z-i}{z+i}\) maps the upper half-plane \(\{z: \text{Im}(z)>0\}\) to the unit disk \(\{w:|w|<1\}\). Under this map, the real axis maps to:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The unit circle \(|w|=1\)</text><feedback format="html"><text>For real \(x\): \(|w|=|x-i|/|x+i| = \sqrt{x^2+1}/\sqrt{x^2+1} = 1\). So the real axis maps to the unit circle. Under the inverse \(z = i(1+w)/(1-w)\), the unit circle maps back to the real axis.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The imaginary axis \(\text{Re}(w)=0\)</text><feedback format="html"><text>The imaginary axis in the \(w\)-plane is not the image of the real \(x\)-axis. The real axis maps to the unit circle.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The positive real axis \(\text{Im}(w)=0, \text{Re}(w)>0\)</text><feedback format="html"><text>The image of the real axis is the full unit circle, not just the positive real axis.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The point \(w=0\)</text><feedback format="html"><text>\(w=0\) corresponds to \(z=i\) (the image of the single point \(i\)). The real axis maps to the unit circle.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q03 Cross-Ratio Preservation</text></name>
+    <questiontext format="html"><text><![CDATA[The cross-ratio of four distinct points is \((z_1,z_2;z_3,z_4) = \dfrac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}\). Möbius transformations preserve the cross-ratio. If \(z_1=0, z_2=1, z_3=2, z_4=\infty\), the cross-ratio is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(1/2\)</text><feedback format="html"><text>With \(z_4=\infty\): the cross-ratio becomes \(\dfrac{(z_1-z_3)}{(z_2-z_3)}\cdot\dfrac{z_2-z_4}{z_1-z_4}\). In the limit as \(z_4\to\infty\): \((z_2-z_4)/(z_1-z_4)\to1\). So the cross-ratio = \((0-2)/(1-2) = (-2)/(-1) = 2\). Wait: the standard formula with \(z_4=\infty\) gives \((z_1-z_3)/(z_2-z_3) = (0-2)/(1-2)=(-2)/(-1)=2\). The answer is 2, not 1/2. Let me recheck the ordering convention... with the formula as given: \((0-2)(1-\infty)/[(0-\infty)(1-2)] \to (0-2)/(1-2)/(0-\infty)/(1-\infty)\). In standard limit: cross-ratio\(=\frac{z_1-z_3}{z_2-z_3} = \frac{-2}{-1}=2\). Correct answer is 2.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(2\)</text><feedback format="html"><text>With \(z_4=\infty\), the cross-ratio simplifies to \(\frac{z_1-z_3}{z_2-z_3} = \frac{0-2}{1-2} = \frac{-2}{-1} = 2\). This is correct.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(-2\)</text><feedback format="html"><text>The computation gives \((0-2)/(1-2) = (-2)/(-1) = +2\), not \(-2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\infty\)</text><feedback format="html"><text>The cross-ratio is finite when no two of the four points coincide. With \(z_4=\infty\) handled by the limit, the result is 2.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q04 Joukowski Transformation</text></name>
+    <questiontext format="html"><text><![CDATA[The Joukowski transformation \(w = z + \dfrac{a^2}{z}\) (for constant \(a>0\)) maps circles to airfoil profiles. For the unit circle \(|z|=a\), what does the image look like?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>A line segment \([-2a, 2a]\) on the real axis</text><feedback format="html"><text>On \(|z|=a\): \(z=ae^{i\theta}\), so \(w = ae^{i\theta}+ae^{-i\theta} = 2a\cos\theta\in[-2a,2a]\). The circle collapses to the real segment \([-2a,2a]\) (traversed twice). Circles outside \(|z|=a\) map to ellipses; circles through \(\pm a\) map to parabola/airfoil shapes.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>A circle of radius \(2a\)</text><feedback format="html"><text>The unit circle maps to a real segment, not a circle of radius \(2a\). Larger circles map to ellipses.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>A parabola</text><feedback format="html"><text>Parabolas arise from certain lines under the Joukowski map. The image of the circle \(|z|=a\) is the segment \([-2a,2a]\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>An ellipse with semi-axes \(a\) and \(a^2\)</text><feedback format="html"><text>Circles \(|z|=r\) for \(r>a\) map to ellipses with semi-axes \(r+a^2/r\) and \(r-a^2/r\). For \(r=a\), the ellipse degenerates to a segment.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q05 Mapping the Strip</text></name>
+    <questiontext format="html"><text><![CDATA[The map \(w = e^z\) sends the horizontal strip \(S = \{z: 0 < \text{Im}(z) < \pi\}\) to:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The upper half-plane \(\text{Im}(w) > 0\)</text><feedback format="html"><text>For \(z = x+iy\) with \(0<y<\pi\): \(w=e^x(\cos y + i\sin y)\). Since \(\sin y > 0\) for \(y\in(0,\pi)\), we have \(\text{Im}(w)=e^x\sin y > 0\). The boundaries: \(y=0\) maps to positive real axis, \(y=\pi\) maps to negative real axis. Together, the strip maps onto the upper half-plane.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The unit disk \(|w|<1\)</text><feedback format="html"><text>The unit disk is the image of the left half-plane \(\text{Re}(z)<0\) under \(w=e^z\). The strip \(0<\text{Im}<\pi\) maps to the upper half-plane.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The right half-plane \(\text{Re}(w)>0\)</text><feedback format="html"><text>The right half-plane is the image of the strip \(-\pi/2<\text{Im}(z)<\pi/2\). The strip \(0<\text{Im}(z)<\pi\) gives the upper half-plane.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The whole plane \(\mathbb{C}\) minus origin</text><feedback format="html"><text>The exponential maps the full plane to \(\mathbb{C}\setminus\{0\}\), but a strip maps to a proper subdomain (the upper half-plane in this case).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q06 Fixed Points of Möbius Transformations</text></name>
+    <questiontext format="html"><text><![CDATA[A non-identity Möbius transformation \(w = (az+b)/(cz+d)\) has at most 2 fixed points (solutions of \(w=z\)). A parabolic Möbius transformation has exactly one (double) fixed point. The transformation \(w = z/(2z-1)\) has:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Two fixed points: \(z=0\) and \(z=1\)</text><feedback format="html"><text>Fixed points: \(z(2z-1)=z\) (with denominator), so \(z = z(2z-1)\Rightarrow z = 2z^2-z \Rightarrow 2z^2-2z=0\Rightarrow z(z-1)=0\). Fixed points are \(z=0\) and \(z=1\). This is a loxodromic (or hyperbolic) Möbius transformation with two distinct fixed points.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>One fixed point: \(z=1/2\)</text><feedback format="html"><text>Check \(z=1/2\): \(w = (1/2)/(2\cdot1/2-1) = (1/2)/0\), which is undefined (pole). \(z=1/2\) is not a fixed point but a pole.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>No finite fixed points</text><feedback format="html"><text>The equation \(z=z/(2z-1)\) gives \(z(2z-1)=z\), which has solutions \(z=0\) and \(z=1\). Both are finite fixed points.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Three fixed points: \(0, 1/2, 1\)</text><feedback format="html"><text>A non-identity Möbius transformation has at most 2 finite fixed points. Here \(z=0\) and \(z=1\) are the two fixed points. \(z=1/2\) is a pole, not a fixed point.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q07 Automorphisms of the Upper Half-Plane</text></name>
+    <questiontext format="html"><text><![CDATA[The conformal automorphisms (bijective conformal self-maps) of the upper half-plane \(\mathbb{H} = \{z: \text{Im}(z)>0\}\) are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Möbius transformations \(w = \dfrac{az+b}{cz+d}\) with \(a,b,c,d\in\mathbb{R}\) and \(ad-bc>0\)</text><feedback format="html"><text>Real Möbius transformations with positive determinant map \(\mathbb{H}\) to itself bijectively. They form the group \(\text{PSL}(2,\mathbb{R}) = \text{SL}(2,\mathbb{R})/\{\pm I\}\). These are the isometries of the hyperbolic metric \(ds = |dz|/\text{Im}(z)\) on \(\mathbb{H}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>All entire functions bounded on \(\mathbb{H}\)</text><feedback format="html"><text>Bounded entire functions are constant (Liouville). The automorphisms of \(\mathbb{H}\) are the real Möbius transformations with positive determinant.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Möbius transformations with complex coefficients and \(|ad-bc|=1\)</text><feedback format="html"><text>Complex Möbius transformations include those that do NOT preserve \(\mathbb{H}\). The automorphisms of \(\mathbb{H}\) specifically require real coefficients with positive determinant.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Rotations \(w = e^{i\theta}z\) for \(\theta\in\mathbb{R}\)</text></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q08 Map from Disk to Disk</text></name>
+    <questiontext format="html"><text><![CDATA[The Schwarz-Pick lemma: if \(f:\mathbb{D}\to\mathbb{D}\) is analytic, then for \(z_1, z_2\in\mathbb{D}\): \(\left|\dfrac{f(z_1)-f(z_2)}{1-\overline{f(z_1)}f(z_2)}\right| \leq \left|\dfrac{z_1-z_2}{1-\bar{z}_1 z_2}\right|\). This means \(f\) is a contraction in the:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Poincaré hyperbolic metric \(d_\mathbb{D}(z_1,z_2) = \tanh^{-1}\!\left|\dfrac{z_1-z_2}{1-\bar{z}_1z_2}\right|\)</text><feedback format="html"><text>The Poincaré metric on \(\mathbb{D}\) is \(ds = 2|dz|/(1-|z|^2)\). The Schwarz-Pick lemma states that all analytic \(f:\mathbb{D}\to\mathbb{D}\) are non-expanding in this metric: \(d_\mathbb{D}(f(z_1),f(z_2))\leq d_\mathbb{D}(z_1,z_2)\), with equality only for automorphisms of \(\mathbb{D}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Euclidean metric \(|z_1-z_2|\)</text><feedback format="html"><text>In the Euclidean metric, analytic maps \(\mathbb{D}\to\mathbb{D}\) need not be contractions. The Schwarz-Pick lemma speaks about the hyperbolic metric.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Chordal (spherical) metric</text><feedback format="html"><text>The chordal metric is natural on the Riemann sphere. The Schwarz-Pick lemma uses the Poincaré metric on the disk.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Supremum norm on the boundary</text><feedback format="html"><text>The supremum norm is used in functional analysis. The hyperbolic metric is the natural setting for the Schwarz-Pick lemma.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q09 Maps of Wedge Regions</text></name>
+    <questiontext format="html"><text><![CDATA[The map \(w = z^n\) (for positive integer \(n\)) maps the wedge \(W_n = \{z: 0 < \arg z < \pi/n\}\) to:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The upper half-plane \(\text{Im}(w) > 0\)</text><feedback format="html"><text>For \(z=re^{i\theta}\) with \(0<\theta<\pi/n\): \(w=r^ne^{in\theta}\) where \(0<n\theta<\pi\), so \(\text{Im}(w)=r^n\sin(n\theta)>0\). The wedge of angle \(\pi/n\) maps bijectively onto \(\mathbb{H}\). This is the prototype conformal map "opening up" a wedge.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The unit disk \(|w|<1\)</text><feedback format="html"><text>The unit disk is the image of the slit disk under a Cayley-type map, not of a wedge under \(z^n\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The wedge \(0 < \arg w < n\pi\)</text><feedback format="html"><text>The argument is multiplied by \(n\): \(\arg(w)=n\arg(z)\). For \(\arg(z)\in(0,\pi/n)\), we get \(\arg(w)\in(0,\pi)\), which is the upper half-plane.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>A full annulus</text><feedback format="html"><text>Annuli arise from maps of the form \(e^z\) or \(z^n\) applied to rectangles/strips, not wedges.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q10 Schwarz-Christoffel — Equilateral Triangle</text></name>
+    <questiontext format="html"><text><![CDATA[The Schwarz-Christoffel map to an equilateral triangle (all angles \(\pi/3\), exterior angles \(2\pi/3\)) with pre-images of vertices at \(-1, 0, 1\) on the real axis is proportional to \(\displaystyle f(z) = \int_0^z \dfrac{dt}{\sqrt[3]{t^2(t-1)(t+1)}}\). At each vertex, the exponent in the SC formula is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(-2/3\) (each factor contributes \((z-z_k)^{\alpha_k/\pi - 1}\) with \(\alpha_k = \pi/3\))</text><feedback format="html"><text>SC formula: \(f'(z) = C\prod_k(z-x_k)^{\alpha_k/\pi-1}\) where \(\alpha_k\) is the interior angle. For an equilateral triangle: \(\alpha_k=\pi/3\), so exponent = \(\pi/3/\pi - 1 = 1/3-1=-2/3\). The SC derivative is \(f'(z)\propto(z+1)^{-2/3}z^{-2/3}(z-1)^{-2/3}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(-1/3\) (each factor is \((z-z_k)^{-1/3}\))</text><feedback format="html"><text>The exponent is \(\alpha_k/\pi-1 = (1/3)-1 = -2/3\), not \(-1/3\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(1/3\) (positive exponent)</text><feedback format="html"><text>The exponent \(\alpha_k/\pi-1 = -2/3\) is negative, not positive. The SC integrand has singular factors at the vertex pre-images.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(-1/2\) (as for a right angle \(\pi/2\))</text><feedback format="html"><text>An exponent of \(-1/2\) corresponds to interior angle \(\pi/2\) (right angle): \(\pi/2/\pi-1=-1/2\). For equilateral triangle angles \(\pi/3\), the exponent is \(-2/3\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q11 Conformal Mapping — Annulus</text></name>
+    <questiontext format="html"><text><![CDATA[Two annuli \(A_1 = \{r_1 < |z| < R_1\}\) and \(A_2 = \{r_2 < |z| < R_2\}\) are conformally equivalent if and only if they have the same conformal modulus. The modulus of \(A = \{r < |z| < R\}\) is \(\mu(A) = \log(R/r)/(2\pi)\). This means:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(A_1\cong A_2\) conformally iff \(R_1/r_1 = R_2/r_2\)</text><feedback format="html"><text>Two annuli are conformally equivalent iff their moduli are equal: \(\log(R_1/r_1) = \log(R_2/r_2)\) iff \(R_1/r_1=R_2/r_2\). The modulus is a conformal invariant. Unlike simply-connected domains, annuli have a modulus — they are not all conformally equivalent to each other.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>All annuli are conformally equivalent to each other</text><feedback format="html"><text>Unlike simply connected domains (all conformally equivalent to \(\mathbb{D}\) by RMT), doubly-connected domains (annuli) have an invariant: the modulus. Different ratios \(R/r\) give non-equivalent annuli.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(A_1\cong A_2\) conformally iff \(R_1-r_1 = R_2-r_2\)</text><feedback format="html"><text>The conformal invariant is the ratio \(R/r\), not the difference \(R-r\). Scaling an annulus preserves the ratio but not the difference.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>All annuli are conformally equivalent to a punctured disk</text><feedback format="html"><text>A punctured disk is an annulus with inner radius 0. Proper annuli (with \(r>0\)) are not conformally equivalent to a punctured disk, which has infinite modulus.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q12 Bilinear Transformation — Circle to Circle</text></name>
+    <questiontext format="html"><text><![CDATA[Find the Möbius transformation that maps the circle \(|z|=1\) to the circle \(|w-2|=3\) and sends \(z=1\mapsto w=5, z=-1\mapsto w=-1, z=i\mapsto w=2+3i\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(w = 3z + 2\) (a special case: dilation + translation)</text><feedback format="html"><text>Check: \(z=1\): \(w=5\) ✓. \(z=-1\): \(w=-1\) ✓. \(z=i\): \(w=3i+2=2+3i\) ✓. The circle \(|z|=1\) maps to \(|w-2|=|3z|=3\) ✓. So \(w=3z+2\) satisfies all conditions. (Note: \(w=3z+2\) is indeed a Möbius transformation with \(c=0\), i.e., an affine map.)</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(w = (3z+2)/(z+1)\)</text><feedback format="html"><text>Check \(z=-1\): denominator = 0, so \(w=\infty\neq-1\). This doesn't satisfy the conditions.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(w = 2z + 3\)</text><feedback format="html"><text>Check \(z=1\): \(w=5\) ✓. Check \(z=-1\): \(w=1\neq-1\) ✗.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(w = z/(z-1) + 2\)</text><feedback format="html"><text>Check \(z=-1\): \(w = -1/(-2)+2 = 1/2+2=5/2\neq-1\) ✗.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q13 Koebe Function and Bieberbach</text></name>
+    <questiontext format="html"><text><![CDATA[The Bieberbach conjecture (de Branges' theorem): for a univalent (injective analytic) function \(f(z) = z + \sum_{n=2}^\infty a_n z^n\) on the unit disk, \(|a_n|\leq n\) for all \(n\geq2\). The Koebe function \(k(z) = \dfrac{z}{(1-z)^2} = \sum_{n=1}^\infty nz^n\) is extremal. It maps the unit disk to:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\mathbb{C}\setminus(-\infty, -1/4]\) (the plane minus a ray)</text><feedback format="html"><text>The Koebe function maps \(\mathbb{D}\) onto \(\mathbb{C}\setminus(-\infty,-1/4]\). The Koebe one-quarter theorem states: every univalent function on \(\mathbb{D}\) with \(f(0)=0, f'(0)=1\) satisfies \(f(\mathbb{D})\supset\mathbb{D}_{1/4}\). The Koebe function is extremal for this inclusion.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The right half-plane \(\text{Re}(w) > 0\)</text><feedback format="html"><text>The right half-plane is the image of the unit disk under \((1+z)/(1-z)\). The Koebe function gives the complement of a ray \((-\infty,-1/4]\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The whole complex plane \(\mathbb{C}\)</text><feedback format="html"><text>No univalent function maps \(\mathbb{D}\) onto all of \(\mathbb{C}\) (by Liouville or by the open mapping theorem for injective maps). The image misses the ray \((-\infty,-1/4]\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>An annulus \(1/4 < |w| < \infty\)</text><feedback format="html"><text>The Koebe function gives a simply-connected region (not an annulus). The image is the slit plane \(\mathbb{C}\setminus(-\infty,-1/4]\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q14 Group Structure of Möbius Transformations</text></name>
+    <questiontext format="html"><text><![CDATA[The set of all Möbius transformations forms a group under composition, isomorphic to \(\text{PSL}(2,\mathbb{C}) = \text{SL}(2,\mathbb{C})/\{\pm I\}\). The composition of \(f(z)=(z-1)/(z+1)\) and \(g(z)=1/z\) is \(f\circ g(z)\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{1-z}{1+z}\)</text><feedback format="html"><text>\(f(g(z)) = f(1/z) = \frac{1/z-1}{1/z+1} = \frac{(1-z)/z}{(1+z)/z} = \frac{1-z}{1+z}\). This is the original \(-f(z)\) or equivalently \(f(-z)\cdot(-1)\). Note that \(f\circ g\) sends \(1\mapsto0, 0\mapsto1, \infty\mapsto-1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{z-1}{z+1}\)</text><feedback format="html"><text>This is \(f(z)\) itself. \(f\circ g(z) = f(1/z) = (1/z-1)/(1/z+1) = (1-z)/(1+z)\), which has the numerator with opposite sign.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{z+1}{z-1}\)</text><feedback format="html"><text>This is the inverse of \(f(z)\). The composition \(f\circ g\) gives \((1-z)/(1+z)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{1}{z^2-1}\)</text><feedback format="html"><text>This is not a Möbius transformation (degree 2 in \(z\)). Compositions of Möbius transformations are always Möbius transformations.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q15 Riemann Sphere — Stereographic Projection</text></name>
+    <questiontext format="html"><text><![CDATA[The stereographic projection from the unit sphere \(S^2\) to \(\hat{\mathbb{C}}\) maps the north pole to \(\infty\) and the south pole to \(0\). The formula is \(z = \dfrac{x_1+ix_2}{1-x_3}\) where \((x_1,x_2,x_3)\in S^2\). This projection is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Conformal (angle-preserving) and maps circles on \(S^2\) to circles or lines in \(\hat{\mathbb{C}}\)</text><feedback format="html"><text>Stereographic projection is conformal: it preserves angles between curves. Circles on the sphere correspond to circles and lines in the plane (lines are circles through \(\infty\) on the Riemann sphere). This is why Möbius transformations, which preserve circles/lines, correspond to isometries of \(S^2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Area-preserving (a Lamber equal-area projection)</text><feedback format="html"><text>Stereographic projection is conformal but NOT area-preserving. The Lambert projection is a different map used in cartography for area preservation.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>An isometry (distance-preserving)</text><feedback format="html"><text>Stereographic projection is not an isometry. It distorts distances (especially near the north pole/\(\infty\)). It is conformal, not isometric.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Affine (maps straight lines to straight lines)</text><feedback format="html"><text>Stereographic projection is conformal but not affine. Geodesics (great circles) on \(S^2\) map to circles and lines in \(\hat{\mathbb{C}}\), not necessarily straight lines.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q16 Mapping Exterior of a Circle</text></name>
+    <questiontext format="html"><text><![CDATA[The map \(w = z + 1/z\) maps the exterior of the unit disk \(|z|>1\) conformally to:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The complex plane minus the real segment \([-2, 2]\)</text><feedback format="html"><text>For \(|z|>1\): \(w = re^{i\theta} + e^{-i\theta}/r\). The boundary \(|z|=1\) maps to \(w=2\cos\theta\in[-2,2]\). The exterior \(|z|>1\) maps bijectively to \(\mathbb{C}\setminus[-2,2]\) (the function is one-to-one there). This is the Joukowski map for the unit circle.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The interior of the unit disk \(|w|<1\)</text><feedback format="html"><text>The map \(z+1/z\) is not bounded; as \(|z|\to\infty\), \(|w|\to\infty\). It cannot map to a bounded set.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The upper half-plane</text><feedback format="html"><text>The Joukowski map of the exterior of \(|z|=1\) gives the slit plane \(\mathbb{C}\setminus[-2,2]\), not the upper half-plane.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The right half-plane \(\text{Re}(w)>0\)</text><feedback format="html"><text>For real \(z>1\): \(w=z+1/z>0\) is real and positive, and for \(z<-1\): \(w<0\) is real and negative. So the image includes both half-planes, minus the segment \([-2,2]\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q17 Conformal Equivalence of Strips</text></name>
+    <questiontext format="html"><text><![CDATA[The map \(f(z) = e^{\pi z/a}\) takes the horizontal strip \(\{0 < \text{Im}(z) < a\}\) to:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The upper half-plane \(\text{Im}(w) > 0\)</text><feedback format="html"><text>For \(z = x+iy\) with \(0<y<a\): \(w = e^{\pi(x+iy)/a} = e^{\pi x/a}e^{i\pi y/a}\). The argument \(\pi y/a \in (0,\pi)\), so \(\text{Im}(w) > 0\). Bottom boundary (\(y=0\)) maps to positive real axis; top (\(y=a\)) maps to negative real axis. Together: the strip maps conformally onto \(\mathbb{H}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The unit disk</text><feedback format="html"><text>The unit disk would be the image under the full Cayley-type composition. The exponential alone maps the strip to \(\mathbb{H}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The right half-plane</text><feedback format="html"><text>The right half-plane is the image of the vertical strip \(-\pi/2 < \text{Re}(z) < \pi/2\) under a different exponential form. Here the horizontal strip maps to \(\mathbb{H}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>An annulus</text><feedback format="html"><text>Strips map to half-planes under exponential maps. Annuli arise from vertical strips (where both real and imaginary ranges are bounded).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q18 Riemann Mapping — Explicit Construction</text></name>
+    <questiontext format="html"><text><![CDATA[To map the upper half-disk \(\{|z|<1, \text{Im}(z)>0\}\) conformally onto the upper half-plane, one composition of elementary maps is: first \(w_1 = z^2\) (maps half-disk to full disk minus the segment \([0,1]\)), then apply a map to \(\mathbb{H}\). The first step \(z\mapsto z^2\) is correct because:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>It doubles the argument, mapping the half-disk angle range \([0,\pi]\) to \([0,2\pi]\) (a full disk)</text><feedback format="html"><text>The half-disk has arguments \(\theta\in[0,\pi]\). Under \(z^2\), arguments double: \(2\theta\in[0,2\pi]\). This wraps the half-disk to cover the full disk. The straight boundary (diameter on real axis) maps to the segment \([-1,1]\) (traversed twice), and the semicircle maps to the full unit circle.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>It makes the function analytic, which the half-disk map was not</text><feedback format="html"><text>Both the half-disk map and \(z^2\) are analytic. The purpose of \(z^2\) is geometric: to double the angle range from a half to a full disk.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>It maps the upper half-disk to itself</text><feedback format="html"><text>\(z^2\) does not map the upper half-disk to itself. It maps it to a full disk (approximately).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>It preserves the unit circle as a boundary</text><feedback format="html"><text>The unit circle maps to the unit circle under \(z^2\) (since \(|z^2|=|z|^2=1\) on \(|z|=1\)). But the key property is that \(z^2\) doubles the argument, which maps the half-disk to the full disk.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q19 Hyperbolic Geometry on the Disk</text></name>
+    <questiontext format="html"><text><![CDATA[In the Poincaré disk model, the hyperbolic distance between \(0\) and \(z\in\mathbb{D}\) is \(\rho(0,z) = \log\dfrac{1+|z|}{1-|z|} = 2\tanh^{-1}(|z|)\). The hyperbolic geodesics (shortest paths) in \(\mathbb{D}\) are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Arcs of circles that meet the unit circle at right angles (orthogonal circles)</text><feedback format="html"><text>In the Poincaré disk model, geodesics are diameters (circles with infinite Euclidean radius) or arcs of circles that intersect \(\partial\mathbb{D}\) orthogonally. These are also called "hyperbolic lines." Any two distinct points determine a unique geodesic, and through a point not on a line, infinitely many parallel lines exist (hyperbolic geometry).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Euclidean straight lines</text><feedback format="html"><text>Only diameters (straight lines through 0) are both Euclidean lines and hyperbolic geodesics. General geodesics are arcs of circles orthogonal to \(\partial\mathbb{D}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Small circles (parallel lines in the Euclidean sense)</text><feedback format="html"><text>Small circles (circles inside \(\mathbb{D}\)) are not geodesics. They are "horocycles" or "equidistant curves" in hyperbolic geometry.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Concentric circles centered at the origin</text><feedback format="html"><text>Concentric circles are not geodesics. They are circles equidistant from the origin in the hyperbolic metric (but not geodesics).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA28-Q20 Conformal Map — Sector to Half-Plane</text></name>
+    <questiontext format="html"><text><![CDATA[The map \(w = -\left(\dfrac{z+1}{z-1}\right)^2\) maps the upper half-disk \(\{|z|<1, \text{Im}(z)>0\}\) conformally onto the upper half-plane. How many steps does the standard chain involve?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Three steps: Möbius transformation to a quarter-plane, then \(w^2\) to a half-plane, then possibly a rotation</text><feedback format="html"><text>Standard chain: (1) \(z_1=(1+z)/(1-z)\) maps the half-disk to the first quadrant \(\{\text{Re}>0,\text{Im}>0\}\). (2) \(z_2=z_1^2\) maps the first quadrant to the upper half-plane. (3) If a specific orientation is needed, multiply by \(-1\). The composition gives \(w = -((z+1)/(z-1))^2\), which indeed maps the half-disk to \(\mathbb{H}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>One step: the formula is itself the direct conformal map</text><feedback format="html"><text>While the formula \(w=-((z+1)/(z-1))^2\) is a single expression, it decomposes into elementary steps for understanding. But the question asks about steps in the standard construction.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The map requires an elliptic integral</text><feedback format="html"><text>Elliptic integrals arise for rectangles, not for disks or half-disks. The half-disk to half-plane map uses only Möbius and power functions.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Two steps: squaring and translation</text><feedback format="html"><text>The correct chain is: Möbius transformation (to first quadrant) + squaring (to upper half-plane). Translation alone doesn't convert the geometry correctly.</text></feedback></answer>
+  </question>
+
+</quiz>

@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Partial Differential Equations/Wave Equation</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q01_dAlembert</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The d'Alembert solution of \(u_{tt} = c^2 u_{xx}\) on \(\mathbb{R}\) with \(u(x,0)=f(x)\) and \(u_t(x,0)=g(x)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x,t) = \dfrac{f(x+ct)+f(x-ct)}{2} + \dfrac{1}{2c}\displaystyle\int_{x-ct}^{x+ct} g(s)\,ds\)]]></text>
+      <feedback><text>Correct. The d'Alembert formula decomposes the solution into right- and left-travelling waves. The first term comes from the initial displacement f, the second from the initial velocity g. This is valid for all \(x\in\mathbb{R}\) and \(t>0\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = f(x+ct) + f(x-ct)\)]]></text>
+      <feedback><text>Missing the 1/2 factor for f and the integral term for g. The complete formula requires both initial displacement and velocity contributions.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = \dfrac{f(x+ct)+f(x-ct)}{2}\)]]></text>
+      <feedback><text>This is correct only when g≡0. The general formula includes the integral of g over [x−ct, x+ct] divided by 2c.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = \dfrac{1}{2c}\displaystyle\int_{x-ct}^{x+ct} f(s)\,ds + g(x+ct) + g(x-ct)\)]]></text>
+      <feedback><text>The roles of f and g are swapped. f contributes via (f(x+ct)+f(x-ct))/2 and g contributes via the integral (1/2c)∫g ds.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q02_Domain_of_Dependence</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the wave equation \(u_{tt} = c^2 u_{xx}\), the domain of dependence of the solution \(u(x_0, t_0)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The interval \([x_0 - ct_0,\; x_0 + ct_0]\) on the initial line \(t=0\).]]></text>
+      <feedback><text>Correct. From d'Alembert's formula, u(x₀,t₀) depends only on f(x₀±ct₀) and the integral of g over [x₀−ct₀, x₀+ct₀]. Any change in initial data outside this interval has no effect on u(x₀,t₀).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The entire initial line \(t=0\).]]></text>
+      <feedback><text>This is the domain of dependence for the heat equation (infinite speed of propagation). The wave equation has finite speed c, so u(x₀,t₀) depends only on data in [x₀−ct₀, x₀+ct₀].</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The single point \(x_0\) on the initial line.]]></text>
+      <feedback><text>If u depended only on x₀, there would be no propagation. The wave equation influences an interval of width 2ct₀ on the initial line.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The interval \([x_0 - c/t_0,\; x_0 + c/t_0]\).]]></text>
+      <feedback><text>Dimensionally incorrect. The domain of dependence width is 2ct₀, not 2c/t₀.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q03_Energy_Conservation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the wave equation \(u_{tt} = c^2 u_{xx}\) on \((0,L)\) with Dirichlet BCs \(u(0,t)=u(L,t)=0\), the energy \(E(t) = \dfrac{1}{2}\displaystyle\int_0^L (u_t^2 + c^2 u_x^2)\,dx\) satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(E'(t) = 0\), i.e., energy is conserved.]]></text>
+      <feedback><text>Correct. E'(t)=∫(u_t u_{tt}+c²u_x u_{xt})dx=∫u_t(u_{tt}−c²u_{xx})dx + [c²u_x u_t]₀ᴸ = 0+0=0. The first term vanishes by the PDE and the boundary term vanishes by Dirichlet BCs. Energy is conserved.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(E'(t) \leq 0\), i.e., energy is non-increasing (dissipation).]]></text>
+      <feedback><text>The wave equation without damping conserves energy. Dissipation (E'<0) arises when a damping term (like u_t) is added to the equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(E'(t) \geq 0\), i.e., energy is non-decreasing.]]></text>
+      <feedback><text>Energy cannot grow for the wave equation without an external source. The wave equation is energy-conserving: E'(t)=0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(E(t) = E(0)e^{-ct}\).]]></text>
+      <feedback><text>Exponential decay occurs for damped waves (u_{tt}+2γu_t=c²u_{xx}). Without damping, E is exactly constant.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q04_Standing_Waves</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The solution of \(u_{tt} = c^2 u_{xx}\) on \((0,L)\) with \(u(0,t)=u(L,t)=0\), \(u(x,0)=f(x)\), \(u_t(x,0)=0\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x,t) = \displaystyle\sum_{n=1}^{\infty} B_n \sin\!\left(\dfrac{n\pi x}{L}\right)\cos\!\left(\dfrac{n\pi c t}{L}\right)\), where \(B_n = \dfrac{2}{L}\displaystyle\int_0^L f(x)\sin\!\left(\dfrac{n\pi x}{L}\right)dx\)]]></text>
+      <feedback><text>Correct. Separation of variables: X_n=sin(nπx/L), T_n(t)=cos(nπct/L) (cosines since u_t(x,0)=0 means T_n'(0)=0). Fourier coefficients B_n from the Fourier sine series of f.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = \displaystyle\sum_{n=1}^{\infty} B_n \sin\!\left(\dfrac{n\pi x}{L}\right)\sin\!\left(\dfrac{n\pi c t}{L}\right)\)]]></text>
+      <feedback><text>sin(nπct/L) in time requires nonzero initial velocity u_t(x,0)≠0. Since u_t(x,0)=0, the time part must be cosines.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = f(x+ct) + f(x-ct)\)]]></text>
+      <feedback><text>This d'Alembert form (for infinite domain) doesn't automatically satisfy the Dirichlet BCs u(0,t)=u(L,t)=0. The standing wave series is the appropriate form for the bounded domain.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = f(x)e^{-c^2t}\)]]></text>
+      <feedback><text>This is a solution of the heat equation, not the wave equation. Wave solutions oscillate in time, not decay exponentially.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q05_Kirchhoff</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Kirchhoff's formula for the solution of the 3D wave equation \(u_{tt} = c^2\Delta u\) on \(\mathbb{R}^3\) with \(u(x,0)=f(x)\), \(u_t(x,0)=g(x)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x,t) = \dfrac{\partial}{\partial t}\!\left[\dfrac{t}{4\pi}\!\displaystyle\iint_{|\omega|=1} f(x+ct\omega)\,dS_\omega\right] + \dfrac{t}{4\pi}\!\displaystyle\iint_{|\omega|=1} g(x+ct\omega)\,dS_\omega\)]]></text>
+      <feedback><text>Correct. Kirchhoff's formula averages the initial data over the sphere of radius ct. In 3D, Huygens' principle holds: u(x,t) depends only on data on (not inside) the sphere |y−x|=ct.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = \dfrac{f(x+ct)+f(x-ct)}{2} + \dfrac{1}{2c}\displaystyle\int_{x-ct}^{x+ct}g\,ds\)]]></text>
+      <feedback><text>This is the 1D d'Alembert formula. The 3D formula involves spherical averages, not integrals over intervals.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = \dfrac{1}{4\pi c^2 t}\!\displaystyle\iint_{|y-x|=ct} g(y)\,dS_y + f(x)\)]]></text>
+      <feedback><text>Incomplete formula: it's missing the ∂/∂t term involving f and has incorrect normalization. Kirchhoff's formula requires both initial displacement and velocity terms.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = \dfrac{1}{4\pi}\displaystyle\iiint_{|y-x| \leq ct} \dfrac{g(y)}{c^2t}\,dy\)]]></text>
+      <feedback><text>In 3D, Huygens' principle holds: u depends on data ON the sphere, not inside the ball (unlike in 2D). The volume integral form does not correctly represent the 3D wave solution.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q06_Huygens_Principle</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Huygens' principle (strict form — no diffuse wave) holds for the wave equation in:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Odd space dimensions \(n \geq 3\) (e.g., \(n=3\)), but NOT in even dimensions or \(n=1\).]]></text>
+      <feedback><text>Correct. Huygens' principle (sharp wave fronts, no trailing signals) holds in odd dimensions n≥3. In even dimensions (n=2,4,...) and n=1, there is a "diffuse wake" — the solution depends on data inside the light cone, not just on the wave front.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All space dimensions \(n \geq 1\).]]></text>
+      <feedback><text>In n=1 and n=2 (and all even dimensions), Huygens' principle fails: signals diffuse (the solution depends on the interior of the light cone, not just its surface).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Only in \(n = 1\) (the string equation).]]></text>
+      <feedback><text>In n=1, the 1D wave has a "diffuse" character (depends on data in [x−ct, x+ct]), though d'Alembert can be interpreted as carrying signals at exactly speed c. The classical Huygens' principle is a phenomenon of odd n≥3.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Only in even dimensions \(n = 2, 4, \ldots\)]]></text>
+      <feedback><text>This is incorrect. Even dimensions fail to satisfy Huygens' principle (they have diffuse tails). Odd dimensions n≥3 satisfy the strict Huygens' principle.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q07_Characteristics_2D</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The characteristics of the wave equation \(u_{tt} - c^2 u_{xx} = 0\) are the families of curves:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(x + ct = \mathrm{const}\quad\text{and}\quad x - ct = \mathrm{const}\) (two families of straight lines in the \((x,t)\)-plane).]]></text>
+      <feedback><text>Correct. The wave equation is hyperbolic with characteristic directions dx/dt = ±c. The substitution ξ=x+ct, η=x−ct transforms the equation to u_{ξη}=0, giving the general solution u=F(ξ)+G(η)=F(x+ct)+G(x−ct).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(x^2 + c^2 t^2 = \mathrm{const}\) (ellipses in the \((x,t)\)-plane).]]></text>
+      <feedback><text>Elliptic level sets correspond to elliptic equations (like Laplace). Hyperbolic equations have real characteristics, which are straight lines for constant coefficient equations.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The characteristics do not exist because the wave equation is hyperbolic.]]></text>
+      <feedback><text>On the contrary, hyperbolic equations have real characteristics. The wave equation has two families of characteristics x±ct=const.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(t = \mathrm{const}\) (horizontal lines in the \((x,t)\)-plane).]]></text>
+      <feedback><text>Horizontal lines t=const are the initial data surfaces (Cauchy surface), not characteristics. The characteristics carry information at slope dx/dt=±c.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q08_Duhamel_Wave</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Duhamel's principle for the non-homogeneous wave equation \(u_{tt} - c^2 u_{xx} = h(x,t)\), \(u(x,0)=u_t(x,0)=0\) on \(\mathbb{R}\) gives:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x,t) = \dfrac{1}{2c}\displaystyle\int_0^t\!\!\int_{x-c(t-\tau)}^{x+c(t-\tau)} h(y,\tau)\,dy\,d\tau\)]]></text>
+      <feedback><text>Correct. Duhamel's principle: each forcing h(y,τ) at time τ generates a wave that propagates for time t−τ. The solution is the superposition of these d'Alembert solutions: (1/2c)∫₀ᵗ∫_{x−c(t−τ)}^{x+c(t−τ)} h(y,τ)dy dτ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = \displaystyle\int_0^t h(x,\tau)\,d\tau\)]]></text>
+      <feedback><text>This omits spatial propagation. Duhamel's principle for the wave equation must include the spatial integral (over the cone of influence).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = \displaystyle\int_0^t\!\!\int_{-\infty}^\infty \Phi(x-y,t-\tau)h(y,\tau)\,dy\,d\tau\) with \(\Phi\) the heat kernel]]></text>
+      <feedback><text>The heat kernel is used for the heat equation's Duhamel formula. For the wave equation, the kernel is (1/2c) times the indicator of |y−x|<c(t−τ), not a Gaussian.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = h(x,t) * \sin(ct)/c\) (temporal convolution only)]]></text>
+      <feedback><text>This is not the correct form. Duhamel's principle requires a space-time convolution with the retarded Green's function of the wave operator.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q09_Uniqueness_Wave</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Uniqueness of solutions to the wave equation IVP follows from:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The energy method: if \(u\) solves the wave equation with zero initial data, then \(E(t)=0\) for all \(t\), so \(u\equiv 0\).]]></text>
+      <feedback><text>Correct. If u satisfies u_{tt}=c²u_{xx} with u(x,0)=u_t(x,0)=0, then E(t)=(1/2)∫(u_t²+c²u_x²)dx = E(0) = 0. So u_t≡u_x≡0 and thus u≡0 (using u(x,0)=0). This proves uniqueness.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The maximum principle: the solution attains its maximum on the boundary.]]></text>
+      <feedback><text>The maximum principle applies to elliptic and parabolic equations, not the wave equation (which is hyperbolic). Uniqueness for the wave equation uses the energy method.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The solution is analytic and an analytic function vanishing on an open set must vanish everywhere.]]></text>
+      <feedback><text>Wave equation solutions need not be analytic (even if initial data is smooth). The energy method provides the correct approach to uniqueness.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The wave equation has no solutions other than f(x+ct)+g(x-ct).]]></text>
+      <feedback><text>Every smooth solution is of this form (general solution), but this alone does not imply uniqueness without specifying the IVP constraints that pin down f and g.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q10_Dispersion</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the dispersive wave equation \(u_t + u_{xxx} = 0\) (linearized KdV), a plane wave solution \(u = e^{i(kx-\omega t)}\) satisfies the dispersion relation:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\omega = -k^3\) (phase speed \(v_\phi = \omega/k = -k^2\) depends on \(k\)).]]></text>
+      <feedback><text>Correct. Substituting e^{i(kx−ωt)}: −iω + (ik)³ = 0 → −iω − ik³ = 0 → ω = −k³. Phase speed v_φ = ω/k = −k² ≠ const, so the equation is dispersive.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\omega = k\) (constant phase speed \(v_\phi = 1\)).]]></text>
+      <feedback><text>ω=k is the dispersion relation for the non-dispersive transport equation u_t+u_x=0. The u_{xxx} term gives ω=−k³.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\omega^2 = k^2\) (bidirectional wave speed \(\pm 1\)).]]></text>
+      <feedback><text>ω²=k² arises from the second-order wave equation u_{tt}=u_{xx}. The first-order KdV linearization gives ω=−k³.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\omega = k^3\)]]></text>
+      <feedback><text>Close but sign error: ∂_t e^{i(kx−ωt)} = −iω·e^{...} and ∂_{xxx}e^{...}=(ik)³e^{...}=−ik³e^{...}. So −iω−ik³=0 gives ω=−k³, not +k³.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q11_Reflection</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the wave equation \(u_{tt} = c^2 u_{xx}\) on \((0,\infty)\) with Dirichlet BC \(u(0,t)=0\) and initial data \(f,g\), the method of odd extension solves the problem by:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Extending \(f\) and \(g\) as odd functions to \(\mathbb{R}\) (\(\tilde{f}(x)=-f(-x)\) for \(x<0\)), then applying d'Alembert's formula to get \(u(x,t)\) restricted to \(x>0\).]]></text>
+      <feedback><text>Correct. The odd extension ensures ũ(0,t)=0 automatically (since the odd extension of any function vanishes at 0). D'Alembert's formula applied to the extended data gives the solution on x>0 satisfying the Dirichlet BC.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Extending \(f\) and \(g\) as even functions to \(\mathbb{R}\) (\(\tilde{f}(x)=f(-x)\) for \(x<0\)).]]></text>
+      <feedback><text>Even extension gives ũ_x(0,t)=0 (Neumann BC), not ũ(0,t)=0 (Dirichlet BC). For a fixed end (u=0), the odd extension is needed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Setting \(f\) and \(g\) to zero for \(x < 0\).]]></text>
+      <feedback><text>A zero extension (not odd) would not satisfy the Dirichlet BC in general, since d'Alembert's formula would give u(0,t) = (f(ct)+f(−ct))/2 + ... which need not be zero.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Extending \(f,g\) periodically with period \(2\pi\).]]></text>
+      <feedback><text>Periodic extensions are used for bounded domain problems (0,L) with periodic BCs, not for the semi-infinite problem on (0,∞).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q12_Wave_2D</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The solution of the 2D wave equation \(u_{tt} = c^2(u_{xx}+u_{yy})\) with compactly supported initial data propagates:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[At all speeds \(0 \leq v \leq c\) (Huygens' principle fails — a diffuse wave persists behind the wave front at speed \(c\)).]]></text>
+      <feedback><text>Correct. In 2D (even dimension), Huygens' principle fails. The Hadamard descent method shows the 2D solution involves an integral over the disk |y−x|≤ct, so signals diffuse inside the light cone (no sharp wave front). The solution has a "tail" for t>0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Only at speed exactly \(c\) (Huygens' principle holds in 2D).]]></text>
+      <feedback><text>Huygens' principle (sharp fronts, no tails) holds only in odd dimensions n≥3, not in 2D. In 2D, a diffuse tail persists.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[With infinite speed of propagation (like the heat equation).]]></text>
+      <feedback><text>The wave equation has finite speed c regardless of dimension. In 2D, the signal spreads at all speeds up to c (diffuse), but not at infinite speed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Only at speed \(c/2\) (reduced by the extra dimension).]]></text>
+      <feedback><text>The wave front still travels at speed c. The difference is that a tail also forms inside the cone (diffuse propagation), not that the front speed is c/2.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q13_Damped_Wave</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the damped wave equation \(u_{tt} + 2\gamma u_t = c^2 u_{xx}\) (\(\gamma > 0\)), the energy \(E(t) = \dfrac{1}{2}\displaystyle\int_0^L (u_t^2 + c^2 u_x^2)\,dx\) satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(E'(t) = -2\gamma\displaystyle\int_0^L u_t^2\,dx \leq 0\)]]></text>
+      <feedback><text>Correct. E'(t) = ∫(u_t u_{tt}+c²u_x u_{xt})dx = ∫u_t(u_{tt}−c²u_{xx})dx = ∫u_t(−2γu_t)dx = −2γ∫u_t² dx ≤ 0. Energy is dissipated at rate proportional to γ and the kinetic energy density.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(E'(t) = 0\) (damping doesn't change the energy).]]></text>
+      <feedback><text>The damping term −2γu_t does dissipate energy: E'(t) = −2γ∫u_t²dx < 0 when u_t ≢ 0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(E'(t) = 2\gamma\displaystyle\int_0^L u_t^2\,dx \geq 0\)]]></text>
+      <feedback><text>Sign error: the damping dissipates energy, giving E'(t) = −2γ∫u_t² dx ≤ 0, not +2γ∫u_t² ≥ 0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(E(t) = E(0)e^{-2\gamma t}\) exactly.]]></text>
+      <feedback><text>Exponential decay E(t)=E(0)e^{−2γt} would hold if E'=−2γE, but E'=−2γ∫u_t²dx ≠ −2γE in general (unless there is a Poincaré inequality that makes ∫u_t²≥const·E).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q14_Well_Posedness</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Cauchy problem for the wave equation is well-posed (in the sense of Hadamard) because:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[A unique solution exists and depends continuously on the initial data (existence, uniqueness, and stability are all satisfied).]]></text>
+      <feedback><text>Correct. Hadamard's three conditions for well-posedness — existence, uniqueness, and continuous dependence on data — are all satisfied for the wave equation Cauchy problem. This is in contrast to ill-posed problems like the backward heat equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The solution is analytic for all time, regardless of the initial data.]]></text>
+      <feedback><text>The wave equation does not necessarily have analytic solutions unless the initial data is analytic. Well-posedness is about continuous dependence on data in appropriate spaces, not analyticity.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The energy grows at most polynomially in time.]]></text>
+      <feedback><text>For the undamped wave equation, energy is conserved (not growing). For well-posedness, continuous dependence on data is the key property, not the energy growth rate.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The wave equation has no characteristics, avoiding the ill-posedness associated with characteristic initial surfaces.]]></text>
+      <feedback><text>The wave equation is hyperbolic with real characteristics. Well-posedness holds because the initial surface t=0 is non-characteristic; prescribing data on a characteristic surface would be ill-posed.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q15_Canonical_Form</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Under the change of variables \(\xi = x + ct\), \(\eta = x - ct\), the wave equation \(u_{tt} = c^2 u_{xx}\) transforms to:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u_{\xi\eta} = 0\), the canonical hyperbolic form.]]></text>
+      <feedback><text>Correct. With ξ=x+ct, η=x−ct: u_x = u_ξ+u_η, u_t = c(u_ξ−u_η), u_{xx}=u_{ξξ}+2u_{ξη}+u_{ηη}, u_{tt}=c²(u_{ξξ}−2u_{ξη}+u_{ηη}). Then u_{tt}−c²u_{xx}=−4c²u_{ξη}=0, so u_{ξη}=0. General solution: u=F(ξ)+G(η).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u_{\xi\xi} + u_{\eta\eta} = 0\) (Laplace equation).]]></text>
+      <feedback><text>The Laplace equation is the canonical elliptic form. The wave equation transforms to u_{ξη}=0 (hyperbolic canonical form), not u_{ξξ}+u_{ηη}=0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u_\xi = u_{\eta\eta}\) (heat equation form).]]></text>
+      <feedback><text>Heat-type canonical form applies to parabolic equations. The wave equation, after the characteristic substitution ξ=x+ct, η=x−ct, gives u_{ξη}=0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u_{\xi\xi} - u_{\eta\eta} = 0\)]]></text>
+      <feedback><text>This form corresponds to the wave equation in (ξ,η) coordinates that are NOT the characteristic coordinates. The characteristic substitution ξ=x+ct, η=x−ct gives the simpler u_{ξη}=0.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q16_Nonlinear_Wave</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The nonlinear wave equation \(u_{tt} = c^2 u_{xx} + f(u)\) with \(f(u) = u - u^3\) (Klein-Gordon type) has a conserved energy:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(E = \displaystyle\int \left(\dfrac{1}{2}u_t^2 + \dfrac{c^2}{2}u_x^2 - \dfrac{1}{2}u^2 + \dfrac{1}{4}u^4\right)dx\)]]></text>
+      <feedback><text>Correct. The potential energy for f(u)=u−u³ is F(u)=−∫f(u)du = −u²/2+u⁴/4 (taking F(0)=0). The conserved energy is E=∫(u_t²/2+c²u_x²/2−u²/2+u⁴/4)dx, verified by dE/dt=0 using the PDE.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(E = \displaystyle\int \left(\dfrac{1}{2}u_t^2 + \dfrac{c^2}{2}u_x^2\right)dx\)]]></text>
+      <feedback><text>This is the energy for the linear wave equation. The nonlinear term f(u)=u−u³ contributes a potential energy term −u²/2+u⁴/4 to the total energy.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(E = \displaystyle\int \left(\dfrac{1}{2}u_t^2 + \dfrac{c^2}{2}u_x^2 + \dfrac{1}{2}u^2 - \dfrac{1}{4}u^4\right)dx\)]]></text>
+      <feedback><text>Sign error: the potential should be −F(u) = −(−u²/2+u⁴/4) = u²/2−u⁴/4... Actually the potential energy density is ∫₀ᵘ f(s)ds integrated negatively. Let me clarify: with f(u)=u−u³, the primitive is u²/2−u⁴/4, and the potential energy added to KE is −(u²/2−u⁴/4) = −u²/2+u⁴/4, making E = ∫(u_t²/2+c²u_x²/2−u²/2+u⁴/4)dx. So the given option has wrong signs.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(E\) is not conserved for nonlinear wave equations.]]></text>
+      <feedback><text>Nonlinear wave equations of the form u_{tt}=c²u_{xx}+f(u) DO conserve energy, provided f(u)=−V'(u) for some potential V. Here f=u−u³=−V' where V=−u²/2+u⁴/4.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q17_Radiation_Condition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Sommerfeld radiation condition for the Helmholtz equation \(\Delta u + k^2 u = 0\) in \(\mathbb{R}^3\) (time-harmonic waves) requires outgoing waves:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(r\left(\dfrac{\partial u}{\partial r} - iku\right) \to 0 \quad\text{as } r = |x| \to \infty\)]]></text>
+      <feedback><text>Correct. The Sommerfeld radiation condition selects outgoing (not incoming) waves at infinity, ensuring uniqueness of the Helmholtz equation exterior problem. It rules out waves like e^{−ikr}/r (incoming) and selects e^{ikr}/r (outgoing).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u \to 0\) as \(r \to \infty\)]]></text>
+      <feedback><text>Decay alone is insufficient: both incoming e^{−ikr}/r and outgoing e^{ikr}/r waves decay as r→∞ in 3D. The radiation condition specifies the direction of propagation via the ∂_r u − iku = 0 condition.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(|u| \leq C/r^2\) for large \(r\)]]></text>
+      <feedback><text>This decay rate is faster than what's required. The radiation condition is about the relation between ∂_r u and u, not just the decay rate.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Delta u = 0\) for large \(r\)]]></text>
+      <feedback><text>This would be the condition for a harmonic function at infinity, not the Sommerfeld radiation condition for Helmholtz. The k² term persists everywhere.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q18_Wave_Semigroup</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The wave equation \(u_{tt} = c^2 u_{xx}\) written as a first-order system with \(\mathbf{v} = (u, u_t)^T\) becomes \(\mathbf{v}_t = A\mathbf{v}\) where \(A = \begin{pmatrix}0 & 1 \\ c^2\partial_{xx} & 0\end{pmatrix}\). The solution is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\mathbf{v}(t) = e^{tA}\mathbf{v}(0)\) where \(e^{tA}\) forms a unitary group on the energy space \(H^1 \times L^2\).]]></text>
+      <feedback><text>Correct. The wave equation generates a unitary group (not just semigroup) on the energy space H¹×L² — it is time-reversible. The operator A is skew-adjoint (by Stone's theorem), generating a unitary group.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathbf{v}(t) = e^{-tA}\mathbf{v}(0)\) where \(e^{-tA}\) is a contractive semigroup.]]></text>
+      <feedback><text>The wave equation generates a GROUP (reversible), not a semigroup. The solution for both positive and negative time is well-defined and energy-preserving, not contractive.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The system \(\mathbf{v}_t = A\mathbf{v}\) cannot be solved as a matrix exponential since \(A\) is unbounded.]]></text>
+      <feedback><text>A is indeed an unbounded operator, but semigroup theory (Stone's theorem for skew-adjoint operators) still gives a rigorous meaning to e^{tA} as a unitary group on the appropriate Hilbert space.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathbf{v}(t) = \cos(ct\sqrt{-\partial_{xx}})\mathbf{v}(0)\) only (no sine term).]]></text>
+      <feedback><text>The solution requires both cosine and sine components: u(t)=cos(ct√(−∂²_x))u₀ + sin(ct√(−∂²_x))/c√(−∂²_x)·u₁. Only one component gives an incomplete solution.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q19_Resonance</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the forced wave equation \(u_{tt} - u_{xx} = \sin(n\pi x)\sin(n\pi t)\) on \((0,1)\) with homogeneous Dirichlet BCs, resonance occurs because:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The forcing frequency \(n\pi\) equals the natural frequency \(n\pi\) (with \(c=1\)), leading to secular growth in the particular solution.]]></text>
+      <feedback><text>Correct. When the forcing frequency matches an eigenfrequency of the homogeneous problem, the standard particular solution (undetermined coefficients) fails and one must seek solutions of the form t·cos(nπt)·sin(nπx), which grow unboundedly in time (resonance).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The forcing has spatial dependence, which always causes resonance.]]></text>
+      <feedback><text>Spatial variation in the forcing does not by itself cause resonance. Resonance occurs when the temporal frequency of the forcing matches an eigenfrequency of the system.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The boundary conditions are inhomogeneous, preventing a steady-state solution.]]></text>
+      <feedback><text>The BCs are homogeneous (Dirichlet). Resonance is a temporal phenomenon (matching frequencies), not related to boundary condition inhomogeneity.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Resonance never occurs for the wave equation on bounded domains.]]></text>
+      <feedback><text>Resonance does occur for the wave equation when forcing frequencies match eigenfrequencies. This is the wave-equation analogue of resonance in ODEs.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_44_Q20_Telegraph_Equation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The telegraph equation \(u_{tt} + 2\alpha u_t + \beta^2 u = c^2 u_{xx}\) (\(\alpha, \beta, c > 0\)) arises in transmission line theory. When \(\alpha = \beta\), it can be transformed to:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The standard wave equation \(v_{tt} = c^2 v_{xx}\) via the substitution \(u = e^{-\alpha t} v\).]]></text>
+      <feedback><text>Correct. With u=e^{−αt}v: u_t=e^{−αt}(v_t−αv), u_{tt}=e^{−αt}(v_{tt}−2αv_t+α²v). Substituting into the telegraph equation and using β=α: the α² and β² terms cancel, leaving v_{tt}=c²v_{xx}. So the undistorted solution corresponds to the wave equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The heat equation \(v_t = c^2 v_{xx}\) via an exponential substitution.]]></text>
+      <feedback><text>The telegraph equation does not reduce to the heat equation. When α=β, it reduces to the standard wave equation (not heat equation) via u=e^{−αt}v.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Laplace equation \(v_{xx} + v_{tt} = 0\) after a change of sign.]]></text>
+      <feedback><text>The telegraph equation is hyperbolic and does not reduce to the elliptic Laplace equation. The reduction when α=β gives the wave equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Bessel equation via a radial symmetry reduction.]]></text>
+      <feedback><text>Bessel equations arise from the Laplace/wave/heat equations in cylindrical/spherical coordinates, not from the telegraph equation's temporal simplification.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

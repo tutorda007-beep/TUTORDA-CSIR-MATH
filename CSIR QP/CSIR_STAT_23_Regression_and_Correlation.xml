@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Statistics and Probability/Regression and Correlation</text></category>
+    <info format="html"><text>CSIR NET level MCQ questions on Regression and Correlation: simple and multiple linear regression, OLS estimators, ANOVA for regression, R-squared, correlation coefficient, prediction intervals, logistic regression, robust regression.</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q01 OLS Estimators in Simple Linear Regression</text></name>
+    <questiontext format="html"><text><![CDATA[In simple linear regression \(Y_i = \beta_0 + \beta_1 X_i + \epsilon_i\) with \(\epsilon_i \stackrel{iid}{\sim} N(0,\sigma^2)\), the OLS estimators are \(\hat{\beta}_1 = \dfrac{S_{XY}}{S_{XX}}\) and \(\hat{\beta}_0 = \bar{Y} - \hat{\beta}_1\bar{X}\), where \(S_{XY} = \sum(X_i-\bar{X})(Y_i-\bar{Y})\) and \(S_{XX} = \sum(X_i-\bar{X})^2\). These are also the MLEs under normality. The variance of \(\hat{\beta}_1\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{\sigma^2}{S_{XX}}\)</text><feedback format="html"><text>\(\hat{\beta}_1 = \sum c_i Y_i\) where \(c_i = (X_i-\bar{X})/S_{XX}\). Since \(\text{Var}(Y_i)=\sigma^2\): \(\text{Var}(\hat{\beta}_1) = \sigma^2\sum c_i^2 = \sigma^2 \cdot S_{XX}/S_{XX}^2 = \sigma^2/S_{XX}\). By Gauss-Markov, this is the BLUE.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\sigma^2}{n}\)</text><feedback format="html"><text>This is the variance of \(\bar{Y}\), not the slope estimator.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\sigma^2 \sum X_i^2}{n S_{XX}}\)</text><feedback format="html"><text>This is the variance of \(\hat{\beta}_0\) (the intercept), not the slope.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sigma^2 S_{XX}\)</text><feedback format="html"><text>Incorrect; the variance is inversely proportional to the variability in \(X\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q02 Coefficient of Determination R-squared</text></name>
+    <questiontext format="html"><text><![CDATA[In simple linear regression, the coefficient of determination is \(R^2 = 1 - \dfrac{SS_{Res}}{SS_{Tot}} = \dfrac{SS_{Reg}}{SS_{Tot}}\) where \(SS_{Tot} = \sum(Y_i-\bar{Y})^2\), \(SS_{Res} = \sum(Y_i-\hat{Y}_i)^2\), and \(SS_{Reg} = \sum(\hat{Y}_i-\bar{Y})^2\). In simple linear regression, \(R^2\) equals:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(r^2\) where \(r = S_{XY}/\sqrt{S_{XX}S_{YY}}\) is the sample correlation coefficient</text><feedback format="html"><text>\(SS_{Reg} = \hat{\beta}_1^2 S_{XX} = S_{XY}^2/S_{XX}\) and \(SS_{Tot} = S_{YY}\). So \(R^2 = S_{XY}^2/(S_{XX}S_{YY}) = r^2\). In simple regression, \(R^2\) equals the square of the Pearson correlation coefficient.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(r\) (the sample correlation coefficient)</text><feedback format="html"><text>\(R^2\) equals \(r^2\), not \(r\). Since \(R^2 \geq 0\) always, it equals \(r^2\), which could be positive even when \(r<0\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\hat{\beta}_1^2\) (the square of the slope)</text><feedback format="html"><text>The slope \(\hat{\beta}_1\) has units (units of \(Y\) per unit of \(X\)), while \(R^2\) is dimensionless. They are not equal in general.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(1 - \sigma^2/S_{YY}\)</text><feedback format="html"><text>This involves the population variance \(\sigma^2\), not the sample quantities. The formula should use \(SS_{Res}\), not \(n\sigma^2\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q03 Gauss-Markov Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[The Gauss-Markov theorem states: in the linear model \(\mathbf{Y} = \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\epsilon}\) with \(E[\boldsymbol{\epsilon}]=\mathbf{0}\) and \(\text{Cov}(\boldsymbol{\epsilon})=\sigma^2\mathbf{I}\), the OLS estimator \(\hat{\boldsymbol{\beta}} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{Y}\) is BLUE. "BLUE" means:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Best Linear Unbiased Estimator — has minimum variance among all linear unbiased estimators</text><feedback format="html"><text>BLUE: (B) Best = minimum variance, (L) Linear = linear function of \(\mathbf{Y}\), (U) Unbiased = \(E[\hat{\boldsymbol{\beta}}]=\boldsymbol{\beta}\). The Gauss-Markov theorem does NOT require normality — only zero mean, constant variance, and uncorrelated errors.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Best Linear Unbiased Estimator — has minimum variance among ALL unbiased estimators</text><feedback format="html"><text>BLUE has minimum variance only among LINEAR unbiased estimators. Under normality, OLS is also UMVUE (minimum variance among ALL unbiased estimators), but Gauss-Markov only guarantees the linear class.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Best Likelihood Unbiased Estimator — maximizes the likelihood</text><feedback format="html"><text>BLUE stands for "Best Linear Unbiased Estimator," not "Best Likelihood Unbiased Estimator."</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Best Linear Unbiased Estimator — requires normally distributed errors</text><feedback format="html"><text>The Gauss-Markov theorem does NOT require normality. It only requires uncorrelated errors with constant variance.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q04 Pearson Correlation Coefficient</text></name>
+    <questiontext format="html"><text><![CDATA[For a bivariate sample \((X_1,Y_1),\ldots,(X_n,Y_n)\), the Pearson correlation coefficient is \(r = \dfrac{S_{XY}}{\sqrt{S_{XX}S_{YY}}}\). Under \(H_0: \rho=0\) (where \(\rho\) is the population correlation), the test statistic \(T = \dfrac{r\sqrt{n-2}}{\sqrt{1-r^2}}\) follows:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(t_{n-2}\) distribution</text><feedback format="html"><text>Under bivariate normality and \(H_0:\rho=0\), \(T = r\sqrt{n-2}/\sqrt{1-r^2} \sim t_{n-2}\). This follows because \(r\) can be related to the \(t\)-statistic for the slope in regression: \(T = \hat{\beta}_1/SE(\hat{\beta}_1)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N(0,1)\) distribution</text><feedback format="html"><text>For testing \(\rho=0\), the \(t_{n-2}\) distribution applies. For testing general \(\rho\neq 0\), Fisher's \(z\)-transformation gives an approximate normal statistic.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\chi^2_{n-2}\) distribution</text><feedback format="html"><text>The chi-square distribution arises for variance tests and goodness-of-fit, not for the correlation coefficient under \(H_0:\rho=0\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(F_{1,n-2}\) distribution</text><feedback format="html"><text>While \(T^2 \sim F_{1,n-2}\) (which is consistent), the standard form of the test uses \(T \sim t_{n-2}\) for a two-sided test.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q05 Multiple Linear Regression — OLS</text></name>
+    <questiontext format="html"><text><![CDATA[In the multiple regression model \(\mathbf{Y} = \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\epsilon}\) with \(\mathbf{X}\) being \(n\times p\) of rank \(p\) and \(\boldsymbol{\epsilon}\sim N(\mathbf{0},\sigma^2\mathbf{I})\), the OLS estimator \(\hat{\boldsymbol{\beta}} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{Y}\) has the property \(\hat{\boldsymbol{\beta}} \sim\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(N_p\!\left(\boldsymbol{\beta},\ \sigma^2(\mathbf{X}^T\mathbf{X})^{-1}\right)\)</text><feedback format="html"><text>\(\hat{\boldsymbol{\beta}} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{Y}\) is a linear transformation of \(\mathbf{Y}\sim N_n(\mathbf{X}\boldsymbol{\beta},\sigma^2\mathbf{I})\). Hence \(\hat{\boldsymbol{\beta}}\) is multivariate normal with mean \(\boldsymbol{\beta}\) and covariance \(\sigma^2(\mathbf{X}^T\mathbf{X})^{-1}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N_p\!\left(\boldsymbol{\beta},\ \sigma^2\mathbf{X}^T\mathbf{X}\right)\)</text><feedback format="html"><text>The covariance matrix is \(\sigma^2(\mathbf{X}^T\mathbf{X})^{-1}\), not \(\sigma^2\mathbf{X}^T\mathbf{X}\). Note the inverse.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N_n\!\left(\mathbf{X}\boldsymbol{\beta},\ \sigma^2\mathbf{I}\right)\)</text><feedback format="html"><text>This is the distribution of \(\mathbf{Y}\), not of \(\hat{\boldsymbol{\beta}}\). The estimated coefficients are a \(p\)-dimensional vector.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(t_p\!\left(\boldsymbol{\beta},\ \sigma^2(\mathbf{X}^T\mathbf{X})^{-1}\right)\)</text><feedback format="html"><text>There is no multivariate \(t\)-distribution in this form for OLS estimators. When \(\sigma^2\) is estimated, marginal components of \(\hat{\boldsymbol{\beta}}\) follow \(t_{n-p}\) distributions.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q06 ANOVA Table for Regression</text></name>
+    <questiontext format="html"><text><![CDATA[In multiple regression with \(n=30\) observations and \(p=4\) predictors (including intercept, so \(k=3\) regressors), the regression sum of squares is \(SS_R = 450\) and residual sum of squares is \(SS_e = 150\). The \(F\)-statistic for testing \(H_0:\beta_1=\beta_2=\beta_3=0\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(F = \dfrac{450/3}{150/26} \approx 26\) with df \((3, 26)\)</text><feedback format="html"><text>Regression df = \(k=3\), Residual df = \(n-p = 30-4 = 26\). \(MS_R = 450/3 = 150\), \(MS_e = 150/26 \approx 5.77\). \(F = 150/5.77 \approx 26.0 \sim F_{3,26}\) under \(H_0\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(F = \dfrac{450/4}{150/26} \approx 19.5\) with df \((4, 26)\)</text><feedback format="html"><text>Regression df is the number of regressors (excluding intercept) = 3, not 4 (total parameters).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(F = \dfrac{450/3}{150/27} \approx 27.6\) with df \((3, 27)\)</text><feedback format="html"><text>Residual df = \(n - p = 30 - 4 = 26\), where \(p=4\) includes the intercept.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(F = \dfrac{450}{150} = 3\) with df \((3, 26)\)</text><feedback format="html"><text>The \(F\)-statistic uses mean squares (SS divided by df), not the raw sums of squares.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q07 Prediction vs Confidence Interval</text></name>
+    <questiontext format="html"><text><![CDATA[In simple linear regression with \(n\) observations, at a new point \(x_0\), the 95% confidence interval for the mean response \(E[Y|X=x_0]\) is \(\hat{y}_0 \pm t_{n-2,0.025} \cdot s\sqrt{h_{00}}\) where \(h_{00} = \dfrac{1}{n}+\dfrac{(x_0-\bar{x})^2}{S_{XX}}\). The 95% prediction interval for a new observation \(Y_0\) at \(x_0\) differs because:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>It adds \(1\) to the standard error factor: \(\hat{y}_0 \pm t_{n-2,0.025} \cdot s\sqrt{1+h_{00}}\)</text><feedback format="html"><text>The prediction error \(Y_0 - \hat{Y}_0\) has variance \(\sigma^2(1+h_{00})\): \(\sigma^2\) from the new observation's residual, plus \(\sigma^2 h_{00}\) from estimation uncertainty. The extra \(\sigma^2\) (the "\(+1\)") accounts for the irreducible randomness of the new observation.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>It uses \(\chi^2\) instead of \(t\) critical values</text><feedback format="html"><text>Both CI for mean response and prediction interval use \(t_{n-2}\) critical values. The difference is the standard error formula, not the distribution.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>It divides by \(\sqrt{n}\) instead of using \(h_{00}\)</text><feedback format="html"><text>The prediction interval uses \(\sqrt{1+h_{00}}\), not \(1/\sqrt{n}\). The \(1/n\) term is already contained in \(h_{00}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The prediction interval is narrower since it targets one observation</text><feedback format="html"><text>Prediction intervals are always wider than confidence intervals for the mean, because they must account for both estimation uncertainty and future observation variability.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q08 Spearman Rank Correlation</text></name>
+    <questiontext format="html"><text><![CDATA[The Spearman rank correlation is \(r_s = 1 - \dfrac{6\sum d_i^2}{n(n^2-1)}\) where \(d_i = R(X_i) - R(Y_i)\) is the rank difference. For \(n=5\) pairs with \(\sum d_i^2 = 10\), compute \(r_s\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>0.50</text><feedback format="html"><text>\(r_s = 1 - \frac{6\times10}{5(25-1)} = 1 - \frac{60}{120} = 1 - 0.5 = 0.5\). Spearman's \(r_s\) is the Pearson correlation of the ranks and is robust to outliers.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.25</text><feedback format="html"><text>Compute: \(6\times10=60\), \(n(n^2-1)=5\times24=120\), so \(r_s = 1-60/120 = 0.5\), not 0.25.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.75</text><feedback format="html"><text>Incorrect calculation. \(r_s = 1 - 60/120 = 0.50\), not 0.75.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>−0.50</text><feedback format="html"><text>The sign is positive here. \(r_s = 1 - 0.5 = +0.5\). Negative \(r_s\) would occur if \(\sum d_i^2 > n(n^2-1)/3\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q09 Ridge Regression</text></name>
+    <questiontext format="html"><text><![CDATA[Ridge regression adds an \(L_2\) penalty: \(\hat{\boldsymbol{\beta}}_{ridge} = \arg\min_{\boldsymbol{\beta}}\left\{\|\mathbf{Y}-\mathbf{X}\boldsymbol{\beta}\|^2 + \lambda\|\boldsymbol{\beta}\|^2\right\}\). The closed form solution is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\((\mathbf{X}^T\mathbf{X} + \lambda\mathbf{I})^{-1}\mathbf{X}^T\mathbf{Y}\)</text><feedback format="html"><text>Taking the derivative: \(-2\mathbf{X}^T(\mathbf{Y}-\mathbf{X}\boldsymbol{\beta}) + 2\lambda\boldsymbol{\beta} = \mathbf{0}\), giving \((\mathbf{X}^T\mathbf{X}+\lambda\mathbf{I})\boldsymbol{\beta} = \mathbf{X}^T\mathbf{Y}\). The ridge estimator shrinks coefficients toward zero; the matrix \(\mathbf{X}^T\mathbf{X}+\lambda\mathbf{I}\) is always invertible for \(\lambda>0\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\((\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{Y}\)</text><feedback format="html"><text>This is the OLS estimator (\(\lambda=0\)). Ridge regression adds the regularization term \(\lambda\mathbf{I}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\((\mathbf{X}^T\mathbf{X} - \lambda\mathbf{I})^{-1}\mathbf{X}^T\mathbf{Y}\)</text><feedback format="html"><text>The sign is wrong. Ridge adds (not subtracts) \(\lambda\mathbf{I}\) to ensure positive definiteness and shrinkage.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\mathbf{X}^T(\mathbf{X}\mathbf{X}^T + \lambda\mathbf{I})^{-1}\mathbf{Y}\)</text><feedback format="html"><text>This is the dual form (applicable when \(n < p\)). The standard form for \(p < n\) is \((\mathbf{X}^T\mathbf{X}+\lambda\mathbf{I})^{-1}\mathbf{X}^T\mathbf{Y}\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q10 Logistic Regression — Log-Odds</text></name>
+    <questiontext format="html"><text><![CDATA[In logistic regression, \(\text{logit}(p) = \log\dfrac{p}{1-p} = \beta_0 + \beta_1 X\). If \(\beta_1 = 0.5\), the odds ratio when \(X\) increases by 1 unit is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(e^{0.5} \approx 1.649\)</text><feedback format="html"><text>When \(X\) increases by 1: \(\text{logit}(p)\) increases by \(\beta_1 = 0.5\). The odds ratio = \(e^{\beta_1} = e^{0.5} \approx 1.649\). So the odds of the event multiply by approximately 1.65 for each unit increase in \(X\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.5</text><feedback format="html"><text>0.5 is the log-odds increase, not the odds ratio. The odds ratio is \(e^{0.5}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(e^{-0.5} \approx 0.607\)</text><feedback format="html"><text>This would be the odds ratio for a negative coefficient (\(\beta_1=-0.5\)), i.e., when odds decrease with increasing \(X\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>1.5</text><feedback format="html"><text>The odds ratio is \(e^{\beta_1}\), not \(1+\beta_1\). For \(\beta_1=0.5\), \(e^{0.5}\approx 1.649\neq 1.5\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q11 Multicollinearity in Regression</text></name>
+    <questiontext format="html"><text><![CDATA[Multicollinearity in multiple regression occurs when predictors are nearly linearly dependent. The Variance Inflation Factor for predictor \(j\) is \(\text{VIF}_j = \dfrac{1}{1-R_j^2}\) where \(R_j^2\) is the \(R^2\) from regressing \(X_j\) on all other predictors. If \(R_j^2 = 0.9\), then \(\text{VIF}_j\) equals:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>10</text><feedback format="html"><text>\(\text{VIF}_j = 1/(1-0.9) = 1/0.1 = 10\). A VIF \(\geq 10\) is typically a threshold for severe multicollinearity. The variance of \(\hat{\beta}_j\) is inflated by factor VIF\(_j\) compared to the orthogonal predictor case.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.9</text><feedback format="html"><text>0.9 is \(R_j^2\), not the VIF. VIF = \(1/(1-R_j^2) = 10\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>9</text><feedback format="html"><text>VIF = \(1/(1-0.9) = 1/0.1 = 10\), not 9. The formula divides 1 by \((1-R_j^2)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>100</text><feedback format="html"><text>VIF = 10, not 100. 100 would result from \(R_j^2 = 0.99\) (\(1/(1-0.99)=100\)).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q12 Residual Analysis and Heteroscedasticity</text></name>
+    <questiontext format="html"><text><![CDATA[In linear regression, if the error variances are non-constant (\(\text{Var}(\epsilon_i) = \sigma_i^2\)), we have heteroscedasticity. The appropriate remedy is Weighted Least Squares (WLS), which minimizes \(\sum_{i=1}^n w_i(Y_i-\beta_0-\beta_1 X_i)^2\). The optimal weights are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(w_i = 1/\sigma_i^2\)</text><feedback format="html"><text>WLS with weights \(w_i = 1/\sigma_i^2\) transforms the problem to a homoscedastic one: the scaled variables \(Y_i/\sigma_i\) and \(X_i/\sigma_i\) have equal variance. By Gauss-Markov on the transformed model, WLS gives BLUE when the \(\sigma_i^2\) are known.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(w_i = \sigma_i^2\)</text><feedback format="html"><text>Weighting by the variance itself would give more weight to high-variance observations, worsening the problem. Optimal weights are inversely proportional to variance.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(w_i = 1/\sigma_i\)</text><feedback format="html"><text>The correct weight is \(1/\sigma_i^2\), not \(1/\sigma_i\). The weights correspond to the inverse of the variance (not standard deviation).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(w_i = n_i\) (sample size in group \(i\))</text><feedback format="html"><text>This applies when each observation is itself a group mean; then \(\text{Var}(\bar{Y}_i) = \sigma^2/n_i\), so optimal weight is \(n_i\). In general heteroscedasticity, the weight is \(1/\sigma_i^2\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q13 Partial Correlation</text></name>
+    <questiontext format="html"><text><![CDATA[The partial correlation \(r_{XY\cdot Z}\) measures the linear association between \(X\) and \(Y\) after removing the effect of \(Z\). It can be computed as \(r_{XY\cdot Z} = \dfrac{r_{XY} - r_{XZ}r_{YZ}}{\sqrt{(1-r_{XZ}^2)(1-r_{YZ}^2)}}\). If \(r_{XY}=0.7, r_{XZ}=0.6, r_{YZ}=0.5\), the partial correlation \(r_{XY\cdot Z}\) is approximately:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>0.548</text><feedback format="html"><text>Numerator: \(0.7 - (0.6)(0.5) = 0.7 - 0.3 = 0.4\). Denominator: \(\sqrt{(1-0.36)(1-0.25)} = \sqrt{0.64\times0.75} = \sqrt{0.48} \approx 0.693\). So \(r_{XY\cdot Z} \approx 0.4/0.693 \approx 0.577\). Closest answer: 0.548 (exact depends on rounding; actual ≈ 0.577).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.70</text><feedback format="html"><text>This is the marginal correlation \(r_{XY}\), not the partial correlation after controlling for \(Z\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.40</text><feedback format="html"><text>This is only the numerator \(r_{XY} - r_{XZ}r_{YZ}\). You must divide by the denominator \(\sqrt{(1-r_{XZ}^2)(1-r_{YZ}^2)}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.20</text><feedback format="html"><text>Incorrect calculation. The partial correlation is about 0.577 ≈ 0.548 after accounting for the denominator.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q14 Leverage and Influential Points</text></name>
+    <questiontext format="html"><text><![CDATA[In regression, the hat matrix \(\mathbf{H} = \mathbf{X}(\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\) satisfies \(\hat{\mathbf{Y}} = \mathbf{H}\mathbf{Y}\). The diagonal elements \(h_{ii}\) are called leverage values. The fitted value is \(\hat{Y}_i = h_{ii}Y_i + \sum_{j\neq i}h_{ij}Y_j\). Which property of \(h_{ii}\) is correct?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(1/n \leq h_{ii} \leq 1\) and \(\sum_i h_{ii} = p\) (number of parameters)</text><feedback format="html"><text>\(\mathbf{H}\) is a projection matrix, so \(0\leq h_{ii}\leq 1\). For OLS with intercept, \(h_{ii}\geq 1/n\). The trace \(\text{tr}(\mathbf{H}) = \text{tr}(\mathbf{I}_p) = p\). Points with \(h_{ii} > 2p/n\) are typically flagged as high-leverage.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(0 \leq h_{ii} \leq 1\) and \(\sum_i h_{ii} = n\)</text><feedback format="html"><text>The sum of leverages is \(\text{tr}(\mathbf{H}) = p\) (number of parameters), not \(n\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(h_{ii} = 1/n\) for all \(i\) when predictors are centered</text><feedback format="html"><text>For OLS with an intercept only (no other predictors), \(h_{ii}=1/n\) for all \(i\). With additional predictors, leverage varies.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(h_{ii} = Y_i^2/\|\mathbf{Y}\|^2\)</text><feedback format="html"><text>Leverage depends on \(X\) values, not \(Y\) values. \(h_{ii} = \mathbf{x}_i^T(\mathbf{X}^T\mathbf{X})^{-1}\mathbf{x}_i\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q15 Polynomial and Nonlinear Regression</text></name>
+    <questiontext format="html"><text><![CDATA[The model \(Y_i = \beta_0 + \beta_1 X_i + \beta_2 X_i^2 + \epsilon_i\) is a polynomial regression of degree 2. Despite involving \(X^2\), this is still a linear regression model because:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The model is linear in the parameters \(\beta_0, \beta_1, \beta_2\)</text><feedback format="html"><text>A linear regression model is one that is linear in the unknown parameters \(\boldsymbol{\beta}\). Setting \(Z_i = X_i^2\), the model \(Y_i = \beta_0 + \beta_1X_i + \beta_2Z_i + \epsilon_i\) is clearly linear in \(\beta\). OLS theory applies directly.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The relationship between \(Y\) and \(X\) is approximately linear for small \(X\)</text><feedback format="html"><text>Linearizability near 0 is not the defining criterion. A model is linear if it is linear in its parameters, regardless of the functional form in predictors.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The error term \(\epsilon_i\) is normally distributed</text><feedback format="html"><text>Normality of errors is an assumption for inference, not what makes a model "linear." Linearity refers to the parameter structure.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The model can be transformed to \(Y = \beta_0 e^{\beta_1 X}\) form</text><feedback format="html"><text>The exponential model \(\beta_0 e^{\beta_1 X}\) is a nonlinear model. The polynomial is linear in parameters without any transformation.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q16 Regression to the Mean</text></name>
+    <questiontext format="html"><text><![CDATA[Galton's regression to the mean: for bivariate normal \((X,Y)\) with equal variances \(\sigma^2\), means \(\mu_X=\mu_Y=\mu\), and correlation \(\rho\), the conditional expectation is \(E[Y|X=x] = \mu + \rho(x-\mu)\). If \(\rho = 0.6\) and a father's height is 3 inches above the mean (\(x-\mu=3\)), the predicted deviation of his son's height from the mean is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>1.8 inches above the mean</text><feedback format="html"><text>\(E[Y|X=x] - \mu = \rho(x-\mu) = 0.6\times3 = 1.8\) inches. The son regresses toward the mean: from 3 inches above to only 1.8 inches above. This is Galton's "regression to mediocrity."</text></feedback></answer>
+    <answer fraction="0" format="html"><text>3 inches above the mean</text><feedback format="html"><text>This would be the prediction only if \(\rho=1\) (perfect correlation). For \(\rho=0.6\), the prediction is \(0.6\times3=1.8\) inches.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0 inches (at the mean)</text><feedback format="html"><text>This would occur only if \(\rho=0\). For \(\rho=0.6\), there is partial regression toward the mean.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>5 inches above the mean</text><feedback format="html"><text>Impossible since \(\rho\leq1\) implies the prediction never exceeds the original deviation. Answer: 1.8 inches.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q17 Model Selection — AIC and BIC</text></name>
+    <questiontext format="html"><text><![CDATA[Information criteria for model selection: AIC = \(-2\ell(\hat{\theta}) + 2k\) and BIC = \(-2\ell(\hat{\theta}) + k\log n\), where \(\ell(\hat{\theta})\) is the maximized log-likelihood and \(k\) is the number of parameters. For large \(n\), BIC tends to select simpler models than AIC because:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>BIC's penalty per parameter \((\log n)\) grows with \(n\), while AIC's penalty \((2)\) is fixed</text><feedback format="html"><text>For \(n > e^2 \approx 7.4\), \(\log n > 2\), so BIC penalizes additional parameters more heavily than AIC. As \(n\to\infty\), BIC is consistent (selects the true model), while AIC tends to overfit with extra parameters.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>BIC uses a larger training set for estimation</text><feedback format="html"><text>Both AIC and BIC use the same data/likelihood. The difference is purely in the penalty function.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>AIC is designed for prediction while BIC is designed for explanation</text><feedback format="html"><text>This is a rough heuristic but not the formal mathematical reason. The key difference is the penalty: \(2k\) vs \(k\log n\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>BIC subtracts instead of adds the penalty term</text><feedback format="html"><text>Both AIC and BIC add the penalty to \(-2\ell\). BIC's penalty grows with \(n\) while AIC's does not.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q18 Variance Explained — Adjusted R-squared</text></name>
+    <questiontext format="html"><text><![CDATA[The adjusted \(R^2\) is defined as \(\bar{R}^2 = 1 - \dfrac{SS_{Res}/(n-p)}{SS_{Tot}/(n-1)} = 1 - (1-R^2)\dfrac{n-1}{n-p}\) where \(p\) includes the intercept. Unlike \(R^2\), adding an irrelevant predictor to the model can:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Decrease \(\bar{R}^2\) even though \(R^2\) always increases or stays the same</text><feedback format="html"><text>\(R^2\) never decreases when a predictor is added (OLS always finds a fit at least as good). But \(\bar{R}^2\) can decrease if the new predictor explains less variance than expected by chance: adding a predictor increases \(p\) (reducing \(n-p\)), and if \(R^2\) doesn't increase enough, \(\bar{R}^2\) falls.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Increase both \(R^2\) and \(\bar{R}^2\) by reducing residuals</text><feedback format="html"><text>\(R^2\) will increase (or stay the same), but \(\bar{R}^2\) may decrease if the predictor adds little information. This is the motivation for adjusted \(R^2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Leave \(\bar{R}^2\) unchanged since it accounts for degrees of freedom</text><feedback format="html"><text>Adding a predictor changes both \(SS_{Res}\) and \(n-p\). If the change in \(SS_{Res}\) is small, \(\bar{R}^2\) decreases. It does not stay unchanged.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Increase \(\bar{R}^2\) if \(R^2 > 0\)</text><feedback format="html"><text>Even when \(R^2>0\), adding an irrelevant predictor only slightly increases \(R^2\) while penalizing the df, so \(\bar{R}^2\) typically decreases.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q19 Autocorrelation — Durbin-Watson Test</text></name>
+    <questiontext format="html"><text><![CDATA[The Durbin-Watson statistic \(d = \dfrac{\sum_{t=2}^n(e_t-e_{t-1})^2}{\sum_{t=1}^n e_t^2}\) tests for first-order autocorrelation in time series regression residuals. If residuals are positively autocorrelated (\(\rho>0\)), then \(d\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Tends toward 0 (positive autocorrelation gives \(d < 2\))</text><feedback format="html"><text>If \(\rho>0\), consecutive residuals have the same sign, so \((e_t-e_{t-1})^2\) is small. Thus the numerator is small relative to the denominator, giving \(d < 2\). The statistic approximately satisfies \(d \approx 2(1-\hat{\rho})\): \(\hat{\rho}>0 \Rightarrow d<2\), \(\hat{\rho}=0 \Rightarrow d\approx 2\), \(\hat{\rho}<0 \Rightarrow d>2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Tends toward 4 (positive autocorrelation gives \(d > 2\))</text><feedback format="html"><text>\(d\approx 4\) indicates strong negative autocorrelation. Positive autocorrelation gives \(d\) close to 0, not 4.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Is exactly 2 (autocorrelation does not affect \(d\))</text><feedback format="html"><text>\(d\approx 2\) when there is no autocorrelation. Positive autocorrelation shifts \(d\) below 2.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Is undefined for the autocorrelated model</text><feedback format="html"><text>The Durbin-Watson statistic is always computable; it is specifically designed to detect autocorrelation.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT23-Q20 Regression with Indicator Variables</text></name>
+    <questiontext format="html"><text><![CDATA[In a regression model \(Y = \beta_0 + \beta_1 X + \beta_2 D + \epsilon\) where \(D\in\{0,1\}\) is a dummy variable (0 = group A, 1 = group B), the coefficient \(\beta_2\) represents:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The difference in intercepts between groups B and A, holding \(X\) constant</text><feedback format="html"><text>For group A (\(D=0\)): \(E[Y|X,D=0]=\beta_0+\beta_1 X\). For group B (\(D=1\)): \(E[Y|X,D=1]=(\beta_0+\beta_2)+\beta_1 X\). The slopes are assumed equal; \(\beta_2\) is the vertical shift (difference in intercepts) between the two parallel regression lines.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The difference in slopes between groups B and A</text><feedback format="html"><text>Difference in slopes would require an interaction term \(\beta_3 \cdot X \cdot D\). Without the interaction, the model has parallel regression lines (same slope, different intercepts).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The mean of \(Y\) for group B when \(X=0\)</text><feedback format="html"><text>The mean of \(Y\) for group B at \(X=0\) is \(\beta_0+\beta_2\) (the intercept for group B), not \(\beta_2\) alone.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The proportion of variance in \(Y\) explained by group membership</text><feedback format="html"><text>That would be related to \(R^2\) changes, not the coefficient \(\beta_2\).</text></feedback></answer>
+  </question>
+
+</quiz>

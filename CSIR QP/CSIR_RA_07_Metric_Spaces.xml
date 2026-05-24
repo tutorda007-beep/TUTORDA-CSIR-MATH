@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Real Analysis/Metric Spaces</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Definition and Examples</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following are valid metrics on \(\mathbb{R}^n\)? <strong>Select ALL correct options.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (C)</strong></p><p>(A) TRUE: The Euclidean metric \(d_2(x,y)=\sqrt{\sum(x_i-y_i)^2}\) is a metric (triangle inequality from Cauchy-Schwarz). (C) TRUE: The sup metric \(d_\infty(x,y)=\max_i|x_i-y_i|\) is a metric (easy to verify). (B) FALSE: \(d(x,y)=(\sum|x_i-y_i|^{1/2})^2\) is NOT a metric for \(n\geq2\) (triangle inequality fails). (D) FALSE: \(d(x,y)=|x_1-y_1|\cdot|x_2-y_2|\) is not a metric (not positive definite for distinct points with same first coordinate).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[Euclidean metric: \(d_2(x,y) = \sqrt{\sum_{i=1}^n(x_i-y_i)^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(d(x,y) = \left(\sum_{i=1}^n|x_i-y_i|^{1/2}\right)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Sup metric: \(d_\infty(x,y) = \max_{1\leq i\leq n}|x_i - y_i|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(d(x,y) = |x_1-y_1|\cdot|x_2-y_2|\) on \(\mathbb{R}^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Open and Closed Sets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a metric space \((X,d)\), <strong>select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (D)</strong></p><p>(A) TRUE: arbitrary unions of open sets are open (by definition of topology). (D) TRUE: finite intersections of open sets are open (not infinite — e.g., \(\bigcap_{n=1}^\infty(-1/n,1/n)=\{0\}\) is closed). (B) FALSE: infinite intersections of open sets need not be open (as shown). (C) FALSE: finite unions of closed sets are closed, not arbitrary (e.g., \(\bigcup_{n=1}^\infty[1/n,1]=[0,1]\setminus\{0\}\cup\{0\}...\) actually \(=[0,1]\) — better: arbitrary union of closed sets need not be closed: \(\bigcup_{n=2}^\infty[1/n,1]=(0,1]\) open).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[Arbitrary unions of open sets are open]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Arbitrary intersections of open sets are open]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Arbitrary unions of closed sets are closed]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Finite intersections of open sets are open]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Completeness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following metric spaces are COMPLETE? <strong>Select ALL correct options.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (D)</strong></p><p>(A) TRUE: \(\mathbb{R}^n\) with Euclidean metric is complete (Cauchy sequences converge). (D) TRUE: \(C[a,b]\) with sup norm \(\|f\|_\infty = \sup|f(x)|\) is a complete metric space (Banach space). (B) FALSE: \(\mathbb{Q}\) with the usual metric is NOT complete (e.g., \(1, 1.4, 1.41, \ldots \to \sqrt{2}\notin\mathbb{Q}\)). (C) FALSE: \((0,1)\) with the usual metric is NOT complete (e.g., \(1/n\) is Cauchy but converges to \(0\notin(0,1)\)).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\mathbb{R}^n\) with the Euclidean metric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(\mathbb{Q}\) with the usual metric \(d(x,y)=|x-y|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\((0,1)\) with the usual metric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(C[a,b]\) with the sup norm metric \(d(f,g)=\|f-g\|_\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Compactness Equivalence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a metric space \((X,d)\), a subset \(K\) is compact if and only if. <strong>Select ALL equivalent conditions.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (C)</strong></p><p>In a metric space, the following are equivalent: (B) Sequential compactness: every sequence in \(K\) has a subsequence converging in \(K\). (C) Complete + Totally bounded: \(K\) can be covered by finitely many \(\epsilon\)-balls for every \(\epsilon>0\), and every Cauchy sequence converges. (A) FALSE: closed and bounded is equivalent to compact ONLY in \(\mathbb{R}^n\) (Heine-Borel), not in general metric spaces. (D) FALSE: separability (countable dense subset) is neither necessary nor sufficient for compactness.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Closed and bounded (valid in ALL metric spaces)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Every sequence in \(K\) has a subsequence converging to a point in \(K\) (sequentially compact)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Complete and totally bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Separable (has a countable dense subset)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Banach Fixed Point Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Banach Fixed Point (Contraction Mapping) Theorem states: if \((X,d)\) is a complete metric space and \(T:X\to X\) is a contraction (\(\exists\,k<1: d(Tx,Ty)\leq k\,d(x,y)\) for all \(x,y\)), then <strong>select ALL correct conclusions:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (D)</strong></p><p>(A) TRUE: a contraction on a complete metric space has a unique fixed point. (D) TRUE: successive approximations \(x_n = T^n(x_0)\) converge to the fixed point at rate \(k^n d(x_0,Tx_0)/(1-k)\). (B) FALSE: the fixed point is UNIQUE. (C) FALSE: completeness of \(X\) is essential — on an incomplete space, a contraction may have no fixed point (e.g., \(T(x)=x/2\) on \((0,1)\) is a contraction without fixed point).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(T\) has a unique fixed point in \(X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(T\) may have infinitely many fixed points]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Completeness is not necessary; any metric space works]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Picard iterations \(x_{n+1}=T(x_n)\) converge to the fixed point for any initial \(x_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Baire Category Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Baire Category Theorem states that a complete metric space is of the second category (not meager). <strong>Select ALL correct consequences:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (C)</strong></p><p>(B) TRUE: a complete metric space cannot be expressed as a countable union of nowhere dense closed sets (BCT). (C) TRUE: if a complete metric space is a countable union of closed sets \(F_n\), then at least one \(F_n\) has non-empty interior — a direct consequence of BCT. (A) FALSE: \(\mathbb{R}\) (complete) is the countable union of singletons \(\{r\}\), which are closed BUT are nowhere dense; \(\mathbb{R}\) itself is NOT a countable union of nowhere dense sets — consistent with BCT. (D) FALSE: BCT does not imply uncountability directly.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(\mathbb{R}\) cannot be written as a countable union of closed sets]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[A complete metric space cannot be a countable union of nowhere dense sets]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(X = \bigcup_{n=1}^\infty F_n\) (closed), then at least one \(F_n\) has non-empty interior]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Every complete metric space is uncountable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Total Boundedness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A metric space \((X,d)\) is totally bounded if for every \(\epsilon>0\), \(X\) can be covered by finitely many \(\epsilon\)-balls. <strong>Select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (C)</strong></p><p>(A) TRUE: compact implies totally bounded (a compact space can be covered by finitely many open sets, in particular finitely many \(\epsilon\)-balls). (C) TRUE: totally bounded implies bounded (since finitely many \(\epsilon\)-balls cover \(X\), the diameter is bounded). (B) FALSE: bounded does NOT imply totally bounded (e.g., the unit ball in an infinite-dimensional Banach space is bounded but not totally bounded). (D) FALSE: totally bounded + complete = compact, not totally bounded = compact by itself.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[Compact metric spaces are totally bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Bounded metric spaces are always totally bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Totally bounded spaces are bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Totally bounded always implies compact]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Uniform Continuity on Compact Sets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f: (X,d_X) \to (Y,d_Y)\) be a continuous map where \(X\) is compact. <strong>Select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (D)</strong></p><p>(B) TRUE: continuous maps on compact metric spaces are uniformly continuous (Heine-Cantor theorem, generalized to metric spaces). (D) TRUE: the image \(f(X)\) of a compact set under a continuous map is compact. (A) FALSE: \(f\) need not be differentiable. (C) FALSE: open subsets of \(X\) need not map to open sets; continuous maps in general are not open maps.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f\) is differentiable on \(X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) is uniformly continuous on \(X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(f\) maps open sets to open sets (open map)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f(X)\) is compact in \(Y\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Equivalent Metrics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Two metrics \(d_1\) and \(d_2\) on the same set \(X\) are equivalent (topologically) if they generate the same topology. <strong>Select ALL correct implications of equivalent metrics:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (C)</strong></p><p>(A) TRUE: equivalent metrics have the same open sets, hence the same convergent sequences. (C) TRUE: same open sets means same notions of continuity — a function is continuous w.r.t. \(d_1\) iff it is w.r.t. \(d_2\). (B) FALSE: equivalent metrics need NOT be uniformly equivalent (uniform equivalence requires \(c_1 d_1\leq d_2\leq c_2 d_1\)). E.g., \(d(x,y)=|x-y|\) and \(d'(x,y)=|x-y|/(1+|x-y|)\) on \(\mathbb{R}\) are equivalent but not uniformly equivalent. (D) FALSE: completeness is NOT a topological property and may differ for equivalent metrics.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[A sequence converges in \((X,d_1)\) iff it converges in \((X,d_2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Uniform continuity is the same in both metrics]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Continuity of maps to/from \(X\) is the same under both metrics]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Completeness is always preserved under equivalent metrics]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Completion of a Metric Space</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Every metric space \((X,d)\) has a completion \((\hat{X},\hat{d})\). <strong>Select ALL correct statements about the completion:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (D)</strong></p><p>(B) TRUE: \(X\) is isometrically embedded as a dense subspace of its completion \(\hat{X}\). (D) TRUE: the completion is unique up to isometry — any two completions of \((X,d)\) are isometrically isomorphic (fixing elements of \(X\)). (A) FALSE: the completion may not be bounded (e.g., completion of \(\mathbb{Q}\) is \(\mathbb{R}\), which is unbounded). (C) FALSE: if \(X\) is already complete, \(\hat{X}=X\) — completion adds only limit points of Cauchy sequences not already in \(X\).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[The completion is always bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(X\) embeds isometrically as a dense subspace of \(\hat{X}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[The completion \(\hat{X}\) is always strictly larger than \(X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The completion is unique up to isometry]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Connectedness in Metric Spaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following metric spaces are connected? <strong>Select ALL correct options.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (D)</strong></p><p>(A) TRUE: \(\mathbb{R}^n\) is connected for all \(n\geq1\) (it is path-connected). (D) TRUE: any interval \((a,b)\) in \(\mathbb{R}\) is connected (connected subsets of \(\mathbb{R}\) are exactly the intervals). (B) FALSE: \(\mathbb{Q}\) is NOT connected — for any irrational \(c\), \(\mathbb{Q} = (\mathbb{Q}\cap(-\infty,c))\cup(\mathbb{Q}\cap(c,\infty))\) is a disconnection. (C) FALSE: \(\{0,1\}\) with discrete metric is disconnected (both points are isolated open sets).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\mathbb{R}^n\) with the Euclidean metric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(\mathbb{Q}\) with the usual metric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(\{0,1\}\) with the discrete metric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Any open interval \((a,b) \subset \mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Discrete Metric Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In the discrete metric space \((X, d)\) where \(d(x,y)=1\) for \(x\neq y\) and \(d(x,x)=0\). <strong>Select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (C)</strong></p><p>(B) TRUE: every subset is both open and closed (clopen) in the discrete metric — every singleton \(\{x\} = B(x,1/2)\) is open. (C) TRUE: every function from a discrete metric space is continuous (preimage of any set is a subset of \(X\), hence open in the discrete topology). (A) FALSE: a convergent sequence in the discrete metric must be eventually constant (since for convergence, \(d(x_n,L)<1/2\) eventually means \(x_n=L\)). (D) FALSE: \(X\) is compact under discrete metric iff \(X\) is FINITE (otherwise the open cover of singletons has no finite subcover).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Every sequence in \(X\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Every subset of \(X\) is both open and closed]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Every function from \((X,d)\) to any metric space is continuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[If \(X\) is infinite, \((X,d)\) is compact]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Open Mapping and Homeomorphism</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A continuous bijection \(f: X \to Y\) between metric spaces. <strong>Select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (C) and (D)</strong></p><p>(C) TRUE: if additionally \(X\) is compact and \(Y\) is Hausdorff (e.g., both metric spaces), then a continuous bijection is a homeomorphism. (D) TRUE: by compactness, \(f^{-1}\) is automatically continuous. (A) FALSE: a continuous bijection need not be a homeomorphism in general — e.g., the map \([0,2\pi) \to S^1\), \(t\mapsto e^{it}\) is a continuous bijection but NOT a homeomorphism (the inverse is not continuous at \(e^{i\cdot0}=1\)). (B) FALSE: \(f\) may not be an isometry.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Must be a homeomorphism (continuous inverse)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Must be an isometry]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Is a homeomorphism if \(X\) is compact and \(Y\) is a metric space (hence Hausdorff)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Has a continuous inverse when \(X\) is compact]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Cauchy Sequences and Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Regarding Cauchy sequences in metric spaces. <strong>Select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (D)</strong></p><p>(A) TRUE: every convergent sequence is Cauchy (triangle inequality: \(d(x_m,x_n)\leq d(x_m,L)+d(L,x_n)\to0\)). (D) TRUE: every Cauchy sequence is bounded (from some \(N\) onward, all terms within distance 1 of \(x_N\), so the whole sequence is bounded). (B) FALSE: Cauchy sequences need not converge in incomplete spaces (e.g., in \(\mathbb{Q}\)). (C) FALSE: bounded sequences need not be Cauchy (e.g., \((-1)^n\) is bounded but not Cauchy in \(\mathbb{R}\)).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[Every convergent sequence is a Cauchy sequence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Every Cauchy sequence converges (in any metric space)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Every bounded sequence is Cauchy]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Every Cauchy sequence is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Heine-Borel in R^n</text></name>
+  <questiontext format="html"><text><![CDATA[<p>By the Heine-Borel theorem, in \(\mathbb{R}^n\) a set \(K\) is compact if and only if. <strong>Select ALL correct equivalent conditions (in \(\mathbb{R}^n\)):</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (C)</strong></p><p>In \(\mathbb{R}^n\): Heine-Borel: compact \(\iff\) closed and bounded. (B) TRUE: closed and bounded is precisely the Heine-Borel characterization of compactness in \(\mathbb{R}^n\). (C) TRUE: sequentially compact (every sequence has convergent subsequence in \(K\)) is equivalent to compact in metric spaces. (A) FALSE: open and bounded (e.g., open ball) is NOT compact. (D) FALSE: complete alone is not sufficient (e.g., \(\mathbb{R}^n\) is complete but not compact).</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Open and bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Closed and bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Every sequence in \(K\) has a subsequence converging in \(K\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Complete (every Cauchy sequence converges in \(K\))]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Product Metric</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Given metric spaces \((X_1,d_1)\) and \((X_2,d_2)\), which of the following are valid metrics on \(X_1\times X_2\)? <strong>Select ALL correct options.</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (C)</strong></p><p>(A) TRUE: \(d((x_1,x_2),(y_1,y_2)) = \max(d_1(x_1,y_1), d_2(x_2,y_2))\) is a metric (sup metric on product). (C) TRUE: \(d_1(x_1,y_1)+d_2(x_2,y_2)\) is also a valid metric. Both generate the same product topology. (B) FALSE: \(d_1(x_1,y_1)\cdot d_2(x_2,y_2)\) is NOT a metric (e.g., if \(x_1=y_1\) and \(x_2\neq y_2\), distance is 0 despite \((x_1,x_2)\neq(y_1,y_2)\)). (D) FALSE: \(|d_1-d_2|\) is not a metric on the product space.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(d((x_1,x_2),(y_1,y_2)) = \max(d_1(x_1,y_1),\, d_2(x_2,y_2))\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(d((x_1,x_2),(y_1,y_2)) = d_1(x_1,y_1) \cdot d_2(x_2,y_2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(d((x_1,x_2),(y_1,y_2)) = d_1(x_1,y_1) + d_2(x_2,y_2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(d((x_1,x_2),(y_1,y_2)) = |d_1(x_1,y_1) - d_2(x_2,y_2)|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Dense Subsets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A subset \(D\) of a metric space \((X,d)\) is dense if \(\overline{D} = X\). <strong>Select ALL equivalent conditions:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (C)</strong></p><p>(B) TRUE: \(D\) is dense iff every open ball \(B(x,\epsilon)\) meets \(D\) (i.e., every non-empty open set intersects \(D\)). (C) TRUE: \(D\) is dense iff every point of \(X\) is a limit point of \(D\) (or in \(D\)) — equivalently, every \(x\in X\) can be approximated by elements of \(D\). (A) FALSE: \(D\) dense does NOT require \(D = X\) (e.g., \(\mathbb{Q}\) is dense in \(\mathbb{R}\)). (D) FALSE: dense does not mean \(D\) is open.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(D = X\) (the whole space)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Every non-empty open set in \(X\) intersects \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[For every \(x\in X\) and \(\epsilon>0\), there exists \(d\in D\) with \(\rho(x,d)<\epsilon\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(D\) is an open subset of \(X\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Uniform Continuity and Cauchy Sequences</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f: (X,d_X) \to (Y,d_Y)\) be uniformly continuous. <strong>Select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (A) and (C)</strong></p><p>(A) TRUE: uniformly continuous maps preserve Cauchy sequences — if \(\{x_n\}\) is Cauchy in \(X\), then \(\{f(x_n)\}\) is Cauchy in \(Y\). This follows from the definition: given \(\epsilon>0\), find \(\delta>0\) such that \(d_X(x,y)<\delta\Rightarrow d_Y(f(x),f(y))<\epsilon\); since \(\{x_n\}\) is Cauchy, eventually \(d_X(x_m,x_n)<\delta\), so \(d_Y(f(x_m),f(x_n))<\epsilon\). (C) TRUE: consequence — uniform continuity extends to the completion. (B) FALSE: merely continuous maps do NOT necessarily preserve Cauchy sequences. (D) FALSE: uniform continuity alone doesn't require compactness.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[If \(\{x_n\}\) is a Cauchy sequence in \(X\), then \(\{f(x_n)\}\) is Cauchy in \(Y\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Merely continuous maps also preserve Cauchy sequences]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) extends uniquely to a uniformly continuous map \(\hat{f}: \hat{X} \to \hat{Y}\) (if \(Y\) is complete)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(X\) must be compact for \(f\) to be uniformly continuous]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Metric Spaces - Nowhere Dense and Interior</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A set \(E\) in a metric space is nowhere dense if its closure \(\overline{E}\) has empty interior. <strong>Select ALL correct statements:</strong></p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (B) and (D)</strong></p><p>(B) TRUE: the complement of a nowhere dense set's closure is a dense open set: \(X\setminus\overline{E}\) is open and dense. (D) TRUE: \(\mathbb{Z}\) in \(\mathbb{R}\) is closed (hence \(\overline{\mathbb{Z}}=\mathbb{Z}\)) and has empty interior (no open interval fits in \(\mathbb{Z}\)), so it is nowhere dense. (A) FALSE: \(\mathbb{Q}\) in \(\mathbb{R}\) is NOT nowhere dense — its closure is \(\mathbb{R}\), which has non-empty interior. (C) FALSE: a nowhere dense set need not be finite — e.g., Cantor set is uncountable and nowhere dense.</p>]]></text></generalfeedback>
+  <defaultgrade>2.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="-33.33" format="html"><text><![CDATA[\(\mathbb{Q}\) is nowhere dense in \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The complement of \(\overline{E}\) is a dense open set when \(E\) is nowhere dense]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="-33.33" format="html"><text><![CDATA[Every nowhere dense set is finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\mathbb{Z}\) is nowhere dense in \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

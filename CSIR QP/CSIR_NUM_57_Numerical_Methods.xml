@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Numerical Analysis/Root Finding and Interpolation</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>NUM_Q01_BisectionConvergence</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The bisection method applied to find a root in \([a,b]\) guarantees an error bound of \(\varepsilon_n\) after \(n\) steps given by]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\varepsilon_n \leq \frac{b-a}{2^n}\)]]></text>
+      <feedback><text>Correct. Each bisection step halves the interval, so after \(n\) steps the uncertainty is at most \((b-a)/2^n\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\varepsilon_n \leq \frac{b-a}{n}\)]]></text>
+      <feedback><text>Linear reduction in error would apply to the regula falsi method in ideal cases, not bisection; bisection gives exponential (geometric) reduction.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\varepsilon_n \leq (b-a)^{2^n}\)]]></text>
+      <feedback><text>This would imply superexponential convergence, which is incorrect; bisection is only linearly convergent.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\varepsilon_n \leq \frac{b-a}{2^{n+1}}\)]]></text>
+      <feedback><text>After \(n\) bisections, the interval has length \((b-a)/2^n\), so the error is bounded by half of that, i.e., \((b-a)/2^{n+1}\). While this tighter bound is also correct in some formulations, the standard statement is \((b-a)/2^n\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>NUM_Q02_Newton_Order</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Newton-Raphson's iteration \(x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}\) converges with order of convergence]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Quadratic (order 2) near a simple root, meaning \(|e_{n+1}| \approx C|e_n|^2\) with \(C = |f''(\alpha)|/(2|f'(\alpha)|)\)]]></text>
+      <feedback><text>Correct. Taylor expansion of \(f(x_n)\) about the root \(\alpha\) shows the error satisfies \(e_{n+1} \approx \frac{f''(\alpha)}{2f'(\alpha)}e_n^2\), giving quadratic convergence for simple roots.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Linear (order 1) with contraction constant \(|f''(\alpha)|/|f'(\alpha)|\)]]></text>
+      <feedback><text>Newton-Raphson is quadratic, not linear, near simple roots; linear convergence would be too slow for most practical purposes.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Cubic (order 3) near a simple root]]></text>
+      <feedback><text>Order 3 is the convergence rate of Halley's method, not Newton-Raphson.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Superlinear (order \(\approx 1.618\)) near a simple root]]></text>
+      <feedback><text>Order \(\phi = (1+\sqrt{5})/2 \approx 1.618\) is the convergence rate of the secant method, not Newton-Raphson.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>NUM_Q03_LagrangeInterp</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Lagrange interpolating polynomial through the nodes \((x_0,y_0),(x_1,y_1),\ldots,(x_n,y_n)\) is \(P_n(x) = \sum_{k=0}^n y_k L_k(x)\). What is \(L_k(x_j)\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(L_k(x_j) = \delta_{kj}\) (1 if \(k=j\), 0 otherwise)]]></text>
+      <feedback><text>Correct. The cardinal polynomials \(L_k\) are constructed precisely so that \(L_k(x_j)=\delta_{kj}\), ensuring \(P_n(x_j)=y_j\) for all nodes.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(L_k(x_j) = 1\) for all \(j\)]]></text>
+      <feedback><text>If all basis values were 1, the interpolant would sum to \(\sum y_k\) at every node, not reproduce \(y_j\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(L_k(x_j) = y_k\) for all \(j\)]]></text>
+      <feedback><text>The basis polynomials \(L_k\) do not depend on the \(y\) values; they are functions of the nodes only.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(L_k(x_j) = k/n\) uniformly]]></text>
+      <feedback><text>No such relation holds; cardinal basis values are 0 or 1 at nodes, not proportional to \(k/n\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>NUM_Q04_InterpolationError</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The error in polynomial interpolation of \(f \in C^{n+1}[a,b]\) at \(n+1\) distinct nodes \(x_0,\ldots,x_n\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(f(x) - P_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}\prod_{k=0}^n(x-x_k)\) for some \(\xi \in (a,b)\)]]></text>
+      <feedback><text>Correct. This is the standard interpolation error formula, analogous to the remainder in Taylor's theorem, with \(\xi\) depending on \(x\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f(x) - P_n(x) = \frac{f^{(n)}(\xi)}{n!}\prod_{k=0}^n(x-x_k)\)]]></text>
+      <feedback><text>The order of the derivative in the error formula is \(n+1\), not \(n\); and the factorial denominator is \((n+1)!\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f(x) - P_n(x) = \frac{f^{(n+1)}(\xi)}{n!}\sum_{k=0}^n(x-x_k)\)]]></text>
+      <feedback><text>The error involves the product \(\prod(x-x_k)\), not the sum; and the factorial is \((n+1)!\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f(x) - P_n(x) \leq \|f^{(n+1)}\|_\infty (x-a)^{n+1}\)]]></text>
+      <feedback><text>This is a loose bound; the exact formula involves the node polynomial \(\omega_{n+1}(x)=\prod(x-x_k)\), which can be smaller or larger than \((x-a)^{n+1}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>NUM_Q05_DividedDifferences</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Newton divided-difference form of the interpolating polynomial is \(P_n(x) = f[x_0] + f[x_0,x_1](x-x_0) + \cdots + f[x_0,\ldots,x_n]\prod_{k=0}^{n-1}(x-x_k)\). The divided difference \(f[x_0,x_1]\) equals]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{f(x_1) - f(x_0)}{x_1 - x_0}\)]]></text>
+      <feedback><text>Correct. The first-order divided difference is the standard slope formula; higher-order divided differences are defined recursively.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f'(x_0)\)]]></text>
+      <feedback><text>The divided difference \(f[x_0,x_1]\) approaches \(f'(x_0)\) as \(x_1 \to x_0\) (confluent case), but in general it is the finite difference quotient.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{f(x_0) + f(x_1)}{2}\)]]></text>
+      <feedback><text>This is the arithmetic mean of function values, not the divided difference.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f(x_1) - f(x_0)\)]]></text>
+      <feedback><text>This is the forward difference \(\Delta f\), not the divided difference; the divided difference is divided by \(x_1 - x_0\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>NUM_Q06_SplineInterp</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A natural cubic spline \(S(x)\) on \([a,b]\) with knots \(a=x_0 < x_1 < \cdots < x_n = b\) satisfies which conditions?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(S \in C^2[a,b]\), \(S|_{[x_k,x_{k+1}]}\) is cubic for each \(k\), \(S(x_k)=f(x_k)\) for all \(k\), and \(S''(a) = S''(b) = 0\) (natural BC)]]></text>
+      <feedback><text>Correct. Natural cubic splines have global \(C^2\) continuity, piecewise cubic form, data interpolation at nodes, and vanishing second derivatives at the endpoints.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(S \in C^3[a,b]\) and \(S|_{[x_k,x_{k+1}]}\) is cubic]]></text>
+      <feedback><text>A \(C^3\) piecewise cubic on \(n\) intervals would be globally a single cubic; splines are only \(C^2\), not \(C^3\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Natural BC means \(S'(a) = S'(b) = 0\), not \(S''=0\)]]></text>
+      <feedback><text>Natural (or "free") boundary conditions for splines impose \(S''(a)=S''(b)=0\), not zero first derivatives (which would be "clamped" conditions).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(S\) is a polynomial of degree at most 4 on all of \([a,b]\)]]></text>
+      <feedback><text>A cubic spline is piecewise cubic, not a single degree-4 polynomial; the piecewise structure is essential to the definition.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>NUM_Q07_FixedPoint</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The fixed-point iteration \(x_{n+1} = g(x_n)\) converges to a fixed point \(\alpha = g(\alpha)\) if, on an interval containing \(\alpha\),]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(|g'(x)| \leq L < 1\) for some Lipschitz constant \(L\), and \(g\) maps the interval into itself]]></text>
+      <feedback><text>Correct. The Banach fixed-point theorem requires \(g\) to be a contraction (\(|g'|\leq L < 1\)) on a closed interval it maps into itself, guaranteeing a unique fixed point and linear convergence.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(g'(\alpha) = 0\) (stationarity at the fixed point)]]></text>
+      <feedback><text>If \(g'(\alpha)=0\) the iteration converges quadratically locally, but this is not the general condition for convergence.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(|g'(x)| > 1\) everywhere on the interval]]></text>
+      <feedback><text>This would make \(g\) an expansion, not a contraction, and the iteration would diverge.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(g\) is differentiable and \(g'(\alpha) = 1\)]]></text>
+      <feedback><text>When \(|g'(\alpha)| = 1\) the iteration may fail to converge; the contraction condition requires \(|g'| < 1\) strictly.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>NUM_Q08_SecantMethod</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The secant method uses the recurrence \(x_{n+1} = x_n - f(x_n)\frac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})}\). Its order of convergence near a simple root is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\phi = \frac{1+\sqrt{5}}{2} \approx 1.618\) (the golden ratio)]]></text>
+      <feedback><text>Correct. The secant method converges with order equal to the golden ratio \(\phi=(1+\sqrt5)/2\), which is the positive root of \(p^2=p+1\) arising from the error recurrence.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Quadratic (order 2), same as Newton-Raphson]]></text>
+      <feedback><text>The secant method avoids computing \(f'\) but pays a price: order \(\phi\approx1.618\) is less than quadratic.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Linear (order 1) with constant \(1/2\)]]></text>
+      <feedback><text>Linear order 1 would be too slow; the secant method achieves superlinear order \(\approx1.618\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Cubic (order 3)]]></text>
+      <feedback><text>Order 3 is the convergence rate of Halley's method; the secant method has order \(\phi\approx1.618\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>NUM_Q09_RungePhenomenon</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Runge's phenomenon refers to the behavior of polynomial interpolation of \(f(x) = \frac{1}{1+25x^2}\) on \([-1,1]\) using equally spaced nodes as the degree \(n \to \infty\). The interpolating polynomial \(P_n\)]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Oscillates with increasing amplitude near the endpoints, so \(\|P_n - f\|_\infty \to \infty\) for equally spaced nodes]]></text>
+      <feedback><text>Correct. With equally spaced nodes the Lebesgue constant grows exponentially, leading to divergent oscillations near \(\pm 1\) (Runge's phenomenon). Using Chebyshev nodes avoids this.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Converges uniformly to \(f\) on \([-1,1]\)]]></text>
+      <feedback><text>Uniform convergence fails for equally spaced nodes with Runge's function; this is the content of Runge's counterexample.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Converges in \(L^2\) but diverges pointwise at interior points]]></text>
+      <feedback><text>The divergence in Runge's phenomenon is uniform norm divergence near the endpoints, not just pointwise interior divergence.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Converges only at the interpolation nodes \(x_k\) and diverges everywhere else]]></text>
+      <feedback><text>By construction \(P_n(x_k)=f(x_k)\) always; the divergence in Runge's phenomenon is near the endpoints between nodes.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>NUM_Q10_ChebyshevNodes</text></name>
+    <questiontext format="html">
+      <text><![CDATA[To minimize the maximum interpolation error \(\|f - P_n\|_\infty\) over all choices of \(n+1\) nodes in \([-1,1]\), the optimal nodes are the Chebyshev nodes \(x_k = \cos\!\left(\frac{(2k+1)\pi}{2(n+1)}\right)\), \(k=0,\ldots,n\). The resulting minimum of \(\max_{x\in[-1,1]}|\omega_{n+1}(x)|\) where \(\omega_{n+1}(x)=\prod_{k=0}^n(x-x_k)\) equals]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{1}{2^n}\), achieved by the Chebyshev polynomial \(T_{n+1}(x)/2^n\)]]></text>
+      <feedback><text>Correct. The monic Chebyshev polynomial \(\tilde{T}_{n+1}(x) = T_{n+1}(x)/2^n\) has minimum sup-norm \(1/2^n\) among all monic degree-\((n+1)\) polynomials, so Chebyshev nodes minimize \(\|\omega_{n+1}\|_\infty\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{1}{n!}\)]]></text>
+      <feedback><text>The minimum sup-norm is \(1/2^n\), not \(1/n!\); the exponential decay in \(n\) is base 2, not factorial.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{2}{n+1}\)]]></text>
+      <feedback><text>The minimum is \(1/2^n\), which decays exponentially; \(2/(n+1)\) decays only algebraically.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{\pi}{2^{n+1}}\)]]></text>
+      <feedback><text>No extra \(\pi\) factor arises; the minimum is exactly \(1/2^n\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>NUM_Q11_GaussQuadrature</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Gauss-Legendre quadrature with \(n\) nodes is exact for polynomials of degree at most]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(2n-1\)]]></text>
+      <feedback><text>Correct. With \(n\) nodes and \(n\) weights (total \(2n\) free parameters), Gauss-Legendre quadrature achieves exactness for all polynomials up to degree \(2n-1\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(n\)]]></text>
+      <feedback><text>Exactness for degree \(n\) is what Newton-Cotes with \(n+1\) points achieves; Gauss quadrature does much better.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(n+1\)]]></text>
+      <feedback><text>Degree \(n+1\) would be the exactness of the trapezoidal rule with appropriate nodes, not Gauss quadrature.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(2n\)]]></text>
+      <feedback><text>Gauss quadrature is exact for degree \(2n-1\), not \(2n\); it cannot integrate \(x^{2n}\) exactly with \(n\) nodes.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>NUM_Q12_TrapezoidalRule</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The composite trapezoidal rule for \(\int_a^b f(x)\,dx\) with \(n\) equal subintervals of width \(h=(b-a)/n\) has a global truncation error of order]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(O(h^2)\): the error is \(-\frac{(b-a)}{12}h^2 f''(\xi)\) for some \(\xi \in (a,b)\)]]></text>
+      <feedback><text>Correct. The composite trapezoidal rule has error \(O(h^2)\); the leading term involves \(f''\) integrated over \([a,b]\), giving \(-\frac{b-a}{12}h^2f''(\xi)\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(O(h^4)\)]]></text>
+      <feedback><text>Order \(h^4\) is the error of composite Simpson's rule, not the trapezoidal rule.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(O(h)\) (first-order)]]></text>
+      <feedback><text>The trapezoidal rule achieves second-order accuracy (\(O(h^2)\)); first-order would be the midpoint or left-endpoint rectangle rules without symmetry.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(O(h^3)\)]]></text>
+      <feedback><text>Order \(h^3\) arises for the single-interval trapezoidal rule (local error), but the composite rule's global error is \(O(h^2)\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>NUM_Q13_SimpsonRule</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Simpson's \(\frac{1}{3}\)-rule for integrating \(f\) over \([a,b]\) using a single panel (with midpoint \(m=(a+b)/2\)) gives]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\int_a^b f(x)\,dx \approx \frac{b-a}{6}\bigl[f(a) + 4f(m) + f(b)\bigr]\) with error \(-\frac{(b-a)^5}{2880}f^{(4)}(\xi)\)]]></text>
+      <feedback><text>Correct. Simpson's rule uses the quadratic interpolant through \(a, m, b\); the error involves the fourth derivative and is \(O(h^5)\) per panel (global \(O(h^4)\)).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\int_a^b f(x)\,dx \approx \frac{b-a}{2}\bigl[f(a) + f(b)\bigr]\)]]></text>
+      <feedback><text>This is the trapezoidal rule, not Simpson's rule.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\int_a^b f(x)\,dx \approx \frac{b-a}{8}\bigl[f(a) + 3f(m) + 3f(m) + f(b)\bigr]\)]]></text>
+      <feedback><text>This is Simpson's \(3/8\)-rule with three equal subintervals, not the standard \(1/3\)-rule.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\int_a^b f(x)\,dx \approx (b-a)f(m)\) (midpoint rule)]]></text>
+      <feedback><text>This is the midpoint rule; Simpson's rule also uses the endpoint values with weight 1 each and midpoint with weight 4.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>NUM_Q14_LU_Decomp</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Gaussian elimination without pivoting applied to \(A\mathbf{x}=\mathbf{b}\) produces an \(LU\) factorization \(A = LU\). The matrix \(L\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Unit lower triangular (1s on diagonal, multipliers \(m_{ij} = a_{ij}^{(k)}/a_{jj}^{(k)}\) below the diagonal)]]></text>
+      <feedback><text>Correct. The lower triangular factor \(L\) has 1s on the main diagonal and the elimination multipliers below; \(U\) is the resulting upper triangular matrix.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Orthogonal (columns form an orthonormal set)]]></text>
+      <feedback><text>An orthogonal factor arises in QR decomposition, not LU; Gaussian elimination produces triangular factors.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Diagonal with entries equal to the pivots of \(A\)]]></text>
+      <feedback><text>The diagonal matrix of pivots appears in the \(LDU\) decomposition; in \(LU\), \(L\) is lower triangular (not diagonal) and \(U\) carries the pivots.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Upper triangular with diagonal entries equal to 1]]></text>
+      <feedback><text>\(L\) is lower triangular (not upper triangular) with 1s on the diagonal; \(U\) is upper triangular.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>NUM_Q15_Euler_ODE</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Euler's method for \(y' = f(x,y)\), \(y(x_0)=y_0\) with step size \(h\) gives \(y_{n+1} = y_n + hf(x_n,y_n)\). The local truncation error is of order]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(O(h^2)\) (local), giving a global error of \(O(h)\) — Euler's method is first-order accurate]]></text>
+      <feedback><text>Correct. The local truncation error (error per step) is \(\frac{h^2}{2}y''(\xi)\) (\(O(h^2)\)), but accumulated over \(O(1/h)\) steps the global error is \(O(h)\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(O(h^3)\) locally, \(O(h^2)\) globally (second-order method)]]></text>
+      <feedback><text>Second-order accuracy describes the modified Euler (Heun) or RK2 methods, not the basic Euler method.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(O(h)\) locally, \(O(1)\) globally (zeroth-order — does not converge)]]></text>
+      <feedback><text>Euler's method does converge; the local error is \(O(h^2)\) and global error \(O(h)\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(O(h^5)\) locally, \(O(h^4)\) globally]]></text>
+      <feedback><text>This describes the classical 4th-order Runge-Kutta method, not Euler's method.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>NUM_Q16_RK4</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The classical fourth-order Runge-Kutta method for \(y'=f(x,y)\) uses four stage evaluations. The correct formula for the update \(y_{n+1}\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(y_{n+1} = y_n + \frac{h}{6}(k_1+2k_2+2k_3+k_4)\) where \(k_1=f(x_n,y_n)\), \(k_2=f(x_n+h/2,y_n+hk_1/2)\), \(k_3=f(x_n+h/2,y_n+hk_2/2)\), \(k_4=f(x_n+h,y_n+hk_3)\)]]></text>
+      <feedback><text>Correct. This is the classical RK4 formula; the weights \(1,2,2,1\) (summing to 6) give fourth-order accuracy with local truncation error \(O(h^5)\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(y_{n+1} = y_n + \frac{h}{4}(k_1+2k_2+k_3)\) with three stages]]></text>
+      <feedback><text>This is a third-order method (Kutta's \(3/8\)-rule variant); classical RK4 has four stages with weights \(1,2,2,1\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(y_{n+1} = y_n + \frac{h}{2}(k_1+k_2)\) where \(k_2=f(x_n+h,y_n+hk_1)\)]]></text>
+      <feedback><text>This is the Heun (modified Euler) method — a second-order Runge-Kutta method with two stages, not fourth-order.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(y_{n+1} = y_n + hf(x_n+h/2, y_n+hf(x_n,y_n)/2)\)]]></text>
+      <feedback><text>This is the midpoint (RK2) method — second-order with two function evaluations, not fourth-order RK4.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>NUM_Q17_IterativeSolvers</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Gauss-Seidel iterative method for solving \(A\mathbf{x}=\mathbf{b}\) is guaranteed to converge for any initial guess if]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(A\) is strictly diagonally dominant: \(|a_{ii}| > \sum_{j \neq i}|a_{ij}|\) for all \(i\)]]></text>
+      <feedback><text>Correct. Strict diagonal dominance guarantees convergence of both Jacobi and Gauss-Seidel iterations; for positive definite symmetric matrices, Gauss-Seidel also converges.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(A\) is symmetric]]></text>
+      <feedback><text>Symmetry alone does not guarantee convergence of Gauss-Seidel; a symmetric indefinite matrix can lead to divergence.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(A\) has positive diagonal entries]]></text>
+      <feedback><text>Positive diagonal entries are necessary but not sufficient; strict diagonal dominance is the standard sufficient condition.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(A\) is invertible and \(\det(A) > 0\)]]></text>
+      <feedback><text>Invertibility and positive determinant do not imply convergence of iterative methods; the spectral radius condition on the iteration matrix must hold.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>NUM_Q18_PowerMethod</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The power method for finding the dominant eigenvalue of a matrix \(A\) (the one with largest absolute value) converges with rate governed by]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\left|\frac{\lambda_2}{\lambda_1}\right|^k\) where \(|\lambda_1| > |\lambda_2| \geq \cdots\); convergence is faster when this ratio is small]]></text>
+      <feedback><text>Correct. The power method error after \(k\) iterations is \(O(|\lambda_2/\lambda_1|^k)\); the method stalls when \(|\lambda_2| \approx |\lambda_1|\) (nearly equal dominant eigenvalues).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(1/k\) (algebraic decay regardless of the eigenvalue gap)]]></text>
+      <feedback><text>The power method converges geometrically (exponentially fast), not algebraically; the rate depends on the eigenvalue ratio.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\((|\lambda_1|-|\lambda_2|)^k\) (depends on the eigenvalue gap)]]></text>
+      <feedback><text>The convergence rate depends on the ratio \(|\lambda_2/\lambda_1|\), not the difference \(|\lambda_1|-|\lambda_2|\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The method always converges in exactly \(n\) steps for an \(n\times n\) matrix]]></text>
+      <feedback><text>The power method is an iterative method that converges asymptotically; it does not terminate in a finite number of steps in general.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>NUM_Q19_ConditionNumber</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The condition number \(\kappa(A) = \|A\|\cdot\|A^{-1}\|\) of a matrix governs the sensitivity of the linear system \(A\mathbf{x}=\mathbf{b}\). If \(\kappa(A) = 10^6\) and the relative error in \(\mathbf{b}\) is \(10^{-10}\), the relative error in the solution \(\mathbf{x}\) satisfies]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\frac{\|\delta\mathbf{x}\|}{\|\mathbf{x}\|} \leq \kappa(A)\frac{\|\delta\mathbf{b}\|}{\|\mathbf{b}\|} \leq 10^6 \times 10^{-10} = 10^{-4}\)]]></text>
+      <feedback><text>Correct. The standard perturbation bound gives relative error in solution \(\leq \kappa(A) \times\) relative error in data; with \(\kappa=10^6\) and relative perturbation \(10^{-10}\), the bound is \(10^{-4}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\frac{\|\delta\mathbf{x}\|}{\|\mathbf{x}\|} \leq 10^{-16}\) (machine epsilon dominates)]]></text>
+      <feedback><text>Machine epsilon (\(\approx 10^{-16}\)) bounds floating-point rounding, not the amplification of data errors; the bound here is \(10^{-4}\), much larger.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\frac{\|\delta\mathbf{x}\|}{\|\mathbf{x}\|} \leq 10^{-10}\) (same as input error)]]></text>
+      <feedback><text>A large condition number amplifies errors; the relative error in \(\mathbf{x}\) is up to \(\kappa(A)\) times larger than in \(\mathbf{b}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\frac{\|\delta\mathbf{x}\|}{\|\mathbf{x}\|} \leq 1/\kappa(A) \times 10^{-10} = 10^{-16}\)]]></text>
+      <feedback><text>The condition number multiplies (amplifies) errors; dividing by \(\kappa\) would imply the system is a contraction, which is the opposite of ill-conditioning.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>NUM_Q20_QR_Algorithm</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The QR algorithm for finding all eigenvalues of a symmetric matrix \(A\) proceeds by computing \(A = Q_0R_0\) and setting \(A_1 = R_0Q_0\), then iterating. This iteration preserves which property?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The eigenvalues of \(A_k\) are the same as those of \(A\) (the matrices are orthogonally similar: \(A_{k+1} = Q_k^T A_k Q_k\))]]></text>
+      <feedback><text>Correct. Each QR step is an orthogonal similarity transformation, so eigenvalues are preserved; the sequence \(A_k\) converges to an upper triangular (or diagonal for symmetric) matrix revealing the eigenvalues.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The characteristic polynomial of \(A_k\) changes at each step, but the trace is preserved]]></text>
+      <feedback><text>The characteristic polynomial is fully preserved (all eigenvalues are preserved), not just the trace.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\|A_k\|_F\) (Frobenius norm) decreases monotonically to zero]]></text>
+      <feedback><text>Orthogonal similarity preserves the Frobenius norm (\(\|A_k\|_F = \|A\|_F\) for all \(k\)); it does not decrease to zero.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The determinant of \(A_k\) increases toward \(\prod|\lambda_i|\)]]></text>
+      <feedback><text>Orthogonal similarity also preserves the determinant; \(\det(A_k) = \det(A)\) for all \(k\).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Real Analysis/Sequences of Real Numbers</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Sequences - Limit of n^(1/n)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The value of \(\displaystyle\lim_{n \to \infty} n^{1/n}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) 1</strong></p><p>Let \(a_n = n^{1/n}\). Taking logarithm: \(\ln a_n = \frac{\ln n}{n} \to 0\) as \(n \to \infty\) (since \(\ln n\) grows slower than \(n\)). Hence \(a_n \to e^0 = 1\). This limit is fundamental in analysis and arises in the Cauchy-Hadamard formula for radius of convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Does not exist]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Sequences - Limit of (1+1/n)^n</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The sequence \(a_n = \left(1 + \dfrac{1}{n}\right)^n\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Monotonically increasing and convergent to \(e\)</strong></p><p>By AM-GM inequality applied to the sequence, \(a_n\) is strictly increasing. It is bounded above by 3 (a simple bound). Hence by the Monotone Convergence Theorem it converges, and its limit is the defining property of \(e \approx 2.71828\ldots\). The sequence \(\left(1+\frac{1}{n}\right)^{n+1}\) is monotonically decreasing with the same limit \(e\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Monotonically decreasing and convergent to \(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded but not monotone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Monotonically increasing and convergent to \(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Divergent]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Sequences - Cauchy Sequence Characterisation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following is a Cauchy sequence in \(\mathbb{Q}\) but does NOT converge in \(\mathbb{Q}\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(a_n = \left(1+\frac{1}{n}\right)^n\)</strong></p><p>Wait — actually the classic example is the sequence of rational approximations to \(\sqrt{2}\), e.g., \(a_n\) defined by the Babylonian method: \(a_{n+1} = \frac{1}{2}(a_n + 2/a_n)\), starting from \(a_1=1\). This is Cauchy in \(\mathbb{Q}\) but converges to \(\sqrt{2} \notin \mathbb{Q}\). Among the given options, the sequence of decimal truncations of \(\sqrt{2}\) fits this criterion. \(\mathbb{Q}\) is not complete; \(\mathbb{R}\) is its completion.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The sequence of decimal truncations of \(\sqrt{2}\): \(1, 1.4, 1.41, 1.414, \ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_n = \frac{1}{n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_n = (-1)^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_n = n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Sequences - Bolzano-Weierstrass Application</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a_n = \sin(n)\). Which of the following statements is TRUE?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) The sequence \(\{a_n\}\) has subsequences converging to any value in \([-1,1]\)</strong></p><p>Since \(\{n \mod 2\pi : n \in \mathbb{N}\}\) is dense in \([0,2\pi)\) (as \(2\pi\) is irrational relative to 1), the sequence \(\sin(n)\) is dense in \([-1,1]\). By Bolzano-Weierstrass, being bounded, it has convergent subsequences. In fact, subsequences converging to every value in \([-1,1]\) exist. The sequence itself diverges since it doesn't converge to a single limit.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{a_n\}\) converges to 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{a_n\}\) is divergent and has no convergent subsequence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{a_n\}\) converges to 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\{a_n\}\) has subsequences converging to any value in \([-1,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Sequences - limsup and liminf</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the sequence \(a_n = (-1)^n \left(1 + \dfrac{1}{n}\right)\), the values of \(\limsup_{n\to\infty} a_n\) and \(\liminf_{n\to\infty} a_n\) are respectively:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(1\) and \(-1\)</strong></p><p>For even \(n\): \(a_n = 1 + 1/n \to 1\). For odd \(n\): \(a_n = -(1+1/n) \to -1\). The \(\limsup\) is the largest cluster point \(= 1\), and the \(\liminf\) is the smallest cluster point \(= -1\). Since \(\limsup \neq \liminf\), the sequence diverges.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\) and \(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\) and \(-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-1\) and \(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\) and \(-\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Sequences - Squeeze Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(0 \leq a_n \leq \dfrac{n}{n^2+1}\) for all \(n \geq 1\), then \(\displaystyle\lim_{n\to\infty} a_n\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(0\)</strong></p><p>We have \(0 \leq a_n \leq \frac{n}{n^2+1} < \frac{n}{n^2} = \frac{1}{n} \to 0\). By the Squeeze (Sandwich) Theorem, \(\lim_{n\to\infty} a_n = 0\). This is a direct application: any sequence squeezed between 0 and something tending to 0 must converge to 0.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cannot be determined]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Sequences - Ratio Test for Sequences</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the sequence \(a_n = \dfrac{n!}{n^n}\), the ratio \(\dfrac{a_{n+1}}{a_n}\) tends to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(1/e\)</strong></p><p>\(\frac{a_{n+1}}{a_n} = \frac{(n+1)!}{(n+1)^{n+1}} \cdot \frac{n^n}{n!} = \frac{n^n}{(n+1)^n} = \left(\frac{n}{n+1}\right)^n = \left(1 - \frac{1}{n+1}\right)^n \to e^{-1} = 1/e\). Since \(1/e < 1\), the sequence \(a_n \to 0\) (and by Stirling's approximation, \(n! \sim \sqrt{2\pi n}(n/e)^n\), confirming \(n!/n^n \sim \sqrt{2\pi n}/e^n \to 0\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Sequences - Monotone Convergence Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Define \(a_1 = \sqrt{2}\) and \(a_{n+1} = \sqrt{2 + a_n}\) for \(n \geq 1\). Then \(\displaystyle\lim_{n\to\infty} a_n\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) 2</strong></p><p>One can show by induction that \(a_n < 2\) for all \(n\) (bounded above by 2) and that \(a_{n+1} > a_n\) (strictly increasing). By the Monotone Convergence Theorem, \(L = \lim a_n\) exists. Taking limits: \(L = \sqrt{2+L}\), so \(L^2 = 2+L\), giving \(L^2 - L - 2 = 0\), i.e., \((L-2)(L+1)=0\). Since \(L > 0\), we get \(L = 2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1 + \sqrt{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{3}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Sequences - Cesaro Mean Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(\{a_n\}\) is a convergent sequence with \(\lim_{n\to\infty} a_n = L\), and \(\sigma_n = \dfrac{a_1 + a_2 + \cdots + a_n}{n}\) (Cesàro mean), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\lim_{n\to\infty} \sigma_n = L\)</strong></p><p>This is the Cesàro mean theorem: if \(a_n \to L\), then the arithmetic mean \(\sigma_n \to L\). The converse is false: \(\sigma_n\) can converge even when \(a_n\) diverges (e.g., \(a_n = (-1)^n\) gives \(\sigma_n \to 0\)). This result shows that summability methods can extend the notion of convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\lim_{n\to\infty} \sigma_n = L\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sigma_n\) may diverge even when \(a_n\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sigma_n \to L^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sigma_n \to 0\) regardless of \(L\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Sequences - Limit of (n!)^(1/n)/n</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Using Stirling's approximation \(n! \sim \sqrt{2\pi n}(n/e)^n\), the value of \(\displaystyle\lim_{n\to\infty} \frac{(n!)^{1/n}}{n}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(1/e\)</strong></p><p>By Stirling: \((n!)^{1/n} \approx \left(\sqrt{2\pi n}\right)^{1/n} \cdot \frac{n}{e}\). Now \(\left(\sqrt{2\pi n}\right)^{1/n} = (2\pi n)^{1/(2n)} \to 1\). So \(\frac{(n!)^{1/n}}{n} \to \frac{1}{e}\). Equivalently, by the root test applied to \(\sum \frac{1}{n!}\), one gets \(\limsup (1/n!)^{1/n} = 0\), and similarly \(\lim (n!)^{1/n}/n = 1/e\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Sequences - Subsequence and Divergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A sequence \(\{a_n\}\) diverges if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) It has two subsequences converging to different limits</strong></p><p>A sequence converges iff every subsequence converges to the same limit. Equivalently, a sequence diverges iff it has two subsequences converging to different limits (or a subsequence with no convergent subsubsequence). Options (A) is false (e.g., \((-1)^n\) has a bounded divergent subsequence but by Bolzano-Weierstrass every bounded sequence has convergent subsequences). Option (C) and (D) are incorrect formulations.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It has a bounded subsequence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[It has two subsequences converging to different limits (or a subsequence diverging to \(\pm\infty\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is not bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is not monotone]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Sequences - Nested Interval Property</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(\{[a_n, b_n]\}\) is a sequence of nested closed intervals (i.e., \([a_{n+1},b_{n+1}] \subset [a_n,b_n]\)) with \(b_n - a_n \to 0\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) The intersection \(\bigcap_{n=1}^{\infty}[a_n,b_n]\) contains exactly one point</strong></p><p>By the Nested Interval Theorem (a consequence of completeness of \(\mathbb{R}\)): for nested closed bounded intervals, \(\bigcap [a_n,b_n] \neq \emptyset\). When additionally \(b_n - a_n \to 0\), the intersection contains exactly one point \(c = \sup\{a_n\} = \inf\{b_n\}\). This fails in \(\mathbb{Q}\) (lack of completeness) and also for open intervals (e.g., \((0,1/n)\) has empty intersection in \(\mathbb{R}\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\bigcap_{n=1}^{\infty}[a_n,b_n]\) contains exactly one point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bigcap_{n=1}^{\infty}[a_n,b_n]\) is empty]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bigcap_{n=1}^{\infty}[a_n,b_n]\) contains at least two points]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The conclusion requires \(a_n\) to be monotone]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Sequences - Convergence of Recursive Sequence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a_1 = 1\) and \(a_{n+1} = \dfrac{1}{2}\left(a_n + \dfrac{3}{a_n}\right)\). Then \(\lim_{n\to\infty} a_n =\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\sqrt{3}\)</strong></p><p>This is Newton's method for \(\sqrt{3}\) (solving \(x^2=3\)). By AM-GM: \(a_{n+1} = \frac{1}{2}(a_n + 3/a_n) \geq \sqrt{3}\) for all \(n\geq 1\). For \(n\geq2\), \(a_n \geq \sqrt{3}\), and one can show \(a_{n+1} \leq a_n\) (monotone decreasing). By MCT, the limit \(L\) satisfies \(L = \frac{1}{2}(L+3/L)\), giving \(L^2=3\), so \(L=\sqrt{3}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sqrt{3}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Sequences - Root Test for Sequences</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The value of \(\displaystyle\lim_{n\to\infty} \left(\frac{n^n}{e^n \cdot n!}\right)^{1/n}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(e\)</strong></p><p>By Stirling: \(n! \sim \sqrt{2\pi n}(n/e)^n\), so \(\frac{n^n}{e^n \cdot n!} \sim \frac{n^n}{e^n \cdot \sqrt{2\pi n}(n/e)^n} = \frac{1}{\sqrt{2\pi n}}\). Then \(\left(\frac{1}{\sqrt{2\pi n}}\right)^{1/n} = (2\pi n)^{-1/(2n)} \to 1\). More carefully: \(\left(\frac{n^n}{e^n n!}\right)^{1/n} = \frac{n}{e \cdot (n!)^{1/n}} \to \frac{1}{e \cdot (1/e)} = e\cdot\frac{1}{1/e}=e^2\)... let me recompute: \((n!)^{1/n} \approx n/e\), so \(\frac{n}{e \cdot (n/e)} = \frac{n\cdot e}{e\cdot n} = 1\). So the limit is 1. Reconsidering: \(\frac{n^n}{e^n \cdot n!}\)... so the answer is \(1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Sequences - Subsequence Limits</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a_n = \dfrac{(-1)^n n + 1}{n+2}\). Then \(\limsup_{n\to\infty} a_n =\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(1\)</strong></p><p>For even \(n\): \(a_n = \frac{n+1}{n+2} = 1 - \frac{1}{n+2} \to 1\). For odd \(n\): \(a_n = \frac{-n+1}{n+2} = \frac{-(n-1)}{n+2} \to -1\). The cluster points are \(1\) and \(-1\). Therefore \(\limsup a_n = 1\) and \(\liminf a_n = -1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Sequences - Contraction Mapping and Fixed Point</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider the sequence defined by \(a_{n+1} = \cos(a_n)\) with \(a_1 = 1\) (radians). By the Banach fixed-point theorem, this sequence converges to the unique fixed point of \(f(x)=\cos(x)\), known as the Dottie number. Which of the following correctly explains the convergence?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(|\cos'(x)| = |\sin(x)| < 1\) on an interval around the fixed point, making \(f\) a contraction there</strong></p><p>The Dottie number \(d \approx 0.7391\) satisfies \(\cos(d)=d\). Since \(|f'(x)| = |\sin(x)|\) and at \(x \approx 0.74\), \(|\sin(0.74)| \approx 0.674 < 1\), the mapping is a contraction near the fixed point. By the Banach fixed-point theorem applied to a suitable closed interval, the iteration converges.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\cos\) is bounded, so every sequence \(a_{n+1}=\cos(a_n)\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sequence is monotone and bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(|\cos'(x)| = |\sin(x)| < 1\) on an interval around the fixed point, making \(f\) a contraction there]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\cos\) is a bijection on \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Sequences - Cauchy Criterion for Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The sequence \(a_n = \displaystyle\sum_{k=1}^{n} \frac{(-1)^{k+1}}{k}\) is Cauchy because for \(m > n\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(|a_m - a_n| \leq \frac{1}{n+1}\)</strong></p><p>For \(m > n\): \(|a_m - a_n| = \left|\sum_{k=n+1}^{m}\frac{(-1)^{k+1}}{k}\right| \leq \frac{1}{n+1}\) by the alternating series estimation. For any \(\epsilon > 0\), choose \(N > 1/\epsilon\); then \(m,n > N\) implies \(|a_m-a_n| \leq \frac{1}{n+1} < \frac{1}{N} < \epsilon\). So \(\{a_n\}\) is Cauchy and converges to \(\ln 2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(|a_m - a_n| \leq \dfrac{1}{n+1} \to 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|a_m - a_n| \leq \dfrac{1}{n} + \dfrac{1}{m}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sequence is bounded so it must be Cauchy]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|a_m - a_n| = \left|\ln m - \ln n\right|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Sequences - Geometric Sequence Limit</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For which values of \(r\) does the geometric sequence \(a_n = r^n\) converge?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(-1 < r \leq 1\)</strong></p><p>If \(|r| < 1\): \(r^n \to 0\). If \(r = 1\): \(r^n = 1 \to 1\). If \(r = -1\): \((-1)^n\) oscillates between \(\pm 1\), diverges. If \(|r| > 1\): \(|r^n| \to \infty\), diverges. So convergence holds iff \(-1 < r \leq 1\) (i.e., \(|r| < 1\) or \(r=1\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(|r| < 1\) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|r| \leq 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0 \leq r \leq 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(-1 < r \leq 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Sequences - Limit Superior Property</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(\{a_n\}\) and \(\{b_n\}\) are bounded sequences, then which inequality always holds?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\limsup(a_n + b_n) \leq \limsup a_n + \limsup b_n\)</strong></p><p>This is a fundamental property of limsup: \(\limsup(a_n+b_n) \leq \limsup a_n + \limsup b_n\). Equality holds when one sequence converges. The reverse inequality is FALSE in general. Also, \(\liminf(a_n+b_n) \geq \liminf a_n + \liminf b_n\). These inequalities do not become equalities in general (e.g., \(a_n=(-1)^n\), \(b_n=(-1)^{n+1}\) gives \(a_n+b_n=0\) always).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup(a_n + b_n) \geq \limsup a_n + \limsup b_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\limsup(a_n + b_n) \leq \limsup a_n + \limsup b_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup(a_n + b_n) = \limsup a_n + \limsup b_n\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup(a_n \cdot b_n) = \limsup a_n \cdot \limsup b_n\) always]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Sequences - Convergence Implies Boundedness (Converse False)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider the following statements about a sequence \(\{a_n\}\) in \(\mathbb{R}\):<br/>(I) If \(\{a_n\}\) converges, then it is bounded.<br/>(II) If \(\{a_n\}\) is bounded, then it converges.<br/>(III) Every subsequence of a convergent sequence converges to the same limit.<br/>Which are TRUE?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) (I) and (III) only</strong></p><p>(I) TRUE: convergent sequences are bounded (since tail is bounded, and finite initial part is bounded). (II) FALSE: \(a_n = (-1)^n\) is bounded but diverges. (III) TRUE: if \(a_n \to L\) and \(\{a_{n_k}\}\) is any subsequence, then \(a_{n_k} \to L\) as well (since \(n_k \geq k\), so for \(k > N\) we get \(|a_{n_k}-L| < \epsilon\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[(I) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[(I) and (II) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[(I) and (III) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[(I), (II), and (III)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

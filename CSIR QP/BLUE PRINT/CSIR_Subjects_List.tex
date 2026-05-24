@@ -1,0 +1,1165 @@
+%% ============================================================
+%%  CSIR-UGC NET Mathematical Sciences
+%%  Complete Subject List with Sub-Topics
+%%  Based on Dec 2025 & June 2025 Paper Analysis
+%%  Compile: pdflatex CSIR_Subjects_List.tex (run twice)
+%% ============================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper, top=2cm, bottom=2cm, left=2.2cm, right=2.2cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{fontenc}
+\usepackage{inputenc}
+\usepackage{tikz}
+
+%% ---- Colours -----------------------------------------------
+\definecolor{C1}{RGB}{24,95,165}      % deep blue  (Real Analysis)
+\definecolor{C2}{RGB}{83,74,183}      % purple     (Linear Algebra)
+\definecolor{C3}{RGB}{29,130,100}     % teal       (Statistics)
+\definecolor{C4}{RGB}{186,117,23}     % amber      (Complex Analysis)
+\definecolor{C5}{RGB}{160,60,20}      % coral      (Abstract Algebra)
+\definecolor{C6}{RGB}{40,130,60}      % green      (ODEs)
+\definecolor{C7}{RGB}{100,40,150}     % violet     (PDEs)
+\definecolor{C8}{RGB}{20,100,140}     % steel-blue (Topology)
+\definecolor{C9}{RGB}{180,40,80}      % crimson    (Functional Analysis)
+\definecolor{C10}{RGB}{60,120,60}     % forest     (Calculus of Variations)
+\definecolor{C11}{RGB}{100,90,20}     % olive      (Numerical Methods)
+\definecolor{C12}{RGB}{80,80,80}      % gray       (LP & OR)
+\definecolor{CA}{RGB}{50,50,140}      % Part A blue
+
+\definecolor{bglight}{RGB}{248,248,252}
+\definecolor{bgpage}{RGB}{255,255,255}
+\definecolor{rulegray}{RGB}{200,200,210}
+
+%% ---- Hyperref ----------------------------------------------
+\hypersetup{colorlinks=true, linkcolor=C1, urlcolor=C1,
+  pdftitle={CSIR NET Maths — Subject List},
+  pdfsubject={CSIR-UGC NET Mathematical Sciences}}
+
+%% ---- Page style -------------------------------------------
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{C1}\textbf{CSIR-UGC NET} \ Mathematical Sciences — Subject \& Sub-topic Checklist}
+\fancyhead[R]{\small\color{C1}\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{C1}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+%% ---- Section formatting -----------------------------------
+\titleformat{\section}[block]
+  {\normalfont}
+  {}
+  {0pt}
+  {}
+
+%% ---- Custom subject box -----------------------------------
+%% Args: {border-colour}{bg-tint}{number}{Subject name}{marks-badge}
+\newcommand{\subjectbox}[5]{%
+\begin{tcolorbox}[
+  enhanced, breakable,
+  colback=#2!8, colframe=#1,
+  boxrule=0pt, leftrule=5pt,
+  arc=5pt,
+  top=8pt, bottom=6pt, left=10pt, right=10pt,
+  before skip=10pt, after skip=4pt
+]
+\begin{minipage}[t]{0.08\textwidth}
+  \begin{tikzpicture}
+    \node[circle, fill=#1, text=white, font=\bfseries\large,
+          minimum size=28pt, inner sep=0pt] at (0,0) {#3};
+  \end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{0.88\textwidth}
+  \vspace{3pt}
+  {\large\bfseries\color{#1} #4}\quad
+  {\small\color{#1!70!black}#5}
+\end{minipage}
+\end{tcolorbox}%
+}
+
+%% ---- Sub-topic list style ---------------------------------
+\newlist{subtopics}{itemize}{3}
+\setlist[subtopics,1]{
+  label={\color{rulegray}\textbullet},
+  leftmargin=1.8em,
+  itemsep=2pt,
+  parsep=0pt,
+  topsep=3pt,
+  partopsep=0pt
+}
+\setlist[subtopics,2]{
+  label={\color{rulegray}$\circ$},
+  leftmargin=1.6em,
+  itemsep=1pt,
+  parsep=0pt,
+  topsep=1pt
+}
+\setlist[subtopics,3]{
+  label={\color{rulegray}$\diamond$},
+  leftmargin=1.4em,
+  itemsep=1pt,
+  parsep=0pt,
+  topsep=1pt
+}
+
+%% ---- Checkbox command -------------------------------------
+\newcommand{\chk}{\textcolor{rulegray}{$\square$}\ }
+
+%% ---- Section rule -----------------------------------------
+\newcommand{\sectionrule}[1]{%
+  \vspace{4pt}
+  {\small\bfseries\color{#1}\rule[0.5ex]{0.4\linewidth}{0.5pt}\quad
+  \textit{Sub-topics}\quad\rule[0.5ex]{0.4\linewidth}{0.5pt}}
+  \vspace{2pt}
+}
+
+%% ---- Part A box -------------------------------------------
+\newcommand{\partAbox}{%
+\begin{tcolorbox}[
+  enhanced, breakable,
+  colback=CA!6, colframe=CA,
+  boxrule=0pt, leftrule=5pt,
+  arc=5pt, top=8pt, bottom=6pt, left=10pt, right=10pt,
+  before skip=10pt, after skip=4pt
+]
+\begin{minipage}[t]{0.08\textwidth}
+  \begin{tikzpicture}
+    \node[circle, fill=CA, text=white, font=\bfseries\large,
+          minimum size=28pt, inner sep=0pt] at (0,0) {A};
+  \end{tikzpicture}
+\end{minipage}%
+\begin{minipage}[t]{0.88\textwidth}
+  \vspace{3pt}
+  {\large\bfseries\color{CA} PART A — General Aptitude}\quad
+  {\small\color{CA!70!black}20 Questions $|$ Attempt 15 $|$ +2 / $-$0.5}
+\end{minipage}
+\end{tcolorbox}%
+}
+
+%% ============================================================
+\begin{document}
+\setlength{\parindent}{0pt}
+
+%% ---- TITLE PAGE -------------------------------------------
+\begin{titlepage}
+\color{white}
+\pagecolor{C1}
+\vspace*{1.5cm}
+\begin{center}
+{\fontsize{10}{12}\selectfont\bfseries\color{white!80}
+CSIR-UGC NATIONAL ELIGIBILITY TEST (NET)}\\[10pt]
+
+{\fontsize{30}{36}\selectfont\bfseries MATHEMATICAL SCIENCES}\\[6pt]
+
+{\fontsize{18}{22}\selectfont Complete Subject \& Sub-topic Checklist}\\[20pt]
+
+\begin{tikzpicture}
+  \fill[white!25] (-5.5,0) rectangle (5.5,0.25);
+\end{tikzpicture}
+
+\vspace{18pt}
+{\fontsize{12}{16}\selectfont\color{white!80}
+Based on complete analysis of\\[4pt]}
+{\fontsize{15}{19}\selectfont\bfseries December 2025 \& June 2025 Papers}\\[4pt]
+{\fontsize{11}{14}\selectfont\color{white!75}
+All 240 questions classified $|$ 12 subjects $|$ 100+ sub-topics}
+
+\vspace{36pt}
+
+\begin{tikzpicture}
+\foreach \x/\col/\lbl/\num in {
+  -4.5/white/{Subjects}/12,
+  -1.5/white/{Sub-topics}/{100+},
+  1.5/white/{Questions}/{240},
+  4.5/white/{Identical Qs}/{18}}{
+  \node[fill=white!15, rounded corners=5pt,
+    minimum width=2.4cm, minimum height=1.8cm,
+    text=white, align=center] at (\x,0)
+  {\fontsize{20}{24}\selectfont\bfseries\num\\[2pt]
+   \fontsize{7.5}{9}\selectfont\color{white!80}\lbl};
+}
+\end{tikzpicture}
+
+\vspace*{\fill}
+\begin{tikzpicture}\fill[white!20](-6,-0.12)rectangle(6,0.12);\end{tikzpicture}\\[8pt]
+{\small\color{white!60}
+Part A (General Aptitude) $|$ Part B (MCQ) $|$ Part C (MSQ) $|$ Code 704 Shift 2}
+\end{center}
+\end{titlepage}
+
+\pagecolor{white}\color{black}
+\newpage
+
+%% ---- HOW TO USE -------------------------------------------
+\begin{tcolorbox}[enhanced, colback=C1!7, colframe=C1,
+  boxrule=0.7pt, arc=5pt, left=10pt, right=10pt, top=8pt, bottom=8pt]
+\textbf{\color{C1}How to use this checklist:}\ \
+Use the $\square$ boxes to tick off sub-topics as you study each one.
+Colour bands indicate topic priority: subjects 1--3 are Tier 1 (highest ROI), 4--6 are Tier 2, 7--12 are Tier 3 / selective.
+Each subject header shows the question count across both 2025 papers and the marking scheme.
+\end{tcolorbox}
+
+\vspace{6pt}
+
+%% ---- QUICK REFERENCE TABLE --------------------------------
+\begin{center}
+{\small
+\begin{tabular}{@{}clcccl@{}}
+\toprule
+\rowcolor{C1!12}
+\textbf{\#} & \textbf{Subject} & \textbf{Qs (B+C)} & \textbf{Tier} & \textbf{Part B} & \textbf{Part C} \\
+\midrule
+1 & Real Analysis              & 38 & 1 & 4--5 & 8--9 \\
+2 & Linear Algebra             & 32 & 1 & 4   & 6   \\
+3 & Statistics \& Probability  & 30 & 1 & 5   & 8   \\
+4 & Complex Analysis           & 26 & 2 & 4   & 5--6 \\
+5 & Abstract Algebra           & 24 & 2 & 4   & 5   \\
+6 & Ordinary Differential Equations & 22 & 2 & 3 & 4 \\
+7 & Partial Differential Equations  & 18 & 3 & 2--3 & 4 \\
+8 & Topology                   & 16 & 3 & 2   & 4   \\
+9 & Functional Analysis        & 12 & 3 & 1   & 3   \\
+10 & Calculus of Variations \& Mechanics & 11 & 3 & 2 & 3 \\
+11 & Numerical Methods          & 8  & 3 & 2   & 2   \\
+12 & Linear Programming \& OR   & 3  & 4 & 1   & 1   \\
+\midrule
+A & General Aptitude (Part A)  & 20/paper & -- & -- & -- \\
+\bottomrule
+\end{tabular}}
+\end{center}
+
+\newpage
+
+%% ============================================================
+%%  SUBJECT 1 — REAL ANALYSIS
+%% ============================================================
+\subjectbox{C1}{C1}{1}{Real Analysis}%
+{38 Questions across both papers $|$ Part B: 4--5 $|$ Part C: 8--9 $|$ \textbf{Tier 1 — Highest Priority}}
+
+\sectionrule{C1}
+
+\begin{subtopics}
+
+  \item \textbf{Sequences of Real Numbers}
+  \begin{subtopics}
+    \item \chk Convergence and divergence; Cauchy sequences
+    \item \chk $\limsup$ and $\liminf$: definitions, properties, squeeze theorem
+    \item \chk Monotone sequences; bounded sequences (Bolzano-Weierstrass)
+    \item \chk Subsequences and accumulation points
+    \item \chk Decimal expansions of real numbers; digit-by-digit locking property
+    \item \chk Sequences defined by recursion: $x_{n+1}=f(x_n)$; convergence to fixed points
+  \end{subtopics}
+
+  \item \textbf{Series of Real Numbers}
+  \begin{subtopics}
+    \item \chk Convergence tests: Ratio, Root (Cauchy-Hadamard), Comparison, Limit Comparison
+    \item \chk Alternating series (Leibniz test); absolute vs.\ conditional convergence
+    \item \chk Rearrangements of series; Riemann rearrangement theorem
+    \item \chk Power series: radius of convergence; term-by-term differentiation/integration
+    \item \chk Double series and Cauchy product
+    \item \chk Series with log factors: $\sum \frac{1}{n(\log n)^\alpha (\log\log n)^\beta}$ (Bertrand-De Morgan)
+  \end{subtopics}
+
+  \item \textbf{Limits and Continuity}
+  \begin{subtopics}
+    \item \chk $\varepsilon$-$\delta$ definition; one-sided limits; limits at infinity
+    \item \chk Uniform continuity: definition, characterisation on compact sets
+    \item \chk Composition of uniformly continuous functions (e.g., $f \circ g$ when $g$ is $x^2$ on $(0,1]$)
+    \item \chk Intermediate value theorem; fixed-point theorem
+    \item \chk Lipschitz functions; relation to uniform continuity
+  \end{subtopics}
+
+  \item \textbf{Differentiability}
+  \begin{subtopics}
+    \item \chk Mean Value Theorem, Cauchy MVT, Taylor's theorem with remainder
+    \item \chk L'H\^{o}pital's rule; indeterminate forms
+    \item \chk Functions with prescribed derivatives at $0$: $f^{(n)}(0)= n!n^n$ type
+    \item \chk Implicit Function Theorem in $\mathbb{R}^n$: existence, uniqueness, derivative formula
+    \item \chk Functions of two variables: partial derivatives, differentiability, chain rule
+    \item \chk Limits in $\mathbb{R}^2$: path-dependent vs.\ genuine limits; e.g., $(ax+by)^2/(ax^2+by^2)$
+  \end{subtopics}
+
+  \item \textbf{Riemann Integration}
+  \begin{subtopics}
+    \item \chk Riemann integrability: characterisation (Lebesgue criterion — measure of discontinuities is 0)
+    \item \chk Fundamental theorem of calculus (both parts)
+    \item \chk Improper integrals: convergence on $[0,\infty)$; comparison test
+    \item \chk Functions $f \in \mathcal{F}$ (Riemann integrable on $[0,t]$): if $f$ uniformly continuous and $\int_0^\infty f$ converges $\Rightarrow$ $f(x)\to 0$
+    \item \chk Existence of $f$ with convergent $\int_0^\infty f$ but $f \not\to 0$; oscillating counterexamples
+    \item \chk Monotone functions: one-sided limits always exist; discontinuities are countable
+    \item \chk Riemann-Stieltjes integration (basics)
+  \end{subtopics}
+
+  \item \textbf{Sequences and Series of Functions}
+  \begin{subtopics}
+    \item \chk Pointwise vs.\ uniform convergence: definitions, examples, counterexamples
+    \item \chk Weierstrass M-test for uniform convergence of series
+    \item \chk Continuity under uniform convergence; integration/differentiation term-by-term
+    \item \chk Dini's theorem: monotone pointwise $\to$ uniform on compact set
+    \item \chk $f_n \to 0$ pointwise but $\int f_n \not\to 0$ examples (tent functions)
+    \item \chk Uniform convergence on sub-intervals; behaviour at boundary
+  \end{subtopics}
+
+  \item \textbf{Metric Spaces}
+  \begin{subtopics}
+    \item \chk Metric space axioms; equivalent metrics; discrete metric
+    \item \chk Open and closed sets; interior, closure, boundary
+    \item \chk Compactness: Heine-Borel, sequential compactness; finite subcover property
+    \item \chk Completeness; Cauchy sequences in metric spaces; Baire category theorem
+    \item \chk Distance function $d(x,A) = \inf_{a \in A} d(x,a)$: Lipschitz continuity (hence uniform continuity)
+    \item \chk Closed set characterisation: $A$ closed $\Leftrightarrow$ $d(x,A)>0$ for all $x \notin A$
+    \item \chk Compact metric spaces: continuous image is compact; min/max attained
+    \item \chk Contraction mapping principle (Banach Fixed Point Theorem)
+  \end{subtopics}
+
+  \item \textbf{Countability and Set Theory}
+  \begin{subtopics}
+    \item \chk Countable and uncountable sets; Cantor-diagonal argument
+    \item \chk Decimal expansions with restricted digits (e.g., digits from $\{0,2,4\}$): uncountability
+    \item \chk Continuous injections preserve cardinality; $f(\mathbb{N})$ vs.\ $f(\mathbb{R})$
+    \item \chk Finite subsets of $\mathbb{Z}$: countable; power set of $\mathbb{N}$: uncountable
+  \end{subtopics}
+
+  \item \textbf{Monotone Functions and Bounded Variation}
+  \begin{subtopics}
+    \item \chk Monotone increasing on $[0,1]$: one-sided limits exist everywhere; at most countably many discontinuities
+    \item \chk Surjective monotone on $[0,1] \Rightarrow$ continuous; Riemann integrable monotone
+    \item \chk $U_\alpha=(L_\alpha^-, L_\alpha^+)$ intervals for distinct $\alpha, \beta$ are disjoint
+    \item \chk Functions of bounded variation; Jordan decomposition
+  \end{subtopics}
+
+\end{subtopics}
+
+\newpage
+
+%% ============================================================
+%%  SUBJECT 2 — LINEAR ALGEBRA
+%% ============================================================
+\subjectbox{C2}{C2}{2}{Linear Algebra}%
+{32 Questions across both papers $|$ Part B: 4 $|$ Part C: 6 $|$ \textbf{Tier 1 — Highest Priority}}
+
+\sectionrule{C2}
+
+\begin{subtopics}
+
+  \item \textbf{Vector Spaces and Subspaces}
+  \begin{subtopics}
+    \item \chk Subspaces, spanning sets, linear independence
+    \item \chk Basis and dimension; Steinitz exchange lemma
+    \item \chk Dimension of sum and intersection: $\dim(U+V)=\dim U + \dim V - \dim(U\cap V)$
+    \item \chk Quotient space $V/W$; dimension $= \dim V - \dim W$
+    \item \chk Spanning set $\{u,v,w,x,y\}$ with $\{u,v,x,y\}$ LI: $\dim V \in \{4,5\}$ argument
+  \end{subtopics}
+
+  \item \textbf{Linear Maps and Matrices}
+  \begin{subtopics}
+    \item \chk Rank-nullity theorem; kernel and image
+    \item \chk Matrix representation; change of basis
+    \item \chk Invertibility, determinant, adjugate
+    \item \chk Trace: $\mathrm{tr}(AB)=\mathrm{tr}(BA)$; trace and eigenvalue sum
+    \item \chk Systems of linear equations; row reduction
+  \end{subtopics}
+
+  \item \textbf{Eigenvalues and Eigenvectors}
+  \begin{subtopics}
+    \item \chk Characteristic polynomial; Cayley-Hamilton theorem
+    \item \chk Newton's power-sum identities: $\mathrm{tr}(A)=\sum\lambda_i$, $\mathrm{tr}(A^2)=\sum\lambda_i^2$; char poly from trace data
+    \item \chk Algebraic and geometric multiplicity; defective matrices
+    \item \chk Eigenvalues of functions: $f(A)$ has eigenvalues $f(\lambda_i)$; Cayley-Hamilton application
+    \item \chk Largest real eigenvalue of a specific $4\times 4$ matrix (e.g., sum of rows trick)
+    \item \chk Matrices over $\mathbb{C}$: trace 1, det 1, one eigenvalue = 1 $\Rightarrow$ structure of other two
+  \end{subtopics}
+
+  \item \textbf{Diagonalisation and Jordan Normal Form}
+  \begin{subtopics}
+    \item \chk Diagonalisability criteria: $n$ distinct eigenvalues; geom.\ mult.\ = alg.\ mult.
+    \item \chk If $T^2$ is diagonalisable, when is $T$ diagonalisable? (need non-negative eigenvalues of $T^2$)
+    \item \chk If $T^2$ has only negative eigenvalues $\Rightarrow$ $\dim V$ is even
+    \item \chk Jordan blocks; minimal polynomial computation
+    \item \chk Simultaneous diagonalisation of commuting matrices
+  \end{subtopics}
+
+  \item \textbf{Inner Product Spaces}
+  \begin{subtopics}
+    \item \chk Inner product axioms; Cauchy-Schwarz; triangle inequality
+    \item \chk Gram-Schmidt orthogonalisation; orthonormal bases
+    \item \chk Orthogonal complement; projection theorem; best approximation
+    \item \chk Adjoint of a linear map; self-adjoint, unitary, normal operators
+    \item \chk $M_n(\mathbb{C})$ with $\langle A,B\rangle = \mathrm{tr}(A^*B)$; rank-$k$ conditions; $W_k=\{0\}$ for $k\ge 1$
+    \item \chk Subspace of $C[0,\pi]$ spanned by $\{f_1,f_2,f_3\}$ with inner product $\frac{2}{\pi}\int f g \sin^2 x\,dx$
+    \item \chk FALSE: ``eigenvectors of $B$ for distinct eigenvalues are $B$-orthogonal'' (not true with non-standard inner product $\langle v,w\rangle=v^\top Bw$)
+  \end{subtopics}
+
+  \item \textbf{Quadratic Forms}
+  \begin{subtopics}
+    \item \chk Positive/negative definite, semi-definite, indefinite; Sylvester's criterion
+    \item \chk Sylvester's law of inertia; signature; congruence
+    \item \chk Quadratic form $Q(f)=\int_{-1}^1(f')^2dt$ on $V=\{ax^3+bx^2+cx\}$: FALSE statements
+    \item \chk Complex quadratic forms over $\mathbb{Q}$; zeros over $\mathbb{C}$ vs $\mathbb{R}$ vs $\mathbb{Q}$
+  \end{subtopics}
+
+  \item \textbf{Projections and Special Operators}
+  \begin{subtopics}
+    \item \chk Idempotent operators: $T^2=T$; direct sum decomposition $V=\ker T \oplus \mathrm{im}\, T$
+    \item \chk $T^2=T$: $W=\mathrm{span}\{I,T^n:n\ge 1\}$ has $\dim W=2$; idempotents in $W$
+    \item \chk If $U^2=U$ and $(T-U)^2=T-U$ $\Rightarrow$ $(TU)^2=TU$
+    \item \chk $A^2=I$, $\mathrm{Tr}(A)=0$: anticommutant $\{B:AB+BA=0\}$ is 8-dimensional $\mathbb{C}$-vector space
+    \item \chk Commutant $\{B:AB=BA\}$ also 8-dimensional; existence of $B$ with $B^2=I$, $\mathrm{Tr}(B)=0$, $AB+BA=0$
+    \item \chk Existence of 3-dimensional invariant subspace for any operator on 4-dim $\mathbb{C}$ space
+  \end{subtopics}
+
+  \item \textbf{Matrices over Finite Fields}
+  \begin{subtopics}
+    \item \chk $GL_n(\mathbb{F}_q)$: number of invertible matrices = $(q^n-1)(q^n-q)\cdots(q^n-q^{n-1})$
+    \item \chk Number of $2\times 2$ matrices over $\mathbb{F}_5$ of rank 1: subtract invertible + zero from total $5^4$
+    \item \chk Subspaces of $\mathbb{F}_q^{2n}$ containing a given $n$-dim subspace (Grassmannian counting)
+  \end{subtopics}
+
+  \item \textbf{Integer Matrices and Minimal Polynomials}
+  \begin{subtopics}
+    \item \chk Non-zero $3\times 3$ integer matrix: char poly over $\mathbb{Q}$; if $f(\lambda_i)=0$ for all $i$ and $f$ cubic $\Rightarrow f(A)=0$ (Cayley-Hamilton suffices)
+    \item \chk Does $f \in \mathbb{Q}[X]$ quadratic exist with all eigenvalues as roots? Only if poly factors
+    \item \chk Minimal polynomial divides any annihilating polynomial
+  \end{subtopics}
+
+\end{subtopics}
+
+\newpage
+
+%% ============================================================
+%%  SUBJECT 3 — STATISTICS & PROBABILITY
+%% ============================================================
+\subjectbox{C3}{C3}{3}{Statistics \& Probability}%
+{30 Questions across both papers $|$ Part B: 5 $|$ Part C: 8 $|$ \textbf{Tier 1 — Highest Priority}}
+
+\sectionrule{C3}
+
+\begin{subtopics}
+
+  \item \textbf{Point Estimation}
+  \begin{subtopics}
+    \item \chk Maximum likelihood estimation (MLE): discrete and continuous families
+    \item \chk Method of moments (MOM): equate population moments to sample moments
+    \item \chk Sufficient statistics: Factorisation theorem (Neyman-Fisher)
+    \item \chk Minimal sufficient statistics; completeness
+    \item \chk Ancillary statistics: definition; examples (ratios, differences of normals)
+    \item \chk Unbiased estimators; UMVUE via Lehmann-Scheff\'{e}; Rao-Blackwellisation
+    \item \chk Cram\'{e}r-Rao lower bound; Fisher information
+    \item \chk Consistency: $\hat\theta_n \xrightarrow{p} \theta$; MLE under regularity is consistent
+  \end{subtopics}
+
+  \item \textbf{Hypothesis Testing}
+  \begin{subtopics}
+    \item \chk Neyman-Pearson lemma; most powerful tests; UMP tests
+    \item \chk Likelihood ratio test (LRT); Wilks' theorem ($-2\log\Lambda \xrightarrow{d}\chi^2$)
+    \item \chk Type I / Type II errors; significance level; $p$-value
+    \item \chk One-sided and two-sided tests; uniformly most powerful (UMP) tests
+    \item \chk Sign test: $K=$ number of obs $>$ $\theta_0$; $K\sim\text{Bin}(n,1/2)$ under $H_0$
+    \item \chk Non-parametric tests: Wilcoxon, Mann-Whitney (basics)
+    \item \chk Test statistic $F$ for regression significance; relation to $R^2$
+    \item \chk Confidence intervals from pivot quantities; relation to hypothesis tests
+  \end{subtopics}
+
+  \item \textbf{Bayesian Estimation}
+  \begin{subtopics}
+    \item \chk Prior, likelihood, posterior: Bayes' theorem in density form
+    \item \chk Beta-Binomial conjugate: prior Beta$(\alpha,\beta)$ + Binomial$(n,\theta)$ $\Rightarrow$ posterior Beta$(\alpha+x, \beta+n-x)$
+    \item \chk Posterior mean $= \frac{x+\alpha}{n+\alpha+\beta}$; posterior mean $\gtrless$ prior mean $\Leftrightarrow$ $x/n \gtrless \alpha/(\alpha+\beta)$
+    \item \chk Improper prior $\pi(\theta)\propto 1$: posterior is proportional to likelihood
+    \item \chk Normal-Normal conjugate: $X|\theta\sim N(\theta,\sigma^2)$, prior $\theta\sim N(\mu_0,\tau^2)$; posterior mean is weighted average
+    \item \chk Posterior mode vs.\ MLE; posterior variance vs.\ $\mathrm{Var}(X|\theta)$
+  \end{subtopics}
+
+  \item \textbf{Probability Distributions}
+  \begin{subtopics}
+    \item \chk Exponential, Gamma, Beta, Normal, Binomial, Poisson, Uniform, Cauchy
+    \item \chk MGF identification: $M_X(t)=e^{3(e^t-1)} \Rightarrow X\sim\text{Poisson}(3)$; $M_Y(t)=(\tfrac{1}{2}e^{-3t}+\tfrac{1}{2}e^{3t})^2$ etc.
+    \item \chk CDF, survival function $S(t)$, hazard rate $\lambda(t)=f(t)/S(t)$, cumulative hazard $H(t)$
+    \item \chk Series system lifetime: $Y=\min\{T_1,\ldots,T_n\}$; $P(Y>t)=(S(t))^n$
+    \item \chk Reliability / survival analysis: $\lambda(t)=1/(1+t) \Rightarrow H(t)=\ln(1+t)$, $S(t)=1/(1+t)$
+    \item \chk Mixture distributions (brand I exponential + brand II gamma)
+    \item \chk Discrete distribution with PMF $P(X=k)=\theta^k/k!$ type; MLE from observed counts
+  \end{subtopics}
+
+  \item \textbf{Convergence and Limit Theorems}
+  \begin{subtopics}
+    \item \chk Convergence in distribution, probability, almost sure, $L^p$; hierarchy
+    \item \chk Weak Law of Large Numbers; Strong LLN (Kolmogorov)
+    \item \chk Central Limit Theorem; CLT for i.i.d.\ with finite variance
+    \item \chk Extreme value theory: $T_n=\max\{X_1,\ldots,X_n\}-\ln n \xrightarrow{d}$ Gumbel distribution
+    \item \chk Gumbel CDF: $F(x)=e^{-e^{-x}}$; $P(Y\le 0)=e^{-1}$; median $=\ln(\ln 2)$
+    \item \chk Remainder $X_n = Y_n \bmod m$: as $n\to\infty$, converges to Uniform on $\{0,1,\ldots,m-1\}$
+  \end{subtopics}
+
+  \item \textbf{Multivariate Distributions}
+  \begin{subtopics}
+    \item \chk Multivariate normal $N_p(\mu,\Sigma)$: marginals, conditionals, affine transformations
+    \item \chk Sample covariance $S$: distribution is Wishart $W_p(n-1, \Sigma)$
+    \item \chk $E(S^{-1})=\frac{n-1}{n-p-2}\Sigma^{-1}$ (for $n>p+2$); specific: $n=20$, $p=12$ gives $E(S^{-1})=\frac{19}{6}\Sigma^{-1}$
+    \item \chk $\mathrm{tr}(19\Sigma^{-1}S)\sim\chi^2_{12\times 19}=\chi^2_{228}$
+    \item \chk Multiple correlation coefficient between $Y_1$ and $(Y_2,Y_3)$
+    \item \chk Partial correlation $\rho_{YZ.X}$: formula via inverse of covariance matrix
+    \item \chk $19(\bar X^\top S\bar X)(\bar X^\top\Sigma\bar X)^{-1}\sim\chi^2_{19}$
+  \end{subtopics}
+
+  \item \textbf{Markov Chains}
+  \begin{subtopics}
+    \item \chk Definitions: homogeneous MC, transition matrix $P$, Chapman-Kolmogorov
+    \item \chk Communication classes; irreducibility; period of a state
+    \item \chk Recurrence vs.\ transience; positive recurrence; null recurrence
+    \item \chk Stationary distribution $\pi$: $\pi P=\pi$, $\sum\pi_i=1$; existence and uniqueness for irreducible positive-recurrent chains
+    \item \chk Mean recurrence time: $m_i=1/\pi_i$
+    \item \chk Absorbing states; hitting probabilities; expected hitting times
+    \item \chk Specific $4\times 4$ TPM: identify recurrent/transient states; stationary distribution; ergodic theorem
+    \item \chk Infinitely many stationary distributions when multiple closed communicating classes exist
+  \end{subtopics}
+
+  \item \textbf{Linear Regression and ANOVA}
+  \begin{subtopics}
+    \item \chk Simple linear regression $Y_i=\beta x_i+\varepsilon_i$: OLS estimator; unbiased; variance
+    \item \chk Minimise $E(\sum a_i Y_i-\beta)^2$: optimal $a_i^*=x_i/(\sum x_j^2)$; this has smaller variance than OLS
+    \item \chk Multiple regression $Y=X\beta+\varepsilon$; BLUE (Gauss-Markov); $\hat\beta=(X^\top X)^{-1}X^\top Y$
+    \item \chk $R^2$, Adjusted $R^2$, $F$-statistic; relation: $F=\frac{R^2/p}{(1-R^2)/(n-p-1)}$
+    \item \chk Decomposition $Y^\top AY=Y^\top BY+Y^\top CY$ (total=regression+residual); $Y^\top BY,Y^\top CY$ always independent
+    \item \chk Design of experiments: $2^k$ factorial, confounding, block design
+  \end{subtopics}
+
+  \item \textbf{Sampling Theory}
+  \begin{subtopics}
+    \item \chk SRSWR vs.\ SRSWOR: $\mathrm{Var}(\bar y_{WR})=\frac{S^2}{n}$, $\mathrm{Var}(\bar y_{WOR})=\frac{S^2}{n}(1-\frac{n}{N})$; ratio $=1-f$
+    \item \chk Stratified random sampling: $\bar y_{st}=\sum(N_h/N)\bar y_h$; unbiased estimator formula
+    \item \chk $N=100$, SRSWR vs.\ SRSWOR: $\mathrm{Var}(T_1)=9\mathrm{Var}(T_2) \Rightarrow n=89$
+  \end{subtopics}
+
+  \item \textbf{Queuing Theory}
+  \begin{subtopics}
+    \item \chk $M/M/1$, $M/M/c$ systems; birth-death process; balance equations
+    \item \chk $M/M/2$ with capacity 3, $\lambda=4$, $\mu=1$: compute $p_0=4/29$, $p_3=12/29$; $p_0+p_3=16/29$ (verify from answer key)
+    \item \chk Long-run fraction of time system is empty/full; throughput; mean queue length
+  \end{subtopics}
+
+\end{subtopics}
+
+\newpage
+
+%% ============================================================
+%%  SUBJECT 4 — COMPLEX ANALYSIS
+%% ============================================================
+\subjectbox{C4}{C4}{4}{Complex Analysis}%
+{26 Questions across both papers $|$ Part B: 4 $|$ Part C: 5--6 $|$ \textbf{Tier 2}}
+
+\sectionrule{C4}
+
+\begin{subtopics}
+
+  \item \textbf{Holomorphic and Analytic Functions}
+  \begin{subtopics}
+    \item \chk Cauchy-Riemann equations; harmonic functions; harmonic conjugate
+    \item \chk Power series; radius of convergence; analytic $\Leftrightarrow$ holomorphic
+    \item \chk Analytic continuation; identity theorem (zeros with limit point $\Rightarrow$ $f\equiv 0$)
+    \item \chk Function $f:\mathbb{C}\to\mathbb{C}$ holomorphic with $f(2z)=f(z)/(1-f(z)^2)$: only one such function
+  \end{subtopics}
+
+  \item \textbf{Cauchy's Theorem and Applications}
+  \begin{subtopics}
+    \item \chk Cauchy's integral theorem (simply/multiply connected domains)
+    \item \chk Cauchy's integral formula; derivatives via contour integrals
+    \item \chk Morera's theorem; Goursat's theorem
+    \item \chk Contour integrals on $\gamma_R(t)=Re^{2\pi it}$: $\int_{\gamma_R}\tan z\,dz$, $\int_{\gamma_R}f(z)\,dz=0$ conditions
+    \item \chk $\int_{\gamma_1} \frac{dz}{z\sin z}=0$ (no singularity inside unit circle); $\int_{\gamma_2} \frac{dz}{z\sin z}$ when $\gamma_2=1+i+e^{it}$
+  \end{subtopics}
+
+  \item \textbf{Singularities and Laurent Series}
+  \begin{subtopics}
+    \item \chk Removable singularities (Riemann), poles (order), essential singularities (Picard)
+    \item \chk Laurent series expansion; principal part; residue computation
+    \item \chk Casorati-Weierstrass: near essential singularity, image is dense
+    \item \chk Function $g(z)=f(z)-1/z$ ($f$ entire): pole at 0; no zeros on $|z|=1$; finitely many zeros; $\max_{|z|=1}|g|\ge 1$
+  \end{subtopics}
+
+  \item \textbf{Residue Theorem}
+  \begin{subtopics}
+    \item \chk Residue theorem: $\oint f\,dz=2\pi i\sum\mathrm{Res}$
+    \item \chk Computing residues: simple poles ($\lim(z-a)f(z)$), higher order ($\lim\frac{d^{n-1}}{dz^{n-1}}[(z-a)^nf(z)]/(n-1)!$)
+    \item \chk $\int_{\gamma_2}\tan z\,dz=-4\pi i$ (poles of $\tan z$ at $\pm\pi/2$; both inside $\gamma_2$ of radius 2 centred at $2+i$)
+    \item \chk Application to real integrals: $\int_{-\infty}^\infty R(x)dx$, $\int_0^\infty$ type
+  \end{subtopics}
+
+  \item \textbf{Entire Functions}
+  \begin{subtopics}
+    \item \chk Liouville's theorem; entire bounded $\Rightarrow$ constant
+    \item \chk Picard's theorem: entire non-constant misses at most one value
+    \item \chk Image constraints: $f(\mathbb{C})\subset\{x+iy: y=x+1\} \Rightarrow f(z)/z\to 0$ (not $f$ constant)
+    \item \chk Entire $f$ with prescribed derivatives: $f^{(n)}(0)=n!/n^n$ $\Rightarrow$ exists (convergent power series); $f^{(n)}(0)=n!\,n^n \Rightarrow$ diverges
+    \item \chk Holomorphic sequence $f_n(z)=\sum_{k=1}^n h(z^k)$ on $\{|z|>1\}$: converges pointwise
+  \end{subtopics}
+
+  \item \textbf{M\"{o}bius Transformations}
+  \begin{subtopics}
+    \item \chk $f(z)=(az+b)/(cz+d)$; cross-ratio; maps circles/lines to circles/lines
+    \item \chk Image of $[0,1]$ under $f(z)=(z-i)/(z+i)$: arc $\{e^{i\theta}:\theta\in[\pi,3\pi/2]\}$
+    \item \chk Three-point determination; automorphisms of $\mathbb{D}$, $\mathbb{H}$, $\mathbb{C}$
+  \end{subtopics}
+
+  \item \textbf{Schwarz Lemma and Conformal Maps}
+  \begin{subtopics}
+    \item \chk Schwarz-Pick lemma: $f:\mathbb{D}\to\mathbb{D}$ hol., $|f'(a)|\le(1-|f(a)|^2)/(1-|a|^2)$
+    \item \chk $f(-1/2)=0$: $|f(-1/5)|\le 1/3$ (Schwarz-Pick estimate); $|f'(-1/2)|\le 4/3$
+    \item \chk Riemann mapping theorem (statement); automorphisms of $\mathbb{D}$
+  \end{subtopics}
+
+\end{subtopics}
+
+\newpage
+
+%% ============================================================
+%%  SUBJECT 5 — ABSTRACT ALGEBRA
+%% ============================================================
+\subjectbox{C5}{C5}{5}{Abstract Algebra}%
+{24 Questions across both papers $|$ Part B: 4 $|$ Part C: 5 $|$ \textbf{Tier 2}}
+
+\sectionrule{C5}
+
+\begin{subtopics}
+
+  \item \textbf{Group Theory — Basics}
+  \begin{subtopics}
+    \item \chk Group axioms; order of element; cyclic groups $\mathbb{Z}_n$; generators
+    \item \chk Subgroups; cosets; Lagrange's theorem
+    \item \chk Normal subgroups; quotient groups; group homomorphism theorems
+    \item \chk Conjugacy classes; centre $Z(G)$; class equation
+    \item \chk Groups of order 8: $\mathbb{Z}_8$, $\mathbb{Z}_4\times\mathbb{Z}_2$, $\mathbb{Z}_2^3$, $D_4$, $Q_8$; elements of order 4 in each
+    \item \chk Number of subgroups $S(G)$; if $S(G)=5 \Rightarrow G$ cyclic; if $S(G)=4 \Rightarrow$ $|G|=p^m$ necessary?
+  \end{subtopics}
+
+  \item \textbf{Sylow Theorems and Structure}
+  \begin{subtopics}
+    \item \chk Sylow $p$-subgroups; Sylow theorems (existence, conjugacy, count)
+    \item \chk $p$-groups; centre is non-trivial; $p$-groups of order $p^2$ are abelian
+    \item \chk Non-abelian groups: $f(a,b)=ab$ is \textbf{not} a group homomorphism; $f:G\times G\to G$
+    \item \chk If every divisor of $|G|$ has a subgroup $\Rightarrow$ at least 3 normal subgroups
+    \item \chk $H_G=\{g:g^{15}=e\}$: $|H_G|$ can be $4n+1$ for $n\ge 3$; structure
+  \end{subtopics}
+
+  \item \textbf{Permutation Groups}
+  \begin{subtopics}
+    \item \chk $S_n$, $A_n$; cycle type; sign of permutation; transpositions
+    \item \chk Orbits, stabilisers, Burnside (Cauchy-Frobenius) lemma
+    \item \chk $S_{17}$: for subgroup $G$ and $x\in X$, stabiliser $S_G(x)$; Burnside's lemma $\Rightarrow$ integer orbit count; \textit{not} necessarily isomorphic for different $x$
+    \item \chk Homeomorphisms of finite topological space $S=\{1,2,3,4,5\}$ with $\tau=\{\emptyset,\{1\},S\}$: 24 (fix 1, permute 2--5 freely)
+  \end{subtopics}
+
+  \item \textbf{Ring Theory}
+  \begin{subtopics}
+    \item \chk Integral domains, fields; zero divisors; characteristic
+    \item \chk Ideals: principal, prime, maximal; quotient rings
+    \item \chk PIDs, UFDs, Euclidean domains; their hierarchy
+    \item \chk Valuation rings: $A\subset\mathbb{Q}$ with $r\in A$ or $1/r\in A$ for all nonzero $r$; unique maximal ideal; every finitely-generated ideal is principal; \textbf{not} necessarily Euclidean
+    \item \chk $2\mathbb{Z}[i]$ maximal in $\mathbb{Z}[i]$? YES (norm-2 Gaussian prime)
+    \item \chk $X\mathbb{C}[X,Y]$ maximal in $\mathbb{C}[X,Y]$? NO (not maximal; $\mathbb{C}[X,Y]/X\mathbb{C}[X,Y]\cong\mathbb{C}[Y]$ not a field)
+    \item \chk $(\sqrt{2}-1)\mathbb{Z}[\sqrt{2}]$ maximal in $\mathbb{Z}[\sqrt{2}]$? YES (norm-1 unit $\Rightarrow$ ideal = whole ring? Check)
+  \end{subtopics}
+
+  \item \textbf{Polynomial Rings and Irreducibility}
+  \begin{subtopics}
+    \item \chk Eisenstein irreducibility criterion; reduction mod $p$ criterion
+    \item \chk $x^2+xy^2-x-y+1$: irreducible in $\mathbb{Q}[x,y]$
+    \item \chk $x^3+100x^2+25x+10$: irreducible in $\mathbb{Z}[x]$ (Eisenstein mod 5)
+    \item \chk $2x^2+3xy+y^2+3x+2y+1=(2x+y+1)(x+y+1)$: \textit{reducible} in $\mathbb{Q}[x,y]$
+    \item \chk $x^4+4x^2+3=(x^2+1)(x^2+3)$: reducible in $\mathbb{Z}[x]$
+    \item \chk Gauss's lemma; primitive polynomials; $\mathbb{Z}[x]$ is a UFD
+  \end{subtopics}
+
+  \item \textbf{Field Extensions and Galois Theory}
+  \begin{subtopics}
+    \item \chk Algebraic / transcendental extensions; degree $[L:K]$; tower law
+    \item \chk Splitting fields; normal and separable extensions; Galois closure
+    \item \chk Galois group $\mathrm{Gal}(K/\mathbb{Q})$; fundamental theorem of Galois theory
+    \item \chk Irreducible $f\in\mathbb{Q}[x]$ of prime degree $p$ with exactly 2 non-real roots $\Rightarrow$ $G=S_p$: proof sketch (transposition from complex conjugation + $p$-cycle from irreducibility / prime degree)
+    \item \chk Finite fields $\mathbb{F}_q$: existence, uniqueness; Frobenius automorphism
+  \end{subtopics}
+
+  \item \textbf{Number Theory (within Algebra)}
+  \begin{subtopics}
+    \item \chk Wilson's theorem: $p$ prime $\Rightarrow$ $p\mid(p-1)!+1$; so $p\mid 1+(p-1)!$; \textit{not} $p\nmid 1+(p-1)!$
+    \item \chk Fermat's little theorem: $p\mid a^p-a$ for all $a,p$; $(1234)^{p-1}\equiv 1\pmod p$ for $\gcd(1234,p)=1$; true for primes $p>700$ (none divide 1234)
+    \item \chk $p\nmid a^p-a$ is FALSE (Fermat's little theorem); always $p\mid a^p-a$
+    \item \chk Existence of $a\in\mathbb{Z}$, prime $p>11$ with $p\nmid a^p-a$: FALSE (Fermat)
+    \item \chk $(p^2)!/(p!)^2$: divisibility by prime $p$ (involves Kummer's theorem / $p$-adic valuations)
+  \end{subtopics}
+
+\end{subtopics}
+
+\newpage
+
+%% ============================================================
+%%  SUBJECT 6 — ORDINARY DIFFERENTIAL EQUATIONS
+%% ============================================================
+\subjectbox{C6}{C6}{6}{Ordinary Differential Equations}%
+{22 Questions across both papers $|$ Part B: 3 $|$ Part C: 4 $|$ \textbf{Tier 2}}
+
+\sectionrule{C6}
+
+\begin{subtopics}
+
+  \item \textbf{IVPs: Existence and Uniqueness}
+  \begin{subtopics}
+    \item \chk Picard-Lindelöf theorem: $f$ Lipschitz in $y$ $\Rightarrow$ unique local solution
+    \item \chk Non-uniqueness: $y'=y^{1/3}$, $y(0)=0$ has infinitely many solutions
+    \item \chk $y'=f(y)$, $f(y)=y\cos(1/y)$ for $y\ne 0$, $f(0)=0$: unique solution $y\equiv 0$ (P) is TRUE
+    \item \chk IVPs with $y\cos(1/y)$: Lipschitz fails at 0 but still unique; check via phase-plane
+    \item \chk Taylor series solution: $r(x)$ real-analytic near $x=0$ $\Rightarrow$ solution has Taylor series; $r$ flat ($e^{-1/x^2}$) $\Rightarrow$ solution is flat, has Taylor series $\equiv 0$
+  \end{subtopics}
+
+  \item \textbf{Linear ODEs — Second Order}
+  \begin{subtopics}
+    \item \chk General solution = particular + homogeneous; variation of parameters
+    \item \chk Wronskian: $W(y_1,y_2)(x)=W_0\exp(-\int p(x)dx)$; constant if $p=0$
+    \item \chk One known solution $\varphi(x)=x$; reduction of order; find second solution
+    \item \chk ODE $y''-(2/x^2+1/x)(xy'-y)=0$, $\varphi=x$ known $\Rightarrow$ general sol.\ $(a+be^{-2x})x$
+    \item \chk Wronskian at specific point: $W(y_1,y_2)(1/2)=4$, find $y_2'(0)$
+  \end{subtopics}
+
+  \item \textbf{Sturm-Liouville Problems}
+  \begin{subtopics}
+    \item \chk $(r(x)y')' + (\lambda w(x) - q(x))y=0$; eigenvalues $\lambda_n\nearrow\infty$; eigenfunctions orthogonal w.r.t.\ weight $w$
+    \item \chk $\frac{d}{dx}(x\frac{dy}{dx})+\frac{\lambda}{x}y=0$, $1<x<e^{2\pi}$, $y(1)=y(e^{2\pi})=0$: eigenvalues $\lambda_n=n^2/4\pi^2$; $\sum 1/\lambda_n=\pi^2/12$ (Basel-type)
+    \item \chk Expansion in eigenfunctions; Parseval's identity applied to series $\sum 1/\lambda_n$
+    \item \chk Sturm comparison theorem: zeros of solutions interleave
+    \item \chk ODE $y''+r(x)y=0$ with $r(x)=x^3\sin(1/x)$: Wronskian is constant; solutions have infinitely many zeros approaching $\pm\infty$ (not 0); in any bounded interval only finitely many zeros
+  \end{subtopics}
+
+  \item \textbf{Frobenius Method / Power Series}
+  \begin{subtopics}
+    \item \chk Regular singular points; indicial equation; two independent Frobenius solutions
+    \item \chk $x^2y''+\frac{(1+\sin x)x}{2}y'-\frac{3}{2}(\cos x)y=0$: indicial roots at $x=0$ are $r_1=3/2, r_2=-1/2$ (differs by integer? check logs); $y_2(0)=0 \Rightarrow$ $y_2\sim x^{-1/2}$-type; various limit ratios computed
+    \item \chk When roots differ by integer: possible log terms; careful case analysis
+  \end{subtopics}
+
+  \item \textbf{Integral Equations}
+  \begin{subtopics}
+    \item \chk Volterra IE of 2nd kind: $y(x)=f(x)+\lambda\int_0^x K(x,t)y(t)dt$; successive approximation
+    \item \chk Fredholm IE: $y(x)=f(x)+\lambda\int_a^b K(x,t)y(t)dt$; eigenvalues of kernel; Fredholm alternative
+    \item \chk Degenerate (separable) kernels: $K(x,t)=\sum_i \phi_i(x)\psi_i(t)$; reduce to linear algebra
+    \item \chk $y(x)=e^x+e+1+\tfrac{1}{3}\int_0^1 y(t)dt$: constant kernel, resolvent $R(x,t;\lambda)=\lambda/(1-\lambda)$; $y(1)=3e+1$
+    \item \chk $y(x)=3+\int_0^x(x-t)u(t)dt$: convert to ODE $u''-u=0$; solve with $u(0)=3$, $u'(0)=0$ $\Rightarrow$ $u=3\cosh x$; then $u(\pi)+u'(\pi)=3e^\pi$
+    \item \chk IE $y(x)=x^2+2\int_0^1 xty(t)dt$: degenerate kernel $K=xt$; $y(x)=x^2+cx$ with $c=2\int_0^1 ty(t)dt$; solve for $c$; verify $y(-1)+y(1)=1$
+  \end{subtopics}
+
+  \item \textbf{Systems and Stability (basics)}
+  \begin{subtopics}
+    \item \chk Autonomous systems; phase portraits; equilibria
+    \item \chk Linearisation; stable/unstable/saddle equilibria
+    \item \chk Lagrangian mechanics ODE: Euler-Lagrange $\Rightarrow$ equations of motion; conservation laws
+  \end{subtopics}
+
+\end{subtopics}
+
+\newpage
+
+%% ============================================================
+%%  SUBJECT 7 — PARTIAL DIFFERENTIAL EQUATIONS
+%% ============================================================
+\subjectbox{C7}{C7}{7}{Partial Differential Equations}%
+{18 Questions across both papers $|$ Part B: 2--3 $|$ Part C: 4 $|$ \textbf{Tier 3}}
+
+\sectionrule{C7}
+
+\begin{subtopics}
+
+  \item \textbf{First-Order PDEs}
+  \begin{subtopics}
+    \item \chk Method of characteristics: $u_t+u_x=0$, $u_t+a(x,t)u_x=b$; Cauchy data
+    \item \chk $(y+u)u_x+yu_y=x-y$, $u(x,1)=1+x$: characteristics; $u(1,1)=2$ (verify by characteristics)
+    \item \chk Transport equation IBVP: $u_t+u_x=0$, $u(x,0)=e^x$, $u(0,t)=1-\sin t$: unique sol for $t<x$; for $t>x$ compatibility condition
+    \item \chk Quasi-linear equations; genuine nonlinearity; shocks and rarefaction waves
+  \end{subtopics}
+
+  \item \textbf{Wave Equation}
+  \begin{subtopics}
+    \item \chk d'Alembert's formula: $u(x,t)=\tfrac{1}{2}[f(x+t)+f(x-t)]+\tfrac{1}{2}\int_{x-t}^{x+t}g(s)ds$
+    \item \chk $u_{tt}-u_{xx}=0$, $u(x,0)=1+x^2$, $u_t(x,0)=x+1$: $u(1,1)=5$
+    \item \chk Non-homogeneous wave: $u_{tt}-u_{xx}=e^{-t}$; Duhamel's principle; $u(x_0,t_0)\ge 4$ for large $t_0$
+    \item \chk IBVP energy: $E(t)=\int(u_t^2+u_x^2)dx$; $\dot E=-2\int u_t^2\,dx\le 0$; hence $E(t)\le E(0)=\pi$
+  \end{subtopics}
+
+  \item \textbf{Heat Equation}
+  \begin{subtopics}
+    \item \chk $u_t=ku_{xx}$; separation of variables; Fourier series solution
+    \item \chk $u_t=16u_{xx}+2$, $u_x(0,t)=0$, $u(7,t)=0$: steady state $u^*=\tfrac{1}{16}(49-x^2)$; $u(x,t)\to u^*$ as $t\to\infty$
+    \item \chk Maximum principle: $\max u$ attained on boundary (parabolic region)
+    \item \chk Fundamental solution (heat kernel); Green's function approach
+  \end{subtopics}
+
+  \item \textbf{Laplace and Elliptic Equations}
+  \begin{subtopics}
+    \item \chk Laplace equation $\Delta u=0$; harmonic functions; maximum principle
+    \item \chk Dirichlet BVP on disk: $u|_{\partial\Omega}=e^{x+y}$ $\Rightarrow$ unique solution; $\min_{|z|\le 1}e^{x+y}=e^{-\sqrt{2}}<\tfrac{1+e}{2}<e^{\sqrt{2}}=\max$ so $u=\tfrac{1+e}{2}$ at some interior pt
+    \item \chk Poisson's formula for disk; mean value property
+    \item \chk Unique solvability of Dirichlet problem on bounded domain; Green's function
+  \end{subtopics}
+
+  \item \textbf{Energy Methods}
+  \begin{subtopics}
+    \item \chk IBVP $u_{tt}-u_{xx}+u_t=0$: $\dot E=-2\int u_t^2\,dx\le 0$; $E(t)\le E(0)=\pi$, and $E(t)\le\pi/2$ since $E$ strictly decreasing + $E\to 0$
+    \item \chk Uniqueness via energy: assume two solutions $u,v$; $w=u-v$ satisfies zero data; $E_w(t)$ is non-increasing, starts at 0 $\Rightarrow$ $w\equiv 0$
+  \end{subtopics}
+
+\end{subtopics}
+
+\vspace{6pt}
+
+%% ============================================================
+%%  SUBJECT 8 — TOPOLOGY
+%% ============================================================
+\subjectbox{C8}{C8}{8}{Topology}%
+{16 Questions across both papers $|$ Part B: 2 $|$ Part C: 4 $|$ \textbf{Tier 3}}
+
+\sectionrule{C8}
+
+\begin{subtopics}
+
+  \item \textbf{Topological Spaces and Continuity}
+  \begin{subtopics}
+    \item \chk Open/closed sets; basis; sub-basis; interior, closure, boundary, limit points
+    \item \chk Continuous maps; homeomorphisms; topological properties (preserved under homeomorphism)
+    \item \chk Finite complement topology on $\mathbb{R}$: not Hausdorff; not regular; not normal
+    \item \chk Coarser/finer topologies; identity map from $(\mathbb{R},\tau_E)\to(\mathbb{R},\tau)$ continuous $\Rightarrow$ $\tau\subset\tau_E$ $\Rightarrow$ $(\mathbb{R},\tau)$ is regular? \textit{Yes} (inherits separation from $\mathbb{R}$)
+    \item \chk Identity from $(\mathbb{R},\tau)\to(\mathbb{R},\tau_E)$ continuous $\Rightarrow$ $\tau_E\subset\tau$ $\Rightarrow$ $(\mathbb{R},\tau)$ is Hausdorff
+    \item \chk Homeomorphisms of $S=\{1,2,3,4,5\}$ with $\tau=\{\emptyset,\{1\},S\}$: must fix 1; permute $\{2,3,4,5\}$ freely $\Rightarrow$ $4!=24$
+  \end{subtopics}
+
+  \item \textbf{Compactness}
+  \begin{subtopics}
+    \item \chk Compact: every open cover has finite subcover; sequential compactness equivalent in metric spaces
+    \item \chk Tychonoff's theorem: arbitrary product of compact spaces is compact
+    \item \chk $X=\prod_{c>0}[0,c]$ with product topology: compact (Tychonoff); Hausdorff; connected; \textbf{not} metrizable (uncountable product)
+    \item \chk Continuous image of compact is compact; closed subspace of compact is compact
+    \item \chk Compact Hausdorff $\Rightarrow$ normal; compact metric $\Rightarrow$ complete + totally bounded
+  \end{subtopics}
+
+  \item \textbf{Connectedness and Path-Connectedness}
+  \begin{subtopics}
+    \item \chk Product of connected spaces is connected (including uncountable products)
+    \item \chk Path-connected $\Rightarrow$ connected; converse fails (topologist's sine curve)
+    \item \chk Continuous image of connected is connected
+    \item \chk $[0,c]$ is connected for all $c>0$; arbitrary product is connected
+  \end{subtopics}
+
+  \item \textbf{Separation Axioms}
+  \begin{subtopics}
+    \item \chk $T_0$, $T_1$, $T_2$ (Hausdorff), $T_3$ (regular), $T_4$ (normal): definitions and implications
+    \item \chk $(\mathbb{R},\tau_E)$: $T_4$ (normal); metric spaces are normal
+    \item \chk Urysohn's lemma; Tietze extension theorem (for normal spaces)
+    \item \chk Product topology and separation: product of Hausdorff is Hausdorff; product of normal need not be normal
+    \item \chk Compact Hausdorff space: statement $S$ (neighbourhood of $\{x\}\times Y$ when $Y$ compact) is TRUE $\Leftrightarrow$ $Y$ compact
+  \end{subtopics}
+
+  \item \textbf{Metrizability}
+  \begin{subtopics}
+    \item \chk Second countable $+$ regular $\Rightarrow$ metrizable (Urysohn)
+    \item \chk Uncountable product of non-trivial spaces: not second countable $\Rightarrow$ not metrizable
+    \item \chk $\prod_{c>0}[0,c]$: uncountable index set $\Rightarrow$ not metrizable
+  \end{subtopics}
+
+\end{subtopics}
+
+\newpage
+
+%% ============================================================
+%%  SUBJECT 9 — FUNCTIONAL ANALYSIS
+%% ============================================================
+\subjectbox{C9}{C9}{9}{Functional Analysis}%
+{12 Questions across both papers $|$ Part B: 1 $|$ Part C: 3 $|$ \textbf{Tier 3}}
+
+\sectionrule{C9}
+
+\begin{subtopics}
+
+  \item \textbf{Hilbert Spaces}
+  \begin{subtopics}
+    \item \chk Inner product, norm, Cauchy-Schwarz; completeness $\Rightarrow$ Hilbert space
+    \item \chk Orthonormal systems; Bessel's inequality; Parseval's identity; ONB
+    \item \chk Best approximation from closed subspace; projection theorem
+    \item \chk $\ell^2=\{(a_n):\sum|a_n|^2<\infty\}$ with $\langle a,b\rangle=\sum a_nb_n$
+    \item \chk Set $H=\{(a_n)\in\ell^2:|a_n|\le 1/n\ \forall n\}$: bounded (by $\|a\|^2\le\sum 1/n^2=\pi^2/6$); convex; \textbf{not} a subspace (not closed under scalar mult.); contains \textbf{no} ONB (standard basis $e_n\notin H$)
+  \end{subtopics}
+
+  \item \textbf{Banach Spaces and Operators}
+  \begin{subtopics}
+    \item \chk Normed spaces, Banach spaces; $L^p$ spaces; $C[0,1]$ with supremum norm
+    \item \chk Bounded linear operators; operator norm; dual space
+    \item \chk Open mapping theorem; closed graph theorem; uniform boundedness (Banach-Steinhaus)
+    \item \chk Compact operators on Hilbert spaces; spectral theory basics
+  \end{subtopics}
+
+  \item \textbf{Compact Sets in $C[0,1]$}
+  \begin{subtopics}
+    \item \chk Arzelà-Ascoli theorem: equicontinuous $+$ uniformly bounded $\Rightarrow$ precompact in $C[0,1]$
+    \item \chk $f_n(x)=n(1-nx)$ for $0\le x\le 1/n$, 0 otherwise: uniformly bounded (by 1); converges pointwise to 0; converges uniformly to 0; $\{f_n\}$ is compact in $(C[0,1],\|\cdot\|_\infty)$ (equicontinuous? Check Arzelà-Ascoli carefully)
+    \item \chk $f_n=\sin(nx)/n$: uniform convergence to 0, compact
+  \end{subtopics}
+
+\end{subtopics}
+
+\vspace{6pt}
+
+%% ============================================================
+%%  SUBJECT 10 — CALCULUS OF VARIATIONS & MECHANICS
+%% ============================================================
+\subjectbox{C10}{C10}{10}{Calculus of Variations \& Classical Mechanics}%
+{11 Questions across both papers $|$ Part B: 2 $|$ Part C: 3 $|$ \textbf{Tier 3}}
+
+\sectionrule{C10}
+
+\begin{subtopics}
+
+  \item \textbf{Euler-Lagrange Equation}
+  \begin{subtopics}
+    \item \chk $J(y)=\int_a^b F(x,y,y')dx$; $E$-$L$: $F_y-\frac{d}{dx}F_{y'}=0$
+    \item \chk $J(y)=\int_0^4 (y')^2/y^2\,dx$, $y(0)=1$, $y(4)=e^8$: extremal $y=e^{2x}$; $y(\ln 3)=9$
+    \item \chk $J[y]=\int_0^{\pi/4}((y')^2-4y^2+2xy)dx$, $y(0)=0$, $y(\pi/4)=1$: extremal involves $\sin 2x$ and $x$ terms
+    \item \chk $J[y]=\int_0^1((y')^2\sin x+2y\cos x)dx$: $E$-$L$ gives $(2y'\sin x)'=2\cos x$; solve with BCs; $y'(0)=1$, $y'(1/2)=1$
+    \item \chk Transversality conditions for free endpoints
+    \item \chk Natural boundary conditions; higher-order functionals
+  \end{subtopics}
+
+  \item \textbf{Isoperimetric Problems}
+  \begin{subtopics}
+    \item \chk Lagrange multiplier method for constraints $\int G(x,y,y')dx=C$
+    \item \chk $J(y)=\int_0^1 x^2(y')^2dx$, $y(0)=0$, $y(1)=1$, $\int_0^1 y^2dx=1/7$: extremal $y=x^3$; $y'(1/2)=3/4$, $y'(1/\sqrt 3)=1$, $y'(1/3)=1/3$
+    \item \chk Dido's problem; isoperimetric inequality
+  \end{subtopics}
+
+  \item \textbf{Classical Mechanics}
+  \begin{subtopics}
+    \item \chk Lagrangian $L=T-V$; Euler-Lagrange equations of motion
+    \item \chk $L=(\dot q_1)^2+(\dot q_2)^2+(q_1)^2+\dot q_1\dot q_2$: momenta $p_1=2\dot q_1+\dot q_2$, $p_2=2\dot q_2+\dot q_1$; equations of motion
+    \item \chk Hamiltonian $H=\sum p_i\dot q_i-L$; Hamilton's equations
+    \item \chk Canonical transformations; generating functions $F(q,P)$, $G(p,Q)$
+    \item \chk $F(q,P)=q^2e^P$: $p=\partial F/\partial q=2qe^P$, $Q=\partial F/\partial P=q^2e^P$; hence $p=2\sqrt{Q}e^P$; $G(p,Q)=-Q[1+\ln(p^2/(4Q))]$
+  \end{subtopics}
+
+\end{subtopics}
+
+\newpage
+
+%% ============================================================
+%%  SUBJECT 11 — NUMERICAL METHODS
+%% ============================================================
+\subjectbox{C11}{C11}{11}{Numerical Methods}%
+{8 Questions across both papers $|$ Part B: 2 $|$ Part C: 2 $|$ \textbf{Tier 3}}
+
+\sectionrule{C11}
+
+\begin{subtopics}
+
+  \item \textbf{Root-Finding Methods}
+  \begin{subtopics}
+    \item \chk Newton-Raphson: $x_{n+1}=x_n-f(x_n)/f'(x_n)$; quadratic convergence ($p=2$) at simple zeros
+    \item \chk Order $p$ and asymptotic error constant: $|e_{n+1}|/|e_n|^p\to C$
+    \item \chk $\sin x-1=0$, root at $\pi/2$: $f(\pi/2)=0$, $f'(\pi/2)=0$, $f''(\pi/2)=-1$ $\Rightarrow$ \textit{double zero}; N-R at double zero converges linearly ($p=1$); $\lim |e_{n+1}|/|e_n|=1/2$
+    \item \chk Bisection, secant, regula falsi; convergence orders
+  \end{subtopics}
+
+  \item \textbf{Iterative Methods for Linear Systems}
+  \begin{subtopics}
+    \item \chk Jacobi and Gauss-Seidel methods; splitting $A=D+L+U$
+    \item \chk Convergence condition: spectral radius $\rho(T)<1$ where $T=-(D+L)^{-1}U$ (GS) or $T=-D^{-1}(L+U)$ (Jacobi)
+    \item \chk $A=\begin{pmatrix}4&1\\2&3\end{pmatrix}$: GS converges ($\rho<1$); $\begin{pmatrix}1&2\\3&4\end{pmatrix}$: GS diverges; $\begin{pmatrix}1&5\\1&10\end{pmatrix}$: GS converges; $\begin{pmatrix}-5&2\\1&-4\end{pmatrix}$: GS converges
+    \item \chk Strictly diagonally dominant matrices $\Rightarrow$ both Jacobi and GS converge
+  \end{subtopics}
+
+  \item \textbf{Interpolation}
+  \begin{subtopics}
+    \item \chk Lagrange interpolating polynomial; Newton's divided difference formula
+    \item \chk Degree of interpolating polynomial: $n+1$ points $\Rightarrow$ degree $\le n$
+    \item \chk Interpolation at $x\in\{-2,-1,0,1,2\}$, $y\in\{-1,3,1,-1,3\}$: $p(1/2)=-3/8$ (compute via Newton's table)
+    \item \chk Error bound: $|f(x)-p_n(x)|\le \frac{\max|f^{(n+1)}|}{(n+1)!}\prod|x-x_i|$
+  \end{subtopics}
+
+  \item \textbf{Splines}
+  \begin{subtopics}
+    \item \chk Cubic splines: piecewise cubic, $C^2$ continuity at knots
+    \item \chk $s(x)$ piecewise on $[0,1],[1,3],[3,4]$: match $s,s',s''$ at $x=1$ and $x=3$; solve for $a,b,c$; $2a+b+2c=4$ (from both papers)
+    \item \chk Natural spline: $s''=0$ at endpoints; clamped spline: $s'$ prescribed at endpoints
+  \end{subtopics}
+
+\end{subtopics}
+
+\vspace{6pt}
+
+%% ============================================================
+%%  SUBJECT 12 — LINEAR PROGRAMMING & OR
+%% ============================================================
+\subjectbox{C12}{C12}{12}{Linear Programming \& Operations Research}%
+{3 Questions across both papers $|$ Part B: 1 $|$ Part C: 1 $|$ \textbf{Tier 4}}
+
+\sectionrule{C12}
+
+\begin{subtopics}
+
+  \item \textbf{Linear Programming}
+  \begin{subtopics}
+    \item \chk Standard form; feasible region (convex polytope); vertices/extreme points
+    \item \chk Simplex method: basic feasible solutions; pivot operations; optimality condition
+    \item \chk Graphical method for 2-variable LP: find corner points; evaluate objective
+    \item \chk LP: max $z=x+y$ s.t.\ $5x+3y\le 30$, $2x+6y\le 25$, $2x-y\le 8$, $x,y\ge 0$: optimal $z=74/11$ at vertex $(15/11,\ldots)$
+    \item \chk LP: max $3x_1+4x_2$ s.t.\ $3x_1+2x_2\le 12$, $3x_1+5x_2\le 15$, $2x_1-x_2\ge 0$, $x_2\le 2$: optimal value $=14$
+    \item \chk Duality: dual problem; strong duality theorem; complementary slackness
+    \item \chk Unbounded feasible region; infeasible LP; unbounded objective
+  \end{subtopics}
+
+\end{subtopics}
+
+\newpage
+
+%% ============================================================
+%%  PART A — GENERAL APTITUDE
+%% ============================================================
+\partAbox
+
+\sectionrule{CA}
+
+\begin{subtopics}
+
+  \item \textbf{Mathematical Reasoning \& Arithmetic}
+  \begin{subtopics}
+    \item \chk Ratio and proportion; mixture problems (alloy ratios)
+    \item \chk Percentages; percentage change; profit and loss
+    \item \chk Averages: arithmetic mean, geometric mean ($GM$ of scaled data)
+    \item \chk Time, speed, distance; RPM and circular motion
+    \item \chk Number theory: LCM, HCF, divisibility; digits and unit's place computations
+    \item \chk Sequences satisfying recurrence: $a_{i-1}+a_i+a_{i+1}=C$; find $a_{106}$
+    \item \chk Counting: 5-digit numbers divisible by 5 from given digit set
+    \item \chk Stock market: two-day loss/recovery; fraction remaining of initial investment
+  \end{subtopics}
+
+  \item \textbf{Logical Reasoning}
+  \begin{subtopics}
+    \item \chk Syllogisms: All A are B, All B are C $\Rightarrow$ All A are C; valid conclusions
+    \item \chk Blood relations: ``that man's father is my father's son'' type
+    \item \chk Seating / ordering: Jiten, Anwar between Ramesh and Prakash but senior to Sam
+    \item \chk Coding-decoding: DELTOID $\to$ 3152893; LOTION $\to$?
+    \item \chk Venn diagrams: three-sport players; percentage playing exactly two sports
+    \item \chk Colour matching: three friends, three shirt colours, no colour starts with person's initial
+    \item \chk Two-digit number $ab$: $ab-(a+b)$ always divisible by 9; result always $= 9a-9$ or $9b$?
+    \item \chk Statements: All Booklets are Manuals, All Manuals are Catalogues $\Rightarrow$ All Booklets are Catalogues
+  \end{subtopics}
+
+  \item \textbf{Data Interpretation}
+  \begin{subtopics}
+    \item \chk Pie chart + bar graph: market share \% and production (thousands) for 5 companies; profit $\propto$ market/production ratio
+    \item \chk Line graphs: tree count in two different years; maximum relative change
+    \item \chk Venn diagram: overlapping circles with numbers; total players, exactly-two-sport players
+  \end{subtopics}
+
+  \item \textbf{Geometry \& Measurement}
+  \begin{subtopics}
+    \item \chk Minimum mirror height: half the person's height (independent of distance from mirror)
+    \item \chk Volume: sphere immersed in cylinder; water level rise $\Delta h=\frac{4r^3}{3R^2}$
+    \item \chk Semi-circles rearranged: three identical semi-circles with overlap 10; diameter = 20
+    \item \chk Circle quartered and rejoined: area remains $= \pi r^2 = \pi$ (since $r=1$); area of shape $=1$ (area of square from arcs)
+    \item \chk Distance: Kavita walks 200 N, $45°$ right 70 m, $90°$ right 70 m; shortest distance $\approx 223$ m
+    \item \chk Jogging on circular track: Rahul full circle, father half then straight back; ratio $2\pi/(\pi+2)$
+  \end{subtopics}
+
+  \item \textbf{General Science Reasoning}
+  \begin{subtopics}
+    \item \chk Cooling curves: two bars at different temperatures cooling in same surroundings
+    \item \chk Density-mass table: largest volume from $V=m/\rho$
+    \item \chk Temperature gradient: path along which temperature change is minimum (isothermal)
+    \item \chk Fertility rate: implications of TFR $< 2.1$ for population structure
+    \item \chk Probability: die with coloured faces; sequences GRRRR vs GRGRRR; comparison
+    \item \chk Pouring problem: 12L, 8L, 5L vessels; minimum pourings to get 6L in 8L vessel
+  \end{subtopics}
+
+\end{subtopics}
+
+\newpage
+
+%% ============================================================
+%%  SUMMARY — PREPARATION PRIORITY MAP
+%% ============================================================
+\begin{tcolorbox}[enhanced, breakable,
+  colback=C1!6, colframe=C1, boxrule=1pt, arc=6pt,
+  title={\textbf{Complete Preparation Priority Map}},
+  fonttitle=\bfseries\color{white},
+  attach boxed title to top left={yshift=-3mm, xshift=6mm},
+  boxed title style={colback=C1, arc=4pt}
+]
+
+\textbf{Tier 1 — Master completely (do not skip any sub-topic)}
+\begin{enumerate}[leftmargin=1.5em,itemsep=2pt]
+  \item \textbf{Real Analysis} --- 9 major sub-areas, 50+ sub-topics
+  \item \textbf{Linear Algebra} --- 9 major sub-areas, 45+ sub-topics
+  \item \textbf{Statistics \& Probability} --- 10 major sub-areas, 50+ sub-topics
+\end{enumerate}
+
+\medskip
+\textbf{Tier 2 — Cover fully; all sub-topics will appear}
+\begin{enumerate}[leftmargin=1.5em,itemsep=2pt,start=4]
+  \item \textbf{Complex Analysis} --- 7 major sub-areas, 30+ sub-topics
+  \item \textbf{Abstract Algebra} --- 7 major sub-areas, 35+ sub-topics
+  \item \textbf{Ordinary Differential Equations} --- 6 major sub-areas, 25+ sub-topics
+\end{enumerate}
+
+\medskip
+\textbf{Tier 3 — Selective mastery; pick your strongest topics}
+\begin{enumerate}[leftmargin=1.5em,itemsep=2pt,start=7]
+  \item \textbf{PDEs} --- 5 sub-areas; focus: d'Alembert, heat BVP, energy methods, Laplace max-principle
+  \item \textbf{Topology} --- 5 sub-areas; focus: product topology, compactness (Tychonoff), separation axioms
+  \item \textbf{Functional Analysis} --- 3 sub-areas; focus: $\ell^2$ Hilbert space, compact sets in $C[0,1]$
+  \item \textbf{Calculus of Variations \& Mechanics} --- 3 sub-areas; focus: Euler-Lagrange, isoperimetric, canonical transformations
+  \item \textbf{Numerical Methods} --- 4 sub-areas; focus: N-R order (double zero $\Rightarrow$ $p=1$), Gauss-Seidel spectral radius, cubic splines
+  \item \textbf{Linear Programming} --- 1 sub-area; straightforward: graphical method, simplex, read off optimal value
+\end{enumerate}
+
+\medskip
+\textbf{Part A — General Aptitude (always score 13+/15)}
+\begin{enumerate}[leftmargin=1.5em,itemsep=2pt,start=13]
+  \item Arithmetic, ratio, proportion (8 Qs per paper --- most predictable)
+  \item Logical reasoning: syllogisms, blood relations, coding (6 Qs --- second most predictable)
+  \item Data interpretation: pie/bar graphs (3 Qs --- read carefully, no tricks)
+\end{enumerate}
+
+\end{tcolorbox}
+
+\vspace{8pt}
+
+\begin{tcolorbox}[enhanced, colback=C9!6, colframe=C9,
+  boxrule=0.8pt, arc=5pt, left=10pt, right=10pt, top=6pt, bottom=6pt]
+\textbf{\color{C9}18 Guaranteed-Repeat Sub-topics (appear identically in BOTH 2025 papers):}\ 
+Decimal expansions (Q66) $\cdot$ Riemann integrable $[0,\infty)$ functions (Q67) $\cdot$
+ODE $y''+x^3\sin(1/x)y=0$ (Q68) $\cdot$ Product topology $\prod[0,c]$ (Q69) $\cdot$
+$A^2=I$, $\mathrm{Tr}(A)=0$ anticommutant (Q74) $\cdot$ $M/M/2$ queue $\lambda=4,\mu=1$ (Q75) $\cdot$
+$M_n(\mathbb{C})$ inner product, $W_k=\{0\}$ (Q76) $\cdot$ Borrowing/troublesome (Q77) $\cdot$
+Spanning set $\{u,v,w,x,y\}$ dimension (Q78) $\cdot$ Isoperimetric CoV $\int x^2(y')^2$ (Q79) $\cdot$
+Wishart $N_{12}(\mu,\Sigma)$, $n=20$ (Q80) $\cdot$ $f_n=n(1-nx)$ in $C[0,1]$ (Q92) $\cdot$
+$g(z)=f(z)-1/z$ (Q93) $\cdot$ $H=\{(a_n)\in\ell^2:|a_n|\le 1/n\}$ (Q94) $\cdot$
+Galois $G=S_p$ (Q108) $\cdot$ $T^2=T$ projection span (Q109) $\cdot$
+Non-abelian group $f(a,b)=ab$ (Q110) $\cdot$ $f(z)=\sin^2z+\cos^2|z|$ (Q120).
+\end{tcolorbox}
+
+\vspace{8pt}
+
+\begin{center}
+\small\color{gray!60!black}
+\textit{CSIR-UGC NET Mathematical Sciences --- December 2025 \& June 2025 --- Code 704, Shift 2}\\
+\textit{NTA Final Answer Keys used. Total: 240 questions analysed across both papers.}
+\end{center}
+
+\end{document}

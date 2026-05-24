@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Part A/General Aptitude</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q01_Logarithm</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(\log_{10} 2 = 0.3010\), what is \(\log_{10} 32\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[1.5050]]></text>
+      <feedback><text>Correct. \(\log_{10}32 = \log_{10}2^5 = 5\log_{10}2 = 5\times0.3010 = 1.5050\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[1.2040]]></text>
+      <feedback><text>\(4\times0.3010=1.2040=\log_{10}16\); for 32 we need \(5\times0.3010=1.5050\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[0.6020]]></text>
+      <feedback><text>\(0.6020=\log_{10}4=2\times0.3010\); for 32 it is \(5\times0.3010=1.5050\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[3.2000]]></text>
+      <feedback><text>\(\log_{10}32=5\log_{10}2=1.5050\), not 3.2; 3.2 is neither a log value nor related here.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q02_HarmonicMean</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The harmonic mean of 4 and 12 is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[6]]></text>
+      <feedback><text>Correct. HM = \(\frac{2}{\frac{1}{4}+\frac{1}{12}} = \frac{2}{\frac{3+1}{12}} = \frac{2\times12}{4} = 6\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[8]]></text>
+      <feedback><text>8 is the arithmetic mean \((4+12)/2\); the harmonic mean is \(2/(1/4+1/12)=6\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(4\sqrt{3}\)]]></text>
+      <feedback><text>\(4\sqrt{3}\approx6.93\) is the geometric mean \(\sqrt{4\times12}\); the harmonic mean is 6.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[3]]></text>
+      <feedback><text>HM \(= 2\times4\times12/(4+12)=96/16=6\neq3\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q03_Permutation_Words</text></name>
+    <questiontext format="html">
+      <text><![CDATA[How many distinct 4-letter words (not necessarily meaningful) can be formed using the letters of the word EXAM if repetition is not allowed?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[24]]></text>
+      <feedback><text>Correct. EXAM has 4 distinct letters (E, X, A, M). Number of 4-letter arrangements = \(4! = 24\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[12]]></text>
+      <feedback><text>12 would be the count if some letters repeated; EXAM has 4 distinct letters, giving \(4!=24\) arrangements.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[256]]></text>
+      <feedback><text>256 \(= 4^4\) would be the count with repetition allowed; without repetition, it is \(4!=24\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[6]]></text>
+      <feedback><text>6 \(= 3!\) arrangements uses only 3 letters; using all 4 letters gives \(4!=24\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q04_CalendarProblem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If 1st January 2024 is a Monday, what day of the week will 1st January 2025 be?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Wednesday]]></text>
+      <feedback><text>Correct. 2024 is a leap year (366 days). \(366 = 52\times7 + 2\). So 1 Jan 2025 is Monday + 2 = Wednesday.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Tuesday]]></text>
+      <feedback><text>Tuesday would be the case if 2024 were a non-leap year (365 = 52×7+1, advance by 1 day). Since 2024 is a leap year, advance is 2 days → Wednesday.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Thursday]]></text>
+      <feedback><text>2024 is a leap year (366 days = 52 weeks + 2 days), so the day advances by 2: Monday → Wednesday, not Thursday.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Monday]]></text>
+      <feedback><text>The day would repeat only if 366 were divisible by 7, which it is not; it advances by 2 days to Wednesday.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q05_LinearEquations</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(3x + 2y = 18\) and \(x - y = 1\), what is \(x + y\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[7]]></text>
+      <feedback><text>Correct. From \(x - y = 1\): \(x = y+1\). Substituting: \(3(y+1)+2y=18 \Rightarrow 5y+3=18 \Rightarrow y=3\), \(x=4\). So \(x+y=7\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[5]]></text>
+      <feedback><text>With \(x=4, y=3\): \(x+y=7\neq5\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[9]]></text>
+      <feedback><text>\(x=4, y=3\) gives \(x+y=7\); 9 would require e.g. \(x=5, y=4\), but then \(3(5)+2(4)=23\neq18\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[3]]></text>
+      <feedback><text>3 is the value of \(y\) alone; \(x+y=4+3=7\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q06_GraphTheory_Basic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A connected graph with \(n\) vertices and \(n-1\) edges (and no cycles) is called a]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Tree]]></text>
+      <feedback><text>Correct. A tree is a connected acyclic graph. For a tree with \(n\) vertices, there are exactly \(n-1\) edges. This is a fundamental characterisation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Complete graph]]></text>
+      <feedback><text>The complete graph \(K_n\) has \(n(n-1)/2\) edges (every pair connected); a tree has only \(n-1\) edges.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Bipartite graph]]></text>
+      <feedback><text>A bipartite graph has vertices split into two sets with edges only between sets; the number of edges is not restricted to \(n-1\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Eulerian graph]]></text>
+      <feedback><text>An Eulerian graph has an Eulerian circuit (every vertex even degree); a tree (leaves have degree 1) is generally not Eulerian.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q07_AnalogyCausality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Barometer : Pressure :: Seismograph : ?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Earthquakes]]></text>
+      <feedback><text>Correct. A barometer measures atmospheric pressure; a seismograph measures and records ground motion caused by earthquakes (seismic waves).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Temperature]]></text>
+      <feedback><text>Temperature is measured by a thermometer; a seismograph records seismic (earthquake) activity.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Wind speed]]></text>
+      <feedback><text>Wind speed is measured by an anemometer; the seismograph records ground motion from earthquakes.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Humidity]]></text>
+      <feedback><text>Humidity is measured by a hygrometer; a seismograph is specifically for earthquake detection.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q08_DiscountSuccessive</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A product has successive discounts of 20% and 10%. What is the equivalent single discount?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[28%]]></text>
+      <feedback><text>Correct. After 20%: price = \(0.8P\). After 10% on that: \(0.9\times0.8P = 0.72P\). Single equivalent discount = \(1-0.72 = 28\%\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[30%]]></text>
+      <feedback><text>30% would be the simple addition of the two discounts; the actual equivalent is \(100(1-0.8\times0.9)=28\%\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[25%]]></text>
+      <feedback><text>Successive discounts of 20% and 10%: net multiplier = \(0.8\times0.9=0.72\), equivalent discount = 28%, not 25%.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[18%]]></text>
+      <feedback><text>18% = 20% − 10% (difference); the equivalent single discount is 28%, not the difference of the two discounts.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q09_Cryptarithmetic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In the cryptarithmetic puzzle SEND + MORE = MONEY, how many distinct digits appear in the solution?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[8 distinct digits (S=9, E=5, N=6, D=7, M=1, O=0, R=8, Y=2)]]></text>
+      <feedback><text>Correct. The classic solution is S=9, E=5, N=6, D=7, M=1, O=0, R=8, Y=2. Verify: 9567+1085=10652. All 8 letters represent different digits.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[10 distinct digits (all digits 0–9 are used)]]></text>
+      <feedback><text>SEND+MORE=MONEY uses 8 distinct letters; the digits 3 and 4 are unused in the standard solution.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[5 distinct digits]]></text>
+      <feedback><text>There are 8 distinct letters (S,E,N,D,M,O,R,Y), each representing a unique digit, giving 8 distinct digits.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[9 distinct digits (only one digit 0–9 is unused)]]></text>
+      <feedback><text>The standard solution uses digits 0,1,2,5,6,7,8,9 — that is 8 digits; two digits (3 and 4) are unused.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q10_MeanMedianMode</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the data set: 4, 7, 3, 9, 7, 5, 7, 2, 6, the mode, median, and mean are respectively]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Mode = 7, Median = 6, Mean \(\approx 5.56\)]]></text>
+      <feedback><text>Correct. Sorted: 2,3,4,5,6,7,7,7,9 — Mode = 7 (appears 3 times); Median = 5th of 9 = 6; Sum = 50, Mean = 50/9 ≈ 5.56.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Mode = 7, Median = 7, Mean = \(\frac{50}{9}\approx5.56\)]]></text>
+      <feedback><text>The median is the 5th value in the sorted list 2,3,4,5,6,7,7,7,9, which is 6, not 7.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Mode = 7, Median = 7, Mean = 7]]></text>
+      <feedback><text>The mean is 50/9 ≈ 5.56, not 7; the median is 6 (5th of 9 sorted values).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Mode = 5, Median = 6, Mean \(\approx 5.56\)]]></text>
+      <feedback><text>Mode is 7 (appearing 3 times), not 5; the median (sorted 5th value) is 6 and the mean is 50/9.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q11_Percentage_Decrease</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A number is first increased by 25% and then decreased by 20%. What is the net percentage change?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[0% (no net change)]]></text>
+      <feedback><text>Correct. Net multiplier: \(1.25\times0.80 = 1.00\). The number returns to its original value — 0% net change.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[5% increase]]></text>
+      <feedback><text>\(1.25\times0.80=1.00\); there is no net increase or decrease.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[5% decrease]]></text>
+      <feedback><text>Net multiplier = \(1.25\times0.80=1.00\), meaning no net change; this is a well-known result (25% up, 20% down cancel exactly).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[2% increase]]></text>
+      <feedback><text>\(1.25\times0.80=1.00\), giving 0% net change, not 2% increase.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q12_FamilyRelation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A is the father of B. B is the sister of C. C is the mother of D. How is A related to D?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Maternal grandfather]]></text>
+      <feedback><text>Correct. A is B's father. B is C's sister. So A is also C's father. C is D's mother. Therefore A is D's maternal grandfather.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Uncle]]></text>
+      <feedback><text>A is C's father (since B is C's sister and A is B's father), making A D's grandfather, not uncle.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Paternal grandfather]]></text>
+      <feedback><text>A is the father of C (D's mother), making him the maternal grandfather, not the paternal grandfather (which would be the father of D's father).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Father]]></text>
+      <feedback><text>A is D's grandfather (two generations removed), not D's father.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q13_Inequality_Number</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following is the largest?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\sqrt[3]{5}\)]]></text>
+      <feedback><text>Correct. Compare by raising to the 6th power: \((\sqrt{2})^6=8\), \((\sqrt[3]{3})^6=9\), \((\sqrt[3]{5})^6=25\), \((\sqrt[6]{10})^6=10\). Largest is \(\sqrt[3]{5}\) (giving 25).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\sqrt{2}\)]]></text>
+      <feedback><text>To the 6th power: \((\sqrt2)^6=8 < 25=(\sqrt[3]5)^6\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\sqrt[3]{3}\)]]></text>
+      <feedback><text>To the 6th power: \((\sqrt[3]3)^6=9 < 25=(\sqrt[3]5)^6\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\sqrt[6]{10}\)]]></text>
+      <feedback><text>To the 6th power: \((\sqrt[6]{10})^6=10 < 25=(\sqrt[3]5)^6\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q14_WordAnalogy</text></name>
+    <questiontext format="html">
+      <text><![CDATA[ACROBAT : TRAPEZE :: ARCHER : ?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[BOW]]></text>
+      <feedback><text>Correct. An acrobat uses a trapeze as their primary instrument/apparatus; an archer uses a bow as their primary instrument.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[ARROW]]></text>
+      <feedback><text>An arrow is the projectile fired, but the bow is the primary instrument of an archer — analogous to the trapeze as an apparatus. (Though "arrow" is debatable, "bow" is the standard equipment analogy.)</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[TARGET]]></text>
+      <feedback><text>A target is what the archer aims at, not their instrument; the trapeze is the acrobat's instrument, so the archer's instrument (bow) is the correct analogy.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[QUIVER]]></text>
+      <feedback><text>A quiver holds arrows but is not the archer's primary instrument in the way a trapeze is used by an acrobat; the bow is the correct analogy.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q15_MaxMinOptimization</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A farmer has 120 m of fencing to enclose a rectangular field adjacent to a river (no fence needed along the river). What dimensions maximize the enclosed area?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Width = 30 m (two sides), Length = 60 m (parallel to river); Area = 1800 m²]]></text>
+      <feedback><text>Correct. With two widths and one length: \(2w+l=120\Rightarrow l=120-2w\). Area \(A=wl=w(120-2w)=120w-2w^2\). Maximum at \(w=30\): \(l=60\), \(A=1800\) m².</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Width = 40 m, Length = 40 m; Area = 1600 m²]]></text>
+      <feedback><text>If \(w=40\): \(l=120-80=40\), \(A=1600<1800\); this is not the maximum.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Width = 20 m, Length = 80 m; Area = 1600 m²]]></text>
+      <feedback><text>If \(w=20\): \(l=80\), \(A=1600<1800\); the maximum is at \(w=30\), \(l=60\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Width = 60 m, Length = 0 m; Area = 0 m²]]></text>
+      <feedback><text>A degenerate case with zero length gives zero area; the maximum is at \(w=30\), \(l=60\), \(A=1800\) m².</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q16_Alphabet_Reverse</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If the alphabet is written in reverse (Z=1, Y=2, X=3, …, A=26), what is the sum of the values of the letters in the word CAT?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[57]]></text>
+      <feedback><text>Correct. Z=1,Y=2,...,A=26. C=24 (3rd letter → value 26−2=24), A=26, T=7 (20th letter → 26−19=7). Sum = 24+26+7 = 57.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[60]]></text>
+      <feedback><text>C=24, A=26, T=7 in the reverse alphabet; their sum is 57, not 60.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[24]]></text>
+      <feedback><text>24 is the value of C alone; C+A+T = 24+26+7 = 57.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[45]])</text>
+      <feedback><text>45 does not correspond to the sum of C+A+T in any standard reverse alphabet coding.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q17_PureLogic_Truth</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following compound propositions is a tautology (always true)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(P \vee \neg P\) (Law of Excluded Middle)]]></text>
+      <feedback><text>Correct. \(P\vee\neg P\) is true regardless of the truth value of \(P\) — if \(P\) is true, the disjunction is true; if \(P\) is false, \(\neg P\) is true, making the disjunction true. It is a tautology.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P \wedge \neg P\) (Contradiction)]]></text>
+      <feedback><text>\(P\wedge\neg P\) is always false (a contradiction), the opposite of a tautology.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P \Rightarrow Q\) (Implication)]]></text>
+      <feedback><text>\(P\Rightarrow Q\) is false when \(P\) is true and \(Q\) is false; it is not a tautology.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P \wedge Q\) (Conjunction)]]></text>
+      <feedback><text>\(P\wedge Q\) is false whenever \(P\) or \(Q\) is false; it is not a tautology.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q18_SeriesAlphabet</text></name>
+    <questiontext format="html">
+      <text><![CDATA[What comes next in the series: AZ, BY, CX, DW, ?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[EV]]></text>
+      <feedback><text>Correct. First letters go forward: A, B, C, D, E. Second letters go backward: Z, Y, X, W, V. Next pair: EV.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[EU]]></text>
+      <feedback><text>The second letter is W in DW, so next is V (not U); the pair is EV.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[FV]]></text>
+      <feedback><text>The first letter advances from D to E (not F); the next pair is EV.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[EW]]></text>
+      <feedback><text>W is the second letter of DW; for the next term, W retreats to V, giving EV not EW.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q19_ScienceApplication</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following is an example of a scalar quantity in physics?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Temperature]]></text>
+      <feedback><text>Correct. Temperature has only magnitude (no direction), making it a scalar. Vector quantities (e.g., force, velocity, acceleration) have both magnitude and direction.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Velocity]]></text>
+      <feedback><text>Velocity is a vector (magnitude = speed + direction); temperature, mass, and energy are scalars.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Force]]></text>
+      <feedback><text>Force is a vector quantity (has direction); temperature is a scalar.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Displacement]]></text>
+      <feedback><text>Displacement is a vector (magnitude + direction); distance (scalar) is its magnitude.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>PARTA5_Q20_NumberBase</text></name>
+    <questiontext format="html">
+      <text><![CDATA[What is \((47)_8\) (octal) converted to decimal?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[39]]></text>
+      <feedback><text>Correct. \((47)_8 = 4\times8^1 + 7\times8^0 = 32 + 7 = 39_{10}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[47]]></text>
+      <feedback><text>47 in octal is not the same as 47 in decimal; \((47)_8 = 4\times8+7 = 39_{10}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[55]]></text>
+      <feedback><text>\((67)_8=6\times8+7=55\); \((47)_8=4\times8+7=39\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[35]]></text>
+      <feedback><text>\((43)_8=4\times8+3=35\); \((47)_8=4\times8+7=39\).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

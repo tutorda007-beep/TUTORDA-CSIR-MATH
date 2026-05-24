@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Linear Algebra/Linear Transformations</text>
+    </category>
+    <info format="html"><text>CSIR NET level MCQ questions on Linear Transformations</text></info>
+  </question>
+
+  <!-- Q1 -->
+  <question type="multichoice">
+    <name><text>LA10-Q01 Rank-Nullity Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(T: \mathbb{R}^7 \to \mathbb{R}^5\) be a linear transformation with \(\text{rank}(T) = 3\). Then the nullity of \(T\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(4\)</text><feedback format="html"><text>Correct. By rank-nullity: \(\text{nullity}(T) = \dim(\text{domain}) - \text{rank}(T) = 7-3=4\).</text></feedback></answer>
+    <answer fraction="0"><text>\(2\)</text><feedback format="html"><text>Incorrect. Rank-nullity: nullity = 7 - rank = 7 - 3 = 4.</text></feedback></answer>
+    <answer fraction="0"><text>\(3\)</text><feedback format="html"><text>Incorrect. Nullity = 7 - 3 = 4, not 3.</text></feedback></answer>
+    <answer fraction="0"><text>\(5\)</text><feedback format="html"><text>Incorrect. Nullity = dim(domain) - rank = 7 - 3 = 4.</text></feedback></answer>
+  </question>
+
+  <!-- Q2 -->
+  <question type="multichoice">
+    <name><text>LA10-Q02 Injective Linear Map</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A linear transformation \(T: V \to W\) is injective (one-to-one) if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\ker(T) = \{0\}\)]]></text><feedback format="html"><text>Correct. \(T\) is injective iff \(Tv=0 \Rightarrow v=0\), i.e., the kernel is trivial.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{im}(T) = W\)]]></text><feedback format="html"><text>Incorrect. That condition makes \(T\) surjective, not injective.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\dim V = \dim W\)]]></text><feedback format="html"><text>Incorrect. Equal dimensions is necessary for isomorphism, but injectivity requires \(\ker T = \{0\}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(T\) maps every basis of \(V\) to a spanning set of \(W\)]]></text><feedback format="html"><text>Incorrect. That would make \(T\) surjective.</text></feedback></answer>
+  </question>
+
+  <!-- Q3 -->
+  <question type="multichoice">
+    <name><text>LA10-Q03 Matrix of Linear Map</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(T: \mathbb{R}^2 \to \mathbb{R}^2\) be defined by \(T(x,y) = (2x-y, x+3y)\). The matrix of \(T\) with respect to the standard basis is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\begin{pmatrix}2 & -1 \\ 1 & 3\end{pmatrix}\)]]></text><feedback format="html"><text>Correct. \(Te_1 = T(1,0)=(2,1)\) (first column) and \(Te_2=T(0,1)=(-1,3)\) (second column).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}2 & 1 \\ -1 & 3\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. The columns are \(Te_1=(2,1)\) and \(Te_2=(-1,3)\), so the matrix is \(\begin{pmatrix}2&-1\\1&3\end{pmatrix}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}2 & 3 \\ -1 & 1\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. The \((i,j)\) entry is the \(i\)-th component of \(Te_j\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}2 & 1 \\ 3 & -1\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. Apply \(T\) to basis vectors: \(T(1,0)=(2,1)\), \(T(0,1)=(-1,3)\).</text></feedback></answer>
+  </question>
+
+  <!-- Q4 -->
+  <question type="multichoice">
+    <name><text>LA10-Q04 Composition of Linear Maps</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(S: \mathbb{R}^3 \to \mathbb{R}^2\) and \(T: \mathbb{R}^2 \to \mathbb{R}^4\) be linear maps with \(\text{rank}(S)=2\) and \(\text{rank}(T)=2\). The rank of \(T\circ S: \mathbb{R}^3\to\mathbb{R}^4\) satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{rank}(T\circ S) \leq \min(\text{rank}(T),\text{rank}(S)) = 2\)]]></text><feedback format="html"><text>Correct. Since \(S\) is surjective (rank=dim codomain=2), \(\text{im}(S)=\mathbb{R}^2\) and \(\text{rank}(T\circ S) = \text{rank}(T)=2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{rank}(T\circ S) = \text{rank}(T)\cdot\text{rank}(S) = 4\)]]></text><feedback format="html"><text>Incorrect. Rank does not multiply; the rank inequality is \(\text{rank}(T\circ S)\leq\min(\text{rank}S,\text{rank}T)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{rank}(T\circ S) = 3\)]]></text><feedback format="html"><text>Incorrect. Rank cannot exceed 2 since \(\text{im}(T\circ S)\subseteq\text{im}(T)\) and \(\text{rank}(T)=2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{rank}(T\circ S) = 0\)]]></text><feedback format="html"><text>Incorrect. Since both \(S\) and \(T\) are nonzero maps with rank 2, their composition is nonzero.</text></feedback></answer>
+  </question>
+
+  <!-- Q5 -->
+  <question type="multichoice">
+    <name><text>LA10-Q05 Projection Operator</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A linear operator \(P: V\to V\) is a projection if \(P^2 = P\). Which of the following is necessarily true for a projection \(P\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(V = \ker(P) \oplus \text{im}(P)\)]]></text><feedback format="html"><text>Correct. For any projection: \(\ker P\cap\text{im}P=\{0\}\) and \(v = (v-Pv)+Pv\in\ker P+\text{im}P\), giving the direct sum decomposition.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(P\) is self-adjoint, i.e., \(P = P^*\)]]></text><feedback format="html"><text>Incorrect. \(P^2=P\) alone does not imply \(P=P^*\). Orthogonal projections satisfy \(P=P^*\), but general projections need not.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[The eigenvalues of \(P\) are all equal to 1]]></text><feedback format="html"><text>Incorrect. The only eigenvalues of a projection are 0 and 1 (from \(\lambda^2=\lambda\)).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{rank}(P) = \dim V / 2\)]]></text><feedback format="html"><text>Incorrect. The rank of a projection can be any integer from 0 to \(\dim V\).</text></feedback></answer>
+  </question>
+
+  <!-- Q6 -->
+  <question type="multichoice">
+    <name><text>LA10-Q06 Isomorphism Condition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Two finite-dimensional vector spaces \(V\) and \(W\) over the same field \(F\) are isomorphic if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(\dim V = \dim W\)</text><feedback format="html"><text>Correct. Two finite-dimensional vector spaces over the same field are isomorphic iff they have the same dimension.</text></feedback></answer>
+    <answer fraction="0"><text>There is a linear map from \(V\) to \(W\)</text><feedback format="html"><text>Incorrect. Any two vector spaces have linear maps between them (including the zero map). Isomorphism requires a bijective linear map.</text></feedback></answer>
+    <answer fraction="0"><text>\(V\) and \(W\) have the same number of elements</text><feedback format="html"><text>Incorrect. Over infinite fields, both spaces are infinite. The criterion is dimension equality.</text></feedback></answer>
+    <answer fraction="0"><text>\(V\) is a subspace of \(W\)</text><feedback format="html"><text>Incorrect. A subspace need not yield isomorphism; e.g., \(\mathbb{R} \subset \mathbb{R}^2\) are not isomorphic.</text></feedback></answer>
+  </question>
+
+  <!-- Q7 -->
+  <question type="multichoice">
+    <name><text>LA10-Q07 Differentiation as Linear Map</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(D: P_n \to P_{n-1}\) be the differentiation operator \(D(p) = p'\). What is the rank of \(D\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(n\)</text><feedback format="html"><text>Correct. \(D\) is surjective since every polynomial of degree \(\leq n-1\) is the derivative of some degree-\(\leq n\) polynomial. So \(\text{rank}(D) = \dim P_{n-1} = n\).</text></feedback></answer>
+    <answer fraction="0"><text>\(n+1\)</text><feedback format="html"><text>Incorrect. The image of \(D\) is \(P_{n-1}\) which has dimension \(n\), not \(n+1\).</text></feedback></answer>
+    <answer fraction="0"><text>\(n-1\)</text><feedback format="html"><text>Incorrect. \(D\) maps \(P_n\) onto all of \(P_{n-1}\) (dimension \(n\)).</text></feedback></answer>
+    <answer fraction="0"><text>\(1\)</text><feedback format="html"><text>Incorrect. The rank of \(D\) equals the dimension of its image, which is \(P_{n-1}\) of dimension \(n\).</text></feedback></answer>
+  </question>
+
+  <!-- Q8 -->
+  <question type="multichoice">
+    <name><text>LA10-Q08 Adjoint of Linear Map</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(T: V \to W\) be a linear map between inner product spaces, and \(T^*: W\to V\) its adjoint defined by \(\langle Tv, w\rangle_W = \langle v, T^*w\rangle_V\). Which identity holds?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\ker(T^*) = (\text{im}\,T)^\perp\)]]></text><feedback format="html"><text>Correct. \(w \in \ker T^*\) iff \(T^*w=0\) iff \(\langle v, T^*w\rangle=0\) for all \(v\) iff \(\langle Tv, w\rangle=0\) for all \(v\) iff \(w\perp\text{im}\,T\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\ker(T^*) = \ker(T)\)]]></text><feedback format="html"><text>Incorrect. \(\ker T\subseteq V\) while \(\ker T^*\subseteq W\); they live in different spaces.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{rank}(T^*) = \dim W - \text{rank}(T)\)]]></text><feedback format="html"><text>Incorrect. In fact \(\text{rank}(T^*) = \text{rank}(T)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(T^* = T^{-1}\) whenever \(T\) is bijective]]></text><feedback format="html"><text>Incorrect. The adjoint and inverse coincide only for unitary/orthogonal operators.</text></feedback></answer>
+  </question>
+
+  <!-- Q9 -->
+  <question type="multichoice">
+    <name><text>LA10-Q09 Nilpotent Operator</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A linear operator \(N: V \to V\) is nilpotent if \(N^k = 0\) for some \(k\geq 1\). If \(\dim V = n\) and \(N\) is nilpotent, then:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>All eigenvalues of \(N\) are 0</text><feedback format="html"><text>Correct. If \(Nv=\lambda v\) then \(N^k v = \lambda^k v = 0\), so \(\lambda=0\).</text></feedback></answer>
+    <answer fraction="0"><text>\(N\) is invertible</text><feedback format="html"><text>Incorrect. A nilpotent operator with \(N^k=0\) has \(\det(N)=0\) (all eigenvalues are 0), so it is not invertible.</text></feedback></answer>
+    <answer fraction="0"><text>\(N\) is diagonalizable</text><feedback format="html"><text>Incorrect. A nonzero nilpotent operator cannot be diagonalized (it would require a diagonal matrix with all zeros, forcing \(N=0\)).</text></feedback></answer>
+    <answer fraction="0"><text>\(N^n \neq 0\) in general</text><feedback format="html"><text>Incorrect. By Cayley-Hamilton, the characteristic polynomial of \(N\) is \(\lambda^n\) (all eigenvalues are 0), so \(N^n=0\) always.</text></feedback></answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>LA10-Q10 Matrix Similarity</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Matrices \(A\) and \(B\) are similar (i.e., \(B = P^{-1}AP\) for some invertible \(P\)) iff they represent the same linear operator in different bases. Which invariant distinguishes similarity classes?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>The characteristic polynomial (equivalently, the eigenvalues with multiplicities)</text><feedback format="html"><text>Correct. Similar matrices have the same characteristic polynomial: \(\det(B-\lambda I) = \det(P^{-1}(A-\lambda I)P) = \det(A-\lambda I)\).</text></feedback></answer>
+    <answer fraction="0"><text>The entries of the matrix</text><feedback format="html"><text>Incorrect. Similar matrices generally have different entries; it is the characteristic polynomial that is invariant.</text></feedback></answer>
+    <answer fraction="0"><text>The row space</text><feedback format="html"><text>Incorrect. Row spaces change under similarity (column operations correspond to basis changes in domain and codomain).</text></feedback></answer>
+    <answer fraction="0"><text>The transpose</text><feedback format="html"><text>Incorrect. While \(A\) and \(A^T\) have the same characteristic polynomial, "the transpose" is not an invariant of similarity classes.</text></feedback></answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>LA10-Q11 Trace and Determinant Under Similarity</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(A\) is a \(3\times 3\) matrix with eigenvalues \(1, 2, 3\), then \(\text{tr}(A^2)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(14\)</text><feedback format="html"><text>Correct. Eigenvalues of \(A^2\) are \(1^2, 2^2, 3^2 = 1, 4, 9\). So \(\text{tr}(A^2) = 1+4+9=14\).</text></feedback></answer>
+    <answer fraction="0"><text>\(6\)</text><feedback format="html"><text>Incorrect. \(\text{tr}(A)=1+2+3=6\), but \(\text{tr}(A^2) = 1+4+9=14\).</text></feedback></answer>
+    <answer fraction="0"><text>\(36\)</text><feedback format="html"><text>Incorrect. \(\text{tr}(A)^2 = 36\) but \(\text{tr}(A^2)\neq\text{tr}(A)^2\).</text></feedback></answer>
+    <answer fraction="0"><text>\(9\)</text><feedback format="html"><text>Incorrect. The eigenvalues of \(A^2\) are squares of eigenvalues of \(A\): \(1,4,9\), summing to 14.</text></feedback></answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>LA10-Q12 Unitary Transformation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A linear operator \(U: V\to V\) on an inner product space is unitary if \(UU^* = U^*U = I\). Which is NOT necessarily true for a unitary operator?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>All eigenvalues of \(U\) are real</text><feedback format="html"><text>Correct. Eigenvalues of a unitary operator have modulus 1 (i.e., lie on the unit circle in \(\mathbb{C}\)), but need not be real.</text></feedback></answer>
+    <answer fraction="0"><text>\(U\) preserves inner products: \(\langle Uv, Uw\rangle = \langle v, w\rangle\)</text><feedback format="html"><text>Incorrect (this IS true). Unitarity is equivalent to preserving inner products.</text></feedback></answer>
+    <answer fraction="0"><text>\(|\det U| = 1\)</text><feedback format="html"><text>Incorrect (this IS true). Since \(UU^*=I\), \(|\det U|^2 = 1\).</text></feedback></answer>
+    <answer fraction="0"><text>\(U\) is bijective (invertible)</text><feedback format="html"><text>Incorrect (this IS true). \(U^*\) is the inverse of \(U\).</text></feedback></answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>LA10-Q13 Image and Preimage</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(T: V\to W\) be linear. Which of the following is correct?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[For any subspace \(U\subseteq V\), \(T(U)\) is a subspace of \(W\)]]></text><feedback format="html"><text>Correct. Linear images of subspaces are subspaces: \(T(U)\) is closed under addition and scalar multiplication.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(T^{-1}(W)\) is always a proper subspace of \(V\)]]></text><feedback format="html"><text>Incorrect. \(T^{-1}(W) = V\) always (every element of \(V\) maps somewhere in \(W\)).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[If \(U\) is a subspace of \(W\), then \(T^{-1}(U)\) need not be a subspace of \(V\)]]></text><feedback format="html"><text>Incorrect. The preimage of a subspace under a linear map is always a subspace.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(T(V \setminus \ker T) = \text{im}(T) \setminus \{0\}\)]]></text><feedback format="html"><text>Incorrect. This is generally false; for example, elements outside \(\ker T\) can map to 0 only if they are in \(\ker T\).</text></feedback></answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>LA10-Q14 Dual Map</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(T: V\to W\) be a linear map. The dual map (transpose) \(T^t: W^*\to V^*\) is defined by \((T^t f)(v) = f(Tv)\). Which is true?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{rank}(T^t) = \text{rank}(T)\)]]></text><feedback format="html"><text>Correct. The row rank equals the column rank, and dualizing a map preserves rank.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\ker(T^t) = \ker(T)\)]]></text><feedback format="html"><text>Incorrect. \(\ker T\subseteq V\) while \(\ker T^t\subseteq W^*\); they are in different spaces.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(T^t\) is surjective whenever \(T\) is injective]]></text><feedback format="html"><text>Incorrect. \(T\) injective iff \(T^t\) is surjective is true over finite-dimensional spaces, but the claim reverses this.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[(T^t)^t = -T\) (up to natural isomorphism)]]></text><feedback format="html"><text>Incorrect. \((T^t)^t = T\) under the natural isomorphism \(V \cong V^{**}\) (not \(-T\)).</text></feedback></answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>LA10-Q15 Spectral Mapping Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(T: V\to V\) be a linear operator and \(p(\lambda)\) a polynomial. If \(\lambda_0\) is an eigenvalue of \(T\) with eigenvector \(v\), then:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(p(\lambda_0)\) is an eigenvalue of \(p(T)\) with eigenvector \(v\)]]></text><feedback format="html"><text>Correct. \(p(T)v = p(\lambda_0)v\) since \(T^k v = \lambda_0^k v\) for all \(k\). This is the spectral mapping theorem for polynomials.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(p(\lambda_0) + 1\) is an eigenvalue of \(p(T)\)]]></text><feedback format="html"><text>Incorrect. \(p(T)v = p(\lambda_0)v\), so \(p(\lambda_0)\) (not \(p(\lambda_0)+1\)) is the eigenvalue.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(p(T)v = 0\) for all polynomials \(p\)]]></text><feedback format="html"><text>Incorrect. \(p(T)v = p(\lambda_0)v \neq 0\) unless \(p(\lambda_0)=0\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(v\) is no longer an eigenvector of \(p(T)\)]]></text><feedback format="html"><text>Incorrect. \(v\) remains an eigenvector of \(p(T)\) with eigenvalue \(p(\lambda_0)\).</text></feedback></answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>LA10-Q16 Linear Maps on Infinite-Dimensional Spaces</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Consider the shift operators on \(\ell^2(\mathbb{N})\): left shift \(L(x_1,x_2,x_3,\ldots)=(x_2,x_3,\ldots)\) and right shift \(R(x_1,x_2,\ldots)=(0,x_1,x_2,\ldots)\). Which is true?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(LR = I\) but \(RL \neq I\) (so neither \(L\) nor \(R\) is invertible)</text><feedback format="html"><text>Correct. \(LR(x_1,x_2,\ldots)=L(0,x_1,x_2,\ldots)=(x_1,x_2,\ldots)=I\). But \(RL(x_1,x_2,\ldots)=R(x_2,x_3,\ldots)=(0,x_2,x_3,\ldots)\neq(x_1,x_2,\ldots)\).</text></feedback></answer>
+    <answer fraction="0"><text>\(LR = RL = I\), so both are invertible</text><feedback format="html"><text>Incorrect. \(RL \neq I\); the composition \(RL\) loses the first component.</text></feedback></answer>
+    <answer fraction="0"><text>\(L\) is injective but not surjective</text><feedback format="html"><text>Incorrect. \(L\) is surjective (every sequence is hit) but not injective (\(\ker L = \{(x_1,0,0,\ldots)\}\)).</text></feedback></answer>
+    <answer fraction="0"><text>\(R\) is surjective but not injective</text><feedback format="html"><text>Incorrect. \(R\) is injective (if \(Rx=Ry\) then \(x=y\)) but not surjective (the image misses sequences with nonzero first component).</text></feedback></answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>LA10-Q17 Rank of Composition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For matrices \(A\) (of size \(m\times n\)) and \(B\) (of size \(n\times p\)), which inequality always holds?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{rank}(AB) \leq \min(\text{rank}(A), \text{rank}(B))\)]]></text><feedback format="html"><text>Correct. \(\text{im}(AB)\subseteq\text{im}(A)\) gives \(\text{rank}(AB)\leq\text{rank}(A)\); \(\text{null}(B)\subseteq\text{null}(AB)\) gives \(\text{rank}(AB)\leq\text{rank}(B)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{rank}(AB) = \text{rank}(A)\cdot\text{rank}(B)\)]]></text><feedback format="html"><text>Incorrect. Ranks do not multiply; counterexample: \(A=B=\begin{pmatrix}1&0\\0&0\end{pmatrix}\), rank=1, but \(AB\) has rank 1, not 1×1=1 (coincidence here; try \(A\begin{pmatrix}0&1\\0&0\end{pmatrix}B\)).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{rank}(AB) \geq \max(\text{rank}(A),\text{rank}(B))\)]]></text><feedback format="html"><text>Incorrect. The rank of \(AB\) can be smaller than both \(\text{rank}(A)\) and \(\text{rank}(B)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{rank}(AB) = \text{rank}(A) + \text{rank}(B) - n\)]]></text><feedback format="html"><text>Incorrect. This is the Sylvester rank inequality: \(\text{rank}(AB)\geq\text{rank}(A)+\text{rank}(B)-n\), but equality doesn't always hold.</text></feedback></answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>LA10-Q18 Normal Operator</text></name>
+    <questiontext format="html">
+      <text><![CDATA[An operator \(T\) on a complex inner product space is normal if \(TT^* = T^*T\). Which of the following operators is always normal?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>A self-adjoint operator (\(T = T^*\))</text><feedback format="html"><text>Correct. If \(T=T^*\), then \(TT^*=TT=T^2=T^*T\), so \(T\) is normal.</text></feedback></answer>
+    <answer fraction="0"><text>A nilpotent operator (\(T^k=0\) for some \(k\))</text><feedback format="html"><text>Incorrect. A nonzero nilpotent operator is not normal (if normal and nilpotent, then \(T=0\)).</text></feedback></answer>
+    <answer fraction="0"><text>An operator with all eigenvalues equal to zero</text><feedback format="html"><text>Incorrect. Having all zero eigenvalues (nilpotent) does not imply normality.</text></feedback></answer>
+    <answer fraction="0"><text>A non-invertible operator</text><feedback format="html"><text>Incorrect. Non-invertibility says nothing about normality.</text></feedback></answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>LA10-Q19 Diagonalizability Criterion</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A linear operator \(T: V\to V\) (\(\dim V = n < \infty\)) is diagonalizable over \(\mathbb{R}\) if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[The minimal polynomial of \(T\) has no repeated roots (splits into distinct linear factors over \(\mathbb{R}\))]]></text><feedback format="html"><text>Correct. \(T\) is diagonalizable iff its minimal polynomial has no repeated roots, equivalently iff \(V\) is the direct sum of eigenspaces of \(T\).</text></feedback></answer>
+    <answer fraction="0"><text>The characteristic polynomial of \(T\) splits over \(\mathbb{R}\)</text><feedback format="html"><text>Incorrect. The characteristic polynomial splitting is necessary but not sufficient; repeated roots of the minimal polynomial can prevent diagonalization.</text></feedback></answer>
+    <answer fraction="0"><text>\(T\) has \(n\) distinct eigenvalues</text><feedback format="html"><text>Incorrect. \(n\) distinct eigenvalues implies diagonalizability, but diagonalizability does not require distinct eigenvalues (e.g., \(T=I\) has one eigenvalue of multiplicity \(n\) and is diagonalizable).</text></feedback></answer>
+    <answer fraction="0"><text>\(\det(T) \neq 0\)</text><feedback format="html"><text>Incorrect. Invertibility (\(\det\neq 0\)) has nothing to do with diagonalizability.</text></feedback></answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>LA10-Q20 Kernel and Image of Adjoint</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For a linear map \(T: \mathbb{R}^m \to \mathbb{R}^n\) represented by matrix \(A\), the four fundamental subspaces (null space, row space, column space, left null space) satisfy which orthogonality relation?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{null}(A) = (\text{row space of }A)^\perp\) in \(\mathbb{R}^n\), and \(\text{null}(A^T) = (\text{col space of }A)^\perp\) in \(\mathbb{R}^m\)]]></text><feedback format="html"><text>Correct. These are the fundamental orthogonality relations: \(\mathbb{R}^n = \ker A \oplus \text{row}(A)\) and \(\mathbb{R}^m = \ker A^T \oplus \text{col}(A)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{null}(A) = \text{col}(A)\)]]></text><feedback format="html"><text>Incorrect. The null space and column space live in different ambient spaces (\(\mathbb{R}^n\) vs \(\mathbb{R}^m\)) and are generally different.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{row}(A)\) and \(\text{col}(A)\) are always orthogonal to each other]]></text><feedback format="html"><text>Incorrect. Row space and column space live in different spaces and their orthogonality relationship is not direct.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{null}(A) = \text{null}(A^T)\)]]></text><feedback format="html"><text>Incorrect. \(\ker A\subseteq\mathbb{R}^n\) and \(\ker A^T\subseteq\mathbb{R}^m\); they are equal only if \(m=n\) and \(A\) is symmetric.</text></feedback></answer>
+  </question>
+
+</quiz>
