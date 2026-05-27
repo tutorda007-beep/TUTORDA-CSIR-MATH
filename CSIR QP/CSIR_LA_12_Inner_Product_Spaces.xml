@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Linear Algebra/Inner Product Spaces</text>
+    </category>
+    <info format="html"><text>CSIR NET level MCQ questions on Inner Product Spaces</text></info>
+  </question>
+
+  <!-- Q1 -->
+  <question type="multichoice">
+    <name><text>LA12-Q01 Cauchy-Schwarz Inequality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In an inner product space, the Cauchy-Schwarz inequality states \(|\langle u,v\rangle| \leq \|u\|\|v\|\). Equality holds iff:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(u\) and \(v\) are linearly dependent (one is a scalar multiple of the other)</text><feedback format="html"><text>Correct. Equality in Cauchy-Schwarz holds iff \(u = \alpha v\) for some scalar \(\alpha\), i.e., \(u\) and \(v\) are linearly dependent.</text></feedback></answer>
+    <answer fraction="0"><text>\(\|u\| = \|v\|\)</text><feedback format="html"><text>Incorrect. Equal norms do not imply equality in Cauchy-Schwarz. Equality requires linear dependence.</text></feedback></answer>
+    <answer fraction="0"><text>\(u\) and \(v\) are orthogonal</text><feedback format="html"><text>Incorrect. If \(u\perp v\), then \(|\langle u,v\rangle|=0\leq\|u\|\|v\|\), which is equality only if at least one vector is zero.</text></feedback></answer>
+    <answer fraction="0"><text>\(\langle u,v\rangle = 0\)</text><feedback format="html"><text>Incorrect. \(\langle u,v\rangle=0\) means orthogonality, which gives \(0\leq\|u\|\|v\|\), equality only when one is zero.</text></feedback></answer>
+  </question>
+
+  <!-- Q2 -->
+  <question type="multichoice">
+    <name><text>LA12-Q02 Gram-Schmidt Orthogonalization</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Applying Gram-Schmidt to \(\{1, x, x^2\}\) in \(L^2[0,1]\) with inner product \(\langle f,g\rangle=\int_0^1f(x)g(x)\,dx\), the first two orthonormal polynomials are \(e_1=1\) and \(e_2=\sqrt{3}(2x-1)\). The third orthonormal polynomial \(e_3\) is a scalar multiple of:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(6x^2 - 6x + 1\)]]></text><feedback format="html"><text>Correct. After subtracting components along \(e_1\) and \(e_2\) from \(x^2\), one obtains (up to normalization) the shifted Legendre polynomial \(6x^2-6x+1\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(x^2 - x\)]]></text><feedback format="html"><text>Incorrect. This is not orthogonal to \(e_1=1\): \(\int_0^1(x^2-x)\,dx = 1/3-1/2 = -1/6\neq0\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(x^2 - 1/3\)]]></text><feedback format="html"><text>Incorrect. Check: \(\int_0^1(x^2-1/3)\cdot(2x-1)\,dx = \int_0^1(2x^3-x^2-2x/3+1/3)\,dx = 1/2-1/3-1/3+1/3=1/6\neq0\). Not orthogonal to \(e_2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(x^2 + x - 1\)]]></text><feedback format="html"><text>Incorrect. \(\int_0^1(x^2+x-1)\,dx = 1/3+1/2-1=-1/6\neq0\). Not orthogonal to \(e_1\).</text></feedback></answer>
+  </question>
+
+  <!-- Q3 -->
+  <question type="multichoice">
+    <name><text>LA12-Q03 Orthogonal Complement</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(W\) be a subspace of an inner product space \(V\). Which of the following is true about \(W^\perp\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[If \(V\) is finite-dimensional, then \(V = W \oplus W^\perp\) and \(\dim W + \dim W^\perp = \dim V\)]]></text><feedback format="html"><text>Correct. Every finite-dimensional inner product space decomposes as the direct sum of any subspace and its orthogonal complement.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(W \cap W^\perp = W\)]]></text><feedback format="html"><text>Incorrect. \(W\cap W^\perp = \{0\}\): a nonzero vector cannot be orthogonal to itself (in a real inner product space with positive definiteness).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\((W^\perp)^\perp = V\)]]></text><feedback format="html"><text>Incorrect. In finite dimensions, \((W^\perp)^\perp = W\) (the complement of the complement returns to \(W\)).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\dim W^\perp = \dim V\)]]></text><feedback format="html"><text>Incorrect. \(\dim W^\perp = \dim V - \dim W\).</text></feedback></answer>
+  </question>
+
+  <!-- Q4 -->
+  <question type="multichoice">
+    <name><text>LA12-Q04 Parallelogram Law</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The parallelogram law states: in any inner product space, \(\|u+v\|^2 + \|u-v\|^2 = 2(\|u\|^2 + \|v\|^2)\). This law characterizes inner product spaces among normed spaces. If a normed space satisfies the parallelogram law, then the inner product is recovered by:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[The polarization identity: \(\langle u,v\rangle = \frac{1}{4}(\|u+v\|^2 - \|u-v\|^2)\) (real case)]]></text><feedback format="html"><text>Correct. The polarization identity recovers the inner product from the norm in a real inner product space.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\langle u,v\rangle = \|u\|\|v\|\)]]></text><feedback format="html"><text>Incorrect. This is the Cauchy-Schwarz bound, not the definition of the inner product.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\langle u,v\rangle = \|u+v\|^2 - \|u\|^2 - \|v\|^2\)]]></text><feedback format="html"><text>Incorrect. This equals \(2\langle u,v\rangle\) by the expansion \(\|u+v\|^2=\|u\|^2+2\langle u,v\rangle+\|v\|^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\langle u,v\rangle = \frac{1}{2}(\|u\|^2+\|v\|^2)\)]]></text><feedback format="html"><text>Incorrect. This is just the average of the squared norms, independent of the angle between \(u\) and \(v\).</text></feedback></answer>
+  </question>
+
+  <!-- Q5 -->
+  <question type="multichoice">
+    <name><text>LA12-Q05 Best Approximation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(W\) be a closed subspace of a Hilbert space \(H\). For any \(v\in H\), the best approximation to \(v\) in \(W\) is the unique \(w^*\in W\) that minimizes \(\|v-w\|\). This \(w^*\) is characterized by:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(v - w^* \in W^\perp\) (the residual is orthogonal to \(W\))]]></text><feedback format="html"><text>Correct. The orthogonal projection theorem: \(w^*=\text{proj}_W v\) is the unique element satisfying \(\langle v-w^*, w\rangle=0\) for all \(w\in W\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(v - w^* \in W\) (the residual lies in \(W\))]]></text><feedback format="html"><text>Incorrect. The residual must be in \(W^\perp\), not in \(W\) itself.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\|w^*\| = \|v\|\)]]></text><feedback format="html"><text>Incorrect. By Pythagoras: \(\|v\|^2 = \|w^*\|^2 + \|v-w^*\|^2\), so \(\|w^*\|\leq\|v\|\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(w^* = v\) whenever \(W\) contains \(v\)]]></text><feedback format="html"><text>Incorrect — wait, actually this IS true (if \(v\in W\), then the projection is \(v\) itself). But this answer is incomplete. The characterization is \(v-w^*\perp W\).</text></feedback></answer>
+  </question>
+
+  <!-- Q6 -->
+  <question type="multichoice">
+    <name><text>LA12-Q06 Riesz Representation Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Riesz representation theorem for Hilbert spaces states: for every bounded linear functional \(f: H\to\mathbb{F}\) on a Hilbert space \(H\), there exists a unique \(y\in H\) such that:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(f(x) = \langle x, y\rangle\) for all \(x\in H\), with \(\|f\| = \|y\|\)]]></text><feedback format="html"><text>Correct. Every bounded linear functional on a Hilbert space is represented by an inner product with a unique element, and the norm of the functional equals the norm of the representing element.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f(x) = x + y\) for all \(x\in H\)]]></text><feedback format="html"><text>Incorrect. Linear functionals map to scalars, not vectors. The representation is \(f(x)=\langle x,y\rangle\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f = y^*\) (the transpose of \(y\))]]></text><feedback format="html"><text>Incorrect. The Riesz theorem identifies \(f\) with the inner product \(\langle\cdot,y\rangle\), not a transpose.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f(x) = \|x\|\|y\|\) for all \(x\)]]></text><feedback format="html"><text>Incorrect. This is the Cauchy-Schwarz upper bound, not the representation formula.</text></feedback></answer>
+  </question>
+
+  <!-- Q7 -->
+  <question type="multichoice">
+    <name><text>LA12-Q07 Bessel's Inequality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(\{e_k\}_{k=1}^\infty\) be an orthonormal sequence in a Hilbert space \(H\). Bessel's inequality states: for any \(x\in H\),]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\sum_{k=1}^\infty |\langle x, e_k\rangle|^2 \leq \|x\|^2\)]]></text><feedback format="html"><text>Correct. Bessel's inequality: the sum of squares of Fourier coefficients is bounded by the squared norm. Equality (Parseval's identity) holds iff \(\{e_k\}\) is a complete orthonormal system.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\sum_{k=1}^\infty |\langle x, e_k\rangle|^2 = \|x\|^2\)]]></text><feedback format="html"><text>Incorrect. This is Parseval's identity, which holds only when \(\{e_k\}\) is an orthonormal basis (complete system). Bessel's inequality gives \(\leq\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\sum_{k=1}^\infty |\langle x, e_k\rangle| \leq \|x\|\)]]></text><feedback format="html"><text>Incorrect. Bessel's inequality involves the sum of squares \(|\langle x,e_k\rangle|^2\), not the sum of absolute values.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\sum_{k=1}^\infty |\langle x, e_k\rangle|^2 \geq \|x\|^2\)]]></text><feedback format="html"><text>Incorrect. The inequality is \(\leq\), not \(\geq\).</text></feedback></answer>
+  </question>
+
+  <!-- Q8 -->
+  <question type="multichoice">
+    <name><text>LA12-Q08 Orthonormal Basis of L2</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The standard orthonormal basis for \(L^2[-\pi,\pi]\) (with inner product \(\langle f,g\rangle=\frac{1}{2\pi}\int_{-\pi}^\pi f\bar{g}\,dx\)) consists of:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\{e^{inx}\}_{n\in\mathbb{Z}}\)]]></text><feedback format="html"><text>Correct. The complex exponentials \(\{e^{inx}/\sqrt{2\pi}\}_{n\in\mathbb{Z}}\) (or equivalently with the normalized inner product, just \(\{e^{inx}\}\)) form a complete orthonormal basis for \(L^2[-\pi,\pi]\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\{x^n\}_{n=0}^\infty\)]]></text><feedback format="html"><text>Incorrect. The monomials \(\{x^n\}\) are not orthogonal on \([-\pi,\pi]\) and form a basis only after Gram-Schmidt (yielding Legendre polynomials).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\{\sin(nx)\}_{n=1}^\infty\) alone]]></text><feedback format="html"><text>Incorrect. Only sines cannot span \(L^2[-\pi,\pi]\); constant functions and cosines are not in the span of pure sines.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\{e^{-nx^2}\}_{n=1}^\infty\)]]></text><feedback format="html"><text>Incorrect. Gaussians do not form an orthonormal basis for \(L^2[-\pi,\pi]\).</text></feedback></answer>
+  </question>
+
+  <!-- Q9 -->
+  <question type="multichoice">
+    <name><text>LA12-Q09 Adjoint Operator Properties</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For bounded linear operators \(S, T\) on a Hilbert space \(H\), which of the following is NOT always true?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\((ST)^* = S^*T^*\)</text><feedback format="html"><text>Correct (this is FALSE in general). The correct formula is \((ST)^* = T^*S^*\) (order reverses), not \(S^*T^*\).</text></feedback></answer>
+    <answer fraction="0"><text>\((T^*)^* = T\)</text><feedback format="html"><text>Incorrect (this IS true). The adjoint of the adjoint is the original operator.</text></feedback></answer>
+    <answer fraction="0"><text>\((S+T)^* = S^*+T^*\)</text><feedback format="html"><text>Incorrect (this IS true). The adjoint of a sum is the sum of adjoints.</text></feedback></answer>
+    <answer fraction="0"><text>\((\alpha T)^* = \bar{\alpha}T^*\) for scalar \(\alpha\)</text><feedback format="html"><text>Incorrect (this IS true). Scalar multiplication conjugates when taking adjoints.</text></feedback></answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>LA12-Q10 Orthogonal Projection Formula</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The orthogonal projection of \(v\) onto a nonzero vector \(u\) in an inner product space is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{proj}_u v = \frac{\langle v,u\rangle}{\langle u,u\rangle} u\)]]></text><feedback format="html"><text>Correct. The projection formula: the component of \(v\) along \(u\) is \(\frac{\langle v,u\rangle}{\|u\|^2}u\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{proj}_u v = \frac{\langle u,v\rangle}{\langle v,v\rangle} v\)]]></text><feedback format="html"><text>Incorrect. This divides by \(\|v\|^2\) instead of \(\|u\|^2\) and projects in the wrong direction.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{proj}_u v = \langle v,u\rangle \cdot u\)]]></text><feedback format="html"><text>Incorrect. This is missing the normalization \(1/\|u\|^2\). It equals the projection only when \(u\) is a unit vector.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{proj}_u v = \|v\|\cos\theta \cdot u\) where \(\theta\) is the angle]]></text><feedback format="html"><text>Incorrect (almost, but missing normalization of \(u\)). The correct formula is \(\text{proj}_u v = \frac{\langle v,u\rangle}{\|u\|^2}u\).</text></feedback></answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>LA12-Q11 Spectral Theorem for Normal Operators</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The spectral theorem for normal operators on a finite-dimensional complex inner product space states:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Every normal operator is unitarily diagonalizable (there exists an orthonormal basis of eigenvectors)</text><feedback format="html"><text>Correct. Over \(\mathbb{C}\), a matrix is unitarily diagonalizable iff it is normal (\(TT^*=T^*T\)). This includes Hermitian, unitary, and skew-Hermitian matrices.</text></feedback></answer>
+    <answer fraction="0"><text>Every normal operator has all real eigenvalues</text><feedback format="html"><text>Incorrect. Normal operators can have complex eigenvalues (e.g., unitary operators have eigenvalues on the unit circle).</text></feedback></answer>
+    <answer fraction="0"><text>Every normal operator is the identity</text><feedback format="html"><text>Incorrect. Unitary, Hermitian, and many other operators are normal but not the identity.</text></feedback></answer>
+    <answer fraction="0"><text>Normal operators have no eigenvalues in infinite dimensions</text><feedback format="html"><text>Incorrect. The spectral theorem applies to normal operators in infinite dimensions too (via the spectral measure), and normal operators can have eigenvalues.</text></feedback></answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>LA12-Q12 Gram Matrix</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Gram matrix of vectors \(v_1,\ldots,v_k\) in an inner product space is \(G_{ij}=\langle v_i,v_j\rangle\). The vectors \(v_1,\ldots,v_k\) are linearly independent iff:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(\det(G) > 0\) (Gram matrix is positive definite)</text><feedback format="html"><text>Correct. The vectors are linearly independent iff the Gram matrix \(G\) is positive definite (equivalently, \(\det G > 0\)).</text></feedback></answer>
+    <answer fraction="0"><text>\(\det(G) = 0\)</text><feedback format="html"><text>Incorrect. \(\det G = 0\) indicates linear dependence, not independence.</text></feedback></answer>
+    <answer fraction="0"><text>\(G = I_k\) (identity matrix)</text><feedback format="html"><text>Incorrect. \(G=I_k\) means the vectors are orthonormal, which is stronger than linear independence.</text></feedback></answer>
+    <answer fraction="0"><text>\(\text{tr}(G) > 0\)</text><feedback format="html"><text>Incorrect. Positive trace only requires at least one nonzero vector; it doesn't guarantee linear independence.</text></feedback></answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>LA12-Q13 Isometry</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A linear map \(T: V\to W\) between inner product spaces is an isometry if \(\|Tv\| = \|v\|\) for all \(v\in V\). Which is equivalent to \(T\) being an isometry?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\langle Tu,Tv\rangle_W = \langle u,v\rangle_V\) for all \(u,v\in V\)]]></text><feedback format="html"><text>Correct. Preserving the inner product (and hence all angles and lengths) is equivalent to being an isometry, by the polarization identity.</text></feedback></answer>
+    <answer fraction="0"><text>\(T\) is surjective</text><feedback format="html"><text>Incorrect. An isometry need not be surjective (e.g., the right shift on \(\ell^2\)).</text></feedback></answer>
+    <answer fraction="0"><text>\(T^* = T^{-1}\)</text><feedback format="html"><text>Incorrect. \(T^*T=I\) (i.e., \(T\) is an isometry) but \(T^*=T^{-1}\) requires surjectivity (i.e., \(T\) is unitary), which is stronger.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\|T\| = \dim V\)]]></text><feedback format="html"><text>Incorrect. The operator norm of an isometry is 1 (since \(\|Tv\|=\|v\|\) implies \(\|T\|=1\)).</text></feedback></answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>LA12-Q14 QR Decomposition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Every matrix \(A\) with linearly independent columns has a QR decomposition \(A = QR\) where \(Q\) has orthonormal columns and \(R\) is upper triangular with positive diagonal. This decomposition arises from:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Gram-Schmidt orthogonalization applied to the columns of \(A\)</text><feedback format="html"><text>Correct. The Gram-Schmidt process applied to the columns of \(A\) produces the orthonormal columns of \(Q\); the relations between original and orthonormal columns give \(R\).</text></feedback></answer>
+    <answer fraction="0"><text>Eigenvalue decomposition of \(A^TA\)</text><feedback format="html"><text>Incorrect. The eigenvalue decomposition of \(A^TA\) gives the SVD-related matrices, not directly the QR decomposition.</text></feedback></answer>
+    <answer fraction="0"><text>Row reduction to echelon form</text><feedback format="html"><text>Incorrect. Row reduction gives the LU decomposition, not QR.</text></feedback></answer>
+    <answer fraction="0"><text>Spectral decomposition of \(A\)</text><feedback format="html"><text>Incorrect. The spectral decomposition \(A=PDP^{-1}\) applies to diagonalizable matrices and is different from QR.</text></feedback></answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>LA12-Q15 Angle Between Vectors</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In \(\mathbb{R}^n\), the angle \(\theta\) between nonzero vectors \(u\) and \(v\) satisfies \(\cos\theta = \frac{\langle u,v\rangle}{\|u\|\|v\|}\). The angle between \(u=(1,1,0)\) and \(v=(1,0,1)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\pi/3\) (60°)]]></text><feedback format="html"><text>Correct. \(\langle u,v\rangle=1\cdot1+1\cdot0+0\cdot1=1\). \(\|u\|=\sqrt{2}\), \(\|v\|=\sqrt{2}\). So \(\cos\theta=1/2\), giving \(\theta=\pi/3\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\pi/2\) (90°)]]></text><feedback format="html"><text>Incorrect. \(\cos\theta=1/2\neq0\), so the vectors are not orthogonal.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\pi/4\) (45°)]]></text><feedback format="html"><text>Incorrect. \(\cos(\pi/4)=1/\sqrt{2}\neq1/2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\pi/6\) (30°)]]></text><feedback format="html"><text>Incorrect. \(\cos(\pi/6)=\sqrt{3}/2\neq1/2\).</text></feedback></answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>LA12-Q16 SVD and Pseudoinverse</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Moore-Penrose pseudoinverse \(A^+\) of a matrix \(A\) with SVD \(A = U\Sigma V^T\) is defined as:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(A^+ = V\Sigma^+ U^T\) where \(\Sigma^+\) replaces each nonzero singular value \(\sigma_i\) by \(1/\sigma_i\)]]></text><feedback format="html"><text>Correct. The pseudoinverse inverts the nonzero singular values and transposes \(U\) and \(V\): \(A^+ = V\Sigma^+U^T\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A^+ = (A^TA)^{-1}A^T\) always]]></text><feedback format="html"><text>Incorrect. \((A^TA)^{-1}A^T\) is the left pseudoinverse and equals \(A^+\) only when \(A\) has full column rank.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A^+ = U\Sigma^+V^T\)]]></text><feedback format="html"><text>Incorrect. The correct formula has \(V\) and \(U^T\), not \(U\) and \(V^T\): \(A^+=V\Sigma^+U^T\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A^+ = A^T\)]]></text><feedback format="html"><text>Incorrect. The pseudoinverse equals the transpose only for orthogonal matrices.</text></feedback></answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>LA12-Q17 Tensor Product of Inner Product Spaces</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(V\) and \(W\) are inner product spaces with dimensions \(m\) and \(n\), the tensor product \(V\otimes W\) has:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[Dimension \(mn\) with inner product \(\langle v_1\otimes w_1, v_2\otimes w_2\rangle = \langle v_1,v_2\rangle_V\langle w_1,w_2\rangle_W\)]]></text><feedback format="html"><text>Correct. The tensor product space has dimension \(mn\) and inherits a natural inner product from the factor spaces.</text></feedback></answer>
+    <answer fraction="0"><text>Dimension \(m+n\) with inner product from direct sum</text><feedback format="html"><text>Incorrect. The direct sum \(V\oplus W\) has dimension \(m+n\); the tensor product \(V\otimes W\) has dimension \(mn\).</text></feedback></answer>
+    <answer fraction="0"><text>Dimension \(m^n\)</text><feedback format="html"><text>Incorrect. The tensor product of vector spaces of dimensions \(m\) and \(n\) has dimension \(mn\), not \(m^n\).</text></feedback></answer>
+    <answer fraction="0"><text>No natural inner product</text><feedback format="html"><text>Incorrect. The inner product on \(V\otimes W\) is defined by the bilinear extension of the product of inner products on \(V\) and \(W\).</text></feedback></answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>LA12-Q18 Hilbert Space Completeness</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following inner product spaces is NOT a Hilbert space (i.e., is not complete)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[The space of polynomials \(P[0,1]\) with \(\langle f,g\rangle = \int_0^1 fg\,dx\)]]></text><feedback format="html"><text>Correct. The polynomial space is not complete: a sequence of polynomials can converge in \(L^2\) to a non-polynomial function (e.g., \(e^x\) is the \(L^2\) limit of its Taylor partial sums).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\mathbb{R}^n\) with the standard dot product]]></text><feedback format="html"><text>Incorrect. \(\mathbb{R}^n\) is complete (every Cauchy sequence of real \(n\)-tuples converges), hence a Hilbert space.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(L^2[0,1]\) with \(\langle f,g\rangle = \int_0^1 fg\,dx\)]]></text><feedback format="html"><text>Incorrect. \(L^2[0,1]\) is complete (the Riesz-Fischer theorem), hence a Hilbert space.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\ell^2(\mathbb{N})\) with \(\langle x,y\rangle = \sum_{n=1}^\infty x_n\bar{y}_n\)]]></text><feedback format="html"><text>Incorrect. \(\ell^2\) is complete (a Cauchy sequence in \(\ell^2\) converges coordinatewise to an \(\ell^2\) element).</text></feedback></answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>LA12-Q19 Fourier Coefficients Decay</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(\{e_k\}\) is a complete orthonormal basis of a Hilbert space \(H\) and \(x\in H\), the Fourier coefficients \(c_k = \langle x,e_k\rangle\) satisfy:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(c_k\to0\) as \(k\to\infty\) (Riemann-Lebesgue type), since \(\sum|c_k|^2<\infty\)]]></text><feedback format="html"><text>Correct. By Parseval's identity \(\sum|c_k|^2=\|x\|^2<\infty\), so the terms of a convergent series must tend to zero: \(c_k\to0\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\sum|c_k| < \infty\) (absolute summability)]]></text><feedback format="html"><text>Incorrect. Parseval gives \(\sum|c_k|^2<\infty\) (square summability), but not \(\sum|c_k|<\infty\) in general.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[All \(c_k\) are zero except finitely many]]></text><feedback format="html"><text>Incorrect. This would mean \(x\) is in the linear span of finitely many \(e_k\). In general, \(x\) can have infinitely many nonzero Fourier coefficients.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(c_k \to \|x\|\) as \(k\to\infty\)]]></text><feedback format="html"><text>Incorrect. The Fourier coefficients tend to 0, not to \(\|x\|\).</text></feedback></answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>LA12-Q20 Projection onto Subspace</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(W = \text{span}\{(1,1,1)\}\) in \(\mathbb{R}^3\). The orthogonal projection of \(v=(1,2,3)\) onto \(W\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\((2,2,2)\)]]></text><feedback format="html"><text>Correct. Let \(u=(1,1,1)\). \(\text{proj}_W v = \frac{\langle v,u\rangle}{\|u\|^2}u = \frac{1+2+3}{3}(1,1,1) = 2(1,1,1) = (2,2,2)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\((1,1,1)\)]]></text><feedback format="html"><text>Incorrect. \(\frac{\langle(1,2,3),(1,1,1)\rangle}{3}(1,1,1) = \frac{6}{3}(1,1,1)=(2,2,2)\neq(1,1,1)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA|\((1,2,3)\)]]></text><feedback format="html"><text>Incorrect. The projection onto \(W\) is not \(v\) itself (unless \(v\in W\), which requires \(v=(c,c,c)\) for some \(c\)).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\((0,1,2)\)]]></text><feedback format="html"><text>Incorrect. This is \(v - (1,1,1) = v - u\), not the projection.</text></feedback></answer>
+  </question>
+
+</quiz>

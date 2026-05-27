@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category>
+    <text><![CDATA[$course$/Advanced Algebra (M.Sc. Mathematics)/CSIR PYQ — Unit IV — Field extensions, algebraic and transcendental extensions]]></text>
+  </category>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q1 — Degree [Q(√2,√3):Q]</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The degree \([\mathbb{Q}(\sqrt{2},\sqrt{3}):\mathbb{Q}]\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 4.</strong><br>\([\mathbb{Q}(\sqrt{2}):\mathbb{Q}]=2\). Since \(\sqrt{3}\notin\mathbb{Q}(\sqrt{2})\) (its minimal polynomial \(x^2-3\) remains irreducible over \(\mathbb{Q}(\sqrt{2})\)), we get \([\mathbb{Q}(\sqrt{2},\sqrt{3}):\mathbb{Q}(\sqrt{2})]=2\). By the tower law, \([\mathbb{Q}(\sqrt{2},\sqrt{3}):\mathbb{Q}]=2\cdot 2=4\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[8]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q2 — Transcendental number</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Which of the following is transcendental over \(\mathbb{Q}\)?]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(\pi\).</strong><br>By Lindemann's theorem (1882), \(\pi\) is transcendental over \(\mathbb{Q}\). The other choices are algebraic: \(\sqrt{2}\) satisfies \(x^2-2=0\); \(\sqrt[3]{3}\) satisfies \(x^3-3=0\); \(i=\sqrt{-1}\) satisfies \(x^2+1=0\). Also, \(e\) is transcendental (Hermite, 1873).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt[3]{3}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(i=\sqrt{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q3 — Minimal polynomial of √2</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The minimal polynomial of \(\sqrt{2}\) over \(\mathbb{Q}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(x^2-2\).</strong><br>\(x^2-2\) is monic, has \(\sqrt{2}\) as a root, and is irreducible over \(\mathbb{Q}\) (by Eisenstein with \(p=2\)). The minimal polynomial is the unique monic irreducible polynomial in \(\mathbb{Q}[x]\) having \(\sqrt{2}\) as a root. It has degree 2, so \([\mathbb{Q}(\sqrt{2}):\mathbb{Q}]=2\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(x^2-2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(x-\sqrt{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(x^4-4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(x^2+2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q4 — Degree [Q(2^{1/3}):Q]</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The degree \([\mathbb{Q}(\sqrt[3]{2}):\mathbb{Q}]\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 3.</strong><br>The minimal polynomial of \(\sqrt[3]{2}\) over \(\mathbb{Q}\) is \(x^3-2\), which is irreducible by Eisenstein (\(p=2\)). Since the minimal polynomial has degree 3, \([\mathbb{Q}(\sqrt[3]{2}):\mathbb{Q}]=3\) and \(\{1,\sqrt[3]{2},\sqrt[3]{4}\}\) is a \(\mathbb{Q}\)-basis.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[9]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q5 — Tower law</text></name>
+  <questiontext format="html">
+    <text><![CDATA[If \(F\subseteq K\subseteq L\) are fields with \([L:F]=10\) and \([K:F]=5\), then \([L:K]\) equals:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 2.</strong><br>The Tower Law states \([L:F]=[L:K]\cdot[K:F]\). So \([L:K]=\frac{[L:F]}{[K:F]}=\frac{10}{5}=2\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[10]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[50]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q6 — Simple extension isomorphism</text></name>
+  <questiontext format="html">
+    <text><![CDATA[If \(\alpha\) is algebraic over \(F\) with minimal polynomial \(f(x)\in F[x]\), then \(F(\alpha)\) is isomorphic to:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(F[x]/(f(x))\).</strong><br>The evaluation map \(\phi:F[x]\to F(\alpha)\) sending \(x\mapsto\alpha\) is surjective with kernel \((f(x))\) (since \(f\) is the minimal polynomial, i.e., the generator of \(\ker\phi\)). By the First Isomorphism Theorem, \(F(\alpha)\cong F[x]/(f(x))\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(F[x]/(f(x))\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F[x]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F^n\) where \(n=\deg f\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F\times F\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q7 — Finite field Fpn</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The number of elements in the finite field \(\mathbb{F}_{p^n}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(p^n\).</strong><br>\(\mathbb{F}_{p^n}\) is the unique (up to isomorphism) field with \(p^n\) elements, where \(p\) is prime and \(n\ge 1\). It is the splitting field of \(x^{p^n}-x\) over \(\mathbb{F}_p\). The extension \(\mathbb{F}_{p^n}/\mathbb{F}_p\) has degree \(n\) and is Galois with cyclic Galois group generated by Frobenius.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(p^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(np\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n^p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(pn\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q8 — Degree [Q(ζₙ):Q]</text></name>
+  <questiontext format="html">
+    <text><![CDATA[If \(\zeta_n\) is a primitive \(n\)-th root of unity, then \([\mathbb{Q}(\zeta_n):\mathbb{Q}]\) equals:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(\varphi(n)\).</strong><br>The minimal polynomial of \(\zeta_n\) over \(\mathbb{Q}\) is the cyclotomic polynomial \(\Phi_n(x)\), which has degree \(\varphi(n)\) (Euler's totient). This polynomial is irreducible over \(\mathbb{Q}\). The extension \(\mathbb{Q}(\zeta_n)/\mathbb{Q}\) is Galois with group \(\mathrm{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})\cong(\mathbb{Z}/n\mathbb{Z})^\times\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(\varphi(n)\) (Euler's totient of \(n\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q9 — Normal extension</text></name>
+  <questiontext format="html">
+    <text><![CDATA[A field extension \(K/F\) is called normal if:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Every irreducible polynomial in \(F[x]\) that has one root in \(K\) splits completely in \(K\).</strong><br>Equivalently, \(K\) is the splitting field of a family of polynomials over \(F\). A finite extension is normal iff it is a splitting field of some polynomial over \(F\). Normal + separable = Galois.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Every irreducible \(f\in F[x]\) with one root in \(K\) splits completely in \(K\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\([K:F]\) is prime]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(K=F(\alpha)\) for some \(\alpha\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every polynomial in \(F[x]\) splits in \(K\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q10 — Separable extension in char 0</text></name>
+  <questiontext format="html">
+    <text><![CDATA[If \(\mathrm{char}(F)=0\), then every algebraic extension \(K/F\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Separable.</strong><br>In characteristic 0, every irreducible polynomial \(f\in F[x]\) has no repeated roots (since \(\gcd(f,f')=1\): the formal derivative \(f'\ne 0\) and \(\deg f'<\deg f\) so they share no common irreducible factor). Therefore every algebraic extension in char 0 is separable.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Separable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Normal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Galois]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Purely transcendental]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q11 — Splitting field of x³−2</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The degree of the splitting field of \(x^3-2\) over \(\mathbb{Q}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 6.</strong><br>The roots of \(x^3-2\) are \(\sqrt[3]{2},\,\omega\sqrt[3]{2},\,\omega^2\sqrt[3]{2}\) where \(\omega=e^{2\pi i/3}\). The splitting field is \(\mathbb{Q}(\sqrt[3]{2},\omega)\). We have \([\mathbb{Q}(\sqrt[3]{2}):\mathbb{Q}]=3\) and \([\mathbb{Q}(\sqrt[3]{2},\omega):\mathbb{Q}(\sqrt[3]{2})]=2\) (since \(\omega\notin\mathbb{R}\)). Total degree: \(3\times 2=6\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[9]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q12 — Algebraic closure uniqueness</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The algebraic closure \(\overline{F}\) of a field \(F\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Unique up to \(F\)-isomorphism.</strong><br>\(\overline{F}\) is an algebraic extension of \(F\) in which every non-constant polynomial in \(F[x]\) has a root (equivalently, every polynomial in \(\overline{F}[x]\) splits completely). It exists by Zorn's Lemma and is unique up to isomorphism over \(F\). Example: \(\overline{\mathbb{Q}}\) = algebraic numbers, \(\overline{\mathbb{R}}=\mathbb{C}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Unique up to \(F\)-isomorphism]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always a finite extension of \(F\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not unique in general]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equal to \(F\) when \(F\) is algebraically closed]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q13 — Degree 2 extension is normal</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Every field extension of degree 2 over \(F\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Normal.</strong><br>If \([K:F]=2\), take any \(\alpha\in K\setminus F\). Its minimal polynomial \(f\) over \(F\) has degree 2 and \(\alpha\) as a root. Since \([K:F]=2=\deg f\), we have \(K=F(\alpha)\) and \(K\) is the splitting field of \(f\) over \(F\) (the other root is \(-\alpha-(\text{trace of }\alpha)\in K\)). Hence \(K/F\) is normal.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Normal]]></text><feedback format="html"><text></text></correctfeedback>
+  <answer fraction="0" format="html"><text><![CDATA[Purely transcendental]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not separable in general]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Simple but not normal]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q14 — Primitive element theorem</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The Primitive Element Theorem states that every finite separable extension \(K/F\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Simple, i.e., \(K=F(\alpha)\) for some \(\alpha\in K\).</strong><br>If \(K/F\) is finite and separable, there exists a single element \(\alpha\) (called a primitive element) such that \(K=F(\alpha)\). This applies in particular to all finite extensions over \(\mathbb{Q}\) or over finite fields. Example: \(\mathbb{Q}(\sqrt{2},\sqrt{3})=\mathbb{Q}(\sqrt{2}+\sqrt{3})\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Simple: \(K=F(\alpha)\) for some \(\alpha\in K\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Galois]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A splitting field of a single polynomial]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Algebraically closed]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q15 — Q(√2+√3)</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The extension \(\mathbb{Q}(\sqrt{2}+\sqrt{3})\) over \(\mathbb{Q}\) has degree:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 4.</strong><br>Let \(\alpha=\sqrt{2}+\sqrt{3}\). Then \(\alpha^2=5+2\sqrt{6}\), \(\alpha^2-5=2\sqrt{6}\), \((\alpha^2-5)^2=24\), so \(\alpha^4-10\alpha^2+1=0\). This polynomial of degree 4 is irreducible over \(\mathbb{Q}\) (its roots are \(\pm\sqrt{2}\pm\sqrt{3}\), none rational). Hence \([\mathbb{Q}(\sqrt{2}+\sqrt{3}):\mathbb{Q}]=4\), and \(\mathbb{Q}(\sqrt{2}+\sqrt{3})=\mathbb{Q}(\sqrt{2},\sqrt{3})\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[8]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q16 — Frobenius endomorphism</text></name>
+  <questiontext format="html">
+    <text><![CDATA[In a field of characteristic \(p>0\), the Frobenius map \(\phi:x\mapsto x^p\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: A field homomorphism (ring endomorphism).</strong><br>\(\phi(x+y)=(x+y)^p=x^p+y^p=\phi(x)+\phi(y)\) (using the fact that \(\binom{p}{k}\equiv 0\pmod{p}\) for \(0<k<p\)), and \(\phi(xy)=\phi(x)\phi(y)\). Since \(\phi(1)=1\), \(\phi\) is a ring homomorphism, hence an injective field map. Over a finite field it is an automorphism generating the Galois group.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[A field homomorphism (injective ring endomorphism)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[An additive group isomorphism only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The zero map]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Surjective but not injective in general]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q17 — Algebraic over algebraic</text></name>
+  <questiontext format="html">
+    <text><![CDATA[If \(K/F\) and \(L/K\) are both algebraic extensions, then \(L/F\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Algebraic.</strong><br>Take any \(\alpha\in L\). Since \(L/K\) is algebraic, \(\alpha\) satisfies some \(f(x)=x^n+k_{n-1}x^{n-1}+\cdots+k_0\in K[x]\). Since \(K/F\) is algebraic, each \(k_i\) is algebraic over \(F\). The extension \(F(k_0,\ldots,k_{n-1},\alpha)\) is a finite extension of \(F\), hence algebraic. So \(\alpha\) is algebraic over \(F\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Algebraic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not necessarily algebraic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Purely transcendental]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Algebraically closed]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q18 — Finite extension is algebraic</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Every finite extension \(K/F\) (with \([K:F]<\infty\)) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Algebraic.</strong><br>If \([K:F]=n\), then for any \(\alpha\in K\), the \(n+1\) elements \(1,\alpha,\alpha^2,\ldots,\alpha^n\) are linearly dependent over \(F\). So \(\alpha\) satisfies some non-zero polynomial over \(F\), i.e., \(\alpha\) is algebraic over \(F\). The converse is false: \(\overline{\mathbb{Q}}/\mathbb{Q}\) is algebraic but infinite.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Algebraic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Galois]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Normal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Separable only if char \(F=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q19 — Q(√2)/Q is Galois</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The extension \(\mathbb{Q}(\sqrt{2})/\mathbb{Q}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Normal and separable (hence Galois).</strong><br>\(\mathbb{Q}(\sqrt{2})\) is the splitting field of \(x^2-2\) over \(\mathbb{Q}\) (both roots \(\pm\sqrt{2}\) lie in \(\mathbb{Q}(\sqrt{2})\)), so it is normal. Since \(\mathrm{char}(\mathbb{Q})=0\), it is separable. The Galois group \(\mathrm{Gal}(\mathbb{Q}(\sqrt{2})/\mathbb{Q})\cong\mathbb{Z}/2\mathbb{Z}\) has two elements: \(\mathrm{id}\) and \(\sqrt{2}\mapsto-\sqrt{2}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Normal and separable (Galois)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Normal but not separable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Separable but not normal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Neither normal nor separable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q20 — Q(2^{1/3}) is not normal</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The extension \(\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Separable but not normal.</strong><br>Since \(\mathrm{char}(\mathbb{Q})=0\), the extension is separable. It is not normal: \(\sqrt[3]{2}\) is a root of the irreducible polynomial \(x^3-2\), but the other roots \(\omega\sqrt[3]{2}\) and \(\omega^2\sqrt[3]{2}\) (where \(\omega=e^{2\pi i/3}\)) do not lie in \(\mathbb{Q}(\sqrt[3]{2})\subset\mathbb{R}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Separable but not normal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Normal and separable (Galois)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Normal but not separable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Neither normal nor separable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q21 — Degree [Q(ζ₇):Q]</text></name>
+  <questiontext format="html">
+    <text><![CDATA[If \(\zeta_7=e^{2\pi i/7}\) is a primitive 7th root of unity, then \([\mathbb{Q}(\zeta_7):\mathbb{Q}]\) equals:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 6.</strong><br>\(\varphi(7)=7-1=6\). The minimal polynomial of \(\zeta_7\) over \(\mathbb{Q}\) is \(\Phi_7(x)=x^6+x^5+x^4+x^3+x^2+x+1\), which is irreducible over \(\mathbb{Q}\). Hence \([\mathbb{Q}(\zeta_7):\mathbb{Q}]=6\) and \(\mathrm{Gal}(\mathbb{Q}(\zeta_7)/\mathbb{Q})\cong(\mathbb{Z}/7\mathbb{Z})^\times\cong\mathbb{Z}/6\mathbb{Z}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[7]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q22 — Minimal polynomial is irreducible</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The minimal polynomial of an algebraic element \(\alpha\) over \(F\) is always:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Monic and irreducible over \(F\).</strong><br>The minimal polynomial \(m_{\alpha,F}(x)\) is the unique monic polynomial of least degree in \(F[x]\) satisfied by \(\alpha\). It is irreducible: if \(m_{\alpha,F}=fg\) with \(\deg f,\deg g<\deg m_{\alpha,F}\), then \(f(\alpha)=0\) or \(g(\alpha)=0\), contradicting minimality. Also, \(m_{\alpha,F}\mid h\) for any \(h\in F[x]\) with \(h(\alpha)=0\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Monic and irreducible over \(F\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The characteristic polynomial of \(\alpha\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reducible but of minimal degree]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The same as the characteristic polynomial of \(F\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q23 — Transcendence degree</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The transcendence degree of \(\mathbb{C}\) over \(\mathbb{Q}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Uncountably infinite (equal to \(|\mathbb{R}|=2^{\aleph_0}\)).</strong><br>A transcendence basis of \(\mathbb{C}/\mathbb{Q}\) is a maximal algebraically independent set. Since \(|\mathbb{C}|=2^{\aleph_0}\) and the algebraic closure of any countable field is countable, the transcendence basis must be uncountable. Formally, \(\mathrm{trdeg}(\mathbb{C}/\mathbb{Q})=2^{\aleph_0}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Uncountably infinite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Countably infinite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Zero (since \(\mathbb{C}\) is algebraic over \(\mathbb{Q}\))]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q24 — Splitting field of x⁴−2</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The degree of the splitting field of \(x^4-2\) over \(\mathbb{Q}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 8.</strong><br>The roots of \(x^4-2\) are \(\pm 2^{1/4},\,\pm i\cdot 2^{1/4}\). The splitting field is \(\mathbb{Q}(2^{1/4},i)\). We have \([\mathbb{Q}(2^{1/4}):\mathbb{Q}]=4\) (min poly \(x^4-2\) is irreducible by Eisenstein). Then \([\mathbb{Q}(2^{1/4},i):\mathbb{Q}(2^{1/4})]=2\) since \(i\notin\mathbb{Q}(2^{1/4})\subset\mathbb{R}\). Total: \(4\times 2=8\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[8]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[16]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit IV Q25 — Algebraic closure of Fp</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The algebraic closure \(\overline{\mathbb{F}_p}\) of \(\mathbb{F}_p\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(\bigcup_{n\ge 1}\mathbb{F}_{p^n}\).</strong><br>\(\overline{\mathbb{F}_p}=\bigcup_{n=1}^\infty\mathbb{F}_{p^n}\) is the union of all finite fields of characteristic \(p\). It is an algebraic extension of \(\mathbb{F}_p\) (every element lies in some \(\mathbb{F}_{p^n}\)), and every polynomial over \(\mathbb{F}_p\) splits in \(\overline{\mathbb{F}_p}\). It is the unique (up to isomorphism) algebraic closure of \(\mathbb{F}_p\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(\bigcup_{n\ge 1}\mathbb{F}_{p^n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{F}_{p^\infty}\) (a single finite field of infinite order)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}/p\mathbb{Z}\) itself]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{C}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

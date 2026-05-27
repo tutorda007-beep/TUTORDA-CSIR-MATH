@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Numerical Analysis/ODE Methods and Linear Algebra</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q01_Stiff_ODE</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A system \(y' = Ay\) is called stiff if the eigenvalues of \(A\) have widely varying magnitudes. For stiff systems, explicit methods like explicit Euler require]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[A very small step size \(h \leq 2/|\lambda_{\max}|\) for stability, even when accuracy would allow much larger \(h\)]]></text>
+      <feedback><text>Correct. The stability domain of explicit Euler requires \(h|\lambda| \leq 2\) for each eigenvalue; when \(|\lambda_{\max}|\) is large, \(h\) must be tiny regardless of accuracy requirements.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A step size \(h \leq 1/|\lambda_{\min}|\) for accuracy purposes]]></text>
+      <feedback><text>The stiffness constraint is governed by \(|\lambda_{\max}|\), not \(|\lambda_{\min}|\); accuracy requires resolving the slow modes (\(\lambda_{\min}\)) while stability limits \(h\) based on fast modes (\(\lambda_{\max}\)).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[No special step-size restriction; explicit methods handle stiff problems efficiently]]></text>
+      <feedback><text>This is incorrect; explicit methods are inefficient for stiff problems precisely because of the severe step-size restriction for stability.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A step size \(h\) proportional to the condition number \(\kappa(A)\)]]></text>
+      <feedback><text>The stability restriction for explicit Euler is \(h \leq 2/|\lambda_{\max}|\), not proportional to the condition number.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q02_BackwardEuler</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Backward (implicit) Euler for \(y' = f(x,y)\) is \(y_{n+1} = y_n + hf(x_{n+1},y_{n+1})\). Its stability region (values of \(h\lambda\) for which the method is stable applied to \(y'=\lambda y\)) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The complement of the unit disk centered at \(+1\): all \(h\lambda\) with \(|1-h\lambda|>1\), i.e., \(\text{Re}(h\lambda)<0\) is automatically stable — the method is A-stable]]></text>
+      <feedback><text>Correct. For \(y'=\lambda y\), backward Euler gives \(y_{n+1}=y_n/(1-h\lambda)\); the amplification factor \(|1/(1-h\lambda)|\leq1\) for all \(\text{Re}(\lambda)\leq0\), making it A-stable (stability for all left half-plane \(h\lambda\)).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The disk \(|h\lambda+1|\leq 1\) (same as explicit Euler but reflected)]]></text>
+      <feedback><text>This disk is the stability region of explicit Euler; backward Euler has the entire left half-plane as its stability region (A-stability).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The entire complex plane (unconditionally stable for all \(\lambda\))]]></text>
+      <feedback><text>Backward Euler is A-stable (stable for all \(\text{Re}(h\lambda)\leq0\)) but not stable for positive real \(\lambda h\); for \(\text{Re}(\lambda)>0\) both explicit and implicit methods appropriately grow.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Only the real axis \(\text{Im}(\lambda)=0\), \(\text{Re}(\lambda)<0\)]]></text>
+      <feedback><text>A-stability covers the entire left half-plane \(\text{Re}(h\lambda)\leq0\), not just the real axis.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q03_AdamsBashforth</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Adams-Bashforth two-step method for \(y'=f(x,y)\) is \(y_{n+1} = y_n + h\left(\frac{3}{2}f_n - \frac{1}{2}f_{n-1}\right)\). This method is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Explicit and second-order accurate with local truncation error \(\frac{5}{12}h^3 y'''(\xi)\)]]></text>
+      <feedback><text>Correct. Adams-Bashforth 2-step uses extrapolation from past values (explicit), achieves order 2, and has LTE \(\frac{5}{12}h^3y'''\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Implicit and second-order accurate (requiring solution of a nonlinear equation at each step)]]></text>
+      <feedback><text>Adams-Bashforth methods are explicit (they use only past values \(f_n, f_{n-1},\ldots\)); Adams-Moulton methods are implicit.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Equivalent to the trapezoidal rule for ODEs, which is the Adams-Moulton 1-step method]]></text>
+      <feedback><text>The trapezoidal rule (Crank-Nicolson) is the Adams-Moulton 1-step implicit method; Adams-Bashforth 2-step is a different (explicit) formula.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Fourth-order accurate, requiring four previous function evaluations]]></text>
+      <feedback><text>The Adams-Bashforth 2-step method uses \(f_n\) and \(f_{n-1}\) (two evaluations) and achieves order 2; the 4-step Adams-Bashforth method achieves order 4.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q04_StabilityRegion_RK4</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the classical RK4 method applied to the test equation \(y' = \lambda y\) (with \(\lambda < 0\) real), the method is stable for step sizes satisfying]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(h|\lambda| \leq 2.785\) (the stability boundary for RK4 on the negative real axis)]]></text>
+      <feedback><text>Correct. The stability function of RK4 is \(R(z)=1+z+z^2/2+z^3/6+z^4/24\); on the negative real axis \(z=h\lambda<0\), \(|R(z)|\leq1\) for \(|z|\leq2.785\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(h|\lambda| \leq 2\) (same as explicit Euler)]]></text>
+      <feedback><text>Explicit Euler's stability interval on the real axis is \(|h\lambda|\leq2\); RK4 has a larger stability interval (\(\approx2.785\)) on the negative real axis.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(h|\lambda| \leq 4\) (stability interval equal to the order)]]></text>
+      <feedback><text>The stability interval of RK4 on the negative real axis is approximately 2.785, not 4; the order and stability interval are unrelated in general.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All \(h > 0\) (RK4 is A-stable)]]></text>
+      <feedback><text>RK4 is not A-stable; only A-stable methods (like backward Euler or the trapezoidal rule) are stable for all \(h|\lambda|\) with \(\text{Re}(\lambda)\leq0\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q05_CrankNicolson</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Crank-Nicolson method for \(y'=f(x,y)\) is \(y_{n+1}=y_n+\frac{h}{2}[f(x_n,y_n)+f(x_{n+1},y_{n+1})]\). Applied to the heat equation \(u_t=\alpha u_{xx}\), it is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Unconditionally stable (A-stable) and second-order accurate in both time and space, with no CFL-type restriction on \(\Delta t/(\Delta x)^2\)]]></text>
+      <feedback><text>Correct. Crank-Nicolson for the heat equation is A-stable (no restriction on the mesh ratio \(r=\alpha\Delta t/(\Delta x)^2\)) and is \(O(\Delta t^2) + O(\Delta x^2)\) accurate.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Conditionally stable, requiring \(\alpha\Delta t/(\Delta x)^2 \leq 1/2\)]]></text>
+      <feedback><text>The stability restriction \(r\leq1/2\) applies to the explicit (forward Euler in time) FTCS scheme, not to Crank-Nicolson which is implicit and unconditionally stable.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[First-order accurate in time and second-order in space]]></text>
+      <feedback><text>Crank-Nicolson averages the forward and backward Euler time steps, achieving second-order temporal accuracy; it is not first-order in time.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The same as the backward (implicit) Euler scheme for PDEs]]></text>
+      <feedback><text>Backward Euler is only first-order in time; Crank-Nicolson (trapezoidal in time) is second-order and different from backward Euler.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q06_ShootingMethod</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The shooting method for the BVP \(y'' = f(x,y,y')\), \(y(a)=\alpha\), \(y(b)=\beta\) converts it to an IVP by]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Setting \(y(a)=\alpha\), \(y'(a)=s\) (unknown), solving the IVP, and iterating on \(s\) until \(y(b;s)=\beta\) using e.g. the secant method]]></text>
+      <feedback><text>Correct. The shooting parameter \(s=y'(a)\) is adjusted (via Newton or secant iteration) until the terminal condition \(y(b)=\beta\) is satisfied.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Replacing the ODE by a finite difference scheme on a uniform grid and solving the resulting linear system]]></text>
+      <feedback><text>This is the finite difference method for BVPs, not the shooting method.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Splitting \([a,b]\) into two half-intervals and matching solutions at the midpoint]]></text>
+      <feedback><text>This is the multiple shooting method (which is more stable); the basic shooting method solves a single IVP from \(a\) to \(b\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Expanding \(y\) in a basis of trial functions satisfying the boundary conditions (Galerkin method)]]></text>
+      <feedback><text>This is the Galerkin (finite element) approach; the shooting method is a different technique based on IVP solvers.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q07_FiniteDiffBVP</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The finite difference discretization of \(y'' = f(x)\) on \([0,1]\) with \(y(0)=y(1)=0\) using the central difference \(y''(x_i) \approx \frac{y_{i-1}-2y_i+y_{i+1}}{h^2}\) leads to a tridiagonal system. The truncation error is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(O(h^2)\): the local error is \(\frac{h^2}{12}y^{(4)}(\xi)\) by Taylor expansion]]></text>
+      <feedback><text>Correct. The central difference \((y_{i-1}-2y_i+y_{i+1})/h^2\) approximates \(y''\) with error \(\frac{h^2}{12}y^{(4)}\); the global error for the BVP is also \(O(h^2)\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(O(h)\): only first-order accurate]]></text>
+      <feedback><text>Central differencing achieves second-order accuracy \(O(h^2)\); forward or backward differences would be first-order.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(O(h^4)\): the standard second-order central difference is superconvergent]]></text>
+      <feedback><text>Standard central differences are \(O(h^2)\); \(O(h^4)\) requires a fourth-order compact scheme or Richardson extrapolation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(O(1/h^2)\): the truncation error grows as the mesh is refined]]></text>
+      <feedback><text>Consistent methods have truncation errors that go to zero as \(h\to0\); the truncation error here is \(O(h^2)\to0\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q08_GaussElim_Pivoting</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Partial pivoting in Gaussian elimination (selecting the largest element in absolute value in the current column as the pivot) is used primarily to]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Control numerical growth of rounding errors (limit the growth factor of \(L\) multipliers to at most 1 in absolute value, improving numerical stability)]]></text>
+      <feedback><text>Correct. Partial pivoting ensures multipliers satisfy \(|m_{ij}|\leq1\), bounding the growth factor and preventing catastrophic cancellation from dividing by a small pivot.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Reduce the operation count from \(O(n^3)\) to \(O(n^2)\)]]></text>
+      <feedback><text>Pivoting does not change the asymptotic operation count; Gaussian elimination is \(O(n^3)\) with or without pivoting.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Guarantee that \(A\) is symmetric positive definite after row exchanges]]></text>
+      <feedback><text>Pivoting permutes rows for numerical stability; it does not change the definiteness of the matrix.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Ensure the \(LU\) factorization is unique without a permutation matrix]]></text>
+      <feedback><text>Partial pivoting requires a permutation matrix \(P\) giving \(PA=LU\); it introduces, not removes, the permutation from the factorization.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q09_Cholesky</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Cholesky decomposition \(A = LL^T\) (where \(L\) is lower triangular with positive diagonal) exists and is unique if and only if \(A\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Symmetric positive definite (SPD)]]></text>
+      <feedback><text>Correct. The Cholesky factorization exists and is unique exactly for SPD matrices; the positive definiteness guarantees positive pivots (hence real positive diagonal of \(L\)).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Symmetric with all positive entries]]></text>
+      <feedback><text>Positive entries are not sufficient; a matrix can have all positive entries without being positive definite (e.g., all entries equal to a small positive constant minus a larger diagonal).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Diagonally dominant with positive diagonal]]></text>
+      <feedback><text>Diagonal dominance does not imply positive definiteness unless combined with symmetry; even then it is a stronger condition than necessary for Cholesky.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Invertible with positive determinant]]></text>
+      <feedback><text>Invertibility and positive determinant are necessary but not sufficient; the matrix must be SPD for Cholesky.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q10_ConjugateGradient</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The conjugate gradient (CG) method for solving \(A\mathbf{x}=\mathbf{b}\) with SPD \(A \in \mathbb{R}^{n\times n}\) terminates in at most how many iterations (in exact arithmetic)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(n\) iterations (where \(n\) is the matrix dimension), since the search directions form an \(A\)-orthogonal basis of \(\mathbb{R}^n\)]]></text>
+      <feedback><text>Correct. CG generates \(A\)-conjugate directions; in exact arithmetic, after at most \(n\) steps the Krylov subspace spans \(\mathbb{R}^n\) and the exact solution is found.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\kappa(A)\) iterations (proportional to the condition number)]]></text>
+      <feedback><text>The convergence rate of CG depends on \(\kappa(A)\), but the finite termination guarantee is \(n\) steps, not \(\kappa(A)\) steps (which may far exceed \(n\)).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(n^2\) iterations (one for each matrix entry)]]></text>
+      <feedback><text>CG terminates in at most \(n\) steps, not \(n^2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[2 iterations (since the method quadratically converges)]]></text>
+      <feedback><text>CG is not a two-step method; the number of steps to the exact solution is at most \(n\), and in practice (with floating point or for well-conditioned problems) many fewer.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q11_SVD</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The singular value decomposition (SVD) of \(A \in \mathbb{R}^{m\times n}\) is \(A = U\Sigma V^T\) where \(U \in \mathbb{R}^{m\times m}\), \(V \in \mathbb{R}^{n\times n}\) are orthogonal. The rank-\(k\) best approximation to \(A\) in the Frobenius norm is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(A_k = \sum_{i=1}^k \sigma_i \mathbf{u}_i \mathbf{v}_i^T\) (Eckart-Young theorem), with error \(\|A-A_k\|_F = \sqrt{\sigma_{k+1}^2+\cdots+\sigma_r^2}\)]]></text>
+      <feedback><text>Correct. The Eckart-Young theorem states that the best rank-\(k\) approximation in the spectral or Frobenius norm is obtained by truncating the SVD to the top \(k\) singular values.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The matrix formed by setting the \(k\) largest entries of \(A\) to zero]]></text>
+      <feedback><text>Entry-wise truncation does not give the best low-rank approximation; the optimal procedure uses the SVD (Eckart-Young).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The projection of \(A\) onto the span of its \(k\) largest diagonal entries]]></text>
+      <feedback><text>Diagonal truncation is not the optimal low-rank approximation; SVD singular vectors (not diagonal entries) provide the optimal basis.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(A_k = U_k \Sigma_k V_k^T\) where \(\Sigma_k\) contains the \(k\) smallest singular values]]></text>
+      <feedback><text>The best rank-\(k\) approximation uses the \(k\) largest singular values, not the smallest.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q12_LeastSquares</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The least-squares solution to the overdetermined system \(A\mathbf{x} = \mathbf{b}\) (where \(A\in\mathbb{R}^{m\times n}\), \(m>n\), full column rank) satisfies which normal equations?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(A^T A\,\mathbf{x} = A^T\mathbf{b}\)]]></text>
+      <feedback><text>Correct. Minimizing \(\|A\mathbf{x}-\mathbf{b}\|^2\) by setting the gradient to zero gives \(2A^T(A\mathbf{x}-\mathbf{b})=0\), i.e., the normal equations \(A^TA\mathbf{x}=A^T\mathbf{b}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(AA^T\mathbf{x} = \mathbf{b}\)]]></text>
+      <feedback><text>This equation involves \(AA^T\) (an \(m\times m\) matrix) and is not the normal equations for the standard overdetermined least-squares problem.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(A\mathbf{x} = \mathbf{b}\) (always has a solution by the full rank assumption)]]></text>
+      <feedback><text>For an overdetermined system \(m>n\), \(A\mathbf{x}=\mathbf{b}\) generally has no exact solution; the least-squares solution minimizes the residual.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(A^{-1}\mathbf{b}\) (the inverse of \(A\))]]></text>
+      <feedback><text>\(A\) is not square (\(m\neq n\)) so \(A^{-1}\) does not exist; the pseudoinverse \(A^+ = (A^TA)^{-1}A^T\) gives the least-squares solution.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q13_RichardsonExtrapolation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Richardson extrapolation applied to a numerical method with error expansion \(T(h) = T + c_1 h^p + c_2 h^{2p} + \cdots\) uses two approximations \(T(h)\) and \(T(h/2)\) to produce a higher-order estimate. The extrapolated value is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(T^* = \frac{2^p T(h/2) - T(h)}{2^p - 1}\), which is \(O(h^{2p})\)]]></text>
+      <feedback><text>Correct. Eliminating the \(c_1 h^p\) term between \(T(h)=T+c_1h^p+\cdots\) and \(T(h/2)=T+c_1(h/2)^p+\cdots\) gives the Richardson formula, raising the order from \(p\) to \(2p\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(T^* = \frac{T(h) + T(h/2)}{2}\) (simple averaging)]]></text>
+      <feedback><text>Simple averaging gives a result still \(O(h^p)\); Richardson extrapolation uses weighted combination to cancel the leading error term.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(T^* = 2T(h/2) - T(h)\), which is \(O(h^{p+1})\)]]></text>
+      <feedback><text>This formula cancels the \(h^p\) term only if \(p=1\) and gives \(O(h^2)\) from \(O(h)\); the correct Richardson formula for general \(p\) uses \(2^p\) not \(2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(T^* = T(h/2) + \frac{T(h/2)-T(h)}{2^p-1}\), which is \(O(h^{p-1})\) (less accurate)]]></text>
+      <feedback><text>This is actually the same formula as the correct answer written differently, giving \(O(h^{2p})\), not \(O(h^{p-1})\); Richardson extrapolation increases, not decreases, order.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q14_ConsistencyStabilityConvergence</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Dahlquist's equivalence theorem (Lax-Richtmyer theorem for ODEs) states: a linear multistep method is convergent (global error \(\to 0\) as \(h\to 0\)) if and only if it is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Both consistent (local truncation error \(\to 0\) as \(h\to 0\)) and zero-stable (roots of the first characteristic polynomial satisfy \(|\rho_i|\leq1\) with simple roots on the unit circle)]]></text>
+      <feedback><text>Correct. Dahlquist's theorem: convergence \(\Leftrightarrow\) consistency + zero-stability. Zero-stability (roots of \(\rho(z)\) on or inside unit circle, simple on the boundary) prevents parasitic solution growth.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Consistent and A-stable]]></text>
+      <feedback><text>A-stability is a property for stiff problems (stability for all \(\text{Re}(\lambda h)\leq0\)); Dahlquist's convergence theorem requires zero-stability, not A-stability.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Explicit and uses at most 4 past values]]></text>
+      <feedback><text>Convergence depends on consistency and zero-stability, not on whether the method is explicit or the number of steps used.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Consistent alone (consistency implies convergence for linear multistep methods)]]></text>
+      <feedback><text>Consistency alone does not imply convergence; the midpoint method \(y_{n+1}=y_{n-1}+2hf_n\) is consistent but not zero-stable and does not converge.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q15_JacobiMethod</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Jacobi iteration for \(A\mathbf{x}=\mathbf{b}\) (splitting \(A=D+L+U\)) updates \(x_i^{(k+1)} = \frac{1}{a_{ii}}\!\left(b_i - \sum_{j\neq i}a_{ij}x_j^{(k)}\right)\). The iteration matrix is \(B_J = -D^{-1}(L+U)\). The method converges iff]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The spectral radius \(\rho(B_J) < 1\)]]></text>
+      <feedback><text>Correct. A linear iterative method \(\mathbf{x}^{(k+1)}=B\mathbf{x}^{(k)}+\mathbf{c}\) converges for any initial guess iff \(\rho(B)<1\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\|B_J\|_\infty < 1\) (sufficient but not necessary)]]></text>
+      <feedback><text>\(\|B_J\|_\infty<1\) is sufficient for convergence (since \(\rho(B)\leq\|B\|\)), but the necessary and sufficient condition is \(\rho(B_J)<1\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\det(B_J) < 1\)]]></text>
+      <feedback><text>\(\det(B_J) = \prod|\lambda_i| < 1\) does not imply \(\max|\lambda_i|<1\) (e.g., some \(|\lambda_i|>1\) while the product is small); the correct condition is \(\rho(B_J)=\max|\lambda_i|<1\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\text{tr}(B_J) < n\) (trace less than dimension)]]></text>
+      <feedback><text>The trace being less than \(n\) means the average eigenvalue is less than 1, but individual eigenvalues could still exceed 1; \(\rho(B_J)<1\) is the correct condition.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q16_FiniteElement</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Galerkin finite element method for \(-u'' = f\) on \([0,1]\), \(u(0)=u(1)=0\), using piecewise linear basis functions \(\phi_i\) on a uniform mesh of size \(h\), leads to the weak form]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\int_0^1 u'v'\,dx = \int_0^1 fv\,dx\) for all test functions \(v \in H^1_0(0,1)\), discretized to a tridiagonal stiffness matrix \(K\) with \(K_{ij}=\int\phi_i'\phi_j'\,dx\)]]></text>
+      <feedback><text>Correct. Integration by parts transforms \(-u''=f\) to the weak form \(\int u'v'=\int fv\); the stiffness matrix entries \(K_{ij}=\int\phi_i'\phi_j'\,dx\) are nonzero only for neighboring basis functions.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\int_0^1 u''v''\,dx = \int_0^1 fv\,dx\) (uses second derivatives of both \(u\) and \(v\))]]></text>
+      <feedback><text>The standard weak form for \(-u''=f\) involves only first derivatives (one integration by parts); second derivatives would arise for fourth-order problems like beam equations.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The collocation equations \(-u''(x_i)=f(x_i)\) at each mesh point \(x_i\)]]></text>
+      <feedback><text>Collocation is a different discretization method (point-wise residual); Galerkin FEM uses integral (variational) conditions, not point evaluations of the PDE.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The difference equations \(-\frac{u_{i-1}-2u_i+u_{i+1}}{h^2}=f(x_i)\)]]></text>
+      <feedback><text>This is the standard finite difference scheme; for piecewise linear FEM on a uniform mesh the stiffness matrix has the same structure, but the derivation and interpretation are different.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q17_GradientDescent</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Gradient descent applied to minimize \(f(\mathbf{x}) = \frac{1}{2}\mathbf{x}^T A\mathbf{x} - \mathbf{b}^T\mathbf{x}\) (with SPD \(A\)) using step size \(\alpha_k = \|\mathbf{r}_k\|^2/(\mathbf{r}_k^T A\mathbf{r}_k)\) (steepest descent) converges with rate]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\left(\frac{\kappa-1}{\kappa+1}\right)^2\) per iteration (in \(\|\mathbf{e}\|_A^2\)), where \(\kappa=\lambda_{\max}/\lambda_{\min}\) is the condition number]]></text>
+      <feedback><text>Correct. Steepest descent on a quadratic with optimal line search has the contraction factor \(\left(\frac{\kappa-1}{\kappa+1}\right)^2\) in the energy norm; convergence slows dramatically for large \(\kappa\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(1/\kappa\) per iteration (inversely proportional to condition number)]]></text>
+      <feedback><text>The rate is \(\left(\frac{\kappa-1}{\kappa+1}\right)^2\approx 1-4/\kappa\) for large \(\kappa\), not \(1/\kappa\); the method converges slowly (close to 1) for large \(\kappa\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Quadratic convergence, with \(\|\mathbf{e}_{k+1}\|_A \leq C\|\mathbf{e}_k\|_A^2\)]]></text>
+      <feedback><text>Gradient descent converges linearly; Newton's method (or conjugate gradient at convergence) gives faster rates.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Finite termination in \(n\) steps (same as CG)]]></text>
+      <feedback><text>Conjugate gradient terminates in \(n\) steps; steepest descent (gradient descent) is not a Krylov method and does not terminate finitely in general.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q18_Preconditioning</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Preconditioning a linear system \(A\mathbf{x}=\mathbf{b}\) by solving \(P^{-1}A\mathbf{x}=P^{-1}\mathbf{b}\) with preconditioner \(P\approx A\) is used to]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Reduce the effective condition number \(\kappa(P^{-1}A)\ll\kappa(A)\), accelerating the convergence of iterative solvers like CG or GMRES]]></text>
+      <feedback><text>Correct. A good preconditioner clusters the eigenvalues of \(P^{-1}A\) near 1, reducing the condition number and dramatically improving the convergence rate of Krylov methods.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Increase the matrix size to expose more parallelism for distributed computing]]></text>
+      <feedback><text>Preconditioning does not change the matrix size; it transforms the system to improve conditioning.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Convert a nonsymmetric system to a symmetric one]]></text>
+      <feedback><text>Preconditioning can preserve or destroy symmetry depending on the choice of \(P\); its primary purpose is to improve conditioning, not symmetrize.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Guarantee exact solution in \(n\) steps regardless of the condition number]]></text>
+      <feedback><text>Even with preconditioning, CG terminates in at most \(n\) steps in exact arithmetic; with good preconditioning fewer steps are needed, but it does not bypass the \(n\)-step limit.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q19_SplineQuadrature</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Romberg integration method combines composite trapezoidal approximations \(T(h), T(h/2), T(h/4), \ldots\) with Richardson extrapolation to achieve]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Arbitrarily high-order accuracy for smooth integrands, with the \(k\)-th column of the Romberg table being \(O(h^{2k})\)]]></text>
+      <feedback><text>Correct. Each level of Richardson extrapolation raises the order by 2 (since the trapezoidal rule's error expansion has only even powers of \(h\)); the Romberg table's \(k\)-th column achieves \(O(h^{2k})\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Exactly the same accuracy as Simpson's rule (fourth-order)]]></text>
+      <feedback><text>The second column of the Romberg table coincides with Simpson's rule (\(O(h^4)\)), but further extrapolation gives higher orders; Romberg surpasses Simpson's rule.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Eighth-order accuracy at most, regardless of the number of extrapolation levels]]></text>
+      <feedback><text>Romberg integration can in principle achieve any order; the accuracy is limited only by the number of extrapolation levels and the smoothness of the integrand.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The same accuracy as Gauss-Legendre quadrature with \(n\) nodes]]></text>
+      <feedback><text>Gauss-Legendre with \(n\) nodes achieves degree \(2n-1\) exactness; Romberg builds on equispaced trapezoidal evaluations and generally cannot match Gauss-Legendre for the same number of function evaluations on smooth functions.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>NUMLA_Q20_FiniteDiff_Stability</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The explicit FTCS (forward-time, centered-space) scheme for the heat equation \(u_t = \alpha u_{xx}\) is stable (von Neumann analysis) if and only if the mesh ratio \(r = \alpha\Delta t/(\Delta x)^2\) satisfies]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(r \leq \frac{1}{2}\)]]></text>
+      <feedback><text>Correct. Von Neumann analysis of FTCS gives amplification factor \(g(\xi)=1-4r\sin^2(\xi/2)\); for stability \(|g|\leq1\) requires \(r\leq1/2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(r \leq 1\)]]></text>
+      <feedback><text>The stability limit is \(r\leq1/2\), not \(r\leq1\); at \(r=1\) the scheme is unstable (amplification factor can reach \(-1\) for high-frequency modes).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(r \leq 2\)]]></text>
+      <feedback><text>The correct stability limit is \(r\leq1/2\); \(r>1/2\) leads to exponential growth of errors.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All \(r > 0\) (unconditionally stable)]]></text>
+      <feedback><text>Unconditional stability is a property of implicit schemes (Crank-Nicolson, backward Euler); FTCS is conditionally stable with restriction \(r\leq1/2\).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

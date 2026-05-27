@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- ===== CATEGORY: Unit 1 / Part B / Real Analysis ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 1 - Analysis/Part B - Real Analysis</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Cauchy Sequence in R</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>A sequence \((x_n)\) in \(\mathbb{R}\) is a Cauchy sequence if and only if it:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Since \(\mathbb{R}\) is complete, a sequence in \(\mathbb{R}\) is Cauchy if and only if it converges. Option (A) is wrong: bounded sequences need not converge (e.g., \((-1)^n\)). Option (C) is wrong: \(|x_{n+1}-x_n|\to 0\) does not imply Cauchy (e.g., harmonic partial sums). Option (D) is a consequence, not a characterisation.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Converges to some \(L \in \mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Satisfies \(|x_{n+1} - x_n| \to 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has a monotone subsequence]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Limit (1+1/n)^n</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>\(\displaystyle\lim_{n \to \infty}\left(1 + \frac{1}{n}\right)^n\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>This is the definition of Euler's number \(e \approx 2.718\). The sequence is strictly increasing and bounded above, and converges to \(e\). It can be shown using the binomial theorem or the definition of \(e\) as \(\lim_{n\to\infty}(1+1/n)^n\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Telescoping Series Sum</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The sum of the series \(\displaystyle\sum_{n=1}^{\infty} \frac{1}{n(n+1)}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Use partial fractions: \(\frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}\). The partial sum is \(S_N = 1 - \frac{1}{N+1} \to 1\) as \(N\to\infty\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The series diverges]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Alternating Series ln 2</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The series \(\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}\) converges to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>From the Taylor series \(\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots\) valid for \(x \in (-1,1]\), substituting \(x = 1\) gives \(\ln 2 = 1 - \frac{1}{2} + \frac{1}{3} - \cdots = \sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}\). Convergence at \(x=1\) follows from Abel's theorem.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\ln 2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-\ln 2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The series diverges]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Limsup of (-1)^n(1+1/n)</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>\(\displaystyle\limsup_{n \to \infty}\,(-1)^n\!\left(1 + \frac{1}{n}\right)\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>For even \(n\): \((-1)^n(1+1/n) = 1+1/n \to 1^+\). For odd \(n\): the terms approach \(-1\). The \(\limsup\) is the largest subsequential limit, which is \(1\) (achieved along even-\(n\) subsequence).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - p-Series Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The series \(\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^p}\) converges if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>The \(p\)-series \(\sum 1/n^p\) converges for \(p > 1\) and diverges for \(p \leq 1\). This follows from the integral test: \(\int_1^\infty x^{-p}\,dx\) converges iff \(p > 1\). In particular, the harmonic series (\(p=1\)) diverges.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p \geq 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(p > 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p > 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p > 2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Radius of Convergence of Sum n! x^n</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The radius of convergence of the power series \(\displaystyle\sum_{n=0}^{\infty} n!\, x^n\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>By the ratio test: \(\left|\frac{a_{n+1}}{a_n}\right| = (n+1)|x| \to \infty\) for any \(x \neq 0\). So the series diverges for every \(x \neq 0\), giving radius of convergence \(R = 0\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Uniform Continuity on Compact Set</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Let \(f : [0,1] \to \mathbb{R}\) be continuous. Which of the following is necessarily true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>By the Heine-Cantor theorem, a continuous function on a compact set is uniformly continuous. Since \([0,1]\) is compact, \(f\) must be uniformly continuous. Continuity does not imply differentiability, monotonicity, or that \(f\) assumes only finitely many values.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) is uniformly continuous on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is differentiable on \((0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is monotone on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) assumes only finitely many values]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Additive Continuous Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Let \(f : \mathbb{R} \to \mathbb{R}\) be continuous and satisfy \(f(x+y) = f(x) + f(y)\) for all \(x, y \in \mathbb{R}\). Then \(f(x)\) must equal:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>From \(f(x+y)=f(x)+f(y)\), one deduces \(f(n)=nf(1)\) for integers, then for rationals, and by continuity for all reals. Setting \(c = f(1)\) gives \(f(x) = cx\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(cx^2\) for some constant \(c\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(cx\) for some constant \(c\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^{cx}\) for some constant \(c\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|cx|\) for some constant \(c\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Derivative of x^2 sin(1/x) at 0</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Let \(f(x) = x^2 \sin\!\left(\dfrac{1}{x}\right)\) for \(x \neq 0\) and \(f(0) = 0\). Then \(f'(0)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D)</strong></p><p>By definition: \(f'(0) = \lim_{h\to 0}\frac{f(h)-f(0)}{h} = \lim_{h\to 0} h\sin(1/h)\). Since \(|\sin(1/h)| \leq 1\), we have \(|h\sin(1/h)| \leq |h| \to 0\). Hence \(f'(0) = 0\). Note that \(f'\) is not continuous at \(0\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Does not exist]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Pointwise Limit of x^n on [0,1]</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The sequence \(f_n(x) = x^n\) on \([0,1]\) converges:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>For \(x \in [0,1)\): \(x^n \to 0\). At \(x=1\): \(1^n = 1 \to 1\). So the pointwise limit is \(f(x) = 0\) for \(x \in [0,1)\) and \(f(1)=1\). The convergence is NOT uniform because \(f\) is discontinuous while each \(f_n\) is continuous.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Uniformly to \(0\) on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Pointwise to \(0\) on \([0,1)\) and to \(1\) at \(x=1\), but not uniformly]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uniformly to \(1\) on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Does not converge at any point]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Cantor Set Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The Cantor (middle-thirds) set \(C \subset [0,1]\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>The Cantor set \(C\) has the cardinality of \(\mathbb{R}\) (it is uncountable — in bijection with \(\{0,2\}^{\mathbb{N}}\)) yet has Lebesgue measure zero (the total length removed is \(\sum_{n=0}^\infty 2^n/3^{n+1} = 1\)). It is closed and nowhere dense (contains no open interval).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Countable, with positive Lebesgue measure]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Countable, with Lebesgue measure zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uncountable, with Lebesgue measure zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uncountable, with Lebesgue measure \(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Riemann Integrability Criterion</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>A bounded function \(f:[a,b]\to\mathbb{R}\) is Riemann integrable if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D)</strong></p><p>Lebesgue's criterion: a bounded function on \([a,b]\) is Riemann integrable iff the set of its discontinuities has Lebesgue measure zero. Continuity everywhere is sufficient but not necessary (e.g., the function \(f=1\) on rationals, \(0\) elsewhere, has measure-zero discontinuity set vacuously — wait, that one is NOT Riemann integrable). Actually: monotone functions (finitely many discontinuities) and piecewise continuous functions are Riemann integrable. The exact characterisation is measure-zero discontinuity set.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is continuous on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is monotone on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) has at most finitely many discontinuities]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The set of discontinuities of \(f\) has Lebesgue measure zero]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Improper Integral 1/sqrt(x)</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The improper integral \(\displaystyle\int_0^1 \frac{1}{\sqrt{x}}\,dx\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>\(\int_0^1 x^{-1/2}dx = \left[2x^{1/2}\right]_0^1 = 2(1) - 2(0) = 2\). The integral converges because \(p = 1/2 < 1\) in \(\int_0^1 x^{-p}dx\), which converges for \(p < 1\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Diverges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Weierstrass M-Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The Weierstrass M-test guarantees uniform convergence of \(\sum f_n\) on a set \(E\) if there exist constants \(M_n\) such that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>The Weierstrass M-test: if \(|f_n(x)| \leq M_n\) for all \(x \in E\) and \(\sum M_n < \infty\), then \(\sum f_n\) converges absolutely and uniformly on \(E\). This is one of the most used tools to establish uniform convergence of series of functions.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(|f_n(x)| \leq M_n\) for all \(x \in E\) and \(\sum M_n < \infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n \to 0\) uniformly on \(E\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum f_n(x_0)\) converges for some \(x_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Each \(f_n\) is bounded on \(E\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Limit n^(1/n)</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>\(\displaystyle\lim_{n \to \infty} n^{1/n}\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Let \(a_n = n^{1/n}\). Then \(\ln a_n = \frac{\ln n}{n} \to 0\) as \(n\to\infty\) (by L'Hôpital or squeeze). Hence \(a_n = e^{\ln a_n} \to e^0 = 1\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Bolzano-Weierstrass Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The Bolzano-Weierstrass theorem states that every bounded sequence in \(\mathbb{R}\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Every bounded sequence in \(\mathbb{R}\) has a convergent subsequence — this is the Bolzano-Weierstrass theorem. It does NOT assert that the sequence itself converges (e.g., \((-1)^n\) is bounded but diverges). It also does not assert a unique subsequential limit.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Has a convergent subsequence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is monotone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has a unique limit point]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Mean Value Theorem Application</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Let \(f\) be continuous on \([a,b]\) and differentiable on \((a,b)\) with \(f'(x) = 0\) for all \(x \in (a,b)\). Then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>By the Mean Value Theorem, for any \(x, y \in [a,b]\), there exists \(c\) between them with \(f(x)-f(y) = f'(c)(x-y) = 0\). Hence \(f(x)=f(y)\) for all \(x,y\), i.e., \(f\) is constant on \([a,b]\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) is constant on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is identically zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(a) = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is linear]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Supremum of S = {1-1/n}</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Let \(S = \!\left\{1 - \dfrac{1}{n} : n \in \mathbb{N}\right\}\). Then \(\sup S\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Every element \(1 - 1/n < 1\), so \(1\) is an upper bound. For any \(\epsilon > 0\), choose \(n > 1/\epsilon\) so that \(1 - 1/n > 1 - \epsilon\). Hence \(1\) is the least upper bound. Note \(\sup S = 1 \notin S\), so the maximum does not exist.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Does not exist]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Absolute Convergence Implies Convergence of Squares</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(\displaystyle\sum_{n=1}^{\infty} a_n\) converges absolutely, then \(\displaystyle\sum_{n=1}^{\infty} a_n^2\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Absolute convergence of \(\sum a_n\) implies \(a_n \to 0\), so eventually \(|a_n| < 1\), giving \(a_n^2 < |a_n|\). By comparison with \(\sum |a_n| < \infty\), the series \(\sum a_n^2\) converges absolutely. The converse is false: \(\sum 1/n^2\) converges but \(\sum 1/n\) diverges.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[May diverge]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges to \(\left(\sum a_n\right)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Converges absolutely]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Diverges to \(+\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 1 / Part B / Linear Algebra ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 1 - Analysis/Part B - Linear Algebra</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Rank-Nullity Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(A\) is an \(m \times n\) matrix with \(\text{rank}(A) = r\), the dimension of the null space of \(A\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>By the Rank-Nullity Theorem: \(\text{rank}(A) + \text{nullity}(A) = n\) (number of columns). Hence \(\text{nullity}(A) = n - r\). Note it is \(n - r\), not \(m - r\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(m - r\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(n - r\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(r\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(mn - r\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Determinant of Product</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>For \(n \times n\) matrices \(A\) and \(B\), \(\det(AB)\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>The determinant is multiplicative: \(\det(AB) = \det(A)\det(B)\). This follows from the fact that det is the unique alternating multilinear form normalised to 1 on \(I\). Note \(\det(AB) = \det(BA)\) but \(\det(A+B) \neq \det A + \det B\) in general.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(A) + \det(B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\det(A)\cdot\det(B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\cdot\det(A)\cdot\det(B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(A - B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Trace Equals Sum of Eigenvalues</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>For an \(n \times n\) matrix \(A\) with eigenvalues \(\lambda_1, \lambda_2, \ldots, \lambda_n\) (counting multiplicity), \(\text{tr}(A)\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>The trace equals the sum of eigenvalues: \(\text{tr}(A) = \sum_{i=1}^n \lambda_i\), and \(\det(A) = \prod_{i=1}^n \lambda_i\). These follow by comparing coefficients in the characteristic polynomial \(\det(\lambda I - A)\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda_1 + \lambda_2 + \cdots + \lambda_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_1 \cdot \lambda_2 \cdots \lambda_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_1^2 + \lambda_2^2 + \cdots + \lambda_n^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The largest eigenvalue]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Eigenvalues of Real Symmetric Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Let \(A\) be a real symmetric matrix (\(A^T = A\)). Then all eigenvalues of \(A\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>If \(Av = \lambda v\) with \(v \neq 0\), then \(\lambda \|v\|^2 = v^T A v = (Av)^T v = \bar{\lambda}\|v\|^2\) (using \(A=A^T=\bar{A}\)), so \(\lambda = \bar{\lambda}\), meaning \(\lambda\) is real. They need not be positive or negative definite.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Positive]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Real]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Purely imaginary]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Of modulus 1]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Cayley-Hamilton Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The Cayley-Hamilton theorem states that for any \(n \times n\) matrix \(A\) with characteristic polynomial \(p(\lambda) = \det(\lambda I - A)\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Cayley-Hamilton: every matrix satisfies its own characteristic polynomial, i.e., \(p(A) = 0\). For example, if \(p(\lambda) = \lambda^2 - 5\lambda + 6\), then \(A^2 - 5A + 6I = 0\). This is useful for computing matrix inverses and powers.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p(\lambda) = 0\) has \(n\) distinct roots]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A^n = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(p(A) = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p(A) = I\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Eigenvalues of Skew-Symmetric Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(A\) is a real skew-symmetric matrix (\(A^T = -A\)), the eigenvalues of \(A\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D)</strong></p><p>If \(Av = \lambda v\), then \(\lambda\|v\|^2 = v^T Av = -v^T A^T v = -(Av)^T v = -\bar\lambda\|v\|^2\), so \(\lambda = -\bar\lambda\), i.e., \(\text{Re}(\lambda) = 0\). The eigenvalues are purely imaginary or zero.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[All positive real]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All negative real]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All real]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Purely imaginary or zero]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Orthogonal Matrix Determinant</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(Q\) is a real orthogonal matrix (\(Q^T Q = I\)), then \(|\det(Q)|\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>From \(Q^TQ = I\): \(\det(Q^T)\det(Q) = 1\), and \(\det(Q^T) = \det(Q)\), so \((\det Q)^2 = 1\), giving \(\det Q = \pm 1\). Hence \(|\det Q| = 1\). Orthogonal matrices represent rotations (\(\det = +1\)) or reflections (\(\det = -1\)).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Any positive real number]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Eigenvalues of Idempotent Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(A\) is an \(n \times n\) idempotent matrix (\(A^2 = A\)), the possible eigenvalues of \(A\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>If \(\lambda\) is an eigenvalue with eigenvector \(v\): \(A^2 v = A(Av) = A(\lambda v) = \lambda^2 v\). But \(A^2 = A\), so \(A^2 v = Av = \lambda v\). Hence \(\lambda^2 = \lambda\), giving \(\lambda(\lambda-1)=0\), so \(\lambda \in \{0,1\}\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Only \(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only \(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(0\) or \(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Any real number]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Eigenvalues of Nilpotent Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(A\) is an \(n \times n\) nilpotent matrix (\(A^k = 0\) for some positive integer \(k\)), then all eigenvalues of \(A\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>If \(Av = \lambda v\), then \(A^k v = \lambda^k v = 0\), so \(\lambda^k = 0\), hence \(\lambda = 0\). All eigenvalues of a nilpotent matrix are zero. Equivalently, the characteristic polynomial of an \(n\times n\) nilpotent is \(\lambda^n\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Purely imaginary]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Arbitrary complex numbers]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Rank of Product AB</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>For matrices \(A_{m\times n}\) and \(B_{n\times p}\), which inequality holds?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>\(\text{rank}(AB) \leq \min(\text{rank}(A),\,\text{rank}(B))\). The column space of \(AB\) is contained in the column space of \(A\), so rank\((AB) \leq\) rank\((A)\). Similarly rank\((AB) \leq\) rank\((B)\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{rank}(AB) \geq \min(\text{rank}(A), \text{rank}(B))\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\text{rank}(AB) \leq \min(\text{rank}(A), \text{rank}(B))\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{rank}(AB) = \text{rank}(A)\cdot\text{rank}(B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{rank}(AB) = \text{rank}(A) + \text{rank}(B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Eigenvalues of Transpose</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The eigenvalues of \(A^T\) compared to the eigenvalues of \(A\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>\(\det(\lambda I - A^T) = \det((\lambda I - A)^T) = \det(\lambda I - A)\). So \(A\) and \(A^T\) have the same characteristic polynomial, hence the same eigenvalues (with multiplicities). Their eigenvectors may differ.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The same as eigenvalues of \(A\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The negatives of eigenvalues of \(A\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The reciprocals of eigenvalues of \(A\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The squares of eigenvalues of \(A\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Similar Matrices Same Characteristic Polynomial</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(B = P^{-1}AP\) for some invertible \(P\), then \(A\) and \(B\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>\(\det(\lambda I - B) = \det(\lambda I - P^{-1}AP) = \det(P^{-1}(\lambda I - A)P) = \det(\lambda I - A)\). So similar matrices share the same characteristic polynomial (and hence the same eigenvalues, trace, and determinant), but generally have different column spaces and null spaces.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Have identical entries]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Have the same characteristic polynomial]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Have the same null space]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Have the same column space]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Nullity of 4x4 rank-3 Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Let \(A\) be a \(4 \times 4\) matrix with \(\text{rank}(A) = 3\). The dimension of the solution space of \(Ax = 0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>By the Rank-Nullity Theorem: nullity\((A) = n - \text{rank}(A) = 4 - 3 = 1\). So the homogeneous system \(Ax = 0\) has a one-dimensional solution space (one free variable).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Matrix A^T A is Positive Semidefinite</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>For any real matrix \(A\), the matrix \(A^T A\) is always:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>For any vector \(x\): \(x^T(A^TA)x = (Ax)^T(Ax) = \|Ax\|^2 \geq 0\). So \(A^TA\) is positive semidefinite. It is positive definite iff \(A\) has full column rank. It is always symmetric: \((A^TA)^T = A^TA\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Positive definite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Positive semidefinite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Invertible]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Orthogonal]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 1 / Part C / Real Analysis ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 1 - Analysis/Part C - Real Analysis</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Baire Category Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The Baire Category Theorem states that a complete metric space \((X, d)\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Baire Category Theorem: a complete metric space (or a locally compact Hausdorff space) is of the second category, i.e., it cannot be written as a countable union of nowhere-dense sets. Equivalently, a countable intersection of open dense sets is dense. This is used to prove the existence of continuous nowhere-differentiable functions, etc.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Has a countable dense subset]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Cannot be written as a countable union of nowhere-dense sets]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is compact]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every Cauchy sequence has a unique limit]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Non-negative Continuous Function with Zero Integral</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>Let \(f : [0,1] \to \mathbb{R}\) be continuous with \(f(x) \geq 0\) for all \(x \in [0,1]\), and \(\displaystyle\int_0^1 f(x)\,dx = 0\). Then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Suppose \(f(c) > 0\) for some \(c\). By continuity, \(f > f(c)/2 > 0\) on some interval \((c-\delta, c+\delta)\). Then \(\int_0^1 f \geq \int_{c-\delta}^{c+\delta} f \geq f(c)/2 \cdot 2\delta > 0\), contradiction. Hence \(f \equiv 0\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(x) = 0\) for all \(x \in [0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) can be positive at isolated points]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(0) = f(1) = 0\) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No such function \(f\) exists]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Arzela-Ascoli Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The Arzela-Ascoli theorem guarantees that a sequence \(\{f_n\}\) of functions on a compact interval has a uniformly convergent subsequence if \(\{f_n\}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Arzela-Ascoli: a subset of \(C(K)\) (continuous functions on a compact set \(K\)) is relatively compact (every sequence has a uniformly convergent subsequence) if and only if it is uniformly bounded and equicontinuous. Pointwise boundedness alone is insufficient.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Pointwise bounded only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uniformly bounded and equicontinuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Monotone and bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Differentiable with bounded derivatives]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Gaussian Integral</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The value of \(\displaystyle\int_0^{\infty} e^{-x^2}\,dx\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Let \(I = \int_0^\infty e^{-x^2}dx\). Then \(I^2 = \int_0^\infty\!\int_0^\infty e^{-(x^2+y^2)}dx\,dy\). Converting to polar: \(I^2 = \int_0^{\pi/2}\!\int_0^\infty e^{-r^2}r\,dr\,d\theta = \frac{\pi}{2}\cdot\frac{1}{2} = \frac{\pi}{4}\). Hence \(I = \frac{\sqrt{\pi}}{2}\). Also \(\Gamma(1/2) = \sqrt{\pi}\), so \(I = \frac{1}{2}\Gamma(1/2)\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{\pi}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{\sqrt{\pi}}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\pi}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - fn = n^2 x e^(-nx) Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>Let \(f_n(x) = n^2 x\, e^{-nx}\) on \([0,1]\). Which statement is correct?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>For each fixed \(x > 0\): \(f_n(x) = n^2 x e^{-nx} \to 0\) (exponential beats polynomial). At \(x=0\): \(f_n(0)=0\). So \(f_n \to 0\) pointwise. But \(\int_0^1 f_n\,dx = \int_0^1 n^2 x e^{-nx}dx\). Substituting \(u=nx\): \(= \int_0^n u e^{-u}du \to \int_0^\infty u e^{-u}du = \Gamma(2) = 1 \neq 0\). So the limit of integrals \(\neq\) integral of limit: convergence is NOT uniform.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n \to 0\) uniformly on \([0,1]\) and \(\int_0^1 f_n \to 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f_n \to 0\) pointwise on \([0,1]\) but \(\int_0^1 f_n\,dx \to 1 \neq 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n\) does not converge at any point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n \to \infty\) uniformly on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Uniform Convergence and Integration</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>If \(f_n \to f\) uniformly on \([a,b]\) and each \(f_n\) is Riemann integrable on \([a,b]\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Uniform convergence preserves Riemann integrability: \(f\) is Riemann integrable and \(\int_a^b f_n\,dx \to \int_a^b f\,dx\). This is a key theorem — pointwise convergence alone does NOT allow interchange of limit and integral. Uniform convergence also preserves continuity but not necessarily differentiability.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is differentiable and \(f_n' \to f'\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) is Riemann integrable and \(\int_a^b f_n\,dx \to \int_a^b f\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\int_a^b f_n\,dx = \int_a^b f\,dx\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) need not be integrable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Completeness of C([0,1]) with Sup Norm</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The space \(C([0,1])\) of continuous real-valued functions on \([0,1]\), equipped with the supremum norm \(\|f\|_\infty = \sup_{x\in[0,1]}|f(x)|\), is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>\(C([0,1])\) with \(\|\cdot\|_\infty\) is a Banach space (complete normed space). Completeness: if \(\{f_n\}\) is Cauchy in \(\|\cdot\|_\infty\), it converges uniformly, and the uniform limit of continuous functions is continuous. It is NOT a Hilbert space (inner product would give \(L^2\)-norm, not sup-norm). It is infinite-dimensional and not compact.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[A Hilbert space]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[A Banach space (complete normed space)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Compact]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not complete]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Lebesgue Dominated Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>Let \(\{f_n\}\) be a sequence of measurable functions with \(f_n \to f\) a.e. and \(|f_n(x)| \leq g(x)\) for all \(n\), where \(g\) is Lebesgue integrable. Then by the Dominated Convergence Theorem:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>The Lebesgue Dominated Convergence Theorem (DCT): under the stated conditions, \(f\) is integrable and \(\lim_{n\to\infty}\int f_n = \int f\). The dominating function \(g\) is essential: without it, the conclusion may fail (as seen in the \(f_n = n^2 xe^{-nx}\) example).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) is integrable and \(\displaystyle\lim_{n\to\infty}\int f_n = \int f\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n \to f\) uniformly]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\int f_n\) is bounded but need not converge]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) need not be measurable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Banach Fixed Point Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>Let \((X, d)\) be a complete metric space and \(T : X \to X\) a contraction mapping, i.e., \(d(Tx, Ty) \leq k\,d(x,y)\) for some \(k \in [0,1)\) and all \(x, y \in X\). Then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Banach Fixed Point Theorem (Contraction Mapping Principle): \(T\) has a unique fixed point \(x^* \in X\) (i.e., \(Tx^* = x^*\)), and the iterates \(T^n(x_0) \to x^*\) for any starting point \(x_0\). The completeness of \(X\) and the contraction condition \(k < 1\) are both essential.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\) has no fixed point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\) has infinitely many fixed points]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(T\) has exactly one fixed point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\) has at least two fixed points]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Cesaro Mean Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>If a sequence \((x_n)\) satisfies \(x_n \to L\), and \(\sigma_n = \dfrac{1}{n}\displaystyle\sum_{k=1}^n x_k\) denotes the Cesaro mean, then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>If \(x_n \to L\), then \(\sigma_n \to L\) (Cesaro means converge to the same limit). However, the converse is false: \(\sigma_n \to L\) does not imply \(x_n \to L\) (e.g., \(x_n = (-1)^n\) has \(\sigma_n \to 0\) but \(x_n\) diverges). This is Cesaro summability.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sigma_n \to L^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sigma_n \to L\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sigma_n \to 2L\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sigma_n\) need not converge]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Beta Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The Beta function \(\displaystyle B(m,n) = \int_0^1 x^{m-1}(1-x)^{n-1}\,dx\) for \(m, n > 0\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>\(B(m,n) = \dfrac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}\). This follows from the relation \(B(m,n) = 2\int_0^{\pi/2}\cos^{2m-1}\theta\sin^{2n-1}\theta\,d\theta\) and properties of the Gamma function. Special cases: \(B(1,1)=1\), \(B(1/2,1/2)=\pi\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\Gamma(m+n)}{\Gamma(m)\Gamma(n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{\Gamma(m)\,\Gamma(n)}{\Gamma(m+n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\Gamma(m)\,\Gamma(n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{(m-1)!(n-1)!}{(m+n)!}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Limsup Definition</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>For a bounded sequence \((x_n)\) in \(\mathbb{R}\), \(\displaystyle\limsup_{n\to\infty} x_n\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>\(\limsup_{n\to\infty} x_n = \inf_{n \geq 1}\sup_{k \geq n} x_k\). Equivalently, it is the largest subsequential limit of \((x_n)\). The sequence \(y_n = \sup_{k\geq n}x_k\) is decreasing and bounded below, so its limit is the \(\limsup\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\lim_{n\to\infty} x_n\) (when it exists)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\inf_{n \geq 1}\sup_{k \geq n} x_k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sup_{n \geq 1} x_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sup_{n \geq 1}\inf_{k \geq n} x_k\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Stone-Weierstrass Density of Polynomials</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>By the Stone-Weierstrass theorem, polynomials are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>The Weierstrass Approximation Theorem (a special case of Stone-Weierstrass): for every \(f \in C([a,b])\) and \(\epsilon > 0\), there exists a polynomial \(p\) with \(\|f - p\|_\infty < \epsilon\). Polynomials are dense in \(C([0,1])\) w.r.t. \(\|\cdot\|_\infty\). They are also dense in \(L^2([0,1])\), but the sup-norm statement is what Weierstrass provides directly.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Not dense in \(C([0,1])\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Dense in \(C([0,1])\) with respect to the supremum norm]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Dense only in \(L^2([0,1])\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Dense only among differentiable functions]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Bounded Derivative Implies Uniform Continuity</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>Let \(f : \mathbb{R} \to \mathbb{R}\) be differentiable with \(|f'(x)| \leq M\) for all \(x \in \mathbb{R}\). Then \(f\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>By the MVT: \(|f(x)-f(y)| = |f'(c)||x-y| \leq M|x-y|\). This is the Lipschitz condition with constant \(M\), which implies uniform continuity (for any \(\epsilon > 0\), take \(\delta = \epsilon/M\)). \(f\) need not be bounded (e.g., \(f(x)=x\)).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded on \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uniformly continuous on \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Constant]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Twice differentiable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 1 / Part C / Linear Algebra ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 1 - Analysis/Part C - Linear Algebra</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Diagonalizability via Geometric Multiplicity</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>An \(n \times n\) matrix \(A\) is diagonalizable over its base field if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>A matrix is diagonalizable iff for each eigenvalue \(\lambda\), the geometric multiplicity (dimension of eigenspace \(\ker(A-\lambda I)\)) equals the algebraic multiplicity (multiplicity as a root of the characteristic polynomial). Having \(n\) distinct eigenvalues is sufficient but not necessary (e.g., \(I_n\) is diagonalizable with one eigenvalue of multiplicity \(n\)).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It has \(n\) distinct eigenvalues]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[For each eigenvalue, geometric multiplicity equals algebraic multiplicity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Its minimal polynomial has degree \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Minimal Polynomial Divides Characteristic Polynomial</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>Let \(m(\lambda)\) be the minimal polynomial and \(p(\lambda)\) the characteristic polynomial of an \(n\times n\) matrix \(A\). Then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>The minimal polynomial \(m\) divides the characteristic polynomial \(p\) (by Cayley-Hamilton: \(p(A) = 0\), and \(m\) is the monic polynomial of least degree annihilating \(A\)). Also, every root of \(m\) is a root of \(p\), and vice versa (they have the same roots, but possibly different multiplicities). The degree of \(m\) is at most \(n\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p(\lambda)\) divides \(m(\lambda)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(m(\lambda)\) divides \(p(\lambda)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m(\lambda) = p(\lambda)\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\deg(m) = \deg(p)\) always]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Spectral Theorem for Symmetric Matrices</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>By the Spectral Theorem, every real symmetric \(n\times n\) matrix \(A\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Spectral Theorem: every real symmetric matrix \(A\) can be orthogonally diagonalised: \(A = Q\Lambda Q^T\) where \(Q\) is orthogonal and \(\Lambda\) is diagonal with real eigenvalues. Eigenvectors for distinct eigenvalues are orthogonal. This is the most important structural theorem in linear algebra for symmetric matrices.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Has only positive eigenvalues]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Can be written as \(A = Q\Lambda Q^T\) where \(Q\) is orthogonal and \(\Lambda\) is real diagonal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is always positive definite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has trace zero]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Positive Definite Matrix Characterization</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>A real symmetric matrix \(A\) is positive definite if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>A real symmetric matrix \(A\) is positive definite iff all eigenvalues are positive (by Spectral Theorem). Equivalent conditions: all leading principal minors are positive (Sylvester's criterion); \(x^TAx > 0\) for all \(x \neq 0\). Having all diagonal entries positive is necessary but not sufficient.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[All diagonal entries are positive]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[All eigenvalues are positive]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(A) > 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{tr}(A) > 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Jordan Form Already in Jordan Form</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The Jordan normal form of \(A = \begin{pmatrix} 2 & 1 & 0 \\ 0 & 2 & 1 \\ 0 & 0 & 2 \end{pmatrix}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>\(A\) is already in Jordan normal form — it is a single \(3\times 3\) Jordan block with eigenvalue \(2\). Its characteristic polynomial is \((\lambda-2)^3\) and minimal polynomial is also \((\lambda-2)^3\). Since \(A\) is not diagonalizable (\(\ker(A-2I)\) is 1-dimensional), it cannot be diagonalized to \(\text{diag}(2,2,2)\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\begin{pmatrix} 2 & 1 & 0 \\ 0 & 2 & 1 \\ 0 & 0 & 2 \end{pmatrix}\) (already in Jordan form)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2 \end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix} 2 & 1 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2 \end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Singular Values of a Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The singular values of an \(m \times n\) real matrix \(A\) are defined as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>The singular values of \(A\) are the non-negative square roots of the eigenvalues of \(A^T A\) (equivalently, of \(AA^T\)). They are always real and non-negative. The SVD writes \(A = U\Sigma V^T\) where \(U, V\) are orthogonal and \(\Sigma\) is diagonal with singular values on the diagonal.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The eigenvalues of \(A\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The non-negative square roots of eigenvalues of \(A^T A\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The absolute values of eigenvalues of \(A\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The diagonal entries of \(A\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Rank-1 Matrix Eigenvalues</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>Let \(A\) be an \(n \times n\) real matrix with \(\text{rank}(A) = 1\). Then \(A\) has:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>If rank\((A)=1\) then \(A = uv^T\) for some column vectors \(u, v \in \mathbb{R}^n\). The null space has dimension \(n-1\), so eigenvalue \(0\) has geometric multiplicity \(n-1\) (hence algebraic multiplicity at least \(n-1\)). The only possibly non-zero eigenvalue is \(\text{tr}(A) = v^Tu\) (the remaining eigenvalue).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[No zero eigenvalues]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Eigenvalue \(0\) with algebraic multiplicity at least \(n-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All eigenvalues equal to \(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All eigenvalues positive]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Normal Matrix Orthogonal Diagonalizability</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>A real \(n \times n\) matrix \(A\) is orthogonally diagonalizable if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>A real matrix is orthogonally diagonalizable iff it is symmetric (\(A = A^T\)). For complex matrices, the analogous statement is: unitarily diagonalizable iff normal (\(AA^* = A^*A\)). Real symmetric matrices are a special case of normal matrices. A real normal matrix that is not symmetric is NOT orthogonally diagonalizable (it may have complex eigenvalues).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[It is symmetric (\(A^T = A\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is invertible]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It has \(n\) distinct real eigenvalues]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is upper triangular]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

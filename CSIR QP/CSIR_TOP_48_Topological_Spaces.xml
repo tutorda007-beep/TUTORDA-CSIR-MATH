@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Topology/Topological Spaces</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q01_Topology_Definition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A topology \(\mathcal{T}\) on a set \(X\) must satisfy:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[(i) \(\emptyset, X \in \mathcal{T}\); (ii) arbitrary unions of members of \(\mathcal{T}\) are in \(\mathcal{T}\); (iii) finite intersections of members of \(\mathcal{T}\) are in \(\mathcal{T}\).]]></text>
+      <feedback><text>Correct. These are the three axioms for a topology. Note: arbitrary unions are allowed but only finite intersections. An infinite intersection of open sets need not be open (e.g., ∩(−1/n,1/n)={0} is not open in ℝ).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[(i) \(\emptyset, X \in \mathcal{T}\); (ii) finite unions of members of \(\mathcal{T}\) are in \(\mathcal{T}\); (iii) arbitrary intersections of members of \(\mathcal{T}\) are in \(\mathcal{T}\).]]></text>
+      <feedback><text>This has the roles of unions and intersections reversed. The correct axioms require ARBITRARY unions (not just finite) and FINITE intersections (not arbitrary).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[(i) \(\emptyset \in \mathcal{T}\); (ii) if \(U \in \mathcal{T}\) then \(X \setminus U \in \mathcal{T}\) (complements are open).]]></text>
+      <feedback><text>Requiring complements of open sets to be open would mean every set is both open and closed (clopen), forcing only discrete or indiscrete topologies. This is not the definition of a topology.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[(i) \(X \in \mathcal{T}\); (ii) finite unions are in \(\mathcal{T}\); (iii) finite intersections are in \(\mathcal{T}\).]]></text>
+      <feedback><text>Missing ∅∈𝒯 and the arbitrary (not just finite) union axiom. Without arbitrary unions, many standard topologies (like the usual topology on ℝ) would not satisfy the axioms.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q02_Separation_Axioms</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A topological space is Hausdorff (T₂) if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[For any two distinct points \(x \neq y\), there exist disjoint open sets \(U \ni x\) and \(V \ni y\) (separated by open sets).]]></text>
+      <feedback><text>Correct. The Hausdorff (T₂) separation axiom ensures distinct points can be separated by disjoint open neighborhoods. This is the most commonly assumed separation axiom: metric spaces, manifolds, and most function spaces are Hausdorff.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[For any two distinct points \(x \neq y\), there is an open set containing one but not the other (T₁).]]></text>
+      <feedback><text>This is the T₁ axiom (weaker than Hausdorff). T₁ means singletons are closed; T₂ (Hausdorff) requires separated open neighborhoods.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every closed set and point outside it can be separated by a continuous function (Tychonoff, T₃½).]]></text>
+      <feedback><text>This is the Tychonoff (completely regular) axiom, stronger than Hausdorff. The Hausdorff condition requires only separation by open sets, not by continuous functions.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Any two disjoint closed sets can be separated by disjoint open sets (normal, T₄).]]></text>
+      <feedback><text>This is the normal (T₄) axiom, stronger than Hausdorff. Normal ⟹ regular ⟹ Hausdorff ⟹ T₁ ⟹ T₀ in increasing strength of separation.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q03_Compact_Hausdorff</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In a compact Hausdorff space \(X\), which statement is true?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[A subset \(A \subseteq X\) is compact if and only if \(A\) is closed.]]></text>
+      <feedback><text>Correct. In a compact Hausdorff space: (1) compact subsets are closed (in any Hausdorff space), (2) closed subsets of a compact space are compact. Together: A is compact ⟺ A is closed. This equivalence holds specifically for compact Hausdorff spaces.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every open subset of \(X\) is compact.]]></text>
+      <feedback><text>Open sets in a compact Hausdorff space need not be compact. For example, [0,1] is compact Hausdorff, and (0,1) is open but not compact.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every continuous function \(f: X \to \mathbb{R}\) is bounded.]]></text>
+      <feedback><text>This is true (continuous image of compact set is compact, hence bounded), but it's a consequence of the structure, not the characterization of compact subsets asked about.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The topology of \(X\) is the same as the discrete topology.]]></text>
+      <feedback><text>Compact Hausdorff spaces can have many different (non-discrete) topologies. For example, [0,1] with the usual topology is compact Hausdorff but not discrete.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q04_Tychonoff</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Tychonoff's theorem states:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[An arbitrary product of compact spaces (with the product topology) is compact.]]></text>
+      <feedback><text>Correct. Tychonoff's theorem is one of the most fundamental results in topology. It holds for arbitrary (even uncountable) products. For countable products it follows from diagonal arguments; the general case uses the axiom of choice (Zorn's lemma or ultrafilters). It is in fact equivalent to the axiom of choice.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A finite product of compact spaces is compact.]]></text>
+      <feedback><text>The finite case follows from the fact that a finite product of compact spaces is compact (which can be proved without the axiom of choice). Tychonoff's theorem is significant precisely because it handles ARBITRARY (including infinite) products.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The product of countably many compact spaces is compact.]]></text>
+      <feedback><text>The countable case is true but less powerful. Tychonoff's theorem is notable for ARBITRARY products, including uncountable ones (e.g., [0,1]^[0,1] is compact).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A product of Hausdorff spaces is compact if and only if each factor is compact.]]></text>
+      <feedback><text>The "if" direction is Tychonoff's theorem. The "only if" part (compactness of the product implies compactness of each factor) is true (projections are continuous and surjective) but the full statement is not exactly Tychonoff's theorem.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q05_Homeomorphism</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following pairs of spaces are homeomorphic?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The open interval \((0,1)\) and \(\mathbb{R}\).]]></text>
+      <feedback><text>Correct. The map x↦tan(π(x−1/2)) is a homeomorphism from (0,1) to ℝ. Any two non-degenerate open intervals are homeomorphic to each other and to ℝ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The closed interval \([0,1]\) and the circle \(S^1\).]]></text>
+      <feedback><text>Not homeomorphic: [0,1] is a contractible space (homotopy equivalent to a point) while S¹ is not. Also, removing any interior point from [0,1] leaves a connected space, but removing one point from S¹ leaves a connected space too — however S¹ minus a point ≅ ℝ while [0,1] minus an interior point is a disjoint union of two intervals (disconnected). Wait, S¹ minus a point IS connected (homeomorphic to ℝ). The correct topological distinction: removing an endpoint from [0,1] gives [0,1), while S¹ has no boundary. [0,1] is not a manifold at its endpoints (different local topology). Actually both are compact connected, but S¹ has no fixed-point-free involution of [0,1]... The key: [0,1] minus any two points gives three components; S¹ minus any two points gives two components. So they are NOT homeomorphic.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathbb{R}^2\) and \(\mathbb{R}^3\).]]></text>
+      <feedback><text>ℝ² and ℝ³ are not homeomorphic (invariance of domain / topological dimension). Removing a point from ℝ² leaves a space with fundamental group ℤ; removing a point from ℝ³ leaves a simply connected space. This distinguishes them.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The circle \(S^1\) and the figure-eight (wedge of two circles).]]></text>
+      <feedback><text>Not homeomorphic: S¹ has fundamental group ℤ, while the figure-eight has fundamental group ℤ*ℤ (free group on 2 generators). The fundamental group is a topological invariant.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q06_Product_Topology</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The product topology on \(X \times Y\) has as a basis:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Sets of the form \(U \times V\) where \(U\) is open in \(X\) and \(V\) is open in \(Y\).]]></text>
+      <feedback><text>Correct. The product topology is generated by the basis {U×V : U open in X, V open in Y}. It is the coarsest topology making both projections π₁:X×Y→X and π₂:X×Y→Y continuous. Convergence in the product topology is componentwise.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All subsets of \(X \times Y\) of the form \(A \times B\) where \(A \subseteq X\), \(B \subseteq Y\).]]></text>
+      <feedback><text>Not all product subsets A×B are open; only those where A is open in X AND B is open in Y form a basis. An arbitrary subset A×B need not be open.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The collection of all open subsets of \(X \times Y\) (treated as one space).]]></text>
+      <feedback><text>This describes the topology itself (not a basis). The product topology has a specific characterization as generated by the basis {U×V}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Sets \(\{x\} \times V\) for all \(x \in X\) and open \(V \subseteq Y\) (vertical slices).]]></text>
+      <feedback><text>Vertical slices {x}×V and horizontal slices U×{y} together do not form a basis for the product topology. The product basis requires U×V with both U and V open.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q07_Quotient_Topology</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The quotient space \([0,1]/\sim\) where \(0 \sim 1\) (endpoints identified) is homeomorphic to:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The circle \(S^1\).]]></text>
+      <feedback><text>Correct. Identifying the endpoints of [0,1] "glues" them into a single point, forming a loop — homeomorphic to S¹. The quotient map sends t↦e^{2πit}∈S¹⊂ℂ. This is the standard construction of the circle.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The interval \([0,1]\).]]></text>
+      <feedback><text>Identifying 0~1 changes the topology: [0,1]/~ has a point where 0 and 1 are identified, making it a circle, not an interval.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The sphere \(S^2\).]]></text>
+      <feedback><text>S² is a 2-manifold. [0,1]/~ is a 1-manifold (circle S¹). They have different dimensions and are not homeomorphic.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The real line \(\mathbb{R}\).]]></text>
+      <feedback><text>ℝ is non-compact and simply connected. [0,1]/~ (the circle S¹) is compact and has fundamental group ℤ≠0. They are not homeomorphic.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q08_Subspace_Topology</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The subspace topology on \(A \subseteq X\) consists of:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Sets \(U \cap A\) where \(U\) is open in \(X\) (the relative topology).]]></text>
+      <feedback><text>Correct. The subspace (relative) topology on A is {U∩A : U open in X}. It is the coarsest topology on A making the inclusion map ι:A↪X continuous. Properties like Hausdorff, metrizability, and second countability are inherited by subspaces.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All subsets of \(A\) that are open in \(X\).]]></text>
+      <feedback><text>A subset of A that is open in X is also open in the subspace topology (as U∩A=U when U⊆A), but the subspace topology also includes sets U∩A that are open in A but not in X. The subspace topology is broader.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All open subsets of \(X\) contained in \(A\).]]></text>
+      <feedback><text>This is only a subset of the subspace topology. For example, if X=ℝ and A=[0,1], then (0,1) is open in ℝ and contained in A, so it's in both. But {0}=[0,ε)∩[0,1] is in the subspace topology for ε<1 (since [0,ε) is open in ℝ... actually [0,ε) is not open in ℝ). Let me reconsider: [0,1/2) = (−∞,1/2)∩[0,1] is open in [0,1] but not open in ℝ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All subsets of \(A\) (the discrete topology on \(A\)).]]></text>
+      <feedback><text>The discrete topology on A gives every subset of A as open, which is generally finer than the subspace topology unless X itself is discrete.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q09_Urysohn_Lemma</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Urysohn's lemma states: in a normal (T₄) space \(X\), if \(A\) and \(B\) are disjoint closed sets, then:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[There exists a continuous function \(f: X \to [0,1]\) with \(f|_A = 0\) and \(f|_B = 1\).]]></text>
+      <feedback><text>Correct. Urysohn's lemma is a key result: normal spaces can separate disjoint closed sets by a continuous real-valued function. This is often used to construct partitions of unity and to prove Tietze's extension theorem.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[There exist disjoint open sets \(U \supseteq A\) and \(V \supseteq B\).]]></text>
+      <feedback><text>This is the definition of a normal (T₄) space itself, not Urysohn's lemma. Urysohn's lemma is the stronger statement that normal spaces can separate by continuous functions.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[There exists an open set \(U\) with \(A \subseteq U \subseteq \overline{U} \subseteq X \setminus B\).]]></text>
+      <feedback><text>This is the "regularity" property of normal spaces (follows from normality by taking neighborhoods iteratively), and is the key step in proving Urysohn's lemma, but is not Urysohn's lemma itself.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A continuous function \(f: X \to \mathbb{R}\) with \(f(A) = \{0\}\) and \(f(B) = \{1\}\) exists only if \(X\) is metrizable.]]></text>
+      <feedback><text>Urysohn's lemma holds for ALL normal (T₄) spaces, not just metrizable ones. In fact, Urysohn's metrization theorem says a regular second-countable space is metrizable — but the lemma itself applies to all normal spaces.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q10_Tietze_Extension</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Tietze's extension theorem states: if \(X\) is normal (T₄), \(A \subseteq X\) is closed, and \(f: A \to [0,1]\) is continuous, then:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[There exists a continuous \(\tilde{f}: X \to [0,1]\) with \(\tilde{f}|_A = f\).]]></text>
+      <feedback><text>Correct. Tietze's theorem (a consequence of Urysohn's lemma) says every continuous real-valued function on a closed subset of a normal space extends to the whole space with the same range. This is a fundamental extension theorem in topology.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The function \(f\) can be extended to \(X\) but possibly with a larger range \(\mathbb{R}\).]]></text>
+      <feedback><text>The extension can be made to take values in [0,1] (same range as f). The theorem as stated preserves the range, not just the continuity.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Such an extension exists only if \(X\) is metrizable.]]></text>
+      <feedback><text>Tietze's theorem holds for all normal spaces, including non-metrizable ones. Metrizability is a stronger condition not required by the theorem.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[No continuous extension exists if \(A\) is not compact.]]></text>
+      <feedback><text>The extension exists for any closed subset A of a normal space, whether or not A is compact.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q11_One_Point_Compactification</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The one-point compactification of \(\mathbb{R}\) is homeomorphic to:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The circle \(S^1\).]]></text>
+      <feedback><text>Correct. The one-point compactification ℝ∪{∞} is homeomorphic to S¹ (via stereographic projection from the north pole of S¹ to ℝ, where the north pole corresponds to ∞). More generally, the one-point compactification of ℝⁿ is homeomorphic to Sⁿ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\([0,1]\) (the closed interval).]]></text>
+      <feedback><text>The one-point compactification of ℝ is a compact space homeomorphic to S¹. The interval [0,1] has boundary points (endpoints), unlike S¹.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathbb{R}^2\) (adding a point doesn't change the dimension).]]></text>
+      <feedback><text>The one-point compactification of ℝ is a compact 1-manifold (S¹), not ℝ² which is non-compact and 2-dimensional.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The two-point compactification \([-\infty,+\infty]\).]]></text>
+      <feedback><text>[-∞,+∞] is the TWO-point compactification of ℝ (adding two points ±∞), homeomorphic to [0,1]. The ONE-point compactification adds a single point ∞ and is homeomorphic to S¹.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q12_Paracompact</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A topological space is paracompact if every open cover has:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[A locally finite open refinement (a partition of unity exists on paracompact Hausdorff spaces).]]></text>
+      <feedback><text>Correct. Paracompactness: every open cover has a locally finite open refinement. Paracompact Hausdorff spaces admit partitions of unity, making them crucial for differential geometry (defining smooth structures, Riemannian metrics, etc.). Metric spaces are paracompact.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A finite subcover (compact spaces).]]></text>
+      <feedback><text>Extracting a finite subcover is compactness. Paracompactness (locally finite refinement) is weaker: every compact space is paracompact, but not conversely (ℝ is paracompact but not compact).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A countable subcover (Lindelöf spaces).]]></text>
+      <feedback><text>Extracting a countable subcover defines Lindelöf spaces. Paracompactness requires a locally finite refinement, which is different from a countable subcover.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[No refinement; paracompact means every open cover is finite.]]></text>
+      <feedback><text>This would be compactness. Paracompactness is strictly weaker: every open cover has a locally finite refinement (not necessarily finite).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q13_Nets</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In a topological space, a net \((x_\alpha)_{\alpha \in \Lambda}\) converges to \(x\) if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[For every open neighborhood \(U\) of \(x\), there exists \(\alpha_0 \in \Lambda\) such that \(x_\alpha \in U\) for all \(\alpha \geq \alpha_0\).]]></text>
+      <feedback><text>Correct. Nets generalize sequences (directed sets replace ℕ). In general topological spaces (not just metric spaces), nets capture the notion of convergence completely: a set is closed iff it contains the limits of all convergent nets from it.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[There is a subsequence of the net converging to \(x\).]]></text>
+      <feedback><text>"Subsequence" makes sense for sequences (indexed by ℕ). Nets use directed sets and subnets, not subsequences. The correct definition requires all neighborhoods to eventually contain the net.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The net is eventually constant at \(x\): \(x_\alpha = x\) for all large \(\alpha\).]]></text>
+      <feedback><text>Eventually constant implies convergence but convergence does not require eventually constant. A sequence 1/n converges to 0 but is never equal to 0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[For every open set \(U\), if \(x_\alpha \in U\) for some \(\alpha\), then \(x \in U\).]]></text>
+      <feedback><text>This is not the definition of convergence. It would mean the net is "eventually in U" for every U containing x—but the condition is reversed and does not define convergence correctly.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q14_Compactification_Stone_Cech</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Stone-Čech compactification \(\beta X\) of a completely regular (Tychonoff) space \(X\) is characterized by:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[It is the largest compactification: every continuous \(f: X \to [0,1]\) extends uniquely to \(\tilde{f}: \beta X \to [0,1]\).]]></text>
+      <feedback><text>Correct. The Stone-Čech compactification βX has the universal property that every continuous bounded real-valued function on X extends to βX. Equivalently, βX is the unique (up to homeomorphism) compactification with this extension property. In particular, C*(X) ≅ C(βX).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[It is the same as the one-point compactification \(X^* = X \cup \{\infty\}\).]]></text>
+      <feedback><text>The Stone-Čech compactification βX is generally much larger than the one-point compactification. For example, βℕ is uncountable (it contains ℕ as a dense subset and βℕ\ℕ is the Stone-Čech remainder).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\beta X\) has the same cardinality as \(X\).]]></text>
+      <feedback><text>βX can be much larger than X. For example, βℕ has cardinality 2^{2^{ℵ₀}} = 2^𝔠, much larger than |ℕ|=ℵ₀.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\beta X\) is metrizable whenever \(X\) is metrizable.]]></text>
+      <feedback><text>βX is not metrizable in general even when X is metrizable. For example, βℕ is not metrizable (it is not separable, but compact metrizable spaces are separable).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q15_Second_Countable</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A topological space that is second countable (has a countable basis) must be:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Separable (has a countable dense subset) and Lindelöf (every open cover has a countable subcover).]]></text>
+      <feedback><text>Correct. Second countable ⟹ separable (any point from each basis element forms a countable dense set) and Lindelöf (from a countable base, every open cover has a countable subcover). The converses hold in metric spaces but not in general.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Compact (every open cover has a finite subcover).]]></text>
+      <feedback><text>Second countable does not imply compact. ℝ with the usual topology is second countable (basis: open intervals with rational endpoints) but not compact.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Metrizable.]]></text>
+      <feedback><text>Second countable alone does not imply metrizable; one also needs T₃ (regular Hausdorff) — this is Urysohn's metrization theorem. For example, the Sierpinski space {0,1} with topology {∅,{1},{0,1}} is second countable (finite basis) but not Hausdorff, hence not metrizable.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Discrete (every singleton is open).]]></text>
+      <feedback><text>Discrete spaces have uncountably many open sets if the space is uncountable, so they are not second countable. Second countability is far from discreteness.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q16_Locally_Compact</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A topological space \(X\) is locally compact if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Every point has a compact neighborhood (for Hausdorff spaces: every point has a neighborhood basis of compact sets).]]></text>
+      <feedback><text>Correct. Local compactness means every point has at least one compact neighborhood. In locally compact Hausdorff spaces, every point has a neighborhood basis of compact sets. Examples: ℝⁿ, manifolds, p-adic numbers. The one-point compactification works for locally compact Hausdorff spaces.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every open subset of \(X\) is compact.]]></text>
+      <feedback><text>If every open set were compact, then X itself (being open in X) would be compact. Local compactness is much weaker than global compactness of all open sets.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(X\) is compact.]]></text>
+      <feedback><text>Compact implies locally compact (the whole space is a compact neighborhood of each point), but locally compact does not imply compact. ℝ is locally compact but not compact.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(X\) has no compact subsets.]]></text>
+      <feedback><text>This is the opposite of local compactness. In a locally compact space, every point has at least one compact neighborhood.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q17_Continuity_Characterization</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A function \(f: X \to Y\) between topological spaces is continuous if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The preimage \(f^{-1}(V)\) is open in \(X\) for every open set \(V \subseteq Y\).]]></text>
+      <feedback><text>Correct. This is the topological definition of continuity. Equivalently: preimages of closed sets are closed, or the map preserves the topology in the inverse direction. For metric spaces, this is equivalent to the ε-δ definition.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The image \(f(U)\) is open in \(Y\) for every open set \(U \subseteq X\) (open map).]]></text>
+      <feedback><text>Open maps send open sets to open sets, but this is DIFFERENT from continuity. Continuous maps have open preimages of open sets; open maps have open images of open sets. Neither implies the other in general.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f\) is a bijection.]]></text>
+      <feedback><text>Bijections need not be continuous (e.g., the identity from (ℝ, discrete) to (ℝ, usual) is a bijection but not continuous). Continuity requires preimages of open sets to be open.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f\) preserves limits of sequences: \(x_n \to x \Rightarrow f(x_n) \to f(x)\).]]></text>
+      <feedback><text>In metric spaces, this is equivalent to continuity. But in general topological spaces (non-first-countable), sequences are insufficient to detect all limit points; nets or filters are needed. Sequential continuity does not imply continuity in all spaces.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q18_Closure_Interior</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For a subset \(A\) of a topological space \(X\), the closure \(\overline{A}\) is the:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Smallest closed set containing \(A\) (intersection of all closed sets containing \(A\)).]]></text>
+      <feedback><text>Correct. The closure Ā = ∩{F closed : F⊇A} is the smallest closed superset of A. Alternatively, Ā = {x∈X : every open neighborhood of x intersects A}. The interior int(A) = ∪{U open : U⊆A} is the largest open subset of A.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Largest open set contained in \(A\).]]></text>
+      <feedback><text>This is the definition of the interior int(A), not the closure. The closure is the smallest closed SUPERSET of A; the interior is the largest open SUBSET of A.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The set of all limit points of \(A\).]]></text>
+      <feedback><text>The set of limit points (derived set A') may not include isolated points of A. The closure Ā = A∪A' (A together with all its limit points), not just A' alone.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The boundary \(\partial A = \overline{A} \setminus \mathrm{int}(A)\) of \(A\).]]></text>
+      <feedback><text>The boundary is ∂A = Ā ∩ (X⧵A)̄ = Ā ⧵ int(A). This is different from the closure itself; the closure includes the interior and the boundary.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q19_Locally_Connected</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A topological space is locally connected if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Every point has a neighborhood basis of connected open sets.]]></text>
+      <feedback><text>Correct. Local connectedness means every point has a connected open neighborhood arbitrarily small. Equivalently, connected components are open. Note: the Cantor set is totally disconnected (no connected components with more than one point) — the extreme opposite of locally connected.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The space is connected.]]></text>
+      <feedback><text>Connected spaces need not be locally connected. For example, the topologist's sine curve (closure of {(x,sin(1/x)):x>0}) is connected but not locally connected near (0,0).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every connected subset is open.]]></text>
+      <feedback><text>This is not the definition. In a locally connected space, the connected components of open sets are open, but this is a consequence, not the definition.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Any two points can be connected by a path.]]></text>
+      <feedback><text>This is path-connectedness (or local path-connectedness if it holds locally). Local connectedness allows connected neighborhoods without requiring paths.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_48_Q20_Urysohn_Metrization</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Urysohn's metrization theorem states:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Every regular (T₃) second-countable Hausdorff space is metrizable (embeds homeomorphically in \([0,1]^\mathbb{N}\)).]]></text>
+      <feedback><text>Correct. Urysohn's metrization theorem: T₁ + regular + second countable ⟹ metrizable. The proof constructs a countable family of Urysohn functions separating points, embedding the space into [0,1]^ℕ (which is metrizable by Hilbert cube metric). This theorem characterizes which spaces can be given a compatible metric.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every Hausdorff space is metrizable.]]></text>
+      <feedback><text>Not every Hausdorff space is metrizable. The long line and the Sorgenfrey plane are Hausdorff but not metrizable. Metrizability requires additional conditions (like regularity and second countability).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every compact Hausdorff space is metrizable.]]></text>
+      <feedback><text>Compact Hausdorff spaces are normal (T₄) but need not be metrizable. For example, [0,1]^[0,1] (uncountable product of [0,1]) is compact Hausdorff (by Tychonoff) but not second countable and hence not metrizable by the usual metric space arguments.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every normal (T₄) space is metrizable.]]></text>
+      <feedback><text>Normal spaces need not be metrizable (e.g., the Sorgenfrey plane is normal but not metrizable). Metrizability requires second countability in addition to separation axioms.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

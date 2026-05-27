@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category>
+    <text>$course$/CSIR NET Mathematics/Topology/Manifolds and Differential Topology</text>
+  </category>
+</question>
+
+<!-- Q01: Smooth manifold definition -->
+<question type="multichoice">
+  <name><text>TOP51_Q01_SmoothManifold</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A smooth \(n\)-manifold is a second-countable Hausdorff topological space \(M\) equipped with a maximal atlas of charts \(\{(U_\alpha, \phi_\alpha)\}\) where \(\phi_\alpha: U_\alpha \to \mathbb{R}^n\) are homeomorphisms onto open sets. Which condition on the transition maps \(\phi_\beta \circ \phi_\alpha^{-1}\) makes the atlas smooth?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[All transition maps \(\phi_\beta \circ \phi_\alpha^{-1}: \phi_\alpha(U_\alpha \cap U_\beta) \to \phi_\beta(U_\alpha \cap U_\beta)\) are \(C^\infty\) diffeomorphisms between open subsets of \(\mathbb{R}^n\)]]></text>
+    <feedback><text>Correct. The compatibility condition that all transition functions are smooth (infinitely differentiable) defines a smooth structure on the manifold.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[All transition maps are continuous (i.e., the atlas defines a topological manifold with no additional smoothness requirement)]]></text>
+    <feedback><text>Incorrect. Continuity of transition maps only gives a topological manifold, not a smooth manifold. Smooth requires \(C^\infty\) transition functions.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[All transition maps are real-analytic (\(C^\omega\)) diffeomorphisms]]></text>
+    <feedback><text>Incorrect. Real analyticity defines a real-analytic manifold, which is a stronger condition than smooth (\(C^\infty\)). Smooth manifolds allow \(C^\infty\) but not necessarily analytic transitions.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The transition maps need only be \(C^1\) (once continuously differentiable)]]></text>
+    <feedback><text>Incorrect. A \(C^1\) atlas defines a \(C^1\)-manifold. For a smooth manifold, transitions must be \(C^\infty\). (By Whitney's theorem, every \(C^1\)-manifold admits a compatible smooth structure, but the defining condition for smooth is \(C^\infty\).)</text></feedback>
+  </answer>
+</question>
+
+<!-- Q02: Tangent space -->
+<question type="multichoice">
+  <name><text>TOP51_Q02_TangentSpace</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The tangent space \(T_p M\) at a point \(p\) on a smooth \(n\)-manifold \(M\) can be defined as the space of derivations of \(C^\infty(M)\) at \(p\). What is \(\dim(T_p M)\) and what is the tangent space to \(S^2 \subset \mathbb{R}^3\) at the north pole \(N = (0,0,1)\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\dim(T_p M) = n\); and \(T_N S^2 = \{(x,y,z) \in \mathbb{R}^3 : z = 0\} \cong \mathbb{R}^2\)]]></text>
+    <feedback><text>Correct. The tangent space always has dimension equal to the manifold dimension. At the north pole of \(S^2\), the tangent plane is the horizontal plane \(z = 0\), naturally identified with \(\mathbb{R}^2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dim(T_p M) = n+1\) for a manifold embedded in \(\mathbb{R}^{n+1}\)]]></text>
+    <feedback><text>Incorrect. The tangent space dimension equals the manifold dimension \(n\), regardless of the ambient space. \(T_N S^2\) is 2-dimensional, not 3-dimensional.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T_N S^2 = \{(x,y,z) : x^2+y^2+z^2 = 1, z = 1\} = \{N\}\), a single point]]></text>
+    <feedback><text>Incorrect. The tangent space is a vector space (not a subset of the sphere). \(T_N S^2 \cong \mathbb{R}^2\) is the plane tangent to the sphere at \(N\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\dim(T_p M) = n\); and \(T_N S^2 = \{(x,y,z) \in \mathbb{R}^3 : x^2 + y^2 + z^2 = 1\} = S^2\)]]></text>
+    <feedback><text>Incorrect. The tangent space at a point is a flat vector space, not the sphere itself. \(T_N S^2\) is the plane \(z = 0\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q03: Differential of a map -->
+<question type="multichoice">
+  <name><text>TOP51_Q03_Differential</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Let \(f: M \to N\) be a smooth map between smooth manifolds. The differential (pushforward) \(df_p: T_p M \to T_{f(p)} N\) at a point \(p \in M\) is a linear map. The map \(f\) is called an <strong>immersion</strong> at \(p\) if:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(df_p\) is injective (i.e., \(\ker(df_p) = \{0\}\)); equivalently \(\operatorname{rank}(df_p) = \dim M\)]]></text>
+    <feedback><text>Correct. An immersion has injective differential at each point. This does not require global injectivity of \(f\) itself (e.g., a figure-eight curve in \(\mathbb{R}^2\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(df_p\) is surjective; equivalently \(\operatorname{rank}(df_p) = \dim N\)]]></text>
+    <feedback><text>Incorrect. A map with surjective differential at \(p\) is called a submersion, not an immersion.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(df_p\) is an isomorphism (bijective linear map)]]></text>
+    <feedback><text>Incorrect. An isomorphism of tangent spaces at every point defines a local diffeomorphism (by the inverse function theorem), which is stronger than an immersion.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(df_p = 0\) (the zero map)]]></text>
+    <feedback><text>Incorrect. \(df_p = 0\) would make \(p\) a critical point of \(f\). An immersion requires \(df_p\) to be injective (far from zero).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q04: Sard's theorem -->
+<question type="multichoice">
+  <name><text>TOP51_Q04_SardTheorem</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p><strong>Sard's theorem</strong> states that for a smooth map \(f: M \to N\) between smooth manifolds, the set of critical values has measure zero in \(N\). A point \(q \in N\) is a <strong>regular value</strong> of \(f\) if:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[For every \(p \in f^{-1}(q)\), the differential \(df_p: T_p M \to T_q N\) is surjective (including the case \(f^{-1}(q) = \emptyset\))]]></text>
+    <feedback><text>Correct. This is the definition of a regular value. By Sard's theorem, almost every \(q \in N\) is a regular value; the preimage \(f^{-1}(q)\) of a regular value is a smooth submanifold of \(M\) (possibly empty).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[For every \(p \in f^{-1}(q)\), the differential \(df_p\) is injective]]></text>
+    <feedback><text>Incorrect. Injectivity of \(df_p\) characterizes an immersion, not a regular value. Regular values require surjectivity of \(df_p\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(q \notin f(M)\) (i.e., \(q\) is not in the image of \(f\))]]></text>
+    <feedback><text>Incorrect. Points not in the image are regular values vacuously, but regular values can also lie in the image (with surjective differential at preimages). This definition misses the key case.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(f^{-1}(q)\) is a finite set]]></text>
+    <feedback><text>Incorrect. Finiteness of the preimage is not the definition of a regular value; regular values are defined by the surjectivity condition on \(df_p\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q05: Differential forms -->
+<question type="multichoice">
+  <name><text>TOP51_Q05_DifferentialForms</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>On a smooth \(n\)-manifold \(M\), a differential \(k\)-form \(\omega\) is a smooth section of \(\bigwedge^k T^*M\). The exterior derivative \(d\) satisfies \(d^2 = 0\). On \(\mathbb{R}^3\), the 1-form \(\omega = P\,dx + Q\,dy + R\,dz\) satisfies \(d\omega = 0\) if and only if:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z} = 0,\quad \frac{\partial P}{\partial z} - \frac{\partial R}{\partial x} = 0,\quad \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 0\) (i.e., \(\operatorname{curl}(P,Q,R) = \mathbf{0}\))]]></text>
+    <feedback><text>Correct. \(d\omega = 0\) for a 1-form on \(\mathbb{R}^3\) is exactly the condition \(\nabla \times F = 0\) where \(F = (P,Q,R)\). On \(\mathbb{R}^3\) (simply connected), this implies \(\omega = df\) for some function \(f\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z} = 0\) (i.e., \(\operatorname{div}(P,Q,R) = 0\))]]></text>
+    <feedback><text>Incorrect. The divergence condition is \(d\eta = 0\) for a 2-form \(\eta\) (or equivalently, \(\star\omega\) is closed). For the 1-form \(\omega\), \(d\omega = 0\) gives the curl-free condition.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(P = Q = R = 0\)]]></text>
+    <feedback><text>Incorrect. Any exact form \(\omega = df\) satisfies \(d\omega = 0\) without requiring \(\omega = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}\) only (one condition)]]></text>
+    <feedback><text>Incorrect. Closedness of a 1-form on \(\mathbb{R}^3\) requires three conditions (all mixed partials match). On \(\mathbb{R}^2\) only one condition is needed.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q06: Stokes' theorem -->
+<question type="multichoice">
+  <name><text>TOP51_Q06_StokesTheorem</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The generalized Stokes' theorem states: for a smooth \((n-1)\)-form \(\omega\) on a compact oriented \(n\)-manifold-with-boundary \(M\):</p>
+    <p>\[\int_M d\omega = \int_{\partial M} \omega.\]</p>
+    <p>Which classical vector calculus theorem is a special case when \(n = 3\) and \(\omega\) is a 2-form \(\omega = P\,dy\wedge dz + Q\,dz\wedge dx + R\,dx\wedge dy\) on a region \(\Omega \subset \mathbb{R}^3\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[The Divergence (Gauss's) Theorem: \(\displaystyle\iiint_\Omega \left(\frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z}\right) dV = \iint_{\partial \Omega} \mathbf{F} \cdot d\mathbf{S}\)]]></text>
+    <feedback><text>Correct. For a 2-form on a 3-manifold, \(d\omega = \operatorname{div}(P,Q,R)\,dx\wedge dy\wedge dz\) and \(\int_{\partial\Omega}\omega = \iint \mathbf{F}\cdot d\mathbf{S}\), recovering Gauss's theorem.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The classical Stokes' theorem: \(\displaystyle\iint_S (\nabla \times \mathbf{F})\cdot d\mathbf{S} = \oint_{\partial S} \mathbf{F}\cdot d\mathbf{r}\)]]></text>
+    <feedback><text>Incorrect. The classical Stokes' theorem corresponds to applying Stokes' formula on a 2-manifold (surface \(S \subset \mathbb{R}^3\)) with a 1-form, not a 2-form on a 3-manifold.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The Fundamental Theorem of Calculus: \(\int_a^b f'(x)\,dx = f(b) - f(a)\)]]></text>
+    <feedback><text>Incorrect. The FTC corresponds to \(n=1\): \(\int_{[a,b]} df = f(b) - f(a)\). Here we need \(n = 3\) with a 2-form.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Green's theorem: \(\displaystyle\iint_D \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dA = \oint_{\partial D} P\,dx + Q\,dy\)]]></text>
+    <feedback><text>Incorrect. Green's theorem corresponds to \(n=2\) (a 1-form on a 2-manifold). For a 2-form on a 3-manifold the relevant theorem is the Divergence Theorem.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q07: Orientability -->
+<question type="multichoice">
+  <name><text>TOP51_Q07_Orientability</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A smooth connected \(n\)-manifold \(M\) is <strong>orientable</strong> if it admits a nowhere-vanishing \(n\)-form (a volume form). Which of the following is NOT orientable?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[The Möbius band \(\mathcal{M}\) (a compact 2-manifold with boundary)]]></text>
+    <feedback><text>Correct. The Möbius band is the standard example of a non-orientable manifold-with-boundary. Its orientation bundle is nontrivial (a twisted line bundle).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(S^2\) (the 2-sphere)]]></text>
+    <feedback><text>Incorrect. \(S^2\) is orientable; a volume form is given by the standard area form \(\omega = x\,dy\wedge dz - y\,dx\wedge dz + z\,dx\wedge dy\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T^2 = S^1 \times S^1\) (the 2-torus)]]></text>
+    <feedback><text>Incorrect. \(T^2\) is orientable; as a product of orientable manifolds it is orientable, with volume form \(d\theta_1 \wedge d\theta_2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\mathbb{R}P^3\) (real projective 3-space)]]></text>
+    <feedback><text>Incorrect. \(\mathbb{R}P^n\) is orientable if and only if \(n\) is odd. Since 3 is odd, \(\mathbb{R}P^3\) is orientable.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q08: Whitney embedding -->
+<question type="multichoice">
+  <name><text>TOP51_Q08_Whitney</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Whitney's embedding theorem states that every smooth \(n\)-manifold can be smoothly embedded into \(\mathbb{R}^N\) for some \(N\). What is the optimal \(N\) guaranteed by Whitney's theorem?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(N = 2n\): every smooth \(n\)-manifold embeds smoothly into \(\mathbb{R}^{2n}\)]]></text>
+    <feedback><text>Correct. Whitney's strong embedding theorem (1944) shows \(N = 2n\) suffices. The weak version gives \(N = 2n+1\) (immersion into \(\mathbb{R}^{2n}\) and embedding into \(\mathbb{R}^{2n+1}\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(N = n+1\): every \(n\)-manifold embeds into \(\mathbb{R}^{n+1}\)]]></text>
+    <feedback><text>Incorrect. This fails: \(\mathbb{R}P^2\) cannot be embedded in \(\mathbb{R}^3\) (though it embeds in \(\mathbb{R}^4\)). Whitney's theorem guarantees \(\mathbb{R}^{2n}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(N = 2n+1\): every \(n\)-manifold embeds into \(\mathbb{R}^{2n+1}\) (and \(2n+1\) is optimal)]]></text>
+    <feedback><text>Incorrect. Whitney's strong theorem gives the better bound \(N = 2n\); \(2n+1\) is the bound from the weak version. Whitney's result is precisely \(2n\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(N = n^2\): embedding requires quadratically many dimensions]]></text>
+    <feedback><text>Incorrect. Whitney's theorem gives the linear bound \(N = 2n\), not \(n^2\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q09: Inverse function theorem -->
+<question type="multichoice">
+  <name><text>TOP51_Q09_InverseFunctionThm</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The Inverse Function Theorem for smooth manifolds states: if \(f: M \to N\) is a smooth map between \(n\)-manifolds and \(df_p: T_p M \to T_{f(p)} N\) is an isomorphism at some \(p \in M\), then:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[There exist open neighborhoods \(U \ni p\) and \(V \ni f(p)\) such that \(f|_U: U \to V\) is a diffeomorphism]]></text>
+    <feedback><text>Correct. This is the Inverse Function Theorem: a local isomorphism of tangent spaces guarantees a local diffeomorphism. It does not imply global injectivity.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(f\) is a global diffeomorphism \(M \xrightarrow{\sim} N\)]]></text>
+    <feedback><text>Incorrect. The theorem is local: it only gives a local diffeomorphism near \(p\). Global invertibility requires additional hypotheses (e.g., properness and simple connectivity).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(f\) is a proper embedding of \(M\) into \(N\)]]></text>
+    <feedback><text>Incorrect. The Inverse Function Theorem gives a local diffeomorphism, not an embedding. An isomorphism of tangent spaces is the condition for a local diffeomorphism, not an immersion.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(df_q\) is an isomorphism for all \(q\) near \(p\)]]></text>
+    <feedback><text>Incorrect. While this is a consequence (since \(\det(df)\) is continuous and nonzero at \(p\)), the conclusion of the theorem is the local diffeomorphism, not just the persistence of the isomorphism condition.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q10: Vector bundles and tangent bundle -->
+<question type="multichoice">
+  <name><text>TOP51_Q10_TangentBundle</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The tangent bundle \(TM = \bigsqcup_{p \in M} T_p M\) of a smooth \(n\)-manifold \(M\) is itself a smooth \(2n\)-manifold. Which of the following is true about the tangent bundle of \(S^1\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(TS^1 \cong S^1 \times \mathbb{R}\) (the tangent bundle of \(S^1\) is trivial/parallelizable)]]></text>
+    <feedback><text>Correct. \(S^1\) is parallelizable: the unit tangent vector field \(\partial/\partial\theta\) provides a global nonvanishing section, giving a trivialization \(TS^1 \cong S^1 \times \mathbb{R}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(TS^1 \cong S^1 \times S^1 = T^2\) (the torus)]]></text>
+    <feedback><text>Incorrect. \(TS^1 \cong S^1 \times \mathbb{R}\), not \(S^1 \times S^1\). The fiber is \(\mathbb{R}\) (the tangent line), not another circle.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(TS^2 \cong S^2 \times \mathbb{R}^2\) (the tangent bundle of \(S^2\) is trivial)]]></text>
+    <feedback><text>Incorrect. By the hairy ball theorem, there is no nowhere-vanishing vector field on \(S^2\), so \(TS^2\) is non-trivial (not isomorphic to \(S^2 \times \mathbb{R}^2\)). The question asked about \(S^1\), not \(S^2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(TS^1\) is a non-trivial line bundle over \(S^1\), isomorphic to the Möbius band]]></text>
+    <feedback><text>Incorrect. The Möbius band is the non-orientable line bundle over \(S^1\). But \(TS^1\) is orientable (trivial), so it is the cylinder \(S^1 \times \mathbb{R}\), not the Möbius band.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q11: Hairy ball theorem -->
+<question type="multichoice">
+  <name><text>TOP51_Q11_HairyBall</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>hairy ball theorem</strong> (Poincaré-Hopf for \(S^2\)) states that every smooth vector field on \(S^2\) has at least one zero. More generally, the Poincaré-Hopf theorem relates the sum of indices of zeros of a vector field \(V\) on a compact manifold \(M\) to:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\sum_{V(p)=0} \operatorname{ind}_p(V) = \chi(M)\) (the Euler characteristic of \(M\))]]></text>
+    <feedback><text>Correct. The Poincaré-Hopf theorem: for any vector field with isolated zeros, the sum of indices equals \(\chi(M)\). For \(S^2\): \(\chi(S^2) = 2 \neq 0\), so no zero-free field exists.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sum_{V(p)=0} \operatorname{ind}_p(V) = 0\) for any compact manifold]]></text>
+    <feedback><text>Incorrect. The sum equals \(\chi(M)\), which is 0 only for manifolds with vanishing Euler characteristic (e.g., \(T^2\), odd-dimensional spheres).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sum_{V(p)=0} \operatorname{ind}_p(V) = \dim(M)\)]]></text>
+    <feedback><text>Incorrect. The index sum equals the Euler characteristic \(\chi(M)\), not the dimension. For \(S^2\): \(\chi = 2\) and \(\dim = 2\) coincide, but this is not true in general.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A smooth vector field on \(S^{2n}\) always has exactly \(2n\) zeros (counted with multiplicity)]]></text>
+    <feedback><text>Incorrect. The theorem says the index sum equals \(\chi(S^{2n}) = 2\), not that there are exactly \(2n\) zeros. There could be any number of zeros as long as their indices sum to 2.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q12: Submanifolds and regular level sets -->
+<question type="multichoice">
+  <name><text>TOP51_Q12_LevelSet</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Let \(f: \mathbb{R}^n \to \mathbb{R}^k\) be smooth with \(k \leq n\). If \(c \in \mathbb{R}^k\) is a <strong>regular value</strong> of \(f\) (i.e., \(df_p\) is surjective for all \(p \in f^{-1}(c)\)), then \(f^{-1}(c)\) is:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[A smooth embedded submanifold of \(\mathbb{R}^n\) of dimension \(n - k\)]]></text>
+    <feedback><text>Correct. By the regular level set theorem (a consequence of the implicit function theorem), \(f^{-1}(c)\) is an \((n-k)\)-dimensional smooth submanifold. E.g., \(f: \mathbb{R}^3 \to \mathbb{R}\), \(f(x,y,z) = x^2+y^2+z^2-1\), regular value \(c=0\) gives \(S^2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A smooth embedded submanifold of dimension \(k\)]]></text>
+    <feedback><text>Incorrect. The codimension is \(k\), so the dimension of \(f^{-1}(c)\) is \(n - k\), not \(k\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A discrete (0-dimensional) set of points in \(\mathbb{R}^n\)]]></text>
+    <feedback><text>Incorrect. The preimage is 0-dimensional only when \(k = n\). For general \(k < n\) it has positive dimension \(n-k\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A smooth submanifold of dimension \(n\) (the full ambient dimension)]]></text>
+    <feedback><text>Incorrect. The preimage of a regular value is a proper submanifold of dimension \(n-k < n\) (assuming \(k \geq 1\)).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q13: Integration of forms and orientation -->
+<question type="multichoice">
+  <name><text>TOP51_Q13_Integration</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Let \(\omega = f(x,y)\,dx \wedge dy\) be a smooth 2-form on \(\mathbb{R}^2\). If \(\phi: D \to \mathbb{R}^2\) is an orientation-reversing diffeomorphism from the unit disk \(D\), then \(\int_{\phi(D)} \omega\) vs. \(\int_D \phi^*\omega\) satisfies:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\displaystyle\int_{\phi(D)} \omega = -\int_D \phi^*\omega\), since pullback by orientation-reversing maps introduces a sign change]]></text>
+    <feedback><text>Correct. The change of variables formula for forms: \(\int_{\phi(D)} \omega = \int_D \phi^*\omega\) when \(\phi\) is orientation-preserving, and \(= -\int_D \phi^*\omega\) when orientation-reversing (the Jacobian determinant changes sign).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\displaystyle\int_{\phi(D)} \omega = \int_D \phi^*\omega\) always, regardless of orientation]]></text>
+    <feedback><text>Incorrect. The formula \(\int_{\phi(D)} \omega = \int_D \phi^*\omega\) holds for orientation-preserving maps. For orientation-reversing maps, a sign flip occurs.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\displaystyle\int_{\phi(D)} \omega = 0\) whenever \(\phi\) reverses orientation]]></text>
+    <feedback><text>Incorrect. The integral over \(\phi(D)\) is an integral over the same geometric region \(\phi(D)\); orientation of the parametrization affects sign, not whether the integral vanishes.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\displaystyle\int_{\phi(D)} \omega = \int_D |\phi^*\omega|\) (absolute value)]]></text>
+    <feedback><text>Incorrect. The absolute value formula applies in multivariable calculus when computing areas/volumes with scalar Jacobians. Integration of differential forms is signed, not an absolute-value operation.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q14: de Rham theorem -->
+<question type="multichoice">
+  <name><text>TOP51_Q14_deRhamTheorem</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>de Rham theorem</strong> establishes a canonical isomorphism between de Rham cohomology and singular cohomology with real coefficients. For a compact smooth manifold \(M\):</p>
+    <p>\[H^k_{\mathrm{dR}}(M) \cong H^k(M;\mathbb{R}).\]</p>
+    <p>Using this, what is \(H^1_{\mathrm{dR}}(T^2)\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H^1_{\mathrm{dR}}(T^2) \cong \mathbb{R}^2\), generated by the closed 1-forms \(d\theta_1\) and \(d\theta_2\)]]></text>
+    <feedback><text>Correct. \(H^1(T^2;\mathbb{R}) \cong H^1(T^2;\mathbb{Z})\otimes\mathbb{R} = \mathbb{Z}^2\otimes\mathbb{R} = \mathbb{R}^2\). The generators are \(d\theta_1\) and \(d\theta_2\) (closed but not exact on \(T^2\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^1_{\mathrm{dR}}(T^2) = 0\) since all closed 1-forms on \(T^2\) are exact]]></text>
+    <feedback><text>Incorrect. The forms \(d\theta_1\) and \(d\theta_2\) are closed but not exact on \(T^2\) (their integrals over the generating loops are nonzero), so \(H^1_{\mathrm{dR}}(T^2) \neq 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^1_{\mathrm{dR}}(T^2) \cong \mathbb{R}\), generated by \(d\theta_1 + d\theta_2\)]]></text>
+    <feedback><text>Incorrect. Both \(d\theta_1\) and \(d\theta_2\) are independent cohomology classes; \(H^1_{\mathrm{dR}}(T^2) \cong \mathbb{R}^2\), not \(\mathbb{R}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^1_{\mathrm{dR}}(T^2) \cong \mathbb{R}^4\) since \(T^2\) has 4 generators of \(H^1\)]]></text>
+    <feedback><text>Incorrect. The torus has \(H^1(T^2;\mathbb{Z}) = \mathbb{Z}^2\), so \(H^1_{\mathrm{dR}}(T^2) = \mathbb{R}^2\) (rank 2, not 4).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q15: Transversality -->
+<question type="multichoice">
+  <name><text>TOP51_Q15_Transversality</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Two smooth submanifolds \(A\) and \(B\) of a smooth manifold \(M\) are <strong>transverse</strong> (\(A \pitchfork B\)) at a point \(p \in A \cap B\) if:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(T_p A + T_p B = T_p M\) (the tangent spaces span the full tangent space of \(M\) at \(p\))]]></text>
+    <feedback><text>Correct. Transversality at \(p\) means \(T_pA + T_pB = T_pM\). When \(A\pitchfork B\), the intersection \(A\cap B\) is a smooth submanifold of dimension \(\dim A + \dim B - \dim M\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T_p A \cap T_p B = \{0\}\) (the tangent spaces intersect only at the origin)]]></text>
+    <feedback><text>Incorrect. \(T_pA \cap T_pB = \{0\}\) means the submanifolds meet at right angles (in some sense), but transversality requires their span to equal \(T_pM\), which is a different condition.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(A\) and \(B\) are disjoint: \(A \cap B = \emptyset\)]]></text>
+    <feedback><text>Incorrect. Disjoint submanifolds are transverse vacuously, but transversality is defined at points of intersection and requires the tangent spaces to span \(T_pM\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T_p A = T_p B\) (the tangent spaces coincide at \(p\))]]></text>
+    <feedback><text>Incorrect. Equal tangent spaces at a point of intersection would mean the submanifolds are tangent to each other (non-transverse). Transversality requires the tangent spaces together to span \(T_pM\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q16: Lie groups -->
+<question type="multichoice">
+  <name><text>TOP51_Q16_LieGroups</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A <strong>Lie group</strong> is a smooth manifold \(G\) that is also a group, with smooth multiplication and inversion. The Lie algebra \(\mathfrak{g} = T_e G\) (tangent space at the identity) carries a bracket \([\cdot,\cdot]\) from left-invariant vector fields. What is the Lie algebra of \(\mathrm{SO}(3)\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\mathfrak{so}(3) = \{A \in M_{3\times3}(\mathbb{R}) : A^T = -A\}\), the space of skew-symmetric \(3\times 3\) real matrices, with Lie bracket \([A,B] = AB - BA\)]]></text>
+    <feedback><text>Correct. The Lie algebra of \(\mathrm{SO}(n)\) consists of skew-symmetric matrices. For \(n=3\): \(\dim\mathfrak{so}(3) = 3\), and as a Lie algebra it is isomorphic to \((\mathbb{R}^3, \times)\) (cross product).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\mathfrak{so}(3) = \{A \in M_{3\times3}(\mathbb{R}) : A^T = A\}\), the symmetric matrices]]></text>
+    <feedback><text>Incorrect. Symmetric matrices form the tangent space of the space of positive definite matrices, not of \(\mathrm{SO}(3)\). The Lie algebra of \(\mathrm{SO}(n)\) is skew-symmetric matrices.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\mathfrak{so}(3)\) is 9-dimensional (the full matrix algebra \(M_{3\times3}(\mathbb{R})\))]]></text>
+    <feedback><text>Incorrect. \(\dim\mathrm{SO}(3) = \dim\mathfrak{so}(3) = 3\). The 9-dimensional space is the Lie algebra of \(\mathrm{GL}(3,\mathbb{R})\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\mathfrak{so}(3)\) is the zero algebra (trivial), since \(\mathrm{SO}(3)\) is compact]]></text>
+    <feedback><text>Incorrect. The Lie algebra of a Lie group is never trivial unless the group is a single point. \(\mathfrak{so}(3)\) is 3-dimensional.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q17: Frobenius theorem -->
+<question type="multichoice">
+  <name><text>TOP51_Q17_Frobenius</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Frobenius theorem</strong> characterizes when a distribution (smooth assignment of a subspace of \(T_pM\) at each point) is integrable. A smooth distribution \(\mathcal{D}\) of rank \(k\) on \(M\) is <strong>involutive</strong> if:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[For any two vector fields \(X, Y\) with values in \(\mathcal{D}\), the Lie bracket \([X,Y]\) also takes values in \(\mathcal{D}\)]]></text>
+    <feedback><text>Correct. The Frobenius theorem states: \(\mathcal{D}\) is integrable (locally a foliation by \(k\)-dimensional integral manifolds) if and only if it is involutive (closed under Lie brackets).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\mathcal{D}\) is locally spanned by gradient vector fields \(\nabla f_1, \ldots, \nabla f_k\)]]></text>
+    <feedback><text>Incorrect. Gradient fields always commute (\([\nabla f, \nabla g] = 0\)) and give an involutive distribution, but not all involutive distributions arise this way. Involutivity is the closure condition on Lie brackets.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\mathcal{D}\) is spanned by \(k\) everywhere linearly independent closed 1-forms]]></text>
+    <feedback><text>Incorrect. Closed 1-forms do not directly define a distribution in the relevant sense. The involutivity condition is stated in terms of vector fields and their Lie brackets.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\mathcal{D}\) is the kernel of a nondegenerate 2-form (symplectic structure)]]></text>
+    <feedback><text>Incorrect. A symplectic form on \(M\) defines a nondegenerate structure, but the kernel of a nondegenerate form on a manifold of right dimension would be trivial. Involutivity concerns the Lie bracket, not a 2-form.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q18: Degree of a smooth map -->
+<question type="multichoice">
+  <name><text>TOP51_Q18_DegreeSmoothMap</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>For a smooth map \(f: M \to N\) between compact connected oriented \(n\)-manifolds without boundary, the <strong>degree</strong> of \(f\) can be computed as: for any regular value \(q \in N\),</p>
+    <p>\[\deg(f) = \sum_{p \in f^{-1}(q)} \operatorname{sign}(df_p),\]</p>
+    <p>where \(\operatorname{sign}(df_p) = +1\) if \(df_p\) preserves orientation and \(-1\) if it reverses it. Which of the following is a correct consequence?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[If \(\deg(f) \neq 0\), then \(f\) is surjective; in particular, every smooth map \(S^n \to S^n\) of nonzero degree is surjective]]></text>
+    <feedback><text>Correct. If \(f\) were not surjective, some regular value \(q\) would not be in the image, giving an empty preimage and \(\deg(f) = 0\). Contrapositive: \(\deg(f) \neq 0\) implies surjectivity.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\deg(f) = 0\) for every smooth map between different manifolds]]></text>
+    <feedback><text>Incorrect. Two different manifolds may be diffeomorphic; also "different manifolds" is not well-defined here. The degree depends on the specific map.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\deg(f)\) is always a nonnegative integer]]></text>
+    <feedback><text>Incorrect. The degree can be negative (e.g., the antipodal map on \(S^2\) has degree \(-1\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\deg(f) = |f^{-1}(q)|\) (the number of preimages) for any point \(q \in N\)]]></text>
+    <feedback><text>Incorrect. The degree counts preimages with signs (orientation); \(|\deg(f)| \leq |f^{-1}(q)|\) but equality fails when cancellation occurs.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q19: Compact manifolds without boundary -->
+<question type="multichoice">
+  <name><text>TOP51_Q19_CompactManifold</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Let \(M\) be a compact connected oriented smooth \(n\)-manifold without boundary. Which of the following is TRUE?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H^n_{\mathrm{dR}}(M) \cong \mathbb{R}\), generated by the volume form, and \(\int_M \omega > 0\) for any volume form \(\omega\) compatible with the orientation]]></text>
+    <feedback><text>Correct. For a compact oriented \(n\)-manifold without boundary, the top de Rham cohomology is \(\mathbb{R}\) (Poincaré duality: \(H^n_{\mathrm{dR}}(M) \cong H^0_{\mathrm{dR}}(M)^* \cong \mathbb{R}\)), and integration gives the isomorphism.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^n_{\mathrm{dR}}(M) = 0\) since \(\partial M = \emptyset\) and Stokes' theorem gives \(\int_M d\omega = 0\)]]></text>
+    <feedback><text>Incorrect. Stokes' theorem gives \(\int_M d\omega = \int_{\partial M}\omega = 0\) (since \(\partial M = \emptyset\)), so every exact \(n\)-form has zero integral. But this does not make \(H^n_{\mathrm{dR}} = 0\); it means the volume form is not exact.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every smooth function \(f: M \to \mathbb{R}\) must be constant (since \(M\) has no boundary)]]></text>
+    <feedback><text>Incorrect. Compactness without boundary forces \(f\) to attain its maximum and minimum, but smooth functions on compact manifolds need not be constant (e.g., height function on \(T^2\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(M\) cannot be embedded in \(\mathbb{R}^{n+1}\) if it is compact and boundaryless]]></text>
+    <feedback><text>Incorrect. \(S^n\) is a compact boundaryless \(n\)-manifold that embeds in \(\mathbb{R}^{n+1}\). Whitney's theorem allows embedding into \(\mathbb{R}^{2n}\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q20: Partitions of unity -->
+<question type="multichoice">
+  <name><text>TOP51_Q20_PartitionsUnity</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A <strong>partition of unity</strong> subordinate to an open cover \(\{U_\alpha\}\) of a smooth manifold \(M\) is a collection of smooth functions \(\{\rho_\alpha\}\) satisfying \(\rho_\alpha \geq 0\), \(\operatorname{supp}(\rho_\alpha) \subset U_\alpha\), and \(\sum_\alpha \rho_\alpha = 1\). Which property of smooth manifolds guarantees the existence of partitions of unity?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Paracompactness (combined with the existence of smooth bump functions on \(\mathbb{R}^n\)): every smooth manifold is paracompact, guaranteeing locally finite refinements of any open cover]]></text>
+    <feedback><text>Correct. Smooth manifolds (being second-countable Hausdorff) are paracompact. Paracompactness, together with smooth bump functions (which exist via the existence of \(e^{-1/t}\) for \(t > 0\)), guarantees smooth partitions of unity.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Compactness: only compact manifolds admit partitions of unity]]></text>
+    <feedback><text>Incorrect. All smooth manifolds (whether compact or not) admit smooth partitions of unity; the key property is paracompactness, not compactness.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Simple connectivity: \(\pi_1(M) = 0\) guarantees partition of unity existence]]></text>
+    <feedback><text>Incorrect. Partitions of unity exist on all smooth manifolds, including non-simply-connected ones. The key property is paracompactness, unrelated to \(\pi_1\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Orientability: non-orientable manifolds do not admit partitions of unity]]></text>
+    <feedback><text>Incorrect. Partitions of unity exist on all smooth manifolds (orientable or not). Orientability is needed for integration of top-degree forms, not for partitions of unity.</text></feedback>
+  </answer>
+</question>
+
+</quiz>

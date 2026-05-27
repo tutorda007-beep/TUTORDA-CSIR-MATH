@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Statistics and Probability/Statistical Estimation</text></category>
+    <info format="html"><text>CSIR NET level MCQ questions on Statistical Estimation: unbiasedness, consistency, efficiency, Cramér-Rao bound, UMVUE, sufficiency, completeness, MLE, method of moments, Bayesian estimation, confidence intervals.</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q01 Cramér-Rao Lower Bound</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X_1, \ldots, X_n\) be i.i.d. with pdf \(f(x;\theta)\). The Cramér-Rao lower bound for the variance of any unbiased estimator of \(\theta\) is \(\dfrac{1}{nI(\theta)}\), where \(I(\theta)\) is the Fisher information. For \(X_i \sim \text{Exp}(\theta)\) with mean \(\theta\), what is \(I(\theta)\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{1}{\theta^2}\)</text><feedback format="html"><text>For Exp(\(\theta\)) with pdf \(f(x;\theta)=\frac{1}{\theta}e^{-x/\theta}\), \(\log f = -\log\theta - x/\theta\), so \(\frac{\partial}{\partial\theta}\log f = -\frac{1}{\theta}+\frac{x}{\theta^2}\). Then \(I(\theta)=E\left[\left(\frac{\partial \log f}{\partial\theta}\right)^2\right]=\frac{\text{Var}(X)}{\theta^4}=\frac{\theta^2}{\theta^4}=\frac{1}{\theta^2}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{1}{\theta}\)</text><feedback format="html"><text>Incorrect. Compute \(E[(\partial\log f/\partial\theta)^2]\) carefully.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\theta^2\)</text><feedback format="html"><text>Incorrect. This is the variance, not the Fisher information.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{2}{\theta^2}\)</text><feedback format="html"><text>Incorrect. Recompute using the score function formula.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q02 UMVUE via Rao-Blackwell</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X_1, \ldots, X_n \stackrel{iid}{\sim} \text{Bernoulli}(p)\). The complete sufficient statistic is \(T = \sum X_i \sim \text{Bin}(n,p)\). The UMVUE of \(p^2\) is obtained by the Lehmann-Scheffé theorem. What is the UMVUE of \(p^2\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{T(T-1)}{n(n-1)}\)</text><feedback format="html"><text>\(E\left[\frac{T(T-1)}{n(n-1)}\right] = \frac{E[T^2]-E[T]}{n(n-1)} = \frac{n^2p^2+np(1-p)-np}{n(n-1)} = \frac{n^2p^2 - np^2}{n(n-1)} = p^2\). This is unbiased and a function of the complete sufficient statistic, hence UMVUE.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\left(\dfrac{T}{n}\right)^2\)</text><feedback format="html"><text>This is biased: \(E[\bar{X}^2] = p^2 + p(1-p)/n \neq p^2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{T^2}{n^2}\)</text><feedback format="html"><text>Same as \(\bar{X}^2\), which is biased.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{T(T+1)}{n(n+1)}\)</text><feedback format="html"><text>Incorrect sign in numerator. The correct form uses \(T(T-1)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q03 Sufficient Statistic via Factorization</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X_1, \ldots, X_n \stackrel{iid}{\sim} N(\mu, \sigma^2)\) with \(\sigma^2\) known. By the Neyman-Fisher factorization theorem, which of the following is a sufficient statistic for \(\mu\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\bar{X} = \dfrac{1}{n}\sum_{i=1}^n X_i\)</text><feedback format="html"><text>The joint density factors as \(g\!\left(\sum x_i; \mu\right)\cdot h(x_1,\ldots,x_n)\), identifying \(\sum X_i\) (equivalently \(\bar{X}\)) as sufficient. For the exponential family \(N(\mu,\sigma^2)\), the natural sufficient statistic is \(\sum X_i\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sum_{i=1}^n X_i^2\)</text><feedback format="html"><text>This is sufficient for \(\sigma^2\) when \(\mu=0\), not for \(\mu\) with known \(\sigma^2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\max(X_1, \ldots, X_n)\)</text><feedback format="html"><text>The maximum order statistic is sufficient for location in the uniform distribution, not for the normal mean.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\text{median}(X_1, \ldots, X_n)\)</text><feedback format="html"><text>The sample median is not sufficient for \(\mu\) in the normal model; it discards information.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q04 MLE Properties — Consistency</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X_1, \ldots, X_n \stackrel{iid}{\sim} \text{Poisson}(\lambda)\). The MLE of \(\lambda\) is \(\hat{\lambda}_{MLE} = \bar{X}\). Which statement about the MLE is TRUE?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>It is unbiased, consistent, and attains the Cramér-Rao bound.</text><feedback format="html"><text>\(E[\bar{X}]=\lambda\) (unbiased), \(\bar{X}\xrightarrow{P}\lambda\) (consistent by LLN). The Fisher information is \(I(\lambda)=1/\lambda\), so CRLB is \(\lambda/n\). Since \(\text{Var}(\bar{X})=\lambda/n\), the MLE is efficient (UMVUE).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>It is biased but consistent.</text><feedback format="html"><text>Incorrect. \(\bar{X}\) is unbiased for the Poisson mean.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>It is unbiased but does not attain the Cramér-Rao bound.</text><feedback format="html"><text>Incorrect. For the Poisson distribution (exponential family), the MLE \(\bar{X}\) achieves the CRLB.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>It is consistent but not asymptotically normal.</text><feedback format="html"><text>Incorrect. MLEs are asymptotically normal under regularity conditions: \(\sqrt{n}(\hat{\lambda}-\lambda)\xrightarrow{d}N(0,\lambda)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q05 Completeness of Exponential Family</text></name>
+    <questiontext format="html"><text><![CDATA[A family of distributions \(\{f(x;\theta): \theta \in \Omega\}\) is said to be complete if \(E_\theta[g(T)] = 0\) for all \(\theta\) implies \(g(T) = 0\) a.s. For \(X_1, \ldots, X_n \stackrel{iid}{\sim} U(0, \theta)\), which statistic is complete sufficient?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(X_{(n)} = \max(X_1, \ldots, X_n)\)</text><feedback format="html"><text>For \(U(0,\theta)\), the joint density is \(\theta^{-n}\mathbf{1}(x_{(n)}\leq\theta)\), which factors to show \(X_{(n)}\) is sufficient. The CDF of \(X_{(n)}\) is \((t/\theta)^n\) on \([0,\theta]\). By Lehmann-Scheffé theory for this family, \(X_{(n)}\) is complete sufficient.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\bar{X}\)</text><feedback format="html"><text>For the uniform distribution on \([0,\theta]\), \(\bar{X}\) is not sufficient (it doesn't capture \(X_{(n)}\)).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sum X_i^2\)</text><feedback format="html"><text>Not a sufficient statistic for this uniform family.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(X_{(1)} = \min(X_1,\ldots,X_n)\)</text><feedback format="html"><text>The minimum is an ancillary statistic for this family, not sufficient.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q06 Method of Moments Estimator</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X_1, \ldots, X_n \stackrel{iid}{\sim} \text{Gamma}(\alpha, \beta)\) with mean \(\alpha\beta\) and variance \(\alpha\beta^2\). The method of moments estimators \(\hat{\alpha}\) and \(\hat{\beta}\) satisfy \(\hat{\alpha}\hat{\beta} = \bar{X}\) and \(\hat{\alpha}\hat{\beta}^2 = S^2\) where \(S^2 = \frac{1}{n}\sum(X_i-\bar{X})^2\). What is \(\hat{\beta}\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\hat{\beta} = \dfrac{S^2}{\bar{X}}\)</text><feedback format="html"><text>Dividing the second equation by the first: \(\hat{\beta} = \hat{\alpha}\hat{\beta}^2 / (\hat{\alpha}\hat{\beta}) = S^2/\bar{X}\). Then \(\hat{\alpha} = \bar{X}/\hat{\beta} = \bar{X}^2/S^2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\hat{\beta} = \dfrac{\bar{X}}{S^2}\)</text><feedback format="html"><text>This is the estimate of \(\alpha\), not \(\beta\). The ratio is inverted.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\hat{\beta} = \sqrt{S^2/\bar{X}}\)</text><feedback format="html"><text>Incorrect. No square root is involved in this derivation.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\hat{\beta} = \bar{X}^2/S^2\)</text><feedback format="html"><text>This equals \(\hat{\alpha}\), not \(\hat{\beta}\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q07 Confidence Interval for Normal Mean</text></name>
+    <questiontext format="html"><text><![CDATA[Based on \(n=25\) observations from \(N(\mu, \sigma^2)\) with \(\sigma^2\) unknown, the sample mean is \(\bar{X}=10\) and sample standard deviation \(S=4\). A 95% confidence interval for \(\mu\) uses the pivot \(T = \dfrac{\sqrt{n}(\bar{X}-\mu)}{S} \sim t_{n-1}\). With \(t_{24,0.025} = 2.064\), what is the 95% CI for \(\mu\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\((8.35,\ 11.65)\)</text><feedback format="html"><text>Margin = \(t_{24,0.025} \cdot S/\sqrt{n} = 2.064 \times 4/5 = 2.064 \times 0.8 = 1.651\). CI: \((10-1.651, 10+1.651) = (8.349, 11.651)\approx(8.35, 11.65)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\((8.43,\ 11.57)\)</text><feedback format="html"><text>Incorrect margin calculation. Check: \(t_{24,0.025}\times S/\sqrt{n}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\((7.84,\ 12.16)\)</text><feedback format="html"><text>This uses \(z_{0.025}=1.96\) instead of the correct \(t_{24,0.025}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\((9.02,\ 10.98)\)</text><feedback format="html"><text>This is too narrow; half-width should be about 1.65, not 0.98.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q08 Bayesian Estimation — Posterior Mean</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X|\theta \sim \text{Binomial}(n, \theta)\) and prior \(\theta \sim \text{Beta}(\alpha, \beta)\). The posterior is \(\theta|X \sim \text{Beta}(\alpha+X, \beta+n-X)\). The Bayes estimator under squared error loss (posterior mean) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{\alpha + X}{\alpha + \beta + n}\)</text><feedback format="html"><text>The posterior \(\text{Beta}(\alpha+X, \beta+n-X)\) has mean \(\frac{\alpha+X}{\alpha+\beta+n}\). This is a weighted average of the prior mean \(\frac{\alpha}{\alpha+\beta}\) and the MLE \(\frac{X}{n}\): as \(n\to\infty\), it converges to the MLE.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{X}{n}\)</text><feedback format="html"><text>This is the MLE (method of moments estimator), not the Bayes estimator.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\alpha + X - 1}{\alpha + \beta + n - 2}\)</text><feedback format="html"><text>This is the posterior mode of \(\text{Beta}(\alpha+X, \beta+n-X)\), not the mean.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\alpha}{\alpha + \beta}\)</text><feedback format="html"><text>This is the prior mean, not the posterior mean given data.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q09 Asymptotic Efficiency of MLE</text></name>
+    <questiontext format="html"><text><![CDATA[Under regularity conditions, the MLE \(\hat{\theta}_n\) is asymptotically efficient. This means \(\sqrt{n}(\hat{\theta}_n - \theta) \xrightarrow{d} N(0, I(\theta)^{-1})\). For \(X_i \stackrel{iid}{\sim} N(\mu, \sigma^2)\) with both parameters unknown, what is the asymptotic variance of \(\hat{\sigma}^2_{MLE} = \frac{1}{n}\sum(X_i-\bar{X})^2\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{2\sigma^4}{n}\)</text><feedback format="html"><text>For the normal model, \(\text{Var}\!\left(\hat{\sigma}^2_{MLE}\right) = \frac{(n-1)}{n^2}\cdot 2\sigma^4 \to \frac{2\sigma^4}{n}\) asymptotically. The Fisher information for \(\sigma^2\) is \(I(\sigma^2)=\frac{n}{2\sigma^4}\), giving asymptotic variance \(\frac{2\sigma^4}{n}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\sigma^4}{n}\)</text><feedback format="html"><text>Off by a factor of 2. The kurtosis of normal gives a factor of 2 in the variance formula.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{2\sigma^4}{n-1}\)</text><feedback format="html"><text>This is the exact variance of \(S^2\) (unbiased estimator) × \((n-1)/n^2\times n^2/(n-1)\). Asymptotically this equals \(2\sigma^4/n\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{4\sigma^4}{n}\)</text><feedback format="html"><text>Incorrect by a factor of 2. The correct asymptotic variance is \(2\sigma^4/n\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q10 UMVUE for Exponential Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X_1, \ldots, X_n \stackrel{iid}{\sim} \text{Exp}(\lambda)\) (rate \(\lambda\), mean \(1/\lambda\)). The complete sufficient statistic is \(T = \sum X_i \sim \text{Gamma}(n, \lambda)\). The UMVUE of \(P(X_1 > t) = e^{-\lambda t}\) for fixed \(t > 0\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\left(1 - \dfrac{t}{T}\right)^{n-1}\mathbf{1}(T > t)\)</text><feedback format="html"><text>By Rao-Blackwell: \(E[\mathbf{1}(X_1>t)|T=s] = P(X_1>t|T=s)\). Given \(T=s\), \(X_1|T\sim\text{Beta}(1,n-1)\times s\), so \(P(X_1>t|T=s)=(1-t/s)^{n-1}\) for \(s>t\). This is a function of the complete sufficient statistic, hence UMVUE.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(e^{-n t/T}\)</text><feedback format="html"><text>This substitutes \(\hat{\lambda}=n/T\) (MLE) into the survival function, giving a biased estimator.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\left(1 - \dfrac{t}{T}\right)^n\mathbf{1}(T>t)\)</text><feedback format="html"><text>Off-by-one error in the exponent. The correct power is \(n-1\), not \(n\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{T-t}{T}\mathbf{1}(T>t)\)</text><feedback format="html"><text>This is only valid for \(n=2\). The general formula requires the \((n-1)\)th power.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q11 Fisher Information and Regularity</text></name>
+    <questiontext format="html"><text><![CDATA[For a family \(\{f(x;\theta)\}\) satisfying regularity conditions, the Fisher information can be computed as \(I(\theta) = -E\!\left[\dfrac{\partial^2}{\partial\theta^2}\log f(X;\theta)\right]\). For \(X \sim \text{Gamma}(\alpha, \theta)\) (scale \(\theta\), fixed \(\alpha\)), compute \(I(\theta)\).]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{\alpha}{\theta^2}\)</text><feedback format="html"><text>\(\log f = (\alpha-1)\log x - x/\theta - \alpha\log\theta - \log\Gamma(\alpha)\). Then \(\frac{\partial}{\partial\theta}\log f = x/\theta^2 - \alpha/\theta\), and \(\frac{\partial^2}{\partial\theta^2}\log f = -2x/\theta^3 + \alpha/\theta^2\). So \(-E[\cdot] = 2E[X]/\theta^3 - \alpha/\theta^2 = 2\alpha\theta/\theta^3 - \alpha/\theta^2 = \alpha/\theta^2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\alpha}{\theta}\)</text><feedback format="html"><text>Missing a factor of \(1/\theta\). Check the second derivative computation.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{1}{\theta^2}\)</text><feedback format="html"><text>This is the result for \(\alpha=1\) (exponential distribution). In general it's \(\alpha/\theta^2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{2\alpha}{\theta^2}\)</text><feedback format="html"><text>Off by a factor of 2. Recompute \(-E[\partial^2\log f/\partial\theta^2]\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q12 Ancillary Statistics</text></name>
+    <questiontext format="html"><text><![CDATA[A statistic \(A(X_1,\ldots,X_n)\) is ancillary for \(\theta\) if its distribution does not depend on \(\theta\). For \(X_1, \ldots, X_n \stackrel{iid}{\sim} N(\mu, \sigma^2)\) with both parameters unknown, which is a (first-order) ancillary statistic for \(\mu\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(S^2 = \dfrac{1}{n-1}\sum(X_i - \bar{X})^2\)</text><feedback format="html"><text>\(S^2\) depends only on deviations from the mean and its distribution is \(\frac{\sigma^2}{n-1}\chi^2_{n-1}\), which does not depend on \(\mu\). Thus \(S^2\) is ancillary for \(\mu\). By Basu's theorem, \(\bar{X}\) (complete sufficient for \(\mu\)) is independent of \(S^2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\bar{X}\)</text><feedback format="html"><text>\(\bar{X}\sim N(\mu,\sigma^2/n)\), which depends on \(\mu\). So \(\bar{X}\) is not ancillary for \(\mu\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sum X_i^2\)</text><feedback format="html"><text>\(E[\sum X_i^2] = n(\mu^2+\sigma^2)\), which depends on \(\mu\). Not ancillary.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(X_{(n)} - X_{(1)}\) (the sample range)</text><feedback format="html"><text>The sample range depends on \(\sigma\) but not \(\mu\) (by location invariance). It is ancillary for \(\mu\) but NOT for the joint parameter \((\mu,\sigma^2)\). Since both parameters are unknown, this is a less standard choice than \(S^2\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q13 Confidence Interval for Variance</text></name>
+    <questiontext format="html"><text><![CDATA[Based on \(n=10\) observations from \(N(\mu, \sigma^2)\) with \(\mu\) unknown, the sample variance is \(S^2 = 16\). The pivot \(\dfrac{(n-1)S^2}{\sigma^2} \sim \chi^2_{n-1}\). With \(\chi^2_{9,0.025} = 19.02\) and \(\chi^2_{9,0.975} = 2.70\), what is the 95% CI for \(\sigma^2\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\((7.57,\ 53.33)\)</text><feedback format="html"><text>The CI is \(\left(\frac{(n-1)S^2}{\chi^2_{upper}}, \frac{(n-1)S^2}{\chi^2_{lower}}\right) = \left(\frac{9\times16}{19.02}, \frac{9\times16}{2.70}\right) = \left(\frac{144}{19.02}, \frac{144}{2.70}\right) = (7.57, 53.33)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\((8.00,\ 50.00)\)</text><feedback format="html"><text>Incorrect. Use the pivot \((n-1)S^2/\sigma^2\) and invert properly.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\((3.33,\ 28.00)\)</text><feedback format="html"><text>Incorrect division. The numerator is \((n-1)S^2 = 144\), not \((n-1)\) alone.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\((6.23,\ 72.00)\)</text><feedback format="html"><text>Incorrect chi-squared quantile usage. Note the upper chi-squared value gives the lower bound for \(\sigma^2\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q14 Invariance Property of MLE</text></name>
+    <questiontext format="html"><text><![CDATA[The invariance property of MLE states: if \(\hat{\theta}\) is the MLE of \(\theta\), then for any function \(g\), the MLE of \(g(\theta)\) is \(g(\hat{\theta})\). For \(X_1,\ldots,X_n \stackrel{iid}{\sim} \text{Exp}(\lambda)\), the MLE of \(\lambda\) is \(\hat{\lambda} = 1/\bar{X}\). What is the MLE of the median \(m = \dfrac{\ln 2}{\lambda}\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\hat{m} = \bar{X}\ln 2\)</text><feedback format="html"><text>By MLE invariance: \(\hat{m} = (\ln 2)/\hat{\lambda} = (\ln 2)/(1/\bar{X}) = \bar{X}\ln 2\). This is the MLE of the median, though it is a biased estimator of \(m\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\hat{m} = \dfrac{\ln 2}{\bar{X}}\)</text><feedback format="html"><text>This substitutes \(\hat{\lambda}=\bar{X}\) which is incorrect. The MLE of \(\lambda\) is \(1/\bar{X}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\hat{m} = \text{sample median}\)</text><feedback format="html"><text>The sample median estimates the population median but is not the MLE for the exponential distribution.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\hat{m} = \bar{X}/\ln 2\)</text><feedback format="html"><text>Incorrect. The correct MLE is \(\bar{X}\times\ln 2\), not \(\bar{X}/\ln 2\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q15 Rao-Blackwell Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[The Rao-Blackwell theorem states: if \(\tilde{\theta}\) is an unbiased estimator of \(\theta\) and \(T\) is a sufficient statistic, then \(\hat{\theta} = E[\tilde{\theta}|T]\) satisfies \(\text{Var}(\hat{\theta}) \leq \text{Var}(\tilde{\theta})\). For \(X_1, X_2 \stackrel{iid}{\sim} \text{Bernoulli}(p)\), with \(T=X_1+X_2\), applying Rao-Blackwell to \(\tilde{p} = X_1\) gives:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\hat{p} = T/2 = (X_1+X_2)/2\)</text><feedback format="html"><text>\(E[X_1|T=0]=0, E[X_1|T=1]=1/2, E[X_1|T=2]=1\). So \(E[X_1|T]=T/2\). This is \(\bar{X}\), which has variance \(p(1-p)/2 < p(1-p)=\text{Var}(X_1)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\hat{p} = X_1\)</text><feedback format="html"><text>This is the original estimator, not the Rao-Blackwellized one.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\hat{p} = T(T-1)/2\)</text><feedback format="html"><text>This is the UMVUE of \(p^2\) for \(n=2\), not of \(p\) itself.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\hat{p} = X_2\)</text><feedback format="html"><text>Conditioning on the sufficient statistic \(T\) should utilize all information in \(T\), giving \(T/2\), not another marginal.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q16 Exponential Family and Sufficiency</text></name>
+    <questiontext format="html"><text><![CDATA[A one-parameter exponential family has density \(f(x;\theta) = h(x)\exp\{\eta(\theta)T(x) - A(\theta)\}\). The natural sufficient statistic is \(\sum_{i=1}^n T(X_i)\). For the \(\text{Gamma}(\alpha, \theta)\) family with fixed shape \(\alpha\) and unknown scale \(\theta\), the natural sufficient statistic is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\sum_{i=1}^n X_i\)</text><feedback format="html"><text>The Gamma\((\alpha,\theta)\) pdf is \(\frac{x^{\alpha-1}e^{-x/\theta}}{\theta^\alpha\Gamma(\alpha)}\). In exponential family form: \(h(x)=x^{\alpha-1}/\Gamma(\alpha)\), \(\eta(\theta)=-1/\theta\), \(T(x)=x\), \(A(\theta)=\alpha\log\theta\). So \(\sum X_i\) is the natural sufficient statistic.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\prod_{i=1}^n X_i\)</text><feedback format="html"><text>The product \(\sum\log X_i\) is relevant when \(\alpha\) is unknown. For fixed \(\alpha\), only \(\sum X_i\) is sufficient for \(\theta\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sum_{i=1}^n \log X_i\)</text><feedback format="html"><text>This is the natural sufficient statistic for \(\alpha\) (with \(\theta\) known), not for \(\theta\) with \(\alpha\) fixed.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sum_{i=1}^n X_i^2\)</text><feedback format="html"><text>This arises in the normal distribution, not the gamma family.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q17 MLE for Censored Data</text></name>
+    <questiontext format="html"><text><![CDATA[In a lifetime study with right-censoring, \(n\) items are observed. Item \(i\) either fails at time \(x_i\) (failure indicator \(\delta_i=1\)) or is censored at time \(x_i\) (\(\delta_i=0\)). For \(\text{Exp}(\lambda)\), the log-likelihood is \(\ell(\lambda) = \left(\sum \delta_i\right)\log\lambda - \lambda\sum x_i\). The MLE \(\hat{\lambda}\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\hat{\lambda} = \dfrac{\sum \delta_i}{\sum x_i}\)</text><feedback format="html"><text>Setting \(\frac{d\ell}{d\lambda} = \frac{\sum\delta_i}{\lambda} - \sum x_i = 0\) gives \(\hat{\lambda} = \frac{\sum\delta_i}{\sum x_i}\). Numerator is total failures, denominator is total exposure time (sum of all observed/censored times). This is the empirical failure rate.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\hat{\lambda} = \dfrac{n}{\sum x_i}\)</text><feedback format="html"><text>This is correct only when there is no censoring (\(\delta_i=1\) for all \(i\)). With censoring, numerator should be \(\sum\delta_i\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\hat{\lambda} = \dfrac{\sum\delta_i}{n}\)</text><feedback format="html"><text>This ignores the actual exposure times. The denominator should be total time at risk \(\sum x_i\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\hat{\lambda} = \dfrac{1}{\bar{x}}\) where \(\bar{x}\) is the mean of uncensored observations</text><feedback format="html"><text>Using only uncensored observations wastes information and gives a biased estimator under censoring.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q18 Pitman-Koopman-Darmois Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[The Pitman-Koopman-Darmois theorem states: for an i.i.d. sample from a family with support independent of \(\theta\), a finite-dimensional sufficient statistic exists if and only if the family belongs to the exponential family. Which of the following distributions does NOT belong to the one-parameter exponential family (with natural support)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Uniform\((0,\theta)\)</text><feedback format="html"><text>The uniform distribution on \((0,\theta)\) has support \([0,\theta]\) depending on \(\theta\). This violates the constant support requirement. The sufficient statistic \(X_{(n)}\) is finite-dimensional but exists outside the exponential family framework — it's a boundary case where support depends on the parameter.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Normal\((\mu, 1)\)</text><feedback format="html"><text>The normal distribution (with fixed \(\sigma^2\)) is a one-parameter exponential family with natural sufficient statistic \(\sum X_i\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Poisson\((\lambda)\)</text><feedback format="html"><text>Poisson is a one-parameter exponential family: \(f(x;\lambda)=e^{-\lambda}\lambda^x/x! = \frac{1}{x!}e^{x\log\lambda - \lambda}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Gamma\((\alpha, \theta)\) with fixed \(\alpha\)</text><feedback format="html"><text>With fixed shape \(\alpha\), the gamma family is a one-parameter exponential family with sufficient statistic \(\sum X_i\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q19 CRLB for Multiparameter Case</text></name>
+    <questiontext format="html"><text><![CDATA[For a two-parameter family \(f(x;\theta_1,\theta_2)\), the Fisher information matrix is \(\mathbf{I}(\boldsymbol{\theta})\) with \(I_{jk} = -E\!\left[\frac{\partial^2\log f}{\partial\theta_j\partial\theta_k}\right]\). The CRLB states: \(\text{Var}(T_j) \geq [{\mathbf{I}}^{-1}]_{jj}\). For \(X_i \stackrel{iid}{\sim} N(\mu,\sigma^2)\) (both unknown), the Fisher information matrix is \(\mathbf{I} = \begin{pmatrix} n/\sigma^2 & 0 \\ 0 & n/(2\sigma^4) \end{pmatrix}\). What is the CRLB for estimating \(\mu\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{\sigma^2}{n}\)</text><feedback format="html"><text>\(\mathbf{I}^{-1} = \begin{pmatrix} \sigma^2/n & 0 \\ 0 & 2\sigma^4/n \end{pmatrix}\). The (1,1) entry gives CRLB for \(\mu\) as \(\sigma^2/n\). The sample mean \(\bar{X}\) achieves this bound, confirming it is UMVUE for \(\mu\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\sigma^2}{n-1}\)</text><feedback format="html"><text>This is the variance of \(\bar{X}\) computed with the \(n-1\) denominator convention, but the CRLB is exactly \(\sigma^2/n\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{2\sigma^2}{n}\)</text><feedback format="html"><text>This would be the CRLB if \(\sigma^2\) were unknown and the bound accounting for nuisance parameters were different, but the formula gives exactly \(\sigma^2/n\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\sigma^4}{n}\)</text><feedback format="html"><text>Units are wrong (\(\sigma^4\) vs \(\sigma^2\)). The CRLB for \(\mu\) has units of variance, i.e., \(\sigma^2/n\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT21-Q20 Consistent Estimator Sequence</text></name>
+    <questiontext format="html"><text><![CDATA[An estimator \(T_n\) is consistent for \(\theta\) if \(T_n \xrightarrow{P} \theta\). Which condition is SUFFICIENT to guarantee consistency?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(E[T_n] \to \theta\) and \(\text{Var}(T_n) \to 0\) as \(n \to \infty\)</text><feedback format="html"><text>By Chebyshev's inequality: \(P(|T_n-\theta|\geq\epsilon) \leq \frac{E[(T_n-\theta)^2]}{\epsilon^2} = \frac{\text{MSE}(T_n)}{\epsilon^2} = \frac{(\text{bias})^2+\text{Var}}{\epsilon^2} \to 0\). When bias\(\to 0\) and Var\(\to 0\), MSE\(\to 0\), giving consistency.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(T_n\) is unbiased for all \(n\)</text><feedback format="html"><text>Unbiasedness alone does not imply consistency. Example: \(X_1\) is always unbiased for \(\mu\) regardless of \(n\), but \(\text{Var}(X_1)\) doesn't decrease.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(T_n\) attains the Cramér-Rao bound for all \(n\)</text><feedback format="html"><text>Attaining the CRLB means efficiency, which requires unbiasedness. But efficiency alone doesn't force consistency unless variance \(\to 0\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(T_n\) is the MLE for all \(n\)</text><feedback format="html"><text>MLEs are consistent under regularity conditions, but this is the conclusion (derived from MSE→0), not a direct sufficient condition by itself.</text></feedback></answer>
+  </question>
+
+</quiz>

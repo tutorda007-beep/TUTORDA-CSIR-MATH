@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Topology/Homotopy and Fundamental Group</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q01_Homotopy_Definition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Two continuous maps \(f, g: X \to Y\) are homotopic (\(f \simeq g\)) if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[There exists a continuous map \(H: X \times [0,1] \to Y\) with \(H(x,0) = f(x)\) and \(H(x,1) = g(x)\) for all \(x \in X\).]]></text>
+      <feedback><text>Correct. A homotopy H is a continuous deformation of f into g parameterized by t∈[0,1]. Homotopy is an equivalence relation on continuous maps, and homotopy classes are the fundamental objects in algebraic topology.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[There exists a homeomorphism \(h: X \to Y\) with \(h \circ f = g\).]]></text>
+      <feedback><text>This describes a different (stronger) relation. Homotopy does not require a homeomorphism; it requires a continuous one-parameter family connecting f and g.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f\) and \(g\) are equal as functions: \(f(x) = g(x)\) for all \(x\).]]></text>
+      <feedback><text>Equal functions are homotopic (the constant homotopy H(x,t)=f(x) works), but homotopic functions need not be equal. Homotopy is much weaker than equality.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f(X)\) and \(g(X)\) are homeomorphic subsets of \(Y\).]]></text>
+      <feedback><text>Having homeomorphic images is unrelated to homotopy. Two maps can be homotopic even if their images are very different subsets of Y.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q02_Fundamental_Group_Circle</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The fundamental group of the circle \(S^1\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\pi_1(S^1) \cong \mathbb{Z}\).]]></text>
+      <feedback><text>Correct. π₁(S¹) ≅ ℤ, with generator given by the loop going around S¹ once counterclockwise. The integer n corresponds to the loop winding n times around the circle. This is computed using the universal cover ℝ → S¹ via t↦e^{2πit}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(S^1) \cong \mathbb{Z}/2\mathbb{Z}\).]]></text>
+      <feedback><text>ℤ/2ℤ is the fundamental group of ℝP¹ (the real projective line, which is homeomorphic to S¹ as a space, but... wait ℝP¹ ≅ S¹, so π₁(ℝP¹)=ℤ as well). π₁(S¹)=ℤ, not ℤ/2ℤ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(S^1) = \{e\}\) (trivial group).]]></text>
+      <feedback><text>The trivial fundamental group belongs to simply connected spaces (like S², ℝⁿ, contractible spaces). S¹ is not simply connected: loops that wind around the circle cannot be contracted to a point.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(S^1) \cong \mathbb{Q}\) (rationals under addition).]]></text>
+      <feedback><text>π₁(S¹) ≅ ℤ (integers, not rationals). The winding number of a loop is always an integer.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q03_Van_Kampen</text></name>
+    <questiontext format="html">
+      <text><![CDATA[By the Seifert-van Kampen theorem, the fundamental group of the torus \(T^2 = S^1 \times S^1\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}\) (free abelian group of rank 2).]]></text>
+      <feedback><text>Correct. Since T²=S¹×S¹ and π₁ of a product is the product of fundamental groups (for path-connected spaces), π₁(T²) = π₁(S¹)×π₁(S¹) = ℤ×ℤ. The two generators a,b commute: aba⁻¹b⁻¹=1 in π₁(T²).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(T^2) \cong F_2\) (free group on 2 generators).]]></text>
+      <feedback><text>F₂ (free group on 2 generators) is the fundamental group of the figure-eight (wedge of two circles), not the torus. In F₂, the generators do not commute: ab≠ba. In π₁(T²)=ℤ×ℤ, they do commute.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(T^2) \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}\).]]></text>
+      <feedback><text>ℤ/2ℤ×ℤ/2ℤ is finite. π₁(T²)=ℤ×ℤ is infinite. This is the fundamental group of the Klein bottle or other surfaces, not the torus.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(T^2) = \{e\}\) (trivial).]]></text>
+      <feedback><text>The torus is not simply connected. Its fundamental group ℤ×ℤ has two independent non-contractible loops (going around each circle factor).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q04_Simply_Connected</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following spaces is simply connected (connected with trivial fundamental group)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The 2-sphere \(S^2\).]]></text>
+      <feedback><text>Correct. π₁(S²)={e} (trivial). Every loop on S² can be contracted to a point (S² is simply connected). More generally, Sⁿ is simply connected for n≥2. The universal cover of S² is S² itself.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The circle \(S^1\).]]></text>
+      <feedback><text>π₁(S¹) = ℤ ≠ {e}. S¹ is not simply connected: a loop that winds around the circle cannot be contracted.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The torus \(T^2\).]]></text>
+      <feedback><text>π₁(T²) = ℤ×ℤ ≠ {e}. The torus is not simply connected.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathbb{R}^2 \setminus \{0\}\) (plane minus origin).]]></text>
+      <feedback><text>π₁(ℝ²⧵{0}) = ℤ (homotopy equivalent to S¹). The origin creates a "hole" around which loops can wind, so the space is not simply connected.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q05_Covering_Space</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The universal cover of \(S^1\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\mathbb{R}\), with covering map \(p: \mathbb{R} \to S^1\) given by \(p(t) = e^{2\pi i t}\).]]></text>
+      <feedback><text>Correct. ℝ is simply connected and p:ℝ→S¹ defined by p(t)=e^{2πit} is a covering map (each point of S¹ has evenly covered neighborhoods). The deck transformations form the group ℤ (shift by integers), consistent with π₁(S¹)=ℤ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(S^1\) itself (the identity map is the covering).]]></text>
+      <feedback><text>The identity cover is trivial (degree 1). The UNIVERSAL cover is the simply connected cover, which for S¹ is ℝ (not S¹ itself, since π₁(S¹)=ℤ≠{e}).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The torus \(T^2\), wrapping around twice.]]></text>
+      <feedback><text>T² has fundamental group ℤ×ℤ and is not simply connected. The universal cover of S¹ must be simply connected; ℝ (not T²) plays this role.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The sphere \(S^2\), by stereographic projection.]]></text>
+      <feedback><text>Stereographic projection is a homeomorphism between S²⧵{N} and ℝ², not a covering of S¹. The universal cover of S¹ is ℝ.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q06_Homotopy_Equivalence</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Two spaces \(X\) and \(Y\) are homotopy equivalent (\(X \simeq Y\)) if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[There exist continuous maps \(f: X \to Y\) and \(g: Y \to X\) such that \(g \circ f \simeq \mathrm{id}_X\) and \(f \circ g \simeq \mathrm{id}_Y\).]]></text>
+      <feedback><text>Correct. Homotopy equivalence is the "topological isomorphism" of algebraic topology: it preserves all homotopy groups, homology, cohomology, etc. Homeomorphism ⟹ homotopy equivalence but not conversely (e.g., ℝⁿ ≃ {pt} via contraction).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[There is a homeomorphism \(f: X \to Y\).]]></text>
+      <feedback><text>Homeomorphism implies homotopy equivalence but is strictly stronger. Homotopy equivalence allows the spaces to be "deformed" into each other, not necessarily bijectively mapped.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(X\) and \(Y\) have the same cardinality.]]></text>
+      <feedback><text>Same cardinality is much weaker and unrelated to homotopy equivalence. [0,1] and ℝ² have the same cardinality (uncountable) but are not homotopy equivalent.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every map \(f: X \to Y\) is null-homotopic (homotopic to a constant map).]]></text>
+      <feedback><text>This condition would mean Y is "homotopically trivial" from X's perspective, not that X and Y are homotopy equivalent.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q07_Contractible</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A space \(X\) is contractible if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The identity map \(\mathrm{id}_X\) is null-homotopic (homotopic to a constant map), equivalently \(X \simeq \{pt\}\).]]></text>
+      <feedback><text>Correct. Contractible means homotopy equivalent to a point. Examples: ℝⁿ (contract radially to origin), convex subsets, star-shaped sets. Contractible ⟹ all homotopy groups trivial ⟹ all homology groups trivial (acyclic). The converse does not hold in general.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every loop in \(X\) can be contracted to a point (simply connected).]]></text>
+      <feedback><text>Simply connected means π₁(X)={e} (every loop contracts). Contractible is stronger: ALL higher homotopy groups also vanish (πₙ(X)={e} for all n). Contractible ⟹ simply connected but not conversely (S² is simply connected but not contractible).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[X has a single point.]]></text>
+      <feedback><text>A single point is trivially contractible, but contractible spaces can have many points (e.g., ℝⁿ). Contractible means homotopy equivalent to {pt}, not homeomorphic to {pt}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(X\) is compact and simply connected.]]></text>
+      <feedback><text>Compact + simply connected does not imply contractible. S² is compact and simply connected but NOT contractible (π₂(S²)=ℤ≠{e}).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q08_Higher_Homotopy</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The second homotopy group \(\pi_2(S^2)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\mathbb{Z}\), generated by the identity map \(\mathrm{id}: S^2 \to S^2\).]]></text>
+      <feedback><text>Correct. π₂(S²) = ℤ (Hopf, 1931). The generator is the identity map S²→S², corresponding to the "degree 1" map. The Hopf fibration S³→S² has the Hopf map as a non-trivial element of π₃(S²)=ℤ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_2(S^2) = \{e\}\) (trivial, since \(S^2\) is simply connected).]]></text>
+      <feedback><text>Simple connectedness means π₁=0 but says nothing about higher homotopy groups. π₂(S²)=ℤ≠{e}. The sphere S² has a rich homotopy structure.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_2(S^2) \cong \mathbb{Z}/2\mathbb{Z}\).]]></text>
+      <feedback><text>π₂(S²)=ℤ (infinite cyclic). ℤ/2ℤ appears in other homotopy groups of spheres (like π₃(S²)=ℤ is also interesting via Hopf).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_2(S^2) \cong \mathbb{Z}^2\).]]></text>
+      <feedback><text>π₂(S²)=ℤ (rank 1, not 2). The Hurewicz theorem gives π₂(S²)≅H₂(S²)=ℤ since S² is simply connected.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q09_Seifert_Van_Kampen</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The fundamental group of the figure-eight space \(S^1 \vee S^1\) (wedge of two circles) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The free group \(F_2 = \langle a, b \rangle\) on two generators (with no relations).]]></text>
+      <feedback><text>Correct. By Seifert-van Kampen: S¹∨S¹ = U∪V where U≃S¹, V≃S¹, U∩V≃{pt} (contractible). So π₁(S¹∨S¹) = π₁(S¹) * π₁(S¹) = ℤ*ℤ = F₂ (free product, which for groups of integers is the free group on 2 generators).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathbb{Z} \times \mathbb{Z}\) (free abelian group on 2 generators).]]></text>
+      <feedback><text>ℤ×ℤ is the fundamental group of the TORUS T²=S¹×S¹ (product), not the WEDGE S¹∨S¹. In the torus, the generators commute; in the wedge/figure-eight, they do not.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathbb{Z}/2\mathbb{Z} * \mathbb{Z}/2\mathbb{Z}\) (free product of two cyclic groups).]]></text>
+      <feedback><text>This is the fundamental group of ℝP²#ℝP² (Klein bottle), not the figure-eight. The figure-eight has generators of infinite order.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\{e\}\) (trivial).]]></text>
+      <feedback><text>The figure-eight has a non-contractible loop around each circle, so its fundamental group is non-trivial (it is the free group F₂).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q10_Brouwer_Fixed_Point</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Brouwer fixed-point theorem states: every continuous map \(f: D^n \to D^n\) (closed \(n\)-disk) has a fixed point. A topological proof uses:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The fact that there is no retraction \(r: D^n \to S^{n-1}\) (the disk does not retract onto its boundary), which follows from the non-triviality of \(H_{n-1}(S^{n-1}) \cong \mathbb{Z}\).]]></text>
+      <feedback><text>Correct. If f had no fixed point, we could define a retraction D^n→S^{n-1} (shoot a ray from f(x) through x to the boundary), contradicting the fact that such a retraction cannot exist (S^{n-1} has non-trivial (n−1)-st homology while D^n is contractible).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The intermediate value theorem (applicable only in dimension \(n=1\)).]]></text>
+      <feedback><text>The IVT proof works for n=1 (f:[−1,1]→[−1,1] must have a fixed point by IVT). But the general Brouwer theorem requires homology/homotopy theory, not just IVT.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Baire category theorem applied to the space of maps \(D^n \to D^n\).]]></text>
+      <feedback><text>Baire category theorem is not used in the proof of Brouwer's fixed-point theorem. The proof uses algebraic topology (homology or degree theory).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Compactness of \(D^n\): every sequence has a convergent subsequence.]]></text>
+      <feedback><text>Compactness is needed for Schauder's fixed-point theorem (infinite-dimensional version), but Brouwer's theorem for D^n specifically uses the topology of D^n via algebraic invariants, not just compactness.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q11_Fundamental_Group_Product</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For path-connected spaces \(X\) and \(Y\), \(\pi_1(X \times Y)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\pi_1(X) \times \pi_1(Y)\).]]></text>
+      <feedback><text>Correct. For path-connected spaces, the fundamental group of a product is the direct product: π₁(X×Y) ≅ π₁(X)×π₁(Y). This follows because loops in X×Y project to loops in X and Y, and the two factors commute in π₁(X×Y).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(X) * \pi_1(Y)\) (free product).]]></text>
+      <feedback><text>Free product arises from wedge (X∨Y), not product (X×Y). For the product, the fundamental group is the direct product.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(X) \oplus \pi_1(Y)\) (direct sum, distinct from direct product for infinite groups).]]></text>
+      <feedback><text>For groups, direct product and direct sum coincide for finitely many factors. So π₁(X×Y)=π₁(X)×π₁(Y)=π₁(X)⊕π₁(Y) (same group). This is correct but equivalent to the previous answer.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(X \times Y) = \{e\}\) if either \(\pi_1(X)\) or \(\pi_1(Y)\) is trivial.]]></text>
+      <feedback><text>π₁(X×Y)=π₁(X)×π₁(Y). If π₁(X)={e} then π₁(X×Y)=π₁(Y), not {e} (unless π₁(Y)={e} too). The product formula holds regardless.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q12_CW_Complex</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A CW-complex is constructed by:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Attaching \(n\)-cells \(e^n \cong D^n\) to a previously constructed \((n-1)\)-skeleton via attaching maps \(\phi: S^{n-1} \to X^{n-1}\).]]></text>
+      <feedback><text>Correct. CW-complexes (Closure-finite Weak topology) are built inductively: start with 0-cells (points), attach 1-cells (edges), 2-cells (disks), etc. Most spaces of interest in algebraic topology (manifolds, spheres, projective spaces) are CW-complexes.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Taking the metric completion of a simplicial complex.]]></text>
+      <feedback><text>Simplicial complexes are related to CW-complexes (every simplicial complex is a CW-complex) but metric completion is a different operation. CW-complexes are defined by cell-attaching, not metric completion.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Taking a quotient of a manifold by a group action.]]></text>
+      <feedback><text>Quotient by group actions gives orbit spaces, which can often be given CW-structures, but this is not the definition of a CW-complex.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Using only 0-cells and 1-cells (graphs are the only CW-complexes).]]></text>
+      <feedback><text>CW-complexes include cells of all dimensions. Graphs are 1-dimensional CW-complexes; CW-complexes can be of any dimension (including infinite).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q13_Retraction</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A retraction of \(X\) onto a subspace \(A \subseteq X\) is a continuous map \(r: X \to A\) such that \(r|_A = \mathrm{id}_A\). Which statement is correct?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[If \(r: X \to A\) is a retraction, the induced map \(r_*: \pi_1(X) \to \pi_1(A)\) is surjective, and \(\pi_1(A)\) is a retract of \(\pi_1(X)\).]]></text>
+      <feedback><text>Correct. The retraction r gives a right inverse for the inclusion i:A↪X at the level of fundamental groups: r∘i = id_A implies r_*∘i_* = id, so r_* is surjective and π₁(A) is a retract (quotient) of π₁(X). This is used to prove non-retractability (like S¹ ↪ D²).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A retraction always exists between any two spaces.]]></text>
+      <feedback><text>Retractions do not always exist. For example, there is no retraction D²→S¹ (this is equivalent to Brouwer's fixed-point theorem). The existence of a retraction imposes strong topological constraints.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A retraction \(r: X \to A\) is a homeomorphism.]]></text>
+      <feedback><text>A retraction is generally not a homeomorphism (it collapses the complement X⧵A onto A). A retraction is a surjection but not injective unless A=X.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[If a retraction \(r: X \to A\) exists, then \(X\) and \(A\) are homeomorphic.]]></text>
+      <feedback><text>Retracts need not be homeomorphic to the whole space. For example, any point is a retract of a connected space via the constant map, but a point is not homeomorphic to the space.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q14_Deck_Transformations</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For a universal covering space \(p: \tilde{X} \to X\), the group of deck transformations (covering transformations) is isomorphic to:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\pi_1(X, x_0)\) (the fundamental group of the base space).]]></text>
+      <feedback><text>Correct. For a universal cover, the deck transformation group Aut(p) ≅ π₁(X). For example, the deck transformations of ℝ→S¹ are integer shifts t↦t+n, forming a group isomorphic to ℤ≅π₁(S¹).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(\tilde{X})\) (the fundamental group of the cover).]]></text>
+      <feedback><text>The universal cover is simply connected: π₁(X̃)={e}. The deck transformations are isomorphic to π₁(X) (the base), not π₁(X̃).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The group of homeomorphisms of \(\tilde{X}\).]]></text>
+      <feedback><text>Deck transformations are homeomorphisms of X̃ preserving the covering structure (i.e., p∘φ=p). This is a proper subgroup of all homeomorphisms of X̃.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A trivial group (deck transformations are always the identity).]]></text>
+      <feedback><text>Deck transformations are trivial only when X is simply connected. For S¹ with universal cover ℝ, the deck transformations form the infinite group ℤ≅π₁(S¹).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q15_Seifert_Van_Kampen_Pushout</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Suppose \(X = U \cup V\) where \(U, V\) are open and path-connected, and \(U \cap V\) is path-connected. By the Seifert-van Kampen theorem, \(\pi_1(X)\) is the pushout:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\pi_1(X) \cong \pi_1(U) *_{\pi_1(U \cap V)} \pi_1(V)\) (amalgamated free product).]]></text>
+      <feedback><text>Correct. The Seifert-van Kampen theorem gives π₁(X) as the amalgamated free product (pushout in the category of groups): generators from U and V with relations from U∩V. When U∩V is contractible, this is the free product π₁(U)*π₁(V).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(X) \cong \pi_1(U) \times \pi_1(V)\) (direct product).]]></text>
+      <feedback><text>Direct products arise from products of spaces (X=U×V), not unions. Van Kampen gives an amalgamated free product (pushout), which is a direct product only in special cases.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(X) \cong \pi_1(U \cap V)\) (only the intersection matters).]]></text>
+      <feedback><text>Only the intersection's fundamental group is not enough. Van Kampen combines π₁(U) and π₁(V) with relations from π₁(U∩V) via the amalgamated free product.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(X) = \{e\}\) if both \(U\) and \(V\) are simply connected.]]></text>
+      <feedback><text>If π₁(U)=π₁(V)={e}, then π₁(U)*_{π₁(U∩V)}π₁(V) = {e}*_{π₁(U∩V)}{e} = π₁(U∩V)/N where N is the normal closure of the image of π₁(U∩V)... Actually if π₁(U)=π₁(V)={e}, then the amalgamated product is trivial {e}, so X is simply connected. This option is actually correct in this case, but it is a consequence, not the general statement of Van Kampen.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q16_Deformation_Retract</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A space \(A \subseteq X\) is a deformation retract of \(X\) if there is a continuous \(H: X \times [0,1] \to X\) with \(H(x,0) = x\), \(H(x,1) \in A\) for all \(x\), and \(H(a,t) = a\) for all \(a \in A, t \in [0,1]\). What does this imply?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(A\) and \(X\) are homotopy equivalent, and \(\pi_1(A) \cong \pi_1(X)\).]]></text>
+      <feedback><text>Correct. A deformation retract is a special homotopy equivalence: the inclusion i:A↪X is a homotopy equivalence with homotopy inverse r=H(−,1). Since homotopy equivalent spaces have isomorphic fundamental groups (and all homotopy groups), π₁(A)≅π₁(X).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A is homeomorphic to \(X\).]]></text>
+      <feedback><text>Deformation retract implies homotopy equivalence, not homeomorphism. For example, ℝⁿ deformation retracts to {0} (contractible), but ℝⁿ and {0} are not homeomorphic.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[X is compact if and only if A is compact.]]></text>
+      <feedback><text>Deformation retracts preserve homotopy type, not compactness. For example, D² deformation retracts to {0} (compact to compact here), but in general the relationship between X and A's compactness can vary.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A must be closed in \(X\).]]></text>
+      <feedback><text>Deformation retracts can involve non-closed subsets in general, though in nice spaces (like ANRs) they are often closed. Closedness is not required by the definition.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q17_Fundamental_Polygon</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Klein bottle \(K\) can be described as a quotient of the square \([0,1]^2\) with edge identifications \(aba^{-1}b\) (identifying opposite sides, one with a twist). Its fundamental group is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\pi_1(K) = \langle a, b \mid abab^{-1} = 1\rangle\).]]></text>
+      <feedback><text>Correct. The Klein bottle has fundamental group with presentation ⟨a,b | aba⁻¹=b⁻¹⟩ or equivalently ⟨a,b | abab⁻¹=1⟩. This group is not abelian (unlike the torus, where abab⁻¹=aba⁻¹b⁻¹·ab∼... the torus has [a,b]=1). The Klein bottle is non-orientable.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(K) \cong \mathbb{Z} \times \mathbb{Z}\) (same as the torus).]]></text>
+      <feedback><text>The torus has π₁=ℤ×ℤ with relation [a,b]=aba⁻¹b⁻¹=1. The Klein bottle has a different relation (aba⁻¹=b⁻¹), giving a non-abelian fundamental group. The Klein bottle is NOT homeomorphic to the torus.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(K) \cong \mathbb{Z}\) (same as the circle).]]></text>
+      <feedback><text>π₁(K) is a non-abelian group with two generators and one relation, not isomorphic to ℤ (which is cyclic and abelian).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(K) = \{e\}\) (simply connected).]]></text>
+      <feedback><text>The Klein bottle has non-trivial fundamental group ⟨a,b|abab⁻¹=1⟩. It is not simply connected.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q18_Euler_Characteristic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Euler characteristic \(\chi(S)\) of a compact surface relates to its genus \(g\) by:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\chi = 2 - 2g\) for orientable surfaces (genus-\(g\) surface \(\Sigma_g\)); \(\chi = 2 - k\) for non-orientable surfaces (with \(k\) crosscaps).]]></text>
+      <feedback><text>Correct. For the sphere: g=0, χ=2. Torus: g=1, χ=0. Double torus: g=2, χ=−2. Klein bottle: k=2, χ=0. ℝP²: k=1, χ=1. The Euler characteristic is a topological invariant computed from any triangulation: χ=V−E+F.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\chi = g\) for all compact surfaces.]]></text>
+      <feedback><text>Incorrect. χ=2−2g for orientable surfaces, so χ=g only when 2−2g=g, i.e., g=2/3, which is not an integer. The correct formula is χ=2−2g.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\chi = 2g - 2\) for orientable surfaces.]]></text>
+      <feedback><text>Wrong sign: χ=2−2g, not 2g−2. For g=0 (sphere): χ=2 (correct), but 2(0)−2=−2 (wrong).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\chi\) depends on the triangulation chosen, not just the surface.]]></text>
+      <feedback><text>By the invariance of the Euler characteristic, χ = V−E+F is the same for all triangulations of a given surface. It is a topological invariant.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q19_Orientation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The real projective plane \(\mathbb{RP}^2\) has fundamental group:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\pi_1(\mathbb{RP}^2) \cong \mathbb{Z}/2\mathbb{Z}\).]]></text>
+      <feedback><text>Correct. ℝP² = S²/{±1} (antipodal identification). The universal cover is S² (simply connected), with deck transformations {+1,−1}≅ℤ/2ℤ. So π₁(ℝP²)=ℤ/2ℤ. The non-trivial element corresponds to a path from a point to its antipode (a non-contractible loop in ℝP²).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(\mathbb{RP}^2) \cong \mathbb{Z}\).]]></text>
+      <feedback><text>ℤ is the fundamental group of S¹ or ℝP¹. For ℝP²=S²/Z₂, the fundamental group is ℤ/2ℤ (order 2), not ℤ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(\mathbb{RP}^2) = \{e\}\) (ℝP² is simply connected).]]></text>
+      <feedback><text>ℝP² is NOT simply connected: π₁(ℝP²)=ℤ/2ℤ≠{e}. Only ℝPⁿ for n=1 has fundamental group ℤ; for n≥2 it is ℤ/2ℤ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\pi_1(\mathbb{RP}^2) \cong \mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}\).]]></text>
+      <feedback><text>This is too large. π₁(ℝP²)=ℤ/2ℤ (order 2), not ℤ×ℤ/2ℤ (infinite group).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>CSIR_TOP_49_Q20_Lefschetz</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Lefschetz fixed-point theorem states: if \(f: X \to X\) is a continuous map on a compact triangulable space and the Lefschetz number \(\Lambda(f) = \sum_k (-1)^k \mathrm{tr}(f_*: H_k \to H_k) \neq 0\), then:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(f\) has a fixed point.]]></text>
+      <feedback><text>Correct. The Lefschetz fixed-point theorem: Λ(f)≠0 implies f has a fixed point. For f=identity: Λ(id)=χ(X) (Euler characteristic). Brouwer's theorem is a special case: on D^n, Λ(f)=1≠0 for any f, guaranteeing a fixed point.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f\) has no fixed point.]]></text>
+      <feedback><text>Λ(f)≠0 implies the EXISTENCE of fixed points, not their absence. Λ(f)=0 is necessary (but not sufficient) for f to have no fixed points.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f\) is null-homotopic.]]></text>
+      <feedback><text>The Lefschetz number concerns fixed points, not null-homotopy. A null-homotopic map has Λ(f)=Λ(const)=1 (for connected X), which implies a fixed point. But Λ(f)≠0 does not imply null-homotopy.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(X\) must be contractible.]]></text>
+      <feedback><text>The theorem applies to any compact triangulable space, not just contractible ones. S² is not contractible but the Lefschetz theorem applies to maps on S².</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

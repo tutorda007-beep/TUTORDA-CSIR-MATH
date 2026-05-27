@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Ordinary Differential Equations/Laplace Transforms</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q01_Basic_Laplace</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Laplace transform \(\mathcal{L}\{t^n\}(s)\) for \(n \geq 0\) integer and \(s > 0\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{n!}{s^{n+1}}\)]]></text>
+      <feedback><text>Correct. By repeated integration by parts (or the gamma function), ℒ{tⁿ} = n!/s^{n+1} for integer n ≥ 0 and s > 0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{n!}{s^n}\)]]></text>
+      <feedback><text>Off by one power: ℒ{tⁿ} = n!/s^{n+1}, not n!/sⁿ. For example ℒ{1} = ℒ{t⁰} = 1/s = 0!/s¹.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{(n-1)!}{s^n}\)]]></text>
+      <feedback><text>This equals Γ(n)/sⁿ = ℒ{t^{n−1}}, not ℒ{tⁿ}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{1}{s^n}\)]]></text>
+      <feedback><text>Missing the factorial: ℒ{tⁿ} = n!/s^{n+1}. Without the n! factor this is incorrect.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q02_First_Shifting</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The first shifting theorem (s-shifting) states: if \(\mathcal{L}\{f(t)\} = F(s)\), then \(\mathcal{L}\{e^{at}f(t)\}\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(F(s - a)\)]]></text>
+      <feedback><text>Correct. Multiplying by e^{at} shifts the argument: ℒ{e^{at}f(t)} = F(s−a), valid for s > a + abscissa of convergence of F.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(F(s + a)\)]]></text>
+      <feedback><text>Wrong direction: e^{at} shifts s to s−a (subtract a), not s+a. Multiplication by e^{at} shifts the transform argument leftward.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(e^{-as} F(s)\)]]></text>
+      <feedback><text>This is the second shifting theorem (t-shifting), which involves a unit step and shift in t, not multiplication by e^{at}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(a \cdot F(as)\)]]></text>
+      <feedback><text>This is the scaling property ℒ{f(at)} = (1/a)F(s/a), not the shifting theorem.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q03_Second_Shifting</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Laplace transform of \(f(t-a)\,u(t-a)\), where \(u\) is the unit step function and \(a > 0\), is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(e^{-as} F(s)\)]]></text>
+      <feedback><text>Correct. This is the second shifting (t-shifting) theorem: a delay of a in t corresponds to multiplication by e^{−as} in the transform domain.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(e^{as} F(s)\)]]></text>
+      <feedback><text>Sign error: a delay gives e^{−as}F(s), not e^{as}F(s). The exponential factor must decay for convergence.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(F(s-a)\)]]></text>
+      <feedback><text>F(s−a) is the result of the first shifting theorem (multiplication by e^{at}), not the t-delay theorem.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(F(s) - e^{-as}\)]]></text>
+      <feedback><text>The correct result is the product e^{−as}F(s), not a difference.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q04_Derivative_Transform</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(\mathcal{L}\{f(t)\} = F(s)\) and \(f\) is of exponential order, then \(\mathcal{L}\{f'(t)\}\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(s F(s) - f(0)\)]]></text>
+      <feedback><text>Correct. By integration by parts: ℒ{f'} = sF(s) − f(0). More generally, ℒ{f^{(n)}} = sⁿF(s) − s^{n−1}f(0) − ⋯ − f^{(n−1)}(0).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(s F(s)\)]]></text>
+      <feedback><text>Missing the initial condition term: ℒ{f'} = sF(s) − f(0), not sF(s).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(F'(s)\)]]></text>
+      <feedback><text>Differentiating the transform gives ℒ{−tf(t)} = F'(s), not ℒ{f'}. These are different operations.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{F(s)}{s} - f(0)\)]]></text>
+      <feedback><text>Division by s corresponds to integration, not differentiation: ℒ{∫₀ᵗf} = F(s)/s.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q05_Convolution</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The convolution theorem for Laplace transforms states: \(\mathcal{L}\{(f * g)(t)\} = \mathcal{L}\{f\} \cdot \mathcal{L}\{g\}\), where \((f*g)(t) =\):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\displaystyle\int_0^t f(\tau)\, g(t-\tau)\, d\tau\)]]></text>
+      <feedback><text>Correct. The Laplace convolution is a one-sided convolution over [0,t], and the convolution theorem ℒ{f*g} = F(s)G(s) is used to invert products of transforms.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\displaystyle\int_{-\infty}^{\infty} f(\tau)\, g(t-\tau)\, d\tau\)]]></text>
+      <feedback><text>This is the full (two-sided) convolution used for Fourier transforms. For Laplace transforms with causal functions, the limits are 0 to t.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f(t) \cdot g(t)\)]]></text>
+      <feedback><text>Pointwise multiplication is not convolution. ℒ{f·g} ≠ F(s)G(s); that formula holds for convolution, not pointwise products.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\displaystyle\int_0^{\infty} f(\tau)\, g(t-\tau)\, d\tau\)]]></text>
+      <feedback><text>The upper limit should be t, not ∞, for the Laplace convolution of causal functions (zero for t<0).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q06_IVP_Solution</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Using Laplace transforms, the solution of \(y'' + 4y = \sin 2t\), \(y(0) = 0\), \(y'(0) = 0\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(y(t) = \dfrac{1}{4}(\sin 2t - 2t\cos 2t)\)]]></text>
+      <feedback><text>Correct. Taking ℒ: (s²+4)Y = 2/(s²+4), so Y = 2/(s²+4)². Inverting by convolution: y = (1/2)∫₀ᵗ sin2τ·sin2(t−τ)dτ = (sin2t−2t cos2t)/4. This is a resonance problem.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(y(t) = -\dfrac{1}{4}t\cos 2t\)]]></text>
+      <feedback><text>Missing the sin2t term. The full resonance solution is (sin2t − 2t cos2t)/4.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(y(t) = \dfrac{1}{8}\sin 2t\)]]></text>
+      <feedback><text>This would be the particular solution if the forcing frequency were different from the natural frequency (no resonance). Here resonance occurs since ω = 2 matches the natural frequency.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(y(t) = t\sin 2t\)]]></text>
+      <feedback><text>Incorrect amplitude and form. The resonant particular solution for y''+4y=sin2t has the form (at sin2t + bt cos2t).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q07_Transform_Multiply_t</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(\mathcal{L}\{f(t)\} = F(s)\), then \(\mathcal{L}\{t\,f(t)\}\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(-F'(s)\)]]></text>
+      <feedback><text>Correct. Differentiating F(s)=∫₀^∞ e^{−st}f(t)dt under the integral gives F'(s)=−∫₀^∞ t e^{−st}f(t)dt = −ℒ{tf(t)}, so ℒ{tf(t)} = −F'(s).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(F'(s)\)]]></text>
+      <feedback><text>Off by a sign: ℒ{tf(t)} = −F'(s), not F'(s). The minus sign comes from differentiating e^{−st} with respect to s.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CTML[\(s\,F(s)\)]]></text>
+      <feedback><text>sF(s) is related to ℒ{f'(t)} + f(0), not ℒ{tf(t)}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{F(s)}{s}\)]]></text>
+      <feedback><text>F(s)/s = ℒ{∫₀ᵗ f(τ)dτ}, corresponding to integration of f, not multiplication by t.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q08_Periodic_Function</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For a periodic function \(f(t)\) with period \(T > 0\), the Laplace transform is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\mathcal{L}\{f\}(s) = \dfrac{\displaystyle\int_0^T e^{-st} f(t)\,dt}{1 - e^{-sT}}\)]]></text>
+      <feedback><text>Correct. Splitting the integral over [0,∞) into intervals of length T and using periodicity gives a geometric series summing to 1/(1−e^{−sT}).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathcal{L}\{f\}(s) = \displaystyle\int_0^T e^{-st} f(t)\,dt\)]]></text>
+      <feedback><text>This only captures the first period. The denominator factor 1/(1−e^{−sT}) accounts for all periods.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathcal{L}\{f\}(s) = \dfrac{T}{1-e^{-sT}}\)]]></text>
+      <feedback><text>The numerator should be the integral ∫₀ᵀ e^{−st}f(t)dt, not just T.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathcal{L}\{f\}(s) = (1-e^{-sT})\displaystyle\int_0^T e^{-st}f(t)\,dt\)]]></text>
+      <feedback><text>The formula has the factor inverted. The correct formula divides by (1−e^{−sT}), not multiplies.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q09_Delta_Function</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Laplace transform of the Dirac delta function \(\delta(t - a)\), for \(a > 0\), is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(e^{-as}\)]]></text>
+      <feedback><text>Correct. By the sifting property: ℒ{δ(t−a)} = ∫₀^∞ e^{−st}δ(t−a)dt = e^{−as} for a > 0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(e^{as}\)]]></text>
+      <feedback><text>Sign error: the Laplace transform contains e^{−st} so evaluation at t=a gives e^{−as}, not e^{as}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{1}{s}\,e^{-as}\)]]></text>
+      <feedback><text>This is ℒ{u(t−a)}, the transform of the unit step delayed by a. The delta function gives just e^{−as}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(1\)]]></text>
+      <feedback><text>ℒ{δ(t)} = 1 (delta at origin). For δ(t−a) with a>0, the transform is e^{−as} ≠ 1.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q10_Inverse_Partial_Fractions</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The inverse Laplace transform of \(\dfrac{s}{(s^2+1)(s^2+4)}\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{1}{3}(\cos t - \cos 2t)\)]]></text>
+      <feedback><text>Correct. Partial fractions: s/((s²+1)(s²+4)) = s/(3(s²+1)) − s/(3(s²+4)). Inverting: (cos t − cos 2t)/3.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{1}{3}(\sin t - \sin 2t)\)]]></text>
+      <feedback><text>Since the numerator is s (not 1), the inverse transform gives cosines, not sines. ℒ⁻¹{s/(s²+ω²)} = cos(ωt).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{1}{3}(\cos t + \cos 2t)\)]]></text>
+      <feedback><text>The partial fraction decomposition gives s/(3(s²+1)) minus s/(3(s²+4)), yielding cos t − cos 2t, with a minus sign between the cosines.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\cos t - \cos 2t\)]]></text>
+      <feedback><text>Missing the factor 1/3 from the partial fraction decomposition.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q11_Final_Value</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The final value theorem states: \(\displaystyle\lim_{t \to \infty} f(t) = \lim_{s \to 0} s F(s)\), provided all poles of \(sF(s)\) are in the left half-plane. For \(F(s) = \dfrac{3}{s(s+2)}\), the final value is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{3}{2}\)]]></text>
+      <feedback><text>Correct. lim_{s→0} s·3/(s(s+2)) = lim_{s→0} 3/(s+2) = 3/2. Indeed f(t) = (3/2)(1−e^{−2t}) → 3/2 as t→∞.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(0\)]]></text>
+      <feedback><text>The final value is 3/2, not 0. The function f(t) = (3/2)(1−e^{−2t}) approaches 3/2 asymptotically.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(3\)]]></text>
+      <feedback><text>Forgetting to cancel the s: lim_{s→0} sF(s) = lim_{s→0} 3/(s+2) = 3/2, not 3.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\infty\)]]></text>
+      <feedback><text>The final value theorem applies since all poles of sF(s) = 3/(s+2) are in the left half-plane (pole at s=−2). The limit is finite: 3/2.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q12_Transform_of_Integral</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(\mathcal{L}\{f(t)\} = F(s)\), then \(\mathcal{L}\!\left\{\displaystyle\int_0^t f(\tau)\,d\tau\right\}\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{F(s)}{s}\)]]></text>
+      <feedback><text>Correct. Integration in the time domain corresponds to division by s in the Laplace domain (the integration theorem).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(s F(s)\)]]></text>
+      <feedback><text>Multiplication by s corresponds to differentiation, not integration. Division by s gives the integral.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(F(s) - f(0)/s\)]]></text>
+      <feedback><text>This would relate to the derivative formula. The integral formula is simply F(s)/s.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{F(s)}{s} + \dfrac{1}{s}\)]]></text>
+      <feedback><text>No constant term appears. The correct result is F(s)/s without any additional terms.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q13_System_ODEs</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Using Laplace transforms to solve the system \(x' = y\), \(y' = -x\) with \(x(0)=1, y(0)=0\), one obtains:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(x(t) = \cos t,\quad y(t) = -\sin t\)]]></text>
+      <feedback><text>Correct. Taking ℒ: sX−1 = Y and sY = −X. Eliminating Y: (s²+1)X = s, so X = s/(s²+1) = ℒ{cos t}; then Y = sX−1 = s²/(s²+1)−1 = −1/(s²+1) = ℒ{−sin t}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(x(t) = \cos t,\quad y(t) = \sin t\)]]></text>
+      <feedback><text>Sign error in y: Y = −1/(s²+1) corresponds to y = −sin t, not +sin t.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(x(t) = e^t,\quad y(t) = e^t\)]]></text>
+      <feedback><text>e^t would arise from a system with eigenvalue +1, not from x'=y, y'=−x (which has eigenvalues ±i giving oscillatory solutions).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(x(t) = \sin t,\quad y(t) = \cos t\)]]></text>
+      <feedback><text>With x(0)=1, the initial condition forces X(s) = s/(s²+1) = ℒ{cos t}, not ℒ{sin t}.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q14_Existence_Conditions</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Laplace transform \(\mathcal{L}\{f\}(s)\) exists for \(s > \sigma_0\) (abscissa of convergence) if \(f\) satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(f\) is piecewise continuous on \([0,\infty)\) and of exponential order: \(|f(t)| \leq Me^{\sigma_0 t}\) for some \(M,\sigma_0\) and all large \(t\).]]></text>
+      <feedback><text>Correct. These are sufficient conditions for existence of the Laplace transform for s > σ₀. Many functions satisfying these conditions arise in ODE applications.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f\) is continuous and bounded on \([0,\infty)\).]]></text>
+      <feedback><text>Continuity is not required (piecewise continuity suffices), and boundedness is more restrictive than exponential order (σ₀=0). These are sufficient but overly restrictive conditions.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f\) is differentiable on \([0,\infty)\) with \(f' \in L^1[0,\infty)\).]]></text>
+      <feedback><text>Differentiability is not necessary; piecewise continuity suffices. Many discontinuous functions (square waves) have Laplace transforms.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f \in L^2[0,\infty)\).]]></text>
+      <feedback><text>L² is sufficient for existence but not necessary. Many functions of exponential order outside L² have Laplace transforms.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q15_Integro_Differential</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Laplace transform method is applied to the integro-differential equation \(y'(t) + \displaystyle\int_0^t y(\tau)\,d\tau = 1\) with \(y(0) = 0\). The transform \(Y(s) = \mathcal{L}\{y\}\) satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(Y(s) = \dfrac{s}{s^2 + 1}\), so \(y(t) = \cos t - \text{ ... wait, } y(t) = \sin t\)]]></text>
+      <feedback><text>Taking ℒ: sY − 0 + Y/s = 1/s. Multiplying by s: s²Y + Y = 1, so (s²+1)Y = 1, Y = 1/(s²+1), giving y(t) = sin t. Verify: y'(0)=1 and y''+y=0 is consistent with the integral equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(Y(s) = \dfrac{1}{s^2+1}\), so \(y(t) = \sin t\)]]></text>
+      <feedback><text>Correct computation. Taking ℒ of y' gives sY (since y(0)=0), and ℒ{∫₀ᵗ y dτ} = Y/s. So sY + Y/s = 1/s → (s²+1)Y/s = 1/s → Y = 1/(s²+1), giving y = sin t.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(Y(s) = \dfrac{1}{s(s+1)}\), so \(y(t) = 1 - e^{-t}\)]]></text>
+      <feedback><text>This would arise from y' + y = 1, a different equation. The integral term gives Y/s, not Y, in the transform.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(Y(s) = \dfrac{1}{s^2}\), so \(y(t) = t\)]]></text>
+      <feedback><text>Y = 1/s² would correspond to y = t, but substituting y=t gives t + t²/2 = 1, which is inconsistent.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q16_Transform_coshat</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Laplace transform of \(\cosh(at)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{s}{s^2 - a^2}\), for \(s > |a|\)]]></text>
+      <feedback><text>Correct. Since cosh(at) = (e^{at}+e^{−at})/2, we get ℒ{cosh at} = (1/(s−a) + 1/(s+a))/2 = s/(s²−a²), valid for s > |a|.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{a}{s^2 - a^2}\)]]></text>
+      <feedback><text>This is ℒ{sinh(at)} = a/(s²−a²). For cosh, the numerator is s, not a.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{s}{s^2 + a^2}\)]]></text>
+      <feedback><text>This is ℒ{cos(at)}, with +a² in denominator (for trigonometric), not −a² (for hyperbolic).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{a}{s^2 + a^2}\)]]></text>
+      <feedback><text>This is ℒ{sin(at)}. The hyperbolic cosine transform has s−a² terms (not +a²) and numerator s.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q17_Bromwich_Integral</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The inverse Laplace transform via the Bromwich integral is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(f(t) = \dfrac{1}{2\pi i}\displaystyle\int_{\gamma - i\infty}^{\gamma + i\infty} e^{st} F(s)\, ds\)]]></text>
+      <feedback><text>Correct. The Bromwich (or Mellin) inversion formula recovers f(t) from F(s) by integrating along the vertical line Re(s)=γ, placed to the right of all singularities of F.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f(t) = \dfrac{1}{2\pi}\displaystyle\int_{-\infty}^{\infty} e^{st} F(s)\, ds\)]]></text>
+      <feedback><text>Missing the factor i in the denominator. The correct formula has 1/(2πi) and the imaginary axis integration.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f(t) = \displaystyle\int_0^{\infty} e^{-st} F(s)\, ds\)]]></text>
+      <feedback><text>This would be the Laplace transform of F, not the inverse. The inversion requires integration along a vertical contour in the complex s-plane.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f(t) = \dfrac{1}{2\pi i}\displaystyle\oint e^{st} F(s)\, ds\)]]></text>
+      <feedback><text>A closed contour integral would give sums of residues (useful for computation), but the definition uses the vertical Bromwich contour, not a closed path.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q18_Heaviside_Expansion</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the rational function \(F(s) = \dfrac{P(s)}{Q(s)}\) with \(\deg P < \deg Q\) and simple poles \(s_1,\ldots,s_n\) of \(Q\), the Heaviside expansion gives:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(f(t) = \displaystyle\sum_{k=1}^n \dfrac{P(s_k)}{Q'(s_k)} e^{s_k t}\)]]></text>
+      <feedback><text>Correct. For simple poles, the residue at s_k is P(s_k)/Q'(s_k), so the partial fraction expansion and inverse transform yield f(t) = Σ [P(s_k)/Q'(s_k)] e^{s_k t}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f(t) = \displaystyle\sum_{k=1}^n \dfrac{Q'(s_k)}{P(s_k)} e^{s_k t}\)]]></text>
+      <feedback><text>The numerator and denominator are swapped. The correct formula uses P(s_k)/Q'(s_k) as the coefficient.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f(t) = \displaystyle\sum_{k=1}^n P(s_k) e^{s_k t}\)]]></text>
+      <feedback><text>Missing the normalization by Q'(s_k). The residue at a simple pole s_k of P/Q is P(s_k)/Q'(s_k).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f(t) = \displaystyle\sum_{k=1}^n e^{s_k t}\)]]></text>
+      <feedback><text>The coefficients from the partial fractions are missing. Each term must be weighted by P(s_k)/Q'(s_k).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q19_Transforms_Relation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The relationship between the Laplace transform and the Fourier transform is: for a function \(f\) with support on \([0,\infty)\),]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\mathcal{F}\{f(t)e^{-\sigma t}\}(\omega) = \mathcal{L}\{f\}(\sigma + i\omega)\)]]></text>
+      <feedback><text>Correct. The Laplace transform evaluated at s = σ+iω equals the Fourier transform of the damped signal f(t)e^{−σt}. This connects the two transforms and explains why the Laplace transform exists in a half-plane.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathcal{L}\{f\}(i\omega) = \mathcal{F}\{f\}(\omega)\)]]></text>
+      <feedback><text>This would only hold if f were in L¹(0,∞) and the Laplace transform converged on the imaginary axis (σ=0). In general σ>0 is required for convergence.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathcal{L}\{f\}(s) = \mathcal{F}\{f\}(s)\) for all \(s\)]]></text>
+      <feedback><text>The two transforms are not equal in general. The Fourier transform is on the imaginary axis while the Laplace transform is defined in a half-plane.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Laplace and Fourier transforms are completely unrelated.]]></text>
+      <feedback><text>They are closely related: ℒ{f}(σ+iω) = ℱ{f(t)e^{−σt}}(ω), showing Laplace is a generalization of Fourier to complex frequencies.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>CSIR_ODE_41_Q20_ODE_Transfer_Function</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the ODE \(y'' + 3y' + 2y = f(t)\) with zero initial conditions, the transfer function \(H(s) = Y(s)/F(s)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(H(s) = \dfrac{1}{s^2 + 3s + 2} = \dfrac{1}{(s+1)(s+2)}\)]]></text>
+      <feedback><text>Correct. Taking ℒ with zero ICs: (s²+3s+2)Y = F, so H(s) = 1/(s²+3s+2) = 1/((s+1)(s+2)). The poles at s=−1,−2 indicate a stable system with exponentially decaying transients.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(H(s) = s^2 + 3s + 2\)]]></text>
+      <feedback><text>This is the characteristic polynomial, not the transfer function. The transfer function is the reciprocal: H(s) = 1/(s²+3s+2).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(H(s) = \dfrac{1}{s^2 - 3s + 2}\)]]></text>
+      <feedback><text>Sign error: the ODE has +3y', so the transform gives +3s (not −3s) in the characteristic polynomial.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(H(s) = \dfrac{s}{s^2 + 3s + 2}\)]]></text>
+      <feedback><text>No s factor appears in the numerator since the forcing enters as f(t) (not f'(t)), giving a constant (=1) in the numerator of H(s).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

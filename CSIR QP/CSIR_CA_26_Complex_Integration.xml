@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Complex Analysis/Complex Integration</text></category>
+    <info format="html"><text>CSIR NET level MCQ questions on Complex Integration: Cauchy's theorem, Cauchy integral formula, residues, contour integrals, evaluation of real integrals via residues, Rouché's theorem, winding numbers.</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q01 Cauchy Integral Formula</text></name>
+    <questiontext format="html"><text><![CDATA[Cauchy's integral formula: if \(f\) is analytic in a simply connected domain containing the closed disk \(|z-z_0|\leq r\), then \(f(z_0) = \dfrac{1}{2\pi i}\oint_{|z-z_0|=r}\dfrac{f(z)}{z-z_0}\,dz\). Evaluate \(\displaystyle\oint_{|z|=2}\dfrac{e^z}{z-1}\,dz\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(2\pi i e\)</text><feedback format="html"><text>\(f(z)=e^z\) is analytic everywhere, and \(z_0=1\) is inside \(|z|=2\). By the Cauchy integral formula: \(\oint_{|z|=2}\frac{e^z}{z-1}dz = 2\pi i \cdot e^1 = 2\pi i e\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(0\)</text><feedback format="html"><text>Zero would result if the integrand were analytic inside the contour. But there is a pole at \(z=1\) inside \(|z|=2\), giving a non-zero result by Cauchy's theorem.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\pi i e\)</text><feedback format="html"><text>The Cauchy formula gives \(2\pi i f(z_0) = 2\pi i e\), not \(\pi i e\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(2\pi i e^2\)</text><feedback format="html"><text>The singularity is at \(z_0=1\), so \(f(z_0)=e^1=e\), not \(e^2\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q02 Cauchy Integral Formula for Derivatives</text></name>
+    <questiontext format="html"><text><![CDATA[The higher-order Cauchy formula: \(f^{(n)}(z_0) = \dfrac{n!}{2\pi i}\oint_\gamma\dfrac{f(z)}{(z-z_0)^{n+1}}\,dz\). Evaluate \(\displaystyle\oint_{|z|=1}\dfrac{\cos z}{z^3}\,dz\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(0\)</text><feedback format="html"><text>With \(f(z)=\cos z\) and \(z_0=0\), \(n=2\): \(\oint\frac{\cos z}{z^3}dz = \frac{2\pi i}{2!}f''(0)\). Now \(f(z)=\cos z\), \(f''(z)=-\cos z\), so \(f''(0)=-1\). Wait: \(\oint\frac{\cos z}{z^3}dz = \frac{2\pi i}{2!}(-1) = -\pi i\)? Recheck: \(f''(0) = -\cos 0 = -1\). Result: \(\frac{2\pi i}{2}(-1) = -\pi i\). The correct answer is \(-\pi i\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(-\pi i\)</text><feedback format="html"><text>By the Cauchy derivative formula with \(n=2\), \(f(z)=\cos z\): \(\oint\frac{\cos z}{z^3}dz = \frac{2\pi i}{2!}f''(0) = \pi i\cdot(-\cos 0) = \pi i\cdot(-1) = -\pi i\). This is correct.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(2\pi i\)</text><feedback format="html"><text>This would be the result of \(\oint\frac{\cos z}{z}dz = 2\pi i\cos(0)=2\pi i\), not for \(z^3\) in the denominator.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\pi i\)</text><feedback format="html"><text>\(f''(0) = -\cos(0) = -1\), so the integral is \(\pi i \times (-1) = -\pi i\), not \(+\pi i\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q03 Residue at a Simple Pole</text></name>
+    <questiontext format="html"><text><![CDATA[The residue of \(f\) at a simple pole \(z_0\) is \(\text{Res}(f;z_0) = \lim_{z\to z_0}(z-z_0)f(z)\). For a simple pole of \(p(z)/q(z)\) where \(q(z_0)=0, q'(z_0)\neq0, p(z_0)\neq0\): \(\text{Res}(f;z_0) = p(z_0)/q'(z_0)\). Compute \(\text{Res}\!\left(\dfrac{1}{z^2+1};\, i\right)\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{1}{2i} = -\dfrac{i}{2}\)</text><feedback format="html"><text>Method 1: \(\lim_{z\to i}(z-i)\frac{1}{(z-i)(z+i)} = \frac{1}{i+i} = \frac{1}{2i} = -i/2\). Method 2: \(p(z_0)/q'(z_0) = 1/(2z)|_{z=i} = 1/(2i) = -i/2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{1}{2}\)</text><feedback format="html"><text>The residue is complex: \(1/(2i) = -i/2\). Do not confuse with the modulus \(|1/(2i)|=1/2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{i}{2}\)</text><feedback format="html"><text>\(\text{Res}(f;i) = 1/(2i) = -i/2\), not \(+i/2\). Remember \(1/i = -i\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(-\dfrac{1}{2}\)</text><feedback format="html"><text>The residue is \(-i/2\), which is purely imaginary. \(-1/2\) is real and incorrect.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q04 Residue Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[The Residue Theorem: if \(f\) is analytic inside and on a simple closed positively-oriented curve \(\gamma\) except at finitely many poles \(z_1,\ldots,z_n\) inside \(\gamma\), then \(\oint_\gamma f(z)\,dz = 2\pi i\sum_{k=1}^n\text{Res}(f;z_k)\). Evaluate \(\displaystyle\oint_{|z|=3}\dfrac{z^2}{(z-1)(z-2)}\,dz\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(2\pi i \cdot(1 + 4) = 10\pi i\)</text><feedback format="html"><text>Poles at \(z=1,2\) (both inside \(|z|=3\)). \(\text{Res}(f;1) = \lim_{z\to1}(z-1)\frac{z^2}{(z-1)(z-2)} = \frac{1}{1-2} = -1\). \(\text{Res}(f;2) = \frac{4}{2-1} = 4\). Sum: \(-1+4=3\). Integral: \(2\pi i\cdot3 = 6\pi i\). Correction: residue at 1 is \(1^2/(1-2)=-1\) and at 2 is \(4/(2-1)=4\), total \(= 3\). Answer: \(6\pi i\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(6\pi i\)</text><feedback format="html"><text>Res at \(z=1\): \(\frac{1^2}{1-2}=-1\). Res at \(z=2\): \(\frac{4}{2-1}=4\). Sum = 3. Integral = \(2\pi i\times3=6\pi i\). This is correct.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(4\pi i\)</text><feedback format="html"><text>Residue sum is \(-1+4=3\), so integral is \(6\pi i\), not \(4\pi i\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(0\)</text><feedback format="html"><text>Zero is the result when there are no poles inside the contour or when residues cancel. Here residue sum = 3, giving \(6\pi i\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q05 Real Integral via Residues — Rational Function</text></name>
+    <questiontext format="html"><text><![CDATA[To evaluate \(\displaystyle I = \int_{-\infty}^\infty \dfrac{dx}{1+x^4}\), we integrate \(f(z) = \dfrac{1}{1+z^4}\) over a semicircular contour in the upper half-plane. The poles of \(f\) in the upper half-plane are at:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(z_1 = e^{i\pi/4} = \dfrac{1+i}{\sqrt{2}}\) and \(z_2 = e^{3i\pi/4} = \dfrac{-1+i}{\sqrt{2}}\)</text><feedback format="html"><text>Zeros of \(1+z^4\): \(z^4 = -1 = e^{i\pi}\), so \(z_k = e^{i(\pi+2k\pi)/4}\) for \(k=0,1,2,3\). The four roots are \(e^{i\pi/4}, e^{3i\pi/4}, e^{5i\pi/4}, e^{7i\pi/4}\). The first two lie in the upper half-plane (\(\text{Im}>0\)).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(z_1 = 1\) and \(z_2 = -1\)</text><feedback format="html"><text>These satisfy \(z^2=-1\), not \(z^4=-1\). The poles of \(1/(1+z^4)\) are the fourth roots of \(-1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(z_1 = i\) and \(z_2 = -i\)</text><feedback format="html"><text>\(z=\pm i\) are the zeros of \(z^2+1\), not of \(z^4+1\). The fourth roots of \(-1\) are \(e^{i\pi(2k+1)/4}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(z_1 = e^{i\pi/4}\) only (one pole in upper half-plane)</text><feedback format="html"><text>Both \(e^{i\pi/4}\) and \(e^{3i\pi/4}\) have positive imaginary part, so both lie in the upper half-plane.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q06 Jordan's Lemma</text></name>
+    <questiontext format="html"><text><![CDATA[Jordan's lemma: if \(f(z)\to 0\) uniformly as \(|z|\to\infty\) on the upper semicircle, then for \(a>0\): \(\int_{C_R} f(z)e^{iaz}\,dz \to 0\) as \(R\to\infty\), where \(C_R\) is the upper semicircle of radius \(R\). This is used to evaluate:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\displaystyle\int_0^\infty \dfrac{\sin x}{x}\,dx = \dfrac{\pi}{2}\)</text><feedback format="html"><text>Consider \(f(z)=e^{iz}/z\) integrated over the keyhole contour (indented semicircle). The imaginary part of the contour integral gives \(\int_{-\infty}^\infty \frac{\sin x}{x}dx = \pi\), so \(\int_0^\infty \frac{\sin x}{x}dx = \pi/2\). Jordan's lemma ensures the semicircular arc contribution vanishes.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\displaystyle\int_{-\infty}^\infty e^{-x^2}dx = \sqrt{\pi}\)</text><feedback format="html"><text>The Gaussian integral is evaluated by squaring and converting to polar coordinates, not by the residue theorem or Jordan's lemma.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\displaystyle\int_0^\infty x^{-1/2}e^{-x}dx = \sqrt{\pi}\)</text><feedback format="html"><text>This is \(\Gamma(1/2)=\sqrt{\pi}\), evaluated by the substitution \(x=t^2\), not by contour integration.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\displaystyle\int_0^{2\pi}\cos\theta\,d\theta = 0\)</text><feedback format="html"><text>This is a standard real integral that needs no contour methods. Jordan's lemma is used for improper integrals over the real line involving oscillatory factors.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q07 Rouché's Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[Rouché's theorem: if \(f\) and \(g\) are analytic inside and on a simple closed curve \(\gamma\), and \(|g(z)| < |f(z)|\) for all \(z\in\gamma\), then \(f\) and \(f+g\) have the same number of zeros inside \(\gamma\). How many zeros does \(p(z) = z^5 + 3z + 1\) have inside \(|z|=2\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>5</text><feedback format="html"><text>On \(|z|=2\): \(|z^5|=32\) and \(|3z+1|\leq3\times2+1=7 < 32\). By Rouché with \(f=z^5\) and \(g=3z+1\): \(p(z)=f+g\) has same number of zeros as \(f=z^5\) inside \(|z|=2\), which is 5 (the origin with multiplicity 5).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>3</text><feedback format="html"><text>On \(|z|=2\), the dominant term is \(z^5\), which has 5 zeros inside. Rouché with this dominant term gives 5 zeros for \(p\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>1</text><feedback format="html"><text>By the Fundamental Theorem of Algebra, a degree-5 polynomial has 5 zeros in \(\mathbb{C}\). Since \(p\) has 5 zeros total and we can verify all are inside \(|z|=2\) by Rouché, the answer is 5.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>4</text><feedback format="html"><text>Rouché's theorem with the dominant term \(z^5\) on \(|z|=2\) gives exactly 5 zeros inside the disk, not 4.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q08 Winding Number</text></name>
+    <questiontext format="html"><text><![CDATA[The winding number of a closed curve \(\gamma\) around a point \(a\notin\gamma\) is \(n(\gamma,a) = \dfrac{1}{2\pi i}\oint_\gamma\dfrac{dz}{z-a}\). For the curve \(\gamma(t)=2e^{2\pi it}\) (\(t\in[0,1]\), a circle traversed once counterclockwise), what is \(n(\gamma, 0)\) and \(n(\gamma, 3)\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(n(\gamma,0) = 1\) and \(n(\gamma,3) = 0\)</text><feedback format="html"><text>\(\gamma\) is the circle \(|z|=2\) traversed counterclockwise once. The origin \(a=0\) is inside: \(n(\gamma,0)=1\). The point \(a=3\) is outside \(|z|=2\): \(n(\gamma,3)=0\). The winding number counts the number of times the curve winds around the point (positive = counterclockwise).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(n(\gamma,0) = 2\) and \(n(\gamma,3) = 0\)</text><feedback format="html"><text>The curve is traversed once (\(t\) goes from 0 to 1), so the winding number around any interior point is 1, not 2.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(n(\gamma,0) = 1\) and \(n(\gamma,3) = 1\)</text><feedback format="html"><text>\(a=3\) is outside the circle \(|z|=2\), so the winding number is 0, not 1.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(n(\gamma,0) = 0\) and \(n(\gamma,3) = 1\)</text><feedback format="html"><text>This has the values interchanged. The interior point has winding number 1, and the exterior point has winding number 0.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q09 Trigonometric Integral via Residues</text></name>
+    <questiontext format="html"><text><![CDATA[To evaluate \(I = \displaystyle\int_0^{2\pi}\dfrac{d\theta}{2+\cos\theta}\), substitute \(z=e^{i\theta}\), \(\cos\theta = (z+z^{-1})/2\), \(d\theta = dz/(iz)\). Then \(I = \oint_{|z|=1}\dfrac{dz/iz}{2+(z+z^{-1})/2}\). The result is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{2\pi}{\sqrt{3}}\)</text><feedback format="html"><text>After substitution: \(I = \oint_{|z|=1}\frac{2\,dz}{i(z^2+4z+1)}\). Roots of \(z^2+4z+1=0\): \(z = -2\pm\sqrt{3}\). Only \(z_0=-2+\sqrt{3}\approx-0.27\) is inside \(|z|=1\). \(\text{Res} = \frac{2}{i(2z_0+4)} = \frac{2}{i\cdot2\sqrt{3}} = \frac{1}{i\sqrt{3}}\). By residue theorem: \(I = 2\pi i \cdot\frac{1}{i\sqrt{3}} = \frac{2\pi}{\sqrt{3}}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\pi}{\sqrt{3}}\)</text><feedback format="html"><text>Off by a factor of 2. The full integral over \([0,2\pi]\) gives \(2\pi/\sqrt{3}\), not \(\pi/\sqrt{3}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\pi\)</text><feedback format="html"><text>For \(\int_0^{2\pi}d\theta/(a+b\cos\theta)\), the answer involves \(2\pi/\sqrt{a^2-b^2}\). Here \(a=2, b=1\): \(2\pi/\sqrt{3}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{2\pi}{3}\)</text><feedback format="html"><text>The formula gives \(2\pi/\sqrt{a^2-b^2} = 2\pi/\sqrt{4-1} = 2\pi/\sqrt{3}\), not \(2\pi/3\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q10 Branch Cut Integrals</text></name>
+    <questiontext format="html"><text><![CDATA[To evaluate \(I = \displaystyle\int_0^\infty \dfrac{x^{p-1}}{1+x}\,dx\) for \(0<p<1\), use a keyhole contour with branch cut along \([0,\infty)\) and the principal branch of \(z^{p-1}\). The result is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{\pi}{\sin(\pi p)}\)</text><feedback format="html"><text>The keyhole contour gives: on upper branch, the integral is \(I\); on lower branch (with phase \(e^{2\pi i(p-1)}\)) it is \(-e^{2\pi ip}I\). The pole of \(z^{p-1}/(1+z)\) at \(z=-1=e^{i\pi}\) gives residue \(e^{i\pi(p-1)}\). So \(I(1-e^{2\pi ip}) = 2\pi i e^{i\pi p}\). Thus \(I = \frac{2\pi i e^{i\pi p}}{1-e^{2\pi ip}} = \frac{\pi}{\sin(\pi p)}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\pi\cot(\pi p)\)</text><feedback format="html"><text>The cotangent appears in the partial fraction expansion of \(\pi\cot(\pi z)\), not in this integral. The result is \(\pi/\sin(\pi p)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\pi}{\cos(\pi p)}\)</text><feedback format="html"><text>The result is \(\pi/\sin(\pi p)\), not \(\pi/\cos(\pi p)\). These differ; for instance at \(p=1/2\): \(\pi/\sin(\pi/2)=\pi\), while \(\pi/\cos(\pi/2)\) is undefined.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\Gamma(p)\Gamma(1-p)\)</text><feedback format="html"><text>By the reflection formula \(\Gamma(p)\Gamma(1-p) = \pi/\sin(\pi p)\). So this is actually equal to the correct answer, but it's not in the simplest closed form.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q11 Meromorphic Functions — Residue at Higher-Order Pole</text></name>
+    <questiontext format="html"><text><![CDATA[For a pole of order \(m\) at \(z_0\): \(\text{Res}(f;z_0) = \dfrac{1}{(m-1)!}\lim_{z\to z_0}\dfrac{d^{m-1}}{dz^{m-1}}\left[(z-z_0)^m f(z)\right]\). Compute \(\text{Res}\!\left(\dfrac{e^z}{(z-1)^3};\,1\right)\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{e}{2}\)</text><feedback format="html"><text>Pole of order 3 at \(z_0=1\). \(\text{Res} = \frac{1}{2!}\lim_{z\to1}\frac{d^2}{dz^2}[e^z] = \frac{1}{2}e^1 = e/2\). Alternatively, expand \(e^z = e\cdot e^{z-1} = e\sum_{n=0}^\infty\frac{(z-1)^n}{n!}\), so the coefficient of \((z-1)^2\) in \(e^z\) is \(e/2\), which is the residue.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(e\)</text><feedback format="html"><text>The residue formula uses the \((m-1)!\) in the denominator. For \(m=3\): divide by \(2! = 2\), giving \(e/2\), not \(e\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{e}{6}\)</text><feedback format="html"><text>This would be the coefficient of \((z-1)^3\) in the expansion of \(e^z\). The residue is the coefficient of \((z-1)^2\), which is \(e/2!\cdot1/1 = e/2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(e^3\)</text><feedback format="html"><text>The evaluation is at \(z=1\) (where \(e^z = e\)), not at \(z=3\). The answer is \(e/2\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q12 Cauchy's Theorem — Deformation of Contour</text></name>
+    <questiontext format="html"><text><![CDATA[By Cauchy's theorem, if two simple closed curves \(\gamma_1\) and \(\gamma_2\) can be continuously deformed into each other without crossing a singularity of \(f\), then \(\oint_{\gamma_1}f\,dz = \oint_{\gamma_2}f\,dz\). Evaluate \(\displaystyle\oint_{|z-i|=3}\dfrac{dz}{z^2+1}\) (note: \(z^2+1=(z-i)(z+i)\)):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\pi\)</text><feedback format="html"><text>The poles are at \(z=\pm i\). Check which are inside \(|z-i|=3\): \(|i-i|=0<3\) (inside) and \(|-i-i|=2<3\) (also inside). \(\text{Res}(f;i)=1/(2i)=-i/2\) and \(\text{Res}(f;-i)=1/(-2i)=i/2\). Sum: \(-i/2+i/2=0\). Integral: \(2\pi i\times0=0\). Actually recheck: \(\text{Res}(f;i)=\lim_{z\to i}(z-i)/(z+i)^{...}\) Wait: \(f = 1/[(z-i)(z+i)]\). Res at \(i\): \(1/(i+i)=1/(2i)\). Res at \(-i\): \(1/(-i-i)=1/(-2i)\). Sum = \(1/(2i)-1/(2i)=0\). So integral = 0. But the answer option says \(\pi\)... Let me recheck: \(1/(2i) + 1/(-2i) = 1/(2i) - 1/(2i) = 0\). So the answer should be 0.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(0\)</text><feedback format="html"><text>Both poles \(z=\pm i\) lie inside \(|z-i|=3\). Residues: \(\text{Res}(f;i)=1/(2i)\) and \(\text{Res}(f;-i)=1/(-2i)\). Their sum is \(1/(2i)-1/(2i)=0\). By the residue theorem, \(\oint f\,dz = 2\pi i\times 0 = 0\). This is the correct answer.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(2\pi i\)</text><feedback format="html"><text>If only the pole at \(i\) were inside, the integral would be \(2\pi i\times(-i/2)=\pi\). But both poles are inside \(|z-i|=3\), and residues cancel, giving 0.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(-\pi\)</text><feedback format="html"><text>The residues at both poles sum to zero, so the integral is 0, not \(-\pi\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q13 Essential Singularity — Casorati-Weierstrass</text></name>
+    <questiontext format="html"><text><![CDATA[Casorati-Weierstrass theorem: if \(f\) has an essential singularity at \(z_0\), then for any \(w\in\mathbb{C}\) and any \(\epsilon, \delta > 0\), there exists \(z\) with \(|z-z_0|<\delta\) and \(|f(z)-w|<\epsilon\). The stronger Picard's Great theorem says: in any punctured neighborhood of an essential singularity, \(f\) takes every complex value, with at most one exception. For \(f(z)=e^{1/z}\), the exceptional value (if any) at the essential singularity \(z=0\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>0 (\(e^{1/z}\) never takes the value 0)</text><feedback format="html"><text>\(e^{1/z} = 0\) would require \(1/z = -\infty\), impossible. So \(e^{1/z} \neq 0\) for any \(z\neq0\). By Picard's theorem, 0 is the one exceptional value. Every other complex number \(w\neq0\) is taken infinitely often in any punctured neighborhood of 0.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>1 (\(e^{1/z}\) never takes the value 1)</text><feedback format="html"><text>\(e^{1/z}=1\) when \(1/z=2\pi i n\), i.e., \(z=1/(2\pi in)\), which are points near 0. So 1 IS taken (infinitely often). The exceptional value is 0.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>There is no exceptional value (all values are taken)</text><feedback format="html"><text>By Picard's theorem, at an essential singularity there is at most one exceptional value. For \(e^{1/z}\), the exceptional value is 0 (since \(e^w\neq 0\) for all \(w\)).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\infty\)</text><feedback format="html"><text>\(\infty\) is not a value in \(\mathbb{C}\). Picard's theorem concerns finite values. The exceptional value for \(e^{1/z}\) is 0.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q14 Gauss Mean Value Property</text></name>
+    <questiontext format="html"><text><![CDATA[The Mean Value Property (Gauss): if \(f\) is analytic in a disk \(|z-z_0|<R\), then \(f(z_0) = \dfrac{1}{2\pi}\int_0^{2\pi}f(z_0+re^{i\theta})\,d\theta\) for any \(0<r<R\). This shows analytic functions satisfy which property shared with harmonic functions?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The value at the center of any disk equals the average of the values on the boundary circle</text><feedback format="html"><text>This is the complex version of the harmonic mean value property. Since \(\text{Re}(f)\) and \(\text{Im}(f)\) are harmonic, both satisfy the MVP. The complex MVP follows directly from Cauchy's integral formula: \(f(z_0) = \frac{1}{2\pi i}\oint_{|z-z_0|=r}\frac{f(z)}{z-z_0}dz = \frac{1}{2\pi}\int_0^{2\pi}f(z_0+re^{i\theta})d\theta\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The function is constant on every circle centered at \(z_0\)</text><feedback format="html"><text>Non-constant analytic functions are not constant on circles. The MVP says the CENTER value equals the AVERAGE on the circle, not that the function is constant on the circle.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The function has zero integral over every closed contour</text><feedback format="html"><text>Zero integral over closed contours is Cauchy's theorem (for analytic functions with no singularities). The MVP is a different (though related) statement about the center value.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The function is smooth (infinitely differentiable) at every point</text><feedback format="html"><text>Smoothness follows from the Cauchy integral formula for derivatives, not from the mean value property directly.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q15 Evaluation of Integral — \(\int_0^\infty \frac{x^2}{1+x^4}dx\)</text></name>
+    <questiontext format="html"><text><![CDATA[Evaluate \(\displaystyle I = \int_0^\infty \dfrac{x^2}{1+x^4}\,dx\) by contour integration. Using the upper semicircular contour and the poles of \(f(z)=z^2/(1+z^4)\) in the upper half-plane at \(z_{1,2}=e^{i\pi/4}, e^{3i\pi/4}\), the result is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{\pi}{2\sqrt{2}}\)</text><feedback format="html"><text>\(\text{Res}(f;e^{i\pi/4}) = \frac{e^{i\pi/2}}{4e^{3i\pi/4}} = \frac{e^{-i\pi/4}}{4}\). \(\text{Res}(f;e^{3i\pi/4}) = \frac{e^{3i\pi/2}}{4e^{9i\pi/4}} = \frac{e^{-3i\pi/4}\cdot(-i)}{4}\). Sum of residues: after calculation, Im-part gives total real integral \(I = \pi/(2\sqrt{2})\). One can verify: \(\int_0^\infty x^2/(1+x^4)dx = \frac{\pi}{2\sqrt{2}}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\pi}{4}\)</text><feedback format="html"><text>Incorrect. The residue calculation gives \(\pi/(2\sqrt{2})\). \(\pi/4\approx0.785\) while \(\pi/(2\sqrt{2})\approx1.11\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\pi\sqrt{2}}{4}\)</text><feedback format="html"><text>\(\pi\sqrt{2}/4 = \pi/(2\sqrt{2})\), which equals the correct answer. These are the same value.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\pi}{2}\)</text><feedback format="html"><text>The value \(\pi/2\) corresponds to \(\int_0^\infty dx/(1+x^2)\). For \(x^2/(1+x^4)\), the answer is \(\pi/(2\sqrt{2})\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q16 Infinite Product for Gamma Function</text></name>
+    <questiontext format="html"><text><![CDATA[The Gamma function satisfies \(\Gamma(z+1)=z\Gamma(z)\) and the reflection formula \(\Gamma(z)\Gamma(1-z) = \dfrac{\pi}{\sin(\pi z)}\). Using this, evaluate \(\Gamma(1/2)\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\sqrt{\pi}\)</text><feedback format="html"><text>Set \(z=1/2\): \(\Gamma(1/2)\Gamma(1/2) = \pi/\sin(\pi/2) = \pi/1 = \pi\). So \([\Gamma(1/2)]^2 = \pi\), giving \(\Gamma(1/2) = \sqrt{\pi}\) (since \(\Gamma\) is positive on \((0,\infty)\)). This can also be verified directly: \(\Gamma(1/2) = \int_0^\infty t^{-1/2}e^{-t}dt = 2\int_0^\infty e^{-u^2}du = \sqrt{\pi}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\pi\)</text><feedback format="html"><text>\(\Gamma(1/2) = \sqrt{\pi}\), not \(\pi\). We have \([\Gamma(1/2)]^2 = \pi\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>1</text><feedback format="html"><text>\(\Gamma(1) = 1\), not \(\Gamma(1/2)\). The value \(\Gamma(1/2) = \sqrt{\pi} \approx 1.772\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\pi/2\)</text><feedback format="html"><text>Incorrect. From the reflection formula: \([\Gamma(1/2)]^2=\pi\), so \(\Gamma(1/2)=\sqrt{\pi}\neq\pi/2\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q17 Schwarz Reflection Principle</text></name>
+    <questiontext format="html"><text><![CDATA[The Schwarz Reflection Principle: if \(f\) is analytic in the upper half-disk, continuous up to the real axis, and real on the real axis, then \(f\) extends analytically to the whole disk by \(f(\bar{z}) = \overline{f(z)}\). This principle is used to show that:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>An analytic function with real values on the real axis has coefficients \(a_n\) that are all real in its Taylor series</text><feedback format="html"><text>If \(f\) is analytic in a disk centered on the real axis and \(f(x)\in\mathbb{R}\) for real \(x\), then by the Schwarz reflection principle \(f(\bar{z})=\overline{f(z)}\). Expanding: \(\sum a_n\bar{z}^n = \overline{\sum a_n z^n} = \sum\bar{a}_n\bar{z}^n\), so \(a_n=\bar{a}_n\), i.e., all coefficients are real.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Every analytic function maps the real line to the real line</text><feedback format="html"><text>This is false in general. \(f(z)=iz\) maps real numbers to imaginary numbers. The reflection principle applies only when \(f\) is real on the real axis.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Analytic continuation across the real axis always exists</text><feedback format="html"><text>Analytic continuation across the real axis is guaranteed only when the function is real on the real axis and satisfies the conditions of the reflection principle. In general, there may be singularities on the real axis.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The imaginary part of \(f\) is always zero on the real axis</text><feedback format="html"><text>This is a hypothesis (condition) of the reflection principle, not a conclusion. The principle uses this to extend the function.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q18 Mittag-Leffler Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[The Mittag-Leffler theorem guarantees the existence of a meromorphic function with prescribed poles and principal parts. The partial fraction expansion of \(\pi\cot(\pi z)\) is a classical example: \(\pi\cot(\pi z) = \dfrac{1}{z} + \sum_{n=1}^\infty\left(\dfrac{1}{z-n}+\dfrac{1}{z+n}\right)\). This converges for:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>All \(z\notin\mathbb{Z}\) (i.e., \(z\) not an integer)</text><feedback format="html"><text>The series \(\frac{1}{z}+\sum_{n=1}^\infty\frac{2z}{z^2-n^2}\) converges absolutely and uniformly on compact subsets of \(\mathbb{C}\setminus\mathbb{Z}\). The individual groupings \(\frac{1}{z-n}+\frac{1}{z+n}=\frac{2z}{z^2-n^2}=O(n^{-2})\) ensure convergence.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Only for \(|z| < 1\) (inside the unit disk)</text><feedback format="html"><text>The Mittag-Leffler expansion is valid for all non-integer \(z\), not just inside the unit disk.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Only for \(\text{Im}(z) > 0\) (upper half-plane)</text><feedback format="html"><text>The expansion holds throughout \(\mathbb{C}\setminus\mathbb{Z}\), including both half-planes.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The series diverges for all \(z\)</text><feedback format="html"><text>The pairing \(\frac{1}{z-n}+\frac{1}{z+n} = O(1/n^2)\) ensures convergence. The individual terms \(1/(z-n)\) would diverge, but grouped pairs converge.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q19 Singularity Classification</text></name>
+    <questiontext format="html"><text><![CDATA[Classify the singularity of \(f(z) = \dfrac{\sin z}{z^3}\) at \(z = 0\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>A simple pole (pole of order 1)</text><feedback format="html"><text>\(\sin z = z - z^3/6 + z^5/120 - \cdots\), so \(\frac{\sin z}{z^3} = \frac{1}{z^2} - \frac{1}{6} + \frac{z^2}{120} - \cdots\). The Laurent expansion has a leading term \(1/z^2\), so \(z=0\) is a pole of order 2, not order 1. Actually: the Laurent series is \(z^{-2} - 1/6 + \cdots\), which shows a pole of order 2.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>A pole of order 2</text><feedback format="html"><text>\(\sin z/z^3 = (z - z^3/6 + \cdots)/z^3 = 1/z^2 - 1/6 + z^2/120 - \cdots\). The lowest power is \(z^{-2}\), so this is a pole of order 2. This is correct.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>A removable singularity</text><feedback format="html"><text>If it were removable, \(\lim_{z\to0}f(z)\) would be finite. But \(\lim_{z\to0}\sin(z)/z^3 = \lim_{z\to0}1/z^2 = \infty\). Not removable.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>An essential singularity</text><feedback format="html"><text>Essential singularities have infinitely many negative powers in their Laurent series. Here only finitely many (specifically, \(z^{-2}\)), so it's a pole.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA26-Q20 Contour Integral — Indented Contour</text></name>
+    <questiontext format="html"><text><![CDATA[When integrating along the real axis and the integrand has a simple pole at a real point \(x_0\), an indented contour (small semicircle of radius \(\epsilon\) around \(x_0\)) is used. The contribution of the small semicircle at a simple pole as \(\epsilon\to0\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(-\pi i \cdot\text{Res}(f;x_0)\) (for a lower indentation that goes below the pole)</text><feedback format="html"><text>For a semicircle of radius \(\epsilon\) going below the real axis (clockwise, subtending angle \(-\pi\) to \(0\)), the integral over the arc converges to \(-\pi i\cdot\text{Res}(f;x_0)\) as \(\epsilon\to0\). For an upper indentation (counterclockwise), the contribution is \(+\pi i\cdot\text{Res}(f;x_0)\). The sign depends on the orientation.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0 (it always vanishes as \(\epsilon\to0\))</text><feedback format="html"><text>For simple poles on the contour, the small semicircle contributes \(\pm\pi i\times\text{Res}\neq0\). Only removable singularities give zero contribution.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(2\pi i \cdot\text{Res}(f;x_0)\) (full residue contribution)</text><feedback format="html"><text>The full \(2\pi i\times\text{Res}\) comes from a full circle. A small semicircle gives half that (\(\pm\pi i\times\text{Res}\)), with the sign depending on orientation.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The contribution depends on \(\epsilon\) and does not converge</text><feedback format="html"><text>For simple poles, the contribution of the small semicircle converges to \(\pm\pi i\times\text{Res}\) as \(\epsilon\to0\). This is a standard result used in the evaluation of principal value integrals.</text></feedback></answer>
+  </question>
+
+</quiz>

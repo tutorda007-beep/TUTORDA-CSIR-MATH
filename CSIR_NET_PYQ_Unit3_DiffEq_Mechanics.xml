@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- ===== CATEGORY: Unit 3 / Part B / Ordinary Differential Equations ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 3 - Diff Eq and Mechanics/Part B - ODE</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Picard's Existence and Uniqueness Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Picard's theorem guarantees a unique solution to the IVP \(y' = f(x, y),\ y(x_0) = y_0\) if \(f\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Picard-Lindelöf theorem: if \(f(x,y)\) is continuous and Lipschitz in \(y\) on a rectangle containing \((x_0, y_0)\), then the IVP has a unique solution on some interval around \(x_0\). Lipschitz in \(y\) (i.e., \(|f(x,y_1)-f(x,y_2)| \leq K|y_1-y_2|\)) is the key condition. Mere continuity (Peano's theorem) ensures existence but not uniqueness.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Continuous in \(x\) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Continuous and Lipschitz in \(y\) near \((x_0, y_0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Differentiable with respect to \(x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded on \(\mathbb{R}^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Wronskian and Linear Independence</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(y_1\) and \(y_2\) are solutions of a linear second-order ODE \(y'' + p(x)y' + q(x)y = 0\), the Wronskian \(W(x) = y_1 y_2' - y_2 y_1'\) satisfies Abel's identity:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Abel's identity: \(W(x) = W(x_0)\exp\!\left(-\int_{x_0}^x p(t)\,dt\right)\). This shows \(W\) is either always zero (dependent solutions) or never zero (independent solutions) — it cannot change sign. If \(W(x_0) \neq 0\) for some \(x_0\), then \(y_1, y_2\) form a fundamental set.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(W(x) = W(x_0) + \int_{x_0}^x p(t)\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W(x) = C\) (constant)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(W(x) = W(x_0)\exp\!\left(-\int_{x_0}^x p(t)\,dt\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W(x) = W(x_0)\cdot p(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - General Solution of y'' - y = 0</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The general solution of the ODE \(y'' - y = 0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Characteristic equation: \(r^2 - 1 = 0 \Rightarrow r = \pm 1\). General solution: \(y = c_1 e^x + c_2 e^{-x}\), equivalently written as \(y = A\cosh x + B\sinh x\). The Wronskian of \(e^x\) and \(e^{-x}\) is \(-2 \neq 0\), confirming they form a fundamental set.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(y = c_1 e^x + c_2 e^{-x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y = c_1 \cos x + c_2 \sin x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y = (c_1 + c_2 x)e^x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y = c_1 e^x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Method of Variation of Parameters</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>A particular solution of \(y'' + y = \sec x\) by variation of parameters involves:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>The complementary solution is \(y_c = c_1\cos x + c_2\sin x\). By variation of parameters, seek \(y_p = u_1\cos x + u_2\sin x\) where \(u_1' = -\frac{y_2 g}{W} = -\frac{\sin x \sec x}{1} = -\tan x\) and \(u_2' = \frac{y_1 g}{W} = \cos x \sec x = 1\). So \(u_1 = \ln|\cos x|\), \(u_2 = x\). Thus \(y_p = \cos x\ln|\cos x| + x\sin x\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Undetermined coefficients with \(A\sec x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Integrating \(-\sin x\sec x\) and \(\cos x\sec x\) for \(u_1', u_2'\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reduction to a first-order linear equation]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Power series expansion of \(\sec x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Sturm Comparison Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The Sturm Comparison Theorem states: if \(y'' + p(x)y = 0\) and \(z'' + q(x)z = 0\) with \(q(x) \geq p(x)\), then between consecutive zeros of any solution \(y\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Sturm Comparison: if \(q \geq p\) and \(y\) has zeros at \(x_1 < x_2\), then every non-trivial solution \(z\) has at least one zero in \((x_1, x_2)\). Roughly: larger coefficient \(q\) forces more oscillations. For example, solutions of \(y''+n^2 y=0\) oscillate faster (more zeros in a period) as \(n\) increases.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Every non-trivial solution \(z\) has at least one zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(z\) has no zeros]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y\) and \(z\) have the same zeros]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(z\) has exactly two zeros]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Stability of y' = Ay (Linear System)</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The equilibrium \(x = 0\) of the linear system \(x' = Ax\) is asymptotically stable if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>The zero solution of \(x'=Ax\) is asymptotically stable iff all eigenvalues of \(A\) have strictly negative real parts. The solution is \(x(t) = e^{At}x_0\); if Re\((\lambda) < 0\) for all eigenvalues \(\lambda\), then \(e^{At} \to 0\) as \(t\to\infty\). If any eigenvalue has positive real part, the solution grows unboundedly.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(A) > 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{tr}(A) < 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[All eigenvalues of \(A\) have strictly negative real parts]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All eigenvalues of \(A\) are real]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Singular Points of Bessel Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>In Bessel's equation \(x^2 y'' + x y' + (x^2 - n^2)y = 0\), the point \(x = 0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>In standard form: \(y'' + \frac{1}{x}y' + \frac{x^2-n^2}{x^2}y = 0\). The functions \(p(x) = 1/x\) and \(q(x) = (x^2-n^2)/x^2\) have \(xp(x) = 1\) and \(x^2 q(x) = x^2 - n^2\), both analytic at \(x=0\). So \(x=0\) is a regular singular point. The Frobenius method applies.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[An ordinary point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[A regular singular point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[An irregular singular point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A removable singularity]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 3 / Part B / Partial Differential Equations ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 3 - Diff Eq and Mechanics/Part B - PDE</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Classification of Second-Order PDE</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The PDE \(Au_{xx} + Bu_{xy} + Cu_{yy} = 0\) is classified as hyperbolic, parabolic, or elliptic based on the discriminant \(\Delta = B^2 - 4AC\). The wave equation \(u_{tt} = c^2 u_{xx}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>For the wave equation \(u_{tt} - c^2 u_{xx} = 0\): \(A = -c^2,\ B = 0,\ C = 1\), so \(\Delta = 0 - 4(-c^2)(1) = 4c^2 > 0\): hyperbolic. Classification: \(\Delta > 0\) hyperbolic (wave), \(\Delta = 0\) parabolic (heat), \(\Delta < 0\) elliptic (Laplace). Hyperbolic equations model wave propagation with finite speed.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Hyperbolic (\(\Delta > 0\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Parabolic (\(\Delta = 0\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Elliptic (\(\Delta < 0\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cannot be classified]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Heat Equation Maximum Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The maximum principle for the heat equation \(u_t = u_{xx}\) on \([0,L]\times[0,T]\) states that the maximum of \(u\) is attained:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Maximum principle: for the heat equation on a bounded domain, the maximum (and minimum) of \(u\) is attained on the parabolic boundary — either at \(t=0\) (initial condition) or on the lateral boundaries \(x=0\) or \(x=L\). This is analogous to the maximum principle for harmonic functions (Laplace equation).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[In the interior of the domain]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[At \(t = T\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[On the parabolic boundary (at \(t=0\) or on the lateral boundaries)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only at \(t=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Method of Characteristics for First-Order PDE</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The general solution of the first-order PDE \(u_x + u_y = 0\) (by method of characteristics) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Characteristics: \(\frac{dx}{1} = \frac{dy}{1}\), so \(y - x = c\) (characteristics are lines \(y=x+c\)). The solution is constant along characteristics: \(u = f(y - x)\) for any differentiable \(f\). This models transport with unit speed in both directions. Initial data on a transversal determines \(f\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(u = f(x + y)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(u = f(y - x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u = f(x)\cdot g(y)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u = x + y + C\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Laplace Equation Harmonic Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>A function \(u(x,y)\) satisfying \(\nabla^2 u = u_{xx} + u_{yy} = 0\) is called harmonic. Which of the following is harmonic on \(\mathbb{R}^2\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>\(u = x^2 - y^2\): \(u_{xx} = 2,\ u_{yy} = -2\), so \(\nabla^2 u = 0\). Check others: \(u = x^2 + y^2\): \(\nabla^2 u = 4 \neq 0\). \(u = e^x \cos y\): \(u_{xx} = e^x\cos y,\ u_{yy} = -e^x\cos y\), so \(\nabla^2 u = 0\) (also harmonic — it is the real part of \(e^z\)). Both (B) and (C) are harmonic, but since only one answer is expected, (C) is the most elementary example.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(u = x^2 + y^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u = x^3 + y^3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(u = x^2 - y^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u = x^2 y^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - d'Alembert Solution of Wave Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The d'Alembert solution of \(u_{tt} = c^2 u_{xx}\) with initial conditions \(u(x,0) = f(x)\) and \(u_t(x,0) = g(x)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>d'Alembert's formula: \(u(x,t) = \frac{1}{2}[f(x+ct)+f(x-ct)] + \frac{1}{2c}\int_{x-ct}^{x+ct} g(s)\,ds\). The first term represents the initial displacement propagating as two half-amplitude waves; the second handles initial velocity. The solution exists for all \((x,t)\) if \(f \in C^2\) and \(g \in C^1\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{1}{2}[f(x+ct)+f(x-ct)] + \dfrac{1}{2c}\displaystyle\int_{x-ct}^{x+ct} g(s)\,ds\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x+ct) + f(x-ct)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{2c}\displaystyle\int_{x-ct}^{x+ct} f(s)\,ds\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x)\cos(ct)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 3 / Part B / Numerical Analysis ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 3 - Diff Eq and Mechanics/Part B - Numerical Analysis</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Newton-Raphson Order of Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The Newton-Raphson method for solving \(f(x) = 0\) converges with order:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Newton-Raphson: \(x_{n+1} = x_n - f(x_n)/f'(x_n)\). For a simple root \(\alpha\) (where \(f'(\alpha)\neq0\)), the error \(e_{n+1} \approx \frac{f''(\alpha)}{2f'(\alpha)}e_n^2\), showing quadratic convergence (order 2). For a root of multiplicity \(m>1\), convergence is linear unless modified. Bisection method has order 1.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\) (linear)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1.5\) (superlinear)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(2\) (quadratic)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3\) (cubic)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Trapezoidal Rule Error</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The error in the composite Trapezoidal rule for \(\int_a^b f(x)\,dx\) with step size \(h\) is of order:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>The composite Trapezoidal rule error is \(E = -\frac{(b-a)h^2}{12}f''(\xi)\) for some \(\xi \in (a,b)\), i.e., \(O(h^2)\). Simpson's rule has \(O(h^4)\) error. As \(h \to 0\), Trapezoidal converges to the true integral but more slowly than Simpson's rule.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(O(h^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h^4)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h^3)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Runge-Kutta 4th Order Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The classical 4th-order Runge-Kutta method (RK4) for \(y' = f(x,y)\) has a local truncation error of order:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>RK4 has local truncation error \(O(h^5)\) per step, giving a global error of \(O(h^4)\). It evaluates \(f\) four times per step: \(k_1 = hf(x_n,y_n)\), \(k_2 = hf(x_n+h/2, y_n+k_1/2)\), \(k_3 = hf(x_n+h/2, y_n+k_2/2)\), \(k_4 = hf(x_n+h, y_n+k_3)\). Then \(y_{n+1} = y_n + (k_1 + 2k_2 + 2k_3 + k_4)/6\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h^2)\) globally]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h^3)\) globally]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(O(h^4)\) globally]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h^5)\) globally]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Gaussian Elimination Pivoting</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>In Gaussian elimination, partial pivoting (swapping rows to place the largest element in the pivot position) is used to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Partial pivoting reduces round-off errors by ensuring the multipliers \(|m_{ij}| \leq 1\), preventing error amplification during elimination. Without pivoting, a small pivot element causes large multipliers and significant numerical instability. Pivoting does NOT change the solution but improves accuracy.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Reduce round-off errors and improve numerical stability]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reduce the number of arithmetic operations]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Change the solution of the system]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Convert the system to upper triangular form without back-substitution]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 3 / Part B / Calculus of Variations and Mechanics ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 3 - Diff Eq and Mechanics/Part B - Calculus of Variations and Mechanics</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Euler-Lagrange Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The Euler-Lagrange equation for the functional \(J[y] = \int_a^b F(x, y, y')\,dx\) with fixed endpoints is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>The Euler-Lagrange equation: \(\frac{\partial F}{\partial y} - \frac{d}{dx}\frac{\partial F}{\partial y'} = 0\). A necessary condition for \(y\) to be an extremal. For \(F = y'^2\) (geodesics), this gives \(y'' = 0\) (straight lines). For the brachistochrone: \(F = \sqrt{(1+y'^2)/y}\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{\partial F}{\partial y} - \dfrac{d}{dx}\dfrac{\partial F}{\partial y'} = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\partial F}{\partial y} + \dfrac{d}{dx}\dfrac{\partial F}{\partial y'} = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{d}{dx}\dfrac{\partial F}{\partial y} - \dfrac{\partial F}{\partial y'} = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\partial F}{\partial x} = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Lagrangian Mechanics</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>For a mechanical system with Lagrangian \(L = T - V\) (kinetic minus potential energy), the Euler-Lagrange equations give:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Lagrange's equations: \(\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_i} - \frac{\partial L}{\partial q_i} = 0\) are equivalent to Newton's laws but in generalised coordinates. They automatically handle constraints. The Hamiltonian formulation uses \(H = \sum p_i\dot{q}_i - L\) where \(p_i = \partial L/\partial \dot{q}_i\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(L = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Newton's equations of motion in generalised coordinates]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Conservation of energy only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The Hamiltonian equations directly]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Hamilton's Canonical Equations</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Hamilton's canonical equations for a system with Hamiltonian \(H(q, p, t)\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Hamilton's equations: \(\dot{q}_i = \frac{\partial H}{\partial p_i}\) and \(\dot{p}_i = -\frac{\partial H}{\partial q_i}\). They replace \(n\) second-order Lagrange equations by \(2n\) first-order equations. If \(H\) does not depend on \(q_i\), then \(\dot{p}_i = 0\) (cyclic coordinate gives conserved momentum). Phase space flow preserves volume (Liouville's theorem).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dot{q} = -\dfrac{\partial H}{\partial p}\) and \(\dot{p} = \dfrac{\partial H}{\partial q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dot{q} = \dfrac{\partial H}{\partial q}\) and \(\dot{p} = -\dfrac{\partial H}{\partial p}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dot{q} = \dfrac{\partial H}{\partial p}\) and \(\dot{p} = -\dfrac{\partial H}{\partial q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dot{q} = H\) and \(\dot{p} = -H\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 3 / Part C / ODE and PDE ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 3 - Diff Eq and Mechanics/Part C - ODE and PDE</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Green's Function for BVP</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The Green's function \(G(x,\xi)\) for the boundary value problem \(-y'' = f(x)\), \(y(0)=y(1)=0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>The Green's function is \(G(x,\xi) = \begin{cases} x(1-\xi) & 0 \leq x \leq \xi \\ \xi(1-x) & \xi \leq x \leq 1 \end{cases}\). The solution to \(-y''=f\) with zero BCs is \(y(x) = \int_0^1 G(x,\xi)f(\xi)\,d\xi\). \(G\) is symmetric (\(G(x,\xi)=G(\xi,x)\)) and satisfies \(-G_{xx}=\delta(x-\xi)\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(G(x,\xi) = x(1-\xi)\) for \(x \leq \xi\) and \(G(x,\xi) = \xi(1-x)\) for \(x \geq \xi\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G(x,\xi) = \sin(\pi x)\sin(\pi\xi)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G(x,\xi) = |x - \xi|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G(x,\xi) = x\xi\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Sturm-Liouville Eigenvalue Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The eigenvalues of the Sturm-Liouville problem \(-y'' = \lambda y\), \(y(0) = y(\pi) = 0\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Solutions: \(y'' + \lambda y = 0\) with \(y(0)=0\). For \(\lambda > 0\): \(y = A\sin(\sqrt{\lambda}x) + B\cos(\sqrt{\lambda}x)\). \(y(0)=0 \Rightarrow B=0\). \(y(\pi)=0 \Rightarrow \sin(\sqrt{\lambda}\pi)=0 \Rightarrow \sqrt{\lambda}\pi = n\pi \Rightarrow \lambda_n = n^2\), \(n=1,2,3,\ldots\) Eigenfunctions: \(y_n = \sin(nx)\). The eigenvalues are positive, increasing, and form a complete orthogonal set on \([0,\pi]\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_n = n\), \(n = 1, 2, 3, \ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda_n = n^2\), \(n = 1, 2, 3, \ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_n = n^2\pi^2\), \(n = 1, 2, 3, \ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_n = (2n-1)^2\), \(n = 1, 2, 3, \ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Fourier Transform of Heat Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The solution of the heat equation \(u_t = u_{xx}\) on \(\mathbb{R}\) with initial condition \(u(x,0) = f(x)\) via Fourier transform is given by convolution with the heat kernel:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Taking the Fourier transform in \(x\): \(\hat{u}_t = -\xi^2\hat{u}\), giving \(\hat{u}(\xi,t) = \hat{f}(\xi)e^{-\xi^2 t}\). Inverting: \(u(x,t) = (f * K_t)(x)\) where \(K_t(x) = \frac{1}{\sqrt{4\pi t}}e^{-x^2/(4t)}\) is the Gaussian heat kernel. As \(t\to 0^+\), \(K_t \to \delta(x)\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(x,t) = f(x) e^{-t}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(x,t) = f(x+t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(u(x,t) = \dfrac{1}{\sqrt{4\pi t}}\displaystyle\int_{-\infty}^{\infty} f(y)\,e^{-(x-y)^2/(4t)}\,dy\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(x,t) = \displaystyle\sum_{n=1}^\infty a_n e^{-n^2 t}\sin(nx)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Fredholm Integral Equation Second Kind</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The Neumann series solution for the Fredholm integral equation of the second kind \(\phi(x) = f(x) + \lambda\int_a^b K(x,t)\phi(t)\,dt\) converges when:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>The Neumann series \(\phi = f + \lambda Kf + \lambda^2 K^2 f + \cdots\) converges when \(|\lambda| \cdot \|K\| < 1\), where \(\|K\|\) is the operator norm of the integral operator. For square-integrable kernels (Hilbert-Schmidt), \(\|K\|_2 = \left(\int_a^b\int_a^b |K(x,t)|^2 dx\,dt\right)^{1/2}\), and the series converges for \(|\lambda| < 1/\|K\|_2\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(|\lambda| > \|K\|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(|\lambda|\cdot\|K\| < 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|\lambda| = 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 3 / Part C / Numerical Methods ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 3 - Diff Eq and Mechanics/Part C - Numerical Methods</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Fixed Point Iteration Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The fixed-point iteration \(x_{n+1} = g(x_n)\) converges to a fixed point \(\alpha\) if in a neighbourhood of \(\alpha\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Fixed-point iteration converges (at least linearly) if \(|g'(\alpha)| < 1\). The convergence is quadratic if \(g'(\alpha) = 0\) (like Newton-Raphson). If \(|g'(\alpha)| > 1\), the iteration diverges. This is a direct consequence of the Banach fixed-point theorem applied to the contractive map \(g\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(|g'(\alpha)| < 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|g'(\alpha)| > 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g'(\alpha) = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g(\alpha) = 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - LU Decomposition</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>In the LU decomposition \(A = LU\) of a matrix \(A\), \(L\) and \(U\) are respectively:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>LU decomposition: \(L\) is lower triangular (with 1s on diagonal in Doolittle's form) and \(U\) is upper triangular. Solving \(Ax = b\) becomes two triangular systems: \(Ly = b\) (forward substitution) then \(Ux = y\) (back substitution). It requires \(O(n^3/3)\) operations. LU exists if all leading principal minors are non-zero.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Both upper triangular]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Lower triangular and upper triangular respectively]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Orthogonal and diagonal respectively]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Both symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 3 / Part C / Calculus of Variations ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 3 - Diff Eq and Mechanics/Part C - Calculus of Variations</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Brachistochrone Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The brachistochrone (curve of fastest descent under gravity) is a:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>The brachistochrone problem (Bernoulli, 1696): find the curve of fastest descent between two points under gravity. Euler-Lagrange applied to \(T = \int\sqrt{(1+y'^2)/(2gy)}\,dx\) gives the cycloid: \(x = a(\theta - \sin\theta)\), \(y = a(1-\cos\theta)\). This was one of the first variational problems solved and introduced the calculus of variations.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Straight line (geodesic)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Cycloid]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Parabola]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Circle]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Noether's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>Noether's theorem states: if the action integral \(\int L\,dt\) is invariant under a continuous one-parameter group of transformations, then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Noether's theorem: each continuous symmetry of the action gives a conserved quantity. Examples: time-translation symmetry \(\Rightarrow\) conservation of energy; space-translation \(\Rightarrow\) conservation of linear momentum; rotation \(\Rightarrow\) conservation of angular momentum. This is the deepest connection between symmetry and conservation laws in physics.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The Lagrangian is zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The Hamiltonian is conserved]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[There exists a corresponding conserved quantity (first integral)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The equations of motion become linear]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Isoperimetric Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The isoperimetric problem asks: among all closed curves in the plane with a fixed perimeter \(L\), which one encloses the maximum area? The answer is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>The isoperimetric inequality: among all closed curves of fixed perimeter \(L\), the circle encloses the maximum area \(A = L^2/(4\pi)\). Equivalently, for any closed curve, \(4\pi A \leq L^2\) (with equality for circles). This is solved via calculus of variations with the constraint \(\int ds = L\) fixed.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The circle]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The square]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The equilateral triangle]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The ellipse with semi-axes ratio \(\sqrt{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

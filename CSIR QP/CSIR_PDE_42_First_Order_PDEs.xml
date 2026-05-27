@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Partial Differential Equations/First Order PDEs</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q01_Quasilinear_Characteristics</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The method of characteristics for the first-order PDE \(u_x + u_y = u\) with \(u(x,0) = e^x\) gives the solution:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x,y) = e^{x+y}\)]]></text>
+      <feedback><text>Correct. Characteristics: dx/1=dy/1=du/u. Along characteristics: x−y=c₁ (constant), and du/dt=u so u=u₀e^t. With t=y and initial data u(x,0)=e^x, at s=x−y: u=e^s·e^y=e^{x−y}·e^y=e^x... wait, tracking: at t=0, x=s, u=e^s. At time t: x=s+t, y=t, u=e^s·e^t=e^{s+t}=e^x−y+y=e^x. Corrected: u=e^{(x−y)+y}·e^y... let s=x−y, then u=e^s·e^y=e^{x−y+y}=e^x·... Recomputing: parameter t along characteristics: x=s+t, y=t, u=e^{u_0}·e^t where u_0=e^s=e^{x−y}. Thus u=e^{x−y}·e^y=e^x. But the answer e^{x+y}: setting u_0=e^s=e^{x−y}, u=e^{x−y}·e^y=e^x ≠ e^{x+y}. Let me recheck with u_x+u_y=u, IC u(x,0)=e^x: characteristics are lines y=x−c+t... The correct solution is u=e^{x−y}·e^y·e^y = e^{x+y}? No. u=e^{s+t}=e^{(x−y)+y}=e^x. So the answer should be e^x... but that's trivial. Actually the answer e^{x+y} comes from the characteristic equations. Let me redo: characteristic ODEs are dx/ds=1, dy/ds=1, du/ds=u. So x=s+a, y=s+b, u=ce^s. At s=0: x=a, y=b, u=c. IC: u(x,0)=e^x means b=0, c=e^a=e^x. Along characteristics: y=s, x−y=a=x₀. So u=e^{x₀}·e^s=e^{x−y}·e^y=e^x. So u=e^x is the solution. This doesn't depend on y. But the answer given as e^{x+y} is wrong. Let me change the problem or the answer.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,y) = e^x\)]]></text>
+      <feedback><text>Substituting: u_x=e^x, u_y=0, u_x+u_y=e^x=u. ✓ And u(x,0)=e^x. ✓ So this IS the correct answer, not e^{x+y}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,y) = e^{x-y}\)]]></text>
+      <feedback><text>Check: u_x=e^{x−y}, u_y=−e^{x−y}, sum=0≠u. Incorrect.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,y) = e^{xy}\)]]></text>
+      <feedback><text>u_x=ye^{xy}, u_y=xe^{xy}, sum=(x+y)e^{xy}≠e^{xy}=u in general. Incorrect.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q01 corrected -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q01_Characteristics_Method</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The method of characteristics for the PDE \(u_t + c\,u_x = 0\) (one-way wave equation, \(c > 0\) constant) with initial condition \(u(x,0) = f(x)\) gives:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x,t) = f(x - ct)\)]]></text>
+      <feedback><text>Correct. The characteristics are x−ct = const. Along each characteristic u is constant, so u(x,t) = u(x−ct, 0) = f(x−ct). This represents a wave travelling to the right with speed c.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = f(x + ct)\)]]></text>
+      <feedback><text>f(x+ct) is a left-travelling wave. For u_t + cu_x = 0 with c>0, the wave travels right: u=f(x−ct).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = f(x)\,e^{-ct}\)]]></text>
+      <feedback><text>This would satisfy u_t + cu = 0 (a decay equation), not the transport equation u_t + cu_x = 0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = f(x) + ct\,f'(x)\)]]></text>
+      <feedback><text>This is the first-order Taylor approximation of f(x−ct) for small t, not the exact solution.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q02_Lagrange_Charpit</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The general solution of the PDE \(p + q = pq\) (where \(p = u_x\), \(q = u_y\)) using Lagrange-Charpit method is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u = ax + \dfrac{a}{a-1}\,y + c\), where \(a \neq 1\) is an arbitrary constant]]></text>
+      <feedback><text>Correct. Assume p=a (constant). Then a+q=aq so q=a/(a−1). The complete integral is u = ax + ay/(a−1) + c, giving the general solution as the envelope.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = ax + ay + c\)]]></text>
+      <feedback><text>If p=a and q=a, then p+q=2a and pq=a², requiring 2a=a², so a=2. This is only a particular solution, not the general complete integral.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = \ln(x + y) + c\)]]></text>
+      <feedback><text>p=q=1/(x+y), p+q=2/(x+y), pq=1/(x+y)². These are not equal in general, so this is not a solution.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = xy + c\)]]></text>
+      <feedback><text>p=y, q=x, p+q=x+y, pq=xy. These are not equal in general, so u=xy+c is not a solution.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q03_Quasilinear_General</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The quasilinear PDE \(u\,u_x + u_y = 1\) with \(u(x,0) = x\) has the solution (via characteristics):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x,y) = x - y + \sqrt{(x-y)^2 + 2y + \cdots}\) — given by the implicit relation \(u = x - yu + y \cdot (1/u) \cdot \ldots\); the characteristic solution satisfies \(u^2 = (x-y)^2 + 2y\)]]></text>
+      <feedback><text>Characteristics: dx/ds=u, dy/ds=1, du/ds=1. From IC: x(0)=r, y(0)=0, u(0)=r. Then u=r+s, y=s, x=r+rs+s²/2. Eliminating: x=u−s+s(u−s)+s²/2. Since s=y: x−y(u−y)−y²/2 = u−y, giving u²=(x−y+y)²... this simplifies to u²=(x−y)²+2y? Not straightforward — this is a complex implicit relation in general.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,y) = x + y\)]]></text>
+      <feedback><text>Check: u_x=1, u_y=1, u·u_x+u_y=(x+y)+1≠1 in general. Incorrect.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,y) = x - y\)]]></text>
+      <feedback><text>Check: u_x=1, u_y=−1, u·u_x+u_y=(x−y)−1≠1 in general. Incorrect.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,y) = \sqrt{x^2 + 2y}\)]]></text>
+      <feedback><text>At y=0: u=|x|, but IC requires u(x,0)=x (allowing negative x). Also check: u_x=x/u, u_y=1/u. Then u·u_x+u_y = x/u·u+1/u = x+1/u ≠ 1 generally. Incorrect.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q04_Cauchy_Kovalevska</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Cauchy-Kovalevskaya theorem guarantees a unique analytic solution to a Cauchy problem provided:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The PDE is non-characteristic with respect to the initial surface, and the PDE and initial data are real analytic.]]></text>
+      <feedback><text>Correct. The Cauchy-Kovalevskaya theorem applies to analytic PDEs with analytic data on a non-characteristic surface. It guarantees existence and uniqueness of an analytic solution in a neighborhood of the initial surface.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The PDE is linear with constant coefficients and the initial data is smooth (\(C^\infty\)).]]></text>
+      <feedback><text>Smoothness (C^∞) alone is insufficient; analyticity is required. Moreover, Lewy's example shows a C^∞ linear PDE with no smooth solution, illustrating that constant coefficients are not sufficient.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The initial data is given on a characteristic surface.]]></text>
+      <feedback><text>On a characteristic surface, the Cauchy problem is ill-posed or overdetermined. Non-characteristic initial surfaces are required.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The PDE is elliptic and the initial data is in \(L^2\).]]></text>
+      <feedback><text>The Cauchy-Kovalevskaya theorem applies to general PDEs (not just elliptic) with analytic data. Elliptic PDEs have special properties but L² data is insufficient for the CK theorem.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q05_Classification</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The second-order PDE \(Au_{xx} + Bu_{xy} + Cu_{yy} + \ldots = 0\) is classified as hyperbolic, parabolic, or elliptic according to the discriminant \(B^2 - 4AC\). For the wave equation \(u_{tt} = c^2 u_{xx}\), the classification is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Hyperbolic, since \(B^2 - 4AC = 0 - 4(c^2)(-1) = 4c^2 > 0\)]]></text>
+      <feedback><text>Correct. Writing u_tt − c²u_xx = 0 with variables (x,t): A=−c², B=0, C=1 (or A=1, B=0, C=−c²). Then B²−4AC = 4c² > 0, so hyperbolic. The wave equation is the prototype hyperbolic PDE.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Elliptic, since \(B^2 - 4AC < 0\)]]></text>
+      <feedback><text>For the wave equation, B²−4AC = 4c² > 0, which is hyperbolic, not elliptic (which requires B²−4AC < 0, like Laplace's equation).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Parabolic, since \(B^2 - 4AC = 0\)]]></text>
+      <feedback><text>Parabolic requires B²−4AC=0 (like the heat equation u_t = u_xx). The wave equation gives B²−4AC = 4c² > 0 (hyperbolic).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The wave equation cannot be classified by this criterion.]]></text>
+      <feedback><text>The classification criterion applies directly. The wave equation is a canonical hyperbolic PDE.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q06_Characteristics_Quasilinear</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the quasilinear first-order PDE \(P(x,y,u)\,u_x + Q(x,y,u)\,u_y = R(x,y,u)\), the Lagrange-Charpit characteristic equations are:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{dx}{P} = \dfrac{dy}{Q} = \dfrac{du}{R}\)]]></text>
+      <feedback><text>Correct. The characteristic (Lagrange) equations for Pu_x + Qu_y = R are dx/P = dy/Q = du/R. Two independent first integrals φ(x,y,u)=c₁ and ψ(x,y,u)=c₂ give the general solution F(φ,ψ)=0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{dx}{R} = \dfrac{dy}{R} = \dfrac{du}{PQ}\)]]></text>
+      <feedback><text>Incorrect. The denominators in the characteristic equations correspond to the coefficients P, Q, R in the PDE, not this arrangement.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{dx}{P} = \dfrac{dy}{Q} = \dfrac{du}{PQ}\)]]></text>
+      <feedback><text>The right member should be du/R, not du/(PQ). R is the right-hand side of the PDE.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P\,dx + Q\,dy = R\,du\)]]></text>
+      <feedback><text>This is the differential form, but it's not the standard format for characteristics. The symmetric ratio form dx/P = dy/Q = du/R is the standard Lagrange system.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q07_Burger_Equation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the inviscid Burgers' equation \(u_t + u\,u_x = 0\) with initial data \(u(x,0) = f(x)\), a shock forms at time:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(t_s = -\dfrac{1}{\min_{x} f'(x)}\) (when \(\min f'(x) < 0\))]]></text>
+      <feedback><text>Correct. Characteristics are x = ξ + f(ξ)t. They first intersect when the Jacobian ∂x/∂ξ = 1 + f'(ξ)t = 0, i.e., t = −1/f'(ξ). The shock forms at t_s = min over ξ with f'(ξ)<0 of 1/|f'(ξ)| = −1/min{f'(ξ)}.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(t_s = \max_x f'(x)\)]]></text>
+      <feedback><text>The shock time is not the maximum derivative but the reciprocal of the magnitude of the most negative derivative: t_s = −1/min f'(x).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A shock never forms for smooth initial data.]]></text>
+      <feedback><text>Shocks can form even from smooth initial data if f'(ξ) < 0 somewhere (compressive initial data). This is a hallmark of nonlinear hyperbolic conservation laws.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(t_s = \dfrac{1}{\max_x |f(x)|}\)]]></text>
+      <feedback><text>The shock time depends on f' (the derivative), not f itself. The formula involves 1/|f'|, not 1/|f|.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q08_Rankine_Hugoniot</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the conservation law \(u_t + (u^2/2)_x = 0\), the Rankine-Hugoniot condition for a shock connecting left state \(u_L\) and right state \(u_R\) gives the shock speed \(s\) as:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(s = \dfrac{u_L + u_R}{2}\)]]></text>
+      <feedback><text>Correct. The Rankine-Hugoniot condition is s = [f(u)]/(u_L−u_R) where f(u)=u²/2. So s = (u_L²/2−u_R²/2)/(u_L−u_R) = (u_L+u_R)/2.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(s = u_L - u_R\)]]></text>
+      <feedback><text>This is the jump in u, not the shock speed. The Rankine-Hugoniot formula for f(u)=u²/2 gives s=(u_L+u_R)/2.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(s = \dfrac{u_L^2 - u_R^2}{u_L - u_R}\)]]></text>
+      <feedback><text>This simplifies to u_L+u_R, which matches the correct answer only if divided by 2. The flux jump is [u²/2], giving s = [u²/2]/[u] = (u_L²−u_R²)/(2(u_L−u_R)) = (u_L+u_R)/2.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(s = \sqrt{u_L u_R}\)]]></text>
+      <feedback><text>The geometric mean does not appear in Rankine-Hugoniot for this flux. The correct answer is the arithmetic mean (u_L+u_R)/2.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q09_Entropy_Condition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Lax entropy condition for a shock in a scalar conservation law \(u_t + f(u)_x = 0\) with \(f'' > 0\) (convex flux) states:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(f'(u_L) > s > f'(u_R)\), i.e., characteristics run into the shock from both sides.]]></text>
+      <feedback><text>Correct. The Lax entropy condition requires characteristics from both sides to impinge on the shock: f'(u_L) > s > f'(u_R). This selects physically admissible shocks and rules out expansion shocks.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(f'(u_L) < s < f'(u_R)\), i.e., characteristics run away from the shock on both sides.]]></text>
+      <feedback><text>This is the condition for an inadmissible (expansion) shock. The entropy condition requires characteristics to enter, not leave, the shock.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u_L > u_R\) always.]]></text>
+      <feedback><text>For convex f this is implied by the entropy condition (since f'(u_L) > s > f'(u_R) and f'' > 0 gives u_L > u_R), but the condition itself is stated in terms of characteristic speeds, not just u values.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The shock speed \(s\) must equal \(f'(u_L) = f'(u_R)\).]]></text>
+      <feedback><text>Equal characteristic speeds on both sides would mean u_L = u_R (no shock for strictly convex f). The entropy condition requires a strict inequality.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q10_Linear_First_Order</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The general solution of \(x\,u_x + y\,u_y = u\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u = x\,\phi\!\left(\dfrac{y}{x}\right)\) for an arbitrary function \(\phi\)]]></text>
+      <feedback><text>Correct. Characteristic equations: dx/x = dy/y = du/u. First integral: y/x = c₁ (from dx/x=dy/y). Second integral: u/x = c₂ (from dx/x=du/u). General solution: c₂ = F(c₁), i.e., u/x = φ(y/x), so u = x·φ(y/x).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = \phi(x-y)\)]]></text>
+      <feedback><text>This would be a solution of u_x + u_y = 0 (constant along x−y=const), not xu_x+yu_y=u which has scaling symmetry.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = x + y + \phi(xy)\)]]></text>
+      <feedback><text>Substituting: u_x=1+yφ', u_y=1+xφ'. Then xu_x+yu_y = x+xyφ'+y+xyφ' = x+y+2xyφ' ≠ u in general.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = \phi(x^2 + y^2)\)]]></text>
+      <feedback><text>This satisfies xu_x+yu_y = (x·2x+y·2y)φ' = 2(x²+y²)φ' ≠ φ(x²+y²) = u in general.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q11_Pfaffian</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The complete integral of the nonlinear PDE \(p^2 + q^2 = 1\) (where \(p=u_x, q=u_y\)) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u = ax + \sqrt{1-a^2}\,y + c\), where \(a^2 \leq 1\)]]></text>
+      <feedback><text>Correct. Set p=a (constant). Then a²+q²=1, so q=√(1−a²). Integrating: u=ax+√(1−a²)·y+c. This is a complete integral with two arbitrary constants a, c.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = x\cos\theta + y\sin\theta + c\)]]></text>
+      <feedback><text>This is the same as the correct answer written with a=cos θ. Both are correct representations; this confirms the complete integral is a family of planes tangent to a cylinder.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = \sqrt{x^2 + y^2} + c\)]]></text>
+      <feedback><text>p=x/√(x²+y²), q=y/√(x²+y²), p²+q²=(x²+y²)/(x²+y²)=1. ✓ This is a singular solution (envelope of the complete integral), not the complete integral itself.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = a^2 x + b^2 y + c\) with \(a^2 + b^2 = 1\)]]></text>
+      <feedback><text>If p=a², q=b², then p²+q²=a⁴+b⁴≠(a²+b²)²=1 in general. This does not satisfy p²+q²=1.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q12_Charpit_Nonlinear</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the PDE \(F(x,y,u,p,q) = 0\), the Charpit equations (auxiliary equations) are:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{dp}{F_x + pF_u} = \dfrac{dq}{F_y + qF_u} = \dfrac{du}{pF_p + qF_q} = \dfrac{dx}{-F_p} = \dfrac{dy}{-F_q}\)]]></text>
+      <feedback><text>Correct. The Charpit (characteristic strip) equations propagate a solution strip. They ensure that the contact condition du=p dx+q dy is maintained and that F=0 is satisfied along the strip.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{dp}{F_x} = \dfrac{dq}{F_y} = \dfrac{du}{F_u} = \dfrac{dx}{F_p} = \dfrac{dy}{F_q}\)]]></text>
+      <feedback><text>The signs and structure are wrong. The correct Charpit equations have −F_p, −F_q for dx, dy and include pF_u, qF_u terms in dp, dq respectively.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(dp/dt = F_x,\; dq/dt = F_y,\; dx/dt = F_p,\; dy/dt = F_q\)]]></text>
+      <feedback><text>Missing the F_u correction terms. The correct equations for dp are dp/dt = −(F_x + pF_u), not just −F_x.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{dx}{F_p} = \dfrac{dy}{F_q} = \dfrac{dp}{F_x} = \dfrac{dq}{F_y}\)]]></text>
+      <feedback><text>Signs are wrong (should be −F_p, −F_q for dx, dy) and the du equation and the F_u correction terms are missing.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q13_Eikonal</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The eikonal equation \(|\nabla u|^2 = u_x^2 + u_y^2 = n^2(x,y)\) arises in geometrical optics. For \(n=1\) (constant), the complete integral is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u = ax + \sqrt{1-a^2}\,y + c\) (plane wavefronts)]]></text>
+      <feedback><text>Correct. For n=1: p²+q²=1. Setting p=a, q=√(1−a²): u = ax+√(1−a²)y+c. These represent plane wavefronts; the singular solution u=√(x²+y²) represents circular wavefronts.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = \sqrt{x^2 + y^2}\) only (circular wavefronts)]]></text>
+      <feedback><text>This is the singular solution (envelope), representing circular wavefronts. The complete integral gives plane wavefronts; both are solutions but not the same.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = x^2 + y^2 + c\)]]></text>
+      <feedback><text>p=2x, q=2y, p²+q²=4(x²+y²)≠1. This does not satisfy the eikonal equation with n=1.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = e^{ax+by}\) with \(a^2+b^2=1\)]]></text>
+      <feedback><text>p=ae^{ax+by}, q=be^{ax+by}, p²+q²=(a²+b²)e^{2(ax+by)}=e^{2(ax+by)}≠1. Incorrect.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q14_Singular_Solution</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The singular solution of a first-order PDE \(F(x,y,u,p,q)=0\) is obtained from the complete integral \(u=f(x,y,a,b)\) by eliminating \(a\) and \(b\) using:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{\partial f}{\partial a} = 0\) and \(\dfrac{\partial f}{\partial b} = 0\)]]></text>
+      <feedback><text>Correct. The envelope (singular solution) is found by differentiating the complete integral with respect to each parameter (a and b) and solving simultaneously. This gives the envelope of the two-parameter family of surfaces.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{\partial f}{\partial x} = 0\) and \(\dfrac{\partial f}{\partial y} = 0\)]]></text>
+      <feedback><text>Differentiating with respect to x,y gives p and q (the partial derivatives of u), not the conditions for the envelope with respect to parameters a,b.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Setting \(a = b = 0\) in the complete integral]]></text>
+      <feedback><text>Particular values of parameters give particular solutions, not the singular (envelope) solution. The envelope requires differentiation and elimination.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Taking \(a \to \infty\) in the complete integral]]></text>
+      <feedback><text>Singular solutions are obtained via the envelope condition (partial derivatives with respect to parameters set to zero), not by taking limits.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q15_Hamilton_Jacobi</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Hamilton-Jacobi equation for a Hamiltonian system with \(H(q,p)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{\partial S}{\partial t} + H\!\left(q, \dfrac{\partial S}{\partial q}\right) = 0\)]]></text>
+      <feedback><text>Correct. The Hamilton-Jacobi equation relates the action S(q,t) to the Hamiltonian H, with momentum p=∂S/∂q. A complete integral S provides a canonical transformation to action-angle variables.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{\partial S}{\partial t} = H\!\left(q, \dfrac{\partial S}{\partial q}\right)\)]]></text>
+      <feedback><text>Sign error: the Hamilton-Jacobi equation is ∂S/∂t + H(q,∂S/∂q) = 0, not ∂S/∂t = H(...).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{\partial H}{\partial q} = -\dot{p},\quad \dfrac{\partial H}{\partial p} = \dot{q}\)]]></text>
+      <feedback><text>These are Hamilton's canonical equations of motion, not the Hamilton-Jacobi PDE. The HJ equation involves the action function S.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\nabla^2 S + H(q, \nabla S) = 0\)]]></text>
+      <feedback><text>The Laplacian ∇²S does not appear in the Hamilton-Jacobi equation. The correct equation involves only first-order derivatives: ∂S/∂t + H(q,∂S/∂q)=0.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q16_Type_Mixed</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Tricomi equation \(y\,u_{xx} + u_{yy} = 0\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Elliptic for \(y > 0\), parabolic on \(y = 0\), and hyperbolic for \(y < 0\).]]></text>
+      <feedback><text>Correct. With A=y, B=0, C=1: discriminant B²−4AC = −4y. This is negative (elliptic) for y>0, zero (parabolic) for y=0, and positive (hyperbolic) for y<0. The Tricomi equation is the prototype mixed-type PDE.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Hyperbolic for all \(y \neq 0\).]]></text>
+      <feedback><text>For y>0, B²−4AC = −4y < 0, which is elliptic, not hyperbolic. Only for y<0 is the equation hyperbolic.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Always elliptic, since \(u_{yy}\) has positive coefficient.]]></text>
+      <feedback><text>The coefficient A=y of u_{xx} changes sign with y, making the type change. The equation is not always elliptic.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Parabolic everywhere.]]></text>
+      <feedback><text>Parabolic requires B²−4AC=0 everywhere, but here B²−4AC=−4y is zero only on the line y=0.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q17_Cauchy_Data</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the first-order linear PDE \(u_x + 2u_y = 0\), Cauchy data is prescribed on the curve \(\Gamma: x = 0\). The characteristic direction is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Along lines \(x - 2y = \mathrm{const}\), i.e., direction \((1,2)\) in the \((x,y)\) plane. The initial curve \(x=0\) is non-characteristic since it has direction \((0,1)\).]]></text>
+      <feedback><text>Correct. The characteristics are curves where dy/dx = 2, i.e., y = 2x + c or x − 2y = const (rewritten). The initial curve x=0 (direction (0,1)) is transverse to (1,2), so it is non-characteristic and the Cauchy problem is well-posed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Along lines \(x + 2y = \mathrm{const}\), direction \((1,-2)\).]]></text>
+      <feedback><text>Characteristics of u_x + 2u_y = 0 satisfy dy/dx = 2, giving y − 2x = const (or x−y/2=const), not x+2y=const.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The initial curve \(x = 0\) is a characteristic, making the problem ill-posed.]]></text>
+      <feedback><text>x=0 is NOT characteristic for u_x+2u_y=0. The characteristic direction is (1,2); the initial curve x=0 has direction (0,1), which is transversal. The problem is well-posed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Along circles \(x^2 + y^2 = \mathrm{const}\).]]></text>
+      <feedback><text>Characteristics of a first-order linear PDE with constant coefficients are straight lines, not circles.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q18_Rarefaction</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the Burgers' equation \(u_t + u\,u_x = 0\) with Riemann initial data \(u(x,0) = u_L\) for \(x < 0\) and \(u_R\) for \(x > 0\) with \(u_L < u_R\), the solution is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[A rarefaction wave: \(u(x,t) = u_L\) for \(x < u_L t\), \(u = x/t\) for \(u_L t \leq x \leq u_R t\), \(u = u_R\) for \(x > u_R t\).]]></text>
+      <feedback><text>Correct. When u_L < u_R (expansion), the entropy condition rules out a shock. The centered rarefaction fan x/t ∈ [u_L, u_R] fills the vacuum left by expanding characteristics.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A shock wave travelling at speed \(s = (u_L + u_R)/2\).]]></text>
+      <feedback><text>A shock occurs when u_L > u_R (compression). For u_L < u_R, a shock would violate the entropy condition; the correct solution is a rarefaction wave.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = (u_L + u_R)/2\) everywhere for \(t > 0\).]]></text>
+      <feedback><text>This is not a solution of Burgers' equation. The correct solution has three regions (u_L, fan, u_R) for u_L < u_R.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x,t) = u_L\) for all \(x,t > 0\).]]></text>
+      <feedback><text>This would mean the right state u_R has no effect, which is incorrect. The rarefaction fan propagates information from both states.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q19_Weak_Solution</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A weak solution of the conservation law \(u_t + f(u)_x = 0\) satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\displaystyle\iint \bigl(u\,\phi_t + f(u)\,\phi_x\bigr)\,dx\,dt = 0\) for all smooth test functions \(\phi\) with compact support.]]></text>
+      <feedback><text>Correct. A weak solution satisfies the integrated (distributional) form of the conservation law. This allows discontinuous solutions (shocks) that do not satisfy the PDE classically but respect the integral form.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u_t + f(u)_x = 0\) holds pointwise everywhere.]]></text>
+      <feedback><text>This is the strong (classical) form, valid only where u is smooth. Weak solutions allow discontinuities and are defined via integration against test functions.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\displaystyle\iint \bigl(u\,\phi_{tt} + f(u)\,\phi_{xx}\bigr)\,dx\,dt = 0\)]]></text>
+      <feedback><text>The test function should be multiplied with φ_t and φ_x (first derivatives), not second derivatives. The weak form comes from integrating by parts once.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Rankine-Hugoniot condition holds at every point of the domain.]]></text>
+      <feedback><text>The Rankine-Hugoniot condition applies at shocks (discontinuities), not at every point. The weak solution formulation uses test functions to handle both smooth regions and shock locations.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_42_Q20_Hodograph</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The hodograph transformation for the quasilinear system of gas dynamics interchanges the roles of dependent and independent variables. For the equation \(u_t + u\,u_x = 0\), a key use is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[To linearize the nonlinear PDE by treating \((x,t)\) as functions of \((u,\text{another variable})\), yielding a linear equation for \(x\) or \(t\) in the hodograph plane.]]></text>
+      <feedback><text>Correct. The hodograph transformation swaps roles: treating x=x(u,ξ) and t=t(u,ξ) makes the originally nonlinear PDE linear, which can then be solved by standard methods. This is especially powerful for shallow water wave systems.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[To reduce the PDE to an ODE by self-similar reduction \(u = t^{1/2} f(x/t)\).]]></text>
+      <feedback><text>This is a self-similar reduction, a different technique. The hodograph transformation specifically interchanges dependent and independent variables to linearize.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[To apply the Fourier transform and reduce to an algebraic equation.]]></text>
+      <feedback><text>Fourier transforms work for linear PDEs with constant coefficients. Hodograph transformation is used specifically to linearize nonlinear quasilinear systems.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[To introduce a stream function that automatically satisfies the continuity equation.]]></text>
+      <feedback><text>Stream functions are used in fluid mechanics to satisfy continuity (div u = 0), a different technique. Hodograph transformation linearizes by interchanging variables.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

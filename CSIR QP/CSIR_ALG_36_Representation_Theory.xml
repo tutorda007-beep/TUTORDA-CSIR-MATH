@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Abstract Algebra/Representation Theory</text></category>
+    <info format="html"><text>CSIR NET Mathematics — Abstract Algebra: Representation Theory of Finite Groups. MCQ, 20 questions covering group representations, characters, irreducible representations, Maschke's theorem, character tables, Schur's lemma, induced representations, and applications.</text></info>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q01 Degree-1 representations of S3</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The symmetric group \(S_3\) has 3 conjugacy classes. How many irreducible representations does \(S_3\) have, and what are their dimensions?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>3 irreducible representations of dimensions 1, 1, and 2</text>
+      <feedback format="html"><text><![CDATA[
+        The number of irreducible representations equals the number of conjugacy classes = 3. The dimensions \(d_1,d_2,d_3\) satisfy \(\sum d_i^2 = |G|=6\): \(1^2+1^2+2^2=1+1+4=6\). The three irreps are: (1) trivial rep \(\mathbf{1}\): \(\rho(\sigma)=1\) for all \(\sigma\); (2) sign rep \(\text{sgn}\): \(\rho(\sigma)=\text{sgn}(\sigma)\); (3) standard 2D rep: the natural action on \(\mathbb{C}^2\) (complement of the all-ones vector in \(\mathbb{C}^3\)).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>6 irreducible representations, all of dimension 1</text>
+      <feedback format="html"><text>Incorrect. The number of irreps equals the number of conjugacy classes (3), and \(\sum d_i^2=6\) forces some \(d_i>1\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>2 irreducible representations of dimensions 1 and 5</text>
+      <feedback format="html"><text>Incorrect. \(1+25=26\neq 6=|S_3|\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>1 irreducible representation of dimension 6</text>
+      <feedback format="html"><text>Incorrect. A group has as many irreps as conjugacy classes; \(S_3\) has 3 conjugacy classes.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q02 Maschke's theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Maschke's theorem states: if \(G\) is a finite group and \(k\) is a field with \(\text{char}(k) \nmid |G|\), then every representation of \(G\) over \(k\) is:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Completely reducible (a direct sum of irreducible representations)</text>
+      <feedback format="html"><text><![CDATA[
+        Maschke's theorem: if \(\text{char}(k)\nmid|G|\) (e.g., \(k=\mathbb{C}\) for any finite \(G\)), then \(kG\) is semisimple, and every \(kG\)-module decomposes as a direct sum of irreducible submodules. Key step: if \(W\subset V\) is a \(G\)-invariant subspace, the averaging map \(P:V\to W\) (a \(G\)-equivariant projection) gives a \(G\)-invariant complement. If \(\text{char}(k)\mid|G|\), complete reducibility can fail (modular representation theory).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Irreducible (has no proper invariant subspaces)</text>
+      <feedback format="html"><text>Incorrect. A representation can be reducible but still completely reducible (sum of irreducibles).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>1-dimensional</text>
+      <feedback format="html"><text>Incorrect. Maschke's theorem does not restrict dimensions; it says representations decompose into irreducibles, which may be higher-dimensional.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Equivalent to the regular representation</text>
+      <feedback format="html"><text>Incorrect. Maschke's theorem concerns decomposability, not isomorphism to the regular representation.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q03 Schur's lemma</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Schur's Lemma: Let \(\rho_1: G\to GL(V_1)\) and \(\rho_2: G\to GL(V_2)\) be irreducible representations. A homomorphism \(f: V_1\to V_2\) commuting with the \(G\)-action satisfies:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(f=0\) if \(\rho_1\not\cong\rho_2\); \(f=\lambda\cdot\text{id}\) for some scalar \(\lambda\) if \(V_1=V_2\) and \(k=\mathbb{C}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Schur's Lemma: (1) If \(\rho_1,\rho_2\) are non-isomorphic irreps and \(f:V_1\to V_2\) is \(G\)-equivariant, then \(f=0\) (since \(\ker f\) and \(\text{im}\,f\) are invariant subspaces of irreducibles). (2) If \(\rho_1=\rho_2=\rho\) (irrep over \(\mathbb{C}\)), then any \(G\)-equivariant \(f:V\to V\) has an eigenvalue \(\lambda\in\mathbb{C}\), and \(f-\lambda\text{id}\) is equivariant with nontrivial kernel — hence \(f=\lambda\text{id}\). Consequence: \(\text{End}_G(V)\cong\mathbb{C}\) for irreducible \(V\) over \(\mathbb{C}\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(f\) is always surjective</text>
+      <feedback format="html"><text>Incorrect. If \(\rho_1\not\cong\rho_2\), then \(f=0\) (not surjective unless \(V_2=0\)).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(f\) can be any linear map</text>
+      <feedback format="html"><text>Incorrect. The equivariance condition severely constrains \(f\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(f\) is always an isomorphism</text>
+      <feedback format="html"><text>Incorrect. \(f=0\) when the representations are non-isomorphic; 0 is not an isomorphism.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q04 Character of a representation</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The character \(\chi_\rho\) of a representation \(\rho: G\to GL(V)\) is defined as \(\chi_\rho(g) = \text{tr}(\rho(g))\). Which property is NOT true for characters?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\chi_\rho\) is a homomorphism from \(G\) to \(\mathbb{C}^\times\)</text>
+      <feedback format="html"><text><![CDATA[
+        Characters are NOT ring homomorphisms in general (only degree-1 characters are multiplicative). The character is a class function (\(\chi(ghg^{-1})=\chi(h)\)) satisfying \(\chi(e)=\dim V\) and \(\chi(g^{-1})=\overline{\chi(g)}\) for unitary representations. Degree-1 characters (when \(\dim V=1\)) are group homomorphisms \(G\to\mathbb{C}^\times\). For higher-dimensional irreps, \(\chi(gh)\neq\chi(g)\chi(h)\) in general; the characters form a basis for the space of class functions.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\chi_\rho\) is a class function: \(\chi_\rho(ghg^{-1})=\chi_\rho(h)\)</text>
+      <feedback format="html"><text>Incorrect. Characters ARE class functions since trace is invariant under conjugation.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\chi_\rho(e) = \dim V\)</text>
+      <feedback format="html"><text>Incorrect. This IS true: \(\chi(e)=\text{tr}(\text{id})=\dim V\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\chi_\rho(g^{-1}) = \overline{\chi_\rho(g)}\) for unitary representations</text>
+      <feedback format="html"><text>Incorrect. This IS true: for unitary \(\rho\), \(\rho(g^{-1})=\rho(g)^*\) so \(\text{tr}(\rho(g^{-1}))=\overline{\text{tr}(\rho(g))}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q05 Orthogonality of characters</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The first orthogonality relation for characters of a finite group \(G\) states that for irreducible representations \(\rho_i, \rho_j\):</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\dfrac{1}{|G|}\sum_{g\in G}\chi_i(g)\overline{\chi_j(g)} = \delta_{ij}\)</text>
+      <feedback format="html"><text><![CDATA[
+        The first orthogonality relation: irreducible characters form an orthonormal basis (with respect to the inner product \(\langle f_1,f_2\rangle=\frac{1}{|G|}\sum_{g\in G}f_1(g)\overline{f_2(g)}\)) for the space of class functions. Thus \(\langle\chi_i,\chi_j\rangle=\delta_{ij}\). Consequence: \(\rho\cong\bigoplus_i n_i\rho_i\) where \(n_i=\langle\chi,\chi_i\rangle\) and \(|\chi|^2=\sum n_i^2\); \(\rho\) is irreducible iff \(\langle\chi,\chi\rangle=1\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\sum_{g\in G}\chi_i(g)\overline{\chi_j(g)} = \delta_{ij}\)</text>
+      <feedback format="html"><text>Incorrect. The inner product has a factor of \(1/|G|\); without it, the norm of an irreducible character is \(\sqrt{|G|}\), not 1.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\sum_{g\in G}\chi_i(g) = 0\) for all irreps \(\rho_i\)</text>
+      <feedback format="html"><text>Incorrect. \(\sum_g\chi_i(g)=0\) only for non-trivial irreps (this is the orthogonality with the trivial character).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\chi_i(g)=\chi_j(g)\) for all \(g\in G\) whenever \(i=j\)</text>
+      <feedback format="html"><text>Incorrect. This is trivially true by definition of equality; orthogonality says the inner product is \(\delta_{ij}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q06 Regular representation decomposition</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The regular representation \(\mathbb{C}G\) of a finite group \(G\) decomposes as:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbb{C}G \cong \bigoplus_i d_i V_i\) where the sum is over all irreps \(V_i\) with \(d_i = \dim V_i\) copies</text>
+      <feedback format="html"><text><![CDATA[
+        The regular representation \(\mathbb{C}G\) (where \(G\) acts on itself by left multiplication) decomposes as \(\mathbb{C}G\cong\bigoplus_i V_i^{\oplus d_i}\) with \(d_i=\dim V_i\). Each irrep \(V_i\) appears exactly \(\dim V_i\) times. Dimension check: \(\sum_i d_i^2=|G|\). This is the decomposition provided by the Artin-Wedderburn theorem: \(\mathbb{C}G\cong\prod_i M_{d_i}(\mathbb{C})\) as algebras.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Each irrep appears exactly once</text>
+      <feedback format="html"><text>Incorrect. Each irrep \(V_i\) appears with multiplicity \(d_i=\dim V_i\), not once.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Only the trivial representation appears</text>
+      <feedback format="html"><text>Incorrect. All irreps appear in the regular representation.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{C}G\) is irreducible</text>
+      <feedback format="html"><text>Incorrect. The regular representation is never irreducible (for \(|G|>1\)); it always contains the trivial rep as a subspace.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q07 Character table of Z4</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The cyclic group \(\mathbb{Z}_4 = \langle a\mid a^4=e\rangle\) has 4 irreducible representations over \(\mathbb{C}\). What are their characters on the generator \(a\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The values are \(1, i, -1, -i\) (the four 4th roots of unity)</text>
+      <feedback format="html"><text><![CDATA[
+        For an abelian group, all irreps are 1-dimensional and equal to group homomorphisms \(\chi: G\to\mathbb{C}^\times\). For \(\mathbb{Z}_4\), \(\chi(a)\) must satisfy \(\chi(a)^4=\chi(a^4)=\chi(e)=1\), so \(\chi(a)\in\{1,i,-1,-i\}\). The four irreps \(\chi_k\) are given by \(\chi_k(a^n)=i^{kn}\) for \(k=0,1,2,3\): \(\chi_0(a)=1\), \(\chi_1(a)=i\), \(\chi_2(a)=-1\), \(\chi_3(a)=-i\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>All characters equal 1 (only trivial representations)</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}_4\) has 4 distinct irreps, not just the trivial one.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The values are \(1,1,-1,-1\) (only real characters)</text>
+      <feedback format="html"><text>Incorrect. For \(\mathbb{Z}_4\) (not \(\mathbb{Z}_2\times\mathbb{Z}_2\)), two of the characters take imaginary values \(\pm i\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The values are \(1,-1,1,-1\) (alternating)</text>
+      <feedback format="html"><text>Incorrect. These would be characters of \(\mathbb{Z}_2\), not \(\mathbb{Z}_4\); the 4th roots of unity include \(i\) and \(-i\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q08 Number of irreps and conjugacy classes</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The number of irreducible complex representations of a finite group \(G\) equals:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The number of conjugacy classes of \(G\)</text>
+      <feedback format="html"><text><![CDATA[
+        Over \(\mathbb{C}\), the number of irreducible representations equals the number of conjugacy classes of \(G\). Proof: the center of \(\mathbb{C}G\) has basis given by conjugacy class sums, so \(\dim Z(\mathbb{C}G)=\text{(number of conjugacy classes)}\). By Artin-Wedderburn: \(\mathbb{C}G\cong\prod_i M_{d_i}(\mathbb{C})\), so \(\dim Z(\mathbb{C}G)=\text{(number of matrix factors)}=\text{(number of irreps)}\). For abelian groups: \(\text{(number of irreps)}=|G|\) (one per element).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The order of \(G\)</text>
+      <feedback format="html"><text>Incorrect. For non-abelian groups (like \(S_3\)), the number of irreps (3) is less than \(|G|=6\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The number of normal subgroups of \(G\)</text>
+      <feedback format="html"><text>Incorrect. Normal subgroups and conjugacy classes are related but different; the irrep count matches conjugacy classes.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The number of elements of order 2</text>
+      <feedback format="html"><text>Incorrect. This has no direct relationship to the number of irreps.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q09 Induced representation</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Let \(H\leq G\) and \(\psi\) be a representation of \(H\). The induced representation \(\text{Ind}_H^G\psi\) has dimension:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\([G:H]\cdot\dim\psi\)</text>
+      <feedback format="html"><text><![CDATA[
+        The induced representation \(\text{Ind}_H^G\psi = \mathbb{C}G\otimes_{\mathbb{C}H}\psi\) (or equivalently \(\text{Fun}(G,V)^H\)) has dimension \([G:H]\cdot\dim\psi\). Frobenius reciprocity: \(\langle\text{Ind}_H^G\psi,\chi\rangle_G=\langle\psi,\text{Res}_H^G\chi\rangle_H\). Induced representations are fundamental in character theory; all representations of \(G\) can be induced from 1-dimensional characters of subgroups (if sufficiently many subgroups exist).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\dim\psi\)</text>
+      <feedback format="html"><text>Incorrect. Induction enlarges the representation; the induced rep has dimension \([G:H]\cdot\dim\psi\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(|G|\cdot\dim\psi\)</text>
+      <feedback format="html"><text>Incorrect. The dimension is \([G:H]\cdot\dim\psi = \frac{|G|}{|H|}\cdot\dim\psi\), not \(|G|\cdot\dim\psi\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(|H|\cdot\dim\psi\)</text>
+      <feedback format="html"><text>Incorrect. The index \([G:H]=|G|/|H|\) enters, not \(|H|\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q10 Abelian groups have only 1-dimensional irreps</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For a finite abelian group \(G\), all irreducible complex representations are 1-dimensional. This follows from:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Schur's lemma: for an abelian group, every representation matrix \(\rho(g)\) commutes with all other \(\rho(h)\), so by Schur's lemma each \(\rho(g)=\lambda_g\cdot I\), forcing the irrep to be 1-dimensional</text>
+      <feedback format="html"><text><![CDATA[
+        For abelian \(G\): each \(\rho(g)\) commutes with \(\rho(h)\) for all \(h\), so \(\rho(g)\) is a \(G\)-equivariant map. By Schur's lemma (applied to an irreducible rep over \(\mathbb{C}\)), \(\rho(g)=\lambda_g I\). Every 1D subspace is then invariant, so irreducibility forces \(\dim V=1\). Consequence: \(G\) has exactly \(|G|\) irreps (= number of conjugacy classes = \(|G|\) for abelian groups), all of dimension 1, and \(\sum d_i^2=|G|\) becomes \(\sum 1=|G|\). The irreps are the group homomorphisms \(G\to\mathbb{C}^\times\) (Pontryagin dual \(\hat{G}\cong G\)).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Lagrange's theorem: every subgroup of an abelian group has prime order</text>
+      <feedback format="html"><text>Incorrect. Lagrange's theorem is about subgroup orders, not representations.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Every abelian group is cyclic</text>
+      <feedback format="html"><text>Incorrect. Not all abelian groups are cyclic (e.g., \(\mathbb{Z}_2\times\mathbb{Z}_2\)); but all finite abelian groups still have only 1D irreps.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The character table is the identity matrix</text>
+      <feedback format="html"><text>Incorrect. The character table is the matrix of character values on conjugacy classes, not the identity.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q11 Burnside's p^a q^b theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Burnside's \(p^a q^b\) theorem (proved using character theory) states:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Every group of order \(p^a q^b\) (for primes \(p,q\) and \(a,b\geq 0\)) is solvable</text>
+      <feedback format="html"><text><![CDATA[
+        Burnside's theorem (1904): if \(|G|=p^aq^b\) for primes \(p,q\), then \(G\) is solvable. Proof uses character theory: if \(G\) is a minimal non-solvable group of this order, one derives a contradiction via the second orthogonality relation and properties of character values. This was a landmark application of representation theory to pure group theory. The theorem implies: all groups of order \(p^aq^b\) have a non-trivial normal subgroup (are not simple) — in particular, no simple group has such an order (for \(a,b>0\)).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Every group of order \(p^a q^b\) is abelian</text>
+      <feedback format="html"><text>Incorrect. Groups of order \(p^aq^b\) can be non-abelian (e.g., \(S_3\) has order \(2\cdot 3\)); they are solvable but not necessarily abelian.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Every group of order \(p^a q^b\) is cyclic</text>
+      <feedback format="html"><text>Incorrect. \(S_3\) has order 6 = \(2\cdot 3\) but is not cyclic.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Groups of order \(p^aq^b\) can be simple for \(a,b\geq 2\)</text>
+      <feedback format="html"><text>Incorrect. Burnside's theorem rules out simple groups of such orders (for \(a,b>0\)).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q12 Frobenius reciprocity</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Frobenius reciprocity states that for \(H\leq G\), representations \(\psi\) of \(H\) and \(\chi\) of \(G\):</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\langle\text{Ind}_H^G\psi, \chi\rangle_G = \langle\psi, \text{Res}_H^G\chi\rangle_H\)</text>
+      <feedback format="html"><text><![CDATA[
+        Frobenius reciprocity: induction \(\text{Ind}_H^G\) and restriction \(\text{Res}_H^G\) are adjoint functors. The inner products \(\langle\cdot,\cdot\rangle_G\) and \(\langle\cdot,\cdot\rangle_H\) are the standard character inner products. Applications: decomposing induced representations using known character tables, constructing irreps of \(G\) from those of subgroups. For example, all irreps of \(S_n\) can be constructed by inducing from Young subgroups.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\text{Ind}_H^G\psi \cong \text{Res}_H^G\psi\)</text>
+      <feedback format="html"><text>Incorrect. Induction and restriction produce representations of different groups; they cannot be isomorphic.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\langle\text{Ind}_H^G\psi,\chi\rangle_G = \langle\chi,\psi\rangle_H\)</text>
+      <feedback format="html"><text>Incorrect. The right side must be the restriction \(\text{Res}_H^G\chi\) (a representation of \(H\)), not \(\chi\) itself.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\text{Ind}_H^G(\psi\oplus\phi) = (\text{Ind}_H^G\psi)\otimes(\text{Ind}_H^G\phi)\)</text>
+      <feedback format="html"><text>Incorrect. Induction distributes over direct sum, not tensor product: \(\text{Ind}(\psi\oplus\phi)=\text{Ind}\psi\oplus\text{Ind}\phi\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q13 Character table of A4</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The alternating group \(A_4\) has order 12 and 4 conjugacy classes. Its irreducible representations have dimensions satisfying \(\sum d_i^2=12\). What are the dimensions?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Dimensions 1, 1, 1, 3 (three 1-dimensional and one 3-dimensional irrep)</text>
+      <feedback format="html"><text><![CDATA[
+        \(\sum d_i^2=12\) with 4 irreps. The abelianization \(A_4/[A_4,A_4]\cong\mathbb{Z}_3\) (since the commutator subgroup is the Klein 4-group \(V_4\)). So there are 3 degree-1 irreps (given by the three cubic characters of \(\mathbb{Z}_3\)) and \(1+1+1+d_4^2=12\Rightarrow d_4^2=9\Rightarrow d_4=3\). The 3D irrep is the natural action of \(A_4\) as rotational symmetries of a tetrahedron.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Dimensions 1, 2, 3, 6</text>
+      <feedback format="html"><text>Incorrect. \(1+4+9+36=50\neq 12\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Dimensions 1, 1, 2, 2</text>
+      <feedback format="html"><text>Incorrect. \(1+1+4+4=10\neq 12\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Dimensions 1, 1, 1, 1 (all 1-dimensional)</text>
+      <feedback format="html"><text>Incorrect. \(1+1+1+1=4\neq 12\), and \(A_4\) is non-abelian so not all irreps are 1-dimensional.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q14 Dimension formula and class equation</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For a finite group \(G\) with irreducible character degrees \(d_1,\ldots,d_k\), the sum of squares satisfies:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\sum_{i=1}^k d_i^2 = |G|\)</text>
+      <feedback format="html"><text><![CDATA[
+        Comparing dimensions in \(\mathbb{C}G\cong\prod_{i=1}^k M_{d_i}(\mathbb{C})\): \(\dim_\mathbb{C}\mathbb{C}G=|G|\) and \(\dim_\mathbb{C}\prod M_{d_i}(\mathbb{C})=\sum d_i^2\). Thus \(\sum_{i=1}^k d_i^2=|G|\). This is the key constraint for finding possible representation degrees. Examples: \(S_3\): \(1+1+4=6\checkmark\); \(A_4\): \(1+1+1+9=12\checkmark\); \(S_4\): \(1+1+4+9+9=24\checkmark\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\sum_{i=1}^k d_i = |G|\)</text>
+      <feedback format="html"><text>Incorrect. It is the sum of SQUARES of dimensions that equals \(|G|\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\prod_{i=1}^k d_i = |G|\)</text>
+      <feedback format="html"><text>Incorrect. The product formula does not hold in general.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\sum_{i=1}^k d_i = k\) (all degrees equal 1)</text>
+      <feedback format="html"><text>Incorrect. This would mean the group is abelian (all irreps 1-dimensional); the formula holds for non-abelian groups too with higher \(d_i\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q15 Tensor product of representations</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>If \(\rho_1\) and \(\rho_2\) are representations of \(G\) with characters \(\chi_1, \chi_2\), what is the character of \(\rho_1\otimes\rho_2\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\chi_1\cdot\chi_2\) (pointwise product of characters)</text>
+      <feedback format="html"><text><![CDATA[
+        For the tensor product representation \((\rho_1\otimes\rho_2)(g)=\rho_1(g)\otimes\rho_2(g)\), the character is \(\chi_{\rho_1\otimes\rho_2}(g)=\text{tr}(\rho_1(g)\otimes\rho_2(g))=\text{tr}(\rho_1(g))\cdot\text{tr}(\rho_2(g))=\chi_1(g)\chi_2(g)\). This is the pointwise product. The character ring \(R(G)\) of virtual characters has product given by this tensor product. Direct sum gives addition: \(\chi_{\rho_1\oplus\rho_2}=\chi_1+\chi_2\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\chi_1 + \chi_2\)</text>
+      <feedback format="html"><text>Incorrect. Addition corresponds to direct sum, not tensor product.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\chi_1\circ\chi_2\) (composition of characters)</text>
+      <feedback format="html"><text>Incorrect. Characters are functions on \(G\), and "composition" isn't defined in this context.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\chi_1^{\dim\rho_2}\) (character to a power)</text>
+      <feedback format="html"><text>Incorrect. The tensor product character is the pointwise product \(\chi_1\chi_2\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q16 Permutation representation</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The permutation representation of \(G\) acting on a set \(X\) (with \(|X|=n\)) has character \(\chi_X(g) =\) number of fixed points of \(g\) on \(X\). By Burnside's lemma, the number of orbits is:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\dfrac{1}{|G|}\sum_{g\in G}\chi_X(g) = \langle\chi_X,\mathbf{1}\rangle\)</text>
+      <feedback format="html"><text><![CDATA[
+        Burnside's lemma: the number of orbits \(= \frac{1}{|G|}\sum_{g\in G}|X^g|\) where \(|X^g|\) is the number of elements fixed by \(g\). This equals \(\frac{1}{|G|}\sum_g\chi_X(g)=\langle\chi_X,\chi_{\mathbf{1}}\rangle\), the multiplicity of the trivial representation in \(\chi_X\). Connection: the permutation representation decomposes as trivial \(\oplus\) other irreps, and the number of trivial copies equals the number of orbits.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\sum_{g\in G}\chi_X(g)\)</text>
+      <feedback format="html"><text>Incorrect. The sum must be divided by \(|G|\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\chi_X(e) = n\) (the dimension of the permutation representation)</text>
+      <feedback format="html"><text>Incorrect. \(\chi_X(e)=n\) is the total number of elements, not the number of orbits.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(|G|/n\)</text>
+      <feedback format="html"><text>Incorrect. The orbit count depends on the specific action, not just \(|G|/n\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q17 Modular representations</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>In modular representation theory (char\((k)=p>0\) with \(p\mid|G|\)), which property of characteristic-0 theory fails?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Complete reducibility (Maschke's theorem fails: not every representation decomposes into irreducibles)</text>
+      <feedback format="html"><text><![CDATA[
+        When \(p\mid|G|\), the averaging map \(\frac{1}{|G|}\sum_g\rho(g)\) is not well-defined (division by \(|G|\equiv 0\) in characteristic \(p\)). Maschke's proof breaks down, and indeed there exist indecomposable but reducible representations (extensions that don't split). For example, over \(\mathbb{F}_p\), the regular representation of \(\mathbb{Z}/p\mathbb{Z}\) is indecomposable (has a composition series \(0\subset\langle v\rangle\subset\cdots\subset kG\) that doesn't split). Modular representation theory (Brauer theory) studies these "p-modular" phenomena.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The number of irreducible representations equals the number of conjugacy classes</text>
+      <feedback format="html"><text>Incorrect. In modular representation theory, the number of irreps equals the number of \(p\)-regular conjugacy classes (those of elements with order coprime to \(p\)), not all conjugacy classes.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Characters are well-defined</text>
+      <feedback format="html"><text>Incorrect. Characters (traces) are still well-defined in modular representation theory; Brauer characters extend them.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Schur's lemma</text>
+      <feedback format="html"><text>Incorrect. Schur's lemma holds in all characteristics: any equivariant endomorphism of an irrep is scalar over an algebraically closed field.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q18 Peter-Weyl theorem (compact groups)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Peter-Weyl theorem for compact groups \(G\) states that the matrix coefficients of irreducible unitary representations form an orthonormal basis for which space?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(L^2(G)\) (square-integrable functions on \(G\) with respect to Haar measure)</text>
+      <feedback format="html"><text><![CDATA[
+        Peter-Weyl theorem: for a compact group \(G\) (with Haar probability measure \(\mu\)), the matrix coefficients \(\rho_{ij}(g) = \langle e_i, \rho(g)e_j\rangle\) (for all irreps \(\rho\) and basis vectors \(e_i,e_j\)) form an orthonormal basis for \(L^2(G)\). This is the infinite-dimensional analogue of the finite group result. For \(G=S^1=\mathbb{U}(1)\): the irreps are \(z\mapsto z^n\) and the matrix coefficients are \(e^{in\theta}\), giving the Fourier series basis for \(L^2(S^1)\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The continuous functions \(C(G)\)</text>
+      <feedback format="html"><text>Incorrect. Matrix coefficients are dense in \(C(G)\) (by Stone-Weierstrass), but they form an orthonormal basis for \(L^2(G)\), not \(C(G)\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The space of characters of \(G\)</text>
+      <feedback format="html"><text>Incorrect. Characters are class functions; Peter-Weyl concerns all of \(L^2(G)\), not just class functions.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The group algebra \(\mathbb{C}G\)</text>
+      <feedback format="html"><text>Incorrect. The group algebra is for finite (or discrete) groups; Peter-Weyl concerns the Hilbert space \(L^2(G)\) for compact groups.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q19 Second orthogonality relation</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The second orthogonality relation for characters states that for conjugacy classes \(C_r, C_s\) of \(G\) (represented by elements \(g_r, g_s\)):</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\sum_i \chi_i(g_r)\overline{\chi_i(g_s)} = \dfrac{|G|}{|C_r|}\delta_{rs}\)</text>
+      <feedback format="html"><text><![CDATA[
+        The second orthogonality relation: summing over all irreps \(i\), \(\sum_i\chi_i(g_r)\overline{\chi_i(g_s)}=\frac{|G|}{|C_r|}\delta_{rs}\). This says the columns of the character table (indexed by conjugacy classes) are orthogonal, while the first orthogonality says the rows (indexed by irreps) are orthogonal. Together they imply the character table is a square matrix (number of irreps = number of conjugacy classes). Application: determining conjugacy class sizes from the character table.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\sum_i\chi_i(g_r)\overline{\chi_i(g_s)}=\delta_{rs}\)</text>
+      <feedback format="html"><text>Incorrect. The correct factor is \(|G|/|C_r|\), not 1; the columns are orthogonal but with this weight.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\sum_i|\chi_i(g_r)|^2 = 1\) for all \(r\)</text>
+      <feedback format="html"><text>Incorrect. \(\sum_i|\chi_i(g_r)|^2 = |G|/|C_r|\) (from \(r=s\) in the second orthogonality relation).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\sum_i\chi_i(g_r)\overline{\chi_i(g_s)}=0\) for all \(r\neq s\) and 1 for \(r=s\)</text>
+      <feedback format="html"><text>Incorrect. The value at \(r=s\) is \(|G|/|C_r|\), not 1.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>ALG36-Q20 Representations of SU(2)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The irreducible complex representations of \(SU(2)\) (the group of \(2\times 2\) unitary matrices with determinant 1) are classified by:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Non-negative integers \(n\geq 0\), with the \(n\)th representation having dimension \(n+1\) (the spin-\(n/2\) representations)</text>
+      <feedback format="html"><text><![CDATA[
+        The irreducible representations of \(SU(2)\) are labeled by spin \(j=0,\frac{1}{2},1,\frac{3}{2},\ldots\), equivalently by \(n=2j=0,1,2,3,\ldots\). The spin-\(j\) rep has dimension \(2j+1=n+1\). Explicitly: the \(n\)th irrep is \(V_n=\text{Sym}^n(\mathbb{C}^2)\) (symmetric \(n\)th power of the standard 2D rep), a polynomial space of degree \(n\). Character: \(\chi_n(e^{i\theta})=\frac{\sin((n+1)\theta)}{\sin\theta}\) (Chebyshev character). Physics: these are the angular momentum states in quantum mechanics.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>All integers \(n\in\mathbb{Z}\), with the \(n\)th representation of dimension \(|n|\)</text>
+      <feedback format="html"><text>Incorrect. Irreps of \(SU(2)\) are labeled by non-negative integers (or half-integers for spin), not all integers.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Positive integers only, all of dimension 2</text>
+      <feedback format="html"><text>Incorrect. Dimensions of irreps are \(n+1\) for \(n=0,1,2,\ldots\), giving arbitrarily large dimensions.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Complex numbers on the unit circle (characters of \(U(1)\))</text>
+      <feedback format="html"><text>Incorrect. This describes irreps of \(U(1)\cong S^1\), not \(SU(2)\).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

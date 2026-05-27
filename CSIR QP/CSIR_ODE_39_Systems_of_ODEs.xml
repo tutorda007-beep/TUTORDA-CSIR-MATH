@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Ordinary Differential Equations/Systems of ODEs</text></category>
+    <info format="html"><text>CSIR NET Mathematics — ODEs: Systems of ODEs. MCQ, 20 questions covering linear systems, matrix exponential, phase plane, equilibria and stability, linearization, Lyapunov functions, and qualitative theory.</text></info>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q01 Solution of linear system via eigenvalues</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Find the general solution of the system \(\mathbf{x}' = A\mathbf{x}\) where \(A = \begin{pmatrix}1&2\\2&1\end{pmatrix}\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbf{x} = C_1 e^{3t}\begin{pmatrix}1\\1\end{pmatrix} + C_2 e^{-t}\begin{pmatrix}1\\-1\end{pmatrix}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Eigenvalues: \(\det(A-\lambda I)=(1-\lambda)^2-4=0\), so \((1-\lambda)^2=4\), \(\lambda=3\) or \(\lambda=-1\). For \(\lambda_1=3\): \((A-3I)v=0\): \((-2,2;2,-2)v=0\), eigenvector \(v_1=(1,1)^T\). For \(\lambda_2=-1\): \((A+I)v=0\): \((2,2;2,2)v=0\), eigenvector \(v_2=(1,-1)^T\). General solution: \(\mathbf{x}=C_1e^{3t}(1,1)^T+C_2e^{-t}(1,-1)^T\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbf{x} = C_1 e^{t}\begin{pmatrix}1\\1\end{pmatrix} + C_2 e^{2t}\begin{pmatrix}1\\-1\end{pmatrix}\)</text>
+      <feedback format="html"><text>Incorrect. The eigenvalues are \(\lambda=3\) and \(\lambda=-1\), not 1 and 2.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbf{x} = C_1 e^{3t}\begin{pmatrix}2\\1\end{pmatrix} + C_2 e^{-t}\begin{pmatrix}1\\2\end{pmatrix}\)</text>
+      <feedback format="html"><text>Incorrect. The eigenvectors are \((1,1)^T\) and \((1,-1)^T\), not \((2,1)^T\) and \((1,2)^T\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbf{x} = (C_1 + C_2 t)e^t\begin{pmatrix}1\\1\end{pmatrix}\)</text>
+      <feedback format="html"><text>Incorrect. This form is for repeated eigenvalues; here the eigenvalues 3 and \(-1\) are distinct.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q02 Phase portrait — saddle point</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For the linear system \(\mathbf{x}' = A\mathbf{x}\) with eigenvalues \(\lambda_1 = 2\) and \(\lambda_2 = -3\), the equilibrium at the origin is a:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Saddle point (unstable)</text>
+      <feedback format="html"><text><![CDATA[
+        When eigenvalues have opposite signs (one positive, one negative), the equilibrium is a saddle point — unstable. Solutions along the eigenvector of the negative eigenvalue approach the origin, while solutions along the eigenvector of the positive eigenvalue flee. The stable manifold (along \(\lambda_2=-3\)) and unstable manifold (along \(\lambda_1=2\)) cross at the origin. Saddle points are always unstable.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Stable node</text>
+      <feedback format="html"><text>Incorrect. A stable node requires both eigenvalues to have negative real parts.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Stable spiral</text>
+      <feedback format="html"><text>Incorrect. Spirals arise from complex eigenvalues; these eigenvalues are real.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Center</text>
+      <feedback format="html"><text>Incorrect. A center requires purely imaginary eigenvalues. Real eigenvalues of opposite signs give a saddle.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q03 Matrix exponential</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Compute \(e^{At}\) for \(A = \begin{pmatrix}0&1\\-1&0\end{pmatrix}\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(e^{At} = \begin{pmatrix}\cos t & \sin t\\ -\sin t & \cos t\end{pmatrix}\)</text>
+      <feedback format="html"><text><![CDATA[
+        The matrix \(A\) represents rotation. Eigenvalues: \(\lambda=\pm i\). Using \(A^2=-I\), \(A^3=-A\), \(A^4=I\): \(e^{At}=I+At+\frac{(At)^2}{2!}+\cdots=(I+\frac{-t^2}{2!}+\cdots)I+(t-\frac{t^3}{3!}+\cdots)A=\cos(t)I+\sin(t)A\). Thus \(e^{At}=\begin{pmatrix}\cos t&\sin t\\-\sin t&\cos t\end{pmatrix}\). This is a rotation matrix — the system \(\mathbf{x}'=A\mathbf{x}\) rotates the phase plane.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(e^{At} = \begin{pmatrix}e^t & 0\\ 0 & e^{-t}\end{pmatrix}\)</text>
+      <feedback format="html"><text>Incorrect. Diagonal matrix exponentials only work for diagonal matrices; \(A\) has imaginary eigenvalues, not real ones.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(e^{At} = \begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix}\)</text>
+      <feedback format="html"><text>Incorrect. Hyperbolic functions arise for real eigenvalues; purely imaginary eigenvalues give trigonometric functions.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(e^{At} = e^t\begin{pmatrix}1 & t\\ -t & 1\end{pmatrix}\)</text>
+      <feedback format="html"><text>Incorrect. This form would arise for a nilpotent perturbation of a scalar matrix; here the eigenvalues are \(\pm i\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q04 Stability of equilibrium — Lyapunov</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Consider the nonlinear system \(x' = -x + y^2\), \(y' = -y\). The origin is:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Asymptotically stable</text>
+      <feedback format="html"><text><![CDATA[
+        Linearization at origin: \(J=\begin{pmatrix}-1&0\\0&-1\end{pmatrix}\) (eigenvalues \(-1,-1\)), both negative — origin is stable for linearization. For the nonlinear system, try Lyapunov \(V=x^2+y^2\): \(\dot V=2x(-x+y^2)+2y(-y)=-2x^2+2xy^2-2y^2=-2(x^2+y^2)+2xy^2\). Near origin: \(|xy^2|\leq\frac{1}{2}(x^2+y^4)\leq\frac{1}{2}(x^2+y^2)^2\). So \(\dot V\leq-2(x^2+y^2)+C(x^2+y^2)^2<0\) for small \(r\). Origin is asymptotically stable.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Unstable</text>
+      <feedback format="html"><text>Incorrect. Eigenvalues of the linearization are both \(-1\), indicating stability.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Stable but not asymptotically stable (Lyapunov stable only)</text>
+      <feedback format="html"><text>Incorrect. With both linearization eigenvalues having negative real parts, the origin is asymptotically stable.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Inconclusive from linearization</text>
+      <feedback format="html"><text>Incorrect. Linearization is inconclusive only when the real parts are zero; here both are \(-1\neq 0\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q05 Repeated eigenvalue — defective matrix</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Solve the system \(\mathbf{x}' = \begin{pmatrix}2&1\\0&2\end{pmatrix}\mathbf{x}\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbf{x} = C_1 e^{2t}\begin{pmatrix}1\\0\end{pmatrix} + C_2 e^{2t}\left(t\begin{pmatrix}1\\0\end{pmatrix}+\begin{pmatrix}0\\1\end{pmatrix}\right)\)</text>
+      <feedback format="html"><text><![CDATA[
+        Repeated eigenvalue \(\lambda=2\). Only one eigenvector: \(v_1=(1,0)^T\). Find generalized eigenvector \(v_2\): \((A-2I)v_2=v_1\), i.e., \(\begin{pmatrix}0&1\\0&0\end{pmatrix}v_2=(1,0)^T\): gives \(v_2=(0,1)^T\). General solution: \(\mathbf{x}=C_1e^{2t}v_1+C_2e^{2t}(tv_1+v_2)=C_1e^{2t}(1,0)^T+C_2e^{2t}[t(1,0)^T+(0,1)^T]\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbf{x} = (C_1+C_2 t)e^{2t}\begin{pmatrix}1\\0\end{pmatrix}\)</text>
+      <feedback format="html"><text>Incorrect. This only gives a 1D family; the full solution requires two independent solutions.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbf{x} = C_1 e^{2t}\begin{pmatrix}1\\0\end{pmatrix} + C_2 e^{2t}\begin{pmatrix}0\\1\end{pmatrix}\)</text>
+      <feedback format="html"><text>Incorrect. \((0,1)^T\) is not an eigenvector (\((A-2I)(0,1)^T=(1,0)^T\neq 0\)); it's a generalized eigenvector.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbf{x} = e^{2t}\begin{pmatrix}C_1\\C_2\end{pmatrix}\)</text>
+      <feedback format="html"><text>Incorrect. This would work only if both components evolved independently as \(e^{2t}\), ignoring the coupling term.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q06 Predator-prey equilibrium</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Lotka-Volterra system \(x' = ax - bxy\), \(y' = -cy + dxy\) (\(a,b,c,d>0\)) has a non-trivial equilibrium at:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\((x^*, y^*) = \left(\dfrac{c}{d},\, \dfrac{a}{b}\right)\)</text>
+      <feedback format="html"><text><![CDATA[
+        Setting \(x'=y'=0\): \(ax-bxy=x(a-by)=0\) and \(-cy+dxy=y(-c+dx)=0\). Non-trivial: \(y=a/b\) and \(x=c/d\). The Jacobian at this point has purely imaginary eigenvalues (for the linearized system), suggesting a center — but the full nonlinear system has closed orbits (periodic solutions) by a conserved quantity \(H=dx-c\ln x+by-a\ln y=\text{const}\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\((x^*, y^*) = (a/c, b/d)\)</text>
+      <feedback format="html"><text>Incorrect. From \(a-by^*=0\): \(y^*=a/b\); from \(-c+dx^*=0\): \(x^*=c/d\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\((x^*, y^*) = (a/b, c/d)\)</text>
+      <feedback format="html"><text>Incorrect. These are the values swapped: \(x^*=c/d\) and \(y^*=a/b\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\((x^*, y^*) = (0, 0)\)</text>
+      <feedback format="html"><text>Incorrect. This is the trivial equilibrium; the non-trivial one is \((c/d, a/b)\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q07 Center vs. spiral — pure imaginary eigenvalues</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For the linear system with eigenvalues \(\lambda = \pm 2i\), the origin is classified as:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A center (stable but not asymptotically stable; all orbits are closed ellipses)</text>
+      <feedback format="html"><text><![CDATA[
+        Purely imaginary eigenvalues \(\lambda=\pm\beta i\) (real part zero) give a center for linear systems: solutions are periodic with period \(2\pi/\beta\), tracing ellipses around the origin. The origin is Lyapunov stable (nearby orbits stay nearby) but NOT asymptotically stable (orbits don't approach the origin). Caution: for nonlinear systems, the center can become a spiral (stable or unstable) depending on higher-order terms.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>An unstable spiral</text>
+      <feedback format="html"><text>Incorrect. Unstable spiral requires \(\text{Re}(\lambda)>0\); here \(\text{Re}(\pm 2i)=0\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A stable spiral (asymptotically stable)</text>
+      <feedback format="html"><text>Incorrect. Stable spiral requires \(\text{Re}(\lambda)<0\); here the real part is zero.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A saddle point</text>
+      <feedback format="html"><text>Incorrect. Saddle requires real eigenvalues of opposite sign; here the eigenvalues are purely imaginary.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q08 Fundamental matrix solution</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>A fundamental matrix \(\Phi(t)\) for the system \(\mathbf{x}'=A\mathbf{x}\) satisfies \(\Phi'=A\Phi\) and \(\det\Phi(t)\neq 0\). The solution with initial condition \(\mathbf{x}(0)=\mathbf{x}_0\) is:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbf{x}(t) = \Phi(t)\Phi(0)^{-1}\mathbf{x}_0\)</text>
+      <feedback format="html"><text><![CDATA[
+        The general solution of \(\mathbf{x}'=A\mathbf{x}\) is \(\mathbf{x}(t)=\Phi(t)\mathbf{c}\) for arbitrary constant vector \(\mathbf{c}\). Applying the initial condition: \(\mathbf{x}(0)=\Phi(0)\mathbf{c}=\mathbf{x}_0\), so \(\mathbf{c}=\Phi(0)^{-1}\mathbf{x}_0\). Thus \(\mathbf{x}(t)=\Phi(t)\Phi(0)^{-1}\mathbf{x}_0\). If we choose the principal fundamental matrix \(\Phi(0)=I\) (i.e., \(\Phi=e^{At}\)), then \(\mathbf{x}(t)=e^{At}\mathbf{x}_0\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbf{x}(t) = \Phi(t)\mathbf{x}_0\)</text>
+      <feedback format="html"><text>Incorrect. This would be correct only if \(\Phi(0)=I\) (the principal fundamental matrix); in general, we need \(\Phi(0)^{-1}\mathbf{x}_0\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbf{x}(t) = A\Phi(t)\mathbf{x}_0\)</text>
+      <feedback format="html"><text>Incorrect. The solution is expressed via \(\Phi(t)\), not \(A\Phi(t)\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbf{x}(t) = \Phi(0)\Phi(t)^{-1}\mathbf{x}_0\)</text>
+      <feedback format="html"><text>Incorrect. The order of factors is reversed; the correct formula is \(\Phi(t)\Phi(0)^{-1}\mathbf{x}_0\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q09 Phase portrait — stable vs unstable node</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For a 2D linear system with eigenvalues \(\lambda_1 = -1\) and \(\lambda_2 = -4\) (both negative, distinct), the equilibrium is a:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Stable node (all trajectories approach the origin as \(t\to+\infty\))</text>
+      <feedback format="html"><text><![CDATA[
+        Both eigenvalues are real and negative. All solutions \(\mathbf{x}=C_1e^{-t}\mathbf{v}_1+C_2e^{-4t}\mathbf{v}_2\to\mathbf{0}\) as \(t\to\infty\). This is a stable node (also called an attracting node). For large \(t\), the slower-decaying mode \(e^{-t}\) dominates, so most trajectories approach the origin tangentially to the eigenvector \(\mathbf{v}_1\) of the eigenvalue with smaller magnitude.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Unstable node</text>
+      <feedback format="html"><text>Incorrect. Unstable node requires both eigenvalues to have positive real parts.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Saddle</text>
+      <feedback format="html"><text>Incorrect. Saddle requires eigenvalues of opposite signs; here both are negative.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Center</text>
+      <feedback format="html"><text>Incorrect. Centers arise from purely imaginary eigenvalues; here the eigenvalues are real negative.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q10 Nonlinear system — Poincaré-Bendixson</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Poincaré-Bendixson theorem (for 2D systems) states that a bounded orbit of a smooth autonomous system in \(\mathbb{R}^2\) that doesn't approach an equilibrium must:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Approach a limit cycle (a closed periodic orbit)</text>
+      <feedback format="html"><text><![CDATA[
+        Poincaré-Bendixson theorem: if a trajectory of a smooth planar autonomous system is bounded and its omega-limit set contains no equilibrium, then the omega-limit set is a periodic orbit (limit cycle). This is a powerful dichotomy for 2D systems: bounded trajectories either approach equilibria or limit cycles. It fails in 3D (where chaotic attractors can exist, e.g., Lorenz system). Applications: proving existence of periodic orbits by constructing a trapping region.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Become unbounded in finite time</text>
+      <feedback format="html"><text>Incorrect. The hypothesis is that the orbit is bounded; the conclusion concerns its limiting behavior.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Exhibit chaotic behavior</text>
+      <feedback format="html"><text>Incorrect. Chaos cannot occur in 2D autonomous systems (Poincaré-Bendixson rules it out); chaos requires at least 3D.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Approach the origin</text>
+      <feedback format="html"><text>Incorrect. The hypothesis excludes convergence to equilibria; the conclusion is a periodic orbit, not necessarily the origin.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q11 Lyapunov stability theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Lyapunov's theorem for asymptotic stability: if there exists a function \(V(\mathbf{x})\) (Lyapunov function) near an equilibrium \(\mathbf{0}\) with \(V(\mathbf{0})=0\), \(V(\mathbf{x})>0\) for \(\mathbf{x}\neq\mathbf{0}\), and \(\dot V = \nabla V\cdot f < 0\) for \(\mathbf{x}\neq\mathbf{0}\), then:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The equilibrium \(\mathbf{0}\) is asymptotically stable</text>
+      <feedback format="html"><text><![CDATA[
+        Lyapunov's second method: if a positive definite \(V\) exists with \(\dot V<0\) (negative definite), then the equilibrium is asymptotically stable. If \(\dot V\leq 0\) (negative semi-definite), Lyapunov stability (but not necessarily asymptotic). Lyapunov's instability theorem: if \(\dot V>0\) for some \(V\) with \(V(\mathbf{0})=0\), then instability. The method is global when applied on all of \(\mathbb{R}^n\) (Barbalat's lemma extends to non-autonomous systems).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The equilibrium is only Lyapunov stable (not asymptotically)</text>
+      <feedback format="html"><text>Incorrect. With \(\dot V<0\) (strict), the conclusion is asymptotic stability, not just Lyapunov stability.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The equilibrium is unstable</text>
+      <feedback format="html"><text>Incorrect. Instability requires \(\dot V>0\) for some \(V\); here \(\dot V<0\) implies stability.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The conclusion is inconclusive without knowing \(V\) explicitly</text>
+      <feedback format="html"><text>Incorrect. Lyapunov's theorem gives a definitive conclusion from the existence of such a function \(V\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q12 Variation of parameters for systems</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The solution of \(\mathbf{x}' = A\mathbf{x} + \mathbf{g}(t)\) with fundamental matrix \(\Phi(t)\) is given by the variation of constants formula:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbf{x}(t) = \Phi(t)\mathbf{c} + \Phi(t)\displaystyle\int_0^t \Phi^{-1}(s)\mathbf{g}(s)\,ds\)</text>
+      <feedback format="html"><text><![CDATA[
+        Variation of constants (Duhamel's principle): look for \(\mathbf{x}=\Phi\mathbf{u}(t)\). Then \(\Phi\mathbf{u}'+\Phi'\mathbf{u}=A\Phi\mathbf{u}+\mathbf{g}\). Since \(\Phi'=A\Phi\): \(\Phi\mathbf{u}'=\mathbf{g}\), so \(\mathbf{u}'=\Phi^{-1}\mathbf{g}\) and \(\mathbf{u}=\mathbf{c}+\int_0^t\Phi^{-1}(s)\mathbf{g}(s)ds\). With \(\Phi=e^{At}\): \(\mathbf{x}(t)=e^{At}\mathbf{x}_0+\int_0^te^{A(t-s)}\mathbf{g}(s)ds\) (convolution with matrix exponential).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbf{x}(t) = \Phi(t)\mathbf{c}\cdot\displaystyle\int_0^t\mathbf{g}(s)\,ds\)</text>
+      <feedback format="html"><text>Incorrect. The variation of constants formula involves the product \(\Phi(t)\Phi^{-1}(s)\mathbf{g}(s)\) inside the integral.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbf{x}(t) = \Phi(t)\mathbf{c} + \displaystyle\int_0^t\mathbf{g}(s)\,ds\)</text>
+      <feedback format="html"><text>Incorrect. The inverse fundamental matrix \(\Phi^{-1}(s)\) must appear inside the integral.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbf{x}(t) = \Phi(t)^{-1}\mathbf{c} + \Phi(t)\displaystyle\int_0^t\mathbf{g}(s)\,ds\)</text>
+      <feedback format="html"><text>Incorrect. The homogeneous part is \(\Phi(t)\mathbf{c}\) (not \(\Phi^{-1}\mathbf{c}\)).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q13 Van der Pol oscillator</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Van der Pol oscillator \(x'' - \mu(1-x^2)x' + x = 0\) (\(\mu>0\)) exhibits:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A unique stable limit cycle surrounding the unstable equilibrium at the origin</text>
+      <feedback format="html"><text><![CDATA[
+        The Van der Pol oscillator: for \(|x|<1\) the damping \(-\mu(1-x^2)<0\) (negative damping, energy injection), and for \(|x|>1\) the damping \(-\mu(1-x^2)>0\) (positive damping, energy dissipation). This leads to a unique stable limit cycle (by Liénard's theorem). The origin is unstable (linearization eigenvalues have positive real part \(\mu/2\)). All trajectories (except the origin) spiral toward the limit cycle. For small \(\mu\): nearly sinusoidal oscillation. For large \(\mu\): relaxation oscillations.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A stable equilibrium at the origin</text>
+      <feedback format="html"><text>Incorrect. The origin is unstable for \(\mu>0\): linearization gives eigenvalues with positive real part \(\mu/2\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>No periodic orbits (by Bendixson's criterion)</text>
+      <feedback format="html"><text>Incorrect. The Van der Pol oscillator is a classic example of a system with a limit cycle.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Chaotic behavior for large \(\mu\)</text>
+      <feedback format="html"><text>Incorrect. As a 2D system, Van der Pol cannot be chaotic (Poincaré-Bendixson); it has a limit cycle even for large \(\mu\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q14 Conversion to system of first order</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The ODE \(y''' + 2y'' - y' + 3y = f(x)\) can be written as a first-order system \(\mathbf{u}' = A\mathbf{u} + \mathbf{b}\) with state vector \(\mathbf{u}=(y, y', y'')^T\). The matrix \(A\) is:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(A = \begin{pmatrix}0&1&0\\0&0&1\\-3&1&-2\end{pmatrix}\)</text>
+      <feedback format="html"><text><![CDATA[
+        With \(u_1=y\), \(u_2=y'\), \(u_3=y''\): \(u_1'=u_2\), \(u_2'=u_3\), \(u_3'=y'''=-2y''+y'-3y=-2u_3+u_2-3u_1\). This gives the companion matrix (Frobenius form): \(A=\begin{pmatrix}0&1&0\\0&0&1\\-3&1&-2\end{pmatrix}\). The last row contains the negatives of the ODE coefficients: for \(y'''+2y''-y'+3y=0\), the row is \((-3,1,-2)\). The characteristic polynomial of \(A\) equals the characteristic polynomial of the ODE: \(\lambda^3+2\lambda^2-\lambda+3\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(A = \begin{pmatrix}0&1&0\\0&0&1\\3&-1&2\end{pmatrix}\)</text>
+      <feedback format="html"><text>Incorrect. The sign: \(u_3'=-2u_3+u_2-3u_1\), so the last row is \((-3,1,-2)\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(A = \begin{pmatrix}1&2&-1\\0&1&0\\0&0&3\end{pmatrix}\)</text>
+      <feedback format="html"><text>Incorrect. The companion matrix form has 0s and 1s in the upper rows and ODE coefficients in the last row.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(A = \begin{pmatrix}-2&1&-3\\1&0&0\\0&1&0\end{pmatrix}\)</text>
+      <feedback format="html"><text>Incorrect. The companion matrix for an \(n\)th-order ODE has the identity in the first \(n-1\) superdiagonal and ODE coefficients in the last row.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q15 Bendixson's negative criterion</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Bendixson's criterion: for the planar system \(x'=f(x,y)\), \(y'=g(x,y)\), if \(\text{div}(f,g)=\partial f/\partial x + \partial g/\partial y\) is of one sign (and nonzero) in a simply connected region \(D\), then:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>There are no closed orbits (limit cycles) in \(D\)</text>
+      <feedback format="html"><text><![CDATA[
+        Bendixson's criterion: if \(\text{div}(f,g)=f_x+g_y\) doesn't change sign and is not identically zero on a simply connected region \(D\), then there are no closed orbits in \(D\). Proof: by Green's theorem, if a closed orbit \(\Gamma\) exists in \(D\), then \(\oint_\Gamma(f\,dy-g\,dx)=\iint_\text{interior}(f_x+g_y)\,dA\). But \(\oint(f\,dy-g\,dx)=0\) (since \((f,g)\) is tangent to \(\Gamma\)). Contradiction if \(f_x+g_y\) has one sign. Extension: Dulac's criterion uses a multiplier function.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>All orbits approach the origin</text>
+      <feedback format="html"><text>Incorrect. Bendixson's criterion only says no closed orbits exist; it doesn't specify where orbits go.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The system has a unique equilibrium in \(D\)</text>
+      <feedback format="html"><text>Incorrect. Bendixson's criterion concerns closed orbits, not the number of equilibria.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Chaos is possible in \(D\)</text>
+      <feedback format="html"><text>Incorrect. Chaos is impossible in 2D autonomous systems regardless; Bendixson rules out limit cycles.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q16 Trace and determinant for 2x2 system stability</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For a 2D linear system \(\mathbf{x}'=A\mathbf{x}\), with \(\text{tr}(A)=\tau\) and \(\det(A)=\delta\), the equilibrium is asymptotically stable iff:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\tau < 0\) and \(\delta > 0\)</text>
+      <feedback format="html"><text><![CDATA[
+        Eigenvalues satisfy \(\lambda^2-\tau\lambda+\delta=0\): sum \(\lambda_1+\lambda_2=\tau\), product \(\lambda_1\lambda_2=\delta\). For asymptotic stability, both eigenvalues must have negative real parts: \(\text{Re}(\lambda_i)<0\). For real eigenvalues: both negative iff \(\tau<0\) (sum negative) and \(\delta>0\) (product positive). For complex eigenvalues: \(\text{Re}(\lambda)=\tau/2<0\) iff \(\tau<0\), and complex roots occur when \(\delta>0\) anyway. Summary: AS iff \(\tau<0\) AND \(\delta>0\) (Routh-Hurwitz for 2×2).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\tau < 0\) and \(\delta < 0\)</text>
+      <feedback format="html"><text>Incorrect. \(\delta<0\) means eigenvalues have opposite signs (one positive, one negative), giving a saddle — unstable.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\tau > 0\) and \(\delta > 0\)</text>
+      <feedback format="html"><text>Incorrect. \(\tau>0\) means at least one eigenvalue has positive real part — unstable.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\delta > 0\) alone</text>
+      <feedback format="html"><text>Incorrect. \(\delta>0\) (eigenvalues same sign or complex) is necessary but not sufficient; we also need \(\tau<0\) (sum of eigenvalues negative).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q17 Hamiltonian systems</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>A Hamiltonian system in 2D is \(x' = \partial H/\partial y\), \(y' = -\partial H/\partial x\). The divergence of the vector field \((f,g)=(\partial H/\partial y, -\partial H/\partial x)\) equals:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>0 (Hamiltonian vector fields are divergence-free)</text>
+      <feedback format="html"><text><![CDATA[
+        \(\text{div}(f,g)=\frac{\partial}{\partial x}\left(\frac{\partial H}{\partial y}\right)+\frac{\partial}{\partial y}\left(-\frac{\partial H}{\partial x}\right)=\frac{\partial^2 H}{\partial x\partial y}-\frac{\partial^2 H}{\partial y\partial x}=0\) (by equality of mixed partials). This means Hamiltonian systems are volume-preserving (Liouville's theorem) and by Bendixson's criterion cannot have limit cycles — only centers. Energy \(H(x,y)=\text{const}\) along trajectories: \(\frac{dH}{dt}=H_x x'+H_y y'=H_x H_y-H_y H_x=0\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(-\nabla^2 H\) (the Laplacian of \(H\))</text>
+      <feedback format="html"><text>Incorrect. The divergence of the Hamiltonian vector field is exactly zero, as shown by equality of mixed partials.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(|\nabla H|^2\)</text>
+      <feedback format="html"><text>Incorrect. The divergence of the Hamiltonian field is zero; \(|\nabla H|^2\) is the squared gradient magnitude.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Always positive</text>
+      <feedback format="html"><text>Incorrect. The divergence of any Hamiltonian vector field is identically zero.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q18 Hartman-Grobman theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Hartman-Grobman theorem states that near a hyperbolic equilibrium \(\mathbf{x}_0\) of \(\mathbf{x}'=f(\mathbf{x})\):</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The nonlinear flow is topologically conjugate to the flow of the linearization \(\mathbf{x}'=Df(\mathbf{x}_0)\mathbf{x}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Hartman-Grobman: if all eigenvalues of \(Df(\mathbf{x}_0)\) have nonzero real parts (hyperbolic equilibrium), then locally the nonlinear flow is topologically conjugate (homeomorphically equivalent, preserving orbits and time direction) to the linear flow. This justifies linearization for stability classification: stable/unstable/saddle character is preserved. The theorem fails for non-hyperbolic equilibria (e.g., centers can become spirals due to nonlinear terms). For smooth conjugacy (not just topological), one needs non-resonance conditions.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The nonlinear and linear flows are identical (equal, not just topologically equivalent)</text>
+      <feedback format="html"><text>Incorrect. The theorem gives topological equivalence (homeomorphism conjugacy), not equality; nonlinear terms change the quantitative behavior.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The equilibrium is always a stable node near a hyperbolic point</text>
+      <feedback format="html"><text>Incorrect. The theorem applies to any hyperbolic equilibrium (stable/unstable nodes, saddles, spirals); it doesn't assert stability.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The theorem applies only when the Jacobian is symmetric</text>
+      <feedback format="html"><text>Incorrect. The theorem requires hyperbolicity (all eigenvalues have nonzero real parts), not symmetry of the Jacobian.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q19 Stable manifold theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For a hyperbolic equilibrium of \(\mathbf{x}'=f(\mathbf{x})\) with \(k\) eigenvalues with negative real part and \(n-k\) with positive real part, the stable manifold \(W^s\) has dimension:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(k\) (equal to the number of stable eigenvalues)</text>
+      <feedback format="html"><text><![CDATA[
+        The Stable Manifold Theorem: the stable manifold \(W^s=\{\mathbf{x}: \phi_t(\mathbf{x})\to\mathbf{0}\text{ as }t\to+\infty\}\) is a smooth \(k\)-dimensional invariant manifold tangent at the equilibrium to the stable eigenspace \(E^s\) of \(Df(\mathbf{0})\). Similarly, the unstable manifold \(W^u\) has dimension \(n-k\). For a saddle in 2D (\(k=1, n-k=1\)): stable and unstable manifolds are 1D curves. The center manifold theorem handles the remaining \(n_c\) eigenvalues with zero real part.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(n-k\) (equal to the number of unstable eigenvalues)</text>
+      <feedback format="html"><text>Incorrect. The STABLE manifold has dimension \(k\) (number of stable eigenvalues); the unstable manifold has dimension \(n-k\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(n\) (full-dimensional manifold)</text>
+      <feedback format="html"><text>Incorrect. The stable manifold is full-dimensional only if all eigenvalues are stable (\(k=n\)); in that case it's a neighborhood of the equilibrium.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>0 (the stable manifold is just the equilibrium point)</text>
+      <feedback format="html"><text>Incorrect. The stable manifold includes all trajectories converging to the equilibrium; it has dimension equal to the number of stable eigenvalues.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>ODE39-Q20 Invariant manifolds — center manifold reduction</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The center manifold theorem is used when the linearization of \(\mathbf{x}'=f(\mathbf{x})\) at an equilibrium has eigenvalues with zero real part. The theorem guarantees:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>An invariant center manifold \(W^c\) tangent to the center eigenspace, on which the stability behavior of the full system is determined</text>
+      <feedback format="html"><text><![CDATA[
+        Center Manifold Theorem: if the linearization has \(n_s\) stable, \(n_c\) center, and \(n_u\) unstable eigenvalues, there exists a local invariant center manifold \(W^c\) of dimension \(n_c\), tangent to the center eigenspace \(E^c\). The stability of the equilibrium is determined by the reduced dynamics on \(W^c\). If \(n_u=0\), the equilibrium is stable iff the origin of the center manifold system is stable. This reduces the stability question to a lower-dimensional problem (from \(n\) to \(n_c\) dimensions).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The equilibrium is always unstable when center eigenvalues exist</text>
+      <feedback format="html"><text>Incorrect. Center eigenvalues are inconclusive for stability; it depends on the reduced dynamics on \(W^c\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The full system is equivalent to a purely conservative (Hamiltonian) system</text>
+      <feedback format="html"><text>Incorrect. The center manifold theorem doesn't imply Hamiltonian structure; it's a local dimensionality reduction tool.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The center manifold is unique and globally defined</text>
+      <feedback format="html"><text>Incorrect. Center manifolds are generally local (not global) and need not be unique; they may not even be smooth beyond a certain order.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

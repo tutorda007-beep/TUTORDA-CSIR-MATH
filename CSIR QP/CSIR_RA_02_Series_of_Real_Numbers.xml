@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Real Analysis/Series of Real Numbers</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Series - Ratio Test Application</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=1}^{\infty} \frac{n^2}{3^n}\) converges because the ratio test gives \(L =\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(1/3\)</strong></p><p>\(\frac{a_{n+1}}{a_n} = \frac{(n+1)^2}{3^{n+1}} \cdot \frac{3^n}{n^2} = \frac{(n+1)^2}{3n^2} = \frac{1}{3}\left(1+\frac{1}{n}\right)^2 \to \frac{1}{3}\). Since \(L = 1/3 < 1\), the series converges absolutely by the ratio test.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Series - p-Series Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^p}\) converges if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(p > 1\)</strong></p><p>The \(p\)-series \(\sum 1/n^p\) converges iff \(p > 1\). By the integral test: \(\int_1^{\infty} x^{-p}\,dx\) converges iff \(p > 1\). For \(p=1\) (harmonic series), it diverges. For \(p=2\), the sum is \(\pi^2/6\) (Basel problem). For \(p \leq 0\), the general term does not tend to 0.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p \geq 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p > 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(p > 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0 < p < 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Series - Conditional vs Absolute Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following series converges conditionally but NOT absolutely?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}\)</strong></p><p>By the Leibniz alternating series test, \(\sum (-1)^{n+1}/n\) converges (to \(\ln 2\)), but \(\sum 1/n\) (harmonic) diverges, so convergence is conditional. The other options: \(\sum 1/n^2\) converges absolutely; \(\sum (-1)^n\) diverges; \(\sum (-1)^n/n^2\) converges absolutely since \(\sum 1/n^2 < \infty\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{n=1}^{\infty} (-1)^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^n}{n^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Series - Riemann Rearrangement Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>By Riemann's Rearrangement Theorem, if \(\displaystyle\sum a_n\) converges conditionally (but not absolutely), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Its terms can be rearranged to converge to any prescribed real number, or to \(\pm\infty\)</strong></p><p>Riemann's theorem: if \(\sum a_n\) is conditionally convergent, then for any \(L \in \mathbb{R} \cup \{+\infty,-\infty\}\), there exists a rearrangement \(\sum a_{\sigma(n)}\) that converges to \(L\). This dramatically shows that rearrangement of conditionally convergent series can change the sum. For absolutely convergent series, all rearrangements converge to the same sum.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Any rearrangement converges to the same sum]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No rearrangement can converge]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Any rearrangement either converges or diverges to \(+\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Its terms can be rearranged to converge to any prescribed real number \(L\), or to \(\pm\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Series - Root Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The radius of convergence of the power series \(\displaystyle\sum_{n=0}^{\infty} \left(\frac{2n+1}{3n+2}\right)^n x^n\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(3/2\)</strong></p><p>By the Cauchy-Hadamard formula: \(R = 1/\limsup_{n\to\infty} |a_n|^{1/n}\) where \(a_n = \left(\frac{2n+1}{3n+2}\right)^n\). Then \(|a_n|^{1/n} = \frac{2n+1}{3n+2} \to \frac{2}{3}\). So \(R = 1/(2/3) = 3/2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(2/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(3/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Series - Dirichlet Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=1}^{\infty} \frac{\sin(n\theta)}{n}\) converges for:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) All \(\theta \notin 2\pi\mathbb{Z}\)</strong></p><p>By Dirichlet's test: the partial sums of \(\sum \sin(n\theta)\) are bounded when \(\theta\) is not a multiple of \(2\pi\) (they are bounded by \(1/|\sin(\theta/2)|\)), and \(1/n\) decreases monotonically to 0. Hence by Dirichlet's test, \(\sum \sin(n\theta)/n\) converges. When \(\theta = 2\pi k\), \(\sin(n\theta)=0\) so the series is trivially 0. The sum equals \(\frac{\pi-\theta}{2}\) for \(\theta \in (0,2\pi)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\theta = \pi/2\) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[All \(\theta \notin 2\pi\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No value of \(\theta\) (always diverges)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All rational \(\theta\) only]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Series - Comparison Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=2}^{\infty} \frac{1}{n(\ln n)^2}\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Converges</strong></p><p>By the integral test: \(\int_2^{\infty} \frac{dx}{x(\ln x)^2} = \left[-\frac{1}{\ln x}\right]_2^{\infty} = 0 + \frac{1}{\ln 2} = \frac{1}{\ln 2} < \infty\). So the series converges. More generally, \(\sum \frac{1}{n(\ln n)^p}\) converges iff \(p > 1\) (Bertrand's series). Here \(p=2 > 1\), so it converges.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Diverges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges only conditionally]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Convergence cannot be determined]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Series - Raabe's Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Raabe's test states: if \(\lim_{n\to\infty} n\left(1 - \dfrac{a_{n+1}}{a_n}\right) = L\), then the series \(\sum a_n\) (with positive terms) converges if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(L > 1\)</strong></p><p>Raabe's test: if \(\lim n(1 - a_{n+1}/a_n) = L\), then the series converges if \(L > 1\) and diverges if \(L < 1\). If \(L=1\), the test is inconclusive (one needs higher-order tests like Kummer's or Gauss's). Raabe's test is useful when the ratio test gives limit 1 (e.g., for hypergeometric series).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(L < 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(L = 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(L > 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(L > 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Series - Basel Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The value of \(\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^2}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\pi^2/6\)</strong></p><p>This is the Basel problem, solved by Euler in 1734 using the product formula for \(\sin(\pi x)/(\pi x)\). The result is \(\sum_{n=1}^{\infty}1/n^2 = \pi^2/6 \approx 1.6449\). Similarly, \(\sum 1/n^4 = \pi^4/90\), \(\sum 1/n^6 = \pi^6/945\). These arise naturally in Fourier analysis and number theory (Riemann zeta function: \(\zeta(2) = \pi^2/6\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi^2/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi^2/6\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi/6\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi^2/8\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Series - Necessary Condition for Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(\displaystyle\sum_{n=1}^{\infty} a_n\) converges, which of the following must be TRUE?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\lim_{n\to\infty} a_n = 0\)</strong></p><p>A necessary condition for convergence of \(\sum a_n\) is \(a_n \to 0\) (the \(n\)-th term test). However, this is NOT sufficient: the harmonic series \(\sum 1/n\) has \(1/n \to 0\) but diverges. The other options are not necessary: convergence doesn't require \(a_n > 0\) or bounded partial sums in any other specific sense beyond what convergence itself states.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lim_{n\to\infty} a_n = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_n > 0\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum_{n=1}^{\infty} a_n^2\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|a_n| \leq 1/n\) for all large \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Series - Absolute Convergence and Rearrangement</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(\displaystyle\sum_{n=1}^{\infty} |a_n| < \infty\) (absolutely convergent), and \(\sigma: \mathbb{N} \to \mathbb{N}\) is any bijection, then \(\displaystyle\sum_{n=1}^{\infty} a_{\sigma(n)}\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Converges absolutely to the same sum \(\sum a_n\)</strong></p><p>For absolutely convergent series, any rearrangement converges absolutely to the same sum. This is a theorem due to Dirichlet. Contrast with Riemann's rearrangement theorem for conditionally convergent series. The key is that absolute convergence allows grouping and rearranging without loss of control over the tail sums.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[May converge to a different sum]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Converges absolutely to the same sum \(\displaystyle\sum_{n=1}^{\infty} a_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[May diverge]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges but possibly only conditionally]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Series - Limit Comparison Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>To determine convergence of \(\displaystyle\sum_{n=1}^{\infty} \frac{n+\sin n}{n^3 - 1}\), one compares it to \(\sum 1/n^p\) with \(p =\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(p=2\)</strong></p><p>For large \(n\): \(\frac{n+\sin n}{n^3-1} \approx \frac{n}{n^3} = \frac{1}{n^2}\). By the limit comparison test: \(\frac{(n+\sin n)/(n^3-1)}{1/n^2} = \frac{n^2(n+\sin n)}{n^3-1} \to \frac{n^3}{n^3} = 1 \in (0,\infty)\). Since \(\sum 1/n^2\) converges (p-series, \(p=2>1\)), the original series also converges.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p=1\) (harmonic)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p=3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(p=2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p=1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Series - Power Series Radius of Convergence (Hadamard)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The radius of convergence of \(\displaystyle\sum_{n=0}^{\infty} \frac{x^n}{n!}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(\infty\)</strong></p><p>By the ratio test: \(\left|\frac{x^{n+1}/(n+1)!}{x^n/n!}\right| = \frac{|x|}{n+1} \to 0\) for all \(x\). Since the limit is 0 < 1 for every \(x \in \mathbb{R}\), the series converges everywhere. By Cauchy-Hadamard: \(R = 1/\limsup (1/n!)^{1/n}\). Since \((n!)^{1/n} \to \infty\), \((1/n!)^{1/n} \to 0\), so \(R = \infty\). The series sums to \(e^x\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Series - Abel's Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Abel's test for convergence states: if \(\sum b_n\) converges and \(\{a_n\}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Monotone and bounded, then \(\sum a_n b_n\) converges</strong></p><p>Abel's test: if \(\sum b_n\) converges and \(\{a_n\}\) is a monotone bounded sequence, then \(\sum a_n b_n\) converges. This generalizes Dirichlet's test (which requires partial sums of \(\sum b_n\) to be merely bounded, not necessarily convergent, but requires \(a_n \to 0\) monotonically). Both tests use Abel summation (summation by parts).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Monotone and bounded, then \(\sum a_n b_n\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Decreasing to 0, then \(\sum a_n b_n\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Positive, then \(\sum a_n b_n\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges to 0, then \(\sum a_n b_n\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Series - Convergence of log-factor Series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For what values of \(\alpha\) does the series \(\displaystyle\sum_{n=2}^{\infty} \frac{1}{n \ln n \cdot (\ln \ln n)^{\alpha}}\) converge?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\alpha > 1\)</strong></p><p>By the Cauchy condensation test (or integral test), this series behaves like \(\int \frac{dx}{x \ln x (\ln\ln x)^\alpha}\). Substituting \(u = \ln\ln x\), \(du = \frac{dx}{x\ln x}\), the integral becomes \(\int u^{-\alpha}\,du\), which converges iff \(\alpha > 1\). This is an iterated logarithm refinement of the Bertrand series.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\alpha > 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\alpha \geq 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\alpha > 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All \(\alpha \in \mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Series - Cauchy Condensation Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Cauchy condensation test states: for a non-increasing sequence \(a_n \geq 0\), the series \(\sum_{n=1}^{\infty} a_n\) converges iff:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\displaystyle\sum_{k=0}^{\infty} 2^k a_{2^k}\) converges</strong></p><p>Cauchy condensation test: \(\sum a_n\) converges iff \(\sum 2^k a_{2^k}\) converges (for non-increasing \(a_n \geq 0\)). This is proved by grouping consecutive terms in dyadic blocks. Example: \(a_n = 1/n\): \(2^k a_{2^k} = 2^k/2^k = 1\), so \(\sum 2^k a_{2^k}\) diverges, confirming harmonic series diverges. For \(a_n=1/n^2\): \(2^k/2^{2k} = 1/2^k\), convergent geometric.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{k=0}^{\infty} a_{2^k}\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\sum_{k=0}^{\infty} 2^k a_{2^k}\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{k=0}^{\infty} k a_k\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{k=0}^{\infty} a_{k^2}\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Series - Product of Series (Cauchy Product)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(\sum a_n\) and \(\sum b_n\) both converge absolutely, their Cauchy product \(\sum c_n\) where \(c_n = \sum_{k=0}^{n} a_k b_{n-k}\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Converges absolutely to \(\left(\sum a_n\right)\left(\sum b_n\right)\)</strong></p><p>Mertens' theorem: if \(\sum a_n\) converges absolutely and \(\sum b_n\) converges (conditionally suffices), then the Cauchy product converges to the product of sums. When both converge absolutely, the product converges absolutely to \((\sum a_n)(\sum b_n)\). Example: \((e^x)(e^y) = e^{x+y}\) via Cauchy product of power series.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Converges absolutely to \(\left(\displaystyle\sum_{n=0}^{\infty} a_n\right)\!\left(\displaystyle\sum_{n=0}^{\infty} b_n\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[May diverge even if both factor series converge absolutely]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges, but not necessarily to the product of sums]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges only if one of the series converges faster]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Series - Alternating Series Error Bound</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the alternating series \(\displaystyle\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^2}\), the error in approximating the sum by the first 3 terms is bounded by:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(1/16\)</strong></p><p>By the Alternating Series Estimation Theorem: |error| \(\leq |a_4| = 1/4^2 = 1/16\). The first 3 terms give \(1 - 1/4 + 1/9 = 1 - 0.25 + 0.111\ldots = 0.861\ldots\). The actual sum is \(\pi^2/12 \approx 0.8225\). The error is about \(0.039 < 1/16 = 0.0625\). The bound \(1/16\) is indeed valid.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/9\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/25\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/16\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Series - Harmonic Series Divergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The harmonic series \(\displaystyle\sum_{n=1}^{\infty} \frac{1}{n}\) diverges. What is the rate of divergence of its partial sums \(H_n = \displaystyle\sum_{k=1}^{n} \frac{1}{k}\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(H_n \sim \ln n + \gamma\) where \(\gamma \approx 0.5772\) is the Euler-Mascheroni constant</strong></p><p>By the Euler-Maclaurin formula: \(H_n = \sum_{k=1}^n 1/k = \ln n + \gamma + O(1/n)\) where \(\gamma = \lim_{n\to\infty}(H_n - \ln n) \approx 0.57721\ldots\) is the Euler-Mascheroni constant. So \(H_n \to \infty\) at logarithmic rate, the slowest divergence rate among standard divergent series.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(H_n \sim n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(H_n \sim \sqrt{n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(H_n \sim n^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(H_n \sim \ln n + \gamma\) where \(\gamma \approx 0.5772\) (Euler-Mascheroni constant)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Series - Uniform Convergence of Power Series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The power series \(\displaystyle\sum_{n=0}^{\infty} a_n x^n\) with radius of convergence \(R > 0\) converges uniformly on:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Every closed interval \([-r, r]\) with \(0 < r < R\)</strong></p><p>A power series converges uniformly on any compact subset of its interval of convergence \((-R,R)\). Specifically, on \([-r,r]\) for any \(r < R\): by Weierstrass M-test with \(M_n = |a_n|r^n\) (and \(\sum M_n < \infty\) since \(r < R\)). The series need NOT converge uniformly on all of \((-R,R)\): e.g., \(\sum x^n\) on \((-1,1)\) is not uniform (the remainder \(x^{n+1}/(1-x) \to 0\) only pointwise).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The entire interval \((-R, R)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Every closed interval \([-r, r]\) with \(0 < r < R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\([0, R]\) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only at the single point \(x = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

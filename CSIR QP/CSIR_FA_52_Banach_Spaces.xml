@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category>
+    <text>$course$/CSIR NET Mathematics/Functional Analysis/Banach Spaces</text>
+  </category>
+</question>
+
+<!-- Q01: Banach space examples -->
+<question type="multichoice">
+  <name><text>FA52_Q01_BanachExamples</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Which of the following is a Banach space (complete normed vector space)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\ell^p\) for any \(1 \leq p \leq \infty\), with the norm \(\|(x_n)\|_p = \bigl(\sum_{n=1}^\infty |x_n|^p\bigr)^{1/p}\) (or \(\sup_n |x_n|\) for \(p = \infty\))]]></text>
+    <feedback><text>Correct. All \(\ell^p\) spaces (\(1 \leq p \leq \infty\)) are Banach spaces. Completeness follows from the completeness of \(\mathbb{R}\) and standard arguments using absolute convergence.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The space \(\mathcal{P}[0,1]\) of all polynomials on \([0,1]\) with the sup norm \(\|p\|_\infty = \sup_{x \in [0,1]} |p(x)|\)]]></text>
+    <feedback><text>Incorrect. \(\mathcal{P}[0,1]\) is a dense proper subspace of \(C[0,1]\), hence not closed in \(C[0,1]\). It is not complete: e.g., the partial sums of \(e^x = \sum x^n/n!\) are Cauchy but do not converge in \(\mathcal{P}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The space \(C[0,1]\) with the \(L^1\) norm \(\|f\|_1 = \int_0^1 |f(x)|\,dx\)]]></text>
+    <feedback><text>Incorrect. \((C[0,1], \|\cdot\|_1)\) is not complete. For example, bump functions approximating the Heaviside step function form a Cauchy sequence in \(L^1\) that does not converge in \(C[0,1]\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The rationals \(\mathbb{Q}\) with the absolute value norm \(|q|\)]]></text>
+    <feedback><text>Incorrect. \(\mathbb{Q}\) is not complete: the Cauchy sequence of rational approximations to \(\sqrt{2}\) does not converge in \(\mathbb{Q}\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q02: Hahn-Banach theorem -->
+<question type="multichoice">
+  <name><text>FA52_Q02_HahnBanach</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Hahn-Banach theorem</strong> (extension form) states: let \(Y\) be a subspace of a real normed space \(X\), and let \(f \in Y^*\) be a bounded linear functional on \(Y\). Then there exists \(F \in X^*\) such that \(F|_Y = f\) and \(\|F\|_{X^*} = \|f\|_{Y^*}\). Which immediate consequence follows?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[For every nonzero \(x_0 \in X\), there exists \(F \in X^*\) with \(\|F\| = 1\) and \(F(x_0) = \|x_0\|\); in particular \(X^*\) separates points of \(X\)]]></text>
+    <feedback><text>Correct. Apply Hahn-Banach to the functional \(f(tx_0) = t\|x_0\|\) on the subspace \(\text{span}\{x_0\}\), obtaining an extension \(F\) with \(\|F\| = 1\) and \(F(x_0) = \|x_0\|\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every bounded linear functional on a Banach space extends to a bounded functional on any larger Banach space with strictly smaller norm]]></text>
+    <feedback><text>Incorrect. The Hahn-Banach theorem preserves the norm (norm-preserving extension), not a strictly smaller one. The extension satisfies \(\|F\| = \|f\|\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every Banach space \(X\) has a unique predual (a space whose dual is isometrically isomorphic to \(X\))]]></text>
+    <feedback><text>Incorrect. Preduals need not exist or be unique (e.g., \(L^\infty\) has no natural predual). This is not a consequence of Hahn-Banach.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[If \(Y\) is a closed subspace of \(X\), then the restriction map \(X^* \to Y^*\) is surjective and isometric]]></text>
+    <feedback><text>Incorrect. The restriction map is surjective by Hahn-Banach, but it need not be isometric (the restriction may have larger norm only in the other direction).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q03: Uniform boundedness principle -->
+<question type="multichoice">
+  <name><text>FA52_Q03_UniformBoundedness</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Uniform Boundedness Principle</strong> (Banach-Steinhaus theorem) states: let \(X\) be a Banach space and \(Y\) a normed space. If \(\{T_\alpha\}_{\alpha \in A}\) is a family of bounded linear operators \(T_\alpha: X \to Y\) satisfying \(\sup_{\alpha} \|T_\alpha x\| < \infty\) for every fixed \(x \in X\), then:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\sup_\alpha \|T_\alpha\| < \infty\) (the family is uniformly bounded in operator norm)]]></text>
+    <feedback><text>Correct. Pointwise boundedness on a Banach space (Baire space) implies uniform boundedness of operator norms. This is proved using the Baire category theorem.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sup_\alpha \|T_\alpha\| < \infty\) only if \(A\) is countable]]></text>
+    <feedback><text>Incorrect. The theorem holds for arbitrary index sets \(A\), not just countable ones. Pointwise boundedness on any Banach space implies uniform norm boundedness.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T_\alpha \to 0\) in operator norm as \(\alpha \to \infty\)]]></text>
+    <feedback><text>Incorrect. The theorem concludes that the family is uniformly norm-bounded, not that it converges to zero. Convergence requires additional hypotheses.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The conclusion holds whenever \(Y\) is a Banach space, even if \(X\) is only a normed (not necessarily complete) space]]></text>
+    <feedback><text>Incorrect. The theorem requires \(X\) to be a Banach space (completeness is essential; the proof uses Baire category on \(X\)). The completeness of \(Y\) is not needed.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q04: Open mapping theorem -->
+<question type="multichoice">
+  <name><text>FA52_Q04_OpenMappingThm</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Open Mapping Theorem</strong> states: if \(T: X \to Y\) is a surjective bounded linear operator between Banach spaces, then \(T\) is an open map (images of open sets are open). As a corollary, if \(T\) is also injective (hence bijective), then:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(T^{-1}: Y \to X\) is bounded (automatically continuous), so \(T\) is a homeomorphism — and in fact a Banach space isomorphism]]></text>
+    <feedback><text>Correct. A bijective bounded linear map between Banach spaces automatically has a bounded inverse by the Open Mapping Theorem. This is the Bounded Inverse Theorem.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T^{-1}\) exists but may be unbounded; an extra assumption (e.g., compactness) is needed for \(T^{-1}\) to be bounded]]></text>
+    <feedback><text>Incorrect. No extra assumption is needed. The Open Mapping Theorem directly implies that a bijective bounded linear map between Banach spaces has a bounded inverse.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T\) is an isometry: \(\|Tx\| = \|x\|\) for all \(x \in X\)]]></text>
+    <feedback><text>Incorrect. The theorem gives boundedness of \(T^{-1}\) (hence topological isomorphism), but not necessarily norm-preservation. An isometry requires the additional condition \(\|Tx\| = \|x\|\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(X\) and \(Y\) must have the same dimension (both finite or both countably infinite-dimensional)]]></text>
+    <feedback><text>Incorrect. The Banach spaces \(X\) and \(Y\) could be isomorphic without having the same "dimension" in any naive sense; what the theorem gives is a topological and algebraic isomorphism.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q05: Closed graph theorem -->
+<question type="multichoice">
+  <name><text>FA52_Q05_ClosedGraph</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Closed Graph Theorem</strong> states: a linear map \(T: X \to Y\) between Banach spaces is bounded if and only if its graph \(\Gamma(T) = \{(x, Tx) : x \in X\} \subset X \times Y\) is closed. Which scenario does this help handle?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[If \(x_n \to x\) in \(X\) and \(Tx_n \to y\) in \(Y\) implies \(y = Tx\), then \(T\) is automatically bounded — even without assuming \(T\) is defined everywhere]]></text>
+    <feedback><text>Correct. The closed graph condition is: for any convergent sequence \(x_n \to x\) with \(Tx_n \to y\), we must have \(y = Tx\). The Closed Graph Theorem says this implies \(T \in \mathcal{B}(X,Y)\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A linear map \(T\) with closed image \(T(X)\) in \(Y\) is bounded]]></text>
+    <feedback><text>Incorrect. Closed image does not imply bounded operator. For example, the map \(T: \ell^1 \to \ell^1\), \(Te_n = ne_n\) is unbounded with closed image (= \(\ell^1\)) extended to all of \(\ell^1\)... actually this needs more care. The theorem concerns closed graph, not closed image.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A linear map \(T: X \to Y\) is bounded if and only if \(\ker(T)\) is closed]]></text>
+    <feedback><text>Incorrect. The kernel of a bounded linear map is always closed. But a map with closed kernel need not be bounded (consider unbounded linear functionals on infinite-dimensional spaces). The relevant condition is closed graph, not closed kernel.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every linear map from a Banach space to itself with closed graph is a bijection]]></text>
+    <feedback><text>Incorrect. The Closed Graph Theorem gives boundedness, not bijectivity. An operator can be bounded without being bijective.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q06: Baire category theorem -->
+<question type="multichoice">
+  <name><text>FA52_Q06_BaireCategory</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Baire Category Theorem</strong> states that a complete metric space (hence any Banach space) is of the second category: it cannot be expressed as a countable union of nowhere dense sets. Which of the following is a direct consequence for Banach spaces?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[An infinite-dimensional Banach space cannot have a countable (Hamel) algebraic basis — i.e., no countable set \(\{e_1, e_2, \ldots\}\) such that every element is a finite linear combination]]></text>
+    <feedback><text>Correct. If \(X = \bigcup_{n=1}^\infty \text{span}\{e_1,\ldots,e_n\}\) where each span is a finite-dimensional (hence closed, nowhere dense) proper subspace, then \(X\) would be a countable union of nowhere dense sets, contradicting Baire.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every Banach space is separable (has a countable dense subset)]]></text>
+    <feedback><text>Incorrect. Separability is not a consequence of Baire. For example, \(\ell^\infty\) is a Banach space that is not separable.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every Banach space has finite dimension]]></text>
+    <feedback><text>Incorrect. Infinite-dimensional Banach spaces exist (\(\ell^2\), \(C[0,1]\), etc.). Baire does not imply finite-dimensionality.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every closed subspace of a Banach space is a direct summand (has a bounded projection onto it)]]></text>
+    <feedback><text>Incorrect. Not every closed subspace is complemented. For example, \(c_0 \subset \ell^\infty\) is a closed subspace that is not complemented. This is unrelated to Baire.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q07: Dual of ell^p -->
+<question type="multichoice">
+  <name><text>FA52_Q07_DualEllP</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>For the sequence space \(\ell^p\) (\(1 \leq p < \infty\)), the dual space \((\ell^p)^*\) is isometrically isomorphic to \(\ell^q\) where \(1/p + 1/q = 1\) (with \(q = \infty\) when \(p = 1\)). Under this identification, a bounded linear functional \(f \in (\ell^p)^*\) corresponding to \((y_n) \in \ell^q\) acts as:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(f(x) = \sum_{n=1}^\infty x_n y_n\) for \(x = (x_n) \in \ell^p\), and \(\|f\|_{(\ell^p)^*} = \|(y_n)\|_{\ell^q}\)]]></text>
+    <feedback><text>Correct. By Hölder's inequality \(|\sum x_n y_n| \leq \|x\|_p \|y\|_q\), so \(\|f\| \leq \|y\|_q\). Equality is attained by specific sequences. This duality is an isometric isomorphism \((\ell^p)^* \cong \ell^q\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(f(x) = \sum_{n=1}^\infty x_n y_n\) and \(\|f\| = \|y\|_p\) (same \(p\) as the domain)]]></text>
+    <feedback><text>Incorrect. The dual norm is \(\|\cdot\|_q\) (conjugate exponent), not \(\|\cdot\|_p\). The duality pairing \(1/p + 1/q = 1\) is essential.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The dual \((\ell^p)^*\) is isomorphic to \(\ell^p\) itself for all \(1 \leq p < \infty\) (self-dual)]]></text>
+    <feedback><text>Incorrect. Only \(\ell^2\) is self-dual (since \(q = p = 2\) when \(1/p + 1/q = 1\)). For \(p \neq 2\), \((\ell^p)^* \cong \ell^q\) with \(q \neq p\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\((\ell^\infty)^* \cong \ell^1\) (the dual of \(\ell^\infty\) is \(\ell^1\))]]></text>
+    <feedback><text>Incorrect. This reverses the duality. \((\ell^1)^* \cong \ell^\infty\), not the other way. The dual of \(\ell^\infty\) is strictly larger than \(\ell^1\) (it includes finitely additive measures on \(\mathbb{N}\)).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q08: Reflexivity -->
+<question type="multichoice">
+  <name><text>FA52_Q08_Reflexivity</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A Banach space \(X\) is <strong>reflexive</strong> if the canonical embedding \(J: X \to X^{**}\), \(J(x)(f) = f(x)\), is surjective (hence an isometric isomorphism). Which of the following is correct?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\ell^p\) is reflexive for \(1 < p < \infty\), but \(\ell^1\), \(\ell^\infty\), and \(c_0\) are not reflexive]]></text>
+    <feedback><text>Correct. For \(1 < p < \infty\): \((\ell^p)^{**} = (\ell^q)^* = \ell^p\) (using \(1/p + 1/q = 1\)). But \((\ell^1)^{**} = (\ell^\infty)^* \supsetneq \ell^1\); similarly \(c_0^{**} = \ell^\infty \neq c_0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every separable Banach space is reflexive]]></text>
+    <feedback><text>Incorrect. \(\ell^1\) is separable but not reflexive. \(c_0\) is separable and not reflexive. Separability and reflexivity are independent properties.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A Banach space is reflexive if and only if \(X^*\) is separable]]></text>
+    <feedback><text>Incorrect. If \(X^*\) is separable then \(X\) is separable (but not vice versa). Reflexivity is not characterized by separability of \(X^*\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every Hilbert space is non-reflexive because \(H^{**} \neq H\) in general]]></text>
+    <feedback><text>Incorrect. Every Hilbert space is reflexive (in fact, \(H^* \cong H\) by Riesz and \(H^{**} \cong H^* \cong H\)). Hilbert spaces are the prototypical reflexive spaces.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q09: Weak convergence -->
+<question type="multichoice">
+  <name><text>FA52_Q09_WeakConvergence</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>In an infinite-dimensional Banach space \(X\), a sequence \((x_n)\) converges <strong>weakly</strong> to \(x\) (written \(x_n \rightharpoonup x\)) if \(f(x_n) \to f(x)\) for all \(f \in X^*\). Which statement is correct?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Strong convergence \(\|x_n - x\| \to 0\) implies weak convergence, but the converse fails in infinite dimensions: e.g., in \(\ell^2\) the standard basis \(e_n \rightharpoonup 0\) weakly but \(\|e_n\| = 1 \not\to 0\)]]></text>
+    <feedback><text>Correct. For any \(f = (y_k) \in (\ell^2)^* = \ell^2\): \(f(e_n) = y_n \to 0\) since \(\sum |y_k|^2 < \infty\). But \(\|e_n - 0\| = 1\), so convergence is not strong.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Weak convergence implies strong convergence in every Banach space]]></text>
+    <feedback><text>Incorrect. This fails in infinite dimensions. In finite-dimensional spaces all norms are equivalent and weak equals strong, but not in infinite-dimensional Banach spaces.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[If \(x_n \rightharpoonup x\) weakly, then \(\|x_n\| \to \|x\|\)]]></text>
+    <feedback><text>Incorrect. Weak convergence does not imply convergence of norms in general. As shown by \(e_n \rightharpoonup 0\) in \(\ell^2\): \(\|e_n\| = 1 \not\to 0 = \|0\|\). (Norms may converge if additionally we have \(\|x_n\| \to \|x\|\), but this is an extra condition.)</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Weak convergence in \(\ell^1\) is the same as strong (norm) convergence in \(\ell^1\)]]></text>
+    <feedback><text>Incorrect. The Schur property says weak convergence in \(\ell^1\) IS the same as strong convergence, but this is a special feature of \(\ell^1\). For general Banach spaces (including \(\ell^p\) with \(p > 1\)) weak and strong convergence differ.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q10: Operator norm -->
+<question type="multichoice">
+  <name><text>FA52_Q10_OperatorNorm</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>For a bounded linear operator \(T: X \to Y\) between normed spaces, the operator norm is \(\|T\| = \sup_{\|x\| = 1} \|Tx\|\). Consider the left-shift operator \(L: \ell^2 \to \ell^2\) defined by \(L(x_1, x_2, x_3, \ldots) = (x_2, x_3, x_4, \ldots)\). What is \(\|L\|\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\|L\| = 1\)]]></text>
+    <feedback><text>Correct. For any \(x \in \ell^2\) with \(\|x\|_2 = 1\): \(\|Lx\|_2^2 = \sum_{n=2}^\infty |x_n|^2 \leq \sum_{n=1}^\infty |x_n|^2 = 1\), so \(\|L\| \leq 1\). Equality is achieved by sequences with \(x_1 = 0\), e.g., \(x = e_2\), giving \(\|Le_2\| = \|e_1\| = 1\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\|L\| = 0\)]]></text>
+    <feedback><text>Incorrect. \(L\) is not the zero operator; e.g., \(Le_2 = e_1 \neq 0\), so \(\|L\| \geq 1 > 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\|L\| = 2\)]]></text>
+    <feedback><text>Incorrect. The left shift does not increase norms; \(\|Lx\| \leq \|x\|\) always (it drops the first component), so \(\|L\| \leq 1 < 2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\|L\| = \infty\) (L is unbounded)]]></text>
+    <feedback><text>Incorrect. The left shift is bounded: \(\|Lx\|_2 \leq \|x\|_2\) for all \(x \in \ell^2\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q11: Bounded iff continuous -->
+<question type="multichoice">
+  <name><text>FA52_Q11_BoundedContinuous</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Let \(T: X \to Y\) be a linear map between normed spaces. Which of the following conditions are <strong>equivalent</strong>?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(T\) is bounded (\(\|T\| < \infty\)) \(\Leftrightarrow\) \(T\) is continuous everywhere \(\Leftrightarrow\) \(T\) is continuous at \(0\) \(\Leftrightarrow\) \(T\) maps bounded sets to bounded sets]]></text>
+    <feedback><text>Correct. For linear maps, all four conditions are equivalent. Linearity converts continuity at one point (say 0) into uniform continuity everywhere.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T\) is bounded \(\Leftrightarrow\) \(T\) is continuous \(\Leftrightarrow\) \(\ker(T)\) is closed]]></text>
+    <feedback><text>Incorrect. A bounded linear \(T\) has closed kernel, but having closed kernel does not imply \(T\) is bounded in infinite dimensions. (There exist discontinuous linear functionals with closed kernel \(\{0\}\) on infinite-dimensional spaces.)</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T\) is bounded \(\Leftrightarrow\) \(T\) maps compact sets to compact sets]]></text>
+    <feedback><text>Incorrect. Bounded linear maps do map compact sets to compact sets (being continuous), but so do many nonlinear maps. More importantly, compact operators are a strictly smaller class than bounded operators in infinite dimensions.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T\) is bounded \(\Leftrightarrow\) \(\dim X < \infty\)]]></text>
+    <feedback><text>Incorrect. Bounded operators exist in infinite dimensions (e.g., the identity on \(\ell^2\) is bounded). Moreover, in finite dimensions all linear maps are bounded regardless.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q12: c_0 space -->
+<question type="multichoice">
+  <name><text>FA52_Q12_c0Space</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Let \(c_0 = \{(x_n) \in \ell^\infty : x_n \to 0\}\) with the sup norm \(\|(x_n)\|_\infty = \sup_n |x_n|\). Which is correct?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(c_0\) is a closed subspace of \(\ell^\infty\) (hence Banach), its dual \(c_0^* \cong \ell^1\), and \(c_0\) is not reflexive since \(c_0^{**} \cong \ell^\infty \neq c_0\)]]></text>
+    <feedback><text>Correct. \(c_0\) is Banach (closed in \(\ell^\infty\)). The pairing \((y_n) \in \ell^1 \mapsto f((x_n)) = \sum x_n y_n\) gives \(c_0^* \cong \ell^1\). Non-reflexivity: \(c_0^{**} \cong (\ell^1)^* \cong \ell^\infty \supsetneq c_0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(c_0^* \cong \ell^\infty\) (the dual of \(c_0\) is \(\ell^\infty\))]]></text>
+    <feedback><text>Incorrect. \(c_0^* \cong \ell^1\), not \(\ell^\infty\). The dual of \(\ell^\infty\) is strictly larger than \(\ell^1\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(c_0\) is reflexive since it is a closed subspace of the Banach space \(\ell^\infty\)]]></text>
+    <feedback><text>Incorrect. Closed subspaces of reflexive spaces are reflexive, but \(\ell^\infty\) is not reflexive. \(c_0\) is not reflexive: \(c_0^{**} \cong \ell^\infty \neq c_0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(c_0\) is dense in \(\ell^\infty\) (not closed) with the sup norm]]></text>
+    <feedback><text>Incorrect. \(c_0\) is a proper closed subspace of \(\ell^\infty\). For example, the constant sequence \((1,1,1,\ldots) \in \ell^\infty \setminus c_0\) is at distance 1 from \(c_0\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q13: Finite-dimensional spaces -->
+<question type="multichoice">
+  <name><text>FA52_Q13_FiniteDimBanach</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Regarding finite-dimensional Banach spaces, which statement is correct?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[All norms on a finite-dimensional vector space \(V\) over \(\mathbb{R}\) are equivalent, and every finite-dimensional normed space is automatically Banach (complete)]]></text>
+    <feedback><text>Correct. On \(\mathbb{R}^n\), any two norms \(\|\cdot\|_\alpha\) and \(\|\cdot\|_\beta\) satisfy \(c\|\cdot\|_\alpha \leq \|\cdot\|_\beta \leq C\|\cdot\|_\alpha\) for some constants \(c, C > 0\). Completeness follows from that of \(\mathbb{R}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[There exist non-equivalent norms on \(\mathbb{R}^2\): for example, \(\|\cdot\|_1\) and \(\|\cdot\|_2\) are not equivalent]]></text>
+    <feedback><text>Incorrect. All norms on \(\mathbb{R}^2\) (and more generally on any finite-dimensional space) are equivalent. In particular, \(\|x\|_2 \leq \|x\|_1 \leq \sqrt{2}\|x\|_2\) on \(\mathbb{R}^2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A finite-dimensional subspace of a Banach space need not be closed]]></text>
+    <feedback><text>Incorrect. Every finite-dimensional subspace of a normed space is closed (since it is complete with respect to the induced norm, hence complete, hence closed).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The unit ball \(\{x : \|x\| \leq 1\}\) in an infinite-dimensional Banach space is compact]]></text>
+    <feedback><text>Incorrect. The closed unit ball is compact if and only if the space is finite-dimensional (Riesz's theorem). In infinite dimensions, the closed unit ball is not compact.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q14: Quotient Banach space -->
+<question type="multichoice">
+  <name><text>FA52_Q14_QuotientSpace</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Let \(Y\) be a closed subspace of a Banach space \(X\). The quotient space \(X/Y = \{[x] = x + Y : x \in X\}\) is normed by \(\|[x]\|_{X/Y} = \inf_{y \in Y} \|x - y\|\). Which is TRUE?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(X/Y\) is a Banach space (the quotient of a Banach space by a closed subspace is Banach)]]></text>
+    <feedback><text>Correct. Closedness of \(Y\) ensures \(\|[x]\|_{X/Y} = 0 \Rightarrow x \in Y\) (the quotient norm is indeed a norm). Completeness of \(X/Y\) follows from completeness of \(X\) and the closed-subspace condition.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(X/Y\) is complete only if \(Y\) has finite codimension in \(X\)]]></text>
+    <feedback><text>Incorrect. The quotient \(X/Y\) is Banach for any closed subspace \(Y\), regardless of the codimension.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\|[x]\|_{X/Y} = \|x\|_X\) for all \(x\) (the quotient norm equals the original norm)]]></text>
+    <feedback><text>Incorrect. The quotient norm is \(\inf_{y \in Y}\|x-y\| \leq \|x\|\) (since \(0 \in Y\)), with equality only if \(\text{dist}(x, Y) = \|x\|\), which is not generally true.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The canonical projection \(\pi: X \to X/Y\) is a closed map (maps closed sets to closed sets)]]></text>
+    <feedback><text>Incorrect. The projection \(\pi\) is open (by the Open Mapping Theorem applied to bounded surjections between Banach spaces) but not necessarily closed.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q15: Separability -->
+<question type="multichoice">
+  <name><text>FA52_Q15_Separability</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Which of the following statements about separability of Banach spaces is correct?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\ell^p\) is separable for \(1 \leq p < \infty\) (finite rational combinations of standard basis vectors are dense), but \(\ell^\infty\) is not separable]]></text>
+    <feedback><text>Correct. For \(p < \infty\), finite sequences with rational entries are a countable dense subset of \(\ell^p\). For \(\ell^\infty\): the uncountable family \(\{1_A : A \subseteq \mathbb{N}\}\) of indicator sequences satisfies \(\|1_A - 1_B\|_\infty = 1\) for \(A \neq B\), giving an uncountable separated set.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[All \(\ell^p\) spaces (\(1 \leq p \leq \infty\)) are separable]]></text>
+    <feedback><text>Incorrect. \(\ell^\infty\) is not separable: it contains uncountably many elements at mutual distance 1 (indicator functions of subsets of \(\mathbb{N}\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[If \(X^*\) is separable, then \(X\) may be non-separable]]></text>
+    <feedback><text>Incorrect. If \(X^*\) is separable, then \(X\) is separable. (The converse fails: \(X = \ell^1\) is separable but \(X^* = \ell^\infty\) is not.)</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(c_0\) is not separable (it is a non-separable closed subspace of \(\ell^\infty\))]]></text>
+    <feedback><text>Incorrect. \(c_0\) is separable (the finite sequences with rational entries are dense in \(c_0\) with the sup norm, since sequences in \(c_0\) converge to 0 and can be approximated by finite truncations).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q16: L^p spaces -->
+<question type="multichoice">
+  <name><text>FA52_Q16_LpSpaces</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>For the Lebesgue spaces \(L^p([0,1])\) with \(1 \leq p \leq \infty\), which statement is TRUE?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(L^p([0,1])\) is a Banach space for all \(1 \leq p \leq \infty\), and \(L^1([0,1]) \supset L^2([0,1]) \supset L^\infty([0,1])\) as sets (larger \(p\) gives smaller space on \([0,1]\))]]></text>
+    <feedback><text>Correct. By Hölder's inequality on bounded measure spaces: \(L^\infty([0,1]) \subset L^2([0,1]) \subset L^1([0,1])\). Each is Banach by the Riesz-Fischer theorem.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[For \(0 < p < 1\), \(L^p([0,1])\) is also a Banach space with the norm \(\|f\|_p = (\int |f|^p)^{1/p}\)]]></text>
+    <feedback><text>Incorrect. For \(0 < p < 1\), the triangle inequality fails (e.g., \(\|\cdot\|_p\) is not a norm), so \(L^p([0,1])\) is a quasi-Banach space (complete quasi-normed space) but not a Banach space.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(L^2([0,1])\) is not complete (polynomials are dense and form a proper subspace)]]></text>
+    <feedback><text>Incorrect. \(L^2([0,1])\) is a Hilbert space (complete). The fact that polynomials are dense says nothing about incompleteness of \(L^2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\((L^p)^* \cong L^{p'}\) for all \(1 \leq p \leq \infty\) (including \(p = \infty\))]]></text>
+    <feedback><text>Incorrect. \((L^\infty)^*\) is strictly larger than \(L^1\) (it contains finitely additive measures). The duality \((L^p)^* \cong L^{p'}\) holds for \(1 \leq p < \infty\) but fails for \(p = \infty\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q17: Compact operators -->
+<question type="multichoice">
+  <name><text>FA52_Q17_CompactOperators</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A bounded linear operator \(T: X \to Y\) is <strong>compact</strong> if it maps bounded sets to precompact sets (sets with compact closure). Which of the following is TRUE about compact operators?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Every compact operator \(T: X \to Y\) is bounded; and in infinite dimensions, the identity operator \(I: X \to X\) is compact if and only if \(X\) is finite-dimensional]]></text>
+    <feedback><text>Correct. Compact operators map bounded sets to precompact sets, hence to bounded sets, so they are bounded. The identity on an infinite-dimensional Banach space maps the unit ball to itself (not precompact by Riesz's theorem), so \(I\) is not compact.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every bounded operator between Banach spaces is compact]]></text>
+    <feedback><text>Incorrect. Compact operators are a proper subset of bounded operators in infinite dimensions. The identity on \(\ell^2\) is bounded but not compact.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A composition of compact operators is always zero]]></text>
+    <feedback><text>Incorrect. The composition of two compact operators is compact (not zero). The set of compact operators forms a closed two-sided ideal in \(\mathcal{B}(X)\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Compact operators between infinite-dimensional Banach spaces cannot be invertible (bounded inverse doesn't exist)]]></text>
+    <feedback><text>Correct in spirit, but the option is phrased incorrectly. A compact operator between infinite-dimensional Banach spaces is never a bijection (its image is nowhere dense unless finite-dimensional). But the statement needs care — a compact operator can be injective without being surjective.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q18: Bounded inverse theorem application -->
+<question type="multichoice">
+  <name><text>FA52_Q18_BoundedInverse</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Let \(X = C[0,1]\) with the sup norm and \(T: X \to X\) be the Volterra integral operator \((Tf)(x) = \int_0^x f(t)\,dt\). Which of the following is TRUE?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(T\) is bounded with \(\|T\| \leq 1\), is compact, and is injective but not surjective (the image consists of functions vanishing at 0)]]></text>
+    <feedback><text>Correct. \(\|(Tf)\|_\infty \leq \int_0^1|f|\,dt \leq \|f\|_\infty\), so \(\|T\| \leq 1\). \(T\) is compact (maps bounded sets to equicontinuous sets, apply Arzelà-Ascoli). The image is \(\{g \in C^1[0,1] : g(0) = 0\}\), hence not all of \(C[0,1]\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T\) is unbounded: \(\|T\| = \infty\)]]></text>
+    <feedback><text>Incorrect. The Volterra operator is bounded: \(|(Tf)(x)| \leq \int_0^x |f(t)|\,dt \leq x\|f\|_\infty \leq \|f\|_\infty\), so \(\|T\| \leq 1\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T\) is surjective: every continuous function is an antiderivative of some continuous function]]></text>
+    <feedback><text>Incorrect. The image of \(T\) is \(\{g \in C^1[0,1] : g(0)=0\}\), which is a proper subset of \(C[0,1]\). Not every continuous function lies in this image (e.g., functions with \(g(0) \neq 0\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T^{-1}\) exists and is bounded on all of \(C[0,1]\)]]></text>
+    <feedback><text>Incorrect. \(T\) is not surjective, so \(T^{-1}\) is not defined on all of \(C[0,1]\). On its image, \(T^{-1}g = g'\) is the differentiation operator, which is unbounded in the sup norm.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q19: Hahn-Banach separation -->
+<question type="multichoice">
+  <name><text>FA52_Q19_HBSeparation</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>geometric form of the Hahn-Banach theorem</strong> states that a point and a disjoint closed convex set in a normed space can be separated by a closed hyperplane. Specifically: if \(K \subset X\) is a closed convex set and \(x_0 \notin K\), then there exists \(f \in X^*\) and \(\alpha \in \mathbb{R}\) such that:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(f(x_0) > \alpha \geq f(x)\) for all \(x \in K\) (strict separation of \(x_0\) from \(K\))]]></text>
+    <feedback><text>Correct. Since \(K\) is closed and \(x_0 \notin K\), there is positive distance \(d = \text{dist}(x_0, K) > 0\), allowing strict separation by a functional \(f \in X^*\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[There exists a norm-1 functional \(f\) with \(f(x_0) = 1\) and \(f(x) = 0\) for all \(x \in K\)]]></text>
+    <feedback><text>Incorrect. We get \(f(x_0) > \sup_{x \in K} f(x)\), not necessarily \(f(x_0) = 1\) or \(f|_K = 0\). The values depend on the geometry.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Separation holds only if \(X\) is a Hilbert space (using orthogonal projections)]]></text>
+    <feedback><text>Incorrect. The Hahn-Banach separation theorem holds in any normed space, not just Hilbert spaces. Hilbert spaces allow orthogonal projection but the theorem is more general.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Two disjoint closed convex sets can always be strictly separated by a hyperplane]]></text>
+    <feedback><text>Incorrect. Strict separation requires one of the sets to be compact (or both open). For two disjoint closed convex sets, only weak separation (\(f(x) \leq \alpha \leq f(y)\)) is guaranteed in general.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q20: Schauder fixed point -->
+<question type="multichoice">
+  <name><text>FA52_Q20_SchauderFixed</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Schauder Fixed Point Theorem</strong> states: if \(K\) is a nonempty compact convex subset of a Banach space \(X\) and \(T: K \to K\) is continuous, then \(T\) has a fixed point. Which is the key difference from the Banach Contraction Principle?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Schauder requires compactness of \(K\) (not a contraction condition), guarantees existence but not uniqueness, and applies to any continuous (not necessarily contractive) map; Banach contraction gives uniqueness and a constructive iteration]]></text>
+    <feedback><text>Correct. Schauder is a generalization of Brouwer's theorem to infinite dimensions (via compact operators). It gives existence only. Banach contraction principle requires \(\|Tx - Ty\| \leq k\|x-y\|\) with \(k < 1\) and gives a unique fixed point via iteration.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Schauder applies only to Hilbert spaces; Banach contraction applies to any complete metric space]]></text>
+    <feedback><text>Incorrect. Schauder's theorem applies to Banach spaces (and more generally locally convex topological vector spaces in some forms). It is not restricted to Hilbert spaces.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Both theorems guarantee uniqueness of the fixed point under their respective hypotheses]]></text>
+    <feedback><text>Incorrect. Schauder's theorem does not guarantee uniqueness (there may be many fixed points). Only the Banach contraction principle guarantees a unique fixed point.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Schauder's theorem requires \(K\) to be the entire Banach space \(X\), while Banach contraction works on arbitrary closed subsets]]></text>
+    <feedback><text>Incorrect. Schauder's theorem applies to compact convex subsets \(K\), not the whole space. Banach contraction applies to complete metric spaces or closed subsets.</text></feedback>
+  </answer>
+</question>
+
+</quiz>

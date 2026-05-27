@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Part A/General Aptitude</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q01_IndexNotation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(2^x = 8^4\), what is \(x\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[12]]></text>
+      <feedback><text>Correct. \(8^4 = (2^3)^4 = 2^{12}\), so \(x = 12\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[32]]></text>
+      <feedback><text>\(8^4 = 2^{12}\), so \(x=12\), not 32.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[4]]></text>
+      <feedback><text>If \(x=4\), \(2^4=16\neq8^4=4096\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[24]]></text>
+      <feedback><text>\(2^{24} = (8^4)^2\), not \(8^4\) itself; \(x=12\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q02_TaxCalculation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[An employee earns ₹12,00,000 per year. Tax is charged at 5% on income above ₹3,00,000 up to ₹6,00,000 and at 20% on income above ₹6,00,000 up to ₹12,00,000. What is the total income tax?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[₹1,35,000]]></text>
+      <feedback><text>Correct. Tax on ₹3L–₹6L (₹3L at 5%): ₹15,000. Tax on ₹6L–₹12L (₹6L at 20%): ₹1,20,000. Total: ₹15,000 + ₹1,20,000 = ₹1,35,000.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹2,40,000]]></text>
+      <feedback><text>₹2,40,000 = 20% of ₹12,00,000 ignores the slab structure; the correct tax uses 5% on the lower slab and 20% only on the upper slab.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹1,20,000]]></text>
+      <feedback><text>₹1,20,000 covers only the 20% on the ₹6L–₹12L slab; the 5% on ₹3L–₹6L adds ₹15,000, totalling ₹1,35,000.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹1,50,000]]></text>
+      <feedback><text>Tax = ₹15,000 + ₹1,20,000 = ₹1,35,000, not ₹1,50,000.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q03_GeomProgression</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The 3rd and 6th terms of a geometric progression are 8 and 64 respectively. What is the first term of the progression?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[2]]></text>
+      <feedback><text>Correct. \(ar^2 = 8\) and \(ar^5 = 64\). Dividing: \(r^3 = 8 \Rightarrow r = 2\). Then \(a(4) = 8 \Rightarrow a = 2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[4]]></text>
+      <feedback><text>If \(a=4\), then \(ar^2 = 4r^2 = 8 \Rightarrow r^2=2 \Rightarrow r=\sqrt{2}\); but then \(ar^5 = 4\times4\sqrt{2} = 16\sqrt{2} \neq 64\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[1]]></text>
+      <feedback><text>If \(a=1\): \(r^2=8\Rightarrow r=2\sqrt{2}\); \(ar^5=(2\sqrt{2})^5=128\sqrt{2}\neq64\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[8]]></text>
+      <feedback><text>If \(a=8\): \(8r^2=8\Rightarrow r=1\); but then \(ar^5=8\neq64\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q04_Probability_Dice</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Two fair dice are rolled. What is the probability that the sum of the numbers showing is 8?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{5}{36}\)]]></text>
+      <feedback><text>Correct. Favourable outcomes for sum 8: (2,6),(3,5),(4,4),(5,3),(6,2) — 5 outcomes. Total: 36. Probability: 5/36.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{1}{6}\)]]></text>
+      <feedback><text>1/6 = 6/36 is the probability for sums 7 (6 ways); sum 8 has only 5 favourable outcomes, giving 5/36.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{4}{36}\)]]></text>
+      <feedback><text>4/36 corresponds to 4 favourable outcomes (e.g., for sum 5 or 9); sum 8 has 5 outcomes: (2,6),(3,5),(4,4),(5,3),(6,2).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{8}{36}\)]]></text>
+      <feedback><text>8/36 is not the probability for any sum; sum 8 has exactly 5 favourable outcomes out of 36.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q05_Trigonometry_Basic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(\sin\theta = \frac{3}{5}\) and \(\theta\) is acute, what is \(\tan\theta\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{3}{4}\)]]></text>
+      <feedback><text>Correct. From a 3-4-5 right triangle: \(\sin\theta=3/5\Rightarrow\cos\theta=4/5\). \(\tan\theta=\sin\theta/\cos\theta=3/4\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{4}{3}\)]]></text>
+      <feedback><text>4/3 is \(\cot\theta\) (the reciprocal of \(\tan\theta\)); \(\tan\theta=\sin\theta/\cos\theta=3/4\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{3}{5}\)]]></text>
+      <feedback><text>3/5 is \(\sin\theta\) itself; \(\tan\theta = 3/4\) (using \(\cos\theta=4/5\)).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{5}{3}\)]]></text>
+      <feedback><text>5/3 is \(\csc\theta = 1/\sin\theta\); \(\tan\theta=3/4\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q06_GCD_Algorithm</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Using the Euclidean algorithm, what is HCF(252, 105)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[21]]></text>
+      <feedback><text>Correct. \(252 = 2\times105 + 42\). \(105 = 2\times42 + 21\). \(42 = 2\times21 + 0\). HCF = 21.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[42]]></text>
+      <feedback><text>42 is an intermediate remainder in the Euclidean algorithm; the algorithm continues: HCF(105,42) = HCF(42,21) = 21.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[7]]></text>
+      <feedback><text>7 divides both 252 and 105, but the GCD is larger: 21 = 3×7 also divides both.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[63]]></text>
+      <feedback><text>63 does not divide 105 (105/63 is not an integer); HCF(252,105) = 21.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q07_ScientificNotation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The speed of light is approximately \(3 \times 10^8\) m/s and the distance from Earth to the Sun is approximately \(1.5 \times 10^{11}\) m. How long (in minutes) does light take to travel from the Sun to the Earth?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[8.33 minutes (approximately 8 minutes 20 seconds)]]></text>
+      <feedback><text>Correct. Time = distance/speed = \(\frac{1.5\times10^{11}}{3\times10^8} = 0.5\times10^3 = 500\) seconds = \(500/60 \approx 8.33\) minutes.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[1 second]]></text>
+      <feedback><text>Light takes 1 second to travel about \(3\times10^8\) m (roughly Earth–Moon distance); the Sun is \(1.5\times10^{11}\) m away — about 500 seconds.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[5 minutes]]></text>
+      <feedback><text>Time = \(1.5\times10^{11}/(3\times10^8) = 500\) seconds = 8.33 minutes, not 5 minutes.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[25 minutes]]></text>
+      <feedback><text>25 minutes = 1500 seconds, which would require a distance of \(1500\times3\times10^8 = 4.5\times10^{11}\) m — three times the actual Earth–Sun distance.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q08_SetsCardinality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(|A| = 15\), \(|B| = 12\), and \(|A \cup B| = 22\), what is \(|A \cap B|\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[5]]></text>
+      <feedback><text>Correct. \(|A\cap B| = |A|+|B|-|A\cup B| = 15+12-22 = 5\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[7]]></text>
+      <feedback><text>\(|A\cap B| = 15+12-22 = 5\neq7\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[27]]></text>
+      <feedback><text>27 = 15+12 double-counts the intersection; \(|A\cup B| = 27-|A\cap B|\), so \(|A\cap B| = 27-22 = 5\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[3]]></text>
+      <feedback><text>\(15+12-22=5\neq3\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q09_TriangleInequality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following sets of side lengths can form a valid triangle?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(5, 7, 9\)]]></text>
+      <feedback><text>Correct. Triangle inequality: each side must be less than the sum of the other two. \(5+7=12>9\) ✓, \(5+9=14>7\) ✓, \(7+9=16>5\) ✓. Valid triangle.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(1, 2, 4\)]]></text>
+      <feedback><text>\(1+2=3<4\) ✗. The sum of two smaller sides does not exceed the third side.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(3, 4, 8\)]]></text>
+      <feedback><text>\(3+4=7<8\) ✗. Triangle inequality violated.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(2, 5, 8\)]]></text>
+      <feedback><text>\(2+5=7<8\) ✗. Triangle inequality violated.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q10_BinomialCoeff</text></name>
+    <questiontext format="html">
+      <text><![CDATA[What is the coefficient of \(x^3\) in the expansion of \((1+x)^5\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[10]]></text>
+      <feedback><text>Correct. By the binomial theorem, the coefficient of \(x^3\) in \((1+x)^5\) is \(\binom{5}{3} = 10\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[5]]></text>
+      <feedback><text>\(\binom{5}{1}=5\) is the coefficient of \(x^1\); for \(x^3\) it is \(\binom{5}{3}=10\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[15]]></text>
+      <feedback><text>\(\binom{6}{3}=20\) or \(\binom{6}{2}=15\) arises for \((1+x)^6\), not \((1+x)^5\); the coefficient here is \(\binom{5}{3}=10\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[3]]></text>
+      <feedback><text>3 is the power of \(x\), not the coefficient; \(\binom{5}{3}=10\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q11_Ratio_Split</text></name>
+    <questiontext format="html">
+      <text><![CDATA[₹7200 is divided among three people A, B, C in the ratio \(3:4:5\). How much does B receive?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[₹2400]]></text>
+      <feedback><text>Correct. Total parts = \(3+4+5=12\). B's share = \(\frac{4}{12}\times7200 = \frac{1}{3}\times7200 = 2400\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹1800]]></text>
+      <feedback><text>₹1800 = \(3/12\times7200\) is A's share; B's share is \(4/12\times7200=₹2400\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹3000]]></text>
+      <feedback><text>₹3000 = \(5/12\times7200\) is C's share; B gets \(4/12\times7200=₹2400\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹2880]]></text>
+      <feedback><text>\(4/10\times7200=₹2880\) uses ratio sum 10 (wrong); sum is \(3+4+5=12\), giving B's share = ₹2400.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q12_ReasoningArrangement</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In a row of 10 students, Priya is 4th from the left and Ravi is 7th from the right. How many students are between them?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[0 (they are adjacent or at the same position)]]></text>
+      <feedback><text>Ravi is 7th from the right = \(10-7+1=4\)th from the left. Both Priya and Ravi are at position 4, which means they are the same person, or the positions are adjacent. In a row of 10, 7th from the right = 4th from the left, same as Priya's position. Between positions 4 and 4: 0 students between them.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[2 students]]></text>
+      <feedback><text>Ravi's position from left = \(10-7+1=4\), same as Priya (position 4). There are 0 students between them.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[3 students]]></text>
+      <feedback><text>Ravi is at position \(10-7+1=4\) from the left, same as Priya; they are at the same position (0 students between).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[5 students]]></text>
+      <feedback><text>Ravi (7th from right = 4th from left) and Priya (4th from left) are at the same position; 0 students between them.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q13_Percentage_Population</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A town's population was 50,000 in 2010. It increased by 10% in 2011 and decreased by 10% in 2012. What was the population at the end of 2012?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[49,500]]></text>
+      <feedback><text>Correct. After 10% increase: \(50000\times1.1=55000\). After 10% decrease: \(55000\times0.9=49500\). (Net change: \(-1\%\), as \(1.1\times0.9=0.99\).)</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[50,000]]></text>
+      <feedback><text>A 10% increase followed by a 10% decrease gives \(1.1\times0.9=0.99\) (−1%), not the original value.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[55,000]]></text>
+      <feedback><text>55,000 is the population after the 2011 increase only; the 2012 decrease brings it to 49,500.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[45,000]]></text>
+      <feedback><text>45,000 would require a 10% decrease from 50,000 directly; the two-step process gives \(50000\times1.1\times0.9=49500\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q14_LogicProof</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A proof by contradiction assumes the negation of the statement to be proved and then]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Derives a logical contradiction (a statement that is always false, such as \(P \wedge \neg P\)), establishing that the negation must be false and hence the original statement is true]]></text>
+      <feedback><text>Correct. In reductio ad absurdum, the negation of the conclusion is assumed; a contradiction is derived, proving the original statement. For example, the irrationality of \(\sqrt{2}\) is proved this way.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Proves the statement directly from axioms without using the negation]]></text>
+      <feedback><text>This describes a direct proof; proof by contradiction specifically uses the assumed negation to arrive at a contradiction.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Shows that the statement holds for \(n=1\) and then for \(n+1\) assuming it holds for \(n\)]]></text>
+      <feedback><text>This is mathematical induction, not proof by contradiction.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Provides a specific numerical example to verify the statement]]></text>
+      <feedback><text>Providing an example shows existence or verifies a specific case; it is not a general proof method, and certainly not proof by contradiction.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q15_SpeedAveraged</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A person travels from A to B at 40 km/h and returns from B to A at 60 km/h. What is the average speed for the entire journey?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[48 km/h]]></text>
+      <feedback><text>Correct. For equal distances, the harmonic mean applies: Average speed = \(\frac{2\times40\times60}{40+60} = \frac{4800}{100} = 48\) km/h.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[50 km/h]]></text>
+      <feedback><text>50 km/h is the arithmetic mean; for equal distances, the average speed is the harmonic mean \(= 2\times40\times60/(40+60) = 48\) km/h.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[45 km/h]]></text>
+      <feedback><text>Harmonic mean = \(2\times40\times60/100 = 48\) km/h, not 45.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[52 km/h]]></text>
+      <feedback><text>The harmonic mean of 40 and 60 is \(2/(1/40+1/60) = 2/(5/120) = 240/5 = 48\) km/h, not 52.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q16_EthicsPublish</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Submitting the same research paper simultaneously to two different journals without disclosure is called]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Duplicate submission (a form of publication misconduct)]]></text>
+      <feedback><text>Correct. Simultaneous submission to multiple journals is prohibited (unless explicitly allowed as dual submission by the journals). It wastes peer reviewer resources and can lead to double publication, violating copyright and publication ethics.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Plagiarism]]></text>
+      <feedback><text>Plagiarism involves using others' work without attribution; submitting one's own work to multiple journals is duplicate submission, a separate form of misconduct.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Data falsification]]></text>
+      <feedback><text>Data falsification involves manipulating research data; the described practice (dual submission) is a publication ethics violation, not data manipulation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Self-plagiarism (acceptable if less than 30% overlap)]]></text>
+      <feedback><text>Self-plagiarism involves republishing one's own previously published content without disclosure; duplicate submission of the same unpublished work is a related but distinct violation, and there is no universal "30% rule" exemption.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q17_DigitalSecurity</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A "phishing" attack in cybersecurity refers to]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Fraudulent attempts to obtain sensitive information (passwords, credit card numbers) by disguising as a trustworthy entity in electronic communications]]></text>
+      <feedback><text>Correct. Phishing attacks use deceptive emails, websites, or messages that mimic legitimate organizations to trick users into revealing sensitive information.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Malicious software that encrypts files and demands payment for decryption]]></text>
+      <feedback><text>This describes ransomware, a different type of cyberattack; phishing is about social engineering to steal credentials.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Overwhelming a server with traffic to make it unavailable]]></text>
+      <feedback><text>This is a Distributed Denial of Service (DDoS) attack; phishing involves deception, not traffic flooding.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Unauthorized access to a computer system by exploiting software vulnerabilities]]></text>
+      <feedback><text>This describes a generic hacking or exploitation attack; phishing specifically uses social engineering and deceptive communications.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q18_InequalityAlgebra</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The solution set of \(|2x - 3| < 5\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(-1 < x < 4\)]]></text>
+      <feedback><text>Correct. \(|2x-3|<5 \Leftrightarrow -5 < 2x-3 < 5 \Leftrightarrow -2 < 2x < 8 \Leftrightarrow -1 < x < 4\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(x < -1\) or \(x > 4\)]]></text>
+      <feedback><text>This is the solution to \(|2x-3|>5\) (greater than, not less than); for \(<5\), the solution is \(-1<x<4\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(-4 < x < 1\)]]></text>
+      <feedback><text>The correct interval is \(-1<x<4\); swapping the signs of the endpoints is incorrect.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(0 < x < 3\)]]></text>
+      <feedback><text>This would be the solution to \(|2x-3|<3\); for \(|2x-3|<5\), the interval is \(-1<x<4\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q19_ScienceHistory</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Who proposed the "Central Limit Theorem" that forms the foundation of statistical inference?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The theorem was developed by multiple mathematicians including Laplace, de Moivre, and later formalized by Lyapunov and Lindeberg]]></text>
+      <feedback><text>Correct. The CLT has a long history: de Moivre (1733) proved it for binomial distributions, Laplace generalized it, and rigorous proofs were given by Chebyshev, Lyapunov (1901), and Lindeberg (1922).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Carl Friedrich Gauss, who also invented the normal distribution]]></text>
+      <feedback><text>Gauss contributed to the normal distribution (Gaussian distribution) in the context of error analysis; the CLT's development is attributed to de Moivre, Laplace, Lyapunov, and Lindeberg.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Isaac Newton, as part of his work on probability and fluxions]]></text>
+      <feedback><text>Newton did not develop the Central Limit Theorem; his work in probability was minimal. The CLT emerged from 18th–20th century probabilists.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Ronald Fisher, who developed modern statistics in the 20th century]]></text>
+      <feedback><text>Fisher made major contributions to statistics (ANOVA, maximum likelihood, experimental design) but the CLT predates him and is attributed to de Moivre, Laplace, and others.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>PARTA6_Q20_CriticalThinking</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A study finds that cities with more hospitals have higher death rates. A student concludes that hospitals cause death. This reasoning exhibits which flaw?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Confusing correlation with causation; the likely cause is a confounding variable (larger cities have both more hospitals and more deaths due to larger populations)]]></text>
+      <feedback><text>Correct. This is a classic example of a spurious correlation caused by a confounding variable (population size). Larger cities have more hospitals AND more people who die — the hospitals don't cause the deaths.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Circular reasoning: the conclusion assumes what it sets out to prove]]></text>
+      <feedback><text>Circular reasoning (begging the question) involves using the conclusion as a premise; the flaw here is inferring causation from correlation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Ad hominem: attacking the source of the data rather than the argument]]></text>
+      <feedback><text>Ad hominem attacks a person's character; the flaw here is a statistical/logical error about correlation and causation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Hasty generalization: drawing a broad conclusion from too few examples]]></text>
+      <feedback><text>A hasty generalization uses too small a sample; the specific flaw here is confusing correlation with causation (ignoring confounding variables), not sample size.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

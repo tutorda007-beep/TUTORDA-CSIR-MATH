@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Abstract Algebra/Module Theory</text></category>
+    <info format="html"><text>CSIR NET Mathematics — Abstract Algebra: Module Theory. MCQ, 20 questions covering modules, submodules, quotient modules, free modules, projective and injective modules, exact sequences, tensor products, and structure theorem for finitely generated modules over PIDs.</text></info>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q01 Free module definition</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Which of the following is a free \(\mathbb{Z}\)-module?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbb{Z}^n\) (direct sum of \(n\) copies of \(\mathbb{Z}\))</text>
+      <feedback format="html"><text><![CDATA[
+        A free \(R\)-module is one with a basis (a free generating set). \(\mathbb{Z}^n\) is a free \(\mathbb{Z}\)-module with the standard basis \(e_1,\ldots,e_n\). By contrast, \(\mathbb{Z}/n\mathbb{Z}\) is not free because the generator \(\bar{1}\) satisfies \(n\cdot\bar{1}=0\) (torsion). \(\mathbb{Q}\) as a \(\mathbb{Z}\)-module is not free since it is divisible. Free \(\mathbb{Z}\)-modules are exactly the torsion-free finitely generated abelian groups.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}/6\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}/6\mathbb{Z}\) is a torsion module (\(6\cdot\bar{1}=0\)), hence not free.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Q}\) as a \(\mathbb{Z}\)-module</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Q}\) is divisible and torsion-free but not free (it has no \(\mathbb{Z}\)-basis).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. This is a torsion module (every element has finite order), hence not free.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q02 Structure theorem for finitely generated abelian groups</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>By the structure theorem for finitely generated abelian groups (modules over \(\mathbb{Z}\)), every finitely generated abelian group \(G\) is isomorphic to:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbb{Z}^r \oplus \mathbb{Z}_{d_1} \oplus \cdots \oplus \mathbb{Z}_{d_k}\) where \(d_1 \mid d_2 \mid \cdots \mid d_k\) and \(d_i \geq 2\)</text>
+      <feedback format="html"><text><![CDATA[
+        The structure theorem: every finitely generated abelian group is isomorphic to a direct sum of a free part \(\mathbb{Z}^r\) (rank \(r\), the Betti number) and a torsion part \(\mathbb{Z}_{d_1}\oplus\cdots\oplus\mathbb{Z}_{d_k}\) with invariant factors satisfying \(d_1\mid d_2\mid\cdots\mid d_k\). This invariant factor decomposition is unique. Alternatively, one can use the primary decomposition (elementary divisors). For PID modules, the analogous theorem gives the rational/Jordan canonical forms for linear maps.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A free module \(\mathbb{Z}^n\)</text>
+      <feedback format="html"><text>Incorrect. The torsion part may be nontrivial; free modules are only the torsion-free finitely generated abelian groups.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A direct product of cyclic groups without divisibility condition</text>
+      <feedback format="html"><text>Incorrect. The invariant factor form requires \(d_1\mid d_2\mid\cdots\mid d_k\) for uniqueness.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A simple module</text>
+      <feedback format="html"><text>Incorrect. Simple modules have no proper nonzero submodules; most finitely generated abelian groups are not simple.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q03 Projective modules</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Which of the following characterizes projective \(R\)-modules?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A module \(P\) is projective iff every surjective module homomorphism \(f: M \to N\) and every map \(g: P \to N\) can be lifted to \(\tilde{g}: P \to M\) with \(f\circ\tilde{g} = g\)</text>
+      <feedback format="html"><text><![CDATA[
+        Equivalently, \(P\) is projective iff: (1) every short exact sequence \(0\to A\to B\to P\to 0\) splits; (2) \(P\) is a direct summand of a free module. Over a PID, projective \(\Leftrightarrow\) free. Over a field, all modules are free (hence projective and injective). Free modules are always projective but not conversely (e.g., \(\mathbb{Z}/2\) over \(\mathbb{Z}/6\) is projective but not free). The Hom functor is: \(\text{Hom}(P,-)\) is exact iff \(P\) is projective.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A module \(P\) is projective iff it is finitely generated</text>
+      <feedback format="html"><text>Incorrect. Finite generation is a separate property; projectivity is about lifting homomorphisms.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A module \(P\) is projective iff it is torsion-free</text>
+      <feedback format="html"><text>Incorrect. Over \(\mathbb{Z}\), projective \(\Leftrightarrow\) free (for finitely generated modules), and free \(\Leftrightarrow\) torsion-free; but over general rings, torsion-free need not imply projective.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A module \(P\) is projective iff every submodule of \(P\) is a direct summand</text>
+      <feedback format="html"><text>Incorrect. This characterizes semisimple modules, not projective modules.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q04 Injective modules and divisible groups</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Over \(\mathbb{Z}\), which of the following is an injective \(\mathbb{Z}\)-module?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbb{Q}\) (as a \(\mathbb{Z}\)-module)</text>
+      <feedback format="html"><text><![CDATA[
+        Over \(\mathbb{Z}\), injective modules coincide with divisible abelian groups: an abelian group \(D\) is divisible if for every \(d\in D\) and nonzero \(n\in\mathbb{Z}\), there exists \(x\in D\) with \(nx=d\). \(\mathbb{Q}\) is divisible: given \(q\in\mathbb{Q}\) and \(n\neq 0\), take \(x=q/n\). Other examples: \(\mathbb{Q}/\mathbb{Z}\), the Prüfer groups \(\mathbb{Z}_{p^\infty}\). \(\mathbb{Z}\) is NOT divisible (2 is not divisible by 2 in terms of... actually: given \(1\in\mathbb{Z}\), is there \(x\in\mathbb{Z}\) with \(2x=1\)? No). So \(\mathbb{Z}\) is not injective.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}\) is not divisible: there is no \(x\in\mathbb{Z}\) with \(2x=1\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}/n\mathbb{Z}\) for any \(n\geq 2\)</text>
+      <feedback format="html"><text>Incorrect. Finite abelian groups are not divisible: \(n\cdot\bar{1}=\bar{0}\) means we can't "divide" by \(n\) in the appropriate sense.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}^2\)</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}^2\) is free but not injective (not divisible).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q05 Tensor product of modules</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>What is \(\mathbb{Z}/m\mathbb{Z} \otimes_{\mathbb{Z}} \mathbb{Z}/n\mathbb{Z}\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbb{Z}/\gcd(m,n)\mathbb{Z}\)</text>
+      <feedback format="html"><text><![CDATA[
+        \(\mathbb{Z}/m\mathbb{Z}\otimes_\mathbb{Z}\mathbb{Z}/n\mathbb{Z} \cong \mathbb{Z}/\gcd(m,n)\mathbb{Z}\). Proof: \(\mathbb{Z}/m\mathbb{Z}\otimes\mathbb{Z}/n\mathbb{Z}\cong \mathbb{Z}/n\mathbb{Z}/(m\cdot\mathbb{Z}/n\mathbb{Z}) = \mathbb{Z}/n\mathbb{Z}/\gcd(m,n)\mathbb{Z}/n\mathbb{Z}\cong\mathbb{Z}/\gcd(m,n)\mathbb{Z}\). Special cases: if \(\gcd(m,n)=1\) (coprime), then \(\mathbb{Z}/m\otimes\mathbb{Z}/n=0\). If \(m=n\), then \(\mathbb{Z}/m\otimes\mathbb{Z}/m\cong\mathbb{Z}/m\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}/\text{lcm}(m,n)\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. The tensor product gives \(\gcd\), not \(\text{lcm}\). The direct product (CRT) gives \(\text{lcm}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}/mn\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. The tensor product is \(\mathbb{Z}/\gcd(m,n)\mathbb{Z}\), not \(\mathbb{Z}/mn\mathbb{Z}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. The tensor product of torsion modules is torsion, not \(\mathbb{Z}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q06 Exact sequence and splitting</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>A short exact sequence \(0 \to A \xrightarrow{f} B \xrightarrow{g} C \to 0\) of \(R\)-modules <em>splits</em> if and only if:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>There exists a homomorphism \(h: C \to B\) such that \(g \circ h = \text{id}_C\), or equivalently \(B \cong A \oplus C\)</text>
+      <feedback format="html"><text><![CDATA[
+        A short exact sequence splits if there exists a right splitting \(h:C\to B\) with \(g\circ h=\text{id}_C\) (or left splitting \(k:B\to A\) with \(k\circ f=\text{id}_A\)). Either condition implies \(B\cong A\oplus C\) (as modules). Over a field, every short exact sequence of vector spaces splits. Over a PID, a SES \(0\to A\to B\to C\to 0\) with \(C\) free or with \(A\) injective also splits. Example: \(0\to\mathbb{Z}\to\mathbb{Z}\to\mathbb{Z}/2\to 0\) does NOT split (since \(\mathbb{Z}/2\) is not projective as a \(\mathbb{Z}\)-module... wait, actually it does not split since if it did, \(\mathbb{Z}\cong\mathbb{Z}\oplus\mathbb{Z}/2\), which is false since the right side has torsion).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The sequence is exact at \(B\)</text>
+      <feedback format="html"><text>Incorrect. Exactness at \(B\) (\(\ker g=\text{im}\, f\)) holds for all short exact sequences; splitting is an additional property.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(A\) is a free module</text>
+      <feedback format="html"><text>Incorrect. The sequence splits if \(C\) is projective (not if \(A\) is free).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\text{Hom}(A,B)\neq 0\)</text>
+      <feedback format="html"><text>Incorrect. Splitting requires a specific right inverse of \(g\), not just any nonzero map.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q07 Nakayama's lemma</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Nakayama's Lemma: Let \(R\) be a commutative Noetherian local ring with maximal ideal \(\mathfrak{m}\), and let \(M\) be a finitely generated \(R\)-module. If \(\mathfrak{m}M = M\), then:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(M = 0\)</text>
+      <feedback format="html"><text><![CDATA[
+        Nakayama's Lemma (NAK): if \(R\) is local with maximal ideal \(\mathfrak{m}\), \(M\) is finitely generated, and \(\mathfrak{m}M=M\), then \(M=0\). Proof sketch: by Cayley-Hamilton, there exists \(r\equiv 1\pmod{\mathfrak{m}}\) with \(rM=0\); since \(r\) is a unit (as \(r-1\in\mathfrak{m}\) and \(\mathfrak{m}\) consists of non-units), \(M=0\). Application: the minimum number of generators of \(M\) equals \(\dim_{R/\mathfrak{m}}(M/\mathfrak{m}M)\). A set \(\{m_1,\ldots,m_k\}\) generates \(M\) iff their images generate \(M/\mathfrak{m}M\) as a vector space.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(M \cong R/\mathfrak{m}\)</text>
+      <feedback format="html"><text>Incorrect. The conclusion is \(M=0\), not that \(M\) is the residue field.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(M\) is a free \(R\)-module</text>
+      <feedback format="html"><text>Incorrect. The lemma says \(M=0\) under the given hypotheses.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(M\) is isomorphic to \(\mathfrak{m}\)</text>
+      <feedback format="html"><text>Incorrect. Nakayama's Lemma concludes \(M=0\), not an isomorphism with \(\mathfrak{m}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q08 Flat modules and tensor product exactness</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>An \(R\)-module \(F\) is called flat if the functor \(F\otimes_R -\) is exact. Which of the following is NOT flat as a \(\mathbb{Z}\)-module?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbb{Z}/2\mathbb{Z}\)</text>
+      <feedback format="html"><text><![CDATA[
+        \(\mathbb{Z}/2\mathbb{Z}\) is not flat. Consider the injection \(0\to\mathbb{Z}\xrightarrow{\times 2}\mathbb{Z}\). Tensoring with \(\mathbb{Z}/2\mathbb{Z}\): \(\mathbb{Z}/2\mathbb{Z}\xrightarrow{\times 2}\mathbb{Z}/2\mathbb{Z}\) is the zero map (since \(2\cdot\bar{x}=\bar{0}\) in \(\mathbb{Z}/2\mathbb{Z}\)), but we need injectivity for flatness. Flat \(\mathbb{Z}\)-modules are exactly torsion-free abelian groups: \(\mathbb{Z}\), \(\mathbb{Z}^n\), \(\mathbb{Q}\), \(\mathbb{Z}[1/p]\), etc.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Q}\)</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Q}\) is torsion-free, hence flat as a \(\mathbb{Z}\)-module.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}\) is free (hence projective, hence flat).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}^2\)</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}^2\) is free hence flat.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q09 Hom and Ext functors</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>What is \(\text{Ext}^1_\mathbb{Z}(\mathbb{Z}/m\mathbb{Z},\, \mathbb{Z}/n\mathbb{Z})\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbb{Z}/\gcd(m,n)\mathbb{Z}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Apply the free resolution \(0\to\mathbb{Z}\xrightarrow{\times m}\mathbb{Z}\to\mathbb{Z}/m\mathbb{Z}\to 0\). Applying \(\text{Hom}(-,\mathbb{Z}/n\mathbb{Z})\) gives \(0\to\text{Hom}(\mathbb{Z}/m,\mathbb{Z}/n)\to\text{Hom}(\mathbb{Z},\mathbb{Z}/n)\xrightarrow{m^*}\text{Hom}(\mathbb{Z},\mathbb{Z}/n)\to 0\). Here \(\text{Hom}(\mathbb{Z},\mathbb{Z}/n)\cong\mathbb{Z}/n\) and \(m^*\) is multiplication by \(m\). So \(\text{Ext}^1(\mathbb{Z}/m,\mathbb{Z}/n)=\text{coker}(m^*)=\mathbb{Z}/n/(m\cdot\mathbb{Z}/n)=\mathbb{Z}/\gcd(m,n)\mathbb{Z}\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}/\text{lcm}(m,n)\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. \(\text{Ext}^1\) gives \(\gcd\), not \(\text{lcm}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(0\)</text>
+      <feedback format="html"><text>Incorrect. \(\text{Ext}^1=0\) would mean \(\mathbb{Z}/m\mathbb{Z}\) is projective, but torsion modules are not projective over \(\mathbb{Z}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}/mn\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. The formula involves \(\gcd\), not the product.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q10 Simple and semisimple modules</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>A module \(M\) is semisimple if and only if:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(M\) is a direct sum of simple (irreducible) submodules</text>
+      <feedback format="html"><text><![CDATA[
+        A module is semisimple iff it is a direct sum of simple submodules, iff every submodule is a direct summand. Simple modules have no proper nonzero submodules. Maschke's theorem: the group algebra \(kG\) (for finite group \(G\) over field \(k\) with \(\text{char}(k)\nmid|G|\)) is semisimple, meaning every \(kG\)-module is semisimple. By Artin-Wedderburn, semisimple rings are products of matrix rings over division rings. Every vector space (module over a field) is semisimple.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(M\) is finitely generated and torsion-free</text>
+      <feedback format="html"><text>Incorrect. These conditions describe free modules over PIDs, not semisimplicity.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Every homomorphism from \(M\) to another module is surjective</text>
+      <feedback format="html"><text>Incorrect. This would characterize simple modules with additional conditions, not semisimple ones.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(M\) has a composition series of length 1</text>
+      <feedback format="html"><text>Incorrect. A composition series of length 1 means \(M\) is simple; semisimple allows longer sums of simples.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q11 Jordan-Hölder theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Jordan-Hölder theorem for modules states that if a module \(M\) has a composition series, then:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Any two composition series of \(M\) have the same length and the same composition factors (up to isomorphism and reordering)</text>
+      <feedback format="html"><text><![CDATA[
+        A composition series \(0=M_0\subset M_1\subset\cdots\subset M_n=M\) has composition factors \(M_i/M_{i-1}\) which are simple. The Jordan-Hölder theorem guarantees that although the series itself is not unique, the multiset of composition factors is unique (up to isomorphism). The common length \(n\) is the composition length of \(M\). This generalizes the uniqueness of prime factorizations: for \(\mathbb{Z}/n\mathbb{Z}\), the composition factors are \(\mathbb{Z}/p\mathbb{Z}\) for each prime \(p\mid n\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The composition series is unique</text>
+      <feedback format="html"><text>Incorrect. The composition series is NOT unique (different refinements exist), but the factors are unique.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Every submodule of \(M\) is simple</text>
+      <feedback format="html"><text>Incorrect. The Jordan-Hölder theorem doesn't say submodules are simple; it's about composition factors.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(M\) is isomorphic to a direct sum of the composition factors</text>
+      <feedback format="html"><text>Incorrect. This would make \(M\) semisimple, which need not be the case.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q12 Rational canonical form</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The rational canonical form of a linear map \(T: V\to V\) over a field \(F\) is determined by the structure theorem for finitely generated modules over the PID \(F[x]\). The invariant factors \(d_1 \mid d_2 \mid \cdots \mid d_k\) satisfy:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The product \(d_1 d_2\cdots d_k\) equals the characteristic polynomial of \(T\), and the last (largest) factor \(d_k\) is the minimal polynomial of \(T\)</text>
+      <feedback format="html"><text><![CDATA[
+        Via the structure theorem: \(V\cong F[x]/(d_1)\oplus\cdots\oplus F[x]/(d_k)\) as \(F[x]\)-modules. The characteristic polynomial is \(\chi_T=d_1\cdots d_k\) (product of invariant factors), and the minimal polynomial is \(m_T=d_k\) (the largest invariant factor). Each invariant factor \(d_i\) contributes a companion matrix block. This is the rational canonical form, which exists over any field. The Jordan form requires the characteristic polynomial to split (all eigenvalues in \(F\)).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The largest factor \(d_k\) equals the characteristic polynomial</text>
+      <feedback format="html"><text>Incorrect. The minimal polynomial equals \(d_k\) (the Cayley-Hamilton theorem says the char. poly. annihilates \(T\), but equals the product of all invariant factors).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The invariant factors are the elementary divisors</text>
+      <feedback format="html"><text>Incorrect. Invariant factors and elementary divisors are related but distinct; elementary divisors are prime power factors of the invariant factors.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(d_1 = d_2 = \cdots = d_k\) (all invariant factors are equal)</text>
+      <feedback format="html"><text>Incorrect. The divisibility condition is \(d_1\mid d_2\mid\cdots\mid d_k\); they need not be equal.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q13 Localization of modules</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Let \(M\) be a \(\mathbb{Z}\)-module and \(S = \mathbb{Z}\setminus p\mathbb{Z}\) for a prime \(p\). The localization \(S^{-1}M = M_p\) (localization at \(p\)) has which property?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(M_p\) is a module over the local ring \(\mathbb{Z}_{(p)}\) (integers localized at \(p\)), and torsion elements of \(M\) not killed by a power of \(p\) become zero in \(M_p\)</text>
+      <feedback format="html"><text><![CDATA[
+        Localization inverts all elements of \(S=\mathbb{Z}\setminus p\mathbb{Z}\) (integers not divisible by \(p\)). In \(M_p = S^{-1}M\), an element \(m\in M\) becomes 0 in \(M_p\) iff \(sm=0\) for some \(s\in S\), i.e., iff the order of \(m\) is not a power of \(p\) (the \(q\)-torsion for \(q\neq p\) dies). Thus \(M_p\) captures only the \(p\)-primary component of \(M\). For \(M=\mathbb{Z}/n\mathbb{Z}\): if \(n=p^a\cdot b\) with \(\gcd(p,b)=1\), then \(M_p\cong\mathbb{Z}/p^a\mathbb{Z}\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(M_p = 0\) for all \(M\)</text>
+      <feedback format="html"><text>Incorrect. For example, \((\mathbb{Z}/p\mathbb{Z})_p = \mathbb{Z}/p\mathbb{Z}\) (the \(p\)-torsion survives).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(M_p \cong M\) always</text>
+      <feedback format="html"><text>Incorrect. Localization can change the module; for example, \((\mathbb{Z}/q\mathbb{Z})_p=0\) when \(q\neq p\) is prime.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(M_p\) is always a free module</text>
+      <feedback format="html"><text>Incorrect. For instance, \((\mathbb{Z}/p\mathbb{Z})_p\cong\mathbb{Z}/p\mathbb{Z}\) is not free as a \(\mathbb{Z}_{(p)}\)-module.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q14 Representation of groups as modules</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>A representation of a finite group \(G\) over a field \(k\) is the same as:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>A finitely generated left module over the group algebra \(kG\)</text>
+      <feedback format="html"><text><![CDATA[
+        The group algebra \(kG = \bigoplus_{g\in G} k\cdot g\) with multiplication extending the group law. A \(kG\)-module \(M\) is a \(k\)-vector space with a \(k\)-linear action of \(G\), i.e., a homomorphism \(\rho: G\to GL(M)\). This is exactly a representation. By Maschke's theorem, when \(\text{char}(k)\nmid|G|\), \(kG\) is semisimple (Artin-Wedderburn), so all representations decompose into irreducible ones. Character theory classifies representations over \(\mathbb{C}\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A ring homomorphism \(kG \to k\)</text>
+      <feedback format="html"><text>Incorrect. Ring homomorphisms \(kG\to k\) are 1-dimensional representations (characters), not all representations.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A subgroup of \(GL_n(k)\) isomorphic to \(G\)</text>
+      <feedback format="html"><text>Incorrect. A faithful representation would be a subgroup of \(GL_n(k)\) isomorphic to \(G\), but representations need not be faithful.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>An abelian group on which \(G\) acts</text>
+      <feedback format="html"><text>Incorrect. A representation requires a vector space (over a field) with a linear \(G\)-action; the field structure is essential.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q15 Cayley-Hamilton theorem via modules</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Let \(T\) be a linear operator on a finite-dimensional vector space \(V\) with characteristic polynomial \(\chi_T(x)\). The Cayley-Hamilton theorem states:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\chi_T(T) = 0\) (every operator satisfies its own characteristic polynomial)</text>
+      <feedback format="html"><text><![CDATA[
+        Cayley-Hamilton: if \(\chi_T(\lambda) = \det(\lambda I - T)\), then \(\chi_T(T)=0\). Module-theoretic proof: \(V\) is a finitely generated \(F[x]\)-module via \(x\cdot v=T(v)\). By the structure theorem, the characteristic polynomial equals the product of invariant factors, and the minimal polynomial (the largest invariant factor) divides \(\chi_T\). Since the minimal polynomial annihilates \(T\), so does \(\chi_T\). Consequence: the minimal polynomial divides the characteristic polynomial.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The minimal polynomial of \(T\) equals the characteristic polynomial</text>
+      <feedback format="html"><text>Incorrect. The minimal polynomial divides the characteristic polynomial but they can differ (e.g., for \(T=I\), min poly is \(x-1\) but char poly is \((x-1)^n\)).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\det(T) = 0\) always</text>
+      <feedback format="html"><text>Incorrect. Cayley-Hamilton doesn't say the determinant is zero; only that \(T\) satisfies \(\chi_T\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>The eigenvalues of \(T\) are the roots of the minimal polynomial only</text>
+      <feedback format="html"><text>Incorrect. The eigenvalues are roots of both the characteristic and minimal polynomials (and they have the same set of roots, though with different multiplicities).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q16 Torsion submodule</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Let \(M = \mathbb{Z}/4\mathbb{Z} \oplus \mathbb{Z}\). Identify the torsion submodule \(\text{Tor}(M)\) and the torsion-free quotient.</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\text{Tor}(M) = \mathbb{Z}/4\mathbb{Z}\) and \(M/\text{Tor}(M) \cong \mathbb{Z}\)</text>
+      <feedback format="html"><text><![CDATA[
+        The torsion submodule \(\text{Tor}(M) = \{m\in M : rm=0\text{ for some nonzero }r\in R\}\). In \(M=\mathbb{Z}/4\mathbb{Z}\oplus\mathbb{Z}\): the torsion elements are \((\bar{a},0)\) (since \(4\cdot(\bar{a},0)=0\)) and \((0,n)\) for \(n\neq 0\) are not torsion. Thus \(\text{Tor}(M)=\mathbb{Z}/4\mathbb{Z}\oplus\{0\}\cong\mathbb{Z}/4\mathbb{Z}\). The torsion-free quotient is \(M/\text{Tor}(M)\cong\mathbb{Z}\). Over a PID, \(M\cong\text{Tor}(M)\oplus F\) where \(F\) is free (the splitting).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\text{Tor}(M) = 0\) (no torsion)</text>
+      <feedback format="html"><text>Incorrect. \(4\cdot\bar{1}=\bar{0}\) in \(\mathbb{Z}/4\mathbb{Z}\), so the first component is all torsion.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\text{Tor}(M) = M\) (entire module is torsion)</text>
+      <feedback format="html"><text>Incorrect. The \(\mathbb{Z}\) summand has no torsion.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\text{Tor}(M) = \mathbb{Z}/2\mathbb{Z}\) and \(M/\text{Tor}(M)\cong\mathbb{Z}/2\mathbb{Z}\oplus\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. The full \(\mathbb{Z}/4\mathbb{Z}\) component is torsion, not just its order-2 subgroup.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q17 Hilbert syzygy theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Hilbert's Syzygy Theorem states that every finitely generated module over \(k[x_1,\ldots,x_n]\) (polynomial ring in \(n\) variables over a field \(k\)) has a free resolution of length at most:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(n\) (the number of variables)</text>
+      <feedback format="html"><text><![CDATA[
+        Hilbert's Syzygy Theorem: \(\text{gl.dim}(k[x_1,\ldots,x_n])=n\), meaning every finitely generated module has a projective (equivalently, free) resolution of length \(\leq n\). The global dimension equals the Krull dimension for polynomial rings over a field. This is fundamental in homological algebra and commutative algebra. Serre's theorem: \(R\) is regular iff it has finite global dimension, and for \(R=k[x_1,\ldots,x_n]\), it equals \(n\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(2n\)</text>
+      <feedback format="html"><text>Incorrect. The bound is exactly \(n\), not \(2n\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Infinite (no bound exists)</text>
+      <feedback format="html"><text>Incorrect. Hilbert proved a finite bound of \(n\) for polynomial rings over a field.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>1</text>
+      <feedback format="html"><text>Incorrect. For \(n=1\): \(k[x]\) is a PID, and over a PID all modules have resolutions of length \(\leq 1\) (this is the case \(n=1\)). For \(n\geq 2\), the bound is \(n\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q18 Annihilator of a module</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The annihilator of the \(\mathbb{Z}\)-module \(M = \mathbb{Z}/6\mathbb{Z}\) is the ideal \(\text{Ann}(M) = \{r\in\mathbb{Z}: rM=0\}\). What is \(\text{Ann}(M)\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(6\mathbb{Z}\)</text>
+      <feedback format="html"><text><![CDATA[
+        \(\text{Ann}(\mathbb{Z}/6\mathbb{Z}) = \{r\in\mathbb{Z}: r\cdot\bar{x}=\bar{0}\ \forall\bar{x}\in\mathbb{Z}/6\mathbb{Z}\}\). Since \(\mathbb{Z}/6\mathbb{Z}=\langle\bar{1}\rangle\), we need \(r\cdot\bar{1}=\bar{0}\), i.e., \(6\mid r\). So \(\text{Ann}(\mathbb{Z}/6\mathbb{Z})=6\mathbb{Z}\). In general, \(\text{Ann}(\mathbb{Z}/n\mathbb{Z})=n\mathbb{Z}\). The annihilator ideal determines the ring over which the module is naturally a module: \(\mathbb{Z}/6\mathbb{Z}\) is naturally a \(\mathbb{Z}/6\mathbb{Z}\)-module.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\{0\}\)</text>
+      <feedback format="html"><text>Incorrect. \(6\cdot\bar{x}=\bar{0}\) for all \(\bar{x}\in\mathbb{Z}/6\mathbb{Z}\), so 6 is in the annihilator.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(2\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. \(2\cdot\bar{3}=\bar{6}=\bar{0}\) but \(2\cdot\bar{1}=\bar{2}\neq\bar{0}\), so 2 is not in \(\text{Ann}(M)\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. \(1\cdot\bar{1}=\bar{1}\neq\bar{0}\), so 1 is not in the annihilator.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q19 Module homomorphism and Hom functor</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For \(\mathbb{Z}\)-modules, what is \(\text{Hom}_\mathbb{Z}(\mathbb{Z}/m\mathbb{Z},\, \mathbb{Z}/n\mathbb{Z})\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbb{Z}/\gcd(m,n)\mathbb{Z}\)</text>
+      <feedback format="html"><text><![CDATA[
+        A homomorphism \(f:\mathbb{Z}/m\mathbb{Z}\to\mathbb{Z}/n\mathbb{Z}\) is determined by \(f(\bar{1})\). We need \(m\cdot f(\bar{1})=\bar{0}\) in \(\mathbb{Z}/n\mathbb{Z}\), i.e., \(n\mid m\cdot f(\bar{1})\). Writing \(d=\gcd(m,n)\), the possible values of \(f(\bar{1})\) are multiples of \(n/d\) in \(\mathbb{Z}/n\mathbb{Z}\). There are \(d = \gcd(m,n)\) such values, and \(\text{Hom}(\mathbb{Z}/m,\mathbb{Z}/n)\cong\mathbb{Z}/\gcd(m,n)\mathbb{Z}\). Compare with \(\text{Ext}^1(\mathbb{Z}/m,\mathbb{Z}/n)\cong\mathbb{Z}/\gcd(m,n)\mathbb{Z}\) as well.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}/\text{lcm}(m,n)\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. The formula gives \(\gcd\), not \(\text{lcm}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(0\) always</text>
+      <feedback format="html"><text>Incorrect. When \(\gcd(m,n)>1\), there are nontrivial homomorphisms.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}/mn\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. The Hom set has \(\gcd(m,n)\) elements, not \(mn\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>ALG34-Q20 Primary decomposition of modules</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The \(\mathbb{Z}\)-module \(M = \mathbb{Z}/12\mathbb{Z}\) has a primary decomposition. Which is correct?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mathbb{Z}/12\mathbb{Z} \cong \mathbb{Z}/4\mathbb{Z} \oplus \mathbb{Z}/3\mathbb{Z}\)</text>
+      <feedback format="html"><text><![CDATA[
+        By the primary decomposition (elementary divisors): \(\mathbb{Z}/12\mathbb{Z}\cong\mathbb{Z}/p_1^{a_1}\mathbb{Z}\oplus\cdots\) where \(n=\prod p_i^{a_i}\). Since \(12=2^2\cdot 3\), we get \(\mathbb{Z}/12\mathbb{Z}\cong\mathbb{Z}/4\mathbb{Z}\oplus\mathbb{Z}/3\mathbb{Z}\). This follows from CRT since \(\gcd(4,3)=1\). The 2-primary component is \(\mathbb{Z}/4\mathbb{Z}\) and the 3-primary component is \(\mathbb{Z}/3\mathbb{Z}\). Note the invariant factor form is just \(\mathbb{Z}/12\mathbb{Z}\) (single invariant factor 12).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}/12\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z} \oplus \mathbb{Z}/2\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. \(|\mathbb{Z}/6\oplus\mathbb{Z}/2|=12\) but the elementary divisors must be prime powers; 6 is not a prime power.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}/12\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \oplus \mathbb{Z}/2\mathbb{Z} \oplus \mathbb{Z}/3\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. \(|\mathbb{Z}/2\oplus\mathbb{Z}/2\oplus\mathbb{Z}/3|=12\) but the 2-primary part should be \(\mathbb{Z}/4\mathbb{Z}\) (order 4), not \(\mathbb{Z}/2\oplus\mathbb{Z}/2\) (since \(12=4\times 3\), and \(4=2^2\) gives a single \(\mathbb{Z}/4\) factor).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}/12\mathbb{Z} \cong \mathbb{Z}/3\mathbb{Z} \oplus \mathbb{Z}/4\mathbb{Z} \oplus \mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. Adding a \(\mathbb{Z}\) summand would give an infinite group.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

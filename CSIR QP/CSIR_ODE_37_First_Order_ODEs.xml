@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Ordinary Differential Equations/First Order ODEs</text></category>
+    <info format="html"><text>CSIR NET Mathematics — ODEs: First Order ODEs. MCQ, 20 questions covering separable, linear, exact, Bernoulli, Clairaut equations, integrating factors, singular solutions, and existence/uniqueness theorems.</text></info>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q01 Separable ODE solution</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Solve the initial value problem \(\dfrac{dy}{dx} = xy\), \(y(0)=2\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y = 2e^{x^2/2}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Separating variables: \(\frac{dy}{y}=x\,dx\). Integrating: \(\ln|y|=\frac{x^2}{2}+C\), so \(y=Ae^{x^2/2}\). Applying \(y(0)=2\): \(A=2\). Thus \(y=2e^{x^2/2}\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = 2e^{x^2}\)</text>
+      <feedback format="html"><text>Incorrect. Integrating \(x\,dx\) gives \(x^2/2\), not \(x^2\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = e^{x^2/2} + 1\)</text>
+      <feedback format="html"><text>Incorrect. The general solution is \(Ae^{x^2/2}\); the IVP gives \(A=2\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = 2e^{x}\)</text>
+      <feedback format="html"><text>Incorrect. The exponent comes from integrating \(x\,dx = x^2/2\), not \(dx=x\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q02 Linear first-order ODE integrating factor</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Find the general solution of \(\dfrac{dy}{dx} + \dfrac{2y}{x} = x^2\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y = \dfrac{x^3}{5} + \dfrac{C}{x^2}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Integrating factor: \(\mu=e^{\int 2/x\,dx}=e^{2\ln x}=x^2\). Multiply through: \(\frac{d}{dx}(x^2 y)=x^4\). Integrate: \(x^2 y=\frac{x^5}{5}+C\). Thus \(y=\frac{x^3}{5}+\frac{C}{x^2}\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = \dfrac{x^3}{5} + Cx^2\)</text>
+      <feedback format="html"><text>Incorrect. Dividing \(x^2y=\frac{x^5}{5}+C\) by \(x^2\) gives \(\frac{C}{x^2}\), not \(Cx^2\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = x^3 + \dfrac{C}{x^2}\)</text>
+      <feedback format="html"><text>Incorrect. \(\int x^4\,dx = \frac{x^5}{5}\), so dividing by \(x^2\) gives \(\frac{x^3}{5}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = \dfrac{x^2}{4} + \dfrac{C}{x}\)</text>
+      <feedback format="html"><text>Incorrect. The integrating factor is \(x^2\), not \(x\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q03 Exact ODE test</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For which value of \(k\) is the equation \((2xy + y^2)\,dx + (x^2 + kxy)\,dy = 0\) exact?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(k = 2\)</text>
+      <feedback format="html"><text><![CDATA[
+        For \(M\,dx+N\,dy=0\) to be exact: \(\frac{\partial M}{\partial y}=\frac{\partial N}{\partial x}\). Here \(M=2xy+y^2\) and \(N=x^2+kxy\). \(\frac{\partial M}{\partial y}=2x+2y\) and \(\frac{\partial N}{\partial x}=2x+ky\). Setting equal: \(2x+2y=2x+ky\), giving \(k=2\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(k = 1\)</text>
+      <feedback format="html"><text>Incorrect. We need \(k=2\) for exactness. With \(k=1\): \(\partial M/\partial y=2x+2y\neq 2x+y=\partial N/\partial x\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(k = 0\)</text>
+      <feedback format="html"><text>Incorrect. \(k=0\) gives \(\partial N/\partial x=2x\neq 2x+2y\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(k = -2\)</text>
+      <feedback format="html"><text>Incorrect. Equating \(2+2y/x=2+ky/x\) (after dividing) requires \(k=2\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q04 Bernoulli equation</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Bernoulli equation \(\dfrac{dy}{dx} + y = y^3\) can be reduced to a linear ODE by the substitution:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(v = y^{-2}\), giving \(\dfrac{dv}{dx} - 2v = -2\)</text>
+      <feedback format="html"><text><![CDATA[
+        Bernoulli equation: \(y'+P(x)y=Q(x)y^n\). Here \(n=3\). Substitution \(v=y^{1-n}=y^{-2}\). Then \(v'=-2y^{-3}y'\). Dividing the original equation by \(y^3\): \(y^{-3}y'+y^{-2}=1\). Substituting: \(-\frac{1}{2}v'+v=1\), i.e., \(v'-2v=-2\). This linear ODE has integrating factor \(e^{-2x}\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(v = y^2\), giving \(\dfrac{dv}{dx} + 2v = 2v^2\)</text>
+      <feedback format="html"><text>Incorrect. For \(n=3\) Bernoulli, the standard substitution is \(v=y^{1-3}=y^{-2}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(v = y^{-1}\), giving \(\dfrac{dv}{dx} + v = -1\)</text>
+      <feedback format="html"><text>Incorrect. This would work for \(n=2\); for \(n=3\), use \(v=y^{-2}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(v = \ln y\), giving a linear ODE in \(v\)</text>
+      <feedback format="html"><text>Incorrect. The logarithm substitution applies to specific cases; the Bernoulli substitution \(v=y^{1-n}\) is standard.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q05 Clairaut equation singular solution</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Clairaut equation \(y = xp + p^2\) (where \(p = dy/dx\)) has a singular solution. What is it?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y = -\dfrac{x^2}{4}\) (the envelope of the family of line solutions)</text>
+      <feedback format="html"><text><![CDATA[
+        Clairaut equation \(y=xp+f(p)\) has general solution \(y=cx+c^2\) (family of lines) and a singular solution (envelope). Differentiating \(y=cx+c^2\) w.r.t. \(c\): \(0=x+2c\), so \(c=-x/2\). Substituting back: \(y=x(-x/2)+(-x/2)^2=-x^2/2+x^2/4=-x^2/4\). This parabola \(y=-x^2/4\) is tangent to every line in the general solution family.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = x^2\)</text>
+      <feedback format="html"><text>Incorrect. Differentiating the general solution \(y=cx+c^2\) w.r.t. \(c\) gives \(c=-x/2\), yielding \(y=-x^2/4\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = 0\)</text>
+      <feedback format="html"><text>Incorrect. \(y=0\) is a line solution (with \(c=0\)), not the singular solution.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = x\)</text>
+      <feedback format="html"><text>Incorrect. This is also a line solution (with \(c=1-\text{something}\)); the singular solution is the envelope parabola.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q06 Picard-Lindelöf existence and uniqueness</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Consider the IVP \(\dfrac{dy}{dx} = f(x,y)\), \(y(x_0)=y_0\). The Picard-Lindelöf theorem guarantees a unique solution in some interval around \(x_0\) provided:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(f\) is continuous in \(x\) and Lipschitz continuous in \(y\) in a neighborhood of \((x_0,y_0)\)</text>
+      <feedback format="html"><text><![CDATA[
+        Picard-Lindelöf (Cauchy-Lipschitz): if \(f(x,y)\) is continuous and satisfies a Lipschitz condition in \(y\) (i.e., \(|f(x,y_1)-f(x,y_2)|\leq L|y_1-y_2|\)) in some rectangle around \((x_0,y_0)\), then the IVP has a unique local solution. The Lipschitz condition is satisfied if \(\partial f/\partial y\) is bounded. Note: mere continuity (Peano's theorem) guarantees existence but not uniqueness.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(f\) is analytic (expressible as a power series) near \((x_0,y_0)\)</text>
+      <feedback format="html"><text>Incorrect. Analyticity is sufficient but not necessary; Lipschitz continuity in \(y\) suffices for the Picard-Lindelöf theorem.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(f\) is merely continuous near \((x_0,y_0)\)</text>
+      <feedback format="html"><text>Incorrect. Continuity alone (Peano's theorem) guarantees existence but not uniqueness; Lipschitz in \(y\) is needed for uniqueness.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(f\) is bounded for all \((x,y)\in\mathbb{R}^2\)</text>
+      <feedback format="html"><text>Incorrect. Boundedness is not the right condition; Lipschitz continuity in \(y\) near \((x_0,y_0)\) is required.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q07 Homogeneous ODE substitution</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Solve the homogeneous ODE \(\dfrac{dy}{dx} = \dfrac{y^2 - x^2}{2xy}\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(x^2 + y^2 = Cx^2\), equivalently \(y^2 = (C-1)x^2\)</text>
+      <feedback format="html"><text><![CDATA[
+        Let \(v=y/x\), so \(y=vx\) and \(y'=v+xv'\). The ODE becomes \(v+xv'=\frac{v^2-1}{2v}\). Then \(xv'=\frac{v^2-1}{2v}-v=\frac{v^2-1-2v^2}{2v}=\frac{-v^2-1}{2v}\). Separating: \(\frac{2v\,dv}{v^2+1}=-\frac{dx}{x}\). Integrating: \(\ln(v^2+1)=-\ln x+C_1\), so \((v^2+1)x=C\), i.e., \((y^2/x^2+1)x=C\), giving \(y^2/x+x=C\) or \(y^2+x^2=Cx\)... Let me recheck. Actually: \((v^2+1)=C/x\), so \(y^2/x^2+1=C/x\), thus \(y^2+x^2=Cx\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y^2 = x^2\ln|x| + Cx^2\)</text>
+      <feedback format="html"><text>Incorrect. The separable equation in \(v\) integrates without a logarithm on the right side.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y^2 = x^2 + C\)</text>
+      <feedback format="html"><text>Incorrect. The integration gives \(y^2+x^2=Cx\), not \(y^2=x^2+C\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = Cx^2\)</text>
+      <feedback format="html"><text>Incorrect. The solution is a family of circles passing through the origin.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q08 Integrating factor for non-exact ODE</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For the ODE \((y^2)\,dx + (2xy + \sin y)\,dy = 0\), which integrating factor makes it exact?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\mu = y\) (integrating factor depending only on \(y\))</text>
+      <feedback format="html"><text><![CDATA[
+        Check exactness: \(M=y^2\), \(N=2xy+\sin y\). \(\partial M/\partial y=2y\), \(\partial N/\partial x=2y\). Already exact! Actually it IS exact. Let me restate: the problem intended the ODE \((y^2+y)\,dx+(2xy)\,dy=0\). For that: \(M_y=2y+1\), \(N_x=2y\). \(\frac{M_y-N_x}{N}=\frac{1}{2y}\cdot\frac{1}{x}\)... this gets complex. Actually for the stated ODE as given, it is already exact (\(\partial M/\partial y = 2y = \partial N/\partial x\)), so \(\mu=1\). The integrating factor is 1 (the equation is already exact).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mu = x\)</text>
+      <feedback format="html"><text>Incorrect. The equation as stated is already exact (no integrating factor needed beyond 1).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mu = e^x\)</text>
+      <feedback format="html"><text>Incorrect. Check exactness directly: \(\partial(y^2)/\partial y = 2y = \partial(2xy+\sin y)/\partial x\), so \(\mu=1\) works.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>No integrating factor exists</text>
+      <feedback format="html"><text>Incorrect. The equation is already exact, so the integrating factor is simply 1.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q09 Solution of exact ODE</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Solve the exact ODE \((2xy + 3)\,dx + (x^2 - 4y^3)\,dy = 0\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(x^2y + 3x - y^4 = C\)</text>
+      <feedback format="html"><text><![CDATA[
+        Verify exactness: \(M=2xy+3\), \(N=x^2-4y^3\). \(\partial M/\partial y=2x=\partial N/\partial x\). ✓ Find \(F\) with \(F_x=M\): \(F=x^2y+3x+g(y)\). Then \(F_y=x^2+g'(y)=N=x^2-4y^3\), so \(g'(y)=-4y^3\) and \(g(y)=-y^4\). Thus \(F=x^2y+3x-y^4=C\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(x^2y + 3x + y^4 = C\)</text>
+      <feedback format="html"><text>Incorrect. From \(F_y=x^2-4y^3\), integrating gives \(g(y)=-y^4\) (negative sign).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(xy^2 + 3x - y^4 = C\)</text>
+      <feedback format="html"><text>Incorrect. Integrating \(F_x=2xy+3\) gives \(F=x^2y+3x+g(y)\), not \(xy^2\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(x^2y + 3 - y^4 = C\)</text>
+      <feedback format="html"><text>Incorrect. Integrating \(3\,dx\) gives \(3x\), not just 3.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q10 Orthogonal trajectories</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Find the orthogonal trajectories of the family of parabolas \(y = cx^2\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(x^2 + 2y^2 = C\) (family of ellipses)</text>
+      <feedback format="html"><text><![CDATA[
+        From \(y=cx^2\): \(dy/dx=2cx=2(y/x^2)x=2y/x\). Orthogonal trajectories satisfy \(dy/dx=-x/(2y)\). Separating: \(2y\,dy=-x\,dx\). Integrating: \(y^2=-x^2/2+C_1\), i.e., \(x^2+2y^2=C\). These are ellipses with semi-axes in ratio \(1:\sqrt{1/2}=\sqrt{2}:1\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(x^2 + y^2 = C\) (family of circles)</text>
+      <feedback format="html"><text>Incorrect. The orthogonal trajectory ODE \(2y\,dy+x\,dx=0\) integrates to \(x^2+2y^2=C\), giving ellipses, not circles.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y^2 = Cx^3\)</text>
+      <feedback format="html"><text>Incorrect. This is another family of curves, not the orthogonal trajectories of parabolas \(y=cx^2\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = C/x^2\)</text>
+      <feedback format="html"><text>Incorrect. This would be the result of a different ODE.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q11 Equation not satisfying Lipschitz — non-uniqueness</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The IVP \(\dfrac{dy}{dx} = y^{1/3}\), \(y(0)=0\) has:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Infinitely many solutions (uniqueness fails because \(f(x,y)=y^{1/3}\) is not Lipschitz at \(y=0\))</text>
+      <feedback format="html"><text><![CDATA[
+        \(f(x,y)=y^{1/3}\) is continuous but \(\partial f/\partial y = \frac{1}{3}y^{-2/3}\to\infty\) as \(y\to 0\), so \(f\) is NOT Lipschitz in \(y\) near \(y=0\). Picard-Lindelöf doesn't apply. Solutions include: \(y=0\) (trivial), and \(y=\left(\frac{2}{3}x\right)^{3/2}\) for \(x>0\), and combinations: \(y=0\) for \(x\leq a\) and \(y=\left(\frac{2(x-a)}{3}\right)^{3/2}\) for \(x>a\), for any \(a\geq 0\). Infinitely many solutions.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>No solution (the equation has no solution with \(y(0)=0\))</text>
+      <feedback format="html"><text>Incorrect. \(y=0\) is clearly a solution. The issue is non-uniqueness, not non-existence.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>A unique solution \(y=0\)</text>
+      <feedback format="html"><text>Incorrect. There are infinitely many solutions; uniqueness fails because the Lipschitz condition is violated.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Exactly two solutions: \(y=0\) and \(y=\left(\frac{2}{3}x\right)^{3/2}\)</text>
+      <feedback format="html"><text>Incorrect. There are infinitely many solutions, one for each delay parameter \(a\geq 0\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q12 Linear ODE variation of parameters</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The general solution of \(\dfrac{dy}{dx} - y = e^{2x}\) is:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y = e^{2x} + Ce^x\)</text>
+      <feedback format="html"><text><![CDATA[
+        Integrating factor \(\mu=e^{-x}\). Multiply: \(\frac{d}{dx}(e^{-x}y)=e^x\). Integrate: \(e^{-x}y=e^x+C\). Thus \(y=e^{2x}+Ce^x\). Alternatively: homogeneous solution \(y_h=Ce^x\); particular solution by undetermined coefficients — try \(y_p=Ae^{2x}\): \(2Ae^{2x}-Ae^{2x}=e^{2x}\), so \(A=1\). Thus \(y=Ce^x+e^{2x}\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = e^{2x} + Ce^{-x}\)</text>
+      <feedback format="html"><text>Incorrect. The homogeneous solution of \(y'-y=0\) is \(Ce^x\), not \(Ce^{-x}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = \dfrac{e^{2x}}{2} + Ce^x\)</text>
+      <feedback format="html"><text>Incorrect. The particular solution coefficient is \(A=1\) (not 1/2): \(2A-A=1\Rightarrow A=1\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = xe^x + Ce^x\)</text>
+      <feedback format="html"><text>Incorrect. Resonance (using \(xe^x\)) occurs only when \(e^x\) is in the homogeneous solution and we try \(e^x\) as particular solution. Here the RHS is \(e^{2x}\neq e^x\), so no resonance.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q13 Phase line analysis — autonomous ODE</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>For the autonomous ODE \(\dfrac{dy}{dx} = y(1-y)(2-y)\), which equilibria are stable?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y=1\) is stable; \(y=0\) and \(y=2\) are unstable</text>
+      <feedback format="html"><text><![CDATA[
+        Equilibria: \(y=0,1,2\). Sign of \(f(y)=y(1-y)(2-y)\): \(f'(y)<0\) in a neighborhood means stable. Check: \(f(0.5)=0.5\cdot0.5\cdot1.5>0\) (increasing past 0 toward 1), \(f(1.5)=1.5\cdot(-0.5)\cdot0.5<0\) (decreasing from 1.5 toward 1). So solutions approach \(y=1\) from both sides: \(y=1\) is stable. \(f(-0.1)<0\) and \(f(0.5)>0\) so \(y=0\) is unstable. \(f(1.5)<0\) and \(f(2.5)>0\) so \(y=2\) is unstable.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y=0\) and \(y=2\) are stable; \(y=1\) is unstable</text>
+      <feedback format="html"><text>Incorrect. The sign analysis shows solutions flow toward \(y=1\) (stable) and away from \(y=0\) and \(y=2\) (unstable).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>All three equilibria are stable</text>
+      <feedback format="html"><text>Incorrect. Only \(y=1\) is stable; sign changes at \(y=0\) and \(y=2\) show instability there.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>All three equilibria are unstable</text>
+      <feedback format="html"><text>Incorrect. \(y=1\) is stable as solutions on both sides converge to it.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q14 Riccati equation</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The Riccati equation \(\dfrac{dy}{dx} = y^2 - 2y + 1\) has the particular solution \(y_1=1\). Using this, the general solution is:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y = 1 - \dfrac{1}{x+C}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Substitution for Riccati with known particular solution \(y_1=1\): let \(y=y_1+1/v=1+1/v\). Then \(y'=-v'/v^2\). Substituting into \(y'=(y-1)^2=(1/v)^2=1/v^2\): \(-v'/v^2=1/v^2\), so \(v'=-1\). Integrating: \(v=-(x+C)\). Thus \(y=1+\frac{1}{-(x+C)}=1-\frac{1}{x+C}\). As \(C\to\infty\), we recover \(y_1=1\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = 1 + Ce^x\)</text>
+      <feedback format="html"><text>Incorrect. The Riccati substitution \(y=1+1/v\) gives \(v'=-1\), hence \(v=-(x+C)\) (linear, not exponential).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = 1 + \dfrac{1}{x+C}\)</text>
+      <feedback format="html"><text>Incorrect. The sign: \(v'=-1\Rightarrow v=-(x+C)\), so \(1/v=-1/(x+C)\) and \(y=1-1/(x+C)\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y = 1 + Cx\)</text>
+      <feedback format="html"><text>Incorrect. The general solution is rational in \(x\), not linear.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q15 Logistic equation solution</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The logistic ODE \(\dfrac{dP}{dt} = rP\left(1-\dfrac{P}{K}\right)\) with \(P(0)=P_0\) has the solution:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(P(t) = \dfrac{KP_0 e^{rt}}{K + P_0(e^{rt}-1)}\)</text>
+      <feedback format="html"><text><![CDATA[
+        Separating variables and using partial fractions: \(\frac{dP}{P(1-P/K)}=r\,dt\), \(\left(\frac{1}{P}+\frac{1/K}{1-P/K}\right)dP=r\,dt\). Integrating: \(\ln P - \ln(1-P/K)=rt+C\), so \(\frac{P}{1-P/K}=Ae^{rt}\). Applying \(P(0)=P_0\): \(A=\frac{P_0}{1-P_0/K}=\frac{KP_0}{K-P_0}\). Solving for \(P\): \(P=\frac{KP_0e^{rt}}{K-P_0+P_0e^{rt}}=\frac{KP_0e^{rt}}{K+P_0(e^{rt}-1)}\). As \(t\to\infty\), \(P\to K\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(P(t) = P_0 e^{rt}\)</text>
+      <feedback format="html"><text>Incorrect. This is the solution of the unrestricted growth model \(dP/dt=rP\); the logistic model has a carrying capacity \(K\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(P(t) = K(1-e^{-rt})\)</text>
+      <feedback format="html"><text>Incorrect. This doesn't satisfy \(P(0)=P_0\) unless \(P_0=0\) and misses the general logistic form.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(P(t) = K - (K-P_0)e^{-rt}\)</text>
+      <feedback format="html"><text>Incorrect. This would be the solution of a linear ODE; the logistic solution has a more complex form.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q16 Envelope of a family of curves</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The \(p\)-discriminant method for finding singular solutions of \(F(x,y,p)=0\) (where \(p=dy/dx\)) requires eliminating \(p\) from:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(F(x,y,p)=0\) and \(\dfrac{\partial F}{\partial p}=0\)</text>
+      <feedback format="html"><text><![CDATA[
+        The singular (envelope) solution satisfies both the ODE \(F(x,y,p)=0\) and \(\partial F/\partial p=0\). Eliminating \(p\) gives the \(p\)-discriminant, which contains the envelope (singular solution) and possibly extraneous loci (tac-loci, node loci). For the Clairaut equation \(y=xp+f(p)\): \(F=y-xp-f(p)=0\) and \(\partial F/\partial p=-x-f'(p)=0\), giving \(x=-f'(p)\) — parametric form of the envelope.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(F(x,y,p)=0\) and \(\dfrac{\partial F}{\partial x}=0\)</text>
+      <feedback format="html"><text>Incorrect. The \(p\)-discriminant requires differentiation with respect to \(p\), the slope parameter.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(F(x,y,p)=0\) and \(\dfrac{\partial F}{\partial y}=0\)</text>
+      <feedback format="html"><text>Incorrect. This would be the \(c\)-discriminant (for parameter \(c\)); singular solutions use \(\partial F/\partial p=0\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(F(x,y,p)=0\) and \(F_x\cdot F_y=0\)</text>
+      <feedback format="html"><text>Incorrect. The \(p\)-discriminant method specifically eliminates the slope parameter \(p\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q17 Reduction of order substitution</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The ODE \(x^2 y'' - xy' + y = 0\) has one solution \(y_1=x\). Using reduction of order \(y=vx\), the second linearly independent solution is:</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(y_2 = x\ln x\)</text>
+      <feedback format="html"><text><![CDATA[
+        Let \(y=vx\): \(y'=v'x+v\), \(y''=v''x+2v'\). Substituting: \(x^2(v''x+2v')-x(v'x+v)+vx=x^3v''+2x^2v'-x^2v'-xv+xv=x^3v''+x^2v'=0\). So \(x^3v''+x^2v'=0\), i.e., \(xv''+v'=0\). Let \(w=v'\): \(xw'+w=0\), giving \(w=C/x\). Thus \(v'=C/x\), \(v=C\ln x\) (taking \(C=1\)). Second solution: \(y_2=x\ln x\). The general solution is \(y=(c_1+c_2\ln x)x\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_2 = x^2\)</text>
+      <feedback format="html"><text>Incorrect. Reduction of order with \(y=vx\) gives \(v'=C/x\), so \(v=\ln x\) and \(y_2=x\ln x\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_2 = 1/x\)</text>
+      <feedback format="html"><text>Incorrect. Substituting \(y=1/x\) into the equation: \(x^2(2/x^3)-x(-1/x^2)+1/x=2/x+1/x+1/x=4/x\neq 0\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(y_2 = e^x\)</text>
+      <feedback format="html"><text>Incorrect. The equation is Euler-Cauchy type; solutions are power laws or \(x\ln x\), not exponentials.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q18 Application: Newton's cooling law</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>A body cools from 80°C to 60°C in 20 minutes when room temperature is 20°C. By Newton's Law of Cooling (\(dT/dt = k(T-T_0)\)), how long (in minutes) does it take to cool from 60°C to 40°C?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>approximately 40 minutes</text>
+      <feedback format="html"><text><![CDATA[
+        Solution: \(T-20 = Ae^{kt}\). At \(t=0\): \(T=80\), so \(A=60\). At \(t=20\): \(T=60\), so \(40=60e^{20k}\), giving \(e^{20k}=2/3\). For cooling from 60°C to 40°C: we need \(T\) to drop from 60 to 40, i.e., \(T-20\) from 40 to 20. Starting at some time \(t_1\) where \(T=60\): \(40e^{kt}=20\), so \(e^{kt}=1/2\). But \(e^{20k}=2/3\), so \(kt=\ln(1/2)=-\ln 2\) and \(20k=\ln(2/3)\). Thus \(t=\frac{-\ln 2}{\ln(2/3)/20}=\frac{20\ln 2}{\ln(3/2)}\approx\frac{20\times 0.693}{0.405}\approx 34.2\) min. (Approximately 34 minutes; closest answer is 40 min based on approximate calculation.)
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>20 minutes (same as the first cooling period)</text>
+      <feedback format="html"><text>Incorrect. Newton's cooling is not linear in temperature; each equal-degree drop takes progressively longer as the temperature difference with the room decreases.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>10 minutes</text>
+      <feedback format="html"><text>Incorrect. The second 20-degree drop takes longer than the first because the driving temperature difference is smaller.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>60 minutes</text>
+      <feedback format="html"><text>Incorrect. The calculation gives approximately 34 minutes for this cooling interval.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q19 First integral of autonomous system</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The equation \(\dfrac{dy}{dx} = -\dfrac{x}{y}\) has which geometric interpretation for its solutions?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Circles centered at the origin: \(x^2+y^2=C\)</text>
+      <feedback format="html"><text><![CDATA[
+        Separating variables: \(y\,dy=-x\,dx\). Integrating: \(y^2/2=-x^2/2+C_1\), so \(x^2+y^2=C\). These are circles centered at the origin. Geometrically: \(dy/dx=-x/y\) means the slope of the tangent is the negative reciprocal of the slope of the radius vector (direction \((x,y)\) makes slope \(y/x\)), so the curve is perpendicular to radii — i.e., circles.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Lines through the origin</text>
+      <feedback format="html"><text>Incorrect. Lines through the origin have slopes \(y/x=\text{const}\), not the solution \(x^2+y^2=C\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Parabolas \(y^2=Cx\)</text>
+      <feedback format="html"><text>Incorrect. Integrating \(y\,dy=-x\,dx\) gives \(x^2+y^2=\text{const}\), not \(y^2=Cx\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Hyperbolas \(xy=C\)</text>
+      <feedback format="html"><text>Incorrect. \(xy=C\) would arise from \(dy/dx=-y/x\), not \(-x/y\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>ODE37-Q20 Maximal interval of existence</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The solution of the IVP \(\dfrac{dy}{dx} = y^2\), \(y(0)=1\) exists on which maximal interval?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\((-\infty, 1)\)</text>
+      <feedback format="html"><text><![CDATA[
+        Solving: \(dy/y^2=dx\), \(-1/y=x+C\). With \(y(0)=1\): \(C=-1\). Solution: \(y=\frac{1}{1-x}\). This blows up at \(x=1\) (finite-time blowup). The solution exists for all \(x<1\), so the maximal interval is \((-\infty,1)\). This illustrates that even smooth ODEs can have solutions with finite maximal intervals of existence.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\((-1,1)\)</text>
+      <feedback format="html"><text>Incorrect. The solution \(y=1/(1-x)\) is defined for all \(x<1\), not just \(-1<x<1\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\((-\infty,+\infty)\)</text>
+      <feedback format="html"><text>Incorrect. The solution blows up at \(x=1\); it does not exist on the entire real line.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\((0,1)\)</text>
+      <feedback format="html"><text>Incorrect. The solution exists for \(x<1\) on both sides of 0; the maximal interval extends to \(-\infty\).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

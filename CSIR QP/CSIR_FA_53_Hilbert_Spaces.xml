@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category>
+    <text>$course$/CSIR NET Mathematics/Functional Analysis/Hilbert Spaces</text>
+  </category>
+</question>
+
+<!-- Q01: Inner product space -->
+<question type="multichoice">
+  <name><text>FA53_Q01_InnerProduct</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>An inner product \(\langle \cdot, \cdot \rangle\) on a real vector space \(H\) must satisfy: (i) bilinearity, (ii) symmetry \(\langle x, y \rangle = \langle y, x \rangle\), (iii) positive-definiteness \(\langle x, x \rangle > 0\) for \(x \neq 0\). The induced norm is \(\|x\| = \sqrt{\langle x,x\rangle}\). Which of the following defines an inner product on \(L^2[0,1]\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\langle f, g \rangle = \int_0^1 f(x)\,g(x)\,dx\)]]></text>
+    <feedback><text>Correct. This is the standard inner product on \(L^2[0,1]\). It is bilinear, symmetric, and positive-definite (since \(\int_0^1 |f|^2\,dx = 0\) implies \(f = 0\) a.e.).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\langle f, g \rangle = \int_0^1 f(x)\,g(x)\,dx + f(0)g(0)\)]]></text>
+    <feedback><text>Incorrect. Functions in \(L^2[0,1]\) are equivalence classes up to sets of measure zero; point values \(f(0)\) are not well-defined for general \(L^2\) functions.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\langle f, g \rangle = \left(\int_0^1 |f(x)| |g(x)|\,dx\right)^2\)]]></text>
+    <feedback><text>Incorrect. This is not bilinear in \(f\) and \(g\) (the absolute values destroy linearity). An inner product must be linear in each argument.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\langle f, g \rangle = \sup_{x \in [0,1]} f(x)g(x)\)]]></text>
+    <feedback><text>Incorrect. The supremum is not linear in \(f\) and \(g\) (in general \(\sup(f_1+f_2)g \neq \sup f_1 g + \sup f_2 g\)), so this is not a valid inner product.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q02: Cauchy-Schwarz inequality -->
+<question type="multichoice">
+  <name><text>FA53_Q02_CauchySchwarz</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Cauchy-Schwarz inequality</strong> in a Hilbert space \(H\) states \(|\langle x, y \rangle| \leq \|x\|\,\|y\|\), with equality if and only if \(x\) and \(y\) are linearly dependent. Using this, for \(f, g \in L^2[0,1]\):</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\left|\int_0^1 f(x)g(x)\,dx\right| \leq \left(\int_0^1 f^2\,dx\right)^{1/2} \left(\int_0^1 g^2\,dx\right)^{1/2}\), with equality iff \(f = \lambda g\) a.e.]]></text>
+    <feedback><text>Correct. This is the Cauchy-Schwarz inequality in \(L^2[0,1]\). Equality holds iff \(f\) and \(g\) are proportional (linearly dependent in \(L^2\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\int_0^1 f(x)g(x)\,dx \leq \int_0^1 f^2(x)\,dx + \int_0^1 g^2(x)\,dx\)]]></text>
+    <feedback><text>Incorrect. This resembles AM-GM, not Cauchy-Schwarz. The correct inequality has a square root product on the right, not a sum of squares.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\left(\int_0^1 fg\right)^2 \leq \left(\int_0^1 f\right)\left(\int_0^1 g\right)\)]]></text>
+    <feedback><text>Incorrect. This is not the correct form. Cauchy-Schwarz in \(L^2\) involves \(\int f^2\) and \(\int g^2\) (not \(\int f\) and \(\int g\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\left|\int_0^1 f(x)g(x)\,dx\right| \geq \left(\int_0^1 f^2\,dx\right)^{1/2}\left(\int_0^1 g^2\,dx\right)^{1/2}\)]]></text>
+    <feedback><text>Incorrect. The inequality goes the other way: the left side is at most (not at least) the product of \(L^2\) norms.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q03: Parallelogram law -->
+<question type="multichoice">
+  <name><text>FA53_Q03_ParallelogramLaw</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>parallelogram law</strong> characterizes norms arising from inner products: a normed space \((X, \|\cdot\|)\) is a Hilbert space (i.e., the norm comes from an inner product) if and only if:</p>
+    <p>\[\|x + y\|^2 + \|x - y\|^2 = 2(\|x\|^2 + \|y\|^2) \quad \text{for all } x, y \in X.\]</p>
+    <p>Which Banach space does NOT satisfy the parallelogram law?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\ell^1\) with the norm \(\|(x_n)\|_1 = \sum |x_n|\): taking \(x = e_1, y = e_2\) gives \(\|e_1+e_2\|^2 + \|e_1-e_2\|^2 = 4 \neq 2(\|e_1\|^2+\|e_2\|^2) = 4\)... Let us check: \(\|e_1+e_2\|_1 = 2\), \(\|e_1-e_2\|_1 = 2\), so LHS \(= 8\), but RHS \(= 2(1+1)=4\). Fails.]]></text>
+    <feedback><text>Correct. \(\ell^1\) does not satisfy the parallelogram law. With \(x = e_1, y = e_2\): LHS \(= 2^2 + 2^2 = 8\) but RHS \(= 2(1+1) = 4\). So \(\ell^1\) cannot arise from an inner product.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(L^2[0,1]\) with \(\|f\|_2 = \left(\int_0^1 |f|^2\right)^{1/2}\)]]></text>
+    <feedback><text>Incorrect. \(L^2[0,1]\) is a Hilbert space with inner product \(\langle f,g\rangle = \int fg\), so it satisfies the parallelogram law.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\ell^2\) with the norm \(\|(x_n)\|_2 = \left(\sum |x_n|^2\right)^{1/2}\)]]></text>
+    <feedback><text>Incorrect. \(\ell^2\) is a Hilbert space with inner product \(\langle x,y\rangle = \sum x_n \bar{y}_n\), so it satisfies the parallelogram law.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\mathbb{R}^n\) with the Euclidean norm \(\|x\|_2 = (x_1^2+\cdots+x_n^2)^{1/2}\)]]></text>
+    <feedback><text>Incorrect. \(\mathbb{R}^n\) with the Euclidean norm is a finite-dimensional Hilbert space and satisfies the parallelogram law.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q04: Projection theorem -->
+<question type="multichoice">
+  <name><text>FA53_Q04_ProjectionThm</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Projection Theorem</strong> states: if \(K\) is a nonempty closed convex subset of a Hilbert space \(H\), then for every \(x \in H\) there exists a unique \(P_K(x) \in K\) with \(\|x - P_K(x)\| = \inf_{y \in K}\|x-y\|\). For a closed <em>subspace</em> \(M \subset H\), the projection \(P_M\) satisfies:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(P_M\) is a bounded linear operator with \(P_M^2 = P_M\) (idempotent), \(P_M^* = P_M\) (self-adjoint), \(\|P_M\| = 1\) (if \(M \neq \{0\}\)), and \(x - P_M x \perp M\) for all \(x\)]]></text>
+    <feedback><text>Correct. The orthogonal projection onto a closed subspace is a self-adjoint idempotent bounded linear operator. The orthogonality condition \(x - P_M x \perp M\) characterizes the projection uniquely.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(P_M\) is nonlinear in general (linear only on finite-dimensional subspaces)]]></text>
+    <feedback><text>Incorrect. The orthogonal projection onto a closed subspace of a Hilbert space is always a bounded linear operator.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\|P_M x\| \geq \|x\|\) for all \(x \in H\) (projections do not decrease the norm)]]></text>
+    <feedback><text>Incorrect. \(\|P_M x\| \leq \|x\|\) always (projection reduces or preserves the norm). Equality holds iff \(x \in M\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The projection theorem requires \(H\) to be finite-dimensional; it fails for infinite-dimensional Hilbert spaces]]></text>
+    <feedback><text>Incorrect. The projection theorem holds in any Hilbert space (using completeness to find the minimizing point via a minimizing sequence argument). It even holds for any closed convex set.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q05: Riesz representation -->
+<question type="multichoice">
+  <name><text>FA53_Q05_RieszRepresentation</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Riesz Representation Theorem for Hilbert spaces</strong> states: for every bounded linear functional \(f \in H^*\) on a Hilbert space \(H\), there exists a unique \(y \in H\) such that:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(f(x) = \langle x, y \rangle\) for all \(x \in H\), and \(\|f\|_{H^*} = \|y\|_H\). The map \(y \mapsto \langle \cdot, y \rangle\) is a conjugate-linear (anti-linear) isometric isomorphism \(H \to H^*\)]]></text>
+    <feedback><text>Correct. This identifies \(H^* \cong H\) isometrically. In real Hilbert spaces it is linear; in complex Hilbert spaces it is conjugate-linear (since \(\langle x, \lambda y \rangle = \bar{\lambda}\langle x, y\rangle\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(f(x) = \langle y, x \rangle\) for all \(x\) where \(y\) lies in the orthogonal complement of \(\ker(f)\)]]></text>
+    <feedback><text>Incorrect. The representing element \(y\) is not necessarily in \((\ker f)^\perp\) as stated; in real spaces \(f(x) = \langle x, y \rangle = \langle y, x\rangle\) so this distinction doesn't arise, but the characterization of \(y\) is imprecise.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The theorem requires \(H\) to be separable; non-separable Hilbert spaces have functionals not representable by inner products]]></text>
+    <feedback><text>Incorrect. The Riesz Representation Theorem holds for all Hilbert spaces, separable or not. The proof uses only completeness and the projection theorem.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^* \cong H\) implies every Hilbert space is reflexive, but this fails for \(L^2\)]]></text>
+    <feedback><text>Incorrect. \(H^* \cong H\) does imply \(H\) is reflexive, and this holds for ALL Hilbert spaces including \(L^2\). \(L^2\) is indeed reflexive (it is a Hilbert space).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q06: Orthonormal bases -->
+<question type="multichoice">
+  <name><text>FA53_Q06_OrthonormalBasis</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A sequence \(\{e_n\}_{n=1}^\infty\) in a Hilbert space \(H\) is an <strong>orthonormal basis</strong> (complete orthonormal system) if \(\langle e_m, e_n \rangle = \delta_{mn}\) and \(\overline{\text{span}\{e_n\}} = H\). Which of the following holds?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[For every \(x \in H\): \(x = \sum_{n=1}^\infty \langle x, e_n \rangle e_n\) (Fourier expansion) and Parseval's identity \(\|x\|^2 = \sum_{n=1}^\infty |\langle x, e_n \rangle|^2\) holds]]></text>
+    <feedback><text>Correct. These are equivalent to the orthonormal set being a basis (complete). Parseval's identity extends the Pythagorean theorem to infinite dimensions and characterizes completeness.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The expansion \(x = \sum_n \langle x, e_n\rangle e_n\) converges in norm, but Parseval's identity \(\|x\|^2 = \sum |\langle x,e_n\rangle|^2\) may fail for some \(x\)]]></text>
+    <feedback><text>Incorrect. The norm convergence of the expansion and Parseval's identity are equivalent conditions, both characterizing the basis property. One cannot hold without the other.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Bessel's inequality \(\sum_n |\langle x, e_n\rangle|^2 \geq \|x\|^2\) holds for any orthonormal set]]></text>
+    <feedback><text>Incorrect. Bessel's inequality says \(\sum_n |\langle x, e_n\rangle|^2 \leq \|x\|^2\) (not \(\geq\)). Equality (Parseval's identity) holds precisely when \(\{e_n\}\) is an orthonormal basis.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The Fourier coefficients \(\langle x, e_n\rangle\) must sum to \(\|x\|\) (not \(\|x\|^2\))]]></text>
+    <feedback><text>Incorrect. Parseval's identity states \(\|x\|^2 = \sum |\langle x,e_n\rangle|^2\). It involves the squared norm and squared Fourier coefficients.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q07: Bessel's inequality -->
+<question type="multichoice">
+  <name><text>FA53_Q07_BesselInequality</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p><strong>Bessel's inequality</strong> states: for any orthonormal sequence \(\{e_n\}\) in a Hilbert space \(H\) and any \(x \in H\):</p>
+    <p>\[\sum_{n=1}^\infty |\langle x, e_n \rangle|^2 \leq \|x\|^2.\]</p>
+    <p>For \(H = L^2[-\pi,\pi]\) with orthonormal basis \(\left\{\frac{e^{inx}}{\sqrt{2\pi}}\right\}_{n \in \mathbb{Z}}\), what does Bessel's inequality say about the Fourier coefficients \(\hat{f}(n) = \frac{1}{2\pi}\int_{-\pi}^\pi f(x)e^{-inx}\,dx\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\sum_{n=-\infty}^\infty |\hat{f}(n)|^2 \leq \frac{1}{2\pi}\int_{-\pi}^\pi |f(x)|^2\,dx\), with equality (Parseval) iff \(\{e^{inx}/\sqrt{2\pi}\}\) is an orthonormal basis for \(L^2[-\pi,\pi]\) (which it is)]]></text>
+    <feedback><text>Correct. Bessel gives \(\sum |\hat{f}(n)|^2 \leq \|f\|_{L^2}^2/(2\pi)\). Since the exponentials form a complete system, equality (Parseval/Plancherel) holds: \(\sum_n |\hat{f}(n)|^2 = \frac{1}{2\pi}\|f\|_2^2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sum_{n=-\infty}^\infty |\hat{f}(n)|^2 = \int_{-\pi}^\pi |f(x)|\,dx\) (sum of squares equals the \(L^1\) norm)]]></text>
+    <feedback><text>Incorrect. Parseval's identity equates the sum of squared Fourier coefficients to the \(L^2\) norm squared (not the \(L^1\) norm). These are different quantities.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\hat{f}(n) \to 0\) as \(|n| \to \infty\) (the Riemann-Lebesgue lemma), which follows from Bessel]]></text>
+    <feedback><text>Incorrect. The Riemann-Lebesgue lemma (\(\hat{f}(n) \to 0\)) holds for \(f \in L^1\), not just \(L^2\), and follows from the fact that Fourier coefficients of an \(L^2\) function are square-summable. It is a consequence of Bessel, but not the direct statement of Bessel's inequality.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sum |\hat{f}(n)| \leq \|f\|_{L^2}\) (sum of absolute values of Fourier coefficients is bounded)]]]></text>
+    <feedback><text>Incorrect. Bessel's inequality involves \(\sum |\hat{f}(n)|^2\) (sum of squares), not \(\sum |\hat{f}(n)|\). The latter may diverge even when the former converges.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q08: Gram-Schmidt -->
+<question type="multichoice">
+  <name><text>FA53_Q08_GramSchmidt</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Gram-Schmidt process</strong> converts a linearly independent sequence \(\{v_n\}\) in an inner product space into an orthonormal sequence \(\{e_n\}\) with \(\text{span}\{e_1,\ldots,e_n\} = \text{span}\{v_1,\ldots,v_n\}\) for each \(n\). The formula for the \(n\)-th orthonormal vector is \(e_n = \tilde{v}_n/\|\tilde{v}_n\|\) where:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\tilde{v}_n = v_n - \sum_{k=1}^{n-1} \langle v_n, e_k \rangle e_k\) (project out components along previous basis vectors)]]></text>
+    <feedback><text>Correct. At each step, subtract the projections of \(v_n\) onto all previously constructed orthonormal vectors. The result \(\tilde{v}_n\) is orthogonal to all \(e_1,\ldots,e_{n-1}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\tilde{v}_n = v_n + \sum_{k=1}^{n-1}\langle v_n, e_k\rangle e_k\) (add the projections)]]></text>
+    <feedback><text>Incorrect. Adding the projections does not produce orthogonality. The correct formula subtracts the projections to remove components in directions already accounted for.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\tilde{v}_n = v_n - \langle v_n, v_{n-1}\rangle v_{n-1}\) (orthogonalize only against the previous vector)]]></text>
+    <feedback><text>Incorrect. One must orthogonalize against all previous basis vectors \(e_1,\ldots,e_{n-1}\), not just \(e_{n-1}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\tilde{v}_n = v_n/\|v_n\|\) (just normalize)]]></text>
+    <feedback><text>Incorrect. Normalization alone gives unit vectors but does not ensure orthogonality. Both projection and normalization are required.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q09: Complete orthonormal systems -->
+<question type="multichoice">
+  <name><text>FA53_Q09_CompleteONS</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A separable Hilbert space \(H\) (with countable orthonormal basis) is isometrically isomorphic to \(\ell^2\). Which orthonormal system in \(L^2[-\pi, \pi]\) forms a complete orthonormal basis?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[The trigonometric system \(\left\{\dfrac{1}{\sqrt{2\pi}}, \dfrac{\cos(nx)}{\sqrt{\pi}}, \dfrac{\sin(nx)}{\sqrt{\pi}}\right\}_{n=1}^\infty\), or equivalently \(\left\{\dfrac{e^{inx}}{\sqrt{2\pi}}\right\}_{n \in \mathbb{Z}}\)]]></text>
+    <feedback><text>Correct. The trigonometric system is a complete orthonormal basis for \(L^2[-\pi,\pi]\). Completeness follows from the density of trigonometric polynomials in \(L^2\) (Stone-Weierstrass + density of \(C\) in \(L^2\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The Legendre polynomials \(\{P_n(x)\}_{n=0}^\infty\) form an orthonormal basis for \(L^2[-\pi,\pi]\)]]></text>
+    <feedback><text>Incorrect. The Legendre polynomials are orthogonal on \([-1,1]\) (not \([-\pi,\pi]\)) with weight function 1. After normalization they form a basis for \(L^2[-1,1]\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The monomials \(\{1, x, x^2, x^3, \ldots\}\) form an orthonormal basis for \(L^2[-\pi,\pi]\)]]></text>
+    <feedback><text>Incorrect. The monomials are not orthogonal (and not orthonormal) in \(L^2[-\pi,\pi]\). Applying Gram-Schmidt to the monomials gives Legendre polynomials (on \([-1,1]\)) or similar systems, not the monomials themselves.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The standard basis \(\{e_n\}_{n=1}^\infty\) of \(\ell^2\) forms a complete orthonormal basis for \(L^2[-\pi,\pi]\)]]></text>
+    <feedback><text>Incorrect. The standard basis of \(\ell^2\) is not a subset of \(L^2[-\pi,\pi]\); these are different spaces. An orthonormal basis for \(L^2[-\pi,\pi]\) consists of functions, e.g., the trigonometric system.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q10: Closed subspace and orthogonal complement -->
+<question type="multichoice">
+  <name><text>FA53_Q10_OrthogComplement</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>For a closed subspace \(M\) of a Hilbert space \(H\), define \(M^\perp = \{x \in H : \langle x, y\rangle = 0 \text{ for all } y \in M\}\). Which decomposition theorem holds?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H = M \oplus M^\perp\): every \(x \in H\) can be written uniquely as \(x = m + m^\perp\) with \(m \in M\), \(m^\perp \in M^\perp\), and \(\|x\|^2 = \|m\|^2 + \|m^\perp\|^2\)]]></text>
+    <feedback><text>Correct. The orthogonal decomposition theorem states \(H = M \oplus M^\perp\) (orthogonal direct sum). Uniqueness and the Pythagorean formula follow from orthogonality \(\langle m, m^\perp\rangle = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(M^\perp = \{0\}\) whenever \(M\) is a proper closed subspace of \(H\)]]></text>
+    <feedback><text>Incorrect. If \(M\) is a proper closed subspace, then \(M^\perp \neq \{0\}\) (there are nonzero vectors orthogonal to \(M\)). In fact \(\dim M^\perp \geq 1\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The decomposition \(H = M \oplus M^\perp\) holds only if \(M\) is finite-dimensional]]></text>
+    <feedback><text>Incorrect. The orthogonal decomposition holds for any closed subspace \(M\) of any Hilbert space (via the projection theorem). Finite-dimensionality is not required.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[(M^\perp)^\perp = M^\perp\) (double complement equals the complement)]]></text>
+    <feedback><text>Incorrect. The correct statement is \((M^\perp)^\perp = \overline{M} = M\) (since \(M\) is already closed). The double orthogonal complement recovers the original closed subspace.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q11: Gram matrix -->
+<question type="multichoice">
+  <name><text>FA53_Q11_GramMatrix</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Let \(\{v_1, \ldots, v_n\}\) be vectors in an inner product space \(H\). The <strong>Gram matrix</strong> is \(G_{ij} = \langle v_i, v_j\rangle\). The vectors are linearly independent if and only if:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\det(G) > 0\) (the Gram determinant is positive; \(G\) is positive definite)]]></text>
+    <feedback><text>Correct. The Gram matrix is positive semi-definite always; it is positive definite (det > 0) if and only if the vectors are linearly independent. The Gram determinant \(\det(G) = 0\) iff the vectors are linearly dependent.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\det(G) = 1\)]]></text>
+    <feedback><text>Incorrect. For orthonormal vectors, \(G = I\) and \(\det(G) = 1\), but for general linearly independent vectors \(\det(G) > 0\) without needing to equal 1.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\det(G) = 0\) (the Gram matrix is singular)]]></text>
+    <feedback><text>Incorrect. \(\det(G) = 0\) iff the vectors are linearly DEPENDENT. Linear independence corresponds to \(\det(G) > 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[All diagonal entries \(G_{ii} = \|v_i\|^2 = 1\) (the vectors must have unit norm)]]></text>
+    <feedback><text>Incorrect. Linear independence requires only \(\det(G) > 0\). The vectors need not be unit vectors; they just need to be non-proportional (and more generally not linearly dependent).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q12: Spectral theorem for compact self-adjoint -->
+<question type="multichoice">
+  <name><text>FA53_Q12_SpectralCompact</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Spectral Theorem for compact self-adjoint operators</strong> on a Hilbert space \(H\): if \(T: H \to H\) is compact and self-adjoint (\(T^* = T\)), then \(H\) has an orthonormal basis of eigenvectors of \(T\), and the corresponding eigenvalues \(\lambda_n\) are real and satisfy \(\lambda_n \to 0\). Which implication follows?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Every \(x \in H\) has the expansion \(x = \sum_n \langle x, e_n\rangle e_n\) and \(Tx = \sum_n \lambda_n \langle x, e_n\rangle e_n\), making \(T\) diagonalizable in the \(\{e_n\}\) basis]]></text>
+    <feedback><text>Correct. The spectral theorem allows writing \(T = \sum_n \lambda_n \langle \cdot, e_n\rangle e_n\) (operator series in norm). This is the infinite-dimensional analogue of diagonalizing a symmetric matrix.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The eigenvalues \(\lambda_n\) of a compact self-adjoint operator can be complex]]></text>
+    <feedback><text>Incorrect. Self-adjoint operators have real eigenvalues: if \(Tx = \lambda x\), then \(\lambda\|x\|^2 = \langle Tx,x\rangle = \langle x,Tx\rangle = \bar{\lambda}\|x\|^2\), so \(\lambda = \bar\lambda \in \mathbb{R}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Compact self-adjoint operators on infinite-dimensional Hilbert spaces must have infinitely many nonzero eigenvalues]]></text>
+    <feedback><text>Incorrect. A compact self-adjoint operator can have finite rank (finitely many nonzero eigenvalues). The condition \(\lambda_n \to 0\) applies to the sequence of nonzero eigenvalues, which may be finite.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The spectral theorem holds for all bounded self-adjoint operators (not just compact ones)]]></text>
+    <feedback><text>Incorrect as stated here. While a spectral theorem does hold for bounded self-adjoint operators (using spectral measures), the statement about eigenvectors only holds for compact operators. General bounded self-adjoint operators may have no eigenvectors (e.g., multiplication by \(x\) on \(L^2[0,1]\)).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q13: Riesz-Fischer theorem -->
+<question type="multichoice">
+  <name><text>FA53_Q13_RieszFischer</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Riesz-Fischer theorem</strong> states that \(L^2([a,b])\) is complete (a Hilbert space). Equivalently, if \(\{c_n\} \in \ell^2\) (i.e., \(\sum |c_n|^2 < \infty\)), then the series \(\sum c_n e_n\) converges in \(L^2\) to a function \(f\) with \(\langle f, e_n\rangle = c_n\) for any orthonormal basis \(\{e_n\}\). Which classical result does this give for Fourier series?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Given any sequence \((c_n)_{n\in\mathbb{Z}}\) with \(\sum_{n\in\mathbb{Z}} |c_n|^2 < \infty\), there exists \(f \in L^2[-\pi,\pi]\) whose Fourier coefficients are \(\hat{f}(n) = c_n\) and the Fourier series converges to \(f\) in \(L^2\)]]></text>
+    <feedback><text>Correct. Riesz-Fischer guarantees that any square-summable sequence of "coefficients" corresponds to an actual \(L^2\) function. This completes the bijection \(L^2[-\pi,\pi] \cong \ell^2(\mathbb{Z})\) given by Parseval's theorem.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every \(L^2\) function has a pointwise convergent Fourier series]]></text>
+    <feedback><text>Incorrect. Pointwise convergence of Fourier series is a subtle problem (Carleson's theorem, 1966). Riesz-Fischer gives \(L^2\) convergence, not pointwise.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[If \(\sum |c_n| < \infty\) then \(\sum c_n e_n\) converges in \(L^2\)]]></text>
+    <feedback><text>Incorrect. The relevant condition is \(\sum |c_n|^2 < \infty\) (not \(\sum |c_n| < \infty\)). Riesz-Fischer works with \(\ell^2\) sequences, not \(\ell^1\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Riesz-Fischer guarantees that the Fourier series of any \(L^2\) function converges uniformly]]></text>
+    <feedback><text>Incorrect. Riesz-Fischer gives \(L^2\) convergence. Uniform convergence requires additional smoothness (e.g., \(f \in C^1\) for classical pointwise results).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q14: Operators in Hilbert spaces -->
+<question type="multichoice">
+  <name><text>FA53_Q14_Adjoint</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>For a bounded linear operator \(T: H \to H\) on a Hilbert space, the <strong>adjoint</strong> \(T^*\) is defined by \(\langle Tx, y\rangle = \langle x, T^*y\rangle\) for all \(x, y \in H\). The operator \(T\) is called:</p>
+    <ul>
+    <li>Self-adjoint (Hermitian) if \(T^* = T\)</li>
+    <li>Unitary if \(T^*T = TT^* = I\)</li>
+    <li>Normal if \(TT^* = T^*T\)</li>
+    </ul>
+    <p>Which implication is correct?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Self-adjoint \(\Rightarrow\) Normal; and Unitary \(\Rightarrow\) Normal. A unitary operator is an isometric isomorphism: \(\|Tx\| = \|x\|\) for all \(x\)]]></text>
+    <feedback><text>Correct. Self-adjoint: \(T = T^*\) implies \(TT^* = T^2 = T^*T\). Unitary: \(T^*T = I\) implies \(\|Tx\|^2 = \langle T^*Tx,x\rangle = \|x\|^2\), so \(T\) is an isometry and bijection.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every normal operator on a Hilbert space is self-adjoint]]></text>
+    <feedback><text>Incorrect. Unitary operators are normal but not self-adjoint in general (e.g., rotation by \(\pi/2\) in \(\mathbb{R}^2\)). Normal strictly generalizes self-adjoint.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A self-adjoint operator \(T\) must satisfy \(\|T\| = 1\)]]></text>
+    <feedback><text>Incorrect. The norm of a self-adjoint operator equals its spectral radius: \(\|T\| = \sup\{|\lambda| : \lambda \in \sigma(T)\}\), which need not be 1.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T^*\) always equals \(T^{-1}\) for bounded operators on Hilbert spaces]]></text>
+    <feedback><text>Incorrect. \(T^* = T^{-1}\) characterizes unitary operators. For general bounded operators, \(T^*\) and \(T^{-1}\) are different (and \(T^{-1}\) may not exist).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q15: Fredholm alternative -->
+<question type="multichoice">
+  <name><text>FA53_Q15_FredholmAlt</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Fredholm Alternative</strong> for a compact operator \(K: H \to H\) on a Hilbert space states: for the equation \((I - K)x = y\), either:</p>
+    <p>(A) \((I - K)x = y\) has a unique solution for every \(y \in H\), or</p>
+    <p>(B) \(\ker(I - K) \neq \{0\}\) (the homogeneous equation has nontrivial solutions).</p>
+    <p>Which additional information does the Fredholm alternative provide about case (B)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[In case (B), \(\ker(I-K)\) is finite-dimensional, and \((I-K)x = y\) has a solution iff \(y \perp \ker(I - K^*)\); moreover \(\dim\ker(I-K) = \dim\ker(I-K^*)\)]]></text>
+    <feedback><text>Correct. The Fredholm alternative for compact operators mirrors the finite-dimensional Roché-Capelli theorem: the equation is solvable iff the right-hand side is orthogonal to the kernel of the adjoint, and the nullity equals the index deficiency.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[In case (B), \((I - K)x = y\) has no solutions for any \(y \neq 0\)]]></text>
+    <feedback><text>Incorrect. Even when the homogeneous equation has nontrivial solutions, the inhomogeneous equation may have solutions for \(y\) in the range of \((I-K)\). The solvability condition is \(y \perp \ker(I - K^*)\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[In case (A), the inverse \((I - K)^{-1}\) always exists and is bounded, for any Banach space]]></text>
+    <feedback><text>Incorrect. The Fredholm alternative for compact operators (in Hilbert or Banach spaces) gives boundedness of the inverse by the Bounded Inverse Theorem, but the statement "for any Banach space" is correct — the theorem holds in Banach spaces too. However, the key distinction is that this is for compact \(K\), not arbitrary operators.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\ker(I-K)\) is infinite-dimensional in case (B)]]></text>
+    <feedback><text>Incorrect. A key part of the Fredholm alternative is that \(\ker(I-K)\) is FINITE-dimensional (since \(K\) is compact, it cannot map an infinite-dimensional subspace isometrically onto itself).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q16: Hilbert-Schmidt operators -->
+<question type="multichoice">
+  <name><text>FA53_Q16_HilbertSchmidt</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>An integral operator \((Tf)(x) = \int_a^b K(x,y)f(y)\,dy\) on \(L^2[a,b]\) is a <strong>Hilbert-Schmidt operator</strong> if \(\int_a^b\int_a^b |K(x,y)|^2\,dx\,dy < \infty\). Which property do Hilbert-Schmidt operators have?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Every Hilbert-Schmidt operator is compact, and \(\|T\|_{\mathrm{HS}}^2 = \int\int |K(x,y)|^2\,dx\,dy = \sum_{m,n} |\langle Te_n, e_m\rangle|^2\) for any ONB \(\{e_n\}\)]]></text>
+    <feedback><text>Correct. Hilbert-Schmidt operators form an ideal in \(\mathcal{B}(L^2)\) and are compact. The Hilbert-Schmidt norm \(\|T\|_{\mathrm{HS}} = (\int\int |K|^2)^{1/2}\) exceeds the operator norm: \(\|T\| \leq \|T\|_{\mathrm{HS}}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Hilbert-Schmidt operators are bounded but not necessarily compact]]></text>
+    <feedback><text>Incorrect. Hilbert-Schmidt operators are always compact. The finite-rank approximations \(T_n f = \int K_n(x,y)f(y)dy\) (truncating the ONB expansion of \(K\)) converge in operator norm to \(T\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[A Hilbert-Schmidt operator is always self-adjoint]]></text>
+    <feedback><text>Incorrect. A Hilbert-Schmidt operator is self-adjoint iff its kernel is Hermitian: \(K(x,y) = \overline{K(y,x)}\). General Hilbert-Schmidt operators need not be self-adjoint.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Hilbert-Schmidt operators can be unbounded (e.g., if the kernel \(K(x,y)\) grows rapidly)]]></text>
+    <feedback><text>Incorrect. The finite Hilbert-Schmidt norm \(\int\int |K|^2 < \infty\) implies boundedness (and even compactness). The operator norm satisfies \(\|T\| \leq \|T\|_{\mathrm{HS}} < \infty\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q17: Spectrum of self-adjoint -->
+<question type="multichoice">
+  <name><text>FA53_Q17_SpectrumSA</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>spectrum</strong> \(\sigma(T)\) of a bounded operator \(T\) on a Hilbert space \(H\) consists of all \(\lambda \in \mathbb{C}\) for which \((T - \lambda I)\) is not invertible. For a bounded self-adjoint operator \(T = T^*\):</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\sigma(T) \subset \mathbb{R}\) (spectrum is real), and \(\sigma(T) \subset [m, M]\) where \(m = \inf_{\|x\|=1}\langle Tx,x\rangle\) and \(M = \sup_{\|x\|=1}\langle Tx,x\rangle\)]]></text>
+    <feedback><text>Correct. Self-adjoint operators have real spectrum. The spectrum lies in \([m, M]\) (the range of the quadratic form), and both \(m\) and \(M\) are in \(\sigma(T)\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sigma(T)\) can contain complex (non-real) elements for self-adjoint operators with complex eigenvalues]]></text>
+    <feedback><text>Incorrect. Self-adjoint operators have only real spectrum. If \(Tx = \lambda x\), then \(\lambda\|x\|^2 = \langle Tx,x\rangle = \langle x,Tx\rangle = \bar\lambda\|x\|^2\), so \(\lambda\) is real.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sigma(T)\) is always a finite set for self-adjoint operators on infinite-dimensional Hilbert spaces]]></text>
+    <feedback><text>Incorrect. Self-adjoint operators on infinite-dimensional Hilbert spaces can have continuous spectrum (e.g., the multiplication operator \(Mf(x) = xf(x)\) on \(L^2[0,1]\) has spectrum \([0,1]\) with no eigenvalues).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\|T\| = \|\sigma(T)\|_\infty / 2\), i.e., the operator norm is half the spectral radius]]></text>
+    <feedback><text>Incorrect. For self-adjoint operators, \(\|T\| = r(T) = \sup\{|\lambda| : \lambda \in \sigma(T)\}\) (operator norm equals spectral radius, not half of it).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q18: Weak convergence in Hilbert -->
+<question type="multichoice">
+  <name><text>FA53_Q18_WeakHilbert</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>In a Hilbert space \(H\), a sequence \(x_n \rightharpoonup x\) weakly if \(\langle x_n, y\rangle \to \langle x, y\rangle\) for all \(y \in H\). Which is TRUE?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Every bounded sequence in a Hilbert space has a weakly convergent subsequence (Hilbert spaces are reflexive, so closed balls are weakly compact by Banach-Alaoglu)]]></text>
+    <feedback><text>Correct. Reflexivity of Hilbert spaces (via Riesz representation: \(H \cong H^*\)) and the Banach-Alaoglu theorem imply that bounded sequences have weakly convergent subsequences.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Weak convergence \(x_n \rightharpoonup x\) implies \(\|x_n\| \to \|x\|\) in any Hilbert space]]></text>
+    <feedback><text>Incorrect. Weak convergence does not imply norm convergence in general. Counter-example: \(e_n \rightharpoonup 0\) in \(\ell^2\) but \(\|e_n\| = 1 \not\to 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[If \(x_n \rightharpoonup x\) weakly and \(\|x_n\| \to \|x\|\), then \(x_n\) need not converge strongly]]></text>
+    <feedback><text>Incorrect. In a Hilbert space, weak convergence PLUS norm convergence DOES imply strong convergence. This is because \(\|x_n - x\|^2 = \|x_n\|^2 - 2\operatorname{Re}\langle x_n,x\rangle + \|x\|^2 \to \|x\|^2 - 2\|x\|^2 + \|x\|^2 = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[In a Hilbert space, every weakly Cauchy sequence is weakly convergent only if the space is finite-dimensional]]></text>
+    <feedback><text>Incorrect. Hilbert spaces are reflexive, and in reflexive Banach spaces every weakly Cauchy sequence converges weakly (not requiring finite-dimensionality).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q19: Polarization identity -->
+<question type="multichoice">
+  <name><text>FA53_Q19_Polarization</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>polarization identity</strong> expresses the inner product in terms of the norm. In a real Hilbert space:</p>
+    <p>\[\langle x, y \rangle = \frac{1}{4}\bigl(\|x+y\|^2 - \|x-y\|^2\bigr).\]</p>
+    <p>What does this imply about linear operators \(T: H \to H\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[If \(\langle Tx, x\rangle = 0\) for all \(x \in H\) (real Hilbert space), then \(T = 0\); i.e., knowing the quadratic form \(x \mapsto \langle Tx, x\rangle\) determines \(T\) (by polarization: \(\langle Tx, y\rangle = \frac{1}{4}(\langle T(x+y),x+y\rangle - \langle T(x-y),x-y\rangle)\))]]></text>
+    <feedback><text>Correct. The polarization identity allows recovery of the bilinear form \(\langle Tx, y\rangle\) from the quadratic form \(x \mapsto \langle Tx,x\rangle\). If the quadratic form is zero, then the bilinear form is zero, hence \(T = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The polarization identity fails for complex Hilbert spaces (inner products are not determined by norms over \(\mathbb{C}\))]]></text>
+    <feedback><text>Incorrect. The complex polarization identity is \(\langle x, y\rangle = \frac{1}{4}(\|x+y\|^2 - \|x-y\|^2 + i\|x+iy\|^2 - i\|x-iy\|^2)\). It works in complex Hilbert spaces too.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\langle x, y \rangle = \frac{1}{2}(\|x+y\|^2 - \|x\|^2 - \|y\|^2)\) (wrong polarization formula)]]></text>
+    <feedback><text>Incorrect. The correct formula is \(\langle x,y\rangle = \frac{1}{4}(\|x+y\|^2 - \|x-y\|^2)\) in a real Hilbert space. The formula \(\frac{1}{2}(\|x+y\|^2 - \|x\|^2 - \|y\|^2)\) is also valid (and follows from expanding \(\|x+y\|^2\)) but the standard polarization is the one given.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The polarization identity shows that inner products are always nonnegative: \(\langle x, y\rangle \geq 0\)]]></text>
+    <feedback><text>Incorrect. Inner products need not be nonnegative for \(x \neq y\). Only \(\langle x,x\rangle = \|x\|^2 \geq 0\). The value \(\langle x,y\rangle\) can be negative.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q20: Lax-Milgram theorem -->
+<question type="multichoice">
+  <name><text>FA53_Q20_LaxMilgram</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Lax-Milgram theorem</strong>: let \(H\) be a Hilbert space and \(a: H \times H \to \mathbb{R}\) a bilinear form that is continuous \((|a(u,v)| \leq M\|u\|\|v\|)\) and coercive \((a(u,u) \geq \alpha\|u\|^2\) for some \(\alpha > 0)\). Then for every \(f \in H^*\), there exists a unique \(u \in H\) such that:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(a(u, v) = f(v)\) for all \(v \in H\), and \(\|u\| \leq \dfrac{\|f\|_{H^*}}{\alpha}\)]]></text>
+    <feedback><text>Correct. Lax-Milgram generalizes Riesz representation to non-symmetric bilinear forms. It is the foundation for the variational formulation of elliptic PDEs (e.g., \(-\Delta u = f\) in \(H^1_0(\Omega)\) with \(a(u,v) = \int\nabla u \cdot\nabla v\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(a(u, v) = f(v)\) for all \(v\), but uniqueness requires the additional assumption that \(a\) is symmetric]]></text>
+    <feedback><text>Incorrect. Lax-Milgram gives existence and uniqueness for any coercive continuous bilinear form, symmetric or not. Symmetry is needed for the Riesz theorem but not for Lax-Milgram.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The solution exists only in a dense subspace of \(H\) (not in \(H\) itself)]]></text>
+    <feedback><text>Incorrect. Lax-Milgram guarantees the solution \(u\) lies in the full Hilbert space \(H\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Lax-Milgram requires \(H\) to be finite-dimensional; in infinite dimensions Galerkin approximations are needed]]></text>
+    <feedback><text>Incorrect. Lax-Milgram holds in any Hilbert space, finite or infinite-dimensional. Galerkin methods are numerical approximations, not required for the existence theorem.</text></feedback>
+  </answer>
+</question>
+
+</quiz>

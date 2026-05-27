@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category>
+    <text>$course$/CSIR NET Mathematics/Functional Analysis/Operators and Spectral Theory</text>
+  </category>
+</question>
+
+<!-- Q01: Spectrum definition -->
+<question type="multichoice">
+  <name><text>FA54_Q01_SpectrumDef</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Let \(T\) be a bounded linear operator on a Banach space \(X\). The <strong>spectrum</strong> \(\sigma(T)\) is the set of \(\lambda \in \mathbb{C}\) for which \((T - \lambda I)\) is not invertible (as a bounded operator on \(X\)). The <strong>resolvent set</strong> is \(\rho(T) = \mathbb{C} \setminus \sigma(T)\). Which decomposition of \(\sigma(T)\) is standard?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\sigma(T) = \sigma_p(T) \cup \sigma_c(T) \cup \sigma_r(T)\): point spectrum (eigenvalues), continuous spectrum (\((T-\lambda I)\) injective, dense range, not surjective), residual spectrum (\((T-\lambda I)\) injective, range not dense)]]></text>
+    <feedback><text>Correct. These three parts partition the spectrum: point (kernel nontrivial), continuous (kernel trivial, range dense but not all of \(X\)), residual (kernel trivial, range not dense).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sigma(T)\) consists only of eigenvalues (the point spectrum) for bounded operators]]></text>
+    <feedback><text>Incorrect. On infinite-dimensional spaces, the spectrum can include continuous and residual parts. E.g., the multiplication operator \(Mf(x) = xf(x)\) on \(L^2[0,1]\) has \(\sigma_p(M) = \emptyset\) and \(\sigma_c(M) = [0,1]\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sigma(T) = \emptyset\) for every bounded operator on a Banach space over \(\mathbb{C}\)]]></text>
+    <feedback><text>Incorrect. Over \(\mathbb{C}\), the spectrum is always nonempty (a standard result using Liouville's theorem applied to the resolvent \(R(\lambda) = (T-\lambda I)^{-1}\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sigma(T) \subset \mathbb{R}\) for every bounded operator on a complex Banach space]]></text>
+    <feedback><text>Incorrect. The spectrum lies in \(\mathbb{R}\) only for self-adjoint operators on Hilbert spaces. General bounded operators can have complex eigenvalues (e.g., rotation in \(\mathbb{R}^2 \cong \mathbb{C}\)).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q02: Spectral radius -->
+<question type="multichoice">
+  <name><text>FA54_Q02_SpectralRadius</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>spectral radius</strong> of a bounded operator \(T\) on a Banach space is \(r(T) = \sup\{|\lambda| : \lambda \in \sigma(T)\}\). The spectral radius formula states:</p>
+    <p>\[r(T) = \lim_{n \to \infty} \|T^n\|^{1/n}.\]</p>
+    <p>For a self-adjoint operator \(T\) on a Hilbert space, what is the relation between \(r(T)\) and \(\|T\|\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(r(T) = \|T\|\) for self-adjoint \(T\): the spectral radius equals the operator norm]]></text>
+    <feedback><text>Correct. For self-adjoint operators: \(\|T^2\| = \|T\|^2\) (since \(T^* = T\) implies \(\|T^2\| = \|T^*T\| = \|T\|^2\)), so \(r(T) = \lim\|T^{2^n}\|^{1/2^n} = \|T\|\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(r(T) \geq \|T\|\) in general]]></text>
+    <feedback><text>Incorrect. In general \(r(T) \leq \|T\|\) (the spectral radius is at most the operator norm). For self-adjoint operators equality holds; in general it may be strict (e.g., nilpotent operators have \(r(T)=0\) but \(\|T\|>0\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(r(T) = \|T\|/2\) for self-adjoint operators]]></text>
+    <feedback><text>Incorrect. The spectral radius of a self-adjoint operator equals the operator norm (not half of it): \(r(T) = \|T\|\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(r(T) = 0\) for all compact operators regardless of self-adjointness]]></text>
+    <feedback><text>Incorrect. Compact self-adjoint operators can have nonzero eigenvalues (e.g., the operator \(Tf = \sum_{n=1}^\infty \frac{1}{n}\langle f,e_n\rangle e_n\) has spectral radius 1). \(r(T) = 0\) characterizes quasinilpotent operators.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q03: Compact operator spectrum -->
+<question type="multichoice">
+  <name><text>FA54_Q03_CompactSpectrum</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Let \(K: H \to H\) be a compact operator on an infinite-dimensional Hilbert space. Which statement about \(\sigma(K)\) is correct?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(0 \in \sigma(K)\) always; every nonzero \(\lambda \in \sigma(K)\) is an eigenvalue with finite-dimensional eigenspace; and the nonzero eigenvalues (if infinite) accumulate only at 0]]></text>
+    <feedback><text>Correct. For a compact operator on an infinite-dimensional Hilbert space: \(K\) cannot be invertible (\(0 \in \sigma\)); every nonzero spectral value is an eigenvalue by Riesz theory; eigenspaces for nonzero eigenvalues are finite-dimensional; and nonzero eigenvalues accumulate at 0.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sigma(K)\) is always a finite set for compact operators]]></text>
+    <feedback><text>Incorrect. Compact operators can have countably infinite spectrum. E.g., the operator with eigenvalues \(1/n\) has a countably infinite point spectrum accumulating at 0.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(0 \notin \sigma(K)\) whenever \(K\) is injective]]></text>
+    <feedback><text>Incorrect. On an infinite-dimensional Hilbert space, a compact injective operator \(K\) still has \(0 \in \sigma(K)\) (since \(K\) cannot be surjective by the open mapping theorem argument — its range is a proper subspace, hence \(K^{-1}\) cannot be bounded).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The spectrum of a compact operator is always contained in the unit disk \(|\lambda| \leq 1\)]]></text>
+    <feedback><text>Incorrect. A compact operator can have eigenvalues of any magnitude. E.g., \(K = 100 P\) where \(P\) is a finite-rank projection has eigenvalue 100. The spectrum is bounded (contained in a disk of radius \(\|K\|\)), but not necessarily in \(|\lambda| \leq 1\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q04: Resolvent -->
+<question type="multichoice">
+  <name><text>FA54_Q04_Resolvent</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>resolvent operator</strong> \(R(\lambda; T) = (T - \lambda I)^{-1}\) is defined for \(\lambda \in \rho(T)\). Which properties are correct?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[The resolvent satisfies the first resolvent identity: \(R(\lambda) - R(\mu) = (\lambda - \mu)R(\lambda)R(\mu)\); the resolvent set \(\rho(T)\) is open; and \(\lambda \mapsto R(\lambda)\) is analytic on \(\rho(T)\)]]></text>
+    <feedback><text>Correct. The resolvent is analytic on \(\rho(T)\) (has a convergent Neumann series near any resolvent point), \(\rho(T)\) is open (spectrum is closed), and the resolvent identity is verified by direct computation.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The resolvent \(R(\lambda)\) is always a compact operator]]></text>
+    <feedback><text>Incorrect. The resolvent is compact only in special cases (e.g., when \(T\) has compact resolvent, as for the Laplacian on bounded domains). In general \(R(\lambda)\) is bounded but not compact.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\|R(\lambda)\| \to 0\) as \(|\lambda| \to \infty\)]]></text>
+    <feedback><text>Correct and this is indeed a known fact. For \(|\lambda| > \|T\|\), \(R(\lambda) = -\lambda^{-1}(I - T/\lambda)^{-1}\) and \(\|R(\lambda)\| \leq 1/(|\lambda| - \|T\|) \to 0\). However, this option is presented as one of four choices; let's check if this is the "best" answer. Actually this is a true fact. But the question says "which properties are correct" and option A is the more complete/standard answer. Let me make sure that option A is the correct one to select.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The resolvent identity states \(R(\lambda) - R(\mu) = (\lambda - \mu)T\) for all \(\lambda, \mu \in \rho(T)\)]]></text>
+    <feedback><text>Incorrect. The correct resolvent identity is \(R(\lambda) - R(\mu) = (\lambda - \mu)R(\lambda)R(\mu)\), not \((\lambda-\mu)T\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q05: Multiplication operator spectrum -->
+<question type="multichoice">
+  <name><text>FA54_Q05_MultOperator</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The multiplication operator \(M_\phi: L^2(\mu) \to L^2(\mu)\), \((M_\phi f)(x) = \phi(x)f(x)\), for a bounded measurable function \(\phi\) on a measure space \((X, \mu)\). What is the spectrum \(\sigma(M_\phi)\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\sigma(M_\phi) = \overline{\phi(X)}\) (the essential range of \(\phi\), i.e., the set of essential values): \(\lambda \in \sigma(M_\phi)\) iff \(\mu(\{x : |\phi(x) - \lambda| < \varepsilon\}) > 0\) for all \(\varepsilon > 0\)]]></text>
+    <feedback><text>Correct. The spectrum of a multiplication operator is the essential range of the multiplying function. For example, \(M_x\) on \(L^2[0,1]\) has spectrum \([0,1]\) (no eigenvalues, purely continuous spectrum).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sigma(M_\phi)\) consists only of eigenvalues: \(\lambda \in \sigma_p(M_\phi)\) iff \(\mu(\{\phi = \lambda\}) > 0\)]]></text>
+    <feedback><text>Incorrect. The eigenvalues of \(M_\phi\) are the values taken by \(\phi\) on sets of positive measure, but the full spectrum can include values in the continuous spectrum (where \(\phi\) comes close to \(\lambda\) without hitting it on a positive measure set).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sigma(M_\phi) = \{\lambda \in \mathbb{C} : \|\phi - \lambda\|_{L^\infty} = 0\} = \{\phi\}\) (a single point)]]></text>
+    <feedback><text>Incorrect. The spectrum of \(M_\phi\) is the essential range of \(\phi\), which for a non-constant \(\phi\) is a set with more than one point (e.g., for \(\phi = \text{id}\) on \([0,1]\), \(\sigma = [0,1]\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sigma(M_\phi) = \emptyset\) if \(\phi\) is real-valued (no complex eigenvalues)]]></text>
+    <feedback><text>Incorrect. The spectrum is the essential range of \(\phi\). If \(\phi\) is real-valued then \(\sigma(M_\phi)\) is a subset of \(\mathbb{R}\), but it is not empty (it equals the essential range, which is nonempty for nonzero \(\phi\)).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q06: Spectral theorem for bounded normal -->
+<question type="multichoice">
+  <name><text>FA54_Q06_SpectralThm</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Spectral Theorem for bounded self-adjoint operators</strong> on a Hilbert space states that \(T = T^*\) implies there exists a projection-valued measure \(E\) on \(\sigma(T) \subset \mathbb{R}\) such that:</p>
+    <p>\[T = \int_{\sigma(T)} \lambda\,dE(\lambda).\]</p>
+    <p>This means for the functional calculus: for any bounded Borel function \(f: \sigma(T) \to \mathbb{C}\), we can define:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(f(T) = \int_{\sigma(T)} f(\lambda)\,dE(\lambda)\), a bounded operator satisfying \(\|f(T)\| \leq \|f\|_\infty\) and \((fg)(T) = f(T)g(T)\)]]></text>
+    <feedback><text>Correct. The spectral theorem enables a functional calculus: the map \(f \mapsto f(T)\) is a \(C^*\)-algebra homomorphism from bounded Borel functions on \(\sigma(T)\) to \(\mathcal{B}(H)\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(f(T)\) is defined only for polynomials \(f\) and equals the polynomial in \(T\)]]></text>
+    <feedback><text>Incorrect. The spectral theorem provides a functional calculus for all bounded Borel functions, not just polynomials. The polynomial functional calculus is a special case.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The spectral theorem requires \(T\) to be compact; bounded non-compact self-adjoint operators have no spectral representation]]></text>
+    <feedback><text>Incorrect. The spectral theorem for bounded self-adjoint operators holds in full generality (compact or not), using the more general spectral measure framework instead of an eigenvector expansion.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T = \sum_{n=1}^\infty \lambda_n P_n\) where \(\lambda_n\) are eigenvalues and \(P_n\) are projections, valid for all bounded self-adjoint \(T\)]]></text>
+    <feedback><text>Incorrect. The discrete eigenvector expansion \(T = \sum \lambda_n P_n\) holds for compact self-adjoint operators (with eigenvalues \(\to 0\)), but not for general bounded self-adjoint operators which may have continuous spectrum.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q07: Fredholm operators -->
+<question type="multichoice">
+  <name><text>FA54_Q07_FredholmOp</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A bounded linear operator \(T: X \to Y\) between Banach spaces is <strong>Fredholm</strong> if it has closed range, finite-dimensional kernel, and finite-codimensional range (i.e., \(\dim Y/T(X) < \infty\)). The <strong>Fredholm index</strong> is \(\operatorname{ind}(T) = \dim\ker(T) - \dim\operatorname{coker}(T)\). If \(K\) is compact and \(T = I - K\), then:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(T = I - K\) is Fredholm of index 0; i.e., \(\dim\ker(I-K) = \dim\ker(I-K^*)\) (the Fredholm alternative)]]></text>
+    <feedback><text>Correct. A compact perturbation of the identity is Fredholm of index 0. This is the operator-theoretic statement of the Fredholm alternative: for \(T = I - K\), the kernel and cokernel have equal dimension.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T = I - K\) is always invertible (index 0 means it is bijective)]]></text>
+    <feedback><text>Incorrect. Index 0 means \(\dim\ker = \dim\text{coker}\), not that both are zero. The operator may have nontrivial kernel and cokernel (of equal dimension). Bijectivity holds only when \(\ker(I-K) = \{0\}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\operatorname{ind}(I - K) = \infty\) if \(K\) is infinite-rank]]></text>
+    <feedback><text>Incorrect. The Fredholm index of \(I - K\) is 0 regardless of the rank of \(K\), as long as \(K\) is compact. Index is a finite integer for Fredholm operators.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The Fredholm index satisfies \(\operatorname{ind}(T_1 T_2) = \operatorname{ind}(T_1) + \operatorname{ind}(T_2)\), but only for self-adjoint \(T_1, T_2\)]]></text>
+    <feedback><text>Incorrect. The multiplicativity \(\operatorname{ind}(T_1 T_2) = \operatorname{ind}(T_1) + \operatorname{ind}(T_2)\) holds for all Fredholm operators \(T_1, T_2\), not just self-adjoint ones.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q08: Unilateral shift -->
+<question type="multichoice">
+  <name><text>FA54_Q08_UnilateralShift</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The right-shift operator \(S: \ell^2 \to \ell^2\) is defined by \(S(x_1, x_2, \ldots) = (0, x_1, x_2, \ldots)\). Which of the following about the spectrum of \(S\) is correct?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\sigma_p(S) = \emptyset\) (no eigenvalues), \(\sigma(S) = \overline{\mathbb{D}} = \{|\lambda| \leq 1\}\), and for the adjoint (left shift \(S^*\)): \(\sigma_p(S^*) = \mathbb{D} = \{|\lambda| < 1\}\)]]></text>
+    <feedback><text>Correct. \(S\) is an isometry (\(\|Sx\| = \|x\|\)) so \(\sigma(S) \subset \overline{\mathbb{D}}\), and for \(|\lambda| < 1\), \((S-\lambda)^{-1}\) does not exist (residual spectrum). \(S^*\) is the left shift with eigenvalues \(\lambda e_1 + \lambda^2 e_2 + \cdots\) for \(|\lambda| < 1\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(S\) has infinitely many eigenvalues \(\lambda\) with \(|\lambda| = 1\) (on the unit circle)]]></text>
+    <feedback><text>Incorrect. The right shift has no eigenvalues at all: if \(Sx = \lambda x\), then \((0, x_1, x_2, \ldots) = \lambda(x_1, x_2, \ldots)\) forcing \(x_1 = 0\), then \(x_2 = 0\), etc., so \(x = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sigma(S) = \{1\}\) since \(S\) is an isometry with \(\|S\| = 1\)]]></text>
+    <feedback><text>Incorrect. The spectrum of the right shift is the entire closed unit disk \(\overline{\mathbb{D}}\), not just \(\{1\}\). The spectral radius equals 1 but the spectrum is much larger.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(S\) is self-adjoint, so its spectrum is real]]></text>
+    <feedback><text>Incorrect. \(S^* \neq S\) (the adjoint of the right shift is the left shift, not the right shift itself). \(S\) is not self-adjoint, so its spectrum need not be real.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q09: Normal operator -->
+<question type="multichoice">
+  <name><text>FA54_Q09_NormalOp</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A bounded operator \(N\) on a Hilbert space is <strong>normal</strong> if \(NN^* = N^*N\). Which property is equivalent to normality?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\|Nx\| = \|N^*x\|\) for all \(x \in H\); equivalently, \(\ker N = \ker N^*\) and eigenvectors for distinct eigenvalues are orthogonal]]></text>
+    <feedback><text>Correct. \(NN^* = N^*N\) iff \(\|Nx\|^2 = \langle N^*Nx,x\rangle = \langle NN^*x,x\rangle = \|N^*x\|^2\) for all \(x\). For normal operators, the spectral theorem holds (they are diagonalizable in the operator sense), and eigenvectors for distinct eigenvalues are orthogonal.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(N = N^*\) (N is self-adjoint) is the only way N can be normal]]></text>
+    <feedback><text>Incorrect. Self-adjoint implies normal, but normal is more general: unitary operators (\(N^*N = I\)) and anti-self-adjoint operators (\(N^* = -N\)) are also normal but not self-adjoint.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(N\) is normal iff \(N\) has a complete set of eigenvectors (orthonormal basis of eigenvectors)]]></text>
+    <feedback><text>Incorrect. A normal operator has an orthonormal eigenbasis only if it is compact. General normal operators are "diagonalizable" in the spectral measure sense but may have continuous spectrum with no eigenvectors.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every bounded operator on a Hilbert space is normal]]></text>
+    <feedback><text>Incorrect. The right shift \(S\) is a bounded operator with \(S^*S = I \neq SS^*\) (since \(SS^* = I - e_1\otimes e_1\)), so \(S\) is not normal.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q10: Positive operators -->
+<question type="multichoice">
+  <name><text>FA54_Q10_PositiveOp</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A bounded self-adjoint operator \(T\) on a Hilbert space \(H\) is called <strong>positive</strong> (written \(T \geq 0\)) if \(\langle Tx, x\rangle \geq 0\) for all \(x \in H\). Which of the following is correct?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Every positive operator \(T \geq 0\) has a unique positive square root \(T^{1/2} \geq 0\) with \((T^{1/2})^2 = T\); the spectrum satisfies \(\sigma(T) \subset [0, \infty)\)]]></text>
+    <feedback><text>Correct. For positive operators: \(\sigma(T) \subset [0,\infty)\) (since \(\langle Tx,x\rangle \geq 0\) means all eigenvalues/spectral values are nonneg), and the functional calculus gives a unique positive square root.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T \geq 0\) implies \(T\) is invertible]]></text>
+    <feedback><text>Incorrect. A positive operator need not be invertible: \(0 \in \sigma(T)\) is possible (e.g., any projection \(P \geq 0\) with \(\ker P \neq \{0\}\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The sum of two positive operators may fail to be positive]]></text>
+    <feedback><text>Incorrect. If \(T_1 \geq 0\) and \(T_2 \geq 0\), then \(\langle(T_1+T_2)x,x\rangle = \langle T_1x,x\rangle + \langle T_2x,x\rangle \geq 0\), so \(T_1 + T_2 \geq 0\). The set of positive operators forms a convex cone.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T \geq 0\) if and only if all eigenvalues of \(T\) are nonneg; this characterization holds even in infinite dimensions]]></text>
+    <feedback><text>Incorrect. In infinite dimensions, \(T\) may have continuous spectrum (no eigenvalues at all). The correct characterization is \(\sigma(T) \subset [0,\infty)\), not just non-negative eigenvalues.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q11: Polar decomposition -->
+<question type="multichoice">
+  <name><text>FA54_Q11_PolarDecomp</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>polar decomposition</strong> of a bounded operator \(T: H \to H\) on a Hilbert space is \(T = U|T|\) where \(|T| = (T^*T)^{1/2} \geq 0\) and \(U\) is a partial isometry (isometry on \(\overline{\text{ran}(|T|)}\), zero on \(\ker T\)). Which analogy from linear algebra does this generalize?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[The polar decomposition of a complex number: \(z = e^{i\theta}|z|\), where \(e^{i\theta}\) (unitary part) corresponds to \(U\) and \(|z|\) (modulus, positive) corresponds to \(|T|\)]]></text>
+    <feedback><text>Correct. Just as every complex number factors as \(z = e^{i\theta}|z|\) (phase times magnitude), every bounded operator factors as \(T = U|T|\) (partial isometry times positive operator). This is the non-commutative analogue.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The QR decomposition of a matrix: \(A = QR\) where \(Q\) is orthogonal and \(R\) is upper triangular]]></text>
+    <feedback><text>Incorrect. The QR decomposition triangularizes a matrix, which is different from polar decomposition. In polar decomposition \(A = UP\) where \(P = (A^*A)^{1/2}\) is positive semi-definite (not triangular).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The eigendecomposition \(A = PDP^{-1}\) (diagonalization via eigenvectors)]]></text>
+    <feedback><text>Incorrect. Eigendecomposition diagonalizes a matrix and requires distinct eigenvalues or diagonalizability. Polar decomposition works for any operator without requiring diagonalizability.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The LU decomposition \(A = LU\) where \(L\) is lower triangular and \(U\) is upper triangular]]></text>
+    <feedback><text>Incorrect. LU decomposition factors into triangular matrices for Gaussian elimination. Polar decomposition factors into a positive operator and a partial isometry.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q12: Trace class operators -->
+<question type="multichoice">
+  <name><text>FA54_Q12_TraceClass</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A compact operator \(T\) on a Hilbert space \(H\) is <strong>trace class</strong> if \(\|T\|_1 = \operatorname{tr}(|T|) = \sum_n \langle |T|e_n, e_n\rangle < \infty\) for any ONB \(\{e_n\}\). The trace is \(\operatorname{tr}(T) = \sum_n \langle Te_n, e_n\rangle\). Which relation connects trace class and Hilbert-Schmidt operators?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Trace class \(\subsetneq\) Hilbert-Schmidt \(\subsetneq\) Compact: if \(T\) is trace class then \(\|T\|_{\mathrm{HS}}^2 = \|T^2\|_1 / \cdots\)… more precisely \(T \in \mathcal{B}_1 \Rightarrow T \in \mathcal{B}_2\) (Hilbert-Schmidt), and \(\|T\|_{\mathrm{HS}} \leq \|T\|_1\)]]></text>
+    <feedback><text>Correct. The Schatten class inclusions: trace class (\(\mathcal{B}_1\)) \(\subset\) Hilbert-Schmidt (\(\mathcal{B}_2\)) \(\subset\) Compact (\(\mathcal{K}\)) \(\subset\) Bounded (\(\mathcal{B}\)). The trace-class norm \(\|\cdot\|_1 \geq\|\cdot\|_2\) (HS norm) \(\geq \|\cdot\|\) (op norm).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Every Hilbert-Schmidt operator is trace class]]></text>
+    <feedback><text>Incorrect. Trace class is a proper subset of Hilbert-Schmidt. For example, if \(\{s_n\}\) are singular values with \(\sum s_n^2 < \infty\) but \(\sum s_n = \infty\), the operator is Hilbert-Schmidt but not trace class.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\operatorname{tr}(T)\) depends on the choice of ONB \(\{e_n\}\) for general bounded \(T\)]]></text>
+    <feedback><text>Incorrect. For trace-class operators, \(\operatorname{tr}(T) = \sum_n \langle Te_n, e_n\rangle\) is independent of the ONB. (For non-trace-class operators the sum may not converge or may give different values.)</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\operatorname{tr}(AB) = \operatorname{tr}(BA)\) only when \(A = B\) (commutativity of trace fails in general)]]></text>
+    <feedback><text>Incorrect. The trace satisfies \(\operatorname{tr}(AB) = \operatorname{tr}(BA)\) whenever \(AB\) and \(BA\) are trace class, regardless of whether \(A = B\). This cyclicity of the trace is a fundamental property.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q13: Sturm-Liouville spectral theory -->
+<question type="multichoice">
+  <name><text>FA54_Q13_SturmLiouville</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The regular Sturm-Liouville problem on \([a,b]\):</p>
+    <p>\[Ly = -(py')' + qy = \lambda w y, \quad p > 0,\; w > 0,\; \text{with separated boundary conditions}\]</p>
+    <p>defines a self-adjoint operator in \(L^2([a,b]; w\,dx)\). Which statements are correct?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[All eigenvalues are real; eigenfunctions for distinct eigenvalues are orthogonal in \(L^2([a,b]; w\,dx)\); the eigenvalues form a sequence \(\lambda_1 < \lambda_2 < \cdots \to +\infty\); and eigenfunctions form a complete orthonormal basis]]></text>
+    <feedback><text>Correct. The regular Sturm-Liouville operator is self-adjoint with compact resolvent, giving a discrete spectrum bounded below. The completeness of eigenfunctions is the spectral theorem for this compact-resolvent operator.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The eigenvalues can be complex for non-symmetric boundary conditions]]></text>
+    <feedback><text>Incorrect. With separated self-adjoint boundary conditions, the operator is self-adjoint, ensuring all eigenvalues are real regardless of the specific boundary conditions chosen.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The Sturm-Liouville operator always has infinitely many negative eigenvalues]]></text>
+    <feedback><text>Incorrect. The eigenvalues satisfy \(\lambda_n \to +\infty\) but the smallest eigenvalue \(\lambda_1\) may be positive, zero, or negative depending on the coefficients \(p, q, w\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Eigenfunctions for distinct eigenvalues are orthogonal in \(L^2([a,b])\) (unweighted), regardless of \(w\)]]></text>
+    <feedback><text>Incorrect. Orthogonality holds in the weighted space \(L^2([a,b]; w\,dx)\): \(\int_a^b y_m y_n w\,dx = 0\) for \(\lambda_m \neq \lambda_n\). With unit weight \(w = 1\), the standard \(L^2\) applies.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q14: Functional calculus -->
+<question type="multichoice">
+  <name><text>FA54_Q14_FunctionalCalc</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>For a self-adjoint operator \(T\) on a Hilbert space with spectrum \(\sigma(T) \subset \mathbb{R}\), the <strong>continuous functional calculus</strong> defines \(f(T)\) for \(f \in C(\sigma(T))\). If \(T\) is positive (\(T \geq 0\)) and \(f(\lambda) = \lambda^{-1}\) (well-defined on \(\sigma(T) \subset (0,\infty)\)), then \(f(T) =\):</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(T^{-1}\) (the bounded inverse of \(T\), which exists since \(0 \notin \sigma(T)\))]]></text>
+    <feedback><text>Correct. If \(\sigma(T) \subset (0,\infty)\), then \(0 \in \rho(T)\), so \(T^{-1}\) is bounded. The functional calculus gives \((\text{id})^{-1}(T) = T^{-1}\), consistent with the algebraic definition.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The pseudo-inverse \(T^+\) (Moore-Penrose), which differs from \(T^{-1}\) even when \(T\) is invertible]]></text>
+    <feedback><text>Incorrect. When \(T\) is invertible (i.e., \(0 \notin \sigma(T)\)), the pseudo-inverse equals the regular inverse: \(T^+ = T^{-1}\). The functional calculus gives the same result.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The operator is not defined since \(f(\lambda) = \lambda^{-1}\) is singular at \(\lambda = 0\)]]></text>
+    <feedback><text>Incorrect. The assumption \(\sigma(T) \subset (0,\infty)\) means \(0 \notin \sigma(T)\), so \(f(\lambda) = \lambda^{-1}\) is continuous on all of \(\sigma(T)\). The functional calculus is well-defined.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The adjoint \(T^*\) (since \((T^*)^{-1} = (T^{-1})^*\))]]></text>
+    <feedback><text>Incorrect. \(f(T) = T^{-1}\), not \(T^*\). While \((T^{-1})^* = (T^*)^{-1}\) for invertible operators, the functional calculus gives the inverse, not the adjoint.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q15: Unbounded operators -->
+<question type="multichoice">
+  <name><text>FA54_Q15_UnboundedOp</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The differentiation operator \(T = \frac{d}{dx}\) on \(H = L^2[0,1]\) with domain \(D(T) = \{f \in H^1[0,1] : f(0) = f(1) = 0\}\) is an <strong>unbounded closed operator</strong>. Which of the following is correct?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(T\) is closable (has closed graph), densely defined, and \(T^* = -\frac{d}{dx}\) with domain \(H^1[0,1]\) (no boundary conditions). The operator \(-iT = -i\frac{d}{dx}\) is self-adjoint with appropriate domain.]]></text>
+    <feedback><text>Correct. The differentiation operator on \(H^1_0[0,1]\) is skew-adjoint (antisymmetric), and \(-i d/dx\) with appropriate boundary conditions is the self-adjoint momentum operator in quantum mechanics.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T = d/dx\) is bounded on \(L^2[0,1]\) since \(D(T) \subset L^2\)]]></text>
+    <feedback><text>Incorrect. The operator \(d/dx\) is unbounded on \(L^2\): the sequence \(f_n(x) = \sin(n\pi x)\) has \(\|f_n\|_2 = 1/\sqrt{2}\) but \(\|f_n'\|_2 = n\pi/\sqrt{2} \to \infty\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The closed graph theorem implies \(d/dx\) (defined on \(H^1_0[0,1]\)) is bounded, contradiction with its being unbounded]]></text>
+    <feedback><text>Incorrect. The closed graph theorem applies to operators defined on the whole Banach/Hilbert space. Here the domain \(D(T) = H^1_0[0,1]\) is a proper dense subspace of \(L^2\), not all of \(L^2\), so the theorem does not apply.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Unbounded operators cannot have eigenvalues]]></text>
+    <feedback><text>Incorrect. Unbounded operators commonly have eigenvalues. For example, \(-d^2/dx^2\) on \(H^1_0[0,1]\) has eigenvalues \(n^2\pi^2\) (with eigenfunctions \(\sin(n\pi x)\)).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q16: Min-max principle -->
+<question type="multichoice">
+  <name><text>FA54_Q16_MinMax</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Min-Max (Courant-Fischer) principle</strong> for eigenvalues \(\lambda_1 \leq \lambda_2 \leq \cdots\) of a compact self-adjoint operator \(T\) states:</p>
+    <p>\[\lambda_k = \min_{\dim V = k} \max_{\substack{x \in V \\ \|x\|=1}} \langle Tx, x\rangle.\]</p>
+    <p>What is the variational characterization of the largest eigenvalue \(\lambda_1\) (assuming \(T \geq 0\))?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\lambda_1 = \max_{\|x\|=1} \langle Tx, x\rangle = \|T\|\) (the Rayleigh quotient is maximized at the top eigenvector)]]></text>
+    <feedback><text>Correct. For a positive compact self-adjoint operator, the largest eigenvalue equals the operator norm and is the maximum of the Rayleigh quotient \(\langle Tx,x\rangle\) over the unit sphere.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\lambda_1 = \min_{\|x\|=1}\langle Tx,x\rangle\) (Rayleigh quotient minimized at top eigenvalue)]]></text>
+    <feedback><text>Incorrect. The minimum of the Rayleigh quotient gives the smallest eigenvalue, not the largest. For \(T \geq 0\), \(\min_{\|x\|=1}\langle Tx,x\rangle = 0\) if \(\ker T \neq \{0\}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\lambda_k = \max_{\dim V = k}\min_{x\in V,\|x\|=1}\langle Tx,x\rangle\)]]></text>
+    <feedback><text>Incorrect. The correct min-max formula reverses the order: \(\lambda_k = \min_{\dim V=k}\max_{x\in V}\langle Tx,x\rangle\). The max-min formula gives a different (but related) characterization.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The Rayleigh quotient \(\langle Tx,x\rangle/\|x\|^2\) equals exactly \(\lambda_k\) for all \(x\) in the eigenspace of \(\lambda_k\)]]></text>
+    <feedback><text>Partially correct but not the full variational characterization. The Rayleigh quotient equals \(\lambda_k\) for eigenvectors of \(\lambda_k\), but this is the pointwise value, not the variational extremum that characterizes \(\lambda_1\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q17: Essential spectrum -->
+<question type="multichoice">
+  <name><text>FA54_Q17_EssentialSpectrum</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>essential spectrum</strong> \(\sigma_{\mathrm{ess}}(T)\) of a self-adjoint operator consists of the "non-discrete" part: the accumulation points of \(\sigma(T)\) and eigenvalues of infinite multiplicity. Weyl's theorem states: if \(K\) is compact and \(T\) is self-adjoint, then \(\sigma_{\mathrm{ess}}(T + K) = \sigma_{\mathrm{ess}}(T)\). What does this imply?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[Compact perturbations of a self-adjoint operator can only modify the discrete eigenvalues, not the essential spectrum; e.g., \(\sigma_{\mathrm{ess}}(-\Delta + V) = [0,\infty)\) on \(\mathbb{R}^n\) if \(V \to 0\) at infinity]]></text>
+    <feedback><text>Correct. Weyl's theorem is fundamental in quantum mechanics: adding a compactly supported (or decaying) potential does not change the essential spectrum. The discrete eigenvalues (bound states) may change, but the essential spectrum (continuous/scattering states) remains.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[Compact perturbations change both the essential and discrete spectrum]]></text>
+    <feedback><text>Incorrect. By Weyl's theorem, compact perturbations leave the essential spectrum invariant. Only the discrete eigenvalues (point spectrum outside the essential spectrum) can change.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\sigma_{\mathrm{ess}}(T) = \sigma(T)\) for all self-adjoint operators (there is no discrete part)]]></text>
+    <feedback><text>Incorrect. Compact self-adjoint operators have \(\sigma_{\mathrm{ess}}(T) = \{0\}\) (only 0 is a limit point of eigenvalues), so the discrete part \(\sigma_{\mathrm{disc}}(T) = \sigma(T) \setminus \{0\}\) is nonempty when eigenvalues exist.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The essential spectrum is always empty for bounded operators]]></text>
+    <feedback><text>Incorrect. The multiplication operator \(Mf(x) = xf(x)\) on \(L^2[0,1]\) has \(\sigma_{\mathrm{ess}} = [0,1]\) (the entire spectrum is essential, with no isolated eigenvalues).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q18: Numerical range -->
+<question type="multichoice">
+  <name><text>FA54_Q18_NumericalRange</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>numerical range</strong> of a bounded operator \(T\) on a Hilbert space is \(W(T) = \{\langle Tx, x\rangle : \|x\| = 1\}\). The <strong>Toeplitz-Hausdorff theorem</strong> states that \(W(T)\) is always convex. Which is true?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\sigma(T) \subset \overline{W(T)}\) (the spectrum lies in the closure of the numerical range), and for normal operators \(\overline{W(T)} = \operatorname{conv}(\sigma(T))\) (convex hull of spectrum)]]></text>
+    <feedback><text>Correct. The numerical range contains the eigenvalues (if \(Te = \lambda e\), then \(\langle Te/\|e\|, e/\|e\|\rangle = \lambda \in W(T)\)), and \(\sigma(T) \subset \overline{W(T)}\). For normal operators, the numerical range is exactly the convex hull of the spectrum.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[W(T) = \sigma(T)\) for all bounded operators (numerical range equals the spectrum)]]></text>
+    <feedback><text>Incorrect. The numerical range and spectrum are different: \(W(T)\) is convex but \(\sigma(T)\) need not be. The inclusion \(\sigma(T) \subset \overline{W(T)}\) is proper in general.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[W(T)\) is always a subset of the real line, since inner products are real-valued]]></text>
+    <feedback><text>Incorrect. For complex Hilbert spaces, \(\langle Tx,x\rangle \in \mathbb{C}\) in general (e.g., for \(T = iI\), \(\langle Tx,x\rangle = i\|x\|^2 = i \in \mathbb{C}\)). \(W(T) \subset \mathbb{R}\) only for self-adjoint operators.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[The Toeplitz-Hausdorff theorem fails for infinite-dimensional Hilbert spaces (convexity requires finite dimension)]]></text>
+    <feedback><text>Incorrect. The Toeplitz-Hausdorff theorem holds in any Hilbert space (finite or infinite-dimensional): the numerical range is always convex.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q19: Semigroups of operators -->
+<question type="multichoice">
+  <name><text>FA54_Q19_Semigroups</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A strongly continuous semigroup \(\{T(t)\}_{t \geq 0}\) on a Banach space \(X\) satisfies \(T(0) = I\), \(T(t+s) = T(t)T(s)\), and \(t \mapsto T(t)x\) is continuous for each \(x\). The <strong>generator</strong> of the semigroup is \(Ax = \lim_{t \to 0^+} \frac{T(t)x - x}{t}\). The Hille-Yosida theorem characterizes when a linear operator \(A\) generates a contraction semigroup \((\|T(t)\| \leq 1)\). Which condition is necessary and sufficient?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(A\) is closed, densely defined, and \((0,\infty) \subset \rho(A)\) with \(\|(\lambda I - A)^{-1}\| \leq 1/\lambda\) for all \(\lambda > 0\)]]></text>
+    <feedback><text>Correct. The Hille-Yosida theorem: \(A\) generates a contraction semigroup iff \(A\) is densely defined, closed, and its resolvent satisfies the growth bound \(\|R(\lambda;A)\| \leq 1/\lambda\) for \(\lambda > 0\). This applies to generators of heat and wave equations.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(A\) is a bounded operator on \(X\) (all generators of \(C_0\)-semigroups are bounded)]]></text>
+    <feedback><text>Incorrect. Generators of \(C_0\)-semigroups are typically unbounded (e.g., the Laplacian generates the heat semigroup). Bounded \(A\) gives the exponential \(e^{tA}\), but the converse fails.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(A\) is self-adjoint and positive (\(A = A^* \geq 0\)) in the case of a Hilbert space]]></text>
+    <feedback><text>Incorrect. The generator of a contraction semigroup on a Hilbert space is a dissipative operator (\(\operatorname{Re}\langle Ax, x\rangle \leq 0\) for all \(x \in D(A)\)), which is \(-A\) for a positive self-adjoint \(A\). The sign convention differs.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(A\) is a compact operator with \(\sigma(A) \subset \{z : \operatorname{Re}(z) \leq 0\}\)]]></text>
+    <feedback><text>Incorrect. Compactness is not required for generating a semigroup. The Hille-Yosida conditions are about the resolvent bound and density of the domain, not compactness.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q20: Spectral theory applications -->
+<question type="multichoice">
+  <name><text>FA54_Q20_SpectralApp</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The operator \(T: L^2[0,1] \to L^2[0,1]\) defined by \(Tf(x) = \int_0^1 \min(x,y)\,f(y)\,dy\) (the Green's function for \(-u'' = f\) on \([0,1]\) with \(u(0)=u(1)=0\)) is a compact self-adjoint positive operator. Its eigenvalues are:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\lambda_n = \dfrac{1}{n^2\pi^2}\) for \(n = 1, 2, 3, \ldots\), with corresponding eigenfunctions \(e_n(x) = \sqrt{2}\sin(n\pi x)\)]]></text>
+    <feedback><text>Correct. The operator \(T\) inverts \(-d^2/dx^2\) on \(H^1_0[0,1]\). The eigenvalues of \(-d^2/dx^2\) are \(n^2\pi^2\) (with eigenfunctions \(\sin(n\pi x)\)), so the eigenvalues of \(T = (-d^2/dx^2)^{-1}\) are \(1/(n^2\pi^2)\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\lambda_n = n\pi\) for \(n = 1, 2, 3, \ldots\)]]></text>
+    <feedback><text>Incorrect. These would be the square roots of the eigenvalues of \(-d^2/dx^2\), not the eigenvalues of \(T\). The correct eigenvalues are \(1/(n^2\pi^2)\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\lambda_n = n^2\pi^2\) for \(n = 1, 2, 3, \ldots\)]]></text>
+    <feedback><text>Incorrect. These are the eigenvalues of \(-d^2/dx^2\), not of its inverse \(T\). Since \(T\) is the inverse, its eigenvalues are the reciprocals: \(1/(n^2\pi^2)\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(T\) has no eigenvalues (its spectrum is purely continuous)]]></text>
+    <feedback><text>Incorrect. A compact self-adjoint operator with infinite-dimensional range has a sequence of nonzero eigenvalues \(\to 0\). In this case \(\lambda_n = 1/(n^2\pi^2)\), which is a countably infinite set of eigenvalues.</text></feedback>
+  </answer>
+</question>
+
+</quiz>

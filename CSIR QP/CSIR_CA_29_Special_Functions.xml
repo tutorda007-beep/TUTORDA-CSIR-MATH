@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Complex Analysis/Special Functions and Entire Functions</text></category>
+    <info format="html"><text>CSIR NET level MCQ questions on Special Functions: Gamma function, Zeta function, elliptic functions, entire functions, Hadamard factorization, Jensen's formula, Blaschke products.</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q01 Gamma Function — Functional Equation</text></name>
+    <questiontext format="html"><text><![CDATA[The Gamma function \(\Gamma(z)\) is defined for \(\text{Re}(z)>0\) by \(\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}dt\) and extended meromorphically to all of \(\mathbb{C}\) by the relation \(\Gamma(z+1)=z\Gamma(z)\). The poles of \(\Gamma(z)\) are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Simple poles at \(z = 0, -1, -2, -3, \ldots\) with residues \(\text{Res}(\Gamma;-n) = (-1)^n/n!\)</text><feedback format="html"><text>From \(\Gamma(z) = \Gamma(z+n+1)/[z(z+1)\cdots(z+n)]\), the poles at \(z=-n\) (for \(n=0,1,2,\ldots\)) are all simple. The residue at \(z=-n\) is \(\lim_{z\to-n}(z+n)\Gamma(z) = \Gamma(1)/[(-n)(-n+1)\cdots(-1)] = (-1)^n/n!\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Simple poles at \(z = 1, 2, 3, \ldots\) (positive integers)</text><feedback format="html"><text>The Gamma function has no poles at positive integers; in fact \(\Gamma(n)=(n-1)!\) for positive integers \(n\). The poles are at \(0,-1,-2,\ldots\)</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Double poles at \(z = 0, -1, -2, \ldots\)</text><feedback format="html"><text>All poles of \(\Gamma\) are simple (order 1). The functional equation gives simple poles at non-positive integers.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Essential singularity at \(z=0\)</text><feedback format="html"><text>The Gamma function has a simple pole at \(z=0\), not an essential singularity.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q02 Riemann Zeta Function</text></name>
+    <questiontext format="html"><text><![CDATA[The Riemann zeta function \(\zeta(s) = \sum_{n=1}^\infty n^{-s}\) converges absolutely for \(\text{Re}(s)>1\) and extends meromorphically to all of \(\mathbb{C}\) with a simple pole at \(s=1\). The functional equation is \(\zeta(s) = 2^s\pi^{s-1}\sin(\pi s/2)\Gamma(1-s)\zeta(1-s)\). The trivial zeros of \(\zeta\) are at:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(s = -2, -4, -6, \ldots\) (negative even integers)</text><feedback format="html"><text>From the functional equation: zeros arise when \(\sin(\pi s/2)=0\) (at \(s=-2,-4,-6,\ldots\)) and \(\Gamma(1-s)\) has no poles there. These are the "trivial" zeros. The "non-trivial" zeros lie in the critical strip \(0<\text{Re}(s)<1\), and the Riemann Hypothesis conjectures all lie on \(\text{Re}(s)=1/2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(s = -1, -3, -5, \ldots\) (negative odd integers)</text><feedback format="html"><text>At negative odd integers, \(\sin(\pi s/2) = \sin(-k\pi/2)\) where \(k\) is odd, which need not be zero. The zeros occur at negative even integers.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>All negative integers \(s = -1,-2,-3,\ldots\)</text><feedback format="html"><text>Only at negative EVEN integers is \(\sin(\pi s/2)=0\). At negative odd integers, the sine term is \(\pm1\) (non-zero), but the residues of \(\Gamma\) cancel, actually... Let me verify: \(s=-1\): \(\sin(-\pi/2)=-1\neq0\). So only even negatives are trivial zeros.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\zeta\) has no real zeros</text><feedback format="html"><text>The trivial zeros at \(s=-2,-4,-6,\ldots\) are real zeros of \(\zeta\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q03 Jensen's Formula</text></name>
+    <questiontext format="html"><text><![CDATA[Jensen's formula: if \(f\) is analytic in \(|z|\leq R\) with \(f(0)\neq0\) and zeros \(a_1,\ldots,a_n\) in \(|z|<R\), then \(\log|f(0)| = \sum_{k=1}^n\log\dfrac{|a_k|}{R} + \dfrac{1}{2\pi}\int_0^{2\pi}\log|f(Re^{i\theta})|\,d\theta\). This formula is used to:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Relate the number of zeros of an entire function to its growth (used in Nevanlinna theory)</text><feedback format="html"><text>Jensen's formula connects the distribution of zeros (the sum \(\sum\log(|a_k|/R)\)) to the boundary behavior of \(\log|f|\). It is the foundation of Nevanlinna value distribution theory and the proof of Hadamard's factorization theorem.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Compute the residue of \(f\) at each zero</text><feedback format="html"><text>Jensen's formula involves \(\log|f|\) and is about zero counting, not residues. Residues are for poles.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Show that the product of moduli of all zeros equals \(|f(0)|\)</text><feedback format="html"><text>Jensen's formula gives a logarithmic relation, not a product formula. The product formula aspect comes from Blaschke products.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Prove that \(f\) is constant if it has infinitely many zeros</text><feedback format="html"><text>By the Identity Theorem, if zeros have a limit point in the domain, \(f\equiv0\). Jensen's formula is about the distribution of zeros, not their isolation.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q04 Blaschke Products</text></name>
+    <questiontext format="html"><text><![CDATA[A finite Blaschke product \(B(z) = e^{i\theta}\prod_{k=1}^n\dfrac{z-a_k}{1-\bar{a}_kz}\) (with \(|a_k|<1\)) is an automorphism of \(\mathbb{D}\). An infinite Blaschke product \(B(z) = \prod_{k=1}^\infty\dfrac{z-a_k}{1-\bar{a}_kz}\) converges in \(\mathbb{D}\) if and only if:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\sum_{k=1}^\infty(1-|a_k|) < \infty\) (the Blaschke condition)</text><feedback format="html"><text>The Blaschke condition \(\sum(1-|a_k|)<\infty\) is necessary and sufficient for the infinite product to converge uniformly on compact subsets of \(\mathbb{D}\). This characterizes the zero sets of bounded analytic functions on \(\mathbb{D}\) (Hardy space \(H^\infty\)).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sum_{k=1}^\infty|a_k| < \infty\)</text><feedback format="html"><text>Absolute convergence of \(\sum|a_k|\) is too strong a requirement. The Blaschke condition uses \(\sum(1-|a_k|)\), which focuses on how close the \(a_k\) are to the boundary.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The sequence \(\{a_k\}\) is finite</text><feedback format="html"><text>Infinite Blaschke products are well-defined when the Blaschke condition holds. They need not be finite sequences.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sum_{k=1}^\infty(1-|a_k|^2) < \infty\)</text><feedback format="html"><text>Note \(1-|a_k|^2=(1-|a_k|)(1+|a_k|)\sim 2(1-|a_k|)\) for \(|a_k|\to1\). So this is equivalent to the Blaschke condition \(\sum(1-|a_k|)<\infty\). Both are equivalent.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q05 Hadamard Factorization — Growth vs Zeros</text></name>
+    <questiontext format="html"><text><![CDATA[Hadamard's theorem: if \(f\) is an entire function of finite order \(\rho\), then \(f(z) = z^m e^{g(z)}\prod_n E_p(z/a_n)\) where \(g\) is a polynomial of degree \(\leq\rho\), and \(p\leq\rho\). The genus of \(f\) is \(\max(p, \deg g)\). For \(\cos(\sqrt{z})\), which grows like \(e^{|\text{Im}(\sqrt{z})|}\) and has zeros at \(z = (2n+1)^2\pi^2/4\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Order \(\rho = 1/2\)</text><feedback format="html"><text>\(M(r) = \max_{|z|=r}|\cos\sqrt{z}|\approx e^{\sqrt{r}}\) for large \(r\). Then \(\log M(r)\approx\sqrt{r}\), so \(\log\log M(r)\approx\frac{1}{2}\log r\), giving \(\rho=1/2\). This is an entire function of order 1/2.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Order \(\rho = 1\)</text><feedback format="html"><text>Order 1 corresponds to exponential growth \(M(r)\sim e^{Cr}\). Here \(\cos\sqrt{z}\) grows like \(e^{\sqrt{r}}\) (much slower), giving order 1/2.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Order \(\rho = 2\)</text><feedback format="html"><text>Order 2 would require \(M(r)\sim e^{r^2}\), much faster than \(e^{\sqrt{r}}\). The order is 1/2.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Infinite order</text><feedback format="html"><text>\(\cos\sqrt{z}\) has finite order 1/2. The polynomial \(\cos\sqrt{z}\) does not grow faster than any exponential of a positive power of \(r\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q06 Dirichlet Series — Convergence</text></name>
+    <questiontext format="html"><text><![CDATA[A Dirichlet series \(\sum_{n=1}^\infty a_n n^{-s}\) has an abscissa of convergence \(\sigma_c\) and an abscissa of absolute convergence \(\sigma_a\). For the Riemann zeta function \(\zeta(s) = \sum n^{-s}\), these are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\sigma_c = 1\) and \(\sigma_a = 1\) (both equal 1)</text><feedback format="html"><text>For \(\zeta(s)\): The series \(\sum n^{-s}\) converges conditionally (hence \(\sigma_c\leq1\)) and diverges at \(s=1\) (harmonic series), so \(\sigma_c=1\). Since all terms \(n^{-s}\) are positive for real \(s\), conditional convergence equals absolute convergence: \(\sigma_a=\sigma_c=1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sigma_c = 0\) and \(\sigma_a = 1\)</text><feedback format="html"><text>The harmonic series \(\sum n^{-1}\) diverges, so \(\sigma_c\geq1\). In fact \(\sigma_c=1\) for \(\zeta(s)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sigma_c = 1/2\) and \(\sigma_a = 1\)</text><feedback format="html"><text>While the Riemann Hypothesis concerns the critical line \(\text{Re}(s)=1/2\), the abscissa of convergence is \(\sigma_c=1\). The zeta series diverges at \(s=1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sigma_c = \sigma_a = 0\)</text><feedback format="html"><text>The series \(\sum n^{-s}\) diverges for \(\text{Re}(s)\leq1\). The abscissas are both 1, not 0.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q07 Weierstrass \(\wp\)-Function</text></name>
+    <questiontext format="html"><text><![CDATA[The Weierstrass \(\wp\)-function for a lattice \(\Lambda = \omega_1\mathbb{Z}+\omega_2\mathbb{Z}\) is defined as \(\wp(z) = \dfrac{1}{z^2} + \sum_{\omega\in\Lambda\setminus\{0\}}\left(\dfrac{1}{(z-\omega)^2}-\dfrac{1}{\omega^2}\right)\). The differential equation satisfied by \(\wp\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\((\wp')^2 = 4\wp^3 - g_2\wp - g_3\)</text><feedback format="html"><text>The Weierstrass \(\wp\)-function satisfies \((\wp')^2 = 4\wp^3 - g_2\wp - g_3\) where \(g_2 = 60\sum_{\omega\neq0}\omega^{-4}\) and \(g_3 = 140\sum_{\omega\neq0}\omega^{-6}\) are the lattice invariants (Eisenstein series \(G_4, G_6\)). This is an elliptic curve equation, establishing a connection between complex tori and elliptic curves.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\((\wp')^2 = \wp^2 - 1\)</text><feedback format="html"><text>This is not the correct differential equation. The standard equation for \(\wp\) is a cubic in \(\wp\) on the right side.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\wp'' = 6\wp^2 - g_2/2\)</text><feedback format="html"><text>This is actually correct (\(\wp'' = 6\wp^2 - g_2/2\)), but the fundamental algebraic relation is \((\wp')^2 = 4\wp^3-g_2\wp-g_3\), which defines the elliptic curve.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\wp' = \wp^2 - g_2\)</text><feedback format="html"><text>This is not a correct identity for the \(\wp\)-function. The correct differential equation is the cubic.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q08 Elliptic Functions — Periods and Liouville</text></name>
+    <questiontext format="html"><text><![CDATA[An elliptic function is a doubly periodic meromorphic function: \(f(z+\omega_1)=f(z+\omega_2)=f(z)\) with \(\omega_1/\omega_2\notin\mathbb{R}\). By Liouville's theorem for elliptic functions, an entire (no poles) elliptic function must be:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Constant</text><feedback format="html"><text>An elliptic function with no poles is bounded on the fundamental domain (compact torus), hence bounded everywhere. By Liouville's theorem for entire functions, it must be constant. This is the first Liouville theorem for elliptic functions: every entire elliptic function is constant.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>A polynomial of degree \(\leq 2\)</text><feedback format="html"><text>A non-constant polynomial grows unboundedly and cannot be doubly periodic. Elliptic functions must be either constant or have poles.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Zero everywhere</text><feedback format="html"><text>A non-zero constant is also an entire elliptic function. The conclusion is "constant," which could be any non-zero value.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The Weierstrass \(\wp\)-function</text><feedback format="html"><text>The \(\wp\)-function has double poles at lattice points, so it is not entire. The answer for entire elliptic functions is that they must be constant.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q09 Modular Functions</text></name>
+    <questiontext format="html"><text><![CDATA[The modular group \(\text{PSL}(2,\mathbb{Z})\) acts on the upper half-plane by \(\tau\mapsto(a\tau+b)/(c\tau+d)\) with \(a,b,c,d\in\mathbb{Z}\), \(ad-bc=1\). The fundamental domain for this action has area \(\pi/3\) in the hyperbolic metric. The j-invariant \(j(\tau)\) is a modular function of weight 0 that:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Classifies elliptic curves up to isomorphism: \(j(\tau_1) = j(\tau_2)\) iff \(\tau_1\) and \(\tau_2\) are in the same \(\text{PSL}(2,\mathbb{Z})\) orbit</text><feedback format="html"><text>The \(j\)-invariant is a complete invariant for isomorphism classes of elliptic curves over \(\mathbb{C}\). Two tori \(\mathbb{C}/\Lambda_1\) and \(\mathbb{C}/\Lambda_2\) are isomorphic iff their periods are related by a modular transformation, iff their \(j\)-invariants are equal.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Counts the number of lattice points inside a fundamental domain</text><feedback format="html"><text>The \(j\)-invariant is a holomorphic function classifying elliptic curves, not a counting function for lattice points.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Satisfies \(|j(\tau)| < 1\) for all \(\tau\in\mathbb{H}\)</text><feedback format="html"><text>The \(j\)-invariant takes all complex values and is unbounded. It has a simple pole at \(\tau=i\infty\) with \(j\sim e^{-2\pi i\tau}\) as \(\tau\to i\infty\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Is related to the Riemann zeta function by \(j(\tau)=\zeta(\tau)\)</text><feedback format="html"><text>The \(j\)-invariant and Riemann zeta function are unrelated. The \(j\)-invariant is defined via the Eisenstein series as \(j(\tau) = 1728g_2^3/(g_2^3-27g_3^2)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q10 Infinite Products — Convergence</text></name>
+    <questiontext format="html"><text><![CDATA[An infinite product \(\prod_{n=1}^\infty(1+a_n)\) converges absolutely if and only if \(\sum_{n=1}^\infty|a_n| < \infty\). For the product \(\prod_{n=1}^\infty\cos(z/2^n)\), which telescopes to \(\sin(z)/z\) via the identity \(\sin(2\theta)=2\sin\theta\cos\theta\), the convergence holds:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>For all \(z\in\mathbb{C}\) (the product converges to \(\sin z/z\) everywhere)</text><feedback format="html"><text>By the duplication formula: \(\sin z = 2^n\sin(z/2^n)\prod_{k=1}^n\cos(z/2^k)\). As \(n\to\infty\), \(2^n\sin(z/2^n)\to z\), giving \(\sin z/z = \prod_{k=1}^\infty\cos(z/2^k)\). This converges for all \(z\) (including \(z=0\) by the limit convention \(\sin z/z\to1\)).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Only for \(|z|<\pi\)</text><feedback format="html"><text>The product converges for all \(z\in\mathbb{C}\), not just \(|z|<\pi\). This is an identity valid everywhere.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Only for real \(z\)</text><feedback format="html"><text>The identity extends to all complex \(z\). The telescoping argument works in \(\mathbb{C}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The product diverges for \(z\neq0\)</text><feedback format="html"><text>The product converges to \(\sin z/z\) for all \(z\neq0\) (and to 1 at \(z=0\) by continuity).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q11 Beta Function</text></name>
+    <questiontext format="html"><text><![CDATA[The Beta function is \(B(x,y) = \int_0^1 t^{x-1}(1-t)^{y-1}dt = \dfrac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}\). Evaluate \(B(3/2, 3/2)\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{\pi}{8}\)</text><feedback format="html"><text>\(B(3/2,3/2)=\Gamma(3/2)^2/\Gamma(3) = (\sqrt{\pi}/2)^2/2! = \pi/4/2 = \pi/8\). Using \(\Gamma(3/2)=\frac{1}{2}\Gamma(1/2)=\frac{\sqrt{\pi}}{2}\) and \(\Gamma(3)=2!=2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\pi}{4}\)</text><feedback format="html"><text>\(\Gamma(3/2)^2 = \pi/4\) but we divide by \(\Gamma(3)=2\), giving \(\pi/8\), not \(\pi/4\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\pi}{16}\)</text><feedback format="html"><text>Incorrect: \(B(3/2,3/2) = \pi/4 \div 2 = \pi/8\), not \(\pi/16\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{3\pi}{8}\)</text><feedback format="html"><text>The computation gives \((\sqrt{\pi}/2)^2/\Gamma(3) = (\pi/4)/2 = \pi/8\), not \(3\pi/8\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q12 Poisson Integral Formula</text></name>
+    <questiontext format="html"><text><![CDATA[The Poisson integral formula for the unit disk: if \(u\) is harmonic in \(|z|<1\) and continuous on \(|z|\leq1\), then \(u(re^{i\theta}) = \dfrac{1}{2\pi}\int_0^{2\pi}\dfrac{1-r^2}{1-2r\cos(\theta-\phi)+r^2}u(e^{i\phi})d\phi\). The kernel \(P_r(\theta-\phi) = \dfrac{1-r^2}{1-2r\cos(\theta-\phi)+r^2}\) is the Poisson kernel. As \(r\to1^-\), \(P_r(\theta-\phi)\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Concentrates near \(\phi=\theta\) and approximates \(2\pi\delta(\theta-\phi)\) (Dirac delta)</text><feedback format="html"><text>For fixed \(\theta\neq\phi\), \(P_r(\theta-\phi)\to0\) as \(r\to1\). At \(\phi=\theta\), \(P_r(0)=(1+r)/(1-r)\to\infty\). The total integral \(\frac{1}{2\pi}\int P_r = 1\) for all \(r\). So \(P_r(\theta-\phi)/(2\pi)\) approximates a Dirac delta, confirming \(u(re^{i\theta})\to u(e^{i\theta})\) as \(r\to1\) (non-tangentially).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Converges to a constant \(1/(2\pi)\)</text><feedback format="html"><text>If the Poisson kernel converged to a constant, the integral would be the average of \(u\) on the boundary (not the boundary value at \(\theta\)). The kernel peaks near \(\phi=\theta\) as \(r\to1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Becomes identically 1</text><feedback format="html"><text>The Poisson kernel integrates to \(2\pi\) (so the normalized version \(P_r/(2\pi)\) integrates to 1), but it doesn't become identically 1 as \(r\to1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Goes to zero everywhere</text><feedback format="html"><text>While \(P_r(\theta-\phi)\to0\) for \(\phi\neq\theta\), it diverges at \(\phi=\theta\). The mass concentrates at a point, not vanishes.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q13 Hardy Space \(H^2\)</text></name>
+    <questiontext format="html"><text><![CDATA[The Hardy space \(H^2(\mathbb{D})\) consists of analytic functions \(f(z)=\sum_{n=0}^\infty a_nz^n\) in \(\mathbb{D}\) with \(\|f\|^2 = \sum_{n=0}^\infty|a_n|^2 < \infty\). The boundary values satisfy \(\|f\|_{H^2}^2 = \dfrac{1}{2\pi}\int_0^{2\pi}|f(e^{i\theta})|^2d\theta\). Which is NOT in \(H^2(\mathbb{D})\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(f(z) = \sum_{n=0}^\infty \dfrac{z^n}{\sqrt{n+1}}\)</text><feedback format="html"><text>\(\|f\|^2 = \sum_{n=0}^\infty\frac{1}{n+1} = \sum_{n=1}^\infty\frac{1}{n} = \infty\) (harmonic series diverges). So this \(f\notin H^2\). Note \(f\) is analytic in \(\mathbb{D}\) but its boundary \(L^2\) norm is infinite.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f(z) = \sum_{n=0}^\infty z^n/2^n\)</text><feedback format="html"><text>\(\|f\|^2 = \sum(1/2)^{2n} = \sum(1/4)^n = 4/3 < \infty\). So \(f\in H^2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f(z) = e^z\) restricted to \(\mathbb{D}\)</text><feedback format="html"><text>\(e^z = \sum z^n/n!\), so \(\|e^z\|^2=\sum1/(n!)^2<\infty\). So \(e^z\in H^2(\mathbb{D})\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f(z) = 1/(1-z/2)\)</text><feedback format="html"><text>\(1/(1-z/2) = \sum(z/2)^n\), so \(\|f\|^2=\sum(1/4)^n=4/3<\infty\). So \(f\in H^2\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q14 Gauss Multiplication Formula</text></name>
+    <questiontext format="html"><text><![CDATA[The Gauss multiplication formula for the Gamma function is \(\prod_{k=0}^{n-1}\Gamma\!\left(z+\dfrac{k}{n}\right) = \dfrac{(2\pi)^{(n-1)/2}}{n^{nz-1/2}}\Gamma(nz)\). For \(n=2\), this gives the duplication formula. Evaluate \(\Gamma(1/4)\Gamma(3/4)\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\pi\sqrt{2}\)</text><feedback format="html"><text>By the reflection formula: \(\Gamma(1/4)\Gamma(1-1/4) = \Gamma(1/4)\Gamma(3/4) = \frac{\pi}{\sin(\pi/4)} = \frac{\pi}{1/\sqrt{2}} = \pi\sqrt{2}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\pi\)</text><feedback format="html"><text>\(\Gamma(1/2)\Gamma(1/2)=[\Gamma(1/2)]^2=\pi\), but \(\Gamma(1/4)\Gamma(3/4)=\pi/\sin(\pi/4)=\pi\sqrt{2}\neq\pi\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sqrt{2\pi}\)</text><feedback format="html"><text>\(\pi/\sin(\pi/4)=\pi/(1/\sqrt{2})=\pi\sqrt{2}\neq\sqrt{2\pi}\). These differ by a factor of \(\sqrt{\pi}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\pi/\sqrt{2}\)</text><feedback format="html"><text>\(\Gamma(1/4)\Gamma(3/4) = \pi/\sin(\pi/4) = \pi/(1/\sqrt{2}) = \pi\sqrt{2}\), not \(\pi/\sqrt{2}\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q15 Stirling's Approximation</text></name>
+    <questiontext format="html"><text><![CDATA[Stirling's formula: \(\Gamma(z+1) \sim \sqrt{2\pi z}(z/e)^z\) as \(|z|\to\infty\) in \(|\arg z|<\pi\). More precisely: \(\Gamma(z+1) = \sqrt{2\pi z}(z/e)^z e^{\theta/(12z)}\) for some \(\theta\in(0,1)\). Using this, the ratio \(\Gamma(n+1)/\Gamma(n)\) equals:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(n\) (exactly)</text><feedback format="html"><text>This follows directly from the functional equation: \(\Gamma(n+1) = n\cdot\Gamma(n)\), so \(\Gamma(n+1)/\Gamma(n) = n\) exactly. No Stirling approximation is needed for this ratio.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\approx n/e\) (approximately)</text><feedback format="html"><text>The ratio is exactly \(n\) by the functional equation \(\Gamma(z+1)=z\Gamma(z)\), not approximately \(n/e\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sqrt{n}\)</text><feedback format="html"><text>This would suggest \(\Gamma(n+1)\) grows like \(\Gamma(n)\times\sqrt{n}\). The exact ratio is \(n\), not \(\sqrt{n}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(n!\)</text><feedback format="html"><text>For integer \(n\), \(\Gamma(n+1)=n!\) and \(\Gamma(n)=(n-1)!\). So the ratio is \(n!/( n-1)!=n\), confirming the answer is \(n\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q16 Hypergeometric Functions</text></name>
+    <questiontext format="html"><text><![CDATA[The Gauss hypergeometric function \({}_2F_1(a,b;c;z) = \sum_{n=0}^\infty \dfrac{(a)_n(b)_n}{(c)_n n!}z^n\) where \((a)_n=a(a+1)\cdots(a+n-1)\) is the Pochhammer symbol. It converges for \(|z|<1\). Which of the following is NOT an elementary function that is a special case of \({}_2F_1\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The Bessel function \(J_\nu(z)\)</text><feedback format="html"><text>Bessel functions are NOT special cases of the Gauss hypergeometric function \({}_2F_1\). They are special cases of the confluent hypergeometric function \({}_1F_1\) (Kummer's function). The confluent limit occurs when two singularities of \({}_2F_1\) merge to form an essential singularity.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\log(1+z) = z\cdot{}_2F_1(1,1;2;-z)\)</text><feedback format="html"><text>\(\log(1+z)=\sum_{n=0}^\infty(-1)^nz^{n+1}/(n+1)\). The \({}_2F_1(1,1;2;-z)\) has \((1)_n(1)_n/((2)_n n!) = n!/(n+1)!\cdot n! = 1/(n+1)\), so \(z\cdot{}_2F_1=\log(1+z)\). This is a special case.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Legendre polynomials \(P_n(z) = {}_2F_1(-n,n+1;1;(1-z)/2)\)</text><feedback format="html"><text>Legendre polynomials are indeed special cases of \({}_2F_1\) with integer \(a=-n\) (terminating the series).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\((1-z)^{-a} = {}_2F_1(a,1;1;z)\)</text><feedback format="html"><text>\({}_2F_1(a,1;1;z)=\sum\frac{(a)_n(1)_n}{(1)_nn!}z^n=\sum(a)_nz^n/n!=\sum\binom{a+n-1}{n}(-1)^n(-z)^n=(1-z)^{-a}\) by the binomial theorem. A valid special case.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q17 Winding Number and Index</text></name>
+    <questiontext format="html"><text><![CDATA[The winding number \(n(\gamma, a) = \dfrac{1}{2\pi i}\int_\gamma\dfrac{dz}{z-a}\) can be computed for piecewise smooth curves. For the figure-eight curve that winds once counterclockwise around \(a=1\) and once clockwise around \(a=-1\), the winding numbers are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(n(\gamma,1) = 1\) and \(n(\gamma,-1) = -1\)</text><feedback format="html"><text>The figure-eight winds counterclockwise around \(a=1\) (winding number \(+1\)) and clockwise around \(a=-1\) (winding number \(-1\)). By the residue theorem, \(\int_\gamma f\,dz = 2\pi i[n(\gamma,1)\text{Res}(f;1) + n(\gamma,-1)\text{Res}(f;-1)]\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(n(\gamma,1) = 1\) and \(n(\gamma,-1) = 1\)</text><feedback format="html"><text>The two loops of the figure-eight have opposite orientations. One clockwise gives winding number \(-1\), not \(+1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(n(\gamma,1) = 0\) and \(n(\gamma,-1) = 0\)</text><feedback format="html"><text>Zero winding numbers would mean both points are outside or the loops are trivial. For a figure-eight winding around both points, neither winding number is zero.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(n(\gamma,1) = 2\) and \(n(\gamma,-1) = 0\)</text><feedback format="html"><text>The figure-eight winds once (not twice) around each point, and the orientations are opposite, giving \(+1\) and \(-1\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q18 Cartan's Theorem on the Disc</text></name>
+    <questiontext format="html"><text><![CDATA[The Cartan uniqueness theorem: if \(f:\mathbb{D}\to\mathbb{D}\) is analytic with \(f(0)=0\) and \(f'(0)=1\), then \(f(z)=z\) (the identity). This follows from the Schwarz lemma. More generally, if \(f: D\to D\) (bounded domain) is analytic with \(f(z_0)=z_0\) and \(f'(z_0)=I\), then:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(f\) is the identity map on \(D\)</text><feedback format="html"><text>Cartan's theorem (Cartan 1931): if \(f:D\to D\) is a holomorphic map with a fixed point \(z_0\) where \(f'(z_0) = \text{id}\) (identity derivative), and \(D\) is a bounded domain, then \(f = \text{id}\). This is proved using the Schwarz lemma applied to iterates of \(f\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f\) is a Möbius transformation</text><feedback format="html"><text>On the unit disk, automorphisms are Möbius transformations. But Cartan's theorem gives a stronger conclusion: \(f\) must be the identity, not just any Möbius transformation.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f\) is constant</text><feedback format="html"><text>With \(f'(z_0)=I\neq0\), \(f\) is non-constant. The conclusion is \(f=\text{identity}\), not constancy.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>No conclusion can be drawn</text><feedback format="html"><text>Cartan's theorem gives a precise conclusion: \(f=\text{id}\). This is a rigidity theorem for holomorphic self-maps of bounded domains.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q19 Order and Type of Entire Functions</text></name>
+    <questiontext format="html"><text><![CDATA[An entire function of finite order \(\rho\) and finite type \(\sigma\) satisfies \(|f(z)|\leq Ae^{\sigma|z|^\rho}\). The Borel-Carathéodory theorem relates the maximum of \(|f|\) and \(\text{Re}(f)\). For \(f(z) = e^{z^n}\) (n a positive integer), the order and type are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Order \(n\), type \(\sigma = 1\)</text><feedback format="html"><text>\(|e^{z^n}| = e^{\text{Re}(z^n)} \leq e^{|z|^n}\). So \(M(r) = e^{r^n}\). \(\log M(r)=r^n\), so \(\rho=n\). The type: \(\sigma = \limsup_{r\to\infty}(\log M(r))/r^\rho = \lim_{r\to\infty}r^n/r^n = 1\). Order \(n\), type 1.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Order \(n\), type \(\sigma = n\)</text><feedback format="html"><text>The type is \(\limsup(\log M(r))/r^n = r^n/r^n = 1\), not \(n\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Order 1, type \(\sigma = n\)</text><feedback format="html"><text>\(M(r)=e^{r^n}\) implies order \(n\) (not 1). Order 1 would correspond to \(M(r)\sim e^{Cr}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Order \(n^2\), type \(\sigma=1\)</text><feedback format="html"><text>The order of \(e^{z^n}\) is \(n\) (by computing \(\log\log M(r)/\log r = \log(r^n)/\log r = n\)), not \(n^2\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA29-Q20 Runge's Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[Runge's approximation theorem: if \(K\subset\mathbb{C}\) is compact and \(\mathbb{C}\setminus K\) is connected, then every function analytic in a neighborhood of \(K\) can be uniformly approximated on \(K\) by polynomials. If \(\mathbb{C}\setminus K\) is not connected, we can approximate by rational functions with poles in each bounded component of \(\mathbb{C}\setminus K\). The condition "\(\mathbb{C}\setminus K\) connected" is equivalent to:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(K\) has no holes (K is polynomially convex: \(\hat{K}=K\))</text><feedback format="html"><text>The polynomial hull \(\hat{K} = \{z: |p(z)|\leq\max_K|p|\text{ for all polynomials }p\}\) equals \(K\) iff \(\mathbb{C}\setminus K\) is connected (no bounded components). This polynomial convexity is exactly what enables polynomial approximation. A disk with a hole removed would fail this condition.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(K\) is a convex set (in the geometric sense)</text><feedback format="html"><text>Geometric convexity implies polynomial convexity but is much stronger. Many non-convex sets (like circles, arcs) are polynomially convex.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(K\) is a simply connected domain</text><feedback format="html"><text>Domains are open, but \(K\) is compact (closed and bounded). "Simply connected" for compact sets means \(\mathbb{C}\setminus K\) is connected, which is the correct condition.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(K\) contains finitely many points</text><feedback format="html"><text>Finite point sets are polynomially convex, but the condition is more general — it includes all compact sets with connected complement.</text></feedback></answer>
+  </question>
+
+</quiz>

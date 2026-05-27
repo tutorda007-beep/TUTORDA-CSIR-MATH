@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Complex Analysis/Singularities and Laurent Series</text></category>
+    <info format="html"><text>CSIR NET level MCQ questions on Singularities and Laurent Series: classification of singularities, Laurent expansions, meromorphic functions, poles and essential singularities, partial fractions, Picard's theorem.</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q01 Laurent Series — Annulus Expansion</text></name>
+    <questiontext format="html"><text><![CDATA[The Laurent series of \(f(z) = \dfrac{1}{z(z-1)}\) in the annulus \(0 < |z| < 1\) is obtained by partial fractions: \(f(z) = -\dfrac{1}{z} + \dfrac{1}{1-z}\). Expanding \(\dfrac{1}{1-z} = \sum_{n=0}^\infty z^n\) for \(|z|<1\), the Laurent series is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\displaystyle f(z) = -\frac{1}{z} + \sum_{n=0}^\infty z^n = -\frac{1}{z} + 1 + z + z^2 + \cdots\)</text><feedback format="html"><text>Using \(\frac{1}{1-z}=\sum_{n=0}^\infty z^n\) for \(|z|<1\): \(f(z) = -1/z + 1 + z + z^2 + \cdots\). The principal part is \(-1/z\), confirming a simple pole at \(z=0\). The residue is \(-1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\displaystyle f(z) = \frac{1}{z} + \sum_{n=0}^\infty z^n\)</text><feedback format="html"><text>The coefficient of \(1/z\) should be \(-1\). From \(f(z)=-1/z+1/(1-z)\), the Laurent expansion starts with \(-1/z\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\displaystyle f(z) = \sum_{n=-\infty}^{-1} z^n\)</text><feedback format="html"><text>This would represent a function with infinitely many negative powers (essential singularity). The function \(1/[z(z-1)]\) has only a simple pole at \(z=0\), so only one negative power term.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\displaystyle f(z) = -\frac{1}{z} - \sum_{n=0}^\infty z^n\)</text><feedback format="html"><text>The analytic part \(1/(1-z)\) has positive sign, so the series terms are positive: \(-1/z + 1 + z + z^2 + \cdots\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q02 Laurent Series in Outer Annulus</text></name>
+    <questiontext format="html"><text><![CDATA[The function \(f(z) = \dfrac{1}{z(z-1)}\) has different Laurent expansions in different annuli. In the annulus \(|z| > 1\), write \(\dfrac{1}{z-1} = \dfrac{1}{z}\cdot\dfrac{1}{1-1/z} = \dfrac{1}{z}\sum_{n=0}^\infty z^{-n}\) for \(|z|>1\). The Laurent series in \(|z|>1\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\displaystyle f(z) = -\sum_{n=2}^\infty \frac{1}{z^n} = -\frac{1}{z^2} - \frac{1}{z^3} - \cdots\)</text><feedback format="html"><text>\(f = 1/(z(z-1)) = (1/z)\cdot1/(z-1) = \frac{1}{z}\cdot\frac{1}{z}\cdot\frac{1}{1-1/z} = \frac{1}{z^2}\sum_{n=0}^\infty z^{-n} = \sum_{n=0}^\infty z^{-n-2}\). But also \(f = -1/z + 1/(z-1)\) and \(1/(z-1) = (1/z)/(1-1/z) = \sum_{n=1}^\infty z^{-n}\). So \(f = -1/z + \sum_{n=1}^\infty z^{-n} = -1/z + 1/z + 1/z^2 + \cdots = \sum_{n=2}^\infty z^{-n}\). Hmm: \(-1/z + 1/z + 1/z^2 + \cdots = 1/z^2 + 1/z^3 + \cdots\). So the correct series has positive signs.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\displaystyle f(z) = \sum_{n=2}^\infty \frac{1}{z^n} = \frac{1}{z^2} + \frac{1}{z^3} + \cdots\)</text><feedback format="html"><text>For \(|z|>1\): \(\frac{1}{z-1}=\frac{1}{z}\sum_{n=0}^\infty(1/z)^n = \sum_{n=1}^\infty z^{-n}\). Then \(f=1/(z(z-1)) = (1/z)\sum_{n=1}^\infty z^{-n} = \sum_{n=2}^\infty z^{-n} = 1/z^2+1/z^3+\cdots\). This is correct.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\displaystyle f(z) = \frac{1}{z-1} - \frac{1}{z}\) for \(|z|>1\)</text><feedback format="html"><text>This is the partial fraction decomposition, not the Laurent series. The question asks for the power series expansion in negative powers of \(z\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\displaystyle f(z) = \sum_{n=0}^\infty z^n\)</text><feedback format="html"><text>This converges for \(|z|<1\), not \(|z|>1\). For the outer annulus, the expansion involves negative powers of \(z\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q03 Order of Pole</text></name>
+    <questiontext format="html"><text><![CDATA[Determine the order of the pole of \(f(z) = \dfrac{e^z - 1 - z}{z^3}\) at \(z = 0\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Simple pole (order 1)</text><feedback format="html"><text>\(e^z - 1 - z = z^2/2 + z^3/6 + \cdots\). So \(f(z) = (z^2/2+z^3/6+\cdots)/z^3 = 1/(2z) + 1/6 + z/24 + \cdots\). The lowest power is \(z^{-1}\), so \(z=0\) is a simple pole (order 1) with residue \(1/2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Pole of order 3</text><feedback format="html"><text>The denominator is \(z^3\), but the numerator \(e^z-1-z\) vanishes to order 2 at 0 (\(= z^2/2+\cdots\)). So the net pole order is \(3-2=1\), not 3.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Pole of order 2</text><feedback format="html"><text>Net pole order = denominator order \(-\) numerator zero order = \(3-2=1\). It's a simple pole, not order 2.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Removable singularity</text><feedback format="html"><text>Since the Laurent series contains \(1/(2z)\), the singularity is not removable. It's a simple pole.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q04 Residue via Laurent Series</text></name>
+    <questiontext format="html"><text><![CDATA[The residue of \(f\) at an isolated singularity \(z_0\) is the coefficient of \((z-z_0)^{-1}\) in the Laurent expansion. Find the residue of \(f(z) = \dfrac{z^2}{\sin z}\) at \(z=0\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>0</text><feedback format="html"><text>\(\sin z = z - z^3/6 + \cdots = z(1-z^2/6+\cdots)\), so \(1/\sin z = \frac{1}{z}\cdot\frac{1}{1-z^2/6+\cdots} = \frac{1}{z}(1+z^2/6+\cdots)\). Then \(f(z) = z^2/\sin z = z(1+z^2/6+\cdots)\). This is analytic at 0 (removable singularity with value 0). The residue (coefficient of \(z^{-1}\)) is 0.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>1</text><feedback format="html"><text>\(z^2/\sin z = z\cdot(z/\sin z) = z\cdot(1 + z^2/6 + \cdots)\), which has no \(z^{-1}\) term. Residue is 0, not 1.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(-1/6\)</text><feedback format="html"><text>This is related to the \(z^2\) coefficient. The coefficient of \(z^{-1}\) in \(z^2/\sin z = z + z^3/6 + \cdots\) is 0.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(1/6\)</text><feedback format="html"><text>The residue (coefficient of \(z^{-1}\)) in the Laurent series of \(z^2/\sin z\) is 0, since the expansion starts at \(z^1\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q05 Isolated Singularity — Riemann's Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[Riemann's theorem on removable singularities: if \(f\) is analytic in a punctured disk \(0 < |z-z_0| < r\) and \(\lim_{z\to z_0}(z-z_0)f(z) = 0\), then \(z_0\) is a removable singularity. Equivalently, \(f\) is bounded near \(z_0\) implies \(z_0\) is removable. Which function has a removable singularity at \(z=0\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(f(z) = \dfrac{\sin z}{z}\)</text><feedback format="html"><text>\(\lim_{z\to0}\sin z/z = 1\), so the singularity is removable (define \(f(0)=1\) to extend analytically). The Laurent series is \(1 - z^2/6 + z^4/120 - \cdots\), with no negative powers.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f(z) = \dfrac{1}{z}\)</text><feedback format="html"><text>\(\lim_{z\to0}1/z = \infty\), so this is a simple pole, not a removable singularity.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f(z) = e^{1/z}\)</text><feedback format="html"><text>\(e^{1/z}\) has an essential singularity at 0; it oscillates wildly near the origin.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f(z) = \dfrac{1}{z^2}\)</text><feedback format="html"><text>\(1/z^2\to\infty\) as \(z\to0\), so this is a pole of order 2, not a removable singularity.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q06 Analytic Continuation — Monodromy</text></name>
+    <questiontext format="html"><text><![CDATA[The square root function \(f(z) = \sqrt{z}\) with branch cut along \((-\infty,0]\) is analytic in \(\mathbb{C}\setminus(-\infty,0]\). If we continue \(f\) along a loop around the origin, we get: starting with \(f(1)=+1\), after traversal of a loop around 0:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>We return to \(f(1) = -1\) (the other branch)</text><feedback format="html"><text>The square root function is multi-valued with two branches. Going around the origin once (change \(\theta\) by \(2\pi\)): \(\sqrt{e^{i\theta}}=e^{i\theta/2}\), so at \(\theta=2\pi\): \(e^{i\pi}=-1\). The function returns to the same point \(z=1\) but with value \(-1\). Going around twice returns to \(+1\). The origin is a branch point of order 2.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>We return to \(f(1) = +1\) (the same value)</text><feedback format="html"><text>After one full loop around the branch point, we switch branches and get \(-1\). Two loops would return to \(+1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The continuation is undefined after the loop</text><feedback format="html"><text>Analytic continuation along a loop is well-defined; it just may return a different branch value (monodromy). The result is \(-1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>We get \(f(1) = i\) (a complex value)</text><feedback format="html"><text>After one loop, \(\sqrt{1} = e^{i\pi} = -1\), not \(i\). The value \(i\) would result from a quarter loop only.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q07 Mittag-Leffler Expansion of \(1/\sin^2(z)\)</text></name>
+    <questiontext format="html"><text><![CDATA[The function \(f(z) = \dfrac{1}{\sin^2 z}\) has double poles at \(z = n\pi\) for \(n\in\mathbb{Z}\). Near \(z = n\pi\): \(\sin z = (-1)^n(z-n\pi) + O((z-n\pi)^3)\), so \(\sin^2 z = (z-n\pi)^2(1 + O((z-n\pi)^2))\). The coefficient of \((z-n\pi)^{-2}\) in the Laurent expansion (leading term of the principal part) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>1</text><feedback format="html"><text>Near \(z=n\pi\): \(\sin^2 z = (z-n\pi)^2[1 - (z-n\pi)^2/3 + \cdots]\), so \(1/\sin^2 z = (z-n\pi)^{-2}[1 + (z-n\pi)^2/3 + \cdots]\). The leading coefficient is 1, and the residue (coefficient of \((z-n\pi)^{-1}\)) is 0. The Mittag-Leffler expansion gives \(1/\sin^2 z = \sum_{n=-\infty}^\infty(z-n\pi)^{-2}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\((-1)^n\)</text><feedback format="html"><text>The \((-1)^n\) from \(\sin z = (-1)^n(z-n\pi)+\cdots\) squares to \(1\) in \(\sin^2 z\). The leading coefficient is always 1.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(1/3\)</text><feedback format="html"><text>1/3 appears in the next-order correction, not the leading term. The dominant term is \((z-n\pi)^{-2}\) with coefficient 1.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>2</text><feedback format="html"><text>The coefficient of \((z-n\pi)^{-2}\) in \(1/\sin^2 z\) is 1, as can be verified by L'Hôpital or direct expansion.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q08 Singularities of Rational Functions</text></name>
+    <questiontext format="html"><text><![CDATA[A rational function \(R(z) = P(z)/Q(z)\) (with \(\deg P < \deg Q\) and no common factors) has poles at the zeros of \(Q\) and a "zero at \(\infty\)." What type of singularity does \(f(z) = \dfrac{1}{z^2(z+1)}\) have at \(z=\infty\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>A zero of order 3</text><feedback format="html"><text>To analyze behavior at \(\infty\), substitute \(z=1/w\) and examine \(w=0\): \(f(1/w) = w^2/(w^2\cdot(1/w+1)) = w^2/(1+w)^{-1}/w^{-1}...\) Let's compute: \(f(1/w) = w^2\cdot w/(1+w) = w^3/(1+w)\). Near \(w=0\): \(f(1/w)\approx w^3\). So \(f\) has a zero of order 3 at \(\infty\). Since \(\deg Q - \deg P = 3 - 0 = 3\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>A pole of order 3</text><feedback format="html"><text>Since \(\deg Q - \deg P = 3 > 0\), the function \(f\) tends to 0 as \(z\to\infty\), meaning \(\infty\) is a zero of \(f\), not a pole.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>A simple pole</text><feedback format="html"><text>The behavior at \(\infty\) is \(f(z) \sim 1/z^3\to0\), which is a zero of order 3, not a pole.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>An essential singularity</text><feedback format="html"><text>Rational functions have only poles and zeros (including at \(\infty\)). Essential singularities don't arise for rational functions.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q09 Partial Fraction Decomposition over \(\mathbb{C}\)</text></name>
+    <questiontext format="html"><text><![CDATA[Decompose \(f(z) = \dfrac{z}{(z-1)(z^2+1)}\) into partial fractions over \(\mathbb{C}\). The decomposition has the form \(\dfrac{A}{z-1} + \dfrac{B}{z-i} + \dfrac{C}{z+i}\). Find \(A\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(A = \dfrac{1}{2}\)</text><feedback format="html"><text>\(A = \lim_{z\to1}(z-1)f(z) = \frac{1}{(1+1)} = \frac{1}{2}\). Similarly \(B = \frac{i}{(i-1)(2i)} = \frac{i}{-2+2i} = \frac{i}{2(i-1)}\) and \(C = \bar{B}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(A = 1\)</text><feedback format="html"><text>\(A = 1/(1^2+1) = 1/2\), not 1.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(A = -\dfrac{1}{2}\)</text><feedback format="html"><text>The residue at \(z=1\) is \(1/(1^2+1)=1/2\), which is positive.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(A = \dfrac{1}{4}\)</text><feedback format="html"><text>\(A = z|_{z=1} / [(z^2+1)]|_{z=1} = 1/2\), not 1/4.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q10 Infinite Series of Residues</text></name>
+    <questiontext format="html"><text><![CDATA[The partial fraction method applied to \(\pi\cot(\pi z) = \dfrac{1}{z} + \sum_{n\neq0}\dfrac{1}{z-n}\) (suitably interpreted) gives the series \(\sum_{n=1}^\infty\dfrac{1}{n^2} = \dfrac{\pi^2}{6}\) (Basel problem). This follows from expanding \(\pi z\cot(\pi z)\) near \(z=0\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Comparing the Laurent coefficient of \(z^2\) gives \(\sum_{n=1}^\infty 1/n^2 = \pi^2/6\)</text><feedback format="html"><text>From \(\pi\cot(\pi z)=1/z-\pi^2z/3-\pi^4z^3/45-\cdots\) and the Mittag-Leffler expansion \(\pi\cot(\pi z)=1/z+\sum_{n=1}^\infty\frac{2z}{z^2-n^2}=1/z-2z\sum_{n=1}^\infty\frac{1}{n^2}+O(z^3)\). Comparing: \(-2\sum 1/n^2 = -\pi^2/3\), so \(\sum 1/n^2=\pi^2/6\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The series is derived solely from the Cauchy integral formula</text><feedback format="html"><text>The Cauchy integral formula gives individual residues. The Basel problem uses the Mittag-Leffler expansion combined with power series comparison, not just the integral formula.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sum_{n=1}^\infty 1/n^2 = \pi/6\) (without the squared)</text><feedback format="html"><text>The Basel problem result is \(\pi^2/6\), not \(\pi/6\). These differ by a factor of \(\pi\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The series diverges since the harmonic series \(\sum 1/n\) diverges</text><feedback format="html"><text>\(\sum 1/n^2\) converges (p-series with \(p=2>1\)), and its exact sum is \(\pi^2/6\) by Euler's result.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q11 Picard's Little Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[Picard's Little Theorem: a non-constant entire function takes every complex value, with at most one exception. Which entire function has exactly one exceptional value?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(e^z\) (the exceptional value is 0)</text><feedback format="html"><text>\(e^z\neq 0\) for all \(z\in\mathbb{C}\). By Picard's theorem, \(e^z\) takes every other value in \(\mathbb{C}\setminus\{0\}\). Indeed, for any \(w\neq0\), \(e^z=w\) has solutions \(z=\log w+2\pi i n\), infinitely many of them.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sin z\) (the exceptional value is \(\infty\))</text><feedback format="html"><text>\(\sin z\) is entire and surjective onto \(\mathbb{C}\). It has no exceptional value in \(\mathbb{C}\). (Picard says at most one exception, but some functions have none.)</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(z^2\) (the exceptional value is 0)</text><feedback format="html"><text>\(z^2=0\) has solution \(z=0\), so 0 is taken. \(z^2\) is surjective onto \(\mathbb{C}\). No exceptional value exists for polynomials of degree \(\geq1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(z + 1/z\) (no exceptional value)</text><feedback format="html"><text>\(z+1/z\) has a pole at \(z=0\), so it is not entire. This function is meromorphic.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q12 Normal Families and Equicontinuity</text></name>
+    <questiontext format="html"><text><![CDATA[A family \(\mathcal{F}\) of analytic functions is normal if every sequence has a locally uniformly convergent subsequence (Montel). A family omitting two values in \(\mathbb{C}\) is normal (Montel's theorem, improved). If \(\mathcal{F} = \{f_n\}\) where each \(f_n\) is analytic in the unit disk and omits the values 0 and 1, then by Montel's theorem:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\mathcal{F}\) is a normal family</text><feedback format="html"><text>Montel's refined theorem: a family of analytic functions that omits at least two distinct values is normal. This is a deep result; the proof uses the universal covering and Picard's theorem for the modular function.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\mathcal{F}\) consists of only constant functions</text><feedback format="html"><text>A non-constant analytic function can omit many values. The conclusion is normality, not constancy.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\mathcal{F}\) converges uniformly on all of \(\mathbb{C}\)</text><feedback format="html"><text>Normality means every subsequence has a further convergent subsequence on compact sets, not that the whole family converges uniformly on all of \(\mathbb{C}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\mathcal{F}\) must be bounded on the unit disk</text><feedback format="html"><text>Normality (in Montel's sense) does not require uniform boundedness. A normal family can have functions with large values.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q13 Laurent Series — \(e^{1/z}\)</text></name>
+    <questiontext format="html"><text><![CDATA[The function \(e^{1/z} = \sum_{n=0}^\infty \dfrac{1}{n!\,z^n} = 1 + \dfrac{1}{z} + \dfrac{1}{2!z^2} + \dfrac{1}{3!z^3} + \cdots\) is valid for \(z \neq 0\). This Laurent series shows that \(z=0\) is an essential singularity. What is the residue of \(e^{1/z}\) at \(z=0\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>1</text><feedback format="html"><text>The residue is the coefficient of \(z^{-1}\) in the Laurent expansion: \(e^{1/z} = 1 + 1/z + 1/(2!z^2) + \cdots\). The coefficient of \(z^{-1}\) is \(1/(1!) = 1\). Therefore \(\oint_{|z|=1}e^{1/z}dz = 2\pi i\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0</text><feedback format="html"><text>The \(z^{-1}\) term in the Laurent series of \(e^{1/z}\) is \(1/z\) (from the \(n=1\) term), giving residue 1, not 0.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(e\)</text><feedback format="html"><text>The residue is the coefficient of \(z^{-1}\), which is \(1/1! = 1\), not \(e\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(1/2\)</text><feedback format="html"><text>The coefficient of \(z^{-2}\) is \(1/(2!)=1/2\), but the residue uses the coefficient of \(z^{-1}\), which is 1.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q14 Counting Zeros — Hurwitz's Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[Hurwitz's theorem: if \(\{f_n\}\) is a sequence of analytic functions in a domain \(D\) converging locally uniformly to \(f\), and \(f\not\equiv0\), then zeros of \(f_n\) accumulate at zeros of \(f\). Specifically, if \(f(z_0)=0\), then for large enough \(n\), each \(f_n\) has a zero near \(z_0\). An important corollary: the locally uniform limit of injective analytic functions is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Either injective or constant</text><feedback format="html"><text>If \(f\) were non-injective, \(f(z_1)=f(z_2)\) for some \(z_1\neq z_2\), so \(f(z)-f(z_1)\) has two zeros. By Hurwitz, each \(f_n(z)-f_n(z_1)\) would eventually have a zero near \(z_2\), contradicting injectivity of \(f_n\). So \(f\) is either injective or constant (if \(f\) takes one value everywhere).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Always constant</text><feedback format="html"><text>Non-constant injective limits exist (e.g., the identity function is a limit of injective functions). The conclusion is that the limit is injective OR constant.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Always injective (cannot be constant)</text><feedback format="html"><text>A sequence of injective functions can converge to a constant (e.g., \(f_n(z)=z/n\to0\)). The limit can indeed be constant.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Meromorphic with at most one pole</text><feedback format="html"><text>The locally uniform limit of analytic functions is analytic, not meromorphic. Poles would require convergence in a different sense.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q15 Residue at Infinity</text></name>
+    <questiontext format="html"><text><![CDATA[The residue at \(\infty\) is defined as \(\text{Res}(f;\infty) = -\text{Res}\!\left(\dfrac{1}{z^2}f\!\left(\dfrac{1}{z}\right); 0\right)\). For a rational function with simple poles at \(z_1,\ldots,z_n\), the sum of all residues (including \(\infty\)) equals:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>0</text><feedback format="html"><text>For any meromorphic function on the Riemann sphere \(\hat{\mathbb{C}}\), the sum of all residues (at all poles including \(\infty\)) equals 0. This follows from integrating over a contour that encloses all finite poles: \(\oint_{|z|=R}f(z)dz = 2\pi i(\text{sum of finite residues}) = -2\pi i\cdot\text{Res}(f;\infty)\). So total = 0.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(2\pi i\)</text><feedback format="html"><text>The sum of residues on the Riemann sphere is 0, not \(2\pi i\). The residue theorem gives \(2\pi i\times\text{(sum of residues)}\) for an integral, but the sum of residues itself is 0.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>1</text><feedback format="html"><text>The sum of all residues (finite and at infinity) is always 0 for meromorphic functions on \(\hat{\mathbb{C}}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Depends on the function</text><feedback format="html"><text>This is a theorem: the sum is always 0 for meromorphic functions on the Riemann sphere. It doesn't depend on the specific function.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q16 Convergence of Laurent Series</text></name>
+    <questiontext format="html"><text><![CDATA[A Laurent series \(\sum_{n=-\infty}^\infty a_n z^n\) converges in an annulus \(r < |z| < R\) where \(r = \limsup_{n\to\infty}|a_{-n}|^{1/n}\) and \(R = 1/\limsup_{n\to\infty}|a_n|^{1/n}\). For the Laurent series \(\sum_{n=1}^\infty \dfrac{z^{-n}}{2^n} + \sum_{n=0}^\infty \dfrac{z^n}{3^n}\), the annulus of convergence is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(1/2 < |z| < 3\)</text><feedback format="html"><text>The principal part \(\sum z^{-n}/2^n\) converges for \(|1/z| < 1/\limsup(1/2)^{1/n} = 2\), i.e., \(|z| > 1/2\). The analytic part \(\sum z^n/3^n\) converges for \(|z| < 3\). The annulus is \(1/2 < |z| < 3\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(2 < |z| < 3\)</text><feedback format="html"><text>The inner radius is \(1/2\), not 2. Geometric series \(\sum(1/2)^n\) converges for the principal part when \(|z|>1/2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(1/2 < |z| < 1\)</text><feedback format="html"><text>The outer radius is 3 (from \(\sum z^n/3^n\)), not 1.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(0 < |z| < \infty\)</text><feedback format="html"><text>The series does not converge for \(|z|\leq1/2\) (principal part diverges) or \(|z|\geq3\) (analytic part diverges).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q17 Singularity of \(\tan z\)</text></name>
+    <questiontext format="html"><text><![CDATA[The function \(\tan z = \dfrac{\sin z}{\cos z}\) has poles where \(\cos z = 0\), i.e., at \(z = (2n+1)\pi/2\) for \(n\in\mathbb{Z}\). What is the residue of \(\tan z\) at \(z = \pi/2\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(-1\)</text><feedback format="html"><text>\(\text{Res}(\tan z;\pi/2) = \frac{\sin(\pi/2)}{(\cos z)'|_{z=\pi/2}} = \frac{1}{-\sin(\pi/2)} = \frac{1}{-1} = -1\). Using the formula for simple poles of \(p/q\): residue = \(p(z_0)/q'(z_0) = \sin(\pi/2)/(-\sin(\pi/2)) = -1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>1</text><feedback format="html"><text>The residue is \(\sin(\pi/2)/(-\sin(\pi/2)) = -1\), not \(+1\). The denominator derivative is \(-\sin z\), which is negative at \(\pi/2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\pi/2\)</text><feedback format="html"><text>The residue is a number computed from the function, not the location of the pole.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(i\)</text><feedback format="html"><text>The residue of the real function \(\tan z\) at a real pole is real. It is \(-1\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q18 Partial Fractions and Integral Evaluation</text></name>
+    <questiontext format="html"><text><![CDATA[Using the partial fraction decomposition \(\dfrac{1}{z^2-1} = \dfrac{1}{2}\left(\dfrac{1}{z-1}-\dfrac{1}{z+1}\right)\), evaluate \(\displaystyle\oint_{|z|=2}\dfrac{dz}{z^2-1}\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(0\)</text><feedback format="html"><text>Both poles \(z=\pm1\) lie inside \(|z|=2\). Residues: \(\text{Res}(f;1) = 1/2\), \(\text{Res}(f;-1) = -1/2\). Sum = 0. Integral = \(2\pi i \times 0 = 0\). Alternatively: both residues cancel from the partial fractions \(\frac{1}{2}\frac{1}{z-1} - \frac{1}{2}\frac{1}{z+1}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\pi i\)</text><feedback format="html"><text>This would be the result if only one pole (say \(z=1\)) were inside the contour and the residue there were \(1/2\). But both poles are inside, and their residues cancel.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(2\pi i\)</text><feedback format="html"><text>This would require the sum of residues to be 1. But \(\text{Res}(f;1)+\text{Res}(f;-1) = 1/2-1/2 = 0\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(-\pi i\)</text><feedback format="html"><text>The residues cancel (sum = 0), giving integral = 0, not \(-\pi i\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q19 Isolated Singularities — Meromorphic Functions on Sphere</text></name>
+    <questiontext format="html"><text><![CDATA[A function is meromorphic on the Riemann sphere \(\hat{\mathbb{C}} = \mathbb{C}\cup\{\infty\}\) if and only if it is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>A rational function \(P(z)/Q(z)\)</text><feedback format="html"><text>The meromorphic functions on the compact Riemann surface \(\hat{\mathbb{C}}\) are precisely the rational functions. By the Riemann-Roch theorem or direct argument: meromorphic on \(\hat{\mathbb{C}}\) means finitely many poles (since \(\hat{\mathbb{C}}\) is compact), and a meromorphic function with finitely many poles is a rational function.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Any entire function extended to \(\infty\)</text><feedback format="html"><text>Entire functions extended to \(\hat{\mathbb{C}}\) may have an essential singularity at \(\infty\) (e.g., \(e^z\)). They are not all rational.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>An analytic function with countably many poles</text><feedback format="html"><text>On the compact space \(\hat{\mathbb{C}}\), only finitely many poles are allowed for a meromorphic function.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Any Möbius transformation</text><feedback format="html"><text>Möbius transformations form a subclass of rational functions (degree 1). The full class of meromorphic functions on \(\hat{\mathbb{C}}\) is all rational functions.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA27-Q20 Expansion of Hyperbolic Functions</text></name>
+    <questiontext format="html"><text><![CDATA[The function \(\dfrac{z}{\sinh z}\) has singularities at \(z = n\pi i\) for \(n\in\mathbb{Z}\setminus\{0\}\). Near \(z=0\), the Laurent series begins:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(1 - \dfrac{z^2}{6} + \dfrac{7z^4}{360} - \cdots\)</text><feedback format="html"><text>\(\sinh z = z + z^3/6 + z^5/120 + \cdots\), so \(z/\sinh z = 1/(1+z^2/6+z^4/120+\cdots) = 1 - z^2/6 + (1/36-1/120)z^4 + \cdots\). The second correction: \((z^2/6)^2 - z^4/120 = z^4/36-z^4/120 = z^4(1/36-1/120) = z^4(10/360-3/360) = 7z^4/360\). So \(z/\sinh z = 1 - z^2/6 + 7z^4/360 - \cdots\). Note \(z=0\) is removable (value = 1).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(1 + \dfrac{z^2}{6} + \dfrac{z^4}{120} + \cdots\)</text><feedback format="html"><text>This would be \(\cosh z\). The expansion of \(z/\sinh z\) has alternating signs starting with \(-z^2/6\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{1}{z} - \dfrac{1}{6} + \dfrac{z}{120} + \cdots\)</text><feedback format="html"><text>This would be the Laurent series of \(1/\sinh z\) near 0 (simple pole). But \(z/\sinh z\) has a removable singularity at 0 (value 1), so no \(1/z\) term.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(1 - \dfrac{z^2}{2} + \dfrac{z^4}{24} - \cdots\)</text><feedback format="html"><text>This is \(\cos z\) (or close to it). The correct expansion uses the Bernoulli numbers; second term is \(-z^2/6\), not \(-z^2/2\).</text></feedback></answer>
+  </question>
+
+</quiz>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Statistics and Probability/Discrete Distributions</text></category>
+    <info format="html"><text>CSIR NET level MCQ questions on Discrete Probability Distributions</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q01 Binomial Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[If \(X\sim\text{Bin}(n,p)\), the mean and variance are \(\mu=np\) and \(\sigma^2=np(1-p)\). For \(n=20, p=0.3\), the variance is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(4.2\)</text><feedback format="html"><text>Correct. \(\sigma^2=np(1-p)=20\times0.3\times0.7=4.2\).</text></feedback></answer>
+    <answer fraction="0"><text>\(6\)</text><feedback format="html"><text>Incorrect. \(np=20\times0.3=6\) is the mean, not the variance.</text></feedback></answer>
+    <answer fraction="0"><text>\(1.8\)</text><feedback format="html"><text>Incorrect. \(\sigma^2=4.2\), not 1.8.</text></feedback></answer>
+    <answer fraction="0"><text>\(9\)</text><feedback format="html"><text>Incorrect. \(\sigma^2=np(1-p)=4.2\neq9\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q02 Poisson Approximation</text></name>
+    <questiontext format="html"><text><![CDATA[For large \(n\) and small \(p\) with \(\lambda=np\) fixed, \(\text{Bin}(n,p)\approx\text{Poisson}(\lambda)\). The probability \(P(X=0)\) for \(\text{Poisson}(\lambda)\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(e^{-\lambda}\)]]></text><feedback format="html"><text>Correct. \(P(X=0)=\frac{e^{-\lambda}\lambda^0}{0!}=e^{-\lambda}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(1-e^{-\lambda}\)]]></text><feedback format="html"><text>Incorrect. \(P(X>0)=1-e^{-\lambda}\); \(P(X=0)=e^{-\lambda}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda e^{-\lambda}\)]]></text><feedback format="html"><text>Incorrect. \(\lambda e^{-\lambda}=P(X=1)\), not \(P(X=0)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(e^{\lambda}\)]]></text><feedback format="html"><text>Incorrect. \(e^{\lambda}>1\) for \(\lambda>0\), which cannot be a probability.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q03 Geometric Distribution Memoryless</text></name>
+    <questiontext format="html"><text><![CDATA[The geometric distribution \(P(X=k)=(1-p)^{k-1}p\) (\(k=1,2,\ldots\)) has the memoryless property: \(P(X>m+n\mid X>m)=P(X>n)\). This is the ONLY discrete memoryless distribution. The mean of \(X\sim\text{Geom}(p)\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(1/p\)]]></text><feedback format="html"><text>Correct. \(E[X]=\sum_{k=1}^\infty k(1-p)^{k-1}p=1/p\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\((1-p)/p\)]]></text><feedback format="html"><text>Incorrect. \((1-p)/p\) is the mean of the alternative parameterization \(P(X=k)=(1-p)^kp\) (\(k=0,1,\ldots\)).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(1/(1-p)\)]]></text><feedback format="html"><text>Incorrect. Mean of Geom\((p)\) is \(1/p\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(p\)]]></text><feedback format="html"><text>Incorrect. \(p\) is the success probability, not the mean.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q04 Negative Binomial</text></name>
+    <questiontext format="html"><text><![CDATA[The negative binomial \(\text{NB}(r,p)\) counts the number of trials until the \(r\)-th success. Its mean and variance are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\mu = r/p\) and \(\sigma^2 = r(1-p)/p^2\)]]></text><feedback format="html"><text>Correct. The NB\((r,p)\) mean is \(r/p\) and variance is \(r(1-p)/p^2\). For \(r=1\), this reduces to the geometric distribution.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\mu = rp\) and \(\sigma^2 = rp(1-p)\)]]></text><feedback format="html"><text>Incorrect. These are the Binomial mean and variance, not the Negative Binomial.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\mu = r(1-p)/p\) and \(\sigma^2 = r/p^2\)]]></text><feedback format="html"><text>Incorrect. The mean is \(r/p\) (total trials for \(r\) successes). The variance is \(r(1-p)/p^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\mu = r\) and \(\sigma^2 = rp\)]]></text><feedback format="html"><text>Incorrect. Mean equals \(r/p\), not \(r\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q05 Hypergeometric Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[A population of \(N=20\) items contains \(K=5\) defectives. A sample of \(n=4\) is drawn without replacement. The probability of exactly 2 defectives follows the hypergeometric distribution: \(P(X=2)=\frac{\binom{5}{2}\binom{15}{2}}{\binom{20}{4}}\). This equals:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{10\times105}{4845}=\frac{1050}{4845}\approx0.2167\)]]></text><feedback format="html"><text>Correct. \(\binom{5}{2}=10\), \(\binom{15}{2}=105\), \(\binom{20}{4}=4845\). So \(P=1050/4845\approx0.2167\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\binom{4}{2}(0.25)^2(0.75)^2\approx0.211\)]]></text><feedback format="html"><text>Incorrect. That is the Binomial approximation; the exact hypergeometric gives \(1050/4845\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{5}{20}\cdot\frac{4}{19}\approx0.053\)]]></text><feedback format="html"><text>Incorrect. That is \(P(\text{first two are defective})\), not \(P(X=2)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{4}\)]]></text><feedback format="html"><text>Incorrect. \(P(X=2)=1050/4845\approx0.217\neq0.25\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q06 Poisson Sum</text></name>
+    <questiontext format="html"><text><![CDATA[If \(X\sim\text{Poisson}(\lambda)\) and \(Y\sim\text{Poisson}(\mu)\) are independent, then \(X+Y\sim\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{Poisson}(\lambda+\mu)\)]]></text><feedback format="html"><text>Correct. The sum of independent Poisson random variables is Poisson with the sum of parameters: \(X+Y\sim\text{Poisson}(\lambda+\mu)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{Poisson}(\lambda\mu)\)]]></text><feedback format="html"><text>Incorrect. Parameters add, they don't multiply.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{Poisson}(\lambda)\text{ or }\text{Poisson}(\mu)\)]]></text><feedback format="html"><text>Incorrect. The sum is Poisson with parameter \(\lambda+\mu\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Not necessarily Poisson]]></text><feedback format="html"><text>Incorrect. The reproductive property: sum of independent Poissons is always Poisson.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q07 Zipf Law</text></name>
+    <questiontext format="html"><text><![CDATA[The Zipf distribution assigns probability \(P(X=k)\propto 1/k^s\) for \(k=1,2,\ldots,N\) and some \(s>0\). The normalizing constant is \(H_{N,s}=\sum_{k=1}^N k^{-s}\). As \(N\to\infty\) with \(s>1\), \(H_{N,s}\) converges to:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[The Riemann zeta function \(\zeta(s)=\sum_{k=1}^\infty k^{-s}<\infty\) for \(s>1\)]]></text><feedback format="html"><text>Correct. The harmonic series \(\sum k^{-s}\) converges for \(s>1\) (p-series test), giving the Riemann zeta function \(\zeta(s)\) as normalizing constant.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\infty\) for all \(s\)]]></text><feedback format="html"><text>Incorrect. For \(s>1\), the series converges to \(\zeta(s)<\infty\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(1\) always]]></text><feedback format="html"><text>Incorrect. \(\zeta(s)\) takes various finite values: \(\zeta(2)=\pi^2/6\), \(\zeta(4)=\pi^4/90\), etc.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\ln N\) for \(s=1\)]]></text><feedback format="html"><text>Incorrect (this is actually true for \(s=1\): the harmonic series \(\sum 1/k\approx\ln N+\gamma\)). But for \(s>1\) it converges to \(\zeta(s)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q08 Bernoulli Distribution Entropy</text></name>
+    <questiontext format="html"><text><![CDATA[The Shannon entropy of a Bernoulli\((p)\) random variable is \(H(p)=-p\log_2 p-(1-p)\log_2(1-p)\). The maximum entropy is achieved at:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(p=1/2\), giving \(H=1\) bit</text><feedback format="html"><text>Correct. \(H'(p)=-\log_2 p+\log_2(1-p)=0\Rightarrow p=1/2\). Maximum entropy \(H(1/2)=1\) bit.</text></feedback></answer>
+    <answer fraction="0"><text>\(p=0\) or \(p=1\), giving \(H=\infty\)</text><feedback format="html"><text>Incorrect. At \(p=0\) or \(p=1\), \(H=0\) (no uncertainty); maximum entropy is at \(p=1/2\).</text></feedback></answer>
+    <answer fraction="0"><text>\(p=1/e\), giving \(H=1/e\) bits</text><feedback format="html"><text>Incorrect. Maximum entropy for Bernoulli is at \(p=1/2\), not \(1/e\).</text></feedback></answer>
+    <answer fraction="0"><text>\(p=1/4\), giving \(H=3/4\) bits</text><feedback format="html"><text>Incorrect. \(H(1/4)=-\frac{1}{4}\log_2\frac{1}{4}-\frac{3}{4}\log_2\frac{3}{4}=\frac{1}{2}+\frac{3}{4}\log_2\frac{4}{3}\approx0.811\) bits, less than maximum of 1 bit.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q09 Multinomial Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[In a multinomial experiment with \(n\) trials and \(k\) outcomes with probabilities \(p_1,\ldots,p_k\), \(P(X_1=n_1,\ldots,X_k=n_k)=\frac{n!}{n_1!\cdots n_k!}p_1^{n_1}\cdots p_k^{n_k}\). The covariance \(\text{Cov}(X_i,X_j)\) for \(i\neq j\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(-np_ip_j\) (negative covariance)]]></text><feedback format="html"><text>Correct. For a multinomial, \(\text{Cov}(X_i,X_j)=-np_ip_j\). The negative sign reflects the competition: more of outcome \(i\) means fewer of outcome \(j\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(np_ip_j\)]]></text><feedback format="html"><text>Incorrect. The covariance is \(-np_ip_j\), negative because outcomes compete.</text></feedback></answer>
+    <answer fraction="0"><text>\(0\) (independent)</text><feedback format="html"><text>Incorrect. Multinomial components are negatively correlated (not independent) since \(\sum X_i=n\) is fixed.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(n p_i(1-p_i)\)]]></text><feedback format="html"><text>Incorrect. That is the variance of \(X_i\), not the covariance between different components.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q10 Conditional Poisson</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(N\sim\text{Poisson}(\lambda)\). Given \(N=n\), each event independently belongs to type A with probability \(p\). Let \(X\) = number of type A events. Then marginally, \(X\sim\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{Poisson}(\lambda p)\)]]></text><feedback format="html"><text>Correct. Poisson splitting: if events of a Poisson\((\lambda)\) process are independently retained with probability \(p\), the retained count is Poisson\((\lambda p)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{Binomial}(\lambda,p)\)]]></text><feedback format="html"><text>Incorrect. \(\lambda\) is the rate, not a fixed integer. The marginal distribution is Poisson\((\lambda p)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{Poisson}(\lambda(1-p))\)]]></text><feedback format="html"><text>Incorrect. The type-A count is Poisson\((\lambda p)\); the type-B count is Poisson\((\lambda(1-p))\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{Geometric}(p)\)]]></text><feedback format="html"><text>Incorrect. Poisson splitting gives a Poisson, not geometric distribution.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q11 Convolution of Discrete RVs</text></name>
+    <questiontext format="html"><text><![CDATA[If \(X\sim\text{Bin}(m,p)\) and \(Y\sim\text{Bin}(n,p)\) are independent, then \(X+Y\sim\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{Bin}(m+n,p)\)]]></text><feedback format="html"><text>Correct. Independent Binomials with the same \(p\) sum to a Binomial: \(X+Y\sim\text{Bin}(m+n,p)\). This follows from the interpretation of \(m+n\) independent trials.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{Bin}(mn,p)\)]]></text><feedback format="html"><text>Incorrect. Parameters sum, not multiply: \(X+Y\sim\text{Bin}(m+n,p)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{Bin}(m+n,2p)\)]]></text><feedback format="html"><text>Incorrect. The probability parameter remains \(p\) (not \(2p\)); the trial count increases to \(m+n\).</text></feedback></answer>
+    <answer fraction="0"><text>Not binomial in general</text><feedback format="html"><text>Incorrect. The reproductive property of Binomial holds when \(p\) is the same: \(X+Y\sim\text{Bin}(m+n,p)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q12 Binomial Mode</text></name>
+    <questiontext format="html"><text><![CDATA[For \(X\sim\text{Bin}(n,p)\), the mode (most probable value) is approximately:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\lfloor(n+1)p\rfloor\) or \(\lceil(n+1)p\rceil - 1\)]]></text><feedback format="html"><text>Correct. The mode of Bin\((n,p)\) is \(\lfloor(n+1)p\rfloor\) when \((n+1)p\) is not an integer; when it is an integer, both \((n+1)p\) and \((n+1)p-1\) are modes.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(np\) always (the mean)]]></text><feedback format="html"><text>Incorrect. The mean is \(np\), but the mode is \(\lfloor(n+1)p\rfloor\). They may differ when \((n+1)p\) is not an integer.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lfloor np\rfloor\)]]></text><feedback format="html"><text>Incorrect. The mode formula involves \((n+1)p\), not \(np\).</text></feedback></answer>
+    <answer fraction="0"><text>There is no mode for Binomial distributions</text><feedback format="html"><text>Incorrect. Every discrete distribution has at least one mode.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q13 Poisson Process</text></name>
+    <questiontext format="html"><text><![CDATA[In a Poisson process with rate \(\lambda\), the time between successive events follows:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{Exp}(\lambda)\) (exponential with rate \(\lambda\))]]></text><feedback format="html"><text>Correct. Interarrival times in a Poisson process are i.i.d. Exponential\((\lambda)\) with mean \(1/\lambda\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{Poisson}(\lambda)\)]]></text><feedback format="html"><text>Incorrect. The number of events in a unit interval is Poisson\((\lambda)\); the time between events is Exponential\((\lambda)\).</text></feedback></answer>
+    <answer fraction="0"><text>Uniform on \([0,1/\lambda]\)</text><feedback format="html"><text>Incorrect. Interarrival times are exponential, not uniform.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{Gamma}(2,\lambda)\)]]></text><feedback format="html"><text>Incorrect. \(\text{Gamma}(2,\lambda)\) is the distribution of the time to the 2nd event, not the interarrival time.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q14 Truncated Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[The zero-truncated Poisson distribution assigns \(P(X=k)=\frac{e^{-\lambda}\lambda^k/k!}{1-e^{-\lambda}}\) for \(k=1,2,\ldots\). Its mean is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{\lambda}{1-e^{-\lambda}}\)]]></text><feedback format="html"><text>Correct. \(E[X]=\frac{\sum_{k=1}^\infty k\cdot e^{-\lambda}\lambda^k/k!}{1-e^{-\lambda}}=\frac{\lambda}{1-e^{-\lambda}}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda\)]]></text><feedback format="html"><text>Incorrect. The truncated mean is inflated: \(\lambda/(1-e^{-\lambda})>\lambda\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda+1\)]]></text><feedback format="html"><text>Incorrect. Mean of zero-truncated Poisson is \(\lambda/(1-e^{-\lambda})\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda/(e^\lambda-1)\)]]></text><feedback format="html"><text>Incorrect (though algebraically related). \(\lambda/(1-e^{-\lambda})=\lambda e^\lambda/(e^\lambda-1)\neq\lambda/(e^\lambda-1)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q15 Discrete Uniform Distribution</text></name>
+    <questiontext format="html"><text><![CDATA[For \(X\) uniform on \(\{1,2,\ldots,n\}\), the variance is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{n^2-1}{12}\)]]></text><feedback format="html"><text>Correct. \(E[X]=(n+1)/2\), \(E[X^2]=(n+1)(2n+1)/6\). \(\text{Var}(X)=E[X^2]-E[X]^2=\frac{(n+1)(2n+1)}{6}-\frac{(n+1)^2}{4}=\frac{n^2-1}{12}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{n+1}{2}\)]]></text><feedback format="html"><text>Incorrect. That is the mean, not the variance.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{n^2}{12}\)]]></text><feedback format="html"><text>Incorrect. Variance is \((n^2-1)/12\), which differs from \(n^2/12\) by \(-1/12\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{(n+1)(n-1)}{12}\)]]></text><feedback format="html"><text>Incorrect (actually this equals \((n^2-1)/12\), the correct answer). Same as correct option A.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q16 Infinite Sum Check</text></name>
+    <questiontext format="html"><text><![CDATA[A random variable \(X\) takes values \(k=1,2,3,\ldots\) with \(P(X=k)=c/k(k+1)\). The constant \(c\) must be:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(1\)</text><feedback format="html"><text>Correct. \(\sum_{k=1}^\infty\frac{1}{k(k+1)}=\sum_{k=1}^\infty\left(\frac{1}{k}-\frac{1}{k+1}\right)=1\) (telescoping). So \(c=1\).</text></feedback></answer>
+    <answer fraction="0"><text>\(\pi^2/6\)</text><feedback format="html"><text>Incorrect. \(\sum 1/k^2=\pi^2/6\), but \(\sum 1/(k(k+1))=1\) (telescoping).</text></feedback></answer>
+    <answer fraction="0"><text>\(2\)</text><feedback format="html"><text>Incorrect. The sum telescopes to 1, so \(c=1\).</text></feedback></answer>
+    <answer fraction="0"><text>\(1/2\)</text><feedback format="html"><text>Incorrect. Since the sum without \(c\) is 1, we need \(c=1\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q17 Binomial Skewness</text></name>
+    <questiontext format="html"><text><![CDATA[The skewness of \(\text{Bin}(n,p)\) is \(\gamma_1=(1-2p)/\sqrt{np(1-p)}\). For \(p=1/2\) (symmetric binomial):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(\gamma_1=0\) (symmetric distribution)</text><feedback format="html"><text>Correct. At \(p=1/2\): \(\gamma_1=(1-1)/\sqrt{n/4}=0\). The binomial is symmetric around \(n/2\) when \(p=1/2\).</text></feedback></answer>
+    <answer fraction="0"><text>\(\gamma_1=1\)</text><feedback format="html"><text>Incorrect. \(\gamma_1=(1-2p)/\sqrt{np(1-p)}=0\) when \(p=1/2\).</text></feedback></answer>
+    <answer fraction="0"><text>\(\gamma_1=1/\sqrt{n}\)</text><feedback format="html"><text>Incorrect. At \(p=1/2\), skewness is 0 regardless of \(n\).</text></feedback></answer>
+    <answer fraction="0"><text>\(\gamma_1\) cannot be zero for a discrete distribution</text><feedback format="html"><text>Incorrect. Discrete distributions can be symmetric (and thus have zero skewness), e.g., Bin\((n,1/2)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q18 Poisson MGF</text></name>
+    <questiontext format="html"><text><![CDATA[The moment generating function of \(X\sim\text{Poisson}(\lambda)\) is \(M_X(t)=e^{\lambda(e^t-1)}\). Using this, \(E[X^2]\) equals:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\lambda^2+\lambda\)]]></text><feedback format="html"><text>Correct. \(M'(t)=\lambda e^t e^{\lambda(e^t-1)}\), \(M''(t)=(\lambda e^t+\lambda^2e^{2t})e^{\lambda(e^t-1)}\). At \(t=0\): \(E[X^2]=M''(0)=\lambda+\lambda^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda^2\)]]></text><feedback format="html"><text>Incorrect. \(E[X^2]=\text{Var}(X)+E[X]^2=\lambda+\lambda^2\neq\lambda^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\lambda\)]]></text><feedback format="html"><text>Incorrect. \(\lambda=E[X]\), but \(E[X^2]=\lambda+\lambda^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(2\lambda^2\)]]></text><feedback format="html"><text>Incorrect. \(E[X^2]=\lambda^2+\lambda\neq2\lambda^2\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q19 Geometric Sum</text></name>
+    <questiontext format="html"><text><![CDATA[If \(X_1,X_2,\ldots\) are i.i.d. \(\text{Exp}(\mu)\) and \(N\sim\text{Geom}(p)\) (independent of the \(X_i\)), then \(S=X_1+\cdots+X_N\) has:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(S\sim\text{Exp}(p\mu)\) — a geometric sum of exponentials is exponential]]></text><feedback format="html"><text>Correct. A geometric sum of i.i.d. exponentials is exponential. Specifically, if \(N\sim\text{Geom}(p)\) and \(X_i\sim\text{Exp}(\mu)\), then \(S\sim\text{Exp}(p\mu)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(S\sim\text{Gamma}(N,\mu)\)]]></text><feedback format="html"><text>Incorrect. \(S|N=n\sim\text{Gamma}(n,\mu)\), but marginalizing over \(N\) gives \(S\sim\text{Exp}(p\mu)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(S\sim\text{Geom}(p/\mu)\)]]></text><feedback format="html"><text>Incorrect. \(S\) is a continuous random variable; it cannot follow a geometric distribution.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(S\) has no closed-form distribution]]></text><feedback format="html"><text>Incorrect. The geometric sum of exponentials is exponential, a well-known result.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT17-Q20 Pascal Triangle and Binomial</text></name>
+    <questiontext format="html"><text><![CDATA[The probability generating function \(G(z)=E[z^X]\) of \(X\sim\text{Bin}(n,p)\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single><shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(G(z)=(q+pz)^n\) where \(q=1-p\)]]></text><feedback format="html"><text>Correct. \(G(z)=\sum_{k=0}^n\binom{n}{k}p^kq^{n-k}z^k=(q+pz)^n\) by the binomial theorem.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(G(z)=e^{np(z-1)}\)]]></text><feedback format="html"><text>Incorrect. This is the PGF of a Poisson distribution, not Binomial.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(G(z)=(pz)^n\)]]></text><feedback format="html"><text>Incorrect. \((pz)^n\) would be the PGF of a degenerate distribution at \(n\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(G(z)=\frac{pz}{1-qz}\)]]></text><feedback format="html"><text>Incorrect. That is the PGF of a geometric distribution, not binomial.</text></feedback></answer>
+  </question>
+</quiz>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Statistics and Probability/Testing of Hypotheses</text></category>
+    <info format="html"><text>CSIR NET level MCQ questions on Testing of Hypotheses: Neyman-Pearson lemma, UMP tests, likelihood ratio tests, chi-square tests, t-tests, F-tests, non-parametric tests, p-values, power functions.</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q01 Neyman-Pearson Lemma</text></name>
+    <questiontext format="html"><text><![CDATA[Let \(X_1, \ldots, X_n \stackrel{iid}{\sim} N(\mu, 1)\). Testing \(H_0: \mu = 0\) vs \(H_1: \mu = 1\) at level \(\alpha\). By the Neyman-Pearson lemma, the most powerful test rejects \(H_0\) when \(\Lambda = f_1(\mathbf{x})/f_0(\mathbf{x}) > k\). The most powerful rejection region is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Reject when \(\bar{X} > z_\alpha/\sqrt{n}\)</text><feedback format="html"><text>The likelihood ratio \(\Lambda = e^{n\bar{x} - n/2}\). The test rejects when \(\bar{X} > k'\) for some constant. Under \(H_0\), \(\sqrt{n}\bar{X} \sim N(0,1)\), so the critical value is \(z_\alpha/\sqrt{n}\) where \(z_\alpha\) is the upper \(\alpha\) quantile of \(N(0,1)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Reject when \(|\bar{X}| > z_{\alpha/2}/\sqrt{n}\)</text><feedback format="html"><text>This two-sided test is appropriate for \(H_1: \mu \neq 0\), not for the one-sided \(H_1: \mu = 1\). The NP lemma gives a one-sided test here.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Reject when \(\bar{X} < -z_\alpha/\sqrt{n}\)</text><feedback format="html"><text>Wrong direction. Since \(H_1: \mu=1 > 0\), larger \(\bar{X}\) is evidence against \(H_0\), so we reject for large positive \(\bar{X}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Reject when \(\sum X_i^2 > \chi^2_{n,\alpha}\)</text><feedback format="html"><text>The chi-square test statistic arises for variance testing, not for testing the normal mean.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q02 UMP Test for Exponential Family</text></name>
+    <questiontext format="html"><text><![CDATA[For \(X_1, \ldots, X_n \stackrel{iid}{\sim} \text{Exp}(\lambda)\), testing \(H_0: \lambda \leq \lambda_0\) vs \(H_1: \lambda > \lambda_0\). A UMP level-\(\alpha\) test exists because the family has a monotone likelihood ratio in \(T = \sum X_i\). The UMP test rejects \(H_0\) when:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\sum X_i < c\) where \(c\) is determined by \(P_{\lambda_0}(\sum X_i < c) = \alpha\)</text><feedback format="html"><text>Larger \(\lambda\) (shorter mean lifetime) corresponds to smaller \(\sum X_i\). The MLR in \(\sum X_i\) is decreasing in \(\lambda\), so reject for small \(\sum X_i\). Under \(H_0:\lambda=\lambda_0\), \(2\lambda_0\sum X_i \sim \chi^2_{2n}\), giving the critical value.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sum X_i > c\) where \(c\) is the upper \(\alpha\) quantile</text><feedback format="html"><text>Larger \(\lambda\) means smaller mean \(1/\lambda\), hence smaller \(\sum X_i\). The rejection region should be \(\sum X_i < c\) for large \(\lambda\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\bar{X} > c\) for large \(\bar{X}\)</text><feedback format="html"><text>Equivalent to rejecting for large \(\sum X_i\), which is the wrong direction for detecting \(\lambda > \lambda_0\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(|\sum X_i - n/\lambda_0| > c\)</text><feedback format="html"><text>A two-sided test loses power for the one-sided alternative. UMP test is one-sided.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q03 Likelihood Ratio Test Statistic</text></name>
+    <questiontext format="html"><text><![CDATA[The generalized likelihood ratio test statistic is \(\Lambda = \dfrac{\sup_{\theta \in \Theta_0} L(\theta)}{\sup_{\theta \in \Theta} L(\theta)}\). Under \(H_0\), Wilks' theorem states \(-2\log\Lambda \xrightarrow{d} \chi^2_r\) where \(r\) is the number of constraints. For testing \(H_0: \mu_1 = \mu_2\) in two independent \(N(\mu_i, \sigma^2)\) samples (with common unknown \(\sigma^2\), total \(n\) observations), what is \(r\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(r = 1\)</text><feedback format="html"><text>The full model has parameters \((\mu_1, \mu_2, \sigma^2)\), dimension 3. The null model \(\mu_1=\mu_2=\mu\) has parameters \((\mu, \sigma^2)\), dimension 2. The number of constraints is \(3-2=1\), so \(-2\log\Lambda \xrightarrow{d} \chi^2_1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(r = 2\)</text><feedback format="html"><text>There is only one constraint (\(\mu_1=\mu_2\)), not two. The degrees of freedom equals the number of independent restrictions.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(r = n-2\)</text><feedback format="html"><text>The chi-square degrees of freedom in Wilks' theorem is the number of parameter constraints, not sample size minus parameters.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(r = 3\)</text><feedback format="html"><text>The full parameter space has dimension 3. But \(r\) is the difference between full and null dimensions, which is 1.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q04 Type I and Type II Errors</text></name>
+    <questiontext format="html"><text><![CDATA[For testing \(H_0: \theta = \theta_0\) vs \(H_1: \theta = \theta_1\) at level \(\alpha = 0.05\), a test has power \(\beta(\theta_1) = 0.80\). What is the probability of a Type II error?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>0.20</text><feedback format="html"><text>Power = \(P(\text{reject }H_0 | H_1\text{ true}) = 1 - P(\text{Type II error}) = 0.80\). So \(P(\text{Type II error}) = \beta = 1 - 0.80 = 0.20\). Type I error = \(\alpha = 0.05\) (probability of rejecting a true \(H_0\)).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.05</text><feedback format="html"><text>This is the Type I error (level \(\alpha\)), not the Type II error. Type II error = 1 - power = 0.20.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.80</text><feedback format="html"><text>This is the power, which equals 1 - Type II error. The Type II error probability is 0.20.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.75</text><feedback format="html"><text>Incorrect. Type II error = 1 - power = 1 - 0.80 = 0.20, not 0.75.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q05 Two-Sample t-Test</text></name>
+    <questiontext format="html"><text><![CDATA[Two independent samples from \(N(\mu_1,\sigma^2)\) and \(N(\mu_2,\sigma^2)\) (equal variances, unknown) of sizes \(n_1=10, n_2=15\) have \(\bar{X}_1=12, \bar{X}_2=10, S_p^2=9\) (pooled variance). The test statistic for \(H_0: \mu_1=\mu_2\) is \(T = \dfrac{\bar{X}_1-\bar{X}_2}{S_p\sqrt{1/n_1+1/n_2}}\). Under \(H_0\), \(T \sim\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(t_{23}\)</text><feedback format="html"><text>The pooled two-sample \(t\)-statistic follows \(t_{n_1+n_2-2} = t_{10+15-2} = t_{23}\) under \(H_0\). The degrees of freedom comes from the pooled variance estimate: \((n_1-1)+(n_2-1) = 9+14=23\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(t_{24}\)</text><feedback format="html"><text>Degrees of freedom for two-sample \(t\)-test is \(n_1+n_2-2 = 23\), not 24.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(N(0,1)\)</text><feedback format="html"><text>This would apply only if \(\sigma^2\) were known. Since it's estimated, the distribution is \(t_{23}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\chi^2_{23}\)</text><feedback format="html"><text>The chi-square distribution is used for variance testing, not for comparing means.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q06 Chi-Square Goodness-of-Fit</text></name>
+    <questiontext format="html"><text><![CDATA[A chi-square goodness-of-fit test for a die (6 categories) uses \(n=120\) rolls. Observed frequencies are 18, 22, 19, 21, 20, 20. Under \(H_0\) (fair die), expected frequency is 20 for each. The test statistic is \(\chi^2 = \sum_{i=1}^6 \dfrac{(O_i - E_i)^2}{E_i}\). What is the degrees of freedom for this test?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>5</text><feedback format="html"><text>For a goodness-of-fit test with \(k\) categories and no parameters estimated from data, df = \(k-1 = 6-1 = 5\). Under \(H_0\), \(\chi^2 = \frac{4}{20}+\frac{4}{20}+\frac{1}{20}+\frac{1}{20}+0+0 = 0.5 \sim \chi^2_5\) approximately.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>6</text><feedback format="html"><text>The df is \(k-1\), not \(k\). One degree of freedom is lost because the observed frequencies sum to \(n\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>4</text><feedback format="html"><text>4 degrees of freedom would apply if one parameter were estimated from the data. Here, all probabilities are specified under \(H_0\), so df = \(k-1=5\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>119</text><feedback format="html"><text>This is \(n-1\), appropriate for a continuous distribution test (like KS test), not chi-square goodness-of-fit with 6 categories.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q07 p-Value Definition</text></name>
+    <questiontext format="html"><text><![CDATA[The \(p\)-value of a test is the probability, under \(H_0\), of observing a test statistic as extreme as or more extreme than the observed value. For a one-sided \(z\)-test with observed statistic \(z_{obs} = 2.1\), the \(p\)-value is \(P(Z \geq 2.1)\) where \(Z \sim N(0,1)\). Using \(\Phi(2.1) \approx 0.982\), the \(p\)-value is approximately:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>0.018</text><feedback format="html"><text>\(p = P(Z \geq 2.1) = 1 - \Phi(2.1) = 1 - 0.982 = 0.018\). Since \(p = 0.018 < 0.05\), we reject \(H_0\) at the 5% level.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.982</text><feedback format="html"><text>This is \(\Phi(2.1) = P(Z \leq 2.1)\), not the \(p\)-value. The \(p\)-value for upper-tailed test is \(1-\Phi(2.1)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.036</text><feedback format="html"><text>This is the two-sided \(p\)-value: \(2(1-\Phi(2.1)) = 0.036\). The question specifies a one-sided test.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>2.1</text><feedback format="html"><text>2.1 is the test statistic, not the \(p\)-value. The \(p\)-value is a probability between 0 and 1.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q08 F-Test for Equality of Variances</text></name>
+    <questiontext format="html"><text><![CDATA[Two independent normal samples: \(X_1,\ldots,X_m \sim N(\mu_1,\sigma_1^2)\) and \(Y_1,\ldots,Y_n \sim N(\mu_2,\sigma_2^2)\). For testing \(H_0:\sigma_1^2=\sigma_2^2\), the test statistic \(F = S_X^2/S_Y^2\) where \(S_X^2, S_Y^2\) are sample variances. Under \(H_0\), \(F\) follows:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(F_{m-1,\ n-1}\) distribution</text><feedback format="html"><text>\((m-1)S_X^2/\sigma_1^2 \sim \chi^2_{m-1}\) and \((n-1)S_Y^2/\sigma_2^2 \sim \chi^2_{n-1}\) independently. Under \(H_0\): \(\sigma_1^2=\sigma_2^2\), so \(F = S_X^2/S_Y^2 = \frac{\chi^2_{m-1}/(m-1)}{\chi^2_{n-1}/(n-1)} \sim F_{m-1,n-1}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\chi^2_{m+n-2}\) distribution</text><feedback format="html"><text>The ratio of independent chi-square variables (divided by df) follows an \(F\) distribution, not chi-square.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(t_{m+n-2}\) distribution</text><feedback format="html"><text>The \(t\)-distribution arises for testing means. For variance ratio testing, the \(F\) distribution is appropriate.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(F_{m,\ n}\) distribution</text><feedback format="html"><text>The degrees of freedom are \(m-1\) and \(n-1\) (from the chi-square distributions), not \(m\) and \(n\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q09 ANOVA F-Test</text></name>
+    <questiontext format="html"><text><![CDATA[In one-way ANOVA with \(k=4\) groups each of size \(n=6\) (total \(N=24\)), the between-groups sum of squares is \(SS_B = 120\) and within-groups sum of squares is \(SS_W = 180\). The \(F\)-statistic for testing equality of group means is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(F = \dfrac{120/3}{180/20} = \dfrac{40}{9} \approx 4.44\) with df \((3, 20)\)</text><feedback format="html"><text>\(MS_B = SS_B/(k-1) = 120/3 = 40\). \(MS_W = SS_W/(N-k) = 180/20 = 9\). \(F = MS_B/MS_W = 40/9 \approx 4.44 \sim F_{3,20}\) under \(H_0\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(F = \dfrac{120/4}{180/20} = \dfrac{30}{9} \approx 3.33\) with df \((4, 20)\)</text><feedback format="html"><text>Between df is \(k-1=3\), not \(k=4\). Numerator df should be 3.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(F = \dfrac{120/3}{180/23} \approx 5.11\) with df \((3, 23)\)</text><feedback format="html"><text>Within df is \(N-k = 24-4 = 20\), not \(N-1=23\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(F = \dfrac{180/20}{120/3} = \dfrac{9}{40} \approx 0.23\) with df \((20, 3)\)</text><feedback format="html"><text>The \(F\)-statistic is \(MS_B/MS_W\) (between over within), not the reciprocal.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q10 Uniformly Most Powerful Unbiased Test</text></name>
+    <questiontext format="html"><text><![CDATA[For \(X_1, \ldots, X_n \stackrel{iid}{\sim} N(\mu, \sigma^2)\) with \(\sigma^2\) unknown, testing \(H_0: \mu = \mu_0\) vs \(H_1: \mu \neq \mu_0\). No UMP test exists for this two-sided hypothesis. The UMPU test rejects when \(|T| > t_{n-1, \alpha/2}\) where \(T = \dfrac{\sqrt{n}(\bar{X}-\mu_0)}{S}\). The power function of this test is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Symmetric about \(\mu_0\) and increasing as \(|\mu - \mu_0|\) increases</text><feedback format="html"><text>The power function \(\beta(\mu) = P_\mu(|T| > t_{n-1,\alpha/2})\) depends on the noncentrality parameter \(\delta = \sqrt{n}(\mu-\mu_0)/\sigma\). It equals \(\alpha\) at \(\mu=\mu_0\), is symmetric about \(\mu_0\), and increases as \(|\mu-\mu_0|\) increases, approaching 1 as \(\mu\to\pm\infty\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Monotone increasing in \(\mu\)</text><feedback format="html"><text>A monotone power function characterizes one-sided tests. For two-sided alternatives, the power function is U-shaped with minimum at \(\mu_0\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Constant equal to \(\alpha\) for all \(\mu\)</text><feedback format="html"><text>A constant power equal to \(\alpha\) would mean the test has no power, i.e., is equivalent to random rejection. The actual power increases as \(\mu\) moves away from \(\mu_0\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Decreasing for \(\mu > \mu_0\) and increasing for \(\mu < \mu_0\)</text><feedback format="html"><text>This describes an inverted U-shape. The correct shape for a two-sided test is U-shaped (minimum at \(\mu_0\), increasing in both directions).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q11 Chi-Square Test of Independence</text></name>
+    <questiontext format="html"><text><![CDATA[A 2×2 contingency table has cell counts \(\begin{pmatrix} a & b \\ c & d \end{pmatrix}\) with row totals \(r_1=a+b, r_2=c+d\), column totals \(c_1=a+c, c_2=b+d\), and total \(n=a+b+c+d\). The chi-square statistic for independence \(\chi^2 = \dfrac{n(ad-bc)^2}{r_1 r_2 c_1 c_2}\) under \(H_0\) follows approximately \(\chi^2_1\). What is the expected frequency of cell \((1,1)\) under independence?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{r_1 c_1}{n}\)</text><feedback format="html"><text>Under independence, \(P(\text{row }1, \text{col }1) = P(\text{row }1)\cdot P(\text{col }1) = (r_1/n)(c_1/n)\). So the expected count is \(n \cdot (r_1/n)(c_1/n) = r_1c_1/n\). This is the fundamental formula for expected frequencies in contingency table tests.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{a+d}{n}\)</text><feedback format="html"><text>This mixes diagonal elements. Expected frequency uses marginal totals: \(r_1 c_1/n\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{n}{4}\)</text><feedback format="html"><text>This would be the expected count if all cells were equally likely, but the expected count depends on the marginal totals.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{r_1 + c_1}{2n}\)</text><feedback format="html"><text>Incorrect formula. Expected count is the product of marginals divided by \(n\): \(r_1 c_1/n\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q12 Sign Test</text></name>
+    <questiontext format="html"><text><![CDATA[In a sign test for \(H_0: m = m_0\) (median equals \(m_0\)) based on \(n=20\) observations, the number of observations exceeding \(m_0\) is \(K = 14\). Under \(H_0\), \(K \sim \text{Bin}(20, 0.5)\). For a two-sided test, the exact \(p\)-value is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(2P(K \geq 14)\) where \(K \sim \text{Bin}(20, 0.5)\)</text><feedback format="html"><text>For a two-sided sign test, the \(p\)-value is \(2\min(P(K\geq k), P(K\leq k)) = 2P(K\geq 14)\) by symmetry of \(\text{Bin}(20,0.5)\) about 10. Since \(k=14>10\), we compute \(p = 2P(K\geq14) = 2\sum_{j=14}^{20}\binom{20}{j}(0.5)^{20} \approx 0.115\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(P(K \geq 14)\) where \(K \sim \text{Bin}(20, 0.5)\)</text><feedback format="html"><text>This is the one-sided \(p\)-value. For a two-sided test, we multiply by 2.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(P(K = 14)\) where \(K \sim \text{Bin}(20, 0.5)\)</text><feedback format="html"><text>The \(p\)-value includes the probability of the observed value and all more extreme values, not just the point probability.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(1 - P(K \leq 13)\)</text><feedback format="html"><text>This equals \(P(K\geq 14)\), which is only the one-sided \(p\)-value. For two-sided, double this quantity.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q13 Wilcoxon Rank-Sum Test</text></name>
+    <questiontext format="html"><text><![CDATA[The Wilcoxon rank-sum (Mann-Whitney) test is a nonparametric alternative to the two-sample \(t\)-test. For two independent samples of sizes \(m\) and \(n\) (\(m \leq n\)), the test statistic \(W\) is the sum of ranks of the smaller sample in the combined ranking. Under \(H_0\) (equal distributions), the mean and variance of \(W\) are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(E[W] = \dfrac{m(m+n+1)}{2},\quad \text{Var}(W) = \dfrac{mn(m+n+1)}{12}\)</text><feedback format="html"><text>Under \(H_0\), each rank assignment is equally likely. \(E[W] = m \cdot (m+n+1)/2\) (each rank has expected value \((m+n+1)/2\)), and \(\text{Var}(W) = mn(m+n+1)/12\). For large samples, \(W\) is approximately normal.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(E[W] = \dfrac{m+n}{2},\quad \text{Var}(W) = \dfrac{mn}{12}\)</text><feedback format="html"><text>Incorrect; missing the factor \((m+n+1)\) in both expressions.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(E[W] = \dfrac{m(n+1)}{2},\quad \text{Var}(W) = \dfrac{mn(n+1)}{12}\)</text><feedback format="html"><text>Incorrect formula. The correct expressions involve \(m+n+1\) throughout, not just \(n+1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(E[W] = mn/2,\quad \text{Var}(W) = mn(m+n)/6\)</text><feedback format="html"><text>These are incorrect formulas for the Wilcoxon statistic under the null hypothesis.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q14 Sequential Probability Ratio Test</text></name>
+    <questiontext format="html"><text><![CDATA[In the Sequential Probability Ratio Test (SPRT) of Wald for testing \(H_0: \theta=\theta_0\) vs \(H_1: \theta=\theta_1\), the test continues sampling as long as \(B < \Lambda_n < A\) where \(\Lambda_n = \prod_{i=1}^n f_1(X_i)/f_0(X_i)\). The boundaries are \(A \approx (1-\beta)/\alpha\) and \(B \approx \beta/(1-\alpha)\). If \(\alpha=\beta=0.05\), then approximately:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(A = 19\) and \(B = 1/19\)</text><feedback format="html"><text>\(A = (1-\beta)/\alpha = (1-0.05)/0.05 = 0.95/0.05 = 19\). \(B = \beta/(1-\alpha) = 0.05/0.95 = 1/19 \approx 0.0526\). Reject \(H_0\) if \(\Lambda_n \geq A=19\), accept \(H_0\) if \(\Lambda_n \leq B = 1/19\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(A = 20\) and \(B = 1/20\)</text><feedback format="html"><text>The exact values are \(A = 0.95/0.05 = 19\) and \(B = 0.05/0.95 = 1/19\), not 20 and 1/20.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(A = 19\) and \(B = 0.05\)</text><feedback format="html"><text>\(B = \beta/(1-\alpha) = 0.05/0.95 = 1/19 \approx 0.0526 \neq 0.05\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(A = 1.96\) and \(B = -1.96\)</text><feedback format="html"><text>These are \(z\)-score critical values for normal tests, not SPRT boundaries for the likelihood ratio.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q15 Kolmogorov-Smirnov Test</text></name>
+    <questiontext format="html"><text><![CDATA[The Kolmogorov-Smirnov (KS) one-sample test statistic is \(D_n = \sup_x |F_n(x) - F_0(x)|\) where \(F_n\) is the empirical CDF and \(F_0\) is the hypothesized CDF. A key property: under \(H_0\) (that data comes from \(F_0\) continuous), the distribution of \(D_n\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Distribution-free (does not depend on \(F_0\))</text><feedback format="html"><text>By the probability integral transform: if \(X \sim F_0\), then \(U = F_0(X) \sim U(0,1)\). The KS statistic based on \(F_0\) has the same distribution as the KS statistic for \(U(0,1)\), regardless of \(F_0\). This distribution-free property makes KS tables universally applicable.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Depends on \(F_0\) through its mean and variance</text><feedback format="html"><text>Incorrect. The probability integral transform shows the distribution of \(D_n\) is the same for all continuous \(F_0\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Always normally distributed for large \(n\)</text><feedback format="html"><text>\(\sqrt{n}D_n\) converges to the Kolmogorov distribution, not the normal distribution. The limiting distribution is the supremum of a Brownian bridge.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Chi-square distributed with \(n-1\) degrees of freedom</text><feedback format="html"><text>Chi-square arises in goodness-of-fit tests for discrete/grouped data. The KS test statistic has a different (Kolmogorov) limiting distribution.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q16 Paired t-Test</text></name>
+    <questiontext format="html"><text><![CDATA[In a paired \(t\)-test, \(n\) pairs \((X_i, Y_i)\) are observed and \(D_i = X_i - Y_i\) are assumed \(N(\mu_D, \sigma_D^2)\). For testing \(H_0: \mu_D = 0\), the test statistic is \(T = \dfrac{\bar{D}\sqrt{n}}{S_D}\) where \(S_D^2 = \dfrac{1}{n-1}\sum(D_i-\bar{D})^2\). Under \(H_0\), \(T \sim t_{n-1}\). Why is the paired test preferred over the two-sample \(t\)-test for paired data?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Pairing eliminates between-subject variability, reducing the error variance and increasing power.</text><feedback format="html"><text>The paired test uses \(\text{Var}(D_i) = \text{Var}(X_i) + \text{Var}(Y_i) - 2\text{Cov}(X_i,Y_i)\). When \(X_i\) and \(Y_i\) are positively correlated (common in before/after designs), the covariance term reduces the variance, giving a smaller standard error and higher power.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Pairing always gives a smaller test statistic, making rejection easier.</text><feedback format="html"><text>Pairing reduces error variance but also halves the degrees of freedom (\(n-1\) vs \(2n-2\)). The paired test is only preferred when pairing explains substantial variability.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The paired test does not require the normality assumption.</text><feedback format="html"><text>The paired \(t\)-test also requires normality of the differences (or large \(n\) for the CLT). Nonparametric alternatives like the sign test or Wilcoxon signed-rank test can be used without normality.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The paired test is always more powerful regardless of correlation structure.</text><feedback format="html"><text>If correlation is zero or negative, pairing doesn't help and may reduce power (due to fewer df). Pairing is beneficial only when within-pair correlation is positive and substantial.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q17 Locally Most Powerful Tests</text></name>
+    <questiontext format="html"><text><![CDATA[For testing \(H_0: \theta = \theta_0\) vs \(H_1: \theta > \theta_0\), a locally most powerful (LMP) test at \(\theta_0\) rejects for large values of the score statistic \(S(\theta_0) = \dfrac{\partial}{\partial\theta}\log L(\theta)\Big|_{\theta=\theta_0}\). The LMP test is equivalent to the UMP test when the family has MLR. For the one-parameter exponential family, the LMP test is equivalent to:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The UMP test (which is also based on the natural sufficient statistic)</text><feedback format="html"><text>For the exponential family, the score statistic \(S(\theta_0) = \eta'(\theta_0)\sum T(X_i) - nA'(\theta_0)\). Rejecting for large \(S(\theta_0)\) is equivalent to rejecting for large \(\sum T(X_i)\) (the natural sufficient statistic), which is exactly the UMP test by the Karlin-Rubin theorem.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The chi-square test based on \(S(\theta_0)^2\)</text><feedback format="html"><text>Squaring the score gives the score test for two-sided alternatives. For one-sided, we use \(S(\theta_0)\) directly.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The likelihood ratio test using \(-2\log\Lambda\)</text><feedback format="html"><text>The score, Wald, and LR tests are asymptotically equivalent but not identical. For the exponential family, the LMP (score) test happens to equal the UMP test exactly.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The Wald test based on \((\hat{\theta}-\theta_0)^2 I(\hat{\theta})\)</text><feedback format="html"><text>The Wald test uses the MLE, while the score test evaluates at \(\theta_0\). Both are asymptotically equivalent but not identical for finite samples.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q18 Multiple Testing — Bonferroni Correction</text></name>
+    <questiontext format="html"><text><![CDATA[When performing \(m=20\) simultaneous hypothesis tests, each at level \(\alpha_i\), the family-wise error rate (FWER) \(= P(\text{at least one false rejection})\). The Bonferroni correction sets each \(\alpha_i = \alpha/m\) to control FWER at \(\alpha\). For FWER \(\leq 0.05\) with \(m=20\) independent tests, the individual level is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>0.0025</text><feedback format="html"><text>By Bonferroni: \(\alpha_i = \alpha/m = 0.05/20 = 0.0025\). The Bonferroni bound gives FWER \(= P(\text{at least one error}) \leq \sum_{i=1}^m \alpha_i = m\cdot(\alpha/m) = \alpha = 0.05\) by the union bound.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.05</text><feedback format="html"><text>Testing each hypothesis at 0.05 gives FWER \(\approx 1-(0.95)^{20} \approx 0.64\), far exceeding the target 0.05.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.001</text><feedback format="html"><text>This would correspond to \(m=50\), not 20. For \(m=20\), the Bonferroni level is \(0.05/20 = 0.0025\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0.01</text><feedback format="html"><text>This corresponds to \(m=5\). For \(m=20\), the Bonferroni correction gives \(0.05/20 = 0.0025\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q19 Neyman-Pearson Fundamental Lemma</text></name>
+    <questiontext format="html"><text><![CDATA[The Neyman-Pearson lemma characterizes the most powerful test at level \(\alpha\). For discrete distributions, randomized tests may be needed to achieve exact size \(\alpha\). The randomized NP test rejects with probability \(\phi(\mathbf{x}) = \begin{cases} 1 & \Lambda > k \\ \gamma & \Lambda = k \\ 0 & \Lambda < k \end{cases}\). The value of \(\gamma\) is chosen so that:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(E_{H_0}[\phi(\mathbf{X})] = \alpha\) (the test has exact size \(\alpha\))</text><feedback format="html"><text>\(\gamma\) is chosen so the test exactly achieves level \(\alpha\): \(P_{H_0}(\Lambda>k) + \gamma P_{H_0}(\Lambda=k) = \alpha\). This gives \(\gamma = [\alpha - P_{H_0}(\Lambda>k)]/P_{H_0}(\Lambda=k)\) when \(0 < \gamma < 1\). The randomization handles the discrete probability mass at the boundary.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(E_{H_1}[\phi(\mathbf{X})] = 1\) (perfect power)</text><feedback format="html"><text>\(\gamma\) controls the size of the test under \(H_0\), not the power under \(H_1\). Maximizing power is the result of the lemma, not the condition on \(\gamma\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\gamma = 0.5\) always</text><feedback format="html"><text>\(\gamma\) depends on the specific distribution and the chosen \(\alpha\). It is not always 0.5.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The Type II error probability equals \(\alpha\)</text><feedback format="html"><text>\(\gamma\) ensures the Type I error equals \(\alpha\), not that Type I equals Type II.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>STAT22-Q20 Wald Test Statistic</text></name>
+    <questiontext format="html"><text><![CDATA[The Wald test for \(H_0: g(\theta) = 0\) (where \(g\) is differentiable) uses the statistic \(W_n = \dfrac{g(\hat{\theta}_n)^2}{\widehat{\text{Var}}(g(\hat{\theta}_n))}\) which is asymptotically \(\chi^2_1\) under \(H_0\). By the delta method, \(\text{Var}(g(\hat{\theta})) \approx [g'(\theta)]^2/\{nI(\theta)\}\). For testing \(H_0: e^\theta = 2\) (i.e., \(\theta = \log 2\)) with MLE \(\hat{\theta}\), the asymptotic variance of \(e^{\hat{\theta}}\) is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{e^{2\theta}}{nI(\theta)}\)</text><feedback format="html"><text>Let \(g(\theta) = e^\theta\), so \(g'(\theta) = e^\theta\). By the delta method: \(\text{Var}(e^{\hat{\theta}}) \approx [g'(\theta)]^2 \cdot \text{Var}(\hat{\theta}) = (e^\theta)^2 \cdot \frac{1}{nI(\theta)} = \frac{e^{2\theta}}{nI(\theta)}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{e^\theta}{nI(\theta)}\)</text><feedback format="html"><text>The delta method gives \([g'(\theta)]^2 \text{Var}(\hat\theta)\). Since \(g'(\theta)=e^\theta\), the square gives \(e^{2\theta}\), not \(e^\theta\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{1}{nI(\theta)}\)</text><feedback format="html"><text>This is the asymptotic variance of \(\hat{\theta}\), not of the transformed quantity \(e^{\hat{\theta}}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{e^{2\theta}}{I(\theta)}\)</text><feedback format="html"><text>Missing the factor of \(n\) in the denominator. The asymptotic variance decreases at rate \(1/n\).</text></feedback></answer>
+  </question>
+
+</quiz>

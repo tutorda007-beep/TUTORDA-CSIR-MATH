@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Calculus of Variations/Advanced Applications</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q01_HamiltonJacobi</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Hamilton-Jacobi equation associated with the Hamiltonian \(H(q,p) = \frac{p^2}{2m} + V(q)\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\frac{\partial S}{\partial t} + \frac{1}{2m}\left(\frac{\partial S}{\partial q}\right)^2 + V(q) = 0\)]]></text>
+      <feedback><text>Correct. The Hamilton-Jacobi equation is \(\partial_t S + H(q, \partial_q S) = 0\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\frac{\partial S}{\partial t} - \frac{1}{2m}\left(\frac{\partial S}{\partial q}\right)^2 + V(q) = 0\)]]></text>
+      <feedback><text>Incorrect sign; the kinetic term has a positive sign.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\frac{\partial^2 S}{\partial t^2} + \frac{1}{2m}\left(\frac{\partial S}{\partial q}\right)^2 + V(q) = 0\)]]></text>
+      <feedback><text>The Hamilton-Jacobi equation involves first-order time derivative, not second-order.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\frac{\partial S}{\partial t} + \frac{1}{2m}\frac{\partial^2 S}{\partial q^2} + V(q) = 0\)]]></text>
+      <feedback><text>The momentum appears as \((\partial_q S)^2\), not as \(\partial^2_q S\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q02_Geodesics_Sphere</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Geodesics on the unit sphere \(S^2\) with the round metric satisfy which variational equation?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The geodesic equations \(\ddot{\theta} - \sin\theta\cos\theta\,\dot{\phi}^2 = 0\) and \(\ddot{\phi} + 2\cot\theta\,\dot{\theta}\dot{\phi} = 0\)]]></text>
+      <feedback><text>Correct. These are the Euler-Lagrange equations for the arc-length functional on \(S^2\) in spherical coordinates.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The equations \(\ddot{\theta} = 0\) and \(\ddot{\phi} = 0\)]]></text>
+      <feedback><text>These hold in flat Euclidean space, not on the curved sphere.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The equation \(\nabla^2 \phi = 0\) on \(S^2\)]]></text>
+      <feedback><text>This is the Laplace-Beltrami equation, not the geodesic equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The geodesic curvature vanishes: \(\kappa_g = \ddot{\gamma} \cdot N_S = 1\)]]></text>
+      <feedback><text>Geodesics have zero geodesic curvature \(\kappa_g = 0\), not \(\kappa_g = 1\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q03_Tonelli_Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Tonelli's theorem guarantees the existence of a minimizer for \(I[u] = \int_a^b F(x,u,u')\,dx\) subject to boundary conditions. Which conditions are required?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[F is continuous, \(F(x,u,p) \geq \alpha|p|^r - \beta\) for some \(\alpha > 0, r > 1\) (coercivity), and \(F\) is convex in \(p\)]]></text>
+      <feedback><text>Correct. Tonelli's theorem (direct method) requires coercivity (to bound minimizing sequences) and convexity in the derivative variable (for weak lower semicontinuity).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[F is twice differentiable and the Legendre condition \(F_{pp} > 0\) holds strictly everywhere]]></text>
+      <feedback><text>This is the strong Legendre condition sufficient for local extrema, but not Tonelli's global existence theorem.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[F is analytic and the Euler-Lagrange equation has a unique solution]]></text>
+      <feedback><text>Analyticity and uniqueness of E-L solutions are not the hypotheses of Tonelli's theorem.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The admissible class is finite-dimensional and F is bounded above]]></text>
+      <feedback><text>Tonelli works in infinite-dimensional Sobolev spaces; boundedness above is not the relevant condition.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q04_Isoperimetric_Lagrange</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In the isoperimetric problem of maximizing \(\int_0^L y\,dx\) subject to \(\int_0^L \sqrt{1+y'^2}\,dx = L\) (fixed perimeter) with \(y(0)=y(L)=0\), the extremal curves satisfy which equation?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\frac{d}{dx}\left(\frac{\lambda y'}{\sqrt{1+y'^2}}\right) = 1\), i.e., the curve has constant curvature \(\kappa = 1/\lambda\)]]></text>
+      <feedback><text>Correct. The augmented Lagrangian is \(y - \lambda\sqrt{1+y'^2}\); its Euler-Lagrange equation states constant curvature, giving circular arcs.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The curve satisfies \(y'' = 0\), giving a straight line]]></text>
+      <feedback><text>Straight lines minimize arc length but do not maximize area; they are not the isoperimetric extremals here.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The curve is a catenary \(y = a\cosh(x/a)\)]]></text>
+      <feedback><text>Catenaries arise for the hanging chain problem, not the isoperimetric problem with boundary conditions \(y=0\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The curve satisfies \(y'^2 = \lambda^2 - y^2\), giving an ellipse]]></text>
+      <feedback><text>This ODE gives an ellipse only if the metric weight differs; the isoperimetric extremal is a circular arc, not an ellipse.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q05_WeakStrong_Extremum</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following correctly distinguishes a weak local minimum from a strong local minimum for a functional \(I[y]\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[A weak minimum is a minimum over variations with small \(\|y-y_0\|_{C^1}\) (slope also controlled); a strong minimum over \(\|y-y_0\|_{C^0}\) only (slopes may be large)]]></text>
+      <feedback><text>Correct. Weak minimality controls both displacement and slope (\(C^1\) topology); strong minimality only controls displacement (\(C^0\) topology), so strong minimum implies weak minimum but not vice versa.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A weak minimum has \(\delta^2 I > 0\) while a strong minimum has \(\delta I = 0\)]]></text>
+      <feedback><text>Both require \(\delta I = 0\) (stationarity); the distinction is in the topology of comparison functions, not in the order of variation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Strong minimum means the Weierstrass E-function is negative; weak minimum means \(F_{y'y'} > 0\)]]></text>
+      <feedback><text>The signs are reversed: strong minimum requires \(E \geq 0\), weak minimum requires \(F_{y'y'} \geq 0\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Weak and strong minima coincide whenever the admissible class is convex]]></text>
+      <feedback><text>Convexity of the admissible class does not make the two notions coincide; the distinction is topological.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q06_Second_Variation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The second variation of \(I[y] = \int_a^b F(x,y,y')\,dx\) at a stationary point \(y_0\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\delta^2 I[y_0,\eta] = \int_a^b \left(F_{yy}\eta^2 + 2F_{yy'}\eta\eta' + F_{y'y'}\eta'^2\right)dx\)]]></text>
+      <feedback><text>Correct. This is obtained by expanding \(I[y_0+\epsilon\eta]\) to second order in \(\epsilon\) and collecting the \(\epsilon^2\) terms.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\delta^2 I[y_0,\eta] = \int_a^b \left(F_{yy}\eta + F_{y'y'}\eta'\right)dx\)]]></text>
+      <feedback><text>The second variation is quadratic in \(\eta\), not linear; the cross term \(2F_{yy'}\eta\eta'\) is also missing.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\delta^2 I[y_0,\eta] = \int_a^b F_{y'y'}\eta'^2\,dx\) only]]></text>
+      <feedback><text>The full second variation includes \(F_{yy}\) and cross terms; this formula omits them.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\delta^2 I[y_0,\eta] = \frac{d^2}{d\epsilon^2}I[y_0] \cdot \int_a^b \eta^2\,dx\)]]></text>
+      <feedback><text>The second variation is not simply a scalar multiple of \(\int\eta^2\,dx\); it depends on the second derivatives of \(F\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q07_Sturm_Liouville_Variational</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The first eigenvalue \(\lambda_1\) of the Sturm-Liouville problem \(-(py')' + qy = \lambda wy\) on \([a,b]\) with Dirichlet conditions equals]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\lambda_1 = \min_{y \neq 0,\, y(a)=y(b)=0} \frac{\int_a^b (p\,y'^2 + q\,y^2)\,dx}{\int_a^b w\,y^2\,dx}\)]]></text>
+      <feedback><text>Correct. This is the Rayleigh quotient characterization; the minimum is attained by the first eigenfunction.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\lambda_1 = \max_{y \neq 0,\, y(a)=y(b)=0} \frac{\int_a^b (p\,y'^2 + q\,y^2)\,dx}{\int_a^b w\,y^2\,dx}\)]]></text>
+      <feedback><text>The first eigenvalue is the minimum, not the maximum; higher eigenvalues are characterized by min-max over subspaces.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\lambda_1 = \min_{y \neq 0} \frac{\int_a^b q\,y^2\,dx}{\int_a^b w\,y^2\,dx}\)]]></text>
+      <feedback><text>The kinetic term \(\int p\,y'^2\,dx\) is missing from the numerator.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\lambda_1\) is determined only by the boundary conditions, independent of \(p, q, w\)]]></text>
+      <feedback><text>The eigenvalue depends on all of \(p, q, w\); only in very special cases can \(p,q,w\) be ignored.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q08_GeodesicOnCylinder</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Geodesics on the cylinder \(x^2 + y^2 = R^2\) parametrized as \((\theta, z)\) with metric \(ds^2 = R^2\,d\theta^2 + dz^2\) are]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Helices: \(\theta(t) = \omega t + \theta_0\), \(z(t) = vt + z_0\) for constants \(\omega, v\) (which unroll to straight lines on the flat rectangle \([0,2\pi R]\times\mathbb{R}\))]]></text>
+      <feedback><text>Correct. Unrolling the cylinder to a flat strip shows geodesics become straight lines, which correspond to helices (including circles \(v=0\) and lines \(\omega=0\)) on the cylinder.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Only circles \(z = \text{const}\)]]></text>
+      <feedback><text>Circles are special geodesics (\(\omega \neq 0, v=0\)) but not all geodesics on the cylinder.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Only vertical lines \(\theta = \text{const}\)]]></text>
+      <feedback><text>Vertical lines are also geodesics (\(\omega=0, v\neq 0\)) but again only special cases.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Curves of constant geodesic curvature \(\kappa_g = 1/R\)]]></text>
+      <feedback><text>Geodesics have \(\kappa_g = 0\), not \(\kappa_g = 1/R\); the latter would be latitudinal circles on a sphere.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q09_Pontryagin</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In the optimal control problem: minimize \(\int_0^T L(x,u)\,dt\) subject to \(\dot{x} = f(x,u)\), the Pontryagin Maximum Principle states that along an optimal trajectory there exists a costate \(\psi\) such that]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The Hamiltonian \(\mathcal{H}(x,u,\psi) = \psi\cdot f(x,u) - L(x,u)\) is maximized over \(u\) at each time, and \(\dot{\psi} = -\partial_x \mathcal{H}\)]]></text>
+      <feedback><text>Correct. PMP: the optimal control maximizes \(\mathcal{H}\) pointwise, and the costate satisfies the adjoint equation \(\dot\psi=-\partial_x\mathcal{H}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The control \(u\) satisfies \(\partial_u L = 0\) and \(\dot{x} = \partial_\psi \mathcal{H}\)]]></text>
+      <feedback><text>The stationarity condition \(\partial_u L = 0\) is insufficient; the PMP requires maximization of \(\mathcal{H}\) over admissible controls, including boundary solutions.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Euler-Lagrange equations \(\partial_x L - \frac{d}{dt}\partial_{\dot{x}} L = 0\) hold for the augmented Lagrangian]]></text>
+      <feedback><text>E-L equations apply to unconstrained problems; PMP extends optimality to constrained control sets where classical E-L conditions may fail.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\mathcal{H} = 0\) along the optimal trajectory for all autonomous problems]]></text>
+      <feedback><text>For autonomous problems \(\mathcal{H}\) is constant (not necessarily zero); \(\mathcal{H}=0\) applies in time-optimal control with free terminal time.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q10_MinimalSurface</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The minimal surface equation (zero mean curvature) for a graph \(z = u(x,y)\) over a domain \(\Omega \subset \mathbb{R}^2\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\text{div}\!\left(\frac{\nabla u}{\sqrt{1+|\nabla u|^2}}\right) = 0\), i.e., \((1+u_y^2)u_{xx} - 2u_xu_yu_{xy} + (1+u_x^2)u_{yy} = 0\)]]></text>
+      <feedback><text>Correct. This is the Euler-Lagrange equation of the area functional \(\iint\sqrt{1+|\nabla u|^2}\,dA\); it encodes zero mean curvature.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Delta u = u_{xx} + u_{yy} = 0\)]]></text>
+      <feedback><text>This is the Laplace equation for harmonic functions (Dirichlet energy), not the minimal surface equation (area functional).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u_{xx}u_{yy} - u_{xy}^2 = 0\)]]></text>
+      <feedback><text>This is the Monge-Ampère equation \(\det(D^2 u)=0\), not the minimal surface equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(|\nabla u|^2 \Delta u = 0\)]]></text>
+      <feedback><text>This equation forces either \(\nabla u=0\) or \(\Delta u=0\), neither of which is the minimal surface condition.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q11_Lagrange_Constraint</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Consider minimizing \(I[y] = \int_0^1 y'^2\,dx\) subject to \(\int_0^1 y^2\,dx = 1\) and \(y(0)=y(1)=0\). The extremals and the minimum value of \(I\) are]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Extremals are \(y_n = \sqrt{2}\sin(n\pi x)\) for \(n=1,2,\ldots\) with \(I[y_n] = n^2\pi^2\); the minimum is \(\pi^2\) at \(n=1\)]]></text>
+      <feedback><text>Correct. The E-L equation for the augmented problem is \(-2y'' = 2\lambda y\), giving eigenfunctions \(\sin(n\pi x)\) with eigenvalues \(\lambda_n = n^2\pi^2\); \(n=1\) gives the minimum.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Extremals are \(y = \sqrt{2}\cos(n\pi x)\) with minimum \(I = \pi^2\)]]></text>
+      <feedback><text>Cosines do not satisfy \(y(0)=0\); the boundary conditions force sine functions.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[There is no minimum since \(I[y]\) is unbounded below on the constraint set]]></text>
+      <feedback><text>Since \(I[y]=\int y'^2\,dx \geq 0\) and equals \(n^2\pi^2 > 0\) for the constrained eigenfunctions, it is bounded below by \(\pi^2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The minimum is \(I = 1\), achieved by \(y = 1/\sqrt{2}\) on \([0,1]\)]]></text>
+      <feedback><text>The function \(y=1/\sqrt{2}\) does not satisfy \(y(0)=y(1)=0\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q12_Dirichlet_Neumann</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the Dirichlet energy \(E[u] = \frac{1}{2}\int_\Omega |\nabla u|^2\,dx\) on a bounded domain \(\Omega\), the natural boundary conditions (Neumann BC) arising from the variational principle are]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\frac{\partial u}{\partial n}\Big|_{\partial\Omega} = 0\) where \(n\) is the outward unit normal]]></text>
+      <feedback><text>Correct. Integrating by parts gives the boundary term \(\int_{\partial\Omega}(\partial_n u)\,\eta\,dS\); for this to vanish for all \(\eta\) at the boundary, we need \(\partial_n u = 0\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u|_{\partial\Omega} = 0\)]]></text>
+      <feedback><text>This is the Dirichlet (essential) boundary condition, imposed externally, not derived as a natural condition from the variational principle.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Delta u|_{\partial\Omega} = 0\)]]></text>
+      <feedback><text>The natural BC involves the normal derivative, not the Laplacian, on \(\partial\Omega\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\nabla u \cdot \nabla(\partial_n u) = 0\) on \(\partial\Omega\)]]></text>
+      <feedback><text>The natural BC is the simpler condition \(\partial_n u = 0\); this more complex expression does not arise from the standard integration by parts.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q13_Noether_Energy</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For a Lagrangian \(L(q,\dot{q})\) with no explicit time dependence, Noether's theorem applied to time-translation symmetry \(t \mapsto t+\epsilon\) gives which conserved quantity?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The energy \(H = \dot{q}\frac{\partial L}{\partial \dot{q}} - L\) (the Hamiltonian)]]></text>
+      <feedback><text>Correct. Time-translation invariance via Noether's theorem yields conservation of the Hamiltonian (energy) \(H = p\dot{q} - L\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The momentum \(p = \frac{\partial L}{\partial \dot{q}}\)]]></text>
+      <feedback><text>Momentum conservation arises from spatial-translation invariance, not time-translation invariance.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The angular momentum \(\ell = q \times \frac{\partial L}{\partial \dot{q}}\)]]></text>
+      <feedback><text>Angular momentum conservation arises from rotational invariance, not time-translation invariance.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The action itself \(S = \int L\,dt\) is conserved]]></text>
+      <feedback><text>The action is not a conserved quantity along trajectories; Noether's theorem produces conserved charges, not the action.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q14_Direct_Method_Sobolev</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In the direct method of the calculus of variations, a minimizing sequence \(\{u_n\}\) in \(W^{1,p}_0(\Omega)\) for the functional \(I[u]=\int_\Omega F(x,u,\nabla u)\,dx\) converges (up to a subsequence) weakly in \(W^{1,p}_0(\Omega)\). The key ingredient ensuring \(I[u_0] \leq \liminf I[u_n]\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Weak lower semicontinuity of \(I\), which follows from convexity of \(F\) in \(\nabla u\)]]></text>
+      <feedback><text>Correct. Convexity of the integrand in the gradient variable implies weak lower semicontinuity (via Mazur's lemma and convexity of norm), which is the crucial ingredient for passing to the limit.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Strong convergence of \(u_n\) in \(L^p(\Omega)\), which gives continuity of \(I\)]]></text>
+      <feedback><text>Strong convergence cannot be assumed in the direct method; only weak convergence holds in general, requiring lower semicontinuity rather than continuity.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Palais-Smale condition, ensuring all gradient flow sequences converge]]></text>
+      <feedback><text>Palais-Smale is used in mountain pass and minimax theorems, not the standard direct method for minimization.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Compactness of the Sobolev embedding \(W^{1,p}_0 \hookrightarrow L^p\), which implies strong convergence]]></text>
+      <feedback><text>The compact embedding gives strong \(L^p\) convergence of a subsequence but does not by itself give \(I[u_0]\leq\liminf I[u_n]\); weak lower semicontinuity is the needed step.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q15_Conjugate_Points</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Consider the functional \(I[y] = \int_0^T y'^2 - y^2\,dx\) with \(y(0)=0\). The Jacobi equation associated with this functional is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(h'' + h = 0\), giving \(h(x) = A\sin(x) + B\cos(x)\); the first conjugate point to \(x=0\) is at \(x=\pi\)]]></text>
+      <feedback><text>Correct. For \(F = y'^2 - y^2\), \(F_{y'y'}=2\), \(F_{yy}=-2\). The Jacobi equation is \(-\frac{d}{dx}(F_{y'y'}h') + F_{yy}h = 0\), i.e., \(-2h'' - 2h = 0\), so \(h''+h=0\). First zero of \(\sin(x)\) after \(0\) is at \(x=\pi\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(h'' - h = 0\), with first conjugate point at \(x=\infty\) (no conjugate point)]]></text>
+      <feedback><text>Sign error: \(F_{yy}=-2\) gives \(h''+h=0\) (oscillatory), not \(h''-h=0\) (non-oscillatory).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(h'' = 0\), so conjugate points never occur]]></text>
+      <feedback><text>The \(F_{yy}=-2\) term contributes; the Jacobi equation is not simply \(h''=0\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(h'' + 2h = 0\), with first conjugate point at \(x=\pi/\sqrt{2}\)]]></text>
+      <feedback><text>After dividing by 2, the Jacobi equation is \(h''+h=0\), not \(h''+2h=0\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q16_Brachistochrone_Time</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A bead slides from \((0,0)\) to \((a, -b)\) along a frictionless wire. The brachistochrone (cycloid) solution is parametrized as \(x = r(\theta - \sin\theta)\), \(y = -r(1-\cos\theta)\). The total descent time is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(T = \sqrt{\frac{r}{g}}\,\theta_1\) where \(\theta_1\) is the parameter value at the endpoint \((a,-b)\)]]></text>
+      <feedback><text>Correct. Integrating \(dt = ds/v\) along the cycloid with \(v=\sqrt{2g\,|y|}\) and using the parametric form gives \(T = \sqrt{r/g}\,\theta_1\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(T = \sqrt{2b/g}\) (same as free fall through height \(b\))]]></text>
+      <feedback><text>Free fall time is \(\sqrt{2b/g}\) but the brachistochrone is shorter than the straight-line path (whose time exceeds \(\sqrt{2b/g}\)); \(T=\sqrt{r/g}\,\theta_1\) is the correct cycloid time.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(T = \frac{\pi}{2}\sqrt{r/g}\) always, regardless of the endpoint]]></text>
+      <feedback><text>This would be the quarter-period of the cycloid only if \(\theta_1=\pi/2\); in general \(\theta_1\) depends on the endpoint \((a,-b)\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(T = \sqrt{(a^2+b^2)/(2gb)}\) (straight-line descent time)]]></text>
+      <feedback><text>This is the time for the straight line, not the brachistochrone; the cycloid gives a shorter time.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q17_CatenaryBoundary</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The catenary \(y = a\cosh\!\left(\frac{x-b}{a}\right)\) is the solution to which variational problem?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Minimize the potential energy \(\int_{x_1}^{x_2} y\sqrt{1+y'^2}\,dx\) (hanging chain with linear density, minimizing center of mass height)]]></text>
+      <feedback><text>Correct. A uniform flexible chain hanging between two fixed points minimizes \(\int y\,ds = \int y\sqrt{1+y'^2}\,dx\), whose E-L equation via the Beltrami identity gives the catenary.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Minimize the arc length \(\int_{x_1}^{x_2} \sqrt{1+y'^2}\,dx\) (shortest curve)]]></text>
+      <feedback><text>Arc length minimization gives straight lines, not catenaries.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Minimize the surface area \(\int_{x_1}^{x_2} 2\pi y\sqrt{1+y'^2}\,dx\) of revolution]]></text>
+      <feedback><text>This is the minimal surface (catenoid) problem; its solution is also a catenary, but the problem setup is surface area, not potential energy of a chain.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Minimize \(\int_{x_1}^{x_2} y'^2\,dx\) subject to fixed arc length]]></text>
+      <feedback><text>This constrained problem gives a different equation; the catenary arises without an explicit arc-length constraint when minimizing potential energy.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q18_EulerPoisson</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Euler-Poisson equation for a functional \(I[y] = \int_a^b F(x,y,y',y'')\,dx\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(F_y - \frac{d}{dx}F_{y'} + \frac{d^2}{dx^2}F_{y''} = 0\)]]></text>
+      <feedback><text>Correct. Integration by parts twice produces the alternating-sign Euler-Poisson equation, which reduces to the standard E-L equation when \(F\) does not depend on \(y''\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(F_y - \frac{d}{dx}F_{y'} - \frac{d^2}{dx^2}F_{y''} = 0\)]]></text>
+      <feedback><text>The sign of the second-derivative term is \(+\), not \(-\); each integration by parts introduces a sign change.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(F_{y''} - \frac{d}{dx}F_{y'} + \frac{d^2}{dx^2}F_y = 0\)]]></text>
+      <feedback><text>The roles of \(y, y', y''\) and the corresponding derivative operators are transposed; this is not the correct Euler-Poisson equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\frac{d^2}{dx^2}F_{y''} = 0\)]]></text>
+      <feedback><text>This omits the \(F_y\) and \(F_{y'}\) contributions; the full Euler-Poisson equation involves all three terms.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q19_VariationalInequality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In the obstacle problem, one seeks \(u \in K = \{v \in H^1_0(\Omega) : v \geq \psi\}\) minimizing \(E[u] = \frac{1}{2}\int_\Omega |\nabla u|^2\,dx - \int_\Omega fu\,dx\). The optimality condition is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The variational inequality: \(\int_\Omega \nabla u \cdot \nabla(v-u)\,dx \geq \int_\Omega f(v-u)\,dx\) for all \(v \in K\)]]></text>
+      <feedback><text>Correct. Since \(K\) is a convex set (not a subspace), the optimality condition is a variational inequality: \(\langle -\Delta u - f, v-u\rangle \geq 0\) for all \(v \in K\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(-\Delta u = f\) on all of \(\Omega\) with \(u|_{\partial\Omega}=0\)]]></text>
+      <feedback><text>This holds only in the region where \(u > \psi\) (the non-contact set); on the contact set \(\{u=\psi\}\), \(-\Delta u \geq f\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = \psi\) everywhere on \(\Omega\)]]></text>
+      <feedback><text>This would be the trivial obstacle solution; the minimizer equals \(\psi\) only on the contact set \(\{u=\psi\}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Euler-Lagrange equation \(-\Delta u = f\) holds everywhere in \(\Omega\) including the contact set]]></text>
+      <feedback><text>On the contact set \(\{u=\psi\}\), we have \(-\Delta u \geq f\) (not equality); the full condition is the complementarity system \((-\Delta u-f)(u-\psi)=0\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>CV_ADV_Q20_BifurcationBuckled</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Euler buckling load for a simply supported column of length \(L\), bending stiffness \(EI\), under axial compression \(P\), is determined by minimizing \(I[y] = \frac{EI}{2}\int_0^L y''^2\,dx - \frac{P}{2}\int_0^L y'^2\,dx\). The critical load \(P_{\text{cr}}\) is]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(P_{\text{cr}} = \frac{\pi^2 EI}{L^2}\) (Euler's formula), achieved at the buckling mode \(y = A\sin(\pi x/L)\)]]></text>
+      <feedback><text>Correct. Stationarity of \(I\) gives \(EI\,y'''' + P\,y'' = 0\); with simply supported BC (\(y=y''=0\) at ends), non-trivial solutions exist first at \(P=\pi^2 EI/L^2\) with mode \(\sin(\pi x/L)\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P_{\text{cr}} = \frac{4\pi^2 EI}{L^2}\) (for a cantilever column)]]></text>
+      <feedback><text>The factor 4 applies to a fixed-free (cantilever) column with effective length \(2L\); for simply supported ends, \(P_{\text{cr}}=\pi^2 EI/L^2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P_{\text{cr}} = \frac{2EI}{L^2}\)]]></text>
+      <feedback><text>Missing the \(\pi^2\) factor; the critical load is \(\pi^2 EI/L^2 \approx 9.87\,EI/L^2\), not \(2EI/L^2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(P_{\text{cr}} = \frac{EI}{L^2}\) with buckling mode \(y=A\sin(2\pi x/L)\)]]></text>
+      <feedback><text>The mode \(\sin(2\pi x/L)\) corresponds to \(P=4\pi^2 EI/L^2\) (second buckling load), not \(EI/L^2\).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

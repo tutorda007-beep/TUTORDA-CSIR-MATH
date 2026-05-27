@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Linear Algebra/Matrices and Determinants</text>
+    </category>
+    <info format="html"><text>CSIR NET level MCQ questions on Matrices and Determinants</text></info>
+  </question>
+
+  <!-- Q1 -->
+  <question type="multichoice">
+    <name><text>LA13-Q01 Determinant of Block Matrix</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(A\) be \(m\times m\) and \(D\) be \(n\times n\) invertible matrices. Then \(\det\begin{pmatrix}A & B \\ C & D\end{pmatrix}\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\det(D)\cdot\det(A - BD^{-1}C)\)]]></text><feedback format="html"><text>Correct. By Schur complement: \(\det\begin{pmatrix}A&B\\C&D\end{pmatrix}=\det(D)\det(A-BD^{-1}C)\). This is the Schur complement formula.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\det(A)\det(D)\)]]></text><feedback format="html"><text>Incorrect. This is true only when \(B=0\) or \(C=0\) (block triangular case).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\det(A)\det(D) - \det(B)\det(C)\)]]></text><feedback format="html"><text>Incorrect. There is no such simple subtraction formula in general.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\det(AD - BC)\)]]></text><feedback format="html"><text>Incorrect. This would be valid only for \(1\times1\) blocks (the \(2\times2\) determinant).</text></feedback></answer>
+  </question>
+
+  <!-- Q2 -->
+  <question type="multichoice">
+    <name><text>LA13-Q02 Determinant of Product</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(A\) and \(B\) are \(n\times n\) matrices with \(\det(A)=3\) and \(\det(B)=-2\), then \(\det(A^2B^T)\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(-18\)]]></text><feedback format="html"><text>Correct. \(\det(A^2B^T)=\det(A)^2\det(B^T)=9\cdot(-2)=-18\). (Using \(\det(B^T)=\det(B)\).)</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(18\)]]></text><feedback format="html"><text>Incorrect. \(\det(B)=-2\) so \(\det(A^2B^T)=9\times(-2)=-18\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(-6\)]]></text><feedback format="html"><text>Incorrect. \(\det(A^2)=9\), not \(3+3=6\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(6\)]]></text><feedback format="html"><text>Incorrect. \(\det(A^2B^T) = 9\cdot(-2) = -18\).</text></feedback></answer>
+  </question>
+
+  <!-- Q3 -->
+  <question type="multichoice">
+    <name><text>LA13-Q03 Cofactor Expansion</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The \((i,j)\) cofactor of a matrix \(A\) is \(C_{ij} = (-1)^{i+j}M_{ij}\) where \(M_{ij}\) is the \((i,j)\) minor. The inverse formula states:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(A^{-1} = \frac{1}{\det A}\text{adj}(A)\) where \(\text{adj}(A)_{ij} = C_{ji}\) (transpose of cofactor matrix)]]></text><feedback format="html"><text>Correct. The adjugate (classical adjoint) is the transpose of the cofactor matrix, and \(A^{-1}=\text{adj}(A)/\det(A)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A^{-1} = \frac{1}{\det A}C\) where \(C_{ij}=(-1)^{i+j}M_{ij}\) (cofactor matrix, not transposed)]]></text><feedback format="html"><text>Incorrect. The adjugate is the TRANSPOSE of the cofactor matrix: \((adj\,A)_{ij}=C_{ji}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A^{-1} = \det(A)\cdot\text{adj}(A)\)]]></text><feedback format="html"><text>Incorrect. It is \(A^{-1} = \text{adj}(A)/\det(A)\), not multiplied by the determinant.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A^{-1} = \text{adj}(A)\)]]></text><feedback format="html"><text>Incorrect. Division by \(\det(A)\) is required: \(A\cdot\text{adj}(A)=\det(A)\cdot I\).</text></feedback></answer>
+  </question>
+
+  <!-- Q4 -->
+  <question type="multichoice">
+    <name><text>LA13-Q04 Vandermonde Determinant</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Vandermonde determinant \(\det\begin{pmatrix}1&a&a^2\\1&b&b^2\\1&c&c^2\end{pmatrix}\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\((b-a)(c-a)(c-b)\)]]></text><feedback format="html"><text>Correct. The Vandermonde determinant for nodes \(a,b,c\) is \(\prod_{i>j}(x_i-x_j)=(b-a)(c-a)(c-b)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\((a-b)(b-c)(a-c)\)]]></text><feedback format="html"><text>Incorrect. The correct formula is \((b-a)(c-a)(c-b)\). The sign depends on the ordering convention.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(abc\)]]></text><feedback format="html"><text>Incorrect. The Vandermonde determinant factors as a product of differences of the parameters, not their product.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(a^2(b-c)+b^2(c-a)+c^2(a-b)\)]]></text><feedback format="html"><text>Incorrect. This is an expanded form that differs from the standard Vandermonde result by sign. The standard result is \((b-a)(c-a)(c-b)\).</text></feedback></answer>
+  </question>
+
+  <!-- Q5 -->
+  <question type="multichoice">
+    <name><text>LA13-Q05 Trace Properties</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following is true about the trace of a matrix?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{tr}(AB) = \text{tr}(BA)\) for any \(m\times n\) matrix \(A\) and \(n\times m\) matrix \(B\)]]></text><feedback format="html"><text>Correct. \(\text{tr}(AB)=\sum_{i,j}A_{ij}B_{ji}=\text{tr}(BA)\). This is the cyclic property of trace.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{tr}(AB) = \text{tr}(A)\text{tr}(B)\) for square matrices]]></text><feedback format="html"><text>Incorrect. Trace is not multiplicative. For example, \(\text{tr}(I_n\cdot A)=\text{tr}(A)\neq n\cdot\text{tr}(A)\) in general.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{tr}(A+B) = \text{tr}(A)\cdot\text{tr}(B)\)]]></text><feedback format="html"><text>Incorrect. Trace is linear: \(\text{tr}(A+B)=\text{tr}(A)+\text{tr}(B)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{tr}(A^{-1}) = 1/\text{tr}(A)\)]]></text><feedback format="html"><text>Incorrect. The trace of the inverse is not simply the reciprocal of the trace.</text></feedback></answer>
+  </question>
+
+  <!-- Q6 -->
+  <question type="multichoice">
+    <name><text>LA13-Q06 Matrix Exponential</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For a matrix \(A\), the matrix exponential is \(e^A = \sum_{k=0}^\infty \frac{A^k}{k!}\). Which of the following holds?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\det(e^A) = e^{\text{tr}(A)}\)]]></text><feedback format="html"><text>Correct. If eigenvalues of \(A\) are \(\lambda_i\), eigenvalues of \(e^A\) are \(e^{\lambda_i}\), so \(\det(e^A)=\prod e^{\lambda_i}=e^{\sum\lambda_i}=e^{\text{tr}A}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(e^Ae^B = e^{A+B}\) for all matrices \(A,B\)]]></text><feedback format="html"><text>Incorrect. \(e^Ae^B=e^{A+B}\) only when \(AB=BA\) (they commute). In general, the Baker-Campbell-Hausdorff formula applies.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(e^A\) is singular for some matrices \(A\)]]></text><feedback format="html"><text>Incorrect. \(e^A\) is always invertible with \((e^A)^{-1}=e^{-A}\), regardless of \(A\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{tr}(e^A) = e^{\det(A)}\)]]></text><feedback format="html"><text>Incorrect. The correct relation is \(\det(e^A)=e^{\text{tr}A}\), not \(\text{tr}(e^A)=e^{\det A}\).</text></feedback></answer>
+  </question>
+
+  <!-- Q7 -->
+  <question type="multichoice">
+    <name><text>LA13-Q07 Rank-Deficient Matrix</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A matrix \(A\) is rank-deficient (singular) iff \(\det(A)=0\). Which statement follows directly?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[The homogeneous system \(Ax=0\) has a nontrivial solution iff \(\det(A)=0\)]]></text><feedback format="html"><text>Correct. \(Ax=0\) has a nontrivial solution iff the null space is nontrivial iff \(A\) is not invertible iff \(\det(A)=0\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(Ax=b\) has no solution for any \(b\)]]></text><feedback format="html"><text>Incorrect. Even for singular \(A\), \(Ax=b\) may have solutions (infinitely many) if \(b\in\text{col}(A)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\det(A)=0\) implies \(A=0\)]]></text><feedback format="html"><text>Incorrect. Many nonzero matrices have zero determinant (e.g., any rank-deficient matrix).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[All eigenvalues of \(A\) are zero if \(\det(A)=0\)]]></text><feedback format="html"><text>Incorrect. \(\det(A)=0\) means zero is an eigenvalue, but other eigenvalues can be nonzero.</text></feedback></answer>
+  </question>
+
+  <!-- Q8 -->
+  <question type="multichoice">
+    <name><text>LA13-Q08 LU Decomposition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The LU decomposition of a square matrix \(A\) (without pivoting) writes \(A = LU\) where \(L\) is lower triangular with 1s on the diagonal and \(U\) is upper triangular. Which is true?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(\det(A) = \det(U)\) (product of diagonal entries of \(U\))</text><feedback format="html"><text>Correct. Since \(\det(L)=1\) (all 1s on diagonal), \(\det(A)=\det(L)\det(U)=\det(U)=\prod u_{ii}\).</text></feedback></answer>
+    <answer fraction="0"><text>Every matrix has an LU decomposition without pivoting</text><feedback format="html"><text>Incorrect. Some matrices require row permutation (partial pivoting) for LU decomposition, e.g., \(\begin{pmatrix}0&1\\1&0\end{pmatrix}\).</text></feedback></answer>
+    <answer fraction="0"><text>The LU decomposition is unique for every invertible matrix</text><feedback format="html"><text>Incorrect. The decomposition is unique only with the normalization that \(L\) has 1s on the diagonal; the \(U\) diagonal entries can be redistributed.</text></feedback></answer>
+    <answer fraction="0"><text>\(L = U^T\) always</text><feedback format="html"><text>Incorrect. \(L\) and \(U\) are generally unrelated except for symmetric positive definite matrices (\(A=LDL^T\) Cholesky).</text></feedback></answer>
+  </question>
+
+  <!-- Q9 -->
+  <question type="multichoice">
+    <name><text>LA13-Q09 Hadamard's Inequality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Hadamard's inequality states: for an \(n\times n\) real matrix \(A\) with columns \(a_1,\ldots,a_n\), \(|\det(A)| \leq \prod_{j=1}^n \|a_j\|\). Equality holds iff:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>The columns are mutually orthogonal</text><feedback format="html"><text>Correct. Hadamard equality holds iff the columns form an orthogonal set. Geometrically, the volume of the parallelepiped is maximized when the edges are perpendicular.</text></feedback></answer>
+    <answer fraction="0"><text>All columns have unit norm</text><feedback format="html"><text>Incorrect. Unit norm columns don't guarantee equality; orthogonality is the key condition.</text></feedback></answer>
+    <answer fraction="0"><text>\(\det(A) = 0\)</text><feedback format="html"><text>Incorrect. \(\det=0\) gives equality trivially (both sides are 0 if some column is zero), but the meaningful equality condition is orthogonality with nonzero columns.</text></feedback></answer>
+    <answer fraction="0"><text>\(A\) is symmetric</text><feedback format="html"><text>Incorrect. Symmetry does not imply equality in Hadamard's inequality.</text></feedback></answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>LA13-Q10 Determinant and Row Operations</text></name>
+    <questiontext format="html">
+      <text><![CDATA[How does the determinant change under each elementary row operation?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[Row swap: \(\det\to-\det\); multiply row by \(c\): \(\det\to c\cdot\det\); add multiple of row to another: \(\det\) unchanged]]></text><feedback format="html"><text>Correct. These are the fundamental effects of elementary row operations on the determinant.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Row swap: \(\det\to\det\); multiply row by \(c\): \(\det\to c\cdot\det\); add multiple of row: \(\det\to\det+c\)]]></text><feedback format="html"><text>Incorrect. Row swaps negate the determinant; adding a multiple of one row to another does not change the determinant.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[All three operations leave \(\det\) unchanged]]></text><feedback format="html"><text>Incorrect. Row swaps negate \(\det\) and scaling multiplies \(\det\) by the scalar.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Row swap: \(\det\to0\); multiply row: \(\det\to0\)]]></text><feedback format="html"><text>Incorrect. These operations change the sign or scale the determinant; they don't make it zero.</text></feedback></answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>LA13-Q11 Tridiagonal Determinant</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(D_n = \det(T_n)\) where \(T_n\) is the \(n\times n\) tridiagonal matrix with 2s on the diagonal and \(-1\)s on the super/sub-diagonals. The recurrence is \(D_n = 2D_{n-1} - D_{n-2}\), with \(D_1=2\), \(D_2=3\). What is \(D_n\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(D_n = n+1\)]]></text><feedback format="html"><text>Correct. Solving the recurrence \(D_n = 2D_{n-1}-D_{n-2}\) with initial conditions \(D_1=2, D_2=3\) gives \(D_n=n+1\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(D_n = 2^n\)]]></text><feedback format="html"><text>Incorrect. If \(D_n=2^n\), then \(D_1=2\), \(D_2=4\neq3\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(D_n = n^2\)]]></text><feedback format="html"><text>Incorrect. \(D_3=2\cdot3-2=4\) but \(3^2=9\neq4\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(D_n = 2n-1\)]]></text><feedback format="html"><text>Incorrect. \(D_1=1\neq2\) under this formula.</text></feedback></answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>LA13-Q12 Congruence and Sylvester's Law</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Sylvester's law of inertia states: for any real symmetric matrix \(A\), the number of positive, negative, and zero eigenvalues (the signature) is preserved under congruence transformations \(A\mapsto P^TAP\) for invertible \(P\). For \(A = \begin{pmatrix}1&0\\0&-1\end{pmatrix}\), the signature is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>One positive, one negative eigenvalue (signature \((1,1,0)\))</text><feedback format="html"><text>Correct. Eigenvalues are \(+1\) and \(-1\): one positive, one negative, zero zero-eigenvalues. Signature is \((1,1,0)\).</text></feedback></answer>
+    <answer fraction="0"><text>Two positive eigenvalues (signature \((2,0,0)\))</text><feedback format="html"><text>Incorrect. The eigenvalue \(-1\) is negative.</text></feedback></answer>
+    <answer fraction="0"><text>Two negative eigenvalues (signature \((0,2,0)\))</text><feedback format="html"><text>Incorrect. The eigenvalue \(+1\) is positive.</text></feedback></answer>
+    <answer fraction="0"><text>One positive, one zero eigenvalue (signature \((1,0,1)\))</text><feedback format="html"><text>Incorrect. Both eigenvalues \(\pm1\) are nonzero; the zero count is 0.</text></feedback></answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>LA13-Q13 Cramer's Rule</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Cramer's rule states: for \(Ax=b\) with invertible \(A\), the solution component \(x_i = \det(A_i)/\det(A)\) where \(A_i\) is \(A\) with its \(i\)-th column replaced by \(b\). For \(\begin{pmatrix}2&1\\5&3\end{pmatrix}\begin{pmatrix}x_1\\x_2\end{pmatrix}=\begin{pmatrix}1\\2\end{pmatrix}\), \(x_1\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(1\)</text><feedback format="html"><text>Correct. \(\det(A)=6-5=1\). \(A_1=\begin{pmatrix}1&1\\2&3\end{pmatrix}\), \(\det(A_1)=3-2=1\). So \(x_1=1/1=1\). (Check: \(x_2=\det\begin{pmatrix}2&1\\5&2\end{pmatrix}/1=(4-5)/1=-1\). Verify: \(2(1)+1(-1)=1\)✓, \(5(1)+3(-1)=2\)✓.)</text></feedback></answer>
+    <answer fraction="0"><text>\(2\)</text><feedback format="html"><text>Incorrect. \(\det(A_1)=1\cdot3-1\cdot2=1\), \(\det(A)=1\), so \(x_1=1\).</text></feedback></answer>
+    <answer fraction="0"><text>\(-1\)</text><feedback format="html"><text>Incorrect. \(x_1=1\); it is \(x_2=-1\).</text></feedback></answer>
+    <answer fraction="0"><text>\(3\)</text><feedback format="html"><text>Incorrect. Cramer's rule gives \(x_1=\det(A_1)/\det(A)=1/1=1\).</text></feedback></answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>LA13-Q14 Norm of Matrix</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The spectral norm (induced 2-norm) of a matrix \(A\) is \(\|A\|_2 = \sigma_{\max}(A)\), the largest singular value. For a real symmetric positive definite matrix \(A\) with eigenvalues \(0 < \lambda_1\leq\cdots\leq\lambda_n\), \(\|A\|_2\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\lambda_n\) (the largest eigenvalue)]]></text><feedback format="html"><text>Correct. For symmetric PD matrices, singular values equal eigenvalues, so the spectral norm is the largest eigenvalue \(\lambda_n\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\sqrt{\lambda_n}\)]]></text><feedback format="html"><text>Incorrect. Singular values of a symmetric PD matrix equal its eigenvalues (not square roots), so \(\|A\|_2=\lambda_n\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{tr}(A)/n\)]]></text><feedback format="html"><text>Incorrect. The spectral norm is the largest eigenvalue, not the average eigenvalue.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\sqrt{\text{tr}(A^2)}\)]]></text><feedback format="html"><text>Incorrect. \(\sqrt{\text{tr}(A^2)}=\|A\|_F\) is the Frobenius norm, not the spectral norm.</text></feedback></answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>LA13-Q15 Circulant Matrix</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A circulant matrix is determined by its first row \((c_0,c_1,\ldots,c_{n-1})\): each row is the previous row shifted one position right (cyclically). The eigenvalues of an \(n\times n\) circulant matrix are \(\lambda_k = \sum_{j=0}^{n-1}c_j\omega^{jk}\) for \(k=0,\ldots,n-1\), where \(\omega = e^{2\pi i/n}\). The eigenvectors are:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[The DFT basis vectors \(v_k = \frac{1}{\sqrt{n}}(1, \omega^k, \omega^{2k}, \ldots, \omega^{(n-1)k})^T\)]]></text><feedback format="html"><text>Correct. All circulant matrices of size \(n\) share the same eigenvectors: the columns of the DFT matrix.</text></feedback></answer>
+    <answer fraction="0"><text>The standard basis vectors \(e_1,\ldots,e_n\)</text><feedback format="html"><text>Incorrect. Circulant matrices are diagonalized by the DFT matrix, not the identity.</text></feedback></answer>
+    <answer fraction="0"><text>Arbitrary vectors depending on the specific circulant</text><feedback format="html"><text>Incorrect. All \(n\times n\) circulant matrices share the same eigenvectors (DFT basis).</text></feedback></answer>
+    <answer fraction="0"><text>The rows of the circulant matrix itself</text><feedback format="html"><text>Incorrect. The eigenvectors are the DFT columns, not the rows of the circulant.</text></feedback></answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>LA13-Q16 Woodbury Identity</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Sherman-Morrison-Woodbury identity states: for invertible \(A\) and matrices \(U,V\) of appropriate sizes, \((A+UCV)^{-1} = A^{-1} - A^{-1}U(C^{-1}+VA^{-1}U)^{-1}VA^{-1}\). As a special case (\(C=I, U=u, V=v^T\)), the rank-1 update formula \((A+uv^T)^{-1}\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(A^{-1} - \frac{A^{-1}uv^TA^{-1}}{1+v^TA^{-1}u}\)]]></text><feedback format="html"><text>Correct. The Sherman-Morrison formula: \((A+uv^T)^{-1}=A^{-1}-\frac{A^{-1}uv^TA^{-1}}{1+v^TA^{-1}u}\), valid when \(1+v^TA^{-1}u\neq0\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A^{-1} + A^{-1}uv^TA^{-1}\)]]></text><feedback format="html"><text>Incorrect. This is missing the denominator \(1+v^TA^{-1}u\) and has the wrong sign.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\((A^{-1}+uv^T)^{-1}\)]]></text><feedback format="html"><text>Incorrect. The rank-1 perturbation is to \(A\), not to \(A^{-1}\); the formula differs.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(A^{-1} \cdot (I - uv^T)\)]]></text><feedback format="html"><text>Incorrect. The Sherman-Morrison formula has a scalar denominator, not a simple matrix factor.</text></feedback></answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>LA13-Q17 Compound Matrix</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The \(k\)-th compound matrix \(C_k(A)\) of an \(n\times n\) matrix \(A\) has entries equal to the \(k\times k\) minors of \(A\). The size of \(C_k(A)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\binom{n}{k}\times\binom{n}{k}\)]]></text><feedback format="html"><text>Correct. There are \(\binom{n}{k}\) ways to choose \(k\) rows and \(\binom{n}{k}\) ways to choose \(k\) columns, giving a \(\binom{n}{k}\times\binom{n}{k}\) matrix.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(n^k \times n^k\)]]></text><feedback format="html"><text>Incorrect. The size is \(\binom{n}{k}\times\binom{n}{k}\), not \(n^k\times n^k\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(k\times k\)]]></text><feedback format="html"><text>Incorrect. Each entry of the compound matrix is a \(k\times k\) minor, but the compound matrix itself is \(\binom{n}{k}\times\binom{n}{k}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(n\times n\)]]></text><feedback format="html"><text>Incorrect. The compound matrix is larger than \(n\times n\) for most values of \(k\).</text></feedback></answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>LA13-Q18 Determinant of Sum</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For a rank-1 matrix \(A = uv^T\) (outer product of column vectors \(u\) and \(v\) in \(\mathbb{R}^n\), \(n\geq2\)), the determinant \(\det(I + uv^T)\) equals:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(1 + v^Tu\)]]></text><feedback format="html"><text>Correct. By the matrix determinant lemma: \(\det(I+uv^T)=1+v^Tu\). This follows from Sherman-Morrison or directly from the rank-1 update formula.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(1 + \|u\|\|v\|\)]]></text><feedback format="html"><text>Incorrect. The determinant is \(1+v^Tu\), the inner product, not the product of norms.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\det(u)\det(v)\)]]></text><feedback format="html"><text>Incorrect. \(u\) and \(v\) are vectors, not square matrices; their determinants are not defined.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(n + v^Tu\)]]></text><feedback format="html"><text>Incorrect. The matrix determinant lemma gives \(\det(I+uv^T)=1+v^Tu\), not \(n+v^Tu\).</text></feedback></answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>LA13-Q19 Pfaffian</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For a \(2n\times2n\) skew-symmetric matrix \(A\) (\(A^T=-A\)), the Pfaffian \(\text{pf}(A)\) satisfies \(\det(A) = \text{pf}(A)^2\). For the \(2\times2\) matrix \(A=\begin{pmatrix}0&a\\-a&0\end{pmatrix}\):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\text{pf}(A) = a\) and \(\det(A) = a^2\)]]></text><feedback format="html"><text>Correct. \(\det\begin{pmatrix}0&a\\-a&0\end{pmatrix}=0\cdot0-a\cdot(-a)=a^2\). The Pfaffian of the \(2\times2\) skew-symmetric matrix is just \(a\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{pf}(A) = a^2\) and \(\det(A) = a^4\)]]></text><feedback format="html"><text>Incorrect. \(\text{pf}(A)=a\) and \(\det(A)=a^2=\text{pf}(A)^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\det(A) = -a^2\)]]></text><feedback format="html"><text>Incorrect. \(\det\begin{pmatrix}0&a\\-a&0\end{pmatrix}=a^2\geq0\) (always non-negative for skew-symmetric).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{pf}(A) = 0\)]]></text><feedback format="html"><text>Incorrect. Unless \(a=0\), the Pfaffian is \(a\neq0\).</text></feedback></answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>LA13-Q20 Cauchy Matrix</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A Cauchy matrix has entries \(C_{ij} = \frac{1}{x_i+y_j}\) for distinct \(x_i\) and \(y_j\). Its determinant is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\det(C) = \frac{\prod_{1\leq i<j\leq n}(x_j-x_i)(y_j-y_i)}{\prod_{i,j}(x_i+y_j)}\)]]></text><feedback format="html"><text>Correct. The Cauchy determinant formula: the numerator is the product of differences among \(x_i\)s and among \(y_j\)s, and the denominator is the product of all \(x_i+y_j\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\det(C) = \prod_{i,j}\frac{1}{x_i+y_j}\)]]></text><feedback format="html"><text>Incorrect. This would be the product of all entries, not the determinant.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\det(C) = 0\) always]]></text><feedback format="html"><text>Incorrect. The Cauchy matrix is invertible (nonzero determinant) whenever the \(x_i\) are distinct and the \(y_j\) are distinct.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\det(C) = n!\prod_{i}(x_i+y_i)^{-1}\)]]></text><feedback format="html"><text>Incorrect. This is not the Cauchy determinant formula.</text></feedback></answer>
+  </question>
+
+</quiz>

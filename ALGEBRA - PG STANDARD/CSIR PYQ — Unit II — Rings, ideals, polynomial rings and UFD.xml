@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category>
+    <text><![CDATA[$course$/Advanced Algebra (M.Sc. Mathematics)/CSIR PYQ — Unit II — Rings, ideals, polynomial rings and UFD]]></text>
+  </category>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q1 — Z[x] is UFD but not PID</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Which of the following rings is a UFD but NOT a PID?]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(\mathbb{Z}[x]\).</strong><br>\(\mathbb{Z}[x]\) is a UFD (since \(\mathbb{Z}\) is a UFD and UFD is preserved under adjoining a variable). It is NOT a PID because the ideal \((2, x)=\{2f(x)+xg(x):f,g\in\mathbb{Z}[x]\}\) is not principal. \(\mathbb{Z}\) and \(\mathbb{Z}[i]\) are PIDs (in fact Euclidean domains). \(\mathbb{Q}[x]\) is also a PID.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathbb{Z}[x]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}[i]\) (Gaussian integers)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Q}[x]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q2 — Ideal (2,x) in Z[x]</text></name>
+  <questiontext format="html">
+    <text><![CDATA[In the ring \(\mathbb{Z}[x]\), the ideal \((2,x)\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Maximal.</strong><br>There is a surjective ring homomorphism \(\mathbb{Z}[x]\to\mathbb{F}_2\) (send \(x\mapsto 0\), reduce coefficients mod 2). Its kernel is exactly \((2,x)\). Since \(\mathbb{F}_2=\mathbb{Z}/2\mathbb{Z}\) is a field, \((2,x)\) is a maximal (and hence prime) ideal.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Maximal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Principal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Prime but not maximal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Neither prime nor maximal]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q3 — Z/nZ is field</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The ring \(\mathbb{Z}/n\mathbb{Z}\) is a field if and only if:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(n\) is prime.</strong><br>If \(n=p\) is prime, every non-zero element in \(\mathbb{Z}/p\mathbb{Z}\) is invertible (by Bezout), making it a field. If \(n\) is composite, say \(n=ab\) with \(1<a,b<n\), then \(\bar{a}\cdot\bar{b}=\bar{0}\) so \(\mathbb{Z}/n\mathbb{Z}\) has zero divisors and is not even an integral domain.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(n\) is prime]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\) is composite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\) is even]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\) is a perfect square]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q4 — Eisenstein's criterion</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Eisenstein's irreducibility criterion states that \(f(x)=a_nx^n+\cdots+a_0\in\mathbb{Z}[x]\) is irreducible over \(\mathbb{Q}\) if there exists a prime \(p\) such that:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(p\mid a_i\) for \(0\le i\le n-1\), \(p\nmid a_n\), and \(p^2\nmid a_0\).</strong><br>Under these conditions, if \(f=gh\) over \(\mathbb{Z}\), reducing mod \(p\) gives \(\bar{f}=\bar{a}_n x^n\) and both \(\bar{g},\bar{h}\) must be monomials. A constant-term argument using \(p^2\nmid a_0\) gives a contradiction.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(p\mid a_i\) for \(0\le i\le n-1\), \(p\nmid a_n\), \(p^2\nmid a_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\mid a_i\) for all \(i\), \(p^2\mid a_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\mid a_n\) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\mid a_0\) only]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q5 — Irreducibility of x⁴+1 over Q</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The polynomial \(x^4+1\) over \(\mathbb{Q}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Irreducible over \(\mathbb{Q}\).</strong><br>Substitute \(x\to x+1\): \((x+1)^4+1=x^4+4x^3+6x^2+4x+2\). By Eisenstein with \(p=2\): \(2\mid 4,6,4,2\) (all non-leading coefficients), \(2\nmid 1\) (leading), and \(4\nmid 2\). So \(x^4+1\) is irreducible over \(\mathbb{Q}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Irreducible over \(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reducible as a product of two quadratics over \(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has a rational root]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reducible over \(\mathbb{Q}\) but irreducible over \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q6 — Number of maximal ideals in Z/12Z</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The number of maximal ideals in the ring \(\mathbb{Z}/12\mathbb{Z}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 2.</strong><br>Maximal ideals of \(\mathbb{Z}/n\mathbb{Z}\) correspond to prime divisors of \(n\). Since \(12=2^2\cdot 3\), the prime divisors are 2 and 3. The maximal ideals are \((2)=\{0,2,4,6,8,10\}\) and \((3)=\{0,3,6,9\}\), giving exactly 2 maximal ideals.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q7 — Prime ideal characterisation</text></name>
+  <questiontext format="html">
+    <text><![CDATA[In a commutative ring \(R\) with unity, an ideal \(P\) is prime if and only if:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(R/P\) is an integral domain.</strong><br>By definition, \(P\) is prime iff \(ab\in P\Rightarrow a\in P\) or \(b\in P\). This is equivalent to \(R/P\) having no zero divisors, i.e., \(R/P\) is an integral domain.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(R/P\) is an integral domain]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R/P\) is a field]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P=\{0\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P\) is finitely generated]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q8 — Maximal ideal characterisation</text></name>
+  <questiontext format="html">
+    <text><![CDATA[In a commutative ring \(R\) with unity, an ideal \(M\) is maximal if and only if:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(R/M\) is a field.</strong><br>\(M\) is maximal iff there is no ideal strictly between \(M\) and \(R\), iff \(R/M\) has no non-trivial ideals, iff \(R/M\) is a field. Since every field is an integral domain, every maximal ideal is prime (in a commutative ring with unity).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(R/M\) is a field]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R/M\) is an integral domain]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M=\{0\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R/M\cong R\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q9 — Z[√−5] is not UFD</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Which of the following rings is NOT a unique factorisation domain (UFD)?]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(\mathbb{Z}[\sqrt{-5}]\).</strong><br>In \(\mathbb{Z}[\sqrt{-5}]\), the element 6 has two factorisations: \(6=2\cdot 3=(1+\sqrt{-5})(1-\sqrt{-5})\). One can check that \(2,3,1\pm\sqrt{-5}\) are all irreducible but not prime in this ring, violating unique factorisation.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathbb{Z}[\sqrt{-5}]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}[i]\) (Gaussian integers)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}[\sqrt{2}]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Q}[x]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q10 — x²+1 irreducibility</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Over which of the following fields is \(x^2+1\) irreducible?]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(\mathbb{R}\).</strong><br>Over \(\mathbb{F}_2\): \(1^2+1=0\), so \(x=1\) is a root — reducible. Over \(\mathbb{F}_5\): \(2^2+1=5\equiv 0\), root exists — reducible. Over \(\mathbb{C}\): \(x^2+1=(x+i)(x-i)\) — reducible. Over \(\mathbb{R}\): discriminant \(=-4<0\), no real roots and degree 2, so irreducible.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{F}_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{C}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{F}_5\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q11 — (x²+1) in R[x]</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The ideal \((x^2+1)\) in \(\mathbb{R}[x]\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Maximal.</strong><br>\(\mathbb{R}[x]/(x^2+1)\cong\mathbb{C}\) (since \(x^2+1\) is irreducible over \(\mathbb{R}\)). Since \(\mathbb{C}\) is a field, \((x^2+1)\) is a maximal ideal. Every maximal ideal in a commutative ring is also prime.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Maximal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Prime but not maximal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Neither prime nor maximal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The unit ideal]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q12 — Nilradical</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The nilradical of a commutative ring \(R\) equals:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: The intersection of all prime ideals of \(R\).</strong><br>The nilradical \(\mathfrak{N}(R)=\{r\in R:r^n=0\text{ for some }n>0\}\) is the set of all nilpotent elements. By a standard theorem (using Zorn's Lemma), \(\mathfrak{N}(R)=\bigcap_{\mathfrak{p}\text{ prime}}\mathfrak{p}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[The intersection of all prime ideals of \(R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The intersection of all maximal ideals of \(R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all zero divisors]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all units]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q13 — Ideal (x) in Z[x]</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The ideal \((x)\) in \(\mathbb{Z}[x]\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Prime but not maximal.</strong><br>\(\mathbb{Z}[x]/(x)\cong\mathbb{Z}\), which is an integral domain but not a field. So \((x)\) is prime (not maximal). The ideal \((x,2)\supset(x)\) strictly, confirming \((x)\) is not maximal.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Prime but not maximal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Maximal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Neither prime nor maximal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The unit ideal]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q14 — PID implies UFD</text></name>
+  <questiontext format="html">
+    <text><![CDATA[In the hierarchy of integral domains, which implication is correct?]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Euclidean domain \(\Rightarrow\) PID \(\Rightarrow\) UFD \(\Rightarrow\) Integral domain.</strong><br>Every Euclidean domain is a PID (the ideal generated by any element of smallest Euclidean value works). Every PID is a UFD (ascending chain condition holds + irreducibles are prime). Not every UFD is a PID (\(\mathbb{Z}[x]\) is a counter-example).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Euclidean domain \(\Rightarrow\) PID \(\Rightarrow\) UFD \(\Rightarrow\) Integral domain]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[UFD \(\Rightarrow\) PID \(\Rightarrow\) Euclidean domain]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[PID \(\Rightarrow\) Euclidean domain \(\Rightarrow\) UFD]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All four classes coincide]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q15 — Gauss's Lemma</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Gauss's Lemma states that a primitive polynomial \(f(x)\in\mathbb{Z}[x]\) is irreducible in \(\mathbb{Z}[x]\) if and only if:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(f(x)\) is irreducible in \(\mathbb{Q}[x]\).</strong><br>A polynomial is primitive if its coefficients have gcd 1. Gauss's Lemma: the product of two primitive polynomials is primitive. Consequence: if \(f\) is primitive, then \(f\) is irreducible in \(\mathbb{Z}[x]\) iff it is irreducible in \(\mathbb{Q}[x]\). This allows Eisenstein's criterion (applied over \(\mathbb{Z}\)) to prove irreducibility over \(\mathbb{Q}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(x)\) is irreducible in \(\mathbb{Q}[x]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x)\) has no rational roots]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x)\) is monic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\deg f\) is prime]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q16 — Characteristic of Z_p × Z_q</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The characteristic of the ring \(\mathbb{Z}_p\times\mathbb{Z}_q\) where \(p\ne q\) are distinct primes is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(pq\).</strong><br>The characteristic of a product ring \(R_1\times R_2\) is \(\mathrm{lcm}(\mathrm{char}(R_1),\mathrm{char}(R_2))\). Here \(\mathrm{char}(\mathbb{Z}_p)=p\) and \(\mathrm{char}(\mathbb{Z}_q)=q\). Since \(\gcd(p,q)=1\), \(\mathrm{lcm}(p,q)=pq\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(pq\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(q\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q17 — Ideals of Z₄</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The total number of ideals in \(\mathbb{Z}_4=\mathbb{Z}/4\mathbb{Z}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 3.</strong><br>Ideals of \(\mathbb{Z}/n\mathbb{Z}\) correspond to divisors of \(n\). Divisors of 4 are 1, 2, 4, giving ideals \(\{0\}\), \(\{0,2\}\), and \(\mathbb{Z}_4\). So there are exactly 3 ideals. Compare: \(\mathbb{Z}_6\) has 4 ideals (divisors 1,2,3,6).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q18 — Union of ideals</text></name>
+  <questiontext format="html">
+    <text><![CDATA[If \(I\) and \(J\) are ideals of a commutative ring \(R\), which of the following is NOT necessarily an ideal of \(R\)?]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(I\cup J\).</strong><br>\(I+J\), \(I\cap J\), and \(IJ\) are always ideals. However \(I\cup J\) is an ideal iff \(I\subseteq J\) or \(J\subseteq I\). Counterexample: in \(\mathbb{Z}\), \(2\mathbb{Z}\cup 3\mathbb{Z}\) is not an ideal since \(2,3\in 2\mathbb{Z}\cup 3\mathbb{Z}\) but \(2+3=5\notin 2\mathbb{Z}\cup 3\mathbb{Z}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(I\cup J\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(I+J\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(I\cap J\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(IJ\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q19 — F[x] over a field is Euclidean</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The polynomial ring \(F[x]\) over a field \(F\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: A Euclidean domain (with the degree as the Euclidean norm).</strong><br>For any \(f,g\in F[x]\) with \(g\ne 0\), the division algorithm gives \(f=qg+r\) with \(\deg r<\deg g\). This makes \(F[x]\) a Euclidean domain, hence a PID, hence a UFD. Every irreducible polynomial generates a maximal ideal in \(F[x]\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[A Euclidean domain]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A field]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A UFD but not a PID]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not an integral domain]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q20 — Noetherian ring</text></name>
+  <questiontext format="html">
+    <text><![CDATA[A commutative ring \(R\) is Noetherian if and only if:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Every ascending chain of ideals stabilises (ACC).</strong><br>The ACC (Ascending Chain Condition) states: for every chain \(I_1\subseteq I_2\subseteq\cdots\), there exists \(N\) such that \(I_n=I_N\) for all \(n\ge N\). Equivalently, every ideal of \(R\) is finitely generated (Hilbert's basis theorem: \(R\) Noetherian \(\Rightarrow R[x]\) Noetherian).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Every ascending chain of ideals stabilises]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every descending chain of ideals stabilises]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every ideal is prime]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every ideal is principal]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q21 — Irreducibility of x³−2 over Q</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The polynomial \(x^3-2\) over \(\mathbb{Q}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Irreducible over \(\mathbb{Q}\).</strong><br>By Eisenstein's criterion with \(p=2\): \(2\mid(-2)\), \(4\nmid(-2)\), and \(2\nmid 1\) (leading coefficient). So \(x^3-2\) is irreducible over \(\mathbb{Q}\). The root \(\sqrt[3]{2}\) generates an extension \(\mathbb{Q}(\sqrt[3]{2})\) of degree 3 over \(\mathbb{Q}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Irreducible over \(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Factors as \((x-\sqrt[3]{2})(x^2+\sqrt[3]{2}x+\sqrt[3]{4})\) in \(\mathbb{Q}[x]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has a rational root]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reducible as product of three linear factors over \(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q22 — Finite integral domain is a field</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Every finite integral domain is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: A field.</strong><br>Let \(R\) be a finite integral domain and \(a\ne 0\in R\). The map \(x\mapsto ax\) is injective (no zero divisors) and hence bijective (finite set). So there exists \(b\in R\) with \(ab=1\), i.e., \(a\) is invertible. This is Wedderburn's theorem for commutative rings.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[A field]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A UFD but not necessarily a field]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A PID but not necessarily a field]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Noetherian but not necessarily a field]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q23 — Hilbert Basis Theorem</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Hilbert's Basis Theorem states that if \(R\) is a Noetherian ring, then:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(R[x]\) is also Noetherian.</strong><br>Hilbert's Basis Theorem: if \(R\) is Noetherian, then the polynomial ring \(R[x]\) is Noetherian. By induction, \(R[x_1,\ldots,x_n]\) is Noetherian. In particular, since \(\mathbb{Z}\) and any field are Noetherian, so are \(\mathbb{Z}[x_1,\ldots,x_n]\) and \(k[x_1,\ldots,x_n]\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(R[x]\) is also Noetherian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R[x]\) is Artinian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R[x]\) is a field]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every ideal of \(R[x]\) is principal]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q24 — Nilpotent element</text></name>
+  <questiontext format="html">
+    <text><![CDATA[An element \(a\) in a ring \(R\) is called nilpotent if:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(a^n=0\) for some positive integer \(n\).</strong><br>In \(\mathbb{Z}/12\mathbb{Z}\), the element \(6\) satisfies \(6^2=36\equiv 0\pmod{12}\), so 6 is nilpotent. The set of all nilpotent elements forms an ideal (the nilradical) in a commutative ring.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(a^n=0\) for some positive integer \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a^2=a\) (idempotent)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a\) has no multiplicative inverse]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q25 — UFD: irreducible iff prime</text></name>
+  <questiontext format="html">
+    <text><![CDATA[In a UFD, an element is irreducible if and only if it is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Prime.</strong><br>In any integral domain, every prime is irreducible. In a UFD the converse holds: every irreducible is prime. This is characteristic of UFDs and fails in non-UFDs (e.g., in \(\mathbb{Z}[\sqrt{-5}]\), the element 2 is irreducible but not prime since \(2\mid 6=(1+\sqrt{-5})(1-\sqrt{-5})\) but \(2\nmid 1\pm\sqrt{-5}\)).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Prime]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A unit]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Nilpotent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A zero divisor]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q26 — Cyclotomic polynomial Φ_p(x)</text></name>
+  <questiontext format="html">
+    <text><![CDATA[For a prime \(p\), the cyclotomic polynomial \(\Phi_p(x)=x^{p-1}+x^{p-2}+\cdots+x+1\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Irreducible over \(\mathbb{Q}\).</strong><br>Substituting \(x\to x+1\): \(\Phi_p(x+1)=\frac{(x+1)^p-1}{x}=x^{p-1}+px^{p-2}+\binom{p}{2}x^{p-3}+\cdots+p\). By Eisenstein with the prime \(p\): all non-leading coefficients are divisible by \(p\), the constant term is \(p\) (not divisible by \(p^2\)). So \(\Phi_p(x)\) is irreducible over \(\mathbb{Q}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Irreducible over \(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reducible over \(\mathbb{Q}\) for all primes \(p\ge 5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reducible over \(\mathbb{Q}\) but irreducible over \(\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has rational roots]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q27 — Chinese Remainder Theorem</text></name>
+  <questiontext format="html">
+    <text><![CDATA[If \(m,n\) are coprime positive integers, then by the Chinese Remainder Theorem:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(\mathbb{Z}/mn\mathbb{Z}\cong\mathbb{Z}/m\mathbb{Z}\times\mathbb{Z}/n\mathbb{Z}\) as rings.</strong><br>When \(\gcd(m,n)=1\), the ideals \(m\mathbb{Z}\) and \(n\mathbb{Z}\) are comaximal (\(m\mathbb{Z}+n\mathbb{Z}=\mathbb{Z}\)) and their product \(mn\mathbb{Z}=m\mathbb{Z}\cap n\mathbb{Z}\). CRT gives the ring isomorphism \(\mathbb{Z}/mn\mathbb{Z}\cong\mathbb{Z}/m\mathbb{Z}\times\mathbb{Z}/n\mathbb{Z}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathbb{Z}/mn\mathbb{Z}\cong\mathbb{Z}/m\mathbb{Z}\times\mathbb{Z}/n\mathbb{Z}\) as rings]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}/mn\mathbb{Z}\cong\mathbb{Z}/m\mathbb{Z}\oplus\mathbb{Z}/n\mathbb{Z}\) as groups only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}/(m+n)\mathbb{Z}\cong\mathbb{Z}/m\mathbb{Z}\times\mathbb{Z}/n\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The statement requires \(m,n\) to be prime]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q28 — Krull dimension of Z</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The Krull dimension of the ring \(\mathbb{Z}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 1.</strong><br>The Krull dimension is the supremum of lengths of chains of prime ideals. In \(\mathbb{Z}\), the chains are \(\{0\}\subset(p)\) for prime \(p\). The longest chain has length 1. So \(\dim\mathbb{Z}=1\). A field has Krull dimension 0; \(\mathbb{Z}[x]\) has Krull dimension 2.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q29 — Z[i] is Euclidean domain</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The ring of Gaussian integers \(\mathbb{Z}[i]=\{a+bi : a,b\in\mathbb{Z}\}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: A Euclidean domain (hence a PID and UFD).</strong><br>The norm \(N(a+bi)=a^2+b^2\) is a Euclidean function for \(\mathbb{Z}[i]\). Division with remainder: for any \(\alpha,\beta\in\mathbb{Z}[i]\) with \(\beta\ne 0\), write \(\alpha/\beta=x+yi\) in \(\mathbb{Q}[i]\), round to nearest Gaussian integer \(q\), and set \(r=\alpha-q\beta\) with \(N(r)<N(\beta)\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[A Euclidean domain (hence PID and UFD)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A field]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A UFD but not a PID]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not an integral domain]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit II Q30 — Jacobson radical</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The Jacobson radical \(J(R)\) of a commutative ring \(R\) is defined as:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: The intersection of all maximal ideals of \(R\).</strong><br>\(J(R)=\bigcap\{M:M\text{ maximal ideal of }R\}\). An element \(x\in J(R)\) iff \(1-rx\) is a unit for all \(r\in R\) (Nakayama's lemma uses \(J(R)\)). Compare with the nilradical, which is the intersection of all prime ideals. Since maximal ideals are prime, \(\mathfrak{N}(R)\subseteq J(R)\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[The intersection of all maximal ideals of \(R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The intersection of all prime ideals of \(R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all nilpotent elements]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all zero divisors]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

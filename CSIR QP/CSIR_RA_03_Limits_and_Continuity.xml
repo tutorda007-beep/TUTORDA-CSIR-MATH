@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Real Analysis/Limits and Continuity</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Limits - Epsilon-Delta Definition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Using the \(\epsilon\text{-}\delta\) definition, \(\displaystyle\lim_{x \to 2} (3x - 1) = 5\) requires: for every \(\epsilon > 0\), there exists \(\delta > 0\) such that \(|x-2| < \delta\) implies \(|f(x) - 5| < \epsilon\). The optimal \(\delta\) in terms of \(\epsilon\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\delta = \epsilon/3\)</strong></p><p>\(|f(x)-5| = |3x-1-5| = |3x-6| = 3|x-2|\). So \(3|x-2| < \epsilon \iff |x-2| < \epsilon/3\). Taking \(\delta = \epsilon/3\) works. For any \(|x-2|<\delta=\epsilon/3\), we get \(|3x-1-5|=3|x-2|<3\cdot\epsilon/3=\epsilon\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\delta = \epsilon\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\delta = 3\epsilon\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\delta = \epsilon/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\delta = \epsilon^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - Uniform vs Pointwise</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following functions is continuous on \((0,1)\) but NOT uniformly continuous on \((0,1)\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(f(x) = 1/x\)</strong></p><p>\(1/x\) is continuous on \((0,1)\) but not uniformly continuous: take \(x_n = 1/n\), \(y_n = 1/(n+1)\). Then \(|x_n-y_n| = 1/(n(n+1)) \to 0\) but \(|f(x_n)-f(y_n)| = |n-(n+1)| = 1 \not\to 0\). By Cantor's theorem, a continuous function on a CLOSED bounded interval is uniformly continuous, so the open interval is crucial here. \(\sin x\) is uniformly continuous on all of \(\mathbb{R}\) (Lipschitz).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x) = x^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x) = \sin x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x) = \sqrt{x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(x) = 1/x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Limits - Sequential Criterion</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The function \(f(x) = \sin(1/x)\) for \(x \neq 0\). The limit \(\displaystyle\lim_{x \to 0} f(x)\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Does not exist</strong></p><p>Take sequences \(x_n = 1/(2n\pi) \to 0\): \(f(x_n) = \sin(2n\pi) = 0\). Take \(y_n = 1/((4n+1)\pi/2) \to 0\): \(f(y_n) = \sin((4n+1)\pi/2) = 1\). Two sequences tending to 0 give different limits, so by the sequential criterion, \(\lim_{x\to0} \sin(1/x)\) does not exist. The function oscillates infinitely near 0.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Equals 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Does not exist]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equals 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equals \(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - Lipschitz Condition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f: [a,b] \to \mathbb{R}\) satisfies \(|f(x) - f(y)| \leq K|x-y|\) for all \(x,y \in [a,b]\) (Lipschitz with constant \(K\)), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(f\) is uniformly continuous on \([a,b]\)</strong></p><p>A Lipschitz function is uniformly continuous: given \(\epsilon>0\), take \(\delta = \epsilon/K\). Then \(|x-y|<\delta \Rightarrow |f(x)-f(y)| \leq K|x-y| < K\cdot(\epsilon/K)=\epsilon\). However, uniform continuity does NOT imply Lipschitz (e.g., \(\sqrt{x}\) on \([0,1]\) is uniformly continuous but not Lipschitz at 0). Differentiability with bounded derivative implies Lipschitz by MVT.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) is uniformly continuous on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is differentiable on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is constant on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) may be discontinuous at finitely many points]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - Intermediate Value Theorem Application</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f: [0,1] \to \mathbb{R}\) be continuous with \(f(0) = -1\) and \(f(1) = 2\). Then there exists \(c \in (0,1)\) such that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(f(c) = 0\)</strong></p><p>By the Intermediate Value Theorem: \(f\) is continuous on \([0,1]\), \(f(0)=-1 < 0 < 2 = f(1)\). So 0 is between \(f(0)\) and \(f(1)\), and by IVT, there exists \(c \in (0,1)\) with \(f(c)=0\). This guarantees the existence of a root in \((0,1)\). IVT requires continuity on a connected domain.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(c) = 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(c) = 3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(c) = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'(c) = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - Types of Discontinuities</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The function \(f(x) = \dfrac{x^2 - 4}{x - 2}\) has what type of discontinuity at \(x = 2\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Removable discontinuity</strong></p><p>For \(x \neq 2\): \(f(x) = (x^2-4)/(x-2) = (x+2)(x-2)/(x-2) = x+2\). So \(\lim_{x\to 2} f(x) = 4\), but \(f(2)\) is undefined. This is a removable discontinuity: defining \(f(2) = 4\) makes \(f\) continuous. Jump discontinuity: one-sided limits exist but differ. Essential discontinuity: at least one one-sided limit is infinite or doesn't exist.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Removable discontinuity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Jump discontinuity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Essential (infinite) discontinuity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Oscillatory discontinuity]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Limits - L'Hopital Indeterminate Form</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Evaluate \(\displaystyle\lim_{x \to 0} \frac{e^x - 1 - x}{x^2}\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(1/2\)</strong></p><p>This is a \(0/0\) form. By L'Hôpital's rule twice: \(\lim \frac{e^x-1-x}{x^2} \overset{L'H}{=} \lim \frac{e^x-1}{2x} \overset{L'H}{=} \lim \frac{e^x}{2} = \frac{1}{2}\). Alternatively, by Taylor series: \(e^x = 1+x+x^2/2+\cdots\), so \(e^x-1-x = x^2/2+O(x^3)\), giving the limit \(1/2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - Composition Preserves Uniform Continuity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f: A \to B\) is uniformly continuous and \(g: B \to C\) is uniformly continuous, then \(g \circ f: A \to C\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Uniformly continuous</strong></p><p>Given \(\epsilon>0\), by uniform continuity of \(g\): \(\exists\,\delta_1>0\) such that \(|u-v|<\delta_1 \Rightarrow |g(u)-g(v)|<\epsilon\). By uniform continuity of \(f\): \(\exists\,\delta>0\) such that \(|x-y|<\delta \Rightarrow |f(x)-f(y)|<\delta_1\). Combining: \(|x-y|<\delta \Rightarrow |f(x)-f(y)|<\delta_1 \Rightarrow |g(f(x))-g(f(y))|<\epsilon\). So \(g\circ f\) is uniformly continuous. Note: composition of merely continuous functions is continuous (not necessarily uniformly continuous).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Uniformly continuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Continuous but not necessarily uniformly continuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Differentiable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Lipschitz continuous]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - Cantor Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Cantor function (devil's staircase) \(\varphi: [0,1] \to [0,1]\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Continuous, non-decreasing, with \(\varphi'(x)=0\) a.e., but not constant</strong></p><p>The Cantor function is defined on \([0,1]\), is continuous (uniformly so), non-decreasing, and maps \([0,1]\) onto \([0,1]\). It is constant on each interval removed in the Cantor set construction. Since those intervals cover measure 1, \(\varphi'=0\) almost everywhere. Yet \(\varphi(0)=0, \varphi(1)=1\), so it's not constant. This shows a function can have zero derivative a.e. without being constant (failure of the fundamental theorem for non-absolutely-continuous functions).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Discontinuous on the Cantor set]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Differentiable everywhere with \(\varphi'(x)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Continuous, non-decreasing, \(\varphi'(x)=0\) a.e., but not constant]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Absolutely continuous on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Limits - Limit at Infinity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Evaluate \(\displaystyle\lim_{x\to\infty} x\left(\sqrt{x^2+1} - x\right)\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(1/2\)</strong></p><p>Rationalise: \(x(\sqrt{x^2+1}-x) = x\cdot\frac{(x^2+1)-x^2}{\sqrt{x^2+1}+x} = \frac{x}{\sqrt{x^2+1}+x} = \frac{1}{\sqrt{1+1/x^2}+1} \to \frac{1}{1+1} = \frac{1}{2}\) as \(x\to\infty\). Or by Taylor: \(\sqrt{x^2+1} = x\sqrt{1+1/x^2} \approx x(1+\frac{1}{2x^2}) = x + \frac{1}{2x}\), so \(x(\sqrt{x^2+1}-x) \approx x \cdot \frac{1}{2x} = \frac{1}{2}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - EVT and Attainment of Max</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:(0,1) \to \mathbb{R}\) be continuous and bounded. Which of the following is TRUE?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(f\) need not attain its supremum</strong></p><p>The Extreme Value Theorem applies to CLOSED bounded intervals: \(f\) continuous on \([a,b]\) attains max and min. On an OPEN interval \((0,1)\), a continuous bounded function may fail to attain its supremum: e.g., \(f(x)=x\) is bounded by 1 on \((0,1)\) but never equals 1. So \(\sup f = 1\) is not attained. Uniform continuity on \((0,1)\) is also not guaranteed (e.g., \(f(x)=\sin(1/x)\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) attains its maximum and minimum]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is uniformly continuous on \((0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) attains every value in its range exactly once]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) need not attain its supremum]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Limits - One-sided Limits and Jump Discontinuity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The function \(f(x) = \lfloor x \rfloor\) (floor function) at \(x = n \in \mathbb{Z}\) has:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Left limit \(n-1\), right limit \(n\), jump discontinuity of magnitude 1</strong></p><p>At integer \(n\): \(f(n^-) = \lim_{x\to n^-} \lfloor x\rfloor = n-1\) (approaching from left, floor is \(n-1\)) and \(f(n^+) = \lim_{x\to n^+}\lfloor x\rfloor = n\) (approaching from right, floor is \(n\)), and \(f(n) = n\). Since the left and right limits differ by 1, there is a jump discontinuity of magnitude 1 at each integer.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Continuous with \(f(n) = n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Left limit \(n-1\), right limit \(n\), jump discontinuity of magnitude 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Removable discontinuity at each integer]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Essential discontinuity at each integer]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - Heine's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Heine's theorem (uniform continuity theorem) states: if \(f\) is continuous on \([a,b]\), then \(f\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Uniformly continuous on \([a,b]\)</strong></p><p>Heine's theorem (also called the Heine-Cantor theorem): a function continuous on a compact set (e.g., closed bounded interval \([a,b]\)) is uniformly continuous. Proof: by contradiction, if not uniformly continuous, there exist sequences \(x_n, y_n\) with \(|x_n-y_n|\to 0\) but \(|f(x_n)-f(y_n)| \geq \epsilon_0 > 0\). By Bolzano-Weierstrass, extract convergent subsequences, then use continuity to get a contradiction.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Uniformly continuous on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Differentiable on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Monotone on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Lipschitz continuous on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Limits - Squeeze at a Point</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Evaluate \(\displaystyle\lim_{x \to 0} x^2 \sin\!\left(\frac{1}{x}\right)\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(0\)</strong></p><p>Since \(-1 \leq \sin(1/x) \leq 1\) for all \(x \neq 0\), we have \(-x^2 \leq x^2\sin(1/x) \leq x^2\). As \(x\to 0\), \(\pm x^2 \to 0\). By the Squeeze Theorem, \(\lim_{x\to 0} x^2\sin(1/x) = 0\). Contrast with \(x\sin(1/x)\) which also has limit 0, but the derivative at 0 requires more care.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Does not exist]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - Monotone Function Discontinuities</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A monotone function \(f: [a,b] \to \mathbb{R}\) can have at most:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Countably many discontinuities, all of jump type</strong></p><p>A monotone function on \([a,b]\) has at most countably many discontinuities, all of which are jump discontinuities (since one-sided limits always exist for monotone functions). The discontinuities can be enumerated because each jump has positive size, and the total sum of jumps is bounded by \(f(b)-f(a)\). The set of discontinuities is at most countable (in fact, can be any countable subset of \((a,b)\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Finitely many discontinuities]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No discontinuities]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Countably many discontinuities, all of jump type]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uncountably many discontinuities]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Limits - Continuity of Inverse Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f: [a,b] \to \mathbb{R}\) is strictly monotone and continuous, then \(f^{-1}: f([a,b]) \to [a,b]\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Continuous and strictly monotone</strong></p><p>If \(f\) is strictly monotone continuous on \([a,b]\), then \(f([a,b])\) is a closed interval (by IVT and monotonicity), and \(f^{-1}\) is well-defined. By a standard theorem: a strictly monotone continuous function on a closed interval has a continuous inverse. The continuity of \(f^{-1}\) follows from the open mapping property: \(f\) sends open intervals to open intervals, so \((f^{-1})^{-1}(U) = f(U)\) is open.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Differentiable everywhere on \(f([a,b])\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Continuous and strictly monotone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Discontinuous at finitely many points]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uniformly continuous with the same modulus of continuity as \(f\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Limits - Functional Equation and Continuity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Suppose \(f: \mathbb{R} \to \mathbb{R}\) satisfies \(f(x+y) = f(x) + f(y)\) for all \(x,y \in \mathbb{R}\) (Cauchy's functional equation), and \(f\) is continuous at some point. Then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(f(x) = cx\) for some constant \(c = f(1)\)</strong></p><p>Cauchy's functional equation: \(f(x+y)=f(x)+f(y)\). Without regularity, pathological solutions exist (using Axiom of Choice). With any of: continuity at a point, monotonicity, boundedness on an interval, or measurability — the only solutions are \(f(x)=cx\). Here \(c=f(1)\), and one verifies \(f(n)=cn\), then \(f(q)=cq\) for rationals, then by continuity everywhere. Discontinuous solutions are dense graphs.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) must be the zero function]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x) = x^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x) = e^x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(x) = cx\) for some constant \(c = f(1) \in \mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - Thomae Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Thomae's function is defined on \((0,1)\) as \(f(p/q)=1/q\) (in lowest terms, \(q>0\)) for rationals and \(f(x)=0\) for irrationals. This function is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Continuous at every irrational, discontinuous at every rational</strong></p><p>At irrational \(x\): for any \(\epsilon>0\), there are only finitely many rationals \(p/q\) in \((0,1)\) with \(1/q \geq \epsilon\). So in a small enough neighborhood of \(x\), all rationals have \(f < \epsilon\) and irrationals have \(f=0\), giving continuity. At rational \(x=p/q\): \(f(x)=1/q>0\), but nearby irrationals have \(f=0\), so \(f\) is discontinuous. Thomae's function is Riemann integrable (discontinuous only on a countable set, hence measure zero).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Continuous everywhere on \((0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Continuous at every irrational, discontinuous at every rational]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Discontinuous everywhere on \((0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Continuous at every rational, discontinuous at every irrational]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Limits - Multivariable Limit Failure</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Evaluate \(\displaystyle\lim_{(x,y)\to(0,0)} \frac{xy}{x^2+y^2}\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) The limit does not exist</strong></p><p>Along \(y=0\): limit is 0. Along \(y=x\): \(\frac{x\cdot x}{x^2+x^2}=\frac{x^2}{2x^2}=\frac{1}{2}\). Since different paths give different limits (0 and 1/2), the limit does not exist. Note: along \(y = mx\): \(\frac{mx^2}{x^2(1+m^2)} = \frac{m}{1+m^2}\), which depends on \(m\). The function is not even bounded near the origin on each radial line, but the path-dependence shows non-existence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The limit does not exist]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Continuity - Fixed Point on Compact Set</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f: [0,1] \to [0,1]\) be continuous. By the Brouwer fixed point theorem (in 1D, via IVT): the equation \(f(x) = x\) has at least one solution because the function \(g(x) = f(x) - x\) satisfies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(g(0) = f(0) \geq 0\) and \(g(1) = f(1) - 1 \leq 0\), so IVT gives a zero</strong></p><p>Since \(f: [0,1]\to[0,1]\), we have \(f(0) \in [0,1]\), so \(g(0) = f(0)-0 = f(0) \geq 0\). Similarly \(g(1) = f(1)-1 \leq 0\). If \(g(0)=0\) or \(g(1)=0\), done. Otherwise \(g(0)>0>g(1)\), and by IVT (since \(g\) is continuous), there exists \(c \in (0,1)\) with \(g(c)=0\), i.e., \(f(c)=c\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(g(0) \geq 0\) and \(g(1) \leq 0\), so IVT gives a zero of \(g\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g\) is monotone decreasing]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g\) is differentiable with \(g'<0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g\) has a global minimum at an interior point]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Limits - Limit of Composite Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\displaystyle\lim_{x\to a} g(x) = b\) and \(\displaystyle\lim_{y\to b} f(y) = L\). The limit \(\displaystyle\lim_{x\to a} f(g(x))\) equals \(L\) if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(f\) is continuous at \(b\), OR \(g(x) \neq b\) for \(x\) near \(a\)</strong></p><p>The composition rule for limits: \(\lim_{x\to a} f(g(x)) = f(\lim_{x\to a} g(x)) = f(b) = L\) holds if either (i) \(f\) is continuous at \(b\) (so \(f(b) = L\)), or (ii) \(g(x) \neq b\) in a punctured neighborhood of \(a\) (so we never need \(f(b)\), only \(\lim_{y\to b}f(y)\)). If \(f\) is not continuous at \(b\) and \(g\) takes the value \(b\), the composition limit may differ from \(L\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Always, without any additional conditions]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g\) is injective near \(a\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) is continuous at \(b\), OR \(g(x) \neq b\) for all \(x\) near \(a\) (but \(x\neq a\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g\) is continuous at \(a\) and \(f\) is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

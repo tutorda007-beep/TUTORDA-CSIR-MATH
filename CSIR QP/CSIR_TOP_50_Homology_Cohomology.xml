@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category>
+    <text>$course$/CSIR NET Mathematics/Topology/Homology and Cohomology</text>
+  </category>
+</question>
+
+<!-- Q01: Homology of S^n -->
+<question type="multichoice">
+  <name><text>TOP50_Q01_HomologySphere</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The singular homology groups \(H_k(S^n;\mathbb{Z})\) of the \(n\)-sphere \(S^n\) (for \(n \geq 1\)) are:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H_k = \mathbb{Z}\) for \(k = 0\) and \(k = n\); \(H_k = 0\) for all other \(k\)]]></text>
+    <feedback><text><![CDATA[Correct. By induction using Mayer-Vietoris with \(U \cup V = S^n\), \(U \cap V \simeq S^{n-1}\), and \(U, V\) contractible.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_k = \mathbb{Z}\) for all \(0 \leq k \leq n\); \(H_k = 0\) for \(k > n\)]]></text>
+    <feedback><text>Incorrect. Only H_0 and H_n are nontrivial; all intermediate homology groups vanish.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = 0,\; H_n = \mathbb{Z},\; H_k = 0\) otherwise]]></text>
+    <feedback><text>Incorrect. \(H_0(S^n) = \mathbb{Z}\) since \(S^n\) is path-connected.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_k = \mathbb{Z}/2\mathbb{Z}\) for \(0 < k < n\); \(H_0 = H_n = \mathbb{Z}\)]]></text>
+    <feedback><text>Incorrect. The intermediate homology groups \(H_k(S^n)\) for \(0 < k < n\) are all zero, not \(\mathbb{Z}/2\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q02: Mayer-Vietoris -->
+<question type="multichoice">
+  <name><text>TOP50_Q02_MayerVietoris</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Writing \(S^n = U \cup V\) where \(U, V\) are open hemispheres (each contractible) with \(U \cap V \simeq S^{n-1}\), the Mayer-Vietoris long exact sequence</p>
+    <p>\[\cdots \to H_k(U)\oplus H_k(V) \to H_k(S^n) \xrightarrow{\delta} H_{k-1}(U\cap V) \to H_{k-1}(U)\oplus H_{k-1}(V) \to \cdots\]</p>
+    <p>What does this yield for the connecting homomorphism \(\delta: H_n(S^n) \to H_{n-1}(S^{n-1})\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\delta\) is an isomorphism \(H_n(S^n) \xrightarrow{\cong} H_{n-1}(S^{n-1})\) for all \(n \geq 1\)]]></text>
+    <feedback><text>Correct. Since \(H_k(U) = H_k(V) = 0\) for \(k \geq 1\), the sequence gives \(H_n(S^n) \cong H_{n-1}(S^{n-1})\), proving \(H_n(S^n) \cong \mathbb{Z}\) by induction.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\delta = 0\) for all \(n \geq 1\)]]></text>
+    <feedback><text>Incorrect. If \(\delta = 0\), the sequence would give \(H_n(S^n) \cong H_n(U)\oplus H_n(V) = 0\), contradicting \(H_n(S^n) = \mathbb{Z}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\delta\) is an isomorphism only for \(n = 1\)]]></text>
+    <feedback><text>Incorrect. The same argument applies for all \(n \geq 1\); the connecting map is always an isomorphism.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\delta: H_n(S^n) \to H_{n-1}(S^{n-1})\) is multiplication by 2]]></text>
+    <feedback><text>Incorrect. The connecting map is an isomorphism (multiplication by \(\pm 1\)), not by 2.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q03: H_*(T^2) -->
+<question type="multichoice">
+  <name><text>TOP50_Q03_HomologyTorus</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The singular homology groups \(H_k(T^2;\mathbb{Z})\) of the 2-torus \(T^2 = S^1 \times S^1\) are:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z}^2,\; H_2 = \mathbb{Z},\; H_k = 0 \text{ for } k \geq 3\)]]></text>
+    <feedback><text>Correct. By the Künneth formula (all homology of \(S^1\) is free), or: \(H_1 \cong \pi_1(T^2)^{\mathrm{ab}} = (\mathbb{Z}\times\mathbb{Z})^{\mathrm{ab}} = \mathbb{Z}^2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z},\; H_2 = \mathbb{Z},\; H_k = 0 \text{ for } k \geq 3\)]]></text>
+    <feedback><text>Incorrect. \(H_1(T^2) = \mathbb{Z}^2\), not \(\mathbb{Z}\); the torus has two independent generating cycles.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z}^2,\; H_2 = 0,\; H_k = 0 \text{ for } k \geq 3\)]]></text>
+    <feedback><text>Incorrect. \(T^2\) is a closed orientable 2-manifold, so \(H_2(T^2) = \mathbb{Z}\) (the fundamental class).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z}^2,\; H_2 = \mathbb{Z}^2,\; H_k = 0 \text{ for } k \geq 3\)]]></text>
+    <feedback><text>Incorrect. \(H_2(T^2) = \mathbb{Z}\), not \(\mathbb{Z}^2\). The torus has a single fundamental class.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q04: Euler characteristic -->
+<question type="multichoice">
+  <name><text>TOP50_Q04_EulerCharacteristic</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The Euler characteristic is \(\chi(X) = \sum_{n \geq 0} (-1)^n \operatorname{rank} H_n(X;\mathbb{Z})\). Which is correct for closed orientable surfaces \(\Sigma_g\) of genus \(g\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\chi(\Sigma_g) = 2 - 2g\). In particular \(\chi(T^2) = 0\) and \(\chi(S^2) = 2\).]]></text>
+    <feedback><text>Correct. \(H_0 = \mathbb{Z}\), \(H_1 = \mathbb{Z}^{2g}\), \(H_2 = \mathbb{Z}\), so \(\chi = 1 - 2g + 1 = 2 - 2g\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\chi(\Sigma_g) = 2 - g\). In particular \(\chi(T^2) = 1\).]]></text>
+    <feedback><text>Incorrect. The formula is \(2 - 2g\) (not \(2 - g\)); for the torus \(g = 1\), \(\chi = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\chi(\Sigma_g) = g\). In particular \(\chi(S^2) = 0\).]]></text>
+    <feedback><text>Incorrect. \(\chi(S^2) = 2\) (two cells: one 0-cell and one 2-cell), not 0.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\chi(\Sigma_g) = 1 - 2g\). In particular \(\chi(T^2) = -1\).]]></text>
+    <feedback><text>Incorrect. The formula is \(2 - 2g\); for \(g = 1\), \(\chi = 0\), not \(-1\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q05: Poincaré lemma -->
+<question type="multichoice">
+  <name><text>TOP50_Q05_PoincareLeмma</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>Poincaré lemma</strong> states that on any contractible open subset of \(\mathbb{R}^n\), every closed form is exact. What are the de Rham cohomology groups \(H^k_{\mathrm{dR}}(\mathbb{R}^n)\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H^0_{\mathrm{dR}}(\mathbb{R}^n) = \mathbb{R}\) and \(H^k_{\mathrm{dR}}(\mathbb{R}^n) = 0\) for all \(k \geq 1\)]]></text>
+    <feedback><text>Correct. \(\mathbb{R}^n\) is contractible, so its de Rham cohomology matches that of a point: \(\mathbb{R}\) in degree 0 and 0 elsewhere.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^k_{\mathrm{dR}}(\mathbb{R}^n) = \mathbb{R}\) for all \(0 \leq k \leq n\); \(H^k = 0\) for \(k > n\)]]></text>
+    <feedback><text>Incorrect. This is the de Rham cohomology of the torus \(T^n\), not of \(\mathbb{R}^n\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^0_{\mathrm{dR}}(\mathbb{R}^n) = \mathbb{R},\; H^n_{\mathrm{dR}}(\mathbb{R}^n) = \mathbb{R},\; H^k = 0\) for \(0 < k < n\)]]></text>
+    <feedback><text>Incorrect. This is the de Rham cohomology of \(S^n\). On \(\mathbb{R}^n\) there is no top cohomology since it is non-compact and contractible.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^k_{\mathrm{dR}}(\mathbb{R}^n) = \mathbb{R}\) for all \(k \geq 0\)]]></text>
+    <feedback><text>Incorrect. The Poincaré lemma forces all higher cohomology to vanish on \(\mathbb{R}^n\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q06: H_*(RP^2) -->
+<question type="multichoice">
+  <name><text>TOP50_Q06_HomologyRP2</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>What are the singular homology groups \(H_k(\mathbb{R}P^2;\mathbb{Z})\) of the real projective plane?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z}/2\mathbb{Z},\; H_k = 0 \text{ for } k \geq 2\)]]></text>
+    <feedback><text>Correct. Cellular homology (one cell in each dimension 0,1,2 with boundary map \(\times 2\)): \(H_0 = \mathbb{Z}\), \(H_1 = \mathbb{Z}/2\), \(H_2 = 0\) (non-orientable).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z},\; H_2 = \mathbb{Z}/2\mathbb{Z},\; H_k = 0 \text{ for } k \geq 3\)]]></text>
+    <feedback><text>Incorrect. \(H_1(\mathbb{R}P^2) = \mathbb{Z}/2\) (the abelianization of \(\pi_1 = \mathbb{Z}/2\)), not \(\mathbb{Z}\). And \(H_2 = 0\) with \(\mathbb{Z}\) coefficients.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z}/2\mathbb{Z},\; H_2 = \mathbb{Z}/2\mathbb{Z},\; H_k = 0 \text{ for } k \geq 3\)]]></text>
+    <feedback><text>Incorrect. \(H_2(\mathbb{R}P^2;\mathbb{Z}) = 0\), not \(\mathbb{Z}/2\). (With \(\mathbb{Z}/2\) coefficients, \(H_2 = \mathbb{Z}/2\), but that is a different coefficient ring.)</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = 0,\; H_2 = \mathbb{Z}/2\mathbb{Z},\; H_k = 0 \text{ for } k \geq 3\)]]></text>
+    <feedback><text>Incorrect. \(\pi_1(\mathbb{R}P^2) = \mathbb{Z}/2\) so \(H_1 = \mathbb{Z}/2\) by Hurewicz. It is \(H_2\) that vanishes with \(\mathbb{Z}\) coefficients.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q07: Poincaré duality -->
+<question type="multichoice">
+  <name><text>TOP50_Q07_PoincareDuality</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Poincaré duality states that for a closed orientable \(n\)-manifold \(M\):</p>
+    <p>\[H^k(M;\mathbb{Z}) \cong H_{n-k}(M;\mathbb{Z}) \quad \text{for all } k.\]</p>
+    <p>For the torus \(T^2\) (\(n = 2\)), this implies \(H^1(T^2;\mathbb{Z})\) equals:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H^1(T^2;\mathbb{Z}) \cong H_1(T^2;\mathbb{Z}) = \mathbb{Z}^2\)]]></text>
+    <feedback><text>Correct. Poincaré duality gives \(H^k \cong H_{n-k}\), so \(H^1(T^2) \cong H_{2-1}(T^2) = H_1(T^2) = \mathbb{Z}^2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^1(T^2;\mathbb{Z}) \cong H_0(T^2;\mathbb{Z}) = \mathbb{Z}\)]]></text>
+    <feedback><text>Incorrect. Poincaré duality gives \(H^k \cong H_{n-k}\), so \(H^1 \cong H_{2-1} = H_1\), not \(H_0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^1(T^2;\mathbb{Z}) \cong H_2(T^2;\mathbb{Z}) = \mathbb{Z}\)]]></text>
+    <feedback><text>Incorrect. The duality pairs degree \(k\) with degree \(n-k\), so \(H^1 \cong H_{2-1} = H_1 = \mathbb{Z}^2\), not \(H_2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^1(T^2;\mathbb{Z}) = 0\) since \(T^2\) is simply connected]]></text>
+    <feedback><text>Incorrect. \(T^2\) is not simply connected; \(\pi_1(T^2) = \mathbb{Z}\times\mathbb{Z}\), hence \(H^1 \neq 0\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q08: Universal coefficient theorem -->
+<question type="multichoice">
+  <name><text>TOP50_Q08_UCT</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The Universal Coefficient Theorem gives a split short exact sequence:</p>
+    <p>\[0 \to \operatorname{Ext}^1(H_{n-1}(X),\mathbb{Z}) \to H^n(X;\mathbb{Z}) \to \operatorname{Hom}(H_n(X),\mathbb{Z}) \to 0.\]</p>
+    <p>Using \(H_1(\mathbb{R}P^2;\mathbb{Z}) = \mathbb{Z}/2\) and \(H_2(\mathbb{R}P^2;\mathbb{Z}) = 0\), compute \(H^2(\mathbb{R}P^2;\mathbb{Z})\).</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H^2(\mathbb{R}P^2;\mathbb{Z}) = \mathbb{Z}/2\mathbb{Z}\)]]></text>
+    <feedback><text><![CDATA[Correct. \(\operatorname{Hom}(H_2,\mathbb{Z}) = \operatorname{Hom}(0,\mathbb{Z}) = 0\) and \(\operatorname{Ext}^1(H_1,\mathbb{Z}) = \operatorname{Ext}^1(\mathbb{Z}/2,\mathbb{Z}) = \mathbb{Z}/2\). Thus \(H^2(\mathbb{R}P^2;\mathbb{Z}) = \mathbb{Z}/2\).]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^2(\mathbb{R}P^2;\mathbb{Z}) = 0\)]]></text>
+    <feedback><text>Incorrect. The \(\operatorname{Ext}^1(\mathbb{Z}/2,\mathbb{Z}) = \mathbb{Z}/2\) term contributes a nontrivial class to \(H^2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^2(\mathbb{R}P^2;\mathbb{Z}) = \mathbb{Z}\)]]></text>
+    <feedback><text>Incorrect. \(\mathbb{R}P^2\) is non-orientable, so there is no \(\mathbb{Z}\) in top cohomology. The UCT gives \(\mathbb{Z}/2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^2(\mathbb{R}P^2;\mathbb{Z}) = \mathbb{Z} \oplus \mathbb{Z}/2\mathbb{Z}\)]]></text>
+    <feedback><text>Incorrect. The Hom term vanishes (\(H_2 = 0\)) and only the Ext term \(\mathbb{Z}/2\) survives.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q09: Künneth formula -->
+<question type="multichoice">
+  <name><text>TOP50_Q09_Kunneth</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The Künneth formula for spaces with free homology gives:</p>
+    <p>\[H_n(X \times Y;\mathbb{Z}) \cong \bigoplus_{i+j=n} H_i(X;\mathbb{Z}) \otimes H_j(Y;\mathbb{Z}).\]</p>
+    <p>Using \(H_0(S^1) = H_1(S^1) = \mathbb{Z}\) and \(H_k(S^1) = 0\) for \(k \geq 2\), compute \(H_2(T^2;\mathbb{Z})\) where \(T^2 = S^1 \times S^1\).</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H_2(T^2;\mathbb{Z}) = \mathbb{Z}\), from the single contributing term \(H_1(S^1) \otimes H_1(S^1) = \mathbb{Z}\)]]></text>
+    <feedback><text>Correct. \(H_2 = \bigoplus_{i+j=2} H_i \otimes H_j = (H_0 \otimes H_2) \oplus (H_1 \otimes H_1) \oplus (H_2 \otimes H_0) = 0 \oplus \mathbb{Z} \oplus 0 = \mathbb{Z}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_2(T^2;\mathbb{Z}) = \mathbb{Z}^2\)]]></text>
+    <feedback><text>Incorrect. Only the single cross term \(H_1(S^1) \otimes H_1(S^1) = \mathbb{Z}\) contributes in degree 2; the result is \(\mathbb{Z}\), not \(\mathbb{Z}^2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_2(T^2;\mathbb{Z}) = 0\)]]></text>
+    <feedback><text>Incorrect. The cross term \(H_1(S^1) \otimes H_1(S^1) = \mathbb{Z} \neq 0\) contributes to \(H_2(T^2)\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_2(T^2;\mathbb{Z}) = \mathbb{Z}/2\mathbb{Z}\)]]></text>
+    <feedback><text>Incorrect. All homology groups of \(S^1\) are free (no torsion), so the Künneth formula has no Tor correction terms; \(H_2(T^2) = \mathbb{Z}\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q10: Degree of antipodal map -->
+<question type="multichoice">
+  <name><text>TOP50_Q10_DegreeAntipodal</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The <strong>degree</strong> of a map \(f: S^n \to S^n\) is the integer \(d\) such that \(f_*: H_n(S^n;\mathbb{Z}) \to H_n(S^n;\mathbb{Z})\) is multiplication by \(d\). The antipodal map \(a(x) = -x\) has degree:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\deg(a) = (-1)^{n+1}\)]]></text>
+    <feedback><text>Correct. The antipodal map is a composition of \(n+1\) reflections, each of degree \(-1\), giving \(\deg(a) = (-1)^{n+1}\). E.g., on \(S^1\) it is a rotation (degree \(+1\)); on \(S^2\) it reverses orientation (degree \(-1\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\deg(a) = (-1)^n\)]]></text>
+    <feedback><text>Incorrect. The antipodal map on \(S^n\) is a composition of \(n+1\) (not \(n\)) reflections, giving degree \((-1)^{n+1}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\deg(a) = -1\) for all \(n\)]]></text>
+    <feedback><text>Incorrect. On \(S^1\) the antipodal map is a rotation by \(\pi\), which is orientation-preserving with degree \(+1 = (-1)^{1+1}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\deg(a) = 1\) for all \(n\)]]></text>
+    <feedback><text>Incorrect. On \(S^2\) the antipodal map reverses orientation and has degree \(-1 = (-1)^{2+1}\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q11: Relative homology H_*(D^n, S^{n-1}) -->
+<question type="multichoice">
+  <name><text>TOP50_Q11_RelativeHomology</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Using the long exact sequence of the pair \((D^n, S^{n-1})\) and contractibility of \(D^n\), the relative homology groups \(H_k(D^n, S^{n-1};\mathbb{Z})\) are:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H_k(D^n, S^{n-1};\mathbb{Z}) = \mathbb{Z}\) for \(k = n\); \(H_k = 0\) for \(k \neq n\)]]></text>
+    <feedback><text><![CDATA[Correct. The long exact sequence gives connecting isomorphisms \(H_k(D^n,S^{n-1}) \cong \tilde{H}_{k-1}(S^{n-1})\), which equals \(\mathbb{Z}\) only for \(k = n\).]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_k(D^n, S^{n-1};\mathbb{Z}) = \mathbb{Z}\) for \(k = n-1\) and \(k = n\); \(H_k = 0\) otherwise]]></text>
+    <feedback><text>Incorrect. The long exact sequence forces the nontrivial group to concentrate in the single degree \(k = n\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_k(D^n, S^{n-1};\mathbb{Z}) = \mathbb{Z}\) for \(k = 0\) and \(k = n\); \(H_k = 0\) otherwise]]></text>
+    <feedback><text>Incorrect. \(H_0(D^n, S^{n-1}) = 0\) (not \(\mathbb{Z}\)) since \(S^{n-1}\) is nonempty and connected for \(n \geq 2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_k(D^n, S^{n-1};\mathbb{Z}) = 0\) for all \(k\)]]></text>
+    <feedback><text>Incorrect. \(H_n(D^n, S^{n-1}) = \mathbb{Z}\); this is the fundamental fact used to define the degree of a map on \(S^n\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q12: Excision theorem -->
+<question type="multichoice">
+  <name><text>TOP50_Q12_Excision</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Which of the following correctly states the Excision Theorem in singular homology?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[If \(U \subset A \subset X\) and \(\overline{U} \subset \operatorname{int}(A)\), then the inclusion \((X \setminus U,\, A \setminus U) \hookrightarrow (X, A)\) induces isomorphisms \(H_n(X \setminus U, A \setminus U) \xrightarrow{\cong} H_n(X, A)\) for all \(n\).]]></text>
+    <feedback><text>Correct. The closure condition \(\overline{U} \subset \operatorname{int}(A)\) ensures \(U\) lies well inside \(A\), permitting excision without changing the relative homology.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[For any closed \(A \subset X\), the quotient map induces \(H_n(X, A) \cong \tilde{H}_n(X/A)\) for all \(n\).]]></text>
+    <feedback><text>Incorrect. This holds for good pairs (e.g., CW pairs) as a consequence of excision, but is not the excision theorem itself, which concerns a triple \((X, A, U)\) with \(U \subset A\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[For any \(A \subset X\): \(H_n(X) \cong H_n(X \setminus A) \oplus H_n(A)\) for all \(n\).]]></text>
+    <feedback><text>Incorrect. Homology does not split as a direct sum over a subspace decomposition in general; this is not a theorem in algebraic topology.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[If \(U\) is any open subset of \(X\), then \(H_n(X, U) \cong H_n(X \setminus U)\) for all \(n\).]]></text>
+    <feedback><text>Incorrect. Excision requires \(U \subset A\) for some subspace \(A\); the theorem concerns pairs of spaces, not a single open set.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q13: Cup product on T^2 -->
+<question type="multichoice">
+  <name><text>TOP50_Q13_CupProduct</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Let \(\alpha, \beta \in H^1(T^2;\mathbb{Z})\) be the two generators dual to the two circle factors of \(T^2 = S^1 \times S^1\). Which statement about the cup product is correct?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(\alpha \cup \beta\) generates \(H^2(T^2;\mathbb{Z}) \cong \mathbb{Z}\), and \(\alpha \cup \alpha = \beta \cup \beta = 0\)]]></text>
+    <feedback><text>Correct. Graded-commutativity gives \(\alpha \cup \alpha = (-1)^{1 \cdot 1}\alpha \cup \alpha = -\alpha \cup \alpha\), so \(\alpha \cup \alpha = 0\). The off-diagonal product \(\alpha \cup \beta\) generates \(H^2(T^2) \cong \mathbb{Z}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\alpha \cup \beta = 0\) since degree-1 classes always pair trivially in dimension 2]]></text>
+    <feedback><text>Incorrect. The cup product \(\alpha \cup \beta\) is the fundamental class generator of \(H^2(T^2) = \mathbb{Z}\); it is nonzero.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\alpha \cup \alpha\) generates \(H^2(T^2;\mathbb{Z})\)]]></text>
+    <feedback><text>Incorrect. Graded-commutativity forces \(\alpha \cup \alpha = -\alpha \cup \alpha\), hence \(\alpha \cup \alpha = 0\) in \(\mathbb{Z}\)-coefficients.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(\alpha \cup \beta = \beta \cup \alpha\) (cup product is commutative on odd-degree classes)]]></text>
+    <feedback><text>Incorrect. Graded-commutativity gives \(\alpha \cup \beta = (-1)^{1 \cdot 1}\beta \cup \alpha = -\beta \cup \alpha\); in particular \(\alpha \cup \beta \neq \beta \cup \alpha\) when both are nonzero.</text></feedback>
+  </answer>
+</question>
+
+<!-- Q14: de Rham cohomology of S^n -->
+<question type="multichoice">
+  <name><text>TOP50_Q14_deRhamSphere</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The de Rham cohomology groups \(H^k_{\mathrm{dR}}(S^n)\) of the \(n\)-sphere (for \(n \geq 1\)) are:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H^0_{\mathrm{dR}}(S^n) = \mathbb{R},\; H^n_{\mathrm{dR}}(S^n) = \mathbb{R}\), and \(H^k_{\mathrm{dR}}(S^n) = 0\) for \(0 < k < n\)]]></text>
+    <feedback><text>Correct. By de Rham's theorem, \(H^k_{\mathrm{dR}}(S^n) \cong H^k(S^n;\mathbb{R})\): constants generate degree 0, and the volume form generates degree \(n\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^k_{\mathrm{dR}}(S^n) = \mathbb{R}\) for all \(0 \leq k \leq n\)]]></text>
+    <feedback><text>Incorrect. This is the de Rham cohomology of \(T^n\). The sphere has nonzero cohomology only in degrees 0 and \(n\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^0_{\mathrm{dR}}(S^n) = \mathbb{R}\) and \(H^k_{\mathrm{dR}}(S^n) = 0\) for all \(k \geq 1\)]]></text>
+    <feedback><text>Incorrect. This describes a contractible space. \(S^n\) has nontrivial \(H^n_{\mathrm{dR}} = \mathbb{R}\) generated by the volume form.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^0_{\mathrm{dR}}(S^n) = H^{n-1}_{\mathrm{dR}}(S^n) = H^n_{\mathrm{dR}}(S^n) = \mathbb{R}\); all other \(H^k = 0\)]]></text>
+    <feedback><text>Incorrect. Only degrees 0 and \(n\) are nonzero; degree \(n-1\) vanishes for \(n \geq 2\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q15: Homology of wedge sum -->
+<question type="multichoice">
+  <name><text>TOP50_Q15_WedgeSum</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>For well-pointed spaces, \(\tilde{H}_n(X \vee Y) \cong \tilde{H}_n(X) \oplus \tilde{H}_n(Y)\). What are the homology groups \(H_k(S^1 \vee S^2;\mathbb{Z})\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z},\; H_2 = \mathbb{Z},\; H_k = 0 \text{ for } k \geq 3\)]]></text>
+    <feedback><text>Correct. \(\tilde{H}_1 = \tilde{H}_1(S^1)\oplus\tilde{H}_1(S^2) = \mathbb{Z}\oplus 0 = \mathbb{Z}\); \(\tilde{H}_2 = \tilde{H}_2(S^1)\oplus\tilde{H}_2(S^2) = 0\oplus\mathbb{Z} = \mathbb{Z}\); and \(H_0 = \mathbb{Z}\) (connected).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z}^2,\; H_1 = \mathbb{Z},\; H_2 = \mathbb{Z},\; H_k = 0 \text{ for } k \geq 3\)]]></text>
+    <feedback><text>Incorrect. \(S^1 \vee S^2\) is path-connected (the basepoints are identified), so \(H_0 = \mathbb{Z}\), not \(\mathbb{Z}^2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z},\; H_2 = 0,\; H_k = 0 \text{ for } k \geq 3\)]]></text>
+    <feedback><text>Incorrect. The \(S^2\) factor contributes \(\tilde{H}_2(S^2) = \mathbb{Z}\), so \(H_2(S^1\vee S^2) = \mathbb{Z}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z}^2,\; H_2 = \mathbb{Z},\; H_k = 0 \text{ for } k \geq 3\)]]></text>
+    <feedback><text>Incorrect. \(\tilde{H}_1(S^2) = 0\), so only the \(S^1\) factor contributes to \(H_1\), giving \(H_1 = \mathbb{Z}\), not \(\mathbb{Z}^2\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q16: Klein bottle homology -->
+<question type="multichoice">
+  <name><text>TOP50_Q16_KleinBottle</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The Klein bottle \(K\) is a non-orientable closed surface with CW-structure: one 0-cell, two 1-cells \(a,b\), and one 2-cell attached via the word \(aba^{-1}b\). What are the homology groups \(H_k(K;\mathbb{Z})\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z} \oplus \mathbb{Z}/2\mathbb{Z},\; H_k = 0 \text{ for } k \geq 2\)]]></text>
+    <feedback><text>Correct. Cellular homology: \(\partial_2(e^2) = 2b\) (from the attaching word), so \(H_1 = (\mathbb{Z} \oplus \mathbb{Z})/\langle 2b \rangle = \mathbb{Z} \oplus \mathbb{Z}/2\). Non-orientability forces \(H_2 = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z}^2,\; H_2 = \mathbb{Z},\; H_k = 0 \text{ for } k \geq 3\)]]></text>
+    <feedback><text>Incorrect. This is the homology of the torus. The Klein bottle is non-orientable, so \(H_2(K;\mathbb{Z}) = 0\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z}/2\mathbb{Z},\; H_k = 0 \text{ for } k \geq 2\)]]></text>
+    <feedback><text>Incorrect. \(H_1(K;\mathbb{Z}) = \mathbb{Z} \oplus \mathbb{Z}/2\), not just \(\mathbb{Z}/2\); there is a free summand from the generator \(a\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z},\; H_2 = \mathbb{Z}/2\mathbb{Z},\; H_k = 0 \text{ for } k \geq 3\)]]></text>
+    <feedback><text>Incorrect. \(H_1(K) = \mathbb{Z}\oplus\mathbb{Z}/2\) (not \(\mathbb{Z}\)) and \(H_2(K;\mathbb{Z}) = 0\) (not \(\mathbb{Z}/2\)).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q17: Lefschetz fixed-point theorem -->
+<question type="multichoice">
+  <name><text>TOP50_Q17_Lefschetz</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The Lefschetz number of a continuous map \(f: X \to X\) on a compact polyhedron is:</p>
+    <p>\[L(f) = \sum_{k \geq 0} (-1)^k \operatorname{tr}\bigl(f_*: H_k(X;\mathbb{Q}) \to H_k(X;\mathbb{Q})\bigr).\]</p>
+    <p>If \(L(f) \neq 0\), then \(f\) has a fixed point. For the identity map on \(T^2\), what is \(L(\mathrm{id})\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(L(\mathrm{id}) = \chi(T^2) = 0\), consistent with the existence of fixed-point-free maps on \(T^2\) (e.g., translations)]]></text>
+    <feedback><text>Correct. \(L(\mathrm{id}) = \operatorname{tr}(\mathrm{id}|_{H_0}) - \operatorname{tr}(\mathrm{id}|_{H_1}) + \operatorname{tr}(\mathrm{id}|_{H_2}) = 1 - 2 + 1 = 0 = \chi(T^2)\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(L(\mathrm{id}) = 2\), so every map on \(T^2\) has a fixed point]]></text>
+    <feedback><text>Incorrect. \(L(\mathrm{id}) = \chi(T^2) = 0\), not 2. Translations on \(T^2\) are continuous, fixed-point-free maps.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(L(\mathrm{id}) = -2\)]]></text>
+    <feedback><text>Incorrect. \(L(\mathrm{id}) = 1 - 2 + 1 = 0\). Clearly the identity has every point as a fixed point, so \(L \neq -2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(L(\mathrm{id}) = 1\) for any path-connected space]]></text>
+    <feedback><text>Incorrect. \(L(\mathrm{id}) = \chi(X)\), which depends on all homology groups, not just \(H_0\). For \(T^2\), \(\chi = 0\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q18: Cohomology ring of RP^n mod 2 -->
+<question type="multichoice">
+  <name><text>TOP50_Q18_CohRingRPn</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>What is the cohomology ring \(H^*(\mathbb{R}P^n;\mathbb{Z}/2\mathbb{Z})\) of real projective \(n\)-space?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H^*(\mathbb{R}P^n;\mathbb{Z}/2) \cong (\mathbb{Z}/2)[\alpha]/(\alpha^{n+1})\) where \(\alpha \in H^1(\mathbb{R}P^n;\mathbb{Z}/2)\) is the generator]]></text>
+    <feedback><text>Correct. This is a truncated polynomial ring: \(H^k(\mathbb{R}P^n;\mathbb{Z}/2) = \mathbb{Z}/2\) generated by \(\alpha^k\) for \(0 \leq k \leq n\), and 0 for \(k > n\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^*(\mathbb{R}P^n;\mathbb{Z}/2) \cong (\mathbb{Z}/2)[\beta]/(\beta^{n+1})\) with \(\deg(\beta) = 2\) (i.e., nontrivial only in even degrees)]]></text>
+    <feedback><text>Incorrect. For \(\mathbb{R}P^n\) with \(\mathbb{Z}/2\) coefficients, the generator \(\alpha\) has degree 1 (not 2). Degree-2 generation appears for \(\mathbb{C}P^n\) with \(\mathbb{Z}\) coefficients.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^k(\mathbb{R}P^n;\mathbb{Z}/2) = \mathbb{Z}/2\) for \(k = 0\) and \(k = n\) only; all others vanish]]></text>
+    <feedback><text>Incorrect. With \(\mathbb{Z}/2\) coefficients, \(H^k(\mathbb{R}P^n;\mathbb{Z}/2) = \mathbb{Z}/2\) for every \(k\) in \(\{0, 1, \ldots, n\}\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H^*(\mathbb{R}P^n;\mathbb{Z}/2) \cong \Lambda_{\mathbb{Z}/2}[\alpha]\) (exterior algebra with \(\deg\alpha = 1\))]]></text>
+    <feedback><text>Incorrect. An exterior algebra would give cohomology only in degrees 0 and 1. The correct ring is a truncated polynomial algebra with nontrivial classes in all degrees 0 through \(n\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q19: Betti numbers and genus -->
+<question type="multichoice">
+  <name><text>TOP50_Q19_BettiGenus</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>For a closed orientable surface \(\Sigma_g\) of genus \(g\), the Betti numbers \(b_k = \operatorname{rank} H_k(\Sigma_g;\mathbb{Z})\) and the Euler characteristic \(\chi\) satisfy:</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(b_0 = 1,\; b_1 = 2g,\; b_2 = 1,\; \chi(\Sigma_g) = 2 - 2g\)]]></text>
+    <feedback><text>Correct. \(H_0 = \mathbb{Z}\) (connected), \(H_1 = \mathbb{Z}^{2g}\) (abelianization of \(\pi_1\)), \(H_2 = \mathbb{Z}\) (orientation class): \(\chi = 1 - 2g + 1 = 2 - 2g\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(b_0 = 1,\; b_1 = g,\; b_2 = 1,\; \chi(\Sigma_g) = 2 - g\)]]></text>
+    <feedback><text>Incorrect. \(b_1 = 2g\), not \(g\). The torus (\(g = 1\)) has \(H_1 = \mathbb{Z}^2\), so \(b_1 = 2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(b_0 = 1,\; b_1 = 2g,\; b_2 = 0,\; \chi(\Sigma_g) = 1 - 2g\)]]></text>
+    <feedback><text>Incorrect. \(b_2 = 1\) for every closed orientable surface (there is a fundamental class \(H_2 = \mathbb{Z}\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(b_0 = g,\; b_1 = 2g,\; b_2 = g,\; \chi(\Sigma_g) = 0\) for all \(g\)]]></text>
+    <feedback><text>Incorrect. \(b_0 = 1\) (one connected component) and \(b_2 = 1\) (one fundamental class), both independent of \(g\).</text></feedback>
+  </answer>
+</question>
+
+<!-- Q20: Homology of RP^3 -->
+<question type="multichoice">
+  <name><text>TOP50_Q20_HomologyRP3</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>The cellular chain complex of \(\mathbb{R}P^3\) has one cell in each dimension \(0, 1, 2, 3\) with boundary maps \(\partial_1 = 0\), \(\partial_2 = \times 2\), \(\partial_3 = 0\). What are the homology groups \(H_k(\mathbb{R}P^3;\mathbb{Z})\)?</p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <penalty>0.25</penalty>
+  <single>true</single>
+  <answer fraction="100">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z}/2\mathbb{Z},\; H_2 = 0,\; H_3 = \mathbb{Z}\)]]></text>
+    <feedback><text>Correct. From the chain complex \(0 \to \mathbb{Z} \xrightarrow{0} \mathbb{Z} \xrightarrow{\times 2} \mathbb{Z} \xrightarrow{0} \mathbb{Z} \to 0\): \(H_3 = \mathbb{Z}\) (orientable: \(\mathbb{R}P^3\) is a closed orientable 3-manifold since dimension 3 is odd), \(H_2 = \ker(\times 2) = 0\), \(H_1 = \mathbb{Z}/2\).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z}/2\mathbb{Z},\; H_2 = \mathbb{Z}/2\mathbb{Z},\; H_3 = 0\)]]></text>
+    <feedback><text>Incorrect. \(\mathbb{R}P^3\) is a closed orientable 3-manifold (odd-dimensional), so \(H_3 = \mathbb{Z}\) (not 0) and \(H_2 = 0\) (not \(\mathbb{Z}/2\)).</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z}/2\mathbb{Z},\; H_2 = 0,\; H_3 = 0\)]]></text>
+    <feedback><text>Incorrect. \(H_3(\mathbb{R}P^3;\mathbb{Z}) = \mathbb{Z}\) since \(\mathbb{R}P^3\) is a closed orientable 3-manifold with a \(\mathbb{Z}\)-fundamental class.</text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text><![CDATA[\(H_0 = \mathbb{Z},\; H_1 = \mathbb{Z},\; H_2 = 0,\; H_3 = \mathbb{Z}\)]]></text>
+    <feedback><text>Incorrect. \(H_1(\mathbb{R}P^3;\mathbb{Z}) = \mathbb{Z}/2\) (the abelianization of \(\pi_1(\mathbb{R}P^3) = \mathbb{Z}/2\)), not \(\mathbb{Z}\).</text></feedback>
+  </answer>
+</question>
+
+</quiz>

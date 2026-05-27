@@ -1,0 +1,3160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<quiz>
+
+<question type="category">
+  <category>
+    <text><![CDATA[$course$/Advanced Algebra (M.Sc. Mathematics)/Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </category>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[In a recurring deposit of \({a}\) per month for \(T\) months, total deposit is:]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[Total \(={a}\cdot T\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\({={a}}\cdot T\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}}+T\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}}/T\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{a}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=2*{a}}\cdot T\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Solve: \({a}x+{b}y={c}\) and \({a}x+{b}y={d}\) where \({c}\ne {d}\).]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[Both lines have same LHS but different RHS \({c}\ne{d}\): the system is inconsistent (no solution).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[No solution]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[Unique solution]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[Infinite solutions]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[Exactly two solutions]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(x={c},\ y={d}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>b</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>c</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>d</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Perimeter of rectangle with sides \({a},{b}\):]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\(2({a}+{b})={=2*({a}+{b})}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\({=2*({a}+{b})}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}+{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=4*({a}+{b})}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=({a}+{b})/2}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>b</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Area of rectangle with length \({a}\) and width \({b}\):]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\({a}\times {b}={={a}*{b}}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\({={a}*{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}+{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(2({={a}+{b}})\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{a}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=({a}+{b})/2}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>b</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[\({a}\%\) of \({b}\) equals:]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\(\dfrac{{a}}{100}\cdot{b}={={a}*{b}/100}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\({={a}*{b}/100}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}+{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={b}/{a}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}/{b}*100}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>b</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Variance of a sample is:]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\(s^2=\dfrac{1}{n-1}\sum(x_i-\bar x)^2\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\(\dfrac{1}{n-1}\sum(x_i-\bar x)^{2}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\dfrac{1}{n}\sum x_i\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\sum x_i^{2}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\sum(x_i-\bar x)\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\bar x^{2}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Discriminant of \(ax^2+bx+c\) is:]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\(\Delta=b^2-4ac\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\(b^{2}-4ac\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(b^{2}+4ac\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(b-4ac\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(2a-b\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\dfrac{b}{2a}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[A pair of linear equations represents coincident lines iff:]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[All ratios equal: \(\dfrac{a_1}{a_2}=\dfrac{b_1}{b_2}=\dfrac{c_1}{c_2}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\(\dfrac{a_1}{a_2}=\dfrac{b_1}{b_2}=\dfrac{c_1}{c_2}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\dfrac{a_1}{a_2}=\dfrac{b_1}{b_2}\ne \dfrac{c_1}{c_2}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\dfrac{a_1}{a_2}\ne \dfrac{b_1}{b_2}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(a_1=b_1\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(c_1=c_2\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Conceptual (<b>Chapter 3 — Unit III — Modules, submodules and modules over PIDs</b>): which expression equals \( {a}({b}+{c}) \)?]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[Distributive law: \({a}\times {b}+{a}\times {c}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\({={a}*{b}+{a}*{c}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}+{b}+{c}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{b}*{c}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*({b}*{c})}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={b}+{c}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>b</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>c</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[A sum doubles itself in \(T\) years at simple interest. Rate is:]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\(P=\dfrac{PRT}{100}\Rightarrow R=\dfrac{100}{T}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\(\dfrac{100}{T}\%\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\dfrac{100}{2T}\%\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(50\%\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\dfrac{T}{100}\%\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(2T\%\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Mode of a data set is:]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[The value with the highest frequency.]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[value with highest frequency]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[middle value]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[lowest value]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[sum of values]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[average value]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[If \(a:b={a}:{b}\) and \(b:c={b}:{c}\), then \(a:c\) is:]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[Compose: \(a:c={a}:{c}\) (cancel common \(b\)).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\({={a}}:{={c}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}}:{={b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={b}}:{={c}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=({a}*{c})}:1\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(1:{={c}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>b</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>c</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Find \(\sqrt{{a}^{2}+{b}^{2}}\) for \({a}={a}\) and \({b}={b}\).]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\(\sqrt{{={a}*{a}+{b}*{b}}}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\(\sqrt{{={a}*{a}+{b}*{b}}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}+{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\sqrt{{={a}+{b}}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{a}+{b}*{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>b</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[For \(\Delta=0\), the roots are:]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[Real and equal (repeated).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[real and equal]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[complex]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[real and distinct]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[no roots]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[always 0]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Heron's formula for triangle area: \(s=(a+b+c)/2\). Area equals:]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\(\sqrt{s(s-a)(s-b)(s-c)}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\(\sqrt{s(s-a)(s-b)(s-c)}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\dfrac{1}{2}abc\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\dfrac{1}{2}ab\sin C\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(s(a+b+c)\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(abc\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Consider the topic <b>Chapter 3 — Unit III — Modules, submodules and modules over PIDs</b>. Evaluate \( {a}x+{b} \) at \(x={c}\).]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\({a}\times {c}+{b}={={a}*{c}+{b}}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\({={a}*{c}+{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}+{b}+{c}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{c}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*({b}+{c})}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={c}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>b</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>c</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Roots of \(ax^2+bx+c=0\):]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\(x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\(\dfrac{-b\pm\sqrt{b^{2}-4ac}}{2a}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\dfrac{b\pm\sqrt{b^{2}+4ac}}{2a}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\dfrac{-b\pm\sqrt{b^{2}+4ac}}{a}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(-\dfrac{b}\times {a}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\dfrac{c}\times {a}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Find the mean of \( {a},{b},{c} \).]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\(\bar x=\dfrac{{a}+{b}+{c}}{3}={=({a}+{b}+{c})/3}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\({=({a}+{b}+{c})/3}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=({a}+{b}+{c})}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=({a}*{b}*{c})/3}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=({a}+{b})/2}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=({a}+{c})/2}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>b</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>c</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Area of trapezium with parallel sides \({a},{b}\) and height \({c}\):]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\(\dfrac{1}{2}({a}+{b}){c}={=({a}+{b})*{c}/2}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\({=({a}+{b})*{c}/2}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=({a}+{b})*{c}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{b}*{c}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=({a}+{b}+{c})/2}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{c}+{b}*{c}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>b</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>c</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Factor theorem: \((x-{a})\) is a factor of \(p(x)\) iff:]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\(p({a})=0\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\(p({={a}})=0\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(p(0)={={a}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(p({={a}})\ne 0\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(p({={a}})=1\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(p\) is constant]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[If a system \(AX=B\) is consistent and \(\det A\ne 0\), the number of solutions is:]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[Non-singular matrix gives a unique solution.]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[Exactly one]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[Infinite]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[None]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[Two]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[Cannot determine]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[For 2x2 system \({a}x+y={c},\ x+{b}y={d}\), Cramer gives \(\Delta\) (coefficient determinant) equal to:]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\(\Delta = {a}\cdot{b} - 1\cdot 1 = {a}\times {b}-1\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\({={a}*{b}-1}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}+{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}-{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{b}+1}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=1}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>b</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>c</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>d</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Simplify \( ({a}+{b})^{2} \).]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[Identity: \({a}^2+2\times {a}\times {b}+{b}^2={={a}*{a}+2*{a}*{b}+{b}*{b}}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\({={a}*{a}+2*{a}*{b}+{b}*{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{a}+{b}*{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=({a}+{b})*{a}+{b}*{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=2*{a}*{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{b}+{b}*{a}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>b</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Sum of roots of \(ax^2+bx+c=0\):]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[\(-\dfrac{b}\times {a}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\(-\dfrac{b}\times {a}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\dfrac{b}\times {a}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(\dfrac{c}\times {a}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(-\dfrac{c}\times {a}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\(b-c\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+<question type="calculatedmulti">
+  <name>
+    <text><![CDATA[Chapter 3 — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </name>
+
+  <questiontext format="html">
+    <text><![CDATA[Simplify \( ({a}-{b})^{2} \).]]></text>
+  </questiontext>
+
+  <generalfeedback format="html">
+    <text><![CDATA[Identity: \({a}^2-2\times {a}\times {b}+{b}^2={={a}*{a}-2*{a}*{b}+{b}*{b}}\).]]></text>
+  </generalfeedback>
+
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <synchronize>0</synchronize>
+  <single>1</single>
+  <answernumbering>none</answernumbering>
+  <shuffleanswers>1</shuffleanswers>
+
+  <correctfeedback>
+    <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+  </correctfeedback>
+  <partiallycorrectfeedback>
+    <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+  </partiallycorrectfeedback>
+  <incorrectfeedback>
+    <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+  </incorrectfeedback>
+
+  <answer fraction="100">
+  <text><![CDATA[\({={a}*{a}-2*{a}*{b}+{b}*{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{a}+{b}*{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({={a}*{a}-{b}*{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=2*{a}*{b}}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+  <answer fraction="0">
+  <text><![CDATA[\({=({a}-{b})*({a}+{b})}\)]]></text>
+  <tolerance>0.01</tolerance>
+  <tolerancetype>1</tolerancetype>
+  <correctanswerformat>1</correctanswerformat>
+  <correctanswerlength>0</correctanswerlength>
+  <feedback format="html">
+    <text><![CDATA[]]></text>
+  </feedback>
+</answer>
+
+  <dataset_definitions>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>a</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+    <dataset_definition>
+  <status><text>private</text></status>
+  <name><text>b</text></name>
+  <type>calculatedsimple</type>
+  <distribution><text>uniform</text></distribution>
+  <minimum><text>2</text></minimum>
+  <maximum><text>9</text></maximum>
+  <decimals><text>0</text></decimals>
+  <itemcount>1</itemcount>
+  <dataset_items>
+    <dataset_item>
+      <number>1</number>
+      <value>2</value>
+    </dataset_item>
+  </dataset_items>
+  <number_of_items>1</number_of_items>
+</dataset_definition>
+  </dataset_definitions>
+
+  <hint format="html">
+  <text><![CDATA[<p>Recall the relevant definition or formula.</p>]]></text>
+</hint>
+  <hint format="html">
+  <text><![CDATA[<p>Substitute the given values carefully.</p>]]></text>
+</hint>
+</question>
+
+</quiz>

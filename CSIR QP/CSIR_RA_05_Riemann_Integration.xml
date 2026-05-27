@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Real Analysis/Riemann Integration</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Lebesgue Criterion</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A bounded function \(f:[a,b]\to\mathbb{R}\) is Riemann integrable if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) The set of discontinuities of \(f\) has Lebesgue measure zero</strong></p><p>Lebesgue's criterion: \(f\) is Riemann integrable on \([a,b]\) iff it is bounded and its set of discontinuities has measure zero (i.e., \(f\) is continuous almost everywhere). Continuous functions, monotone functions (at most countably many discontinuities), and bounded functions with finitely many discontinuities are all Riemann integrable. The Dirichlet function (discontinuous everywhere) is not Riemann integrable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is continuous on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) has finitely many discontinuities]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The set of discontinuities of \(f\) has Lebesgue measure zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is monotone on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Upper and Lower Darboux Sums</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a bounded function \(f\) on \([a,b]\) and any partition \(P\), it is always true that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(L(f,P) \leq L(f,Q)\) for any refinement \(Q \supseteq P\)</strong></p><p>Key property of Darboux sums: refining a partition increases lower sums and decreases upper sums. Formally: if \(Q\) is a refinement of \(P\), then \(L(f,P) \leq L(f,Q) \leq U(f,Q) \leq U(f,P)\). Consequently, for any two partitions \(P_1, P_2\): \(L(f,P_1) \leq U(f,P_2)\) (lower sums always \(\leq\) upper sums, regardless of partition). The function is Riemann integrable iff \(\inf_P U(f,P) = \sup_P L(f,P)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(L(f,P) \leq L(f,Q)\) for any refinement \(Q \supseteq P\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(U(f,P) \leq L(f,P)\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(U(f,P) = L(f,P)\) for fine enough partitions]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(U(f,P_1) \leq L(f,P_2)\) for any partitions \(P_1, P_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Fundamental Theorem Part I</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f \in \mathcal{R}[a,b]\) (Riemann integrable), and define \(F(x) = \displaystyle\int_a^x f(t)\,dt\). Then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(F\) is Lipschitz (hence uniformly continuous) on \([a,b]\), and \(F'(x)=f(x)\) at every point of continuity of \(f\)</strong></p><p>FTC Part 1: \(F\) is always Lipschitz continuous (since \(|F(x)-F(y)|\leq M|x-y|\) where \(|f|\leq M\)). Moreover, \(F'(x)=f(x)\) at every point where \(f\) is continuous. \(F\) may not be differentiable at discontinuities of \(f\) (though Darboux's theorem says \(F'\) has IVP). If \(f\) is merely integrable (not necessarily continuous), \(F\) need not be differentiable everywhere.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(F\) is differentiable everywhere on \([a,b]\) with \(F'=f\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(F\) is uniformly continuous on \([a,b]\), and \(F'(x)=f(x)\) at every continuity point of \(f\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F\) is differentiable except on the set where \(f\) is discontinuous, but \(F'\) could be 0 there]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F\) is constant if \(f\) has a discontinuity]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Computation via FTC</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Evaluate \(\displaystyle\int_0^{\pi/2} \sin^2(x)\,dx\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(\pi/4\)</strong></p><p>Using the identity \(\sin^2(x) = (1-\cos(2x))/2\): \(\int_0^{\pi/2}\sin^2 x\,dx = \int_0^{\pi/2}\frac{1-\cos(2x)}{2}dx = \frac{1}{2}\left[x - \frac{\sin(2x)}{2}\right]_0^{\pi/2} = \frac{1}{2}\left(\frac{\pi}{2} - \frac{\sin\pi}{2}\right) - 0 = \frac{1}{2}\cdot\frac{\pi}{2} = \frac{\pi}{4}\). Alternatively, use the reduction formula or Wallis's formula.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Improper Integral Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The improper integral \(\displaystyle\int_1^{\infty} \frac{dx}{x^p}\) converges for:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(p > 1\)</strong></p><p>\(\int_1^{\infty} x^{-p}\,dx = \left[\frac{x^{1-p}}{1-p}\right]_1^{\infty}\) for \(p\neq1\). For \(p>1\): \(x^{1-p}\to0\) as \(x\to\infty\), so integral \(= \frac{0-(1)}{1-p} = \frac{1}{p-1}\). For \(p<1\): integral diverges (goes to \(\infty\)). For \(p=1\): \(\int_1^{\infty}dx/x = \ln x\big|_1^{\infty} = \infty\). Convergence iff \(p>1\), mirroring the \(p\)-series test.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p > 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p \geq 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(p > 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0 < p < 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Gamma Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Gamma function \(\Gamma(n) = \displaystyle\int_0^{\infty} t^{n-1}e^{-t}\,dt\) satisfies \(\Gamma(n) =\) for positive integers \(n\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \((n-1)!\)</strong></p><p>By integration by parts: \(\Gamma(n) = \int_0^\infty t^{n-1}e^{-t}dt\). Setting \(u=t^{n-1}, dv=e^{-t}dt\): \(\Gamma(n) = (n-1)\int_0^\infty t^{n-2}e^{-t}dt = (n-1)\Gamma(n-1)\). Since \(\Gamma(1)=\int_0^\infty e^{-t}dt=1=0!\), induction gives \(\Gamma(n)=(n-1)!\). Also: \(\Gamma(1/2)=\sqrt{\pi}\), \(\Gamma(3/2)=\sqrt{\pi}/2\). The functional equation \(\Gamma(z+1)=z\Gamma(z)\) extends to all complex \(z\) except non-positive integers.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(n!\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\((n-1)!\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Beta Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Beta function \(B(m,n) = \displaystyle\int_0^1 t^{m-1}(1-t)^{n-1}\,dt\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\dfrac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}\)</strong></p><p>The fundamental relation \(B(m,n) = \Gamma(m)\Gamma(n)/\Gamma(m+n)\) connects the Beta and Gamma functions. For positive integers: \(B(m,n) = (m-1)!(n-1)!/(m+n-1)!\). Special values: \(B(1/2,1/2) = \Gamma(1/2)^2/\Gamma(1) = \pi\). The Beta function also appears as \(\int_0^{\pi/2}\sin^{2m-1}(\theta)\cos^{2n-1}(\theta)\,d\theta = B(m,n)/2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\Gamma(m) + \Gamma(n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\Gamma(m+n)}{\Gamma(m)\Gamma(n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\Gamma(mn)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Change of Variables</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Evaluate \(\displaystyle\int_0^1 \frac{x}{\sqrt{1-x^2}}\,dx\) using the substitution \(u = 1-x^2\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(1\)</strong></p><p>Let \(u = 1-x^2\), \(du = -2x\,dx\). When \(x=0\): \(u=1\); when \(x=1\): \(u=0\). \(\int_0^1 \frac{x}{\sqrt{1-x^2}}dx = \int_1^0 \frac{-du/2}{\sqrt{u}} = \frac{1}{2}\int_0^1 u^{-1/2}\,du = \frac{1}{2}\left[2\sqrt{u}\right]_0^1 = \frac{1}{2}\cdot 2 = 1\). Alternatively: \(\int_0^1 \frac{x}{\sqrt{1-x^2}}dx = \left[-\sqrt{1-x^2}\right]_0^1 = 0-(-1)=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Dirichlet Function Integrability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Dirichlet function \(D(x) = \begin{cases}1 & x \in \mathbb{Q} \\ 0 & x \notin \mathbb{Q}\end{cases}\) on \([0,1]\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Not Riemann integrable, but Lebesgue integrable with \(\int D\,dx = 0\)</strong></p><p>For any partition \(P\): each subinterval contains both rationals (where \(D=1\)) and irrationals (where \(D=0\)). So \(U(D,P) = 1\) and \(L(D,P) = 0\) for every partition. Thus \(\overline{\int}D = 1 \neq 0 = \underline{\int}D\), so \(D\) is NOT Riemann integrable. However, \(\mathbb{Q}\) has Lebesgue measure zero, so the Lebesgue integral \(\int_{[0,1]} D\,d\mu = 0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Riemann integrable with \(\int_0^1 D = 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Riemann integrable with \(\int_0^1 D = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Riemann integrable with \(\int_0^1 D = 1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Not Riemann integrable, but Lebesgue integrable with integral 0]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Integration by Parts</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Evaluate \(\displaystyle\int_0^1 x e^x\,dx\) using integration by parts:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(1\)</strong></p><p>Let \(u=x, dv=e^x dx\), so \(du=dx, v=e^x\). Then \(\int xe^x dx = xe^x - \int e^x dx = xe^x - e^x + C = (x-1)e^x + C\). Evaluating: \([(x-1)e^x]_0^1 = (1-1)e^1 - (0-1)e^0 = 0 - (-1) = 1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(e-2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Comparison for Improper Integrals</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The improper integral \(\displaystyle\int_0^1 \frac{\sin x}{x^{3/2}}\,dx\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Converges</strong></p><p>Near \(x=0\): \(\sin x \approx x\), so \(\frac{\sin x}{x^{3/2}} \approx \frac{x}{x^{3/2}} = \frac{1}{\sqrt{x}} = x^{-1/2}\). Since \(\int_0^1 x^{-1/2}dx = 2\) converges, and \(0 \leq \frac{\sin x}{x^{3/2}} \leq \frac{x}{x^{3/2}} = x^{-1/2}\) for \(x\in(0,1]\), by comparison test the integral converges. The singularity at 0 is integrable since the order is \(-1/2 > -1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Diverges to \(+\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Oscillates without converging]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges only conditionally]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Integrability of Monotone Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A monotone bounded function \(f: [a,b] \to \mathbb{R}\) is Riemann integrable because:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Its set of discontinuities is countable (hence has measure zero)</strong></p><p>A monotone function on \([a,b]\) has at most countably many discontinuities (all jump type). A countable set has Lebesgue measure zero. By Lebesgue's criterion, the function is Riemann integrable. One can also prove this directly: for any \(\epsilon>0\), partition \([a,b]\) into \(n\) equal parts with width \(\delta=(b-a)/n\); then \(U-L \leq (f(b)-f(a))\delta = (f(b)-f(a))(b-a)/n < \epsilon\) for large \(n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It has no discontinuities]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Its set of discontinuities is at most countable, hence has Lebesgue measure zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is Lipschitz continuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Monotone functions are always differentiable almost everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Integral Inequalities</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f\) and \(g\) are Riemann integrable on \([a,b]\) with \(f(x) \leq g(x)\) for all \(x\in[a,b]\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\displaystyle\int_a^b f \leq \int_a^b g\)</strong></p><p>Monotonicity of the Riemann integral: if \(f\leq g\), then \(\int_a^b f\,dx \leq \int_a^b g\,dx\). This follows because \(g-f\geq0\), and for non-negative integrable functions, the integral is non-negative (since lower Darboux sums are non-negative for non-negative functions). This is fundamental for integral inequalities and comparison arguments.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\int_a^b f \leq \displaystyle\int_a^b g\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\int_a^b f \geq \displaystyle\int_a^b g\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\int_a^b f = \displaystyle\int_a^b g\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No comparison is possible without continuity]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Mean Value Theorem for Integrals</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f: [a,b] \to \mathbb{R}\) is continuous, the Mean Value Theorem for Integrals guarantees a point \(c \in (a,b)\) such that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(f(c) = \dfrac{1}{b-a}\displaystyle\int_a^b f(x)\,dx\)</strong></p><p>MVT for integrals: if \(f\) is continuous on \([a,b]\), then \(\exists c\in(a,b)\) such that \(f(c)(b-a) = \int_a^b f\,dx\), i.e., \(f(c)\) equals the average value \(\frac{1}{b-a}\int_a^b f\). Proof: let \(F(x)=\int_a^x f\), which is differentiable (FTC), and apply MVT to \(F\): \(F(b)-F(a) = F'(c)(b-a) = f(c)(b-a)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'(c) = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(c) = \displaystyle\int_a^b f(x)\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(c) = \dfrac{1}{b-a}\displaystyle\int_a^b f(x)\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\int_a^c f = \int_c^b f\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Thomae Function Integrability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Thomae's function (defined as \(1/q\) for \(x=p/q\) in lowest terms, 0 for irrationals) on \([0,1]\) is Riemann integrable because:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) It is continuous at every irrational and its set of discontinuities (the rationals) has measure zero</strong></p><p>Thomae's function is discontinuous precisely at every rational in \([0,1]\) (countably many), hence a set of Lebesgue measure zero. By Lebesgue's criterion, it is Riemann integrable. Its Riemann integral equals 0 (matching its Lebesgue integral, since the function equals 0 a.e.). This shows bounded functions with countably many discontinuities are Riemann integrable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It is continuous everywhere on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Its discontinuities form a countable (measure-zero) set]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is monotone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All its values are in \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Differentiation Under the Integral Sign</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(F(t) = \displaystyle\int_a^b f(x,t)\,dx\) and \(f, \partial f/\partial t\) are continuous, then \(F'(t) =\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\displaystyle\int_a^b \frac{\partial f}{\partial t}(x,t)\,dx\)</strong></p><p>Leibniz integral rule (differentiation under the integral sign): under the stated conditions (continuity of \(f\) and \(\partial f/\partial t\) on \([a,b]\times[c,d]\)), differentiation and integration can be interchanged: \(F'(t) = \int_a^b \partial f/\partial t\,dx\). More generally, if limits depend on \(t\): \(\frac{d}{dt}\int_{g(t)}^{h(t)} f(x,t)\,dx = f(h(t),t)h'(t) - f(g(t),t)g'(t) + \int_{g(t)}^{h(t)}\frac{\partial f}{\partial t}\,dx\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\int_a^b \frac{\partial f}{\partial t}(x,t)\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(b,t) - f(a,t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\int_a^b f(x,t)\cdot t\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cannot be differentiated without more conditions]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - Wallis Product</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Using the reduction formula \(\displaystyle\int_0^{\pi/2}\sin^n x\,dx\), Wallis's product gives:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(\dfrac{\pi}{2} = \displaystyle\prod_{n=1}^{\infty} \frac{(2n)(2n)}{(2n-1)(2n+1)}\)</strong></p><p>Wallis's product: \(\frac{\pi}{2} = \frac{2}{1}\cdot\frac{2}{3}\cdot\frac{4}{3}\cdot\frac{4}{5}\cdot\frac{6}{5}\cdot\frac{6}{7}\cdots = \prod_{n=1}^\infty \frac{4n^2}{4n^2-1}\). This follows from the ratio of the reduction formulas: \(I_{2n}/I_{2n+1} \to 1\) and the explicit formulas \(I_{2n} = \frac{(2n-1)!!}{(2n)!!}\cdot\frac{\pi}{2}\), \(I_{2n+1} = \frac{(2n)!!}{(2n+1)!!}\). Setting \(I_{2n}\cdot I_{2n+1} = \frac{\pi}{2(2n+1)}\) and taking limits yields Wallis's formula.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi = 4\left(1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \cdots\right)\) (Leibniz)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\Gamma(1/2)^2 = \pi\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\int_0^{\pi/2}\sin^n x\,dx = \frac{(n-1)!!}{n!!}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{\pi}{2} = \displaystyle\prod_{n=1}^{\infty} \frac{4n^2}{4n^2-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>Riemann Integration - FTC Part II</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(G\) is an antiderivative of a continuous function \(f\) on \([a,b]\) (i.e., \(G'=f\)), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\displaystyle\int_a^b f(x)\,dx = G(b) - G(a)\)</strong></p><p>FTC Part 2: if \(f\) is continuous on \([a,b]\) and \(G\) is any antiderivative (\(G'=f\)), then \(\int_a^b f = G(b)-G(a)\). This follows because by FTC Part 1, \(F(x)=\int_a^x f\) is also an antiderivative, and any two antiderivatives differ by a constant: \(G=F+C\). So \(G(b)-G(a) = F(b)+C-(F(a)+C) = F(b)-F(a) = \int_a^b f\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\int_a^b f(x)\,dx = G(a) - G(b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\int_a^b f(x)\,dx = G(b) - G(a)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\int_a^b f(x)\,dx = G'\!\left(\frac{a+b}{2}\right)(b-a)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\int_a^b f(x)\,dx = G(b)^2 - G(a)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

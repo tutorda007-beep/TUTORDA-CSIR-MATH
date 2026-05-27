@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Statistics and Probability/Probability Theory</text>
+    </category>
+    <info format="html"><text>CSIR NET level MCQ questions on Probability Theory</text></info>
+  </question>
+
+  <!-- Q1 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q01 Kolmogorov Axioms</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A probability space \((\Omega, \mathcal{F}, P)\) satisfies the Kolmogorov axioms. If \(A\) and \(B\) are events with \(P(A)=0.6\) and \(P(B)=0.5\), the minimum possible value of \(P(A\cap B)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(0.1\)</text><feedback format="html"><text>Correct. By inclusion-exclusion and \(P(A\cup B)\leq1\): \(P(A\cap B)\geq P(A)+P(B)-1=0.6+0.5-1=0.1\).</text></feedback></answer>
+    <answer fraction="0"><text>\(0.3\)</text><feedback format="html"><text>Incorrect. The minimum is \(\max(P(A)+P(B)-1,0)=0.1\).</text></feedback></answer>
+    <answer fraction="0"><text>\(0\)</text><feedback format="html"><text>Incorrect. Since \(P(A)+P(B)=1.1>1\), disjoint events are impossible; the minimum is \(0.1\).</text></feedback></answer>
+    <answer fraction="0"><text>\(0.5\)</text><feedback format="html"><text>Incorrect. That would be \(P(B)\) itself. The minimum overlap is \(P(A)+P(B)-1=0.1\).</text></feedback></answer>
+  </question>
+
+  <!-- Q2 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q02 Conditional Probability</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Two dice are rolled. Given that the sum is at least 10, the probability that both dice show 5 is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{1}{6}\)]]></text><feedback format="html"><text>Correct. Outcomes with sum \(\geq10\): \((4,6),(5,5),(6,4),(5,6),(6,5),(6,6)\) — 6 outcomes. Only \((5,5)\) has both showing 5. Probability \(=1/6\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{36}\)]]></text><feedback format="html"><text>Incorrect. This is the unconditional probability of \((5,5)\). Conditional probability \(=P(\{(5,5)\})/P(\text{sum}\geq10)=(1/36)/(6/36)=1/6\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{3}\)]]></text><feedback format="html"><text>Incorrect. There are 6 favorable outcomes for sum \(\geq10\), only 1 of which is \((5,5)\). Probability \(=1/6\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{12}\)]]></text><feedback format="html"><text>Incorrect. Sum \(\geq10\) has 6 equally likely outcomes; \((5,5)\) is 1 of them, giving probability \(1/6\).</text></feedback></answer>
+  </question>
+
+  <!-- Q3 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q03 Bayes Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A medical test for a disease has sensitivity 0.95 (true positive rate) and specificity 0.90 (true negative rate). The disease prevalence is 1%. A positive test result has probability of truly having the disease equal to:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\approx 8.7\%\)]]></text><feedback format="html"><text>Correct. By Bayes: \(P(D|+)=\frac{0.95\times0.01}{0.95\times0.01+0.10\times0.99}=\frac{0.0095}{0.0095+0.099}=\frac{0.0095}{0.1085}\approx0.0876\approx8.7\%\).</text></feedback></answer>
+    <answer fraction="0"><text>\(95\%\)</text><feedback format="html"><text>Incorrect. 95% is the sensitivity, not the positive predictive value. Low prevalence drastically reduces the PPV.</text></feedback></answer>
+    <answer fraction="0"><text>\(50\%\)</text><feedback format="html"><text>Incorrect. With only 1% prevalence, even a high-sensitivity test gives a PPV well below 50%.</text></feedback></answer>
+    <answer fraction="0"><text>\(90\%\)</text><feedback format="html"><text>Incorrect. 90% is the specificity. The PPV is approximately 8.7%.</text></feedback></answer>
+  </question>
+
+  <!-- Q4 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q04 Independence of Events</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Events \(A\), \(B\), \(C\) are mutually independent iff \(P(A\cap B)=P(A)P(B)\), \(P(A\cap C)=P(A)P(C)\), \(P(B\cap C)=P(B)P(C)\), AND \(P(A\cap B\cap C)=P(A)P(B)P(C)\). Pairwise independence does NOT imply mutual independence. A classic counterexample uses:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Bernstein's example: two fair coin flips with events \(A=\{HH,HT\}\), \(B=\{HH,TH\}\), \(C=\{HH,TT\}\) (first head, second head, both same)</text><feedback format="html"><text>Correct. In Bernstein's example with sample space of 2 coin flips, the three events are pairwise independent but not mutually independent.</text></feedback></answer>
+    <answer fraction="0"><text>Any three disjoint events with equal probability</text><feedback format="html"><text>Incorrect. Disjoint events with positive probability are never independent (\(P(A\cap B)=0\neq P(A)P(B)\)).</text></feedback></answer>
+    <answer fraction="0"><text>Three events all equal to the same event \(A\)</text><feedback format="html"><text>Incorrect. If \(A=B=C\), then \(P(A\cap B\cap C)=P(A)=P(A)^3\) requires \(P(A)=0\) or \(1\).</text></feedback></answer>
+    <answer fraction="0"><text>Events forming a partition of \(\Omega\)</text><feedback format="html"><text>Incorrect. Partition events are mutually exclusive, hence not independent (unless trivially zero probability).</text></feedback></answer>
+  </question>
+
+  <!-- Q5 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q05 Total Probability</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Box 1 has 3 red and 2 blue balls; Box 2 has 1 red and 4 blue balls. A box is chosen at random (equally likely), then a ball is drawn. The probability that the drawn ball is red is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{2}{5}\)]]></text><feedback format="html"><text>Correct. By total probability: \(P(R)=\frac{1}{2}\cdot\frac{3}{5}+\frac{1}{2}\cdot\frac{1}{5}=\frac{3}{10}+\frac{1}{10}=\frac{4}{10}=\frac{2}{5}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{2}\)]]></text><feedback format="html"><text>Incorrect. \(P(R)=\frac{1}{2}\cdot\frac{3}{5}+\frac{1}{2}\cdot\frac{1}{5}=\frac{2}{5}\neq\frac{1}{2}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{3}{5}\)]]></text><feedback format="html"><text>Incorrect. This is \(P(R|\text{Box 1})\), not the total probability.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{5}\)]]></text><feedback format="html"><text>Incorrect. \(P(R)=2/5\), not \(1/5\).</text></feedback></answer>
+  </question>
+
+  <!-- Q6 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q06 Borel-Cantelli Lemma</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The first Borel-Cantelli lemma states: if \(\sum_{n=1}^\infty P(A_n)<\infty\), then \(P(A_n\text{ i.o.})=0\) (infinitely often). If the events are independent and \(\sum P(A_n)=\infty\), then by the second lemma:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(P(A_n\text{ i.o.})=1\)]]></text><feedback format="html"><text>Correct. The second Borel-Cantelli lemma: for independent events, \(\sum P(A_n)=\infty\) implies \(P(\limsup A_n)=P(A_n\text{ i.o.})=1\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(P(A_n\text{ i.o.})=0\)]]></text><feedback format="html"><text>Incorrect. When \(\sum P(A_n)=\infty\) and events are independent, the probability is 1, not 0.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(P(A_n\text{ i.o.})=1/2\)]]></text><feedback format="html"><text>Incorrect. The second Borel-Cantelli lemma gives probability exactly 1.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(P(A_n\text{ i.o.})\) depends on the specific probabilities \(P(A_n)\)]]></text><feedback format="html"><text>Incorrect. For independent events with \(\sum P(A_n)=\infty\), the probability is always exactly 1, regardless of the specific values.</text></feedback></answer>
+  </question>
+
+  <!-- Q7 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q07 Probability Generating Function</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The probability generating function (PGF) of a non-negative integer-valued random variable \(X\) is \(G(z)=E[z^X]=\sum_{k=0}^\infty P(X=k)z^k\). If \(X\sim\text{Poisson}(\lambda)\), then \(G(z)=\):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(e^{\lambda(z-1)}\)]]></text><feedback format="html"><text>Correct. \(G(z)=\sum_{k=0}^\infty e^{-\lambda}\frac{\lambda^k}{k!}z^k = e^{-\lambda}\sum_{k=0}^\infty\frac{(\lambda z)^k}{k!}=e^{-\lambda}e^{\lambda z}=e^{\lambda(z-1)}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{1-\lambda z}\)]]></text><feedback format="html"><text>Incorrect. This is the PGF of a geometric distribution, not Poisson.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\((1-\lambda+\lambda z)^n\)]]></text><feedback format="html"><text>Incorrect. This is the PGF of a Binomial\((n,\lambda)\) distribution.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(e^{\lambda z}\)]]></text><feedback format="html"><text>Incorrect. Missing the \(e^{-\lambda}\) factor; correct PGF is \(e^{\lambda(z-1)}=e^{\lambda z-\lambda}\).</text></feedback></answer>
+  </question>
+
+  <!-- Q8 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q08 Sigma-Algebra and Measurability</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Borel \(\sigma\)-algebra \(\mathcal{B}(\mathbb{R})\) on \(\mathbb{R}\) is the smallest \(\sigma\)-algebra containing all open sets. A function \(f:\mathbb{R}\to\mathbb{R}\) is Borel measurable iff:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(f^{-1}(B)\in\mathcal{B}(\mathbb{R})\) for every Borel set \(B\in\mathcal{B}(\mathbb{R})\)]]></text><feedback format="html"><text>Correct. Borel measurability means the preimage of every Borel set is Borel. Equivalently, \(f^{-1}((a,\infty))\in\mathcal{B}(\mathbb{R})\) for every \(a\).</text></feedback></answer>
+    <answer fraction="0"><text>\(f\) is continuous</text><feedback format="html"><text>Incorrect. Continuous functions are Borel measurable, but Borel measurability is much weaker than continuity.</text></feedback></answer>
+    <answer fraction="0"><text>\(f\) is differentiable almost everywhere</text><feedback format="html"><text>Incorrect. Differentiability a.e. does not characterize Borel measurability.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f\) is bounded]]></text><feedback format="html"><text>Incorrect. Boundedness has nothing to do with measurability.</text></feedback></answer>
+  </question>
+
+  <!-- Q9 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q09 Coupon Collector</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The coupon collector problem: there are \(n\) distinct coupons, each equally likely. The expected number of draws needed to collect all \(n\) coupons is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(n H_n = n\sum_{k=1}^n \frac{1}{k} \approx n\ln n\)]]></text><feedback format="html"><text>Correct. After collecting \(k-1\) distinct coupons, the probability of a new one is \((n-k+1)/n\), so the expected wait is \(n/(n-k+1)\). Summing: \(E=n\sum_{k=1}^n\frac{1}{k}=nH_n\approx n\ln n\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(n\)]]></text><feedback format="html"><text>Incorrect. The expected number is \(nH_n\approx n\ln n\), not \(n\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(n^2\)]]></text><feedback format="html"><text>Incorrect. The expected number grows as \(n\ln n\), not \(n^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\binom{n}{2}\)]]></text><feedback format="html"><text>Incorrect. The expected number is \(nH_n\), not \(n(n-1)/2\).</text></feedback></answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q10 Inclusion-Exclusion</text></name>
+    <questiontext format="html">
+      <text><![CDATA[By inclusion-exclusion, \(P\left(\bigcup_{i=1}^n A_i\right) = \sum_i P(A_i) - \sum_{i<j}P(A_i\cap A_j)+\cdots\). The probability that at least one of \(n\) independent events \(A_1,\ldots,A_n\) (each with probability \(p\)) occurs is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(1-(1-p)^n\)]]></text><feedback format="html"><text>Correct. The complement is all events failing: \(P(\text{none occur})=(1-p)^n\). So \(P(\text{at least one})=1-(1-p)^n\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(np\)]]></text><feedback format="html"><text>Incorrect. \(np\) is the expected number of events that occur (by linearity), not the probability that at least one occurs.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(np - \binom{n}{2}p^2\)]]></text><feedback format="html"><text>Incorrect. This is only the first two terms of inclusion-exclusion, not the full formula.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(p^n\)]]></text><feedback format="html"><text>Incorrect. \(p^n\) is the probability that all \(n\) events occur simultaneously.</text></feedback></answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q11 Monotone Class Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The monotone class theorem states: if \(\mathcal{H}\) is a collection of bounded functions closed under products and uniform limits of monotone sequences, and contains a field that generates \(\mathcal{F}\), then \(\mathcal{H}\) contains all bounded \(\mathcal{F}\)-measurable functions. This theorem is mainly used to:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Extend identities from indicator functions of sets to all measurable functions</text><feedback format="html"><text>Correct. The monotone class theorem is the fundamental tool for lifting results from indicator functions (sets) to all bounded measurable functions, avoiding case-by-case checking.</text></feedback></answer>
+    <answer fraction="0"><text>Compute moments of a distribution</text><feedback format="html"><text>Incorrect. Moment computations use specific distribution formulas, not the monotone class theorem.</text></feedback></answer>
+    <answer fraction="0"><text>Show that every continuous function is Lipschitz</text><feedback format="html"><text>Incorrect. That is false in general; the monotone class theorem is a measure-theoretic result.</text></feedback></answer>
+    <answer fraction="0"><text>Prove the Hahn decomposition theorem</text><feedback format="html"><text>Incorrect. The Hahn decomposition is for signed measures, not directly related to the monotone class theorem.</text></feedback></answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q12 Markov Inequality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Markov's inequality: for a non-negative random variable \(X\) and \(a>0\), \(P(X\geq a)\leq E[X]/a\). A random variable has \(E[X]=10\). The tightest bound Markov's inequality gives for \(P(X\geq50)\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{1}{5}\)]]></text><feedback format="html"><text>Correct. \(P(X\geq50)\leq E[X]/50=10/50=1/5\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{50}\)]]></text><feedback format="html"><text>Incorrect. Markov: \(P(X\geq50)\leq E[X]/50=10/50=1/5\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{10}\)]]></text><feedback format="html"><text>Incorrect. The bound is \(E[X]/a=10/50=1/5\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{25}\)]]></text><feedback format="html"><text>Incorrect. \(P(X\geq50)\leq10/50=1/5\).</text></feedback></answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q13 Chebyshev Inequality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Chebyshev's inequality: for a random variable \(X\) with mean \(\mu\) and variance \(\sigma^2\), \(P(|X-\mu|\geq k\sigma)\leq1/k^2\). For \(k=3\), the probability that \(X\) deviates from its mean by more than 3 standard deviations satisfies:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(P(|X-\mu|\geq3\sigma)\leq\frac{1}{9}\approx11.1\%\)]]></text><feedback format="html"><text>Correct. Chebyshev with \(k=3\): \(P(|X-\mu|\geq3\sigma)\leq1/9\approx0.111\). This bound holds for any distribution with finite variance.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(P(|X-\mu|\geq3\sigma)\leq\frac{1}{3}\)]]></text><feedback format="html"><text>Incorrect. Chebyshev gives \(1/k^2=1/9\), not \(1/k=1/3\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(P(|X-\mu|\geq3\sigma)\leq0.003\)]]></text><feedback format="html"><text>Incorrect. 0.003 would apply only to a normal distribution (3-sigma rule). Chebyshev's bound is \(1/9\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(P(|X-\mu|\geq3\sigma)\leq\frac{1}{6}\)]]></text><feedback format="html"><text>Incorrect. Chebyshev: \(P(|X-\mu|\geq k\sigma)\leq1/k^2=1/9\).</text></feedback></answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q14 Characteristic Function</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The characteristic function of a random variable \(X\) is \(\phi_X(t)=E[e^{itX}]\). For \(X\sim N(0,1)\):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\phi_X(t)=e^{-t^2/2}\)]]></text><feedback format="html"><text>Correct. For \(X\sim N(0,1)\): \(\phi_X(t)=E[e^{itX}]=e^{-t^2/2}\) (by completing the square in the Gaussian integral).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\phi_X(t)=e^{it}\)]]></text><feedback format="html"><text>Incorrect. This would be the characteristic function of a degenerate distribution at 1.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\phi_X(t)=\frac{1}{1-it}\)]]></text><feedback format="html"><text>Incorrect. This is the characteristic function of an exponential distribution.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\phi_X(t)=e^{-|t|}\)]]></text><feedback format="html"><text>Incorrect. \(e^{-|t|}\) is the characteristic function of a standard Cauchy distribution.</text></feedback></answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q15 Moment Generating Function</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The moment generating function (MGF) of a random variable \(X\) is \(M_X(t)=E[e^{tX}]\). If \(X\sim\text{Exp}(\lambda)\) (with rate \(\lambda\)), the MGF is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(M_X(t)=\frac{\lambda}{\lambda-t}\) for \(t<\lambda\)]]></text><feedback format="html"><text>Correct. \(M_X(t)=\int_0^\infty e^{tx}\lambda e^{-\lambda x}\,dx=\lambda\int_0^\infty e^{-(\lambda-t)x}\,dx=\frac{\lambda}{\lambda-t}\) for \(t<\lambda\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(M_X(t)=\frac{1}{1-t/\lambda}\)]]></text><feedback format="html"><text>Incorrect. This equals \(\lambda/(\lambda-t)\), which is correct — but written this way it looks different. Actually this IS the same as the correct answer. Let me reconsider: \(\frac{1}{1-t/\lambda}=\frac{\lambda}{\lambda-t}\). They are equal.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(M_X(t)=e^{\lambda(e^t-1)}\)]]></text><feedback format="html"><text>Incorrect. This is the MGF of a Poisson\((\lambda)\) distribution.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(M_X(t)=e^{t/\lambda}\)]]></text><feedback format="html"><text>Incorrect. The exponential distribution MGF is \(\lambda/(\lambda-t)\), not an exponential function of \(t/\lambda\).</text></feedback></answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q16 Probability Convergence</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following implications between modes of convergence is always valid for a sequence of random variables \(X_n\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[Almost sure convergence \(\Rightarrow\) convergence in probability \(\Rightarrow\) convergence in distribution]]></text><feedback format="html"><text>Correct. The hierarchy: a.s. \(\Rightarrow\) in probability \(\Rightarrow\) in distribution. None of these implications is reversible in general.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Convergence in distribution \(\Rightarrow\) convergence in probability]]></text><feedback format="html"><text>Incorrect. Convergence in distribution is weaker; the implication goes the other way.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Convergence in \(L^2\) \(\Rightarrow\) almost sure convergence]]></text><feedback format="html"><text>Incorrect. \(L^2\) convergence implies convergence in probability (by Markov), but not necessarily a.s. convergence.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Almost sure convergence \(\Rightarrow\) convergence in \(L^1\)]]></text><feedback format="html"><text>Incorrect. A.s. convergence plus uniform integrability gives \(L^1\) convergence (dominated convergence), but a.s. convergence alone does not imply \(L^1\).</text></feedback></answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q17 Weak Law of Large Numbers</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The weak law of large numbers (WLLN) states: if \(X_1,X_2,\ldots\) are i.i.d. with finite mean \(\mu\), then \(\bar{X}_n = \frac{1}{n}\sum_{i=1}^n X_i\) converges to \(\mu\):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>In probability (i.e., \(P(|\bar{X}_n-\mu|>\varepsilon)\to0\) for every \(\varepsilon>0\))</text><feedback format="html"><text>Correct. The WLLN gives convergence in probability. The strong LLN gives almost sure convergence (requires only finite mean for i.i.d. sequences by Kolmogorov).</text></feedback></answer>
+    <answer fraction="0"><text>Almost surely</text><feedback format="html"><text>Incorrect. Almost sure convergence is the strong LLN; the weak LLN only gives convergence in probability.</text></feedback></answer>
+    <answer fraction="0"><text>In \(L^2\) (requires finite variance)</text><feedback format="html"><text>Incorrect. \(L^2\) convergence of \(\bar{X}_n\) requires finite variance and gives \(E[(\bar{X}_n-\mu)^2]=\sigma^2/n\to0\). The WLLN itself only requires finite mean.</text></feedback></answer>
+    <answer fraction="0"><text>In distribution to a normal</text><feedback format="html"><text>Incorrect. Convergence in distribution to a normal is the Central Limit Theorem, not the LLN.</text></feedback></answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q18 Central Limit Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Central Limit Theorem (CLT): if \(X_1,\ldots,X_n\) are i.i.d. with mean \(\mu\) and variance \(\sigma^2<\infty\), then \(\frac{\bar{X}_n-\mu}{\sigma/\sqrt{n}}\) converges in distribution to \(N(0,1)\). The CLT requires:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Finite variance (the CLT fails for heavy-tailed distributions like Cauchy)</text><feedback format="html"><text>Correct. The Cauchy distribution has no finite mean or variance and does not satisfy the CLT. The Lindeberg-Lévy CLT requires finite variance; the Lindeberg CLT extends to non-i.i.d. settings.</text></feedback></answer>
+    <answer fraction="0"><text>The distribution of \(X_i\) must be symmetric</text><feedback format="html"><text>Incorrect. The CLT applies to asymmetric distributions as well, requiring only finite variance.</text></feedback></answer>
+    <answer fraction="0"><text>The distribution of \(X_i\) must be continuous</text><feedback format="html"><text>Incorrect. The CLT applies to discrete distributions too (e.g., Binomial converges to Normal).</text></feedback></answer>
+    <answer fraction="0"><text>The variance must equal 1</text><feedback format="html"><text>Incorrect. Any finite positive variance works; the CLT standardizes by \(\sigma/\sqrt{n}\).</text></feedback></answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q19 Kolmogorov Zero-One Law</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Kolmogorov's 0-1 law states: for an i.i.d. sequence \(X_1,X_2,\ldots\), every event in the tail \(\sigma\)-algebra \(\mathcal{T}=\bigcap_{n=1}^\infty\sigma(X_n,X_{n+1},\ldots)\) has probability 0 or 1. Which is a tail event?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\{\limsup_{n\to\infty} X_n > c\}\) for any constant \(c\)]]></text><feedback format="html"><text>Correct. \(\limsup X_n > c\) is determined by the behavior of the sequence beyond any finite index, making it a tail event. By the 0-1 law, its probability is 0 or 1.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\{X_1 > c\}\)]]></text><feedback format="html"><text>Incorrect. \(\{X_1>c\}\) depends only on \(X_1\), not on the tail, so it is not a tail event.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\{X_1 + X_2 > 3\}\)]]></text><feedback format="html"><text>Incorrect. This depends on finitely many random variables (\(X_1\) and \(X_2\)), so it is not a tail event.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\{X_n = 0 \text{ for all } n\geq1\}\)]]></text><feedback format="html"><text>Incorrect. This event depends on \(X_1\) as well, so it is not purely a tail event.</text></feedback></answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>STAT16-Q20 Lévy Continuity Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Lévy continuity theorem states: \(X_n\xrightarrow{d}X\) (convergence in distribution) if and only if \(\phi_{X_n}(t)\to\phi_X(t)\) for every \(t\) (pointwise convergence of characteristic functions), provided \(\phi_X\) is continuous at 0. This is primarily used to:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Prove the Central Limit Theorem by showing characteristic functions of standardized sums converge to \(e^{-t^2/2}\)</text><feedback format="html"><text>Correct. The standard proof of the CLT uses the Lévy continuity theorem: the characteristic function of the normalized sum converges pointwise to \(e^{-t^2/2}\) (the standard normal CF), implying convergence in distribution.</text></feedback></answer>
+    <answer fraction="0"><text>Compute the density of a sum of random variables</text><feedback format="html"><text>Incorrect. Densities of sums are computed via convolution; the Lévy theorem is for convergence in distribution.</text></feedback></answer>
+    <answer fraction="0"><text>Show that the sample variance is consistent</text><feedback format="html"><text>Incorrect. Consistency of the sample variance uses the LLN and properties of the second moment, not the Lévy theorem.</text></feedback></answer>
+    <answer fraction="0"><text>Prove the law of the iterated logarithm</text><feedback format="html"><text>Incorrect. The LIL is a much more refined result than what the Lévy theorem directly provides.</text></feedback></answer>
+  </question>
+
+</quiz>

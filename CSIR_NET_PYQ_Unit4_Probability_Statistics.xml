@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- ===== CATEGORY: Unit 4 / Part B / Probability Theory ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 4 - Probability and Statistics/Part B - Probability Theory</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Borel-Cantelli Lemma First Part</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>By the First Borel-Cantelli Lemma: if \(\displaystyle\sum_{n=1}^{\infty} P(A_n) < \infty\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>First Borel-Cantelli: \(\sum P(A_n) < \infty \Rightarrow P(\limsup A_n) = 0\), i.e., only finitely many events \(A_n\) occur almost surely. The Second Borel-Cantelli (independence needed): if \(\sum P(A_n) = \infty\) and the \(A_n\) are independent, then \(P(\limsup A_n) = 1\) (infinitely many occur a.s.).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(A_n) \to 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(\limsup_{n} A_n) = 0\) (only finitely many \(A_n\) occur a.s.)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(\limsup_{n} A_n) = 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The \(A_n\) are pairwise independent]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Characteristic Function Definition</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The characteristic function of a random variable \(X\) is defined as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>The characteristic function (c.f.) is \(\varphi_X(t) = E[e^{itX}]\). It always exists (unlike the moment generating function), uniquely determines the distribution, and \(\varphi_{X+Y}(t) = \varphi_X(t)\varphi_Y(t)\) for independent \(X, Y\). The inversion formula recovers the distribution from \(\varphi\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(E[e^{itX}]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[e^{tX}]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X^t]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[|X|^t]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Central Limit Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Let \(X_1, X_2, \ldots\) be i.i.d. with mean \(\mu\) and variance \(\sigma^2 > 0\). The Central Limit Theorem states that \(\dfrac{\sqrt{n}(\bar{X}_n - \mu)}{\sigma}\) converges in distribution to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>CLT: \(\frac{\sqrt{n}(\bar X_n - \mu)}{\sigma} \xrightarrow{d} N(0,1)\). This is one of the most important theorems in probability. It holds under the mild condition of finite variance. Extensions: Lindeberg-Lévy CLT, Berry-Esseen bounds for rate of convergence. The CLT justifies the normal approximation for sums of many independent RVs.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Exponential distribution with mean 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\chi^2_1\) distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Standard Normal \(N(0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cauchy distribution]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Strong Law of Large Numbers</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>For i.i.d. random variables \(X_1, X_2, \ldots\) with \(E[|X_1|] < \infty\) and \(E[X_1] = \mu\), the Strong Law of Large Numbers states:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>SLLN: \(\bar{X}_n = \frac{1}{n}\sum_{k=1}^n X_k \to \mu\) almost surely (with probability 1). The Weak Law (WLLN) gives convergence in probability. The SLLN is stronger: the set of \(\omega\) where \(\bar X_n(\omega)\not\to\mu\) has probability zero. Kolmogorov's SLLN requires only \(E|X_1| < \infty\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\bar{X}_n \to \mu\) almost surely as \(n \to \infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}_n \to \mu\) in mean square]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}_n \to \mu\) in distribution only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}_n \to \mu^2\) almost surely]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Poisson Distribution Mean and Variance</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(X \sim \text{Poisson}(\lambda)\), then \(E[X]\) and \(\text{Var}(X)\) are respectively:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>For \(X \sim \text{Poisson}(\lambda)\): \(P(X=k) = e^{-\lambda}\lambda^k/k!\). \(E[X] = \lambda\), \(E[X^2] = \lambda^2 + \lambda\), so \(\text{Var}(X) = \lambda\). The mean equals the variance, a characteristic property of the Poisson distribution. Characteristic function: \(e^{\lambda(e^{it}-1)}\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda\) and \(\lambda^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda\) and \(\lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{\lambda}\) and \(\lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda^2\) and \(\lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Normal Distribution Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(X \sim N(\mu, \sigma^2)\) and \(Y = aX + b\) for constants \(a \neq 0\) and \(b\), then \(Y\) follows:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>\(Y = aX + b \sim N(a\mu + b, a^2\sigma^2)\). The normal distribution is closed under linear transformations. If \(X_1 \sim N(\mu_1, \sigma_1^2)\) and \(X_2 \sim N(\mu_2, \sigma_2^2)\) are independent, then \(X_1 + X_2 \sim N(\mu_1+\mu_2, \sigma_1^2+\sigma_2^2)\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(N(a\mu + b,\; a^2\sigma^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(\mu + b,\; \sigma^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(a\mu,\; \sigma^2 + b^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A non-normal distribution]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Exponential Distribution Memoryless Property</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The exponential distribution \(\text{Exp}(\lambda)\) is the only continuous distribution with the memoryless property: for \(s, t > 0\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Memoryless property: \(P(X > s+t \mid X > s) = P(X > t)\). This means past lifetime doesn't affect future survival probability. Among continuous distributions, only the exponential has this property. The discrete analogue is the geometric distribution. \(\text{Exp}(\lambda)\) has mean \(1/\lambda\) and variance \(1/\lambda^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(X > s + t) = P(X > s) + P(X > t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(X > s + t \mid X > t) = P(X > s)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(X > s + t \mid X > s) = P(X > t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(X > s + t) = P(X > s) \cdot P(X > t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Chi-Squared Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>If \(Z_1, Z_2, \ldots, Z_n\) are i.i.d. \(N(0,1)\), then \(\displaystyle\sum_{i=1}^n Z_i^2\) follows a:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>\(\sum_{i=1}^n Z_i^2 \sim \chi^2_n\) (chi-squared with \(n\) degrees of freedom). Mean = \(n\), Variance = \(2n\). The \(t_n\) distribution is \(Z/\sqrt{\chi^2_n/n}\) and the \(F_{m,n}\) distribution is \((\chi^2_m/m)/(\chi^2_n/n)\). The sample variance \(S^2\) from a normal population: \((n-1)S^2/\sigma^2 \sim \chi^2_{n-1}\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(N(0, n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\chi^2_n\) (chi-squared with \(n\) degrees of freedom)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(t_n\) (Student's t with \(n\) degrees of freedom)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F_{1,n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Convergence in Probability vs Almost Sure</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Which implication is always TRUE for sequences of random variables?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Almost sure convergence \(\Rightarrow\) convergence in probability \(\Rightarrow\) convergence in distribution. The converses are false in general. Counterexample: the "typewriter sequence" converges in probability (and in distribution) to 0 but does not converge almost surely. Mean-square convergence \(\Rightarrow\) convergence in probability.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Convergence in distribution \(\Rightarrow\) convergence in probability]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Almost sure convergence \(\Rightarrow\) convergence in probability]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Convergence in probability \(\Rightarrow\) almost sure convergence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Convergence in distribution \(\Rightarrow\) almost sure convergence]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 4 / Part B / Statistical Inference ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 4 - Probability and Statistics/Part B - Statistical Inference</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - MLE of Normal Mean</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Given a random sample \(X_1, \ldots, X_n\) from \(N(\mu, \sigma^2)\) with \(\sigma^2\) known, the maximum likelihood estimator (MLE) of \(\mu\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>The log-likelihood is \(\ell(\mu) = -\frac{n}{2}\ln(2\pi\sigma^2) - \frac{1}{2\sigma^2}\sum(x_i-\mu)^2\). Maximising over \(\mu\): \(\frac{d\ell}{d\mu} = \frac{1}{\sigma^2}\sum(x_i-\mu) = 0 \Rightarrow \hat\mu = \bar X_n\). The sample mean \(\bar X_n\) is also the UMVUE of \(\mu\) and is efficient (achieves Cramér-Rao lower bound).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The sample mean \(\bar{X}_n = \dfrac{1}{n}\displaystyle\sum_{i=1}^n X_i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sample median]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sample mode]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_{(1)} + X_{(n)})/2\) (midrange)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Cramer-Rao Lower Bound</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The Cramér-Rao inequality states that the variance of any unbiased estimator \(\hat\theta\) of \(\theta\) satisfies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Cramér-Rao: \(\text{Var}(\hat\theta) \geq \frac{1}{nI(\theta)}\) where \(I(\theta) = E\!\left[\left(\frac{\partial}{\partial\theta}\ln f(X;\theta)\right)^2\right]\) is the Fisher information. An estimator achieving equality is called efficient. The MLE is asymptotically efficient (achieves the bound as \(n\to\infty\)).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(\hat\theta) \leq \dfrac{1}{nI(\theta)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\text{Var}(\hat\theta) \geq \dfrac{1}{nI(\theta)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(\hat\theta) = \dfrac{1}{nI(\theta)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(\hat\theta) \geq nI(\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Sufficient Statistic Factorization</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>By the Fisher-Neyman factorization theorem, \(T(X)\) is a sufficient statistic for \(\theta\) if and only if the joint density (likelihood) can be written as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Factorization: \(f(x;\theta) = g(T(x),\theta)\cdot h(x)\) where \(g\) depends on data only through \(T(x)\) and \(h\) does not depend on \(\theta\). This means \(T\) captures all information about \(\theta\) in the sample. Examples: sample mean is sufficient for \(\mu\) in Normal\((\mu,\sigma^2)\) with known \(\sigma^2\); order statistics are sufficient for Uniform\((0,\theta)\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(x;\theta) = g(T(x),\theta)\cdot h(x)\) where \(h\) does not depend on \(\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[T(X)] = \theta\) (unbiasedness)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x;\theta) = h(x)\) for all \(\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(T) = \theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Unbiased Estimator of Variance</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>Given a sample \(X_1, \ldots, X_n\) from a distribution with mean \(\mu\) and variance \(\sigma^2\), the unbiased estimator of \(\sigma^2\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>The sample variance \(S^2 = \frac{1}{n-1}\sum_{i=1}^n(X_i - \bar X)^2\) is unbiased: \(E[S^2] = \sigma^2\). Dividing by \(n\) (the MLE of variance) gives a biased estimator: \(E[\frac{1}{n}\sum(X_i-\bar X)^2] = \frac{n-1}{n}\sigma^2\). The divisor \(n-1\) corrects for the loss of one degree of freedom in estimating \(\mu\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{n}\displaystyle\sum_{i=1}^n (X_i - \bar{X})^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{1}{n-1}\displaystyle\sum_{i=1}^n (X_i - \bar{X})^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{n+1}\displaystyle\sum_{i=1}^n (X_i - \bar{X})^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{i=1}^n (X_i - \bar{X})^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Neyman-Pearson Lemma</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>The Neyman-Pearson lemma states that for testing \(H_0: \theta = \theta_0\) vs \(H_1: \theta = \theta_1\), the most powerful test at level \(\alpha\) rejects \(H_0\) when:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Neyman-Pearson: the most powerful level-\(\alpha\) test rejects when \(\frac{L(\theta_1;x)}{L(\theta_0;x)} > k\) (likelihood ratio exceeds a threshold \(k\)). This test maximises power \(P(\text{reject } H_0 | H_1)\) among all tests of size \(\alpha\). It is the foundation for the Uniformly Most Powerful (UMP) tests.</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The likelihood ratio \(\dfrac{L(\theta_1; x)}{L(\theta_0; x)} > k\) for some constant \(k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The test statistic exceeds the sample mean]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(L(\theta_0; x) > L(\theta_1; x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The p-value equals \(\alpha\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 4 / Part B / Stochastic Processes ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 4 - Probability and Statistics/Part B - Stochastic Processes</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Markov Chain Chapman-Kolmogorov</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>For a homogeneous Markov chain with transition matrix \(P\), the Chapman-Kolmogorov equations give the \(n\)-step transition matrix as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Chapman-Kolmogorov: \(P^{(m+n)} = P^{(m)} \cdot P^{(n)}\), so the \(n\)-step transition matrix is \(P^n\) (the \(n\)-th matrix power). This follows from the Markov property: \(P(X_{m+n}=j | X_0=i) = \sum_k P(X_m=k|X_0=i)P(X_n=j|X_0=k)\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(nP\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P^n\) (the \(n\)-th matrix power of \(P\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P + nI\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P \cdot n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part B - Standard Brownian Motion Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part B | 3 Marks]</strong></p><p>A standard Brownian motion \(\{W_t, t \geq 0\}\) satisfies: \(W_0 = 0\), independent increments, \(W_t - W_s \sim N(0, t-s)\) for \(s < t\), and:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Standard Brownian motion: (i) \(W_0=0\); (ii) independent increments; (iii) \(W_t-W_s \sim N(0,t-s)\); (iv) continuous sample paths almost surely. It is NOT differentiable anywhere (Hölder continuous with exponent \(\alpha < 1/2\)). \(E[W_t]=0\) and \(\text{Var}(W_t)=t\), so \(\text{Cov}(W_s,W_t)=\min(s,t)\).</p>]]></text></generalfeedback>
+  <defaultgrade>3.0</defaultgrade><penalty>0.3333</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Differentiable sample paths almost surely]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Stationary increments with \(W_t - W_s \sim \text{Exp}(1/(t-s))\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Continuous sample paths almost surely]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W_t \sim \text{Uniform}(0, t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 4 / Part C / Probability and Convergence ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 4 - Probability and Statistics/Part C - Probability and Convergence</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Convergence Modes Hierarchy</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>Let \(X_n \xrightarrow{L^2} X\) (mean-square convergence). Which of the following is necessarily true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>\(L^2\) convergence \(\Rightarrow\) convergence in probability (by Chebyshev: \(P(|X_n-X|>\epsilon) \leq E[|X_n-X|^2]/\epsilon^2 \to 0\)) \(\Rightarrow\) convergence in distribution. \(L^2\) does NOT imply almost sure convergence (counter: the "moving average" sequence). Almost sure convergence also doesn't imply \(L^2\) in general.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_n \xrightarrow{\text{a.s.}} X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(X_n \xrightarrow{P} X\) (convergence in probability)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_n \xrightarrow{L^4} X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X_n^2] \to 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Characteristic Function Uniqueness</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>If \(X\) and \(Y\) are random variables with \(\varphi_X(t) = \varphi_Y(t)\) for all \(t \in \mathbb{R}\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>The characteristic function uniquely determines the distribution. If \(\varphi_X = \varphi_Y\), then \(X\) and \(Y\) have the same distribution (same CDF). This is the uniqueness theorem for characteristic functions, proved via the Fourier inversion formula. The c.f. of the sum \(X+Y\) of independent RVs is \(\varphi_X\cdot\varphi_Y\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(X\) and \(Y\) have the same distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X = Y\) almost surely]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X\) and \(Y\) are independent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No conclusion can be drawn]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Conditional Expectation Tower Property</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The tower property (law of total expectation) of conditional expectation states: for random variables \(X\) and sub-\(\sigma\)-fields \(\mathcal{G} \subset \mathcal{F}\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Tower property: \(E[E[X|\mathcal{F}]|\mathcal{G}] = E[X|\mathcal{G}]\) when \(\mathcal{G} \subset \mathcal{F}\). In the unconditional version: \(E[E[X|Y]] = E[X]\). Also: if \(X\) is \(\mathcal{G}\)-measurable, then \(E[XZ|\mathcal{G}] = XE[Z|\mathcal{G}]\) (taking out what is known).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[E[X|\mathcal{G}]|\mathcal{F}] = E[X|\mathcal{F}]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(E[E[X|\mathcal{F}]|\mathcal{G}] = E[X|\mathcal{G}]\) when \(\mathcal{G} \subset \mathcal{F}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X|\mathcal{G}] = E[X]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X|\mathcal{F}] = E[X|\mathcal{G}]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- ===== CATEGORY: Unit 4 / Part C / Statistical Inference ===== -->
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics PYQ/Unit 4 - Probability and Statistics/Part C - Statistical Inference</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - UMVUE via Rao-Blackwell</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>The Rao-Blackwell theorem says: if \(\hat\theta\) is an unbiased estimator and \(T\) is a sufficient statistic, then \(\tilde\theta = E[\hat\theta | T]\) satisfies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Rao-Blackwell: \(\tilde\theta = E[\hat\theta|T]\) is unbiased and \(\text{Var}(\tilde\theta) \leq \text{Var}(\hat\theta)\). Conditioning on a sufficient statistic never increases variance. Combining with Lehmann-Scheffé (complete sufficient statistic): the Rao-Blackwellized estimator is the UMVUE (Uniformly Minimum Variance Unbiased Estimator).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\tilde\theta\) is unbiased and \(\text{Var}(\tilde\theta) \leq \text{Var}(\hat\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\tilde\theta\) is biased but has smaller MSE]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(\tilde\theta) \geq \text{Var}(\hat\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\tilde\theta = \hat\theta\) always]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Confidence Interval for Normal Mean</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>For a random sample of size \(n\) from \(N(\mu, \sigma^2)\) with \(\sigma^2\) unknown, a \(95\%\) confidence interval for \(\mu\) uses the distribution:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>With unknown \(\sigma^2\), substitute \(S\) (sample SD). The pivot \(\frac{\bar X - \mu}{S/\sqrt{n}} \sim t_{n-1}\). CI: \(\bar X \pm t_{n-1, 0.025} \cdot S/\sqrt{n}\). As \(n\to\infty\), \(t_{n-1} \to N(0,1)\), so for large \(n\) both give essentially the same CI. The \(t\)-distribution is needed because \(S^2\) introduces extra variability.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Standard normal \(N(0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Student's \(t\)-distribution with \(n-1\) degrees of freedom]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\chi^2_{n-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F_{1,n-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Likelihood Ratio Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>Under regularity conditions, \(-2\ln\Lambda\) (twice the negative log-likelihood ratio) has an asymptotic distribution under \(H_0\) of:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Wilks' theorem: under \(H_0\), \(-2\ln\Lambda \xrightarrow{d} \chi^2_r\) as \(n\to\infty\), where \(r\) is the number of parameters restricted under \(H_0\) (the difference in dimension between unrestricted and restricted parameter spaces). This is the basis of the Likelihood Ratio Test (LRT) used extensively in statistics.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Normal \(N(0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(t_{n-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\chi^2_r\) where \(r\) is the number of restricted parameters]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F_{r,n-r}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Martingale Definition</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>A sequence \(\{X_n, \mathcal{F}_n\}\) is a martingale if for all \(n\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Martingale: \(E[X_{n+1}|\mathcal{F}_n] = X_n\) (fair game). If \(\geq\) it's a submartingale; if \(\leq\) a supermartingale. Key results: Optional Stopping Theorem, Martingale Convergence Theorem (\(L^1\)-bounded martingale converges a.s.). Example: \(S_n = \sum_{k=1}^n Z_k\) where \(Z_k\) i.i.d. mean 0 is a martingale.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X_{n+1}|\mathcal{F}_n] \geq X_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(E[X_{n+1}|\mathcal{F}_n] = X_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X_{n+1}|\mathcal{F}_n] \leq X_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_{n+1} = X_n\) almost surely]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Stationary Distribution of Markov Chain</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>A probability vector \(\pi\) is a stationary distribution for a Markov chain with transition matrix \(P\) if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Stationary distribution: \(\pi P = \pi\) (row vector times matrix), equivalently \(\pi_j = \sum_i \pi_i P_{ij}\). Also written \(\pi^T = P^T \pi^T\) (right eigenvector of \(P^T\) for eigenvalue 1). For an irreducible, positive-recurrent chain, there exists a unique stationary distribution. For an ergodic chain, \(\pi_j = 1/E[T_j]\) where \(T_j\) is the mean return time to state \(j\).</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi P = \pi\) (left eigenvector of \(P\) for eigenvalue 1)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P\pi = \pi\) (right eigenvector)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi P = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi_i = 1/n\) for all states \(i\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - MLE of Poisson Parameter</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>Let \(X_1, \ldots, X_n\) be a random sample from \(\text{Poisson}(\lambda)\). The MLE of \(\lambda\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B)</strong></p><p>Log-likelihood: \(\ell(\lambda) = -n\lambda + \ln\lambda\sum x_i - \sum\ln(x_i!)\). Score: \(\frac{d\ell}{d\lambda} = -n + \frac{\sum x_i}{\lambda} = 0 \Rightarrow \hat\lambda = \bar x\). This is both the MLE and the UMVUE of \(\lambda\). Fisher information \(I(\lambda) = 1/\lambda\), so the CR bound is \(\lambda/n = \text{Var}(\bar X)\), confirming \(\bar X\) is efficient.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The sample maximum \(X_{(n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The sample mean \(\bar{X}_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sample variance \(S^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sample median]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>PYQ Part C - Bayesian Estimation Posterior Mean</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[CSIR NET | Part C | 4.75 Marks]</strong></p><p>In Bayesian estimation, the posterior distribution of \(\theta\) given data \(x\) is proportional to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>Bayes' theorem: \(\pi(\theta|x) \propto L(\theta;x)\cdot\pi(\theta)\) (likelihood × prior). The posterior mean minimises expected squared error loss, the posterior median minimises expected absolute error, and the posterior mode (MAP estimate) minimises 0-1 loss. The posterior \(\pi(\theta|x)\) updates our prior belief \(\pi(\theta)\) using the data through the likelihood.</p>]]></text></generalfeedback>
+  <defaultgrade>4.75</defaultgrade><penalty>0.2632</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The prior \(\pi(\theta)\) alone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The likelihood \(L(\theta;x)\) alone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The likelihood \(L(\theta;x)\) times the prior \(\pi(\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The marginal distribution of \(x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

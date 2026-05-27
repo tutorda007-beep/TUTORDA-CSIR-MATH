@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Linear Algebra/Canonical Forms</text>
+    </category>
+    <info format="html"><text>CSIR NET level MCQ questions on Canonical Forms (Jordan, Rational, Smith Normal Form)</text></info>
+  </question>
+
+  <!-- Q1 -->
+  <question type="multichoice">
+    <name><text>LA15-Q01 Jordan Canonical Form</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A matrix \(A\) has characteristic polynomial \((\lambda-2)^3(\lambda-3)\) and minimal polynomial \((\lambda-2)^2(\lambda-3)\). Its Jordan canonical form (JCF) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\begin{pmatrix}2&1&0&0\\0&2&0&0\\0&0&2&0\\0&0&0&3\end{pmatrix}\) (one \(2\times2\) Jordan block for \(\lambda=2\), one \(1\times1\) for \(\lambda=2\), one \(1\times1\) for \(\lambda=3\))]]></text><feedback format="html"><text>Correct. Char poly \((\lambda-2)^3(\lambda-3)\): eigenvalue 2 has algebraic mult. 3. Min poly \((\lambda-2)^2\): largest Jordan block for 2 is \(2\times2\). So Jordan blocks for 2 are: one \(2\times2\) and one \(1\times1\). Plus one \(1\times1\) for \(\lambda=3\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}2&1&0&0\\0&2&1&0\\0&0&2&0\\0&0&0&3\end{pmatrix}\) (one \(3\times3\) Jordan block for \(\lambda=2\))]]></text><feedback format="html"><text>Incorrect. A single \(3\times3\) Jordan block for \(\lambda=2\) would give minimal polynomial \((\lambda-2)^3\), but the given minimal polynomial is \((\lambda-2)^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\text{diag}(2,2,2,3)\) (all diagonal, fully diagonalizable)]]></text><feedback format="html"><text>Incorrect. A diagonal form would give minimal polynomial \((\lambda-2)(\lambda-3)\), contradicting the given \((\lambda-2)^2(\lambda-3)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}2&0&0&0\\0&2&1&0\\0&0&2&1\\0&0&0&3\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. This would indicate a single \(3\times3\) Jordan block merging eigenvalue 2 and 3, which is structurally incorrect for a JCF.</text></feedback></answer>
+  </question>
+
+  <!-- Q2 -->
+  <question type="multichoice">
+    <name><text>LA15-Q02 Jordan Block Structure</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Jordan canonical form of a matrix is unique (up to ordering of Jordan blocks). Which invariant uniquely determines the JCF?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>The elementary divisors (the sizes of all Jordan blocks for each eigenvalue)</text><feedback format="html"><text>Correct. The JCF is determined by the elementary divisors \((\lambda-\lambda_i)^{k}\), which specify the sizes of each Jordan block. This is equivalent to knowing the invariant factors.</text></feedback></answer>
+    <answer fraction="0"><text>Only the characteristic polynomial</text><feedback format="html"><text>Incorrect. The characteristic polynomial determines eigenvalues and algebraic multiplicities but not the Jordan block sizes (e.g., \((\lambda-2)^2\) could give two \(1\times1\) blocks or one \(2\times2\) block).</text></feedback></answer>
+    <answer fraction="0"><text>Only the trace and determinant</text><feedback format="html"><text>Incorrect. Trace and determinant give only the sum and product of eigenvalues, far less information than the full JCF.</text></feedback></answer>
+    <answer fraction="0"><text>The minimal polynomial alone</text><feedback format="html"><text>Incorrect. The minimal polynomial gives the largest Jordan block size for each eigenvalue but not the total number of blocks.</text></feedback></answer>
+  </question>
+
+  <!-- Q3 -->
+  <question type="multichoice">
+    <name><text>LA15-Q03 Nilpotent Jordan Form</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A nilpotent \(5\times5\) matrix with minimal polynomial \(\lambda^3\). Which of the following JCF structures is consistent?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[One \(3\times3\) nilpotent block and one \(2\times2\) nilpotent block (blocks of sizes \(3+2=5\))]]></text><feedback format="html"><text>Correct. Min poly \(\lambda^3\) means the largest block has size 3. Sizes summing to 5 with max size 3: \(3+2\) is valid. (Also \(3+1+1\) would give min poly \(\lambda^3\), consistent.)</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[One \(5\times5\) nilpotent block (size 5)]]></text><feedback format="html"><text>Incorrect. A single \(5\times5\) nilpotent block would have minimal polynomial \(\lambda^5\neq\lambda^3\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Five \(1\times1\) zero blocks (fully diagonalizable)]]></text><feedback format="html"><text>Incorrect. This would give minimal polynomial \(\lambda^1=\lambda\neq\lambda^3\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[One \(4\times4\) block and one \(1\times1\) block]]></text><feedback format="html"><text>Incorrect. A \(4\times4\) nilpotent Jordan block would give minimal polynomial \(\lambda^4\neq\lambda^3\).</text></feedback></answer>
+  </question>
+
+  <!-- Q4 -->
+  <question type="multichoice">
+    <name><text>LA15-Q04 Rational Canonical Form</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The rational canonical form (RCF) of a matrix exists over any field (no need to extend the field). It consists of companion matrices of the invariant factors. The invariant factors \(f_1 \mid f_2 \mid \cdots \mid f_k\) satisfy:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(f_k\) is the minimal polynomial and \(\prod_{i=1}^k f_i\) is the characteristic polynomial]]></text><feedback format="html"><text>Correct. The largest invariant factor is the minimal polynomial; their product is the characteristic polynomial. The divisibility chain \(f_1\mid f_2\mid\cdots\mid f_k\) ensures uniqueness of the RCF.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f_1\) is the minimal polynomial]]></text><feedback format="html"><text>Incorrect. The LARGEST invariant factor \(f_k\) is the minimal polynomial, not \(f_1\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f_1 = f_2 = \cdots = f_k\) (all invariant factors equal)]]></text><feedback format="html"><text>Incorrect. The invariant factors are generally distinct; equality holds only for cyclic matrices (one companion block).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\sum_i \deg(f_i) = n\) but otherwise unconstrained]]></text><feedback format="html"><text>Incorrect. The divisibility chain \(f_1\mid f_2\mid\cdots\mid f_k\) is the key constraint, not just sum of degrees.</text></feedback></answer>
+  </question>
+
+  <!-- Q5 -->
+  <question type="multichoice">
+    <name><text>LA15-Q05 Smith Normal Form</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Smith normal form of a matrix over a PID (e.g., \(\mathbb{Z}\) or \(F[x]\)) is \(\text{diag}(d_1,d_2,\ldots,d_r,0,\ldots,0)\) where \(d_1\mid d_2\mid\cdots\mid d_r\). For the integer matrix \(\begin{pmatrix}2&4\\6&3\end{pmatrix}\), the Smith normal form is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\begin{pmatrix}1&0\\0&18\end{pmatrix}\)]]></text><feedback format="html"><text>Correct. \(\det\begin{pmatrix}2&4\\6&3\end{pmatrix}=6-24=-18\). \(\gcd\) of all entries \(=\gcd(2,4,6,3)=1=d_1\). So \(d_1\cdot d_2 = |\det|=18\), giving \(d_2=18\). SNF \(=\text{diag}(1,18)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}2&0\\0&3\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. The GCD of all entries is 1, not 2. The SNF has \(d_1=1\) and \(d_2=18\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}1&0\\0&-18\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. Smith normal form uses positive invariant factors; \(d_2=18\), not \(-18\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}2&0\\0&9\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. \(d_1\cdot d_2\) must equal \(|\det|=18\), and \(d_1\mid d_2\). Since \(d_1=1\), \(d_2=18\).</text></feedback></answer>
+  </question>
+
+  <!-- Q6 -->
+  <question type="multichoice">
+    <name><text>LA15-Q06 Diagonalizability and JCF</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A matrix is diagonalizable over \(\mathbb{C}\) if and only if its Jordan canonical form is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>All Jordan blocks are \(1\times1\) (i.e., the JCF is diagonal)</text><feedback format="html"><text>Correct. A matrix is diagonalizable iff all its Jordan blocks are \(1\times1\), meaning each eigenvalue has geometric multiplicity equal to algebraic multiplicity.</text></feedback></answer>
+    <answer fraction="0"><text>All Jordan blocks are \(2\times2\)</text><feedback format="html"><text>Incorrect. \(2\times2\) Jordan blocks indicate non-diagonalizability (defective eigenvalues).</text></feedback></answer>
+    <answer fraction="0"><text>The matrix has \(n\) distinct eigenvalues</text><feedback format="html"><text>Incorrect. Distinct eigenvalues imply diagonalizability (sufficient), but diagonalizability does not require distinct eigenvalues.</text></feedback></answer>
+    <answer fraction="0"><text>The minimal polynomial equals the characteristic polynomial</text><feedback format="html"><text>Incorrect. Equal minimal and characteristic polynomials means one companion block (cyclic), not necessarily diagonalizable.</text></feedback></answer>
+  </question>
+
+  <!-- Q7 -->
+  <question type="multichoice">
+    <name><text>LA15-Q07 Frobenius Normal Form</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The companion matrix of the polynomial \(p(\lambda)=\lambda^3-6\lambda^2+11\lambda-6\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(C = \begin{pmatrix}0&0&6\\1&0&-11\\0&1&6\end{pmatrix}\)]]></text><feedback format="html"><text>Correct. The companion matrix of \(\lambda^3-c_2\lambda^2-c_1\lambda-c_0\) has 1s on the subdiagonal and the negated reversed coefficients in the last column. For \(\lambda^3-6\lambda^2+11\lambda-6\): last column is \((6,-11,6)^T\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(C = \begin{pmatrix}1&0&0\\0&2&0\\0&0&3\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. This is the diagonal matrix with eigenvalues 1,2,3 (roots of \(p\)), but not the companion matrix form.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(C = \begin{pmatrix}6&-11&6\\1&0&0\\0&1&0\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. In the standard companion matrix, the last column (or first row, depending on convention) carries the coefficients.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(C = \begin{pmatrix}0&1&0\\0&0&1\\6&-11&6\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect (this is the other convention). The standard companion matrix (column form) has 1s on the subdiagonal, not superdiagonal.</text></feedback></answer>
+  </question>
+
+  <!-- Q8 -->
+  <question type="multichoice">
+    <name><text>LA15-Q08 Primary Decomposition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The primary decomposition theorem states: if the minimal polynomial of \(T\) factors as \(m_T = p_1^{e_1}\cdots p_k^{e_k}\) (distinct irreducible \(p_i\)), then \(V\) decomposes as:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(V = V_1 \oplus V_2 \oplus \cdots \oplus V_k\) where \(V_i = \ker(p_i(T)^{e_i})\) is \(T\)-invariant]]></text><feedback format="html"><text>Correct. The primary decomposition (generalized eigenspace decomposition): each \(V_i=\ker p_i(T)^{e_i}\) is a \(T\)-invariant subspace and their direct sum is \(V\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(V = \text{im}(T) \oplus \ker(T)\) always]]></text><feedback format="html"><text>Incorrect. \(V=\ker(T)\oplus\text{im}(T)\) holds only when 0 is a semisimple eigenvalue (i.e., \(T^2=T\) projection case).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(V\) cannot be decomposed if the minimal polynomial has repeated factors]]></text><feedback format="html"><text>Incorrect. The primary decomposition works even with repeated factors; it is the Jordan decomposition that breaks things into generalized eigenspaces.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(V_i = \ker(T - \lambda_i I)\) (ordinary eigenspaces)]]></text><feedback format="html"><text>Incorrect. When \(p_i\) has degree \(>1\) or \(e_i>1\), the generalized eigenspace \(\ker p_i(T)^{e_i}\) is larger than the ordinary eigenspace.</text></feedback></answer>
+  </question>
+
+  <!-- Q9 -->
+  <question type="multichoice">
+    <name><text>LA15-Q09 Jordan Normal Form over R</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Over \(\mathbb{R}\), a matrix with complex (non-real) eigenvalues cannot be put in Jordan form. Instead, its real canonical form uses \(2\times2\) blocks of the form:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\begin{pmatrix}a&-b\\b&a\end{pmatrix}\) for eigenvalue \(a+bi\) (\(b\neq0\))]]></text><feedback format="html"><text>Correct. Each pair of complex conjugate eigenvalues \(a\pm bi\) gives a \(2\times2\) real block \(\begin{pmatrix}a&-b\\b&a\end{pmatrix}\) in the real Jordan form.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}a&b\\b&a\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. The correct real Jordan block for \(a+bi\) is \(\begin{pmatrix}a&-b\\b&a\end{pmatrix}\) (note the sign).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}a+bi&0\\0&a-bi\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. This uses complex entries, which is the complex Jordan form, not the real canonical form.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}|a+bi|&0\\0&|a+bi|\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. Using moduli is not the standard real canonical form.</text></feedback></answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>LA15-Q10 Invariant Factors from Smith Normal Form</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The characteristic matrix \(\lambda I - A\) of a matrix \(A\) over \(F[x]\) has Smith normal form \(\text{diag}(1,\ldots,1,f_1(\lambda),\ldots,f_k(\lambda))\). The invariant factors \(f_i\) relate to the JCF of \(A\) in that:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[The elementary divisors of \(\lambda I-A\) (prime power factors of the \(f_i\)) give the sizes of Jordan blocks]]></text><feedback format="html"><text>Correct. Each elementary divisor \((\lambda-\lambda_0)^k\) corresponds to a \(k\times k\) Jordan block with eigenvalue \(\lambda_0\). The full JCF is assembled from all elementary divisors.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[The invariant factors directly give the eigenvalues]]></text><feedback format="html"><text>Incorrect. The invariant factors give the characteristic and minimal polynomials; eigenvalues are the roots of the characteristic polynomial.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[The number of invariant factors equals the rank of \(A\)]]></text><feedback format="html"><text>Incorrect. The number of nontrivial invariant factors (those \(\neq1\)) is related to the structure of Jordan blocks, not directly to the rank.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f_1=f_2=\cdots=f_k=\) characteristic polynomial always]]></text><feedback format="html"><text>Incorrect. Only the last invariant factor \(f_k\) equals the characteristic polynomial (up to sign) when the RCF has a single companion block; in general, the \(f_i\) divide each other.</text></feedback></answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>LA15-Q11 Number of Jordan Blocks</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A \(6\times6\) matrix has eigenvalue \(\lambda=5\) with algebraic multiplicity 6 and geometric multiplicity 2. The JCF contains Jordan blocks for \(\lambda=5\) totaling size 6 with exactly:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>Exactly 2 Jordan blocks (geometric multiplicity = number of blocks)</text><feedback format="html"><text>Correct. The geometric multiplicity \(\dim\ker(A-5I)=2\) equals the number of Jordan blocks for eigenvalue 5. These two blocks have sizes summing to 6.</text></feedback></answer>
+    <answer fraction="0"><text>Exactly 6 Jordan blocks (one per algebraic multiplicity)</text><feedback format="html"><text>Incorrect. The number of Jordan blocks for an eigenvalue equals its geometric multiplicity, not algebraic multiplicity.</text></feedback></answer>
+    <answer fraction="0"><text>Exactly 1 Jordan block (single block of size 6)</text><feedback format="html"><text>Incorrect. One Jordan block would give geometric multiplicity 1, but we are told it is 2.</text></feedback></answer>
+    <answer fraction="0"><text>Exactly 4 Jordan blocks</text><feedback format="html"><text>Incorrect. The geometric multiplicity is 2, so there are exactly 2 Jordan blocks.</text></feedback></answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>LA15-Q12 Cyclic Decomposition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In the cyclic decomposition theorem, a finite-dimensional vector space \(V\) over a field \(F\) under a linear operator \(T\) decomposes as \(V = Z(v_1,T)\oplus\cdots\oplus Z(v_k,T)\) where \(Z(v_i,T)=\text{span}\{v_i,Tv_i,T^2v_i,\ldots\}\). The minimal polynomial of \(T\) restricted to \(Z(v_i,T)\) is called:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>The \(T\)-annihilator of \(v_i\)</text><feedback format="html"><text>Correct. The \(T\)-annihilator of \(v_i\) is the monic polynomial of least degree that annihilates \(v_i\) (i.e., \(p(T)v_i=0\)). It determines the structure of the cyclic subspace \(Z(v_i,T)\).</text></feedback></answer>
+    <answer fraction="0"><text>The characteristic polynomial of \(T\)</text><feedback format="html"><text>Incorrect. The characteristic polynomial of the full operator \(T\) is the product of the annihilators of all cyclic components.</text></feedback></answer>
+    <answer fraction="0"><text>The Gram matrix of \(v_i\)</text><feedback format="html"><text>Incorrect. Gram matrices are for inner product spaces; the \(T\)-annihilator is a polynomial.</text></feedback></answer>
+    <answer fraction="0"><text>The rank polynomial of \(T\)</text><feedback format="html"><text>Incorrect. There is no standard "rank polynomial." The relevant concept is the annihilator polynomial.</text></feedback></answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>LA15-Q13 JCF of Nilpotent</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A nilpotent \(4\times4\) matrix \(N\) satisfies \(N^3\neq0\) but \(N^4=0\). The Jordan form of \(N\) must include:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>At least one Jordan block of size \(\geq3\) (since \(N^3\neq0\))</text><feedback format="html"><text>Correct. The minimal polynomial is \(\lambda^k\) where \(k\) is the size of the largest Jordan block. Since \(N^3\neq0\) but \(N^4=0\), the minimal polynomial is \(\lambda^4\), meaning the largest block has size 4. So the JCF is a single \(4\times4\) nilpotent Jordan block.</text></feedback></answer>
+    <answer fraction="0"><text>Four \(1\times1\) zero blocks</text><feedback format="html"><text>Incorrect. This would give \(N=0\), contradicting \(N^3\neq0\).</text></feedback></answer>
+    <answer fraction="0"><text>Two \(2\times2\) nilpotent blocks</text><feedback format="html"><text>Incorrect. Two \(2\times2\) blocks would give \(N^2=0\), contradicting \(N^3\neq0\).</text></feedback></answer>
+    <answer fraction="0"><text>One \(3\times3\) and one \(1\times1\) block</text><feedback format="html"><text>Incorrect. A \(3\times3\) Jordan block gives \(N^3=0\), contradicting the given \(N^3\neq0\). The only possibility is a single \(4\times4\) block.</text></feedback></answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>LA15-Q14 Generalized Eigenvectors</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A generalized eigenvector of rank \(k\) for eigenvalue \(\lambda\) satisfies \((A-\lambda I)^k v = 0\) but \((A-\lambda I)^{k-1}v\neq0\). A chain of generalized eigenvectors \(v_1,\ldots,v_k\) where \((A-\lambda I)v_j = v_{j-1}\) (and \(v_0=0\)) forms the basis for a Jordan block. The Jordan block of size \(k\) acts on this chain as:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(Av_j = \lambda v_j + v_{j-1}\) for \(j\geq2\) and \(Av_1 = \lambda v_1\)]]></text><feedback format="html"><text>Correct. This is exactly the Jordan chain structure: \(v_1\) is the eigenvector, and \(Av_j=\lambda v_j+v_{j-1}\) for \(j\geq2\), corresponding to the Jordan block with 1s on the superdiagonal.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(Av_j = \lambda^j v_1\) for all \(j\)]]></text><feedback format="html"><text>Incorrect. This would mean all generalized eigenvectors map to \(v_1\), which is not the Jordan structure.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(Av_j = j\lambda v_j\)]]></text><feedback format="html"><text>Incorrect. The Jordan block does not scale eigenvalues by \(j\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(Av_j = v_{j+1}\) (shift up the chain)]]></text><feedback format="html"><text>Incorrect. \(A-\lambda I\) shifts down the chain: \((A-\lambda I)v_j=v_{j-1}\). The action of \(A\) is \(Av_j=\lambda v_j+v_{j-1}\).</text></feedback></answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>LA15-Q15 Similar Matrices and Canonical Form</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Two \(n\times n\) matrices over an algebraically closed field are similar if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>They have the same Jordan canonical form (up to ordering of Jordan blocks)</text><feedback format="html"><text>Correct. Over an algebraically closed field, the JCF is the complete invariant for similarity: \(A\sim B\) iff they have the same JCF.</text></feedback></answer>
+    <answer fraction="0"><text>They have the same characteristic polynomial</text><feedback format="html"><text>Incorrect. Same characteristic polynomial is necessary but not sufficient: e.g., \(\begin{pmatrix}0&1\\0&0\end{pmatrix}\) and \(\begin{pmatrix}0&0\\0&0\end{pmatrix}\) both have char poly \(\lambda^2\) but are not similar.</text></feedback></answer>
+    <answer fraction="0"><text>They have the same trace and determinant</text><feedback format="html"><text>Incorrect. Trace and determinant are similarity invariants but far from sufficient to determine the similarity class.</text></feedback></answer>
+    <answer fraction="0"><text>They have the same rank</text><feedback format="html"><text>Incorrect. Equal rank is a necessary condition for similarity (same number of zero eigenvalues) but not sufficient.</text></feedback></answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>LA15-Q16 Segre Characteristic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Segre characteristic of an eigenvalue \(\lambda\) of a matrix is the list of Jordan block sizes for \(\lambda\) in decreasing order. A \(4\times4\) matrix with eigenvalue \(\lambda=1\) (alg. mult. 4) and Segre characteristic \([2,1,1]\) has:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>One \(2\times2\) Jordan block and two \(1\times1\) Jordan blocks for \(\lambda=1\); geometric multiplicity 3</text><feedback format="html"><text>Correct. Segre \([2,1,1]\) means blocks of sizes 2, 1, 1 (total \(2+1+1=4\)). Number of blocks = geometric multiplicity = 3.</text></feedback></answer>
+    <answer fraction="0"><text>Two \(2\times2\) Jordan blocks; geometric multiplicity 2</text><feedback format="html"><text>Incorrect. Segre \([2,1,1]\) has three blocks (sizes 2, 1, 1), not two blocks of size 2.</text></feedback></answer>
+    <answer fraction="0"><text>One \(4\times4\) Jordan block; geometric multiplicity 1</text><feedback format="html"><text>Incorrect. Segre \([4]\) would be one block of size 4; \([2,1,1]\) has three blocks.</text></feedback></answer>
+    <answer fraction="0"><text>Four \(1\times1\) blocks; geometric multiplicity 4 (diagonalizable)</text><feedback format="html"><text>Incorrect. Segre \([1,1,1,1]\) corresponds to the diagonalizable case; \([2,1,1]\) has one size-2 block.</text></feedback></answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>LA15-Q17 Weyr Characteristic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Weyr characteristic of an eigenvalue is the sequence \(w_1\geq w_2\geq\cdots\) where \(w_k = \dim\ker(A-\lambda I)^k - \dim\ker(A-\lambda I)^{k-1}\). For the Jordan form with blocks \([3,2,1]\) for eigenvalue \(\lambda\), the Weyr characteristic is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\([3,2,1]\) — dual to Segre \([3,2,1]\), giving Weyr characteristic \([3,2,1]\) (the conjugate partition)]]></text><feedback format="html"><text>Correct. Weyr characteristic is the conjugate (transpose) of the Segre characteristic as a Young diagram. Segre \([3,2,1]\) conjugates to \([3,2,1]\) (this happens to be self-conjugate for \([3,2,1]\)). Actually for blocks [3,2,1], the conjugate partition of [3,2,1] is [3,2,1] since the Young diagram is self-conjugate here.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\([1,2,3]\) (reverse of Segre)]]></text><feedback format="html"><text>Incorrect. The Weyr characteristic is the conjugate partition of the Segre characteristic, not simply its reverse.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\([6]\) (one number equal to algebraic multiplicity)]]></text><feedback format="html"><text>Incorrect. \([6]\) would be the Weyr characteristic only if geometric multiplicity is 1 (single Jordan block of size 6).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\([1,1,1,1,1,1]\) (all ones)]]></text><feedback format="html"><text>Incorrect. \([1,1,1,1,1,1]\) would correspond to a diagonalizable matrix with 6 eigenvectors.</text></feedback></answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>LA15-Q18 Function of Jordan Block</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For a Jordan block \(J_k(\lambda)\) of size \(k\), and an analytic function \(f\), \(f(J_k(\lambda))\) is a \(k\times k\) upper triangular matrix with diagonal entries \(f(\lambda)\). The \((i,j)\) entry for \(j>i\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{f^{(j-i)}(\lambda)}{(j-i)!}\)]]></text><feedback format="html"><text>Correct. The \((i,j)\) entry of \(f(J_k(\lambda))\) is \(\frac{f^{(j-i)}(\lambda)}{(j-i)!}\) for \(j\geq i\). This uses the Taylor expansion of \(f\) at \(\lambda\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f(\lambda)^{j-i}\)]]></text><feedback format="html"><text>Incorrect. Powers of \(f(\lambda)\) don't appear as entries; instead, derivatives of \(f\) at \(\lambda\) appear.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(f^{(j-i)}(\lambda)\)]]></text><feedback format="html"><text>Incorrect. The factorial denominator \((j-i)!\) is needed: the entry is \(f^{(j-i)}(\lambda)/(j-i)!\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(0\) for all \(j>i\)]]></text><feedback format="html"><text>Incorrect. Unless \(f\) is a polynomial of degree \(<j-i\), the off-diagonal entries of \(f(J_k(\lambda))\) are generally nonzero.</text></feedback></answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>LA15-Q19 Canonical Form Over Different Fields</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The matrix \(A = \begin{pmatrix}0&-1\\1&0\end{pmatrix}\) has characteristic polynomial \(\lambda^2+1\). Over \(\mathbb{R}\), its rational canonical form is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[The companion matrix of \(\lambda^2+1\), which is \(A\) itself: \(\begin{pmatrix}0&-1\\1&0\end{pmatrix}\)]]></text><feedback format="html"><text>Correct. Since \(\lambda^2+1\) is irreducible over \(\mathbb{R}\), the rational canonical form is the single companion matrix of \(\lambda^2+1\), which equals \(A\) itself.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}i&0\\0&-i\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. This is the JCF over \(\mathbb{C}\), not a real canonical form.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}0&1\\-1&0\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. This is similar to \(A\) but not the standard companion form of \(\lambda^2+1\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\begin{pmatrix}1&0\\0&-1\end{pmatrix}\)]]></text><feedback format="html"><text>Incorrect. This is a real diagonal matrix with eigenvalues \(\pm1\), which has characteristic polynomial \(\lambda^2-1\neq\lambda^2+1\).</text></feedback></answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>LA15-Q20 Determining JCF from Char and Min Poly</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A \(6\times6\) matrix has characteristic polynomial \((\lambda-1)^4(\lambda-2)^2\) and minimal polynomial \((\lambda-1)^2(\lambda-2)\). How many Jordan blocks does it have in total?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(4\) Jordan blocks</text><feedback format="html"><text>Correct. For \(\lambda=1\): min poly contributes \((\lambda-1)^2\), so largest block is \(2\times2\). Alg. mult. 4 with max block size 2: must have two \(2\times2\) blocks (2+2=4). For \(\lambda=2\): min poly contributes \((\lambda-2)^1\), so all blocks are \(1\times1\). Alg. mult. 2: two \(1\times1\) blocks. Total: 2+2=4 blocks.</text></feedback></answer>
+    <answer fraction="0"><text>\(6\) Jordan blocks</text><feedback format="html"><text>Incorrect. Six blocks would mean all blocks are \(1\times1\) (diagonalizable), but min poly has \((\lambda-1)^2\), forcing at least one \(2\times2\) block.</text></feedback></answer>
+    <answer fraction="0"><text>\(2\) Jordan blocks</text><feedback format="html"><text>Incorrect. For \(\lambda=1\) alone we need at least two \(2\times2\) blocks (size 4 with max block size 2), plus two \(1\times1\) blocks for \(\lambda=2\).</text></feedback></answer>
+    <answer fraction="0"><text>\(3\) Jordan blocks</text><feedback format="html"><text>Incorrect. The correct count is 4: two \(2\times2\) blocks for \(\lambda=1\) and two \(1\times1\) blocks for \(\lambda=2\).</text></feedback></answer>
+  </question>
+
+</quiz>

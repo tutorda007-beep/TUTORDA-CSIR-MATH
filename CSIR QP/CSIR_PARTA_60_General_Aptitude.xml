@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Part A/General Aptitude</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q01_Arithmetic_Series</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The sum of the first \(n\) terms of an arithmetic progression with first term \(a\) and common difference \(d\) is \(S_n\). If \(S_{10} = 155\) and \(S_5 = 40\), what is the common difference \(d\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(d = 3\)]]></text>
+      <feedback><text>Correct. \(S_5=\frac{5}{2}(2a+4d)=5a+10d=40\) gives \(a+2d=8\). \(S_{10}=\frac{10}{2}(2a+9d)=10a+45d=155\) gives \(2a+9d=31\). From \(a=8-2d\): \(2(8-2d)+9d=31\Rightarrow d=3\), \(a=2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(d = 2\)]]></text>
+      <feedback><text>If \(d=2\), then \(a=4\), \(S_5=5(4)+10(2)=40\) ✓ but \(S_{10}=10(4)+45(2)=130\neq155\) ✗.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(d = 4\)]]></text>
+      <feedback><text>If \(d=4\), then \(a=0\), \(S_5=0+40=40\) ✓ but \(S_{10}=0+180=180\neq155\) ✗.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(d = 5\)]]></text>
+      <feedback><text>If \(d=5\), then \(a=-2\), \(S_{10}=-20+225=205\neq155\) ✗.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q02_Percentage</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A student scores 75% in an exam. If the maximum marks are 600, and a passing score is 40% of the maximum, by how many marks does the student exceed the passing score?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[210]]></text>
+      <feedback><text>Correct. Student's score: \(0.75\times600=450\). Passing score: \(0.40\times600=240\). Difference: \(450-240=210\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[180]]></text>
+      <feedback><text>This would correspond to a 70% score minus 40%, giving \(420-240=180\); the student scored 75%, not 70%.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[250]]></text>
+      <feedback><text>\(250=490-240\) which would require \(490/600\approx81.7\%\), not 75%.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[150]]></text>
+      <feedback><text>\(150=390-240\) which would require 65% score, not 75%.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q03_Work_Time</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A can complete a work in 12 days and B can complete the same work in 18 days. They work together for 4 days, after which A leaves. How many more days does B take to complete the remaining work?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[8 days]]></text>
+      <feedback><text>Correct. Together per day: \(1/12+1/18=5/36\). In 4 days: \(20/36=5/9\). Remaining: \(4/9\). B alone: \((4/9)\div(1/18)=8\) days.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[10 days]]></text>
+      <feedback><text>The remaining work is \(4/9\); at B's rate of \(1/18\) per day, \((4/9)\times18=8\) days, not 10.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[6 days]]></text>
+      <feedback><text>In 4 days together: \(5/9\) done. Remaining \(4/9\). B's rate: \(1/18\) per day. Time \(=4/9\times18=8\) days, not 6.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[12 days]]></text>
+      <feedback><text>12 days would be B's time for the entire work; only \(4/9\) remains, requiring \(8\) days.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q04_Ratio_Proportion</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If the ratio of the ages of P and Q is \(3:5\) and after 6 years the ratio will be \(3:4\), what is the present age of Q?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[10 years]]></text>
+      <feedback><text>Correct. Let ages be \(3x\) and \(5x\). After 6 years: \((3x+6)/(5x+6)=3/4\). \(4(3x+6)=3(5x+6)\Rightarrow12x+24=15x+18\Rightarrow3x=6\Rightarrow x=2\). Q's age: \(5\times2=10\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[12 years]]></text>
+      <feedback><text>If Q is 12, then P is \(12\times3/5=7.2\) (non-integer), and the ratio after 6 years would be \(13.2:18\neq3:4\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[15 years]]></text>
+      <feedback><text>If Q is 15, P is 9. After 6 years: \(15:21=5:7\neq3:4\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[8 years]]></text>
+      <feedback><text>If Q is 8, P is \(8\times3/5=4.8\) (non-integer ratio).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q05_Probability_Basic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A bag contains 5 red, 4 blue, and 3 green balls. If two balls are drawn at random without replacement, what is the probability that both are of the same color?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{19}{66}\)]]></text>
+      <feedback><text>Correct. Total ways: \(\binom{12}{2}=66\). Same color: \(\binom{5}{2}+\binom{4}{2}+\binom{3}{2}=10+6+3=19\). Probability: \(19/66\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{1}{3}\)]]></text>
+      <feedback><text>\(1/3=22/66\neq19/66\). The correct count is \(\binom52+\binom42+\binom32=19\) same-color pairs out of 66.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{47}{66}\)]]></text>
+      <feedback><text>This is the probability of drawing two balls of different colors (\(1-19/66=47/66\)), not the same color.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{5}{22}\)]]></text>
+      <feedback><text>\(5/22=15/66\neq19/66\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q06_Permutation_Combination</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In how many ways can the letters of the word MATHEMATICS be arranged so that the two M's always appear together?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(907200\)]]></text>
+      <feedback><text>Correct. MATHEMATICS has 11 letters: M(2),A(2),T(2),H,E,I,C,S. Treating the two M's as one block gives 10 entities with A(2) and T(2) repeated. Arrangements: \(10!/(2!\cdot2!)=3628800/4=907200\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(75600\)]]></text>
+      <feedback><text>Incorrect. The correct count is \(10!/(2!\cdot2!)=907200\); 75600 does not arise from this computation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(10!\)]]></text>
+      <feedback><text>This overcounts by not accounting for the two identical A's and two identical T's remaining; must divide by \(2!\cdot2!=4\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(11!/(2!2!2!)\)]]></text>
+      <feedback><text>This is the total arrangements of MATHEMATICS without the constraint; with MM together we treat them as one block giving 10 entities, not 11.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q07_LogicSyllogism</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Consider the statements: (i) All mathematicians are scientists. (ii) No scientist is an engineer. Which conclusion is logically valid?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[No mathematician is an engineer]]></text>
+      <feedback><text>Correct. From (i): Mathematicians ⊆ Scientists. From (ii): Scientists ∩ Engineers = ∅. Therefore Mathematicians ∩ Engineers = ∅, i.e., no mathematician is an engineer.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[All scientists are mathematicians]]></text>
+      <feedback><text>Statement (i) says all mathematicians are scientists (Mathematicians ⊆ Scientists), not the converse.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Some engineers are mathematicians]]></text>
+      <feedback><text>This contradicts the valid conclusion; the given premises logically exclude any mathematician from being an engineer.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Some mathematicians are engineers]]></text>
+      <feedback><text>This directly contradicts the valid conclusion derived from the two premises.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q08_Speed_Distance</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A train 150 m long travelling at 60 km/h passes a bridge. If the train takes 30 seconds to cross the bridge completely, what is the length of the bridge?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[350 m]]></text>
+      <feedback><text>Correct. Speed: \(60\text{ km/h}=\frac{60000}{3600}=\frac{50}{3}\text{ m/s}\). Distance in 30 s: \(30\times\frac{50}{3}=500\text{ m}\). Bridge length: \(500-150=350\text{ m}\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[300 m]]></text>
+      <feedback><text>300 m would require the total crossing distance to be 450 m, which at 50/3 m/s takes 27 s, not 30 s.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[500 m]]></text>
+      <feedback><text>500 m is the total distance covered (train length + bridge), not the bridge length alone; subtract 150 m.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[250 m]]></text>
+      <feedback><text>250 m bridge requires 400 m total, taking \(400/(50/3)=24\text{ s}\neq30\text{ s}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q09_Series_Pattern</text></name>
+    <questiontext format="html">
+      <text><![CDATA[What is the next term in the series: 2, 6, 12, 20, 30, __?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[42]]></text>
+      <feedback><text>Correct. The terms are \(n(n+1)\) for \(n=1,2,3,4,5,6\ldots\): \(1\times2=2\), \(2\times3=6\), \(3\times4=12\), \(4\times5=20\), \(5\times6=30\), \(6\times7=42\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[40]]></text>
+      <feedback><text>The pattern is \(n(n+1)\); the 6th term is \(6\times7=42\), not 40.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[36]]></text>
+      <feedback><text>The differences are 4,6,8,10,12,...; 30+12=42, not 36.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[44]]></text>
+      <feedback><text>Consecutive differences increase by 2: \(4,6,8,10,12\); the next term is \(30+12=42\), not 44.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q10_Simple_Compound_Interest</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The difference between compound interest and simple interest on a principal \(P\) at rate \(r\%\) per annum for 2 years is ₹25. If \(r = 5\%\), what is \(P\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[₹10,000]]></text>
+      <feedback><text>Correct. CI − SI for 2 years \(= P(r/100)^2\). So \(P\times(0.05)^2=25\Rightarrow P\times0.0025=25\Rightarrow P=10000\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹5,000]]></text>
+      <feedback><text>\(5000\times0.0025=12.5\neq25\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹2,500]]></text>
+      <feedback><text>\(2500\times0.0025=6.25\neq25\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹20,000]]></text>
+      <feedback><text>\(20000\times0.0025=50\neq25\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q11_Venn_Diagram</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In a group of 100 students: 60 study Mathematics, 50 study Physics, and 30 study both. How many students study neither Mathematics nor Physics?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[20]]></text>
+      <feedback><text>Correct. \(|M\cup P|=|M|+|P|-|M\cap P|=60+50-30=80\). Neither: \(100-80=20\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[10]]></text>
+      <feedback><text>\(|M\cup P|=80\), so \(100-80=20\) study neither, not 10.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[30]]></text>
+      <feedback><text>30 is the number who study both subjects, not neither.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[40]]></text>
+      <feedback><text>If \(|M\cup P|=60\), then 40 study neither; but \(|M\cup P|=80\) so only 20 study neither.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q12_DirectionSense</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Ravi starts from point A, walks 5 km North, turns right and walks 3 km, turns right again and walks 5 km South. How far is Ravi from point A, and in which direction?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[3 km East]]></text>
+      <feedback><text>Correct. North 5 km → East 3 km → South 5 km. The North and South legs cancel. Ravi is 3 km East of A.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[5 km North]]></text>
+      <feedback><text>The 5 km North and 5 km South cancel each other; the net displacement is only the 3 km East segment.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\sqrt{34}\) km North-East]]></text>
+      <feedback><text>This would be the case if the South walk were less than 5 km; since it exactly cancels the North walk, the displacement is purely 3 km East.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[3 km West]]></text>
+      <feedback><text>The right turn from North is East, not West; Ravi ends up East of A.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q13_DataInterpretation</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A company's annual revenue increased from ₹80 lakh in 2020 to ₹100 lakh in 2021, then decreased to ₹90 lakh in 2022. What is the percentage change from 2020 to 2022?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[12.5% increase]]></text>
+      <feedback><text>Correct. Change: \(90-80=10\) lakh. Percentage: \((10/80)\times100=12.5\%\) increase from 2020 to 2022.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[10% decrease]]></text>
+      <feedback><text>The revenue decreased from 2021 to 2022 by 10%, but from 2020 to 2022 there is a net increase (80 → 90).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[25% increase]]></text>
+      <feedback><text>25% increase from ₹80 lakh would give ₹100 lakh (the 2021 value); from 2020 to 2022 the increase is 12.5%.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[No change (0%)]]></text>
+      <feedback><text>Revenue went from ₹80 lakh to ₹90 lakh, a 12.5% increase; it did not remain the same.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q14_ClockAngle</text></name>
+    <questiontext format="html">
+      <text><![CDATA[What is the angle between the hour hand and minute hand of a clock at 3:30?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[75°]]></text>
+      <feedback><text>Correct. At 3:30: minute hand at 180° (6 o'clock position). Hour hand: at 3:00 it is at 90°; in 30 min it moves \(30\times0.5°=15°\), so at 105°. Angle: \(|180-105|=75°\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[90°]]></text>
+      <feedback><text>At exactly 3:00 the angle is 90°; at 3:30 the hour hand has moved to 105°, giving a 75° angle with the minute hand at 180°.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[105°]]></text>
+      <feedback><text>105° is the position of the hour hand (from 12), not the angle between the hands.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[60°]]></text>
+      <feedback><text>The angle is \(|180-105|=75°\), not 60°.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q15_CodedEquality</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If in a certain code, Delhi is written as 73541 and INDIA is written as 15312, how is DELIA written in that code?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[73512]]></text>
+      <feedback><text>Correct. D=7, E=3, L=5, I=1, A=2 (from DELHI=73541: H=4; from INDIA=15312: N=5... wait, let me re-derive. DELHI: D=7,E=3,L=5,H=4,I=1. INDIA: I=1,N=5,D=7,I=1,A=2. So A=2. DELIA: D=7,E=3,L=5,I=1,A=2 → 73512.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[73541]]></text>
+      <feedback><text>73541 is DELHI itself; DELIA ends in A(=2) and I(=1), giving 73512.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[71532]]></text>
+      <feedback><text>The order matters: D=7, E=3, L=5, I=1, A=2 in that sequence gives 73512, not 71532.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[35712]]></text>
+      <feedback><text>This rearranges the digits incorrectly; the code follows letter-by-letter assignment: 7,3,5,1,2.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q16_Mixture</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A vessel contains 40 litres of milk. 8 litres are withdrawn and replaced with water. This process is repeated twice more (total 3 replacements). What fraction of the vessel's content is now milk?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{512}{1000} = \dfrac{64}{125}\)]]></text>
+      <feedback><text>Correct. After each replacement, milk fraction is multiplied by \((40-8)/40=32/40=4/5\). After 3 times: \((4/5)^3=64/125\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{3}{5}\)]]></text>
+      <feedback><text>\(3/5=0.6\) but \((4/5)^3=0.512=64/125\approx0.512\neq0.6\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{16}{25}\)]]></text>
+      <feedback><text>\(16/25=(4/5)^2\) which is only 2 replacements, not 3.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\dfrac{4}{5}\)]]></text>
+      <feedback><text>\(4/5\) is the fraction after only 1 replacement; after 3 replacements it is \((4/5)^3=64/125\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q17_Geometry_Basic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The perimeter of a rectangle is 60 cm and its area is 216 cm². What are the dimensions of the rectangle?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[18 cm × 12 cm]]></text>
+      <feedback><text>Correct. \(2(l+w)=60\Rightarrow l+w=30\). \(lw=216\). Quadratic: \(t^2-30t+216=0\Rightarrow(t-18)(t-12)=0\). Dimensions: 18 and 12 cm.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[20 cm × 10 cm]]></text>
+      <feedback><text>\(20+10=30\) ✓ but \(20\times10=200\neq216\) ✗.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[24 cm × 9 cm]]></text>
+      <feedback><text>\(24+9=33\neq30\) ✗; this does not satisfy the perimeter condition.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[15 cm × 15 cm]]></text>
+      <feedback><text>A 15×15 square has perimeter 60 ✓ but area \(225\neq216\) ✗.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q18_NumberSeries</text></name>
+    <questiontext format="html">
+      <text><![CDATA[What is the missing number in the series: 1, 4, 9, 16, ?, 36, 49?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[25]]></text>
+      <feedback><text>Correct. The series is \(1^2, 2^2, 3^2, 4^2, 5^2, 6^2, 7^2\); the missing term is \(5^2=25\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[20]]></text>
+      <feedback><text>The series consists of perfect squares; between \(16=4^2\) and \(36=6^2\) comes \(25=5^2\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[30]]></text>
+      <feedback><text>30 is not a perfect square; the pattern is squares of consecutive integers.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[22]]></text>
+      <feedback><text>The pattern is \(n^2\); between 16 and 36 the missing perfect square is 25.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q19_Profit_Loss</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A shopkeeper sells an article for ₹1350 and makes a profit of 8%. What was the cost price of the article?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[₹1250]]></text>
+      <feedback><text>Correct. SP = CP × 1.08. CP = 1350/1.08 = 1250.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹1242]]></text>
+      <feedback><text>\(1242\times1.08=1341.36\neq1350\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹1300]]></text>
+      <feedback><text>\(1300\times1.08=1404\neq1350\).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[₹1200]]></text>
+      <feedback><text>\(1200\times1.08=1296\neq1350\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>PARTA_Q20_ReadingComprehension</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Read the following argument: "All research requires careful observation. No casual observation leads to discovery. Therefore, research leads to discovery." The argument is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Invalid, because the conclusion does not logically follow from the premises as stated]]></text>
+      <feedback><text>Correct. The premises say research requires careful observation and no casual observation leads to discovery. But "careful observation" is not the same as "observation that leads to discovery"; the conclusion "research leads to discovery" is not logically entailed by these premises.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Valid, because careful observation (used in research) is not casual and so leads to discovery]]></text>
+      <feedback><text>This assumes that non-casual observation leads to discovery, but the premise only states that casual observation does NOT lead to discovery; it does not establish what careful observation achieves.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Valid, because the first two premises together imply the conclusion by contrapositive]]></text>
+      <feedback><text>The contrapositive of "no casual observation leads to discovery" is "if leads to discovery, then not casual" — this still does not establish that careful observation leads to discovery.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Invalid, because no research requires observation]]></text>
+      <feedback><text>The premise explicitly states research requires observation; the argument is invalid for a different reason (the gap between "not casual" and "leads to discovery").</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

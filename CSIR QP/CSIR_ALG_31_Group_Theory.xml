@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Abstract Algebra/Group Theory</text></category>
+    <info format="html"><text>CSIR NET Mathematics — Abstract Algebra: Group Theory. MCQ, 20 questions covering groups, subgroups, normal subgroups, quotient groups, homomorphisms, isomorphism theorems, cyclic groups, permutation groups, Sylow theorems, group actions.</text></info>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q01 Order of element in symmetric group</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>In the symmetric group \(S_7\), what is the order of the permutation \(\sigma = (1\;2\;3)(4\;5)(6\;7)\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>6</text>
+      <feedback format="html"><text><![CDATA[
+        The permutation is a product of disjoint cycles: a 3-cycle \((1\;2\;3)\), a 2-cycle \((4\;5)\), and a 2-cycle \((6\;7)\). The order of a product of disjoint cycles is the LCM of their lengths: \(\text{lcm}(3,2,2) = 6\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>12</text>
+      <feedback format="html"><text>Incorrect. The order is lcm of cycle lengths, not their product.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>3</text>
+      <feedback format="html"><text>Incorrect. This is only the length of the first cycle.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>2</text>
+      <feedback format="html"><text>Incorrect. The 2-cycles alone have order 2, but the 3-cycle forces higher order.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q02 Number of Sylow 3-subgroups of S4</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>How many Sylow 3-subgroups does \(S_4\) have?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>4</text>
+      <feedback format="html"><text><![CDATA[
+        \(|S_4| = 24 = 2^3 \cdot 3\). The Sylow 3-subgroups have order 3. By Sylow's theorem, \(n_3 \equiv 1 \pmod{3}\) and \(n_3 \mid 8\), so \(n_3 \in \{1,4\}\). Since the 3-cycles generate multiple distinct subgroups of order 3, we get \(n_3 = 4\). Explicitly: \(\langle(1\;2\;3)\rangle, \langle(1\;2\;4)\rangle, \langle(1\;3\;4)\rangle, \langle(2\;3\;4)\rangle\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>1</text>
+      <feedback format="html"><text>Incorrect. If \(n_3=1\) the Sylow 3-subgroup would be normal; checking shows it is not.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>3</text>
+      <feedback format="html"><text>Incorrect. \(n_3\) must satisfy \(n_3 \equiv 1 \pmod 3\), ruling out 3.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>8</text>
+      <feedback format="html"><text>Incorrect. \(n_3\) must divide 8, but \(8 \not\equiv 1 \pmod 3\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q03 First Isomorphism Theorem application</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Let \(\phi: \mathbb{Z} \to \mathbb{Z}/6\mathbb{Z}\) be the natural surjective homomorphism \(\phi(n) = n \bmod 6\). What is \(\ker\phi\) and what does the First Isomorphism Theorem give?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\ker\phi = 6\mathbb{Z}\) and \(\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}\)</text>
+      <feedback format="html"><text><![CDATA[
+        \(\ker\phi = \{n \in \mathbb{Z} : 6 \mid n\} = 6\mathbb{Z}\). The First Isomorphism Theorem states \(\mathbb{Z}/\ker\phi \cong \text{Im}\,\phi\), i.e., \(\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}\). This confirms the quotient structure.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\ker\phi = \{0\}\) and \(\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. The kernel is not trivial since \(\phi(6)=0\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\ker\phi = 3\mathbb{Z}\) and \(\mathbb{Z}/3\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. Multiples of 3 don't all map to 0 mod 6.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\ker\phi = 2\mathbb{Z}\) and \(\mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}\)</text>
+      <feedback format="html"><text>Incorrect. \(\phi(2) = 2 \neq 0\) in \(\mathbb{Z}/6\mathbb{Z}\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q04 Cyclic group of order 12 subgroups</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>How many subgroups does the cyclic group \(\mathbb{Z}_{12}\) have?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>6</text>
+      <feedback format="html"><text><![CDATA[
+        In a cyclic group of order \(n\), there is exactly one subgroup for each divisor of \(n\). The divisors of 12 are \(1, 2, 3, 4, 6, 12\) — a total of 6 divisors. Thus \(\mathbb{Z}_{12}\) has exactly 6 subgroups.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>4</text>
+      <feedback format="html"><text>Incorrect. This counts only some of the divisors of 12.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>3</text>
+      <feedback format="html"><text>Incorrect. The prime factorization of 12 is \(2^2 \cdot 3\), giving \((2+1)(1+1)=6\) divisors.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>12</text>
+      <feedback format="html"><text>Incorrect. The number of subgroups equals the number of divisors of the group order.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q05 Cauchy's theorem application</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Let \(G\) be a finite group of order 35. By Cauchy's theorem, which orders of elements must exist in \(G\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Elements of orders 5 and 7 must exist</text>
+      <feedback format="html"><text><![CDATA[
+        Cauchy's theorem: if a prime \(p\) divides \(|G|\), then \(G\) has an element of order \(p\). Since \(35 = 5 \times 7\), both 5 and 7 divide \(|G|\), so elements of orders 5 and 7 must exist. In fact, \(G \cong \mathbb{Z}_{35}\) is the only group of order 35 (since \(\gcd(5,7)=1\) and both Sylow subgroups are normal).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Only an element of order 35 must exist</text>
+      <feedback format="html"><text>Incorrect. Cauchy's theorem guarantees elements of each prime order dividing \(|G|\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Elements of orders 5, 7, and 35 must exist</text>
+      <feedback format="html"><text>Incorrect. Cauchy's theorem guarantees prime-order elements; order 35 follows separately.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Elements of order 1 only must exist</text>
+      <feedback format="html"><text>Incorrect. Only the identity has order 1; Cauchy guarantees far more.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q06 Normal subgroup and quotient group</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Let \(A_n\) denote the alternating group of even permutations in \(S_n\). For \(n \geq 2\), which statement is correct?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(A_n \trianglelefteq S_n\) and \(S_n / A_n \cong \mathbb{Z}_2\)</text>
+      <feedback format="html"><text><![CDATA[
+        \(A_n\) is the kernel of the sign homomorphism \(\text{sgn}: S_n \to \{1,-1\} \cong \mathbb{Z}_2\). Kernels of homomorphisms are always normal subgroups. Since the sign map is surjective, the First Isomorphism Theorem gives \(S_n/A_n \cong \mathbb{Z}_2\). Also \([S_n : A_n] = 2\), so \(|A_n| = n!/2\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(A_n \trianglelefteq S_n\) and \(S_n / A_n \cong \mathbb{Z}_n\)</text>
+      <feedback format="html"><text>Incorrect. The quotient has order 2, not \(n\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(A_n\) is not normal in \(S_n\) for \(n \geq 3\)</text>
+      <feedback format="html"><text>Incorrect. Being a kernel of a homomorphism, \(A_n\) is always normal.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(A_n \trianglelefteq S_n\) and \(S_n / A_n \cong S_{n-1}\)</text>
+      <feedback format="html"><text>Incorrect. The quotient group has order 2, not \((n-1)!\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q07 Group action orbit-stabilizer theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>A group \(G\) of order 24 acts on a set \(X\). If the stabilizer of an element \(x \in X\) has order 8, what is \(|\mathcal{O}(x)|\), the size of the orbit of \(x\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>3</text>
+      <feedback format="html"><text><![CDATA[
+        The Orbit-Stabilizer Theorem states \(|G| = |\mathcal{O}(x)| \cdot |\text{Stab}(x)|\). Thus \(|\mathcal{O}(x)| = |G|/|\text{Stab}(x)| = 24/8 = 3\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>8</text>
+      <feedback format="html"><text>Incorrect. The orbit size equals the group order divided by the stabilizer order.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>192</text>
+      <feedback format="html"><text>Incorrect. The orbit-stabilizer theorem gives a quotient, not a product.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>24</text>
+      <feedback format="html"><text>Incorrect. An orbit of size 24 would require a trivial stabilizer.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q08 Simple groups and A5</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Which of the following statements about \(A_5\) is correct?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(A_5\) is simple, non-abelian of order 60, and is the smallest non-abelian simple group</text>
+      <feedback format="html"><text><![CDATA[
+        \(|A_5| = 60\). To show simplicity: the only subgroup counts compatible with Sylow constraints for orders 2, 3, 5 give no proper normal subgroup. Conjugacy classes in \(A_5\) have sizes 1, 15, 20, 12, 12 (summing to 60), none of which forms a union with 1 that divides 60 (other than 1 and 60). \(A_5\) is the smallest non-abelian simple group.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(A_5\) is solvable</text>
+      <feedback format="html"><text>Incorrect. Simple non-abelian groups are not solvable; \(A_5\) is the classic counterexample.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(A_5\) has a normal subgroup of order 12</text>
+      <feedback format="html"><text>Incorrect. Since \(A_5\) is simple, its only normal subgroups are \(\{e\}\) and \(A_5\) itself.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(A_5 \cong \mathbb{Z}_{60}\)</text>
+      <feedback format="html"><text>Incorrect. \(A_5\) is non-abelian; \(\mathbb{Z}_{60}\) is abelian.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q09 Sylow p-subgroup uniqueness implies normality</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Let \(G\) be a group of order 45. Determine the structure of \(G\).</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(G\) is abelian, isomorphic to \(\mathbb{Z}_{45}\) or \(\mathbb{Z}_9 \times \mathbb{Z}_5\)</text>
+      <feedback format="html"><text><![CDATA[
+        \(|G| = 45 = 3^2 \cdot 5\). Sylow's theorem: \(n_5 \equiv 1 \pmod 5\) and \(n_5 \mid 9\), so \(n_5 = 1\). Thus the Sylow 5-subgroup \(P_5 \cong \mathbb{Z}_5\) is normal. Similarly \(n_3 \equiv 1 \pmod 3\) and \(n_3 \mid 5\), so \(n_3 = 1\), and the Sylow 3-subgroup \(P_3\) (of order 9) is normal. Since both Sylow subgroups are normal and \(\gcd(9,5)=1\), we get \(G \cong P_3 \times P_5\). The Sylow 3-subgroup is either \(\mathbb{Z}_9\) or \(\mathbb{Z}_3 \times \mathbb{Z}_3\), giving \(G \cong \mathbb{Z}_{45}\) or \(\mathbb{Z}_9 \times \mathbb{Z}_5 \cong \mathbb{Z}_{45}\) (same) or \(\mathbb{Z}_3\times\mathbb{Z}_3\times\mathbb{Z}_5\). Either way \(G\) is abelian.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(G\) must be isomorphic to \(A_5\)</text>
+      <feedback format="html"><text>Incorrect. \(|A_5|=60 \neq 45\) and \(A_5\) is non-abelian.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(G\) is non-abelian for some choice</text>
+      <feedback format="html"><text>Incorrect. The Sylow analysis forces both Sylow subgroups to be normal, making \(G\) abelian.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(G\) has a non-normal Sylow 5-subgroup</text>
+      <feedback format="html"><text>Incorrect. \(n_5\) must be 1 since \(n_5\equiv 1 \pmod 5\) and \(n_5 \mid 9\) forces \(n_5=1\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q10 Center of S_n</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>What is the center \(Z(S_n)\) of the symmetric group \(S_n\) for \(n \geq 3\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(Z(S_n) = \{e\}\) (trivial)</text>
+      <feedback format="html"><text><![CDATA[
+        For \(n \geq 3\), \(Z(S_n)\) is trivial. Suppose \(\sigma \in Z(S_n)\) is non-identity. Then \(\sigma\) moves some element, say \(\sigma(i) = j \neq i\). Choose \(k \neq i, j\) (possible since \(n \geq 3\)) and let \(\tau = (j\;k)\). Then \(\tau\sigma(i) = \tau(j) = k\) but \(\sigma\tau(i) = \sigma(i) = j \neq k\), contradicting \(\sigma \in Z(S_n)\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(Z(S_n) = A_n\)</text>
+      <feedback format="html"><text>Incorrect. \(A_n\) is a large subgroup (index 2), not the center.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(Z(S_n) = S_n\) (i.e., \(S_n\) is abelian)</text>
+      <feedback format="html"><text>Incorrect. \(S_n\) is non-abelian for \(n \geq 3\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(Z(S_n)\) has order \(n\)</text>
+      <feedback format="html"><text>Incorrect. The center is trivial, of order 1.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q11 Third Isomorphism Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Let \(G\) be a group with normal subgroups \(N \trianglelefteq H \trianglelefteq G\) (with \(N \trianglelefteq G\) as well). What does the Third Isomorphism Theorem state?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\((G/N)/(H/N) \cong G/H\)</text>
+      <feedback format="html"><text><![CDATA[
+        The Third Isomorphism Theorem: if \(N \trianglelefteq G\), \(H \trianglelefteq G\), and \(N \subseteq H\), then \(H/N \trianglelefteq G/N\) and \((G/N)/(H/N) \cong G/H\). This is analogous to cancellation: "dividing numerator and denominator by \(N\)." Proof: Define \(\phi: G/N \to G/H\) by \(\phi(gN) = gH\); this is a well-defined surjective homomorphism with kernel \(H/N\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(G/(H/N) \cong (G/N)/H\)</text>
+      <feedback format="html"><text>Incorrect. This expression is not well-defined in general.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(G/N \cong (G/H) \times (H/N)\)</text>
+      <feedback format="html"><text>Incorrect. This would require a semidirect product structure which need not hold.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(H/N \cong G/(G/N)\)</text>
+      <feedback format="html"><text>Incorrect. This notation is not meaningful without further conditions.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q12 Conjugacy classes in S4</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>In \(S_4\), what are the sizes of the conjugacy classes?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>1, 6, 3, 8, 6 (corresponding to cycle types \(1^4\), \(2^1 1^2\), \(2^2\), \(3^1 1^1\), \(4^1\))</text>
+      <feedback format="html"><text><![CDATA[
+        Conjugacy classes in \(S_n\) correspond to cycle types. For \(S_4\):<br/>
+        - Identity \((1)(2)(3)(4)\): 1 element<br/>
+        - Transpositions \((a\;b)\): \(\binom{4}{2}=6\) elements<br/>
+        - Double transpositions \((a\;b)(c\;d)\): 3 elements<br/>
+        - 3-cycles \((a\;b\;c)\): \(\frac{4!}{3\cdot 1}=8\) elements<br/>
+        - 4-cycles \((a\;b\;c\;d)\): \(4!/4 = 6\) elements<br/>
+        Total: \(1+6+3+8+6=24=|S_4|\). ✓
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>1, 4, 6, 4, 1 (binomial coefficients)</text>
+      <feedback format="html"><text>Incorrect. Conjugacy class sizes are determined by cycle type formulas, not binomial coefficients.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>1, 3, 6, 8, 6</text>
+      <feedback format="html"><text>Incorrect. The transposition class has 6 elements, not 3.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>1, 6, 6, 8, 3</text>
+      <feedback format="html"><text>Incorrect. The double transposition class has 3 elements (not 6), and the 4-cycle class has 6 elements (not 3).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q13 Direct product and external direct product</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Which of the following groups is isomorphic to \(\mathbb{Z}_2 \times \mathbb{Z}_2\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>The Klein four-group \(V_4 = \{e, a, b, ab\}\) where every non-identity element has order 2</text>
+      <feedback format="html"><text><![CDATA[
+        \(\mathbb{Z}_2 \times \mathbb{Z}_2 = \{(0,0),(1,0),(0,1),(1,1)\}\) with componentwise addition mod 2. Every non-identity element has order 2. This is the Klein four-group \(V_4\). It is abelian but not cyclic (no element of order 4). Note \(\mathbb{Z}_4 \not\cong V_4\) since \(\mathbb{Z}_4\) has an element of order 4.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}_4\)</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}_4\) is cyclic of order 4 with an element of order 4; \(\mathbb{Z}_2\times\mathbb{Z}_2\) has no such element.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(S_3\)</text>
+      <feedback format="html"><text>Incorrect. \(|S_3|=6 \neq 4\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}_2 \times \mathbb{Z}_3\)</text>
+      <feedback format="html"><text>Incorrect. \(|\mathbb{Z}_2\times\mathbb{Z}_3|=6 \neq 4\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q14 Burnside's lemma application</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>How many distinct necklaces can be made using 4 beads, each of 2 colors (red and blue), considering rotational equivalence? (Use Burnside's lemma with the cyclic group \(C_4\).)</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>6</text>
+      <feedback format="html"><text><![CDATA[
+        Burnside's lemma: number of distinct colorings \(= \frac{1}{|G|}\sum_{g\in G}|X^g|\), where \(|X^g|\) is the number of colorings fixed by rotation \(g\).<br/>
+        - Identity (rotation by 0°): all \(2^4=16\) colorings fixed<br/>
+        - Rotation by 90°: all 4 beads same color, \(2^1=2\) fixed<br/>
+        - Rotation by 180°: beads 1=3, 2=4; \(2^2=4\) fixed<br/>
+        - Rotation by 270°: same as 90°, 2 fixed<br/>
+        Total \(= \frac{1}{4}(16+2+4+2) = \frac{24}{4} = 6\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>4</text>
+      <feedback format="html"><text>Incorrect. Apply Burnside's lemma correctly to get 6.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>8</text>
+      <feedback format="html"><text>Incorrect. Burnside's lemma gives \((16+2+4+2)/4 = 6\), not 8.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>16</text>
+      <feedback format="html"><text>Incorrect. 16 is the total number before accounting for rotational equivalence.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q15 Automorphism group of cyclic group</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>What is the automorphism group \(\text{Aut}(\mathbb{Z}_n)\) of the cyclic group \(\mathbb{Z}_n\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(\text{Aut}(\mathbb{Z}_n) \cong (\mathbb{Z}/n\mathbb{Z})^\times\), the group of units mod \(n\), of order \(\phi(n)\)</text>
+      <feedback format="html"><text><![CDATA[
+        An automorphism of \(\mathbb{Z}_n = \langle a \rangle\) is determined by where \(a\) is sent: \(\phi_k: a \mapsto ka\) is an automorphism iff \(\gcd(k,n)=1\). So \(\text{Aut}(\mathbb{Z}_n) \cong (\mathbb{Z}/n\mathbb{Z})^\times\), which has order \(\phi(n)\) (Euler's totient function). For example, \(\text{Aut}(\mathbb{Z}_8) \cong (\mathbb{Z}/8\mathbb{Z})^\times = \{1,3,5,7\} \cong \mathbb{Z}_2 \times \mathbb{Z}_2\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\text{Aut}(\mathbb{Z}_n) \cong \mathbb{Z}_n\)</text>
+      <feedback format="html"><text>Incorrect. The automorphism group has order \(\phi(n)\), not \(n\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\text{Aut}(\mathbb{Z}_n) \cong S_n\)</text>
+      <feedback format="html"><text>Incorrect. \(|S_n| = n!\) but \(|\text{Aut}(\mathbb{Z}_n)| = \phi(n)\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\text{Aut}(\mathbb{Z}_n) \cong \mathbb{Z}_{n-1}\)</text>
+      <feedback format="html"><text>Incorrect. This would be true for the multiplicative group of a prime field, but not in general.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q16 Solvable groups and derived series</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Which of the following groups is <em>not</em> solvable?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(A_5\)</text>
+      <feedback format="html"><text><![CDATA[
+        \(A_5\) is simple and non-abelian, hence not solvable. The derived series of a solvable group must reach \(\{e\}\); but since \(A_5\) is simple, its only normal subgroups are \(\{e\}\) and \(A_5\), and the commutator subgroup \([A_5, A_5] = A_5\) (since \(A_5\) is perfect), so the derived series never reaches \(\{e\}\). This is the reason the quintic is not solvable by radicals (Galois theory).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(S_3\)</text>
+      <feedback format="html"><text>Incorrect. \(S_3\) is solvable: \(S_3 \supset A_3 \cong \mathbb{Z}_3 \supset \{e\}\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}_6\)</text>
+      <feedback format="html"><text>Incorrect. All abelian groups are solvable.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(D_4\) (dihedral group of order 8)</text>
+      <feedback format="html"><text>Incorrect. \(D_4\) is solvable; its derived series terminates.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q17 Lagrange's theorem converse</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Lagrange's theorem states that the order of any subgroup divides the order of the group. Which group provides a classic example showing the converse is <em>false</em>?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(A_4\) has order 12 but no subgroup of order 6</text>
+      <feedback format="html"><text><![CDATA[
+        \(|A_4|=12\) and 6 divides 12. If \(A_4\) had a subgroup \(H\) of order 6, then \([A_4:H]=2\), making \(H\) normal. But checking Sylow theory: \(n_3 \equiv 1\pmod 3\) and \(n_3 \mid 4\), so \(n_3 \in \{1,4\}\). If \(n_3=4\), the four Sylow 3-subgroups contribute \(4\times 2=8\) elements of order 3 plus the identity = 9 elements, leaving no room for a subgroup of order 6 containing elements of order 2. One can verify directly there is no subgroup of order 6. This shows the converse of Lagrange is false.
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\mathbb{Z}_{12}\) has no subgroup of order 4</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}_{12}\) is cyclic and has exactly one subgroup for each divisor of 12, including order 4.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(S_3\) has no subgroup of order 2</text>
+      <feedback format="html"><text>Incorrect. \(S_3\) has three subgroups of order 2 (generated by each transposition).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(S_4\) has no subgroup of order 8</text>
+      <feedback format="html"><text>Incorrect. \(S_4\) has three Sylow 2-subgroups of order 8 (isomorphic to \(D_4\)).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q18 Free group and presentation</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>The dihedral group \(D_n\) (symmetries of a regular \(n\)-gon) has the presentation \(\langle r, s \mid r^n = s^2 = e,\; srs^{-1} = r^{-1} \rangle\). What is \(|D_n|\)?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>\(2n\)</text>
+      <feedback format="html"><text><![CDATA[
+        \(D_n\) has \(n\) rotations \(\{e, r, r^2, \ldots, r^{n-1}\}\) and \(n\) reflections \(\{s, sr, sr^2, \ldots, sr^{n-1}\}\), giving \(|D_n|=2n\). The relation \(srs^{-1}=r^{-1}\) (i.e., \(sr=r^{-1}s\)) shows that \(D_n\) is non-abelian for \(n\geq 3\) (the rotation subgroup \(\langle r \rangle \cong \mathbb{Z}_n\) is normal, and \(D_n/\langle r \rangle \cong \mathbb{Z}_2\)).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(n\)</text>
+      <feedback format="html"><text>Incorrect. The rotation group alone has order \(n\); \(D_n\) also includes \(n\) reflections.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(n^2\)</text>
+      <feedback format="html"><text>Incorrect. The group has \(2n\) elements, not \(n^2\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(n!\)</text>
+      <feedback format="html"><text>Incorrect. \(n!\) is the order of \(S_n\), not \(D_n\).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q19 Second Sylow theorem</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Let \(G\) be a group of order \(p^a m\) where \(\gcd(p,m)=1\). Which of the following is an accurate statement of the Second Sylow Theorem?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>Any two Sylow \(p\)-subgroups of \(G\) are conjugate in \(G\)</text>
+      <feedback format="html"><text><![CDATA[
+        The three Sylow theorems: (1) Sylow \(p\)-subgroups of order \(p^a\) exist; (2) any two Sylow \(p\)-subgroups are conjugate (hence isomorphic); (3) the number \(n_p\) of Sylow \(p\)-subgroups satisfies \(n_p \equiv 1 \pmod p\) and \(n_p \mid m\). The Second Theorem implies: the Sylow \(p\)-subgroup is normal iff it is unique (\(n_p=1\)).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Every subgroup of order \(p^k\) (for \(k \leq a\)) is contained in some Sylow \(p\)-subgroup</text>
+      <feedback format="html"><text>Incorrect. This is a consequence of the theorems, but is not the statement of the Second Sylow Theorem itself.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(n_p \equiv 1 \pmod p\) and \(n_p \mid m\)</text>
+      <feedback format="html"><text>Incorrect. This is the Third Sylow Theorem, not the Second.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Sylow \(p\)-subgroups of order \(p^a\) exist in \(G\)</text>
+      <feedback format="html"><text>Incorrect. This is the First Sylow Theorem.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>ALG31-Q20 Abelian groups of order 36</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>How many non-isomorphic abelian groups of order 36 are there?</p>
+    ]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html">
+      <text>4</text>
+      <feedback format="html"><text><![CDATA[
+        By the Fundamental Theorem of Finitely Generated Abelian Groups, abelian groups of order \(36 = 2^2 \cdot 3^2\) correspond to partitions of the prime powers:<br/>
+        - \(2^2\): partitions of 2 are \((2)\) and \((1,1)\) → \(\mathbb{Z}_4\) or \(\mathbb{Z}_2\times\mathbb{Z}_2\)<br/>
+        - \(3^2\): partitions of 2 are \((2)\) and \((1,1)\) → \(\mathbb{Z}_9\) or \(\mathbb{Z}_3\times\mathbb{Z}_3\)<br/>
+        Total: \(2 \times 2 = 4\) groups: \(\mathbb{Z}_4\times\mathbb{Z}_9\), \(\mathbb{Z}_4\times\mathbb{Z}_3\times\mathbb{Z}_3\), \(\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_9\), \(\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_3\times\mathbb{Z}_3\).
+      ]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>2</text>
+      <feedback format="html"><text>Incorrect. One must consider partitions of exponents for each prime factor separately; there are 4 possibilities.</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>6</text>
+      <feedback format="html"><text>Incorrect. The count is the product of partition counts for each prime: \(p(2)\times p(2) = 2\times 2=4\).</text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>1</text>
+      <feedback format="html"><text>Incorrect. \(\mathbb{Z}_{36}\) is one example, but there are three others.</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category>
+    <text><![CDATA[$course$/Advanced Algebra (M.Sc. Mathematics)/CSIR PYQ — Unit III — Modules, submodules and modules over PIDs]]></text>
+  </category>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q1 — Free module definition</text></name>
+  <questiontext format="html">
+    <text><![CDATA[An \(R\)-module \(M\) is called free if:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(M\) has a basis (a linearly independent spanning set).</strong><br>A basis \(\{e_i\}\) of a free \(R\)-module satisfies: (i) every element is a finite \(R\)-linear combination of basis elements, and (ii) if \(\sum r_i e_i=0\) then all \(r_i=0\). Free modules are exactly the modules isomorphic to \(R^n\) (for finite rank) or \(R^{(I)}\) (for infinite rank).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(M\) has a basis (a linearly independent generating set)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) has no non-trivial submodules]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) is finitely generated]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every submodule of \(M\) is a direct summand]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q2 — Structure theorem for fg modules over PID</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The structure theorem for finitely generated modules over a PID \(R\) states that every such module \(M\) is isomorphic to:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: A direct sum \(R^r\oplus R/d_1R\oplus\cdots\oplus R/d_kR\) where \(d_1\mid d_2\mid\cdots\mid d_k\).</strong><br>Here \(r\ge 0\) is the free rank and \(d_1,\ldots,d_k\) are the invariant factors (non-units, each dividing the next). This decomposition is unique. The torsion part is \(R/d_1R\oplus\cdots\oplus R/d_kR\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(R^r\oplus R/d_1R\oplus\cdots\oplus R/d_kR\) with \(d_1\mid d_2\mid\cdots\mid d_k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A free module \(R^n\) for some \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A quotient of \(R\) by a single ideal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A submodule of \(R^n\) for some \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q3 — Submodule of free module over PID</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Every submodule of a finitely generated free module over a PID is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Free.</strong><br>If \(F\cong R^n\) is free over a PID \(R\) and \(N\subseteq F\) is a submodule, then \(N\) is free of rank \(\le n\). This generalises the fact that subgroups of free abelian groups \(\mathbb{Z}^n\) are free abelian. The proof uses induction on rank and the fact that submodules of \(R^1=R\) are ideals, which in a PID are free of rank \(\le 1\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Free]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Torsion]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Simple]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Projective but not necessarily free]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q4 — Q as Z-module</text></name>
+  <questiontext format="html">
+    <text><![CDATA[As a \(\mathbb{Z}\)-module, \(\mathbb{Q}\) (the rationals) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Injective but not projective.</strong><br>\(\mathbb{Q}\) is divisible as a \(\mathbb{Z}\)-module (for every \(x\in\mathbb{Q}\) and \(n\ne 0\), there exists \(y=x/n\in\mathbb{Q}\) with \(ny=x\)). Divisible \(\mathbb{Z}\)-modules are injective. \(\mathbb{Q}\) is not projective over \(\mathbb{Z}\) because projective \(\mathbb{Z}\)-modules are free, and \(\mathbb{Q}\) is not free (it has no basis as a \(\mathbb{Z}\)-module).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Injective but not projective]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Free]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Projective but not injective]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Neither projective nor injective]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q5 — Number of abelian groups of order 72</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The number of non-isomorphic abelian groups of order \(72=2^3\cdot 3^2\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 6.</strong><br>By the fundamental theorem of finitely generated abelian groups, the number equals the product of the number of partitions of each prime-power exponent. Partitions of 3 (for \(2^3\)): \((3),(2,1),(1,1,1)\) — 3 types. Partitions of 2 (for \(3^2\)): \((2),(1,1)\) — 2 types. Total: \(3\times 2=6\) non-isomorphic abelian groups.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[9]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q6 — Schur's Lemma</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Schur's Lemma states that if \(M\) and \(N\) are simple \(R\)-modules, then every \(R\)-module homomorphism \(f:M\to N\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Either zero or an isomorphism.</strong><br>Since \(M\) is simple, \(\ker f\) is either \(0\) or \(M\). Since \(N\) is simple, \(\mathrm{im}(f)\) is either \(0\) or \(N\). If \(f\ne 0\), then \(\ker f=0\) and \(\mathrm{im}(f)=N\), making \(f\) an isomorphism. In particular, \(\mathrm{End}_R(M)\) is a division ring.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Either zero or an isomorphism]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always an isomorphism]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always the zero map]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Necessarily surjective]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q7 — Invariant factor decomposition</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The abelian group \(\mathbb{Z}^2/H\) where \(H\) is generated by \((4,0)\) and \((0,6)\) is isomorphic to:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(\mathbb{Z}/2\mathbb{Z}\oplus\mathbb{Z}/12\mathbb{Z}\).</strong><br>The presentation matrix is \(\begin{pmatrix}4&0\\0&6\end{pmatrix}\). Smith Normal Form: \(d_1=\gcd(4,6)=2\), determinant \(=24\), so \(d_2=24/2=12\). SNF is \(\begin{pmatrix}2&0\\0&12\end{pmatrix}\). Hence \(\mathbb{Z}^2/H\cong\mathbb{Z}/2\mathbb{Z}\oplus\mathbb{Z}/12\mathbb{Z}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathbb{Z}/2\mathbb{Z}\oplus\mathbb{Z}/12\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}/4\mathbb{Z}\oplus\mathbb{Z}/6\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}/24\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}/2\mathbb{Z}\oplus\mathbb{Z}/2\mathbb{Z}\oplus\mathbb{Z}/6\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q8 — Number of abelian groups of order p³</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The number of non-isomorphic abelian groups of order \(p^3\) (for a prime \(p\)) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 3.</strong><br>The partitions of 3 are: \((3)\), \((2,1)\), and \((1,1,1)\), giving the three abelian groups \(\mathbb{Z}_{p^3}\), \(\mathbb{Z}_{p^2}\times\mathbb{Z}_p\), and \(\mathbb{Z}_p\times\mathbb{Z}_p\times\mathbb{Z}_p\). By the fundamental theorem, these are all non-isomorphic.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q9 — Cayley–Hamilton theorem</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The Cayley–Hamilton theorem states that for any square matrix \(A\) over a commutative ring with characteristic polynomial \(p(\lambda)\):]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(p(A)=0\).</strong><br>Every matrix satisfies its own characteristic polynomial. If \(p(\lambda)=\det(\lambda I-A)\), then \(p(A)=0\). This follows from the structure of finitely generated modules over PIDs applied to \(F[x]\) acting on \(F^n\) via \(T\) (i.e., \(F[x]\)-module structure on \(F^n\)).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(p(A)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p(A)=I\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p(A)=A\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p(A)=\det(A)\cdot I\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q10 — Projective module</text></name>
+  <questiontext format="html">
+    <text><![CDATA[An \(R\)-module \(P\) is projective if and only if:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(P\) is a direct summand of a free module.</strong><br>Equivalently, \(P\) is projective iff every surjection \(f:M\to P\) splits (has a section). Over a PID, projective modules are free. Over more general rings, there exist projective non-free modules (e.g., non-principal ideals in Dedekind domains).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(P\) is a direct summand of a free module]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P\) is free]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P\) is torsion-free]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P\) is divisible]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q11 — Torsion submodule</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The torsion submodule \(T(M)\) of an \(R\)-module \(M\) over an integral domain \(R\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(\{m\in M: rm=0\text{ for some non-zero }r\in R\}\).</strong><br>\(T(M)\) is indeed a submodule (since \(R\) is an integral domain, if \(r_1 m_1=0\) and \(r_2 m_2=0\) then \(r_1r_2(m_1\pm m_2)=0\)). If \(M=T(M)\), \(M\) is a torsion module; if \(T(M)=0\), \(M\) is torsion-free. Over a PID, a finitely generated torsion-free module is free.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(\{m\in M: rm=0\text{ for some }r\ne 0\in R\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The largest free submodule]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{0\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The intersection of all maximal submodules]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q12 — Hom_R(R,M)</text></name>
+  <questiontext format="html">
+    <text><![CDATA[For any \(R\)-module \(M\), the module \(\mathrm{Hom}_R(R,M)\) is isomorphic to:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(M\).</strong><br>An \(R\)-module homomorphism \(f:R\to M\) is completely determined by \(f(1)\in M\) (since \(f(r)=rf(1)\)). This gives a bijection \(\mathrm{Hom}_R(R,M)\cong M\) via \(f\mapsto f(1)\). This is a special case of the Yoneda Lemma.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(M\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\otimes_R R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{0\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q13 — Finitely generated torsion-free module over PID</text></name>
+  <questiontext format="html">
+    <text><![CDATA[A finitely generated torsion-free module over a PID is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Free.</strong><br>By the structure theorem, a finitely generated module \(M\) over a PID decomposes as \(R^r\oplus T\) where \(T\) is the torsion part. If \(M\) is torsion-free, then \(T=0\), so \(M\cong R^r\) is free. This is the key result: over PIDs, finitely generated + torsion-free \(\Leftrightarrow\) free.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Free]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Projective but not free]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Injective]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Simple]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q14 — Rational canonical form</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The rational canonical form of a linear operator \(T:V\to V\) over a field \(F\) is determined by:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: The invariant factors of \(V\) as an \(F[x]\)-module (where \(x\) acts by \(T\)).</strong><br>Making \(V\) an \(F[x]\)-module via \(T\), the structure theorem gives \(V\cong F[x]/(f_1)\oplus\cdots\oplus F[x]/(f_k)\) with \(f_1\mid f_2\mid\cdots\mid f_k\). The companion matrices of \(f_1,\ldots,f_k\) form the blocks of the rational canonical form.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[The invariant factors of \(V\) as an \(F[x]\)-module]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The eigenvalues of \(T\) in \(F\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The Jordan blocks of \(T\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The characteristic polynomial alone]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q15 — Simple module</text></name>
+  <questiontext format="html">
+    <text><![CDATA[An \(R\)-module \(M\ne 0\) is simple if and only if:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(M\cong R/\mathfrak{m}\) for some maximal left ideal \(\mathfrak{m}\) of \(R\).</strong><br>Every non-zero element \(m\in M\) generates \(M\) (since \(Rm\) is a non-zero submodule of simple \(M\), so \(Rm=M\)). The map \(r\mapsto rm\) is surjective with kernel \(\mathrm{Ann}(m)\), a maximal left ideal. Conversely \(R/\mathfrak{m}\) is simple for maximal \(\mathfrak{m}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(M\cong R/\mathfrak{m}\) for some maximal left ideal \(\mathfrak{m}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) is a free module of rank 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) is finitely generated by one element]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) has no submodules]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q16 — Module over field is free</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Every module \(M\) over a field \(F\) (i.e., every vector space) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Free.</strong><br>By the axiom of choice (Zorn's Lemma), every vector space has a basis. So every \(F\)-module is free. This means over a field, the concepts of free, projective, and flat modules all coincide.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Free]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Torsion]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Simple]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not finitely generated in general]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q17 — Rank of free part of Z³/H</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The rank of the free part of \(\mathbb{Z}^3/\langle(2,0,0),(0,2,0)\rangle\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 1.</strong><br>The subgroup \(H=\langle(2,0,0),(0,2,0)\rangle\) in \(\mathbb{Z}^3\) gives \(\mathbb{Z}^3/H\cong(\mathbb{Z}/2\mathbb{Z})\oplus(\mathbb{Z}/2\mathbb{Z})\oplus\mathbb{Z}\). The torsion part is \(\mathbb{Z}/2\mathbb{Z}\oplus\mathbb{Z}/2\mathbb{Z}\) and the free part is \(\mathbb{Z}\) of rank 1.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q18 — M ⊗_R R ≅ M</text></name>
+  <questiontext format="html">
+    <text><![CDATA[For any \(R\)-module \(M\), the tensor product \(M\otimes_R R\) is isomorphic to:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(M\).</strong><br>The map \(m\otimes r\mapsto rm\) gives an isomorphism \(M\otimes_R R\cong M\). This is the unit law for tensor products: \(R\) acts as the identity for tensoring, analogous to how 1 acts as the identity for multiplication.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(M\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\oplus R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{Hom}_R(M,R)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q19 — Z/mZ ⊗_Z Z/nZ</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The tensor product \(\mathbb{Z}/m\mathbb{Z}\otimes_\mathbb{Z}\mathbb{Z}/n\mathbb{Z}\) is isomorphic to:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(\mathbb{Z}/\gcd(m,n)\mathbb{Z}\).</strong><br>Since \(\mathbb{Z}/m\mathbb{Z}\otimes_\mathbb{Z}\mathbb{Z}/n\mathbb{Z}\cong\mathbb{Z}/(m\mathbb{Z}+n\mathbb{Z})=\mathbb{Z}/\gcd(m,n)\mathbb{Z}\). In particular, \(\mathbb{Z}/2\mathbb{Z}\otimes\mathbb{Z}/3\mathbb{Z}=0\) (since \(\gcd(2,3)=1\)).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathbb{Z}/\gcd(m,n)\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}/mn\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}/\mathrm{lcm}(m,n)\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}/m\mathbb{Z}\oplus\mathbb{Z}/n\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q20 — Jordan normal form condition</text></name>
+  <questiontext format="html">
+    <text><![CDATA[A matrix \(A\) over a field \(F\) has a Jordan normal form over \(F\) if and only if:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: The characteristic polynomial of \(A\) splits completely over \(F\).</strong><br>Jordan normal form exists over \(F\) iff all eigenvalues lie in \(F\), i.e., \(\det(\lambda I-A)\) splits as a product of linear factors over \(F\). Every matrix over \(\mathbb{C}\) has Jordan form (since \(\mathbb{C}\) is algebraically closed). Over \(\mathbb{R}\), only matrices with all real eigenvalues have Jordan form over \(\mathbb{R}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[The characteristic polynomial of \(A\) splits completely over \(F\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) is diagonalisable over \(F\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) is invertible]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) is symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q21 — Minimal polynomial and annihilator</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The minimal polynomial of a linear operator \(T\) on a finite-dimensional vector space \(V\) over \(F\) equals:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: The largest invariant factor (the generator of \(\mathrm{Ann}_{F[x]}(V)\)).</strong><br>Viewing \(V\) as an \(F[x]\)-module via \(T\), the minimal polynomial \(m_T(x)\) is the monic generator of the annihilator ideal \(\mathrm{Ann}_{F[x]}(V)=\{f\in F[x]:f(T)=0\}\). In the invariant factor decomposition \(V\cong F[x]/(f_1)\oplus\cdots\oplus F[x]/(f_k)\) with \(f_1\mid\cdots\mid f_k\), the minimal polynomial is \(f_k\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[The largest invariant factor (generator of \(\mathrm{Ann}_{F[x]}(V)\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The characteristic polynomial]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The smallest invariant factor]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always equal to the characteristic polynomial]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q22 — Semisimple module</text></name>
+  <questiontext format="html">
+    <text><![CDATA[A module \(M\) over a ring \(R\) is semisimple if and only if:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(M\) is a direct sum of simple submodules.</strong><br>Equivalently: every submodule of \(M\) is a direct summand. By Artin–Wedderburn theory, if \(R\) is a semisimple ring (e.g., a matrix ring over a field), then every \(R\)-module is semisimple.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(M\) is a direct sum of simple submodules]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) is free]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) has no torsion]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) is finitely generated]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q23 — Nakayama's Lemma</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Nakayama's Lemma states: if \(M\) is a finitely generated \(R\)-module and \(I\subseteq J(R)\) (the Jacobson radical), then \(IM=M\) implies:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(M=0\).</strong><br>Nakayama's Lemma: if \(M\) is finitely generated over \(R\), \(I\subseteq J(R)\), and \(IM=M\), then \(M=0\). This is fundamental in commutative algebra and algebraic geometry, used to lift generators of \(M/\mathfrak{m}M\) to generators of \(M\) (when \(I=\mathfrak{m}\) is a maximal ideal).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(M=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M=R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(I=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) is projective]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q24 — Abelian groups of order 360</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The number of non-isomorphic abelian groups of order \(360=2^3\cdot 3^2\cdot 5\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 6.</strong><br>Partitions of \(3\) (for \(2^3\)): 3 choices. Partitions of \(2\) (for \(3^2\)): 2 choices. Partitions of \(1\) (for \(5^1\)): 1 choice. Total: \(3\times 2\times 1=6\) non-isomorphic abelian groups of order 360.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[9]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[12]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit III Q25 — Primary decomposition</text></name>
+  <questiontext format="html">
+    <text><![CDATA[For a finitely generated torsion module \(M\) over a PID \(R\), the primary decomposition states:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(M\cong\bigoplus_p M(p)\) where \(M(p)=\{m\in M: p^km=0\text{ for some }k\}\) is the \(p\)-primary component.</strong><br>Each \(M(p)\) is the submodule of elements annihilated by a power of the prime \(p\). This is the primary (or Sylow) decomposition of \(M\), and each \(M(p)\) decomposes further as \(R/p^{a_1}R\oplus\cdots\oplus R/p^{a_r}R\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(M\cong\bigoplus_p M(p)\) where \(M(p)\) is the \(p\)-primary component]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) is always cyclic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) is a free module]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\cong R/\mathrm{Ann}(M)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

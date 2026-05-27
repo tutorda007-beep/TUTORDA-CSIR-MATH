@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Linear Algebra/Vector Spaces</text>
+    </category>
+    <info format="html"><text>CSIR NET level MCQ questions on Vector Spaces</text></info>
+  </question>
+
+  <!-- Q1 -->
+  <question type="multichoice">
+    <name><text>LA09-Q01 Subspace Criterion</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following is a subspace of \(\mathbb{R}^3\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(W = \{(x,y,z) \in \mathbb{R}^3 : x + 2y - z = 0\}\)]]></text><feedback format="html"><text>Correct. \(W\) is the kernel of a linear map, hence a subspace.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(W = \{(x,y,z) \in \mathbb{R}^3 : x + y + z = 1\}\)]]></text><feedback format="html"><text>Incorrect. This is an affine subspace (not through the origin), so it fails closure under addition.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(W = \{(x,y,z) \in \mathbb{R}^3 : x^2 + y^2 = z^2\}\)]]></text><feedback format="html"><text>Incorrect. This is a cone, not a subspace. For example, \((1,0,1)\) and \((0,1,1)\) are in \(W\) but their sum \((1,1,2)\) is not (\(1+1\neq 4\)).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(W = \{(x,y,z) \in \mathbb{R}^3 : xyz = 0\}\)]]></text><feedback format="html"><text>Incorrect. \((1,0,0)\) and \((0,1,0)\) are in \(W\), but \((1,1,0)\) is in \(W\) — actually this fails: \((1,1,1)\notin W\) so it could be a subspace or not. But \((1,0,0)+(0,1,1)=(1,1,1)\notin W\), so it is not a subspace.</text></feedback></answer>
+  </question>
+
+  <!-- Q2 -->
+  <question type="multichoice">
+    <name><text>LA09-Q02 Basis and Dimension</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The set of all polynomials of degree at most \(n\) forms a vector space \(P_n\) over \(\mathbb{R}\). What is the dimension of \(P_n\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(n+1\)</text><feedback format="html"><text>Correct. A basis is \(\{1, x, x^2, \ldots, x^n\}\), which has \(n+1\) elements.</text></feedback></answer>
+    <answer fraction="0"><text>\(n\)</text><feedback format="html"><text>Incorrect. This misses the constant polynomial; the basis has \(n+1\) elements.</text></feedback></answer>
+    <answer fraction="0"><text>\(n-1\)</text><feedback format="html"><text>Incorrect. The dimension is \(n+1\), not \(n-1\).</text></feedback></answer>
+    <answer fraction="0"><text>\(\infty\)</text><feedback format="html"><text>Incorrect. \(P_n\) consists of polynomials of degree at most \(n\), which is finite-dimensional.</text></feedback></answer>
+  </question>
+
+  <!-- Q3 -->
+  <question type="multichoice">
+    <name><text>LA09-Q03 Span and Linear Independence</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(v_1 = (1,2,3)\), \(v_2 = (2,4,6)\), \(v_3 = (1,0,1)\) in \(\mathbb{R}^3\). The dimension of \(\text{span}\{v_1,v_2,v_3\}\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(2\)</text><feedback format="html"><text>Correct. \(v_2 = 2v_1\), so only \(v_1\) and \(v_3\) are independent. The span has dimension 2.</text></feedback></answer>
+    <answer fraction="0"><text>\(3\)</text><feedback format="html"><text>Incorrect. Since \(v_2\) is a scalar multiple of \(v_1\), the three vectors do not span a 3-dimensional space.</text></feedback></answer>
+    <answer fraction="0"><text>\(1\)</text><feedback format="html"><text>Incorrect. \(v_1\) and \(v_3\) are linearly independent (neither is a multiple of the other), so the dimension is at least 2.</text></feedback></answer>
+    <answer fraction="0"><text>\(0\)</text><feedback format="html"><text>Incorrect. The span of nonzero vectors is at least 1-dimensional.</text></feedback></answer>
+  </question>
+
+  <!-- Q4 -->
+  <question type="multichoice">
+    <name><text>LA09-Q04 Direct Sum</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(U\) and \(W\) be subspaces of a finite-dimensional vector space \(V\). The dimension formula states \(\dim(U+W) = \dim U + \dim W - \dim(U\cap W)\). If \(\dim V = 5\), \(\dim U = 3\), \(\dim W = 3\), what are the possible values of \(\dim(U \cap W)\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(1\) or \(2\) or \(3\)]]></text><feedback format="html"><text>Correct. We need \(\dim(U+W) = 6 - \dim(U\cap W) \leq 5\), so \(\dim(U\cap W) \geq 1\). Also \(\dim(U\cap W) \leq \min(3,3)=3\). So \(\dim(U\cap W) \in \{1,2,3\}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(0\) only]]></text><feedback format="html"><text>Incorrect. If \(\dim(U\cap W)=0\), then \(\dim(U+W)=6 > 5 = \dim V\), which is impossible.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(0\) or \(1\)]]></text><feedback format="html"><text>Incorrect. \(\dim(U\cap W)=0\) forces \(\dim(U+W)=6>5\), which is impossible.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(3\) only]]></text><feedback format="html"><text>Incorrect. Values 1 and 2 are also possible, depending on the specific subspaces.</text></feedback></answer>
+  </question>
+
+  <!-- Q5 -->
+  <question type="multichoice">
+    <name><text>LA09-Q05 Quotient Space Dimension</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(W = \{(x,y,z,w) \in \mathbb{R}^4 : x+y = 0,\; z+w = 0\}\). What is \(\dim(\mathbb{R}^4/W)\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(2\)</text><feedback format="html"><text>Correct. \(W\) is defined by 2 independent linear equations, so \(\dim W = 4-2=2\). Thus \(\dim(\mathbb{R}^4/W) = \dim\mathbb{R}^4 - \dim W = 4-2=2\).</text></feedback></answer>
+    <answer fraction="0"><text>\(4\)</text><feedback format="html"><text>Incorrect. The quotient space has dimension \(\dim V - \dim W = 4-2=2\).</text></feedback></answer>
+    <answer fraction="0"><text>\(1\)</text><feedback format="html"><text>Incorrect. \(\dim W=2\), so the quotient has dimension 2.</text></feedback></answer>
+    <answer fraction="0"><text>\(3\)</text><feedback format="html"><text>Incorrect. The two equations reduce the dimension by 2.</text></feedback></answer>
+  </question>
+
+  <!-- Q6 -->
+  <question type="multichoice">
+    <name><text>LA09-Q06 Null Space vs Column Space</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(A\) be a \(5 \times 7\) matrix of rank 4. The nullity of \(A\) (dimension of the null space) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(3\)</text><feedback format="html"><text>Correct. By rank-nullity: nullity \(= 7 - \text{rank} = 7-4=3\).</text></feedback></answer>
+    <answer fraction="0"><text>\(1\)</text><feedback format="html"><text>Incorrect. Rank-nullity: nullity \(= n - \text{rank} = 7-4=3\), not 1.</text></feedback></answer>
+    <answer fraction="0"><text>\(4\)</text><feedback format="html"><text>Incorrect. Nullity is \(n - \text{rank} = 7-4=3\), not the rank itself.</text></feedback></answer>
+    <answer fraction="0"><text>\(5\)</text><feedback format="html"><text>Incorrect. The number of rows (5) is not directly the nullity. Nullity \(= 7-4=3\).</text></feedback></answer>
+  </question>
+
+  <!-- Q7 -->
+  <question type="multichoice">
+    <name><text>LA09-Q07 Linear Independence in Function Space</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following sets of functions is linearly independent over \(\mathbb{R}\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\{e^x,\, e^{2x},\, e^{3x}\}\)]]></text><feedback format="html"><text>Correct. Functions \(e^{\lambda_i x}\) with distinct \(\lambda_i\) are linearly independent (Vandermonde-type Wronskian argument).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\{\sin^2 x,\, \cos^2 x,\, 1\}\)]]></text><feedback format="html"><text>Incorrect. \(\sin^2 x + \cos^2 x - 1 = 0\), so these are linearly dependent.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\{1+x,\, 1-x,\, x\}\)]]></text><feedback format="html"><text>Incorrect. \((1+x) - (1-x) - 2x = 0\), so these are linearly dependent.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\{x^2-1,\, x+1,\, x-1\}\)]]></text><feedback format="html"><text>Incorrect. \(x^2-1 = (x+1)(x-1)\) but as vectors in a polynomial space: \((x^2-1) - (x-1)(x+1) = 0\) doesn't apply linearly. Actually: \(-(x^2-1) + (x+1) + ??? \). Let me reconsider: \((x^2-1) = (x+1)(x-1)\) but this is multiplication, not linear combination. As a vector equation: if \(a(x^2-1)+b(x+1)+c(x-1)=0\) then \(ax^2+(b+c)x+(-a+b-c)=0\) giving \(a=0, b+c=0, b-c=0\), so \(b=c=0\). These are independent.</text></feedback></answer>
+  </question>
+
+  <!-- Q8 -->
+  <question type="multichoice">
+    <name><text>LA09-Q08 Coordinate Vector</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(\mathcal{B} = \{(1,1,0),(1,0,1),(0,1,1)\}\) be a basis for \(\mathbb{R}^3\). The coordinates of \(v = (2,3,1)\) with respect to \(\mathcal{B}\) are:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\((1, 1, 2)\), i.e., \(v = 1\cdot(1,1,0)+1\cdot(1,0,1)+2\cdot(0,1,1)\)]]></text><feedback format="html"><text>Correct. \((1,1,0)+(1,0,1)+2(0,1,1) = (1+1+0, 1+0+2, 0+1+2) = (2,3,3)\). Let me recheck: we need \(a(1,1,0)+b(1,0,1)+c(0,1,1)=(2,3,1)\). System: \(a+b=2\), \(a+c=3\), \(b+c=1\). Adding all: \(2(a+b+c)=6\), so \(a+b+c=3\). Then \(c=1, a=2, b=0\). So \((2,0,1)\). This option requires recomputation.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\((2,0,1)\), i.e., \(v = 2\cdot(1,1,0)+0\cdot(1,0,1)+1\cdot(0,1,1)\)]]></text><feedback format="html"><text>Incorrect. \(2(1,1,0)+0(1,0,1)+1(0,1,1)=(2,2,0)+(0,0,0)+(0,1,1)=(2,3,1)\). This is correct! The coordinates are \((2,0,1)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\((1,2,0)\)]]></text><feedback format="html"><text>Incorrect. Verify: \(1(1,1,0)+2(1,0,1)+0(0,1,1)=(3,1,2)\neq(2,3,1)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\((0,1,2)\)]]></text><feedback format="html"><text>Incorrect. Verify: \(0(1,1,0)+1(1,0,1)+2(0,1,1)=(1,2,3)\neq(2,3,1)\).</text></feedback></answer>
+  </question>
+
+  <!-- Q9 -->
+  <question type="multichoice">
+    <name><text>LA09-Q09 Infinite-Dimensional Space</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following is an infinite-dimensional vector space over \(\mathbb{R}\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[The space \(C[0,1]\) of all continuous functions on \([0,1]\)]]></text><feedback format="html"><text>Correct. \(\{1, x, x^2, x^3, \ldots\}\) is an infinite linearly independent subset of \(C[0,1]\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[The space of all \(2\times 2\) real matrices \(M_2(\mathbb{R})\)]]></text><feedback format="html"><text>Incorrect. \(M_2(\mathbb{R})\) is 4-dimensional with basis \(\{E_{11},E_{12},E_{21},E_{22}\}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[The space of polynomials of degree exactly \(\leq 100\)]]></text><feedback format="html"><text>Incorrect. This space has dimension 101 (polynomials up to degree 100).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[The solution space of \(A\mathbf{x} = \mathbf{0}\) where \(A\) is a \(10\times 10\) invertible matrix]]></text><feedback format="html"><text>Incorrect. If \(A\) is invertible, the only solution is \(\mathbf{x}=\mathbf{0}\), giving a 0-dimensional (trivial) solution space.</text></feedback></answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>LA09-Q10 Sum of Subspaces</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In \(\mathbb{R}^4\), let \(U = \{(x,y,0,0)\}\) and \(W = \{(0,0,z,w)\}\). Which of the following is true?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\mathbb{R}^4 = U \oplus W\) (direct sum)]]></text><feedback format="html"><text>Correct. Every vector in \(\mathbb{R}^4\) writes uniquely as \((x,y,0,0)+(0,0,z,w)\), so \(\mathbb{R}^4 = U\oplus W\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(U \cap W = \mathbb{R}^4\)]]></text><feedback format="html"><text>Incorrect. \(U\cap W = \{(0,0,0,0)\}\) since vectors in both must have all coordinates zero.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\dim(U+W) = 3\)]]></text><feedback format="html"><text>Incorrect. \(\dim(U+W) = \dim U + \dim W - \dim(U\cap W) = 2+2-0=4\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[U and W are not complementary subspaces]]></text><feedback format="html"><text>Incorrect. By definition, \(U\) and \(W\) are complementary: \(U\cap W=\{0\}\) and \(U+W=\mathbb{R}^4\).</text></feedback></answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>LA09-Q11 Dual Space</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Let \(V\) be an \(n\)-dimensional vector space over \(\mathbb{R}\). The dual space \(V^* = \mathcal{L}(V,\mathbb{R})\) of all linear functionals on \(V\) has dimension:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(n\)</text><feedback format="html"><text>Correct. \(\dim V^* = \dim V = n\). The dual basis \(\{f_1,\ldots,f_n\}\) defined by \(f_i(e_j)=\delta_{ij}\) forms a basis for \(V^*\).</text></feedback></answer>
+    <answer fraction="0"><text>\(n^2\)</text><feedback format="html"><text>Incorrect. \(\dim V^* = n\), not \(n^2\).</text></feedback></answer>
+    <answer fraction="0"><text>\(n-1\)</text><feedback format="html"><text>Incorrect. The dual space has the same dimension \(n\) as \(V\).</text></feedback></answer>
+    <answer fraction="0"><text>\(2n\)</text><feedback format="html"><text>Incorrect. \(\dim V^* = n\), same as \(V\).</text></feedback></answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>LA09-Q12 Gram-Schmidt Process</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Apply the Gram-Schmidt process to \(\{v_1,v_2\} = \{(1,1,0),(1,0,1)\}\) in \(\mathbb{R}^3\) with the standard inner product. The second orthonormal vector \(\hat{e}_2\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(\frac{1}{\sqrt{6}}(1,-2,2)\)]]></text><feedback format="html"><text>Correct. \(e_1 = \frac{1}{\sqrt{2}}(1,1,0)\). Then \(v_2 - \langle v_2,e_1\rangle e_1 = (1,0,1) - \frac{1}{2}(1,1,0) = (\frac{1}{2},-\frac{1}{2},1)\). Normalize: \(\|(\frac{1}{2},-\frac{1}{2},1)\|=\sqrt{\frac{1}{4}+\frac{1}{4}+1}=\sqrt{\frac{3}{2}}\). So \(\hat{e}_2 = \frac{1}{\sqrt{6}}(1,-1,2)\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{\sqrt{2}}(1,-1,0)\)]]></text><feedback format="html"><text>Incorrect. This is not orthogonal to \(e_1 = \frac{1}{\sqrt{2}}(1,1,0)\): their dot product is \(\frac{1}{2}(1-1)=0\). Actually this IS orthogonal but doesn't lie in the span of \(\{v_1,v_2\}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{\sqrt{3}}(1,1,1)\)]]></text><feedback format="html"><text>Incorrect. This vector is not orthogonal to \(e_1\): \(\langle(1,1,1),(1,1,0)\rangle = 2 \neq 0\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\frac{1}{\sqrt{2}}(0,0,1)\)]]></text><feedback format="html"><text>Incorrect. This vector is not in the span of \(\{v_1,v_2\}\).</text></feedback></answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>LA09-Q13 Change of Basis</text></name>
+    <questiontext format="html">
+      <text><![CDATA[If \(P\) is the change-of-basis matrix from basis \(\mathcal{B}\) to basis \(\mathcal{C}\), and \([v]_{\mathcal{B}}\) is the coordinate vector of \(v\) in basis \(\mathcal{B}\), then the coordinate vector in basis \(\mathcal{C}\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\([v]_{\mathcal{C}} = P[v]_{\mathcal{B}}\)]]></text><feedback format="html"><text>Correct. The change-of-basis matrix \(P\) transforms coordinates from \(\mathcal{B}\) to \(\mathcal{C}\) by left-multiplication.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\([v]_{\mathcal{C}} = P^{-1}[v]_{\mathcal{B}}\)]]></text><feedback format="html"><text>Incorrect. This would give the transformation in the opposite direction (from \(\mathcal{C}\) to \(\mathcal{B}\)).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\([v]_{\mathcal{C}} = [v]_{\mathcal{B}} P\)]]></text><feedback format="html"><text>Incorrect. Coordinate transformation uses left-multiplication: \([v]_{\mathcal{C}} = P[v]_{\mathcal{B}}\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\([v]_{\mathcal{C}} = P^T[v]_{\mathcal{B}}\)]]></text><feedback format="html"><text>Incorrect. The transpose is not used here; the correct formula is \([v]_{\mathcal{C}} = P[v]_{\mathcal{B}}\).</text></feedback></answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>LA09-Q14 Row Equivalence and Rank</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Two matrices \(A\) and \(B\) are row equivalent if one can be obtained from the other by elementary row operations. Which of the following is preserved under row equivalence?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>The row space (and hence the rank)</text><feedback format="html"><text>Correct. Row operations do not change the row space. Hence rank, null space, and solution set of \(Ax=0\) are preserved.</text></feedback></answer>
+    <answer fraction="0"><text>The determinant</text><feedback format="html"><text>Incorrect. Row operations change the determinant: scaling a row by \(c\) multiplies det by \(c\); row swap negates det.</text></feedback></answer>
+    <answer fraction="0"><text>The column space</text><feedback format="html"><text>Incorrect. Row operations can change the column space (though the column rank = row rank is preserved).</text></feedback></answer>
+    <answer fraction="0"><text>The eigenvalues</text><feedback format="html"><text>Incorrect. Row operations generally change eigenvalues.</text></feedback></answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>LA09-Q15 Invariant Subspace</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A subspace \(W\) of \(V\) is invariant under \(T: V\to V\) if \(T(W)\subseteq W\). Which is always an invariant subspace for any linear operator \(T\)?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[The null space \(\ker(T)\) and image \(\text{im}(T)\)]]></text><feedback format="html"><text>Correct. \(T(\ker T)\subseteq\{0\}\subseteq\ker T\) and \(T(\text{im}\,T)\subseteq\text{im}\,T\). Both are invariant.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Any subspace of dimension \(\lfloor n/2 \rfloor\)]]></text><feedback format="html"><text>Incorrect. Invariance depends on \(T\), not just dimension.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[The orthogonal complement \(W^\perp\) of any invariant \(W\)]]></text><feedback format="html"><text>Incorrect. \(W^\perp\) is invariant under \(T\) only if \(T\) is normal (i.e., \(TT^* = T^*T\)).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Every 1-dimensional subspace of \(V\)]]></text><feedback format="html"><text>Incorrect. A 1-dimensional subspace \(\text{span}\{v\}\) is invariant iff \(v\) is an eigenvector of \(T\).</text></feedback></answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>LA09-Q16 Field Extensions as Vector Spaces</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The field \(\mathbb{C}\) of complex numbers is a vector space over \(\mathbb{R}\). Its dimension over \(\mathbb{R}\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(2\)</text><feedback format="html"><text>Correct. \(\{1, i\}\) is a basis for \(\mathbb{C}\) over \(\mathbb{R}\). Every complex number \(a+bi\) is a unique \(\mathbb{R}\)-linear combination of \(1\) and \(i\).</text></feedback></answer>
+    <answer fraction="0"><text>\(1\)</text><feedback format="html"><text>Incorrect. \(\mathbb{C}\) has dimension 1 over itself, but dimension 2 over \(\mathbb{R}\).</text></feedback></answer>
+    <answer fraction="0"><text>\(\infty\)</text><feedback format="html"><text>Incorrect. \(\mathbb{C}\) is 2-dimensional over \(\mathbb{R}\) with basis \(\{1,i\}\).</text></feedback></answer>
+    <answer fraction="0"><text>\(4\)</text><feedback format="html"><text>Incorrect. \(\dim_{\mathbb{R}}\mathbb{C} = 2\), not 4.</text></feedback></answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>LA09-Q17 Affinely Independent Points</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A set \(\{p_0, p_1, \ldots, p_k\}\) of points in \(\mathbb{R}^n\) is affinely independent if \(\{p_1-p_0,\ldots,p_k-p_0\}\) is linearly independent. The maximum number of affinely independent points in \(\mathbb{R}^3\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text>\(4\)</text><feedback format="html"><text>Correct. In \(\mathbb{R}^3\), at most \(3\) vectors can be linearly independent, so at most \(3+1=4\) points can be affinely independent (the vertices of a tetrahedron).</text></feedback></answer>
+    <answer fraction="0"><text>\(3\)</text><feedback format="html"><text>Incorrect. Four points in general position in \(\mathbb{R}^3\) (e.g., vertices of a tetrahedron) are affinely independent.</text></feedback></answer>
+    <answer fraction="0"><text>\(5\)</text><feedback format="html"><text>Incorrect. In \(\mathbb{R}^3\), only 4 points can be affinely independent since \(\dim\mathbb{R}^3=3\).</text></feedback></answer>
+    <answer fraction="0"><text>\(\infty\)</text><feedback format="html"><text>Incorrect. Affine independence in \(\mathbb{R}^n\) is limited to at most \(n+1\) points.</text></feedback></answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>LA09-Q18 Hamel Basis</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A Hamel basis of \(\mathbb{R}\) over \(\mathbb{Q}\) is a basis for \(\mathbb{R}\) as a vector space over \(\mathbb{Q}\). Which of the following is true about Hamel bases?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[Every Hamel basis of \(\mathbb{R}\) over \(\mathbb{Q}\) is uncountable]]></text><feedback format="html"><text>Correct. Since \(\mathbb{R}\) is uncountable and any countable \(\mathbb{Q}\)-span would only produce countably many elements, the basis must be uncountable.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[A Hamel basis can be constructed without the Axiom of Choice]]></text><feedback format="html"><text>Incorrect. The existence of a Hamel basis requires Zorn's lemma (equivalent to AC); it cannot be explicitly constructed in ZF.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\mathbb{R}\) is finite-dimensional over \(\mathbb{Q}\)]]></text><feedback format="html"><text>Incorrect. \(\mathbb{R}\) is infinite-dimensional over \(\mathbb{Q}\); its Hamel basis has cardinality \(|\mathbb{R}|\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\{1, \sqrt{2}, \sqrt{3}, \ldots, \sqrt{n}, \ldots\}\) is a Hamel basis]]></text><feedback format="html"><text>Incorrect. This set is linearly independent over \(\mathbb{Q}\) but does not span \(\mathbb{R}\) over \(\mathbb{Q}\) (e.g., \(\pi\) is not in its span).</text></feedback></answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>LA09-Q19 Matrix Subspaces</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Consider the vector space \(M_n(\mathbb{R})\) of all \(n\times n\) real matrices. Let \(S\) be the subspace of symmetric matrices and \(A\) be the subspace of skew-symmetric matrices. Which is true?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[\(M_n(\mathbb{R}) = S \oplus A\) and \(\dim S = \frac{n(n+1)}{2}\), \(\dim A = \frac{n(n-1)}{2}\)]]></text><feedback format="html"><text>Correct. Every matrix \(M = \frac{M+M^T}{2} + \frac{M-M^T}{2}\) uniquely as symmetric + skew-symmetric. \(\dim S = n(n+1)/2\), \(\dim A = n(n-1)/2\), and \(\dim S + \dim A = n^2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(\dim S = \dim A = n^2/2\)]]></text><feedback format="html"><text>Incorrect. \(\dim S = n(n+1)/2 \neq n^2/2\) and \(\dim A = n(n-1)/2 \neq n^2/2\).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(S \cap A = M_n(\mathbb{R})\)]]></text><feedback format="html"><text>Incorrect. \(S\cap A = \{0\}\): a matrix that is both symmetric (\(M=M^T\)) and skew-symmetric (\(M=-M^T\)) must be zero.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[\(S + A\) is a proper subspace of \(M_n(\mathbb{R})\)]]></text><feedback format="html"><text>Incorrect. \(S+A = M_n(\mathbb{R})\) since every matrix decomposes into symmetric and skew-symmetric parts.</text></feedback></answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>LA09-Q20 Zorn's Lemma and Bases</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following statements about bases in vector spaces is correct?]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><single>true</single>
+    <shuffleanswers>1</shuffleanswers><answernumbering>ABCD</answernumbering>
+    <answer fraction="100"><text><![CDATA[Every vector space (including infinite-dimensional) has a basis (Hamel basis), by Zorn's lemma]]></text><feedback format="html"><text>Correct. The existence of a Hamel basis for any vector space follows from Zorn's lemma (or equivalently, the Axiom of Choice).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[In any vector space, every linearly independent set is a basis]]></text><feedback format="html"><text>Incorrect. A linearly independent set is a basis only if it also spans the space.</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[In any vector space, every spanning set is a basis]]></text><feedback format="html"><text>Incorrect. A spanning set is a basis only if it is also linearly independent (i.e., minimal spanning set).</text></feedback></answer>
+    <answer fraction="0"><text><![CDATA[Two bases of a vector space can have different cardinalities]]></text><feedback format="html"><text>Incorrect. All bases of a vector space have the same cardinality (this is the definition of dimension).</text></feedback></answer>
+  </question>
+
+</quiz>

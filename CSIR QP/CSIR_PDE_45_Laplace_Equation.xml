@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/CSIR NET Mathematics/Partial Differential Equations/Laplace and Poisson Equations</text>
+    </category>
+  </question>
+
+  <!-- Q01 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q01_Harmonic_Definition</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A function \(u\) is harmonic in a domain \(\Omega \subset \mathbb{R}^n\) if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\Delta u = u_{x_1x_1} + \cdots + u_{x_nx_n} = 0\) in \(\Omega\)]]></text>
+      <feedback><text>Correct. A harmonic function satisfies Laplace's equation Δu=0. Harmonic functions are infinitely differentiable (analytic in fact) in the interior of their domain.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Delta u = 1\) (Poisson equation with unit source)]]></text>
+      <feedback><text>Δu=1 defines a solution of Poisson's equation, not Laplace's. Harmonic functions satisfy the homogeneous equation Δu=0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = 0\) on \(\partial\Omega\) (Dirichlet boundary condition)]]></text>
+      <feedback><text>Vanishing on the boundary is a boundary condition, not the definition of harmonicity. A harmonic function satisfies Δu=0 in the interior, regardless of boundary values.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(|\nabla u|^2 = 0\) (gradient vanishes)]]></text>
+      <feedback><text>|∇u|² = 0 implies u is constant, which is a special case of harmonic but not the general definition. Harmonic functions need only satisfy Δu=0.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q02 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q02_Mean_Value</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The mean value property for harmonic functions states: if \(\Delta u = 0\) in \(\Omega\), then for any ball \(B(x_0,r) \Subset \Omega\):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x_0) = \dfrac{1}{|\partial B_r|}\displaystyle\iint_{\partial B_r(x_0)} u\,dS = \dfrac{1}{|B_r|}\displaystyle\iiint_{B_r(x_0)} u\,dV\)]]></text>
+      <feedback><text>Correct. A harmonic function equals both its spherical mean (average over the sphere) and its ball mean (average over the ball). This property is equivalent to harmonicity (it characterizes harmonic functions).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x_0) = \max_{\partial B_r} u\) (attains maximum on sphere)]]></text>
+      <feedback><text>The maximum principle says harmonic functions attain their maximum on the boundary — but not that u(x₀) equals the maximum. The mean value property says u(x₀) equals the average, not the maximum.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x_0) = 0\) for any interior point \(x_0\)]]></text>
+      <feedback><text>Harmonic functions need not vanish at interior points. The mean value property equates u(x₀) with the average of u over nearby spheres/balls.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x_0) = \displaystyle\frac{1}{r}\!\displaystyle\iint_{\partial B_r} u\,dS\)]]></text>
+      <feedback><text>Missing the normalization: the spherical average divides by the surface area |∂B_r| = ωₙrⁿ⁻¹, not just r.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q03 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q03_Maximum_Principle</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The strong maximum principle for harmonic functions states:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[If \(\Delta u = 0\) in a connected domain \(\Omega\) and \(u\) attains its maximum in the interior, then \(u\) is constant.]]></text>
+      <feedback><text>Correct. The strong maximum principle: if a harmonic function attains its maximum (or minimum) at an interior point of a connected domain, it must be constant. Nonconstant harmonic functions attain their extrema only on the boundary.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A harmonic function in \(\Omega\) is always nonnegative.]]></text>
+      <feedback><text>Harmonic functions can take any sign. The maximum principle concerns where extrema are attained, not their sign.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The maximum of a harmonic function on \(\overline{\Omega}\) is attained at every boundary point.]]></text>
+      <feedback><text>The maximum is attained on the boundary (not necessarily at every boundary point). The strong maximum principle says it cannot be attained in the interior (unless the function is constant).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Harmonic functions have no local maxima anywhere.]]></text>
+      <feedback><text>More precisely: a nonconstant harmonic function has no local maxima in the interior of its domain. It can attain global maxima on the boundary.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q04 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q04_Fundamental_Solution</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The fundamental solution of the Laplace equation \(\Delta \Phi = \delta(x)\) in \(\mathbb{R}^n\) (\(n \geq 2\)) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\Phi(x) = \begin{cases} \dfrac{1}{2\pi}\ln|x| & n=2 \\ \dfrac{-1}{n(n-2)\omega_n}|x|^{2-n} & n \geq 3\end{cases}\)]]></text>
+      <feedback><text>Correct. In 2D: Φ=ln|x|/(2π). In 3D: Φ=−1/(4π|x|). In n≥3: Φ=−1/(n(n−2)ωₙ)|x|^{2−n} where ωₙ is the volume of the unit ball. Note sign conventions vary; some use +1/(n(n-2)ωₙ) with Δ(−Φ)=δ.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Phi(x) = e^{-|x|}\) in all dimensions]]></text>
+      <feedback><text>e^{−|x|} is a radial function but ΔΦ ≠ δ(x). The fundamental solution has algebraic singularity (polynomial in |x|), not exponential.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Phi(x) = |x|^2/(2n)\) in all dimensions]]></text>
+      <feedback><text>|x|²/(2n) satisfies Δ(|x|²/(2n))=1 (constant), so it solves Δu=1, not Δu=δ(x). This is the Newtonian potential producing a uniform charge distribution.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Phi(x) = \dfrac{1}{4\pi}|x|^{-1}\) in \(\mathbb{R}^3\)]]></text>
+      <feedback><text>Close, but the sign convention varies. The standard fundamental solution in ℝ³ satisfies Δ(−1/(4π|x|))=δ(x). The answer here has positive sign, which corresponds to Δ(1/(4π|x|))=−δ(x).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q05 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q05_Poisson_Kernel_Disk</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Poisson kernel for the unit disk \(B(0,1) \subset \mathbb{R}^2\) with boundary data \(u=f\) on \(\partial B\) is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(r,\theta) = \dfrac{1}{2\pi}\displaystyle\int_0^{2\pi} \dfrac{1-r^2}{1-2r\cos(\theta-\phi)+r^2}\,f(\phi)\,d\phi\)]]></text>
+      <feedback><text>Correct. The Poisson integral formula for the disk: u = (1/2π)∫P(r,θ−φ)f(φ)dφ where P(r,θ)=(1−r²)/(1−2r cosθ+r²) is the Poisson kernel. It can be derived from Green's function or Fourier series.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(r,\theta) = \dfrac{1}{2\pi}\displaystyle\int_0^{2\pi} f(\phi)\,d\phi\) (constant average)]]></text>
+      <feedback><text>This gives the mean value (the value at r=0), valid only at the center. For r>0, the Poisson kernel gives a non-trivial weighted average.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(r,\theta) = \dfrac{r^2}{2\pi}\displaystyle\int_0^{2\pi} \dfrac{f(\phi)}{1-r^2}\,d\phi\)]]></text>
+      <feedback><text>This is not the correct Poisson formula. The kernel is (1−r²)/(1−2r cos(θ−φ)+r²), not r²/(1−r²).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(r,\theta) = \displaystyle\sum_{n=-\infty}^{\infty} \hat{f}_n r^{|n|} e^{in\theta}\) without an integral formula]]></text>
+      <feedback><text>The Fourier series expansion is valid and equivalent to the Poisson integral, but the question asks for the integral formula. Both are correct representations.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q06 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q06_Dirichlet_Uniqueness</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Uniqueness for the Dirichlet problem \(\Delta u = f\) in \(\Omega\), \(u = g\) on \(\partial\Omega\) follows from:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The maximum principle: if \(\Delta v = 0\) in \(\Omega\) and \(v = 0\) on \(\partial\Omega\), then \(v \equiv 0\) in \(\Omega\).]]></text>
+      <feedback><text>Correct. If u₁ and u₂ are two solutions, then v=u₁−u₂ satisfies Δv=0 with v=0 on ∂Ω. By the maximum principle, max v = max_{∂Ω} v = 0, and similarly min v=0, so v≡0. This gives uniqueness.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Lax-Milgram theorem applied to the weak formulation.]]></text>
+      <feedback><text>Lax-Milgram provides existence and uniqueness in the weak (Sobolev space) setting, but the classical uniqueness argument uses the maximum principle directly.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Cauchy-Kovalevskaya theorem guarantees a unique analytic solution.]]></text>
+      <feedback><text>CK applies to analytic Cauchy problems. For the Dirichlet problem (elliptic), uniqueness follows from the maximum principle, not CK.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Uniqueness fails for the Dirichlet problem in general domains.]]></text>
+      <feedback><text>Uniqueness holds for the Dirichlet problem on bounded domains with smooth (or even Lipschitz) boundaries, by the maximum principle.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q07 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q07_Greens_Identity</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Green's second identity states: for smooth \(u, v\) on \(\overline{\Omega}\),]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\displaystyle\int_\Omega (u\Delta v - v\Delta u)\,dx = \displaystyle\oint_{\partial\Omega}\!\left(u\dfrac{\partial v}{\partial\nu} - v\dfrac{\partial u}{\partial\nu}\right)dS\)]]></text>
+      <feedback><text>Correct. Green's second identity follows from the divergence theorem applied to u∇v−v∇u. Setting Δu=0 and v=Φ (fundamental solution) yields the representation formula for harmonic functions.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\displaystyle\int_\Omega |\nabla u|^2\,dx = -\displaystyle\int_\Omega u\Delta u\,dx + \displaystyle\oint_{\partial\Omega} u\dfrac{\partial u}{\partial\nu}\,dS\)]]></text>
+      <feedback><text>This is Green's first identity (with v=u in the first identity), not the second identity. Green's second identity involves the antisymmetric combination uΔv−vΔu.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\displaystyle\int_\Omega \nabla u \cdot \nabla v\,dx = -\displaystyle\int_\Omega u\Delta v\,dx\)]]></text>
+      <feedback><text>Missing the boundary term ∮ u(∂v/∂ν)dS. Green's first identity is ∫∇u·∇v dx = −∫uΔv dx + ∮u(∂v/∂ν)dS.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\displaystyle\int_\Omega u\Delta v\,dx = \displaystyle\int_\Omega v\Delta u\,dx\)]]></text>
+      <feedback><text>This would only hold if the boundary terms vanish (e.g., with compact support). Green's second identity includes the boundary integral involving normal derivatives.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q08 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q08_Representation_Formula</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Green's function representation for the Poisson equation \(-\Delta u = f\) in \(\Omega\), \(u=0\) on \(\partial\Omega\) gives:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x) = \displaystyle\int_\Omega G(x,y)\,f(y)\,dy\), where \(G(x,y) = \Phi(x-y) - h^x(y)\) and \(\Delta_y h^x = 0\), \(h^x = \Phi(x-\cdot)\) on \(\partial\Omega\).]]></text>
+      <feedback><text>Correct. The Green's function G(x,y) for the domain Ω is the fundamental solution Φ corrected by h^x (the harmonic correction that makes G=0 on ∂Ω). The solution is u(x)=∫G(x,y)f(y)dy.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x) = \displaystyle\int_\Omega \Phi(x-y)f(y)\,dy\) (convolution with fundamental solution only)]]></text>
+      <feedback><text>This formula gives the Newton potential, which solves −Δu=f on ℝⁿ but does not satisfy the Dirichlet BC u=0 on ∂Ω. The Green's function adds the harmonic correction h^x.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x) = \displaystyle\oint_{\partial\Omega} \dfrac{\partial G}{\partial\nu_y}(x,y)\,f(y)\,dS_y\)]]></text>
+      <feedback><text>This boundary integral formula gives u in terms of boundary data, applicable when f=0 (homogeneous Poisson) and data on ∂Ω. For a volume source f, the volume integral is needed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x) = -\displaystyle\int_\Omega \nabla_y G(x,y) \cdot \nabla f(y)\,dy\)]]></text>
+      <feedback><text>This form (obtained by integration by parts) is valid under additional regularity on f, but the direct formula u=∫G(x,y)f(y)dy is the standard representation.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q09 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q09_Greens_Function_Ball</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Green's function for the unit ball \(B(0,1)\) in \(\mathbb{R}^3\) is (using the method of images):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(G(x,y) = \dfrac{-1}{4\pi|x-y|} + \dfrac{1}{4\pi|x||y^*-y|}\), where \(y^* = y/|y|^2\) is the inversion of \(y\) in \(\partial B\).]]></text>
+      <feedback><text>Correct. The image point of y∈B is y*=y/|y|² (outside B). The Green's function G(x,y)=Φ(x−y)−Φ(|y|(x−y*)) satisfies −ΔG=δ_y and G=0 on ∂B, using the Kelvin image method.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,y) = \dfrac{-1}{4\pi|x-y|}\) (fundamental solution alone)]]></text>
+      <feedback><text>The fundamental solution alone does not vanish on ∂B. The Green's function requires a corrector (image) term to satisfy G=0 on the boundary.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,y) = \dfrac{1}{2\pi}\ln|x-y|\) (2D formula)]]></text>
+      <feedback><text>The logarithmic formula is the 2D fundamental solution. In 3D, the fundamental solution is −1/(4π|x−y|).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(G(x,y) = \dfrac{1-|y|^2}{4\pi|x-y|^3}\) (Poisson kernel, not Green's function)]]></text>
+      <feedback><text>This is related to the normal derivative of G (the Poisson kernel, which appears in the boundary integral formula), not the Green's function itself.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q10 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q10_Liouville_Theorem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Liouville's theorem for harmonic functions states:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Every bounded harmonic function on \(\mathbb{R}^n\) is constant.]]></text>
+      <feedback><text>Correct. If Δu=0 on ℝⁿ and |u|≤M, then u is constant. This follows from the gradient estimate |∇u(x)|≤nM/r (valid for any ball B(x,r) by differentiating the mean value formula), letting r→∞.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every harmonic function on \(\mathbb{R}^n\) is a polynomial.]]></text>
+      <feedback><text>Harmonic polynomials exist (e.g., u=x₁²−x₂² in ℝ²), but general harmonic functions on ℝⁿ are not polynomials. Liouville's theorem concerns bounded harmonic functions being constant.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Harmonic functions on \(\mathbb{R}^n\) cannot have compact support unless they are zero.]]></text>
+      <feedback><text>This is also a consequence of the mean value property (or Liouville's theorem), but Liouville's theorem is specifically about bounded implies constant. A compactly supported harmonic function being trivial is a separate (related) result.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Every harmonic function is real-analytic.]]></text>
+      <feedback><text>Real-analyticity is a correct property of harmonic functions (follows from Poisson integral), but it is not Liouville's theorem. Liouville's theorem is specifically about bounded harmonic functions being constant.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q11 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q11_Neumann_Problem</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Neumann problem \(\Delta u = f\) in \(\Omega\), \(\dfrac{\partial u}{\partial\nu} = g\) on \(\partial\Omega\) has a solution if and only if:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\displaystyle\int_\Omega f\,dx + \displaystyle\oint_{\partial\Omega} g\,dS = 0\) (compatibility condition)]]></text>
+      <feedback><text>Correct. Integrating Δu=f over Ω and applying the divergence theorem: ∫_Ω f dx = ∫_Ω Δu dx = ∮_{∂Ω} (∂u/∂ν) dS = ∮ g dS. So ∫f dx = ∮g dS is a necessary condition. The Neumann problem is unique up to a constant.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\displaystyle\int_\Omega f\,dx = 0\) only (no condition on \(g\))]]></text>
+      <feedback><text>The compatibility condition involves both f and g: ∫_Ω f dx = ∮_{∂Ω} g dS, not just ∫f=0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[There is no compatibility condition; the Neumann problem always has a solution.]]></text>
+      <feedback><text>The compatibility condition ∫f+∮g=0 is necessary. Without it, no solution exists (by integrating the equation over Ω and applying the divergence theorem).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(g = 0\) on \(\partial\Omega\) identically.]]></text>
+      <feedback><text>g=0 makes ∮g=0, which satisfies the compatibility only if also ∫f=0. The general condition is ∫f+∮g=0, allowing nonzero g.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q12 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q12_Elliptic_Regularity</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Elliptic regularity for \(-\Delta u = f\) in \(\Omega\) states: if \(f \in H^k(\Omega)\) (Sobolev space), then in the interior:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u \in H^{k+2}_{\mathrm{loc}}(\Omega)\), gaining two derivatives relative to \(f\).]]></text>
+      <feedback><text>Correct. Elliptic regularity (interior): if f∈H^k_loc, then u∈H^{k+2}_loc. This "gain of two derivatives" is the hallmark of elliptic equations. In particular, f∈L² gives u∈H²_loc, and f∈C^∞ gives u∈C^∞ (smoothness propagates).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u \in H^k(\Omega)\) (same regularity as \(f\)).]]></text>
+      <feedback><text>Elliptic equations gain regularity. u is two Sobolev orders smoother than f (in the interior), not the same order.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u \in H^{k-2}(\Omega)\) (losing two derivatives).]]></text>
+      <feedback><text>This is what happens for HYPERBOLIC equations (which lose regularity). Elliptic equations gain two derivatives. For the Laplacian, u is smoother than f.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[No regularity gain: \(u\) has the same regularity as \(f\) since \(\Delta\) is a second-order operator.]]></text>
+      <feedback><text>The Laplacian is second order but elliptic, so it improves regularity. This contrasts with hyperbolic operators which do not improve regularity.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q13 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q13_Harnack</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Harnack's inequality for positive harmonic functions states: if \(u > 0\), \(\Delta u = 0\) in \(B(0,R)\), then for any \(|x| \leq r < R\):]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\dfrac{R^{n-2}(R-r)}{(R+r)^{n-1}}\,u(0) \leq u(x) \leq \dfrac{R^{n-2}(R+r)}{(R-r)^{n-1}}\,u(0)\)]]></text>
+      <feedback><text>Correct. Harnack's inequality bounds a positive harmonic function in terms of its value at the center. In particular, it shows that positive harmonic functions cannot have isolated zeros and implies equicontinuity for bounded families.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x) = u(0)\) for all \(x\) (positive harmonic functions are constant).]]></text>
+      <feedback><text>Positive harmonic functions are not necessarily constant on bounded domains. Liouville's theorem (bounded harmonic on ℝⁿ is constant) requires global boundedness, not just positivity.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x) \geq u(0) - C|x|\) (Lipschitz estimate).]]></text>
+      <feedback><text>Harnack's inequality is a two-sided multiplicative bound, not a Lipschitz difference estimate. It states C₁u(0) ≤ u(x) ≤ C₂u(0) for appropriate constants.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x) \leq u(0)\) (maximum at center).]]></text>
+      <feedback><text>The maximum is on the boundary (maximum principle), so u(0) is not necessarily the maximum. Harnack's inequality provides a two-sided bound involving ratios.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q14 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q14_Spherical_Harmonics</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The spherical harmonics \(Y_\ell^m(\theta,\phi)\) on \(S^2\) are eigenfunctions of the Laplace-Beltrami operator \(\Delta_{S^2}\) with eigenvalues:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(\Delta_{S^2} Y_\ell^m = -\ell(\ell+1) Y_\ell^m,\quad \ell = 0,1,2,\ldots,\; |m| \leq \ell\)]]></text>
+      <feedback><text>Correct. Spherical harmonics are eigenfunctions of the spherical Laplacian with eigenvalue −ℓ(ℓ+1). For each ℓ there are 2ℓ+1 independent spherical harmonics (m=−ℓ,...,ℓ). They arise from separating Laplace's equation in spherical coordinates.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Delta_{S^2} Y_\ell^m = \ell(\ell+1) Y_\ell^m\) (positive eigenvalues)]]></text>
+      <feedback><text>The Laplace-Beltrami operator on S² is negative semi-definite; its eigenvalues are −ℓ(ℓ+1) ≤ 0, not +ℓ(ℓ+1) > 0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(\Delta_{S^2} Y_\ell^m = -\ell^2 Y_\ell^m\)]]></text>
+      <feedback><text>The eigenvalue is −ℓ(ℓ+1), not −ℓ². These differ for all ℓ≥2.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Spherical harmonics are not eigenfunctions of any differential operator.]]></text>
+      <feedback><text>Spherical harmonics are precisely the eigenfunctions of the Laplace-Beltrami operator Δ_{S²}. This is their defining property in the context of harmonic analysis on the sphere.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q15 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q15_Dirichlet_Energy</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Dirichlet principle states that the solution \(u\) of \(-\Delta u = 0\) in \(\Omega\), \(u = g\) on \(\partial\Omega\) minimizes the Dirichlet energy over all functions with the same boundary data:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(E[u] = \displaystyle\int_\Omega |\nabla u|^2\,dx \leq \displaystyle\int_\Omega |\nabla v|^2\,dx\) for all \(v\) with \(v|_{\partial\Omega} = g\).]]></text>
+      <feedback><text>Correct. The harmonic function u minimizes the Dirichlet energy ∫|∇u|²dx among all functions with boundary data g. This is proven using Green's first identity: ∫|∇(u−v)|² = ∫|∇u|²−∫|∇v|²+2∫(u−v)Δu dx... The key is that u is harmonic so the cross term vanishes.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(E[u] = \displaystyle\int_\Omega u^2\,dx\) is minimized by \(u\equiv 0\).]]></text>
+      <feedback><text>The Dirichlet energy is ∫|∇u|² (involving gradients), not ∫u² (L² norm). The harmonic function minimizes the gradient energy, not the L² norm.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The harmonic function maximizes \(\displaystyle\int_\Omega |\nabla u|^2\,dx\).]]></text>
+      <feedback><text>The harmonic function minimizes (not maximizes) the Dirichlet energy. This is the variational characterization of Laplace's equation.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The Dirichlet energy is conserved along solutions: \(E[u(\cdot,t)] = E[u(\cdot,0)]\).]]></text>
+      <feedback><text>This statement concerns time evolution (wave equation). The Dirichlet principle is a static variational characterization of harmonic functions.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q16 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q16_Kelvin_Transform</text></name>
+    <questiontext format="html">
+      <text><![CDATA[The Kelvin transform of a harmonic function \(u\) in \(\mathbb{R}^n\) (\(n \geq 3\)) is defined as \(u^*(x) = |x|^{2-n}u(x^*)\) where \(x^* = x/|x|^2\). The Kelvin transform is:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[Also harmonic (harmonic in the inverted domain), allowing extension of results from bounded to unbounded domains.]]></text>
+      <feedback><text>Correct. The Kelvin transform preserves harmonicity: Δu=0 iff Δu*=0 (in the appropriate domain). This is used to convert exterior problems to interior problems and to study harmonic functions near infinity.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[A solution of Poisson's equation \(\Delta u^* = f^*\) for some source \(f^*\).]]></text>
+      <feedback><text>If u is harmonic (Δu=0), then u* is also harmonic (Δu*=0). The Kelvin transform of a harmonic function is harmonic.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Not harmonic; it satisfies a different elliptic equation.]]></text>
+      <feedback><text>The Kelvin transform of a harmonic function is harmonic. This is the key property of the Kelvin transform.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Defined only for \(n = 3\) (not for general \(n\)).]]></text>
+      <feedback><text>The Kelvin transform works in any dimension n≥2: u*(x)=|x|^{2−n}u(x/|x|²). In 2D the exponent is 2−2=0 so it simplifies to u*(x)=u(x/|x|²).</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q17 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q17_Removable_Singularity</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Bôcher's theorem (removable singularity for harmonic functions) states: if \(\Delta u = 0\) in a punctured ball \(B(0,r) \setminus \{0\}\) in \(\mathbb{R}^n\) (\(n \geq 2\)) and \(u(x) = o(|x|^{2-n})\) as \(x \to 0\) (for \(n \geq 3\)), then:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[The singularity at 0 is removable: \(u\) extends to a harmonic function on the full ball \(B(0,r)\).]]></text>
+      <feedback><text>Correct. If a harmonic function in a punctured ball grows slower than the fundamental solution |x|^{2−n}, the singularity is removable (the function extends harmonically through 0). Singularities that grow like |x|^{2−n} correspond to a point charge (fundamental solution) and are not removable.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x) \to \infty\) as \(x \to 0\) necessarily.]]></text>
+      <feedback><text>The condition u=o(|x|^{2−n}) means u grows slower than the fundamental solution. This is precisely the condition under which the singularity is removable (u stays bounded or grows very slowly). Not all harmonic functions in punctured balls blow up.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u\) must be identically zero in \(B(0,r)\setminus\{0\}\).]]></text>
+      <feedback><text>The removability theorem says u extends to a harmonic function on the full ball, not that it must be zero. Any harmonic function on the full ball satisfies u=o(|x|^{2−n}) near 0.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u\) must equal the fundamental solution: \(u(x) = c|x|^{2-n}\).]]></text>
+      <feedback><text>The fundamental solution |x|^{2−n} is NOT o(|x|^{2−n}) (it's exactly O(|x|^{2−n})). The condition u=o(|x|^{2−n}) rules out the fundamental solution type singularity, making it removable.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q18 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q18_Perron_Method</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Perron's method for solving the Dirichlet problem \(\Delta u = 0\) in \(\Omega\), \(u=g\) on \(\partial\Omega\) uses the Perron solution:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x) = \sup\{v(x) : v \text{ subharmonic in }\Omega,\; v \leq g \text{ on }\partial\Omega\}\)]]></text>
+      <feedback><text>Correct. The Perron solution is the supremum of all subharmonic minorants of g. It is harmonic in Ω and takes boundary values g at "regular" boundary points (where a barrier exists). Perron's method works for general continuous boundary data on sufficiently regular domains.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x) = \inf\{v(x) : v \text{ superharmonic in }\Omega,\; v \geq g \text{ on }\partial\Omega\}\)]]></text>
+      <feedback><text>Both the sup of subharmonic minorants and the inf of superharmonic majorants equal the Perron solution. The standard definition uses the supremum of subharmonic functions ≤ g on ∂Ω.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u = \arg\min \displaystyle\int_\Omega |\nabla v|^2\,dx\) (variational method)]]></text>
+      <feedback><text>This is the Dirichlet energy minimization approach, not Perron's method. Perron's method uses the Perron-Wiener-Brelot supremum construction, independent of variational principles.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Solving the PDE iteratively using finite differences.]]></text>
+      <feedback><text>Finite differences are a numerical method. Perron's method is an analytic existence proof using subharmonic functions and does not involve numerical iteration.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q19 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q19_Sub_Superharmonic</text></name>
+    <questiontext format="html">
+      <text><![CDATA[A function \(v\) is subharmonic in \(\Omega\) if \(\Delta v \geq 0\). For a subharmonic function, the mean value inequality states:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(v(x_0) \leq \dfrac{1}{|\partial B_r|}\displaystyle\iint_{\partial B_r(x_0)} v\,dS\) for all \(B(x_0,r) \subset \Omega\).]]></text>
+      <feedback><text>Correct. Subharmonic functions satisfy a sub-mean-value property: the value at a point is at most the average over any surrounding sphere. This is analogous to a convex function being below any chord.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(v(x_0) \geq \dfrac{1}{|\partial B_r|}\displaystyle\iint_{\partial B_r} v\,dS\) (super-mean-value property)]]></text>
+      <feedback><text>This is the property of superharmonic functions (Δv≤0). Subharmonic functions satisfy the inequality with ≤ (sub-mean-value), not ≥.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(v(x_0) = \dfrac{1}{|\partial B_r|}\displaystyle\iint_{\partial B_r} v\,dS\) (exact equality)]]></text>
+      <feedback><text>Equality holds for harmonic functions (Δv=0). Subharmonic functions (Δv≥0) satisfy v(x₀) ≤ average (strict inequality in general).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Subharmonic functions satisfy a maximum principle: they attain their maximum in the interior.]]></text>
+      <feedback><text>This is the opposite of the correct statement. Subharmonic functions satisfy the MAXIMUM principle in the form: the maximum is attained on the boundary (not the interior), since the value at any interior point is ≤ the boundary average.</text></feedback>
+    </answer>
+  </question>
+
+  <!-- Q20 -->
+  <question type="multichoice">
+    <name><text>CSIR_PDE_45_Q20_Exterior_Dirichlet</text></name>
+    <questiontext format="html">
+      <text><![CDATA[For the exterior Dirichlet problem \(\Delta u = 0\) in \(\mathbb{R}^3 \setminus \overline{B(0,1)}\), \(u=g\) on \(|x|=1\), and \(u(x) \to 0\) as \(|x| \to \infty\), the solution is given by:]]></text>
+    </questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <single>true</single>
+    <answer fraction="100">
+      <text><![CDATA[\(u(x) = \dfrac{1}{|x|}\,v\!\left(\dfrac{x}{|x|^2}\right)\) where \(v\) solves the interior Dirichlet problem on \(B(0,1)\) with data \(g\).]]></text>
+      <feedback><text>Correct. The Kelvin transform u*(x)=|x|^{−1}v(x/|x|²) converts the exterior problem to an interior problem in B(0,1). The condition u→0 at infinity becomes v(0)=0 (regularity at the origin for the interior problem).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[The exterior problem has no solution since \(\mathbb{R}^3\setminus\overline{B}\) is unbounded.]]></text>
+      <feedback><text>Exterior Dirichlet problems do have solutions (for n≥3 with appropriate decay conditions at infinity). The Kelvin transform reduces them to interior problems.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[\(u(x) = g(x/|x|)\) (just the boundary data radially extended).]]></text>
+      <feedback><text>Radial extension g(x/|x|) is constant on radial lines but is not harmonic in general. The harmonic solution requires the Poisson kernel for the exterior problem.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text><![CDATA[Uniqueness fails for the exterior problem due to the unbounded domain.]]></text>
+      <feedback><text>With the decay condition u→0 at infinity, uniqueness holds for the exterior problem. Without this condition, there would be infinitely many solutions (e.g., u + harmonic function vanishing on ∂B and at infinity).</text></feedback>
+    </answer>
+  </question>
+
+</quiz>

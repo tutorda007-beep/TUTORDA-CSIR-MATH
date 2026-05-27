@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category>
+    <text><![CDATA[$course$/Advanced Algebra (M.Sc. Mathematics)/CSIR PYQ — Unit I — Sylow theorems, solvable and nilpotent groups]]></text>
+  </category>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q1 — Group of order 15</text></name>
+  <questiontext format="html">
+    <text><![CDATA[A group of order \(15\) is necessarily:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Cyclic.</strong><br>Since \(|G|=15=3\times 5\), by Sylow's third theorem \(n_3\mid 5\) and \(n_3\equiv 1\pmod{3}\), so \(n_3=1\). Similarly \(n_5\mid 3\) and \(n_5\equiv 1\pmod{5}\), so \(n_5=1\). Both Sylow subgroups are normal, hence \(G\cong\mathbb{Z}_3\times\mathbb{Z}_5\cong\mathbb{Z}_{15}\), which is cyclic.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Cyclic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Simple]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Non-abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Isomorphic to \(\mathbb{Z}_3\oplus\mathbb{Z}_5\) but not cyclic]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q2 — Group of order p²</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Let \(p\) be a prime. Every group of order \(p^2\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Abelian.</strong><br>For a group \(G\) of order \(p^2\), the center \(Z(G)\) is non-trivial (class equation). If \(|Z(G)|=p^2\), then \(G\) is abelian. If \(|Z(G)|=p\), then \(G/Z(G)\) has order \(p\), hence cyclic, which forces \(G\) to be abelian — a contradiction. So \(G\cong\mathbb{Z}_{p^2}\) or \(G\cong\mathbb{Z}_p\times\mathbb{Z}_p\), both abelian.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Always abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always cyclic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always simple]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Non-abelian when \(p=2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q3 — Center of a p-group</text></name>
+  <questiontext format="html">
+    <text><![CDATA[If \(G\) is a finite group of order \(p^n\) (\(p\) prime, \(n\ge 1\)), then the center \(Z(G)\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Non-trivial.</strong><br>By the class equation \(|G|=|Z(G)|+\sum[G:C_G(x_i)]\), each term \([G:C_G(x_i)]\) is a power of \(p\) greater than 1. Since \(p\mid|G|\) and \(p\) divides each summand, we get \(p\mid|Z(G)|\), so \(Z(G)\ne\{e\}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Non-trivial]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Trivial (equal to \(\{e\}\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equal to \(G\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Of order exactly \(p\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q4 — Sylow 3-subgroups of S₄</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The number of Sylow \(3\)-subgroups of the symmetric group \(S_4\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 4.</strong><br>\(|S_4|=24=2^3\cdot 3\). By Sylow's third theorem, \(n_3\mid 8\) and \(n_3\equiv 1\pmod{3}\), so \(n_3\in\{1,4\}\). The 3-cycles in \(S_4\) are \((123),(132),(124),(142),(134),(143),(234),(243)\) — 8 elements of order 3 forming 4 cyclic groups of order 3. Hence \(n_3=4\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[8]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q5 — Sylow 2-subgroups of S₃</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The number of Sylow \(2\)-subgroups of the symmetric group \(S_3\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 3.</strong><br>\(|S_3|=6=2\cdot 3\). Sylow 2-subgroups have order 2. By Sylow's third theorem \(n_2\mid 3\) and \(n_2\equiv 1\pmod{2}\), so \(n_2\in\{1,3\}\). The three transpositions \((12),(13),(23)\) each generate a distinct subgroup of order 2, so \(n_2=3\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q6 — Sylow's Third Theorem</text></name>
+  <questiontext format="html">
+    <text><![CDATA[If \(p^k\) is the highest power of prime \(p\) dividing \(|G|\), then the number \(n_p\) of Sylow \(p\)-subgroups satisfies:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(n_p\equiv 1\pmod{p}\) and \(n_p\mid\frac{|G|}{p^k}\).</strong><br>This is the content of Sylow's Third Theorem. The two conditions together heavily restrict possible values of \(n_p\) and are the main tools for proving groups of specific orders are not simple.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(n_p\equiv 1\pmod{p}\) and \(n_p\mid\dfrac{|G|}{p^k}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n_p=1\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n_p\equiv 0\pmod{p}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n_p\mid p^k\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q7 — Sylow's Second Theorem</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Sylow's Second Theorem states that any two Sylow \(p\)-subgroups of a finite group \(G\) are:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Conjugate in \(G\).</strong><br>If \(P\) and \(Q\) are Sylow \(p\)-subgroups, then \(Q=gPg^{-1}\) for some \(g\in G\). In particular all Sylow \(p\)-subgroups are isomorphic. A corollary: a Sylow \(p\)-subgroup is normal iff \(n_p=1\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Conjugate in \(G\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Normal in \(G\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Isomorphic but not necessarily conjugate]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q8 — Group of order 35</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Every group of order \(35 = 5\times 7\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Cyclic.</strong><br>\(n_5\mid 7\) and \(n_5\equiv 1\pmod{5}\Rightarrow n_5=1\). \(n_7\mid 5\) and \(n_7\equiv 1\pmod{7}\Rightarrow n_7=1\). Both Sylow subgroups are normal. Since \(\gcd(5,7)=1\), we get \(G\cong\mathbb{Z}_5\times\mathbb{Z}_7\cong\mathbb{Z}_{35}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Cyclic of order 35]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Non-abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Simple]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Isomorphic to \(D_5\times\mathbb{Z}_7\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q9 — Groups of order 2p</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Let \(p\) be an odd prime. A group of order \(2p\) is isomorphic to:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Either \(\mathbb{Z}_{2p}\) or \(D_p\).</strong><br>By Sylow, \(n_p\mid 2\) and \(n_p\equiv 1\pmod p\), so \(n_p=1\). The Sylow \(p\)-subgroup \(P\cong\mathbb{Z}_p\) is normal. The Sylow 2-subgroup \(Q\cong\mathbb{Z}_2\) acts on \(P\) by conjugation. If the action is trivial, \(G\cong\mathbb{Z}_{2p}\); if non-trivial (inversion), \(G\cong D_p\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Either \(\mathbb{Z}_{2p}\) or \(D_p\) (dihedral group of order \(2p\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always \(\mathbb{Z}_{2p}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always \(D_p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always \(\mathbb{Z}_2\times\mathbb{Z}_p\) with non-trivial action]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q10 — Center of Q₈</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The center of the quaternion group \(Q_8=\{\pm 1,\pm i,\pm j,\pm k\}\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(\{1,-1\}\).</strong><br>The elements \(i,j,k,-i,-j,-k\) do not commute with each other (e.g., \(ij=k\ne-k=ji\)). Only \(\pm 1\) commute with every element of \(Q_8\), so \(Z(Q_8)=\{1,-1\}\cong\mathbb{Z}_2\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(\{1,-1\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{1\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{1,-1,i,-i\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(Q_8\) itself]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q11 — Commutator subgroup of S₃</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The commutator (derived) subgroup \([S_3, S_3]\) of the symmetric group \(S_3\) is isomorphic to:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(\mathbb{Z}_3\).</strong><br>\([S_3,S_3]=A_3=\{e,(123),(132)\}\cong\mathbb{Z}_3\). This is because \(S_3/A_3\cong\mathbb{Z}_2\) is abelian, and \(A_3\) is the smallest normal subgroup with abelian quotient.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathbb{Z}_3\cong A_3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{e\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S_3\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q12 — Commutator subgroup of S₄</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The derived subgroup \([S_4,S_4]\) of \(S_4\) is isomorphic to:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(A_4\).</strong><br>\(S_4/A_4\cong\mathbb{Z}_2\) is abelian, so \([S_4,S_4]\subseteq A_4\). The quotient \(A_4/V_4\cong\mathbb{Z}_3\) is abelian, but \(S_4/V_4\cong S_3\) is non-abelian, confirming that \([S_4,S_4]=A_4\) of order 12.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(A_4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(V_4\) (Klein four-group)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S_4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q13 — G/Z(G) cyclic implies G abelian</text></name>
+  <questiontext format="html">
+    <text><![CDATA[If \(G/Z(G)\) is cyclic, then \(G\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Abelian.</strong><br>Suppose \(G/Z(G)=\langle gZ(G)\rangle\). Every element of \(G\) has the form \(g^m z\) for some \(m\in\mathbb{Z}, z\in Z(G)\). Then \((g^m z_1)(g^n z_2)=g^{m+n}z_1z_2=(g^n z_2)(g^m z_1)\), so \(G\) is abelian. But then \(G=Z(G)\), making \(G/Z(G)\) trivial (cyclic of order 1).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cyclic but not necessarily abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Simple]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Nilpotent of class 2]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q14 — A₅ is not solvable</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Which of the following groups is NOT solvable?]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(A_5\).</strong><br>\(A_5\) is simple and non-abelian. A simple group is solvable if and only if it is cyclic of prime order. Since \(|A_5|=60\) is not prime, \(A_5\) is not solvable. \(S_3,S_4,A_4\) are all solvable (they have composition factors of prime order).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(A_5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S_3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S_4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A_4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q15 — Jordan–Hölder Theorem</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The Jordan–Hölder theorem guarantees that any two composition series of a finite group \(G\):]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Have the same length and the same composition factors (up to isomorphism and ordering).</strong><br>This is the uniqueness part of the Jordan–Hölder theorem. While composition series need not be identical, they always yield the same multiset of composition factors (simple groups appearing as successive quotients), analogous to unique prime factorisation.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Have the same length and isomorphic composition factors (up to ordering)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Are always identical]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Have the same length but may have different composition factors]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[May have different lengths]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q16 — Solvable group and composition factors</text></name>
+  <questiontext format="html">
+    <text><![CDATA[A finite group \(G\) is solvable if and only if all its composition factors are:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Cyclic of prime order.</strong><br>The composition factors of a solvable group are simple groups with a solvable group structure. The only solvable simple groups are the cyclic groups \(\mathbb{Z}_p\) for prime \(p\). Conversely, if all composition factors are \(\mathbb{Z}_p\), one constructs the derived series terminating at \(\{e\}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Cyclic of prime order]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cyclic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Simple and non-abelian]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q17 — Nilpotent finite group</text></name>
+  <questiontext format="html">
+    <text><![CDATA[A finite group \(G\) is nilpotent if and only if:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(G\) is the direct product of its Sylow subgroups.</strong><br>The three equivalent characterisations of finite nilpotent groups are: (i) \(G\) is the direct product of its Sylow subgroups, (ii) every Sylow subgroup is normal in \(G\), (iii) every subgroup of \(G\) is subnormal.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(G\) is the direct product of its Sylow subgroups]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G\) is abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G\) has trivial center]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G\) is solvable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q18 — Lower central series</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The lower central series of a group \(G\) is defined by \(G_0=G\) and:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(G_{i+1}=[G,G_i]\).</strong><br>The lower central series \(G=G_0\supseteq G_1\supseteq G_2\supseteq\cdots\) is defined by \(G_{i+1}=[G,G_i]\), where \([G,G_i]\) is generated by all commutators \([g,h]=ghg^{-1}h^{-1}\) with \(g\in G,h\in G_i\). \(G\) is nilpotent of class \(n\) iff \(G_n=\{e\}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(G_{i+1}=[G,G_i]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G_{i+1}=[G_i,G_i]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G_{i+1}=Z(G_i)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G_{i+1}=G_i\cap Z(G)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q19 — Frattini subgroup</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The Frattini subgroup \(\Phi(G)\) of a finite group \(G\) is defined as:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: The intersection of all maximal subgroups of \(G\).</strong><br>\(\Phi(G)=\bigcap\{M:M\text{ maximal in }G\}\). An element \(x\in G\) belongs to \(\Phi(G)\) iff \(x\) is a non-generator of \(G\) (removing \(x\) from any generating set still leaves a generating set). For a \(p\)-group \(G\), \(\Phi(G)=G^p[G,G]\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[The intersection of all maximal subgroups of \(G\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The intersection of all normal subgroups of \(G\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The center of \(G\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The commutator subgroup \([G,G]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q20 — Number of groups of order 8</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The number of non-isomorphic groups of order \(8\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 5.</strong><br>The five groups of order 8 are: \(\mathbb{Z}_8\), \(\mathbb{Z}_4\times\mathbb{Z}_2\), \(\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2\) (abelian), and \(D_4\) (dihedral), \(Q_8\) (quaternion) (non-abelian).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q21 — A₄ has no subgroup of order 6</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The alternating group \(A_4\) of order \(12\) has:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: No subgroup of order 6.</strong><br>If \(H\le A_4\) with \(|H|=6\), then \([A_4:H]=2\), so \(H\trianglelefteq A_4\). But a subgroup of order 6 would contain a unique subgroup of order 3 (also normal in \(A_4\)), yet \(A_4\) has four subgroups of order 3 (generated by each 3-cycle), so no single one can be normal in \(A_4\) within \(H\). This is a contradiction.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[No subgroup of order 6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A unique subgroup of order 6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Exactly two subgroups of order 6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A normal subgroup of order 6]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q22 — Order of Aut(Zₚ)</text></name>
+  <questiontext format="html">
+    <text><![CDATA[For a prime \(p\), the order of the automorphism group \(\mathrm{Aut}(\mathbb{Z}_p)\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(p-1\).</strong><br>An automorphism of \(\mathbb{Z}_p\) is determined by the image of the generator \(1\), which must be sent to any non-zero element. There are \(p-1\) choices, so \(|\mathrm{Aut}(\mathbb{Z}_p)|=p-1\). Indeed \(\mathrm{Aut}(\mathbb{Z}_p)\cong(\mathbb{Z}/p\mathbb{Z})^\times\cong\mathbb{Z}_{p-1}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(p-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p+1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\phi(p)=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q23 — Maximal subgroup of p-group</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Every maximal subgroup of a \(p\)-group \(G\) of order \(p^n\) (\(n\ge 1\)) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Normal of index \(p\) in \(G\).</strong><br>If \(M\) is a maximal subgroup of \(G=p\)-group, then \(G/M\) has no proper non-trivial subgroups and is a \(p\)-group, so \(G/M\cong\mathbb{Z}_p\). Thus \([G:M]=p\) and since \(G/M\) is abelian, \(M\) contains \([G,G]\) and is automatically normal.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Normal of index \(p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Normal of index \(p^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Normal of index \(p^{n-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not necessarily normal]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q24 — Class equation</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The class equation of a finite group \(G\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(|G|=|Z(G)|+\sum_{i}[G:C_G(x_i)]\).</strong><br>Here the sum runs over one representative \(x_i\) from each conjugacy class outside the center. Each \([G:C_G(x_i)]>1\). This equation is fundamental in proving the center of a \(p\)-group is non-trivial, as \(p\) divides \(|G|\) and each index term.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(|G|=|Z(G)|+\displaystyle\sum_{i}[G:C_G(x_i)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|G|=|[G,G]|+\displaystyle\sum_{i}[G:C_G(x_i)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|G|=\displaystyle\sum_{i}|C_G(x_i)|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|G|=|Z(G)|\cdot\displaystyle\prod_{i}[G:C_G(x_i)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q25 — Sylow 7-subgroups of group of order 168</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The number of Sylow \(7\)-subgroups of a simple group of order \(168=2^3\cdot 3\cdot 7\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 8.</strong><br>\(n_7\mid 24\) and \(n_7\equiv 1\pmod{7}\), so \(n_7\in\{1,8\}\). If \(n_7=1\), the unique Sylow 7-subgroup would be normal, contradicting simplicity. Hence \(n_7=8\). (The simple group of order 168 is \(\mathrm{PSL}(2,7)\).)</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[8]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[7]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[24]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q26 — Composition series length of S₄</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The length of a composition series of \(S_4\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: 4.</strong><br>A composition series of \(S_4\) is \(\{e\}\trianglelefteq\langle(12)(34)\rangle\trianglelefteq V_4\trianglelefteq A_4\trianglelefteq S_4\) with composition factors \(\mathbb{Z}_2,\mathbb{Z}_2,\mathbb{Z}_3,\mathbb{Z}_2\). Length = number of factors = 4.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[24]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q27 — pq group (q not 1 mod p)</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Let \(p < q\) be primes with \(q\not\equiv 1\pmod{p}\). Then every group of order \(pq\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Cyclic.</strong><br>By Sylow, \(n_p\mid q\) and \(n_p\equiv 1\pmod p\). Since \(q\not\equiv 1\pmod p\), we get \(n_p=1\). Similarly \(n_q\mid p\) and \(n_q\equiv 1\pmod q\), so \(n_q=1\). Both Sylow subgroups are normal and \(G\cong\mathbb{Z}_p\times\mathbb{Z}_q\cong\mathbb{Z}_{pq}\).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Cyclic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Non-abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Simple]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Dihedral]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q28 — Elements of order 2 in Dₙ (n odd)</text></name>
+  <questiontext format="html">
+    <text><![CDATA[In the dihedral group \(D_n\) of order \(2n\), where \(n\) is odd, the number of elements of order \(2\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: \(n\).</strong><br>\(D_n\) has \(n\) rotations and \(n\) reflections. When \(n\) is odd, each rotation \(r^k\) (\(k\ne 0\)) has odd order dividing \(n\), so no rotation (other than \(e\)) has order 2. Each of the \(n\) reflections has order 2. Therefore there are exactly \(n\) elements of order 2.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[\(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n+1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q29 — Characteristic subgroup</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Which of the following is always a characteristic subgroup of any group \(G\)?]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: The center \(Z(G)\).</strong><br>A characteristic subgroup is invariant under all automorphisms of \(G\). Since any automorphism \(\phi\) maps the center to itself (\(\phi(Z(G))=Z(G)\), as \(\phi\) preserves commutativity), \(Z(G)\) is always characteristic. Similarly \([G,G]\) and \(\Phi(G)\) are characteristic.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[The center \(Z(G)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every normal subgroup]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every Sylow subgroup]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every maximal subgroup]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>CSIR PYQ Unit I Q30 — Derived series of A₅</text></name>
+  <questiontext format="html">
+    <text><![CDATA[The derived series \(A_5\supset A_5^{(1)}\supset A_5^{(2)}\supset\cdots\) of \(A_5\) is:]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p><strong>Answer: Stationary at \(A_5\) — it never reaches \(\{e\}\).</strong><br>Since \(A_5\) is simple and non-abelian, its commutator subgroup \([A_5,A_5]=A_5\). Therefore every term of the derived series equals \(A_5\), confirming that \(A_5\) is not solvable.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>2.0000000</defaultgrade>
+  <penalty>0.2500000</penalty>
+  <hidden>0</hidden>
+  <idnumber></idnumber>
+  <single>true</single>
+  <shuffleanswers>true</shuffleanswers>
+  <answernumbering>ABCD</answernumbering>
+  <correctfeedback format="html"><text><![CDATA[<p>Your answer is correct.</p>]]></text></correctfeedback>
+  <partiallycorrectfeedback format="html"><text><![CDATA[<p>Your answer is partially correct.</p>]]></text></partiallycorrectfeedback>
+  <incorrectfeedback format="html"><text><![CDATA[<p>Your answer is incorrect.</p>]]></text></incorrectfeedback>
+  <answer fraction="100" format="html"><text><![CDATA[Stationary: \(A_5^{(k)}=A_5\) for all \(k\ge 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A_5\supset A_4\supset\{e\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A_5\supset\{e\}\) in one step]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A_5\supset\mathbb{Z}_5\supset\{e\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

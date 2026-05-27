@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/CSIR NET Mathematics/Complex Analysis/Analytic Functions</text></category>
+    <info format="html"><text>CSIR NET level MCQ questions on Analytic Functions: Cauchy-Riemann equations, harmonic functions, conformality, power series, radius of convergence, entire functions, analytic continuation.</text></info>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q01 Cauchy-Riemann Equations</text></name>
+    <questiontext format="html"><text><![CDATA[A function \(f(z) = u(x,y) + iv(x,y)\) is analytic at \(z_0\) if and only if the Cauchy-Riemann equations \(u_x = v_y\) and \(u_y = -v_x\) hold at \(z_0\) and the partial derivatives are continuous there. For \(f(z) = z^2 = (x^2 - y^2) + 2xyi\), verify the CR equations and find \(f'(z)\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(f'(z) = 2z\)</text><feedback format="html"><text>\(u=x^2-y^2, v=2xy\). Check: \(u_x=2x=v_y\) ✓; \(u_y=-2y=-v_x=-2y\) ✓. Then \(f'(z) = u_x+iv_x = 2x+2iy = 2(x+iy) = 2z\). Alternatively, \(f'(z) = \lim_{h\to0}[(z+h)^2-z^2]/h = 2z\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f'(z) = z\)</text><feedback format="html"><text>Incorrect. The derivative of \(z^2\) with respect to \(z\) is \(2z\), following the usual power rule which holds for complex analytic functions.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f'(z) = 2\bar{z}\)</text><feedback format="html"><text>\(\bar{z} = x-iy\), not \(x+iy\). The derivative of \(z^2\) is \(2z\), not \(2\bar{z}\). Note: \(|z|^2 = z\bar{z}\) is not analytic, but \(z^2\) is.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f'(z)\) does not exist since \(z^2\) is not analytic</text><feedback format="html"><text>Incorrect. \(z^2\) is an entire function (analytic everywhere in \(\mathbb{C}\)) with derivative \(2z\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q02 Harmonic Functions</text></name>
+    <questiontext format="html"><text><![CDATA[If \(f = u + iv\) is analytic in a domain, then both \(u\) and \(v\) are harmonic (\(\Delta u = 0, \Delta v = 0\)) and are harmonic conjugates of each other. Given \(u(x,y) = x^3 - 3xy^2\), find the harmonic conjugate \(v(x,y)\) such that \(f = u+iv\) is analytic.]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(v = 3x^2y - y^3 + C\)</text><feedback format="html"><text>From CR: \(v_y = u_x = 3x^2-3y^2\), so \(v = 3x^2y - y^3 + g(x)\). From \(v_x = -u_y = 6xy\): \(6xy + g'(x) = 6xy\), so \(g'(x)=0\), \(g=C\). Then \(f = (x^3-3xy^2)+i(3x^2y-y^3) = (x+iy)^3 = z^3\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(v = 3xy^2 - x^3 + C\)</text><feedback format="html"><text>This equals \(-u\), not the harmonic conjugate. The conjugate of \(\text{Re}(z^3)\) is \(\text{Im}(z^3) = 3x^2y-y^3\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(v = x^2y - y^3 + C\)</text><feedback format="html"><text>Check: \(v_y = x^2-3y^2 \neq u_x = 3x^2-3y^2\). This does not satisfy the CR equations.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(v = 3x^2 - y^2 + C\)</text><feedback format="html"><text>Check: \(\Delta v = 6-2 = 4 \neq 0\). This is not even harmonic, hence cannot be a harmonic conjugate.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q03 Radius of Convergence</text></name>
+    <questiontext format="html"><text><![CDATA[The radius of convergence of the power series \(\sum_{n=0}^\infty a_n z^n\) is \(R = \dfrac{1}{\limsup_{n\to\infty}|a_n|^{1/n}}\) (Hadamard's formula). For the series \(\sum_{n=0}^\infty \dfrac{n!}{n^n} z^n\), using Stirling's approximation \(n! \approx \sqrt{2\pi n}(n/e)^n\), find \(R\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(R = e\)</text><feedback format="html"><text>\(|a_n|^{1/n} = (n!/n^n)^{1/n} \approx [(n/e)^n/n^n]^{1/n} = 1/e\) by Stirling. So \(R = 1/(1/e) = e\). Alternatively, by the ratio test: \(|a_{n+1}/a_n| = (n+1)!/((n+1)^{n+1}) \cdot n^n/n! = (n/(n+1))^n \to 1/e\), so \(R = e\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(R = 1\)</text><feedback format="html"><text>Incorrect. The ratio test gives the limit \(1/e < 1\), confirming convergence with \(R = e\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(R = 0\)</text><feedback format="html"><text>The series does converge for \(|z| < e\). \(n!/n^n \to 0\) by Stirling, so the series is not trivially divergent.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(R = \infty\)</text><feedback format="html"><text>The series does not converge everywhere. At \(|z| > e\), the ratio test gives a ratio exceeding 1, so the series diverges.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q04 Entire Functions — Liouville's Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[Liouville's theorem: every bounded entire function is constant. Which of the following is a consequence of Liouville's theorem?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The Fundamental Theorem of Algebra: every non-constant polynomial has a root in \(\mathbb{C}\)</text><feedback format="html"><text>If \(p(z)\) has no root, then \(1/p(z)\) is entire and bounded (since \(|p(z)|\to\infty\) as \(|z|\to\infty\)). By Liouville, \(1/p(z)\) is constant, contradicting non-constancy of \(p\). This is Liouville's proof of FTA.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(e^z\) is not surjective onto \(\mathbb{C}\)</text><feedback format="html"><text>\(e^z\) is surjective onto \(\mathbb{C}\setminus\{0\}\) (it never takes the value 0). This is related to Picard's theorem, not Liouville's theorem.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Every entire function with \(|f(z)| \leq |z|^n\) is a polynomial of degree \(\leq n\)</text><feedback format="html"><text>This follows from Cauchy's inequality applied to the derivatives, not from Liouville's theorem directly.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The maximum of \(|f|\) on a disk is attained on the boundary</text><feedback format="html"><text>This is the Maximum Modulus Principle, a consequence of the Open Mapping Theorem, not of Liouville's theorem.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q05 Analytic Continuation — Identity Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[The Identity Theorem: if \(f\) and \(g\) are analytic in a connected domain \(D\), and \(f(z_n) = g(z_n)\) for a sequence \(\{z_n\}\subset D\) with a limit point in \(D\), then \(f \equiv g\) on \(D\). Which conclusion follows from this theorem?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Analytic continuation is unique: there is at most one analytic function extending a given function to a larger domain</text><feedback format="html"><text>If two analytic functions agree on a sequence with a limit point (e.g., on an arc or open set), they are identical throughout the connected domain. This ensures that analytic continuation is unique — there is at most one way to extend an analytic function analytically.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Every analytic function in a domain is determined by its values on the boundary</text><feedback format="html"><text>This is the Uniqueness theorem for harmonic functions (Dirichlet problem), related to the Poisson integral formula, not the Identity Theorem.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>An analytic function that vanishes on a circle must vanish everywhere</text><feedback format="html"><text>This follows from the Identity Theorem if the circle is inside the domain (infinitely many zeros with a limit point). But a circle "on the boundary" requires additional argument.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Two analytic functions with the same real part must be equal</text><feedback format="html"><text>If \(\text{Re}(f) = \text{Re}(g)\) on a domain, then \(\text{Re}(f-g)=0\), so \(f-g\) is purely imaginary. Since \(f-g\) is analytic with zero real part, by CR equations it is constant. This uses the CR equations, not the Identity Theorem directly.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q06 Maximum Modulus Principle</text></name>
+    <questiontext format="html"><text><![CDATA[The Maximum Modulus Principle states: if \(f\) is analytic and non-constant in a domain \(D\), then \(|f|\) cannot attain a maximum in the interior of \(D\). Let \(f(z) = z^2 + 1\) on the closed disk \(|z| \leq 2\). Where does \(|f|\) attain its maximum?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>On the boundary circle \(|z|=2\), where the maximum is 5 at \(z=-2\)</text><feedback format="html"><text>On \(|z|=2\): \(|z^2+1|\leq|z|^2+1=5\). At \(z=-2\): \(|4+1|=5\). At interior points, e.g., \(z=0\): \(|f(0)|=1 < 5\). By MMP, the maximum is on the boundary at \(z=-2\) (giving \(|{-4+1}|=3\))... Actually at \(z=2\): \(|4+1|=5\) and \(z=-2\): \(|4+1|=5\). Maximum is 5 on boundary.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>At the origin \(z=0\), where \(|f(0)|=1\)</text><feedback format="html"><text>The MMP says the maximum is on the boundary, not the interior. At \(z=0\), \(|f|=1\) is much less than the boundary maximum of 5.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>At \(z=i\) in the interior, where \(|f(i)|=0\)</text><feedback format="html"><text>\(f(i)=i^2+1=-1+1=0\). The minimum is at \(z=\pm i\), not the maximum. The maximum is on the boundary by MMP.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The maximum is not attained anywhere</text><feedback format="html"><text>Since we are on a closed bounded set and \(|f|\) is continuous, the maximum is attained. The MMP says it is attained on the boundary.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q07 Conformality and Angle Preservation</text></name>
+    <questiontext format="html"><text><![CDATA[An analytic function \(f\) with \(f'(z_0)\neq 0\) is conformal at \(z_0\): it preserves angles (both magnitude and orientation) between curves. The Möbius transformation \(w = \dfrac{az+b}{cz+d}\) (with \(ad-bc\neq0\)) is conformal on \(\mathbb{C}\setminus\{-d/c\}\). Which geometric property does a Möbius transformation preserve?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Circles and lines (i.e., circles on the Riemann sphere)</text><feedback format="html"><text>Möbius transformations map circles and lines to circles and lines (generalized circles on the Riemann sphere \(\mathbb{C}\cup\{\infty\}\)). They are the only conformal automorphisms of the Riemann sphere and form a group under composition.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Areas of regions</text><feedback format="html"><text>Möbius transformations are generally not area-preserving. Area-preserving conformal maps exist only for isometries of specific metrics.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Distances between points</text><feedback format="html"><text>Möbius transformations are not isometries of the Euclidean metric. Only specific maps (like isometries) preserve distances.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Cross-ratios and straight lines only</text><feedback format="html"><text>Cross-ratios ARE preserved, but Möbius transformations also map circles to circles/lines (not just straight lines to straight lines).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q08 Schwarz Lemma</text></name>
+    <questiontext format="html"><text><![CDATA[The Schwarz Lemma: Let \(f: \mathbb{D}\to\mathbb{D}\) be analytic with \(f(0)=0\), where \(\mathbb{D}=\{|z|<1\}\). Then \(|f(z)|\leq|z|\) for all \(z\in\mathbb{D}\) and \(|f'(0)|\leq 1\). Equality holds throughout iff \(f(z)=e^{i\theta}z\) for some real \(\theta\). What are the conformal automorphisms of \(\mathbb{D}\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Möbius transformations of the form \(e^{i\theta}\dfrac{z-a}{1-\bar{a}z}\) for \(|a|<1\) and \(\theta\in\mathbb{R}\)</text><feedback format="html"><text>These are the Blaschke factors times a rotation. They map \(\mathbb{D}\to\mathbb{D}\) bijectively. The Schwarz-Pick lemma generalizes the Schwarz lemma to all holomorphic maps \(\mathbb{D}\to\mathbb{D}\). The automorphism group of \(\mathbb{D}\) is \(\text{PSU}(1,1)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>All polynomials \(p(z)\) with \(|p(z)|<1\) on \(\mathbb{D}\)</text><feedback format="html"><text>Not all polynomials are automorphisms. Automorphisms must be bijective, and only the specific Möbius forms satisfy that.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Rotations \(e^{i\theta}z\) only</text><feedback format="html"><text>Rotations are the automorphisms of \(\mathbb{D}\) that fix the origin. The general automorphism also allows "moving" the fixed point to any \(a\in\mathbb{D}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Translations \(z+a\) for \(|a|<1\)</text><feedback format="html"><text>Translations do not preserve the disk. \(f(z)=z+a\) maps \(0\mapsto a\) and \(-a\mapsto 0\), but \(f(1-a/|a|)\) near the boundary exits the disk.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q09 Exponential and Trigonometric Functions</text></name>
+    <questiontext format="html"><text><![CDATA[The complex exponential is \(e^z = e^x(\cos y + i\sin y)\) for \(z=x+iy\). It satisfies \(e^{z+2\pi i} = e^z\) (periodic with period \(2\pi i\)). The zeros of \(\sin z = \dfrac{e^{iz}-e^{-iz}}{2i}\) are:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(z = n\pi\) for \(n \in \mathbb{Z}\)</text><feedback format="html"><text>\(\sin z = 0 \iff e^{iz} = e^{-iz} \iff e^{2iz} = 1 \iff 2iz = 2\pi i n \iff z = n\pi\). All zeros are real integers multiples of \(\pi\), same as the real function. Each zero is simple (since \((\sin z)' = \cos z \neq 0\) at \(z=n\pi\)).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(z = n\pi/2\) for \(n \in \mathbb{Z}\)</text><feedback format="html"><text>These are the zeros of \(\sin(2z)/2\). The zeros of \(\sin z\) are at \(n\pi\), not \(n\pi/2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(z = n\pi + i\log n\) for \(n \in \mathbb{Z}\backslash\{0\}\)</text><feedback format="html"><text>This is incorrect. The zeros of \(\sin z\) are exactly the real points \(n\pi\), the same as for the real sine function.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sin z\) has no zeros in \(\mathbb{C}\)</text><feedback format="html"><text>Incorrect. By FTA (or direct computation), \(\sin z\) has infinitely many zeros at \(z = n\pi\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q10 Branch of Logarithm</text></name>
+    <questiontext format="html"><text><![CDATA[The principal value of the logarithm is \(\text{Log}(z) = \ln|z| + i\text{Arg}(z)\) where \(\text{Arg}(z)\in(-\pi,\pi]\). The principal branch is analytic on \(\mathbb{C}\setminus(-\infty,0]\). Compute \(\text{Log}(-1+i)\):]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\dfrac{\ln 2}{2} + \dfrac{3\pi i}{4}\)</text><feedback format="html"><text>\(|-1+i| = \sqrt{1+1} = \sqrt{2}\), so \(\ln|-1+i| = \ln\sqrt{2} = \frac{\ln 2}{2}\). \(\text{Arg}(-1+i) = \pi - \pi/4 = 3\pi/4\) (second quadrant). Thus \(\text{Log}(-1+i) = \frac{\ln 2}{2} + \frac{3\pi i}{4}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\ln 2 + \dfrac{3\pi i}{4}\)</text><feedback format="html"><text>\(\ln|-1+i| = \ln\sqrt{2} = \frac{1}{2}\ln 2\), not \(\ln 2\). The modulus is \(\sqrt{2}\), not 2.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\ln 2}{2} - \dfrac{\pi i}{4}\)</text><feedback format="html"><text>The argument of \(-1+i\) is in the second quadrant: \(\text{Arg}(-1+i) = 3\pi/4\), not \(-\pi/4\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\dfrac{\ln 2}{2} + \dfrac{5\pi i}{4}\)</text><feedback format="html"><text>The principal argument must be in \((-\pi, \pi]\). The value \(5\pi/4 > \pi\) is not the principal argument.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q11 Open Mapping Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[The Open Mapping Theorem: a non-constant analytic function on a domain \(D\) maps open sets to open sets. Equivalently, if \(f\) is analytic and non-constant, then \(f\) is an open map. A direct consequence is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The Maximum Modulus Principle: \(|f|\) cannot attain its maximum in the interior of a domain</text><feedback format="html"><text>If \(|f|\) attained a maximum at interior \(z_0\), then \(f\) would map a neighborhood of \(z_0\) to a neighborhood of \(f(z_0)\). But points near \(f(z_0)\) with larger modulus would be in the image, contradicting \(|f(z_0)|\) being the maximum. The Open Mapping Theorem is thus stronger than MMP.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Every analytic function on a bounded domain has a continuous extension to the boundary</text><feedback format="html"><text>Analytic functions don't automatically extend continuously to the boundary (e.g., \(\exp(1/(z-1))\) near \(z=1\)). Extension theorems require additional conditions.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The real part of an analytic function is always positive</text><feedback format="html"><text>This is false; \(\text{Re}(z)\) is harmonic and can be negative. No such constraint holds.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Analytic functions are always surjective onto \(\mathbb{C}\)</text><feedback format="html"><text>Bounded entire functions (like constants) are not surjective. The Open Mapping Theorem doesn't imply surjectivity onto \(\mathbb{C}\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q12 Riemann Mapping Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[The Riemann Mapping Theorem: every simply connected proper subdomain of \(\mathbb{C}\) is conformally equivalent to the unit disk \(\mathbb{D}\). Which domain is NOT conformally equivalent to \(\mathbb{D}\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The entire complex plane \(\mathbb{C}\)</text><feedback format="html"><text>By Liouville's theorem, any bounded entire function is constant. If \(f:\mathbb{D}\to\mathbb{C}\) were conformal (bijective analytic), its inverse would be a bounded entire function on \(\mathbb{C}\), hence constant — a contradiction. The Riemann sphere \(\hat{\mathbb{C}}\) and \(\mathbb{C}\) are not conformally equivalent to \(\mathbb{D}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The upper half-plane \(\{z : \text{Im}(z)>0\}\)</text><feedback format="html"><text>The Cayley transform \(w=(z-i)/(z+i)\) maps the upper half-plane conformally onto \(\mathbb{D}\). It is conformally equivalent to \(\mathbb{D}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>A square region in \(\mathbb{C}\)</text><feedback format="html"><text>Any bounded simply connected domain (including a square) is conformally equivalent to \(\mathbb{D}\) by the Riemann Mapping Theorem.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The slit plane \(\mathbb{C}\setminus[0,\infty)\)</text><feedback format="html"><text>The slit plane is simply connected (removing a ray doesn't disconnect \(\mathbb{C}\)), so by RMT it is conformally equivalent to \(\mathbb{D}\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q13 Cauchy Estimates</text></name>
+    <questiontext format="html"><text><![CDATA[Cauchy's inequality: if \(f\) is analytic on \(|z-z_0|\leq R\) with \(|f(z)|\leq M\), then \(|f^{(n)}(z_0)| \leq \dfrac{n! M}{R^n}\). If \(f\) is entire and \(|f(z)|\leq A|z|^k + B\) for all \(z\), then by Cauchy's inequality:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(f\) is a polynomial of degree at most \(k\)</text><feedback format="html"><text>Apply Cauchy's inequality on \(|z|\leq R\): \(|f^{(n)}(0)|\leq n!(AR^k+B)/R^n\). For \(n>k\), as \(R\to\infty\): \(AR^k/R^n\to0\) and \(B/R^n\to0\), so \(f^{(n)}(0)=0\). Hence the Taylor series terminates at degree \(k\), making \(f\) a polynomial of degree \(\leq k\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f\) is identically zero</text><feedback format="html"><text>For instance, \(f(z) = z^k\) satisfies the bound and is not zero. The conclusion is that \(f\) is a polynomial of degree \(\leq k\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f\) is bounded, hence constant by Liouville</text><feedback format="html"><text>The bound \(A|z|^k+B\) allows growth (unless \(k=0\), in which case the bound is uniform and Liouville gives a constant).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f\) has exactly \(k\) zeros counted with multiplicity</text><feedback format="html"><text>The degree of a polynomial gives an upper bound on the number of zeros, not an exact count. Furthermore, we can only conclude degree \(\leq k\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q14 Zeros of Analytic Functions</text></name>
+    <questiontext format="html"><text><![CDATA[If \(f\) is analytic and not identically zero in a connected domain, then its zeros are isolated. If \(f\) has a zero of order \(m\) at \(z_0\), then \(f(z) = (z-z_0)^m g(z)\) where \(g\) is analytic with \(g(z_0)\neq 0\). The function \(f(z) = z^2\sin(1/z)\) for \(z\neq0\) and \(f(0)=0\). What is the nature of \(z=0\) for \(f\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>An essential singularity</text><feedback format="html"><text>\(\sin(1/z) = \sum_{n=0}^\infty \frac{(-1)^n}{(2n+1)!z^{2n+1}}\) has an essential singularity at 0. So \(z^2\sin(1/z) = z - \frac{1}{6z} + \cdots\) also has an essential singularity at 0 (the Laurent series has infinitely many negative powers). \(f(0)=0\) is defined but does not remove the singularity.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>A zero of order 2</text><feedback format="html"><text>Although \(f(0)=0\), the function has no convergent Taylor expansion at 0 (the Laurent series has infinitely many negative-power terms). It's an essential singularity, not a removable zero.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>A removable singularity</text><feedback format="html"><text>\(\lim_{z\to0}z^2\sin(1/z)\) does not exist (the function oscillates). So the singularity is not removable.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>A pole of order 1</text><feedback format="html"><text>A pole of order 1 would mean \(f(z)\approx c/z\) near 0. But \(z^2\sin(1/z)\) has infinitely many negative powers in its Laurent expansion, so it's an essential singularity.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q15 Weierstrass Factorization</text></name>
+    <questiontext format="html"><text><![CDATA[The Weierstrass factorization theorem guarantees that every entire function \(f\) can be written as \(f(z) = z^m e^{g(z)} \prod_{n=1}^\infty E_p(z/a_n)\) where \(\{a_n\}\) are the non-zero zeros of \(f\), \(E_p\) are elementary factors, and \(g\) is entire. For \(f(z) = \sin(\pi z)\), the factorization gives:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(\sin(\pi z) = \pi z \prod_{n=1}^\infty \left(1 - \dfrac{z^2}{n^2}\right)\)</text><feedback format="html"><text>The zeros of \(\sin(\pi z)\) are at \(z = n\) for \(n\in\mathbb{Z}\). The Weierstrass product is \(\pi z\prod_{n=1}^\infty(1-z^2/n^2)\). Taking \(\log\) and differentiating gives the partial fraction \(\pi\cot(\pi z) = \frac{1}{z}+\sum_{n=1}^\infty\frac{2z}{z^2-n^2}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sin(\pi z) = \pi z \prod_{n=1}^\infty \left(1 - \dfrac{z}{n}\right)\)</text><feedback format="html"><text>This product diverges. The correct formula pairs \(\pm n\) to get the convergent product \((1-z^2/n^2)\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sin(\pi z) = \prod_{n=-\infty}^\infty \left(z - n\right)\)</text><feedback format="html"><text>This infinite product diverges. The Weierstrass product requires convergence factors, and the result should equal \(\sin(\pi z)\) rather than a bare product of linear factors.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\sin(\pi z) = e^{\pi z} \prod_{n=1}^\infty \left(1 - \dfrac{z^2}{n^2}\right)\)</text><feedback format="html"><text>The prefactor should be \(\pi z\), not \(e^{\pi z}\). The function \(\sin(\pi z)/(\pi z)\) has the Euler product \(\prod_{n=1}^\infty(1-z^2/n^2)\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q16 Meromorphic Functions — Argument Principle</text></name>
+    <questiontext format="html"><text><![CDATA[The Argument Principle: if \(f\) is meromorphic in a domain containing a simple closed curve \(\gamma\) and has \(Z\) zeros and \(P\) poles inside \(\gamma\) (counted with multiplicity), then \(\dfrac{1}{2\pi i}\oint_\gamma \dfrac{f'(z)}{f(z)}\,dz = Z - P\). For \(f(z) = \dfrac{z^3}{z^2-1}\), how many net zeros does \(f\) have inside \(|z|=2\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(Z - P = 3 - 2 = 1\)</text><feedback format="html"><text>Zeros of \(f\): \(z^3=0\) gives \(z=0\) (order 3). So \(Z=3\). Poles: \(z^2-1=0\) gives \(z=\pm1\) (each simple). So \(P=2\). By the Argument Principle, \(\frac{1}{2\pi i}\oint_{|z|=2}\frac{f'}{f}dz = Z-P = 3-2 = 1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(Z - P = 3 - 0 = 3\)</text><feedback format="html"><text>The poles at \(z=\pm1\) are inside \(|z|=2\) and must be counted. \(P=2\), so \(Z-P=1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(Z - P = 1 - 2 = -1\)</text><feedback format="html"><text>Counting the zero of \(z^3\) as multiplicity 3 gives \(Z=3\), not 1. \(Z-P=3-2=1\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(Z - P = 0\)</text><feedback format="html"><text>Only if zeros and poles cancel completely would the net count be 0. Here \(Z=3\neq P=2\), so \(Z-P=1\).</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q17 Entire Functions of Finite Order</text></name>
+    <questiontext format="html"><text><![CDATA[The order of an entire function \(f\) is \(\rho = \limsup_{r\to\infty}\dfrac{\log\log M(r)}{\log r}\) where \(M(r) = \max_{|z|=r}|f(z)|\). The Hadamard factorization theorem states: an entire function of finite order \(\rho\) is determined (up to an exponential factor) by its zeros. What is the order of \(f(z) = e^{z^2}\)?]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>2</text><feedback format="html"><text>\(M(r) = \max_{|z|=r}|e^{z^2}| = e^{r^2}\) (maximized when \(z=r\) is real positive). \(\log M(r) = r^2\), \(\log\log M(r) = \log(r^2) = 2\log r\). So \(\rho = \lim_{r\to\infty}\frac{2\log r}{\log r} = 2\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>1</text><feedback format="html"><text>Order 1 corresponds to \(M(r) \sim e^{Cr}\) for some constant \(C\). Here \(M(r) = e^{r^2}\) grows faster, giving order 2.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(\infty\)</text><feedback format="html"><text>\(e^{z^2}\) has finite order 2. Functions of infinite order are things like \(e^{e^z}\).</text></feedback></answer>
+    <answer fraction="0" format="html"><text>0</text><feedback format="html"><text>Order 0 means sub-polynomial growth, like \(e^{\sqrt{z}}\) (order 1/2). Clearly \(e^{z^2}\) grows faster.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q18 Normal Families — Montel's Theorem</text></name>
+    <questiontext format="html"><text><![CDATA[Montel's theorem: a family \(\mathcal{F}\) of analytic functions on a domain \(D\) is normal (every sequence has a locally uniformly convergent subsequence) if it is locally uniformly bounded (for each compact \(K\subset D\), \(\sup_{f\in\mathcal{F}}\sup_{z\in K}|f(z)| < \infty\)). This is used in the proof of:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>The Riemann Mapping Theorem</text><feedback format="html"><text>The standard proof of RMT uses Montel's theorem: one considers the family of all injective analytic maps from \(D\) to \(\mathbb{D}\), shows it is normal (locally bounded), and extracts a convergent subsequence that achieves the extremum for \(|f'(z_0)|\). Montel's theorem is thus the key compactness tool.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The Cauchy integral formula</text><feedback format="html"><text>The Cauchy integral formula is proved directly from Green's theorem and contour integration, not from Montel's theorem.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The Fundamental Theorem of Algebra</text><feedback format="html"><text>FTA is proved using Liouville's theorem. Montel's theorem is a different tool used for compactness arguments.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The Cauchy-Riemann equations</text><feedback format="html"><text>The CR equations are the definition/characterization of complex differentiability, derived from the limit definition. They don't involve normal families.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q19 Schwarz-Christoffel Transformation</text></name>
+    <questiontext format="html"><text><![CDATA[The Schwarz-Christoffel formula maps the upper half-plane to a polygon. For a map to a rectangle with vertices at \(w_1, w_2, w_3, w_4\) (interior angles all \(\pi/2\)), the transformation involves:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>Elliptic integrals (the Schwarz-Christoffel map to a rectangle involves the Jacobi elliptic function)</text><feedback format="html"><text>For a rectangle, the SC formula gives \(f(z) = C\int_0^z \frac{dt}{\sqrt{(1-t^2)(1-k^2t^2)}} + C'\), which is an elliptic integral of the first kind. The inverse is the Jacobi elliptic function \(\text{sn}(w,k)\). The modulus \(k\) determines the aspect ratio of the rectangle.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>Purely polynomial transformations</text><feedback format="html"><text>Polynomial maps cannot conformally map the upper half-plane to a rectangle (a bounded polygon). SC transformations to polygons involve integrals, not polynomials.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>The logarithm function \(\log z\)</text><feedback format="html"><text>Logarithm maps an angle (wedge) to a strip, not a half-plane to a rectangle. Rectangles require elliptic integrals.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>A single Möbius transformation</text><feedback format="html"><text>Möbius transformations map generalized circles to generalized circles (and half-planes to disks), not to polygons with corners.</text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>CA25-Q20 Phragmén-Lindelöf Principle</text></name>
+    <questiontext format="html"><text><![CDATA[The Phragmén-Lindelöf principle extends the maximum modulus principle to unbounded domains. For a function analytic in the strip \(0 < \text{Re}(z) < 1\), continuous on the boundary, with \(|f(z)|\leq 1\) on both boundary lines, and satisfying a growth condition \(|f(z)| = O(e^{e^{a|y|}})\) with \(a < \pi\), the conclusion is:]]></text></questiontext>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.25</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>1</shuffleanswers>
+    <answernumbering>ABCD</answernumbering>
+    <answer fraction="100" format="html"><text>\(|f(z)| \leq 1\) throughout the strip</text><feedback format="html"><text>The Phragmén-Lindelöf theorem says: if \(f\) is bounded on the boundary of an unbounded domain and satisfies a sub-exponential growth condition, then the boundary bound holds throughout the domain. For the strip with growth \(O(e^{e^{a|y|}})\) and \(a<\pi\), the modulus bound \(|f|\leq 1\) extends to the interior — even though the domain is unbounded.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(|f(z)| \leq e^{\pi}\) throughout the strip</text><feedback format="html"><text>The Phragmén-Lindelöf principle under the stated conditions gives \(|f|\leq 1\) (the same bound as on the boundary), not an enhanced bound.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>\(f\) must be constant in the strip</text><feedback format="html"><text>Bounded on boundary does not imply constancy (that would be Liouville for bounded domains). The conclusion is the bound \(|f|\leq 1\) in the strip.</text></feedback></answer>
+    <answer fraction="0" format="html"><text>No conclusion can be drawn without the compact domain condition</text><feedback format="html"><text>The Phragmén-Lindelöf principle specifically handles unbounded domains. The growth condition replaces compactness and allows the maximum principle to extend.</text></feedback></answer>
+  </question>
+
+</quiz>
