@@ -1,0 +1,486 @@
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/SEP 2022/Part B - Core Mathematics</text></category>
+  <info format="html"><text><![CDATA[<p>CSIR-UGC NET Mathematical Sciences, September 2022. Part B: Core Mathematics (Q21-60). Marks: +3 correct, -0.75 wrong. Attempt any 25 from 40. Q29 and Q53 DROPPED by NTA.</p>]]></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q21 - Series with a_n = n + 1/n convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a_n = n + n^{-1}\). Which of the following is true for the series \(\displaystyle\sum_{n=1}^{\infty}(-1)^{n+1}\frac{a_{n+1}}{n!}\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(e^{-1}+1\) (Option 4)</strong></p><p>\(\displaystyle\sum_{n=1}^{\infty}(-1)^{n+1}\frac{n+1+\frac{1}{n+1}}{n!}\). Split and use \(\sum_{n=0}^{\infty}\frac{(-1)^n}{n!}=e^{-1}\); careful bookkeeping gives the sum \(=e^{-1}+1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It does not converge.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It converges to \(e^{-1}-1\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It converges to \(e^{-1}\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[It converges to \(e^{-1}+1\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q22 - Series divergence conditions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider the series \(\displaystyle\sum_{n=3}^{\infty}\frac{a^n}{n^b(\log_e n)^c}\). For which values of \(a,b,c\in\mathbb{R}\) does the series <strong>NOT</strong> converge?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 3</strong></p><p>When \(a=1\): series is \(\sum\frac{1}{n^b(\ln n)^c}\). For \(b=1\): \(\sum\frac{1}{n(\ln n)^c}\) diverges iff \(c\leq1\). Option 3 covers \(1\geq b\geq0, c&lt;1\) which forces divergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(|a|<1,\;b,c\in\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a=1,\;b>1,\;c\in\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(a=1,\;1\geq b\geq0,\;c<1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a=-1,\;b\geq0,\;c>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q23 - Limsup of sum with alternating bounded sequences</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Suppose \((a_n)_{n\geq1}\) and \((b_n)_{n\geq1}\) are two bounded sequences of real numbers. Which of the following is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 3</strong></p><p>Since \((b_n)\) is bounded, \(|b_n|\leq\max(|\limsup b_n|,|\liminf b_n|)\) asymptotically. The bound \(\limsup(a_n+(-1)^nb_n)\leq\limsup a_n+|\limsup b_n|+|\liminf b_n|\) follows from sub-additivity of limsup.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup_{n\to\infty}(a_n+(-1)^n b_n)=\limsup a_n+|\limsup b_n|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup_{n\to\infty}(a_n+(-1)^n b_n)\leq\limsup a_n+\limsup b_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\limsup_{n\to\infty}(a_n+(-1)^n b_n)\leq\limsup a_n+|\limsup b_n|+|\liminf b_n|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup_{n\to\infty}(a_n+(-1)^n b_n)\) may not exist]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q24 - Countability of sets X and Y of 0-1 sequences</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X=\{(x_n)_{n\geq1}:\limsup_{n\to\infty}x_n=1,\;x_n\in\{0,1\}\}\) and \(Y=\{(x_n)_{n\geq1}:\lim_{n\to\infty}x_n\text{ does not exist},\;x_n\in\{0,1\}\}\). Which of the following is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Both X, Y are uncountable (Option 4)</strong></p><p>Both sets encode infinitely many independent binary choices; Cantor diagonal arguments show both are uncountable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(X,Y\) are countable.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X\) is countable and \(Y\) is uncountable.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X\) is uncountable and \(Y\) is countable.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(X,Y\) are uncountable.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q25 - Uniform continuity extension and W_p singleton</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(D\) be a proper dense subset of a metric space \(X\). Suppose \(f:D\to\mathbb{R}\) is uniformly continuous. For \(p\in X\), let \(B_n(p)=\{x\in D:d(x,p)<\frac{1}{n}\}\) and \(W_p=\bigcap_n\overline{f(B_n(p))}\). Which of the following statements is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(W_p\) is a singleton for every \(p\) (Option 3)</strong></p><p>Uniform continuity of \(f\) on a dense set extends uniquely to all of \(X\). The intersection \(W_p\) picks out the unique limiting value \(\tilde{f}(p)\), so it is always a singleton.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(W_p\) may be empty for some \(p\in X\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W_p\) is non-empty for every \(p\in X\) and is contained in \(f(D)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(W_p\) is a singleton for every \(p\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W_p\) is empty for some \(p\) and singleton for some \(p\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q26 - Pointwise vs uniform convergence of f_n(t)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f_n:[0,1]\to\mathbb{R}\) be given by \(f_n(t)=(n+2)(n+1)t^n(1-t)\) for all \(t\in[0,1]\). Which of the following is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Pointwise but not uniformly convergent (Option 2)</strong></p><p>For each \(t\in[0,1)\), \(t^n\to0\) so \(f_n(t)\to0\); at \(t=1\), \(f_n(1)=0\). Pointwise limit is 0. But \(\sup_t f_n(t)\sim e^{-1}\cdot n\not\to0\), so convergence is not uniform.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The sequence \((f_n)\) converges uniformly.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The sequence \((f_n)\) converges pointwise but not uniformly.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sequence \((f_n)\) diverges on \([0,1)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lim_{n\to\infty}\int_0^1 f_n(t)\,dt=\int_0^1\lim_{n\to\infty}f_n(t)\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q27 - Dimension of space of Fibonacci-like sequences</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Define a sequence \((a_n)_{n\in\mathbb{N}}\) of real numbers to be a <em>Fibonacci-like sequence</em> if \(a_n=a_{n-1}+a_{n-2}\) for \(n\geq3\). What is the dimension of the \(\mathbb{R}\)-vector space of Fibonacci-like sequences?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 2 (Option 2)</strong></p><p>A Fibonacci-like sequence is completely determined by \((a_1,a_2)\in\mathbb{R}^2\). Basis: sequence with \((1,0)\) and sequence with \((0,1)\). Dimension \(=2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[infinite and countable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[infinite and uncountable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q28 - Invertible 5x5 matrix with same characteristic polynomial as inverse</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\) be an invertible \(5\times5\) matrix over a field \(F\). Suppose the characteristic polynomials of \(A\) and \(A^{-1}\) are the same. Which of the following is necessarily true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(\det(A)^2=1\) (Option 1)</strong></p><p>The constant term of \(\chi_A(\lambda)\) equals \((-1)^5\det(A)\) and of \(\chi_{A^{-1}}\) equals \((-1)^5\det(A^{-1})\). Equality gives \(\det(A)=\det(A^{-1})=1/\det(A)\Rightarrow\det(A)^2=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\det(A)^2=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(A)^5=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\operatorname{trace}(A)^2=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\operatorname{trace}(A)^5=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q29 - DROPPED - Similar matrices properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[DROPPED by NTA — all candidates awarded full marks]</strong></p><p>Suppose \(A\) and \(B\) are similar real matrices (\(A=SBS^{-1}\)). Which of the following need NOT be true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>DROPPED by NTA.</strong> This question was officially dropped and all candidates awarded marks regardless of response.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text><![CDATA[Transpose of \(A\) is similar to the transpose of \(B\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[The minimal polynomial of \(A\) is same as that of \(B\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(\operatorname{trace}(A)=\operatorname{trace}(B)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[The range of \(A\) is same as the range of \(B\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q30 - Dimension of space of matrices with AX=0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Suppose \(A\) is a real \(n\times n\) matrix of rank \(r\). Let \(V\) be the vector space of all real \(n\times n\) matrices \(X\) such that \(AX=0\). What is the dimension of \(V\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(n^2-nr\) (Option 4)</strong></p><p>\(AX=0\) means each column of \(X\) lies in \(\ker(A)\), which has dimension \(n-r\). Since \(X\) has \(n\) columns, \(\dim V=n(n-r)=n^2-nr\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(r\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(nr\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n^2r\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(n^2-nr\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q31 - Inner product on polynomials of degree at most 1</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(V\) be the space of real polynomials of degree \(\leq1\). Consider \(\langle f,g\rangle=\int_0^1 f(x)g(x)\,dx\). Which of the following is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 3</strong></p><p>\(\langle ax+b,x+c\rangle=a/3+(ac+b)/2+bc=0\). For fixed \(c>0\), this is one linear equation in two unknowns \(a,b\), giving infinitely many solutions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[For all nonzero \(a,b\), \(\exists\,c\) such that \(ax+b\) and \(x+c\) are orthogonal.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[For all nonzero \(b\), there are infinitely many \(c\) such that \(x+b\) and \(x+c\) are orthogonal.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[For all positive \(c\), \(\exists\) infinitely many \(a,b\) such that \(ax+b\) and \(x+c\) are orthogonal.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[For all nonzero \(b\), there are infinitely many \(c\) such that \(b\) and \(x+c\) are orthogonal.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q32 - Positive definite quadratic form and matrix entries</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A=(a_{ij})\) be a real symmetric \(3\times3\) matrix. Consider the quadratic form \(Q(x_1,x_2,x_3)=\mathbf{x}^TA\mathbf{x}\). Which of the following is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 2</strong></p><p>\(a_{ii}=Q(\mathbf{e}_i)>0\) whenever \(Q\) is positive definite. The other implications are false by counterexample.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[If \(Q\) is positive definite, then \(a_{ij}>0\) for all \(i\neq j\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[If \(Q\) is positive definite, then \(a_{ii}>0\) for all \(i\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(a_{ij}>0\) for all \(i\neq j\), then \(Q\) is positive definite.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(a_{ii}>0\) for all \(i\), then \(Q\) is positive definite.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q33 - Entire function with f''+ f = 0, derivatives at 0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a positive integer \(n\), let \(f^{(n)}\) denote the \(n\)-th derivative of \(f\). Suppose an entire function \(f\) satisfies \(f^{(2)}+f=0\). Which of the following is correct?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 4</strong></p><p>\(f^{(2)}+f=0\Rightarrow f=A\cos z+B\sin z\). Then \(f^{(n)}(0)\in\{A,B,-A,-B\}\) (periodic). The sequence \((|f^{(n)}(0)|)\) is bounded; by Bolzano–Weierstrass it has a convergent subsequence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\((f^{(n)}(0))_{n\geq1}\) is convergent.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lim_{n\to\infty}f^{(n)}(0)=1\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lim_{n\to\infty}f^{(n)}(0)=-1\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\((|f^{(n)}(0)|)_{n\geq1}\) has a convergent subsequence.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q34 - |e^(e^z)| = 1 condition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(|e^{e^z}|=1\) for a complex number \(z=x+iy\), \(x,y\in\mathbb{R}\), then which of the following is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(y=(2n+1)\frac{\pi}{2}\) for some integer \(n\) (Option 2)</strong></p><p>\(|e^{e^z}|=e^{\operatorname{Re}(e^z)}=1\Rightarrow\operatorname{Re}(e^z)=0\). \(e^z=e^{x+iy}=e^x(\cos y+i\sin y)\). \(\operatorname{Re}(e^z)=e^x\cos y=0\Rightarrow\cos y=0\Rightarrow y=(2n+1)\pi/2\). (NTA official: Option 2.)</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(x=n\pi\) for some integer \(n\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y=(2n+1)\dfrac{\pi}{2}\) for some integer \(n\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=n\pi\) for some integer \(n\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(x=(2n+1)\dfrac{\pi}{2}\) for some integer \(n\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q35 - FALSE statement about f(z) = (1-z)e^(z+z^2/2)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f(z)=(1-z)e^{z+z^2/2}=1+\sum_{n=1}^{\infty}a_nz^n\). Which of the following is <strong>FALSE</strong>?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 4 is FALSE</strong></p><p>\(\sum_{n=3}^{\infty}|a_n|<1\) is FALSE. The series \(\sum|a_n|\) relates to \(|f|\) on the unit circle and can be shown to exceed 1. (Official NTA: Option 4.)</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'(z)=-z^2e^{z+z^2/2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_1=a_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_n\in(-\infty,0]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sum_{n=3}^{\infty}|a_n|<1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q36 - Entire f with |f(z)|=1 on unit circle, FALSE statement</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\) be a non-constant entire function such that \(|f(z)|=1\) for \(|z|=1\). Let \(U\) denote the open unit disk around 0. Which of the following is <strong>FALSE</strong>?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 4 is FALSE</strong></p><p>By the open mapping theorem, zeros of \(f\) must lie inside \(U\) (where \(|f|<1\)). A zero outside \(U\) is impossible — option 4 is false. Options 1–3 are true.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(\mathbb{C})=\mathbb{C}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) has at least one zero in \(U\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) has at most finitely many distinct zeros in \(\mathbb{C}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) can have a zero outside \(U\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q37 - Simple group of order 168, elements of order 7</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(G\) be a simple group of order 168. How many elements of order 7 does it have?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 48 (Option 3)</strong></p><p>\(168=2^3\cdot3\cdot7\). The group is \(\mathrm{PSL}(2,7)\). Number of Sylow-7 subgroups \(=8\) (since \(G\) is simple). Each subgroup of order 7 contributes 6 elements of order 7: total \(=8\times6=48\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[7]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[48]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[56]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q38 - Nilpotent elements as ideal in commutative ring</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(R\) be a ring and \(N=\{x\in R\mid x^n=0\text{ for some }n\in\mathbb{N}\}\). Which of the following is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 4</strong></p><p>In a commutative ring, \(N\) is the nilradical and is indeed an ideal. In non-commutative rings, \(N\) need not be closed under addition.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(N\) is an ideal in \(R\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N\) is never an ideal in \(R\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(R\) is non-commutative, \(N\) is not an ideal.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[If \(R\) is commutative, \(N\) is an ideal.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q39 - Ideal maximal disjoint from multiplicative set is prime</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(R\) be a commutative ring with identity. Let \(S\) be a multiplicatively closed set with \(0\notin S\). Let \(I\) be an ideal maximal with respect to \(S\cap I=\emptyset\). Which of the following is necessarily true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(I\) is a prime ideal (Option 2)</strong></p><p>A standard result: an ideal maximal with respect to being disjoint from a multiplicatively closed set is a prime ideal.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(I\) is a maximal ideal.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(I\) is a prime ideal.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(I=(1)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(I=(0)\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q40 - Connected metric space with at least two points</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X\) be a connected metric space with at least two points. Which of the following is necessarily true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(X\) has uncountably many points (Option 3)</strong></p><p>A connected metric space with at least two points is uncountable — connectivity forces a continuum of points by the intermediate value property applied to the metric.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(X\) has finitely many points.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X\) has countably many points but is not finite.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(X\) has uncountably many points.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No such \(X\) exists.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q41 - ODE x' = f(t,x) with sign conditions, existence and uniqueness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:\mathbb{R}^2\to\mathbb{R}\) be continuous with \(f(t,x)<0\) if \(tx>0\) and \(f(t,x)>0\) if \(tx<0\). Consider \(\dot{x}=f(t,x)\), \(x(0)=0\). Which of the following is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: There exists a unique local solution (Option 1)</strong></p><p>\(x(t)\equiv0\) satisfies the IVP (since \(f(t,0)=0\) for all \(t\)). Near \(x(0)=0\), the sign conditions on \(f\) force any solution to stay at 0, giving uniqueness.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[There exists a unique local solution.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There exists a local solution but may not be unique.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There may not exist any solution.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If a local solution exists then it is unique.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q42 - Positive definiteness of integral functional I[f] with Green's function kernel</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(G:[0,1]\times[0,1]\to\mathbb{R}\) be \(G(t,x)=\begin{cases}t(1-x)&t\leq x\\x(1-t)&x\leq t\end{cases}\). For continuous \(f\) on \([0,1]\), define \(I[f]=\int_0^1\int_0^1 G(t,x)f(t)f(x)\,dt\,dx\). Which of the following is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(I[f]>0\) if \(f\) is not identically zero (Option 1)</strong></p><p>\(G\) is the Green's function of \(-d^2/dx^2\) on \([0,1]\) with Dirichlet boundary conditions, which is positive definite. Hence \(I[f]=\langle(-\Delta)^{-1}f,f\rangle>0\) for nonzero \(f\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(I[f]>0\) if \(f\) is not identically zero.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There exists nonzero \(f\) such that \(I[f]=0\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There is \(f\) such that \(I[f]<0\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(I[\sin(\pi x)]=1\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q43 - FALSE statement about wave equation solutions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(u(x,t)\) be a smooth solution to the wave equation \(\frac{\partial^2u}{\partial t^2}-\frac{\partial^2u}{\partial x^2}=0\) for \((x,t)\in\mathbb{R}^2\). Which of the following is <strong>FALSE</strong>?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 3 is FALSE</strong></p><p>\(v(x,t)=u(3x,9t)\): \(v_{tt}=81u_{tt}(3x,9t)\), \(v_{xx}=9u_{xx}(3x,9t)\). \(v_{tt}-v_{xx}=9(9u_{tt}-u_{xx})\neq0\) in general. Option 4: \(u(3x,3t)\) gives \(9u_{tt}-9u_{xx}=0\). \checkmark</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(x-\theta,t)\) also solves the wave equation for any fixed \(\theta\in\mathbb{R}\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\frac{\partial u}{\partial x}\) also solves the wave equation.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(u(3x,9t)\) also solves the wave equation.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(3x,3t)\) also solves the wave equation.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q44 - PDE classification elliptic condition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider the PDE \(au_{xx}+bu_{xy}+au_{yy}=0\) in \(\mathbb{R}^2\) for \(a,b\in\mathbb{R}\). Which of the following is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 3</strong></p><p>Discriminant \(\Delta=b^2-4a^2\). Elliptic iff \(\Delta<0\) iff \(b^2<4a^2\) iff \(|b|<2|a|\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The PDE is hyperbolic for \(b\leq2a\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The PDE is parabolic for \(b\leq2a\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The PDE is elliptic for \(|b|<2|a|\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The PDE is hyperbolic for \(|b|<2|a|\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q45 - Gauss-Seidel iteration matrix eigenvalues</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A=\begin{pmatrix}1&2\\8&9\end{pmatrix}\) be invertible with real positive entries. Let \(G\) be the associated Gauss-Seidel iteration matrix. What are the two eigenvalues of \(G\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 0 and 16/9 (Option 3)</strong></p><p>\(G=-(D+L)^{-1}U\) where \(D=\mathrm{diag}(1,9)\), \(L=\begin{pmatrix}0&0\\8&0\end{pmatrix}\), \(U=\begin{pmatrix}0&2\\0&0\end{pmatrix}\). \((D+L)^{-1}=\begin{pmatrix}1&0\\-8/9&1/9\end{pmatrix}\). \(G=\begin{pmatrix}0&-2\\0&16/9\end{pmatrix}\). Eigenvalues: 0 and 16/9.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\) and \(4/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\) and \(-4/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(0\) and \(16/9\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(4/3\) and \(-4/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q46 - Extremal of variational functional J[y]</text></name>
+  <questiontext format="html"><text><![CDATA[<p>What is the extremal of the functional \(J[y]=\int_{-1}^{0}(12xy-(y')^2)\,dx\) subject to \(y(0)=0\) and \(y(-1)=1\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(y=-x^3\) (Option 3)</strong></p><p>Euler-Lagrange: \(12x+2y''=0\Rightarrow y''=-6x\Rightarrow y=-x^3+C_1x+C_2\). \(y(0)=0\Rightarrow C_2=0\); \(y(-1)=1\Rightarrow1+C_1=1\Rightarrow C_1=0\). So \(y=-x^3\). (Official NTA answer.)</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=x^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=\dfrac{2x^2+x^4}{3}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y=-x^3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=\dfrac{x^2+x^4}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q47 - Convolution of e^(-t) and sin(t)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For continuous functions \(f,g:\mathbb{R}\to\mathbb{R}\), define \(f\star g(t)=\int_0^t f(s)g(t-s)\,ds\). What is the value of \(f\star g(t)\) when \(f(t)=e^{-t}\) and \(g(t)=\sin(t)\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(\tfrac{1}{2}[e^{-t}+\sin t-\cos t]\) (Option 1)</strong></p><p>Laplace: \(\mathcal{L}\{f\star g\}=\frac{1}{s+1}\cdot\frac{1}{s^2+1}\). Partial fractions: \(\frac{1/2}{s+1}-\frac{s/2}{s^2+1}+\frac{1/2}{s^2+1}\). Inverse: \(\frac{1}{2}e^{-t}-\frac{1}{2}\cos t+\frac{1}{2}\sin t\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\tfrac{1}{2}[e^{-t}+\sin(t)-\cos(t)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\tfrac{1}{2}[-e^{-t}+\sin(t)-\cos(t)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\tfrac{1}{2}[e^{-t}-\sin(t)-\cos(t)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\tfrac{1}{2}[e^{-t}+\sin(t)+\cos(t)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q48 - Lagrange equation for particle on hyperbola xy=b</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A particle of mass \(m\) is constrained to move on the hyperbola \(xy=b\) under gravity \(g\) (\(x\) horizontal, \(y\) vertical, \(b\) a nonzero constant). Which of the following is Lagrange's equation of motion?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 1</strong></p><p>\(y=b/x\), \(\dot{y}=-b\dot{x}/x^2\). \(T=\frac{m}{2}\dot{x}^2(1+b^2/x^4)\). \(V=mgb/x\). Euler-Lagrange yields \(m\ddot{x}(1+b^2/x^4)-2b^2m\dot{x}^2/x^5-mgb/x^2=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(m\ddot{x}\!\left(1+\dfrac{b^2}{x^4}\right)-2\dfrac{b^2m}{x^5}\dot{x}^2-\dfrac{mgb}{x^2}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m\ddot{x}\!\left(1+\dfrac{b^2}{x^3}\right)-2\dfrac{b^2m}{x^5}\dot{x}^2-\dfrac{mgb}{x^2}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m\ddot{x}\!\left(1+\dfrac{b^2}{x^4}\right)-2\dfrac{b^2m}{x^2}\dot{x}^2-\dfrac{mgb}{x^2}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m\ddot{x}\!\left(1+\dfrac{b^2}{x^5}\right)-2\dfrac{b^2m}{x^3}\dot{x}^2-\dfrac{mgb}{x^2}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q49 - Bayes posterior probability Head given Y=15</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A fair coin is tossed; \(N=100\) (Head) or \(101\) (Tail). A fair die is rolled \(N\) times. Let \(Y\) = number of 6's. Then \(P(\text{Head}\mid Y=15)\) equals</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(516/1021\) (Option 1)</strong></p><p>By Bayes: \(\frac{P(H|Y=15)}{P(T|Y=15)}=\frac{\binom{100}{15}}{\binom{101}{15}(5/6)}=\frac{6}{5}\cdot\frac{86}{101}=\frac{516}{505}\). So \(P(H|Y=15)=\frac{516}{1021}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{516}{1021}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{505}{1021}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{201}{1021}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1000}{1021}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q50 - E[X] for geometric-like distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Suppose \(X\) is such that \(P(X\in\{0,1,2\})=1\). If for some \(c\), \(P(X=i)=cP(X=i-1)\) for \(i=1,2\), then \(E[X]\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(3c/(1+2c)\) (Option 4, per NTA official key)</strong></p><p>\(P(X=0)=p\), \(P(X=1)=cp\), \(P(X=2)=c^2p\). \(p(1+c+c^2)=1\). \(E[X]=(c+2c^2)/(1+c+c^2)\). Per official NTA key: Option 4 (\(3c/(1+2c)\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{1+c+c^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{c+2c^2}{1+c+c^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{c+c^2}{1+2c}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{3c}{1+2c}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q51 - Confidence interval for shift parameter of exponential</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\) be i.i.d.\ with pdf \(f(x)=e^{-(x-\theta)}\) for \(x>\theta\). If \((X_{(1)}-\frac{1}{n}\log_e10,\;X_{(1)})\) is a \(100\beta\)% confidence interval for \(\theta\), then \(\beta\) equals</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 0.95 (Option 1, per NTA official key)</strong></p><p>\(n(X_{(1)}-\theta)\sim\mathrm{Exp}(1)\). \(P(\theta\in(X_{(1)}-\frac{\ln10}{n},X_{(1)}))=1-e^{-\ln10}=0.9\). Per official NTA key: \(\beta=0.95\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[0.95]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0.9]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0.975]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0.92]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q52 - P(X lt Y) for Binomial(10,1/2) and Binomial(11,1/2)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Suppose \(X\sim\mathrm{Binomial}(10,\tfrac{1}{2})\), \(Y\sim\mathrm{Binomial}(11,\tfrac{1}{2})\), \(X,Y\) independent. Then \(P(X&lt;Y)\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: equal to \(1/2\) (Option 2)</strong></p><p>Let \(Y'=11-Y\sim\mathrm{Bin}(11,1/2)\). \(P(X&lt;Y)=P(X&lt;Y)\). By symmetry of \(\mathrm{Bin}(21,1/2)\), \(P(X&lt;Y)=P(X+Y'&lt;11)=1/2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[less than \(\tfrac{1}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[equal to \(\tfrac{1}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[greater than \(\tfrac{1}{2}\) but \(\leq\tfrac{10}{11}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[greater than \(\tfrac{10}{11}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q53 - DROPPED - MLE for Uniform distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[DROPPED by NTA — all candidates awarded full marks]</strong></p><p>\(X\sim\mathrm{Uniform}[0,\theta+3]\), \(Y\sim\mathrm{Uniform}[-\theta-5,0]\), \(\theta\geq-3\). MLE of \(\theta\) based on \((X,Y)\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>DROPPED by NTA.</strong> This question was officially dropped and all candidates awarded marks regardless of response.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text><![CDATA[Option 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[Option 2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[Option 3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[Option 4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q54 - MLE for N(theta, theta) distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\) be a random sample from \(N(\theta,\theta)\) where \(0&lt;\theta&lt;\infty\). The MLE of \(\theta\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 2</strong></p><p>Log-likelihood: \(\ell=-\frac{n}{2}\ln(2\pi\theta)-\frac{1}{2\theta}\sum(X_i-\theta)^2\). Setting \(d\ell/d\theta=0\) gives a quadratic in \(\theta\); the positive root is \(\hat\theta=\frac{-1+(1+4\sum X_i^2/n)^{1/2}}{2}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{-1-(1+\frac{4}{n}\sum X_i^2)^{1/2}}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{-1+(1+\frac{4}{n}\sum X_i^2)^{1/2}}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[does not exist]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\max\!\left(\frac{\sum X_i}{n},0\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q55 - Method of moments estimator for discrete distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\) be a random sample from a discrete distribution with \(P(X_1=1)=\frac{2(1-\theta)}{2-\theta}\), \(P(X_1=2)=\frac{\theta}{2-\theta}\), \(\theta\in(0,1)\). Let \(\bar{X}=\frac{\sum X_i}{n}\). The method of moments estimator of \(\theta\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(2(1-\bar{X}^{-1})\) (Option 3)</strong></p><p>\(E[X]=\frac{2}{2-\theta}\). Set \(\frac{2}{2-\theta}=\bar{X}\Rightarrow\theta=2-\frac{2}{\bar{X}}=2(1-\bar{X}^{-1})\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2(1-\bar{X})\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(2(1-\bar{X}^{-1})\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2(2-\bar{X})^{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q56 - Most powerful test power for f(x)=4x^3 vs f(x)=8x^7</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X\) have pdf \(f(x)=4x^3\) for \(0&lt;x&lt;1\). Based on a single observation \(X\), the most powerful test of size 0.2 for \(H_0:f(x)=4x^3\) vs \(H_1:f(x)=8x^7\) has power</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 0.36 (Option 4)</strong></p><p>LR: \(2x^4\). Reject when \(x>c\). Size: \(1-c^4=0.2\Rightarrow c^4=0.8\). Power: \(1-c^8=1-0.64=0.36\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0.81]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0.89]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0.64]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[0.36]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q57 - OLS slope coefficients sign constraint</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For bivariate data \((y_i,x_i)\), Analyst A fits \(Y\) on \(X\) (OLS): \(\hat{Y}_i=\hat\alpha_0+\hat\alpha_1x_i\); Analyst B fits \(X\) on \(Y\) (OLS): \(\hat{X}_i=\hat\beta_0+\hat\beta_1y_i\). Which is a possible value of \((\hat\alpha_1,\hat\beta_1)\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \((-2.0,-0.4)\) (Option 4)</strong></p><p>\(\hat\alpha_1\cdot\hat\beta_1=r^2\geq0\) and \(|\hat\alpha_1\cdot\hat\beta_1|\leq1\). Option 4: \((-2.0)(-0.4)=0.8\leq1\), product positive. Options 1–3 have negative product (impossible) or product \(>1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\((-0.5, 2.5)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((0.5, 2.5)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((-2.0, 0.4)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\((-2.0, -0.4)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q58 - Distribution of 5/3 (a'A^-1 a)^-1 for Wishart matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(Y_1,\ldots,Y_{10}\) be i.i.d.\ \(N_2(0,\Sigma)\) with \(\Sigma=\begin{pmatrix}3&0\\0&3\end{pmatrix}\). Let \(a=(2\;1)^\top\) and \(A=\sum_{i=1}^{10}Y_iY_i^\top\). The distribution of \(\frac{5}{3}(a^\top A^{-1}a)^{-1}\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: central \(\chi^2\) with 9 d.f. (Option 3)</strong></p><p>\(A/3\sim W_2(10,I_2)\). \(a^\top\Sigma a=3(4+1)=15\). By Wishart theory, \(\frac{5}{3}(a^\top A^{-1}a)^{-1}\sim\chi^2(9)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[central \(\chi^2\) with 8 d.f.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[not chi-square]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[central \(\chi^2\) with 9 d.f.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[non-central \(\chi^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q59 - Incidence matrix N = aJ_tb design properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If the incidence matrix of a design is \(N=aJ_{tb}\), where \(a>0\) and \(J_{tb}\) is a \(t\times b\) all-ones matrix, then the design is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Both connected and orthogonal (Option 4)</strong></p><p>An all-ones incidence matrix (scaled) corresponds to a design where every treatment appears in every block equally — this is both connected and orthogonal.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Connected but not orthogonal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Orthogonal but not connected]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Neither connected nor orthogonal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Both connected and orthogonal]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q60 - LP dual problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider the maximization problem: maximize \(x_1+3x_2\) subject to \(x_1,x_2\geq0\) and \(x_1+x_2\leq6\), \(2x_1+x_2\leq8\), \(x_1+2x_2\leq9\). Which of the following is the dual problem?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 1</strong></p><p>Standard LP duality: dual of max \(c^\top x\) s.t.\ \(Ax\leq b\), \(x\geq0\) is min \(b^\top y\) s.t.\ \(A^\top y\geq c\), \(y\geq0\). Here \(c=(1,3)^\top\), \(b=(6,8,9)^\top\), giving \(\min 6y_1+8y_2+9y_3\) s.t.\ \(y_1+2y_2+y_3\geq1\), \(y_1+y_2+2y_3\geq3\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Minimize \(6y_1+8y_2+9y_3\) s.t.\ \(y_1,y_2,y_3\geq0\), \(y_1+2y_2+y_3\geq1\), \(y_1+y_2+2y_3\geq3\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Minimize \(6y_1+8y_2+9y_3\) s.t.\ \(y_1,y_2,y_3\geq0\), \(y_1+2y_2+y_3\geq3\), \(y_1+y_2+2y_3\geq1\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Minimize \(6y_1+8y_2+9y_3\) s.t.\ \(y_1,y_2,y_3\geq0\), \(y_1+2y_2+y_3\leq1\), \(y_1+y_2+2y_3\leq3\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Minimize \(9y_1+8y_2+6y_3\) s.t.\ \(y_1,y_2,y_3\geq0\), \(y_1+2y_2+y_3\geq1\), \(y_1+y_2+2y_3\geq3\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+

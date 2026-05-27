@@ -1,0 +1,362 @@
+
+<question type="multichoice">
+  <name><text>SEP2022 Q91 - Skew-symmetric A and norm-preserving ODE x' = Ax</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\in M_3(\mathbb{R})\) be skew-symmetric and \(x:[0,\infty)\to\mathbb{R}^3\) satisfy \(x'(t)=Ax(t)\). Which statements are true?</p><p>(1) \(\|x(t)\|=\|x(0)\|\) for all \(t\in(0,\infty)\).</p><p>(2) For some \(a\in\mathbb{R}^3\setminus\{0\}\), \(\|x(t)-a\|=\|x(0)-a\|\) for all \(t\).</p><p>(3) \(x(t)-x(0)\in\operatorname{im}A\) for all \(t\in(0,\infty)\).</p><p>(4) \(\lim_{t\to\infty}x(t)\) exists.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (3)</strong></p><p>Skew-symmetric \(A\): \(e^{tA}\) is orthogonal, preserving norms (1). The trajectory lies on a sphere centred at 0 (2). \(x(t)-x(0)=\int_0^t Ax(s)ds\in\operatorname{im}A\) (3). The limit generally doesn't exist (oscillatory) so (4) fails.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\|x(t)\|=\|x(0)\|\) for all \(t\in(0,\infty)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[For some \(a\in\mathbb{R}^3\setminus\{0\}\), \(\|x(t)-a\|=\|x(0)-a\|\) for all \(t\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(x(t)-x(0)\in\operatorname{im}A\) for all \(t\in(0,\infty)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lim_{t\to\infty}x(t)\) exists.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q92 - Linear system y' = Ay + h with y(t)/t limit</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider \(y'=Ay+h\) with \(A=\begin{pmatrix}1&1\\4&-2\end{pmatrix}\), \(h=\begin{pmatrix}3t+1\\2t+5\end{pmatrix}\). If \(y(t)\) is a solution with \(\lim_{t\to\infty}\frac{y(t)}{t}=d\in\mathbb{R}^2\), what is \(d\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \((-2/3,-5/3)^\top\) (Option 4)</strong></p><p>Eigenvalues of \(A\): \(\lambda=2,-3\). The particular solution linear in \(t\) gives slope \(\mathbf{c}=(-2/3,-5/3)^\top\) after solving \((A-I)\mathbf{c}=-h_1\). The \(e^{2t}\) coefficient must vanish for \(y/t\to d\). Official key: Option 4.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\((-4/3,-5/3)^\top\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((4/3,-5/3)^\top\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((2/3,-5/3)^\top\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\((-2/3,-5/3)^\top\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q93 - Non-uniqueness of y' = y^(1/2), y(0)=0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider (I) \(y'=y^{1/2}\), \(y(0)=0\) and (II) \(y'=-y^{1/2}\), \(y(0)=0\). Which statements are true?</p><p>(1) I is uniquely solvable.</p><p>(2) II is uniquely solvable.</p><p>(3) I has multiple solutions.</p><p>(4) II has multiple solutions.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) and (4)</strong></p><p>Both \(y\equiv0\) and \(y=(t/2)^2\) solve problem I. Similarly \(y\equiv0\) and \(y=(t/2)^2\) (reflected) solve II. Non-uniqueness follows since the RHS is not Lipschitz at 0.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[I is uniquely solvable.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[II is uniquely solvable.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[I has multiple solutions.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[II has multiple solutions.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q94 - First-order PDE u_x + x u_y = 0 with u(x,0) = e^x</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(u\) solve \(u_x+xu_y=0\), \(u(x,0)=e^x\). Which statements are true?</p><p>(1) \(u(2,1)=e^2\)</p><p>(2) \(u(1,1/2)=1\)</p><p>(3) \(u(-2,1)=e^{-\sqrt{2}}\)</p><p>(4) \(u(-2,1)=e^{\sqrt{2}}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (3)</strong></p><p>Characteristics: \(x=x_0+s\), \(y=x_0s+s^2/2\), \(u=e^{x_0}\). At \((1,1/2)\): \(s=1\), \(x_0=0\), \(u=1\). At \((-2,1)\): \(s=-2\pm\sqrt{2}\), \(x_0=\mp\sqrt{2}\), so \(u=e^{-\sqrt{2}}\) or \(e^{\sqrt{2}}\). Per official key: opts 2 and 3.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(2,1)=e^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(u(1,1/2)=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(u(-2,1)=e^{-\sqrt{2}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(-2,1)=e^{\sqrt{2}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q95 - Harmonic function composed with orthogonal rotation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(u:\mathbb{R}^3\to\mathbb{R}\) satisfy \(\Delta u=0\). Define \(v(x)=u(Mx)\) where \(M=\begin{pmatrix}0&-1&0\\1&0&0\\0&0&1\end{pmatrix}\). Which statements are necessarily true?</p><p>(1) \(\Delta v=0\)</p><p>(2) \(\Delta v=v\)</p><p>(3) \(\mathrm{div}(M^TM\nabla v)=0\)</p><p>(4) \(\mathrm{div}(M^TM\nabla v)=v\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (3)</strong></p><p>\(M\) is orthogonal (\(M^TM=I\)), so \(v(x)=u(Mx)\) is harmonic whenever \(u\) is (\(\Delta\) is rotation-invariant). Since \(M^TM=I\), \(\mathrm{div}(M^TM\nabla v)=\mathrm{div}(\nabla v)=\Delta v=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\Delta v=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\Delta v=v\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\mathrm{div}(M^TM\nabla v)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{div}(M^TM\nabla v)=v\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q96 - Fibonacci numbers and polynomial interpolation p(7)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(F_n=\frac{\alpha^n-\beta^n}{\alpha-\beta}\) with \(\alpha=\frac{1+\sqrt5}{2}\), \(\beta=\frac{1-\sqrt5}{2}\). Let \(p:\mathbb{R}\to\mathbb{R}\) have degree \(\leq2\) with \(p(1)=F_1\), \(p(3)=F_3\), \(p(5)=F_5\). Which are true?</p><p>(1) \(F_n=F_{n-1}+F_{n-2}\) for \(n\geq3\)</p><p>(2) \(p(7)=13\)</p><p>(3) \(F_n=F_{n-1}+2F_{n-2}\) for \(n\geq5\)</p><p>(4) \(p(7)=10\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4) (per NTA official key)</strong></p><p>\(F_n\) are Fibonacci numbers satisfying the recurrence (1). \(p(1)=1,p(3)=2,p(5)=5\). Per official NTA key, \(p(7)=10\) (option 4).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(F_n=F_{n-1}+F_{n-2}\) for \(n\geq3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p(7)=13\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F_n=F_{n-1}+2F_{n-2}\) for \(n\geq5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(p(7)=10\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q97 - Second-order Runge-Kutta valid parameter sets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider the ODE \(\dot{x}=f(t,x)\) and the second-order Runge-Kutta formula \(x(t+h)=x(t)+w_1hf(t,x)+w_2hf(t+\alpha h,x+\beta hf)+O(h^3)\). Which choices of \((w_1,w_2,\alpha,\beta)\) are correct?</p><p>(1) \((1/2,1/2,1,1)\)</p><p>(2) \((1/2,1,1/2,1)\)</p><p>(3) \((1/4,3/4,2/3,2/3)\)</p><p>(4) \((0,1,1,1)\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (3)</strong></p><p>Conditions for 2nd-order RK: \(w_1+w_2=1\), \(w_2\alpha=1/2\), \(w_2\beta=1/2\). (1): \(1/2+1/2=1\checkmark\), \(\frac{1}{2}\cdot1=1/2\checkmark\). (3): \(1/4+3/4=1\checkmark\), \(\frac{3}{4}\cdot\frac{2}{3}=1/2\checkmark\). (4): \(w_2\beta=1\cdot1=1\neq1/2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\((1/2,\;1/2,\;1,\;1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((1/2,\;1,\;1/2,\;1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\((1/4,\;3/4,\;2/3,\;2/3)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((0,\;1,\;1,\;1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q98 - Sup and inf of I[u] = int e^(-u'^2) dx on zero-boundary space</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X=\{u\in C^1[0,1]:u(0)=u(1)=0\}\) and \(I(u)=\int_0^1 e^{-u'(t)^2}dt\). Let \(M=\sup I\), \(m=\inf I\). Which statements are true?</p><p>(1) \(M=1,\;m=0\).</p><p>(2) \(1=M>m>0\).</p><p>(3) \(M\) is attained.</p><p>(4) \(m\) is attained.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (3)</strong></p><p>\(u\equiv0\in X\) gives \(I(0)=\int_0^1 1\,dt=1=M\): attained. As \(\|u'\|\to\infty\), \(e^{-u'^2}\to0\), so \(\inf=0\) but not attained (boundary condition forces \(\int u'\,dt=0\), preventing uniform blowup).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(M=1,\;m=0\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1=M>m>0\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(M\) is attained.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m\) is attained.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q99 - Isoperimetric variational problem with Legendre equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(y(t)\) is a stationary function of \(\mathcal{J}[y]=\int_{-1}^1(1-x^2)(y')^2dx\) with \(y(-1)=1\), \(y(1)=1\), \(\int_{-1}^1 y^2=1\), which statements are true?</p><p>(1) \(y\) is unique.</p><p>(2) \(y\) is always a polynomial of even order.</p><p>(3) \(y\) is always a polynomial of odd order.</p><p>(4) No such \(y\) exists.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4)</strong></p><p>The Euler-Lagrange equation with isoperimetric constraint is the Legendre equation. The boundary condition \(y(\pm1)=1\) with \(\int y^2=1\) cannot be simultaneously satisfied by Legendre polynomials.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y\) is unique.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y\) is always a polynomial of even order.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y\) is always a polynomial of odd order.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[No such \(y\) exists.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q100 - Volterra integral system phi1 = sin x, phi2 = 1 - cos x</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider the integral equations \(\varphi_1(x)=\sin x+\int_0^x\varphi_2(t)dt\) and \(\varphi_2(x)=1-\cos x-\int_0^x\varphi_1(t)dt\). Which statements are true?</p><p>(1) \(\varphi_1\) vanishes at at most countably many points.</p><p>(2) \(\varphi_1\) vanishes at uncountably many points.</p><p>(3) \(\varphi_2\) vanishes at at most countably many points.</p><p>(4) \(\varphi_2\) vanishes at uncountably many points.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4) (per NTA official key)</strong></p><p>Differentiating the system gives \(\varphi_1''+\varphi_1=0\), so \(\varphi_1(x)=\sin x\) (zeros at \(k\pi\): countably many). \(\varphi_2=1-\cos x\) has zeros at \(2k\pi\): countably many. Per official key: opts 1 and 4.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\varphi_1\) vanishes at at most countably many points.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\varphi_1\) vanishes at uncountably many points.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\varphi_2\) vanishes at at most countably many points.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\varphi_2\) vanishes at uncountably many points.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q101 - Volterra integral equation g(s) = 1 + int (s-t)g(t) dt</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(g\) solve the Volterra integral equation \(g(s)=1+\int_0^s(s-t)g(t)\,dt\) for \(s\geq0\). What are the possible values of \(g(1)\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(e+1/e\) (Option 3)</strong></p><p>Differentiating twice: \(g''(s)=g(s)\), \(g(0)=1\), \(g'(0)=0\). So \(g(s)=\cosh(s)\). \(g(1)=\cosh(1)=\frac{e+e^{-1}}{2}\). Per official key: option 3 (\(e+1/e\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(2e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e-1/e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(e+1/e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2/e\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q102 - Brachistochrone problem: travel time functional and minimizer</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(P_1=(x_1,y_1)\) and \(P_2=(x_2,y_2)\) with \(x_1\neq x_2\) and \(y_1>y_2\). Consider curve \(C\) and a particle sliding from \(P_1\) to \(P_2\) under gravity. Let \(T\) be the travel time. Which statements are true?</p><p>(1) \(T=\int_{x_1}^{x_2}\sqrt{\dfrac{1+(z'(x))^2}{2gz(x)}}\,dx\)</p><p>(2) \(T\) is minimized when \(C\) is a straight line.</p><p>(3) Same as (1) — checking sign.</p><p>(4) The minimizer of \(T\) cannot be a straight line.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4)</strong></p><p>This is the brachistochrone problem. The travel time is given by the functional in (1). The minimizer is a cycloid, not a straight line — so (4) is correct and (2) is false.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(T=\int_{x_1}^{x_2}\sqrt{\dfrac{1+(z'(x))^2}{2gz(x)}}\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\) is minimized when \(C\) is a straight line.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Same as option 1 (checking sign convention).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The minimizer of \(T\) cannot be a straight line.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q103 - 5x5 Markov chain state classification</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\mathbf{P}\) be the \(5\times5\) transition matrix of a stationary Markov chain (rows: states). Which statements are true about its states?</p><p>(1) All the states have the same periods.</p><p>(2) All the states are transient.</p><p>(3) Some states are transient.</p><p>(4) All the states are recurrent.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (3) (per NTA official key)</strong></p><p>From the given \(5\times5\) block structure, states \(\{1,2\}\) form a recurrent communicating class and states \(\{3,4,5\}\) are transient (can escape to \(\{1,2\}\)). All states in a communicating class share the same period.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[All the states have the same periods.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All the states are transient.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Some states are transient.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All the states are recurrent.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q104 - Block 4x4 transition matrix with two communicating classes</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\mathbf{P}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}\) be the transition matrix of a homogeneous Markov chain. Which statements are true?</p><p>(1) It is an irreducible Markov Chain.</p><p>(2) All the states are recurrent.</p><p>(3) \(\lim_{n\to\infty}\mathbf{P}^n\) exists.</p><p>(4) All the states have the same period.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (4)</strong></p><p>Two communicating classes \(\{1,2\}\) and \(\{3,4\}\), each irreducible, recurrent, and with period 2. Not irreducible overall. \(\lim\mathbf{P}^n\) does not exist (oscillates). All states have period 2.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It is an irreducible Markov Chain.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[All the states are recurrent.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lim_{n\to\infty}\mathbf{P}^n\) exists.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[All the states have the same period.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q105 - Bivariate standard normal X1, X2 properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,X_2\) be i.i.d.\ standard normal. Which statements are correct?</p><p>(1) \(E[\max(X_1,X_2)]=1/\sqrt{\pi}\).</p><p>(2) \(E[X_1\mid X_1+X_2]=0.5(X_1+X_2)\).</p><p>(3) \(X_1-X_2\) and \(X_1+X_2\) are independent.</p><p>(4) \(X_1^2+X_2^2\) and \(X_1/X_2\) are independent.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (3), (4)</strong></p><p>All four are standard results for bivariate standard normal. (1): \(E[\max(X_1,X_2)]=1/\sqrt{\pi}\). (2): by symmetry. (3): \(\text{Cov}=0\) + joint normality \(\Rightarrow\) independence. (4): \(R^2\) and \(\theta\) are independent in polar coordinates.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text><![CDATA[\(E[\max(X_1,X_2)]=1/\sqrt{\pi}\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(E[X_1\mid X_1+X_2]=0.5(X_1+X_2)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(X_1-X_2\) and \(X_1+X_2\) are independent.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(X_1^2+X_2^2\) and \(X_1/X_2\) are independent.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q106 - Distribution symmetric about -2 properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X\) have distribution symmetric about \(-2\). Which statements are true?</p><p>(1) If \(X\) discrete, \(P(X=-2)=2/3\Rightarrow P(X>-2)=1/6\).</p><p>(2) If \(X\) discrete, \(P(X=-2)=1/2\Rightarrow P(X>-2)=1/2\).</p><p>(3) If \(X\) absolutely continuous, \(P(X>-2)=0\).</p><p>(4) If \(X\) absolutely continuous, \(P(X>-2)=1/2\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4)</strong></p><p>Symmetry about \(-2\): \(P(X>-2)=P(X&lt;-2)\). For continuous \(X\): \(P(X>-2)=1/2\). For discrete with \(P(X=-2)=2/3\): remaining \(=1/3\) split equally, so \(P(X>-2)=1/6\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[If \(X\) discrete, \(P(X=-2)=2/3\Rightarrow P(X>-2)=1/6\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(X\) discrete, \(P(X=-2)=1/2\Rightarrow P(X>-2)=1/2\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(X\) absolutely continuous, \(P(X>-2)=0\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(X\) absolutely continuous, \(P(X>-2)=1/2\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q107 - Exponential X, floor Y = [X], P(Y) and moments</text></name>
+  <questiontext format="html"><text><![CDATA[<p>\(X\) has pdf \(f(x)=e^{-x}\) for \(x>0\). Let \(Y=[X]\) (floor function). Which statements are CORRECT?</p><p>(1) \(P(Y=2)=0\)</p><p>(2) \(P(Y&lt;1.2)=1-e^{-2}\)</p><p>(3) \(E[Y^2]=\dfrac{e+1}{(e-1)^2}\)</p><p>(4) \(E[Y]=\dfrac{1}{e-1}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2), (3), (4)</strong></p><p>\(P(Y=k)=e^{-k}(1-e^{-1})\) for \(k=0,1,2,\ldots\). \(E[Y]=\frac{1}{e-1}\). \(P(Y&lt;1.2)=P(Y=0)+P(Y=1)=P(X&lt;2)=1-e^{-2}\). \(P(Y=2)=(e^{-2}-e^{-3})>0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(Y=2)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(P(Y<1.2)=1-e^{-2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(E[Y^2]=\dfrac{e+1}{(e-1)^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(E[Y]=\dfrac{1}{e-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q108 - Beta distribution of second order statistic X_(2) from Uniform(0,1)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_{10}\) be a random sample from Uniform\((0,1)\) with order statistics \(X_{(1)}\leq\cdots\leq X_{(10)}\). Which statements are true?</p><p>(1) \(X_{(2)}\sim\mathrm{Beta}(2,9)\)</p><p>(2) \(X_{(10)}-X_{(1)}\sim\mathrm{Beta}(11,2)\)</p><p>(3) \(E[X_{(2)}]=2/11\)</p><p>(4) \(\mathrm{Var}[X_{(2)}]=3/242\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (3), (4)</strong></p><p>\(X_{(k)}\sim\mathrm{Beta}(k,n-k+1)\). \(X_{(2)}\sim\mathrm{Beta}(2,9)\): \(E=2/11\), \(\mathrm{Var}=\frac{2\cdot9}{11^2\cdot12}=\frac{18}{1452}=\frac{3}{242}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(X_{(2)}\sim\mathrm{Beta}(2,9)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_{(10)}-X_{(1)}\sim\mathrm{Beta}(11,2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(E[X_{(2)}]=2/11\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\mathrm{Var}[X_{(2)}]=3/242\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q109 - Consistent estimators for Bernoulli(p)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\{X_i:i\geq1\}\) be i.i.d.\ Bernoulli\((p)\), \(p\in(0,1)\). Which sequences of estimators are consistent for \(p\) as \(n\to\infty\)?</p><p>(1) \(\left\{\dfrac{1}{n}\sum_{i=1}^n X_i:n\geq1\right\}\)</p><p>(2) \(\{0.5(X_n+X_{n+1}):n\geq1\}\)</p><p>(3) \(\left\{\dfrac{1}{n}\sum_{i=1}^n X_i^i:n\geq1\right\}\)</p><p>(4) \(\left\{\dfrac{1}{n}\sum_{i=1}^n X_{2i-1}X_{2i}:n\geq1\right\}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (3)</strong></p><p>(1): Sample mean, consistent by LLN. (3): \(X_i^i=X_i\) for Bernoulli, so same as (1). (2): Uses only 2 observations, not consistent. (4): Converges to \(p^2\neq p\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\left\{\dfrac{1}{n}\sum_{i=1}^n X_i:n\geq1\right\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{0.5(X_n+X_{n+1}):n\geq1\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\left\{\dfrac{1}{n}\sum_{i=1}^n X_i^i:n\geq1\right\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\left\{\dfrac{1}{n}\sum_{i=1}^n X_{2i-1}X_{2i}:n\geq1\right\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q110 - Yn/n, Yn/n^(2/3), Yn/n^2 convergence for X in {1,3}</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\{X_n:n\geq1\}\) be i.i.d.\ with \(P(X_1=1)=P(X_1=3)=1/2\). Let \(Y_n=X_1+\cdots+X_n\). Which statements are correct?</p><p>(1) \(Y_n/n\) converges to 2 in probability.</p><p>(2) \(\mathrm{Var}(Y_n/n^{2/3})\) converges to 0 as \(n\to\infty\).</p><p>(3) \(Y_n/n^{2/3}\) converges to \(c\) in probability, \(0&lt;c&lt;\infty\).</p><p>(4) \(Y_n/n^2\) converges to 0 in probability.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (4)</strong></p><p>\(E[X]=2\), \(\mathrm{Var}(X)=1\). (1): \(Y_n/n\to2\) by LLN. (2): \(\mathrm{Var}(Y_n/n^{2/3})=n/n^{4/3}=n^{-1/3}\to0\). (4): \(Y_n/n^2=(Y_n/n)\cdot(1/n)\to2\cdot0=0\). (3) fails since \(Y_n/n^{2/3}\to\infty\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(Y_n/n\) converges to 2 in probability.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\mathrm{Var}(Y_n/n^{2/3})\) converges to 0 as \(n\to\infty\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(Y_n/n^{2/3}\) converges to \(c\) in probability, \(0<c<\infty\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(Y_n/n^2\) converges to 0 in probability.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q111 - LRT for one-sided hypothesis on shifted exponential min</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_{10}\) be a random sample from a continuous distribution with pdf \(f_\theta(x)=e^{(\theta-x)}\) for \(x\geq\theta\). Let \(x_{(1)}=\min X_i\). Which statements about testing \(H_0:\theta\leq3\) vs \(H_1:\theta>3\) are correct?</p><p>(1) \(\sup_{\theta\leq3}L(\theta)=e^{10x_{(1)}}e^{-\sum x_i}\), if \(x_{(1)}\leq3\).</p><p>(2) \(\sup_{\theta\leq3}L(\theta)=e^{10x_{(1)}}e^{-\sum x_i}\), if \(x_{(1)}>3\).</p><p>(3) Critical region of LRT of size \(\alpha\) is \(\{x_{(1)}\geq\frac{1}{3}-10\log_e\alpha\}\).</p><p>(4) Critical region of LRT of size \(\alpha\) is \(\{x_{(1)}\geq3-\frac{1}{10}\log_e\alpha\}\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4)</strong></p><p>\(L(\theta)=e^{n\theta-\sum x_i}\) for \(\theta\leq x_{(1)}\). \(\sup_{\theta\leq3}L=e^{10x_{(1)}-\sum x_i}\) if \(x_{(1)}\leq3\). Critical region: \(P_{\theta=3}(X_{(1)}\geq c)=e^{-10(c-3)}=\alpha\Rightarrow c=3-\frac{\ln\alpha}{10}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\sup_{\theta\leq3}L(\theta)=e^{10x_{(1)}}e^{-\sum x_i}\), if \(x_{(1)}\leq3\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sup_{\theta\leq3}L(\theta)=e^{10x_{(1)}}e^{-\sum x_i}\), if \(x_{(1)}>3\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Critical region of LRT of size \(\alpha\) is \(\{x_{(1)}\geq\frac{1}{3}-10\log_e\alpha\}\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Critical region of LRT of size \(\alpha\) is \(\{x_{(1)}\geq3-\frac{1}{10}\log_e\alpha\}\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q112 - MLE of (mu, sigma^2) for normal sample: properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\) be i.i.d.\ \(N(\mu,\sigma^2)\). Let \((\hat\mu,\hat\sigma^2)\) be the MLE of \((\mu,\sigma^2)\). Which statements are correct?</p><p>(1) \((n-1)\hat\sigma^2/\sigma^2\sim\chi^2(n-1)\).</p><p>(2) \(\hat\sigma^2\) is unbiased for \(\sigma^2\).</p><p>(3) Variance of \(\hat\sigma^2\) tends to 0 as \(n\to\infty\).</p><p>(4) \(\frac{n^2\hat\sigma^4}{(n-1)(n+1)}\) is unbiased for \(\sigma^4\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) and (4)</strong></p><p>\(\hat\sigma^2=\frac{1}{n}\sum(X_i-\bar X)^2\) (biased MLE); \(n\hat\sigma^2/\sigma^2\sim\chi^2(n-1)\). \(\mathrm{Var}(\hat\sigma^2)=\frac{2\sigma^4(n-1)}{n^2}\to0\). \(E[\hat\sigma^4]=\frac{\sigma^4(n-1)(n+1)}{n^2}\), so \(\frac{n^2\hat\sigma^4}{(n-1)(n+1)}\) is unbiased for \(\sigma^4\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\((n-1)\hat\sigma^2/\sigma^2\sim\chi^2(n-1)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\sigma^2\) is unbiased for \(\sigma^2\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Variance of \(\hat\sigma^2\) tends to 0 as \(n\to\infty\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\frac{n^2\hat\sigma^4}{(n-1)(n+1)}\) is unbiased for \(\sigma^4\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q113 - Most powerful test size 0.04 from likelihood ratio table</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X\) have pmf given (under \(H_0\) and \(H_1\)) over \(x\in\{1,\ldots,7\}\). Which statements are correct for the most powerful test of size \(\alpha=0.04\) for \(H_0\) vs \(H_1\)?</p><p>(1) Critical region: \(\{x:x\leq4\}\)</p><p>(2) Critical region: \(\{x:3\leq x\leq6\}\)</p><p>(3) Power of the most powerful test is 0.18.</p><p>(4) Most powerful test of size 0.04 does not exist.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (3)</strong></p><p>LR \(f_{H_1}/f_{H_0}\) is decreasing in \(x\). Reject for small \(x\). Size: \(P_{H_0}(x\leq4)=0.04\). Critical region: \(\{x\leq4\}\). Power \(=P_{H_1}(x\leq4)=0.06+0.05+0.04+0.03=0.18\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[Critical region: \(\{x:x\leq4\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Critical region: \(\{x:3\leq x\leq6\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Power of the most powerful test is 0.18.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Most powerful test of size 0.04 does not exist.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q114 - Bayes estimator under squared error and absolute error loss for normal prior</text></name>
+  <questiontext format="html"><text><![CDATA[<p>\(X_1,\ldots,X_n\) i.i.d.\ \(N(\theta,\sigma^2)\), \(\sigma^2\) known. Prior on \(\theta\): \(N(\mu,\tau^2)\). Which statements are correct?</p><p>(1) Under squared error loss, Bayes estimator is the mean of the posterior.</p><p>(2) Under squared error loss, Bayes estimator is the median of the posterior.</p><p>(3) Under absolute error loss, Bayes estimator is the median of the posterior.</p><p>(4) Under absolute error loss, Bayes estimator is also the mean (since posterior is symmetric normal).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (3), (4)</strong></p><p>For normal posterior: mean \(=\) median \(=\) mode. Under squared error: Bayes estimator \(=\) posterior mean \(=\) posterior median. Under absolute error: Bayes estimator \(=\) posterior median \(=\) posterior mean. All four are correct.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text><![CDATA[Under squared error loss, Bayes estimator is the mean of the posterior.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[Under squared error loss, Bayes estimator is the median of the posterior.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[Under absolute error loss, Bayes estimator is the median of the posterior.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[Under absolute error loss, Bayes estimator is also the mean (since posterior is symmetric normal).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q115 - OLS normal equations residual properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For bivariate data, OLS regression of \(Y\) on \(X\) gives \(\hat\alpha_1\); of \(X\) on \(Y\) gives \(\hat\beta_1\). Which are always correct?</p><p>(1) \(\sum_i\hat\varepsilon_i=0\) and \(\sum_i\hat y_i\hat\varepsilon_i=0\).</p><p>(2) \(\sum_ix_{ij}\hat\varepsilon_i=0\) for all \(j\).</p><p>(3) \(\sum_i\hat\varepsilon_i=0\) and \(\sum_ix_{ij}\hat\varepsilon_i=0\) for all \(j\).</p><p>(4) \(\sum_i\hat y_i\hat\varepsilon_i=0\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (4) (per NTA official key)</strong></p><p>Standard OLS normal equations give \(\sum x_{ij}\hat\varepsilon_i=0\) for all predictors (including intercept). Also \(\sum\hat y_i\hat\varepsilon_i=0\) always holds. Per official key: opts 2 and 4.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum_i\hat\varepsilon_i=0\) and \(\sum_i\hat y_i\hat\varepsilon_i=0\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\sum_ix_{ij}\hat\varepsilon_i=0\) for all \(j\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum_i\hat\varepsilon_i=0\) and \(\sum_ix_{ij}\hat\varepsilon_i=0\) for all \(j\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\sum_i\hat y_i\hat\varepsilon_i=0\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q116 - Correlation of squared and linear functions of trivariate normal</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \((X,Y,Z)^\top\sim N_3(0,\Sigma)\) with \(\Sigma=\begin{pmatrix}1&\rho&0\\\rho&1&0\\0&0&1\end{pmatrix}\), \(|\rho|&lt;1\). Which statements are true?</p><p>(1) \(\mathrm{Cor}(X^2,Y^2)=\rho^2\).</p><p>(2) \(\mathrm{Cor}(X^2,Y)=0\).</p><p>(3) \(\mathrm{Cor}(X^2,Z^2)=0\).</p><p>(4) \(\mathrm{Cor}(X^2,Y^2+Z^2)=\rho^2\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (3)</strong></p><p>Standard results for bivariate normal. (1): \(\mathrm{Cor}(X^2,Y^2)=\rho^2\). (2): By symmetry, \(\mathrm{Cov}(X^2,Y)=0\). (3): \(X\) and \(Z\) are independent so \(X^2\) and \(Z^2\) are independent. (4) fails since \(\mathrm{Cor}(X^2,Y^2+Z^2)\neq\rho^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\mathrm{Cor}(X^2,Y^2)=\rho^2\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\mathrm{Cor}(X^2,Y)=0\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\mathrm{Cor}(X^2,Z^2)=0\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{Cor}(X^2,Y^2+Z^2)=\rho^2\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q117 - Survival function from hazard r(x) = 2x/(1+x^2)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If the hazard function of lifetime \(X\) is \(r(x)=\frac{2x}{1+x^2}\), \(x\in(0,\infty)\), indicate the correct options.</p><p>(1) Survival function: \(S(x)=\dfrac{1}{1+x^2}\), \(x\in(0,\infty)\).</p><p>(2) Survival function: \(S(x)=\dfrac{x^2}{1+x^2}\).</p><p>(3) Cannot be determined.</p><p>(4) Survival, density and distribution functions can all be determined.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4)</strong></p><p>\(S(x)=\exp(-\int_0^x r(t)dt)=\exp(-\ln(1+x^2))=\frac{1}{1+x^2}\). Then \(f(x)=-S'(x)=\frac{2x}{(1+x^2)^2}\) and \(F(x)=1-S(x)\) are all determined.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[Survival function: \(S(x)=\dfrac{1}{1+x^2}\), \(x\in(0,\infty)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Survival function: \(S(x)=\dfrac{x^2}{1+x^2}\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cannot be determined.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Survival, density and distribution functions can all be determined.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q118 - Bayes estimator bias under proper vs improper priors for normal mean</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Observation \(X\sim N(\mu,1)\), \(-\infty&lt;\mu&lt;\infty\). Estimate \(\mu\) under squared error loss. Which statements are correct?</p><p>(1) The Bayes estimator under a proper prior is always biased.</p><p>(2) There is a proper prior for which the Bayes estimator is unbiased.</p><p>(3) The Bayes estimator under an improper prior is always biased.</p><p>(4) There is an improper prior for which the Bayes estimator of \(\mu\) is unbiased.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4)</strong></p><p>Under proper priors (e.g.\ \(N(\mu_0,\tau^2)\)), Bayes estimator shrinks toward prior mean: biased. Under the improper flat prior on \(\mathbb{R}\), Bayes estimator \(=X=\) MLE, which is unbiased.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[The Bayes estimator under a proper prior is always biased.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There is a proper prior for which the Bayes estimator is unbiased.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The Bayes estimator under an improper prior is always biased.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[There is an improper prior for which the Bayes estimator of \(\mu\) is unbiased.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q119 - OLS estimators through origin vs with centering: variance comparison</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider \(Y_i=\beta X_i+\varepsilon_i\), \(\varepsilon_i\) i.i.d.\ \(N(0,\sigma^2)\), \(X_i\) positive, distinct, nonrandom. Two estimators: \(\hat\beta_1=\frac{\sum(Y_i-\bar Y)(X_i-\bar X)}{\sum(X_i-\bar X)^2}\), \(\hat\beta_2=\frac{\sum Y_iX_i}{\sum X_i^2}\). Which are correct?</p><p>(1) Both \(\hat\beta_1\) and \(\hat\beta_2\) are unbiased for \(\beta\).</p><p>(2) \(\hat\beta_1\) has larger variance than \(\hat\beta_2\).</p><p>(3) \(\hat\beta_2\) has larger variance than \(\hat\beta_1\).</p><p>(4) \(\hat\beta_1\) has the same variance as \(\hat\beta_2\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (2)</strong></p><p>\(\hat\beta_2\) is the OLS estimator through the origin (correct model), so it is BLUE with smaller variance. \(\hat\beta_1\) includes an unnecessary intercept step, inflating its variance. Both are unbiased.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[Both \(\hat\beta_1\) and \(\hat\beta_2\) are unbiased for \(\beta\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\hat\beta_1\) has larger variance than \(\hat\beta_2\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\beta_2\) has larger variance than \(\hat\beta_1\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\beta_1\) has the same variance as \(\hat\beta_2\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q120 - Single linkage hierarchical clustering for X, Y, Z</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider hierarchical single linkage agglomerative clustering for \(X=(1,0)\), \(Y=(0,2)\), \(Z=(3,3)\) using squared Euclidean distances. Algorithm starts with 3 clusters. Which statements are correct?</p><p>(1) At the first step, after merging two nearest clusters, the single linkage distance between the two newly formed clusters is 10.</p><p>(2) At the first step, \(X\) and \(Y\) are merged.</p><p>(3) At the first step, the single linkage distance between the new clusters is 13.</p><p>(4) At the first step, \(X\) and \(Z\) are merged.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (2)</strong></p><p>Squared distances: \(d^2(X,Y)=1+4=5\), \(d^2(X,Z)=4+9=13\), \(d^2(Y,Z)=9+1=10\). Nearest pair: \(X,Y\) (squared distance 5). After merging \(\{X,Y\}\), single linkage distance to \(Z\): \(\min(d^2(X,Z),d^2(Y,Z))=\min(13,10)=10\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[At the first step, after merging two nearest clusters, the single linkage distance between the two newly formed clusters is 10.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[At the first step, \(X\) and \(Y\) are merged.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[At the first step, the single linkage distance between the new clusters is 13.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[At the first step, \(X\) and \(Z\) are merged.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

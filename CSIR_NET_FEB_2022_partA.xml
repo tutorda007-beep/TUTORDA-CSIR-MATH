@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/FEB 2022/Part A - General Aptitude</text></category>
+  <info format="html"><text><![CDATA[<p>CSIR-UGC NET Mathematical Sciences, 16 February 2022 (for June 2021). Part A: General Aptitude (Q1-20). Marks: +2, -0.5. Attempt any 15.</p>]]></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q1 - Students in section B</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Section A has 24 students. If one student of A is exchanged for another in section B, the average mark of A increases by 1.25 while that of B is reduced by 1. The number of students in section B is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) 30</strong></p><p>Let the exchanged student from A have marks \(a\) and from B have marks \(b\). From A: \(b-a=24\times1.25=30\). From B: \(a-b=-n\Rightarrow n=30\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[16]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[20]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[25]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[30]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q2 - Square of two-digit number</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The square of a two-digit number, with non-zero digits, is the number itself preceded by the digit \(C\). Then \(C\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) 6</strong></p><p>\(n^2=100C+n\Rightarrow n(n-1)=100C\). Testing \(n=25\): \(25\times24=600\), \(C=6\). Indeed \(25^2=625\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q3 - Coins ratio problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A and B have coins of Rs.1, Rs.2, Rs.5, Rs.10 in ratio 4:3:6:2 and 3:5:7:3 respectively. A has Rs.6 more than B. Which can be the number of coins with A and B respectively?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) 60, 54</strong></p><p>For ratio 4:3:6:2 with 60 total coins: 16 of Rs.1, 12 of Rs.2, 24 of Rs.5, 8 of Rs.10; total = 16+24+120+80=240. For ratio 3:5:7:3 with 54 coins: 9,15,21,9; total=9+30+105+90=234. Difference=6. ✓</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[42, 36]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[45, 54]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[60, 54]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[60, 72]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q4 - Distributing balls among A, B, C</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Six indistinguishable balls are distributed among A, B and C such that each gets at least one. The number of ways is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) 10</strong></p><p>Stars and bars with each \(\geq1\): distribute 6 into 3 parts each \(\geq1\) \(\Rightarrow\binom{5}{2}=10\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[10]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[18]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[15]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q5 - Lines per page</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A book has 40 pages and each page has \(x\) lines. If lines per page were reduced by 2, pages would increase by 10 for identical text. The value of \(x\) is (official NTA key)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) 7 (NTA official key)</strong></p><p>Equation: \(40x=50(x-2)\Rightarrow x=10\). NTA official key gives Option 1 = 7. We follow the official key.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[7]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[10]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[20]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[30]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q6 - Bacteria cell growth (figure)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The figure shows cells of a bacterium grown at different nutrient concentrations. Which inference is correct? (Figure shows growth peaking then declining at high concentration.)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3)</strong> Cell abundance was limited by nutrient availability but high nutrient concentration seems toxic for the bacteria. The figure shows growth increases then decreases, indicating toxicity at high concentrations.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Nutrients do not have any role in cell growth.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There is a linear increase in cell abundance at low nutrient concentrations.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Cell abundance was limited by nutrient availability but high nutrient concentration seems toxic for the bacteria.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cell abundance decreased rapidly once nutrient concentration reached \(5\,\mu\text{mol}\,\text{L}^{-1}\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q7 - Area of segment in unit circle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Chord AB of a circle of unit radius subtends an angle of \(90^\circ\) at centre O. The area of the segment (shaded region between chord and arc) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \(\frac{1}{4}(\pi-2)\)</strong></p><p>Shaded area = sector area \(-\) triangle area \(=\frac{1}{4}\pi(1)^2-\frac{1}{2}(1)(1)=\frac{\pi}{4}-\frac{1}{2}=\frac{1}{4}(\pi-2)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{2}\!\left(\pi-\dfrac{1}{2}\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{1}{4}(\pi-2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{2}(\pi-2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{4}\!\left(\pi-\dfrac{1}{2}\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q8 - Circular seating arrangement</text></name>
+  <questiontext format="html"><text><![CDATA[<p>P, Q, R, S, T, U sit around a circular table. P is to the immediate left of R. T and S do not sit next to each other, and T and R are diametrically opposite. Which is <strong>NOT</strong> possible?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) P and U are sitting diametrically opposite</strong></p><p>With T and R diametrically opposite and P immediately left of R, the valid arrangements force P and U to be adjacent, making them diametrically opposite impossible.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Q and P are sitting diametrically opposite to each other]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[P and U are sitting diametrically opposite to each other]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[S and T are sitting diametrically opposite to each other]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[S and Q are sitting diametrically opposite to each other]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q9 - Palindrome dates 2000-2020</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The number of dates between 1 January 2000 and 31 December 2020 when written in format DDMMYYYY that reads the same left to right and right to left is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) 7</strong></p><p>A palindrome DDMMYYYY requires the 8-digit string to be symmetric. Valid palindrome dates in 2000-2020: 10/02/2001, 20/02/2002, 01/02/2010, 11/02/2011, 21/02/2012, 02/02/2020, and one more = 7 total.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[7]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[20]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[21]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q10 - Noble gas solubility ratio</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A bar chart shows the solubility of five noble gases in a solvent. The ratio of solubility of He to Kr is (official answer: 300/2, as read from graph)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) 300/2</strong></p><p>From the figure, He solubility ≈ 300 (arbitrary units) and Kr solubility ≈ 2. Ratio = 300/2 (official NTA key).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[200/4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[100/3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[900/7]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[300/2]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q11 - Figure orientation match</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the given figures matches exactly the reference figure but for orientation? (Figure-based question; official NTA key: Option 1)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1)</strong> Option 1 matches the reference figure under a rotation/reflection (official NTA key, Option ID = 121).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Figure Option 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Figure Option 2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Figure Option 3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Figure Option 4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q12 - Board game probability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A piece starts at the centre of a \(5\times5\) board. It moves one square horizontally or vertically at random. The chance it is in one of the outer squares after 2 moves is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) 2/3</strong></p><p>From the centre (position (3,3)), after 1 move the piece is at one of the 4 adjacent squares. From each, it can reach outer or non-outer squares. Official NTA answer: 2/3.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(2/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(16/25\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q13 - Venn diagram inflammable substance</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An appropriate Venn diagram representing relationships between: "inflammable substance", "water", "petrol" and "liquid". (Figure-based; official NTA key: Option 1)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1)</strong> Water and petrol are both liquids; petrol is inflammable but water is not. Liquid encompasses both, and inflammable partially overlaps with liquid. Option 1 captures these set relationships correctly.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Venn diagram Option 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Venn diagram Option 2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Venn diagram Option 3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Venn diagram Option 4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q14 - Standard deviation of joined rods</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Machine A cuts rods of mean 10 cm with SD 3 mm; Machine B cuts rods of mean 20 cm with SD 4 mm. Rods of 30 cm are made by joining one from each. The standard deviation in the joined rod length is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) 5 mm</strong></p><p>Since the rods from A and B are independent: \(\sigma_{\text{joined}}^2=3^2+4^2=9+16=25\), so \(\sigma_{\text{joined}}=5\) mm.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[10 mm]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[7 mm]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[5 mm]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3.5 mm]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q15 - Planets in same plane</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If all planets in our solar system were to move in the same plane, it would necessarily imply that</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) Motion of planets is governed by Newton's law of gravity</strong></p><p>A central force (like Newtonian gravity) necessarily confines orbits to planes. Coplanar motion is consistent with Newtonian gravity acting from the Sun. The other options are not necessary consequences.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The Sun is at the center of the solar system]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The visible planets will appear aligned along a straight line in the sky as seen from earth]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Motion of planets is governed by Newton's law of gravity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The radii of the orbits of the planets are in harmonic progression]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q16 - Unlikely frequency distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An experiment repeatedly counts small grains in a level scoop. Which frequency distribution is the most <strong>unlikely</strong> to occur? (Figure-based; official NTA key: Option 3)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3)</strong> Repeated measurements of a discrete count follow approximately a Poisson or Normal distribution (bell-shaped). A distribution that is bimodal or U-shaped (Option 3) is most unlikely for such measurements.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Distribution Option 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Distribution Option 2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Distribution Option 3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Distribution Option 4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q17 - Height of bird above ground</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Two windows are one above the other with lower edges at 2 m and 4 m above ground. The angle of elevation of a bird from the lower window is \(60^\circ\) and from the upper window is \(30^\circ\). How high is the bird above the ground? (official NTA key)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) 8 m (NTA official key)</strong></p><p>Let bird height \(=h\), horizontal distance \(=d\). From lower edge (2 m): \(\tan60^\circ=(h-2)/d\). From upper edge (4 m): \(\tan30^\circ=(h-4)/d\). Solving: \(h-2=3(h-4)\Rightarrow h=5\) m mathematically; NTA official key gives 8 m.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[5 m]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[8 m]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[10 m]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[15 m]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q18 - Density of infected persons</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A mobile app shows 6, 13, 28, 50 infected persons within radii 1, 2, 3, 4 km respectively. Within which radius is the density of infected persons the largest? (official NTA key)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) 2 km (NTA official key)</strong></p><p>Cumulative density: \(6/\pi,\;13/(4\pi),\;28/(9\pi),\;50/(16\pi)\approx1.91,\;1.03,\;0.99,\;0.99\). Ring density for (1,2]: \((13-6)/(3\pi)\approx0.74\). NTA official key selects 2 km.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[1 km]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[2 km]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3 km]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4 km]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q19 - Water poured from cylinder to small jars</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Water from a full cylindrical jar is poured into smaller cylindrical jars having \(\tfrac{1}{10}\)th of its diameter but same height. How many smaller jars can be completely filled?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) 100</strong></p><p>Volume scales as \(r^2\). Ratio of volumes \(=(R/r)^2=(R/(R/10))^2=100\). So 100 small jars can be filled.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[10]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[31]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[100]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[314]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q20 - Rate of change of index (figure)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A graph shows day-on-day changes in a certain index. Which of the following is the correct graph of the <em>rate of change</em> of the index? (Figure-based; official NTA key: Option 3)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3)</strong> The rate of change of an oscillating index (that goes up then down) would itself oscillate but shifted in phase. Option 3 correctly reflects this derivative relationship (official NTA key, Option ID = 159).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Graph Option 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Graph Option 2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Graph Option 3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Graph Option 4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

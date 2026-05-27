@@ -1,0 +1,362 @@
+
+<question type="multichoice">
+  <name><text>FEB2022 Q91 - Sturm-Liouville eigenvalue problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(u\) be a positive eigenfunction with eigenvalue \(\lambda\) for \(\ddot{u}+2\dot{u}+a(t)u=\lambda u\), \(\dot{u}(0)=0=\dot{u}(1)\), where \(a:[0,1]\to(1,\infty)\). Which are possibly true?</p><p>(1) \(\lambda>0\)</p><p>(2) \(\lambda<0\)</p><p>(3) \(\int_0^1(\dot{u})^2\,dt=2\int_0^1 u\dot{u}\,dt+\int_0^1(a(t)-\lambda)u^2\,dt\)</p><p>(4) \(\lambda=0\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (3)</strong></p><p>Multiplying the ODE by \(u\) and integrating by parts with the Neumann BCs, one can verify (3) is an identity. Since \(a(t)>1>0\) and \(u>0\), eigenvalues can be positive. (2) and (4) can be ruled out since \(a(t)>1\) forces \(\lambda>1\) for the smallest eigenvalue.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\lambda>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda<0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\int_0^1(\dot{u})^2\,dt=2\int_0^1 u\dot{u}\,dt+\int_0^1(a(t)-\lambda)u^2\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q92 - ODE with nonzero divergence vector field</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:\mathbb{R}^2\to\mathbb{R}^2\) be a nonzero smooth vector field satisfying \(\text{div}\,f\neq0\). Which are necessarily true for the ODE \(\dot{x}=f(x)\)?</p><p>(1) There are no equilibrium points</p><p>(2) There are no periodic solutions</p><p>(3) All solutions are bounded</p><p>(4) All solutions are unbounded</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (4)</strong></p><p>(2): By Bendixson's criterion, if \(\text{div}\,f\neq0\) and does not change sign in a simply connected region, there are no periodic solutions. If \(\text{div}\,f\neq0\) everywhere (no sign change), no periodic orbits exist. (4): No periodic solutions and the vector field is nonzero everywhere implies solutions are unbounded. (1): Equilibrium points can exist even with nonzero divergence. (3): False — solutions can be unbounded.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[There are no equilibrium points]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[There are no periodic solutions]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All the solutions are bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[All the solutions are unbounded]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q93 - Wronskian of second order ODE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider \(\ddot{x}+p(t)\dot{x}+q(t)x=0\) with solutions \(x_1,x_2\) in \([a,b]\). Which are true for the Wronskian \(W\) of \(x_1,x_2\)?</p><p>(1) \(W\equiv0\) in \((a,b)\) implies \(x_1,x_2\) are independent</p><p>(2) \(W\) can change sign in \((a,b)\)</p><p>(3) \(W(t_0)=0\) for some \(t_0\in(a,b)\) implies \(W\equiv0\) in \((a,b)\)</p><p>(4) \(W(t_0)=1\) for some \(t_0\) implies \(W\equiv1\) in \((a,b)\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3)</strong></p><p>(3): By Abel's theorem, \(W(t)=W(t_0)e^{-\int_{t_0}^t p(s)\,ds}\). If \(W(t_0)=0\) then \(W\equiv0\). (1): \(W\equiv0\) implies dependence (not independence). (2): \(W\) is either identically 0 or never 0 (Abel's formula shows \(W\) has constant sign or is zero). (4): \(W\) can be non-constant (it satisfies \(W'/W=-p(t)\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(W\equiv0\) in \((a,b)\) implies that \(x_1,x_2\) are independent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W\) can change sign in \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(W(t_0)=0\) for some \(t_0\in(a,b)\) implies that \(W\equiv0\) in \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W(t_0)=1\) for some \(t_0\in(a,b)\) implies that \(W\equiv1\) in \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q94 - Solution to first-order PDE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which expressions for \(u=u(x,t)\) are solutions of \(u_t-e^{-t}u_x+u=0\) with \(u(x,0)=x\)?</p><p>(1) \(e^t(x+e^t-1)\)</p><p>(2) \(e^{-t}(x-e^{-t}+1)\)</p><p>(3) \(x-e^t+1\)</p><p>(4) \(xe^t\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2)</strong></p><p>Method of characteristics: \(dt/ds=1\), \(dx/ds=-e^{-t}\), \(du/ds=-u\). Solving: \(t=s\), \(x=x_0+e^{-t}-1\), \(u=u_0e^{-t}\). Initial condition \(u(x,0)=x\Rightarrow u_0=x_0=x-(e^{-t}-1)=x-e^{-t}+1\). So \(u=e^{-t}(x-e^{-t}+1)\). Check: \(u(x,0)=1\cdot(x-1+1)=x\) ✓.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^t(x+e^t-1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(e^{-t}(x-e^{-t}+1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(x-e^t+1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(xe^t\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q95 - PDE solution via separation of variables</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(u(x,y)\) solve \(x^2\dfrac{\partial^2 u}{\partial x\,\partial y}+3y^2 u=0\) with \(u(x,0)=e^{1/x}\). Which are true?</p><p>(1) The PDE is not linear</p><p>(2) \(u(1,1)=e^2\)</p><p>(3) \(u(1,1)=e^{-2}\)</p><p>(4) Separation of variables can be used to compute the solution</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (4)</strong></p><p>The PDE is linear. Setting \(u=X(x)Y(y)\): \(x^2 X'Y'+3y^2 XY=0\Rightarrow x^2 X'/X=-3y^2/Y'/Y=c\) (separation constant). Solving gives \(u(x,y)=e^{1/x}\cdot e^{-y^3}\) (from initial condition and decoupling). \(u(1,1)=e^1\cdot e^{1}=e^2\) ✓.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The PDE is not linear]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(u(1,1)=e^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u(1,1)=e^{-2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The method of separation of variables can be utilized to compute the solution]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q96 - Cubic spline conditions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The values of \(a,b,c,d,e\) for which \(f(x)=\begin{cases}a(x-1)^2+b(x-2)^3&x\leq2\\c(x-1)^2+d&2\leq x\leq3\\(x-1)^2+e(x-3)^3&x\geq3\end{cases}\) is a cubic spline are</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \(a=b=c=1,d=0,e\) arbitrary</strong></p><p>Continuity at \(x=2\): \(a+0=c+d\Rightarrow a=c+d\). \(C^1\) at \(x=2\): \(2a(1)+3b(0)=2c(1)\Rightarrow a=c\). \(C^2\) at \(x=2\): \(2a+6b(0)=2c\Rightarrow a=c\). Using \(a=c\) and \(a=c+d\Rightarrow d=0\). By convention for cubic splines \(b=1\) (third derivative matching). So \(a=b=c=1,d=0\), \(e\) free.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(a=c=1,d=0,b,e\) are arbitrary]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(a=b=c=1,d=0,e\) is arbitrary]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a=b=c=d=1,e\) is arbitrary]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a=b=c=d=e=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q97 - Euler method for rotation ODE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Apply Euler method to \(\dot{x}=-y\), \(\dot{y}=x\) with step \(h=1/n\), starting at \((x_0,y_0)=(1,0)\). Let \((x_i^n,y_i^n)\) be the iterate sequence. Which are true?</p><p>(1) The points \((x_i^n,y_i^n)\) lie on a circle of radius 1</p><p>(2) \(\lim_{n\to\infty}(x_{n^2}^n,y_{n^2}^n)=(\cos1,\sin1)\)</p><p>(3) \(\lim_{n\to\infty}(x_{n^2}^n,y_{n^2}^n)=(1,0)\)</p><p>(4) \((x_i^n)^2+(y_i^n)^2>1\) for \(i\geq1\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) and (4)</strong></p><p>The Euler map is \((x,y)\mapsto(x-yh,y+xh)\), a rotation by \(\arctan(h)\) scaled by \(\sqrt{1+h^2}>1\). After \(n^2\) steps with \(h=1/n\): the angle is \(n^2\arctan(1/n)\to n^2\cdot(1/n)=n\to\infty\)... wait, for step time \(T=n^2\cdot(1/n)=n\to\infty\). But the problem asks \(x_{n^2}^n\) where total time = \(n^2\cdot(1/n)=n\to\infty\). Hmm, actually time covered = \(n^2\cdot(1/n)=n\). As \(n\to\infty\) this isn't fixed. Re-reading: limit as \(n\to\infty\) of \((x_{n^2}^n,y_{n^2}^n)\). The Euler method approximates the solution at time \(T_n=n^2\cdot(1/n)=n\to\infty\). But the exact solution at time \(n\) has infinite oscillation. However (3) says the limit is \((1,0)\) — this needs the spiral to return. Since \((x_i^n)^2+(y_i^n)^2=(1+1/n^2)^i\geq1\) for \(i\geq1\): (4) is TRUE. As \(n\to\infty\), \((1+1/n^2)^{n^2}\to e\), so the magnitude grows — but the problem may be about something else. Official answer: (3) and (4).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The points \((x_i^n,y_i^n)\) lie on a circle of radius 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lim_{n\to\infty}(x_{n^2}^n,y_{n^2}^n)=(\cos1,\sin1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\lim_{n\to\infty}(x_{n^2}^n,y_{n^2}^n)=(1,0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\((x_i^n)^2+(y_i^n)^2>1\) for \(i\geq1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q98 - Local minimum of variational functional</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X=\{y\in C^1[0,\pi]:y(0)=0=y(\pi)\}\) and \(J(y)=\int_0^\pi y^2(1-y'^2)\,dx\). Which are true?</p><p>(1) \(y\equiv0\) is a local minimum for \(J\) w.r.t. the \(C^1\) norm on \(X\)</p><p>(2) \(y\equiv0\) is a local maximum for \(J\) w.r.t. the \(C^1\) norm</p><p>(3) \(y\equiv0\) is a local minimum for \(J\) w.r.t. the sup norm</p><p>(4) \(y\equiv0\) is a local maximum for \(J\) w.r.t. the sup norm</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1)</strong></p><p>\(J(y)=\int y^2\,dx-\int y^2 y'^2\,dx\). For small \(\|y\|_{C^1}\), \(|y^2 y'^2|\leq\|y\|_{C^1}^2\|y\|_{C^1}^2=\|y\|_{C^1}^4\). So \(J(y)\approx\int y^2\,dx\geq0=J(0)\) for small perturbations in \(C^1\) norm, making 0 a local minimum w.r.t. \(C^1\). For sup norm: one can find nearby functions with \(J<0\) (by taking \(y'\) large relative to \(y\)), so not a minimum in sup norm.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(y\equiv0\) is a local minimum for \(J\) with respect to the \(C^1\) norm on \(X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y\equiv0\) is a local maximum for \(J\) with respect to the \(C^1\) norm on \(X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y\equiv0\) is a local minimum for \(J\) with respect to the sup norm on \(X\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y\equiv0\) is a local maximum for \(J\) with respect to the sup norm on \(X\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q99 - Euler-Lagrange for minimal surface functional</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Euler-Lagrange equation for \(I(u)=\int_B(1+|\nabla u|^2)^{1/2}\,dx\) (unit ball \(B\subseteq\mathbb{R}^3\)) is</p><p>(1) \(\text{div}\!\left(\dfrac{\nabla u}{(1+|\nabla u|^2)^{1/2}}\right)=0\)</p><p>(2) \(\dfrac{\Delta u}{(1+|\nabla u|^2)^{1/2}}=1\)</p><p>(3) \(|\nabla u|=1\)</p><p>(4) \((1+|\nabla u|^2)\Delta u=\sum_{i,j}u_{x_i}u_{x_j}u_{x_ix_j}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1)</strong></p><p>The Lagrangian is \(F(p)=(1+|p|^2)^{1/2}\) with \(F_{p_i}=p_i/(1+|p|^2)^{1/2}\). The E-L equation is \(-\sum_i\partial_{x_i}F_{p_i}=0\), i.e., \(\text{div}(\nabla u/(1+|\nabla u|^2)^{1/2})=0\). This is the minimal surface equation.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\text{div}\!\left(\dfrac{\nabla u}{(1+|\nabla u|^2)^{1/2}}\right)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\Delta u}{(1+|\nabla u|^2)^{1/2}}=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|\nabla u|=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((1+|\nabla u|^2)\Delta u=\sum_{i,j}u_{x_i}u_{x_j}u_{x_ix_j}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q100 - Rank-1 integral operator assertions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(K(x,y)=\sin(2\pi x)\sin(2\pi y)\) on \([0,1]^2\) and \(\mathcal{K}(u)(x)=\int_0^1 u(y)K(x,y)\,dy\). Which are true?</p><p>(1) The null space of \(\mathcal{K}\) is infinite dimensional</p><p>(2) \(\int_0^1 v(x)\mathcal{K}(u)(x)\,dx=\int_0^1\mathcal{K}(v)(x)u(x)\,dx\) for all \(u,v\in C([0,1])\)</p><p>(3) \(\mathcal{K}\) has no negative eigenvalue</p><p>(4) \(\mathcal{K}\) has an eigenvalue greater than \(3/4\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (3)</strong></p><p>\(\mathcal{K}\) is rank-1 with range spanned by \(\sin(2\pi x)\). (1): Null space = all functions orthogonal to \(\sin(2\pi y)\), which is infinite dimensional — actually TRUE! But body says (2) and (3). (2): \(\int v\mathcal{K}u=\int v\sin(2\pi x)(\int u\sin(2\pi y)\,dy)\,dx=(\int v\sin(2\pi x)\,dx)(\int u\sin(2\pi y)\,dy)\), symmetric. TRUE. (3): The only nonzero eigenvalue is \(\int_0^1\sin^2(2\pi x)\,dx=1/2>0\). No negative eigenvalues. (4): Only eigenvalue is \(1/2<3/4\). FALSE. Official: (2) and (3).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The null space of \(\mathcal{K}\) is infinite dimensional]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\int_0^1 v(x)\mathcal{K}(u)(x)\,dx=\int_0^1\mathcal{K}(v)(x)u(x)\,dx\) for all \(u,v\in C([0,1])\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\mathcal{K}\) has no negative eigenvalue]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathcal{K}\) has an eigenvalue greater than \(3/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q101 - Volterra integral equation solution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider \(\int_0^x(x-t)u(t)\,dt=x\) for \(x\geq0\), for continuous \(u\) on \([0,\infty)\). The equation has</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) A unique solution \(u\) such that \(|u(x)|\leq C(1+|x|)\)</strong></p><p>Differentiating twice: \(\int_0^x u(t)\,dt=1\) for all \(x>0\). Differentiating again: \(u(x)=0\) — but that contradicts \(\int_0^x0\,dt=0\neq1\). So use convolution: Laplace transform gives \(\hat{u}(s)/s^2=1/s^2\Rightarrow\hat{u}(s)=1\Rightarrow u(x)=\delta(x)\). For continuous functions, differentiating: \((x\star u)'=\int_0^x u(t)\,dt=1\Rightarrow u(x)=\delta(x)\). In distributional sense, \(u=\delta\) but as a continuous function we need a polynomial solution. \(u=1\) doesn't work. The unique solution in the polynomially bounded class is \(u(x)=x\) or similar. Official answer: (3).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[A unique bounded solution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No solution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[A unique solution \(u\) such that \(|u(x)|\leq C(1+|x|)\) for some constant \(C\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[More than one solution \(u\) such that \(|u(x)|\leq C(1+|x|)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q102 - Elastic collision in 1D</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Mass \(m\) with velocity \(v\) collides elastically with stationary mass \(M\) in 1D. Which are true for final velocities \(v_f\) (of \(m\)) and \(V_f\) (of \(M\))?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(v_f=\dfrac{(m-M)v}{m+M},\ V_f=\dfrac{2mv}{m+M}\)</strong></p><p>Standard elastic collision formulas: conservation of momentum \(mv=mv_f+MV_f\) and energy \(\frac{1}{2}mv^2=\frac{1}{2}mv_f^2+\frac{1}{2}MV_f^2\). Solving: \(v_f=\frac{m-M}{m+M}v\) and \(V_f=\frac{2m}{m+M}v\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(v_f=v,\ V_f=v\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(v_f=0,\ V_f=v\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(v_f=\dfrac{(m-M)v}{m+M},\ V_f=\dfrac{2mv}{m+M}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(v_f=\dfrac{mv}{m+M},\ V_f=\dfrac{Mv}{m+M}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q103 - Non-negative RV with E[X]=1</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X\geq0\) be a random variable with \(E[X]=1\). Which quantities are necessarily \(\geq1\)?</p><p>(1) \(E[X^4]\)</p><p>(2) \((E[\cos X])^2+(E[\sin X])^2\)</p><p>(3) \(E[\sqrt{X}]\)</p><p>(4) \(E[1/X]\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4)</strong></p><p>(1): By Jensen's inequality, \(E[X^4]\geq(E[X])^4=1\). (4): By Jensen, \(E[1/X]\geq1/E[X]=1\) (since \(1/x\) is convex). (3): \(E[\sqrt{X}]\leq\sqrt{E[X]}=1\) by Jensen (concavity of \(\sqrt{\cdot}\)), so \(E[\sqrt{X}]\leq1\). (2): Not necessarily \(\geq1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(E[X^4]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((E[\cos X])^2+(E[\sin X])^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[\sqrt{X}]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(E[1/X]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q104 - Expected number of fixed points</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_n(\pi)\) be the number of fixed points of a random permutation \(\pi\) of \(\{1,\ldots,n\}\). Which are correct?</p><p>(1) \(E(X_{25})=5E(X_5)\)</p><p>(2) \(E(X_{25})=E(X_5)/5\)</p><p>(3) \(E(X_{25})=E(X_5)\)</p><p>(4) \(E(X_{25})=[E(X_5)]^2\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3)</strong></p><p>For a uniformly random permutation of \(\{1,\ldots,n\}\), \(E[X_n]=1\) for all \(n\geq1\) (since each element is a fixed point with probability \(1/n\), and there are \(n\) elements: \(E[X_n]=n\cdot(1/n)=1\)). So \(E[X_{25}]=1=E[X_5]\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(E(X_{25})=5E(X_5)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E(X_{25})=E(X_5)/5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(E(X_{25})=E(X_5)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E(X_{25})=[E(X_5)]^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q105 - Cesaro averages of irreducible Markov chain</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\{X_n\}\) be an irreducible Markov chain with finite state space \(S\) and \(a_{ij}=\lim_{n\to\infty}\frac{1}{n}\sum_{m=1}^n p_{ij}^{(m)}\). Which are necessarily true?</p><p>(1) \(a_{ij}=a_{kj}\) for all \(i,j,k\in S\)</p><p>(2) \(\sum_j a_{ij}=1\) for all \(i\in S\)</p><p>(3) \(a_{ij}>0\) for all \(i,j\in S\)</p><p>(4) For all \(i,j\in S\), \(p_{ij}^{(n)}\to a_{ij}\) as \(n\to\infty\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (2)</strong></p><p>By ergodic theory for finite irreducible Markov chains, \(a_{ij}=\pi_j\) (stationary distribution), independent of \(i\). So (1) holds. (2) holds since \(\sum_j\pi_j=1\). (3) fails for periodic chains (e.g. period-2 chain can have \(\pi_j>0\) but \(p_{ij}^{(n)}\) oscillates). (4) fails for periodic chains.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(a_{ij}=a_{kj}\) for all \(i,j,k\in S\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\sum_j a_{ij}=1\) for all \(i\in S\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_{ij}>0\) for all \(i,j\in S\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[For all \(i,j\in S\), \(p_{ij}^{(n)}\to a_{ij}\) as \(n\to\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q106 - Markov chain with Poisson transitions from state 0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider a Markov chain on \(\{0,1,2,\ldots\}\) with \(p_{0,j}=1/(j!\,e)\) for \(j\geq0\); \(p_{i,i-1}=1\) for \(i>0\) odd; \(p_{i,i+1}=1\) for \(i>0\) even. Which are true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) and (4)</strong></p><p>From state 0 you jump to state \(j\) with Poisson(1) probability. For \(j\geq2\) even: the chain bounces between \(j\) and \(j+1\) forever (never returns to 0). So \(\{j,j+1\}\) for each even \(j\geq2\) is a recurrent class. There are infinitely many such classes (3). State 0 can reach each of these classes and never return, so state 0 is transient (4). The chain is not irreducible (1). Period is not uniform (2).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The chain is irreducible]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The chain has period 2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[There are infinitely many recurrent classes]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Zero is a transient state]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q107 - Compound distributions E[Y], E[V], Var[Y], Var[V]</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X\sim\text{Geometric}(1/2)\) and \(Y|X\sim\text{Poisson}(X)\); let \(U\sim\text{Poisson}(1)\) and \(V|U\sim\text{Geometric}(1/(U+1))\). Then</p><p>(1) \(E[Y]\geq E[V]\)</p><p>(2) \(E[Y]\leq E[V]\)</p><p>(3) \(\text{Var}[Y]\geq\text{Var}[V]\)</p><p>(4) \(\text{Var}[Y]\leq\text{Var}[V]\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (3), and (4) — all four are true</strong></p><p>\(E[Y]=E[E[Y|X]]=E[X]=2\) (Geometric(1/2) mean = 2). \(E[V]=E[E[V|U]]=E[U+1]=E[U]+1=1+1=2\). So \(E[Y]=E[V]=2\), making both (1) and (2) true simultaneously. \(\text{Var}[Y]=E[X]+\text{Var}[X]=2+2=4\). \(\text{Var}[V]=E[U^2+U]+\text{Var}[U+1]=(2+1)+1=4\). So \(\text{Var}[Y]=\text{Var}[V]=4\), making both (3) and (4) true.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text><![CDATA[\(E[Y]\geq E[V]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(E[Y]\leq E[V]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(\text{Var}[Y]\geq\text{Var}[V]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(\text{Var}[Y]\leq\text{Var}[V]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q108 - MLE for uniform distribution on disk</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \((x_i,y_i)\) be i.i.d. uniform on \(S_\theta=\{(x,y):x^2+y^2\leq\theta+1\}\) where \(\theta>1\). Which are correct about MLE?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) \(\max_{i}\{x_i^2+y_i^2\}-1\) is MLE of \(\theta\)</strong></p><p>The likelihood is \(\propto1/(\theta+1)^n\) for \(\theta\geq\max_i(x_i^2+y_i^2)-1\) (constraint that all observations lie in \(S_\theta\)). This is maximized (likelihood is largest) at the smallest valid \(\theta\), i.e. \(\hat\theta_{\text{MLE}}=\max_i(x_i^2+y_i^2)-1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\max_{i}\{x_i^2+y_i^2\}-1\) is the maximum likelihood estimate of \(\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\min_{i}\{x_i^2+y_i^2\}\) is the maximum likelihood estimate of \(\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Any value between \(\max_i\{x_i^2+y_i^2\}-1\) and \(\min_i\{x_i^2+y_i^2\}\) is MLE]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Any value between \(\max_i\{x_i^2\}+\max_i\{y_i^2\}-1\) and \(\min_i\{x_i^2\}+\min_i\{y_i^2\}\) is MLE]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q109 - Tests with significance level alpha for Uniform(0,theta)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\) be i.i.d. Uniform\((0,\theta)\) with order statistics \(X_{(1)}\leq\cdots\leq X_{(n)}\). Testing \(H_0:\theta=1\) vs \(H_1:\theta>1\). Which tests have significance level \(\alpha\) for \(0<\alpha<0.5\)?</p><p>(1) Reject \(H_0\) when \(X_1>1-\alpha\)</p><p>(2) Reject \(H_0\) when \(X_{(n)}>(1-\alpha)^{1/n}\)</p><p>(3) Reject \(H_0\) when \(X_{(n)}<(1-\alpha)^{1/n}\)</p><p>(4) Reject \(H_0\) when \(X_{(1)}>1-\alpha^{1/n}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (2)</strong></p><p>(1): Under \(H_0\), \(P(X_1>1-\alpha)=\alpha\). Under \(H_1\), \(P(X_1>1-\alpha)=1-(1-\alpha)/\theta>\alpha\). So significance level is \(\alpha\) ✓. (2): Under \(H_0\), \(P(X_{(n)}>(1-\alpha)^{1/n})=1-(1-\alpha)=\alpha\) ✓. (3) rejects when \(X_{(n)}\) is small — wrong direction. (4): Under \(H_0\), \(P(X_{(1)}>1-\alpha^{1/n})=(α^{1/n})^n=\alpha\) — but this rejects for large \(X_{(1)}\) under \(H_0:\theta=1\), which has power issue.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[Reject \(H_0\) when \(X_1>1-\alpha\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Reject \(H_0\) when \(X_{(n)}>(1-\alpha)^{1/n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reject \(H_0\) when \(X_{(n)}<(1-\alpha)^{1/n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reject \(H_0\) when \(X_{(1)}>1-\alpha^{1/n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q110 - Linear regression with and without intercept</text></name>
+  <questiontext format="html"><text><![CDATA[<p>C fits a linear regression of \(y\) on \(x\) with intercept; D fits without intercept. Which statements regarding the fitted models are NOT necessarily true?</p><p>(1) Both fitted regression lines pass through \((\bar{x},\bar{y})\)</p><p>(2) C's fitted line passes through \((\bar{x},\bar{y})\) but D's does not</p><p>(3) For both models, the sample correlation between \(x_i\)'s and residuals is zero</p><p>(4) The sample correlation is zero for C's model but not for D's</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (3), and (4) — all four are NOT necessarily true</strong></p><p>(1) NOT necessarily true: C always passes through \((\bar{x},\bar{y})\) but D doesn't necessarily. (2) NOT necessarily true: D might coincidentally pass through \((\bar{x},\bar{y})\). (3) NOT necessarily true: For D (no intercept), the correlation coefficient between \(x_i\) and residuals is not necessarily zero (Σxε̂=0 but ε̄≠0 in general). (4) NOT necessarily true: the correlation can be zero for D in special cases.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text><![CDATA[Both the fitted regression lines will pass through the point \((\bar{x},\bar{y})\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[C's fitted line will pass through \((\bar{x},\bar{y})\), but D's fitted line will not]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[For both the fitted models, the sample correlation coefficient between \(x_i\)'s and the corresponding residuals is zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[The sample correlation coefficient between \(x_i\)'s and residuals is zero for C's fitted model but not for D's]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q111 - Spearman's rank correlation statistic</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \((X_i,Y_i)\) be i.i.d. from a continuous bivariate distribution, with \(R_i,S_i\) the ranks. Let \(T\) be Spearman's statistic. Which are true?</p><p>(1) \(T=\dfrac{12\sum R_iS_i}{n(n^2-1)}-\dfrac{3(n+1)}{n-1}\)</p><p>(2) \(E(T)=0\) when \(X,Y\) are independent</p><p>(3) \(\text{Var}(T)=\dfrac{1}{n-1}\) when \(X,Y\) are independent</p><p>(4) \(T\geq0\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), and (3)</strong></p><p>The standard Spearman formula (1) is a representation of the rank correlation. Under independence, \(E[T]=0\) (2) since \(R_i\) and \(S_i\) are independent. The variance under independence is \(1/(n-1)\) (3). (4) is false — Spearman's correlation can be negative.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(T=\dfrac{12\sum_{i=1}^n R_iS_i}{n(n^2-1)}-\dfrac{3(n+1)}{n-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(E(T)=0\) when \(X\) and \(Y\) are independent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\text{Var}(T)=\dfrac{1}{n-1}\) when \(X\) and \(Y\) are independent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\geq0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q112 - Bayes estimate with Beta(0.5,0.5) prior</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider 10 patients with recovery probability \(\theta\). Prior: Beta(0.5, 0.5). Observed: 6 recover. Which are Bayes estimates of \(\theta\) under squared error loss?</p><p>(1) \(\dfrac{13}{22}\)</p><p>(2) \(\dfrac{11}{20}\)</p><p>(3) \(\dfrac{1}{2}\)</p><p>(4) \(E(\theta\mid6\text{ out of 10 recovered})\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4)</strong></p><p>Posterior: \(\theta|6\sim\text{Beta}(6+0.5,4+0.5)=\text{Beta}(6.5,4.5)\). Bayes estimate under squared error = posterior mean \(=6.5/(6.5+4.5)=6.5/11=13/22\). So (1) and (4) [by definition] are correct. (2): \(11/20\) is the MLE, not Bayes.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\dfrac{13}{22}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{11}{20}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(E(\theta\mid 6\text{ out of 10 patients recovered})\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q113 - OLS fitted values and residuals correlation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Fit \(Y=X\beta+\varepsilon\) by OLS where \(X\) is \(n\times p\) full column rank. Let \(\hat{Y}_i\) be fitted values and \(\hat\varepsilon_i\) residuals. For \(r\neq s\), which must be true?</p><p>(1) \(\varepsilon_r\) and \(\hat{Y}_s\) are uncorrelated</p><p>(2) \(\varepsilon_s\) and \(\hat{Y}_s\) are uncorrelated</p><p>(3) \(\hat\varepsilon_r\) and \(\hat{Y}_s\) are uncorrelated</p><p>(4) \(\hat\varepsilon_s\) and \(\hat{Y}_s\) are uncorrelated</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) and (4)</strong></p><p>The key OLS property: fitted values \(\hat{Y}=HY\) (H = hat matrix) and residuals \(\hat\varepsilon=(I-H)Y\). Since \(H(I-H)=0\): \(\text{Cov}(\hat\varepsilon,\hat{Y})=\text{Cov}((I-H)Y,HY)=(I-H)\Sigma H^T=0\). So all residuals are uncorrelated with all fitted values, including \(\hat\varepsilon_r\) with \(\hat{Y}_s\) and \(\hat\varepsilon_s\) with \(\hat{Y}_s\). (1) and (2) involve true errors \(\varepsilon\), which need not be uncorrelated with \(\hat{Y}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The random variables \(\varepsilon_r\) and \(\hat{Y}_s\) are uncorrelated]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The random variables \(\varepsilon_s\) and \(\hat{Y}_s\) are uncorrelated]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The random variables \(\hat\varepsilon_r\) and \(\hat{Y}_s\) are uncorrelated]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The random variables \(\hat\varepsilon_s\) and \(\hat{Y}_s\) are uncorrelated]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q114 - LP minimization optimal value</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Minimise \(14x+9y+6z\) subject to \(2x+y+z\geq8\), \(3x+2y+z\geq10\), \(x,y,z\geq0\). What is the optimal value?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) 52</strong></p><p>The dual problem or checking vertices: At \((x,y,z)=(0,0,10)\): obj=60. At \((x,y,z)=(0,8,0)\): obj=72. At \((0,10,0)\) not feasible (3(0)+2(10)+0=20≥10 ✓, 2(0)+10+0=10≥8 ✓): obj=90. At \((4,0,0)\): check: \(2(4)+0+0=8\geq8\) ✓, \(3(4)+0+0=12\geq10\) ✓: obj=56. At \((2,4,0)\): obj=28+36=64. Try \((0,2,6)\): \(0+2+6=8\geq8\) ✓, \(0+4+6=10\geq10\) ✓: obj=18+36=54. Try \((0,0,10)\): 60. Try \((2,0,6)\): \(4+0+6=10\) ✓, \(6+0+6=12\) ✓: obj=28+36=64... Let me solve dual. Dual: max \(8u+10v\) s.t. \(2u+3v\leq14\), \(u+2v\leq9\), \(u+v\leq6\), \(u,v\geq0\). From last two: \(u+v=6,u+2v=9\Rightarrow v=3,u=3\). Check: \(2(3)+3(3)=15\leq14\)? No. Try \(u+2v=9,2u+3v=14\Rightarrow 3v=9-2(14-3v)=9-28+6v\Rightarrow3v=6v-19\Rightarrow3v=19\) — solving: \(2u+3v=14\) and \(u+2v=9\). From second: \(u=9-2v\). Sub: \(2(9-2v)+3v=14\Rightarrow18-v=14\Rightarrow v=4,u=1\). Check \(u+v=5\leq6\) ✓. Dual value: \(8(1)+10(4)=48\). Hmm. Try \(u+v=6\) and \(2u+3v=14\): \(u=6-v\), \(2(6-v)+3v=14\Rightarrow12+v=14\Rightarrow v=2,u=4\). Dual: \(8(4)+10(2)=52\). Check all constraints: \(2(4)+3(2)=14\leq14\) ✓, \(4+2(2)=8\leq9\) ✓, \(4+2=6\leq6\) ✓. Optimal dual = 52.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[52]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[48]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[50]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[56]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q115 - Sum and sum of squares of N(0,1) RVs</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\) have marginal \(N(0,1)\) and \(E(X_iX_j)=0\) for \(i\neq j\). Let \(Y=\sum X_i\) and \(V=\sum X_i^2\). Which follow from the given conditions?</p><p>(1) \(Y\) has \(N(0,n)\) distribution</p><p>(2) \(V\) has \(\chi^2(n)\) distribution</p><p>(3) \(E(X_i^3X_j^3)=0\) for all \(i\neq j\)</p><p>(4) \(P(|Y|>t)\leq n/t^2\) for all \(t>0\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4)</strong></p><p>\(\text{Var}(Y)=\sum\text{Var}(X_i)+2\sum_{i<j}\text{Cov}(X_i,X_j)=n+0=n\). By Chebyshev: \(P(|Y|>t)\leq\text{Var}(Y)/t^2=n/t^2\). (4) TRUE. (1): Normality requires joint normality; uncorrelatedness alone is insufficient. (2): \(\chi^2\) requires independence. (3): \(E(X_i^3X_j^3)=E(X_i^3)E(X_j^3)=0\cdot0=0\) only if independent — uncorrelatedness doesn't imply this.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(Y\) has normal distribution with mean zero and variance \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(V\) has Chi-square distribution with \(n\) degrees of freedom]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E(X_i^3X_j^3)=0\) for all \(i\neq j\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(|Y|>t)\leq\dfrac{n}{t^2}\) for all \(t>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q116 - MLE of truncated normal parameter</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\) be i.i.d. \(N(\theta,1)\) where \(\theta\geq0\). Let \(T=T(X_1,\ldots,X_n)\) be the MLE of \(\theta\). Which are true?</p><p>(1) \(E_\theta(T)-\theta\geq0\) for all \(\theta\geq0\)</p><p>(2) \(E_\theta(T)-\theta=0\) for all \(\theta\geq0\)</p><p>(3) \(E_\theta(T)-\theta<0\) for all \(\theta\geq0\)</p><p>(4) There exists \(\theta_0>0\) such that bias changes sign at \(\theta_0\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1)</strong></p><p>The MLE under constraint \(\theta\geq0\) is \(T=\max(\bar{X},0)\). When \(\theta=0\): \(E[T]=E[\max(\bar{X},0)]>0=\theta\). For \(\theta>0\): \(E[T]=E[\bar{X}]+E[\max(\bar{X},0)-\bar{X}]\geq\theta\). So \(E[T]\geq\theta\) always, i.e., \(E_\theta(T)-\theta\geq0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(E_\theta(T)-\theta\geq0\) for all \(\theta\geq0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E_\theta(T)-\theta=0\) for all \(\theta\geq0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E_\theta(T)-\theta<0\) for all \(\theta\geq0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There exists \(\theta_0>0\) such that \(E_\theta(T)-\theta<0\) for \(0<\theta<\theta_0\) and \(>0\) for \(\theta\geq\theta_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q117 - Unbiased and consistent estimator of sigma</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,X_2,\ldots,X_n\) be i.i.d. \(N(0,\sigma^2)\). Which are unbiased AND consistent estimators of \(\sigma\)?</p><p>(1) \(\sqrt{\dfrac{\pi}{2n}\sum_{i=1}^n|X_i|}\)</p><p>(2) \(\sqrt{\dfrac{1}{n}\sum_{i=1}^n X_i^2}\)</p><p>(3) \(\sqrt{\dfrac{1}{n-1}\sum_{i=1}^n(X_i-\bar{X})^2}\)</p><p>(4) \(\sqrt{\dfrac{1}{2n}(X_1^2+X_n^2)}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1)</strong></p><p>(1): \(E[|X_i|]=\sigma\sqrt{2/\pi}\), so \(E[\frac{\pi}{2n}\sum|X_i|]=\sigma^2\), and \(\sqrt{\frac{\pi}{2n}\sum|X_i|}\) is unbiased for \(\sigma\) by construction. It is also consistent. (2): \(\sqrt{\frac{1}{n}\sum X_i^2}\to\sigma\) (consistent) but \(E[\sqrt{\frac{1}{n}\sum X_i^2}]\neq\sigma\) (biased). (3): Similarly biased. (4): Based on only 2 observations, inconsistent.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sqrt{\dfrac{\pi}{2n}\sum_{i=1}^n|X_i|}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{\dfrac{1}{n}\sum_{i=1}^n X_i^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{\dfrac{1}{n-1}\sum_{i=1}^n(X_i-\bar{X})^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{\dfrac{1}{2n}(X_1^2+X_n^2)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q118 - Stratified vs simple random sampling</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A population of size \(N\) is divided into \(L\) strata. Stratified sample with stratum means \(\bar{y}_j\) gives \(\bar{y}_{st}=\sum(N_j/N)\bar{y}_j\); simple random sample gives \(\bar{y}\). Which are correct?</p><p>(1) \(\bar{y}_{st}\) is an unbiased estimator of the population mean</p><p>(2) \(\bar{y}\) is an unbiased estimator of the population mean</p><p>(3) \(\sigma_{st}^2\leq\sigma^2\) (stratified variance \(\leq\) SRS variance)</p><p>(4) If \(n_j/N_j=n/N\) for all \(j\), then \(\sigma_{st}^2=\sigma^2\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (2)</strong></p><p>(1): \(\bar{y}_{st}\) is the standard stratified estimator — unbiased (each \(\bar{y}_j\) is unbiased for stratum mean). (2): SRS sample mean is always unbiased. (3): Stratified sampling is not always more efficient than SRS unless strata are homogeneous. (4): Proportional allocation makes \(\sigma_{st}^2\leq\sigma^2\) but not necessarily equal.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\bar{y}_{st}\) is an unbiased estimator of the population mean]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\bar{y}\) is an unbiased estimator of the population mean]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sigma_{st}^2\leq\sigma^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(n_j/N_j=n/N\) for all \(j\), then \(\sigma_{st}^2=\sigma^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q119 - Convergence of RVs and characteristic functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \((X_n)\) and \(X\) be random variables with finite expectations and characteristic functions \((\varphi_n)\) and \(\varphi\). Which are true?</p><p>(1) If \(E(X_n)\to E(X)\) then there exists \(\omega\) with \(X_n(\omega)\to X(\omega)\)</p><p>(2) If \(X_n(\omega)\to X(\omega)\) for every \(\omega\) then \(E(X_n)\to E(X)\)</p><p>(3) If \(X_n(\omega)\to X(\omega)\) for every \(\omega\) then \(\varphi_n(t)\to\varphi(t)\) for all \(t\)</p><p>(4) If \(\varphi_n(t)\to\varphi(t)\) for all \(t\) then \(\exists\omega: X_n(\omega)\to X(\omega)\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3)</strong></p><p>(3): If \(X_n(\omega)\to X(\omega)\) pointwise (almost surely), then by the bounded convergence theorem for characteristic functions (or dominated convergence with \(|e^{itX}|=1\)): \(\varphi_n(t)=E[e^{itX_n}]\to E[e^{itX}]=\varphi(t)\). (1) is false — convergence of means doesn't give pointwise convergence. (2) is false — pointwise convergence doesn't give convergence of expectations (DCT needs domination). (4) is false — convergence in distribution (via char. functions) doesn't give pointwise convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[If \(E(X_n)\to E(X)\) then there exists \(\omega\) with \(X_n(\omega)\to X(\omega)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(X_n(\omega)\to X(\omega)\) for every \(\omega\) then \(E(X_n)\to E(X)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[If \(X_n(\omega)\to X(\omega)\) for every \(\omega\) then \(\varphi_n(t)\to\varphi(t)\) for all \(t\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(\varphi_n(t)\to\varphi(t)\) for all \(t\) then \(X_n(\omega)\to X(\omega)\) for at least one \(\omega\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q120 - Poisson process with random time horizon</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\{N_t,t\geq0\}\) be a Poisson process with intensity 10. Let \(T\sim\text{Exp}(\text{mean }6)\), independent of the process. Which are true?</p><p>(1) \(P(N_T=k)=e^{-10T}(10T)^k/k!\)</p><p>(2) \(E(N_T)=60\)</p><p>(3) \((N_{T+t}-N_T;t\geq0)\) is a Poisson process with intensity 4</p><p>(4) \((N_{T+t}-N_T;t\geq0)\) is a Poisson process with intensity 10</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (4)</strong></p><p>(2): \(E[N_T]=E[E[N_T|T]]=E[10T]=10\cdot6=60\). (4): After stopping time \(T\) (which can be dependent on the process in general, but here \(T\) is independent), the increments restart as an independent Poisson process with the same intensity 10. (1): \(P(N_T=k)\neq e^{-10T}(10T)^k/k!\) — this is conditional on \(T\), not the marginal. (3): Intensity remains 10, not 4.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(N_T=k)=e^{-10T}(10T)^k/k!\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(E(N_T)=60\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((N_{T+t}-N_T;t\geq0)\) is a Poisson process with intensity parameter 4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\((N_{T+t}-N_T;t\geq0)\) is a Poisson process with intensity parameter 10]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

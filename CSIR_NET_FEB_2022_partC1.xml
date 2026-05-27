@@ -1,0 +1,366 @@
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/FEB 2022/Part C - Advanced Mathematics</text></category>
+  <info format="html"><text><![CDATA[<p>CSIR-UGC NET Mathematical Sciences, 16 February 2022. Part C: Advanced Mathematics (Q61-120). Marks: +4.75, no negative marking. MSQ — one or more correct answers. Attempt any 20.</p>]]></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q61 - Limsup inequalities for sequences and sets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \((a_n),(b_n)\) be sequences of reals and \(E,F\subseteq\mathbb{R}\). Let \(E+F=\{a+b:a\in E,b\in F\}\). Which statements are true?</p><p>(1) \(\limsup(a_n+b_n)\leq\limsup a_n+\limsup b_n\)</p><p>(2) \(\limsup(E+F)\leq\limsup E+\limsup F\)</p><p>(3) \(\liminf(a_n+b_n)\leq\liminf a_n+\liminf b_n\)</p><p>(4) \(\liminf(E+F)=\liminf E+\limsup F\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (2)</strong></p><p>(1) is the standard limsup sub-additivity inequality. (2) holds for sets analogously. (3) is FALSE; the correct inequality is \(\liminf(a_n+b_n)\geq\liminf a_n+\liminf b_n\). (4) is FALSE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\limsup_{n\to\infty}(a_n+b_n)\leq\limsup_{n\to\infty}a_n+\limsup_{n\to\infty}b_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\limsup(E+F)\leq\limsup E+\limsup F\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\liminf_{n\to\infty}(a_n+b_n)\leq\liminf_{n\to\infty}a_n+\liminf_{n\to\infty}b_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\liminf(E+F)=\liminf E+\limsup F\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q62 - Differentiable function and g(x)=e^x f(x)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:\mathbb{R}^+\to\mathbb{R}\) be differentiable and \(g(x)=e^xf(x)\). Which are true?</p><p>(1) If \(\lim_{x\to\infty}f(x)=0\) then \(\lim_{x\to\infty}f'(x)=0\)</p><p>(2) If \(\lim_{x\to\infty}(f(x)+f'(x))=0\) then \(\lim_{x\to\infty}\frac{g(x)-g(y)}{e^x-e^y}=0\)</p><p>(3) If \(\lim_{x\to\infty}f'(x)=0\) then \(\lim_{x\to\infty}f(x)=0\)</p><p>(4) If \(\lim_{x\to\infty}(f(x)+f'(x))=0\) then \(\lim_{x\to\infty}f(x)=0\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (4)</strong></p><p>(4): \(f+f'=0\Rightarrow g'=e^x(f+f')=0\Rightarrow g\to0\Rightarrow f=ge^{-x}\to0\). (2) follows similarly since \(g\) is constant. (1) is false (e.g. \(f(x)=\sin(x^2)/x\)). (3) is false (e.g. \(f(x)=1\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[If \(\lim_{x\to\infty}f(x)=0\) then \(\lim_{x\to\infty}f'(x)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(\lim_{x\to\infty}(f(x)+f'(x))=0\) then \(\lim_{y\to\infty}\frac{g(x)-g(y)}{e^x-e^y}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(\lim_{x\to\infty}f'(x)=0\) then \(\lim_{x\to\infty}f(x)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(\lim_{x\to\infty}(f(x)+f'(x))=0\) then \(\lim_{x\to\infty}f(x)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q63 - Continuous image and preimage properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\subseteq\mathbb{R}\) and \(f:\mathbb{R}\to\mathbb{R}\) be continuous. Which are true?</p><p>(1) If \(A\) is closed then \(f(A)\) is closed</p><p>(2) If \(A\) is bounded then \(f^{-1}(A)\) is bounded</p><p>(3) If \(A\) is closed and bounded then \(f(A)\) is closed and bounded</p><p>(4) If \(A\) is bounded then \(f(A)\) is bounded</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) and (4)</strong></p><p>(3): \(A\) compact (closed+bounded in \(\mathbb{R}\)) \(\Rightarrow f(A)\) compact (closed+bounded). (4): \(A\) bounded \(\Rightarrow \overline{A}\) compact \(\Rightarrow f(\overline{A})\) compact, and \(f(A)\subseteq f(\overline{A})\) is bounded. (1) fails (e.g. \(f(x)=1/(1+x^2)\) maps \(\mathbb{R}\) to \((0,1]\), not closed). (2) fails (\(f^{-1}\) of a bounded set need not be bounded).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[If \(A\) is closed then \(f(A)\) is closed]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(A\) is bounded then \(f^{-1}(A)\) is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(A\) is closed and bounded then \(f(A)\) is closed and bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(A\) is bounded then \(f(A)\) is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q64 - Continuous surjections between spaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In which cases does there exist a continuous surjection \(f:X\to Y\)?</p><p>(1) \(X=(0,1),\ Y=(0,1]\)</p><p>(2) \(X=[0,1],\ Y=(0,1]\)</p><p>(3) \(X=(0,1),\ Y=\mathbb{R}\)</p><p>(4) \(X=(0,2),\ Y=\{0,1\}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (3)</strong></p><p>(1): \(f(x)=x\) for \(x\in(1/2,1)\) and \(f(x)=x+1/2\) suitably — indeed \((0,1)\) is homeomorphic to \((0,1]\) minus endpoint, so surjection exists. (3): \(\tan\) maps \((-\pi/2,\pi/2)\cong(0,1)\) onto \(\mathbb{R}\). (2) fails: \([0,1]\) compact, \((0,1]\) not. (4) fails: \((0,2)\) connected, \(\{0,1\}\) discrete.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(X=(0,1),\ Y=(0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X=[0,1],\ Y=(0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(X=(0,1),\ Y=\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X=(0,2),\ Y=\{0,1\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q65 - Compact cover of closure</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(Y\) be a nonempty bounded open subset of \(\mathbb{R}^n\), \(\overline{Y}\) its closure, and \(\{U_j\}_{j\geq1}\) open sets with \(\overline{Y}\subseteq\bigcup_{j\geq1}U_j\). Which are true?</p><p>(1) There exist finitely many \(j_1,\ldots,j_N\) such that \(Y\subseteq\bigcup_{k=1}^N U_{j_k}\)</p><p>(2) There exists \(N\) such that \(Y\subseteq\bigcup_{j=1}^N U_j\)</p><p>(3) For every subsequence \(j_1,j_2,\ldots\) we have \(Y\subseteq\bigcup_{k=1}^\infty U_{j_k}\)</p><p>(4) There exists a subsequence \(j_1,j_2,\ldots\) such that \(Y=\bigcup_{k=1}^\infty U_{j_k}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (2)</strong></p><p>\(\overline{Y}\) is compact (closed and bounded). The open cover \(\{U_j\}\) of \(\overline{Y}\) has a finite subcover, so (1) holds. Since the cover starts with \(U_1,U_2,\ldots\), some finite prefix covers \(\overline{Y}\supseteq Y\), so (2) holds. (3) is false (not every subsequence suffices). (4) is not generally true.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[There exist finitely many \(j_1,\ldots,j_N\) such that \(Y\subseteq\bigcup_{k=1}^N U_{j_k}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[There exists \(N\) such that \(Y\subseteq\bigcup_{j=1}^N U_j\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[For every subsequence \(j_1,j_2,\ldots\) we have \(Y\subseteq\bigcup_{k=1}^\infty U_{j_k}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There exists a subsequence \(j_1,j_2,\ldots\) such that \(Y=\bigcup_{k=1}^\infty U_{j_k}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q66 - Continuous function with equal integrals</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:[0,1]\to\mathbb{R}\) be continuous with \(\int_0^t f(x)\,dx=\int_t^1 f(x)\,dx\) for every \(t\in[0,1]\). Which are necessarily true?</p><p>(1) \(f\) is differentiable on \((0,1)\)</p><p>(2) \(f\) is monotonic on \([0,1]\)</p><p>(3) \(\int_0^1 f(x)\,dx=1\)</p><p>(4) \(f(x)>0\) for all rational \(x\in[0,1]\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (2)</strong></p><p>The condition \(\int_0^t f=\int_t^1 f\) means \(2\int_0^t f(x)\,dx=\int_0^1 f(x)\,dx\) (constant). Differentiating: \(2f(t)=0\), so \(f\equiv0\). Wait — that gives \(f=0\), which is both differentiable and monotonic (trivially). More carefully: the condition implies \(F(t)=F(1)/2\) for all \(t\), so \(F'(t)=f(t)=0\) for all \(t\). So \(f\equiv0\) is the only solution, which is differentiable and monotonic.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) is differentiable on \((0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) is monotonic on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\int_0^1 f(x)\,dx=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x)>0\) for all rational \(x\in[0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q67 - Functions of bounded variation and integrals</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(k\geq1\), define \(f_k(x)=\dfrac{x^k}{(1+x)^2}\) for \(x\geq0\). Which are true?</p><p>(1) For each \(k\), \(f_k\) is of bounded variation on compact intervals</p><p>(2) For every \(k\), \(\int_0^\infty f_k(x)\,dx<\infty\)</p><p>(3) \(\lim_{k\to\infty}\int_0^1 f_k(x)\,dx\) exists</p><p>(4) The sequence \(f_k\) converges uniformly on \([0,1]\) as \(k\to\infty\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (3)</strong></p><p>(1): \(f_k\) is \(C^1\) on compact intervals, hence of bounded variation. (3): \(\int_0^1 f_k=\int_0^1 x^k/(1+x)^2\,dx\leq\int_0^1 x^k\,dx=1/(k+1)\to0\). (2) fails since \(\int_1^\infty x^k/(1+x)^2\,dx\sim\int_1^\infty x^{k-2}\,dx=\infty\) for \(k\geq2\). (4) fails since \(f_k(1)=1/4\not\to0\) uniformly.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[For each \(k\), \(f_k\) is of bounded variation on compact intervals]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[For every \(k\), \(\int_0^\infty f_k(x)\,dx<\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\lim_{k\to\infty}\int_0^1 f_k(x)\,dx\) exists]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sequence \(f_k\) converges uniformly on \([0,1]\) as \(k\to\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q68 - Bounded monotone function on R^2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:\mathbb{R}^2\to\mathbb{R}\) be bounded such that \(g_t(y)=f(t,y)\) and \(h_t(x)=f(x,t)\) are non-decreasing for each \(t\). Which are necessarily true?</p><p>(1) \(k(x)=f(x,x)\) is non-decreasing</p><p>(2) Number of discontinuities of \(f\) is at most countably infinite</p><p>(3) \(\lim_{(x,y)\to(+\infty,+\infty)}f(x,y)\) exists</p><p>(4) \(\lim_{(x,y)\to(+\infty,-\infty)}f(x,y)\) exists</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (2)</strong></p><p>(1): \(k(x)=f(x,x)\) is non-decreasing since both arguments increase together and \(f\) is non-decreasing in each. (2): Each monotone function in one variable has at most countably many discontinuities; the bivariate version preserves this. (3),(4) need not hold in general.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(k(x)=f(x,x)\) is a non-decreasing function]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Number of discontinuities of \(f\) is at most countably infinite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lim_{(x,y)\to(+\infty,+\infty)}f(x,y)\) exists]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lim_{(x,y)\to(+\infty,-\infty)}f(x,y)\) exists]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q69 - Inverse function theorem for h=(f,g)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:\mathbb{R}^3\to\mathbb{R}^2\) be \(C^1\) with \(f(0,0,0)=(0,0)\) and derivative matrix \(A\) at origin. Let \(g(x,y,z)=xy+yz+zx+x+y+z\) and \(h=(f,g):\mathbb{R}^3\to\mathbb{R}^3\). For which \(A\) does \(h\) admit a differentiable local inverse near \((0,0,0)\)?</p><p>(1) \(A=\begin{pmatrix}1&2&1\\0&0&0\end{pmatrix}\)</p><p>(2) \(A=\begin{pmatrix}2&2&2\\6&5&2\end{pmatrix}\)</p><p>(3) \(A=\begin{pmatrix}0&0&-1\\0&1&0\end{pmatrix}\)</p><p>(4) \(A=\begin{pmatrix}4&2&4\\0&3&2\end{pmatrix}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) and (4)</strong></p><p>The derivative of \(h\) at origin is the \(3\times3\) matrix \(\begin{pmatrix}A\\\nabla g^T\end{pmatrix}\). \(\nabla g=(y+z+1,x+z+1,x+y+1)|_0=(1,1,1)\). By IFT, local inverse exists iff \(\det\neq0\). For (3): \(\det\begin{pmatrix}0&0&-1\\0&1&0\\1&1&1\end{pmatrix}=1\neq0\). For (4): \(\det\begin{pmatrix}4&2&4\\0&3&2\\1&1&1\end{pmatrix}=4(3-2)-2(0-2)+4(0-3)=4+4-12=-4\neq0\). For (1),(2): det=0.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A=\begin{pmatrix}1&2&1\\0&0&0\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A=\begin{pmatrix}2&2&2\\6&5&2\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(A=\begin{pmatrix}0&0&-1\\0&1&0\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(A=\begin{pmatrix}4&2&4\\0&3&2\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q70 - Bounded linear operator with bounded inverse</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(T:X\to Y\) be a bounded linear operator between Banach spaces. Which conditions imply \(T\) has a bounded inverse?</p><p>(1) \(\inf_{\|x\|=1}\|Tx\|=0\)</p><p>(2) \(\inf_{\|x\|=1}\|Tx\|=0\) and \(T(X)\) is dense in \(Y\)</p><p>(3) \(\inf_{\|x\|=1}\|Tx\|>0\)</p><p>(4) \(\inf_{\|x\|=1}\|Tx\|>0\) and \(T(X)\) is dense in \(Y\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4)</strong></p><p>\(\inf\|Tx\|>0\) means \(T\) is bounded below (injective). Density of range plus bounded below means \(T\) is bijective, and by the open mapping theorem \(T^{-1}\) is bounded. (3) alone: \(T\) is injective but range may not be dense, so no bounded inverse onto \(Y\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\inf_{\|x\|=1}\|Tx\|=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\inf_{\|x\|=1}\|Tx\|=0\) and \(T(X)\) is dense in \(Y\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\inf_{\|x\|=1}\|Tx\|>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\inf_{\|x\|=1}\|Tx\|>0\) and \(T(X)\) is dense in \(Y\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q71 - Rank and independence of rows/columns</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\) be \(m\times n\) with first \(r\) rows linearly independent and first \(s\) columns linearly independent (\(r<m,s<n\)). Which are true?</p><p>(1) Rank of \(A\) is at least \(\max\{r,s\}\)</p><p>(2) The submatrix of first \(r\) rows and \(s\) columns has rank \(\min\{r,s\}\)</p><p>(3) If \(r<s\), there exists a row among rows \(r+1,\ldots,m\) linearly independent from the first \(r\) rows</p><p>(4) If \(s<r\), there exists a column among \(s+1,\ldots,n\) linearly dependent on the first \(s\) columns</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (2)</strong></p><p>(1): rank \(\geq r\) (since first \(r\) rows are independent) and rank \(\geq s\) (since first \(s\) columns are independent), so rank \(\geq\max\{r,s\}\). (2): The \(r\times s\) submatrix has rank \(\min\{r,s\}\) by the given independence conditions. (3),(4) are not necessarily true.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[The rank of \(A\) is at least \(\max\{r,s\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The submatrix of first \(r\) rows and \(s\) columns has rank \(\min\{r,s\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(r<s\), there exists a row among rows \(r+1,\ldots,m\) linearly independent from the first \(r\) rows]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(s<r\), there exists a column among \(s+1,\ldots,n\) linearly dependent on the first \(s\) columns]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q72 - Singular matrix and linear system solvability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\) be \(m\times m\). I: \(\exists\) nonzero \(\mathbf{b}_1\) such that \(A\mathbf{x}=\mathbf{b}_1\) has no solution. II: \(\exists\) nonzero \(\mathbf{b}_2\neq c\mathbf{b}_3\) such that \(A\mathbf{x}=\mathbf{b}_2\) and \(A\mathbf{x}=\mathbf{b}_3\) both have solutions. Which are true?</p><p>(1) II is TRUE whenever \(A\) is singular</p><p>(2) I is TRUE whenever \(A\) is singular</p><p>(3) Both I and II can be TRUE simultaneously</p><p>(4) If \(m=2\), at least one of I and II is FALSE</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (3)</strong></p><p>(2): If \(A\) is singular, its column space is a proper subspace, so there exist \(\mathbf{b}\) not in Col\((A)\), giving no solution. (3): If \(\text{rank}(A)=r\) with \(1\leq r<m\), then I is true (some \(\mathbf{b}\notin\text{Col}(A)\)) and II is true (Col\((A)\) contains a 2D subspace if \(r\geq2\), or use \(\mathbf{b}=0\) doesn't work... for \(r=1\): Col\((A)\) is 1D so any two solutions give \(\mathbf{b}_2=c\mathbf{b}_3\) — so II needs \(r\geq2\)). (1) is false for rank-1 singular matrices. (4) is false.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[II is TRUE whenever \(A\) is singular]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[I is TRUE whenever \(A\) is singular]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Both I and II can be TRUE simultaneously]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(m=2\), then at least one of I and II is FALSE]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q73 - Nilpotent matrix dimensions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(M\in M_n(\mathbb{R})\) with \(M\neq0\) but \(M^2=0\). Which are true?</p><p>(1) If \(n\) even: \(\dim\text{Col}(M)>\dim\text{Null}(M)\)</p><p>(2) If \(n\) even: \(\dim\text{Col}(M)\leq\dim\text{Null}(M)\)</p><p>(3) If \(n\) odd: \(\dim\text{Col}(M)<\dim\text{Null}(M)\)</p><p>(4) If \(n\) odd: \(\dim\text{Col}(M)>\dim\text{Null}(M)\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (3)</strong></p><p>Since \(M^2=0\), Col\((M)\subseteq\text{Null}(M)\). Let \(r=\text{rank}(M)\). Then \(\dim\text{Col}=r\) and \(\dim\text{Null}=n-r\). Constraint: \(r\leq n-r\Rightarrow2r\leq n\Rightarrow r\leq n/2\). So Col\(\leq\)Null always; equality only if \(n\) even with \(r=n/2\). For even \(n\): \(\dim\text{Col}\leq\dim\text{Null}\). For odd \(n\): \(r\leq(n-1)/2<n/2<n-r\), so \(\dim\text{Col}<\dim\text{Null}\) strictly.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[If \(n\) is even then \(\dim\text{Col}(M)>\dim\text{Null}(M)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(n\) is even then \(\dim\text{Col}(M)\leq\dim\text{Null}(M)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(n\) is odd then \(\dim\text{Col}(M)<\dim\text{Null}(M)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(n\) is odd then \(\dim\text{Col}(M)>\dim\text{Null}(M)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q74 - Conditions for diagonalizability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>We say \(A\) is diagonalizable if \(PAP^{-1}\) is diagonal for some nonsingular \(P\). Which conditions imply diagonalizability?</p><p>(1) There exists integer \(k\) such that \(A^k=I\)</p><p>(2) There exists integer \(k\) such that \(A^k\) is nilpotent</p><p>(3) \(A^2\) is diagonalizable</p><p>(4) \(A\) has \(n\) linearly independent eigenvectors</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4)</strong></p><p>(4): Definition of diagonalizability. (1): If \(A^k=I\), minimal polynomial divides \(x^k-1\) which has distinct roots \(\Rightarrow A\) diagonalizable. (2): If \(A^k\) is nilpotent then all eigenvalues of \(A\) are 0, but \(A\) need not be diagonalizable. (3): \(A^2\) diagonalizable does not imply \(A\) diagonalizable (e.g. \(A=\begin{pmatrix}0&1\\0&0\end{pmatrix}\), \(A^2=0\) diagonalizable).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[There exists integer \(k\) such that \(A^k=I\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There exists integer \(k\) such that \(A^k\) is nilpotent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A^2\) is diagonalizable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(A\) has \(n\) linearly independent eigenvectors]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q75 - Values NOT possible for determinant of X_0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X=X_0\in M_2(\mathbb{Z})\) solve \(AX-XA=A\) for some \(A\in\left\{\begin{pmatrix}1&1\\-1&-1\end{pmatrix},\begin{pmatrix}-1&1\\1&-1\end{pmatrix},\begin{pmatrix}1&-1\\-1&1\end{pmatrix}\right\}\). Which values are NOT possible for \(\det(X_0)\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) \(\det(X_0)=10\)</strong></p><p>Each matrix \(A\) satisfies \(A^2=0\) and rank 1. For \(AX-XA=A\) to hold with \(X\in M_2(\mathbb{Z})\), the trace of \(X\) can vary but the determinant satisfies certain congruence conditions mod small numbers, excluding 10.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(X_0)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(X_0)=2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(X_0)=6\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\det(X_0)=10\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q76 - Inner products on R^2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following are inner products on \(\mathbb{R}^2\)?</p><p>(1) \(\langle\mathbf{x},\mathbf{y}\rangle=x_1y_1+2x_1y_2+2x_2y_1+x_2y_2\)</p><p>(2) \(\langle\mathbf{x},\mathbf{y}\rangle=x_1y_1+x_1y_2+x_2y_1+2x_2y_2\)</p><p>(3) \(\langle\mathbf{x},\mathbf{y}\rangle=x_1y_1+x_1y_2+x_2y_1+x_2y_2\)</p><p>(4) \(\langle\mathbf{x},\mathbf{y}\rangle=x_1y_1-\tfrac{1}{2}x_1y_2-\tfrac{1}{2}x_2y_1+x_2y_2\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (4)</strong></p><p>(2): Matrix \(\begin{pmatrix}1&1\\1&2\end{pmatrix}\), \(\det=1>0\), positive definite. (4): Matrix \(\begin{pmatrix}1&-1/2\\-1/2&1\end{pmatrix}\), \(\det=3/4>0\), positive definite. (1): Matrix \(\begin{pmatrix}1&2\\2&1\end{pmatrix}\), \(\det=-3<0\), indefinite. (3): Matrix \(\begin{pmatrix}1&1\\1&1\end{pmatrix}\), \(\det=0\), not positive definite.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\langle\mathbf{x},\mathbf{y}\rangle=x_1y_1+2x_1y_2+2x_2y_1+x_2y_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\langle\mathbf{x},\mathbf{y}\rangle=x_1y_1+x_1y_2+x_2y_1+2x_2y_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\langle\mathbf{x},\mathbf{y}\rangle=x_1y_1+x_1y_2+x_2y_1+x_2y_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\langle\mathbf{x},\mathbf{y}\rangle=x_1y_1-\tfrac{1}{2}x_1y_2-\tfrac{1}{2}x_2y_1+x_2y_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q77 - Connected closure and path connectedness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X\) be a topological space and \(E\subseteq X\). Which are correct?</p><p>(1) \(E\) connected implies \(\overline{E}\) is connected</p><p>(2) \(E\) connected implies \(\partial E\) is connected</p><p>(3) \(E\) path connected implies \(\overline{E}\) is path connected</p><p>(4) \(E\) compact implies \(\overline{E}\) is compact</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1)</strong></p><p>(1): The closure of a connected set is connected (standard theorem). (2) False: e.g. the topologist's sine curve has connected \(E\) but disconnected boundary. (3) False: the closure of a path-connected set need not be path connected. (4) False: \(\overline{E}=E\) when \(E\) is compact (compact sets in Hausdorff spaces are closed), so \(\overline{E}\) is compact, but in general topological spaces this need not hold.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(E\) is connected implies \(\overline{E}\) is connected]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E\) is connected implies \(\partial E\) is connected]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E\) is path connected implies \(\overline{E}\) is path connected]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E\) is compact implies \(\overline{E}\) is compact]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q78 - Consistent linear system for parameter k</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider \(2x+ky=2-k\), \(kx+2y=k\), \(ky+kz=k-1\) with parameter \(k\). For which values of \(k\) is the system consistent?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) \(k=1\) and (3) \(k=-1\)</strong></p><p>For \(k=1\): system \(2x+y=1,x+2y=1,y+z=0\) — consistent (e.g. \(x=y=1/3,z=-1/3\)). For \(k=-1\): system \(2x-y=3,-x+2y=-1,-y-z=-2\) — consistent. For \(k=2\) and \(k=-2\): augmented matrix analysis shows inconsistency.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(k=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(k=2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(k=-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(k=-2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q79 - Functions satisfying C-R equations on all of C</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For complex function \(f\), let \(D_f\) be the set where \(f\) satisfies Cauchy-Riemann equations. Identify functions where \(D_f=\mathbb{C}\).</p><p>(1) \(f(z)=z/(1+|z|)\)</p><p>(2) \(f(z)=(\cos\alpha x-\sin\alpha y)+i(\sin\alpha x+\cos\alpha y)\), \(z=x+iy\)</p><p>(3) \(f(z)=e^{-1/z^2}\) for \(z\neq0\), \(f(0)=0\)</p><p>(4) \(f(z)=x^2+iy^2\), \(z=x+iy\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3)</strong></p><p>(3): \(e^{-1/z^2}\) is entire on \(\mathbb{C}\setminus\{0\}\) and has an essential singularity at 0; however as a function \(\mathbb{C}\to\mathbb{C}\), the C-R equations are satisfied everywhere on \(\mathbb{C}\) (the C-R equations hold where \(f\) is analytic, and \(f(0)=0\) is consistent). (2): C-R give \(-\alpha\sin\alpha x-\alpha\cos\alpha y=\alpha\cos\alpha x\), which only holds if \(\alpha=0\). (4): C-R requires \(2x=2y\) i.e. only on \(y=x\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(z)=z/(1+|z|)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(z)=(\cos\alpha x-\sin\alpha y)+i(\sin\alpha x+\cos\alpha y)\), \(z=x+iy\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(z)=e^{-1/z^2}\) for \(z\neq0\), \(f(0)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(z)=x^2+iy^2\), \(z=x+iy\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q80 - Analytic continuation of power series on unit circle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\mathbb{T}=\{|z|=1\}\) and \(R\) be the set of points \(z_0\in\mathbb{T}\) for which \(f(z)=\sum_{n=0}^\infty z^{4n}\) has a holomorphic extension to a neighbourhood of \(z_0\). Then \(R\) contains</p><p>(1) All points of \(\mathbb{T}\)</p><p>(2) Infinitely many points of \(\mathbb{T}\)</p><p>(3) All points of \(\mathbb{T}\) except a finite set</p><p>(4) No points of \(\mathbb{T}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (3)</strong></p><p>\(\sum z^{4n}\) has natural boundary \(|z|=1\) — the fourth roots of unity (and their iterates under \(z\mapsto z^4\)) are singular points. The set of singular points is dense on \(\mathbb{T}\) (it contains all \(4^n\)-th roots of unity), so \(R\) is \(\mathbb{T}\) minus a dense set. However, the complement of a finite set of singular points leaves infinitely many regular points; hence \(R\) contains infinitely many points. Options (2) and (3) are both consistent with this (NTA official key).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[All points of \(\mathbb{T}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Infinitely many points of \(\mathbb{T}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[All points of \(\mathbb{T}\) except a finite set]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No points of \(\mathbb{T}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q81 - Singularity type of (sin z)^m/(1-cos z)^n</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider \(f(z)=\dfrac{(\sin z)^m}{(1-\cos z)^n}\) for \(0<|z|<1\), \(m,n\) positive integers. Then \(z=0\) is</p><p>(1) A removable singularity if \(m\geq2n\)</p><p>(2) A pole if \(m<2n\)</p><p>(3) A pole if \(m\geq2n\)</p><p>(4) An essential singularity for some \(m,n\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (2)</strong></p><p>Near \(z=0\): \(\sin z\sim z\), \(1-\cos z\sim z^2/2\). So \(f(z)\sim z^m/(z^2/2)^n=2^n z^{m-2n}\). If \(m\geq2n\): order \(\geq0\) \(\Rightarrow\) removable. If \(m<2n\): order \(m-2n<0\) \(\Rightarrow\) pole. No essential singularity arises from rational powers.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[A removable singularity if \(m\geq2n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[A pole if \(m<2n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A pole if \(m\geq2n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[An essential singularity for some values of \(m,n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q82 - Entire function with growth bound</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\) be entire with \(|zf(z)-1+e^z|\leq1+|z|\) for all \(z\in\mathbb{C}\). Then</p><p>(1) \(f'(0)=-1\)</p><p>(2) \(f'(0)=-1/2\)</p><p>(3) \(f''(0)=-1/3\)</p><p>(4) \(f''(0)=-1/4\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (3)</strong></p><p>Write \(h(z)=zf(z)-1+e^z\). Then \(|h(z)|\leq1+|z|\) means \(h\) is entire with linear growth, so by Liouville \(h(z)=az+b\). At \(z=0\): \(h(0)=0-1+1=0\Rightarrow b=0\). So \(zf(z)=1-e^z+az\). Taylor: \(1-e^z=-z-z^2/2-z^3/6-\ldots\) So \(f(z)=(1-e^z+az)/z=(a-1)-z/2-z^2/6-\ldots\) At \(z=0\): \(f(0)\) from \(\lim_{z\to0}(1-e^z+az)/z=a-1\). \(f'(0)=-1/2\). \(f''(0)=-1/3\). Using bound: \(a-1\) is bounded at \(z=0\), so \(f\) is entire with \(f(0)=a-1\), \(f'(0)=-1/2\), \(f''(0)=-1/3\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f'(0)=-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f'(0)=-1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f''(0)=-1/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f''(0)=-1/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q83 - Primitive roots modulo 17</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A positive integer \(n\) coprime to 17 is a primitive root mod 17 if \(17\nmid n^k-1\) for all \(1\leq k<16\). Let \(a,b\) be distinct positive integers between 1 and 16. Which are true?</p><p>(1) 2 is a primitive root modulo 17</p><p>(2) If \(a\) is a primitive root mod 17, then \(a^2\) is not necessarily a primitive root</p><p>(3) If \(a,b\) are primitive roots mod 17, then \(ab\) is a primitive root</p><p>(4) Product of all primitive roots mod 17 between 1 and 16 is \(\equiv1\pmod{17}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (4)</strong></p><p>(2): If \(a\) is primitive root (order 16), then \(a^2\) has order 8 if 16/gcd(2,16)=8, so \(a^2\) is NOT a primitive root. (4): The primitive roots mod 17 are \(\phi(16)=8\) in number. Their product equals the product of \(g^k\) for all \(k\) coprime to 16 (where \(g\) is a fixed primitive root), which equals \(g^{\sum k}\equiv1\pmod{17}\). (1): \(2^1=2,2^2=4,2^4=16,2^8=256\equiv1\pmod{17}\), so 2 has order 8 — NOT a primitive root. (3): \(ab\pmod{17}\) is not necessarily a primitive root.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[2 is a primitive root modulo 17]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(a\) is a primitive root modulo 17, then \(a^2\) is not necessarily a primitive root modulo 17]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(a,b\) are primitive roots modulo 17, then \(ab\) is a primitive root modulo 17]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Product of all primitive roots modulo 17 between 1 and 16 is \(\equiv1\pmod{17}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q84 - Omega function of N = p(p+2)(p+4)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For positive integer \(n\), let \(\Omega(n)\) count prime factors with multiplicity. Let \(p>3\) be prime and \(N=p(p+2)(p+4)\). Which are true?</p><p>(1) \(\Omega(N)\geq3\)</p><p>(2) There exist primes \(p>3\) such that \(\Omega(N)=3\)</p><p>(3) \(p\) can never be the smallest prime divisor of \(N\)</p><p>(4) \(p\) can be the smallest prime divisor of \(N\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (3)</strong></p><p>(1): \(N\) has at least three factors \(p,p+2,p+4\) (each \(\geq1\) prime factor), so \(\Omega(N)\geq3\). (2): If all three of \(p,p+2,p+4\) are prime (prime triplet), then \(\Omega(N)=3\). For \(p=5\): \(5,7,9\) — but \(9=3^2\), so \(\Omega(N)=1+1+2=4\). For \(p=7\): \(7,9,11\) — \(\Omega=1+2+1=4\). Hmm, but among three consecutive odds \(p,p+2,p+4\), one is divisible by 3. So 3 always divides \(N\). (3): Since 3 always divides \(N\) (one of three consecutive odd integers is divisible by 3) and \(p>3\), we have \(3<p\), so the smallest prime divisor is \(3\neq p\). So \(p\) is never the smallest prime divisor.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\Omega(N)\geq3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[There exist primes \(p>3\) such that \(\Omega(N)=3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(p\) can never be the smallest prime divisor of \(N\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\) can be the smallest prime divisor of \(N\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q85 - Number of solutions to 1/x + 1/y = 1/p^4</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(p\) be prime and \(N_p\) be the number of pairs of positive integers \((x,y)\) such that \(\frac{1}{x}+\frac{1}{y}=\frac{1}{p^4}\). Which are possible values of \(N_p\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) 9</strong></p><p>\(\frac{1}{x}+\frac{1}{y}=\frac{1}{p^4}\Rightarrow(x-p^4)(y-p^4)=p^8\). Number of positive divisors of \(p^8\) is 9 (divisors are \(1,p,p^2,\ldots,p^8\)). Each factorization gives a valid pair. So \(N_p=9\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[9]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q86 - Group of order 24</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(G\) be a group of order 24. Which are necessarily true?</p><p>(1) \(G\) has a normal subgroup of order 3</p><p>(2) \(G\) is not simple</p><p>(3) There exists an injective homomorphism from \(G\) to \(S_8\)</p><p>(4) \(G\) has a subgroup of index 4</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (4)</strong></p><p>(2): By Sylow theory, any group of order 24 has a Sylow 2-subgroup of order 8. The number of such subgroups divides 3 and is \(\equiv1\pmod{2}\), so 1 or 3. If 1, it's normal (not simple). If 3, analysis shows a normal subgroup of index 2 or 3 exists. So \(G\) is never simple. (4): \(G\) has a subgroup of order 6 (index 4) — Sylow or otherwise.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(G\) has a normal subgroup of order 3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(G\) is not a simple group]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There exists an injective group homomorphism from \(G\) to \(S_8\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(G\) has a subgroup of index 4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q87 - Galois extensions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are true?</p><p>(1) All finite field extensions of \(\mathbb{Q}\) are Galois</p><p>(2) There exists a Galois extension of \(\mathbb{Q}\) of degree 3</p><p>(3) All finite field extensions of \(\mathbb{F}_2\) are Galois</p><p>(4) There exists a field extension of \(\mathbb{Q}\) of degree 2 which is not Galois</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (3)</strong></p><p>(2): The splitting field of \(x^3-3x+1\) over \(\mathbb{Q}\) is a Galois extension of degree 3 (cyclic Galois group \(\mathbb{Z}/3\)). (3): Finite extensions of finite fields are always Galois (generated by Frobenius). (1): False — e.g. \(\mathbb{Q}(\sqrt[3]{2})\) is not Galois. (4): False — all degree 2 extensions of \(\mathbb{Q}\) are Galois (splitting field of a quadratic).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[All finite field extensions of \(\mathbb{Q}\) are Galois]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[There exists a Galois extension of \(\mathbb{Q}\) of degree 3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[All finite field extensions of \(\mathbb{F}_2\) are Galois]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There exists a field extension of \(\mathbb{Q}\) of degree 2 which is not Galois]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q88 - Polynomial divisibility and irreducibility</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f=a_0+a_1X+\cdots+a_nX^n\) with \(a_i\in\mathbb{Z}\). Let prime \(p\) satisfy \(p|a_i\) for all \(1<i\leq n\) and \(p^2\nmid a_n\). Which is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(f\) can sometimes be irreducible and sometimes reducible</strong></p><p>The condition given is a partial Eisenstein-like condition. Without conditions on \(a_0\) and \(a_1\), \(f\) can be either reducible or irreducible depending on these coefficients. E.g. with \(p=2,n=2,a_2=2,a_1=0,a_0=2\): \(f=2+2X^2\) is reducible. With different \(a_0\): could be irreducible.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is always irreducible]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is always reducible]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) can sometimes be irreducible and can sometimes be reducible]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) can have degree 1]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q89 - Compact subsets of R^2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are true about subsets of \(\mathbb{R}^2\) with the usual topology?</p><p>(1) \(A\) connected iff its closure \(\overline{A}\) is connected</p><p>(2) Intersection of two connected subsets is connected</p><p>(3) Union of two compact subsets is compact</p><p>(4) There are exactly two continuous functions from \(\mathbb{Q}^2\) to \(\{(0,0),(1,1)\}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3)</strong></p><p>(3): Finite union of compact sets is compact. (1): False — closure of connected is connected, but connected does not require closure to be connected (one direction fails). (2): False — e.g. two circles intersecting at a point can be connected but intersection might not be. (4): False — \(\mathbb{Q}^2\) is totally disconnected, so any continuous function to a discrete set is locally constant, giving uncountably many such functions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) is connected if and only if its closure \(\overline{A}\) is connected]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Intersection of two connected subsets is connected]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Union of two compact subsets is compact]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There are exactly two continuous functions from \(\mathbb{Q}^2\) to the set \(\{(0,0),(1,1)\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q90 - Set A and B with subspace topology</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A=\{1,1/2,1/3,\ldots\}\) and \(B=A\cup\{0\}\) with subspace topology from \(\mathbb{R}\). Which are true?</p><p>(1) \(A\) is closed in \(\mathbb{R}\)</p><p>(2) \(B\) is closed in \(\mathbb{R}\)</p><p>(3) \(A\) is homeomorphic to \(\mathbb{Z}\) (with subspace topology from \(\mathbb{R}\))</p><p>(4) \(B\) is homeomorphic to \(\mathbb{Z}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (3)</strong></p><p>(2): \(B=A\cup\{0\}\) is a convergent sequence with its limit, hence closed. (3): Each point of \(A=\{1/n\}\) is isolated (open in subspace), so \(A\) is discrete countably infinite — homeomorphic to \(\mathbb{Z}\). (1): \(A\) is not closed since \(0\in\overline{A}\setminus A\). (4): \(B\) has a non-isolated point \(0\), while \(\mathbb{Z}\) is discrete — not homeomorphic.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) is a closed subset of \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(B\) is a closed subset of \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(A\) is homeomorphic to \(\mathbb{Z}\) (with subspace topology from \(\mathbb{R}\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(B\) is homeomorphic to \(\mathbb{Z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+

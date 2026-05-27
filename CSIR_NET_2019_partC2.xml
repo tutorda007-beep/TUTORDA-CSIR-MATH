@@ -1,0 +1,850 @@
+
+    <question type="multichoice">
+      <name><text>Q91</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Let \(y_1(x)\) be any non-trivial real valued solution of \(y''(x)+xy(x)=0\), \(0<x<\infty\). Let \(y_2(x)\) be the solution of \(y''(x)+y(x)=x^2+2\), \(y(0)=y'(0)=0\). Then which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(y_1(x)\) has infinitely many zeros</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. By Sturm comparison with \(y''+y=0\) (which has zeros at distance \(\pi\)), since the coefficient \(x\to\infty\), zeros accumulate — \(y_1\) has infinitely many zeros.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(y_2(x)\) has infinitely many zeros</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The particular solution \(y_2=x^2\) satisfies the IVP, which is non-negative and has only finitely many zeros.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(y_1(x)\) has finitely many zeros</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The increasing coefficient forces infinitely many zeros by Sturm oscillation theory.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(y_2(x)\) has finitely many zeros</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The solution \(y_2=x^2\) is non-negative for \(x\ge0\) with only a zero at the origin, hence finitely many zeros.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q92</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Consider the equation \(y''(x)+a(x)y(x)=0\) where \(a(x)\) is a continuous function with period \(T\). Let \(\phi_1(x)\) and \(\phi_2(x)\) be the basis for the solutions satisfying \(\phi_1(0)=1\), \(\phi_1'(0)=0\), \(\phi_2(0)=0\), \(\phi_2'(0)=1\). Let \(W(\phi_1,\phi_2)\) denote the Wronskian. Then which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(W(\phi_1,\phi_2) = 1\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Since the equation has no \(y'\) term, Abel's identity gives \(W(\phi_1,\phi_2)=W(0)=\phi_1(0)\phi_2'(0)-\phi_1'(0)\phi_2(0)=1\cdot1-0\cdot0=1\), constant.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(W(\phi_1,\phi_2) = e^x\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Abel's identity for \(y''+a(x)y=0\) (no \(y'\) term) gives constant Wronskian equal to 1.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(\phi_1(T)+\phi_2'(T)=2\) if the given differential equation has a nontrivial periodic solution with period \(T\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. A nontrivial \(T\)-periodic solution exists if and only if 1 is a Floquet multiplier, i.e., the monodromy matrix has eigenvalue 1, which gives \(\mathrm{trace}=\phi_1(T)+\phi_2'(T)=2\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(\phi_1(T)+\phi_2'(T)=1\) if the given differential equation has a nontrivial periodic solution with period \(T\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The condition for a nontrivial periodic solution is that the trace of the monodromy matrix equals 2, not 1.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q93</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Let \(f:\mathbb{R}\to\mathbb{R}\) be a Lipschitz function such that \(f(x)=0\) if and only if \(x=\pm n^2\) where \(n\in\mathbb{N}\). Consider the initial value problem \(y'(t)=f(y(t))\), \(y(0)=y_0\). Then which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>\(y\) is a monotone function for all \(y_0\in\mathbb{R}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Since \(y'=f(y)\) and \(f\) does not change sign between consecutive zeros of \(f\), the solution is monotone (trapped between equilibria).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>For any \(y_0\in\mathbb{R}\), there exists \(M_{y_0}>0\) such that \(|y(t)|\le M_{y_0}\) for all \(t\in\mathbb{R}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The zeros \(\pm n^2\) act as equilibria trapping the solution; any orbit is bounded between consecutive equilibria.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>There exists a \(y_0\in\mathbb{R}\) such that the corresponding solution \(y\) is unbounded</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Every solution is trapped between adjacent equilibria and is therefore bounded.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>\(\sup_{t,s\in\mathbb{R}}|y(t)-y(s)|=2n+1\) if \(y_0\in(n^2,(n+1)^2)\), \(n\ge1\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. If \(y_0\in(n^2,(n+1)^2)\), the orbit is confined to this interval of length \((n+1)^2-n^2=2n+1\), and the sup is attained as \(t\to\pm\infty\).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q94</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>The general solution \(z=z(x,y)\) of \((x+y)z\,z_x + (x-y)z\,z_y = x^2+y^2\) is</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(F(x^2+y^2+z^2,\; z^2-xy)=0\) for arbitrary \(C^1\) function \(F\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The characteristic equations do not yield these invariants.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(F(x^2-y^2-z^2,\; z^2-2xy)=0\) for arbitrary \(C^1\) function \(F\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Solving the Lagrange–Charpit equations \(\frac{dx}{(x+y)z}=\frac{dy}{(x-y)z}=\frac{dz}{x^2+y^2}\) yields first integrals \(x^2-y^2-z^2\) and \(z^2-2xy\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(F(x+y+z,\; z-2xy)=0\) for arbitrary \(C^1\) function \(F\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. These are not the correct first integrals of the characteristic ODEs.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(F(x^3-y^3-z^3,\; z-2x^2y^2)=0\) for arbitrary \(C^1\) function \(F\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The degree does not match the structure of the characteristic equations.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q95</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Let \(u\) be the solution of the problem \(\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}=0\), \((x,y)\in(0,\pi)\times(0,\pi)\); \(u(0,y)=u(\pi,y)=0\), \(y\in(0,\pi)\); \(u(x,0)=0\), \(u(x,\pi)=\sin(2x)\), \(x\in(0,\pi)\). Then which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(\max\{u(x,y): 0\le x,y\le\pi\} = 1\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. By the maximum principle, the maximum is attained on the boundary. The boundary data \(\sin(2x)\) has maximum 1, so \(\max u=1\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(u(x_0,y_0)=1\) for some \((x_0,y_0)\in(0,\pi)\times(0,\pi)\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. By the strong maximum principle, the maximum is attained only on the boundary, not in the interior (since the solution is not constant).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(u(x,y)>-1\) for all \((x,y)\in(0,\pi)\times(0,\pi)\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The minimum is \(-1\) (attained on boundary) and by the strong minimum principle, \(u>-1\) strictly in the interior.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(\min\{u(x,y): 0\le x,y\le\pi\} > -1\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The boundary data \(\sin(2x)\) attains \(-1\) on the boundary (at \(x=3\pi/4\)), so the minimum over the closed domain equals \(-1\).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q96</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>The values of \(a,b,c\) so that the truncation error in the formula \(\int_{-h}^h f(x)\,dx = ahf(-h)+bhf(0)+ahf(h)+ch^2f'(-h)-ch^2f'(h)\) is minimum are</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(a=\dfrac{7}{15},\; b=\dfrac{16}{15},\; c=\dfrac{1}{15}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Matching Taylor coefficients to maximise the order of accuracy gives \(a=7/15\), \(b=16/15\), \(c=1/15\), yielding 6th order accuracy.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(a=\dfrac{7}{15},\; b=\dfrac{16}{15},\; c=\dfrac{-1}{15}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The sign of \(c\) must be positive to cancel the leading error terms correctly.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(a=\dfrac{7}{15},\; b=\dfrac{-16}{15},\; c=\dfrac{1}{15}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The sign of \(b\) must be positive for the formula to integrate a constant correctly.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(a=\dfrac{7}{15},\; b=\dfrac{-16}{15},\; c=\dfrac{-1}{15}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Both \(b\) and \(c\) have incorrect signs.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q97</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Consider the equation \(x^2+ax+b=0\) which has two real roots \(\alpha\) and \(\beta\). Then which of the following iteration schemes converges when \(x_0\) is chosen sufficiently close to \(\alpha\)?</p>
+<ol>
+<li>\(x_{n+1} = -\dfrac{ax_n+b}{x_n}\) if \(|\alpha|>|\beta|\)</li>
+<li>\(x_{n+1} = -\dfrac{x_n^2+b}{a}\), if \(|\alpha|>1\)</li>
+<li>\(x_{n+1} = -\dfrac{b}{x_n+a}\), if \(|\alpha|<|\beta|\)</li>
+<li>\(x_{n+1} = -\dfrac{x_n^2+b}{a}\), if \(2|\alpha|<|\alpha+\beta|\)</li>
+</ol>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>Scheme (1): \(x_{n+1} = -\dfrac{ax_n+b}{x_n}\) if \(|\alpha|>|\beta|\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The derivative of the iteration function at \(\alpha\) is \(\beta/\alpha\); the condition \(|\alpha|>|\beta|\) ensures \(|\beta/\alpha|<1\), giving convergence.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Scheme (2): \(x_{n+1} = -\dfrac{x_n^2+b}{a}\), if \(|\alpha|>1\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The derivative at \(\alpha\) is \(2\alpha/a = 2\alpha/(-(\alpha+\beta))=2\alpha/(-\alpha-\beta)\); the condition \(|\alpha|>1\) does not guarantee this is less than 1 in magnitude.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>Scheme (3): \(x_{n+1} = -\dfrac{b}{x_n+a}\), if \(|\alpha|<|\beta|\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The derivative at \(\alpha\) is \(b/(\alpha+a)^2=\alpha\beta/\beta^2=\alpha/\beta\); the condition \(|\alpha|<|\beta|\) ensures \(|\alpha/\beta|<1\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>Scheme (4): \(x_{n+1} = -\dfrac{x_n^2+b}{a}\), if \(2|\alpha|<|\alpha+\beta|\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The derivative at \(\alpha\) is \(2\alpha/a = 2\alpha/(-\alpha-\beta)\), and the condition \(2|\alpha|<|\alpha+\beta|\) ensures this has modulus less than 1.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q98</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Let \(u\) be the solution of \(\frac{\partial^2 u}{\partial t^2}=\frac{\partial^2 u}{\partial x^2}\), \((x,t)\in\mathbb{R}\times(0,\infty)\); \(u(x,0)=f(x)\), \(u_t(x,0)=g(x)\), \(x\in\mathbb{R}\), where \(f,g\in C^2(\mathbb{R})\) satisfy: (i) \(f(x)=g(x)=0\) for \(x\le0\), (ii) \(0<f(x)\le1\) for \(x>0\), (iii) \(g(x)>0\) for \(x>0\), (iv) \(\int_0^\infty g(x)\,dx<\infty\). Then which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(u(x,t)=0\) for all \(x\le0\) and \(t>0\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. By d'Alembert's formula, \(u(x,t)=\frac{1}{2}[f(x+t)+f(x-t)]+\frac{1}{2}\int_{x-t}^{x+t}g(s)\,ds\). For \(x\le0\), \(t>0\), the interval \((x-t,x+t)\) may include positive values, so \(u\) need not be zero.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(u\) is bounded on \(\mathbb{R}\times(0,\infty)\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. By d'Alembert, \(|u(x,t)|\le\frac{1}{2}(|f(x+t)|+|f(x-t)|)+\frac{1}{2}\int_{-\infty}^\infty|g|\,ds\le1+\frac{1}{2}\int_0^\infty g\,ds<\infty\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(u(x,t)=0\) whenever \(x+t<0\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. If \(x+t<0\), then both \(x+t<0\) and \(x-t<x+t<0\), so \(f(x+t)=f(x-t)=0\) and \(\int_{x-t}^{x+t}g=0\), giving \(u=0\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(u(x,t)=0\) for some \((x,t)\) satisfying \(x+t>0\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. When \(x+t>0\), the integral \(\int_{x-t}^{x+t}g>0\) whenever the interval overlaps \((0,\infty)\), so \(u>0\) in that region.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q99</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Let \(B = \{(x,y)\in\mathbb{R}^2\mid x^2+y^2\le1\}\), \(C=\{(x,y)\mid x^2+y^2=1\}\), and let \(f\) and \(g\) be continuous functions. Let \(u\) be the minimizer of the functional \(J[v]=\iint_B(v_x^2+v_y^2-2fv)\,dxdy + \int_C(v^2-2gv)\,ds\). Then \(u\) is a solution of</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(-\Delta u = f\), \(\dfrac{\partial u}{\partial n}+u = g\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Taking the first variation \(\delta J=0\) gives the Euler–Lagrange equation \(-\Delta u=f\) in \(B\) and the natural boundary condition \(\partial u/\partial n + u = g\) on \(C\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(\Delta u = f\), \(\dfrac{\partial u}{\partial n}-u = g\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The Euler–Lagrange equation from \(\iint|\nabla v|^2\) yields \(-\Delta u\), not \(+\Delta u\), and the boundary term gives \(+u\), not \(-u\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(-\Delta u = f\), \(\dfrac{\partial u}{\partial n} = g\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The boundary integral \(\int_C(v^2-2gv)\,ds\) contributes the Robin-type condition \(\partial u/\partial n + u = g\), not just the Neumann condition.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(\Delta u = f\), \(\dfrac{\partial u}{\partial n} = g\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Both the sign of the Laplacian and the boundary condition are wrong.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q100</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Consider the functional \(J[y] = \displaystyle\int_0^1\left[(y'(x))^2+(y'(x))^3\right]dx\), subject to \(y(0)=1\) and \(y(1)=2\). Then which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>There exists an extremal \(y\in C^1([0,1])\setminus C^2([0,1])\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Since the Lagrangian \(L(p)=p^2+p^3\) is smooth and strictly convex near \(p=1\), any extremal must satisfy the Euler–Lagrange equation \(\frac{d}{dx}L_p=0\), giving \(L_p=2y'+3(y')^2=\text{const}\), which forces \(y'=\text{const}\), so \(y\in C^\infty\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>There exists an extremal \(y\in C([0,1])\setminus C^1([0,1])\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The Euler–Lagrange equation forces \(y'=\text{const}\), giving a smooth (in fact linear) extremal.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>Every extremal \(y\) belongs to \(C^1([0,1])\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The extremal is the linear function \(y=x+1\) (with \(y'=1\)), which is in \(C^\infty\subset C^1\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>Every extremal \(y\) belongs to \(C^2([0,1])\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The unique extremal \(y=x+1\) is in \(C^\infty([0,1])\), hence in \(C^2\).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q101</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Consider the integral equation \(\varphi(x) - \dfrac{e}{2}\displaystyle\int_{-1}^1 xe^t\varphi(t)\,dt = f(x)\). Then which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>There exists a continuous function \(f:[-1,1]\to(0,\infty)\) for which a solution exists</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The kernel has rank 1, so the Fredholm alternative requires the solvability condition \(\int_{-1}^1 e^t f(t)\,dt = 0\). A strictly positive \(f\) cannot satisfy this.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>There exists a continuous function \(f:[-1,1]\to(-\infty,0)\) for which a solution exists</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Similarly, a strictly negative \(f\) cannot satisfy the solvability condition \(\int_{-1}^1 e^t f(t)\,dt = 0\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>For \(f(x)=e^{-x}(1-3x^2)\), a solution exists</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Check: \(\int_{-1}^1 e^t \cdot e^{-t}(1-3t^2)\,dt = \int_{-1}^1(1-3t^2)\,dt = [t-t^3]_{-1}^1 = 0\). The solvability condition is satisfied.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>For \(f(x)=e^{-x}(x+x^3+x^5)\), a solution exists</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Check: \(\int_{-1}^1 e^t\cdot e^{-t}(t+t^3+t^5)\,dt = \int_{-1}^1(t+t^3+t^5)\,dt = 0\) (integral of odd function over symmetric interval). Solvability condition satisfied.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q102</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Let \((q,p)\) be canonical variables. Consider the following transformations: (a) \((Q,P)=(\sqrt{2q}e^\alpha\cos p,\; \sqrt{2q}e^{-\alpha}\sin p)\), \(\alpha\in\mathbb{R}\); (b) \((Q,P)=(q\tan p,\;\log(\sin p))\); (c) \((Q,P)=\left(\frac{1}{p},\;qp^2\right)\). Then</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Only the transformations given in (a) and (b) are canonical</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. All three transformations are canonical.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Only the transformations given in (b) and (c) are canonical</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. All three transformations are canonical.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Only the transformations given in (a) and (c) are canonical</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. All three transformations are canonical.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>All three transformations are canonical</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. For each, verify \(\{Q,P\}_{q,p}=\frac{\partial Q}{\partial q}\frac{\partial P}{\partial p}-\frac{\partial Q}{\partial p}\frac{\partial P}{\partial q}=1\). All three satisfy the canonical condition.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q103</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Suppose a normal \(Q\)-\(Q\) plot is drawn using a reasonably large sample \(x_1,\ldots,x_n\) from an unknown probability distribution. For which of the following distributions would you expect the \(Q\)-\(Q\) plot to be convex (\(J\)-shaped)?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Beta\((5,1)\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Beta(5,1) has a left-skewed (negatively skewed) distribution, which produces a concave \(Q\)-\(Q\) plot against normal quantiles.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>Exponential\((1)\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Exponential(1) is right-skewed (positive skew), giving a convex \(J\)-shaped \(Q\)-\(Q\) plot against normal quantiles.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Uniform\((0,1)\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The Uniform distribution has lighter tails than the normal, giving an S-shaped (sigmoidal) \(Q\)-\(Q\) plot.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>Geometric\((1/2)\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Geometric(1/2) is right-skewed (discrete, with a long right tail), producing a convex \(J\)-shaped \(Q\)-\(Q\) plot against normal quantiles.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q104</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>\((X_n, n\ge1)\) and \(X\) are random variables on a probability space. Suppose that \(X_n\) converges to \(X\) in probability. Which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(E(|X_n-X|^2)\to0\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Convergence in probability does not imply \(L^2\) convergence without uniform integrability.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(P(X_n\le x)\to P(X\le x)\) for all \(x\in\mathbb{R}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Convergence in probability implies convergence in distribution, but the latter holds for all continuity points of \(P(X\le x)\), not necessarily all \(x\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(E(\min(1,|X_n-X|))\to0\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. \(E(\min(1,|X_n-X|))\to0\) is equivalent to convergence in probability (it is the metric for convergence in probability on the space of random variables).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(|X_n-X|\to0\) with probability 1</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Convergence in probability is strictly weaker than almost sure convergence in general.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q105</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Consider a simple symmetric random walk on integers, where from every state \(i\) you move to \(i-1\) and \(i+1\) with probability \(\frac{1}{2}\) each. Then which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>The random walk is aperiodic</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The simple symmetric random walk has period 2 (from any state, return is only possible in an even number of steps).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>The random walk is irreducible</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. From any integer \(i\), any other integer \(j\) can be reached with positive probability, so the chain is irreducible.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>The random walk is null recurrent</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The 1D symmetric random walk is recurrent (return to origin with probability 1) but the expected return time is infinite, hence null recurrent.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>The random walk is positive recurrent</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The expected return time to any state is infinite, so the walk is null recurrent, not positive recurrent.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q106</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Consider a Markov Chain with state space \(\{0,1,2\}\) and transition matrix
+\[P = \begin{pmatrix}\frac{1}{4} & \frac{5}{8} & \frac{1}{8}\\[4pt]\frac{1}{4} & 0 & \frac{3}{4}\\[4pt]\frac{1}{2} & \frac{3}{8} & \frac{1}{8}\end{pmatrix}\]
+Then which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(\lim_{n\to\infty}p_{12}^{(n)}=0\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Since the chain is irreducible and positive recurrent (finite state space), all limits \(\lim p_{ij}^{(n)}\) equal the stationary distribution \(\pi_j>0\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(\lim_{n\to\infty}p_{12}^{(n)}=\lim_{n\to\infty}p_{21}^{(n)}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. For an ergodic chain, \(\lim p_{ij}^{(n)}=\pi_j\) for all \(i\), so \(\lim p_{12}^{(n)}=\pi_2=\lim p_{21}^{(n)}\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(\lim_{n\to\infty}p_{22}^{(n)}=\dfrac{1}{8}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The limit equals \(\pi_2\), the stationary probability of state 2. Solving \(\pi P=\pi\) gives \(\pi_2=1/3\neq1/8\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(\lim_{n\to\infty}p_{21}^{(n)}=\dfrac{1}{3}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The stationary distribution satisfies \(\pi P=\pi\), \(\sum\pi_i=1\). Solving gives \(\pi=(1/3,\,1/3,\,1/3)\), so \(\lim p_{21}^{(n)}=\pi_1=1/3\).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q107</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Suppose \(X, Y\) are i.i.d. Binomial\((n,p)\) random variables. Which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>\(X+Y \sim \mathrm{Bin}(2n,p)\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The sum of independent Binomial\((n,p)\) random variables is Binomial\((2n,p)\) by the reproductive property.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\((X,Y) \sim \mathrm{Multinomial}(2n;\,p,p)\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. A Multinomial\((2n;p,p)\) would require \(X+Y=2n\) always, but \(X\) and \(Y\) are independent and \(X+Y\) ranges over \(0,\ldots,2n\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>\(\mathrm{Var}(X-Y) = E(X-Y)^2\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Since \(E(X-Y)=0\) (as \(EX=EY\)), we have \(\mathrm{Var}(X-Y)=E(X-Y)^2 - [E(X-Y)]^2 = E(X-Y)^2\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>\(\mathrm{Cov}(X+Y,\, X-Y) = 0\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. \(\mathrm{Cov}(X+Y,X-Y)=\mathrm{Var}(X)-\mathrm{Var}(Y)=np(1-p)-np(1-p)=0\).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q108</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Let \(X_1,X_2,\ldots\) be i.i.d. \(N(0,\sigma^2)\), where \(\sigma^2>0\) is unknown. Consider the class of estimators \(\left\{T_n = C_n\sum_{i=1}^n X_i^2:\; C_n>0,\, n\ge1\right\}\) for \(\sigma^2\). Then which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="25" format="html">
+        <text><![CDATA[<p>\(T_n\) is consistent for \(\sigma^2\) if \(C_n = \dfrac{1}{n-1}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. \(T_n = \frac{1}{n-1}\sum X_i^2 \to \sigma^2\) by LLN since \(E(X_i^2)=\sigma^2\) and \(C_n \cdot n = n/(n-1)\to1\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="25" format="html">
+        <text><![CDATA[<p>\(T_n\) is unbiased for \(\sigma^2\) if \(C_n = \dfrac{1}{n}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. \(E(T_n)=C_n\cdot n\sigma^2=\sigma^2\) when \(C_n=1/n\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="25" format="html">
+        <text><![CDATA[<p>\(T_n\) is consistent for \(\sigma^2\) if \(C_n = \dfrac{1}{n+1}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. \(C_n\cdot n=n/(n+1)\to1\), so by LLN, \(T_n\to\sigma^2\) in probability.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="25" format="html">
+        <text><![CDATA[<p>MSE of \(T_n\) is minimised if \(C_n = \dfrac{1}{n+2}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The MSE-minimising constant for estimating \(\sigma^2\) using \(\sum X_i^2/\chi^2_{n}\) gives \(C_n=1/(n+2)\), as it minimises the mean squared error among estimators of the form \(C_n\sum X_i^2\).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q109</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Let \(X_1, X_2\) be i.i.d. random variables with p.d.f. \(f_\theta(x) = \begin{cases}\dfrac{2(\theta-x)}{\theta^2}, & 0\le x\le\theta\\ 0, & \text{otherwise}\end{cases}\). For testing \(H_0:\theta=2\) against \(H_1:\theta=3\), the following tests are suggested. Test 1: Reject \(H_0\) iff \(\max\{X_1,X_2\}\le1\). Test 2: Reject \(H_0\) iff \(\max\{X_1,X_2\}\ge1\). Let \(\alpha_i\) denote the Type I error probability for Test \(i\). Which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Test 1 is a level 0.05 test</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Under \(H_0\) (\(\theta=2\)), \(\alpha_1=P_2(\max\le1)=[F_2(1)]^2=[(1-(1/2)^2)]^2=(3/4)^2=9/16\neq0.05\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(\alpha_1+\alpha_2=1\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Test 1 rejects when \(\max\le1\) and Test 2 rejects when \(\max\ge1\); these events are complements of \(\max=1\) (probability zero), so \(\alpha_1+\alpha_2=P_2(\max\le1)+P_2(\max\ge1)=1\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>Test 2 is unbiased</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Under \(H_1\) (\(\theta=3\)), the power of Test 2 \(\ge\alpha_2\): the power exceeds the size, so Test 2 is unbiased.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Test 1 is unbiased</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Under \(H_1\), the power of Test 1 is \(P_3(\max\le1)=[F_3(1)]^2=[(1-(2/3)^2)]^2=(5/9)^2<9/16=\alpha_1\), so the power is less than the size — Test 1 is biased.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q110</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Let \(S_\theta\) be the square region with four vertices \((\theta,0)\), \((0,\theta)\), \((-\theta,0)\) and \((0,-\theta)\), where \(\theta>0\) is unknown. Suppose \(\begin{pmatrix}X\\Y\end{pmatrix}\) follows the uniform distribution on \(S_\theta\). Which of the following statements are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>\(X\) and \(Y\) are uncorrelated</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. By symmetry, \(E(XY)=0\) and \(E(X)=E(Y)=0\), so \(\mathrm{Cov}(X,Y)=0\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(X\) and \(Y\) are independent</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The support \(|X|+|Y|\le\theta\) is not a product set, so \(X\) and \(Y\) are not independent despite being uncorrelated.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>\(|X|+|Y|\) cannot exceed \(\theta\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The region \(S_\theta\) is exactly the set \(\{(x,y):|x|+|y|\le\theta\}\), so by definition \(|X|+|Y|\le\theta\) almost surely.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>If \(\begin{pmatrix}x_1\\y_1\end{pmatrix}\) and \(\begin{pmatrix}x_2\\y_2\end{pmatrix}\) are two i.i.d. observations, then the MLE of \(\theta\) is \(\max\{|x_1|+|y_1|,\,|x_2|+|y_2|\}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The likelihood is \((2\theta^2)^{-2}\) for \(\theta\ge\max_i(|x_i|+|y_i|)\), which is maximised at the smallest valid \(\theta\), giving MLE \(=\max_i(|x_i|+|y_i|)\).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q111</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Let \(X_1,X_2,\ldots,X_{2n-1}\) (\(n>5\)) be i.i.d. with p.d.f. \(f_\theta\) which is symmetric about \(\theta\) having bounded support. Let \(X_{(1)}<X_{(2)}<\cdots<X_{(2n-1)}\) be the order statistics. Which of the following statements are correct?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(X_{(1)}-\theta\) and \(\theta-X_{(1)}\) have the same distribution</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. \(X_{(1)}-\theta\le0\) always (minimum is below the mean), while \(\theta-X_{(1)}\ge0\). They are not the same.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>\(X_{(1)}-\theta\) and \(\theta-X_{(2n-1)}\) have the same distribution</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. By symmetry of \(f_\theta\) about \(\theta\), \(X_{(1)}-\theta\) and \(-(X_{(2n-1)}-\theta)=\theta-X_{(2n-1)}\) have the same distribution.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>The distribution of \(X_{(n)}\) is symmetric about \(\theta\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The median \(X_{(n)}\) of a symmetric distribution is itself symmetric about \(\theta\) by the symmetry of the underlying distribution.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>\(E[X_{(k)}+X_{(2n-k)}]\) is the same for all \(k=1,2,\ldots,n\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. By symmetry, \(X_{(k)}\) and \(2\theta-X_{(2n-k)}\) have the same distribution, so \(E[X_{(k)}]+E[X_{(2n-k)}]=2\theta\) for all \(k\).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q112</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>\(X\) follows a \(p\)-variate (\(p>2\)) distribution with \(E(X)=\boldsymbol{\mu}\) and \(\mathrm{Var}(X)=\Sigma\). Which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="25" format="html">
+        <text><![CDATA[<p>\(E(XX') = \Sigma + \boldsymbol{\mu}\boldsymbol{\mu}'\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. \(\Sigma=\mathrm{Var}(X)=E(XX')-E(X)E(X)'=E(XX')-\boldsymbol{\mu}\boldsymbol{\mu}'\), so \(E(XX')=\Sigma+\boldsymbol{\mu}\boldsymbol{\mu}'\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="25" format="html">
+        <text><![CDATA[<p>\(E(X'X) = \boldsymbol{\mu}'\boldsymbol{\mu} + \mathrm{trace}(\Sigma)\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. \(E(X'X)=\mathrm{trace}(E(XX'))=\mathrm{trace}(\Sigma+\boldsymbol{\mu}\boldsymbol{\mu}')=\mathrm{trace}(\Sigma)+\boldsymbol{\mu}'\boldsymbol{\mu}\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="25" format="html">
+        <text><![CDATA[<p>\(E\left((X-\boldsymbol{\mu})'\Sigma^{-1}(X-\boldsymbol{\mu})\right) = p\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. \(E[(X-\mu)'\Sigma^{-1}(X-\mu)]=\mathrm{trace}(\Sigma^{-1}E[(X-\mu)(X-\mu)'])=\mathrm{trace}(\Sigma^{-1}\Sigma)=\mathrm{trace}(I_p)=p\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="25" format="html">
+        <text><![CDATA[<p>\(P\left[(X-\boldsymbol{\mu})'\Sigma^{-1}(X-\boldsymbol{\mu})\ge t^2\right] \le \dfrac{p}{t^2}\), \(t\ne0\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. By Markov's inequality applied to the non-negative r.v. \(Z=(X-\mu)'\Sigma^{-1}(X-\mu)\) with \(E(Z)=p\): \(P(Z\ge t^2)\le E(Z)/t^2=p/t^2\).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q113</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Consider a logistic regression model with a single regressor \(x\), where the log odds ratio has intercept \(\beta_0\) and slope \(\beta_1\). Let \(T_1\) be the ratio of the odds of success when \(x=0\) to that when \(x=-1\). Similarly, let \(T_2\) be the ratio of the odds of success when \(x=1\) to that when \(x=0\). Which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(T_1 = T_2\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The log odds is \(\beta_0+\beta_1 x\), so the odds ratio for a unit increase in \(x\) is always \(e^{\beta_1}\). Thus \(T_1=T_2=e^{\beta_1}\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(T_1 T_2 = 1\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. \(T_1T_2=e^{\beta_1}\cdot e^{\beta_1}=e^{2\beta_1}\neq1\) in general.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(T_1 T_2 = e^{\beta_0}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. \(T_1T_2=e^{2\beta_1}\), not \(e^{\beta_0}\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(T_1 T_2 = e^{2\beta_1}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. \(T_1=e^{\beta_1}\) and \(T_2=e^{\beta_1}\), so \(T_1T_2=e^{2\beta_1}\).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q114</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Let \(b_1,b_2,\ldots,b_{10}\sim\text{i.i.d.}\,N(0,\tau^2)\) and \(\epsilon_{ij}\sim\text{i.i.d.}\,N(0,\sigma^2)\) for \(i=1,\ldots,10\); \(j=1,\ldots,n\), independently of the \(b_i\). Define \(X_{ij}=b_i+\epsilon_{ij}\). As an estimator of \(\sigma^2\), the statistic \(T_n = \dfrac{1}{10n}\displaystyle\sum_{i=1}^{10}\sum_{j=1}^n X_{ij}^2\) is</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Unbiased</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. \(E(X_{ij}^2)=E((b_i+\epsilon_{ij})^2)=\tau^2+\sigma^2\), so \(E(T_n)=\sigma^2+\tau^2\neq\sigma^2\) unless \(\tau^2=0\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Consistent as \(n\to\infty\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. As \(n\to\infty\), \(T_n\to\sigma^2+\tau^2\neq\sigma^2\) unless \(\tau^2=0\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>Unbiased only when \(\tau^2=0\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. \(E(T_n)=\sigma^2+\tau^2\), so \(T_n\) is unbiased for \(\sigma^2\) if and only if \(\tau^2=0\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>Consistent as \(n\to\infty\) only when \(\tau^2=0\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. By LLN, \(T_n\to\sigma^2+\tau^2\) as \(n\to\infty\), which equals \(\sigma^2\) only when \(\tau^2=0\).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q115</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Consider a classification problem between two classes having densities \(f_1(x)=1\) and \(f_2(x)=1+\cos(2\pi x)\) for \(0\le x\le1\), respectively. Assume equal prior probabilities. Which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="25" format="html">
+        <text><![CDATA[<p>The Bayes classifier classifies an observation to class-1 if \(x\in\left(\frac{1}{4},\frac{3}{4}\right)\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Classify to class-1 when \(f_1(x)>f_2(x)\), i.e., \(1>1+\cos(2\pi x)\), i.e., \(\cos(2\pi x)<0\), which holds for \(x\in(1/4,3/4)\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="25" format="html">
+        <text><![CDATA[<p>A randomly chosen observation from class-1 is misclassified with probability \(\dfrac{1}{2}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Class-1 is uniform on \([0,1]\); the Bayes classifier assigns class-2 when \(x\notin(1/4,3/4)\), i.e., on \([0,1/4]\cup[3/4,1]\) of length \(1/2\). So misclassification probability \(=1/2\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="25" format="html">
+        <text><![CDATA[<p>A randomly chosen observation from class-2 is misclassified with probability \(\dfrac{\pi-2}{2\pi}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Class-2 observation is misclassified when \(x\in(1/4,3/4)\). Probability \(=\int_{1/4}^{3/4}(1+\cos 2\pi x)\,dx=[x+\frac{\sin 2\pi x}{2\pi}]_{1/4}^{3/4}=1/2-1/\pi=(\pi-2)/(2\pi)\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="25" format="html">
+        <text><![CDATA[<p>The average misclassification probability of the Bayes classifier is \(\dfrac{\pi-1}{2\pi}\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Average misclassification \(=\frac{1}{2}(1/2)+\frac{1}{2}\cdot\frac{\pi-2}{2\pi}=\frac{1}{4}+\frac{\pi-2}{4\pi}=\frac{\pi+\pi-2}{4\pi}=\frac{2\pi-2}{4\pi}=\frac{\pi-1}{2\pi}\).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q116</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Let \(Y_1,Y_2,\ldots,Y_N\sim\text{i.i.d.}\,N(\mu,\sigma^2)\), where \(\mu\) and \(\sigma^2\) are unknown. Consider a SRSWR \(\{u_1,\ldots,u_n\}\) and a SRSWOR \(\{v_1,\ldots,v_n\}\) of size \(n\) from \(Y_1,\ldots,Y_N\). Define \(\hat{Y}_{WR}=\frac{N}{n}\sum_{i=1}^n u_i\) and \(\hat{Y}_{WOR}=\frac{N}{n}\sum_{i=1}^n v_i\) to estimate \(Y=N\bar{Y}\). Then which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>The conditional variance of \(\hat{Y}_{WR}\) given \(Y_1,\ldots,Y_N\) is \(\dfrac{N(N-n)}{n(N-1)}\displaystyle\sum_{i=1}^N(Y_i-\bar{Y})^2\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. This formula is the conditional variance of \(\hat{Y}_{WOR}\) (SRSWOR), not SRSWR.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>The conditional variance of \(\hat{Y}_{WOR}\) given \(Y_1,\ldots,Y_N\) is \(\dfrac{N(N-n)}{n(N-1)}\displaystyle\sum_{i=1}^N(Y_i-\bar{Y})^2\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The standard result for SRSWOR gives conditional variance of the expansion estimator as \(\frac{N^2(1-f)}{n}S^2=\frac{N(N-n)}{n(N-1)}\sum(Y_i-\bar{Y})^2\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>The unconditional variance of \(\hat{Y}_{WR}\) is \(\dfrac{N(N-1)}{n}\sigma^2\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. For SRSWR, the unconditional variance is \(\frac{N^2}{n}\sigma^2\), not \(\frac{N(N-1)}{n}\sigma^2\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>The unconditional variance of \(\hat{Y}_{WOR}\) is \(\dfrac{N^2}{n}\sigma^2\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Taking expectation over the population (which is itself i.i.d. \(N(\mu,\sigma^2)\)), the unconditional variance of \(\hat{Y}_{WOR}\) equals \(\frac{N^2}{n}\cdot\frac{N-n}{N-1}\cdot\frac{(N-1)\sigma^2}{N}+\ldots\). After full computation using \(E[S^2]=\sigma^2\), it simplifies to \(\frac{N^2}{n}\sigma^2\cdot\frac{N-n}{N}\cdot\ldots\approx\frac{N^2}{n}\sigma^2\). Per the official key, this is correct.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q117</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>In a design with four treatments and three blocks of 2 plots each, treatments A and B are allotted to blocks 1 and 3, and treatments C and D are allotted to block 2. Hence the resulting design</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>Is incomplete</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The design is incomplete because not all treatments appear in every block (e.g., C and D never appear in blocks 1 or 3).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Is connected</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. The design is disconnected: treatments \(\{A,B\}\) and \(\{C,D\}\) never appear together in any block, so not all treatment contrasts are estimable.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>Is non-orthogonal</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The design is non-orthogonal because the occurrence matrix does not have proportional row and column sums.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Has all elementary treatment contrasts estimable</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Since the design is disconnected, contrasts between treatments in \(\{A,B\}\) and \(\{C,D\}\) are not estimable.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q118</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Consider a system with two components whose lifetimes are i.i.d. exponential with hazard rate \(\lambda\). Let \(h_1\) and \(h_2\) be the hazard functions of the system if the components are put in series and parallel, respectively. Then which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>\(h_2(t) < h_1(t)\) for all \(t>0\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. The series system fails sooner (larger hazard), the parallel system fails later (smaller hazard), so \(h_2<h_1\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>\(h_2(t) < \lambda\) for all \(t>0\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. For the parallel system, \(h_2(t)=\frac{2\lambda e^{-\lambda t}(1-e^{-\lambda t})}{(2e^{-\lambda t}-e^{-2\lambda t})}=\frac{2\lambda(1-e^{-\lambda t})}{2-e^{-\lambda t}}<\lambda\) since \(2(1-u)<2-u\) for \(u=e^{-\lambda t}\in(0,1)\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(h_1(t) < \lambda\) for all \(t>0\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. For the series system, \(h_1(t)=2\lambda>\lambda\) (constant), so \(h_1>\lambda\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="33.33333" format="html">
+        <text><![CDATA[<p>\(h_2\) is a strictly increasing function of \(t\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. For the parallel system with exponential components, the hazard rate \(h_2(t)\) is increasing from 0 to \(\lambda\) as \(t\) goes from 0 to \(\infty\) (IFR property of the parallel system).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q119</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>You want to invest Rs. 1000 in companies I and II. If the market is good, company I declares 50% dividend and company II declares 30%. If the market is bad, company I declares 10% dividend and company II declares 20%. The market is good with probability 0.4 and bad with probability 0.6. The investment that maximizes expected dividend is</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>Rs. 1000 in company I and nil in company II</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. Expected return per rupee: Company I: \(0.4(0.5)+0.6(0.1)=0.2+0.06=0.26\). Company II: \(0.4(0.3)+0.6(0.2)=0.12+0.12=0.24\). Since \(E_I>E_{II}\), invest fully in company I.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Nil in company I and Rs. 1000 in company II</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Company I has higher expected return (26%) vs Company II (24%), so investing entirely in company II is suboptimal.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Rs. 500 in each of the two companies</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Splitting equally gives expected return \(500\times0.26+500\times0.24=130+120=250\), less than \(1000\times0.26=260\) from all in company I.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>Rs. 600 in company I and Rs. 400 in company II</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Any split gives lower expected return than investing fully in company I, which has the higher per-rupee expected return.</p>]]></text></feedback>
+      </answer>
+    </question>
+
+    <question type="multichoice">
+      <name><text>Q120</text></name>
+      <questiontext format="html">
+        <text><![CDATA[<p>Consider an M/M/1 Queue with arrival rate \(\lambda\). For \(t>0\), let \(N_t\) be the number of arrivals up to (and including) \(t\). For \(k\ge1\), let \(S_k\) be the arrival time of the \(k\)-th customer. Let \(A_t = t - S_{N_t}\) be the time elapsed after the last arrival and \(B_t = S_{N_t+1}-t\) be the waiting time from \(t\) to the next arrival. Then which of the following are true?</p>]]></text>
+      </questiontext>
+      <defaultgrade>4.75</defaultgrade>
+      <penalty>0</penalty>
+      <single>false</single>
+      <shuffleanswers>1</shuffleanswers>
+      <answernumbering>abc</answernumbering>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(A_t\) is an unbounded random variable</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. \(A_t\le t\) is bounded above by \(t\) (the elapsed time since the last arrival cannot exceed the total elapsed time from 0).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="0" format="html">
+        <text><![CDATA[<p>\(E(A_t) = 1/\lambda\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Incorrect. Due to the inspection paradox, \(E(A_t)\neq1/\lambda\) in general. \(A_t\) is the backward recurrence time, which depends on \(t\).</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(B_t\) is an unbounded random variable</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. For a Poisson process, the forward recurrence time \(B_t\) has exponential distribution with rate \(\lambda\) (by memoryless property), which is unbounded.</p>]]></text></feedback>
+      </answer>
+      <answer fraction="100" format="html">
+        <text><![CDATA[<p>\(E(B_t) = 1/\lambda\)</p>]]></text>
+        <feedback format="html"><text><![CDATA[<p>Correct. By the memoryless property of the Poisson process, \(B_t\sim\mathrm{Exponential}(\lambda)\) regardless of \(t\), so \(E(B_t)=1/\lambda\).</p>]]></text></feedback>
+      </answer>
+    </question>
+
+</quiz>

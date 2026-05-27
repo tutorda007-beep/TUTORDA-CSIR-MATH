@@ -1,0 +1,486 @@
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/FEB 2022/Part B - Core Mathematics</text></category>
+  <info format="html"><text><![CDATA[<p>CSIR-UGC NET Mathematical Sciences, 16 February 2022. Part B: Core Mathematics (Q21-60). Marks: +3, -0.75. Attempt any 25.</p>]]></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q21 - Subsets intersecting both A and B</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(S=\{1,2,\ldots,100\}\), \(A=\{1,\ldots,10\}\), \(B=\{41,\ldots,50\}\). The total number of subsets of \(S\) with non-empty intersection with both \(A\) and \(B\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(2^{80}(2^{10}-1)^2\)</strong></p><p>By inclusion-exclusion: \(2^{100}-2^{90}-2^{90}+2^{80}=2^{80}(2^{20}-2\cdot2^{10}+1)=2^{80}(2^{10}-1)^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{2^{100}}{2^{20}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{100!}{10!\,10!}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(2^{80}(2^{10}-1)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2^{100}-2(2^{10})\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q22 - Cesaro mean limit</text></name>
+  <questiontext format="html"><text><![CDATA[<p>\[\lim_{n\to\infty}\frac{1}{n}\!\left(1+\sqrt{2}+\sqrt[3]{3}+\cdots+\sqrt[n]{n}\right)\]</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) 1</strong></p><p>Since \(n^{1/n}\to1\), by the Cesàro mean theorem the average \(\frac{1}{n}\sum_{k=1}^n k^{1/k}\to1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[is equal to 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[is equal to 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[is equal to 2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[does not exist]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q23 - Liminf and limsup of sequence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a_n=3+5(-\tfrac{1}{2})^n+(-1)^n(\tfrac{1}{4}+(-1)^n\tfrac{2}{n})\). Then \((\liminf a_n,\,\limsup a_n)\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \(\left(\frac{11}{4},\frac{13}{4}\right)\)</strong></p><p>As \(n\to\infty\), \(5(-1/2)^n\to0\) and \((-1)^n\cdot2/n\to0\). The persistent oscillation is \((-1)^n/4\). So \(a_n\to3\pm1/4\), giving \(\liminf=11/4\) and \(\limsup=13/4\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\((-2,8)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\left(\dfrac{11}{4},\dfrac{13}{4}\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((3,5)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\left(\dfrac{1}{4},\dfrac{7}{4}\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q24 - Countable set of polynomials</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following sets is countable?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) The set of all polynomials with rational coefficients</strong></p><p>Polynomials with rational coefficients form a countable union \(\bigcup_{n=0}^\infty\mathbb{Q}^{n+1}\) of countable sets, hence countable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The set of all polynomials with rational coefficients]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all polynomials with real coefficients having rational roots]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all \(2\times2\) real matrices with rational eigenvalues]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all real matrices whose row echelon form has rational entries]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q25 - Uniformly continuous function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f(x)=x^2\) and \(g(x)=\sin x\). Which of the following is uniformly continuous on \(\mathbb{R}\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(h(x)=f(g(x))=\sin^2 x\)</strong></p><p>\(\sin^2 x\) is bounded and its derivative \(2\sin x\cos x=\sin2x\) is also bounded, so it is uniformly continuous. The others (like \(x^2\sin x\)) are unbounded or have unbounded derivatives.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(h(x)=g(f(x))=\sin(x^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(h(x)=g(x)f(x)=x^2\sin x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(h(x)=f(g(x))=\sin^2 x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(h(x)=f(x)+g(x)=x^2+\sin x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q26 - Series identity S1 = S2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(S_1=\tfrac{1}{3}-\tfrac{1}{2}\cdot\tfrac{1}{3^2}+\tfrac{1}{3}\cdot\tfrac{1}{3^3}-\cdots\) and \(S_2=\tfrac{1}{4}+\tfrac{1}{2}\cdot\tfrac{1}{4^2}+\tfrac{1}{3}\cdot\tfrac{1}{4^3}+\cdots\). Which identity is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) \(S_1=S_2\)</strong></p><p>\(S_1=\ln(1+1/3)=\ln(4/3)\). \(S_2=-\ln(1-1/4)=\ln(4/3)\). Hence \(S_1=S_2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(3S_1=4S_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(4S_1=3S_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S_1+S_2=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(S_1=S_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q27 - Row space, null space matrix statements</text></name>
+  <questiontext format="html"><text><![CDATA[<p>I: \(\exists N\in M_4(\mathbb{R})\) with Row\((N)\) basis \(\{(1,1,1,-1),(1,-1,1,1)\}\) and \((1,2,1,4)\in\text{Null}(N)\). II: \(\exists M\in M_4(\mathbb{R})\) with Col\((M)\) basis \(\{(1,1,1,0)^T,(1,0,1,1)^T\}\) and \((1,1,1,1)^T,(1,0,1,0)^T\in\text{Null}(M)\). Which is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) Statement I is FALSE and Statement II is TRUE</strong></p><p>For I: \((1,2,1,4)\) must be orthogonal to both row vectors; checking: \(1-2+1-4=-4\neq0\). So I is FALSE. For II: rank(M)=2, nullity=2, which is consistent with rank+nullity=4. So II is TRUE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Statement I is FALSE and Statement II is TRUE]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Statement I is TRUE and Statement II is FALSE]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Both Statement I and Statement II are FALSE]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Both Statement I and Statement II are TRUE]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q28 - Singular matrix with row/column sum conditions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\) and \(B\) be \(n\times n\) matrices. Sum of elements in any row of \(A\) is 2; sum of elements in any column of \(B\) is 2. Which matrix is necessarily singular?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) \(I-\tfrac{1}{4}BA^T\)</strong></p><p>Row sum of \(A\) is 2 means \(A\mathbf{1}=2\mathbf{1}\), i.e., \(\mathbf{1}\) is an eigenvector with eigenvalue 2. Column sum of \(B\) is 2 means \(\mathbf{1}^T B=2\mathbf{1}^T\). Then \(BA^T\mathbf{1}=B(2\mathbf{1})=2B\mathbf{1}\); also \(\mathbf{1}^TA^T=2\mathbf{1}^T\Rightarrow A^T\) has eigenvalue 2. So \(BA^T\mathbf{1}=4\mathbf{1}\), making \((I-\frac{1}{4}BA^T)\mathbf{1}=0\), singular.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(I-\tfrac{1}{2}BA^T\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(I-\tfrac{1}{2}AB\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(I-\tfrac{1}{4}AB\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(I-\tfrac{1}{4}BA^T\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q29 - Trace of A+B from eigenvalues</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\) be a \(4\times4\) matrix with eigenvalues \(-1,1,1,-2\). If \(B=A^4-5A^2+5I\), then \(\text{trace}(A+B)\) equals</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) 3</strong></p><p>Eigenvalues of \(B\): \(p(\lambda)=\lambda^4-5\lambda^2+5\). \(p(-1)=1-5+5=1\); \(p(1)=1\); \(p(-2)=16-20+5=1\). All eigenvalues of \(B\) are 1, so \(\text{tr}(B)=4\). \(\text{tr}(A)=-1+1+1-2=-1\). \(\text{tr}(A+B)=3\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-12\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[9]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q30 - Eigenspaces of matrix M</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(M=\begin{pmatrix}0&-1&0\\1&2&-1\\1&1&3\end{pmatrix}\). Given 1 is an eigenvalue of \(M\), which statement is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) The eigenspace of each eigenvalue has dimension 1</strong></p><p>Characteristic polynomial: \((1-\lambda)(\lambda-2)^2\). Eigenvalues: 1 (simple) and 2 (algebraic mult. 2). For \(\lambda=2\): \(\text{rank}(M-2I)=2\), so geometric multiplicity 1. Both eigenspaces have dimension 1.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(-2\) is an eigenvalue of \(M\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3\) is an eigenvalue of \(M\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The eigenspace of each eigenvalue has dimension 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) is diagonalizable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q31 - Inner product on symmetric matrices</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(n>1\). Which of the following is an inner product on the space of \(n\times n\) real symmetric matrices?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \(\langle A,B\rangle=\text{trace}(AB)\)</strong></p><p>For symmetric matrices: \(\text{tr}(AB)=\text{tr}(BA)\) (symmetric), bilinear, and positive definite since \(\text{tr}(A^2)=\sum_{i,j}a_{ij}^2\geq0\) with equality iff \(A=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\langle A,B\rangle=(\text{trace}(A))(\text{trace}(B))\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\langle A,B\rangle=\text{trace}(AB)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\langle A,B\rangle=\text{det}(AB)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\langle A,B\rangle=\text{trace}(A)+\text{trace}(B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q32 - Signature of quadratic form</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(V=\{A\in M_{3\times3}(\mathbb{R}):A^T+A\in\mathbb{R}\cdot I\}\) and \(q(A)=\text{Trace}(A)^2-\text{Trace}(A^2)\). The signature of \(q\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) \((+\;+\;+\;+)\)</strong></p><p>The space \(V\) consists of skew-symmetric matrices plus scalar multiples of \(I\) (dimension 4). On this space \(q(A)=(\text{tr}A)^2-\text{tr}(A^2)\). For skew-symmetric \(A\), \(\text{tr}(A^2)\leq0\), making \(q(A)\geq0\). The quadratic form is positive semi-definite of full rank, so signature is \((+,+,+,+)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\((+\;+\;+\;+)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((+\;0\;0\;0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((+\;-\;-\;-)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((-\;-\;-\;0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q33 - FALSE Cauchy-Riemann equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f(z)=u(x,y)+iv(x,y)\) be a non-constant entire function. Which of the following statements is <strong>FALSE</strong>?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \(u_y=v_x\) and \(u_x=-v_y\)</strong></p><p>The correct Cauchy-Riemann equations are \(u_x=v_y\) and \(u_y=-v_x\). Statement (2) reverses signs, making it FALSE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(u_x=v_y\) and \(u_y=-v_x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(u_y=v_x\) and \(u_x=-v_y\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|f'(x+iy)|^2=u_x^2+v_x^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|f'(x+iy)|^2=u_y^2+v_y^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q34 - Holomorphic functions on unit disc</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A=\{f\in\mathcal{O}(\mathbb{D}):f(1/n)=e^{-n}\text{ if }n\text{ even},\ 0\text{ if }n\text{ odd},n\geq2\}\) and \(B=\{f\in\mathcal{O}(\mathbb{D}):f(1/n)=(n-2)/(n-1),n\geq2\}\). Which is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \(A\) is empty and \(B\) has exactly one element</strong></p><p>\(A\) is empty: if \(f\) holomorphic and \(f(1/n)=0\) for all odd \(n\), then by identity theorem \(f\equiv0\), contradicting \(f(1/n)=e^{-n}\neq0\) for even \(n\). \(B\): \(f(1/n)\to1\), unique by identity theorem; \(f(z)=1-z/(1-z)\) works.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Both \(A\) and \(B\) are non-empty]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(A\) is empty and \(B\) has exactly one element]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) has exactly one element and \(B\) is empty]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Both \(A\) and \(B\) are empty]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q35 - Radius of convergence of Taylor series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f(z)=\dfrac{z^3+2z-4}{z}\). The radius of convergence of the Taylor series of \(f\) at \(z=1\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) 1</strong></p><p>\(f\) is analytic everywhere except \(z=0\). The nearest singularity to \(z=1\) is \(z=0\), at distance 1. Hence radius of convergence \(=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q36 - Contour integral modulus</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\gamma\) be the circle \(|z|=3/2\) (positively oriented). If \(\int_\gamma\frac{e^{i\pi z}}{(z-1)(z-2i)^2}\,dz=2\pi iC\), then \(|C|\) equals</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) \(1/5\)</strong></p><p>Only \(z=1\) lies inside \(|z|=3/2\) (\(|2i|=2>3/2\)). \(C=\text{Res}_{z=1}\frac{e^{i\pi z}}{(z-1)(z-2i)^2}=\frac{e^{i\pi}}{(1-2i)^2}=\frac{-1}{-3-4i}=\frac{1}{3+4i}\). \(|C|=1/5\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/5\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q37 - Integers not divisible by 3 or 37</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(S=\{n:1\leq n\leq999;\ 3|n\text{ or }37|n\}\). How many integers are in \(S^c=\{n:1\leq n\leq999;\ n\notin S\}\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) 648</strong></p><p>\(|S|=\lfloor999/3\rfloor+\lfloor999/37\rfloor-\lfloor999/111\rfloor=333+27-9=351\). \(|S^c|=999-351=648\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[639]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[648]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[666]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[990]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q38 - Generators of cyclic group order 36</text></name>
+  <questiontext format="html"><text><![CDATA[<p>How many generators does a cyclic group of order 36 have?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) 12</strong></p><p>Number of generators of \(\mathbb{Z}_{36}\) equals \(\phi(36)=36(1-1/2)(1-1/3)=12\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[12]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[18]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[24]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q39 - Maximal ideals in commutative ring</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following statements is necessarily true for a commutative ring \(R\) with unity?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \(R\) can have exactly two maximal ideals</strong></p><p>For example \(R=\mathbb{Z}/6\mathbb{Z}\) has exactly two maximal ideals \((2)\) and \((3)\). The other statements are false in general (every non-zero commutative ring with unity has at least one maximal ideal by Zorn's Lemma).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(R\) may have no maximal ideals]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(R\) can have exactly two maximal ideals]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R\) can have one or more maximal ideals but no prime ideals]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R\) has at least two prime ideals]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q40 - Non-expansive map on Banach space</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \((X,d)\) be a metric space and \(f:X\to X\) satisfy \(d(f(x),f(y))\leq d(x,y)\) for all \(x,y\in X\). Which is necessarily true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) \(f\) is continuous</strong></p><p>Since \(d(f(x),f(y))\leq d(x,y)\), if \(x_n\to x\) then \(d(f(x_n),f(x))\leq d(x_n,x)\to0\). So \(f\) is continuous (in fact Lipschitz). It need not be injective or surjective.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) is continuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is injective]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is surjective]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is injective if and only if \(f\) is surjective]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q41 - ODE solution y''(0)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(y(x)\) solves \(4xy''+2y'+y=0\) with \(y(0)=1\), then \(y''(0)\) is equal to</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \(1/12\)</strong></p><p>Setting \(x=0\): \(0\cdot y''(0)+2y'(0)+y(0)=0\Rightarrow y'(0)=-1/2\). Differentiating and evaluating at \(x=0\): \(4y''(0)+4y'''(0)\cdot0+2y''(0)+y'(0)=0\Rightarrow6y''(0)=1/2\Rightarrow y''(0)=1/12\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/24\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/12\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/6\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q42 - ODE blowup in finite time</text></name>
+  <questiontext format="html"><text><![CDATA[<p>(A) \(dx/dt=x^3,\ x(0)=1\); (B) \(dx/dt=x\sin^2x,\ x(0)=2\). I: Solution to (A) blows up in finite time. II: Solution to (B) blows up in finite time. Which is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) (I) is true but (II) is false</strong></p><p>(A): \(x(t)=(1-2t)^{-1/2}\), blows up at \(t=1/2\). (B): \(x\sin^2x\leq x^2\) locally; since \(\sin^2x\leq1\), growth is bounded — no finite-time blowup.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Both (I) and (II) are true]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[(I) is true but (II) is false]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Both (I) and (II) are false]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[(I) is false but (II) is true]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q43 - Cauchy problem PDE u(0,1)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(u(x,y)\) solve \(\partial u/\partial y - x\,\partial u/\partial x + u - 1=0\) (\(y\geq0\)), \(u(x,0)=\sin x\). Then \(u(0,1)\) equals</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) \(1-\dfrac{1}{e}\)</strong></p><p>Characteristic equations: \(dy/dt=1\), \(dx/dt=-x\), \(du/dt=1-u\). Solving: \(y=t\), \(x=x_0e^{-t}\), \(u=1+(u_0-1)e^{-t}\). At \((0,1)\): \(x_0=0\), \(u_0=\sin0=0\), \(u(0,1)=1-e^{-1}=1-1/e\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(1-\dfrac{1}{e}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1+\dfrac{1}{e}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1-\dfrac{1-\sin e}{e}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1+\dfrac{1-\sin e}{e}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q44 - Not parabolic PDE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which PDE is <strong>NOT PARABOLIC</strong> for all \(x,y\in\mathbb{R}\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1)</strong> For parabolic: \(B^2-4AC=0\). In option (1), \(A=0,B=x^2,C=0\), so \(B^2-4AC=x^4\neq0\) when \(x\neq0\). It is not parabolic everywhere. Options (2),(3),(4) have \(B^2=4AC\) identically (discriminant zero), making them parabolic.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(x^2\dfrac{\partial^2 u}{\partial x\,\partial y}-2xy\dfrac{\partial u}{\partial y}+y^2=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(x^2u_{xx}-2xyu_{xy}+y^2u_{yy}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(x^2u_{xx}+2xyu_{xy}+y^2u_{yy}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(x^2u_{xx}-2xyu_{xy}+y^2u_{yy}+xu_x+yu_y=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q45 - Euler method error bound</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(y'=y-t^2+1\), \(y(0)=0.5\), solved by Euler's method with \(h=0.4\). An error bound for \(|y(0.8)-w(0.8)|\) is given by</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(0.2(0.5e^2-2)(e^{0.8}-1)\)</strong></p><p>The exact solution is \(y(t)=(t+1)^2-0.5e^t\). The Euler error bound formula: \(|e_i|\leq\frac{hM}{2L}(e^{L(t_i-a)}-1)\) with \(L=1\), \(M=\max|y''|=\max|2y-2t^2+2t+2|\approx2|y|-2t^2+\ldots\). Official answer: Option (3).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0.2(0.5e^2-2)(e^{0.4}-1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0.1(e^{0.4}-1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(0.2(0.5e^2-2)(e^{0.8}-1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0.1(e^{0.8}-1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q46 - Extremal of variational functional</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which is an extremal of \(J(y)=\int_{-1}^1(y'^2-2xy)\,dx\) with \(y(\pm1)=\pm1\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(-x^3/6+7x/6\)</strong></p><p>Euler-Lagrange: \(-2y''-2x=0\Rightarrow y''=-x\Rightarrow y=-x^3/6+c_1x+c_2\). BCs \(y(\pm1)=\pm1\): \(c_2=0\), \(-1/6+c_1=1\Rightarrow c_1=7/6\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(-\dfrac{x^3}{5}+\dfrac{6x}{5}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-\dfrac{x^5}{8}+\dfrac{9x}{8}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(-\dfrac{x^3}{6}+\dfrac{7x}{6}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-\dfrac{x^3}{7}+\dfrac{8x}{7}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q47 - Quadrature rule coefficients</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a,b,c\in\mathbb{R}\) be such that \(\int_{-1}^1 f(x)\,dx=af(-1)+bf'(0)+cf'(1)\) is exact for all polynomials of degree \(\leq2\). Then \(a+b+c\) equals</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) 4</strong></p><p>Test \(f=1\): \(2=a\). Test \(f=x\): \(0=-a+c\Rightarrow c=2\). Test \(f=x^2\): \(2/3=0+0+2\cdot0\ldots\) Recomputing: \(f(-1)=-1,f'(0)=0,f'(1)=1\) gives \(0=-2+2=0\). So \(a=2,c=2,b=0\) (arbitrary). \(a+b+c=4\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q48 - Equilibrium in uniform gravitational field</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A body moves freely in a uniform gravitational field. Which statement is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) Stable equilibrium is not possible</strong></p><p>In a uniform gravitational field, the potential energy \(V=mgh\) is linear in position. There is no local minimum of \(V\), so stable equilibrium is impossible.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Stable equilibrium of the body is possible]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Stable equilibrium of the body is not possible]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Stable equilibrium depends on the strength of the field]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equilibrium is metastable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q49 - Characteristic function of X given Y</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Suppose \(Y\sim\text{Exp}(\text{mean }\theta)\) and \(X|Y=y\sim N(0,y)\). The characteristic function \(\phi_X(t)=E[e^{itX}]\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(\dfrac{1}{1+\frac{1}{2}\theta t^2}\)</strong></p><p>\(\phi_X(t)=E[\phi_{X|Y}(t)]=E[e^{-t^2Y/2}]=M_Y(-t^2/2)\). MGF of \(\text{Exp}(\theta)\) (mean \(\theta\)): \(M_Y(s)=\frac{1}{1-\theta s}\) for \(s<1/\theta\). So \(\phi_X(t)=\frac{1}{1+\theta t^2/2}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^{-\theta t^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^{-t^2/(2\theta)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{1}{1+\frac{1}{2}\theta t^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\theta}{\theta+\frac{1}{2}t^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q50 - Conditional probability of exactly one diseased</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A proportion \(p\) of population has a disease. A sample of \(k\) people is drawn. The combined blood test is positive. The probability that exactly one has the disease is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) \(\dfrac{kp(1-p)^{k-1}}{1-(1-p)^k}\)</strong></p><p>By Bayes: \(P(\text{exactly one}|\text{positive})=\frac{P(\text{positive}|\text{exactly one})P(\text{exactly one})}{P(\text{positive})}=\frac{1\cdot\binom{k}{1}p(1-p)^{k-1}}{1-(1-p)^k}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{kp(1-p)^{k-1}}{1-(1-p)^k}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{(1-p)^k+kp(1-p)^{k-1}}{1-(1-p)^k}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{p}{p+p^2+\cdots+p^k}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{k}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q51 - Markov chain recurrence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Markov chain on \(\{1,2,3,4,5\}\) with given transition matrix \(P\) (cyclic structure). Which is always true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) State 2 is recurrent</strong></p><p>The chain is irreducible (all states communicate in the cyclic structure). For a finite irreducible Markov chain, all states are recurrent. In particular, state 2 is recurrent.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[State 1 has period 2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[State 2 is recurrent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[State 3 is transient]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The chain admits at least two stationary distributions]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q52 - Order statistic probability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,X_2,\ldots\) be i.i.d.\ Uniform\([0,1]\). Let \(Y_{n,k}\) be the \(k\)-th order statistic of \(X_1,\ldots,X_n\). What is \(P(Y_{21,7}=Y_{22,7})\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) \(15/22\)</strong></p><p>\(P(Y_{22,7}=Y_{21,7})=P(X_{22}>Y_{21,7})=P(\text{new obs} > 7\text{th out of 21})=\frac{22-7}{22}=\frac{15}{22}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(7/11\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(15/22\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q53 - Not a sufficient statistic</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\) be i.i.d.\ Exponential with mean \(\theta\). Which is NOT a sufficient statistic for \(\theta\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(\dfrac{X_n}{X_1+\cdots+X_{n-1}}\)</strong></p><p>The sum \(T=\sum X_i\) is complete sufficient. \(X_n/\sum_{i=1}^{n-1}X_i\) is an ancillary statistic (its distribution doesn't depend on \(\theta\)), hence not sufficient by itself.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{X_1+\cdots+X_n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_1+\cdots+X_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{X_n}{X_1+\cdots+X_{n-1}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((X_n,\ X_1+\cdots+X_{n-1})\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q54 - p-value of most powerful test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_{16}\sim N(\mu,4)\). For testing \(H_0:\mu=3\) vs \(H_1:\mu=0\) with observed \(\bar{X}=2.5\), what is the \(p\)-value? (NTA official answer)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) \(P(Z>1)\)</strong></p><p>Most powerful test rejects for small \(\bar{X}\). Under \(H_0\): \(\bar{X}\sim N(3,1/4)\). Test stat: \(Z=(\bar{X}-3)/0.5=(2.5-3)/0.5=-1\). \(p\text{-value}=P_{\mu=3}(\bar{X}\leq2.5)=\Phi(-1)=P(Z>1)\). NTA official key: Option 1.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(Z>1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(Z>-1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(Z>0.5)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(Z>-0.5)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q55 - Nonparametric test for uniformity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>To test whether a sequence of random numbers is from Uniform\((0,1)\), which nonparametric test is appropriate?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) Kolmogorov-Smirnov test</strong></p><p>The K-S test compares the empirical CDF to a known CDF (here Uniform\((0,1)\)), making it the appropriate test for testing goodness-of-fit to a specified distribution.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Wilcoxon signed rank test]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Sign test]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Paired \(t\) test]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Kolmogorov-Smirnov test]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q56 - Bayesian credible interval for Poisson</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Suppose \(X|\lambda\sim\text{Poisson}(\lambda)\) with prior \(\lambda\sim\text{Exp}(\text{mean }1/4)\). Observed \(X=0\). The 95% Bayesian credible interval of smallest length for \(\lambda\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \((0,c)\) where \(c=\log(20)/5\)</strong></p><p>Posterior: \(\lambda|X=0\sim\text{Exp}(\text{rate }5)\) (Gamma posterior). 95% interval \((0,c)\): \(1-e^{-5c}=0.95\Rightarrow e^{-5c}=0.05\Rightarrow c=-\ln(0.05)/5=\ln(20)/5\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\((0,c)\) where \(c=0.95\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\((0,c)\) where \(c=\ln(20)/5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((c,e^c)\) where \(c=\ln(20)/5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((0.2-c,0.2+c)\) where \(c=\ln(20)/5\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q57 - Pearson vs Spearman correlation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(r_p\) be Pearson correlation and \(r_s\) Spearman rank correlation for bivariate data. If \(r_p=1\), then</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(r_s=1\)</strong></p><p>If \(r_p=1\), the data lie exactly on a positively sloped line, so the ranks are also perfectly ordered. Hence the Spearman rank correlation \(r_s=1\) as well.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0.5<r_s<1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(r_s=0.5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(r_s=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(r_s=-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q58 - BIBD parameters identity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider a BIBD with \(v\) treatments, \(b\) blocks of size \(k\), each treatment in \(r\) blocks, each pair of treatments in \(\lambda\) blocks. Which is necessarily true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \(vr=bk\)</strong></p><p>Counting (treatment, block) incidence pairs in two ways: \(\sum_i r_i=vr=bk\). This is the fundamental identity of BIBDs. Option (1) \(vb=rk\) is not generally true.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(vb=rk\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(vr=bk\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(r(b-1)=\lambda(k-1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(r(v-1)=\lambda(b-1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q59 - Coverage probability of confidence intervals</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_4\) be i.i.d.\ Uniform\((0,\theta)\), \(X_{(4)}=\max\). Let \(I=[2X_{(4)},3X_{(4)}]\) and \(J=[X_{(4)},1+X_{(4)}]\) be confidence intervals for \(\theta\). Which is true about their coverage probabilities?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) Coverage of \(I\) is independent of \(\theta\); coverage of \(J\) is NOT</strong></p><p>\(P(I\ni\theta)=P(2X_{(4)}\leq\theta\leq3X_{(4)})=P(1/3\leq X_{(4)}/\theta\leq1/2)\) depends only on \(X_{(4)}/\theta\) which is pivotal. \(P(J\ni\theta)=P(X_{(4)}\leq\theta\leq1+X_{(4)})\) depends on \(\theta\) directly through the \(+1\) term.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Coverage probabilities of both \(I\) and \(J\) are independent of \(\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Coverage probability of \(I\) is independent of \(\theta\) but that of \(J\) is NOT]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Coverage probability of \(J\) is independent of \(\theta\) but that of \(I\) is not]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Coverage probabilities of both \(I\) and \(J\) are NOT independent of \(\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>FEB2022 Q60 - M/M/1 steady state probability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an M/M/1 queueing system with traffic intensity \(\rho<1\), the probability of \(n\) customers in steady state is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) \(\rho^n(1-\rho)\)</strong></p><p>For M/M/1: the stationary distribution is geometric \(P(N=n)=(1-\rho)\rho^n\) for \(n=0,1,2,\ldots\)</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\rho^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\rho(1-\rho^n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\rho^{n-1}(1-\rho)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\rho^n(1-\rho)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+

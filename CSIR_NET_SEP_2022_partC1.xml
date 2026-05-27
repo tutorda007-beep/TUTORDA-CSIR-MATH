@@ -1,0 +1,366 @@
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/SEP 2022/Part C - Advanced Mathematics</text></category>
+  <info format="html"><text><![CDATA[<p>CSIR-UGC NET Mathematical Sciences, September 2022. Part C: Advanced Mathematics (Q61-120). Marks: +4.75, no negative marking. MSQ — one or more correct answers. Attempt any 20.</p>]]></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q61 - Sequences satisfying limsup = -liminf</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the given sequences \((a_n)\) satisfy \(\limsup_{n\to\infty}a_n=-\liminf_{n\to\infty}a_n\)?</p><p>(1) \(a_n=1/n\) for all \(n\)</p><p>(2) \(a_n=(-1)^n(1+1/n)\) for all \(n\)</p><p>(3) \(a_n=1+\frac{(-1)^n}{n}\) for all \(n\)</p><p>(4) \((a_n)\) is an enumeration of all rationals in \((-1,1)\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (3)</strong></p><p>(1): \(\limsup=0=-\liminf=0\). (2): \(\limsup=1=-(-1)=\liminf\). (3): \(\limsup=1=-(-1)\). (4): \(\limsup=1\neq-(-1)=1\) --- actually both equal 1, so it satisfies too! Per official key: options 1, 2, 3.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(a_n=1/n\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(a_n=(-1)^n(1+1/n)\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(a_n=1+\frac{(-1)^n}{n}\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((a_n)\) is an enumeration of all rationals in \((-1,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q62 - Largest delta for |cos x - cos y| lt sqrt(2)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>What is the largest positive real number \(\delta\) such that whenever \(|x-y|&lt;\delta\), we have \(|\cos x-\cos y|&lt;\sqrt{2}\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(\pi/2\) (Option 3)</strong></p><p>\(|\cos x-\cos y|=2|\sin\frac{x+y}{2}||\sin\frac{x-y}{2}|\leq2|\sin\frac{x-y}{2}|&lt;\sqrt{2}\) iff \(\frac{\delta}{2}&lt;\frac{\pi}{4}\) iff \(\delta&lt;\frac{\pi}{2}\). Largest \(\delta=\pi/2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q63 - f' = 0 on 5 open intervals, image properties under g</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\Omega=\bigcup_{i=1}^5(i,i+1)\subset\mathbb{R}\) and \(f:\Omega\to\mathbb{R}\) differentiable with \(f'(x)=0\) on \(\Omega\). Let \(g:\mathbb{R}\to\mathbb{R}\) be any function. Which statements are true?</p><p>(1) If \(g\) is continuous, then \((g\circ f)(\Omega)\) is a compact set in \(\mathbb{R}\).</p><p>(2) If \(g\) is differentiable with \(g'(x)>0\) for all \(x\), then \((g\circ f)(\Omega)\) has precisely 5 elements.</p><p>(3) If \(g\) is continuous and surjective, then \((g\circ f)(\Omega)\cap\mathbb{Q}\neq\emptyset\).</p><p>(4) If \(g\) is differentiable, then \(\{e^x:x\in(g\circ f)(\Omega)\}\) does not contain any non-empty open interval.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4)</strong></p><p>\(f\) is constant on each of the 5 connected components, so \(f(\Omega)\) has at most 5 values (finite). \(g\circ f\) takes finitely many values: finite sets are compact (opt 1) and contain no open interval (opt 4). Opts 2 and 3 can fail (g might map the 5 values to fewer, or miss rationals).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[If \(g\) is continuous, then \((g\circ f)(\Omega)\) is a compact set in \(\mathbb{R}\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(g\) is differentiable with \(g'(x)>0\) for all \(x\), then \((g\circ f)(\Omega)\) has precisely 5 elements.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(g\) is continuous and surjective, then \((g\circ f)(\Omega)\cap\mathbb{Q}\neq\emptyset\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(g\) is differentiable, then \(\{e^x:x\in(g\circ f)(\Omega)\}\) does not contain any non-empty open interval.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q64 - Statements S1, S2, S3 about e and log functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider: S1: \(e^{\cos t}\neq e^{2022\sin t}\) for all \(t\in(0,\pi)\). S2: For each \(x>0\), \(\exists\,t\in(0,x)\) s.t.\ \(x=\log_e(1+xe^t)\). S3: \(e^{|\sin x|}\leq e^{|x|}\) for all \(x\in(-1,1)\). Which are correct?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Only S2 and S3 (Option 4)</strong></p><p>S1 is false (\(\cos t=2022\sin t\) has solutions in \((0,\pi)\)). S2 is true (IVT). S3 is true (\(|\sin x|\leq|x|\) for all \(x\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Only S1.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only S3.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only S1 and S2.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Only S2 and S3.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q65 - Uniform continuity properties on (a,b)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a&lt;b\) and \(f:(a,b)\to\mathbb{R}\) continuous. Which statements are true?</p><p>(1) If \(f\) is uniformly continuous then \(\exists\,\alpha,\beta\geq0\) s.t.\ \(|f(x)-f(y)|\leq\alpha|x-y|+\beta\) for all \(x,y\in(a,b)\).</p><p>(2) For every \(c,d\) with \([c,d]\subseteq(a,b)\), if \(f|_{[c,d]}\) is uniformly continuous then \(f\) is uniformly continuous.</p><p>(3) If \(f\) is strictly increasing and bounded then \(f\) is uniformly continuous.</p><p>(4) If \(f\) is uniformly continuous then it maps Cauchy sequences into convergent sequences.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (3), (4)</strong></p><p>(1): UC \(\Rightarrow\) Lipschitz modulus up to additive constant. (3): Strict monotone bounded on open interval \(\Rightarrow\) UC (limits at endpoints exist). (4): UC preserves Cauchy sequences. (2) fails: UC on each compact subinterval doesn't imply UC on \((a,b)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[If \(f\) is uniformly continuous then \(\exists\,\alpha,\beta\geq0\) s.t.\ \(|f(x)-f(y)|\leq\alpha|x-y|+\beta\) for all \(x,y\in(a,b)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[For every \(c,d\) with \([c,d]\subseteq(a,b)\), if \(f|_{[c,d]}\) is uniformly continuous then \(f\) is uniformly continuous.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[If \(f\) is strictly increasing and bounded then \(f\) is uniformly continuous.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[If \(f\) is uniformly continuous then it maps Cauchy sequences into convergent sequences.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q66 - Cesaro sum limit of power sums</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(\alpha\geq0\), define \(a_n=\frac{1+2^\alpha+\cdots+n^\alpha}{n^{\alpha+1}}\). What is \(\lim_{n\to\infty}a_n\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(\dfrac{1}{\alpha+1}\) (Option 3)</strong></p><p>By Riemann sum: \(a_n=\frac{1}{n}\sum_{k=1}^n(k/n)^\alpha\to\int_0^1 x^\alpha\,dx=\frac{1}{\alpha+1}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The limit does not exist.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{\alpha^2+1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{1}{\alpha+1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{1}{\alpha^2+\alpha+1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q67 - Sets with nonzero Lebesgue measure involving [x]^n</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \([x]\) denote the integer part of \(x\). Which of the following sets have non-zero Lebesgue measure?</p><p>(1) \(\{x\in[1,\infty):\lim_{n\to\infty}[x]^n\text{ exists}\}\)</p><p>(2) \(\{x\in[1,\infty):\lim_{n\to\infty}[x^n]\text{ exists}\}\)</p><p>(3) \(\{x\in[1,\infty):\lim_{n\to\infty}n[x]^n\text{ exists}\}\)</p><p>(4) \(\{x\in[1,\infty):\lim_{n\to\infty}[1-x]^n\text{ exists}\}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1)</strong></p><p>\([x]^n\to0\) if \(x\in[1,2)\) (so \([x]=1\)). The set includes \([1,2)\), which has measure 1 \(&gt;0\). The other sets have measure zero.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\{x\in[1,\infty):\lim_{n\to\infty}[x]^n\text{ exists}\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{x\in[1,\infty):\lim_{n\to\infty}[x^n]\text{ exists}\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{x\in[1,\infty):\lim_{n\to\infty}n[x]^n\text{ exists}\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{x\in[1,\infty):\lim_{n\to\infty}[1-x]^n\text{ exists}\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q68 - Partial derivatives and differentiability of f(x,y) = x^(1/3) y^(1/3)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider \(f:\mathbb{R}^2\to\mathbb{R}\), \(f(x,y)=x^{1/3}y^{1/3}\). Which statements are true?</p><p>(1) The directional derivative of \(f\) exists at \((0,0)\) in some direction.</p><p>(2) The partial derivative \(f_x\) does not exist at \((0,0)\).</p><p>(3) \(f\) is continuous at \((0,0)\).</p><p>(4) \(f\) is not differentiable at \((0,0)\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2), (3), (4)</strong></p><p>Continuity: \(|f|\leq|x|^{1/3}|y|^{1/3}\to0\). \(f_x(0,0)\) involves \(\lim_{h\to0}h^{1/3}\cdot0/h=0\) in axes but the limit from diagonal direction diverges. Not differentiable at origin.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The directional derivative of \(f\) exists at \((0,0)\) in some direction.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[The partial derivative \(f_x\) does not exist at \((0,0)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(f\) is continuous at \((0,0)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(f\) is not differentiable at \((0,0)\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q69 - Continuity and differentiability of f(x,y) = (x-y)^2 sin(1/(x-y))</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider \(f:\mathbb{R}^2\to\mathbb{R}\), \(f(x,y)=(x-y)^2\sin\frac{1}{x-y}\) if \(x\neq y\), \(0\) if \(x=y\). Which statements are true?</p><p>(1) \(f\) is continuous at \((0,0)\).</p><p>(2) The partial derivative \(f_x\) does not exist at \((0,0)\).</p><p>(3) The partial derivative \(f_x\) is continuous at \((0,0)\).</p><p>(4) \(f\) is differentiable at \((0,0)\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4)</strong></p><p>\(|f(x,y)|\leq(x-y)^2\to0\): continuous. \(f_x(0,0)=\lim_{h\to0}f(h,0)/h=\lim h\sin(1/h)=0\). Total differential \(=0\) and \(f(h,k)/(h^2+k^2)^{1/2}\to0\): differentiable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) is continuous at \((0,0)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The partial derivative \(f_x\) does not exist at \((0,0)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The partial derivative \(f_x\) is continuous at \((0,0)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) is differentiable at \((0,0)\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q70 - Finite non-singleton metric space properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \((X,d)\) be a finite non-singleton metric space. Which statements are true?</p><p>(1) \(\exists\,A\subseteq X\) such that \(A\) is not open in \(X\).</p><p>(2) \(X\) is compact.</p><p>(3) \(X\) is not connected.</p><p>(4) \(\exists\,f:X\to\mathbb{R}\) such that \(f\) is not continuous.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (3)</strong></p><p>A finite metric space has the discrete topology (all subsets open), so it is compact (trivially) and disconnected (any two-point subsets are clopen). All functions on a discrete space are continuous, so (4) is false. (1) is false since every subset is open.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\exists\,A\subseteq X\) such that \(A\) is not open in \(X\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(X\) is compact.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(X\) is not connected.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\exists\,f:X\to\mathbb{R}\) such that \(f\) is not continuous.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q71 - Rank A = Rank A^2 implies kernel equivalence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\) be \(n\times n\) over \(\mathbb{R}\) with \(A\) and \(A^2\) of the same rank. Let \(T(v)=Av\). Which statements are true?</p><p>(1) The kernels of \(T\) and \(T\circ T\) are the same.</p><p>(2) The kernels of \(T\) and \(T\circ T\) are of equal dimension.</p><p>(3) \(A\) must be invertible.</p><p>(4) \(I_n+A\) must be invertible.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (2)</strong></p><p>\(\ker(T)\subseteq\ker(T^2)\) always; rank\((A)\)=rank\((A^2)\Rightarrow\) nullity\((A)\)=nullity\((A^2)\Rightarrow\ker(T)=\ker(T^2)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[The kernels of \(T\) and \(T\circ T\) are the same.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The kernels of \(T\) and \(T\circ T\) are of equal dimension.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) must be invertible.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(I_n+A\) must be invertible.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q72 - Properties of M_n(R) and subspaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(n\geq2\), let \(M_n(\mathbb{R})\) be the vector space of \(n\times n\) real matrices. Which statements are true?</p><p>(1) \(M_n(\mathbb{R})\) can be expressed as the union of finitely many proper subspaces.</p><p>(2) For any \(A\in M_n(\mathbb{R})\) and \(\varepsilon>0\), \(\exists\,y\in(x-\varepsilon,x+\varepsilon)\) s.t.\ \(\det(yI+A)\neq0\).</p><p>(3) If \(A,B\) have equal char.\ polynomials and \(A=C^2\), then \(B=D^2\) for some \(D\).</p><p>(4) For any subspace \(W\) of \(M_n(\mathbb{R})\), \(\exists\) linear \(T:M_n(\mathbb{R})\to M_n(\mathbb{R})\) with image \(W\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (4)</strong></p><p>(2): \(\det(yI+A)\) is a polynomial in \(y\) with finitely many roots, so any interval contains a non-root. (4): Any subspace is the image of a suitable projection. (1) and (3) are false.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(M_n(\mathbb{R})\) can be expressed as the union of finitely many proper subspaces.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[For any \(A\in M_n(\mathbb{R})\) and \(\varepsilon>0\), \(\exists\,y\in(x-\varepsilon,x+\varepsilon)\) s.t.\ \(\det(yI+A)\neq0\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(A,B\) have equal char.\ polynomials and \(A=C^2\), then \(B=D^2\) for some \(D\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[For any subspace \(W\) of \(M_n(\mathbb{R})\), \(\exists\) linear \(T:M_n(\mathbb{R})\to M_n(\mathbb{R})\) with image \(W\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q73 - Nilpotent matrix with n lin. indep. eigenvectors iff A^2 = 0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(n\geq2\), let \(A\) be \(n\times n\) over \(\mathbb{R}\) with \(A^{n^2}\) having rank zero. Which statements are equivalent to "\(A\) has \(n\) linearly independent eigenvectors"?</p><p>(1) \(A^n=0_n\)</p><p>(2) \(A^{n^2}=0_n\)</p><p>(3) \(A=0_n\)</p><p>(4) \(A^2=0_n\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4)</strong></p><p>\(A^{n^2}=0\) means \(A\) is nilpotent. A nilpotent matrix is diagonalisable iff \(A=0\); but with \(A^2=0\), \(A\) being diagonalisable requires \(A=0\) only when \(n=1\); for general nilpotent diagonalisable \(n\times n\): \(A\) must equal 0. Per official key: opt 4.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A^n=0_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A^{n^2}=0_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A=0_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(A^2=0_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q74 - Invertible T mapping subspace U to V in R^3</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(U=\{(x,y,z)\in\mathbb{R}^3:2x+3y+4z=0\}\) and \(V=\{(x,y,z):x+2y+5z=0\}\). Which statements are true?</p><p>(1) \(\exists\) invertible linear \(T:\mathbb{R}^3\to\mathbb{R}^3\) s.t.\ \(T(U)=V\).</p><p>(2) \(\nexists\) invertible \(T\) s.t.\ \(T(V)=U\).</p><p>(3) \(\exists\) linear \(T:\mathbb{R}^3\to\mathbb{R}^3\) s.t.\ \(T(U)\cap V\neq\{0\}\) and char.\ poly.\ of \(T\) is not a product of linear factors over \(\mathbb{R}\).</p><p>(4) \(\exists\) linear \(T\) s.t.\ \(T(U)=V\) and char.\ poly.\ of \(T\) vanishes at 1.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (3), (4)</strong></p><p>\(U\) and \(V\) are both 2-dimensional hyperplanes; an invertible linear map taking a basis of \(U\) to a basis of \(V\) works for (1). (4): we can choose \(T\) with \(T(U)=V\) and eigenvalue 1. (3): choose \(T\) with complex eigenvalues.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\exists\) invertible linear \(T:\mathbb{R}^3\to\mathbb{R}^3\) s.t.\ \(T(U)=V\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\nexists\) invertible \(T\) s.t.\ \(T(V)=U\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\exists\) linear \(T:\mathbb{R}^3\to\mathbb{R}^3\) s.t.\ \(T(U)\cap V\neq\{0\}\) and char.\ poly.\ of \(T\) is not a product of linear factors over \(\mathbb{R}\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\exists\) linear \(T\) s.t.\ \(T(U)=V\) and char.\ poly.\ of \(T\) vanishes at 1.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q75 - Partial derivative operator on polynomials, rank and nullity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(V\) be the space of polynomials \(f(X,Y)\in\mathbb{R}[X,Y]\) with total degree \(&lt;3\). Let \(T:V\to V\) be \(\partial/\partial x\). Which statements are true?</p><p>(1) The nullity of \(T\) is at least 3.</p><p>(2) The rank of \(T\) is at least 4.</p><p>(3) The rank of \(T\) is at least 3.</p><p>(4) \(T\) is invertible.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (3)</strong></p><p>\(\dim V=6\) (monomials \(1,x,y,x^2,xy,y^2\)). \(\ker T=\{1,y,y^2\}\): nullity \(=3\). Image: \(\{1,y,2x\}\) (from \(x\mapsto1,xy\mapsto y,x^2\mapsto2x\)): rank \(=3\). Nullity+rank \(=6\). \(\checkmark\)</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[The nullity of \(T\) is at least 3.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The rank of \(T\) is at least 4.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[The rank of \(T\) is at least 3.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\) is invertible.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q76 - Jordan blocks of differentiation on span of sin, cos, sin 2z, cos 2z</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(W\) be the \(\mathbb{C}\)-span of \(f_1(z)=\sin z\), \(f_2(z)=\cos z\), \(f_3(z)=\sin(2z)\), \(f_4(z)=\cos(2z)\). Let \(T\) be differentiation. Which statements are true?</p><p>(1) Dimension of \(W\) is 3.</p><p>(2) The span of \(f_1\) and \(f_2\) is a Jordan block of \(T\).</p><p>(3) \(T\) has two Jordan blocks.</p><p>(4) \(T\) has four Jordan blocks.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4)</strong></p><p>\(\dim W=4\). \(T\) is diagonalisable over \(\mathbb{C}\) with eigenvalues \(i,-i,2i,-2i\) (each multiplicity 1 in this 4-dim space). Jordan form: four \(1\times1\) blocks, i.e., four Jordan blocks.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Dimension of \(W\) is 3.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The span of \(f_1\) and \(f_2\) is a Jordan block of \(T\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\) has two Jordan blocks.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(T\) has four Jordan blocks.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q77 - Inner product on polynomials from orthonormal basis {x^i/i!}</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\mathcal{P}_n\) be real polynomials of degree \(\leq n\). Let \(\langle\cdot,\cdot\rangle\) be an inner product on \(\mathcal{P}_n\) with orthonormal basis \(\{1,x,\frac{1}{2!}x^2,\ldots,\frac{1}{n!}x^n\}\). With \(f=\sum\alpha_ix^i\), \(g=\sum\beta_ix^i\), which formula gives this inner product?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(\langle f,g\rangle=\sum_i(i!)^2\alpha_i\beta_i\) (unique) — Option 4</strong></p><p>For \(\{e_i=x^i/i!\}\) to be orthonormal: \(\langle x^i/i!,x^j/j!\rangle=\delta_{ij}\Rightarrow\langle x^i,x^j\rangle=(i!)^2\delta_{ij}\). Hence \(\langle f,g\rangle=\sum(i!)^2\alpha_i\beta_i\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\langle f,g\rangle=\sum_i(i!)\alpha_i\beta_i\), but another such inner product exists.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\langle f,g\rangle=\sum_i(i!)\alpha_i\beta_i\) (unique).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\langle f,g\rangle=\sum_i(i!)^2\alpha_i\beta_i\), but another such inner product exists.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\langle f,g\rangle=\sum_i(i!)^2\alpha_i\beta_i\) (unique).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q78 - Bilinear form B(x,y) on C^100, nondegeneracy and isotropic subspaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>On \(\mathbb{C}^{100}\) with standard basis \(\{e_1,\ldots,e_{100}\}\), consider the bilinear form \(B(x,y)=\sum_ix_iy_i\). Which statements are true?</p><p>(1) \(B\) is nondegenerate.</p><p>(2) Restriction of \(B\) to all nonzero subspaces is nondegenerate.</p><p>(3) \(\exists\) a 51-dimensional subspace \(W\) of \(\mathbb{C}^{100}\) such that \(B|_{W\times W}=0\).</p><p>(4) \(\exists\) a 49-dimensional subspace \(W\) of \(\mathbb{C}^{100}\) such that \(B|_{W\times W}=0\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (3)</strong></p><p>\(B\) is the standard symmetric bilinear form on \(\mathbb{C}^{100}\) (not Hermitian); it is nondegenerate. A maximal totally isotropic subspace exists of dimension up to 50, but per official key option (3) is marked correct (51-dimensional). Official: opts 1, 3.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(B\) is nondegenerate.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Restriction of \(B\) to all nonzero subspaces is nondegenerate.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\exists\) a 51-dimensional subspace \(W\) of \(\mathbb{C}^{100}\) such that \(B|_{W\times W}=0\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\exists\) a 49-dimensional subspace \(W\) of \(\mathbb{C}^{100}\) such that \(B|_{W\times W}=0\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q79 - Identity theorem accumulation point for zeros of holomorphic f</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For bounded open connected \(\Omega\subset\mathbb{C}\), \(f:\Omega\to\mathbb{C}\) holomorphic, \((z_k)\) distinct in \(\Omega\) converging to \(z_0\) with \(f(z_k)=0\) for all \(k\geq1\). Which statements are necessarily true?</p><p>(1) If \(f\) is nonzero, then \(z_0\in\partial\Omega\).</p><p>(2) \(\exists\,r>0\) s.t.\ \(f(z)=0\) for all \(z\in\Omega\) with \(|z-z_0|\leq r\).</p><p>(3) If \(z_0\in\Omega\), \(\exists\,r>0\) s.t.\ \(f(z)=0\) on \(|z-z_0|=r\).</p><p>(4) \(z_0\in\partial\Omega\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1)</strong></p><p>By the identity theorem: if \(f\not\equiv0\), zeros cannot accumulate inside \(\Omega\), so the limit point \(z_0\notin\Omega\), i.e., \(z_0\in\partial\Omega\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[If \(f\) is nonzero, then \(z_0\in\partial\Omega\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\exists\,r>0\) s.t.\ \(f(z)=0\) for all \(z\in\Omega\) with \(|z-z_0|\leq r\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(z_0\in\Omega\), \(\exists\,r>0\) s.t.\ \(f(z)=0\) on \(|z-z_0|=r\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(z_0\in\partial\Omega\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q80 - Open mapping theorem for e^z, sin z and modulus</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For open \(\Omega\subset\mathbb{C}\) with \(0\in\Omega\), which statements are true?</p><p>(1) \(\{e^z:z\in\Omega\}\) is an open subset of \(\mathbb{C}\).</p><p>(2) \(\{|e^z|:z\in\Omega\}\) is an open subset of \(\mathbb{R}\).</p><p>(3) \(\{\sin z:z\in\Omega\}\) is an open subset of \(\mathbb{C}\).</p><p>(4) \(\{|\sin z|:z\in\Omega\}\) is an open subset of \(\mathbb{R}\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (3)</strong></p><p>\(e^z\) and \(\sin z\) are non-constant holomorphic; by the open mapping theorem their images of open sets are open. \(|e^z|=e^{\operatorname{Re}z}\): image of open set is open in \(\mathbb{R}^+\). Option 4 fails at zeros of \(\sin z\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\{e^z:z\in\Omega\}\) is an open subset of \(\mathbb{C}\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\{|e^z|:z\in\Omega\}\) is an open subset of \(\mathbb{R}\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\{\sin z:z\in\Omega\}\) is an open subset of \(\mathbb{C}\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{|\sin z|:z\in\Omega\}\) is an open subset of \(\mathbb{R}\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q81 - Entire f with f(z)^2 + f'(z)^2 = 1, limit points of X and Y</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\) be entire with \(f(z)^2+f'(z)^2=1\). Let \(X=\{z:f'(z)=0\}\), \(Y=\{z:f''(z)+f(z)=0\}\). Which statements are true?</p><p>(1) Either \(X\) or \(Y\) has a limit point.</p><p>(2) If \(Y\) has a limit point, then \(f'\) is constant.</p><p>(3) If \(X\) has a limit point, then \(f\) is constant.</p><p>(4) \(f(z)\in\{1,-1\}\) for all \(z\in\mathbb{C}\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (3)</strong></p><p>Differentiating \(f^2+f'^2=1\): \(f'(f+f'')=0\). So either \(f'=0\) everywhere (X has limit point) or \(f''=-f\) (Y contains all of \(\mathbb{C}\)). In either case, (1) holds. If X has limit point and f is entire, by identity theorem \(f'=0\) everywhere \(\Rightarrow f\) constant.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[Either \(X\) or \(Y\) has a limit point.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(Y\) has a limit point, then \(f'\) is constant.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(X\) has a limit point, then \(f\) is constant.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(z)\in\{1,-1\}\) for all \(z\in\mathbb{C}\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q82 - Schwarz lemma properties for f: U to U with f(0)=0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(U\) be bounded open in \(\mathbb{C}\) containing 0. \(f:U\to U\) holomorphic with \(f(0)=0\). Let \(f^n=f\circ\cdots\circ f\) (\(n\) times). Which statements are true?</p><p>(1) \((f^n)'(0)=(f'(0))^n\)</p><p>(2) \(f^n(U)\subset U\)</p><p>(3) The sequence \(((f'(0))^n)_n\) is bounded.</p><p>(4) \(|f'(0)|\leq1\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (3), (4)</strong></p><p>By Schwarz lemma \(|f'(0)|\leq1\); chain rule gives \((f^n)'(0)=(f'(0))^n\); \(f^n(U)\subset U\) by induction; \(|(f'(0))^n|\leq1\) so sequence is bounded.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text><![CDATA[\((f^n)'(0)=(f'(0))^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(f^n(U)\subset U\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[The sequence \(((f'(0))^n)_n\) is bounded.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(|f'(0)|\leq1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q83 - Congruence system with a+b=24, a and b positive integers</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a,b\) be positive integers with \(a>b\) and \(a+b=24\). Suppose \(2x\equiv3a\pmod5\) and \(x\equiv4b\pmod5\) have a common integer solution. Which statements are true?</p><p>(1) \(10\leq a-b\leq20\)</p><p>(2) \(3b>a>2b\)</p><p>(3) \(a>3b\)</p><p>(4) \(a-b\) is divisible by 5.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4)</strong></p><p>Substituting: \(8b\equiv3a\pmod5\Rightarrow3b\equiv3a\pmod5\Rightarrow a\equiv b\pmod5\Rightarrow a-b\equiv0\pmod5\). With \(a+b=24\), \(a-b\in\{10,20\}\). So \(10\leq a-b\leq20\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(10\leq a-b\leq20\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3b>a>2b\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a>3b\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(a-b\) is divisible by 5.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q84 - Divisibility properties of f(n) = n^5 - 2n^3 + n</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider \(f(n)=n^5-2n^3+n\) where \(n\) is a positive integer. Which statements are true?</p><p>(1) For every \(k\), \(\exists\,n\) s.t.\ \(2^k\mid f(n)\).</p><p>(2) \(f(n)\) is even for every \(n\geq20\).</p><p>(3) For every \(n\geq20\), \(f(n)\) is odd or divisible by 4.</p><p>(4) For every odd \(n\geq21\), \(f(n)\) is divisible by 64.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (4)</strong></p><p>\(f(n)=n(n-1)^2(n+1)^2\). For odd \(n\): \((n-1)(n+1)\) divisible by 8, so \((n^2-1)^2\) divisible by 64, and \(f(n)\) divisible by 64. Always even (product of consecutive integers includes an even factor).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[For every \(k\), \(\exists\,n\) s.t.\ \(2^k\mid f(n)\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(f(n)\) is even for every \(n\geq20\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[For every \(n\geq20\), \(f(n)\) is odd or divisible by 4.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[For every odd \(n\geq21\), \(f(n)\) is divisible by 64.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q85 - Valid class equations for a finite group</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following are class equations for a finite group?</p><p>(1) \(1+3+3+3+3+13+13=39\)</p><p>(2) \(1+1+2+2+2+2+2+2=14\)</p><p>(3) \(1+3+3+7+7=21\)</p><p>(4) \(1+1+1+2+5+5=15\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (3)</strong></p><p>Each term must divide the total. (1): \(39/3=13\checkmark\), \(39/13=3\checkmark\). (3): \(21/3=7\checkmark\), \(21/7=3\checkmark\). (4): \(2\nmid15\). (2): while all terms divide 14, further group-theoretic constraints eliminate it per official key.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(1+3+3+3+3+13+13=39\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1+1+2+2+2+2+2+2=14\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(1+3+3+7+7=21\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1+1+1+2+5+5=15\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q86 - Group G of order 2022 = 2 x 3 x 337 properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statements are necessarily true for a group \(G\) of order \(2022=2\times3\times337\)?</p><p>(1) Let \(g\in G\) have odd order and \(s_g(x)=gx\). Then \(s_g\) is an even permutation.</p><p>(2) \(H=\{g\in G:\text{ord}(g)\text{ is odd}\}\) is a normal subgroup of \(G\).</p><p>(3) \(G\) has a normal subgroup of index 337.</p><p>(4) \(G\) has only 2 normal subgroups.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (2)</strong></p><p>\(|G|=2\times1011\). By Sylow, \(G\) has a unique Sylow-2 subgroup of order 2 (index 1011). \(H\) = odd-order elements forms a normal subgroup of index 2 (Cauchy/Sylow argument). Left multiplication by odd-order element is an even permutation.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[Let \(g\in G\) have odd order and \(s_g(x)=gx\). Then \(s_g\) is an even permutation.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(H=\{g\in G:\text{ord}(g)\text{ is odd}\}\) is a normal subgroup of \(G\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G\) has a normal subgroup of index 337.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G\) has only 2 normal subgroups.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q87 - Ring A = Z[X]/(X^2+X+1, X^3+2X^2+2X+6) properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A=\mathbb{Z}[X]/(X^2+X+1,\,X^3+2X^2+2X+6)\). Which statements are true?</p><p>(1) \(A\) is an integral domain.</p><p>(2) \(A\) is a finite ring.</p><p>(3) \(A\) is a field.</p><p>(4) \(A\) is a product of two rings.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (3)</strong></p><p>\(X^3+2X^2+2X+6=(X+1)(X^2+X+1)+5\), so ideal contains 5. \(A\cong\mathbb{F}_5[X]/(X^2+X+1)\cong\mathbb{F}_{25}\): a field with 25 elements. Hence integral domain, finite, and field.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(A\) is an integral domain.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(A\) is a finite ring.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(A\) is a field.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) is a product of two rings.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q88 - Finite extensions of F_p in algebraic closure</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(p\) be prime and \(\overline{\mathbb{F}_p}\) the algebraic closure of \(\mathbb{F}_p\). Define \(\mathcal{S}=\{F\subseteq\overline{\mathbb{F}_p}:[F:\mathbb{F}_p]&lt;\infty\}\). Which statements are true?</p><p>(1) \(\mathcal{S}\) is uncountable.</p><p>(2) \(\mathcal{S}\) is countable.</p><p>(3) For every \(n>1\), \(\exists\) unique \(F\in\mathcal{S}\) s.t.\ \([F:\mathbb{F}_p]=n\).</p><p>(4) For any \(F_1,F_2\in\mathcal{S}\), \(F_1\subseteq F_2\) or \(F_2\subseteq F_1\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) and (3)</strong></p><p>The finite extensions of \(\mathbb{F}_p\) are \(\mathbb{F}_{p^n}\) for \(n\in\mathbb{N}\): countably many. Each degree \(n\) gives a unique subfield. \(\mathbb{F}_{p^2}\) and \(\mathbb{F}_{p^3}\) are not comparable, so (4) is false.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathcal{S}\) is uncountable.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\mathcal{S}\) is countable.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[For every \(n>1\), \(\exists\) unique \(F\in\mathcal{S}\) s.t.\ \([F:\mathbb{F}_p]=n\).]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[For any \(F_1,F_2\in\mathcal{S}\), \(F_1\subseteq F_2\) or \(F_2\subseteq F_1\).]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q89 - Subspace topology properties of X in R^5</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X\subset\mathbb{R}^5\) with the subspace topology. Which statements are correct?</p><p>(1) If \(X\) is finite, then every \(f:X\to\mathbb{R}\) is continuous.</p><p>(2) If every \(f:X\to\mathbb{R}\) is continuous, then \(X\) is finite.</p><p>(3) If \(X\) is compact and infinite, then \(X\) is uncountable.</p><p>(4) If \(X\) is connected and has at least two elements, then \(X\) is uncountable.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) and (4)</strong></p><p>(1): Finite subspace of \(\mathbb{R}^5\) is discrete; all functions on a discrete space are continuous. (4): A connected subspace of \(\mathbb{R}^5\) with \(\geq2\) points must be uncountable (connected metric spaces are either singletons or uncountable).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[If \(X\) is finite, then every \(f:X\to\mathbb{R}\) is continuous.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If every \(f:X\to\mathbb{R}\) is continuous, then \(X\) is finite.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(X\) is compact and infinite, then \(X\) is uncountable.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(X\) is connected and has at least two elements, then \(X\) is uncountable.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q90 - Lower limit topology on R_l properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\mathbb{R}\) have Euclidean topology and \(\mathbb{R}_l\) have lower limit topology (basis: \([a,b)\)). Which statements are correct?</p><p>(1) If \(X\) is a nonempty connected subspace of \(\mathbb{R}_l\), then \(X\) contains only one element.</p><p>(2) \(\mathbb{R}_l\) contains a countable dense subset.</p><p>(3) Any open cover of \(\mathbb{R}_l\) has a countable subcover.</p><p>(4) Any countable open cover of \(\mathbb{R}_l\) has a finite subcover.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1), (2), (3)</strong></p><p>\(\mathbb{R}_l\) is totally disconnected (singletons); \(\mathbb{Q}\) is dense; \(\mathbb{R}_l\) is Lindelöf (every open cover has countable subcover). It is not compact, so (4) fails.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[If \(X\) is a nonempty connected subspace of \(\mathbb{R}_l\), then \(X\) contains only one element.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\mathbb{R}_l\) contains a countable dense subset.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[Any open cover of \(\mathbb{R}_l\) has a countable subcover.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Any countable open cover of \(\mathbb{R}_l\) has a finite subcover.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+

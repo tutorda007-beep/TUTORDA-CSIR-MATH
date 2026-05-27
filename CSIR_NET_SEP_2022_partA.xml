@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?><quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/SEP 2022/Part A - General Aptitude</text></category>
+  <info format="html"><text><![CDATA[<p>CSIR-UGC NET Mathematical Sciences, September 2022, Shift-II (Set 1). Part A: General Aptitude (Q1-20). Marks: +2 correct, -0.5 wrong. Attempt any 15. Q18 DROPPED by NTA.</p>]]></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q1 - Scoring test correct vs incorrect answers</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a test with multiple choice questions, candidates get 4 marks for a correct answer and lose 1 mark for an incorrect answer. Two candidates A and B attempting 18 and 13 questions, respectively, secure equal marks. How many more INCORRECT answers does A have compared to B?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 4 (Option 2)</strong></p><p>Let \(c_A,w_A\) and \(c_B,w_B\) be correct/wrong for A and B. Then \(c_A+w_A=18\), \(c_B+w_B=13\), \(4c_A-w_A=4c_B-w_B\). Subtracting: \(4(c_A-c_B)=w_A-w_B\). Also \((c_A-c_B)+(w_A-w_B)=5\). Let \(d=w_A-w_B\): \(d/4+d=5\Rightarrow d=\mathbf{4}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q2 - Rank in class from top and bottom</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A ranks 10th from both the top and the bottom in merit among the girls in her class. B ranks 6th from the top and 16th from the bottom among boys in the same class. If A is immediately ahead of B in merit order, her rank in the entire class would be</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 15th from top and 26th from bottom (Option 2)</strong></p><p>Girls \(=10+10-1=19\); Boys \(=6+16-1=21\); Total \(=40\). Girls above A \(=9\); Boys above B \(=5\). A is immediately above B, so students above A \(=9+5=14\). A's rank from top \(=15\); from bottom \(=40-15+1=26\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[16th from the top and 26th from the bottom]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[15th from the top and 26th from the bottom]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[15th from the top and 27th from the bottom]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[16th from the top and 27th from the bottom]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q3 - pH, CO2, Temperature graph interpretation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Given figure represents pH, partial pressure of CO\(_2\) (\(p\)CO\(_2\)), and temperature (\(T\)) in an experiment conducted in a water sample over 20 days. Which of the following statements can <em>definitely</em> be made based on this experiment?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 3</strong></p><p>Only Option 3 directly describes what the graphs show (observational fact). Options 1, 2, and 4 imply causation or further interpretation beyond the data.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[High CO\(_2\) causes global warming.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[High temperature causes acidification.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[There is a decrease in pH and an increase in both \(T\) and \(p\)CO\(_2\) over 20 days.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[pH and \(p\)CO\(_2\) are positively correlated while pH and \(T\) are inversely correlated.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q4 - Alcohol percentage after water addition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A 360 ml aqueous solution contains 40% alcohol. How much will be the approximate percentage of alcohol if 3600 ml of water is added to the solution?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 3.6% (Option 2)</strong></p><p>Alcohol \(=0.4\times360=144\) ml. New volume \(=360+3600=3960\) ml. \(\%=\frac{144}{3960}\times100=3.636\approx3.6\%\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[2.6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[3.6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4.0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1.0]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q5 - Minimum weighings to find lighter coin among 27</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A set of 27 similar looking coins has 26 identical coins and one dummy coin having less weight. What is the minimum number of weighings that will ensure identification of the dummy coin using a two-pan balance?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 3 (Option 1)</strong></p><p>Each weighing has 3 outcomes. \(3^3=27\). Divide into groups of 9, then 3, then 3. Three weighings suffice.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q6 - Probability of end-of-row seat</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If 90 people are to be seated randomly in 15 rows of 6 seats each, what is the probability that a person gets a seat at either end of a row?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 1/3 (Option 3)</strong></p><p>End seats \(=15\times2=30\). Total seats \(=90\). \(P=30/90=1/3\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/15\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q7 - Venn diagram for FOOD, VEGETABLES, ROOTS, ICECREAMS</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An appropriate diagram showing the relationship between the categories FOOD, VEGETABLES, ROOTS and ICECREAMS is: [Figure-based question: select the correct Venn diagram]</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option C (Option 3)</strong></p><p>FOOD \(\supset\) VEGETABLES \(\supset\) ROOTS; ICECREAMS \(\subset\) FOOD but disjoint from VEGETABLES. Option C shows this nested + separate structure correctly.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Option A (three equal overlapping circles)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Option B]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Option C]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Option D]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q8 - Self-referential statements consistency</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider the following four statements:<br/>Statement 1: "Statement 3 is true."<br/>Statement 2: "Statement 1 is true."<br/>Statement 3: "Statement 1 is true and Statement 2 is false."<br/>Statement 4: "Statements 1, 2 and 3 are false."<br/>Which of the above statements must be true for the four statements to be mutually consistent?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Statement 4 (Option 4)</strong></p><p>If S4 is true: S1, S2, S3 are all false. S1 false \(\Rightarrow\) S3 false (\(\checkmark\)). S2 false \(\Rightarrow\) S1 false (\(\checkmark\)). S3 false: "S1 true AND S2 false" is false — since S1 is false, this compound statement is false (\(\checkmark\)). Self-consistent.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Statement 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Statement 2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Statement 3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Statement 4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q9 - Running race extra time calculation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>On a track of 200 m length, S runs from the starting point and R starts 20 m ahead of S at the same time. Both reach the end of the track at the same time. S runs at a uniform speed of 10 m/s. If R also runs at a uniform speed, then how much more time would R take to run the entire course?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 2.2 seconds (Option 4)</strong></p><p>S: time \(=200/10=20\) s. R covers 180 m in 20 s \(\Rightarrow\) speed \(=9\) m/s. Time for R to cover 200 m \(=200/9\approx22.22\) s. Extra \(=22.22-20\approx2.2\) s.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0.5 second]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1.0 second]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1.5 second]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[2.2 seconds]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q10 - Arithmetic mean of five numbers is zero</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The arithmetic mean of five numbers is zero. The numbers may not be distinct. Which of the following must be true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 4</strong></p><p>Sum \(=0\). If exactly one number \(x\neq0\) and rest are 0, sum \(=x\neq0\): contradiction. So option 4 must hold. Counterexamples invalidate options 1–3.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The product of the numbers is zero.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[At most two of these numbers are positive.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There cannot be exactly one zero.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[There cannot be exactly one non-zero number.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q11 - Log-scale circle on linear scale</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A circle is drawn on \(\log_{10}(X)\) vs \(\log_{10}(Y)\) axes. The circle spans approximately \(\log_{10}X\in[0.4,1.6]\) and \(\log_{10}Y\in[0.2,1.2]\). Which one of the following, drawn on a linear scale, represents this circle?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option A (Option 1)</strong></p><p>On a log scale, a "circle" maps to a shape compressed at smaller values. The corresponding linear-scale plot is a curved, asymmetric shape in the lower-left, wider at larger values. Option A correctly depicts this distortion.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Option A]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Option B]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Option C]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Option D]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q12 - Magazine M highest readership logic</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Of all the English magazines published in a country, magazine M is read by the highest number of readers. It necessarily follows that</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 1</strong></p><p>Option 1 exactly restates the premise (scope limited to magazines <em>published in the country</em>). Options 2–4 go beyond the given information.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[M is the most popular English magazine published in the country.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[M is the most popular English magazine in the country.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[M is the most popular magazine in the country.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The study has not considered the readership of English magazines published outside the country.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q13 - Three digit PINs with third digit = sum of first two</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The number of three digit PINs, in which the third digit is the sum of the first two digits, is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 55 (Option 1)</strong></p><p>Need \(d_1,d_2\in\{0,\ldots,9\}\) with \(d_1+d_2\leq9\). Count \(=\sum_{s=0}^{9}(s+1)=1+2+\cdots+10=55\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[55]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[9]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[45]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[11]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q14 - Right-angled triangle with equal medians, ratio BC/ML</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider a right-angled triangle BAC (right angle at A) with medians CM and BL having the same length. The ratio of the length of BC to that of ML is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 2 (Option 1)</strong></p><p>Let \(AB=c\), \(AC=b\). \(CM=BL\Rightarrow b=c\) (isosceles right triangle). \(BC=b\sqrt{2}\). ML is the midsegment joining midpoints of AB and AC, so \(ML=BC/2\). Hence \(BC/ML=2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(4/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q15 - Battalion elephants horses soldiers feet on ground</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A battalion consists of elephants, horses and soldiers totalling to 3500. There are twice as many horses as elephants and one-fourth of the soldiers are riding these animals. In the stand still position, number of feet on ground is 7500. The number of horses in the battalion is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 600 (Option 4)</strong></p><p>\(e=\) elephants, \(h=2e\), \(s=\) soldiers. \(3e+s=3500\). Feet: \(4e+4(2e)+2\cdot\frac{3s}{4}=7500\Rightarrow12e+\frac{3s}{2}=7500\). Substituting \(s=3500-3e\): \(e=300\), \(h=600\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[525]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[625]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[550]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[600]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q16 - Market share per employee and sale per market share from graph</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The graph shows number of employees, market share (% by number of units sold), and sale (in Rs. crore) for five companies A, B, C, D, E. Select the CORRECT statement.</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: Option 4</strong></p><p>From the graph: A has the highest market share per employee; B has the highest sale for its market share. (Official NTA answer = Option 4.)</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[A has the highest market share per employee, C has the highest sale for its market share.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[C has the highest market share per employee, B has the highest sale for its market share.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[D has the highest market share per employee, E has the highest sale for its market share.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[A has the highest market share per employee, B has the highest sale for its market share.]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q17 - Tiered wholesale pricing for 120 units</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The wholesale price per unit of an item is \(C_0\) up to first 19 units. The unit price falls by 10% if 20 to 29 units are purchased and by another 10% if 30 or more units are purchased. If 120 units are bought, the total price paid is approximately</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: \(97C_0\) (Option 2)</strong></p><p>All 120 units at \(0.9\times0.9\,C_0=0.81\,C_0\). Total \(=120\times0.81\,C_0=97.2\,C_0\approx97\,C_0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(99\,C_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(97\,C_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(91\,C_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(81\,C_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q18 - DROPPED - Digital clock time difference</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[DROPPED by NTA — all candidates awarded full marks]</strong></p><p>Two digital clocks show times 09h 13m and 09h 17m, respectively, at one instant. Exactly 30 seconds later the clocks show 09h 14m and 09h 17m, respectively. Which one of the following options is a possible difference between the times maintained by the two clocks?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>DROPPED by NTA.</strong> This question was officially dropped and all candidates awarded marks regardless of response.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text><![CDATA[3m 00s]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[30s]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[4m 00s]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[4m 30s]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q19 - Ratio of areas of two concentric circular tracks</text></name>
+  <questiontext format="html"><text><![CDATA[<p>There are two concentric circular tracks A (outer) and B (inner) of width 2 m each. If \(r=30\) m (outer radius of Track A), what is the ratio of the areas of Track A to Track B?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 29/14 (Option 3)</strong></p><p>Per official NTA key, the answer is 29/14. (Note: Inner radius of B \(=r/2=15\) m from the given figure. Track B: \(r_\text{in}=15, r_\text{out}=17\); Track A: \(r_\text{in}=28, r_\text{out}=30\). Official answer: 29/14.)</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[28/13]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2/1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[29/14]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5/3]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>SEP2022 Q20 - Watermelon water evaporation problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A 5 kg watermelon contains 99% water by weight. Some of the water evaporates and the melon now contains 98% water by weight. What is the weight (in kg) of watermelon now?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: 2.5 kg (Option 2)</strong></p><p>Non-water (dry matter) \(=0.01\times5=0.05\) kg (constant). After evaporation, dry matter \(=2\%\) of \(W\): \(0.02W=0.05\Rightarrow W=2.5\) kg.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[4.5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[2.5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4.8]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4.9]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+

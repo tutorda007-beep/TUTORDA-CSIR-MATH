@@ -1,0 +1,485 @@
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/NOV 2020/Part B - Core Mathematics</text></category>
+  <info format="html"><text><![CDATA[<p>CSIR-UGC NET Mathematical Sciences, 26 November 2020, Shift 2. Part B: Core Mathematics (Q21-60). Marks: +3, -0.75. Attempt any 25. Q49 and Q58 were officially DROPPED by NTA.</p>]]></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q21 - liminf of sequence of sets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\{E_n\}\) be a sequence of subsets of \(\mathbb{R}\). Define \(\limsup_n E_n=\bigcap_{k=1}^\infty\bigcup_{n=k}^\infty E_n\) and \(\liminf_n E_n=\bigcup_{k=1}^\infty\bigcap_{n=k}^\infty E_n\). Which statement is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(\liminf E_n=\{x: x\in E_n \text{ for all but finitely many }n\}\)</strong></p><p>\(\liminf E_n = \bigcup_k\bigcap_{n\geq k}E_n\) = set of \(x\) belonging to \(E_n\) for all sufficiently large \(n\), i.e., all but finitely many \(n\). The \(\limsup\) is the set belonging to infinitely many \(E_n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup E_n = \liminf E_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup E_n = \{x: x\in E_n\text{ for some }n\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\liminf E_n = \{x: x\in E_n\text{ for all but finitely many }n\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\liminf E_n = \{x: x\in E_n\text{ for infinitely many }n\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q22 - NOT true for bounded f:N to N</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:\mathbb{N}\to\mathbb{N}\) be a bounded function. Which statement is <strong>NOT</strong> true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(\liminf_{n\to\infty}(f(n)+n)\in\mathbb{N}\)</strong></p><p>Since \(f\) is bounded, \(f(n)\leq M\) for some \(M\in\mathbb{N}\). Then \(f(n)+n\to\infty\), so \(\liminf(f(n)+n)=+\infty\notin\mathbb{N}\). Statements (1) and (2) are true since \(f\) is bounded in \(\mathbb{N}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup_{n\to\infty}f(n)\in\mathbb{N}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\liminf_{n\to\infty}f(n)\in\mathbb{N}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\liminf_{n\to\infty}(f(n)+n)\in\mathbb{N}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup_{n\to\infty}(f(n)+n)\notin\mathbb{N}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q23 - Continuous maps from R^2 to R</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statement about continuous maps from \(\mathbb{R}^2\) to \(\mathbb{R}\) is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) No continuous bijective maps from \(\mathbb{R}^2\) to \(\mathbb{R}\)</strong></p><p>A bijective continuous map \(f:\mathbb{R}^2\to\mathbb{R}\) would contradict invariance of domain / topological dimension theory. Removing a point disconnects \(\mathbb{R}\) but not \(\mathbb{R}^2\), so no bijection can be continuous.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[There are countably many continuous maps \(\mathbb{R}^2\to\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There are finitely many continuous surjective maps \(\mathbb{R}^2\to\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There are infinitely many continuous injective maps \(\mathbb{R}^2\to\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[No continuous bijective map from \(\mathbb{R}^2\) to \(\mathbb{R}\) exists]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q24 - Uniform convergence of alternating series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^n\sin nx}{n^{\log n}}\), \(x\in\mathbb{R}\), converges</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) Uniformly for all \(x\in\mathbb{R}\)</strong></p><p>Since \(|\sin nx|\leq 1\), we have \(\left|\frac{(-1)^n\sin nx}{n^{\log n}}\right|\leq\frac{1}{n^{\log n}}\). Since \(\sum 1/n^{\log n}\) converges (by comparison with \(\sum 1/n^2\) for large \(n\)), the series converges uniformly by Weierstrass M-test.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Only for \(x=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uniformly only for \(x\in[-\pi,\pi]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uniformly only for \(x\in\mathbb{R}\setminus\{n\pi:n\in\mathbb{Z}\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uniformly for all \(x\in\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q25 - Subsequence with convergent series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Given a sequence \((a_n)_{n\geq 1}\) of real numbers. Which statement is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) There exist \(b\) and a subsequence \((a_{n_k})\) such that \(\displaystyle\sum_{k\geq 1}\left|b-\frac{a_{n_k}}{1+|a_{n_k}|}\right|\) converges</strong></p><p>The sequence \(c_n=\frac{a_n}{1+|a_n|}\in(-1,1)\) is bounded, so it has a convergent subsequence \(c_{n_k}\to b\). The tail of \(\sum|b-c_{n_k}|\) converges to 0, making the series convergent.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{n\geq 1}(-1)^n\frac{a_n}{1+|a_n|}\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There exists a subsequence \((a_{n_k})\) such that \(\displaystyle\sum_{k\geq 1}\frac{a_{n_k}}{1+|a_{n_k}|}\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There exists \(b\) such that \(\displaystyle\sum_{n\geq 1}\left|b-\frac{a_n}{1+|a_n|}\right|(-1)^n\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[There exist \(b\) and a subsequence \((a_{n_k})\) such that \(\displaystyle\sum_{k\geq 1}\left|b-\frac{a_{n_k}}{1+|a_{n_k}|}\right|\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q26 - Common points of crossing continuous functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f, g\) be continuous on \([0,1]\) with \(f(0)=f(1)=0\), \(g(0)=g(1)=1\), and \(f(1/2)>g(1/2)\). Which is true about \(t\in[0,1]\) with \(f(t)=g(t)\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) At least two such \(t\)</strong></p><p>Let \(h=f-g\). Then \(h(0)=-1<0\), \(h(1/2)>0\), and \(h(1)=-1<0\). By IVT, \(h\) has a zero in \((0,1/2)\) and another in \((1/2,1)\). So there are at least two values of \(t\) with \(f(t)=g(t)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[No \(t\in[0,1]\) with \(f(t)=g(t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Exactly one such \(t\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[At least two \(t\in[0,1]\) with \(f(t)=g(t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always infinitely many such \(t\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q27 - Rank and distinct nonzero eigenvalues</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\) be an \(n\times n\) matrix with exactly \(r\) distinct nonzero eigenvalues. Which is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(\mathrm{rank}(A)\geq r\)</strong></p><p>Each distinct nonzero eigenvalue contributes at least one linearly independent eigenvector to the column space. Hence \(\mathrm{rank}(A)\geq r\). The other options can fail: e.g., \(\mathrm{rank}(A)\) can exceed \(r\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{rank}(A)\leq r\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(r=0\), then \(\mathrm{rank}(A)<n-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathrm{rank}(A)\geq r\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A^2\) has exactly \(r\) distinct nonzero eigenvalues]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q28 - Determinant identity for 2x2 matrices</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A, B\) be \(2\times 2\) matrices. Which identity is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \(\det(A+B)+\det(A-B)=2\det A - 2\det B\)</strong></p><p>For \(2\times 2\): write \(A=\begin{pmatrix}a&b\\c&d\end{pmatrix}\), \(B=\begin{pmatrix}p&q\\r&s\end{pmatrix}\). Compute \(\det(A+B)+\det(A-B)\) directly and simplify: \(=2(ad-bc)-2(ps-qr)=2\det A-2\det B\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(A+B)+\det(A-B)=\det A+\det B\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\det(A+B)+\det(A-B)=2\det A-2\det B\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(A+B)+\det(A-B)=2\det A+2\det B\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(A+B)-\det(A-B)=2\det A-2\det B\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q29 - Compute A^20 for given 2x2 matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(A=\begin{pmatrix}3&-2\\2&-1\end{pmatrix}\), then \(A^{20}\) equals</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \(\begin{pmatrix}41&-40\\40&-39\end{pmatrix}\)</strong></p><p>The eigenvalues of \(A\) are both 1 (repeated). The Jordan form is \(J=\begin{pmatrix}1&1\\0&1\end{pmatrix}\). Then \(A^n=\begin{pmatrix}1+2n&-2n\\2n&1-2n\end{pmatrix}\). For \(n=20\): \(A^{20}=\begin{pmatrix}41&-40\\40&-39\end{pmatrix}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}41&40\\-40&-39\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\begin{pmatrix}41&-40\\40&-39\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}41&-40\\-40&-39\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}41&40\\40&-39\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q30 - Trace of A squared</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\) be a \(2\times 2\) real matrix with \(\det A=1\) and \(\mathrm{tr}(A)=3\). Then \(\mathrm{tr}(A^2)=\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) 7</strong></p><p>If eigenvalues are \(\lambda_1,\lambda_2\), then \(\lambda_1+\lambda_2=3\) and \(\lambda_1\lambda_2=1\). So \(\mathrm{tr}(A^2)=\lambda_1^2+\lambda_2^2=(\lambda_1+\lambda_2)^2-2\lambda_1\lambda_2=9-2=7\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[10]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[9]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[7]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q31 - When does bilinear form define an inner product</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(a,b\in\mathbb{R}\), let \(p(x,y)=a^2x_1y_1+abx_2y_1+abx_1y_2+b^2x_2y_2\). For what values of \(a,b\) does \(p\) define an inner product on \(\mathbb{R}^2\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) For no values of \(a, b\)</strong></p><p>The matrix of \(p\) is \(\begin{pmatrix}a^2&ab\\ab&b^2\end{pmatrix}\), which has determinant \(a^2b^2-(ab)^2=0\). Since the matrix is always singular, \(p\) is never positive definite, hence never an inner product.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(a>0, b>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(ab>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a=0, b=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[For no values of \(a, b\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q32 - Positive definite quadratic form</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which real quadratic form on \(\mathbb{R}^2\) is positive definite?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \(Q(X,Y)=X^2-XY+Y^2\)</strong></p><p>Matrix is \(\begin{pmatrix}1&-1/2\\-1/2&1\end{pmatrix}\). Eigenvalues: \(\det=3/4>0\), trace\(=2>0\), so both eigenvalues positive. Positive definite. Option (3): \(X^2+2XY+Y^2=(X+Y)^2\geq 0\) but not positive definite.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(Q(X,Y)=XY\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(Q(X,Y)=X^2-XY+Y^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(Q(X,Y)=X^2+2XY+Y^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(Q(X,Y)=X^2+XY\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q33 - Contour integral over circle |z-1|=1</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\gamma\) be the positively oriented circle \(|z-1|=1\). Then \(\dfrac{1}{2\pi i}\displaystyle\int_\gamma\frac{dz}{z^3-1}\) equals</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) 1/3</strong></p><p>\(z^3-1=(z-1)(z^2+z+1)\). The circle \(|z-1|=1\) encloses only the pole \(z=1\). Residue at \(z=1\): \(\lim_{z\to 1}\frac{z-1}{z^3-1}=\frac{1}{3z^2}\big|_{z=1}=1/3\). By residue theorem: result \(=1/3\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[1/3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1/2]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q34 - Holomorphic antiderivative of sin(z)/z^p</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For positive integer \(p\), consider \(f(z)=\dfrac{\sin z}{z^p}\), \(z\in\mathbb{C}\setminus\{0\}\). For which values of \(p\) does there exist a holomorphic \(g:\mathbb{C}\setminus\{0\}\to\mathbb{C}\) with \(f(z)=g'(z)\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) All odd integers</strong></p><p>\(\sin z/z^p\) has an antiderivative on \(\mathbb{C}\setminus\{0\}\) iff its residue at \(z=0\) is zero. The Laurent expansion of \(\sin z = z - z^3/6 + \cdots\), so \(\sin z/z^p\) has residue (coefficient of \(1/z\)) equal to zero when \(p\) is odd (since \(\sin z\) has only odd powers).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[All even integers]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[All odd integers]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All multiples of 3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All multiples of 4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q35 - Contour integral with essential singularity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\gamma\) be the positively oriented circle \(|z-1|=\tfrac{1}{2}\). Then \(\displaystyle\int_\gamma\frac{ze^{1/z}}{z^2-1}\,dz\) equals</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) \(i\pi e\)</strong></p><p>The integrand has poles at \(z=\pm 1\) and an essential singularity at \(z=0\). The circle \(|z-1|=1/2\) encloses only \(z=1\). Residue at \(z=1\): \(\lim_{z\to 1}\frac{z e^{1/z}}{z+1}=\frac{e}{2}\). Integral \(=2\pi i\cdot\frac{e}{2}=i\pi e\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(i\pi e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-i\pi e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-\pi e\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q36 - Argument principle with power weight</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(p\) be a positive integer, \(r(t)=e^{it}\), \(0\leq t&lt;2\pi\). Let \(f\) be holomorphic in \(\{|z|&lt;R\}\), \(R>1\), with unique zero at \(z_0\) (\(0&lt;|z_0|&lt;R\)) of multiplicity \(q\). Then \(\dfrac{1}{2\pi i}\displaystyle\int_r\frac{f'(z)}{f(z)}z^p\,dz\) equals</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) \(qz_0^p\)</strong></p><p>By the generalised argument principle (with weight \(z^p\)): \(\frac{1}{2\pi i}\int_r\frac{f'}{f}z^p\,dz = \sum_{\text{zeros}}m_j z_j^p = q\cdot z_0^p\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(qz_0^p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(z_0 q^p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(pz_0^q\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(z_0 p^q\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q37 - Number theory: odd n divides (n-1)!</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statement is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) Every odd \(n\geq 16\) divides \((n-1)!\)</strong></p><p>If \(n\) is odd and composite with \(n\geq 9\), then \(n\mid(n-1)!\) (since all prime factors of \(n\) appear in \(\{1,\ldots,n-1\}\)). For odd prime \(p\), \(p\nmid(p-1)!\) by Wilson's theorem, but any odd composite \(n\geq 9\) satisfies \(n\mid(n-1)!\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Every even \(n\geq 16\) divides \((n-1)!+3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Every odd \(n\geq 16\) divides \((n-1)!\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every even \(n\geq 16\) divides \((n-1)!\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[For every \(n\geq 16\), \(n^2\) divides \(n!+1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q38 - Power set group operations</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X\) be non-empty with power set \(\mathcal{P}(X)\). Define \(A\star B=A\cap B\) and \(A\,\Delta\, B=(A\cup B)\setminus(A\cap B)\) (symmetric difference). Which is true about \(\mathcal{P}(X)\) under these operations?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(\mathcal{P}(X)\) is a group under \(\Delta\), not under \(\star\)</strong></p><p>Under \(\Delta\): identity is \(\emptyset\), inverse of \(A\) is \(A\) itself. This is a group (actually an abelian group). Under \(\star=\cap\): has identity \(X\) but no inverses (e.g., \(\emptyset\cap A=\emptyset\neq X\) for \(A\neq X\)). Not a group.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathcal{P}(X)\) is a group under both \(\star\) and \(\Delta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathcal{P}(X)\) is a group under \(\star\), not \(\Delta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathcal{P}(X)\) is a group under \(\Delta\), not \(\star\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathcal{P}(X)\) is a group under neither \(\star\) nor \(\Delta\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q39 - NOT true about Euler totient function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\varphi(n)=|\{a:1\leq a\leq n,\gcd(a,n)=1\}|\) (Euler's totient). Which statement is <strong>NOT</strong> true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) There exists \(N>2\) such that for all \(n>N\), \(\varphi(N)&lt;\varphi(n)\)</strong></p><p>This is false: \(\varphi\) is not eventually increasing. For any \(N\), one can find \(n>N\) that is a product of small primes, making \(\varphi(n)/n\) small. The other statements (1),(2),(4) are true.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[There are infinitely many \(n\) with \(\varphi(n)>\varphi(n+1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There are infinitely many \(n\) with \(\varphi(n)<\varphi(n+1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[There exists \(N>2\) such that for all \(n>N\), \(\varphi(N)<\varphi(n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{\varphi(n)/n : n\in\mathbb{N}\}\) has finitely many limit points]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q40 - Projection map is closed</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For metric spaces \((X,d_X),(Y,d_Y)\), call \(f:X\to Y\) <em>closed</em> if \(F\) closed \(\Rightarrow f(F)\) closed. With product metric \(d((x,y),(x',y'))=\max\{d_X(x,x'),d_Y(y,y')\}\), which is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) Projection \(p_1:X\times Y\to X\), \(p_1(x,y)=x\), is closed</strong></p><p>With the max metric, a closed set in \(X\times Y\) projects to a closed set in \(X\). (Note: with product topology this would NOT generally be closed, but with the max metric the projection of closed sets is closed here.)</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[For any \(A\subseteq X\), inclusion \(i:A\to X\) is closed]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Projection \(p_1:X\times Y\to X\), \(p_1(x,y)=x\), is closed]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(g\circ f\) is closed, then \(g|_{f(X)}\) is closed]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(f\) takes closed balls to closed sets, then \(f\) is closed]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q41 - Number of solutions of IVP</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(k\) be a positive integer. For the IVP \(\dot{y}=y^{5k/(5k+2)}\), \(y(0)=0\), \(t>0\): how many \(C^1(0,\infty)\) solutions exist?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) At most two \(C^1(0,\infty)\) solutions</strong></p><p>The exponent \(\alpha=5k/(5k+2)<1\), so uniqueness fails (Peano theorem gives existence). The two solutions are \(y\equiv 0\) and the non-trivial solution obtained by separating variables: \(y(t)=\left(\frac{2t}{5k+2}\right)^{(5k+2)/2}\). Hence exactly two solutions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Unique \(C^1(0,\infty)\) solution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[At most two \(C^1(0,\infty)\) solutions]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Infinitely many \(C^1(0,\infty)\) solutions]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No \(C^1(0,\infty)\) solution]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q42 - Global solutions and finite-time blow-up</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(y_0,z_0>0\), \(\alpha>1\). Consider (*)  \(\dot{y}=y^\alpha\), \(y(0)=y_0\); and (**) \(\dot{z}=-z^\alpha\), \(z(0)=z_0\), \(t>0\). Which is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) (**) has a global solution; \(\exists T&lt;\infty\) s.t. \(\lim_{t\to T}|y(t)|=+\infty\)</strong></p><p>For (*): \(y'=y^\alpha\) (\(\alpha>1\)) blows up in finite time \(T=\frac{1}{(\alpha-1)y_0^{\alpha-1}}\). For (**): \(z'=-z^\alpha\) gives \(z(t)\to 0\) as \(t\to\infty\) (global solution). Option (4) is correct.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Both (*) and (**) have global solutions]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Neither (*) nor (**) has a global solution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[(*) has a global solution; \(\exists T&lt;\infty\) s.t. \(\lim_{t\to T}|z(t)|=+\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[(**) has a global solution; \(\exists T&lt;\infty\) s.t. \(\lim_{t\to T}|y(t)|=+\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q43 - Surfaces perpendicular to family z^2=kxy</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The general solution of the surfaces perpendicular to the family \(z^2=kxy\), \(k\in\mathbb{R}\), is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(\phi(x^2-y^2,\, 2x^2+z^2)=0\)</strong></p><p>The orthogonal trajectories satisfy the PDE derived from the Lagrange-Charpit equations of the given family. Eliminating \(k\): normals to \(z^2=kxy\) give auxiliary equations \(dx/(2x)=dy/(-2y)=dz/(z)\), leading to invariants \(x^2-y^2\) and \(2x^2+z^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\phi(x^2-y^2,\, xz)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\phi(x^2-y^2,\, x^2+z^2)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\phi(x^2-y^2,\, 2x^2+z^2)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\phi(x^2+y^2,\, 3x^2-z^2)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q44 - General solution of first-order PDE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The general solution of \(x\,\dfrac{\partial z}{\partial x}+y\,\dfrac{\partial z}{\partial y}=0\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) \(z=\phi(|x|/|y|)\), \(\phi\in C^1(\mathbb{R})\)</strong></p><p>Lagrange auxiliary equations: \(dx/x=dy/y\), giving \(x/y=c\) as the first integral. The general solution is \(z=\phi(x/y)\), equivalently \(z=\phi(|x|/|y|)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(z=\phi(|x|/|y|)\), \(\phi\in C^1(\mathbb{R})\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(z=\phi\!\left(\dfrac{x-1}{y}\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(z=\phi\!\left(\dfrac{x+1}{y}\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(z=\phi(|x|+|y|)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q45 - Lagrange and Hermite interpolation as epsilon to zero</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\) be infinitely differentiable on a bounded interval \(I\). Take \(n\) interpolation points \(\{x_0,\ldots,x_{n-1}\}\) and additional points \(x_{n+j}=x_j+\varepsilon\) (\(j=0,\ldots,n-1\), all distinct). Let \(p_{2n-1}\) be the Lagrange interpolant at all \(2n\) points, and \(q_{2n-1}\) be the Hermite interpolant at \(\{x_0,\ldots,x_{n-1}\}\). As \(\varepsilon\to 0\), \(\sup_{x\in I}|p_{2n-1}(x)-q_{2n-1}(x)|\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) Converges to 0</strong></p><p>As \(\varepsilon\to 0\), the Lagrange interpolant at \(\{x_j, x_j+\varepsilon\}\) converges to the Hermite interpolant (which matches function and derivative values). Hence the difference converges to zero uniformly.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Does not necessarily converge]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges to \(1/(2n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Converges to 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges to \(1/(2n+1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q46 - Extremal of variational problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The extremal of \(J(y)=\displaystyle\int_0^1[2(y')^2+xy]\,dx\), \(y(0)=0\), \(y(1)=1\), \(y\in C^2[0,1]\), is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) \(y=\dfrac{x^3}{24}+\dfrac{23x}{24}\)</strong></p><p>Euler-Lagrange equation: \(\frac{\partial L}{\partial y}-\frac{d}{dx}\frac{\partial L}{\partial y'}=0\Rightarrow x-4y''=0\Rightarrow y''=x/4\). Integrate twice: \(y=x^3/24+cx+d\). Apply \(y(0)=0\Rightarrow d=0\), \(y(1)=1\Rightarrow c=23/24\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=\dfrac{x^2}{12}+\dfrac{11x}{12}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=\dfrac{x^3}{3}+\dfrac{2x^2}{3}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=\dfrac{x^2}{7}+\dfrac{6x}{7}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y=\dfrac{x^3}{24}+\dfrac{23x}{24}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q47 - Solution of Fredholm integral equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The solution of the Fredholm integral equation \(y(s)=s+2\displaystyle\int_0^1(st^2+s^2t)\,y(t)\,dt\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(y(s)=-(30s+40s^2)\)</strong></p><p>Assume \(y(s)=As+Bs^2\). Substituting and matching coefficients using \(\int_0^1 t(At+Bt^2)\,dt = A/3+B/4\) and \(\int_0^1 t^2(At+Bt^2)\,dt = A/4+B/5\), solve the linear system to get \(A=-30\), \(B=-40\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y(s)=-(50s+40s^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y(s)=30s+15s^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y(s)=-(30s+40s^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y(s)=60s+50s^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q48 - Principal axis of solid hemisphere</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider the solid hemisphere \(S=\{(x,y,z):x^2+y^2+z^2\leq 1,\,z\geq 0\}\) of uniform density. Which statement is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) The \(z\)-axis is a principal axis for \(S\)</strong></p><p>By symmetry about the \(z\)-axis, the inertia tensor is diagonal in the basis \(\{x,y,z\}\), making the \(z\)-axis a principal axis. The centre of mass is at \((0,0,3/8)\), not the origin.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Centre of mass of \(S\) is at the origin]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The \(x\)-axis is a principal axis for \(S\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The moment of inertia tensor of \(S\) is not a diagonal matrix]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The \(z\)-axis is a principal axis for \(S\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q49 - Bayesian probability (DROPPED by NTA)</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[DROPPED by NTA]</strong> In an MCQ exam, a student works out 50% of questions and guesses the rest (\(P(\text{correct}|\text{guessed})=0.30\)). When worked out, \(P(\text{wrong})=0.10\). Find \(P(\text{student guessed}\,|\,\text{answer is correct})\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) 0.25 (Calculated; this question was DROPPED by NTA)</strong></p><p>By Bayes: \(P(G|C)=\frac{P(C|G)P(G)}{P(C)}=\frac{0.30\times 0.5}{0.30\times 0.5+0.90\times 0.5}=\frac{0.15}{0.60}=0.25\). NTA dropped this question; all candidates received full marks.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[0.25]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0.50]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0.90]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0.30]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q50 - Limiting distribution of standardised chi-squared sum</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,X_2,\ldots\) be i.i.d. \(\chi^2(5)\). Let \(a\in\mathbb{R}\). The limiting distribution of \(a\!\left(\dfrac{X_1+\cdots+X_n-5n}{\sqrt{n}}\right)\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) Standard normal for appropriate \(a\)</strong></p><p>By CLT, \(\frac{X_1+\cdots+X_n-5n}{\sqrt{n}}\xrightarrow{d} N(0,\mathrm{Var}(X_1))=N(0,10)\). Choose \(a=1/\sqrt{10}\) to get \(N(0,1)\). So for appropriate \(a\), the limit is standard normal.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Gamma for appropriate \(a\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\chi^2\) for appropriate \(a\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Standard normal for appropriate \(a\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Degenerate for appropriate \(a\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q51 - NOT correct about communicating Markov chain states</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider a Markov chain with state space \(S\). Suppose \(i,j\in S\) communicate. Which is <strong>NOT</strong> correct?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) \(\lim_{n\to\infty}P(X_n=j|X_0=i)=\lim_{n\to\infty}P(X_n=j|X_0=j)\)</strong></p><p>This is not generally true. The limit \(\lim_n P(X_n=j|X_0=i)\) depends on the initial state distribution and may differ from \(\lim_n P(X_n=j|X_0=j)\). Options (1)-(3) are correct properties of communicating states.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Period of \(i\) = period of \(j\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(i\) is recurrent \(\iff\) \(j\) is recurrent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lim_{n\to\infty}P(X_n=i|X_0=k)=\lim_{n\to\infty}P(X_n=j|X_0=k)\) for all \(k\in S\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lim_{n\to\infty}P(X_n=j|X_0=i)=\lim_{n\to\infty}P(X_n=j|X_0=j)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q52 - Expected value of floor function of Uniform random variable</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Suppose \(X\sim\mathrm{Uniform}[0,100]\). Let \(Y=\lfloor X\rfloor\) (greatest integer \(\leq X\)). Which is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(E(Y)=50\) (NTA key)</strong></p><p>\(P(Y=k)=1/100\) for \(k=0,1,\ldots,99\). So \(E(Y)=\frac{1}{100}\sum_{k=0}^{99}k=\frac{99\times 50}{100}=49.5\). Also \(P(Y\leq 25)=26/100\) (not 1/4). NTA official answer: option (3) \(E(Y)=50\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(Y\leq 25)=1/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(Y\leq 25)=26/100\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(E(Y)=50\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E(Y)=101/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q53 - Complete sufficient statistic for exponential family</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\) be i.i.d. with pdf \(f(x|\theta)=\dfrac{(\log\theta)\,\theta^x}{\theta-1}\), \(0&lt;x&lt;1\), \(\theta>1\). The statistic \(T=\sum_{i=1}^n X_i\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) Complete sufficient</strong></p><p>The pdf belongs to a one-parameter exponential family with natural parameter \(\log\theta\) and sufficient statistic \(\sum X_i\). By the completeness theorem for exponential families, \(T=\sum X_i\) is complete sufficient.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Sufficient, not complete]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Sufficient, not minimal sufficient]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Complete sufficient]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Neither complete nor sufficient]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q54 - UMP test for location parameter</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider pdf \(f(x|\theta)=\dfrac{e^{(x-\theta)}}{[1+e^{(x-\theta)}]^2}\) (logistic). Based on one observation \(X\), a UMP test of size \(\alpha\) for \(H_0:\theta\leq\theta_0\) vs \(H_1:\theta>\theta_0\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) Reject \(H_0\) if \(X>k\) where \(k\) satisfies \(\alpha=P_{\theta_0}[X>k]\)</strong></p><p>The logistic distribution has monotone likelihood ratio in \(x\), so by the Neyman-Pearson lemma the UMP test is of the form "reject if \(X>c\)" where \(c\) is determined by the size condition \(\alpha=P_{\theta_0}(X>c)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Reject \(H_0\) if \(X>k\) where \(\alpha=P_{\theta_0}[X>k]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reject if \(X&lt;k\) where \(\alpha=P_{\theta_0}[X>k]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reject if \(X>k\) where \(\alpha=P_{\theta_0}[X&lt;k]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Reject if \(X&lt;k\) where \(\alpha=P_{\theta_0}[X&lt;k]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q55 - Expected value of Wilcoxon rank-sum statistic</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider 35 i.i.d. observations: \(X_1,\ldots,X_{15}\) and \(Y_1,\ldots,Y_{20}\). Let \(R\) be the Wilcoxon rank-sum statistic based on the ranks of the \(X\)'s in the combined sample of 35. Then \(E(R)=\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) 270</strong></p><p>\(E(R)=\dfrac{n_1(N+1)}{2}=\dfrac{15\times 36}{2}=270\), where \(n_1=15\) and \(N=n_1+n_2=35\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[270]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[300]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[360.5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[330.5]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q56 - Estimability in two-way ANOVA</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(I,J\geq 5\). In two-way ANOVA \(y_{ij}=\alpha+\beta_i+\gamma_j+\varepsilon_{ij}\) with \(\sum\beta_i=\sum\gamma_j=0\). Which is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(\beta_1-\beta_2\) is estimable</strong></p><p>In two-way ANOVA without interaction, individual effects \(\beta_i, \gamma_j\) are not estimable due to non-identifiability, but contrasts like \(\beta_1-\beta_2\) are estimable (they are linear combinations of estimable functions).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\beta_1\) is estimable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\gamma_1\) is estimable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\beta_1-\beta_2\) is estimable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\beta_1+\gamma_2\) is estimable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q57 - Central chi-squared distribution from bivariate normal</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,X_2\) be i.i.d. \(p\times 1\) multivariate normal with mean \(\mu\) and positive definite covariance \(\Sigma\). Which random variable always has a central \(\chi^2\) distribution?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) \(\tfrac{1}{2}(X_1-X_2)^T\Sigma^{-1}(X_1-X_2)\)</strong></p><p>\(X_1-X_2\sim N_p(0,2\Sigma)\), so \((X_1-X_2)^T(2\Sigma)^{-1}(X_1-X_2)=\tfrac{1}{2}(X_1-X_2)^T\Sigma^{-1}(X_1-X_2)\sim\chi^2(p)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\tfrac{1}{2}(X_1-X_2)^T(X_1-X_2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2(X_1-X_2)^T(X_1-X_2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2(X_1-X_2)^T\Sigma^{-1}(X_1-X_2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\tfrac{1}{2}(X_1-X_2)^T\Sigma^{-1}(X_1-X_2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q58 - Unbiased estimate of population variance (DROPPED)</text></name>
+  <questiontext format="html"><text><![CDATA[<p><strong>[DROPPED by NTA]</strong> Ten units chosen by SRSWOR from a population of 100. Sample variance \(s^2=\frac{1}{10}\sum_{i=1}^{10}(y_i-\bar{y})^2\). An unbiased estimate of the population variance \(\sigma^2=\frac{1}{100}\sum_{i=1}^{100}(Y_i-\bar{Y})^2\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (Dropped by NTA)</strong></p><p>For SRSWOR with \(n=10\), \(N=100\): The sample variance \(s^2=(1/n)\sum(y_i-\bar{y})^2\) relates to population variance \(\sigma^2\). An unbiased estimate is \(\hat{\sigma}^2=\frac{n}{n-1}\cdot\frac{N-1}{N}\cdot s^2=\frac{10}{9}\cdot\frac{99}{100}\cdot s^2\). This question was officially dropped; all candidates received full marks.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{10}{9}\cdot\dfrac{99}{100}\cdot s^2\) (question dropped; answer not officially given)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(s^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{10}{9}s^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{9}{10}s^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q59 - Randomized block design uncorrelated contrasts</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a Randomized Block Design with \(b\) blocks and \(k\) treatments (\(y_{ij}=\alpha+\beta_i+\gamma_j+\varepsilon_{ij}\)), which is true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) Estimate of any treatment contrast is uncorrelated with estimate of any block contrast</strong></p><p>In RBD, treatment effects \(\beta_i\) and block effects \(\gamma_j\) are orthogonal. Hence estimates of treatment contrasts and block contrasts are uncorrelated. The error SS has \((b-1)(k-1)\) df, not \(bk-1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Estimates of any two treatment contrasts are uncorrelated]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Error SS has \(bk-1\) degrees of freedom]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Estimate of any treatment contrast is uncorrelated with estimate of any block contrast]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Correlation between estimates of two treatment contrasts is always negative]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q60 - Maximum and minimum of linear function over L1 ball</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The maximum and minimum values of \(5x+7y\) subject to \(|x|+|y|\leq 1\) are</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) 7 and \(-7\)</strong></p><p>The constraint \(|x|+|y|\leq 1\) is the \(\ell^1\) ball. The maximum of a linear function over the \(\ell^1\) ball is the \(\ell^\infty\) norm of the coefficient vector: \(\max(|5|,|7|)=7\), achieved at \((x,y)=(0,1)\). Minimum is \(-7\) at \((0,-1)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[5 and \(-5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5 and \(-7\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[7 and \(-5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[7 and \(-7\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>

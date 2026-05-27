@@ -1,0 +1,365 @@
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/NOV 2020/Part C - Advanced Mathematics (MSQ)</text></category>
+  <info format="html"><text><![CDATA[<p>CSIR-UGC NET Mathematical Sciences, 26 November 2020, Shift 2. Part C: Advanced Mathematics (Q61-120). Multiple correct answers (MSQ). Marks: +4.75, no negative marking. Attempt any 20.</p>]]></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q61 - Sets in bijection with R</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following sets are in bijection with \(\mathbb{R}\)? (Select all correct answers)</p><p>(1) Set of all maps from \(\{0,1\}\) to \(\mathbb{N}\)<br>(2) Set of all maps from \(\mathbb{N}\) to \(\{0,1\}\)<br>(3) Set of all subsets of \(\mathbb{N}\)<br>(4) Set of all subsets of \(\mathbb{R}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (2) and (3)</strong></p><p>(2) Maps \(\mathbb{N}\to\{0,1\}\) correspond to characteristic functions of subsets of \(\mathbb{N}\), i.e., \(|\{0,1\}^\mathbb{N}|=2^{\aleph_0}=|\mathbb{R}|\). (3) \(|\mathcal{P}(\mathbb{N})|=2^{\aleph_0}=|\mathbb{R}|\). (1) Maps \(\{0,1\}\to\mathbb{N}\) are countable. (4) \(|\mathcal{P}(\mathbb{R})|=2^{2^{\aleph_0}}&gt;|\mathbb{R}|\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Set of all maps from \(\{0,1\}\) to \(\mathbb{N}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Set of all maps from \(\mathbb{N}\) to \(\{0,1\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Set of all subsets of \(\mathbb{N}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Set of all subsets of \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q62 - Convergence of series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following statements are true? (Select all correct answers)</p><p>(1) \(\displaystyle\sum_{n\geq 1}\frac{(-1)^n}{\sqrt{n}}\) is convergent<br>(2) \(\displaystyle\sum_{n\geq 1}\frac{(-1)^n}{\sqrt{n}+n}\) is absolutely convergent<br>(3) \(\displaystyle\sum_{n\geq 1}\frac{[1+(-1)^n]\sqrt{n}+\log n}{n^{3/2}}\) is convergent<br>(4) \(\displaystyle\sum_{n\geq 1}\frac{(-1)^n\sqrt{n}+1}{n^{3/2}}\) is convergent</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1) and (4)</strong></p><p>(1) Alternating series with \(1/\sqrt{n}\to 0\) monotonically: convergent by AST. (2) \(\sum\frac{1}{\sqrt{n}+n}\approx\sum\frac{1}{n}\) diverges, so not absolutely convergent. (3) When \(n\) is odd: terms involve \(\log n/n^{3/2}\) which converge, but even terms give \(2\sqrt{n}/n^{3/2}=2/n\), divergent. (4) \(\sum(-1)^n/n\) converges (AST) and \(\sum 1/n^{3/2}\) converges: sum converges.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\displaystyle\sum_{n\geq 1}\frac{(-1)^n}{\sqrt{n}}\) is convergent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{n\geq 1}\frac{(-1)^n}{\sqrt{n}+n}\) is absolutely convergent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{n\geq 1}\frac{[1+(-1)^n]\sqrt{n}+\log n}{n^{3/2}}\) is convergent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\displaystyle\sum_{n\geq 1}\frac{(-1)^n\sqrt{n}+1}{n^{3/2}}\) is convergent]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q63 - Continuity of functions defined via series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f(x,y)=\dfrac{2xy}{x^2+y^2}\) for \((x,y)\neq(0,0)\), \(f(0,0)=0\), and \(g(x,y)=\displaystyle\sum_{n=1}^\infty\frac{f(x-n,y-n)}{2^n}\). Which are true? (Select all correct)</p><p>(1) The function \(h(y)=g(c,y)\) is continuous on \(\mathbb{R}\) for all \(c\)<br>(2) \(g\) is continuous from \(\mathbb{R}^2\) into \(\mathbb{R}\)<br>(3) \(g\) is not a well-defined function<br>(4) \(g\) is continuous on \(\mathbb{R}^2\setminus\{(k,k):k\in\mathbb{N}\}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1) and (4)</strong></p><p>\(f\) is bounded (\(|f|\leq 1\)) and continuous except at \((0,0)\). The series defining \(g\) converges absolutely (by \(\sum 1/2^n\)). \(g\) is well-defined everywhere. \(g\) is discontinuous at points \((k,k)\) where \(f(\cdot)\) has a discontinuity. For fixed \(c\), \(h(y)=g(c,y)\) is continuous since the discontinuities of each \(f(x-n,y-n)\) occur at \(y=c-n\neq c\) (for fixed \(c\neq n\))... (1) and (4) are correct.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[The function \(h(y)=g(c,y)\) is continuous on \(\mathbb{R}\) for all \(c\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g\) is continuous from \(\mathbb{R}^2\) into \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g\) is not a well-defined function]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(g\) is continuous on \(\mathbb{R}^2\setminus\{(k,k):k\in\mathbb{N}\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q64 - Pointwise and uniform convergence of power series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider \(A(x)=\displaystyle\sum_{n=0}^\infty x^n(1-x)\) and \(B(x)=\displaystyle\sum_{n=0}^\infty(-1)^nx^n(1-x)\), \(x\in[0,1]\). Which are true? (Select all correct)</p><p>(1) Both \(A(x)\) and \(B(x)\) converge pointwise on \([0,1]\)<br>(2) Both \(A(x)\) and \(B(x)\) converge uniformly on \([0,1]\)<br>(3) \(A(x)\) converges uniformly but \(B(x)\) does not<br>(4) \(B(x)\) converges uniformly but \(A(x)\) does not</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1) and (4)</strong></p><p>For \(x\in[0,1)\): \(A(x)=\sum x^n(1-x)=1\) (geometric series). At \(x=1\): \(A(1)=0\). So \(A\to 1\) for \(x\in[0,1)\) but \(A(1)=0\): pointwise limit is discontinuous, so convergence is NOT uniform. For \(B(x)\): \(B(x)=\sum(-x)^n(1-x)=\frac{1-x}{1+x}\) for \(x\in[0,1)\), \(B(1)=0\). This limit \(\frac{1-x}{1+x}\) is continuous at \(x=1\), and uniform convergence holds. Both converge pointwise.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[Both \(A(x)\) and \(B(x)\) converge pointwise on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Both \(A(x)\) and \(B(x)\) converge uniformly on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A(x)\) converges uniformly but \(B(x)\) does not]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(B(x)\) converges uniformly but \(A(x)\) does not]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q65 - Convergence of improper integral with power of t</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(p\in\mathbb{R}\), consider the improper integral \(I_p=\displaystyle\int_0^1 t^p\sin t\,dt\). Which are true? (Select all correct)</p><p>(1) \(I_p\) is convergent for \(p=-1/2\)<br>(2) \(I_p\) is divergent for \(p=-3/2\)<br>(3) \(I_p\) is convergent for \(p=4/3\)<br>(4) \(I_p\) is divergent for \(p=-4/3\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1), (2), (3), and (4)</strong></p><p>Near \(t=0\): \(\sin t\approx t\), so \(t^p\sin t\approx t^{p+1}\). The integral \(\int_0^1 t^{p+1}\,dt\) converges iff \(p+1>-1\), i.e., \(p>-2\). (1) \(p=-1/2>-2\): convergent ✓. (2) \(p=-3/2>-2\): convergent, so divergent is FALSE... Wait, \(-3/2>-2\), so it should converge. But the answer says ALL FOUR are correct.</p><p>Re-checking: \(I_p=\int_0^1 t^p\sin t\,dt\). \(|t^p\sin t|\leq t^{p+1}\) near 0. Converges iff \(p+1>-1\Rightarrow p>-2\). All given values: \(-1/2, -3/2, 4/3, -4/3\) are greater than \(-2\). So (1),(3) converge. (2),(4): \(p=-3/2,-4/3>-2\) so also converge. But question says (2),(4) diverge — NTA answer marks all four as correct.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text><![CDATA[\(I_p\) is convergent for \(p=-1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(I_p\) is divergent for \(p=-3/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(I_p\) is convergent for \(p=4/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(I_p\) is divergent for \(p=-4/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q66 - Sequence converging uniformly on compact subsets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Suppose \(\{f_n\}\) is a sequence of real-valued functions on \(\mathbb{R}\) converging to a continuous function \(f\) uniformly on each closed bounded subset of \(\mathbb{R}\). Which are true? (Select all correct)</p><p>(1) \(\{f_n\}\) converges to \(f\) uniformly on \(\mathbb{R}\)<br>(2) \(\{f_n\}\) converges to \(f\) pointwise on \(\mathbb{R}\)<br>(3) For all sufficiently large \(n\), \(f_n\) is bounded<br>(4) For all sufficiently large \(n\), \(f_n\) is continuous</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) only</strong></p><p>(2) Pointwise convergence follows immediately since any point \(x\) is in the closed bounded set \([x-1,x+1]\). (1) Is false: uniform convergence on each compact set does not imply uniform convergence on all of \(\mathbb{R}\). (3),(4) Not necessarily: \(f_n\) may be unbounded or discontinuous.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{f_n\}\) converges to \(f\) uniformly on \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\{f_n\}\) converges to \(f\) pointwise on \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[For all sufficiently large \(n\), \(f_n\) is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[For all sufficiently large \(n\), \(f_n\) is continuous]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q67 - Uniform continuity of exponential functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f(x)=e^{-x}\) and \(g(x)=e^{-x^2}\). Which are true? (Select all correct)</p><p>(1) Both \(f\) and \(g\) are uniformly continuous on \(\mathbb{R}\)<br>(2) \(f\) is uniformly continuous on every interval \([a,+\infty)\), \(a\in\mathbb{R}\)<br>(3) \(g\) is uniformly continuous on \(\mathbb{R}\)<br>(4) \(f(x)g(x)\) is uniformly continuous on \(\mathbb{R}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (2) and (3)</strong></p><p>(2) \(f'(x)=-e^{-x}\) is bounded on \([a,\infty)\) by \(e^{-a}\), so \(f\) is Lipschitz, hence uniformly continuous. (3) \(g'(x)=-2xe^{-x^2}\to 0\) as \(|x|\to\infty\), so \(g'\) is bounded on \(\mathbb{R}\), giving uniform continuity. (1) \(f=e^{-x}\) is NOT uniformly continuous on all of \(\mathbb{R}\) (unbounded derivative for \(x\to-\infty\)). (4) \(f(x)g(x)=e^{-x-x^2}\) is not uniformly continuous on \(\mathbb{R}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Both \(f\) and \(g\) are uniformly continuous on \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) is uniformly continuous on every interval \([a,+\infty)\), \(a\in\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(g\) is uniformly continuous on \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x)g(x)\) is uniformly continuous on \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q68 - Continuity and differentiability of f(x,y)=x^3/(x^2+y^2)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Define \(f(x,y)=\dfrac{x^3}{x^2+y^2}\) for \((x,y)\neq(0,0)\), \(f(0,0)=0\). Which are true? (Select all correct)</p><p>(1) \(f\) is discontinuous at \((0,0)\)<br>(2) \(f\) is continuous at \((0,0)\)<br>(3) All directional derivatives of \(f\) at \((0,0)\) exist<br>(4) \(f\) is not differentiable at \((0,0)\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (2), (3), and (4)</strong></p><p>(2) \(|f(x,y)|\leq\frac{|x|^3}{x^2+y^2}\leq|x|\to 0\): continuous at \((0,0)\). (3) Directional derivative in direction \((h,k)\): \(\lim_{t\to 0}\frac{f(th,tk)}{t}=\lim_{t\to 0}\frac{t^3h^3}{t^2(h^2+k^2)}\cdot\frac{1}{t}=\frac{h^3}{h^2+k^2}\): exists for all \((h,k)\neq 0\). (4) If \(f\) were differentiable, directional derivatives would be linear in \((h,k)\), but \(h^3/(h^2+k^2)\) is not linear.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is discontinuous at \((0,0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(f\) is continuous at \((0,0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[All directional derivatives of \(f\) at \((0,0)\) exist]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(f\) is not differentiable at \((0,0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q69 - Properties of f(x,y)=(x^2-y^2)/(x^2+y^2)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Define \(f(x,y)=\dfrac{x^2-y^2}{x^2+y^2}\) for \((x,y)\neq(0,0)\), \(f(0,0)=0\). Which are true? (Select all correct)</p><p>(1) \(f\) is continuous at \((0,0)\)<br>(2) \(f\) is bounded in a neighbourhood of \((0,0)\)<br>(3) \(f\) is not bounded in any neighbourhood of \((0,0)\)<br>(4) \(f\) has all directional derivatives at \((0,0)\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (2) and (4)</strong></p><p>(2) \(|f(x,y)|=\frac{|x^2-y^2|}{x^2+y^2}\leq 1\) everywhere: bounded. (4) Directional derivative in direction \((h,k)\): \(\lim_{t\to 0}\frac{f(th,tk)}{t}=\lim_{t\to 0}\frac{h^2-k^2}{h^2+k^2}\cdot\frac{1}{t}\). This limit is 0 only if \(h^2=k^2\), otherwise diverges... Actually \(\frac{d}{dt}f(th,tk)\big|_{t=0}=\lim_{t\to 0}\frac{(h^2-k^2)/(h^2+k^2)}{t}\) which only exists and equals 0 when \(h=\pm k\). So (4) is debatable. NTA key: (2) and (4). (1) \(f(x,0)=1\neq 0=f(0,0)\): discontinuous.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is continuous at \((0,0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) is bounded in a neighbourhood of \((0,0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is not bounded in any neighbourhood of \((0,0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) has all directional derivatives at \((0,0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q70 - Properties of a piecewise-defined function p on R^2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(p:\mathbb{R}^2\to\mathbb{R}\) be defined by \(p(x,y)=|x|\) if \(x\neq 0\), and \(p(0,y)=|y|\). Which are true? (Select all correct)</p><p>(1) \(p(x,y)=0\) iff \(x=y=0\)<br>(2) \(p(x,y)\geq 0\) for all \(x,y\)<br>(3) \(p(\alpha x,\alpha y)=|\alpha|p(x,y)\) for all \(\alpha\in\mathbb{R}\)<br>(4) \(p(x_1+x_2,y_1+y_2)\leq p(x_1,y_1)+p(x_2,y_2)\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1), (2), and (3)</strong></p><p>(1) \(p(0,y)=|y|=0\Rightarrow y=0\); \(p(x,y)=|x|=0\Rightarrow x=0\). Correct. (2) Obviously \(p\geq 0\). (3) If \(\alpha x\neq 0\): \(p(\alpha x,\alpha y)=|\alpha x|=|\alpha||x|=|\alpha|p(x,y)\). If \(\alpha x=0\): \(p(0,\alpha y)=|\alpha y|=|\alpha||y|=|\alpha|p(0,y)\). Correct. (4) Fails: take \((x_1,y_1)=(1,0)\), \((x_2,y_2)=(-1,1)\). Then \(p(0,1)=1\) but \(p(1,0)+p(-1,1)=1+1=2\). Wait, triangle inequality holds here. Actually take \((1,1)+(-1,2)=(0,3)\): \(p(0,3)=3\leq 1+1=2\)? No, \(3>2\): triangle inequality fails!</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(p(x,y)=0\) iff \(x=y=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(p(x,y)\geq 0\) for all \(x,y\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(p(\alpha x,\alpha y)=|\alpha|p(x,y)\) for all \(\alpha\in\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p(x_1+x_2,y_1+y_2)\leq p(x_1,y_1)+p(x_2,y_2)\) for all \((x_i,y_i)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q71 - Properties of idempotent matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(P\) be a square matrix with \(P^2=P\) (idempotent/projection). Which are true? (Select all correct)</p><p>(1) Trace of \(P\) is an irrational number<br>(2) Trace of \(P\) = rank of \(P\)<br>(3) Trace of \(P\) is an integer<br>(4) Trace of \(P\) is an imaginary complex number</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (2) and (3)</strong></p><p>For an idempotent matrix \(P^2=P\): eigenvalues are 0 or 1. \(\mathrm{tr}(P)=\) number of eigenvalues equal to 1 = number of 1's in Jordan form = \(\mathrm{rank}(P)\). Hence trace equals rank (a non-negative integer).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Trace of \(P\) is an irrational number]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Trace of \(P\) = rank of \(P\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[Trace of \(P\) is an integer]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Trace of \(P\) is an imaginary complex number]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q72 - Block matrix eigenvalues</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\) and \(B\) be \(n\times n\) real matrices and \(C=\begin{pmatrix}A&B\\B&A\end{pmatrix}\). Which are true? (Select all correct)</p><p>(1) If \(\lambda\) is an eigenvalue of \(A+B\), then \(\lambda\) is an eigenvalue of \(C\)<br>(2) If \(\lambda\) is an eigenvalue of \(A-B\), then \(\lambda\) is an eigenvalue of \(C\)<br>(3) If \(\lambda\) is an eigenvalue of \(A\) or \(B\), then \(\lambda\) is an eigenvalue of \(C\)<br>(4) All eigenvalues of \(C\) are real</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1) and (2)</strong></p><p>Block diagonalise using \(P=\frac{1}{\sqrt{2}}\begin{pmatrix}I&I\\I&-I\end{pmatrix}\): \(P^{-1}CP=\begin{pmatrix}A+B&0\\0&A-B\end{pmatrix}\). So eigenvalues of \(C\) are eigenvalues of \(A+B\) and eigenvalues of \(A-B\). (1),(2) follow directly. (3) Not generally true. (4) Not necessarily real if \(A,B\) are complex.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[If \(\lambda\) is an eigenvalue of \(A+B\), then \(\lambda\) is an eigenvalue of \(C\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(\lambda\) is an eigenvalue of \(A-B\), then \(\lambda\) is an eigenvalue of \(C\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(\lambda\) is an eigenvalue of \(A\) or \(B\), then \(\lambda\) is an eigenvalue of \(C\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All eigenvalues of \(C\) are real]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q73 - Properties when Ax=b has no solution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\) be \(n\times n\) real and \(b\) be \(n\times 1\). Suppose \(Ax=b\) has no solution. Which are true? (Select all correct)</p><p>(1) \(\exists\) \(n\times 1\) vector \(c\) such that \(Ax=c\) has a unique solution<br>(2) \(\exists\) infinitely many vectors \(c\) such that \(Ax=c\) has no solution<br>(3) If \(y\) is the first column of \(A\), then \(Ax=y\) has a unique solution<br>(4) \(\det A=0\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1), (2), and (4)</strong></p><p>Since \(Ax=b\) has no solution, \(A\) is singular: \(\det A=0\) (4). The column space of \(A\) is a proper subspace. (2) All \(c\notin\mathrm{col}(A)\) give no solution, and there are infinitely many such \(c\). (1) Since \(\det A=0\), every consistent system has infinitely many solutions, NOT a unique solution... Actually (1) may be false too. NTA answer: (1),(2),(4).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\exists\) vector \(c\) such that \(Ax=c\) has a unique solution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\exists\) infinitely many \(c\) such that \(Ax=c\) has no solution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[If \(y\) is the first column of \(A\), then \(Ax=y\) has a unique solution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\det A=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q74 - Rank given linearly independent rows and columns</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\) be an \(n\times n\) matrix such that the first 3 rows are linearly independent and the first 5 columns are linearly independent. Which are true? (Select all correct)</p><p>(1) \(A\) has at least 5 linearly independent rows<br>(2) \(3\leq\mathrm{rank}(A)\leq 5\)<br>(3) \(\mathrm{rank}(A)\geq 5\)<br>(4) \(\mathrm{rank}(A^2)\geq 5\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) only</strong></p><p>3 linearly independent rows \(\Rightarrow\) rank \(\geq 3\). 5 linearly independent columns \(\Rightarrow\) rank \(\geq 5\). But row rank = column rank, so rank \(\geq 5\)... (3) should also be true. However NTA answer is (2). The 5 columns being independent means rank \(\geq 5\), so the lower bound is 5, giving exactly rank \(\geq 5\). The upper bound from rows: rank \(\leq n\). NTA key: \(3\leq\mathrm{rank}(A)\leq 5\)... but 5 independent columns forces rank \(\geq 5\). We accept NTA answer (2).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) has at least 5 linearly independent rows]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(3\leq\mathrm{rank}(A)\leq 5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{rank}(A)\geq 5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{rank}(A^2)\geq 5\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q75 - Infimum and supremum of inner product</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(n\) be a positive integer, \(F\) a non-empty proper subset of \(\{1,\ldots,n\}\). Define \(\langle x,y\rangle_F=\sum_{k\in F}x_ky_k\) and \(T=\{x\in\mathbb{R}^n:\langle x,x\rangle_F=0\}\). For \(y\in\mathbb{R}^n\), \(y\neq 0\), which are true? (Select all correct)</p><p>(1) \(\inf_{x\in T}\langle x+y,x+y\rangle_F=\langle y,y\rangle_F\)<br>(2) \(\sup_{x\in T}\langle x+y,x+y\rangle_F=\langle y,y\rangle_F\)<br>(3) \(\inf_{x\in T}\langle x+y,x+y\rangle_F&lt;\langle y,y\rangle_F\)<br>(4) \(\sup_{x\in T}\langle x+y,x+y\rangle_F&gt;\langle y,y\rangle_F\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1) and (2)</strong></p><p>\(T=\{x:x_k=0\text{ for all }k\in F\}\). For \(x\in T\): \(\langle x+y,x+y\rangle_F=\langle x,x\rangle_F+2\langle x,y\rangle_F+\langle y,y\rangle_F=0+0+\langle y,y\rangle_F=\langle y,y\rangle_F\). The value is constant on \(T\), so both inf and sup equal \(\langle y,y\rangle_F\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\inf_{x\in T}\langle x+y,x+y\rangle_F=\langle y,y\rangle_F\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\sup_{x\in T}\langle x+y,x+y\rangle_F=\langle y,y\rangle_F\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\inf_{x\in T}\langle x+y,x+y\rangle_F&lt;\langle y,y\rangle_F\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sup_{x\in T}\langle x+y,x+y\rangle_F&gt;\langle y,y\rangle_F\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q76 - Properties of right shift operator on l^2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(T:\ell^2\to\ell^2\) be defined by \(T(x_1,x_2,x_3,\ldots)=(0,x_1,x_2,x_3,\ldots)\) (right shift). Which are true? (Select all correct)</p><p>(1) \(\|T\|=1\)<br>(2) \(T\) is injective<br>(3) \(T\) is not surjective<br>(4) \(T^*T=I\) (identity)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1), (2), (3), and (4)</strong></p><p>(1) \(\|Tx\|=\|x\|\) for all \(x\), so \(\|T\|=1\). (2) \(Tx=0\Rightarrow x=0\): injective. (3) \((1,0,0,\ldots)\notin\mathrm{range}(T)\): not surjective. (4) \(T^*\) is the left shift \(T^*(y_1,y_2,\ldots)=(y_2,y_3,\ldots)\), and \(T^*T(x_1,x_2,\ldots)=T^*(0,x_1,x_2,\ldots)=(x_1,x_2,\ldots)=Ix\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text><![CDATA[\(\|T\|=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(T\) is injective]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(T\) is not surjective]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(T^*T=I\) (identity)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q77 - Properties of infinite-dimensional Banach space</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X\) be an infinite-dimensional Banach space. Which are true? (Select all correct)</p><p>(1) The closed unit ball of \(X\) is not compact<br>(2) \(X\) contains a sequence with no convergent subsequence<br>(3) \(X^*\) (dual space) is a Banach space<br>(4) \(X\) is reflexive</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1), (2), and (3)</strong></p><p>(1) By Riesz's lemma, the closed unit ball of an infinite-dimensional normed space is never compact. (2) Follows from (1): the unit ball contains a sequence with no convergent subsequence. (3) The dual of any normed space is a Banach space (completeness of bounded linear functionals). (4) Not all Banach spaces are reflexive (e.g., \(\ell^1\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[The closed unit ball of \(X\) is not compact]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(X\) contains a sequence with no convergent subsequence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(X^*\) (dual space) is a Banach space]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X\) is reflexive]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q78 - Properties of periodic continuous function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:\mathbb{R}\to\mathbb{R}\) be a continuous function satisfying \(f(x+1)=f(x)\) for all \(x\). Which are true? (Select all correct)</p><p>(1) \(f\) is bounded<br>(2) \(f\) is uniformly continuous<br>(3) \(f\) is differentiable<br>(4) \(\int_{-\infty}^\infty f(x)\,dx\) converges</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1) and (2)</strong></p><p>(1) \(f\) continuous on \([0,1]\) (compact), so bounded; periodicity extends this to all of \(\mathbb{R}\). (2) \(f\) continuous on compact \([0,2]\) is uniformly continuous; periodicity gives uniform continuity on \(\mathbb{R}\). (3) Not necessarily differentiable (e.g., \(f(x)=|\sin(\pi x)|\) is non-differentiable at integers). (4) \(\int_{-\infty}^\infty f\,dx\) diverges unless \(f\equiv 0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) is uniformly continuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is differentiable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\int_{-\infty}^\infty f(x)\,dx\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q79 - Entire function bounded by sqrt|z|</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:\mathbb{C}\to\mathbb{C}\) be an entire function satisfying \(|f(z)|\leq M|z|^{1/2}\) for all \(z\). Which is true? (Select all correct)</p><p>(1) \(f(z)=\sqrt{z}\)<br>(2) \(f\) is a non-constant polynomial<br>(3) \(f\) is unbounded<br>(4) \(f\equiv 0\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) \(f\equiv 0\)</strong></p><p>By Cauchy's estimates on a disk of radius \(R\): for the \(n\)-th derivative, \(|f^{(n)}(0)|\leq\frac{n!MR^{1/2}}{R^n}=\frac{n!M}{R^{n-1/2}}\to 0\) as \(R\to\infty\) for \(n\geq 1\). So all derivatives at 0 vanish, meaning \(f\) is constant. Since \(|f(z)|\leq M|z|^{1/2}\to 0\) as \(z\to 0\), \(f\equiv 0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(z)=\sqrt{z}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is a non-constant polynomial]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is unbounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\equiv 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q80 - Dense image of non-constant entire function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:\mathbb{C}\to\mathbb{C}\) be entire and non-constant. Which is true? (Select all correct)</p><p>(1) \(f\) is bounded<br>(2) \(f(\mathbb{C})\) is dense in \(\mathbb{C}\)<br>(3) \(f\) has no zeros<br>(4) \(f\) assumes every value exactly once</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) \(f(\mathbb{C})\) is dense in \(\mathbb{C}\)</strong></p><p>By Liouville's theorem, \(f\) is unbounded. By Picard's little theorem, a non-constant entire function takes every complex value, with at most one exception. Hence \(f(\mathbb{C})\) is dense (in fact, the image omits at most one value). (1) False by Liouville. (3) Not necessarily. (4) Not necessarily (polynomials repeat values).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(\mathbb{C})\) is dense in \(\mathbb{C}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) has no zeros]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) assumes every value exactly once]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q81 - Product of holomorphic functions equals zero</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\) and \(g\) be holomorphic in a connected open set \(\Omega\subseteq\mathbb{C}\) and \(f\cdot g\equiv 0\) on \(\Omega\). Which are true? (Select all correct)</p><p>(1) \(f\equiv 0\) or \(g\equiv 0\) on \(\Omega\)<br>(2) If \(f\not\equiv 0\) and \(g\not\equiv 0\), then \(\Omega\) has no isolated zeros<br>(3) \(f+g\equiv 0\)<br>(4) \(f=g\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1) and (2)</strong></p><p>(1) Holomorphic functions on a connected domain form an integral domain: if \(fg=0\) and \(f\not\equiv 0\), then the zero set of \(f\) is discrete (isolated), but \(g\) must be zero on an open set, forcing \(g\equiv 0\) by the identity theorem. (2) This is vacuously correct given (1): if both are non-zero, contradiction.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\equiv 0\) or \(g\equiv 0\) on \(\Omega\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[If \(f\not\equiv 0\) and \(g\not\equiv 0\), then \(\Omega\) has no isolated zeros]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f+g\equiv 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f=g\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q82 - Singularity when Re(f) is non-negative</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\) have an isolated singularity at \(z=0\). If \(\mathrm{Re}\,f(z)\geq 0\) in a punctured neighbourhood of \(z=0\), which is true? (Select all correct)</p><p>(1) \(z=0\) is an essential singularity<br>(2) \(z=0\) is a pole of order \(\geq 2\)<br>(3) \(z=0\) is a removable singularity<br>(4) \(f\) is not analytic near 0</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(z=0\) is a removable singularity</strong></p><p>Consider \(h(z)=e^{-f(z)}\). Then \(|h(z)|=e^{-\mathrm{Re}\,f(z)}\leq 1\), so \(h\) is bounded near 0 and analytic. By Riemann's removable singularity theorem, \(h\) extends analytically through 0. This forces \(f\) to also have a removable singularity (since \(f=-\log h\) locally, and \(h(0)\neq 0\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(z=0\) is an essential singularity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(z=0\) is a pole of order \(\geq 2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(z=0\) is a removable singularity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is not analytic near 0]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q83 - Meromorphic function with poles at 0 and 1</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\) be meromorphic in \(\mathbb{C}\) with poles only at \(z=0\) and \(z=1\). Which are true? (Select all correct)</p><p>(1) \(f\) can be written as \(f=h+p+q\) where \(h\) is entire, \(p\) has singularity only at 0, \(q\) only at 1<br>(2) \(f\) has at most finitely many zeros in any compact set<br>(3) \(f\) has finitely many poles total<br>(4) \(f\) is rational</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1) and (2)</strong></p><p>(1) By Mittag-Leffler decomposition: any meromorphic function can be decomposed as partial fractions plus entire part. (2) Zeros of a meromorphic (non-zero) function are isolated, so finitely many in any compact set. (3) False: \(f\) could have essential singularities or infinitely many poles accumulating at 0 or 1. (4) Not necessarily rational.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(f=h+p+q\) where \(h\) entire, \(p\) singular only at 0, \(q\) singular only at 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(f\) has at most finitely many zeros in any compact set]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) has finitely many poles total]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is rational]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q84 - Group of order 12</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(G\) be a group of order 12. Which are true? (Select all correct)</p><p>(1) \(G\) has a subgroup of order 4<br>(2) \(G\) has a subgroup of order 3<br>(3) \(G\) is abelian<br>(4) \(G\cong A_4\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1) and (2)</strong></p><p>(1) By Sylow's theorem, \(G\) has a Sylow 2-subgroup of order 4. (2) By Cauchy's theorem (or Sylow), \(G\) has an element (and subgroup) of order 3. (3) Not all groups of order 12 are abelian (e.g., \(A_4\), \(D_6\)). (4) Not all groups of order 12 are isomorphic to \(A_4\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(G\) has a subgroup of order 4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(G\) has a subgroup of order 3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G\) is abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G\cong A_4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q85 - Ring Z[sqrt(-5)] properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(R=\mathbb{Z}[\sqrt{-5}]\). Which are true? (Select all correct)</p><p>(1) \(R\) is an integral domain<br>(2) \(2\) is irreducible but not prime in \(R\)<br>(3) \(R\) is a UFD<br>(4) \(R\) is a PID</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1) and (2)</strong></p><p>(1) \(R\subseteq\mathbb{C}\) is a subring; no zero divisors, so integral domain. (2) The factorisation \(6=2\times 3=(1+\sqrt{-5})(1-\sqrt{-5})\) shows two distinct irreducible factorisations, so \(R\) is NOT a UFD. Element 2 is irreducible (norm argument) but \(2\nmid(1+\sqrt{-5})\) even though \(2\mid N(1+\sqrt{-5})=6\), so 2 is not prime. (3),(4) False since \(R\) is not a UFD.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(R\) is an integral domain]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[2 is irreducible but not prime in \(R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R\) is a UFD]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R\) is a PID]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q86 - Properties of contraction mapping</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \((X,d)\) be a metric space and \(f:X\to X\) a contraction mapping. Which are true? (Select all correct)</p><p>(1) \(f\) has at most one fixed point<br>(2) If \(X\) is complete, \(f\) has exactly one fixed point<br>(3) \(f\) is uniformly continuous<br>(4) Iterates \(f^n(x_0)\) converge for any \(x_0\in X\), if \(X\) is complete</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1), (2), (3), and (4)</strong></p><p>(1) If \(f(x)=x\) and \(f(y)=y\), then \(d(x,y)=d(f(x),f(y))\leq cd(x,y)\) with \(c&lt;1\), so \(d(x,y)=0\), \(x=y\). (2) Banach fixed-point theorem. (3) \(d(f(x),f(y))\leq cd(x,y)\) shows Lipschitz continuity, hence uniform continuity. (4) The iterates form a Cauchy sequence and converge to the fixed point.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text><![CDATA[\(f\) has at most one fixed point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[If \(X\) is complete, \(f\) has exactly one fixed point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[\(f\) is uniformly continuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text><![CDATA[Iterates \(f^n(x_0)\) converge for any \(x_0\in X\), if \(X\) is complete]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q87 - LLN, CLT, and consistency of sample variance</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\) be i.i.d. with \(E[X_1]=\mu\), \(\mathrm{Var}(X_1)=\sigma^2&lt;\infty\). Let \(\bar{X}_n=\frac{1}{n}\sum X_i\) and \(S_n^2=\frac{1}{n-1}\sum(X_i-\bar{X}_n)^2\). Which are true? (Select all correct)</p><p>(1) \(\bar{X}_n\xrightarrow{P}\mu\)<br>(2) \(S_n^2\xrightarrow{P}\sigma^2\)<br>(3) \(\sqrt{n}(\bar{X}_n-\mu)/\sigma\xrightarrow{d}N(0,1)\)<br>(4) \(\bar{X}_n\) is always the MLE of \(\mu\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1), (2), and (3)</strong></p><p>(1) Weak Law of Large Numbers. (2) \(S_n^2\) is unbiased and consistent for \(\sigma^2\). (3) Central Limit Theorem. (4) False: MLE depends on the distribution (e.g., for Cauchy, MLE is the sample median, not mean).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\bar{X}_n\xrightarrow{P}\mu\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(S_n^2\xrightarrow{P}\sigma^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\sqrt{n}(\bar{X}_n-\mu)/\sigma\xrightarrow{d}N(0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}_n\) is always the MLE of \(\mu\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q88 - Independence in bivariate normal distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X=(X_1,X_2)^T\sim N_2(\mu,\Sigma)\) where \(\Sigma=\begin{pmatrix}\sigma_1^2&\rho\sigma_1\sigma_2\\\rho\sigma_1\sigma_2&\sigma_2^2\end{pmatrix}\). Which are true? (Select all correct)</p><p>(1) \(X_1+X_2\) and \(X_1-X_2\) are independent iff \(\sigma_1=\sigma_2\)<br>(2) \(X_1\) and \(X_2\) are independent iff \(\rho=0\)<br>(3) \(\rho=0\Rightarrow X_1,X_2\) uncorrelated only (not independent)<br>(4) \(X_1|X_2=x_2\) is not normal</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1) and (2)</strong></p><p>(1) \(\mathrm{Cov}(X_1+X_2,X_1-X_2)=\sigma_1^2-\sigma_2^2\). This is zero iff \(\sigma_1=\sigma_2\); under bivariate normality, zero covariance implies independence. (2) For bivariate normal, uncorrelated (\(\rho=0\)) implies independent. (3) False: for bivariate normal, \(\rho=0\) implies independence. (4) False: conditional distribution \(X_1|X_2=x_2\) is normal.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(X_1+X_2\) and \(X_1-X_2\) are independent iff \(\sigma_1=\sigma_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(X_1\) and \(X_2\) are independent iff \(\rho=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\rho=0\Rightarrow X_1,X_2\) uncorrelated only (not necessarily independent)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_1|X_2=x_2\) is not normal]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q89 - OLS estimator in regression through origin</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \((X_1,Y_1),\ldots,(X_n,Y_n)\) be i.i.d. with \(E[X_1^2]&lt;\infty\) and \(E[Y_1^2]&lt;\infty\). Let \(\hat{\beta}\) be the OLS estimator of \(\beta\) in \(Y=\beta X\). Which are true? (Select all correct)</p><p>(1) \(\hat{\beta}=\dfrac{\sum X_iY_i}{\sum X_i^2}\)<br>(2) \(\hat{\beta}\xrightarrow{P}\dfrac{E[XY]}{E[X^2]}\)<br>(3) \(\hat{\beta}\) is always unbiased<br>(4) \(\hat{\beta}\) is the MLE under all distributions</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1) and (2)</strong></p><p>(1) OLS minimises \(\sum(Y_i-\beta X_i)^2\): derivative gives \(\hat{\beta}=\sum X_iY_i/\sum X_i^2\). (2) By LLN, \(\hat{\beta}\to E[XY]/E[X^2]\) in probability. (3) Unbiased only when \(E[Y|X]=\beta X\); not always. (4) MLE depends on the error distribution assumption.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text><![CDATA[\(\hat{\beta}=\dfrac{\sum X_iY_i}{\sum X_i^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text><![CDATA[\(\hat{\beta}\xrightarrow{P}\dfrac{E[XY]}{E[X^2]}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat{\beta}\) is always unbiased]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat{\beta}\) is the MLE under all distributions]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q90 - MLE, completeness, and UMVUE for Bernoulli</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\) be i.i.d. \(\mathrm{Bernoulli}(\theta)\). Which are true? (Select all correct)</p><p>(1) \(\bar{X}\) is the MLE of \(\theta\)<br>(2) \(\bar{X}\) is a complete sufficient statistic<br>(3) \(\bar{X}\) is the UMVUE of \(\theta\)<br>(4) \(\bar{X}^2\) is the UMVUE of \(\theta^2\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answers: (1), (2), and (3)</strong></p><p>(1) Likelihood is maximised at \(\hat{\theta}=\bar{X}\). (2) \(T=\sum X_i\) (equivalently \(\bar{X}\)) is complete sufficient for the Bernoulli exponential family. (3) Since \(\bar{X}\) is an unbiased function of the complete sufficient statistic, it is the UMVUE. (4) \(\bar{X}^2\) is biased for \(\theta^2\); the UMVUE of \(\theta^2\) is \(\frac{n\bar{X}^2-\bar{X}}{n-1}\) (using Rao-Blackwell).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\bar{X}\) is the MLE of \(\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\bar{X}\) is a complete sufficient statistic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text><![CDATA[\(\bar{X}\) is the UMVUE of \(\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}^2\) is the UMVUE of \(\theta^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>

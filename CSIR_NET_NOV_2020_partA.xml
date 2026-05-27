@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/NOV 2020/Part A - General Aptitude</text></category>
+  <info format="html"><text><![CDATA[<p>CSIR-UGC NET Mathematical Sciences, 26 November 2020, Shift 2. Part A: General Aptitude (Q1-20). Marks: +2, -0.5. Attempt any 15.</p>]]></text></info>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q1 - Find f(0)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Find \(f(0)\) if \(f(x+2)=(x+1)^{34}-(x+1)^{33}+5\).</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) 7</strong></p><p>Set \(x=-2\): \(f(0)=(-1)^{34}-(-1)^{33}+5=1+1+5=7\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[7]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[72]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q2 - Shortest distance between parallel lines</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The shortest distance between parallel lines A (\(y=x\)) and B (\(y=x-2\)) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) \(\sqrt{2}\)</strong></p><p>Distance \(=\frac{|0-(-2)|}{\sqrt{1^2+1^2}}=\frac{2}{\sqrt{2}}=\sqrt{2}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sqrt{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\sqrt{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\sqrt{3}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q3 - Minimum and maximum cost</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Two varieties A, B of rice cost Rs.30 and Rs.90/kg; varieties C, D of pulses cost Rs.100 and Rs.120/kg. Constraints: at least 1 kg each of A, B and at least 0.5 kg each of C, D; total 5 kg. Minimum and maximum costs are respectively</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) Rs.290 and Rs.470</strong></p><p>Min: maximize cheap items. A=3 kg, B=1 kg, C=0.5 kg, D=0.5 kg: cost = 3(30)+1(90)+0.5(100)+0.5(120) = 90+90+50+60 = 290. Max: A=1, B=1, C=0.5, D=2.5: 30+90+50+300 = 470.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Rs.150 and Rs.600]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Rs.260 and Rs.530]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Rs.290 and Rs.470]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Rs.370 and Rs.460]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q4 - Logic puzzle: crime and twins</text></name>
+  <questiontext format="html"><text><![CDATA[<p>One of A, B, C, D committed a crime. A and D always tell the truth; B and C always lie. C and D are identical twins. A says "D is innocent"; B says "A is guilty"; among C and D, one says "A is innocent" and the other says "B is guilty". Which of the following is <strong>FALSE</strong>?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) C is innocent</strong></p><p>A (truthful): D is innocent. B (liar): "A is guilty" is a lie, so A is innocent. D (truthful twin) says "B is guilty" &rArr; B is guilty. Hence C committed the crime, so "C is innocent" is FALSE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[D said "A is innocent"]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[D is innocent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[B is innocent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[C is innocent]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q5 - Venn diagram: quadruped, mammal, whale, lizard</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which Venn diagram represents the relations between: quadruped, mammal, whale, house lizard? (Whale is a mammal but not a quadruped; house lizard is a quadruped but not a mammal.)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) Diagram 4</strong></p><p>Mammals and quadrupeds partially overlap. Whale lies in the mammal-only region; house lizard in the quadruped-only region. Diagram 4 correctly shows this partial overlap configuration.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Diagram 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Diagram 2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Diagram 3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Diagram 4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q6 - Height of water poured from tube into bucket</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A 7 m long tube with inner diameter 2 cm is filled with water and poured into a cylindrical bucket of inner base area 200 cm\(^2\). Approximate height (cm) of water in the bucket is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) 11</strong></p><p>Volume of water: \(\pi r^2 L = \pi(1)^2(700) = 700\pi \approx 2199\) cm\(^3\). Height: \(700\pi/200 = 3.5\pi \approx 11\) cm.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[22]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[44]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[9]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[11]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q7 - Rate of height increase in cone</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Water fills a cone from the top at a constant volumetric rate. The rate of increase of the height of the water column</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) increases as cube-root of the volumetric rate</strong></p><p>For cone with half-angle \(\alpha\): \(V=\frac{1}{3}\pi\tan^2\!\alpha\cdot h^3\), so \(h\propto V^{1/3}\). With constant volumetric rate \(Q\), \(V=Qt\), so \(h\propto t^{1/3}\) and \(dh/dt\propto t^{-2/3}\), which decreases over time.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[is linearly dependent on time]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[depends on the apex angle of the cone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[increases as cube-root of the volumetric rate]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[increases as square-root of the volumetric rate]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q8 - Probability at least 2 bullets in same square</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A square board is divided into 9 identical small squares. Three bullets are shot randomly (each with equal probability of hitting any square). \(P(\text{at least 2 bullets hit the same small square}) =\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) 25/81</strong></p><p>P(all 3 in different squares) \(= 1\cdot\frac{8}{9}\cdot\frac{7}{9}=\frac{56}{81}\). So P(at least 2 in same) \(=1-\frac{56}{81}=\frac{25}{81}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(56/81\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(25/81\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q9 - Absorbance ratio of mixture</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Wavelength-dependent absorbance of compounds A and B is shown. Let \(R=\) absorbance at 650 nm / absorbance at 950 nm. If the mixture contains 95% compound A, then \(R\) must be</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) 1</strong></p><p>With 95% compound A dominating, \(R\approx R_A\). From the figure, compound A has equal absorbance at both wavelengths, so \(R=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[95]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[less than 1]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q10 - Epidemic spread rate vs infected count</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An epidemic spreads in a population of size \(P\). The rate \(R\propto N(P-N)\) where \(N\) = number infected. The correct graph of \(R\) vs \(N\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) Symmetric bell-shape peaking at \(N=P/2\)</strong></p><p>\(R=kN(P-N)\) is a downward-opening parabola with zeros at \(N=0\) and \(N=P\), maximum at \(N=P/2\): a symmetric bell shape.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Linear increasing curve]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bell-shape peaking before \(P/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Symmetric bell-shape peaking at \(N=P/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Exponential increase]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q11 - Work efficiency of A, B, C</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A and B together complete a work in 30 days; B and C in 24 days; C and A in 28 days. Which conclusion is correct?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) C most efficient and A least efficient</strong></p><p>Let \(a,b,c\) be daily rates. \(a+b=1/30,\ b+c=1/24,\ c+a=1/28\). Solving with LCM(30,24,28)=840: \(a=23/1680,\ b=33/1680,\ c=37/1680\). Since \(c>b>a\): C most efficient, A least efficient.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[C most efficient, B least efficient]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[B most efficient; least cannot be determined]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[C most efficient; least cannot be determined]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[C most efficient and A least efficient]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q12 - Clock A time when clock C shows Wednesday 2 pm</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Clock A loses 4 min/hr; B is correct; C gains 3 min/hr. On Monday, all show 8 pm. On the following Wednesday, when C shows 2 pm, clock A shows</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) 9:20 am</strong></p><p>C advances at 63 min/real hr. C shows Wed 2 pm, which is 42 h after Mon 8 pm. Real elapsed time: \(T=42\times(60/63)=40\) h. A advances 56 min/real hr, reads \(40\times(56/60)=37\frac{1}{3}\) h after Mon 8 pm = Wed 9:20 am.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[7:20 am]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[8:40 am]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[9:20 am]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[10:40 am]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q13 - Number of students from stationery count</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a class: 1 pencil per 2 students; 1 eraser per 3 students; 1 ruler per 4 students. Total stationery items \(=65\). Number of students is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) 60</strong></p><p>\(\frac{n}{2}+\frac{n}{3}+\frac{n}{4}=65 \Rightarrow \frac{13n}{12}=65 \Rightarrow n=60\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[55]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[60]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[65]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[70]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q14 - Highest density water sample</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Four water samples: A (salinity 36, 12°C); B (salinity 36, 16°C); C (salinity 32, 12°C); D (salinity 32, 16°C). Which has the highest density?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (1) A</strong></p><p>Higher salinity increases density; lower temperature increases density. Sample A has the highest salinity (36) and lowest temperature (12°C), giving the highest density.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[A]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[B]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[C]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[D]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q15 - Day when recovered equals twice active cases</text></name>
+  <questiontext format="html"><text><![CDATA[<p>COVID-19 data: Day 0 (active 990, recovered 760), Day 1 (1000, 800), Day 4 (1030, 920), Day 7 (1060, 1040), Day 10 (1090, 1160). Assuming linear trend, on which day will recovered cases equal twice the active cases?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) 64 (NTA official key)</strong></p><p>Active: \(A(n)=990+10n\); Recovered: \(R(n)=760+40n\). Set \(R=2A\): \(760+40n=1980+20n \Rightarrow n=61\). NTA official answer: Day 64.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[61]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[62]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[63]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[64]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q16 - Time for A and B to complete course together</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Boat weighs 60 kg; oarsman A (80 kg); oarsman B (90 kg). At constant power, time \(\propto\) total weight. A alone: 1 hr; B alone: 1.5 hrs. Assuming powers add, time to complete together is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (2) 57.5 min</strong></p><p>Power \(=W/T\): \(P_A=140/1=140,\ P_B=150/1.5=100\). Together: \(T=230/(140+100)=230/240\approx 0.9583\) hr \(=57.5\) min.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[49.4 min]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[57.5 min]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[62.6 min]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[72.5 min]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q17 - Area of triangle OAE in parallelogram</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Parallelogram ABCD with centre O and E = midpoint of CD; base \(a\), height \(h\). Area of \(\triangle OAE\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) \(\tfrac{1}{8}ah\)</strong></p><p>Place A=(0,0), B=(a,0), C=(a,h), D=(0,h). O=(a/2,h/2), E=(a/2,h). Area of \(\triangle OAE=\frac{1}{2}|det\begin{pmatrix}a/2&h/2\\a/2&h\end{pmatrix}|=\frac{1}{2}\cdot\frac{ah}{4}=\frac{ah}{8}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\tfrac{1}{5}ah\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\tfrac{1}{6}ah\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\tfrac{1}{8}ah\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\tfrac{1}{7}ah\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q18 - Divisibility of sum of first n even numbers</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The sum of the first \(n\) even numbers is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) Divisible by both \(n\) and \((n+1)\)</strong></p><p>Sum \(=2+4+\cdots+2n=n(n+1)\), which is divisible by both \(n\) and \(n+1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Divisible by \(n\) but not \((n+1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Divisible by \((n+1)\) but not \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Divisible by both \(n\) and \((n+1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Divisible by neither]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q19 - Angle in regular pentagram</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A, B, C, D, E are vertices of a regular pentagram (star figure). The angle \(\angle ABC\) is</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (4) \(36^\circ\)</strong></p><p>In a regular pentagram, each star-point is an isoceles triangle with apex angle \(36^\circ\) and base angles \(72^\circ\) each (since \(36+72+72=180^\circ\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(48^\circ\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(72^\circ\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(54^\circ\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(36^\circ\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>NOV2020 Q20 - Poles to remove for 40 m spacing</text></name>
+  <questiontext format="html"><text><![CDATA[<p>On a 200 m road, poles are placed at 20 m intervals (11 poles including endpoints). How many poles must be removed so that poles are at maximum 40 m intervals?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (3) 5</strong></p><p>Poles at 20 m spacing: 0, 20, 40, ..., 200 m (11 poles). For 40 m spacing: keep 0, 40, 80, 120, 160, 200 m (6 poles). Poles removed: \(11-6=5\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[8]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
