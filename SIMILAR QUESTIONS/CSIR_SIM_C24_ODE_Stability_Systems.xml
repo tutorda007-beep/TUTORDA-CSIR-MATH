@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/ODE — Stability Theory and Systems of Differential Equations</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Stability - Equilibria of autonomous systems</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the autonomous system \(\dot{\mathbf{x}}=\mathbf{f}(\mathbf{x})\), an equilibrium \(\mathbf{x}^*\) satisfies \(\mathbf{f}(\mathbf{x}^*)=\mathbf{0}\). Which are TRUE?</p>
+<ol type="A"><li>\(\mathbf{x}^*\) is Lyapunov stable if for every \(\varepsilon>0\) there exists \(\delta>0\) such that \(\|\mathbf{x}(0)-\mathbf{x}^*\|<\delta\Rightarrow\|\mathbf{x}(t)-\mathbf{x}^*\|<\varepsilon\) for all \(t\ge0\).</li><li>\(\mathbf{x}^*\) is asymptotically stable if it is Lyapunov stable and \(\mathbf{x}(t)\to\mathbf{x}^*\) as \(t\to\infty\).</li><li>Asymptotic stability implies Lyapunov stability.</li><li>Lyapunov stability implies asymptotic stability.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Definitions of stability. (C) Asymptotic stability is a stronger condition that includes Lyapunov stability. (D) FALSE: a center equilibrium (e.g. \(\dot x=y,\ \dot y=-x\)) is Lyapunov stable but NOT asymptotically stable (solutions orbit, don't converge).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Stability - Lyapunov's direct method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Lyapunov function \(V:\mathbb{R}^n\to\mathbb{R}\): \(V(\mathbf{x}^*)=0\), \(V(\mathbf{x})>0\) for \(\mathbf{x}\ne\mathbf{x}^*\). \(\dot V=\nabla V\cdot\mathbf{f}(\mathbf{x})\). Which are TRUE?</p>
+<ol type="A"><li>If \(\dot V(\mathbf{x})\le0\) near \(\mathbf{x}^*\), then \(\mathbf{x}^*\) is Lyapunov stable.</li><li>If \(\dot V(\mathbf{x})<0\) for all \(\mathbf{x}\ne\mathbf{x}^*\), then \(\mathbf{x}^*\) is asymptotically stable.</li><li>If \(\dot V(\mathbf{x})>0\) for all \(\mathbf{x}\ne\mathbf{x}^*\), then \(\mathbf{x}^*\) is unstable (Chetaev's theorem).</li><li>The Lyapunov function is always the total energy of the system.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Lyapunov stability theorem. (B) Asymptotic stability theorem. (C) Instability theorem (if \(\dot V>0\) in a neighborhood of \(\mathbf{x}^*\), the equilibrium is unstable). (D) FALSE: the Lyapunov function is a mathematical tool and can be any suitable positive definite function; energy works for conservative systems but not in general.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Stability - Linear systems and eigenvalue criterion</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the linear system \(\dot{\mathbf{x}}=A\mathbf{x}\) with \(A\in M_n(\mathbb{R})\), which are TRUE?</p>
+<ol type="A"><li>The zero equilibrium is asymptotically stable iff all eigenvalues of \(A\) have negative real part.</li><li>The zero equilibrium is Lyapunov stable iff all eigenvalues have non-positive real part and purely imaginary eigenvalues have equal algebraic and geometric multiplicity.</li><li>The general solution is \(\mathbf{x}(t)=e^{tA}\mathbf{x}(0)\).</li><li>If any eigenvalue has positive real part, the zero solution is unstable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Asymptotic stability \(\Leftrightarrow\) all \(\text{Re}(\lambda_i)<0\) (Hurwitz stable). (B) Lyapunov stability for linear systems requires semi-stability: no eigenvalue with positive real part, and purely imaginary eigenvalues are semi-simple. (C) Matrix exponential. (D) Instability if any \(\text{Re}(\lambda)>0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Stability - Phase portraits and classification of 2D equilibria</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(\dot{\mathbf{x}}=A\mathbf{x}\) in \(\mathbb{R}^2\) with eigenvalues \(\lambda_{1,2}\). Which are TRUE?</p>
+<ol type="A"><li>If \(\lambda_1,\lambda_2<0\) (real, negative): stable node.</li><li>If \(\lambda_1<0<\lambda_2\) (real, opposite signs): saddle point (always unstable).</li><li>If \(\lambda_{1,2}=\alpha\pm i\beta\) with \(\alpha<0\): stable spiral (focus).</li><li>If \(\lambda_{1,2}=\pm i\beta\) (purely imaginary): unstable spiral.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Both negative real eigenvalues → stable node. (B) Opposite sign eigenvalues → saddle (unstable). (C) Complex eigenvalues with negative real part → stable spiral/focus. (D) FALSE: purely imaginary eigenvalues \(\lambda=\pm i\beta\) give a CENTER (stable but not asymptotically stable), not an unstable spiral.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</small><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Systems - Poincaré-Bendixson theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Poincaré-Bendixson theorem: for a planar autonomous system, a bounded orbit that does not approach an equilibrium must eventually approach a periodic orbit. Which are TRUE?</p>
+<ol type="A"><li>The theorem implies existence of periodic orbits in bounded invariant regions with no equilibria.</li><li>The theorem applies in \(\mathbb{R}^2\) but not in \(\mathbb{R}^n\) for \(n\ge3\) (where chaos can occur).</li><li>A trapping region (positively invariant compact set) with no interior equilibria must contain a limit cycle.</li><li>The theorem guarantees uniqueness of limit cycles.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(C) Applications of Poincaré-Bendixson. (B) In \(\mathbb{R}^3\), the Lorenz system exhibits chaos — Poincaré-Bendixson's topological constraints fail in higher dimensions. (D) FALSE: the theorem ensures existence of a periodic orbit but not uniqueness — there can be multiple limit cycles (e.g. van der Pol has a unique limit cycle, but this follows from additional analysis).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Systems - Hartman-Grobman linearization theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Hartman-Grobman theorem: near a hyperbolic equilibrium \(\mathbf{x}^*\) of \(\dot{\mathbf{x}}=\mathbf{f}(\mathbf{x})\), the flow is topologically conjugate to the flow of the linearization \(\dot{\mathbf{y}}=Df(\mathbf{x}^*)\mathbf{y}\). Which are TRUE?</p>
+<ol type="A"><li>A hyperbolic equilibrium has no eigenvalues of \(Df(\mathbf{x}^*)\) on the imaginary axis.</li><li>Near a hyperbolic equilibrium, stability is determined by the linearization.</li><li>At a non-hyperbolic equilibrium (eigenvalues on imaginary axis), the linearization may misclassify stability.</li><li>Hartman-Grobman gives a smooth (diffeomorphic) conjugacy.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Definition of hyperbolic equilibrium. (B)(C) For hyperbolic equilibria, linearization determines stability. (D) FALSE: Hartman-Grobman gives a homeomorphism (continuous conjugacy), NOT a diffeomorphism — the conjugacy is only \(C^0\). Smooth conjugacy would require Sternberg's theorem under additional non-resonance conditions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Systems - Routh-Hurwitz stability criterion</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Routh-Hurwitz criterion: for \(p(\lambda)=\lambda^n+a_1\lambda^{n-1}+\cdots+a_n\), all roots have negative real part iff all leading principal minors of the Hurwitz matrix are positive. Which are TRUE?</p>
+<ol type="A"><li>For \(n=2\): \(a_1>0\) and \(a_2>0\).</li><li>For \(n=3\): \(a_1>0\), \(a_3>0\), and \(a_1a_2>a_3\).</li><li>A necessary condition is that all coefficients \(a_i>0\).</li><li>Positive coefficients are sufficient for stability for all \(n\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Routh-Hurwitz conditions for \(n=2,3\). (C) All positive coefficients is necessary (but not sufficient for \(n\ge3\)). (D) FALSE: for \(n\ge3\), positive coefficients alone are not sufficient. E.g. \(\lambda^3+\lambda^2+10\lambda+1\): all positive but check \(a_1a_2=10>1=a_3\) — actually this IS stable. But \(\lambda^4+\lambda^3+2\lambda^2+\lambda+3\): all positive but NOT all roots have \(\text{Re}<0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Systems - Stable and unstable manifolds</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a hyperbolic equilibrium \(\mathbf{x}^*\): the stable manifold \(W^s\) consists of trajectories converging to \(\mathbf{x}^*\) as \(t\to+\infty\), and the unstable manifold \(W^u\) those converging as \(t\to-\infty\). Which are TRUE?</p>
+<ol type="A"><li>\(W^s\) and \(W^u\) are smooth manifolds tangent to the stable/unstable eigenspaces of \(Df(\mathbf{x}^*)\).</li><li>\(\dim(W^s)=\)number of eigenvalues with negative real part.</li><li>The stable manifold theorem guarantees existence and smoothness of \(W^s,W^u\).</li><li>For a saddle point in \(\mathbb{R}^2\): \(W^s\) and \(W^u\) are both 1-dimensional curves.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B)(C) Stable manifold theorem (Hadamard-Perron). (D) For a saddle in \(\mathbb{R}^2\) with one positive and one negative eigenvalue: \(W^s\) and \(W^u\) are each 1D curves (the stable and unstable separatrices).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Systems - Periodic orbits and Floquet theory</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a periodic solution \(\mathbf{x}(t)\) of period \(T\), Floquet theory studies the variational equation \(\dot{\mathbf{y}}=Df(\mathbf{x}(t))\mathbf{y}\). The monodromy matrix \(M=\Phi(T)\) (fundamental matrix). Which are TRUE?</p>
+<ol type="A"><li>The eigenvalues of \(M\) (Floquet multipliers) determine stability of the periodic orbit.</li><li>A Floquet multiplier \(\mu\) with \(|\mu|<1\) corresponds to a decaying perturbation.</li><li>One Floquet multiplier is always 1 (corresponding to the direction along the orbit).</li><li>If all Floquet multipliers satisfy \(|\mu|<1\), the periodic orbit is asymptotically stable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Floquet multipliers and stability. (C) The trivial multiplier \(\mu=1\) corresponds to perturbations along the orbit (translating the period). (D) Asymptotic stability of the limit cycle if non-trivial multipliers satisfy \(|\mu|<1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Stability - Lyapunov equation for linear systems</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(\dot{\mathbf{x}}=A\mathbf{x}\), the Lyapunov equation \(A^TP+PA=-Q\) (with \(Q\succ0\) given). Which are TRUE?</p>
+<ol type="A"><li>If \(A\) is Hurwitz stable (all eigenvalues \(\text{Re}<0\)), then for any \(Q\succ0\) the Lyapunov equation has a unique positive definite solution \(P\succ0\).</li><li>\(V(\mathbf{x})=\mathbf{x}^TP\mathbf{x}\) is a Lyapunov function with \(\dot V=-\mathbf{x}^TQ\mathbf{x}<0\).</li><li>The solution is \(P=\int_0^\infty e^{A^Tt}Qe^{At}\,dt\).</li><li>If a \(P\succ0\) solving the Lyapunov equation exists, \(A\) is necessarily Hurwitz stable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(D) Lyapunov's stability theorem for linear systems: \(A\) is Hurwitz iff the Lyapunov equation has a PD solution for every \(Q\succ0\). (B) \(\dot V=\dot{\mathbf{x}}^TP\mathbf{x}+\mathbf{x}^TP\dot{\mathbf{x}}=\mathbf{x}^T(A^TP+PA)\mathbf{x}=-\mathbf{x}^TQ\mathbf{x}\). (C) Explicit formula for the Lyapunov solution.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Systems - Predator-prey (Lotka-Volterra)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Lotka-Volterra: \(\dot x=ax-bxy\), \(\dot y=-cy+dxy\) (\(a,b,c,d>0\)). Equilibria: \((0,0)\) and \((c/d,a/b)\). Which are TRUE?</p>
+<ol type="A"><li>The non-trivial equilibrium \((c/d,a/b)\) has purely imaginary eigenvalues (center).</li><li>Orbits near the non-trivial equilibrium are closed (periodic solutions).</li><li>The quantity \(H=d\,x-c\ln x+b\,y-a\ln y\) is a conserved quantity (first integral).</li><li>The trivial equilibrium \((0,0)\) is asymptotically stable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Linearization at \((c/d,a/b)\) gives eigenvalues \(\pm i\sqrt{ac}\). (B) Since it's a center in a conservative system, orbits are closed. (C) \(\dot H=0\) along solutions (verify by direct computation). (D) FALSE: the trivial equilibrium \((0,0)\) is a saddle point — \(x\)-axis is unstable (\(x\) grows), \(y\)-axis is stable (\(y\) decays).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Systems - Bifurcation theory basics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Bifurcation occurs when the qualitative behavior of a system changes as a parameter \(\mu\) varies. Which are TRUE?</p>
+<ol type="A"><li>A saddle-node bifurcation: two equilibria collide and annihilate as \(\mu\) passes a critical value.</li><li>A Hopf bifurcation: an equilibrium changes stability and a limit cycle is born.</li><li>A pitchfork bifurcation (supercritical): a stable equilibrium splits into two stable equilibria and one unstable one.</li><li>Bifurcations can only occur at degenerate (non-hyperbolic) equilibria.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B)(C) Standard bifurcation types. (D) TRUE: bifurcations require a non-hyperbolic equilibrium at the bifurcation point (an eigenvalue must cross the imaginary axis); this is a necessary condition for structural instability.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Stability - Gronwall inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Gronwall's inequality: if \(u(t)\le\alpha+\int_0^t\beta(s)u(s)\,ds\) for \(\alpha\ge0,\ \beta\ge0\), then \(u(t)\le\alpha\exp\!\left(\int_0^t\beta(s)\,ds\right)\). Which are TRUE?</p>
+<ol type="A"><li>Gronwall's inequality is used to prove uniqueness of solutions to ODEs.</li><li>It gives bounds on how fast solutions can grow.</li><li>For constant \(\beta\): \(u(t)\le\alpha e^{\beta t}\).</li><li>Gronwall's inequality implies that all ODE solutions must grow exponentially.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Gronwall is fundamental to ODE existence-uniqueness theory (Picard-Lindelöf). (B)(C) Direct applications of the inequality. (D) FALSE: Gronwall gives an UPPER bound; if \(\alpha=0\) (e.g. comparing a solution to zero), the inequality gives \(u(t)\le0\), implying \(u=0\) (used for uniqueness). Solutions need not grow exponentially.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Systems - LaSalle invariance principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>LaSalle's invariance principle: let \(V\) be a Lyapunov function with \(\dot V\le0\). Every solution starting in a compact positively invariant set \(\Omega\) approaches the largest invariant set \(M\subseteq\{x:\dot V=x)=0\}\). Which are TRUE?</p>
+<ol type="A"><li>LaSalle's principle extends Lyapunov's theorem by allowing \(\dot V\le0\) (not necessarily \(<0\)).</li><li>If \(M=\{\mathbf{0}\}\), then the origin is asymptotically stable.</li><li>LaSalle's principle can prove asymptotic stability even when \(\dot V\) is only negative semi-definite.</li><li>LaSalle's principle requires \(V\) to be a strict Lyapunov function (\(\dot V<0\)).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B)(C) LaSalle's invariance principle. (D) FALSE: LaSalle's principle specifically handles the case \(\dot V\le0\) (negative semi-definite), not requiring strict negative definiteness — that is its advantage over basic Lyapunov theory.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Systems - Existence and uniqueness theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Picard-Lindelöf theorem: if \(\mathbf{f}\) is continuous on an open set \(U\) and Lipschitz in \(\mathbf{x}\), then the IVP \(\dot{\mathbf{x}}=\mathbf{f}(t,\mathbf{x})\), \(\mathbf{x}(t_0)=\mathbf{x}_0\) has a unique local solution. Which are TRUE?</p>
+<ol type="A"><li>A Lipschitz condition in \(\mathbf{x}\) is sufficient for uniqueness.</li><li>Continuity of \(\mathbf{f}\) alone (Peano theorem) guarantees existence but not uniqueness.</li><li>Solutions can be extended as long as they remain in a compact set where \(\mathbf{f}\) is Lipschitz.</li><li>If \(\mathbf{f}\) is globally Lipschitz, the solution exists for all time.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Lipschitz condition sufficient for uniqueness (Picard-Lindelöf). (B) Peano existence theorem: continuity → existence (possibly non-unique). (C) Standard extension argument for ODE solutions. (D) Global Lipschitz condition prevents finite-time blow-up → solution exists globally.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

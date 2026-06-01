@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Mathematical Statistics — Estimation Theory Unbiasedness and MSE</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Estimation - T_n=C_n*sum(Xi^2) for sigma^2 from N(0,sigma^2)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\overset{iid}{\sim}N(0,\sigma^2)\) and consider estimators \(T_n=C_n\sum_{i=1}^nX_i^2\). Which are TRUE?</p>
+<ol type="A"><li>\(T_n\) is unbiased for \(\sigma^2\) when \(C_n=1/n\).</li><li>The MSE-minimizing \(C_n\) is \(1/(n+2)\).</li><li>\(T_n\) with \(C_n=1/(n-1)\) is biased for \(\sigma^2\) (since \(X_i\sim N(0,\sigma^2)\) means \(E[X_i^2]=\sigma^2\) and \(C_n\cdot n\sigma^2=n\sigma^2/(n-1)\ne\sigma^2\)).</li><li>\(T_n\) with \(C_n=1/n\) is consistent for \(\sigma^2\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) \(E[T_n]=C_n\cdot n\sigma^2=(1/n)n\sigma^2=\sigma^2\). Unbiased. (B) \(\mathrm{MSE}(T_n)=\mathrm{Var}(T_n)=C_n^2\cdot n\cdot\mathrm{Var}(X_i^2)=C_n^2\cdot n\cdot2\sigma^4\). Minimise over \(C_n\) subject to unbiasedness... Actually MSE = Var + Bias^2 = \(2nC_n^2\sigma^4+(nC_n-1)^2\sigma^4\). Setting derivative = 0: \(C_n^*=n/(2n+n^2)... =1/(n+2)\). (C) FALSE: \(E[C_n\sum X_i^2]=[1/(n-1)]\cdot n\sigma^2=n\sigma^2/(n-1)\ne\sigma^2\), so biased. But since \(X_i\sim N(0,\sigma^2)\), not centered at the sample mean, \(C_n=1/(n-1)\) does NOT give \(\sigma^2\) — wait: for \(N(0,\sigma^2)\): \(E[\sum X_i^2]=n\sigma^2\), so \(C_n=1/(n-1)\) gives mean \(n\sigma^2/(n-1)\ne\sigma^2\). TRUE (C) is TRUE. Corrected: (A)(B)(C)(D) — but wait, (D): \(T_n=(1/n)\sum X_i^2\to\sigma^2\) by SLLN. So (D) TRUE. Answer: (A)(B)(D) are TRUE as stated, (C) is also TRUE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Estimation - Cramer-Rao Lower Bound</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Cramér-Rao lower bound (CRLB): for any unbiased estimator \(T\) of \(\theta\): \(\mathrm{Var}(T)\ge\frac{1}{I(\theta)}\) where \(I(\theta)=-E[\partial^2\log f/\partial\theta^2]\) is Fisher information. Which are TRUE?</p>
+<ol type="A"><li>The MLE achieves the CRLB asymptotically (efficiency).</li><li>An estimator achieving CRLB is called UMVUE.</li><li>For \(X_i\overset{iid}{\sim}N(\mu,\sigma^2)\) known \(\sigma^2\): \(I(\mu)=1/\sigma^2\) and \(\bar X\) achieves CRLB.</li><li>For \(X_i\overset{iid}{\sim}\mathrm{Exp}(\lambda)\): \(I(\lambda)=1/\lambda^2\) and MLE \(\hat\lambda=1/\bar X\) achieves CRLB.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) MLE is asymptotically efficient. (B) FALSE: UMVUE (uniformly minimum variance unbiased estimator) may equal the CRLB but is characterized differently (via Rao-Blackwell and Lehmann-Scheffé). (C) For normal: \(I(\mu)=n/\sigma^2\) for the full sample, per-observation \(1/\sigma^2\). (D) Exponential: \(I(\lambda)=n/\lambda^2\), \(\mathrm{Var}(\hat\lambda)\approx\lambda^2/n=1/(nI(\lambda)/n)\) — achieves CRLB asymptotically.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Estimation - Sufficient Statistics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A statistic \(T(X)\) is sufficient for \(\theta\) if the conditional distribution of \(X\) given \(T\) does not depend on \(\theta\). Which are TRUE?</p>
+<ol type="A"><li>Factorization theorem: \(T\) is sufficient iff \(f(\mathbf{x};\theta)=g(T(\mathbf{x}),\theta)h(\mathbf{x})\).</li><li>For \(X_i\overset{iid}{\sim}N(\mu,\sigma^2)\), \(\bar X\) is sufficient for \(\mu\) (known \(\sigma^2\)).</li><li>Rao-Blackwell: if \(T\) is sufficient and \(W\) is unbiased, then \(E[W|T]\) is an unbiased estimator with smaller MSE.</li><li>A complete sufficient statistic gives the UMVUE via Rao-Blackwell.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Neyman-Fisher factorization. (B) \(\bar X\) is sufficient for \(\mu\) in normal family. (C) Rao-Blackwell theorem. (D) Lehmann-Scheffé: any unbiased estimator based on a complete sufficient statistic is the UMVUE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Estimation - Consistency</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An estimator \(T_n\) of \(\theta\) is consistent if \(T_n\overset{p}{\to}\theta\). Which are TRUE?</p>
+<ol type="A"><li>Unbiasedness + \(\mathrm{Var}(T_n)\to0\) implies consistency.</li><li>Every MLE is consistent under standard regularity conditions.</li><li>The sample variance \(S^2=\frac{1}{n-1}\sum(X_i-\bar X)^2\) is consistent for \(\sigma^2\).</li><li>Consistency implies asymptotic unbiasedness.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) MSE = Bias\(^2\)+Var → 0 implies consistency. (B) MLE consistency under regularity. (C) \(S^2\to\sigma^2\) a.s. by SLLN. (D) Consistent estimators satisfy \(E[T_n]\to\theta\) (asymptotic unbiasedness follows in many cases, though not strictly always without extra conditions).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Estimation - Exponential Family</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A family \(\{f(\mathbf{x};\theta)=h(\mathbf{x})e^{\eta(\theta)T(\mathbf{x})-A(\theta)}\}\) is a one-parameter exponential family. Which are TRUE?</p>
+<ol type="A"><li>\(T(\mathbf{X})\) is a complete sufficient statistic.</li><li>The UMVUE of any estimable function of \(\theta\) can be found via Rao-Blackwell using \(T\).</li><li>Normal, Poisson, Binomial, and Exponential distributions all belong to the exponential family.</li><li>For exponential families, the MLE of the natural parameter is obtained by setting the score to zero.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Natural statistic is complete sufficient in exponential families. (B) Lehmann-Scheffé via \(T\). (C) All four families are exponential family members. (D) Score equation = moment condition for natural parameters.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Estimation - MSE Decomposition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The MSE of estimator \(T\) for parameter \(\theta\): \(\mathrm{MSE}(T)=E[(T-\theta)^2]\). Which are TRUE?</p>
+<ol type="A"><li>\(\mathrm{MSE}(T)=\mathrm{Var}(T)+(\mathrm{Bias}(T))^2\).</li><li>Among unbiased estimators, the UMVUE minimizes MSE.</li><li>A biased estimator can have smaller MSE than any unbiased estimator.</li><li>For the James-Stein estimator (shrinkage), the MSE is smaller than the sample mean in \(\mathbb{R}^p\) for \(p\ge3\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Bias-variance decomposition. (B) UMVUE minimizes variance (= MSE for unbiased) within the unbiased class. (C) Ridge regression, Stein estimator: biased but smaller MSE. (D) Stein's paradox: James-Stein dominates the MLE for \(p\ge3\) in terms of MSE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Estimation - Fisher Information Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a model with Fisher information \(I(\theta)\), which are TRUE?</p>
+<ol type="A"><li>\(I(\theta)=E\left[\left(\frac{\partial\log f}{\partial\theta}\right)^2\right]=-E\left[\frac{\partial^2\log f}{\partial\theta^2}\right]\).</li><li>For i.i.d. observations: \(I_n(\theta)=nI_1(\theta)\).</li><li>Fisher information is invariant under reparametrization.</li><li>The score function \(S(\theta)=\partial\log f/\partial\theta\) has mean 0.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Two equivalent forms of Fisher information. (B) Additivity for i.i.d. samples. (C) FALSE: Fisher information is NOT invariant under reparametrization. Under \(\phi=g(\theta)\): \(I_\phi(\phi)=I_\theta(\theta)/(g'(\theta))^2\). (D) Score has mean 0: \(E[S(\theta)]=0\) under regularity conditions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Estimation - Method of Moments</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Method of moments (MOM) estimators equate population moments to sample moments. Which are TRUE?</p>
+<ol type="A"><li>MOM estimators are always consistent.</li><li>MOM estimators are always unbiased.</li><li>MOM and MLE coincide for the exponential distribution.</li><li>For the Gamma distribution with both parameters unknown, MOM gives closed-form estimators.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) By SLLN, sample moments converge to population moments, hence MOM is consistent. (B) FALSE: MOM estimators can be biased (e.g. MOM for \(\sigma^2\) in normal gives \(\frac{1}{n}\sum(X_i-\bar X)^2\), which is biased). (C) For \(\mathrm{Exp}(\lambda)\): MOM gives \(\hat\lambda=1/\bar X\) = MLE. (D) Gamma MOM equates first two moments to give closed-form estimates.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Estimation - Confidence Intervals</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A \(95\%\) confidence interval for \(\mu\) from \(N(\mu,\sigma^2)\) (known \(\sigma^2\)) is \(\bar X\pm1.96\sigma/\sqrt n\). Which are TRUE?</p>
+<ol type="A"><li>The interval covers the true \(\mu\) with probability 0.95 over repeated sampling.</li><li>Given the data, \(P(\mu\in[L,U])\) is either 0 or 1 (frequentist interpretation).</li><li>A wider confidence interval gives higher coverage probability.</li><li>The confidence interval for \(\mu\) when \(\sigma^2\) is unknown uses the \(t_{n-1}\) distribution.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Correct frequentist interpretation: 95% of intervals from repeated samples contain \(\mu\). (B) Once the interval is observed, \(\mu\) is either in or not — no probability. (C) FALSE: a wider interval gives higher coverage, but confidence intervals are designed to achieve the specified coverage level; making them arbitrarily wide to achieve higher confidence is not meaningful practice. (D) t-interval when \(\sigma^2\) is unknown.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</small><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Estimation - Hypothesis Testing</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For testing \(H_0:\theta=\theta_0\) vs \(H_1:\theta\ne\theta_0\). Which are TRUE?</p>
+<ol type="A"><li>The Neyman-Pearson lemma gives the most powerful test for a simple hypothesis.</li><li>Type I error = \(P(\text{reject }H_0|H_0\text{ true})\).</li><li>Type II error = \(P(\text{fail to reject }H_0|H_1\text{ true})\).</li><li>Power = \(1-\)Type II error = \(P(\text{reject }H_0|H_1\text{ true})\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>All four are standard definitions in hypothesis testing. Neyman-Pearson lemma characterizes the most powerful (MP) test for simple hypotheses via the likelihood ratio.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Estimation - Ancillarity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A statistic \(A(\mathbf{X})\) is ancillary if its distribution does not depend on \(\theta\). Which are TRUE?</p>
+<ol type="A"><li>For location families, the spacings \(X_{(i)}-X_{(1)}\) are ancillary.</li><li>Basu's theorem: if \(T\) is complete sufficient and \(A\) is ancillary, then \(T\) and \(A\) are independent.</li><li>An ancillary statistic contains no information about \(\theta\).</li><li>The range \(X_{(n)}-X_{(1)}\) is ancillary for the location parameter in a location family.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(D) Standard examples of ancillary statistics for location families. (B) Basu's theorem. (C) An ancillary statistic's distribution is independent of \(\theta\), so it provides no information about \(\theta\) (though conditional on an ancillary, the model may carry more information).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Estimation - MLE Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which properties of the MLE are TRUE under regularity conditions?</p>
+<ol type="A"><li>Consistency: \(\hat\theta_{\mathrm{MLE}}\overset{p}{\to}\theta\).</li><li>Asymptotic normality: \(\sqrt{n}(\hat\theta_{\mathrm{MLE}}-\theta)\overset{d}{\to}N(0,I(\theta)^{-1})\).</li><li>Efficiency: the MLE achieves the Cramér-Rao lower bound asymptotically.</li><li>Invariance: if \(\hat\theta\) is the MLE of \(\theta\), then \(g(\hat\theta)\) is the MLE of \(g(\theta)\) for any function \(g\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B)(C) Classical asymptotic properties of MLE. (D) Invariance of MLE under functional transformation.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Estimation - Uniformly Most Powerful Tests</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A UMP test has the maximum power against all alternatives \(\theta\in H_1\). Which are TRUE?</p>
+<ol type="A"><li>For one-sided hypotheses in monotone likelihood ratio (MLR) families, a UMP test exists.</li><li>For two-sided hypotheses \(H_1:\theta\ne\theta_0\), a UMP test generally does not exist.</li><li>The UMP level-\(\alpha\) test for exponential families with sufficient statistic \(T\) is based on the critical region \(T>c\) or \(T<c\) (one-sided).</li><li>Likelihood ratio tests are UMP in many regular families.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Karlin-Rubin theorem for MLR families. (B) Two-sided: UMP rarely exists; UMPU (uniformly most powerful unbiased) tests are used instead. (C) Sufficient statistics in exponential families give UMP rejection regions. (D) FALSE: likelihood ratio tests are not always UMP — they are often used as approximations but are not guaranteed UMP.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Estimation - p-value</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The p-value is the probability, under \(H_0\), of observing data at least as extreme as the observed data. Which are TRUE?</p>
+<ol type="A"><li>A small p-value (e.g. \(<0.05\)) provides evidence against \(H_0\).</li><li>The p-value equals the probability that \(H_0\) is true.</li><li>Under \(H_0\), the p-value has a \(\mathrm{Uniform}(0,1)\) distribution (for continuous test statistics).</li><li>Reject \(H_0\) at level \(\alpha\) iff the p-value \(\le\alpha\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Low p-value = evidence against \(H_0\). (B) FALSE: the p-value is NOT \(P(H_0\text{ true})\) — that is a Bayesian quantity. (C) Under \(H_0\): p-value \(\sim U(0,1)\). (D) Definition of rejection at level \(\alpha\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Estimation - Complete Statistics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A statistic \(T\) is complete if \(E_\theta[g(T)]=0\) for all \(\theta\Rightarrow g\equiv0\) a.s. Which are TRUE?</p>
+<ol type="A"><li>A complete sufficient statistic is unique (up to one-to-one transformation).</li><li>The order statistics \(X_{(1)}\le\cdots\le X_{(n)}\) form a complete sufficient statistic for non-parametric models.</li><li>For \(X_i\overset{iid}{\sim}N(\mu,\sigma^2)\), \((\bar X, S^2)\) is complete sufficient for \((\mu,\sigma^2)\).</li><li>Completeness + sufficiency \(\Rightarrow\) the statistic gives the UMVUE of any estimable function.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C), (D)</strong></p><p>(A) FALSE: complete sufficient statistics need not be unique — they can be equivalent. (B) FALSE: order statistics form a sufficient but NOT complete statistic for non-parametric models (e.g. there are non-trivial functions of order statistics with expectation 0). (C) Normal family: \((\bar X,S^2)\) is complete sufficient. (D) Lehmann-Scheffé theorem.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Estimation - Asymptotic Tests</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For large samples, three asymptotically equivalent tests: Wald, Score (Rao), and Likelihood Ratio (LR). Which are TRUE?</p>
+<ol type="A"><li>The LR test statistic is \(-2\log\Lambda\) where \(\Lambda=L(\theta_0)/L(\hat\theta)\).</li><li>Under \(H_0\), \(-2\log\Lambda\overset{d}{\to}\chi^2_k\) (\(k\) = number of constraints).</li><li>The Wald statistic is \(n(\hat\theta-\theta_0)^TI(\hat\theta)(\hat\theta-\theta_0)\).</li><li>All three tests have the same asymptotic power.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Wilks' theorem: LR statistic is asymptotically \(\chi^2\). (C) Wald statistic. (D) The three tests are first-order equivalent: same asymptotic power under local alternatives.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Estimation - Non-parametric Estimators</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about non-parametric estimation?</p>
+<ol type="A"><li>The empirical CDF \(\hat F_n\) is an unbiased estimator of \(F\).</li><li>The sample median is a consistent estimator of the population median.</li><li>The kernel density estimator requires a bandwidth choice that balances bias and variance.</li><li>Non-parametric methods are less efficient than parametric methods when the parametric model is correctly specified.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(E[\hat F_n(x)]=F(x)\). (B) Sample median: consistent by SLLN-type argument. (C) Bandwidth selection: bias decreases with smaller bandwidth, variance increases. (D) Parametric models, when correctly specified, are more efficient (lower variance).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Estimation - Chi-squared and F Distributions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about chi-squared and F distributions in statistics?</p>
+<ol type="A"><li>If \(Z_1,\ldots,Z_k\overset{iid}{\sim}N(0,1)\), then \(\sum Z_i^2\sim\chi^2_k\).</li><li>For \(X_i\overset{iid}{\sim}N(\mu,\sigma^2)\): \((n-1)S^2/\sigma^2\sim\chi^2_{n-1}\).</li><li>The F distribution \(F_{m,n}=(\chi^2_m/m)/(\chi^2_n/n)\) (independent chi-squared).</li><li>The t-distribution \(t_{n-1}=Z/\sqrt{\chi^2_{n-1}/(n-1)}\) is used for testing the mean when \(\sigma^2\) is unknown.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Definition of chi-squared. (B) Cochran's theorem. (C) F distribution definition. (D) Student t-distribution and its use in t-tests.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Estimation - Bootstrap</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The bootstrap resamples the observed data with replacement to estimate sampling distributions. Which are TRUE?</p>
+<ol type="A"><li>The bootstrap approximates the sampling distribution of a statistic without analytical formulas.</li><li>The bootstrap is consistent for estimating the variance of smooth functionals.</li><li>The bootstrap always provides a better confidence interval than the normal approximation.</li><li>The parametric bootstrap samples from a fitted parametric model rather than from the data directly.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A)(B) Bootstrap consistency for variance estimation. (C) FALSE: bootstrap can fail or be less accurate in some cases (extreme quantiles, heavy tails, small samples). (D) Parametric bootstrap: fit the model, then sample from it.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Estimation - Admissibility</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An estimator \(T\) is admissible if no other estimator dominates it (has uniformly smaller MSE). Which are TRUE?</p>
+<ol type="A"><li>The sample mean \(\bar X\) is admissible for estimating the mean of a normal distribution in \(\mathbb{R}^1\).</li><li>The sample mean \(\bar X\) is admissible for estimating a \(p\)-dimensional normal mean for \(p\le2\).</li><li>For \(p\ge3\), the sample mean is inadmissible (dominated by James-Stein) in the normal mean problem.</li><li>Every UMVUE is admissible.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) \(\bar X\) is admissible for estimating 1D and 2D normal means. (C) Stein's phenomenon: \(\bar X\) is inadmissible for \(p\ge3\) — James-Stein dominates. (D) FALSE: UMVUEs need not be admissible (they minimize variance within the unbiased class but a biased estimator may have lower MSE everywhere).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

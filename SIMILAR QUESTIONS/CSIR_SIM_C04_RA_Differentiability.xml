@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Real Analysis — Differentiability under Limit Conditions</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Diff - Limit of derivative implies differentiability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:(a,b)\to\mathbb{R}\) be continuous, differentiable on \((a,b)\setminus\{c\}\), and \(\lim_{x\to c}f'(x)=L\). Which statements are necessarily TRUE?</p>
+<ol type="A"><li>\(f\) is differentiable at \(c\) with \(f'(c)=L\).</li><li>\(f'\) is continuous at \(c\).</li><li>\(f'(c)\) may not exist even if \(\lim_{x\to c}f'(x)\) exists.</li><li>By the mean value theorem, \(f'(c)=L\) follows from the hypothesis.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>If \(f\) is continuous at \(c\) and \(\lim_{x\to c}f'(x)=L\) exists, then \(f'(c)=L\). Proof: by MVT, \(\frac{f(x)-f(c)}{x-c}=f'(\xi_x)\) for some \(\xi_x\) between \(x\) and \(c\); as \(x\to c\), \(\xi_x\to c\), so the limit equals \(L\). Hence (A) and (D). (B) follows since \(f'\) exists at \(c\) and \(\lim_{x\to c}f'(x)=f'(c)\). (C) is FALSE under the given hypotheses.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Diff - Mean Value Theorem Statements</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statements about the Mean Value Theorem (MVT) are TRUE?</p>
+<ol type="A"><li>If \(f\in C[a,b]\) and differentiable on \((a,b)\), then \(\exists c\in(a,b)\) with \(f'(c)=\frac{f(b)-f(a)}{b-a}\).</li><li>The MVT applies to complex-valued functions of a real variable.</li><li>If \(f'(c)=0\) for all \(c\in(a,b)\), then \(f\) is constant on \([a,b]\).</li><li>The generalized MVT: \(\exists c\in(a,b)\) with \(f'(c)g(b-a)=g'(c)(f(b)-f(a))\) when \(g'\ne0\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Standard MVT. (B) FALSE: MVT fails for complex-valued functions; e.g. \(f(t)=e^{it}\) on \([0,2\pi]\): \(f(2\pi)-f(0)=0\) but \(|f'(t)|=1\ne0\). (C) Follows from MVT: \(f(x)-f(a)=f'(c)(x-a)=0\). (D) Cauchy's MVT.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Diff - Darboux Intermediate Value for Derivatives</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Darboux's theorem states that derivatives satisfy the intermediate value property. Which conclusions follow?</p>
+<ol type="A"><li>If \(f'(a)<\lambda<f'(b)\), there exists \(c\in(a,b)\) with \(f'(c)=\lambda\).</li><li>A derivative can have a jump discontinuity.</li><li>If \(f'\) exists everywhere on \([a,b]\), then \(f'\) is Riemann integrable.</li><li>\(f'\) cannot be monotone without being continuous.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (D)</strong></p><p>(A) Darboux's theorem. (B) FALSE: by Darboux, a derivative cannot have a jump discontinuity (it satisfies IVP). (C) FALSE: a derivative need not be Riemann integrable (Volterra's function has a bounded, non-Riemann-integrable derivative). (D) If \(f'\) were monotone with a jump, that violates Darboux; hence a monotone derivative must be continuous.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Diff - L'Hopital's Rule Conditions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>L'Hôpital's rule: if \(\lim_{x\to c}f(x)=\lim_{x\to c}g(x)=0\) and \(\lim_{x\to c}f'(x)/g'(x)=L\), then \(\lim_{x\to c}f(x)/g(x)=L\). Which statements are TRUE?</p>
+<ol type="A"><li>L'Hôpital applies to \(0/0\) and \(\infty/\infty\) indeterminate forms.</li><li>L'Hôpital requires that \(g'(x)\ne0\) near \(c\) (except possibly at \(c\)).</li><li>L'Hôpital applies when \(\lim f'(x)/g'(x)\) does not exist.</li><li>\(\lim_{x\to0}\frac{\sin x}{x}=1\) follows from L'Hôpital.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) L'Hôpital works for both \(0/0\) and \(\pm\infty/\pm\infty\). (B) \(g'(x)\ne0\) is required near \(c\). (C) FALSE: the rule requires the limit of \(f'/g'\) to exist; if it doesn't, L'Hôpital is inconclusive. (D) \(\frac{d}{dx}\sin x=\cos x\), \(\frac{d}{dx}x=1\): limit of \(\cos x/1=1\) as \(x\to0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Diff - Taylor's Theorem Remainder</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Taylor's theorem with Lagrange remainder: if \(f\in C^{n+1}[a,b]\), then \(f(x)=\sum_{k=0}^n\frac{f^{(k)}(a)}{k!}(x-a)^k+R_n(x)\). Which statements are TRUE?</p>
+<ol type="A"><li>The Lagrange remainder is \(R_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-a)^{n+1}\) for some \(\xi\) between \(a\) and \(x\).</li><li>The Cauchy remainder is \(R_n(x)=\frac{f^{(n+1)}(\xi)}{n!}(x-\xi)^n(x-a)\).</li><li>If \(|f^{(n+1)}|\le M\) on \([a,b]\), then \(|R_n(x)|\le\frac{M(b-a)^{n+1}}{(n+1)!}\).</li><li>If all derivatives of \(f\) are bounded, the Taylor series converges to \(f\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Standard remainder forms. (C) Bound on \(R_n\). (D) FALSE: bounded derivatives ensure \(R_n\to0\) only if the bound decays faster than \((b-a)^n/n!\to0\), which requires \(M\) to be uniform in \(n\) — but if all \(f^{(n)}\) are bounded by a single \(M\), then \(|R_n|\le M(b-a)^{n+1}/(n+1)!\to0\). So (D) is TRUE under this condition. Corrected: (A)(B)(C)(D) are all true.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Diff - Nowhere Differentiable Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statements about continuous nowhere-differentiable functions are TRUE?</p>
+<ol type="A"><li>The Weierstrass function \(W(x)=\sum_{n=0}^\infty a^n\cos(b^n\pi x)\) (with \(0<a<1\), \(ab>1+3\pi/2\)) is nowhere differentiable.</li><li>Such functions cannot exist (a continuous function must be differentiable somewhere).</li><li>The set of continuous nowhere-differentiable functions is dense in \(C[0,1]\).</li><li>Brownian motion paths are almost surely nowhere differentiable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Weierstrass (1872) gave the first explicit example. (B) FALSE — the example in (A) disproves this. (C) By Baire category theorem, the set of nowhere-differentiable functions is residual (comeager) in \(C[0,1]\), hence dense. (D) A classical result in stochastic calculus: Brownian paths are a.s. nowhere differentiable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text>(D)</text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Diff - Higher Order Derivatives and Convexity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:(a,b)\to\mathbb{R}\) be twice differentiable. Which statements are TRUE?</p>
+<ol type="A"><li>If \(f''\ge0\) on \((a,b)\), then \(f\) is convex.</li><li>If \(f\) is convex, then \(f''\ge0\) a.e.</li><li>If \(f''\ge0\) and \(f''(c)=0\), then \(c\) is an inflection point.</li><li>If \(f'(c)=0\) and \(f''(c)>0\), then \(c\) is a strict local minimum.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) \(f''\ge0\Rightarrow f\) convex by definition. (B) A convex twice-differentiable function has \(f''\ge0\). (C) FALSE: \(f''(c)=0\) alone does not guarantee an inflection; e.g. \(f(x)=x^4\) has \(f''(0)=0\) but \(x=0\) is a minimum, not inflection. (D) Second derivative test: \(f'(c)=0\), \(f''(c)>0\Rightarrow\) local min.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Diff - Partial Derivatives and Differentiability in R^2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:\mathbb{R}^2\to\mathbb{R}\). Which implications are TRUE?</p>
+<ol type="A"><li>If \(f\) is differentiable at \((a,b)\), then both partial derivatives \(f_x,f_y\) exist at \((a,b)\).</li><li>If \(f_x\) and \(f_y\) exist at \((a,b)\), then \(f\) is differentiable at \((a,b)\).</li><li>If \(f_x\) and \(f_y\) exist and are continuous near \((a,b)\), then \(f\) is differentiable at \((a,b)\).</li><li>If all directional derivatives exist at \((a,b)\), then \(f\) is differentiable at \((a,b)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C)</strong></p><p>(A) Differentiability implies existence of all partial derivatives. (B) FALSE: e.g. \(f(x,y)=xy/(x^2+y^2)\) at origin has both partials 0 but is not differentiable (not even continuous). (C) Sufficient condition: continuous partials imply differentiability (Clairaut-Schwarz context). (D) FALSE: all directional derivatives may exist but \(f\) need not be differentiable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Diff - Rolle's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Rolle's Theorem: if \(f\in C[a,b]\), differentiable on \((a,b)\), and \(f(a)=f(b)\), then \(\exists c\in(a,b)\) with \(f'(c)=0\). Which statements are TRUE?</p>
+<ol type="A"><li>Between any two consecutive real roots of \(f\), there is a root of \(f'\).</li><li>If \(f'(x)\ne0\) for all \(x\in(a,b)\), then \(f\) has at most one root in \([a,b]\).</li><li>Rolle's theorem implies MVT.</li><li>The conditions of Rolle's theorem are also necessary: if \(\exists c\in(a,b)\) with \(f'(c)=0\), then \(f(a)=f(b)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Apply Rolle between two roots. (B) If \(f\) had two roots \(r_1<r_2\), Rolle gives \(f'(c)=0\) — contradiction. (C) MVT follows from Rolle applied to \(g(x)=f(x)-\frac{f(b)-f(a)}{b-a}(x-a)\). (D) FALSE: \(f(x)=\sin x\) on \([0,2\pi]\) has \(f'(\pi/2)=0\) but \(f(0)=f(2\pi)=0\). The condition is sufficient, not necessary.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Diff - Chain Rule and Inverse Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statements about the chain rule and inverse function theorem are TRUE?</p>
+<ol type="A"><li>If \(f\) and \(g\) are differentiable, then \((f\circ g)'(x)=f'(g(x))g'(x)\).</li><li>If \(f'(c)\ne0\) and \(f\) is \(C^1\) near \(c\), then \(f\) has a \(C^1\) local inverse near \(f(c)\).</li><li>If \(f\) is a bijection with \(f'(x)=0\) everywhere, then \(f^{-1}\) is not differentiable.</li><li>The inverse function theorem extends to \(\mathbb{R}^n\) using the Jacobian determinant.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Chain rule. (B) Inverse function theorem: \(f'(c)\ne0\) guarantees a local \(C^1\) inverse. (C) FALSE: if \(f'=0\) everywhere then \(f\) is constant — cannot be a bijection. (D) In \(\mathbb{R}^n\): non-singular Jacobian \(\det(Df)\ne0\) at a point gives a local \(C^1\) inverse.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Diff - Implicit Function Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(F(x,y)=0\) near a point \((a,b)\), the implicit function theorem gives a local solution \(y=g(x)\) provided:</p>
+<ol type="A"><li>\(F\) is \(C^1\) near \((a,b)\) and \(F_y(a,b)\ne0\).</li><li>Under these conditions, \(g'(x)=-F_x/F_y\).</li><li>The theorem extends to systems \(F:\mathbb{R}^{m+n}\to\mathbb{R}^m\) when the Jacobian \(\partial F/\partial y\) is non-singular.</li><li>If \(F_y(a,b)=0\), we can still always find a local implicit function.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B)(C) are the implicit function theorem and its extension. (D) FALSE: if \(F_y=0\) at the point, the theorem gives no conclusion — the equation \(y^2=x\) at \((0,0)\) has \(F_y=2y=0\), and indeed no smooth local function exists there.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Diff - Monotone and Differentiability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:[a,b]\to\mathbb{R}\) be monotone increasing. Which statements are TRUE?</p>
+<ol type="A"><li>\(f\) is differentiable almost everywhere.</li><li>\(f'\ge0\) a.e.</li><li>\(f(b)-f(a)=\int_a^bf'(x)dx\).</li><li>\(\int_a^bf'(x)dx\le f(b)-f(a)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Lebesgue: monotone functions are differentiable a.e. (B) At points of differentiability, \(f'\ge0\). (C) FALSE: the Cantor function is increasing with \(f'=0\) a.e. but \(f(1)-f(0)=1\ne0\). The equality holds only for AC functions. (D) This is the correct inequality for monotone BV functions: \(\int f'\le f(b)-f(a)\) (equality iff \(f\in AC\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Diff - Schwarz Theorem Mixed Partials</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Clairaut-Schwarz theorem: if \(f_{xy}\) and \(f_{yx}\) are both continuous at \((a,b)\), then \(f_{xy}(a,b)=f_{yx}(a,b)\). Which statements are TRUE?</p>
+<ol type="A"><li>If both mixed partials exist and are continuous, they are equal.</li><li>The mixed partials can be unequal if they are not continuous.</li><li>\(f(x,y)=xy(x^2-y^2)/(x^2+y^2)\) (\(f(0,0)=0\)) has \(f_{xy}(0,0)\ne f_{yx}(0,0)\).</li><li>Continuity of \(f_{xy}\) alone (without \(f_{yx}\)) suffices for equality.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Clairaut-Schwarz theorem. (B) The classic counterexample: (C) \(f(x,y)=xy(x^2-y^2)/(x^2+y^2)\): \(f_{xy}(0,0)=1\) but \(f_{yx}(0,0)=-1\). This shows mixed partials can differ when not continuous. (D) FALSE: continuity of only one mixed partial does not suffice in general.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Diff - f continuous, diff on (a,b)\{c}, lim f' DNE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\) be continuous on \((a,b)\), differentiable on \((a,b)\setminus\{c\}\), but \(\lim_{x\to c}f'(x)\) does NOT exist. Which are necessarily TRUE?</p>
+<ol type="A"><li>\(f\) may or may not be differentiable at \(c\).</li><li>If \(f'(c)\) exists, it cannot equal any value that \(f'\) takes near \(c\).</li><li>By Darboux's theorem, if \(f'(c)\) exists, then \(f'\) satisfies the IVP at \(c\).</li><li>\(f\) is definitely not differentiable at \(c\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C)</strong></p><p>(A) Non-existence of \(\lim f'(x)\) as \(x\to c\) does not preclude \(f'(c)\) existing: e.g. \(f(x)=x^2\sin(1/x)\), \(f(0)=0\): \(f'(0)=0\) but \(\lim_{x\to0}f'(x)\) DNE. (C) If \(f'(c)\) does exist, Darboux ensures \(f'\) has the IVP. (B) FALSE: \(f'(c)\) can equal a value taken by \(f'\) near \(c\). (D) FALSE by (A).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Diff - One-sided Derivatives</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(f:[a,b]\to\mathbb{R}\), which statements about one-sided derivatives are TRUE?</p>
+<ol type="A"><li>If both \(f'_+(c)\) and \(f'_-(c)\) exist and are equal, then \(f'(c)\) exists and equals the common value.</li><li>A convex function has both one-sided derivatives everywhere on \((a,b)\).</li><li>If \(f'_+(c)< f'_-(c)\), then \(f\) has an inflection point at \(c\).</li><li>For \(f(x)=|x|\): \(f'_+(0)=1\) and \(f'_-(0)=-1\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) By definition of the two-sided derivative. (B) Convex functions have increasing one-sided derivatives everywhere. (C) FALSE: if \(f'_+ < f'_-\), this means the right derivative is less than the left — this indicates a kink (local maximum behaviour), not necessarily an inflection. (D) \(|x|'_+(0)=\lim_{h\to0^+}h/h=1\), \(|x|'_-(0)=\lim_{h\to0^-}(-h)/h=-1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Diff - Differentiability implies continuity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which implications are TRUE?</p>
+<ol type="A"><li>Differentiable at \(c\Rightarrow\) continuous at \(c\).</li><li>Continuous at \(c\Rightarrow\) differentiable at \(c\).</li><li>Uniformly continuous on \((a,b)\Rightarrow\) differentiable a.e.</li><li>Differentiable everywhere on \((a,b)\Rightarrow f'\) is Lebesgue integrable on \([a,b]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>(A) Classic result: differentiability \(\Rightarrow\) continuity. (B) FALSE: \(|x|\) is continuous at 0 but not differentiable. (C) FALSE: e.g. \(f(x)=|x|\) is Lipschitz (uniformly continuous) but not differentiable at 0. (D) FALSE: Volterra's function is differentiable everywhere but \(f'\) is not Riemann integrable (it is Lebesgue integrable though). For Lebesgue: bounded derivative is integrable; unbounded derivative may not be.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Diff - Extrema Conditions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:(a,b)\to\mathbb{R}\) be differentiable. Which are TRUE?</p>
+<ol type="A"><li>If \(f\) has a local extremum at \(c\), then \(f'(c)=0\) (Fermat's theorem).</li><li>If \(f'(c)=0\) and \(f''(c)\ne0\), then \(c\) is a local extremum.</li><li>A function can have \(f'(c)=0\) with neither a local min nor max at \(c\).</li><li>If \(f'(c)=0\) and \(f''\) changes sign at \(c\), then \(c\) is an inflection point.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Fermat's theorem. (B) If \(f''(c)>0\): local min; \(f''(c)<0\): local max. (C) Example: \(f(x)=x^3\), \(f'(0)=0\) but 0 is neither min nor max. (D) If \(f'(c)=0\) and \(f''\) changes sign: the point is an inflection (though terminology can vary).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Diff - Jensen's Inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Jensen's Inequality: if \(\phi\) is convex and \(X\) is a random variable with finite expectation, then \(\phi(E[X])\le E[\phi(X)]\). Which follow from Jensen?</p>
+<ol type="A"><li>\(e^{E[X]}\le E[e^X]\) for any integrable \(X\).</li><li>\(E[X^2]\ge(E[X])^2\) (hence variance \(\ge0\)).</li><li>\(E[\ln X]\le\ln E[X]\) for \(X>0\).</li><li>If \(\phi\) is concave, \(\phi(E[X])\ge E[\phi(X)]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(e^x\) is convex. (B) \(x^2\) is convex: \((E[X])^2\le E[X^2]\). (C) \(\ln x\) is concave, so Jensen gives \(E[\ln X]\le\ln E[X]\) (concave version). (D) For concave \(\phi\), Jensen reverses.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Diff - Lipschitz vs Differentiable</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which implications are TRUE?</p>
+<ol type="A"><li>Differentiable with bounded derivative on \([a,b]\Rightarrow\) Lipschitz on \([a,b]\).</li><li>Lipschitz on \([a,b]\Rightarrow\) differentiable everywhere on \([a,b]\).</li><li>Differentiable everywhere on \([a,b]\Rightarrow\) Lipschitz on \([a,b]\).</li><li>\(C^1[a,b]\Rightarrow\) Lipschitz on \([a,b]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (D)</strong></p><p>(A) By MVT: \(|f(x)-f(y)|\le\sup|f'||x-y|\). (B) FALSE: \(|x|\) is Lipschitz but not differentiable at 0. (C) FALSE: \(f(x)=x^{3/2}\sin(1/x)\), \(f(0)=0\) can be differentiable but with unbounded derivative, hence not Lipschitz. (D) \(C^1[a,b]\Rightarrow f'\) is continuous on a closed interval, hence bounded, hence Lipschitz by (A).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Diff - Fundamental Theorem of Calculus</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Fundamental Theorem of Calculus (FTC). Which statements are TRUE?</p>
+<ol type="A"><li>FTC Part I: if \(f\in C[a,b]\) and \(F(x)=\int_a^xf(t)dt\), then \(F'(x)=f(x)\).</li><li>FTC Part II: if \(F'=f\) on \([a,b]\) and \(f\in R[a,b]\), then \(\int_a^bf(x)dx=F(b)-F(a)\).</li><li>If \(f\) is Riemann integrable but not continuous, \(F(x)=\int_a^xf(t)dt\) may not be differentiable everywhere.</li><li>FTC holds for Lebesgue integration when \(F\in AC[a,b]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) FTC Part I (requires continuity of \(f\)). (B) FTC Part II. (C) At a jump discontinuity of \(f\), \(F\) is still continuous but not differentiable there. (D) The Lebesgue version of FTC: \(F'=f\) a.e. and \(F(x)-F(a)=\int_a^xf\) iff \(F\in AC\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

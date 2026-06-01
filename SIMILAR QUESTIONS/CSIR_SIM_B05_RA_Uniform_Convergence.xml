@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Real Analysis — Uniform Convergence of Function Sequences</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Uniform Convergence - f_n(x)=x^n on [0,1]</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The sequence \(f_n(x)=x^n\) on \([0,1]\) converges:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Pointwise but NOT uniformly to \(f(x)=0\) for \(x\in[0,1)\) and \(f(1)=1\)</strong></p><p>For \(x\in[0,1)\): \(x^n\to0\). For \(x=1\): \(1^n=1\to1\). So pointwise limit is discontinuous. Since uniform convergence of continuous functions yields a continuous limit, and the limit is discontinuous, convergence is NOT uniform on \([0,1]\). It is uniform on \([0,r]\) for any \(r<1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Uniformly on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Pointwise but NOT uniformly on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uniformly on every closed subinterval of \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Does not converge pointwise]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Uniform Convergence - g_n(x)=nx/(1+n^2x^2)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(g_n(x)=\dfrac{nx}{1+n^2x^2}\) on \(\mathbb{R}\). The pointwise limit as \(n\to\infty\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(g(x)=0\) for all \(x\)</strong></p><p>For \(x=0\): \(g_n(0)=0\). For \(x\neq0\): \(g_n(x)=\frac{x/n}{1/n^2+x^2}\to\frac{0}{x^2}=0\). So \(g\equiv0\). But \(g_n(1/n)=\frac{1/n\cdot n}{1+1}=1/2\not\to0\), so convergence is NOT uniform on \(\mathbb{R}\). On \([\delta,\infty)\) for \(\delta>0\) it is uniform.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(g(x)=0\) for all \(x\) (not uniform on \(\mathbb{R}\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g(x)=x\) for all \(x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g(x)=1/2\) for all \(x\neq0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Does not converge pointwise]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Uniform Convergence - Cauchy Criterion</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A sequence \(\{f_n\}\) converges uniformly on \(E\) if and only if (uniform Cauchy criterion):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) For every \(\epsilon>0\), there exists \(N\) such that \(m,n>N\Rightarrow\sup_{x\in E}|f_m(x)-f_n(x)|<\epsilon\)</strong></p><p>This is the uniform Cauchy criterion: equivalent to uniform convergence in complete spaces. The sup-norm \(\|f_m-f_n\|_\infty=\sup_E|f_m-f_n|\to0\) is the correct measure of uniform closeness.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[For every \(x\in E\) and \(\epsilon>0\), there exists \(N(x)\) such that \(n>N(x)\Rightarrow|f_n(x)-f(x)|<\epsilon\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n(x)\to f(x)\) for all \(x\in E\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[For every \(\epsilon>0\), \(\exists N\) such that \(m,n>N\Rightarrow\sup_{x\in E}|f_m(x)-f_n(x)|<\epsilon\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sup_{x\in E}|f_n(x)|<\infty\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Uniform Convergence - Limit of Continuous Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f_n\to f\) uniformly on \([a,b]\) and each \(f_n\) is continuous, then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(f\) is continuous on \([a,b]\)</strong></p><p>Uniform limit of continuous functions is continuous. Proof: \(|f(x)-f(y)|\leq|f(x)-f_n(x)|+|f_n(x)-f_n(y)|+|f_n(y)-f(y)|<\epsilon/3+\epsilon/3+\epsilon/3=\epsilon\). The first and third terms are controlled by uniform convergence; the middle by continuity of \(f_n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) is continuous on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) may be discontinuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is differentiable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is monotone]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Uniform Convergence - Interchange of Limit and Integral</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f_n\to f\) uniformly on \([a,b]\) and each \(f_n\) is Riemann integrable, then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\displaystyle\int_a^b f_n\to\int_a^b f\)</strong></p><p>Uniform convergence allows interchange of limit and integral: \(|\int f_n-\int f|\leq\int|f_n-f|\leq(b-a)\sup|f_n-f|\to0\). This is the key theorem justifying term-by-term integration of uniformly convergent series.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) need not be integrable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\lim_{n\to\infty}\int_a^b f_n(x)\,dx=\int_a^b f(x)\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n'\to f'\) uniformly]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\int_a^b f_n^2\to\int_a^b f^2\) only]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Uniform Convergence - f_n(x)=sin(nx)/n</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The sequence \(f_n(x)=\dfrac{\sin(nx)}{n}\) on \(\mathbb{R}\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Converges uniformly to 0 on \(\mathbb{R}\)</strong></p><p>\(\sup_x|f_n(x)-0|=\sup_x|\sin(nx)/n|\leq1/n\to0\). So the convergence is uniform. However, \(f_n'(x)=\cos(nx)\) does NOT converge (oscillates), showing that uniform convergence of \(f_n\) does not imply convergence of \(f_n'\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Converges pointwise but NOT uniformly to 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Does not converge]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Converges uniformly to 0 on \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges to \(\sin x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Uniform Convergence - Differentiability of Limit</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f_n\to f\) uniformly on \([a,b]\), then the derivatives satisfy \(f_n'\to f'\) provided:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) The derivatives \(f_n'\) converge uniformly on \([a,b]\)</strong></p><p>The correct theorem: if \(f_n\to f\) pointwise (or at one point), and \(f_n'\) converges uniformly, then \(f'=\lim f_n'\). Uniform convergence of \(f_n\) alone is insufficient for differentiating limits. Example: \(f_n(x)=\sin(nx)/\sqrt{n}\to0\) uniformly but \(f_n'(x)=\sqrt{n}\cos(nx)\) diverges.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n\) converges uniformly (no further condition needed)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n\) are all polynomials]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n\) converge in \(L^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The derivatives \(f_n'\) converge uniformly on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Uniform Convergence - Weierstrass M-Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Weierstrass M-test guarantees uniform convergence of \(\sum f_n\) on \(E\) if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(|f_n(x)|\leq M_n\) for all \(x\in E\) and \(\sum M_n<\infty\)</strong></p><p>Weierstrass M-test: dominating by a convergent series of constants implies absolute and uniform convergence. This is the most commonly applied test for uniform convergence of series, e.g., proving a power series converges uniformly inside its radius of convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n\to0\) pointwise on \(E\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(|f_n(x)|\leq M_n\) for all \(x\in E\) and \(\sum M_n<\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Each \(f_n\) is bounded on \(E\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The pointwise limit exists and is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Uniform Convergence - f_n=n^2 x e^{-nx}</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f_n(x)=n^2 x e^{-nx}\) on \([0,\infty)\). The pointwise limit is \(f\equiv0\). Is the convergence uniform on \([0,\infty)\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) No, the convergence is not uniform</strong></p><p>\(f_n(1/n)=n^2\cdot(1/n)\cdot e^{-1}=ne^{-1}\to\infty\). So \(\sup_{x\geq0}|f_n(x)-0|\geq ne^{-1}\to\infty\neq0\). The convergence is pointwise to 0 but NOT uniform. Furthermore, \(\int_0^\infty f_n\,dx=n^2\int_0^\infty xe^{-nx}dx=n^2/n^2=1\not\to\int_0^\infty0\,dx=0\), confirming non-uniformity.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Yes, the convergence is uniform on \([0,\infty)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[No, because \(\sup_x|f_n(x)|\to\infty\) (at \(x=1/n\), \(f_n\to\infty\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Yes, because each \(f_n\) is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sequence does not converge pointwise]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Uniform Convergence - Dini's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Dini's theorem gives uniform convergence when \(f_n\searrow f\) (monotone decreasing) on compact \(K\), each \(f_n\) continuous, and:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) The limit function \(f\) is continuous</strong></p><p>Dini's theorem: monotone convergence of continuous functions to a continuous limit on a compact set is uniform. The four conditions are: (1) \(K\) compact, (2) each \(f_n\) continuous, (3) \(f_n\searrow f\) (or \(\nearrow\)), (4) \(f\) continuous. All four are needed — dropping any one makes it fail.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n\) are differentiable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\equiv0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The limit \(f\) is continuous on \(K\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(K=\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Uniform Convergence - sup Norm Criterion</text></name>
+  <questiontext format="html"><text><![CDATA[<p>\(f_n\to f\) uniformly on \(E\) if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\|f_n-f\|_\infty=\sup_{x\in E}|f_n(x)-f(x)|\to0\)</strong></p><p>Uniform convergence is exactly convergence in the sup-norm. This makes \(C(K)\) (continuous functions on compact \(K\)) a complete metric space — a Banach space. The sup-norm is the correct measure of uniform approximation.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sup_{x\in E}|f_n(x)-f(x)|\to0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|f_n(x)-f(x)|\to0\) for each fixed \(x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\int_E|f_n-f|\to0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n\) are equicontinuous]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Uniform Convergence - Power Series Inside Radius</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A power series \(\sum_{n=0}^\infty a_n x^n\) with radius of convergence \(R>0\) converges uniformly on:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Every closed interval \([-r,r]\) with \(0<r<R\)</strong></p><p>A power series converges absolutely for \(|x|<R\). On \([-r,r]\) with \(r<R\): \(|a_nx^n|\leq|a_n|r^n=M_n\) and \(\sum M_n<\infty\) (convergence at \(r<R\)). By Weierstrass M-test, convergence is uniform on \([-r,r]\). It may NOT be uniform on the full open disk \(|x|<R\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The entire open interval \((-R,R)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Every closed subinterval \([-r,r]\) with \(r<R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only at a single point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The closed interval \([-R,R]\) always]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Uniform Convergence - Equicontinuous Family</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Arzelà–Ascoli theorem: a sequence \(\{f_n\}\) of continuous functions on \([a,b]\) has a uniformly convergent subsequence if the family is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Uniformly bounded and equicontinuous</strong></p><p>Arzelà–Ascoli: a subset of \(C([a,b])\) is relatively compact (every sequence has a convergent subsequence) iff it is uniformly bounded and equicontinuous. Equicontinuity: \(\forall\epsilon>0,\exists\delta>0\) such that \(|x-y|<\delta\Rightarrow|f_n(x)-f_n(y)|<\epsilon\) for ALL \(n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Only bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only equicontinuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uniformly bounded AND equicontinuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Monotone and bounded]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Uniform Convergence - f_n(x)=1/(1+nx)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f_n(x)=\dfrac{1}{1+nx}\) on \([0,1]\). The pointwise limit \(f\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(f(0)=1,\;f(x)=0\) for \(x\in(0,1]\); convergence is NOT uniform on \([0,1]\)</strong></p><p>At \(x=0\): \(f_n(0)=1\to1\). At \(x>0\): \(1/(1+nx)\to0\). The limit is discontinuous at 0. Uniform limit of continuous functions must be continuous, so convergence is NOT uniform. It IS uniform on \([\delta,1]\) for any \(\delta>0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\equiv0\); convergence is uniform on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\equiv1\); convergence is uniform on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\equiv0\); convergence is uniform on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(0)=1,\;f(x)=0\) for \(x>0\); convergence is NOT uniform on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Uniform Convergence - Uniform vs Pointwise</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following CANNOT be concluded from pointwise convergence \(f_n\to f\) alone?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\displaystyle\lim_{n\to\infty}\int_a^b f_n = \int_a^b f\)</strong></p><p>Pointwise convergence alone does NOT guarantee interchange of limit and integral. Example: \(f_n=n\mathbf{1}_{[0,1/n]}\to0\) pointwise but \(\int_0^1f_n=1\neq0=\int_0^1f\). Uniform convergence is sufficient (but not necessary) for this interchange.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n(x_0)\to f(x_0)\) for each fixed \(x_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\lim_{n\to\infty}\int_a^b f_n = \int_a^b f\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Pointwise limit exists at each point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is measurable if each \(f_n\) is measurable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Uniform Convergence - f_n(x) = x/(1+nx^2)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f_n(x)=\dfrac{x}{1+nx^2}\) on \(\mathbb{R}\). Then \(\|f_n\|_\infty = \sup_x|f_n(x)|\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\dfrac{1}{2\sqrt{n}}\)</strong></p><p>Maximise \(f_n(x)=x/(1+nx^2)\): set \(f_n'(x)=0\Rightarrow(1+nx^2)-x\cdot2nx=0\Rightarrow1-nx^2=0\Rightarrow x=1/\sqrt{n}\). Then \(f_n(1/\sqrt{n})=(1/\sqrt{n})/(1+1)=1/(2\sqrt{n})\to0\). So \(\|f_n\|_\infty=1/(2\sqrt{n})\to0\), confirming uniform convergence to 0 on \(\mathbb{R}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{1}{2\sqrt{n}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/n^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Uniform Convergence - Series of Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=1}^\infty\frac{\cos(nx)}{n^2}\) converges uniformly on \(\mathbb{R}\) because:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Weierstrass M-test with \(M_n=1/n^2\) and \(\sum 1/n^2<\infty\)</strong></p><p>\(|\cos(nx)/n^2|\leq1/n^2\) for all \(x\). Since \(\sum1/n^2=\pi^2/6<\infty\), the M-test gives absolute and uniform convergence on \(\mathbb{R}\). The sum is a continuous function of \(x\) (uniform limit of continuous functions).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Weierstrass M-test: \(|\cos(nx)/n^2|\leq1/n^2\) and \(\sum1/n^2<\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The terms are alternating]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Each partial sum is bounded by 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Dirichlet's test applies]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Uniform Convergence - Pointwise on [0,1) vs [0,1]</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(f_n(x)=x^n\), convergence is uniform on \([0,r]\) for any fixed \(r<1\), but not on \([0,1]\). The key difference is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \([0,r]\) does not contain 1, so \(\sup_{[0,r]}x^n=r^n\to0\); but \(\sup_{[0,1]}x^n=1\not\to0\)</strong></p><p>On \([0,r]\): \(\|f_n\|_\infty=r^n\to0\) since \(r<1\). On \([0,1]\): \(\sup|f_n|=1^n=1\not\to0\). The boundary point \(x=1\) causes the failure of uniform convergence — a phenomenon called "boundary layer" in analysis.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\([0,r]\) is connected and \([0,1]\) is not]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sup_{[0,r]}x^n=r^n\to0\) but \(\sup_{[0,1]}x^n=1\not\to0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\([0,1]\) is compact but \([0,r]\) is not]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The functions are not continuous at \(r\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Uniform Convergence - L^2 vs Uniform</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Uniform convergence \(f_n\rightrightarrows f\) on \([a,b]\) implies \(L^2\) convergence \(\|f_n-f\|_2\to0\). Is the converse true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) No; \(L^2\) convergence does not imply uniform convergence</strong></p><p>Uniform \(\Rightarrow L^2\): \(\|f_n-f\|_2^2=\int|f_n-f|^2\leq(b-a)\|f_n-f\|_\infty^2\to0\). But \(L^2\not\Rightarrow\) uniform: the "sliding bump" \(f_n=\mathbf{1}_{[j/k,(j+1)/k]}\) (where \(n=(k,j)\)) converges to 0 in \(L^2\) but not uniformly or even pointwise.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Yes, they are equivalent on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[No; \(L^2\) convergence does NOT imply uniform convergence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Yes, if the functions are also monotone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Yes, if the functions are also equicontinuous]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Uniform Convergence - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f_n(x)=\dfrac{n^2x}{1+n^3x^2}\) on \([0,1]\). Which statement is TRUE?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(f_n\to0\) pointwise on \([0,1]\) but the convergence is not uniform</strong></p><p>At \(x=0\): \(f_n(0)=0\). At \(x>0\): \(n^2x/(1+n^3x^2)\sim n^2x/(n^3x^2)=1/(nx)\to0\). So pointwise limit is 0. But \(f_n(1/n)=n^2/n\cdot(1/(1+n^3/n^2))=n/(1+n)\to1\neq0\). So convergence is not uniform.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n\to0\) uniformly on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n\to1\) pointwise]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f_n\to0\) pointwise but NOT uniformly on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f_n\) does not converge]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

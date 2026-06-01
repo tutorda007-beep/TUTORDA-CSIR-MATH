@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/PDEs — Classification of Second Order PDEs</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>PDE Classification - Discriminant</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the second-order PDE \(Au_{xx}+Bu_{xy}+Cu_{yy}+\cdots=0\), the type is determined by \(B^2-4AC\). The PDE is elliptic when:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(B^2-4AC<0\)</strong></p><p>Classification: \(B^2-4AC<0\): elliptic (e.g., Laplace equation \(u_{xx}+u_{yy}=0\)); \(B^2-4AC=0\): parabolic (e.g., heat equation \(u_t=u_{xx}\)); \(B^2-4AC>0\): hyperbolic (e.g., wave equation \(u_{tt}=c^2u_{xx}\)). The type governs the nature of solutions and appropriate boundary/initial conditions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(B^2-4AC<0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(B^2-4AC=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(B^2-4AC>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(B^2-4AC\geq0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>PDE Classification - Laplace Equation Type</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Laplace equation \(\nabla^2u=u_{xx}+u_{yy}=0\) is classified as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Elliptic</strong></p><p>For \(u_{xx}+u_{yy}=0\): \(A=1,B=0,C=1\). \(B^2-4AC=0-4=-4<0\). Elliptic. Elliptic equations typically model steady-state (equilibrium) phenomena and require boundary conditions all around the domain (Dirichlet or Neumann BVP). Solutions are analytic.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Hyperbolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Elliptic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Parabolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Mixed type]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>PDE Classification - Wave Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The wave equation \(u_{tt}=c^2u_{xx}\) is classified as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Hyperbolic</strong></p><p>Writing as \(u_{tt}-c^2u_{xx}=0\): treat \((t,x)\) as the two variables. \(A=1\) (coeff of \(u_{tt}\)), \(B=0\), \(C=-c^2\). \(B^2-4AC=0-4(1)(-c^2)=4c^2>0\). Hyperbolic. Features: finite speed of propagation, characteristics \(x\pm ct=\text{const}\), d'Alembert's solution \(u=f(x-ct)+g(x+ct)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Elliptic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Parabolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Hyperbolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Mixed type (depends on \(c\))]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>PDE Classification - Heat Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The heat equation \(u_t=u_{xx}\) is classified as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Parabolic</strong></p><p>For \(u_t-u_{xx}=0\): treat \((t,x)\) as variables. \(A=0,B=0,C=-1\) (or \(A=-1,B=0,C=0\) depending on ordering). \(B^2-4AC=0\). Parabolic. Features: infinite speed of propagation (immediate smoothing), requires initial condition (Cauchy data on \(t=0\)) and boundary conditions. Parabolic equations model diffusion.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Hyperbolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Parabolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Elliptic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[None of the above]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>PDE Classification - x*u_xx + u_yy = 0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the PDE \(xu_{xx}+u_{yy}=0\), the type depends on \(x\). For \(x<0\) it is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Hyperbolic</strong></p><p>\(A=x,B=0,C=1\). \(B^2-4AC=-4x\). For \(x<0\): \(-4x>0\Rightarrow\) hyperbolic. For \(x=0\): \(B^2-4AC=0\Rightarrow\) parabolic (degenerate). For \(x>0\): \(-4x<0\Rightarrow\) elliptic. This is the Tricomi equation (models transonic flow: subsonic is elliptic, supersonic is hyperbolic).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Elliptic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Parabolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Hyperbolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Type cannot be determined]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>PDE Classification - Canonical Form of Hyperbolic</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The canonical (normal) form of a hyperbolic equation \(u_{tt}-u_{xx}=0\) in characteristic coordinates \(\xi=x+t\), \(\eta=x-t\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(u_{\xi\eta}=0\)</strong></p><p>For the wave equation: change to characteristics \(\xi=x+t,\eta=x-t\). Then \(u_{xx}=u_{\xi\xi}+2u_{\xi\eta}+u_{\eta\eta}\) and \(u_{tt}=u_{\xi\xi}-2u_{\xi\eta}+u_{\eta\eta}\). So \(u_{tt}-u_{xx}=-4u_{\xi\eta}=0\Rightarrow u_{\xi\eta}=0\). Canonical hyperbolic form: \(u_{\xi\eta}=0\). Integrating twice: \(u=f(\xi)+g(\eta)=f(x+t)+g(x-t)\) (d'Alembert).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(u_{\xi\eta}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u_{\xi\xi}+u_{\eta\eta}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u_{\xi\xi}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u_\xi=u_\eta\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>PDE Classification - Mixed Type Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The PDE \((1-x^2)u_{xx}-(1-y^2)u_{yy}=0\) is hyperbolic in the region:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(|x|<1\) and \(|y|<1\)</strong></p><p>\(A=1-x^2,B=0,C=-(1-y^2)\). \(B^2-4AC=4(1-x^2)(1-y^2)\). This is \(>0\) (hyperbolic) when \((1-x^2)>0\) and \((1-y^2)>0\), i.e., \(|x|<1\) and \(|y|<1\). It is \(<0\) (elliptic) when \(|x|>1,|y|<1\) or \(|x|<1,|y|>1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(|x|>1\) and \(|y|>1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(|x|<1\) and \(|y|<1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|x|=1\) or \(|y|=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>PDE Classification - Characteristics of Wave Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The characteristics of the 1D wave equation \(u_{tt}=c^2u_{xx}\) are the curves:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(x\pm ct=\text{const}\)</strong></p><p>Characteristics of \(u_{tt}-c^2u_{xx}=0\): the characteristic ODE is \((dt/ds)^2c^2-(dx/ds)^2=0\Rightarrow dx/dt=\pm c\). Integrating: \(x-ct=\text{const}\) (right-moving) and \(x+ct=\text{const}\) (left-moving). D'Alembert's solution uses these: \(u=f(x-ct)+g(x+ct)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(x^2+c^2t^2=\text{const}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(t=\text{const}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(x\pm ct=\text{const}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(x^2-c^2t^2=\text{const}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>PDE Classification - Boundary Conditions for Elliptic</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an elliptic PDE like the Laplace equation on a bounded domain \(\Omega\), a well-posed problem typically requires:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Boundary conditions prescribed on all of \(\partial\Omega\)</strong></p><p>Elliptic equations are boundary value problems: data must be given on the entire boundary. Dirichlet BVP: \(u=g\) on \(\partial\Omega\). Neumann BVP: \(\partial u/\partial n=h\) on \(\partial\Omega\). Robin BVP: combination. Unlike hyperbolic/parabolic, no time variable — the solution is determined globally by boundary data.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Initial conditions at \(t=0\) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Boundary conditions on all of \(\partial\Omega\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Initial and boundary conditions both]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No conditions (free boundary problem)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>PDE Classification - u_xy = 0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The PDE \(u_{xy}=0\) is classified as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Hyperbolic</strong></p><p>\(u_{xy}=0\) has \(A=0,B=1,C=0\). \(B^2-4AC=1>0\). Hyperbolic. General solution: \(u=f(x)+g(y)\) (integrate \(u_{xy}=0\): \(u_x=\phi(x)\Rightarrow u=\int\phi(x)dx+g(y)=f(x)+g(y)\)). Characteristics: \(x=\text{const}\) and \(y=\text{const}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Elliptic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Parabolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Hyperbolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Mixed]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>PDE Classification - Poisson vs Laplace</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Poisson equation \(\Delta u=f\) differs from the Laplace equation \(\Delta u=0\) in that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Poisson has a nonzero source term \(f\)</strong></p><p>Poisson: \(\Delta u=f\) (inhomogeneous); Laplace: \(\Delta u=0\) (homogeneous). Both are elliptic. The Green's function \(G\) for \(-\Delta\) on a domain solves \(-\Delta_xG(x,y)=\delta(x-y)\) and gives \(u(x)=\int G(x,y)f(y)dy\) for Poisson's equation. Physically: Poisson models electrostatics with charges; Laplace models in free space.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Poisson has a nonzero source term \(f\neq0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Poisson is parabolic and Laplace is elliptic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Laplace is defined in 3D only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Poisson has time dependence]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>PDE Classification - Biharmonic Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The biharmonic equation \(\Delta^2u=u_{xxxx}+2u_{xxyy}+u_{yyyy}=0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Elliptic (4th order)</strong></p><p>The biharmonic equation is a 4th order PDE. Being \(\Delta(\Delta u)=0\), it is elliptic (extends the concept of elliptic beyond 2nd order). It arises in elasticity (deflection of thin plates), viscous flow (Stokes stream function). Solutions are called biharmonic functions: \(\Delta^2u=0\Leftrightarrow\Delta(\Delta u)=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Hyperbolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Elliptic (4th order)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Parabolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cannot be classified]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>PDE Classification - Variable Coefficient Example</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The PDE \(y^2u_{xx}-u_{yy}=0\) is elliptic in the region:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Never (it is always hyperbolic or degenerate)</strong></p><p>\(A=y^2,B=0,C=-1\). \(B^2-4AC=4y^2\geq0\). For \(y\neq0\): \(4y^2>0\Rightarrow\) hyperbolic. For \(y=0\): \(4y^2=0\Rightarrow\) parabolic (degenerate). Never elliptic. The equation changes type along \(y=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y<0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y\neq0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Never (always hyperbolic for \(y\neq0\))]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>PDE Classification - Canonical Elliptic Form</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The canonical form of an elliptic equation \(u_{xx}+u_{yy}+\text{lower order}=0\) in appropriate coordinates \((\xi,\eta)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(u_{\xi\xi}+u_{\eta\eta}+\text{lower order terms}=0\)</strong></p><p>Elliptic equations can be reduced to the Laplace-like form \(u_{\xi\xi}+u_{\eta\eta}+\ldots=0\) via a real change of variables. (For hyperbolic: canonical form is \(u_{\xi\eta}=\ldots\); for parabolic: \(u_{\xi\xi}=\ldots\).) Each canonical form clarifies the nature of the problem and the appropriate solution methods.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(u_{\xi\xi}+u_{\eta\eta}+\text{lower order}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u_{\xi\eta}+\text{lower order}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u_{\xi\xi}+\text{lower order}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u_{\xi\xi}-u_{\eta\eta}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>PDE Classification - First Order PDE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The first-order PDE \(u_x+u_y=0\) has general solution:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(u=f(x-y)\) for arbitrary \(f\)</strong></p><p>Characteristics of \(u_x+u_y=0\): \(dx/ds=1,dy/ds=1,du/ds=0\Rightarrow x-s=\text{const},y-s=\text{const}\Rightarrow x-y=\text{const}\). Solution constant along characteristics: \(u=f(x-y)\). Alternatively, the equation says the directional derivative of \(u\) in the direction \((1,1)\) is zero.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(u=f(x+y)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u=f(xy)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(u=f(x-y)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u=f(x)f(y)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>PDE Classification - Elliptic Regularity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A key property of elliptic equations (like Laplace's equation) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Solutions are smooth (infinitely differentiable) in the interior of the domain</strong></p><p>Elliptic regularity: if \(\Delta u=f\) and \(f\in C^\infty\), then \(u\in C^\infty\) in the interior (even if boundary data is not smooth). For \(f=0\) (Laplace): solutions are real analytic. This smoothing property contrasts with hyperbolic equations where singularities propagate along characteristics.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Solutions are smooth (infinitely differentiable) in the interior]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Singularities propagate along characteristics]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Solutions exist only for analytic data]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The maximum principle fails]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>PDE Classification - Schrodinger Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Schrödinger equation \(i\hbar\psi_t=-\frac{\hbar^2}{2m}\psi_{xx}+V\psi\) is classified as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Parabolic (with complex coefficients)</strong></p><p>The Schrödinger equation with imaginary time resembles the heat equation \(u_t=u_{xx}\) (parabolic). Setting \(\tau=it/\hbar\): \(\psi_\tau=\frac{\hbar}{2m}\psi_{xx}-\frac{V}{\hbar}\psi\), formally a diffusion equation. It is parabolic in structure but with complex-valued \(\psi\). It models quantum wave functions and exhibits interference.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Hyperbolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Elliptic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Parabolic (with complex coefficients)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Mixed type]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>PDE Classification - 2D Classification</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The PDE \(3u_{xx}+4u_{xy}+u_{yy}=0\): compute \(B^2-4AC\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(16-12=4>0\), hence hyperbolic</strong></p><p>\(A=3,B=4,C=1\). \(B^2-4AC=16-12=4>0\). Hyperbolic. The characteristics satisfy \(A(dy)^2-B\,dx\,dy+C(dx)^2=0\Rightarrow3(dy/dx)^2-4(dy/dx)+1=0\Rightarrow(3dy/dx-1)(dy/dx-1)=0\Rightarrow dy/dx=1/3\) or \(dy/dx=1\). Characteristic curves: \(y-x/3=\text{const}\) and \(y-x=\text{const}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(B^2-4AC=4-12=-8<0\), elliptic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(B^2-4AC=16-12=4>0\), hyperbolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(B^2-4AC=0\), parabolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(B^2-4AC=3\), mixed type]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>PDE Classification - Number of Initial Conditions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The wave equation \(u_{tt}=c^2u_{xx}\) (2nd order in time) requires, for a well-posed IVP:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(u(x,0)=f(x)\) and \(u_t(x,0)=g(x)\)</strong></p><p>Since the wave equation is 2nd order in \(t\), two initial conditions are needed: the displacement \(u(x,0)=f(x)\) and the velocity \(u_t(x,0)=g(x)\). D'Alembert's formula then gives: \(u(x,t)=\frac{f(x+ct)+f(x-ct)}{2}+\frac{1}{2c}\int_{x-ct}^{x+ct}g(s)ds\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Only \(u(x,0)=f(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(u(x,0)=f(x)\) AND \(u_t(x,0)=g(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only \(u_t(x,0)=g(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Boundary conditions on \(x=0\) and \(x=L\) only]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>PDE Classification - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The PDE \((x^2+y^2)u_{xx}+2xyu_{xy}+(x^2+y^2)u_{yy}=0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Elliptic everywhere (except possibly at origin)</strong></p><p>\(A=x^2+y^2, B=2xy, C=x^2+y^2\). \(B^2-4AC=4x^2y^2-4(x^2+y^2)^2=4[x^2y^2-(x^2+y^2)^2]=-4[(x^2-y^2)^2+2x^2y^2]\leq0\). At the origin: all terms vanish. For \((x,y)\neq(0,0)\): \(B^2-4AC<0\Rightarrow\) elliptic. So the equation is elliptic away from the origin.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Always hyperbolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always parabolic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Elliptic for \((x,y)\neq(0,0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Mixed type depending on the region]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

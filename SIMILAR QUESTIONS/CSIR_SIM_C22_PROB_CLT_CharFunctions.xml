@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Probability — CLT, Characteristic Functions, and Limit Theorems</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>CLT - Classical Central Limit Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,X_2,\ldots\overset{iid}{\sim}F\) with \(E[X_i]=\mu\) and \(\mathrm{Var}(X_i)=\sigma^2<\infty\). The CLT states \(\frac{\sqrt{n}(\bar X_n-\mu)}{\sigma}\overset{d}{\to}N(0,1)\). Which are TRUE?</p>
+<ol type="A"><li>The CLT holds for any distribution with finite mean and variance.</li><li>The CLT requires the \(X_i\) to be normally distributed.</li><li>The convergence is in distribution (not necessarily almost surely or in probability).</li><li>The Berry-Esseen theorem gives a rate of convergence \(O(1/\sqrt{n})\) when \(E[|X_1|^3]<\infty\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) CLT: finite variance suffices. (B) FALSE: the CLT applies to any distribution with finite variance. (C) CLT gives convergence in distribution, not a.s. or in probability. (D) Berry-Esseen: \(\sup_x|P(S_n/\sigma\sqrt{n}\le x)-\Phi(x)|\le C\rho/({\sigma^3\sqrt{n}})\) where \(\rho=E|X_1-\mu|^3\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>CharFn - Characteristic function definition and properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The characteristic function of \(X\) is \(\varphi_X(t)=E[e^{itX}]\). Which are TRUE?</p>
+<ol type="A"><li>\(\varphi_X(0)=1\) and \(|\varphi_X(t)|\le1\) for all \(t\).</li><li>The characteristic function uniquely determines the distribution.</li><li>For independent \(X,Y\): \(\varphi_{X+Y}(t)=\varphi_X(t)\varphi_Y(t)\).</li><li>The characteristic function of \(N(\mu,\sigma^2)\) is \(e^{i\mu t-\sigma^2t^2/2}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\varphi(0)=E[1]=1\); \(|\varphi(t)|=|E[e^{itX}]|\le E[|e^{itX}|]=1\). (B) Uniqueness theorem for characteristic functions. (C) Independence implies \(E[e^{it(X+Y)}]=E[e^{itX}]E[e^{itY}]\). (D) Standard result for normal distribution.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>CLT - Lindeberg-Feller theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Lindeberg-Feller CLT: for independent (not i.i.d.) \(X_{n1},\ldots,X_{nn}\) with \(E[X_{nk}]=0\), \(\mathrm{Var}(X_{nk})=\sigma_{nk}^2\), and Lindeberg condition \(\sum_k E[X_{nk}^2\mathbf{1}_{|X_{nk}|>\varepsilon}]\to0\) for all \(\varepsilon>0\). Which are TRUE?</p>
+<ol type="A"><li>The Lindeberg condition ensures that no single summand dominates the sum.</li><li>Under the Lindeberg condition, \(\sum_{k=1}^n X_{nk}\overset{d}{\to}N(0,1)\) (after appropriate normalization).</li><li>The classical CLT (i.i.d. finite variance) follows from the Lindeberg-Feller theorem.</li><li>The Lindeberg condition is necessary for the CLT.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Lindeberg condition = negligibility / asymptotic uniformly infinitesimal condition. (B)(C) Lindeberg-Feller CLT generalizes the classical CLT. (D) FALSE: the Lindeberg condition is sufficient but not necessary; the Lyapunov condition (stronger) also implies it; the condition is necessary + sufficient only under the additional "Feller condition" (max variance → 0).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>CharFn - Lévy continuity theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Lévy's continuity theorem: \(X_n\overset{d}{\to}X\) iff \(\varphi_{X_n}(t)\to\varphi_X(t)\) for all \(t\in\mathbb{R}\). Which are TRUE?</p>
+<ol type="A"><li>Convergence of characteristic functions at all \(t\) is equivalent to weak convergence.</li><li>The proof of the CLT via characteristic functions uses this theorem.</li><li>If \(\varphi_{X_n}(t)\to\varphi(t)\) pointwise and \(\varphi\) is continuous at 0, then \(\varphi\) is a characteristic function.</li><li>Pointwise convergence of characteristic functions implies a.s. convergence.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Lévy continuity theorem. (B) CLT proof: show \(\varphi_{\bar X_n}(t)\to e^{-t^2/2}\), then apply Lévy. (C) If the limiting function is continuous at 0, it is a valid characteristic function (Lévy's extension). (D) FALSE: convergence in distribution (weak convergence) does not imply a.s. convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>CLT - Applications and Delta method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The delta method: if \(\sqrt{n}(T_n-\theta)\overset{d}{\to}N(0,\sigma^2)\) and \(g\) is differentiable at \(\theta\), then \(\sqrt{n}(g(T_n)-g(\theta))\overset{d}{\to}N(0,\sigma^2[g'(\theta)]^2)\). Which are TRUE?</p>
+<ol type="A"><li>The delta method follows from Taylor expansion and Slutsky's theorem.</li><li>If \(g'(\theta)=0\), higher-order Taylor expansion is needed.</li><li>For \(T_n=\bar X_n\sim\mathrm{Poisson}(\lambda)\): \(\sqrt{n}(\sqrt{\bar X_n}-\sqrt{\lambda})\overset{d}{\to}N(0,1/4)\).</li><li>The delta method applies only when \(g\) is a polynomial.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) \(g(T_n)\approx g(\theta)+g'(\theta)(T_n-\theta)\) + Slutsky. (B) If \(g'(\theta)=0\), use second-order delta method. (C) Poisson with \(g(x)=\sqrt{x}\): \(g'(\lambda)=1/(2\sqrt{\lambda})\), variance \(=\lambda\cdot[1/(2\sqrt{\lambda})]^2=1/4\). (D) FALSE: the delta method applies to any differentiable function.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>CharFn - Moments and cumulants</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For characteristic function \(\varphi(t)=E[e^{itX}]\), the cumulant generating function is \(\log\varphi(t)\). Which are TRUE?</p>
+<ol type="A"><li>If \(E[|X|^n]<\infty\), then \(\varphi^{(k)}(0)=i^kE[X^k]\) for \(k\le n\).</li><li>The first cumulant is the mean; the second cumulant is the variance.</li><li>For a normal distribution, all cumulants of order \(\ge3\) are zero.</li><li>Independence of \(X,Y\) implies \(\log\varphi_{X+Y}=\log\varphi_X+\log\varphi_Y\) (cumulants add).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Derivatives of characteristic function give moments. (B) First cumulant \(=\mu\), second \(=\sigma^2\), third \(=E[(X-\mu)^3]\) (skewness-related), etc. (C) Normal characteristic function \(e^{i\mu t-\sigma^2t^2/2}\): \(\log\varphi=i\mu t-\sigma^2t^2/2\), no higher terms → cumulants \(\kappa_n=0\) for \(n\ge3\). (D) Independence gives additive log-characteristic functions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>CLT - SLLN vs CLT</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Strong LLN (SLLN): \(\bar X_n\to\mu\) a.s. Weak LLN (WLLN): \(\bar X_n\overset{p}{\to}\mu\). CLT: \(\sqrt{n}(\bar X_n-\mu)\overset{d}{\to}N(0,\sigma^2)\). Which are TRUE?</p>
+<ol type="A"><li>SLLN implies WLLN.</li><li>CLT is a refinement: it describes the fluctuations of \(\bar X_n\) around \(\mu\) on the scale \(1/\sqrt{n}\).</li><li>WLLN requires \(E[X_1^2]<\infty\); SLLN only requires \(E[|X_1|]<\infty\).</li><li>The CLT implies the WLLN.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) a.s. convergence implies convergence in probability. (B) CLT gives the order of fluctuations. (C) WLLN: Chebyshev needs \(E[X^2]<\infty\); Khinchin's WLLN only needs \(E[|X|]<\infty\). SLLN (Kolmogorov) needs \(E[|X|]<\infty\). (D) CLT implies \(\sqrt{n}(\bar X_n-\mu)/\sigma\overset{d}{\to}N(0,1)\), so \(\bar X_n-\mu=O_p(1/\sqrt{n})\to0\) in probability.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>CharFn - Stable distributions and generalized CLT</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A distribution is \(\alpha\)-stable if sums of i.i.d. copies have the same type. Which are TRUE?</p>
+<ol type="A"><li>The normal distribution is 2-stable.</li><li>The Cauchy distribution is 1-stable (Lévy \(\alpha=1\)).</li><li>For heavy-tailed distributions with infinite variance, the generalized CLT gives convergence to \(\alpha\)-stable laws with \(\alpha<2\).</li><li>Every stable distribution has finite variance.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Normal (2-stable) and Cauchy (1-stable) are the most familiar stable distributions. (C) Generalized CLT: when variance is infinite, proper normalization leads to \(\alpha\)-stable limits with \(\alpha\in(0,2)\). (D) FALSE: stable distributions with \(\alpha<2\) have infinite variance.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>CLT - Multivariate CLT</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Multivariate CLT: for i.i.d. \(\mathbf{X}_1,\ldots,\mathbf{X}_n\in\mathbb{R}^k\) with mean \(\boldsymbol{\mu}\) and covariance \(\Sigma\): \(\sqrt{n}(\bar{\mathbf{X}}_n-\boldsymbol{\mu})\overset{d}{\to}N_k(\mathbf{0},\Sigma)\). Which are TRUE?</p>
+<ol type="A"><li>The multivariate CLT follows from the Cramér-Wold theorem (project onto lines).</li><li>The covariance matrix \(\Sigma\) must be positive definite for the CLT to hold.</li><li>The limiting distribution is a multivariate normal with covariance \(\Sigma\).</li><li>For any unit vector \(\mathbf{v}\), \(\sqrt{n}\mathbf{v}^T(\bar{\mathbf{X}}_n-\boldsymbol{\mu})\overset{d}{\to}N(0,\mathbf{v}^T\Sigma\mathbf{v})\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Cramér-Wold device reduces multivariate CLT to univariate. (B) FALSE: \(\Sigma\) need only be positive semidefinite (it is a covariance matrix). The CLT holds even if \(\Sigma\) is singular (degenerate normal). (C)(D) Standard multivariate CLT results.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>CharFn - Inversion formula</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The inversion formula for characteristic functions: if \(\int|\varphi_X(t)|\,dt<\infty\), then \(X\) has density \(f_X(x)=\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{-itx}\varphi_X(t)\,dt\). Which are TRUE?</p>
+<ol type="A"><li>The characteristic function and the density form a Fourier transform pair.</li><li>For distributions without densities, a generalized inversion formula holds for CDFs.</li><li>Two distributions with the same characteristic function are identical.</li><li>The characteristic function of a discrete distribution is always a polynomial.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) CF = Fourier transform of the density (when density exists). (B) Lévy inversion theorem for CDFs: works for all distributions. (C) Uniqueness of CF. (D) FALSE: the characteristic function of a discrete distribution is a sum \(\sum p_k e^{itx_k}\), a trigonometric sum (not a polynomial, unless it terminates and the exponents are integers).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>CLT - Martingale CLT</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Martingale CLT: let \((M_n,\mathcal{F}_n)\) be a martingale difference sequence with \(E[d_n^2|\mathcal{F}_{n-1}]\to\sigma^2\) (conditional variance stabilizes). Under conditions, \(M_n/\sqrt{n}\overset{d}{\to}N(0,\sigma^2)\). Which are TRUE?</p>
+<ol type="A"><li>The martingale CLT generalizes the classical CLT beyond independence.</li><li>The key condition replaces independence with a conditional variance condition.</li><li>Martingale CLT applies to dependent sequences like functions of Markov chains.</li><li>The martingale CLT requires all \(d_n\) to be bounded.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B)(C) The martingale CLT handles dependent data via conditional variance conditions, applying to ergodic Markov chains, regression errors, etc. (D) FALSE: boundedness is not required; a conditional moment condition (e.g. conditional Lindeberg condition) suffices.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</small><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>CharFn - Moment generating function vs characteristic function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The moment generating function (MGF) \(M_X(t)=E[e^{tX}]\) exists for \(t\) near 0 when \(X\) has light tails. Which are TRUE?</p>
+<ol type="A"><li>The characteristic function \(\varphi_X(t)=M_X(it)\) (formal analytic continuation).</li><li>The MGF uniquely determines the distribution when it exists in a neighborhood of 0.</li><li>The characteristic function always exists for any random variable.</li><li>The MGF always exists for any random variable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) The characteristic function is the MGF evaluated at imaginary argument. (B) When MGF exists in an interval containing 0, it uniquely determines the distribution (all moments finite). (C) \(\varphi(t)=E[e^{itX}]\): since \(|e^{itX}|=1\), the expectation always exists. (D) FALSE: for heavy-tailed distributions (Cauchy, Pareto), \(E[e^{tX}]=\infty\) for all \(t>0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>CLT - Random sums (compound distributions)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(S_N=X_1+\cdots+X_N\) where \(N\) is a random variable independent of i.i.d. \(X_i\) with mean \(\mu\) and variance \(\sigma^2\). Which are TRUE?</p>
+<ol type="A"><li>\(E[S_N]=E[N]\cdot\mu\) (Wald's identity).</li><li>\(\mathrm{Var}(S_N)=E[N]\sigma^2+\mu^2\mathrm{Var}(N)\).</li><li>If \(N\sim\mathrm{Poisson}(\lambda)\) and \(X_i\sim\mathrm{Bernoulli}(p)\), then \(S_N\sim\mathrm{Poisson}(\lambda p)\).</li><li>The characteristic function of \(S_N\) is \(\varphi_{S_N}(t)=M_N(\log\varphi_X(t))\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Wald's identity. (B) Variance formula for random sums (law of total variance). (C) Thinning property of Poisson: \(\varphi_{S_N}(t)=e^{\lambda(\varphi_X(t)-1)}=e^{\lambda(pe^{it}+1-p-1)}=e^{\lambda p(e^{it}-1)}\sim\mathrm{Poisson}(\lambda p)\). (D) \(\varphi_{S_N}(t)=E[\varphi_X(t)^N]=G_N(\varphi_X(t))\) where \(G_N(z)=E[z^N]\) is the probability generating function.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>CLT - Slutsky's theorem and continuous mapping</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Slutsky's theorem: if \(X_n\overset{d}{\to}X\) and \(Y_n\overset{p}{\to}c\) (constant), then \(X_n+Y_n\overset{d}{\to}X+c\) and \(X_nY_n\overset{d}{\to}cX\). Which are TRUE?</p>
+<ol type="A"><li>Continuous mapping theorem: if \(g\) is continuous, \(X_n\overset{d}{\to}X\Rightarrow g(X_n)\overset{d}{\to}g(X)\).</li><li>If \(X_n\overset{d}{\to}X\) and \(Y_n\overset{d}{\to}Y\) (independent), then \(X_n+Y_n\overset{d}{\to}X+Y\).</li><li>Slutsky: \(X_n/Y_n\overset{d}{\to}X/c\) if \(c\ne0\) and \(Y_n\overset{p}{\to}c\).</li><li>Slutsky's theorem requires \(X_n\) and \(Y_n\) to be independent.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Continuous mapping theorem (CMT): standard result. (B) Joint convergence in distribution is needed; if the pairs are jointly convergent (e.g. via independence), the sum converges. (C) Division version of Slutsky. (D) FALSE: Slutsky's theorem does not require independence — it works as long as \(Y_n\overset{p}{\to}c\) (constant).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>CharFn - Infinitely divisible distributions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A distribution is infinitely divisible if for every \(n\ge1\), it can be written as the sum of \(n\) i.i.d. random variables. The Lévy-Khintchine representation characterizes their CFs. Which are TRUE?</p>
+<ol type="A"><li>Normal, Poisson, Gamma, and Cauchy distributions are all infinitely divisible.</li><li>Uniform distribution on \([0,1]\) is NOT infinitely divisible.</li><li>The CF of an infinitely divisible distribution has the form \(\exp\{\psi(t)\}\) where \(\psi\) is a Lévy exponent.</li><li>Every infinitely divisible distribution is a compound Poisson distribution.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Normal, Poisson, Gamma, and Cauchy are all infinitely divisible (classical examples). (B) Uniform distribution is not infinitely divisible (its CF has zeros, which prevents the \(n\)-th root from being a valid CF). (C) Lévy-Khintchine representation. (D) FALSE: infinitely divisible distributions are the limits of compound Poisson distributions (closure), but not every one is itself compound Poisson.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

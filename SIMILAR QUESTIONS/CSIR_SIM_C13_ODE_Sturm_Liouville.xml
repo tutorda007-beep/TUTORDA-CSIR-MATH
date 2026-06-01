@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/ODEs — Sturm-Liouville and Oscillation Theory</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>SL - Zeros of y''+ xy=0 on (0,inf)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(y_1\) be a non-trivial solution of \(y''+xy=0\) on \((0,\infty)\) (Airy equation). Which are TRUE?</p>
+<ol type="A"><li>\(y_1\) has infinitely many zeros on \((0,\infty)\).</li><li>The zeros of \(y_1\) accumulate at \(\infty\).</li><li>Between any two consecutive zeros of \(y_1\), there is exactly one zero of any other linearly independent solution \(y_2\).</li><li>\(y_1\) has no zeros on \((-\infty,0)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>The Airy equation \(y''+xy=0\): on \((0,\infty)\), the coefficient \(x>0\) makes this oscillatory (comparison with \(y''+\varepsilon y=0\) shows oscillation). (A)(B) Infinitely many zeros accumulating at \(\infty\). (C) Sturm's separation theorem: zeros of two linearly independent solutions alternate. (D) FALSE: on \((-\infty,0)\), \(y''+xy=0\) with \(x<0\) becomes \(y''-|x|y=0\), which is non-oscillatory; solutions have at most one zero on \((-\infty,0)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>SL - Sturm-Liouville Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The regular Sturm-Liouville problem: \(-(p(x)y')'+q(x)y=\lambda w(x)y\) on \([a,b]\) with separated boundary conditions. Which are TRUE?</p>
+<ol type="A"><li>All eigenvalues are real.</li><li>Eigenfunctions corresponding to distinct eigenvalues are orthogonal in \(L^2_w[a,b]\).</li><li>The eigenvalues form a countably infinite increasing sequence \(\lambda_1<\lambda_2<\cdots\to\infty\).</li><li>Eigenfunctions form a complete orthogonal basis for \(L^2_w[a,b]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>The regular Sturm-Liouville theorem guarantees all four properties: (A) real eigenvalues, (B) orthogonality, (C) discrete spectrum tending to \(+\infty\), (D) completeness of eigenfunctions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>SL - y2 solves y''+y=x^2+2, y(0)=y'(0)=0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(y_2\) solve \(y''+y=x^2+2\) with \(y(0)=y'(0)=0\). Which are TRUE?</p>
+<ol type="A"><li>The solution is \(y_2(x)=x^2\).</li><li>\(y_2\) has infinitely many zeros.</li><li>\(y_2\) has exactly one positive zero.</li><li>\(y_2(x)>0\) for all \(x>0\) sufficiently large.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Try \(y_p=x^2+ax+b\): \(y_p''=2\), so \(2+(x^2+ax+b)=x^2+2\Rightarrow ax+b=0\Rightarrow a=b=0\). Particular solution: \(y_p=x^2\). General solution: \(y=c_1\cos x+c_2\sin x+x^2\). With \(y(0)=0\): \(c_1=0\). With \(y'(0)=0\): \(c_2=0\). So \(y_2=x^2\). (A) TRUE. (B) FALSE: \(y_2=x^2\ge0\), with only one zero at \(x=0\). (C) TRUE on \(x>0\), but the question says "one positive zero" — \(y_2(x)=x^2>0\) for \(x>0\), so no positive zeros. (C) FALSE. (D) TRUE since \(x^2>0\) for \(x>0\). But this contradicts what was asked — (D) is true. Let's reassess: (A) TRUE, (D) TRUE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>SL - Sturm Comparison Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Sturm Comparison Theorem: if \(u''+p(x)u=0\) and \(v''+q(x)v=0\) with \(p(x)\ge q(x)>0\) on \([a,b]\), then between any two consecutive zeros of \(v\), there is at least one zero of \(u\). Which follow?</p>
+<ol type="A"><li>Solutions of \(y''+y=0\) have more zeros than solutions of \(y''+4y=0\) on any given interval.</li><li>The \(n\)-th zero of solutions of \(y''+ny=0\) moves leftward as \(n\) increases.</li><li>Solutions of \(y''+(1+x^2)y=0\) oscillate faster than solutions of \(y''+y=0\) for large \(x\).</li><li>Sturm separation: zeros of two linearly independent solutions of the same equation alternate.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B), (C), (D)</strong></p><p>(A) FALSE: \(p=4>q=1\) means solutions of \(y''+4y=0\) oscillate FASTER (zeros every \(\pi/2\)) than \(y''+y=0\) (zeros every \(\pi\)). The equation with larger coefficient oscillates more. (B) As \(n\) increases, oscillation speeds up — zeros move closer together. (C) \(1+x^2>1\) for large \(x\): faster oscillation. (D) Sturm separation theorem.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>SL - Legendre's Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Legendre equation: \((1-x^2)y''-2xy'+n(n+1)y=0\) on \([-1,1]\). Which are TRUE?</p>
+<ol type="A"><li>For non-negative integer \(n\), one solution is the Legendre polynomial \(P_n(x)\).</li><li>Legendre polynomials satisfy \(\int_{-1}^1P_m(x)P_n(x)dx=\frac{2}{2n+1}\delta_{mn}\).</li><li>The Legendre polynomials \(\{P_n\}\) form a complete orthogonal basis for \(L^2[-1,1]\).</li><li>\(P_n(1)=1\) and \(P_n(-1)=(-1)^n\) for all \(n\ge0\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(P_0=1,P_1=x,P_2=(3x^2-1)/2,\ldots\) (B) Orthogonality relation. (C) Completeness in \(L^2[-1,1]\) by the Sturm-Liouville theory. (D) Standard boundary values of Legendre polynomials.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>SL - Green's Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Green's function \(G(x,\xi)\) for the BVP \(Ly=f\) (where \(L\) is a Sturm-Liouville operator) satisfies \(LG(x,\xi)=\delta(x-\xi)\). Which are TRUE?</p>
+<ol type="A"><li>The solution to \(Ly=f\) is \(y(x)=\int G(x,\xi)f(\xi)d\xi\).</li><li>\(G(x,\xi)=G(\xi,x)\) (symmetry) for self-adjoint \(L\).</li><li>\(G\) is continuous in \(x\ne\xi\) and has a jump in its derivative at \(x=\xi\).</li><li>The Green's function exists iff the homogeneous problem \(Ly=0\) has only the trivial solution.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Integral representation using Green's function. (B) Symmetry for self-adjoint operators. (C) \(G\) is continuous but its derivative has a jump of \(-1/p(\xi)\) at \(x=\xi\). (D) The Green's function exists iff the operator is invertible (no nontrivial homogeneous solutions).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>SL - Bessel's Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Bessel's equation: \(x^2y''+xy'+(x^2-\nu^2)y=0\). Which are TRUE?</p>
+<ol type="A"><li>For integer \(\nu=n\ge0\), one solution is the Bessel function \(J_n(x)\).</li><li>\(J_n(x)\) has infinitely many positive zeros.</li><li>The zeros of \(J_0\) and \(J_1\) alternate (Sturm's theorem applies).</li><li>\(J_0(0)=1\) and \(J_n(0)=0\) for \(n\ge1\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(J_n\) defined by the series. (B) Bessel functions oscillate with infinitely many zeros. (C) Sturm separation: zeros of \(J_0\) and \(J_1\) (solutions of related equations) alternate. (D) Standard initial values: \(J_0(0)=1\), \(J_n(0)=0\) for \(n\ge1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>SL - Phase Plane and Oscillation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the system \(y''+q(x)y=0\), the Prüfer substitution \(y=r\sin\theta\), \(y'=r\cos\theta\) transforms to \(\theta'=\cos^2\theta+q(x)\sin^2\theta\). Which are TRUE?</p>
+<ol type="A"><li>The number of zeros of \(y\) on \([a,b]\) equals the number of times \(\theta\) increases by \(\pi\).</li><li>If \(q(x)>0\), then \(\theta'\ge\min(1,q)>0\), so \(\theta\) is increasing.</li><li>For \(q(x)\ge c>0\), solutions have infinitely many zeros on \([a,\infty)\).</li><li>The Prüfer transformation decouples amplitude from phase.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Each zero of \(y=r\sin\theta\) corresponds to \(\theta\equiv0\pmod\pi\). (B) \(\theta'=\cos^2\theta+q\sin^2\theta\ge0\) when \(q\ge0\), but not necessarily \(\ge\min(1,q)\) — \(\theta'\) can be 0 at \(\cos\theta=0\) when \(q=0\). (C) For \(q\ge c>0\): \(\theta'\ge\min(1,c)>0\), so \(\theta\to\infty\), giving infinitely many zeros. (D) Prüfer separates the amplitude \(r\) from the phase \(\theta\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>SL - Power Series Solutions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(y''+P(x)y'+Q(x)y=0\) near an ordinary point \(x=0\), which are TRUE?</p>
+<ol type="A"><li>The general solution is a power series \(y=\sum_{n=0}^\infty a_nx^n\) with radius of convergence at least equal to that of \(P\) and \(Q\).</li><li>There are always two linearly independent power series solutions.</li><li>At a regular singular point, the Frobenius method gives at least one power series solution.</li><li>The indicial equation determines the exponents in the Frobenius solution.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Power series solution at ordinary points with the given radius. (B) Two linearly independent power series solutions at ordinary points. (C) Frobenius method: at a regular singular point, always at least one Frobenius-type solution; the second may involve a logarithm. (D) The indicial equation \(r(r-1)+p_0r+q_0=0\) gives the exponents.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>SL - Wronskian</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the ODE \(y''+P(x)y'+Q(x)y=0\), the Wronskian \(W(y_1,y_2)(x)=y_1y_2'-y_2y_1'\). Which are TRUE?</p>
+<ol type="A"><li>Abel's identity: \(W(x)=W(x_0)e^{-\int_{x_0}^xP(t)dt}\).</li><li>Either \(W=0\) everywhere or \(W\ne0\) everywhere on the interval.</li><li>\(y_1,y_2\) are linearly independent iff \(W\ne0\) at some (and hence all) points.</li><li>The Wronskian of three solutions of a second-order ODE is always 0.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Abel's identity. (B)(C) The Wronskian is either identically zero or never zero on any interval. (D) A second-order ODE has a 2-dimensional solution space; any three solutions are linearly dependent, so their Wronskian (a \(3\times3\) determinant of solutions and their derivatives) would be zero.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>SL - Oscillation Non-oscillation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(y''+q(x)y=0\) on \([1,\infty)\), which are TRUE?</p>
+<ol type="A"><li>If \(q(x)\ge c/x^2\) with \(c>1/4\), every solution has infinitely many zeros.</li><li>If \(q(x)\le1/(4x^2)\), every solution has at most finitely many zeros.</li><li>The equation \(y''+(1/4x^2)y=0\) is on the borderline of oscillation.</li><li>If \(q(x)\to0\) as \(x\to\infty\) and \(\int_1^\infty q(x)dx<\infty\), the equation may be non-oscillatory.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B)(C) Kneser's oscillation criterion: the critical case is \(q=1/(4x^2)\). For \(q\ge c/x^2\) with \(c>1/4\): oscillatory. For \(q\le1/(4x^2)\): non-oscillatory. (D) If \(q\to0\) and \(\int q<\infty\), comparison with \(y''=0\) shows non-oscillation is possible.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</small><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>SL - Eigenvalue Problem y''+lambda*y=0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the BVP \(y''+\lambda y=0\) on \([0,L]\) with \(y(0)=y(L)=0\). Which are TRUE?</p>
+<ol type="A"><li>Eigenvalues are \(\lambda_n=(n\pi/L)^2\), \(n=1,2,3,\ldots\)</li><li>Eigenfunctions are \(y_n(x)=\sin(n\pi x/L)\).</li><li>No negative eigenvalues exist.</li><li>The eigenfunctions form a complete orthogonal basis for \(L^2[0,L]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) For \(\lambda>0\): \(y=A\sin(\sqrt\lambda x)+B\cos(\sqrt\lambda x)\). With \(y(0)=0\): \(B=0\). With \(y(L)=0\): \(\sin(\sqrt\lambda L)=0\Rightarrow\sqrt\lambda=n\pi/L\). (C) For \(\lambda\le0\): only trivial solution. (D) Fourier sine series completeness.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>SL - Variation of Parameters</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Variation of parameters for \(y''+P(x)y'+Q(x)y=R(x)\): the particular solution is \(y_p=-y_1\int\frac{y_2R}{W}dx+y_2\int\frac{y_1R}{W}dx\). Which are TRUE?</p>
+<ol type="A"><li>The method requires knowing the homogeneous solutions \(y_1,y_2\).</li><li>The method works for any continuous \(R(x)\).</li><li>Variation of parameters is generally superior to undetermined coefficients for non-constant-coefficient equations.</li><li>For constant-coefficient equations, undetermined coefficients is simpler when \(R\) is a polynomial, exponential, or sinusoid.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) The method uses the known fundamental system. (B) Works for any continuous forcing. (C) Undetermined coefficients only works for constant-coefficient equations with special RHS. (D) Undetermined coefficients is simpler for those special forms.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>SL - Liouville Normal Form</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Sturm-Liouville equation can be put in Liouville normal form \(u''+[λ-q(x)]u=0\) via the substitution \(u=p^{1/4}w(x)\cdot y\). Which are TRUE?</p>
+<ol type="A"><li>The transformation preserves the number and location of zeros (qualitatively).</li><li>The Liouville normal form has a constant leading coefficient.</li><li>This allows comparison with simpler equations like \(u''+\lambda u=0\).</li><li>The effective potential \(q(x)\) in Liouville form is related to the original coefficients \(p,w\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>The Liouville transformation puts the SL equation into normal form with unit leading coefficient. (A) Zeros are preserved since the transformation is a bijection on solutions. (B)(C)(D) Standard properties of the Liouville normal form.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>SL - Self-Adjointness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An operator \(L\) is self-adjoint if \(\langle Lu,v\rangle=\langle u,Lv\rangle\). For the Sturm-Liouville operator \(Ly=-(py')'+qy\), which are TRUE?</p>
+<ol type="A"><li>\(L\) is self-adjoint with respect to boundary conditions that make the boundary terms vanish.</li><li>Self-adjointness implies all eigenvalues are real.</li><li>The SL operator with Dirichlet conditions \(y(a)=y(b)=0\) is self-adjoint.</li><li>A self-adjoint operator always has a complete set of eigenfunctions.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Separation or periodic boundary conditions ensure self-adjointness. (B) Self-adjoint operators have real spectra. (C) Dirichlet conditions: the boundary terms \([p(y_1'y_2-y_2'y_1)]_a^b=0\). (D) For compact self-adjoint operators (like the inverse of SL), the spectral theorem gives completeness.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>SL - Heat Equation Solution via SL</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The heat equation \(u_t=ku_{xx}\) on \([0,L]\) with Dirichlet conditions is solved by separation. Which are TRUE?</p>
+<ol type="A"><li>The solution is \(u(x,t)=\sum_{n=1}^\infty b_n\sin(n\pi x/L)e^{-k(n\pi/L)^2t}\).</li><li>As \(t\to\infty\), \(u\to0\) (exponential decay).</li><li>The coefficients \(b_n=\frac{2}{L}\int_0^Lu_0(x)\sin(n\pi x/L)dx\) where \(u_0\) is the initial condition.</li><li>The solution exhibits smoothing: for any \(t>0\), \(u(\cdot,t)\in C^\infty\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B)(C) Standard solution by Fourier sine series. (D) The heat kernel is \(C^\infty\) for \(t>0\), giving infinite smoothing.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>SL - Floquet Theory</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Floquet theory: if \(P(x)\) is \(T\)-periodic and \(y''+P(x)y=0\), every solution satisfies \(y(x+T)=\mu y(x)\) for some Floquet multiplier \(\mu\). Which are TRUE?</p>
+<ol type="A"><li>The Wronskian is \(T\)-periodic (up to a constant factor).</li><li>If \(|\mu|=1\), solutions are bounded.</li><li>If \(|\mu|>1\), some solutions grow exponentially.</li><li>Hill's equation \(y''+(a+b\cos x)y=0\) is a special case of Floquet theory.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Abel's identity gives \(W(x+T)=W(x)e^{-\int_x^{x+T}P}=\mu_1\mu_2W(x)\). (B) Bounded multipliers give bounded solutions. (C) If \(|\mu|>1\): the corresponding solution grows like \(|\mu|^{x/T}\). (D) Hill's equation is the classic Floquet application.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>SL - Rayleigh Quotient</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the SL problem \(-(py')'+qy=\lambda wy\), the Rayleigh quotient is \(R[y]=\dfrac{\int_a^b(p(y')^2+qy^2)dx}{\int_a^b wy^2dx}\). Which are TRUE?</p>
+<ol type="A"><li>The minimum of \(R[y]\) over all admissible \(y\) equals the smallest eigenvalue \(\lambda_1\).</li><li>The minimum is attained by the first eigenfunction \(\phi_1\).</li><li>\(R[y]\ge\lambda_1\) for all admissible \(y\neq0\).</li><li>The Rayleigh quotient is useful for bounding eigenvalues without solving the ODE.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B)(C) Min-max principle for Rayleigh quotient. (D) Rayleigh-Ritz method uses trial functions to bound \(\lambda_1\) from above.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>SL - First Order Linear ODE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The first-order linear ODE \(y'+P(x)y=Q(x)\) has the integrating factor \(\mu=e^{\int P(x)dx}\). Which are TRUE?</p>
+<ol type="A"><li>The general solution is \(y=\frac{1}{\mu}\left(\int\mu Q\,dx+C\right)\).</li><li>If \(P\) and \(Q\) are continuous on \([a,b]\), the IVP has a unique solution.</li><li>The solution is always bounded if \(P(x)\ge0\) and \(Q\) is bounded.</li><li>For \(P=0\): \(y=\int Q\,dx+C\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Standard formula. (B) Existence and uniqueness from Picard-Lindelöf. (C) FALSE: even with \(P\ge0\) and bounded \(Q\), the solution may grow. E.g. \(y'+0\cdot y=1\Rightarrow y=x+C\), which is unbounded. (D) \(P=0\): integrating factor is 1.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>SL - Existence Uniqueness for ODEs</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the IVP \(y'=f(x,y)\), \(y(x_0)=y_0\). Which are TRUE?</p>
+<ol type="A"><li>Picard-Lindelöf: if \(f\) is continuous and Lipschitz in \(y\) near \((x_0,y_0)\), a unique solution exists locally.</li><li>Peano: if \(f\) is merely continuous, at least one solution exists (but may not be unique).</li><li>If \(f\) is not continuous, no solution may exist.</li><li>The solution can always be continued globally if \(f\) is globally Lipschitz.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Picard-Lindelöf theorem. (B) Peano existence theorem. (C) FALSE: even discontinuous \(f\) may have solutions (Carathéodory solutions). (D) Global Lipschitz \(\Rightarrow\) global existence (no finite-time blowup): use Grönwall's inequality.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

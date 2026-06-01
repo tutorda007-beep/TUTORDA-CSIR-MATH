@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Linear Algebra — Diagonalizability</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Diagonalization - When is A Diagonalizable</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An \(n\times n\) matrix \(A\) is diagonalizable (over \(\mathbb{C}\)) if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) For every eigenvalue, its geometric multiplicity equals its algebraic multiplicity</strong></p><p>Diagonalizability \(\Leftrightarrow\) there is a basis of eigenvectors \(\Leftrightarrow\) for each eigenvalue \(\lambda\), \(\dim\ker(A-\lambda I)=\) algebraic multiplicity of \(\lambda\). Equivalently, the minimal polynomial has no repeated roots.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) is symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[For every eigenvalue, geometric multiplicity = algebraic multiplicity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) has all positive entries]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A^2=A\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Diagonalization - NOT Diagonalizable Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which matrix is NOT diagonalizable over \(\mathbb{R}\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(\begin{pmatrix}1&1\\0&1\end{pmatrix}\)</strong></p><p>\(\begin{pmatrix}1&1\\0&1\end{pmatrix}\) has eigenvalue \(\lambda=1\) with algebraic multiplicity 2 but geometric multiplicity 1 (only one independent eigenvector \((1,0)^T\)). It is a Jordan block and is NOT diagonalizable. The other matrices have distinct eigenvalues (hence diagonalizable).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}1&0\\0&2\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}3&1\\1&3\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}0&1\\1&0\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\begin{pmatrix}1&1\\0&1\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Diagonalization - Distinct Eigenvalues</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If an \(n\times n\) matrix has \(n\) distinct eigenvalues, then it is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Diagonalizable</strong></p><p>Eigenvectors corresponding to distinct eigenvalues are linearly independent. If all \(n\) eigenvalues are distinct, there are \(n\) linearly independent eigenvectors forming a basis. Hence \(A\) is diagonalizable. The converse is false: \(\begin{pmatrix}1&0\\0&1\end{pmatrix}\) is diagonalizable with repeated eigenvalue 1.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Diagonalizable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not necessarily diagonalizable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Invertible and diagonalizable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Diagonalization - Jordan Normal Form</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Every complex square matrix is similar to a matrix in Jordan normal form. The Jordan block for eigenvalue \(\lambda\) of size \(k\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) An upper triangular matrix with \(\lambda\) on the diagonal and 1's on the superdiagonal</strong></p><p>A Jordan block \(J_k(\lambda)\) has \(\lambda\) on the diagonal, 1 on the superdiagonal, and 0 elsewhere. It represents a nilpotent perturbation: \(J_k(\lambda)=\lambda I+N\) where \(N\) is the nilpotent Jordan block. Every matrix is similar to a block diagonal of Jordan blocks (Jordan decomposition).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[A diagonal matrix with \(\lambda\)'s]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A lower triangular matrix with \(\lambda\) on the diagonal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[An upper triangular matrix with \(\lambda\) on the diagonal and 1's on the superdiagonal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A matrix with \(\lambda^k\) in the \((1,k)\) entry]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Diagonalization - Real Symmetric Always Diagonalizable</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Every real symmetric matrix \(A=A^T\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Orthogonally diagonalizable: \(A=Q\Lambda Q^T\) with \(Q\) orthogonal</strong></p><p>Real spectral theorem: every real symmetric matrix is orthogonally diagonalizable. \(A=Q\Lambda Q^T\) where \(\Lambda\) is diagonal (real eigenvalues) and \(Q\) is orthogonal (eigenvectors as columns). This is the foundation of PCA, quadratic forms, and many areas of applied mathematics.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Diagonalizable but eigenvectors need not be orthogonal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Orthogonally diagonalizable: \(A=Q\Lambda Q^T\) with \(Q\) orthogonal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not necessarily diagonalizable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Diagonalizable only if all eigenvalues are distinct]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Diagonalization - Diagonalizing A=PDP^{-1}</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(A=PDP^{-1}\) with \(D=\begin{pmatrix}2&0\\0&3\end{pmatrix}\), then \(A^5\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(P\begin{pmatrix}32&0\\0&243\end{pmatrix}P^{-1}\)</strong></p><p>\(A^5=(PDP^{-1})^5=PD^5P^{-1}\). \(D^5=\begin{pmatrix}2^5&0\\0&3^5\end{pmatrix}=\begin{pmatrix}32&0\\0&243\end{pmatrix}\). This is why diagonalization is valuable: matrix powers are trivial in diagonal form.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(5A\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P\begin{pmatrix}10&0\\0&15\end{pmatrix}P^{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P\begin{pmatrix}32&0\\0&243\end{pmatrix}P^{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P^5D P^{-5}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Diagonalization - Minimal Polynomial and Diagonalizability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A matrix \(A\) is diagonalizable if and only if its minimal polynomial:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Has no repeated roots (is a product of distinct linear factors)</strong></p><p>Diagonalizable \(\Leftrightarrow\) minimal polynomial splits into distinct linear factors \(\Leftrightarrow\) minimal polynomial = \(\prod(\lambda-\lambda_i)\) with all \(\lambda_i\) distinct. If the minimal polynomial has a repeated root, the corresponding Jordan block has size \(\geq2\), preventing diagonalization.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Has no repeated roots]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equals the characteristic polynomial]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is a perfect square]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has degree equal to the rank of \(A\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Diagonalization - 3x3 with Repeated Eigenvalue</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The matrix \(A=\begin{pmatrix}2&0&0\\0&2&0\\0&0&3\end{pmatrix}\) is diagonalizable because:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) It is already diagonal, so it trivially satisfies the diagonalizability criterion</strong></p><p>Any diagonal matrix is diagonalizable (it equals \(I\cdot A\cdot I^{-1}=A\)). The eigenvalue 2 has algebraic multiplicity 2 and geometric multiplicity 2 (the eigenspace is the \(xy\)-plane, a 2-dimensional subspace). Since geometric = algebraic for all eigenvalues, \(A\) is diagonalizable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It has 3 distinct eigenvalues]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[It is already diagonal; the geometric multiplicity of eigenvalue 2 equals its algebraic multiplicity (both = 2)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Its determinant is nonzero]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Diagonalization - Commuting Diagonalizable Matrices</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(A\) and \(B\) are diagonalizable matrices with \(AB=BA\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(A\) and \(B\) are simultaneously diagonalizable</strong></p><p>Commuting diagonalizable matrices are simultaneously diagonalizable — there exists a single basis of vectors that are eigenvectors for both \(A\) and \(B\). This is a key theorem used in quantum mechanics (commuting observables have common eigenstates).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A=B\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(A\) and \(B\) are simultaneously diagonalizable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(AB\) is diagonalizable but \(A\) and \(B\) individually may not be]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A+B\) is not diagonalizable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Diagonalization - Rotation Matrix R_90</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The rotation matrix \(R=\begin{pmatrix}0&-1\\1&0\end{pmatrix}\) (rotation by \(90°\)) is NOT diagonalizable over \(\mathbb{R}\) because:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Its characteristic polynomial \(\lambda^2+1\) has no real roots</strong></p><p>\(\det(\lambda I-R)=\lambda^2+1\), which has no real roots (\(\lambda=\pm i\)). Since complex eigenvalues come in conjugate pairs for real matrices, and there are no real eigenvalues, \(R\) has no real eigenvectors and is not diagonalizable over \(\mathbb{R}\). Over \(\mathbb{C}\), it diagonalizes to \(\begin{pmatrix}i&0\\0&-i\end{pmatrix}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Its determinant is 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is not symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Its trace is 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Its characteristic polynomial \(\lambda^2+1\) has no real roots]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Diagonalization - Eigenspace Dimension</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(A=\begin{pmatrix}3&1&0\\0&3&0\\0&0&2\end{pmatrix}\), is \(A\) diagonalizable?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) No; the eigenspace for \(\lambda=3\) has dimension 1 but algebraic multiplicity 2</strong></p><p>Eigenvalues: \(\lambda=3\) (algebraic mult. 2) and \(\lambda=2\) (mult. 1). For \(\lambda=3\): \(\ker(A-3I)=\ker\begin{pmatrix}0&1&0\\0&0&0\\0&0&-1\end{pmatrix}\). The solution has only one free variable: \(x_1\) free, \(x_2=0\), \(x_3=0\). So geometric mult.=1 \(<\) algebraic mult.=2. NOT diagonalizable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Yes; it has 3 distinct eigenvalues]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[No; the eigenspace for \(\lambda=3\) has dim 1 but algebraic mult. 2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Yes; it is upper triangular]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No; all upper triangular matrices are non-diagonalizable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Diagonalization - Eigenvectors for Distinct Eigenvalues</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Eigenvectors corresponding to distinct eigenvalues of a matrix are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Linearly independent</strong></p><p>Standard theorem: if \(v_1,\ldots,v_k\) are eigenvectors corresponding to distinct eigenvalues \(\lambda_1,\ldots,\lambda_k\), they are linearly independent. Proof by induction using the assumption that a dependence relation leads to a contradiction with the distinctness of eigenvalues.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Orthogonal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Parallel]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Linearly independent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All unit vectors]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Diagonalization - Skew-Symmetric Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The eigenvalues of a real skew-symmetric matrix (\(A^T=-A\)) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Purely imaginary or zero</strong></p><p>If \(Av=\lambda v\) (over \(\mathbb{C}\)), then \(\lambda\|v\|^2=\langle Av,v\rangle=-\langle v,Av\rangle=-\bar\lambda\|v\|^2\), so \(\lambda=-\bar\lambda\), meaning \(\lambda\) is purely imaginary (or zero). A \(2\times2\) example: \(\begin{pmatrix}0&-1\\1&0\end{pmatrix}\) has eigenvalues \(\pm i\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Always real and positive]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Purely imaginary or zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always equal to 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Real and negative]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Diagonalization - Diagonalizable iff Minimal Poly has No Repeated Factor</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The matrix \(A=\begin{pmatrix}1&0\\0&1\end{pmatrix}\) has minimal polynomial:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\lambda-1\)</strong></p><p>\(A=I\), so \(A-I=0\). The minimal polynomial of the identity matrix is \(\lambda-1\) (the smallest degree polynomial making \(A-I=0\)). The characteristic polynomial is \((\lambda-1)^2\). Since the minimal polynomial has no repeated roots (degree 1, root \(\lambda=1\) once), \(A\) is diagonalizable — trivially, since it's already diagonal.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((\lambda-1)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda^2-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Diagonalization - A^2 = I Implies Diagonalizable</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(A^2=I\) (involution), then \(A\) is diagonalizable with eigenvalues:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\pm1\) only, and \(A\) is diagonalizable</strong></p><p>The minimal polynomial of \(A\) divides \(\lambda^2-1=(\lambda-1)(\lambda+1)\), which has no repeated roots. So \(A\) is diagonalizable with eigenvalues in \(\{1,-1\}\). The eigenspaces are \(\ker(A-I)\) and \(\ker(A+I)\), and \(\mathbb{R}^n=\ker(A-I)\oplus\ker(A+I)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Only \(+1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only \(-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pm1\) only; \(A\) is diagonalizable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not necessarily diagonalizable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Diagonalization - Number of Diagonalizable Matrices</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Among all \(2\times2\) real matrices with characteristic polynomial \((\lambda-1)^2\), those that are diagonalizable are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Only \(I=\begin{pmatrix}1&0\\0&1\end{pmatrix}\)</strong></p><p>With char. poly \((\lambda-1)^2\), the only eigenvalue is 1. Diagonalizable \(\Leftrightarrow\) geometric mult.=2 \(\Leftrightarrow\) \(A-I=0\) \(\Leftrightarrow\) \(A=I\). Any other matrix with this characteristic polynomial is of the form \(\begin{pmatrix}1&a\\0&1\end{pmatrix}\) (a Jordan block) with geometric mult.=1.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Only \(I\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All upper triangular matrices with 1 on the diagonal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All symmetric matrices with trace 2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No such matrix is diagonalizable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Diagonalization - Gram-Schmidt and Diagonal</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\) be a real symmetric positive definite matrix. Then \(A\) can be written as \(A=B^TB\) where \(B\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) An invertible upper triangular matrix (Cholesky decomposition)</strong></p><p>Cholesky decomposition: every real symmetric positive definite matrix \(A\) factors as \(A=L L^T\) (lower triangular \(L\)) or equivalently \(A=R^TR\) (upper triangular \(R\)). This is used in numerical linear algebra for efficient computation.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[A diagonal matrix]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[An invertible upper triangular matrix (Cholesky decomposition)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[An orthogonal matrix]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A permutation matrix]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Diagonalization - Simultaneous Diagonalization</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Two diagonalizable matrices \(A\) and \(B\) are simultaneously diagonalizable if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(AB=BA\)</strong></p><p>Two diagonalizable matrices are simultaneously diagonalizable iff they commute. This generalises to families of matrices: a set of commuting diagonalizable matrices is simultaneously diagonalizable. The "only if" direction is clear: diagonal matrices commute; the "if" direction requires more work.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A=B\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A+B\) is symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(AB=BA\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A^2=B^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Diagonalization - Triangularization</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Every \(n\times n\) matrix over \(\mathbb{C}\) is similar to an upper triangular matrix (Schur triangularization). This implies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Every complex matrix has at least one eigenvalue</strong></p><p>Since \(\mathbb{C}\) is algebraically closed, the characteristic polynomial always has a root. More: Schur's theorem says \(A=QUQ^*\) with \(Q\) unitary and \(U\) upper triangular. The diagonal entries of \(U\) are the eigenvalues. This shows every complex matrix has \(n\) eigenvalues (counting multiplicity).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Every complex matrix has at least one eigenvalue]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every real matrix is diagonalizable over \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every matrix is symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The eigenvalues are always real]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Diagonalization - CSIR Style: Which is NOT Diagonalizable</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which \(2\times2\) real matrix is NOT diagonalizable over \(\mathbb{R}\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\begin{pmatrix}0&-1\\1&0\end{pmatrix}\)</strong></p><p>Characteristic polynomial: \(\lambda^2+1\) — no real roots. Not diagonalizable over \(\mathbb{R}\). Option (A) \(\begin{pmatrix}1&2\\2&1\end{pmatrix}\): eigenvalues \(-1,3\) (distinct) — diagonalizable. Option (B) \(\begin{pmatrix}2&0\\0&2\end{pmatrix}=2I\) — diagonalizable. Option (D) \(\begin{pmatrix}1&1\\0&2\end{pmatrix}\): eigenvalues 1, 2 (distinct) — diagonalizable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}1&2\\2&1\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}2&0\\0&2\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\begin{pmatrix}0&-1\\1&0\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}1&1\\0&2\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

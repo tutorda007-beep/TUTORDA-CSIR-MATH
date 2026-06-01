@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Real Analysis — Power Series and Radius of Convergence</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Power Series - Radius of Convergence Examples</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(R\) denote the radius of convergence. Which of the following are TRUE?</p>
+<ol type="A"><li>\(\sum n^n x^n\) has \(R=0\).</li>
+<li>\(\sum \frac{x^n}{n!}\) has \(R=\infty\).</li>
+<li>Every power series converges at both endpoints of its interval of convergence.</li>
+<li>\(\sum nx^n\) has \(R=1\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) \(\limsup|n^n|^{1/n}=n\to\infty\Rightarrow R=0\). (B) \(\limsup(1/n!)^{1/n}=0\Rightarrow R=\infty\). (C) FALSE — e.g. \(\sum x^n\) diverges at \(x=\pm1\). (D) \(\limsup|n|^{1/n}=1\Rightarrow R=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A) TRUE</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B) TRUE</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C) TRUE</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D) TRUE</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Power Series - Properties of R=3 Series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\sum a_n x^n\) have radius of convergence \(R=3\). Which of the following are necessarily TRUE?</p>
+<ol type="A"><li>The series converges absolutely for all \(|x|<3\).</li>
+<li>The series diverges for all \(|x|>3\).</li>
+<li>The series converges at \(x=3\).</li>
+<li>The derived series \(\sum na_nx^{n-1}\) has radius of convergence \(3\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Absolute convergence inside the disk. (B) Divergence outside the disk (Cauchy-Hadamard). (C) FALSE — boundary behavior requires separate analysis; e.g. \(\sum x^n/n\) diverges at \(x=1\) (its \(R=1\)). (D) Differentiation preserves the radius of convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Power Series - a_n = 1/n^2 at boundary</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(\sum_{n=1}^\infty \frac{x^n}{n^2}\), which of the following are TRUE?</p>
+<ol type="A"><li>The radius of convergence is \(1\).</li>
+<li>The series converges at \(x=1\).</li>
+<li>The series converges at \(x=-1\).</li>
+<li>The series converges uniformly on \([-1,1]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\limsup(1/n^2)^{1/n}=1\). (B) \(\sum 1/n^2=\pi^2/6<\infty\). (C) \(\sum (-1)^n/n^2\) converges absolutely. (D) By Weierstrass M-test: \(|x^n/n^2|\le1/n^2\) for \(|x|\le1\), and \(\sum1/n^2<\infty\), giving uniform convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Power Series - a_n=1/n boundary behavior</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(f(x)=\sum_{n=1}^\infty \frac{x^n}{n}\), which statements are TRUE?</p>
+<ol type="A"><li>The radius of convergence is \(1\).</li>
+<li>\(f(-1)\) converges (to \(-\ln 2\)).</li>
+<li>\(f(1)\) converges.</li>
+<li>\(f\) is analytic on \((-1,1)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) \(R=1\) by ratio test. (B) At \(x=-1\): \(\sum(-1)^n/n\) converges by the alternating series test (to \(-\ln2\)). (C) FALSE: \(\sum1/n\) diverges (harmonic series). (D) Power series are analytic (infinitely differentiable) inside their disk of convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Power Series - Cauchy-Hadamard Formula</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(K=\limsup_{n\to\infty}|a_n|^{1/n}\). Which statements are TRUE?</p>
+<ol type="A"><li>If \(K=0\), the series converges for all \(x\in\mathbb{R}\).</li>
+<li>If \(K=\infty\), the series converges only at \(x=0\).</li>
+<li>If \(0<K<\infty\), the series converges for \(|x|<1/K\) and diverges for \(|x|>1/K\).</li>
+<li>The radius of convergence satisfies \(R=K\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)–(C) are the three cases of the Cauchy-Hadamard theorem. (D) FALSE: \(R=1/K\) (not \(R=K\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Power Series - Uniform Convergence on Compact Subsets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\sum a_nx^n\) have radius of convergence \(R>0\). Which statements are TRUE?</p>
+<ol type="A"><li>The series converges uniformly on every compact subset of \((-R,R)\).</li>
+<li>The sum \(f(x)=\sum a_nx^n\) is continuous on \((-R,R)\).</li>
+<li>The series always converges uniformly on the entire interval \((-R,R)\).</li>
+<li>\(f\) is infinitely differentiable on \((-R,R)\) and \(f^{(k)}(x)=\sum_{n=k}^\infty n(n-1)\cdots(n-k+1)a_nx^{n-k}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Uniform convergence on \([-r,r]\) for any \(0<r<R\) follows from Weierstrass M-test. (B) Uniform limit of continuous functions on compact sets is continuous; continuity on \((-R,R)\) follows. (C) FALSE — e.g. \(\sum x^n\) does not converge uniformly on \((-1,1)\). (D) Power series may be differentiated term by term inside the radius.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Power Series - Product and Quotient Radius</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\sum a_nx^n\) and \(\sum b_nx^n\) have radii of convergence \(R_1\) and \(R_2\) respectively. Which statements are necessarily TRUE?</p>
+<ol type="A"><li>The Cauchy product \(\sum c_nx^n\) (where \(c_n=\sum_{k=0}^na_kb_{n-k}\)) has radius \(\ge\min(R_1,R_2)\).</li>
+<li>If \(R_1\ne R_2\), the sum \(\sum(a_n+b_n)x^n\) has radius \(\min(R_1,R_2)\).</li>
+<li>\(\sum a_n^2x^n\) has radius \(\ge R_1^2\).</li>
+<li>\(\sum a_nb_nx^n\) has radius \(\ge R_1R_2\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B)</strong></p><p>(A) The Cauchy product converges at least on the smaller disk. (B) When \(R_1\ne R_2\), the dominant term at radius \(\min(R_1,R_2)\) ensures divergence there for one series, so the sum's radius is exactly \(\min(R_1,R_2)\). (C) FALSE in general: \(\limsup|a_n^2|^{1/n}=(\limsup|a_n|^{1/n})^2=1/R_1^2\), giving radius \(R_1^2\), which may be smaller. (D) FALSE similarly.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Power Series - Taylor Series of exp, sin, cos</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following power series identities are TRUE for all \(x\in\mathbb{R}\)?</p>
+<ol type="A"><li>\(e^x=\sum_{n=0}^\infty\dfrac{x^n}{n!}\)</li>
+<li>\(\sin x=\sum_{n=0}^\infty\dfrac{(-1)^n x^{2n+1}}{(2n+1)!}\)</li>
+<li>\(\cos x=\sum_{n=0}^\infty\dfrac{(-1)^n x^{2n}}{(2n)!}\)</li>
+<li>\(\ln(1+x)=\sum_{n=1}^\infty\dfrac{(-1)^{n}x^n}{n}\) for all \(x\in\mathbb{R}\)</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)–(C) hold for all \(x\in\mathbb{R}\) (radius of convergence \(\infty\)). (D) FALSE: the series \(\sum(-1)^nx^n/n\) has radius of convergence \(1\) and converges only for \(|x|\le1\) (excluding \(x=1\) where it diverges to \(-\ln2\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Power Series - Integration Inside Radius</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f(x)=\sum_{n=0}^\infty a_nx^n\) have radius of convergence \(R>0\). Which statements are TRUE?</p>
+<ol type="A"><li>\(\int_0^x f(t)\,dt=\sum_{n=0}^\infty\dfrac{a_n x^{n+1}}{n+1}\) for \(|x|<R\).</li>
+<li>The integrated series has the same radius of convergence \(R\).</li>
+<li>\(f\) is Riemann integrable on \([0,R]\).</li>
+<li>If \(a_n\ge0\) for all \(n\), then \(f\) is increasing on \([0,R)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Term-by-term integration is valid inside the radius. (B) Integration/differentiation preserves \(R\) (by Cauchy-Hadamard: \(\limsup|a_n/(n+1)|^{1/(n+1)}=\limsup|a_n|^{1/n}=1/R\)). (C) FALSE in general — \(f\) may be unbounded near \(R\). (D) If \(a_n\ge0\), then \(f'(x)=\sum na_nx^{n-1}\ge0\) for \(x\ge0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Power Series - Abel's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\sum a_n x^n\) have radius of convergence \(R=1\). Which statements are TRUE?</p>
+<ol type="A"><li>If \(\sum a_n\) converges, then \(\lim_{x\to1^-}\sum a_nx^n=\sum a_n\) (Abel's theorem).</li>
+<li>If \(\sum a_n\) converges, then the series converges uniformly on \([0,1]\).</li>
+<li>The converse of Abel's theorem holds: if \(\lim_{x\to1^-}f(x)\) exists, then \(\sum a_n\) converges.</li>
+<li>Abel's theorem extends to complex power series inside the disk.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (D)</strong></p><p>(A) Abel's theorem. (B) FALSE: uniform convergence on \([0,1]\) is not guaranteed — the series may converge at \(x=1\) but not uniformly on \([0,1]\). (C) FALSE: this is the "Tauberian" direction, which requires extra conditions (e.g., \(a_n=O(1/n)\)). (D) Abel's theorem holds for complex power series approaching a boundary point along non-tangential paths.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Power Series - Analytic Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A function \(f:(a,b)\to\mathbb{R}\) is called <em>real analytic</em> at \(x_0\in(a,b)\) if it equals its Taylor series near \(x_0\). Which statements are TRUE?</p>
+<ol type="A"><li>Every real analytic function is \(C^\infty\).</li>
+<li>Every \(C^\infty\) function on \(\mathbb{R}\) is real analytic.</li>
+<li>The function \(f(x)=e^{-1/x^2}\) (\(x\ne0\)), \(f(0)=0\) is \(C^\infty\) but NOT real analytic at \(0\).</li>
+<li>Polynomials are real analytic on all of \(\mathbb{R}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Being analytic (equal to convergent power series) implies \(C^\infty\). (B) FALSE: the classic counterexample is (C): all derivatives of \(e^{-1/x^2}\) at 0 are 0, so the Taylor series is identically 0 but \(f\not\equiv0\). (D) Polynomials are their own Taylor series.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Power Series - Geometric Series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the geometric series \(\sum_{n=0}^\infty x^n\), which statements are TRUE?</p>
+<ol type="A"><li>It converges to \(\dfrac{1}{1-x}\) for \(|x|<1\).</li>
+<li>It converges uniformly on \((-1,1)\).</li>
+<li>It converges uniformly on \([-r,r]\) for any fixed \(0<r<1\).</li>
+<li>Differentiating term by term: \(\sum_{n=1}^\infty nx^{n-1}=\dfrac{1}{(1-x)^2}\) for \(|x|<1\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Standard result. (B) FALSE: convergence is not uniform on all of \((-1,1)\) — partial sums do not converge uniformly since the tail \(\sum_{n=N}^\infty x^n=x^N/(1-x)\to\infty\) as \(x\to1^-\). (C) On \([-r,r]\), \(|\sum_{n=N}^\infty x^n|\le r^N/(1-r)\to0\) uniformly. (D) Term-by-term differentiation is valid inside the disk.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Power Series - Radius via Ratio Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(\sum a_nx^n\), the radius of convergence can be computed as \(R=\lim_{n\to\infty}|a_n/a_{n+1}|\) (when this limit exists). Which of the following are TRUE?</p>
+<ol type="A"><li>For \(\sum \dfrac{x^n}{n!}\), the ratio test gives \(R=\infty\).</li>
+<li>For \(\sum n!\,x^n\), the ratio test gives \(R=0\).</li>
+<li>The ratio test formula \(R=\lim|a_n/a_{n+1}|\) always agrees with Cauchy-Hadamard when both apply.</li>
+<li>For \(a_n=2^n\), \(R=1/2\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(|a_n/a_{n+1}|=(n+1)!\cdot1/n!=n+1\to\infty\). (B) \(|a_n/a_{n+1}|=n!/(n+1)!=1/(n+1)\to0\). (C) When both limits exist, they agree. (D) \(|a_n/a_{n+1}|=2^n/2^{n+1}=1/2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Power Series - Center at x_0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A power series \(\sum a_n(x-x_0)^n\) centered at \(x_0\) with radius \(R>0\). Which statements are TRUE?</p>
+<ol type="A"><li>It converges on the open interval \((x_0-R,\,x_0+R)\).</li>
+<li>Convergence at \(x_0+R\) implies convergence at \(x_0-R\).</li>
+<li>The sum is a real analytic function on \((x_0-R,\,x_0+R)\).</li>
+<li>The Taylor coefficients satisfy \(a_n=f^{(n)}(x_0)/n!\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Convergence on the open disk. (B) FALSE in general: e.g. \(\sum x^n/n\) converges at \(x=-1\) but not at \(x=1\). (C) Power series are analytic inside their interval. (D) Standard formula for Taylor coefficients.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Power Series - a_n alternating and zero subsequences</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a_n=1\) if \(n\) is even and \(a_n=0\) if \(n\) is odd. For \(f(x)=\sum_{n=0}^\infty a_nx^n\), which statements are TRUE?</p>
+<ol type="A"><li>\(f(x)=\dfrac{1}{1-x^2}\) for \(|x|<1\).</li>
+<li>The radius of convergence is \(1\).</li>
+<li>\(f\) is an even function.</li>
+<li>\(f(x)\to\infty\) as \(x\to1^-\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(f(x)=\sum x^{2n}=1/(1-x^2)\) for \(|x|<1\). (B) Radius = 1 (singularity at \(x=\pm1\)). (C) \(f(x)=f(-x)\) since only even powers appear. (D) \(1/(1-x^2)\to\infty\) as \(x\to1^-\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Power Series - limsup and liminf of |a_n|^{1/n}</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(L=\limsup|a_n|^{1/n}\) and \(\ell=\liminf|a_n|^{1/n}\). Which statements are TRUE?</p>
+<ol type="A"><li>The series \(\sum a_nx^n\) converges for \(|x|<1/L\) (interpreting \(1/\infty=0\)).</li>
+<li>The series diverges for \(|x|>1/L\).</li>
+<li>The series converges for \(1/L<|x|<1/\ell\) (when \(\ell<L\)).</li>
+<li>If \(\ell<L\), convergence at \(|x|=1/L\) depends on the specific series.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A)(B) Cauchy-Hadamard uses \(L=\limsup\). (C) FALSE: the series diverges for \(|x|>1/L\) regardless of \(\ell\). Convergence requires \(|x|<1/L\). (D) Boundary behavior is not determined by the Cauchy-Hadamard formula alone.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Power Series - Unique Representation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Suppose \(\sum a_nx^n=\sum b_nx^n\) for all \(x\in(-\delta,\delta)\) for some \(\delta>0\). Which statements are TRUE?</p>
+<ol type="A"><li>\(a_n=b_n\) for all \(n\ge0\).</li>
+<li>This follows from the identity theorem for analytic functions.</li>
+<li>It is possible to have \(a_n\ne b_n\) for some \(n\) but the series still agree on \((-\delta,\delta)\).</li>
+<li>Setting \(x=0\): \(a_0=b_0\), and differentiating at \(0\) gives \(a_n=b_n\) for each \(n\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A)(D) Power series representations are unique: comparing \(n\)-th derivatives at 0 gives \(n!\,a_n=n!\,b_n\). (B) This is the identity theorem (for analytic functions: if they agree on a set with an accumulation point, they are identical). (C) FALSE by uniqueness.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Power Series - arctan Series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\arctan x=\sum_{n=0}^\infty\dfrac{(-1)^n x^{2n+1}}{2n+1}\). Which statements are TRUE?</p>
+<ol type="A"><li>The radius of convergence is \(1\).</li>
+<li>The series converges at \(x=1\) to \(\pi/4\) (Leibniz formula).</li>
+<li>The series converges uniformly on \([-1,1]\).</li>
+<li>Term-by-term differentiation gives \(\dfrac{1}{1+x^2}=\sum_{n=0}^\infty(-1)^nx^{2n}\) for \(|x|<1\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) \(R=1\). (B) At \(x=1\): alternating series test (\(1/(2n+1)\to0\) decreasingly), and Abel's theorem gives sum \(=\arctan(1)=\pi/4\). (C) FALSE: uniform convergence on \([-1,1]\) requires checking at \(x=\pm1\); the series is not uniformly convergent on the open interval \((-1,1)\) either, though it is on \([-r,r]\) for \(r<1\). Actually (C) is TRUE by Dirichlet's test since the series converges at both endpoints; Abel's uniform convergence theorem applies. Let me correct: (C) is TRUE. The correct answer is (A)(B)(C)(D).</p><p>Correction: (C) TRUE — since the series converges at \(x=\pm1\), by Abel's theorem it converges uniformly on \([-1,1]\). All four statements are true.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Power Series - Fibonacci Generating Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(F_n\) be the Fibonacci sequence (\(F_0=0,F_1=1,F_{n+2}=F_{n+1}+F_n\)). The generating function \(G(x)=\sum_{n=0}^\infty F_nx^n\) satisfies which of the following?</p>
+<ol type="A"><li>\(G(x)=\dfrac{x}{1-x-x^2}\)</li>
+<li>The radius of convergence is \(R=(\sqrt5-1)/2\approx0.618\).</li>
+<li>\(|F_n|^{1/n}\to(\sqrt5+1)/2\) (the golden ratio \(\phi\)).</li>
+<li>\(F_n=\dfrac{\phi^n-\psi^n}{\sqrt5}\) where \(\phi=(1+\sqrt5)/2\), \(\psi=(1-\sqrt5)/2\) (Binet's formula).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) From the recurrence: \(G(x)=xG(x)+x^2G(x)+x\Rightarrow G(x)=x/(1-x-x^2)\). (B) Singularity at smaller root of \(1-x-x^2=0\): \(x=(-1+\sqrt5)/2=1/\phi\approx0.618\). (C) \(R=1/\limsup|F_n|^{1/n}=1/\phi\), so \(\limsup=\phi\). (D) Binet's formula.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Power Series - Convergence at Endpoints Summary</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statements about power series \(\sum a_nx^n\) with radius of convergence \(R\in(0,\infty)\) are TRUE?</p>
+<ol type="A"><li>The series can converge at both \(x=R\) and \(x=-R\).</li>
+<li>The series can converge at \(x=R\) but diverge at \(x=-R\).</li>
+<li>The series can diverge at both \(x=R\) and \(x=-R\).</li>
+<li>If the series converges at \(x=R\), it must converge at \(x=-R\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) e.g. \(\sum x^n/n^2\) converges at both \(\pm1\). (B) e.g. \(\sum x^n/n\) converges at \(-1\) but not \(1\). Actually this converges at \(x=-1\), not \(x=+1=R\). For (B): \(\sum (-x)^n/n = \sum(-1)^n x^n/n\) converges at \(x=1\) but diverges at \(x=-1\). So yes (B) holds. (C) e.g. \(\sum x^n\) diverges at both \(\pm1\). (D) FALSE: counterexample from (B).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

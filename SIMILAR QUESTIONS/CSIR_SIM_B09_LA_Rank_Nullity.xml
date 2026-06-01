@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Linear Algebra — Rank and Nullity</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Rank-Nullity - Theorem Statement</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a linear map \(T:V\to W\) with \(\dim V=n<\infty\), the rank–nullity theorem states:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\mathrm{rank}(T)+\mathrm{nullity}(T)=n\)</strong></p><p>The rank–nullity (dimension) theorem: \(\dim(\mathrm{Im}\,T)+\dim(\ker T)=\dim V\). It is fundamental and implies: \(T\) injective (\(\ker T=0\)) + \(\dim V=\dim W\) \(\Rightarrow\) \(T\) is an isomorphism. The proof uses a basis for \(\ker T\), extends it to a basis for \(V\), and shows the images of the extending vectors form a basis for \(\mathrm{Im}\,T\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{rank}(T)=\mathrm{nullity}(T)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathrm{rank}(T)+\mathrm{nullity}(T)=\dim V\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{rank}(T)\cdot\mathrm{nullity}(T)=\dim V\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{rank}(T)=\dim W\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Rank - 3x3 Matrix Row Reduction</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The rank of \(A=\begin{pmatrix}1&2&3\\2&4&6\\3&6&9\end{pmatrix}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) 1</strong></p><p>Row 2 = 2×Row 1, Row 3 = 3×Row 1. All rows are multiples of the first, so only 1 independent row. Rank = 1. Nullity = 3−1 = 2. The null space is 2-dimensional, spanned by \((-2,1,0)^T\) and \((-3,0,1)^T\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Rank - Column Rank equals Row Rank</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For any matrix \(A\), the column rank equals the row rank. This means:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\mathrm{rank}(A)=\mathrm{rank}(A^T)\)</strong></p><p>The dimension of the column space equals the dimension of the row space for any matrix. Equivalently, \(\mathrm{rank}(A)=\mathrm{rank}(A^T)\). This is a non-trivial theorem whose proof uses the theory of vector spaces and dimension formulas. It implies that left and right null spaces have the same codimension.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A=A^T\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(A)=\det(A^T)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathrm{rank}(A)=\mathrm{rank}(A^T)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(AA^T=A^TA\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Rank - 4x4 Hilbert-Like Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The rank of \(A=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) 2</strong></p><p>The matrix is already in row echelon form with 2 non-zero rows (pivot positions at \((1,1)\) and \((2,2)\)). Rank = 2, Nullity = 4−2 = 2. The null space is spanned by \(e_3=(0,0,1,0)^T\) and \(e_4=(0,0,0,1)^T\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Rank - Full Rank Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An \(m\times n\) matrix \(A\) with \(m<n\) can have at most rank:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(m\)</strong></p><p>The rank of a matrix is at most \(\min(m,n)\). With \(m<n\) (more columns than rows), the maximum rank is \(m\). A matrix achieving this is called "full row rank" — its rows are linearly independent. Full row rank \(\Rightarrow T\) is surjective.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(m\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(mn\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m+n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Rank - Effect of Elementary Row Operations</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Elementary row operations on a matrix \(A\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Preserve the rank of \(A\)</strong></p><p>Elementary row operations (swap rows, scale a row by nonzero scalar, add multiple of one row to another) correspond to multiplying on the left by invertible elementary matrices. Since multiplying by invertible matrices doesn't change rank, the rank is preserved. This is the basis of Gaussian elimination for computing rank.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[May change the rank]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Preserve the rank]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always reduce the rank by 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Change the eigenvalues]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Rank - Parametric Family</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For which value of \(k\) does \(A=\begin{pmatrix}1&2&k\\3&6&9\end{pmatrix}\) have rank 1?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(k=3\)</strong></p><p>Row 2 = 3×Row 1 requires \(9=3k\), i.e., \(k=3\). Then rank = 1. If \(k\neq3\), row 2 is not a multiple of row 1, and rank = 2.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(k=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(k=2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(k=3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(k=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Rank - Rank of Outer Product</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(u,v\in\mathbb{R}^n\) are nonzero vectors, the rank of the outer product matrix \(A=uv^T\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) 1</strong></p><p>Every column of \(uv^T\) is a scalar multiple of \(u\): column \(j = v_j u\). So the column space is spanned by \(u\), which is 1-dimensional. Rank = 1. Nullity = n−1. This is the prototype of a rank-1 update in numerical linear algebra.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Rank - Sylvester Inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Sylvester's inequality states: for \(A\) (\(m\times n\)) and \(B\) (\(n\times p\)):  \(\mathrm{rank}(A)+\mathrm{rank}(B)-n\leq\mathrm{rank}(AB)\leq\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\min(\mathrm{rank}(A),\mathrm{rank}(B))\)</strong></p><p>Sylvester: \(\mathrm{rank}(A)+\mathrm{rank}(B)-n\leq\mathrm{rank}(AB)\leq\min(\mathrm{rank}(A),\mathrm{rank}(B))\). The lower bound says how much rank can be "lost"; the upper bound is the general product inequality. Together they give precise control over rank of a product.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{rank}(A)+\mathrm{rank}(B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\min(\mathrm{rank}(A),\mathrm{rank}(B))\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\max(\mathrm{rank}(A),\mathrm{rank}(B))\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Nullity - Computing Null Space</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The null space of \(A=\begin{pmatrix}1&2&3\\0&0&0\end{pmatrix}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\{(-2s-3t,\,s,\,t):s,t\in\mathbb{R}\}\) (a 2-dimensional subspace)</strong></p><p>From \(x_1+2x_2+3x_3=0\): set \(x_2=s,x_3=t\) free. Then \(x_1=-2s-3t\). Null space spanned by \((-2,1,0)^T\) and \((-3,0,1)^T\). Rank = 1, Nullity = 2 ✓ (rank+nullity = 3).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{0\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A 1-dimensional subspace]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\{(-2s-3t,s,t):s,t\in\mathbb{R}\}\) (2-dimensional)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All of \(\mathbb{R}^3\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Rank - Consistency of Linear System</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The system \(Ax=b\) is consistent (has a solution) if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\mathrm{rank}(A)=\mathrm{rank}([A|b])\)</strong></p><p>Rouché–Capelli theorem: \(Ax=b\) has a solution iff \(b\) is in the column space of \(A\), which happens iff the augmented matrix \([A|b]\) has the same rank as \(A\). If consistent, the solution is unique iff nullity\((A)=0\), i.e., rank\((A)=n\) (number of variables).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(A)\neq0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathrm{rank}(A)=\mathrm{rank}([A\mid b])\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(b=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) is symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Rank - rank(A+B) inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For matrices \(A\) and \(B\) of the same size, which inequality always holds?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\mathrm{rank}(A+B)\leq\mathrm{rank}(A)+\mathrm{rank}(B)\)</strong></p><p>Sub-additivity of rank: the column space of \(A+B\) is contained in the sum of column spaces of \(A\) and \(B\). So rank\((A+B)\leq\) rank\((A)+\)rank\((B)\). The reverse can fail drastically: \(A=-B\) gives rank\((A+B)=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathrm{rank}(A+B)\leq\mathrm{rank}(A)+\mathrm{rank}(B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{rank}(A+B)\geq\mathrm{rank}(A)+\mathrm{rank}(B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{rank}(A+B)=\mathrm{rank}(A)\cdot\mathrm{rank}(B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{rank}(A+B)=|\mathrm{rank}(A)-\mathrm{rank}(B)|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Rank - 5x5 Lower Triangular</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a lower triangular \(5\times5\) matrix with diagonal entries \((1,2,0,3,0)\), the rank is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 3</strong></p><p>For a triangular matrix, the rank equals the number of nonzero diagonal entries (since a triangular matrix is in row echelon form; pivots are the nonzero diagonal entries). Here 3 nonzero entries (1, 2, 3) and 2 zero entries. Rank = 3, Nullity = 2.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Rank - Rank One Update</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(A\) is invertible and \(u,v\in\mathbb{R}^n\), then by the Sherman–Morrison formula, \(A+uv^T\) is invertible unless:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(v^TA^{-1}u=-1\)</strong></p><p>Sherman–Morrison: \((A+uv^T)^{-1}=A^{-1}-\frac{A^{-1}uv^TA^{-1}}{1+v^TA^{-1}u}\), valid when \(1+v^TA^{-1}u\neq0\). When \(v^TA^{-1}u=-1\), the denominator is 0, meaning \(A+uv^T\) is singular (rank drops by 1). This formula is used in optimization and quasi-Newton methods.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(u=v\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(v^TA^{-1}u=-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|u\|=\|v\|=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u^Tv=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Rank - Normal Matrix Rank</text></name>
+  <questiontext format="html"><text><![CDATA[<p>\(\mathrm{rank}(A^TA)=\) ?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\mathrm{rank}(A)\)</strong></p><p>The null spaces of \(A\) and \(A^TA\) are equal: \(A^TAx=0\Leftrightarrow x^TA^TAx=0\Leftrightarrow\|Ax\|^2=0\Leftrightarrow Ax=0\). By rank–nullity, rank\((A^TA)=n-\)nullity\((A^TA)=n-\)nullity\((A)=\)rank\((A)\). Similarly rank\((AA^T)=\)rank\((A)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{rank}(A)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\,\mathrm{rank}(A)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathrm{rank}(A)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{rank}(A)-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Nullity - Unique Solution Condition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The system \(Ax=b\) has a unique solution for every \(b\in\mathbb{R}^m\) if and only if (with \(A\) being \(m\times n\)):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(A\) is square (\(m=n\)) and invertible</strong></p><p>Unique solution for every \(b\): need \(T\) bijective \(\Rightarrow m=n\) and \(\det(A)\neq0\). If \(m\neq n\): either underdetermined (\(n>m\): infinitely many solutions when consistent) or overdetermined (\(n<m\): generally no solution). Unique solution for every \(b\Leftrightarrow A\) is a bijection \(\Leftrightarrow m=n\) and rank = n.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(n>m\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(m=n\) and \(A\) is invertible]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) is symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{nullity}(A)=m\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Rank - Rank of Characteristic Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(\lambda_0\) is an eigenvalue of \(A\), then \(\mathrm{rank}(A-\lambda_0 I)\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Is less than \(n\) (strictly, i.e., \(\ker(A-\lambda_0 I)\neq\{0\}\))</strong></p><p>Since \(\lambda_0\) is an eigenvalue, there exists \(v\neq0\) with \((A-\lambda_0 I)v=0\), i.e., \(\ker(A-\lambda_0 I)\neq\{0\}\). By rank–nullity, rank\((A-\lambda_0 I)=n-\)nullity\(<n\). This is equivalent to \(\det(A-\lambda_0 I)=0\) (definition of eigenvalue).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Equals \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equals 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Is strictly less than \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equals \(\lambda_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Rank - SVD and Rank</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The rank of a matrix \(A\) in terms of its Singular Value Decomposition \(A=U\Sigma V^T\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) The number of nonzero singular values</strong></p><p>In the SVD \(A=U\Sigma V^T\), the diagonal entries of \(\Sigma\) are the singular values \(\sigma_1\geq\sigma_2\geq\cdots\geq0\). The rank of \(A\) = the number of nonzero singular values (since \(U\) and \(V\) are orthogonal/unitary and hence invertible, so rank\((A)=\)rank\((\Sigma)\)). The best rank-\(k\) approximation uses the \(k\) largest singular values.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The number of nonzero singular values]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The largest singular value]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The sum of all singular values]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The smallest singular value]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Rank - Nullity of Transpose</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(A\) is \(m\times n\) with rank \(r\), then the nullity of \(A^T\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(m-r\)</strong></p><p>\(A^T\) is \(n\times m\). rank\((A^T)=\)rank\((A)=r\). By rank–nullity for \(A^T\): nullity\((A^T)=m-\)rank\((A^T)=m-r\). The null space of \(A^T\) is the left null space of \(A\) — vectors orthogonal to all rows of \(A\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(n-r\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(r\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(m-r\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m+n-r\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Rank-Nullity - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(T:\mathbb{R}^4\to\mathbb{R}^4\) be a linear map with \(\ker T^2\neq\ker T\). Which of the following is TRUE?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\mathrm{nullity}(T^2)>\mathrm{nullity}(T)\)</strong></p><p>If \(\ker T^2\supsetneq\ker T\) (proper containment), then \(\dim\ker T^2>\dim\ker T\), i.e., nullity\((T^2)>\)nullity\((T)\). This happens when \(T\) has a non-trivial Jordan block — some vectors not in \(\ker T\) get mapped into \(\ker T\) by \(T\), hence land in \(\ker T^2\setminus\ker T\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\) is invertible]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathrm{nullity}(T^2)>\mathrm{nullity}(T)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(T^2=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ker T=\{0\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

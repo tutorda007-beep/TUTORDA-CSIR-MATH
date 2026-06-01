@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Linear Algebra — Matrix Representation of Linear Maps</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Linear Maps - Matrix of T: R^2 to R^2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(T:\mathbb{R}^2\to\mathbb{R}^2\) be defined by \(T(x,y)=(2x+y,\,x-3y)\). The matrix of \(T\) with respect to the standard basis is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\begin{pmatrix}2&1\\1&-3\end{pmatrix}\)</strong></p><p>Column \(j\) of the matrix = \(T(e_j)\). \(T(e_1)=T(1,0)=(2,1)\), \(T(e_2)=T(0,1)=(1,-3)\). So the matrix is \(\begin{pmatrix}2&1\\1&-3\end{pmatrix}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\begin{pmatrix}2&1\\1&-3\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}2&-3\\1&1\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}1&2\\-3&1\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}2&1\\-3&1\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Linear Maps - Differentiation on P_2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(D:P_2\to P_1\) be the differentiation map \(D(p)=p'\). With basis \(\{1,x,x^2\}\) for \(P_2\) and \(\{1,x\}\) for \(P_1\), the matrix of \(D\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\begin{pmatrix}0&1&0\\0&0&2\end{pmatrix}\)</strong></p><p>\(D(1)=0=0\cdot1+0\cdot x\), \(D(x)=1=1\cdot1+0\cdot x\), \(D(x^2)=2x=0\cdot1+2\cdot x\). Columns are the coordinates of images: \([0,0]^T,[1,0]^T,[0,2]^T\). Matrix: \(\begin{pmatrix}0&1&0\\0&0&2\end{pmatrix}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}1&0&0\\0&2&0\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}0&0&0\\1&0&2\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\begin{pmatrix}0&1&0\\0&0&2\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}0&0&2\\0&1&0\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Linear Maps - Integration T: P_2 to P_3</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(T:P_2\to P_3\) be defined by \(T(p)(x)=\displaystyle\int_0^x p(t)\,dt\). With bases \(\{1,t,t^2\}\) for \(P_2\) and \(\{1,x,x^2,x^3\}\) for \(P_3\), the matrix of \(T\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\begin{pmatrix}0&0&0\\1&0&0\\0&\frac{1}{2}&0\\0&0&\frac{1}{3}\end{pmatrix}\)</strong></p><p>\(T(1)=x\), \(T(t)=x^2/2\), \(T(t^2)=x^3/3\). Coordinates in \(\{1,x,x^2,x^3\}\): \([0,1,0,0]^T\), \([0,0,1/2,0]^T\), \([0,0,0,1/3]^T\). This gives the stated matrix.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\begin{pmatrix}0&0&0\\1&0&0\\0&\frac{1}{2}&0\\0&0&\frac{1}{3}\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}1&0&0\\0&\frac{1}{2}&0\\0&0&\frac{1}{3}\\0&0&0\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}0&1&0&0\\0&0&\frac{1}{2}&0\\0&0&0&\frac{1}{3}\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}1&1&1\\0&1&0\\0&0&1\\0&0&0\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Linear Maps - Change of Basis</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \([T]_B\) is the matrix of \(T\) in basis \(B\) and \(P\) is the change-of-basis matrix from \(B\) to \(B'\), then the matrix in basis \(B'\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(P^{-1}[T]_B P\)</strong></p><p>Change of basis: \([T]_{B'}=P^{-1}[T]_B P\), where columns of \(P\) are the old basis vectors expressed in the new basis. Two matrices related this way are called <em>similar</em>. Similar matrices represent the same linear map in different bases and have the same eigenvalues, trace, and determinant.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P[T]_B P^{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P^{-1}[T]_B P\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\([T]_B + P\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P^T[T]_B P\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Linear Maps - Rotation Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The matrix of the rotation by angle \(\theta\) (counterclockwise) in \(\mathbb{R}^2\) with respect to the standard basis is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}\)</strong></p><p>\(R_\theta(e_1)=(\cos\theta,\sin\theta)\), \(R_\theta(e_2)=(-\sin\theta,\cos\theta)\). Column 1 = \((\cos\theta,\sin\theta)^T\), Column 2 = \((-\sin\theta,\cos\theta)^T\). This is an orthogonal matrix with \(\det=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}\sin\theta&\cos\theta\\\cos\theta&-\sin\theta\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}-\sin\theta&\cos\theta\\\cos\theta&\sin\theta\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Linear Maps - Projection onto a Line</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The matrix of the orthogonal projection onto the line \(y=x\) in \(\mathbb{R}^2\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\dfrac{1}{2}\begin{pmatrix}1&1\\1&1\end{pmatrix}\)</strong></p><p>Projection onto \(u=(1,1)/\sqrt{2}\): \(P=uu^T=\frac{1}{2}\begin{pmatrix}1&1\\1&1\end{pmatrix}\). Check: \(P(1,1)^T=(1,1)^T\) ✓, \(P(1,-1)^T=(0,0)^T\) ✓. Note \(P^2=P\) (idempotent) and \(P^T=P\) (symmetric).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}1&0\\0&0\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}0&1\\1&0\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{1}{2}\begin{pmatrix}1&1\\1&1\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}1&1\\1&1\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Linear Maps - Null Space Dimension</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(T:\mathbb{R}^5\to\mathbb{R}^3\) is a linear map with rank 3, then \(\dim(\ker T)=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) 2</strong></p><p>Rank–Nullity theorem: \(\dim(\ker T)+\text{rank}(T)=\dim(\text{domain})=5\). With rank 3: \(\dim(\ker T)=5-3=2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Linear Maps - Reflection Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The matrix of reflection about the \(x\)-axis in \(\mathbb{R}^2\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\begin{pmatrix}1&0\\0&-1\end{pmatrix}\)</strong></p><p>Reflection about \(x\)-axis: \((x,y)\mapsto(x,-y)\). So \(T(e_1)=e_1\), \(T(e_2)=-e_2\). Matrix: \(\begin{pmatrix}1&0\\0&-1\end{pmatrix}\). This is symmetric and orthogonal with determinant \(-1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\begin{pmatrix}1&0\\0&-1\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}-1&0\\0&1\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}0&1\\1&0\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}1&0\\0&1\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Linear Maps - Composition of Maps</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \([S]_B=A\) and \([T]_B=B\), then the matrix of \(T\circ S\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(BA\)</strong></p><p>Matrix multiplication corresponds to composition in the order \([T\circ S]=[ T][S]=BA\). Note the reversed order: apply \(S\) first (matrix \(A\)), then \(T\) (matrix \(B\)), giving \(BA\). This is why matrix multiplication is generally non-commutative.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A+B\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(AB\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(BA\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A^{-1}B\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Linear Maps - Trace and Determinant</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a linear map \(T:\mathbb{R}^2\to\mathbb{R}^2\) with matrix \(\begin{pmatrix}3&1\\2&4\end{pmatrix}\), the trace and determinant are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) trace\(=7\), \(\det=10\)</strong></p><p>trace\(=3+4=7\), \(\det=3\cdot4-1\cdot2=12-2=10\). The characteristic polynomial is \(\lambda^2-7\lambda+10=(\lambda-2)(\lambda-5)\), giving eigenvalues 2 and 5.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[trace\(=12\), \(\det=7\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[trace\(=7\), \(\det=10\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[trace\(=7\), \(\det=14\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[trace\(=10\), \(\det=7\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Linear Maps - Kernel of Derivative Map</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The kernel of the differentiation map \(D:C^\infty(\mathbb{R})\to C^\infty(\mathbb{R})\), \(D(f)=f'\), is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) The set of constant functions</strong></p><p>\(\ker D=\{f:f'=0\}=\{\text{constant functions}\}\), a 1-dimensional subspace. The range is all of \(C^\infty(\mathbb{R})\) (since every smooth function has a smooth antiderivative, though not unique). The rank–nullity theorem does not apply in infinite dimensions in the usual sense.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Constant functions]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Polynomials of degree \(\leq1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{0\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All even functions]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Linear Maps - T^2 = 0 (Nilpotent)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A linear map \(T:\mathbb{R}^3\to\mathbb{R}^3\) satisfies \(T^2=0\) (nilpotent). The maximum possible rank of \(T\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) 1</strong></p><p>Wait — actually if \(T^2=0\), then range\((T)\subseteq\ker(T)\). By rank–nullity: \(\text{rank}+\text{nullity}=3\). If rank\((T)=r\), then range\((T)\subseteq\ker(T)\), so \(\text{nullity}\geq r\), giving \(r+r\leq3\), i.e., \(r\leq3/2\), so \(r\leq1\). Maximum rank is 1 (e.g., \(T\) maps \(e_1\mapsto e_2, e_2\mapsto0, e_3\mapsto0\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Linear Maps - Invertibility Condition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A linear map \(T:V\to V\) (where \(\dim V=n<\infty\)) is invertible if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\det[T]\neq0\)</strong></p><p>In finite dimensions, the following are equivalent: (i) \(T\) is invertible, (ii) \(T\) is injective, (iii) \(T\) is surjective, (iv) \(\ker T=\{0\}\), (v) \(\det[T]\neq0\), (vi) 0 is not an eigenvalue of \(T\). These equivalences rely on the rank–nullity theorem and finite-dimensionality.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\) is self-adjoint]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{rank}(T)<n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\det[T]\neq0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(T^2=T\) (idempotent)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Linear Maps - Image and Kernel Complement</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(T:V\to W\) and \(S:V\to W\) are linear with the same matrix, then \(T\) and \(S\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Are the same map</strong></p><p>Given the same basis, the same matrix uniquely determines the linear map. If \([T]_B=[S]_B\), then \(T(v)=S(v)\) for all \(v\in V\). A linear map is completely determined by its action on a basis, and the matrix encodes exactly this information.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Are the same map (given the same bases)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[May differ on a dense subset]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Have the same kernel but may differ elsewhere]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Are related by \(T=S+c\) for some constant]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Linear Maps - Rank of Product</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For matrices \(A\) (\(m\times n\)) and \(B\) (\(n\times p\)), we have:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\text{rank}(AB)\leq\min(\text{rank}(A),\text{rank}(B))\)</strong></p><p>The column space of \(AB\) is contained in the column space of \(A\), so rank\((AB)\leq\) rank\((A)\). Also rank\((AB)\leq\) rank\((B)\) (the row space of \(AB\) is contained in the row space of \(B\)). The Sylvester inequality also gives rank\((AB)\geq\) rank\((A)+\text{rank}(B)-n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{rank}(AB)=\text{rank}(A)\cdot\text{rank}(B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\text{rank}(AB)\leq\min(\text{rank}(A),\text{rank}(B))\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{rank}(AB)=\text{rank}(A)+\text{rank}(B)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{rank}(AB)\geq\max(\text{rank}(A),\text{rank}(B))\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Linear Maps - Dual Map</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(T:V\to W\) is a linear map with matrix \(A\) (w.r.t. given bases), then the matrix of the dual (transpose) map \(T^*:W^*\to V^*\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(A^T\)</strong></p><p>The dual map \(T^*(f)=f\circ T\) for \(f\in W^*\). With respect to dual bases, the matrix of \(T^*\) is the transpose \(A^T\). This explains why \(\text{rank}(A)=\text{rank}(A^T)\) — the column rank equals the row rank.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(A^T\) (the transpose)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A^{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{A}\) (complex conjugate)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Linear Maps - Surjective T: R^3 to R^2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A surjective linear map \(T:\mathbb{R}^3\to\mathbb{R}^2\) has \(\dim(\ker T)\) equal to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 1</strong></p><p>Surjective \(\Rightarrow\) rank\((T)=\dim(\mathbb{R}^2)=2\). By rank–nullity: nullity\(=3-2=1\). There is a 1-dimensional solution space (a line) for each output value, showing the "fibers" of \(T\) are parallel lines in \(\mathbb{R}^3\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Linear Maps - Similar Matrices</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Two \(n\times n\) matrices \(A\) and \(B\) are similar (\(B=P^{-1}AP\)) if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) They represent the same linear map in different bases</strong></p><p>Similarity captures the change-of-basis relationship: \(A\) and \(B=P^{-1}AP\) represent the same linear transformation \(T\) with respect to different bases (the columns of \(P\) being the new basis in terms of the old). They share eigenvalues, trace, determinant, rank, and characteristic polynomial.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A=B\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[They represent the same linear map in different bases]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A+B=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(AB=BA\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Linear Maps - T: P_3 to P_3 via evaluation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(T:P_3\to\mathbb{R}^4\) be the evaluation map \(T(p)=(p(0),p(1),p(2),p(3))\). Then \(T\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) An isomorphism (bijective linear map)</strong></p><p>A polynomial of degree \(\leq3\) is uniquely determined by its values at 4 distinct points (by Lagrange interpolation). So \(T\) is injective. Since \(\dim P_3=4=\dim\mathbb{R}^4\), \(T\) is also surjective, hence an isomorphism.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[An isomorphism]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Injective but not surjective]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Surjective but not injective]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Neither injective nor surjective]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Linear Maps - CSIR Style: Matrix of T(x,y,z)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(T:\mathbb{R}^3\to\mathbb{R}^3\) be defined by \(T(x,y,z)=(x+y,\,y+z,\,x+z)\). The determinant of the matrix of \(T\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 2</strong></p><p>Matrix: \(A=\begin{pmatrix}1&1&0\\0&1&1\\1&0&1\end{pmatrix}\). \(\det A=1(1-0)-1(0-1)+0=1+1=2\). Since \(\det\neq0\), \(T\) is invertible.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[-1]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

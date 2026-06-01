@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Real Analysis — Lebesgue Integration and Fourier Analysis</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Lebesgue - Measurable sets and sigma-algebras</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \((\Omega,\mathcal{F},\mu)\) be a measure space. Which are TRUE?</p>
+<ol type="A"><li>A \(\sigma\)-algebra is closed under countable unions, countable intersections, and complements.</li><li>The Lebesgue measure on \(\mathbb{R}\) is the unique translation-invariant measure with \(\mu([0,1])=1\).</li><li>Every open subset of \(\mathbb{R}\) is Lebesgue measurable.</li><li>The Vitali set is an example of a non-measurable set (assuming Axiom of Choice).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Definition of \(\sigma\)-algebra. (B) Uniqueness of Lebesgue measure on \(\mathcal{B}(\mathbb{R})\). (C) Borel sets (including opens) are Lebesgue measurable. (D) Vitali's construction using AC gives a set not in the Lebesgue \(\sigma\)-algebra.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Lebesgue - Convergence theorems</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f_n\to f\) a.e. on \([0,1]\). Which are TRUE?</p>
+<ol type="A"><li>Monotone Convergence Theorem: if \(0\le f_n\uparrow f\), then \(\int f_n\to\int f\).</li><li>Dominated Convergence Theorem: if \(|f_n|\le g\in L^1\), then \(\int f_n\,d\mu\to\int f\,d\mu\).</li><li>Fatou's Lemma: \(\int\liminf_n f_n\,d\mu\le\liminf_n\int f_n\,d\mu\) for \(f_n\ge0\).</li><li>If \(f_n\to f\) in \(L^1\), then \(f_n\to f\) a.e.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B)(C) Three fundamental convergence theorems of Lebesgue integration. (D) FALSE: \(L^1\) convergence does not imply a.e. convergence (the "typewriter sequence" \(f_n=\mathbf{1}_{[k/m,(k+1)/m]}\) converges in \(L^1\) to 0 but does not converge pointwise anywhere).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Lebesgue - Lp spaces and Hölder/Minkowski</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(1\le p\le\infty\), \(L^p(\mu)=\{f:\|f\|_p=(\int|f|^p)^{1/p}<\infty\}\). Which are TRUE?</p>
+<ol type="A"><li>Hölder's inequality: \(\int|fg|\,d\mu\le\|f\|_p\|g\|_q\) for \(1/p+1/q=1\).</li><li>Minkowski's inequality: \(\|f+g\|_p\le\|f\|_p+\|g\|_p\) (triangle inequality for \(L^p\)).</li><li>\(L^p\hookrightarrow L^q\) (continuous embedding) for \(p>q\) on a probability space.</li><li>\(L^2\) is the only Hilbert space among the \(L^p\) spaces.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Fundamental inequalities for \(L^p\) spaces. (C) On probability spaces: \(\|f\|_q\le\|f\|_p\) for \(p\ge q\) (Jensen's inequality applied to \(\phi(t)=t^{p/q}\)). (D) \(L^p\) is a Hilbert space iff \(p=2\) (inner product \(\langle f,g\rangle=\int fg\,d\mu\) satisfies parallelogram law only for \(p=2\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Fourier - Fourier series convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Fourier series of \(f\in L^1[0,2\pi]\) is \(f\sim\sum_{n=-\infty}^\infty\hat f(n)e^{inx}\) with \(\hat f(n)=\frac{1}{2\pi}\int_0^{2\pi}f(x)e^{-inx}\,dx\). Which are TRUE?</p>
+<ol type="A"><li>For \(f\in L^2[0,2\pi]\): the Fourier series converges in \(L^2\) (Parseval's theorem: \(\sum|\hat f(n)|^2=\|f\|_2^2/(2\pi)\)).</li><li>The Fourier series of a continuously differentiable function converges uniformly.</li><li>There exist continuous functions whose Fourier series diverges at some point.</li><li>The Fourier series always converges pointwise everywhere for \(f\in L^1\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Parseval's identity and \(L^2\) convergence. (B) If \(f\in C^1\), Fourier coefficients decay as \(O(1/n)\), giving uniform convergence. (C) Du Bois-Reymond (1876): there exists a continuous \(f\) whose Fourier series diverges at a point (Carleson proved a.e. convergence for \(L^2\), but not everywhere for continuous functions in general). (D) FALSE: pointwise convergence everywhere is not guaranteed even for \(L^1\) functions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Lebesgue - Radon-Nikodym theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Radon-Nikodym theorem: if \(\nu\ll\mu\) (absolutely continuous), then there exists a measurable function \(g=\frac{d\nu}{d\mu}\ge0\) such that \(\nu(A)=\int_A g\,d\mu\). Which are TRUE?</p>
+<ol type="A"><li>\(g=d\nu/d\mu\) is the Radon-Nikodym derivative.</li><li>If \(\nu\perp\mu\) (singular), then no Radon-Nikodym derivative exists.</li><li>The Lebesgue decomposition: \(\nu=\nu_{ac}+\nu_s\) where \(\nu_{ac}\ll\mu\) and \(\nu_s\perp\mu\).</li><li>The Radon-Nikodym derivative is unique \(\mu\)-a.e.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Definition of Radon-Nikodym derivative. (B) If \(\nu\perp\mu\), then \(\nu\) is not absolutely continuous w.r.t. \(\mu\), so no Radon-Nikodym derivative exists (the density would need to be supported on a \(\mu\)-null set). (C) Lebesgue decomposition theorem. (D) The Radon-Nikodym derivative is unique up to \(\mu\)-null sets.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Fourier - Fourier transform on R</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Fourier transform: \(\hat f(\xi)=\int_{-\infty}^\infty f(x)e^{-2\pi ix\xi}\,dx\). Which are TRUE?</p>
+<ol type="A"><li>For \(f\in L^1(\mathbb{R})\): \(\hat f\) is continuous and \(\hat f(\xi)\to0\) as \(|\xi|\to\infty\) (Riemann-Lebesgue).</li><li>For \(f\in L^2(\mathbb{R})\): \(\|\hat f\|_2=\|f\|_2\) (Plancherel's theorem).</li><li>The Fourier transform of \(f'(x)\) is \(2\pi i\xi\hat f(\xi)\).</li><li>The Fourier transform is its own inverse for all \(f\in L^1(\mathbb{R})\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Riemann-Lebesgue lemma. (B) Plancherel's theorem (isometry on \(L^2\)). (C) Differentiation rule: \(\widehat{f'}(\xi)=2\pi i\xi\hat f(\xi)\). (D) FALSE: the inversion formula \(f(x)=\int\hat f(\xi)e^{2\pi ix\xi}\,d\xi\) holds pointwise only under additional conditions (e.g. \(f,\hat f\in L^1\)); for general \(L^1\) functions, the inverse transform is not guaranteed pointwise.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Lebesgue - Absolute continuity of functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A function \(F:[a,b]\to\mathbb{R}\) is absolutely continuous (AC) if for every \(\varepsilon>0\) there exists \(\delta>0\) such that \(\sum|F(b_k)-F(a_k)|<\varepsilon\) whenever \(\sum(b_k-a_k)<\delta\). Which are TRUE?</p>
+<ol type="A"><li>AC implies uniform continuity.</li><li>\(F\) is AC iff \(F'(x)\) exists a.e., \(F'\in L^1[a,b]\), and \(F(x)-F(a)=\int_a^x F'(t)\,dt\).</li><li>The Cantor function is uniformly continuous but NOT absolutely continuous.</li><li>Every Lipschitz function is absolutely continuous.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) AC \(\Rightarrow\) uniform continuity (take any finite collection). (B) Fundamental theorem of Lebesgue calculus: characterization of AC functions. (C) Cantor function: uniformly continuous but its derivative is 0 a.e., yet it increases from 0 to 1 — so \(F(1)-F(0)=1\ne\int_0^1 0\,dt\) — not AC. (D) Lipschitz: \(|F(x)-F(y)|\le K|x-y|\Rightarrow\sum|F(b_k)-F(a_k)|\le K\sum(b_k-a_k)<K\delta\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Fourier - Convolution theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Convolution: \((f*g)(x)=\int f(x-y)g(y)\,dy\). Which are TRUE?</p>
+<ol type="A"><li>For \(f,g\in L^1(\mathbb{R})\): \(f*g\in L^1(\mathbb{R})\) and \(\|f*g\|_1\le\|f\|_1\|g\|_1\) (Young's inequality \(p=q=r=1\)).</li><li>Fourier transform of convolution: \(\widehat{f*g}(\xi)=\hat f(\xi)\cdot\hat g(\xi)\).</li><li>Fourier transform of pointwise product: \(\widehat{fg}(\xi)=(\hat f*\hat g)(\xi)\).</li><li>Convolution is commutative but not associative.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) \(L^1\) is a Banach algebra under convolution. (B) Convolution theorem: FT converts convolution to multiplication. (C) Dual convolution theorem: FT converts product to convolution. (D) FALSE: convolution is both commutative AND associative: \((f*g)*h=f*(g*h)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Lebesgue - Fubini-Tonelli theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Fubini-Tonelli theorems for product measures. Which are TRUE?</p>
+<ol type="A"><li>Tonelli's theorem: for non-negative \(f\), \(\int\int f\,d\mu\,d\nu=\int\int f\,d\nu\,d\mu=\iint f\,d(\mu\times\nu)\).</li><li>Fubini's theorem: for integrable \(f\in L^1(\mu\times\nu)\), iterated integrals equal the double integral.</li><li>The order of integration can always be exchanged for any \(f\in L^1\).</li><li>Fubini's theorem requires checking \(\int\int|f|\,d\mu\,d\nu<\infty\) first.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Tonelli for non-negative functions (iterated integrals may be \(\infty\) but are equal). (B) Fubini for \(L^1\) functions. (C) For \(f\in L^1(\mu\times\nu)\), iterated integrals exist and can be exchanged. (D) Checking \(f\in L^1\) via Tonelli (with \(|f|\) non-negative) before applying Fubini is the standard procedure.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Fourier - Fejér theorem and summability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Fejér's theorem: the Cesàro means \(\sigma_N(f,x)=\frac{1}{N}\sum_{n=0}^{N-1}S_n(f,x)\) of the Fourier partial sums converge uniformly to \(f\) for \(f\) continuous and periodic. Which are TRUE?</p>
+<ol type="A"><li>Fejér's theorem provides uniform convergence even when the Fourier series itself may diverge.</li><li>The Fejér kernel \(K_N(x)=\frac{1}{N}\left(\frac{\sin(Nx/2)}{\sin(x/2)}\right)^2\) is non-negative.</li><li>Fejér's theorem implies that trigonometric polynomials are dense in \(C[0,2\pi]\) (periodic).</li><li>The Fourier partial sums \(S_N(f,x)\) always converge uniformly to \(f\) for continuous \(f\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Cesàro summability succeeds where pointwise Fourier series may fail. (B) Fejér kernel is non-negative (a square). (C) Density of trig polynomials follows from Fejér's theorem (Weierstrass approximation analog). (D) FALSE: as mentioned, there exist continuous functions whose Fourier series diverges at some point.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Lebesgue - Differentiation of integrals and Hardy-Littlewood</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Lebesgue differentiation theorem: for \(f\in L^1_{loc}(\mathbb{R}^n)\), \(\lim_{r\to0}\frac{1}{|B(x,r)|}\int_{B(x,r)}f(y)\,dy=f(x)\) for a.e. \(x\). Which are TRUE?</p>
+<ol type="A"><li>The theorem implies the fundamental theorem of calculus for Lebesgue-integrable functions.</li><li>The Hardy-Littlewood maximal function \(Mf(x)=\sup_{r>0}\frac{1}{|B(x,r)|}\int_{B(x,r)}|f|\,dy\) is bounded in \(L^p\) for \(p>1\).</li><li>The maximal function theorem is used to prove the Lebesgue differentiation theorem.</li><li>\(Mf\in L^1(\mathbb{R}^n)\) whenever \(f\in L^1(\mathbb{R}^n)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) The differentiation theorem is the key tool for the FTC in Lebesgue theory. (B) Hardy-Littlewood maximal inequality: \(\|Mf\|_p\le C_p\|f\|_p\) for \(p>1\). (C) The maximal function is used in the proof of the differentiation theorem. (D) FALSE: for \(f\in L^1\), \(Mf\) is only in weak-\(L^1\) (i.e., \(\mu(\{Mf>\lambda\})\le C\|f\|_1/\lambda\)), not in \(L^1\) itself (unless \(f=0\) a.e.).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Fourier - Fourier series and Parseval/Bessel</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(f\in L^2[0,2\pi]\) with Fourier coefficients \(c_n=\frac{1}{2\pi}\int_0^{2\pi}f(x)e^{-inx}\,dx\). Which are TRUE?</p>
+<ol type="A"><li>Parseval's theorem: \(\sum_{n=-\infty}^\infty|c_n|^2=\frac{1}{2\pi}\|f\|_2^2\).</li><li>Bessel's inequality: \(\sum_{n=-N}^N|c_n|^2\le\frac{1}{2\pi}\|f\|_2^2\).</li><li>The system \(\{e^{inx}/\sqrt{2\pi}\}_{n\in\mathbb{Z}}\) is a complete orthonormal basis for \(L^2[0,2\pi]\).</li><li>Parseval implies \(\sum|c_n|^2<\infty\) but not \(|c_n|\to0\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Parseval's identity (equality). (B) Bessel's inequality (partial sum bound). (C) Completeness of the Fourier basis in \(L^2\). (D) FALSE: \(\sum|c_n|^2<\infty\) implies \(|c_n|\to0\) (a series of non-negative terms with finite sum must have terms \(\to0\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Lebesgue - Egoroff's theorem and Lusin's theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Two important approximation theorems. Which are TRUE?</p>
+<ol type="A"><li>Egoroff's theorem: if \(f_n\to f\) a.e. on a finite measure space, then for every \(\varepsilon>0\) there is a set \(E\) with \(\mu(E)<\varepsilon\) outside of which convergence is uniform.</li><li>Lusin's theorem: if \(f\) is measurable and finite a.e. on \([a,b]\), then for every \(\varepsilon>0\) there is a continuous function \(g\) agreeing with \(f\) outside a set of measure \(<\varepsilon\).</li><li>Egoroff's theorem fails on infinite measure spaces.</li><li>Lusin's theorem states that every measurable function is continuous.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Egoroff's theorem (on finite measure spaces). (B) Lusin's theorem: measurable functions are "approximately continuous." (C) Counterexample: \(f_n=\mathbf{1}_{[n,n+1]}\) on \(\mathbb{R}\to0\) a.e. but not uniformly on any set with \(\mu(E^c)<\varepsilon\) for \(\varepsilon<1\). (D) FALSE: Lusin says \(f\) equals a continuous function except on a small set — not that \(f\) itself is continuous.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Fourier - Distribution theory basics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A distribution (generalized function) \(T\in\mathcal{D}'(\mathbb{R})\) acts on test functions \(\phi\in C_c^\infty(\mathbb{R})\). Which are TRUE?</p>
+<ol type="A"><li>Every locally integrable function \(f\) defines a distribution \(T_f(\phi)=\int f\phi\,dx\).</li><li>The Dirac delta \(\delta_0(\phi)=\phi(0)\) is a distribution but not a function.</li><li>Every distribution has a well-defined derivative (also a distribution).</li><li>Distributions can only be defined on \(\mathbb{R}\), not on higher dimensions.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Regular distributions from locally integrable functions. (B) Dirac delta: a distribution that is not a function. (C) Differentiation is always defined for distributions: \(T'(\phi)=-T(\phi')\). (D) FALSE: distributions are defined on \(\mathbb{R}^n\) for any \(n\ge1\) and on manifolds.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Lebesgue - Change of variables and Jacobian</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Change of variables formula: for \(\Phi:U\to V\) a \(C^1\) diffeomorphism, \(\int_V f(y)\,dy=\int_U f(\Phi(x))|\det D\Phi(x)|\,dx\). Which are TRUE?</p>
+<ol type="A"><li>The Jacobian factor \(|\det D\Phi|\) accounts for the local volume distortion.</li><li>The formula generalizes the substitution rule from elementary calculus.</li><li>For the polar coordinates \((r,\theta)\to(r\cos\theta,r\sin\theta)\): the Jacobian is \(r\).</li><li>The change of variables formula requires \(\Phi\) to be linear.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Standard change of variables. (C) Polar: \(D\Phi=\begin{pmatrix}\cos\theta&-r\sin\theta\\\sin\theta&r\cos\theta\end{pmatrix}\), \(|\det D\Phi|=r\). (D) FALSE: the change of variables formula applies to any \(C^1\) diffeomorphism, not just linear maps.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

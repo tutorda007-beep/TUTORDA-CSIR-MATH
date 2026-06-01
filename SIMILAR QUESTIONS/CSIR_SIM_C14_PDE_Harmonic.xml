@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/PDEs — Harmonic Functions and Maximum Principle</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>PDE - Laplace on (0,pi)x(0,pi) with sin(2x) BC</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(u\) be harmonic on \((0,\pi)\times(0,\pi)\) with Dirichlet boundary data including \(u(x,0)=\sin(2x)\) and \(u=0\) on the other three sides. Which are TRUE?</p>
+<ol type="A"><li>The solution involves \(\sin(2x)\sinh(2(\pi-y))/\sinh(2\pi)\) (or similar).</li><li>The maximum of \(u\) is attained on the boundary.</li><li>Since \(\sin(2x)\ge0\) on \([0,\pi/2]\) and \(\le0\) on \([\pi/2,\pi]\), the max and min of \(u\) are \(+\) and \(-\) values on the bottom edge.</li><li>\(u\equiv0\) inside the domain.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Separation of variables: \(u=\sum_n b_n\sin(nx)\sinh(n(\pi-y))/\sinh(n\pi)\); with \(u(x,0)=\sin(2x)\), the coefficient for \(n=2\) is 1, others 0. (B) Maximum principle for harmonic functions. (C) \(\sin(2x)\) is positive on \((0,\pi/2)\) and negative on \((\pi/2,\pi)\); the max is achieved somewhere on the bottom edge. (D) FALSE: \(u\not\equiv0\) since the boundary data is non-trivial.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>PDE - Maximum Principle for Harmonic Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Strong Maximum Principle: a non-constant harmonic function on a connected domain \(\Omega\) cannot attain its maximum or minimum in the interior. Which follow?</p>
+<ol type="A"><li>If \(u\) is harmonic on \(\overline\Omega\) (compact), \(\max_{\overline\Omega}u=\max_{\partial\Omega}u\).</li><li>The Dirichlet problem (if it has a solution) has at most one solution.</li><li>A harmonic function that is zero on the boundary must be zero everywhere.</li><li>A harmonic function that is non-negative on the boundary is non-negative inside.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Maximum on closed domain is on boundary. (B) Uniqueness: if \(u_1,u_2\) both solve the Dirichlet problem, \(u_1-u_2\) is harmonic with zero boundary data, hence \(u_1=u_2\). (C) Special case: zero boundary data forces \(u\equiv0\). (D) By maximum principle: \(u\ge\min_{\partial\Omega}u\ge0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>PDE - Mean Value Property</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The mean value property: if \(u\) is harmonic on \(\Omega\), then for any ball \(B(x_0,r)\subset\Omega\): \(u(x_0)=\frac{1}{\omega_n r^n}\int_{\partial B}u\,dS\). Which are TRUE?</p>
+<ol type="A"><li>A continuous function satisfying the mean value property is harmonic.</li><li>The mean value property characterizes harmonic functions.</li><li>Harmonic functions are real analytic.</li><li>The mean value property holds for the volume average as well: \(u(x_0)=\frac{1}{|B|}\int_B u\,dV\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Converse: MVP \(\Leftrightarrow\) harmonic (for continuous functions). (C) Harmonic functions are smooth and in fact real analytic (they equal their Taylor series). (D) By integrating the sphere MVP over \(r\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</small><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>PDE - Classification of 2nd Order PDEs</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The PDE \(Au_{xx}+Bu_{xy}+Cu_{yy}+\ldots=0\) is classified by \(B^2-4AC\). Which are TRUE?</p>
+<ol type="A"><li>Elliptic if \(B^2-4AC<0\) (e.g. Laplace equation).</li><li>Parabolic if \(B^2-4AC=0\) (e.g. heat equation).</li><li>Hyperbolic if \(B^2-4AC>0\) (e.g. wave equation).</li><li>The classification can change from point to point for variable-coefficient equations.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)–(D) Standard classification theory. For the Laplace equation \(u_{xx}+u_{yy}=0\): \(A=C=1,B=0\), \(B^2-4AC=-4<0\) (elliptic). Heat equation: \(A=1,B=C=0\), \(B^2-4AC=0\) (parabolic). Wave: \(A=-c^2,B=0,C=1\): \(B^2-4AC=4c^2>0\) (hyperbolic). (D) Tricomi equation \(yu_{xx}+u_{yy}=0\): elliptic for \(y>0\), parabolic for \(y=0\), hyperbolic for \(y<0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>PDE - Fundamental Solution of Laplacian</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The fundamental solution of \(-\Delta\) in \(\mathbb{R}^n\) (\(n\ge2\)) is \(\Phi(x)=\frac{1}{n(2-n)\omega_n}|x|^{2-n}\) (\(n\ne2\)), or \(\Phi(x)=\frac{1}{2\pi}\ln|x|\) (\(n=2\)). Which are TRUE?</p>
+<ol type="A"><li>\(-\Delta\Phi=\delta_0\) in the distributional sense.</li><li>The Newtonian potential \(u=\Phi*f\) solves \(-\Delta u=f\) (under appropriate conditions).</li><li>In \(\mathbb{R}^3\): \(\Phi(x)=\frac{1}{4\pi|x|}\).</li><li>\(\Phi\) is harmonic on \(\mathbb{R}^n\setminus\{0\}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Fundamental solution definition. (B) Convolution gives the general solution. (C) For \(n=3\): \(2-n=-1\), \(\omega_3=4\pi/3\), \(n\omega_n=4\pi\): \(\Phi=1/(4\pi|x|)\). (D) \(\Delta\Phi=0\) away from the singularity.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>PDE - Wave Equation d'Alembert</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The 1D wave equation \(u_{tt}=c^2u_{xx}\) with initial data \(u(x,0)=f(x)\), \(u_t(x,0)=g(x)\). Which are TRUE?</p>
+<ol type="A"><li>The d'Alembert solution is \(u=\frac{f(x+ct)+f(x-ct)}{2}+\frac{1}{2c}\int_{x-ct}^{x+ct}g(s)ds\).</li><li>The domain of dependence of \((x_0,t_0)\) is the interval \([x_0-ct_0,x_0+ct_0]\).</li><li>Signals travel at speed exactly \(c\).</li><li>The wave equation has finite speed of propagation (unlike the heat equation).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) d'Alembert formula. (B) Domain of dependence: the solution at \((x_0,t_0)\) depends only on data in \([x_0-ct_0,x_0+ct_0]\). (C) Characteristics propagate at speed \(\pm c\). (D) Finite speed of propagation (hyperbolic); the heat equation has infinite speed.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>PDE - Dirichlet Problem on Disk</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Poisson integral formula for the disk \(|z|<R\): \(u(r,\theta)=\frac{1}{2\pi}\int_0^{2\pi}\frac{R^2-r^2}{R^2-2Rr\cos(\theta-\phi)+r^2}f(\phi)d\phi\). Which are TRUE?</p>
+<ol type="A"><li>The Poisson kernel \(P_r(\theta)=\frac{R^2-r^2}{R^2-2Rr\cos\theta+r^2}\) is positive for \(r<R\).</li><li>The Poisson kernel integrates to \(2\pi\) over \([0,2\pi]\).</li><li>The solution \(u\) is harmonic on the disk and continuous up to the boundary (where \(f\) is continuous).</li><li>The Poisson formula gives the unique harmonic extension of \(f\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(R^2-r^2>0\) for \(r<R\) and the denominator is positive. (B) \(\int_0^{2\pi}P_r(\theta)d\theta=2\pi\) (normalization). (C)(D) The Poisson formula solves the Dirichlet problem for the disk.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>PDE - Heat Equation Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The heat equation \(u_t=\Delta u\) on \(\mathbb{R}^n\times(0,\infty)\). Which are TRUE?</p>
+<ol type="A"><li>The fundamental solution is \(\Phi(x,t)=(4\pi t)^{-n/2}e^{-|x|^2/(4t)}\).</li><li>The solution with initial data \(u_0\) is \(u(x,t)=\int\Phi(x-y,t)u_0(y)dy\).</li><li>The heat equation has infinite speed of propagation.</li><li>The maximum principle holds: if \(u_0\ge0\), then \(u\ge0\) for all \(t>0\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Heat kernel formula. (B) Convolution representation. (C) For any \(t>0\), \(\Phi(x-y,t)>0\) everywhere — information propagates instantaneously. (D) Non-negativity is preserved by the heat equation.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>PDE - Method of Characteristics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the first-order PDE \(a(x,y)u_x+b(x,y)u_y=c(x,y,u)\), the method of characteristics solves along curves \(\dot x=a\), \(\dot y=b\), \(\dot u=c\). Which are TRUE?</p>
+<ol type="A"><li>The solution is constant along characteristics (when \(c=0\)).</li><li>Characteristics can cross, leading to shocks for nonlinear equations.</li><li>For the transport equation \(u_t+cu_x=0\): \(u(x,t)=u_0(x-ct)\).</li><li>The Burgers equation \(u_t+uu_x=0\) can develop discontinuities in finite time.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) When \(c=0\): \(u\) is constant along characteristics. (B) Crossing characteristics signal shock formation. (C) Transport equation: characteristics are lines \(x=x_0+ct\), so \(u\) is constant on them. (D) Burgers: \(u(x,t)=u_0(x-u_0(x_0)t)\); if \(u_0'\) is negative somewhere, characteristics cross and a shock forms.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>PDE - Separation of Variables Wave Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The wave equation \(u_{tt}=c^2u_{xx}\) on \([0,L]\times[0,\infty)\) with \(u(0,t)=u(L,t)=0\). Which are TRUE?</p>
+<ol type="A"><li>The normal modes are \(u_n(x,t)=(A_n\cos(n\pi ct/L)+B_n\sin(n\pi ct/L))\sin(n\pi x/L)\).</li><li>The solution is time-periodic for periodic initial data.</li><li>Energy \(E=\frac{1}{2}\int_0^L(u_t^2+c^2u_x^2)dx\) is conserved.</li><li>The solution exhibits standing waves, not traveling waves.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Separation of variables gives normal modes. (B) Each mode is periodic with frequency \(n\pi c/L\). (C) Energy conservation for the wave equation. (D) The superposition of \(e^{i(kx\pm\omega t)}\) gives standing waves when combined with boundary conditions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>PDE - Green's Theorem and Harmonic</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For harmonic \(u\) on a domain \(\Omega\subset\mathbb{R}^2\) with smooth boundary, which follow from Green's theorem?</p>
+<ol type="A"><li>\(\oint_{\partial\Omega}\frac{\partial u}{\partial n}ds=0\).</li><li>If \(u=0\) on \(\partial\Omega\) and \(u\) is harmonic, then \(u\equiv0\) on \(\Omega\).</li><li>Green's first identity: \(\int_\Omega\nabla u\cdot\nabla v\,dA=\oint_{\partial\Omega}v\frac{\partial u}{\partial n}ds-\int_\Omega v\Delta u\,dA\).</li><li>If \(u,v\) are both harmonic: \(\oint_{\partial\Omega}(u\frac{\partial v}{\partial n}-v\frac{\partial u}{\partial n})ds=0\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\int_\Omega\Delta u\,dA=\oint\partial u/\partial n=0\) since \(\Delta u=0\). (B) Maximum principle or energy argument: \(\int|\nabla u|^2=0\Rightarrow u\) const \(\Rightarrow u=0\). (C) Green's first identity. (D) Green's second identity (symmetry) applied to two harmonic functions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>PDE - Subharmonic Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A function \(u\) is subharmonic if \(\Delta u\ge0\). Which are TRUE?</p>
+<ol type="A"><li>Subharmonic functions satisfy \(u(x_0)\le\frac{1}{2\pi}\int_0^{2\pi}u(x_0+re^{i\theta})d\theta\).</li><li>The maximum of a subharmonic function is attained on the boundary.</li><li>If \(u\) is subharmonic and \(v\) is harmonic with \(u\le v\) on \(\partial\Omega\), then \(u\le v\) in \(\Omega\).</li><li>\(|f|^2\) is subharmonic if \(f\) is holomorphic.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Sub-mean-value property for subharmonic functions. (B) Maximum on boundary (subharmonic = below harmonic). (C) Comparison principle. (D) \(\Delta|f|^2=4|f'|^2\ge0\) (for holomorphic \(f\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>PDE - Harnack Inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Harnack's inequality: if \(u\ge0\) is harmonic on \(B(0,R)\), then for \(|x|\le r<R\): \(\frac{R-r}{R+r}u(0)\le u(x)\le\frac{R+r}{R-r}u(0)\). Which follow?</p>
+<ol type="A"><li>A positive harmonic function on \(\mathbb{R}^n\) is constant (Liouville).</li><li>Uniform limits of harmonic functions are harmonic.</li><li>A sequence of harmonic functions bounded at one point has a convergent subsequence locally uniformly (Harnack's principle).</li><li>Harnack's inequality implies equicontinuity of the family \(\{u:u\ge0\text{ harmonic on }B(0,1)\}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Taking \(R\to\infty\): both bounds \(\to u(0)\Rightarrow u(x)=u(0)\). (B) Harmonic functions are closed under uniform limits (since \(\Delta u_n=0\) and \(u_n\to u\) uniformly implies \(\Delta u=0\) in the weak sense). (C) Harnack's principle for families of harmonic functions. (D) The inequality gives control of \(u(x)/u(0)\), implying equicontinuity.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>PDE - Fourier Transform Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Fourier transform \(\hat{u}(\xi)=\int e^{-ix\cdot\xi}u(x)dx\) converts differentiation to multiplication. Which are TRUE?</p>
+<ol type="A"><li>\(\widehat{\partial_j u}(\xi)=i\xi_j\hat u(\xi)\).</li><li>The Fourier transform converts the heat equation \(u_t=\Delta u\) to \(\hat u_t=-|\xi|^2\hat u\).</li><li>The solution in Fourier space is \(\hat u(\xi,t)=e^{-|\xi|^2t}\hat u_0(\xi)\).</li><li>Inverting (C) gives the heat kernel convolution formula.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Fourier transform of derivative. (B) \(\Delta u\leftrightarrow-|\xi|^2\hat u\). (C) ODE in \(\xi\): \(\hat u=\hat u_0 e^{-|\xi|^2t}\). (D) \(e^{-|\xi|^2t}\) is the Fourier transform of the heat kernel \((4\pi t)^{-n/2}e^{-|x|^2/4t}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>PDE - Energy Methods</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the heat equation \(u_t-\Delta u=f\) on \(\Omega\times(0,T)\), define \(E(t)=\int_\Omega u^2(x,t)dx\). Which are TRUE?</p>
+<ol type="A"><li>\(E'(t)=2\int_\Omega uu_t\,dx\le-2\int_\Omega|\nabla u|^2dx+2\int_\Omega uf\,dx\).</li><li>If \(f=0\) and \(u=0\) on \(\partial\Omega\), then \(E(t)\) is non-increasing.</li><li>Energy methods can prove uniqueness of solutions.</li><li>If \(f=0\) and \(u(x,0)=0\), then \(u\equiv0\) (uniqueness via energy).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) By Leibniz and integration by parts (with Dirichlet BC). (B) \(E'(t)\le-2\int|\nabla u|^2\le0\). (C)(D) If two solutions have same data, their difference satisfies homogeneous equation with zero initial data; energy shows the difference is zero.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>PDE - Schauder Estimates</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Schauder estimates for elliptic equations: if \(Lu=f\) where \(L\) is a uniformly elliptic operator with Hölder-continuous coefficients, then \(u\in C^{2,\alpha}\). Which are TRUE?</p>
+<ol type="A"><li>Classical solutions of elliptic equations with \(C^\alpha\) data are \(C^{2,\alpha}\).</li><li>Elliptic regularity: solutions are as smooth as the data allows.</li><li>If \(f\in C^\infty\), then any classical solution is \(C^\infty\).</li><li>Schauder estimates imply existence of solutions via the continuity method.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Schauder/elliptic regularity theory. (C) \(C^\infty\) data \(\Rightarrow C^\infty\) solutions by bootstrapping. (D) The continuity method: use Schauder estimates to run a homotopy from a trivially solvable equation to the target.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>PDE - Sobolev Spaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Sobolev space \(H^k(\Omega)=W^{k,2}(\Omega)\) consists of functions with square-integrable weak derivatives up to order \(k\). Which are TRUE?</p>
+<ol type="A"><li>\(H^0(\Omega)=L^2(\Omega)\).</li><li>\(H^1(\Omega)\subset L^2(\Omega)\).</li><li>The Sobolev embedding theorem: \(H^k(\Omega)\hookrightarrow C^m(\Omega)\) for \(k>n/2+m\).</li><li>Weak solutions of elliptic PDEs naturally lie in Sobolev spaces.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) By definition (derivatives of order 0 and 1 are square integrable). (C) Sobolev embedding theorem — sufficient condition for Hölder continuity. (D) Lax-Milgram theorem: weak solutions in \(H^1\) for second-order elliptic.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>PDE - Laplace Equation on Rectangle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(\Delta u=0\) on \((0,a)\times(0,b)\) with \(u=0\) on three sides and \(u(x,b)=f(x)\). Which are TRUE?</p>
+<ol type="A"><li>The solution is \(u(x,y)=\sum_{n=1}^\infty A_n\sin(n\pi x/a)\frac{\sinh(n\pi y/a)}{\sinh(n\pi b/a)}\).</li><li>The coefficients are \(A_n=\frac{2}{a}\int_0^a f(x)\sin(n\pi x/a)dx\).</li><li>The solution is unique.</li><li>The maximum of \(u\) in \([0,a]\times[0,b]\) is the maximum of \(f\) on \([0,a]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Separation of variables: \(X(x)=\sin(n\pi x/a)\), \(Y(y)\propto\sinh(n\pi y/a)\) (zero at \(y=0\)). (B) Fourier sine coefficients. (C) Uniqueness by maximum principle. (D) The max of a harmonic function on \([0,a]\times[0,b]\) is on the boundary; with \(u=0\) on three sides, the max is \(\max f\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>PDE - Elliptic Regularity at Boundary</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the Dirichlet problem \(\Delta u=0\) in \(\Omega\), \(u=g\) on \(\partial\Omega\). Which are TRUE?</p>
+<ol type="A"><li>If \(g\in C^{2,\alpha}(\partial\Omega)\) and \(\partial\Omega\in C^{2,\alpha}\), then \(u\in C^{2,\alpha}(\overline\Omega)\).</li><li>If \(g\in L^2(\partial\Omega)\), the problem has a unique \(H^1\) solution.</li><li>The normal derivative \(\partial u/\partial n\) on \(\partial\Omega\) determines \(u\) (Cauchy data).</li><li>The solution \(u\) is real analytic inside \(\Omega\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Global Schauder estimates. (B) Lax-Milgram in \(H^1\). (C) FALSE: for the Dirichlet problem, either Dirichlet OR Neumann data on the boundary determines the solution — both together is over-determined (Cauchy problem for elliptic is generally ill-posed). (D) Harmonic = real analytic inside.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>PDE - Weak Maximum Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Weak Maximum Principle for \(Lu=-\sum_{ij}a_{ij}u_{x_ix_j}+\sum_i b_iu_{x_i}\le0\) (subsolution) on \(\Omega\): the maximum is attained on \(\partial\Omega\). Which extend this?</p>
+<ol type="A"><li>Strong maximum principle: if \(Lu\le0\) and the max is attained at an interior point, then \(u\) is constant.</li><li>Hopf boundary lemma: at a maximum boundary point, the outward normal derivative satisfies \(\partial u/\partial n>0\).</li><li>The weak maximum principle requires \(c\le0\) in \(Lu+cu\le0\).</li><li>The maximum principle fails for parabolic equations.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Strong maximum principle (Hopf, Nirenberg). (B) Hopf's boundary point lemma. (C) For the operator \(Lu+cu\): the maximum principle holds when \(c\le0\); if \(c>0\), it can fail. (D) FALSE: the maximum principle DOES hold for parabolic equations (\(u_t-Lu\le0\): max is on the parabolic boundary).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

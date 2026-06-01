@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Mathematical Statistics — Variance of Random Sums (Wald's Identity)</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Wald - Var(S_{N+1}), N~Pois(λ), Xi~N(1,1)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{Poisson}(\lambda)\) and \(X_1,X_2,\ldots\) be i.i.d. \(N(1,1)\), independent of \(N\). Define \(S=X_1+\cdots+X_{N+1}\). Then \(\mathrm{Var}(S)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(2\lambda+1\)</strong></p><p>Let \(M=N+1\). Then \(E[M]=\lambda+1\), \(\mathrm{Var}(M)=\lambda\). By Wald's variance identity: \(\mathrm{Var}(S_M)=E[M]\cdot\mathrm{Var}(X)+\mathrm{Var}(M)\cdot(E[X])^2=(\lambda+1)(1)+\lambda(1)=2\lambda+1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>\(2\lambda+1\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\lambda+1\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(2\lambda\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\lambda+2\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Wald - E[S_N], N~Pois(2), Xi~Exp(3)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{Poisson}(2)\) and \(X_i\overset{iid}{\sim}\mathrm{Exp}(3)\) (mean \(1/3\)), independent of \(N\). With \(S=X_1+\cdots+X_N\) (\(S=0\) if \(N=0\)), the value of \(E[S]\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(2/3\)</strong></p><p>Wald's first identity: \(E[S_N]=E[N]\cdot E[X_1]=2\cdot\tfrac{1}{3}=\tfrac{2}{3}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(6\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(2/3\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(3/2\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(1/6\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Wald - Var(S_N), N~Geom(1/3), Xi~Uniform[0,2]</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\) be Geometric with \(P(N=k)=\left(\tfrac{2}{3}\right)^{k-1}\!\tfrac{1}{3}\), \(k\ge1\), and \(X_i\overset{iid}{\sim}\mathrm{Uniform}[0,2]\), independent of \(N\). Then \(\mathrm{Var}(X_1+\cdots+X_N)\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(7\)</strong></p><p>For Geom\((p=1/3)\): \(E[N]=3\), \(\mathrm{Var}(N)=\tfrac{1-p}{p^2}=6\). For \(X\sim U[0,2]\): \(E[X]=1\), \(\mathrm{Var}(X)=\tfrac{1}{3}\). Wald: \(\mathrm{Var}(S)=3\cdot\tfrac{1}{3}+1^2\cdot6=1+6=7\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(6\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(7\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(3\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(9\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Wald - Compound Poisson Variance Formula</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{Poisson}(\lambda)\) and \(X_i\) i.i.d. with \(E[X_i]=\mu\), \(E[X_i^2]=\nu\), independent of \(N\). Then \(\mathrm{Var}(X_1+\cdots+X_N)\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\lambda\nu\)</strong></p><p>By Wald's variance formula: \(\mathrm{Var}(S)=E[N]\mathrm{Var}(X)+\mathrm{Var}(N)(E[X])^2=\lambda(\nu-\mu^2)+\lambda\mu^2=\lambda\nu\). This is the standard compound Poisson variance formula.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(\lambda\mu\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\lambda(\nu-\mu^2)\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(\lambda\nu\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\lambda^2\nu\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Wald - First Identity Statement</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,X_2,\ldots\) be i.i.d. with mean \(\mu\), and \(N\) a stopping time with \(E[N]<\infty\), independent in the Wald sense. Then \(E\!\left[\sum_{i=1}^N X_i\right]\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\mu\cdot E[N]\)</strong></p><p>Wald's first identity: \(E[S_N]=\mu\cdot E[N]\). This holds whenever \(N\) is a stopping time with \(E[N]<\infty\). It generalises the linearity of expectation to random sample sizes.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>\(\mu\cdot E[N]\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\mu^2\cdot E[N]\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\mu\cdot E[N^2]\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\mu/E[N]\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Wald - Pois(3) Bernoulli(1/2) Compound Sum Variance</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{Poisson}(3)\) and \(X_i\overset{iid}{\sim}\mathrm{Bernoulli}(1/2)\), independent of \(N\). Then \(\mathrm{Var}(X_1+\cdots+X_N)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(3/2\)</strong></p><p>Since \(X\sim\mathrm{Bernoulli}(1/2)\), \(E[X^2]=E[X]=1/2\). By compound Poisson: \(\mathrm{Var}(S)=\lambda E[X^2]=3\cdot\tfrac{1}{2}=\tfrac{3}{2}\). Alternatively: \(E[N]\mathrm{Var}(X)+\mathrm{Var}(N)(E[X])^2=3\cdot\tfrac{1}{4}+3\cdot\tfrac{1}{4}=\tfrac{3}{2}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(3/4\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(3/2\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(3\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(9/4\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Wald - Pois(5) Normal(2,9) Compound Variance</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{Poisson}(5)\) and \(X_i\overset{iid}{\sim}N(2,9)\), independent of \(N\). Then \(\mathrm{Var}(X_1+\cdots+X_N)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(65\)</strong></p><p>\(E[X^2]=\mathrm{Var}(X)+(E[X])^2=9+4=13\). Compound Poisson: \(\mathrm{Var}(S)=\lambda E[X^2]=5\cdot13=65\). Check via Wald: \(E[N]\mathrm{Var}(X)+\mathrm{Var}(N)(E[X])^2=5\cdot9+5\cdot4=45+20=65\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(45\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(25\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(20\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(65\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Wald - Pois(4) Uniform[0,1] Compound Variance</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{Poisson}(4)\) and \(X_i\overset{iid}{\sim}U[0,1]\), independent of \(N\). Then \(\mathrm{Var}(X_1+\cdots+X_N)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(4/3\)</strong></p><p>For \(X\sim U[0,1]\): \(E[X]=1/2\), \(E[X^2]=1/3\). Compound Poisson: \(\mathrm{Var}(S)=\lambda E[X^2]=4\cdot\tfrac{1}{3}=\tfrac{4}{3}\). Check: \(4\cdot\tfrac{1}{12}+4\cdot\tfrac{1}{4}=\tfrac{1}{3}+1=\tfrac{4}{3}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(1/3\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(2/3\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(4/3\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(5/3\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Wald - General Geometric N Variance Formula</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{Geometric}(p)\) with \(P(N=k)=(1-p)^{k-1}p\), \(k\ge1\), and \(X_i\) i.i.d. with mean \(\mu\) and variance \(\sigma^2\), independent of \(N\). Then \(\mathrm{Var}(S_N)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\dfrac{\sigma^2}{p}+\dfrac{(1-p)\mu^2}{p^2}\)</strong></p><p>\(E[N]=1/p\), \(\mathrm{Var}(N)=(1-p)/p^2\). Wald: \(\mathrm{Var}(S_N)=\tfrac{1}{p}\sigma^2+\tfrac{1-p}{p^2}\mu^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(\dfrac{\sigma^2+\mu^2}{p}\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(\dfrac{\sigma^2}{p}+\dfrac{(1-p)\mu^2}{p^2}\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\dfrac{\sigma^2}{p^2}\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\dfrac{\mu^2}{p}\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Wald - Compound Poisson Mean with Normal Xi</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{Poisson}(\lambda)\) and \(X_i\overset{iid}{\sim}N(\mu,\sigma^2)\), independent of \(N\). Then \(E[X_1+\cdots+X_N]\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\lambda\mu\)</strong></p><p>Wald's first identity: \(E[S_N]=E[N]\cdot E[X]=\lambda\mu\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>\(\lambda\mu\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\lambda\sigma^2\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\lambda(\mu+\sigma)\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\lambda\mu^2\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Wald - Pois(lambda) N(0,1) Xi Variance</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{Poisson}(\lambda)\) and \(X_i\overset{iid}{\sim}N(0,1)\), independent of \(N\). Then \(\mathrm{Var}(X_1+\cdots+X_N)\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\lambda\)</strong></p><p>Compound Poisson: \(\mathrm{Var}(S)=\lambda E[X^2]=\lambda\cdot1=\lambda\). Since \(E[X]=0\) and \(E[X^2]=1\) for \(N(0,1)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(0\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\lambda^2\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(\lambda\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\sqrt{\lambda}\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Wald - Second Moment of Compound Poisson Sum</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{Poisson}(\lambda)\) and \(X_i\) i.i.d. with \(E[X]=\mu\) and \(E[X^2]=\nu\), independent of \(N\). Then \(E\!\left[(X_1+\cdots+X_N)^2\right]\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\lambda\nu+\lambda^2\mu^2\)</strong></p><p>\(E[S^2]=\mathrm{Var}(S)+(E[S])^2=\lambda\nu+(\lambda\mu)^2=\lambda\nu+\lambda^2\mu^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(\lambda\nu\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(\lambda\nu+\lambda^2\mu^2\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\lambda^2\nu\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\lambda(\nu+\mu^2)\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Wald - Pois(2) Symmetric Bernoulli Variance</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{Poisson}(2)\) and \(X_i\) i.i.d. with \(P(X_i=1)=P(X_i=-1)=1/2\), independent of \(N\). Then \(\mathrm{Var}(X_1+\cdots+X_N)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(2\)</strong></p><p>\(E[X]=0\), \(E[X^2]=1\). Compound Poisson: \(\mathrm{Var}(S)=\lambda E[X^2]=2\cdot1=2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>\(2\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(0\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(4\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(1\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Wald - MGF of Compound Poisson Sum</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{Poisson}(\lambda)\) and \(X_i\) i.i.d. with moment generating function \(M_X(t)\), independent of \(N\). The MGF of \(S=X_1+\cdots+X_N\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\exp\!\left(\lambda(M_X(t)-1)\right)\)</strong></p><p>By iterated expectation: \(M_S(t)=E[e^{tS}]=E[E[e^{tS}|N]]=E[M_X(t)^N]=\sum_{n=0}^\infty M_X(t)^n\frac{e^{-\lambda}\lambda^n}{n!}=e^{-\lambda}e^{\lambda M_X(t)}=e^{\lambda(M_X(t)-1)}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(\lambda M_X(t)\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(e^{-\lambda}M_X(t)\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(\exp(\lambda(M_X(t)-1))\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(e^{\lambda M_X(t)}\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Wald - Negative Binomial N Mean</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{NegativeBinomial}(r,p)\) with \(E[N]=r/p\), and \(X_i\overset{iid}{\sim}\mathrm{Exp}(1)\), independent of \(N\). Then \(E[X_1+\cdots+X_N]\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(r/p\)</strong></p><p>Wald's first identity: \(E[S_N]=E[N]\cdot E[X]=\tfrac{r}{p}\cdot1=\tfrac{r}{p}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>\(r/p\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(rp\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(r(1-p)/p^2\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(1/(rp)\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Wald - Sequential Testing Expected Sample Size</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a sequential experiment, \(X_i\overset{iid}{\sim}\mathrm{Bernoulli}(p)\) and sampling stops at \(N=\min\{n:X_1+\cdots+X_n=k\}\). By Wald's identity \(E[S_N]=p\cdot E[N]\). Since \(E[S_N]=k\), the expected stopping time \(E[N]\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(k/p\)</strong></p><p>Wald: \(k=E[S_N]=p\cdot E[N]\Rightarrow E[N]=k/p\). This is the expected number of Bernoulli trials to achieve \(k\) successes — consistent with the negative binomial expectation.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(kp\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(k/p\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(k(1-p)\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(k/p^2\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Wald - Conditional E[S|N=n]</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\) be a random variable and \(X_i\) i.i.d. with mean \(\mu\), independent of \(N\). Then \(E[X_1+\cdots+X_N \mid N=n]\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(n\mu\)</strong></p><p>Given \(N=n\), the sum \(S_N=X_1+\cdots+X_n\) is fixed-size, so \(E[S_N|N=n]=n\mu\) by linearity. Taking expectation over \(N\) then gives \(E[S_N]=E[N]\mu\) — Wald's identity.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>\(n\mu\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(n\mu^2\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\mu\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(n^2\mu\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Wald - Pois(lambda) Xi zero-mean Variance</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(N\sim\mathrm{Poisson}(\lambda)\) and \(X_i\) i.i.d. with \(E[X_i]=0\) and \(\mathrm{Var}(X_i)=\sigma^2\), independent of \(N\). Then \(\mathrm{Var}(X_1+\cdots+X_N)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\lambda\sigma^2\)</strong></p><p>Wald: \(\mathrm{Var}(S)=E[N]\mathrm{Var}(X)+\mathrm{Var}(N)(E[X])^2=\lambda\sigma^2+\lambda\cdot0=\lambda\sigma^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(0\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(\lambda\sigma^2\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\lambda^2\sigma^2\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\sigma^2/\lambda\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Wald - Random Walk First Passage Expected Time</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_i\overset{iid}{\sim}\) distribution with \(E[X_i]=\mu>0\). Let \(\tau=\min\{n:X_1+\cdots+X_n>a\}\) for some \(a>0\). Neglecting overshoots, Wald's identity suggests \(E[\tau]\approx\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(a/\mu\)</strong></p><p>By Wald's identity: \(E[S_\tau]=\mu\cdot E[\tau]\approx a\) (ignoring overshoot beyond \(a\)). Thus \(E[\tau]\approx a/\mu\). This approximation is exact for renewal theory in many cases.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(a\mu\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\mu/a\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(a/\mu\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(a^2/\mu\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Wald - Compound Poisson Insurance Model</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a collective risk model, claims arrive as \(N\sim\mathrm{Poisson}(10)\) per year and individual claim amounts \(X_i\) are i.i.d. with \(E[X_i]=500\) and \(\mathrm{Var}(X_i)=90000\). The variance of total annual claim \(S=X_1+\cdots+X_N\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(3{,}400{,}000\)</strong></p><p>Compound Poisson: \(\mathrm{Var}(S)=\lambda E[X^2]=\lambda(\mathrm{Var}(X)+(E[X])^2)=10(90000+250000)=10\times340000=3{,}400{,}000\). Alternatively: \(E[N]\mathrm{Var}(X)+\mathrm{Var}(N)(E[X])^2=10\times90000+10\times250000=3{,}400{,}000\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(900{,}000\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(2{,}500{,}000\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(1{,}000{,}000\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(3{,}400{,}000\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

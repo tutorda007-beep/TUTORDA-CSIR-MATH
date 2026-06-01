@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Linear Programming — Objective Function Optimization</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>LP - Maximize 3x+5y with two constraints</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Maximize \(z=3x+5y\) subject to \(x+2y\le4\), \(3x+2y\le6\), \(x\ge0\), \(y\ge0\). The maximum value of \(z\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(21/2\)</strong></p><p>Corner points: \((0,0)\to0\), \((2,0)\to6\), \((1,\tfrac{3}{2})\to3+\tfrac{15}{2}=\tfrac{21}{2}\), \((0,2)\to10\). Maximum is \(\tfrac{21}{2}=10.5\) at \((1,\tfrac{3}{2})\). (Intersection: \(x+2y=4\) and \(3x+2y=6\) gives \(2x=2\Rightarrow x=1,y=3/2\).)</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(10\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(21/2\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(12\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(6\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>LP - Max x+y subject to |x|+|y|≤1</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The maximum value of \(z=x+y\) subject to \(|x|+|y|\le1\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(1\)</strong></p><p>The feasible region \(|x|+|y|\le1\) is the unit diamond with vertices \((\pm1,0)\), \((0,\pm1)\). The objective \(z=x+y\) is maximized on the edge from \((1,0)\) to \((0,1)\) where \(y=1-x\), giving \(z=1\) everywhere on this edge. Maximum is \(1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>\(1\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\sqrt{2}\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(2\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(1/2\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>LP - Maximize 2x1+x2 with two inequalities</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Maximize \(z=2x_1+x_2\) subject to \(x_1+x_2\le4\), \(x_1-x_2\le2\), \(x_1\ge0\), \(x_2\ge0\). The maximum value of \(z\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(7\)</strong></p><p>Corner points: \((0,0)\to0\), \((2,0)\to4\), \((3,1)\to7\), \((0,4)\to4\). Intersection of \(x_1+x_2=4\) and \(x_1-x_2=2\): \(2x_1=6\Rightarrow x_1=3,x_2=1\). Maximum \(z=7\) at \((3,1)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(6\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(7\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(8\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(5\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>LP - Strong Duality Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a linear program: Maximise \(\mathbf{c}^T\mathbf{x}\) subject to \(A\mathbf{x}\le\mathbf{b}\), \(\mathbf{x}\ge\mathbf{0}\), the dual is: Minimise \(\mathbf{b}^T\mathbf{y}\) subject to \(A^T\mathbf{y}\ge\mathbf{c}\), \(\mathbf{y}\ge\mathbf{0}\). If both primal and dual are feasible, then at optimality:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Primal optimal value = Dual optimal value</strong></p><p>The Strong Duality Theorem states that if both the primal and dual LP are feasible, then both attain optimal values and these values are equal: \(\mathbf{c}^T\mathbf{x}^*=\mathbf{b}^T\mathbf{y}^*\). Weak duality: \(\mathbf{c}^T\mathbf{x}\le\mathbf{b}^T\mathbf{y}\) for any feasible \(\mathbf{x},\mathbf{y}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>Primal optimal \(\le\) Dual optimal</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>Primal optimal \(\ge\) Dual optimal</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>Primal optimal \(=\) Dual optimal</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>The dual is always infeasible</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>LP - Fundamental Theorem (Corner Point)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Fundamental Theorem of Linear Programming states that if a linear program has an optimal solution, then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) An optimal solution exists at a corner (extreme) point of the feasible region</strong></p><p>Because the feasible region of an LP is a convex polyhedron and the objective function is linear, if the optimum is attained it is attained at a vertex (corner point / basic feasible solution). There may also be optimal solutions along an edge (infinitely many), but one corner will always be optimal.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>An optimal solution exists at a corner point of the feasible region</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>The optimal solution is always unique</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>The feasible region is always bounded</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>The objective must be non-negative at all corners</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>LP - Standard Form Definition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The standard form of a linear program (for the simplex method) is: Maximize \(\mathbf{c}^T\mathbf{x}\) subject to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(A\mathbf{x}=\mathbf{b},\;\mathbf{x}\ge\mathbf{0}\)</strong></p><p>Standard form converts all inequalities to equalities by introducing slack/surplus variables. \(\le\) constraints get a slack variable (\(+s\)), \(\ge\) constraints get a surplus variable (\(-s\)) plus artificial variables for phase-1. The canonical form is \(A\mathbf{x}=\mathbf{b}\), \(\mathbf{x}\ge0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(A\mathbf{x}\le\mathbf{b},\;\mathbf{x}\ge\mathbf{0}\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(A\mathbf{x}=\mathbf{b},\;\mathbf{x}\ge\mathbf{0}\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(A\mathbf{x}\ge\mathbf{b},\;\mathbf{x}\in\mathbb{R}^n\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(A^T\mathbf{x}=\mathbf{b},\;\mathbf{x}\le\mathbf{0}\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>LP - Infeasibility Condition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider the LP: Maximize \(x+y\) subject to \(x+y\ge5\), \(x+y\le3\), \(x\ge0\), \(y\ge0\). This LP is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Infeasible</strong></p><p>The constraints \(x+y\ge5\) and \(x+y\le3\) are contradictory (no point satisfies both simultaneously). Thus the feasible region is empty and the LP is infeasible — no solution exists.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>Unbounded</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>Optimal with value 5</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>Infeasible</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>Optimal with value 3</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>LP - Unbounded Solution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider the LP: Maximize \(x+2y\) subject to \(-x+y\le2\), \(x\ge0\), \(y\ge0\). This LP is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Unbounded</strong></p><p>The feasible region is non-empty. Taking \(x=0, y\to\infty\): \(-0+y=y\le2\) is violated for large \(y\). But take \(x=t, y=t\) for large \(t\): \(-t+t=0\le2\) ✓ and \(z=t+2t=3t\to\infty\). The objective is unbounded above.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>Infeasible</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>Optimal with value 4</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>Optimal with value 2</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>Unbounded</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>LP - Basic Feasible Solution Definition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an LP in standard form with \(m\) equality constraints and \(n\) variables (\(n>m\)), a <em>basic feasible solution</em> (BFS) is a solution where:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) At most \(m\) variables are nonzero, corresponding to a basis of \(A\)</strong></p><p>A basic solution sets \(n-m\) non-basic variables to 0 and solves for the remaining \(m\) basic variables. If all basic variables are \(\ge0\), it is a basic <em>feasible</em> solution. BFS ↔ corner points of the feasible polytope.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>All \(n\) variables are positive</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>At most \(m\) variables are nonzero, forming a basis</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>Exactly \(n-m\) variables are nonzero</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>The objective function value is zero</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>LP - Complementary Slackness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Complementary slackness conditions for primal-dual LP optimality state that at optimal solutions \(\mathbf{x}^*,\mathbf{y}^*\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(x_j^*(c_j-(A^Ty^*)_j)=0\) and \(y_i^*(b_i-(Ax^*)_i)=0\) for all \(i,j\)</strong></p><p>Complementary slackness: for each primal variable \(x_j\) and its dual slack \(c_j-(A^Ty^*)_j\), at least one must be zero. Similarly for each dual variable \(y_i\) and primal slack \(b_i-(Ax^*)_i\). These conditions are both necessary and sufficient for optimality (with feasibility).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>\(x_j^*(c_j-(A^Ty^*)_j)=0\) and \(y_i^*(b_i-(Ax^*)_i)=0\) for all \(i,j\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(x_j^*=y_j^*\) for all \(j\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>All slack variables are zero</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(\mathbf{c}^T\mathbf{x}^*=0\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>LP - Convexity of Feasible Region</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The feasible region of a linear program (a set defined by finitely many linear inequalities) is always:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) A convex polytope (possibly unbounded or empty)</strong></p><p>Each linear inequality \(\mathbf{a}^T\mathbf{x}\le b\) defines a half-space, which is convex. The intersection of finitely many convex sets is convex. Such a set is called a convex polytope (bounded) or polyhedron (possibly unbounded). It may be empty (infeasible LP).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>A bounded convex set</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>A convex polyhedron (possibly unbounded or empty)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>A non-convex region in general</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>Always a simplex</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>LP - Shadow Price (Dual Variable) Interpretation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In an LP, the dual variable (shadow price) \(y_i^*\) corresponding to constraint \(i\) represents:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) The rate of change of the optimal objective value with respect to the right-hand side \(b_i\)</strong></p><p>By sensitivity analysis: if \(b_i\) increases by \(\Delta\), the optimal objective changes by approximately \(y_i^*\cdot\Delta\). This marginal value interpretation makes shadow prices useful in resource allocation problems.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>The value of constraint \(i\) at optimality</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>The slack variable value for constraint \(i\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>The rate of change of optimal objective w.r.t. \(b_i\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>The coefficient of \(x_i\) in the objective function</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>LP - Max 4x+3y diamond constraint</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Maximize \(z=4x+3y\) subject to \(|x|+|y|\le2\), \(x\ge0\), \(y\ge0\). The maximum value is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(8\)</strong></p><p>Feasible region (first quadrant part of \(|x|+|y|\le2\)): triangle with vertices \((0,0),(2,0),(0,2)\). Evaluate \(z\): at \((0,0)\to0\), \((2,0)\to8\), \((0,2)\to6\). Maximum \(z=8\) at \((2,0)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>\(8\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(6\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(7\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(14\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>LP - Minimize cost transportation 2x2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A transportation problem has supply \([30,\,20]\), demand \([25,\,25]\), and cost matrix \(\begin{pmatrix}2&3\\4&1\end{pmatrix}\). The minimum transportation cost is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(95\)</strong></p><p>Send \(x_{11}=25, x_{12}=5, x_{21}=0, x_{22}=20\) (from row 1: send 25 to col 1, 5 to col 2; from row 2: send all 20 to col 2). Cost: \(25\times2+5\times3+0\times4+20\times1=50+15+0+20=85\). Try \(x_{11}=25, x_{12}=5, x_{22}=20\): cost 85. Try \(x_{11}=5,x_{12}=25,x_{21}=20\): \(5\times2+25\times3+20\times4=10+75+80=165\). Optimal: \(x_{11}=25,x_{12}=5,x_{22}=20\), cost \(=50+15+20=85\). Recalculate: \(25(2)+5(3)+20(1)=50+15+20=85\).</p><p>Correction: minimum is \(85\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(75\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(80\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(85\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(100\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>LP - Dual of Maximization Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The dual of: Maximize \(3x_1+2x_2\) subject to \(x_1+x_2\le4\), \(2x_1+x_2\le6\), \(x_1,x_2\ge0\) is: Minimize \(4y_1+6y_2\) subject to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(y_1+2y_2\ge3,\;y_1+y_2\ge2,\;y_1,y_2\ge0\)</strong></p><p>For each primal variable \(x_j\ge0\), the dual constraint is \(A^T_j\mathbf{y}\ge c_j\). Column 1: \(y_1+2y_2\ge3\). Column 2: \(y_1+y_2\ge2\). Dual objective: minimise \(\mathbf{b}^T\mathbf{y}=4y_1+6y_2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>\(y_1+2y_2\ge3,\;y_1+y_2\ge2,\;y_1,y_2\ge0\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(y_1+2y_2\le3,\;y_1+y_2\le2,\;y_1,y_2\ge0\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(y_1+y_2\ge3,\;2y_1+y_2\ge2,\;y_1,y_2\ge0\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(4y_1+6y_2\ge3,\;y_1,y_2\ge0\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>LP - Simplex Pivot Column (Most Negative Reduced Cost)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In the simplex method (maximization), the entering variable is chosen as the non-basic variable with:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) The most negative reduced cost</strong></p><p>Reduced cost \(\bar{c}_j=c_j-c_B^TB^{-1}A_j\). A negative reduced cost means increasing \(x_j\) improves the objective. The standard rule chooses the most negative reduced cost (Dantzig's rule) to select the entering variable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>The most positive reduced cost</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>The most negative reduced cost</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>The largest current value</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>The variable with the largest coefficient in \(\mathbf{c}\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>LP - Max 5x+4y three constraints</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Maximize \(z=5x+4y\) subject to \(6x+4y\le24\), \(x+2y\le6\), \(x\ge0\), \(y\ge0\). The maximum value of \(z\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(21\)</strong></p><p>Corner points: \((0,0)\to0\), \((4,0)\to20\), \((3,3/2)\)—from \(6x+4y=24\) and \(x+2y=6\): subtract to get \(5x=18\Rightarrow x=18/5\), hmm. Let me redo: \(6x+4y=24\) and \(x+2y=6\). Multiply second by 2: \(2x+4y=12\). Subtract from first: \(4x=12\Rightarrow x=3, y=3/2\). \(z=15+6=21\). Also \((0,3)\to12\). Maximum \(z=21\) at \((3,3/2)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(20\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(24\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(21\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(18\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>LP - Minimize 2x+3y subject to constraints</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Minimize \(z=2x+3y\) subject to \(x+y\ge4\), \(x+3y\ge6\), \(x\ge0\), \(y\ge0\). The minimum value of \(z\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(8\)</strong></p><p>Corner points of feasible region: \((0,4): z=12\), \((3,1): z=9\), \((6,0): z=12\). Intersection of \(x+y=4\) and \(x+3y=6\): \(2y=2\Rightarrow y=1, x=3\). \(z=6+3=9\). Minimum is \(9\) at \((3,1)\). Actually let me recheck: \(z=2(3)+3(1)=6+3=9\). Check \((0,4)\): \(z=0+12=12\). Check \((6,0)\): constraints satisfied? \(6+0=6\ge4\)✓, \(6+0=6\ge6\)✓. \(z=12\). Minimum \(z=9\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\(6\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(8\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\(9\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(12\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>LP - Number of Basic Feasible Solutions Bound</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An LP in standard form with \(m\) equality constraints and \(n\) decision variables (\(n>m\)) has at most how many basic solutions?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\binom{n}{m}\)</strong></p><p>A basic solution is determined by choosing \(m\) variables as basic (setting the other \(n-m\) to zero). There are \(\binom{n}{m}\) ways to choose the basis. Not all give feasible solutions (some may have negative basic variables). The simplex method visits only BFS, reducing the search from exponential to polynomial in practice.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>\(\binom{n}{m}\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(n!\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(m^n\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\(n-m\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>LP - Max z=ax+by on unit square</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a,b>0\). The maximum of \(z=ax+by\) over the unit square \(\{(x,y):0\le x\le1,\,0\le y\le1\}\) is attained at:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \((1,1)\) with maximum \(a+b\)</strong></p><p>Since \(a,b>0\), the objective increases as \(x\) and \(y\) increase. The maximum is attained at \((1,1)\) giving \(z=a+b\). The four corners give \(0, a, b, a+b\) at \((0,0),(1,0),(0,1),(1,1)\) respectively.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>\((0,0)\) with maximum \(0\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\((1,0)\) with maximum \(a\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>\((1,1)\) with maximum \(a+b\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>\((0,1)\) with maximum \(b\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

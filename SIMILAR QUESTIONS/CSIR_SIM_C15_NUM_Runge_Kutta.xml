@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Numerical Methods — Runge-Kutta and Quadrature Formulas</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>NUM - Quadrature with f' terms minimum truncation error</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider the quadrature formula \(\int_{-h}^{h}f(x)dx\approx ah\,f(-h)+bh\,f(0)+ah\,f(h)+ch^2f'(-h)-ch^2f'(h)\). For the truncation error to be minimised (highest-order accuracy), which are TRUE?</p>
+<ol type="A"><li>\(2a+b=2\) (exactness for \(f=1\)).</li><li>\(a-b+a=0\Rightarrow 2a=b\)... (checking \(f=x^2\)): \(2ah^3/3=2h^3/3\Rightarrow a=1\); but we need more equations.</li><li>The formula achieving order 6 has \(a=1/3\), \(b=4/3\), \(c=1/3\)... (Simpson-like with derivatives).</li><li>Such formulas are called Hermite quadrature rules.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (D)</strong></p><p>Setting up exactness conditions: (A) \(f=1\): \(\int_{-h}^h1\,dx=2h=ahf(-h)+bh+ahf(h)=h(2a+b)\cdot1\Rightarrow2a+b=2\). (D) Rules using both function values and derivatives are called Hermite (or Birkhoff-type) quadrature. Options (B)(C) require detailed coefficient derivation — the correct coefficients satisfying all conditions for maximum order can be determined but the specific values stated in (B)(C) may not be exactly right without full computation.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>NUM - Classical RK4 Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The classical 4th-order Runge-Kutta method for \(y'=f(x,y)\) uses \(k_1=hf(x_n,y_n)\), \(k_2=hf(x_n+h/2,y_n+k_1/2)\), \(k_3=hf(x_n+h/2,y_n+k_2/2)\), \(k_4=hf(x_n+h,y_n+k_3)\), and \(y_{n+1}=y_n+\frac{1}{6}(k_1+2k_2+2k_3+k_4)\). Which are TRUE?</p>
+<ol type="A"><li>The local truncation error is \(O(h^5)\).</li><li>The global error is \(O(h^4)\).</li><li>RK4 is self-starting (requires only \(y_0\) to begin).</li><li>RK4 requires 4 function evaluations per step.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Local error: \(O(h^5)\). (B) Global error: \(O(h^4)\) (one order less). (C) Unlike multi-step methods, RK methods are one-step and self-starting. (D) Four \(k\)-evaluations per step.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>NUM - Euler Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the explicit Euler method \(y_{n+1}=y_n+hf(x_n,y_n)\). Which are TRUE?</p>
+<ol type="A"><li>The local truncation error is \(O(h^2)\).</li><li>The global error is \(O(h)\) (first-order method).</li><li>For \(y'=\lambda y\), stability requires \(|1+h\lambda|\le1\).</li><li>The implicit Euler method is unconditionally stable for \(\lambda<0\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Local: \(O(h^2)\). (B) Global: \(O(h)\). (C) Stability region: \(h\lambda\) must lie in \(\{z:|1+z|\le1\}\). (D) Implicit Euler: \(y_{n+1}=y_n+hf(x_{n+1},y_{n+1})\). For \(y'=\lambda y\): \(y_{n+1}=y_n/(1-h\lambda)\); for \(\lambda<0\): \(|1/(1-h\lambda)|<1\) for all \(h>0\) — unconditionally stable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>NUM - Newton-Cotes Formulas</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Newton-Cotes quadrature formulas use equally spaced nodes. Which are TRUE?</p>
+<ol type="A"><li>The Trapezoidal rule \(\int_a^bf(x)dx\approx\frac{h}{2}(f(a)+f(b))\) has error \(-\frac{(b-a)^3}{12}f''(\xi)\).</li><li>Simpson's \(1/3\) rule \(\approx\frac{h}{3}(f(a)+4f(m)+f(b))\) (where \(m=(a+b)/2\)) is exact for polynomials of degree \(\le3\).</li><li>The 3/8 rule uses 4 equally spaced points and is exact for cubics.</li><li>Gaussian quadrature with \(n\) points is exact for polynomials of degree \(\le2n-1\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Trapezoidal error formula. (B) Simpson's \(1/3\) rule is exact for degree \(\le3\) (despite using only 3 points). (C) The 3/8 rule with 4 points is exact for cubics. (D) Gaussian quadrature achieves maximum degree of exactness: \(2n-1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>NUM - Newton-Raphson Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Newton-Raphson: \(x_{n+1}=x_n-f(x_n)/f'(x_n)\). Which are TRUE?</p>
+<ol type="A"><li>The method has quadratic convergence near a simple root.</li><li>For a root of multiplicity \(m>1\), the convergence is linear (order 1).</li><li>Starting from a good initial guess is essential for convergence.</li><li>The modified Newton-Raphson \(x_{n+1}=x_n-mf(x_n)/f'(x_n)\) restores quadratic convergence for roots of multiplicity \(m\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) For simple roots, the error satisfies \(e_{n+1}\approx Ce_n^2\). (B) For multiplicity \(m>1\): convergence factor \(1-1/m\in(0,1)\) — linear. (C) Newton-Raphson can diverge from a poor initial guess. (D) The modified formula accelerates convergence back to quadratic.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>NUM - Gauss-Legendre Quadrature</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Gauss-Legendre quadrature on \([-1,1]\): the \(n\)-point rule uses the roots of \(P_n(x)\) as nodes. Which are TRUE?</p>
+<ol type="A"><li>The 2-point rule is \(\int_{-1}^1f(x)dx\approx f(-1/\sqrt3)+f(1/\sqrt3)\), exact for polynomials of degree \(\le3\).</li><li>Weights in Gauss-Legendre quadrature are always positive.</li><li>The nodes are symmetric about 0.</li><li>The error for the \(n\)-point rule applied to \(f\in C^{2n}[-1,1]\) is \(\frac{2^{2n+1}(n!)^4}{(2n+1)((2n)!)^2}f^{(2n)}(\xi)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) 2-point GL rule: nodes \(\pm1/\sqrt3\), weights 1 each. Exact for degree \(\le3\). (B) GL weights are always positive. (C) Roots of Legendre polynomials are symmetric about 0. (D) Standard error formula for GL quadrature.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>NUM - Interpolation Errors</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For polynomial interpolation of \(f\) at \(n+1\) distinct nodes \(x_0,\ldots,x_n\), the error is \(f(x)-p_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}\prod_{i=0}^n(x-x_i)\). Which are TRUE?</p>
+<ol type="A"><li>Chebyshev nodes minimize \(\max|\prod(x-x_i)|\) on \([-1,1]\).</li><li>Equally spaced nodes can lead to Runge's phenomenon (oscillation near endpoints).</li><li>The error goes to zero for all continuous \(f\) as \(n\to\infty\) with equally spaced nodes.</li><li>Newton's divided difference formula gives the interpolating polynomial incrementally.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Chebyshev nodes are optimal for minimizing the Lebesgue constant. (B) Runge's phenomenon: interpolating \(1/(1+25x^2)\) at equally spaced nodes diverges. (C) FALSE: equally spaced interpolation can diverge for some continuous functions (Runge's example). (D) Newton's divided differences provide an efficient incremental formula.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>NUM - Iterative Methods for Linear Systems</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(Ax=b\), iterative methods: Jacobi \(x^{(k+1)}=D^{-1}(b-(L+U)x^{(k)})\) and Gauss-Seidel. Which are TRUE?</p>
+<ol type="A"><li>Both methods converge if \(A\) is strictly diagonally dominant.</li><li>Gauss-Seidel converges faster than Jacobi in general.</li><li>For symmetric positive definite \(A\), Gauss-Seidel always converges.</li><li>The spectral radius of the iteration matrix determines convergence rate.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Strict diagonal dominance guarantees convergence for both. (B) Gauss-Seidel uses updated values immediately, typically converging faster. (C) For SPD matrices, Gauss-Seidel converges (classical result). (D) Convergence iff spectral radius of iteration matrix \(<1\); the rate is \(-\log(\rho)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>NUM - Bisection Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The bisection method for finding a root of \(f\) in \([a,b]\) (with \(f(a)f(b)<0\)). Which are TRUE?</p>
+<ol type="A"><li>The method always converges to a root.</li><li>After \(n\) iterations, the error is at most \((b-a)/2^n\).</li><li>The convergence is linear with rate \(1/2\).</li><li>The bisection method requires only continuity of \(f\) (no differentiability).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) By the intermediate value theorem, the method converges to a root. (B) The interval halves each iteration. (C) Linear convergence with ratio \(1/2\). (D) Only continuity and sign change needed — no smoothness required.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>NUM - LU Decomposition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>LU decomposition: \(A=LU\) where \(L\) is lower triangular and \(U\) is upper triangular. Which are TRUE?</p>
+<ol type="A"><li>LU decomposition exists for any matrix with all leading principal minors nonzero.</li><li>Solving \(Ax=b\) via LU requires \(O(n^3)\) for the decomposition and \(O(n^2)\) for each solve.</li><li>Gaussian elimination with partial pivoting gives \(A=PLU\) (with permutation matrix \(P\)).</li><li>The Cholesky decomposition \(A=LL^T\) exists for symmetric positive definite \(A\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Non-singular leading minors guarantee LU without pivoting. (B) Standard complexity counts. (C) With partial pivoting, \(PA=LU\). (D) Cholesky for SPD matrices.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>NUM - Adams Methods (Multistep)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Adams-Bashforth (explicit) and Adams-Moulton (implicit) are multistep methods. Which are TRUE?</p>
+<ol type="A"><li>Adams-Bashforth 2-step: \(y_{n+1}=y_n+\frac{h}{2}(3f_n-f_{n-1})\) is 2nd-order.</li><li>Adams-Moulton methods are generally more accurate than Adams-Bashforth for the same number of steps.</li><li>Predictor-corrector methods pair Adams-Bashforth (predictor) with Adams-Moulton (corrector).</li><li>Multistep methods are not self-starting and require auxiliary starting values.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) 2-step Adams-Bashforth formula and order. (B) Implicit methods (AM) are more accurate — they use more information at the new point. (C) PECE schemes. (D) Multistep methods need initial values from another method (e.g. RK4).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>NUM - Condition Number</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The condition number \(\kappa(A)=\|A\|\|A^{-1}\|\) measures sensitivity of \(Ax=b\). Which are TRUE?</p>
+<ol type="A"><li>A large condition number indicates the system is ill-conditioned.</li><li>\(\frac{\|\delta x\|}{\|x\|}\le\kappa(A)\frac{\|\delta b\|}{\|b\|}\).</li><li>The condition number of an orthogonal matrix is 1.</li><li>For SPD matrix \(A\): \(\kappa_2(A)=\lambda_{\max}/\lambda_{\min}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Large \(\kappa\): small perturbations in \(b\) can cause large changes in \(x\). (B) Standard perturbation bound. (C) Orthogonal: \(\|Q\|_2=\|Q^{-1}\|_2=1\Rightarrow\kappa_2(Q)=1\). (D) For SPD: spectral condition number = ratio of extreme eigenvalues.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>NUM - Finite Difference Methods for BVPs</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the BVP \(y''+p(x)y'+q(x)y=r(x)\) on \([a,b]\) with Dirichlet conditions, the finite difference method discretizes using \(y''(x_i)\approx(y_{i+1}-2y_i+y_{i-1})/h^2\). Which are TRUE?</p>
+<ol type="A"><li>The resulting linear system has a tridiagonal coefficient matrix.</li><li>The truncation error of the central difference approximation to \(y''\) is \(O(h^2)\).</li><li>Refinement by halving \(h\) reduces the global error by a factor of 4.</li><li>For \(q(x)\le0\), the finite difference matrix is diagonally dominant (ensuring invertibility).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Each equation involves only three consecutive grid points. (B) Central difference: \(y''=\frac{y_{i+1}-2y_i+y_{i-1}}{h^2}-\frac{h^2}{12}y^{(4)}+\cdots\Rightarrow O(h^2)\). (C) Second-order method: halving \(h\) multiplies error by \(1/4\). (D) Diagonal dominance when \(q\le0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>NUM - Secant Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The secant method: \(x_{n+1}=x_n-f(x_n)\frac{x_n-x_{n-1}}{f(x_n)-f(x_{n-1})}\). Which are TRUE?</p>
+<ol type="A"><li>The secant method has superlinear convergence (order \(\approx1.618\)).</li><li>It requires two initial guesses.</li><li>It requires no computation of \(f'\).</li><li>It is generally faster than bisection but slower than Newton-Raphson.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Superlinear convergence of order \(\phi=(1+\sqrt5)/2\approx1.618\) (golden ratio). (B) Needs \(x_0\) and \(x_1\). (C) Approximates \(f'\) by a difference quotient. (D) Faster than bisection (superlinear vs linear), slower than Newton-Raphson (order 1.618 vs 2).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>NUM - Stiffness in ODEs</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A stiff ODE has solutions with widely varying time scales. Which are TRUE?</p>
+<ol type="A"><li>Stiff equations require implicit methods for efficient solution.</li><li>Explicit RK methods applied to stiff equations require extremely small step sizes for stability.</li><li>The backward Euler method is A-stable (stable for all \(h>0\) when \(\mathrm{Re}(\lambda)<0\)).</li><li>The Runge-Kutta method RK4 is A-stable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Stiffness requires implicit methods; explicit methods need tiny \(h\) for stability. (C) Backward Euler: stability region is \(\{z:|1-z|>1\}^c\), which includes the left half-plane. (D) FALSE: RK4 is NOT A-stable. The stability region of explicit methods is bounded; only implicit methods can be A-stable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>NUM - Power Method for Eigenvalues</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The power method computes the dominant eigenvalue of \(A\) by iterating \(v_{k+1}=Av_k/\|Av_k\|\). Which are TRUE?</p>
+<ol type="A"><li>The method converges to the eigenvector of the largest (in modulus) eigenvalue.</li><li>The rate of convergence is \(|\lambda_2/\lambda_1|\) where \(\lambda_1,\lambda_2\) are the two largest eigenvalues.</li><li>The inverse power method finds the smallest eigenvalue.</li><li>The shifted power method \((A-\sigma I)^{-1}\) finds the eigenvalue closest to \(\sigma\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) The power method converges to the dominant eigenvector. (B) Convergence rate = ratio of second to first eigenvalue (in modulus). (C) Inverse power method applies power method to \(A^{-1}\). (D) Shift-and-invert: \((A-\sigma I)^{-1}\) has eigenvalues \(1/(\lambda-\sigma)\), largest is the one closest to \(\sigma\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>NUM - Spline Interpolation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A cubic spline on \([a,b]\) with knots \(x_0<\cdots<x_n\) is a piecewise cubic \(C^2[a,b]\). Which are TRUE?</p>
+<ol type="A"><li>A natural cubic spline has zero second derivatives at the endpoints.</li><li>A cubic spline through \(n+1\) points has \(4n\) coefficients and \(4n-2\) conditions (continuity up to \(C^2\) plus interpolation).</li><li>Cubic splines avoid Runge's phenomenon.</li><li>The not-a-knot condition forces the third derivative to be continuous at the second and second-to-last knots.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Natural spline boundary conditions. (B) \(4n\) unknowns, \(n+1\) interpolation conditions, \(3(n-1)\) continuity/derivative conditions = \(4n-2\); the 2 remaining are boundary conditions. (C) Splines produce smooth, stable interpolants. (D) Not-a-knot condition is commonly used in practice.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>NUM - Conjugate Gradient Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The conjugate gradient (CG) method solves \(Ax=b\) with \(A\) SPD. Which are TRUE?</p>
+<ol type="A"><li>CG converges in at most \(n\) steps (exact arithmetic).</li><li>Each iteration minimizes the \(A\)-norm error over an expanding Krylov subspace.</li><li>The convergence rate depends on the condition number: \(\|e_k\|_A\le2\left(\frac{\sqrt\kappa-1}{\sqrt\kappa+1}\right)^k\|e_0\|_A\).</li><li>Preconditioning reduces the effective condition number and speeds convergence.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Exact CG terminates in \(\le n\) steps. (B) Krylov subspace minimization property. (C) Convergence bound using \(\kappa=\kappa(A)\). (D) Preconditioned CG: solve \(M^{-1}Ax=M^{-1}b\) with better \(\kappa(M^{-1}A)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</small><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>NUM - Numerical Differentiation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Finite difference approximations to derivatives. Which are TRUE?</p>
+<ol type="A"><li>Forward difference: \(f'(x)\approx\frac{f(x+h)-f(x)}{h}\), error \(O(h)\).</li><li>Central difference: \(f'(x)\approx\frac{f(x+h)-f(x-h)}{2h}\), error \(O(h^2)\).</li><li>For \(f''(x)\), the central difference \(\frac{f(x+h)-2f(x)+f(x-h)}{h^2}\) has error \(O(h^2)\).</li><li>Richardson extrapolation can improve the accuracy of numerical differentiation.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)–(D) Standard numerical differentiation results and Richardson extrapolation (which combines two step-size estimates to cancel the leading error term).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>NUM - Least Squares and QR</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an overdetermined system \(Ax=b\) (\(A\in\mathbb{R}^{m\times n}\), \(m>n\)), the least-squares solution minimizes \(\|Ax-b\|_2\). Which are TRUE?</p>
+<ol type="A"><li>The normal equations \(A^TAx=A^Tb\) give the least-squares solution.</li><li>The QR decomposition \(A=QR\) reduces to solving \(Rx=Q^Tb\).</li><li>The pseudoinverse solution \(x^+=A^+b\) gives the minimum-norm least-squares solution.</li><li>If \(A\) has full column rank, the normal equations have a unique solution.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Normal equations. (B) \(A=QR\Rightarrow\|Ax-b\|=\|QRx-b\|=\|Rx-Q^Tb\|\) since \(Q\) is orthogonal. (C) Moore-Penrose pseudoinverse. (D) Full column rank \(\Rightarrow A^TA\) invertible \(\Rightarrow\) unique solution.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

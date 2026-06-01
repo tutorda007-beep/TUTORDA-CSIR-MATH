@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Real Analysis — Continuity and Uniform Continuity</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Continuity - Continuous Injective on R</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A continuous one-to-one function \(f:\mathbb{R}\to\mathbb{R}\) must be:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Strictly monotone</strong></p><p>A continuous injective function on \(\mathbb{R}\) must be strictly monotone (either strictly increasing or strictly decreasing) by the Intermediate Value Theorem. If \(f\) were not monotone, it would take some value twice, contradicting injectivity. It need not be onto (e.g., \(f(x)=e^x\) is strictly increasing but not surjective onto \(\mathbb{R}\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Onto (surjective)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Strictly monotone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Differentiable]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Continuity - Uniform Continuity on Compact Set</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f:[a,b]\to\mathbb{R}\) is continuous, then \(f\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Uniformly continuous on \([a,b]\)</strong></p><p>Heine–Cantor theorem: a continuous function on a compact set is uniformly continuous. \([a,b]\) is compact (closed and bounded in \(\mathbb{R}\)). This does NOT hold on open intervals: \(f(x)=1/x\) is continuous but not uniformly continuous on \((0,1]\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Differentiable on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uniformly continuous on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Monotone on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Lipschitz continuous on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Continuity - IVT Application</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f:[0,1]\to[0,1]\) is continuous, then by the Intermediate Value Theorem:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(f\) has a fixed point (i.e., \(f(c)=c\) for some \(c\in[0,1]\))</strong></p><p>Consider \(g(x)=f(x)-x\). Then \(g(0)=f(0)\geq0\) and \(g(1)=f(1)-1\leq0\). By IVT, \(g(c)=0\) for some \(c\in[0,1]\), i.e., \(f(c)=c\). This is Brouwer's fixed point theorem in 1D.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) has a fixed point \(c\in[0,1]\) with \(f(c)=c\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is monotone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is differentiable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(1/2)=1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Continuity - f(x)=1/x Not Uniformly Continuous</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The function \(f(x)=\dfrac{1}{x}\) is NOT uniformly continuous on \((0,1)\) because:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) For any \(\delta>0\), take \(x=\delta/2\) and \(y=\delta/3\): \(|x-y|<\delta\) but \(|f(x)-f(y)|\to\infty\)</strong></p><p>More precisely: take \(x_n=1/n\), \(y_n=1/(n+1)\). Then \(|x_n-y_n|=1/(n(n+1))\to0\) but \(|f(x_n)-f(y_n)|=1\). So no single \(\delta\) works for all pairs, violating uniform continuity.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is not continuous at \(x=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is not bounded on \((0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is not differentiable at some point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Points near 0 with small \(|x-y|\) can have large \(|f(x)-f(y)|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Continuity - Lipschitz implies Uniform Continuity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(|f(x)-f(y)|\leq K|x-y|\) for all \(x,y\) (Lipschitz with constant \(K\)), then \(f\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Uniformly continuous</strong></p><p>Given \(\epsilon>0\), choose \(\delta=\epsilon/K\). Then \(|x-y|<\delta\Rightarrow|f(x)-f(y)|\leq K|x-y|<K\cdot\epsilon/K=\epsilon\). The implication Lipschitz \(\Rightarrow\) uniformly continuous \(\Rightarrow\) continuous is strict (e.g., \(\sqrt{x}\) is uniformly continuous on \([0,1]\) but not Lipschitz at 0).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Differentiable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uniformly continuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Monotone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Analytic]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Continuity - Composition of Uniformly Continuous</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f:A\to B\) and \(g:B\to C\) are both uniformly continuous, then \(g\circ f\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Uniformly continuous</strong></p><p>Given \(\epsilon>0\), uniform continuity of \(g\) gives \(\delta_1>0\) such that \(|u-v|<\delta_1\Rightarrow|g(u)-g(v)|<\epsilon\). Uniform continuity of \(f\) gives \(\delta>0\) such that \(|x-y|<\delta\Rightarrow|f(x)-f(y)|<\delta_1\). Chain: \(|x-y|<\delta\Rightarrow|g(f(x))-g(f(y))|<\epsilon\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Uniformly continuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Continuous but not necessarily uniformly continuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not necessarily continuous]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Lipschitz continuous]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Continuity - Epsilon-Delta Definition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>\(f\) is continuous at \(a\) means: for every \(\epsilon>0\), there exists \(\delta>0\) such that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(|x-a|<\delta\Rightarrow|f(x)-f(a)|<\epsilon\)</strong></p><p>The \(\epsilon\)-\(\delta\) definition of continuity at a point. Uniform continuity requires a \(\delta\) that works for ALL points simultaneously (not just at one fixed \(a\)). Sequential continuity is equivalent: \(x_n\to a\Rightarrow f(x_n)\to f(a)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(|f(x)-f(a)|<\delta\Rightarrow|x-a|<\epsilon\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(|x-a|<\delta\Rightarrow|f(x)-f(a)|<\epsilon\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|x-a|<\epsilon\Rightarrow|f(x)-f(a)|<\delta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|f(x)-f(a)|<\epsilon\Rightarrow|x-a|<\delta\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Continuity - sqrt(x) on [0,1]</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The function \(f(x)=\sqrt{x}\) on \([0,1]\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Uniformly continuous but not Lipschitz at 0</strong></p><p>\(\sqrt{x}\) is continuous on the compact set \([0,1]\), so uniformly continuous by Heine–Cantor. However, \(|f(x)-f(0)|/|x-0|=1/\sqrt{x}\to\infty\) as \(x\to0^+\), so it is NOT Lipschitz. It is Hölder continuous with exponent \(1/2\): \(|\sqrt{x}-\sqrt{y}|\leq|x-y|^{1/2}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Lipschitz continuous on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not uniformly continuous on \([0,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uniformly continuous but not Lipschitz at \(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Differentiable at \(x=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Continuity - Extreme Value Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Extreme Value Theorem states: if \(f:[a,b]\to\mathbb{R}\) is continuous, then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(f\) attains its maximum and minimum on \([a,b]\)</strong></p><p>A continuous function on a compact set is bounded and attains its bounds. On \([a,b]\) (compact), \(f\) achieves \(\sup f\) and \(\inf f\). This fails on open intervals: \(f(x)=x\) on \((0,1)\) has sup 1 and inf 0 but does not attain them.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f\) attains its maximum and minimum values on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is differentiable on \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is monotone on \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is uniformly continuous only if it is Lipschitz]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Continuity - Discontinuity Types</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The function \(f(x)=\sin(1/x)\) for \(x\neq0\) and \(f(0)=0\) has at \(x=0\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) An essential (oscillatory) discontinuity</strong></p><p>\(\sin(1/x)\) oscillates infinitely between \(-1\) and \(1\) as \(x\to0\). The limit \(\lim_{x\to0}\sin(1/x)\) does not exist. So the discontinuity is essential (neither removable nor a jump discontinuity). Contrast with \(x\sin(1/x)\to0\) which has a removable discontinuity at 0.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[A removable discontinuity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A jump discontinuity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No discontinuity (it is continuous at 0)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[An essential (oscillatory) discontinuity]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Continuity - Monotone Function Discontinuities</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A monotone function \(f:[a,b]\to\mathbb{R}\) can have at most:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Countably many discontinuities</strong></p><p>Each discontinuity of a monotone function is a jump discontinuity. To each jump at \(x_0\), we can associate a distinct rational number in the jump interval \((f(x_0^-),f(x_0^+))\). Since the rational intervals are disjoint and \(\mathbb{Q}\) is countable, the discontinuities form a countable set.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Finitely many discontinuities]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Countably many discontinuities (all jump type)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uncountably many discontinuities]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No discontinuities]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Continuity - Weierstrass Approximation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Weierstrass approximation theorem states: every continuous \(f:[a,b]\to\mathbb{R}\) can be uniformly approximated by:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Polynomials</strong></p><p>Weierstrass (1885): for any continuous \(f:[a,b]\to\mathbb{R}\) and \(\epsilon>0\), there exists a polynomial \(p\) such that \(\sup_{x\in[a,b]}|f(x)-p(x)|<\epsilon\). The Stone–Weierstrass theorem generalizes this. Bernstein polynomials provide an explicit construction.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Polynomials]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Trigonometric functions only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Step functions]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Rational functions with integer coefficients only]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Continuity - Characteristic Function of Q</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Dirichlet function \(f(x)=\begin{cases}1&x\in\mathbb{Q}\\0&x\notin\mathbb{Q}\end{cases}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Discontinuous at every point of \(\mathbb{R}\)</strong></p><p>For any \(x\in\mathbb{R}\) and any \(\delta>0\), the interval \((x-\delta,x+\delta)\) contains both rationals and irrationals. So \(f\) takes values 0 and 1 in every neighbourhood of \(x\), hence \(\lim_{t\to x}f(t)\) does not exist. The function is discontinuous everywhere — and not Riemann integrable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Continuous everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Continuous at rationals only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Continuous at irrationals only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Discontinuous at every point of \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Continuity - Thomae's Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Thomae's function \(f(x)=\begin{cases}1/q&x=p/q\in\mathbb{Q},\;\gcd(p,q)=1,\;q>0\\0&x\notin\mathbb{Q}\end{cases}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Continuous at every irrational, discontinuous at every rational</strong></p><p>At irrationals: for any \(\epsilon>0\), the rationals \(p/q\) with \(f(p/q)=1/q\geq\epsilon\) have \(q\leq1/\epsilon\), so only finitely many; we can find \(\delta\) avoiding them. At rationals: every neighbourhood contains irrationals where \(f=0\neq f(p/q)\). Thomae's function is Riemann integrable (discontinuous only on a countable — hence measure zero — set).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Continuous everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Continuous at every irrational, discontinuous at every rational]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Continuous at every rational, discontinuous at every irrational]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Discontinuous everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Continuity - Sequential Criterion</text></name>
+  <questiontext format="html"><text><![CDATA[<p>\(f\) is NOT continuous at \(a\) if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) There exists a sequence \(x_n\to a\) but \(f(x_n)\not\to f(a)\)</strong></p><p>Sequential criterion for discontinuity: \(f\) is discontinuous at \(a\) iff there is a sequence \(x_n\to a\) with \(f(x_n)\not\to f(a)\). This is the negation of the sequential characterization of continuity (\(x_n\to a\Rightarrow f(x_n)\to f(a)\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is not bounded near \(a\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(a)\) is not defined]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[There exists a sequence \(x_n\to a\) with \(f(x_n)\not\to f(a)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is not differentiable at \(a\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Continuity - f(x+y)=f(x)+f(y)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f:\mathbb{R}\to\mathbb{R}\) satisfies \(f(x+y)=f(x)+f(y)\) for all \(x,y\in\mathbb{R}\) and \(f\) is continuous at one point, then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(f(x)=cx\) for some constant \(c=f(1)\)</strong></p><p>Cauchy's functional equation: additive + continuous (at one point) implies \(f(x)=cx\). Without continuity, there exist pathological solutions (using Hamel basis of \(\mathbb{R}\) over \(\mathbb{Q}\)). Continuity at one point extends to continuity everywhere for additive functions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(x)=cx\) for some constant \(c\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x)=cx^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is periodic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) must be identically zero]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Continuity - Continuous Image of Connected</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f:\mathbb{R}\to\mathbb{R}\) is continuous and \(A\subset\mathbb{R}\) is connected, then \(f(A)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Connected (hence an interval)</strong></p><p>Continuous functions preserve connectedness. In \(\mathbb{R}\), connected sets are exactly intervals. So the continuous image of an interval is an interval — this is the IVT generalized. Note: continuous images of compact sets are compact; continuous images of connected sets are connected.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Open]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Connected (hence an interval in \(\mathbb{R}\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Closed]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Continuity - Uniform Continuity on (0,1)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following is uniformly continuous on \((0,1)\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(f(x)=\sin x\)</strong></p><p>\(\sin x\) is Lipschitz on all of \(\mathbb{R}\) (with constant 1), hence uniformly continuous on \((0,1)\). \(1/x\) is not uniformly continuous (unbounded near 0). \(x^{-1/2}\) similarly diverges near 0. \(\ln x\) also diverges near 0 and is not uniformly continuous on \((0,1)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x)=1/x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x)=x^{-1/2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(x)=\sin x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x)=\ln x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Continuity - Continuous Function Vanishing at Infinity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:\mathbb{R}\to\mathbb{R}\) be continuous with \(\lim_{|x|\to\infty}f(x)=0\). Then \(f\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Bounded and uniformly continuous on \(\mathbb{R}\)</strong></p><p>Since \(f\to0\) at \(\pm\infty\), for any \(\epsilon>0\) there exists \(R\) with \(|f(x)|<\epsilon\) for \(|x|>R\). On \([-R,R]\) (compact), \(f\) is bounded and uniformly continuous. Combining: \(f\) is bounded on all of \(\mathbb{R}\) and also uniformly continuous (the parts near infinity are controlled by smallness of \(f\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Bounded and uniformly continuous on \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Not necessarily bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Monotone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded but not uniformly continuous]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Continuity - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:\mathbb{R}\to\mathbb{R}\) be continuous and one-to-one. Which property is necessarily true?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(f\) is strictly monotone</strong></p><p>A continuous injective map on \(\mathbb{R}\) must be strictly monotone (IVT argument). It need not be onto (\(e^x\) is strictly increasing but range is \((0,\infty)\neq\mathbb{R}\)), need not be bounded (\(f(x)=x\) is unbounded), and need not be differentiable (there exist strictly monotone continuous non-differentiable functions).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Onto (surjective)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Strictly monotone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Differentiable everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

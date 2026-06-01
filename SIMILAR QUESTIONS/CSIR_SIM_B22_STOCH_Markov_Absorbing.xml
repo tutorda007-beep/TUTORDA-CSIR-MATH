@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Stochastic Processes — Markov Chains and Absorbing States</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Markov - Transition Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Markov chain on \(\{1,2\}\) has transition matrix \(P=\begin{pmatrix}0.7&0.3\\0.4&0.6\end{pmatrix}\). The stationary distribution \(\pi=(\pi_1,\pi_2)\) satisfies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\pi=(4/7,3/7)\)</strong></p><p>Stationary: \(\pi P=\pi\). So \(0.7\pi_1+0.4\pi_2=\pi_1\Rightarrow0.4\pi_2=0.3\pi_1\Rightarrow\pi_1/\pi_2=4/3\). With \(\pi_1+\pi_2=1\): \(\pi_1=4/7,\pi_2=3/7\). For an ergodic chain with 2 states, stationary distribution has \(\pi_i=q_j/(q_j+q_i)\) where \(q_{12}=0.3\), \(q_{21}=0.4\): \(\pi_1=0.4/0.7=4/7\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi=(1/2,1/2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi=(4/7,3/7)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi=(0.7,0.6)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi=(3/7,4/7)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Markov - Absorbing State Definition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A state \(i\) in a Markov chain is absorbing if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(p_{ii}=1\) (once entered, cannot leave)</strong></p><p>An absorbing state has \(p_{ii}=1\) and \(p_{ij}=0\) for all \(j\neq i\). A Markov chain is absorbing if it has at least one absorbing state and every state can reach an absorbing state. In the canonical form, the transition matrix is partitioned into absorbing and transient states. Key quantities: absorption probabilities and expected absorption times.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ii}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ij}>0\) for all \(j\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(p_{ii}=1\) (once entered, stays forever)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The state has the highest stationary probability]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Markov - Gambler's Ruin</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In the Gambler's Ruin problem: a gambler starts at \$k, wins \$1 with probability \(p\) and loses \$1 with probability \(q=1-p\) per round, stopping at 0 (ruin) or \$N (success). For \(p\neq1/2\), the probability of ruin starting at \$k is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\dfrac{(q/p)^N-(q/p)^k}{(q/p)^N-1}\)</strong></p><p>Gambler's ruin: let \(r=(q/p)\). Probability of ruin from state \(k\): \(P_k=\frac{r^N-r^k}{r^N-1}\) for \(p\neq1/2\). For \(p=1/2\): \(P_k=1-k/N\). As \(N\to\infty\) (unlimited wealth): \(P_k=\min(1,(q/p)^k)\) — ruin is certain if \(p\leq1/2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{(q/p)^N-(q/p)^k}{(q/p)^N-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1-k/N\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((q/p)^k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(k/N\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Markov - Irreducible Chain</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Markov chain is irreducible if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Every state is reachable from every other state</strong></p><p>Irreducible: all states communicate (i.e., for any pair \(i,j\), \(\exists n\) with \(p_{ij}^{(n)}>0\) and \(\exists m\) with \(p_{ji}^{(m)}>0\)). An irreducible chain with a finite state space has a unique stationary distribution. Irreducible + aperiodic implies the chain converges to stationary distribution from any starting state.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It has a unique absorbing state]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Every state is reachable from every other state]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It has at least one transient state]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All transition probabilities are equal]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Markov - Period of a State</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The period of state \(i\) is \(d(i)=\gcd\{n\geq1:p_{ii}^{(n)}>0\}\). A state with period 1 is called:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Aperiodic</strong></p><p>Aperiodic: \(d(i)=1\). Aperiodic states can be revisited in non-regular intervals. A finite irreducible aperiodic chain has a unique stationary distribution and converges to it: \(p_{ij}^{(n)}\to\pi_j\) as \(n\to\infty\). Periodic chains (e.g., bipartite graphs have period 2) exhibit oscillatory behavior and do not converge.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Aperiodic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Recurrent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Transient]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Absorbing]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Markov - Expected Return Time</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an irreducible positive recurrent Markov chain with stationary distribution \(\pi\), the expected return time to state \(i\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(1/\pi_i\)</strong></p><p>Mean recurrence time: \(m_i=E[\text{first return time to }i]=1/\pi_i\). Positive recurrent: \(m_i<\infty\). Null recurrent: \(m_i=\infty\) (but still recurrent, \(\pi_i=0\)). Transient: \(P(\text{return to }i)<1\). For finite irreducible chains: all states are positive recurrent.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi_i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\pi_i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/\pi_i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Depends on the starting state]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Markov - Absorbing Chain: Fundamental Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an absorbing Markov chain with transition matrix \(P=\begin{pmatrix}Q&R\\0&I\end{pmatrix}\) (Q=transient-to-transient, R=transient-to-absorbing), the fundamental matrix is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(N=(I-Q)^{-1}\)</strong></p><p>Fundamental matrix \(N=(I-Q)^{-1}\). Entry \(N_{ij}\) = expected number of times the chain is in transient state \(j\) starting from transient state \(i\) before absorption. Absorption probabilities: \(B=NR\). Expected absorption time from state \(i\): \(t_i=\sum_j N_{ij}\) (row sum of \(N\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(N=Q^{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(N=(I-Q)^{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N=I+Q\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N=R^{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Markov - 5x5 with Two Absorbing States</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Markov chain on \(\{1,2,3,4,5\}\) has absorbing states \(\{1,5\}\). Starting from state 3, \(\lim_{n\to\infty}P(X_n=1)\) represents:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) The probability of being absorbed into state 1 starting from state 3</strong></p><p>For absorbing chains, \(P^n\to\begin{pmatrix}I&0\\B&0\end{pmatrix}\) where \(B=NR\) gives the absorption probabilities. \(\lim_{n\to\infty}P(X_n=1|X_0=3)=B_{3,1}\), the \((3,1)\) entry of \(B\). The chain eventually gets absorbed into either state 1 or state 5 with these computed probabilities.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The probability of being absorbed into state 1 starting from state 3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The stationary probability of state 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0 always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The transition probability \(p_{31}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Markov - Recurrence vs Transience</text></name>
+  <questiontext format="html"><text><![CDATA[<p>State \(i\) is recurrent if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\sum_{n=0}^\infty p_{ii}^{(n)}=\infty\)</strong></p><p>Foster's criterion: \(i\) is recurrent iff \(\sum_{n=0}^\infty p_{ii}^{(n)}=\infty\) (expected number of returns to \(i\) is infinite). Transient iff this sum is finite. Equivalently: \(P(\text{ever return to }i\mid X_0=i)=1\) iff recurrent. For irreducible chains: all states are either all recurrent or all transient.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ii}>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\sum_{n=0}^\infty p_{ii}^{(n)}=\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ii}=1\) (absorbing)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ii}^{(n)}\to\pi_i\) as \(n\to\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Markov - Ergodic Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The ergodic theorem for Markov chains states: for an irreducible positive recurrent aperiodic chain,</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(p_{ij}^{(n)}\to\pi_j\) as \(n\to\infty\) for all \(i,j\)</strong></p><p>Ergodic theorem: for any starting state \(i\), the \(n\)-step transition probability converges to the unique stationary distribution \(\pi_j\), regardless of starting state. This requires: irreducible + positive recurrent + aperiodic. The time-average also converges: \(\frac{1}{n}\sum_{k=0}^{n-1}\mathbf{1}[X_k=j]\to\pi_j\) a.s.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ij}^{(n)}\to0\) for all \(i,j\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ij}^{(n)}\to1/N\) for all \(i,j\) where \(N\) is the number of states]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(p_{ij}^{(n)}\to\pi_j\) as \(n\to\infty\) for all \(i,j\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ij}^{(n)}\to p_{ij}\) (unchanged)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Markov - Chapman-Kolmogorov</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Chapman–Kolmogorov equations state: \(p_{ij}^{(m+n)}=\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\sum_k p_{ik}^{(m)}p_{kj}^{(n)}\)</strong></p><p>Chapman–Kolmogorov: \(P^{(m+n)}=P^{(m)}\cdot P^{(n)}\), i.e., \(p_{ij}^{(m+n)}=\sum_k p_{ik}^{(m)}p_{kj}^{(n)}\). The \(n\)-step matrix is the \(n\)-th power of the 1-step matrix: \(P^{(n)}=P^n\). This is the fundamental property that makes Markov chain analysis tractable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\sum_k p_{ik}^{(m)}p_{kj}^{(n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ij}^{(m)}\cdot p_{ij}^{(n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ij}^{(m)}+p_{ij}^{(n)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((mn)\cdot p_{ij}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Markov - Detailed Balance</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Markov chain satisfies detailed balance with respect to \(\pi\) if \(\pi_i p_{ij}=\pi_j p_{ji}\) for all \(i,j\). This implies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\pi\) is a stationary distribution (the chain is reversible)</strong></p><p>Detailed balance (reversibility): \(\pi_i p_{ij}=\pi_j p_{ji}\). Summing over \(i\): \(\sum_i\pi_i p_{ij}=\pi_j\sum_i p_{ji}=\pi_j\). So \(\pi\) is stationary. A chain satisfying detailed balance is called reversible (time-reversed process has same distribution). Not all chains are reversible (e.g., random walk on a directed cycle).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ij}=p_{ji}\) for all \(i,j\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi\) is a stationary distribution (reversible chain)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi_i=\pi_j\) for all \(i,j\) (uniform)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The chain is periodic]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Markov - Birth-Death Chain Stationary</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a birth-death chain with birth rates \(\lambda_i\) and death rates \(\mu_i\), the stationary distribution satisfies (local balance):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\pi_i\lambda_i=\pi_{i+1}\mu_{i+1}\)</strong></p><p>Local (detailed) balance for birth-death chains: \(\pi_i\lambda_i=\pi_{i+1}\mu_{i+1}\). This gives the stationary distribution: \(\pi_k=\pi_0\prod_{i=1}^k\frac{\lambda_{i-1}}{\mu_i}\). For M/M/1 queue: \(\lambda_i=\lambda,\mu_i=\mu\), giving \(\pi_k=\rho^k(1-\rho)\) where \(\rho=\lambda/\mu<1\) for stability.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi_i=\pi_{i+1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi_i\mu_i=\pi_{i+1}\lambda_{i+1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi_i\lambda_i=\pi_{i+1}\mu_{i+1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi_i(\lambda_i+\mu_i)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Markov - Mixing Time</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The mixing time of a Markov chain measures:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) How quickly the distribution converges to stationarity</strong></p><p>Mixing time \(t_{mix}(\epsilon)=\min\{t:\max_i\|P^t(i,\cdot)-\pi\|_{TV}\leq\epsilon\}\). It depends on the spectral gap (difference between the two largest eigenvalues of \(P\)): faster mixing \(\Leftrightarrow\) larger spectral gap. Important in MCMC algorithms (how long to run before samples are approximately from the stationary distribution).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The expected absorption time]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[How quickly the chain's distribution converges to the stationary distribution]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The period of the chain]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The number of transient states]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Markov - Random Walk on Z Recurrence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The simple symmetric random walk on \(\mathbb{Z}^2\) (2D) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Recurrent (returns to origin with probability 1)</strong></p><p>Pólya's theorem: simple symmetric random walk is recurrent in dimensions 1 and 2, and transient in dimension \(\geq3\). In 2D: \(\sum_n p_{00}^{(2n)}=\infty\), so it is null-recurrent (returns a.s. but expected return time is \(\infty\)). In 1D: positive-recurrent for finite state spaces; null-recurrent for \(\mathbb{Z}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Transient (positive probability of never returning)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Positive recurrent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Null recurrent (returns a.s. but mean return time \(=\infty\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Absorbing]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Markov - lim P^n_{ij} for Absorbing</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an absorbing Markov chain, \(\lim_{n\to\infty}P^n_{ij}\) where \(j\) is a transient state equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) 0</strong></p><p>For a transient state \(j\): \(\sum_n p_{jj}^{(n)}<\infty\), so \(p_{ij}^{(n)}\to0\). The chain eventually leaves all transient states and gets absorbed. The limiting distribution concentrates on absorbing states: \(\lim_{n\to\infty}P^n_{ij}=0\) for transient \(j\), and \(\lim P^n_{ij}=b_{ij}\) (absorption probability into \(j\)) for absorbing \(j\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ij}\) (does not change)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi_j\) (stationary probability)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Markov - Two-State Chain n-step</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the 2-state chain with \(P=\begin{pmatrix}1-a&a\\b&1-b\end{pmatrix}\), \(P^n_{11}=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\dfrac{b}{a+b}+\dfrac{a}{a+b}(1-a-b)^n\)</strong></p><p>For a 2-state ergodic chain: the eigenvalues are 1 and \(1-a-b\). \(P^n_{11}=\pi_1+(1-\pi_1)(1-a-b)^n\) where \(\pi_1=b/(a+b)\). As \(n\to\infty\): \(P^n_{11}\to\pi_1=b/(a+b)\). The convergence rate is \(|1-a-b|<1\) (for \(a+b<2\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\((1-a)^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{b}{a+b}+\dfrac{a}{a+b}(1-a-b)^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(b/(a+b)\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((1-a-b)^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Markov - Transition Matrix Property</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A stochastic matrix (transition matrix) \(P\) satisfies: all entries \(\geq0\) and:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Each row sums to 1</strong></p><p>A stochastic matrix: \(p_{ij}\geq0\) and \(\sum_j p_{ij}=1\) for each row \(i\) (the chain must go somewhere from each state). This ensures 1 is always an eigenvalue (with left eigenvector \(\mathbf{1}=(1,1,\ldots,1)^T\) and right eigenvector the stationary distribution). Doubly stochastic: rows AND columns sum to 1 (uniform distribution is stationary).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Each row sums to 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Each column sums to 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The trace equals 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The determinant equals 1]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Markov - Communicating Classes</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a Markov chain, states \(i\) and \(j\) communicate (\(i\leftrightarrow j\)) if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(i\) can reach \(j\) and \(j\) can reach \(i\)</strong></p><p>Communication is an equivalence relation partitioning the state space into communicating classes. Within a class: all states are simultaneously recurrent or transient. Closed classes contain no path out. An irreducible chain has only one communicating class (all states). The structure of a Markov chain is determined by its communicating class structure.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ij}>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ij}=p_{ji}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(i\) can reach \(j\) AND \(j\) can reach \(i\) (both \(\exists\) paths)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p_{ij}+p_{ji}=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Markov - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Markov chain on \(\{0,1,2,3\}\) has 0 and 3 as absorbing states and the transition matrix for transient states \(\{1,2\}\) is \(Q=\begin{pmatrix}1/2&1/4\\1/4&1/2\end{pmatrix}\). The fundamental matrix \(N=(I-Q)^{-1}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\begin{pmatrix}8/3&4/3\\4/3&8/3\end{pmatrix}\)</strong></p><p>\(I-Q=\begin{pmatrix}1/2&-1/4\\-1/4&1/2\end{pmatrix}\). \(\det(I-Q)=1/4-1/16=3/16\). \((I-Q)^{-1}=\frac{1}{3/16}\begin{pmatrix}1/2&1/4\\1/4&1/2\end{pmatrix}=\frac{16}{3}\begin{pmatrix}1/2&1/4\\1/4&1/2\end{pmatrix}=\begin{pmatrix}8/3&4/3\\4/3&8/3\end{pmatrix}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}2&1\\1&2\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\begin{pmatrix}8/3&4/3\\4/3&8/3\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}4/3&8/3\\8/3&4/3\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}3/8&3/4\\3/4&3/8\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

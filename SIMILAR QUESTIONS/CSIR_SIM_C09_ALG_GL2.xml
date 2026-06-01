@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Abstract Algebra — Group Theory GL2(Z/pZ)</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>GL2 - Order of GL2(Z/pZ)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(G=GL_2(\mathbb{Z}/p\mathbb{Z})\) (invertible \(2\times2\) matrices over \(\mathbb{F}_p\)). Which are TRUE?</p>
+<ol type="A"><li>\(|G|=(p^2-1)(p^2-p)\).</li><li>\(|G|=p(p-1)^2(p+1)\).</li><li>\(|SL_2(\mathbb{F}_p)|=p(p-1)(p+1)\).</li><li>\([G:SL_2(\mathbb{F}_p)]=p-1\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>Count: first row: \(p^2-1\) choices (nonzero). Second row: \(p^2-p\) (not multiple of first). So \(|GL_2|=(p^2-1)(p^2-p)=p(p-1)^2(p+1)\). Both (A) and (B) are equal. \(|SL_2|=|GL_2|/(p-1)=p(p+1)(p-1)\). Index \([GL_2:SL_2]=|\mathbb{F}_p^*|=p-1\). All TRUE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>GL2 - Elements of order p</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In \(G=GL_2(\mathbb{F}_p)\), which statements about elements of order \(p\) are TRUE?</p>
+<ol type="A"><li>The number of elements of order \(p\) in \(G\) is \(p^2-1\).</li><li>Elements of order \(p\) are unipotent (of the form \(I+N\) where \(N^p=0\)).</li><li>In \(SL_2(\mathbb{F}_p)\), all Sylow \(p\)-subgroups are conjugate.</li><li>The Sylow \(p\)-subgroups of \(SL_2(\mathbb{F}_p)\) have order \(p\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B), (C), (D)</strong></p><p>(A) FALSE: the number of elements of order \(p\) in \(SL_2(\mathbb{F}_p)\) is \(p^2-1\) (each non-identity unipotent), not necessarily in \(GL_2\). (B) In characteristic \(p\), elements of order \(p\) are unipotent. (C) Sylow's theorem: all Sylow subgroups are conjugate. (D) Since \(p\|SL_2\|=p(p-1)(p+1)\) and \(p^2\nmid|SL_2|\) (when \(p>2\)), Sylow \(p\)-subgroups have order \(p\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>GL2 - Sylow Theorems</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a finite group \(G\) with \(|G|=p^a m\) (\(\gcd(p,m)=1\)), Sylow's theorems state. Which are TRUE?</p>
+<ol type="A"><li>There exists a subgroup of order \(p^a\) (Sylow \(p\)-subgroup).</li><li>All Sylow \(p\)-subgroups are conjugate.</li><li>The number of Sylow \(p\)-subgroups \(n_p\) satisfies \(n_p\equiv1\pmod{p}\) and \(n_p|m\).</li><li>Sylow \(p\)-subgroups are always normal in \(G\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B)(C) are the three Sylow theorems. (D) FALSE: Sylow \(p\)-subgroups are normal iff \(n_p=1\), which need not always hold. Example: \(S_3\) has three Sylow 2-subgroups, none normal.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>GL2 - PSL2 Simple Group</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The projective special linear group \(PSL_2(\mathbb{F}_p)=SL_2(\mathbb{F}_p)/\{\pm I\}\). Which are TRUE?</p>
+<ol type="A"><li>\(|PSL_2(\mathbb{F}_p)|=p(p-1)(p+1)/2\) for \(p\) odd prime.</li><li>\(PSL_2(\mathbb{F}_p)\) is simple for \(p\ge5\).</li><li>\(PSL_2(\mathbb{F}_2)\cong S_3\).</li><li>\(PSL_2(\mathbb{F}_3)\cong A_4\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(|PSL_2|=|SL_2|/2=p(p^2-1)/2\). (B) Classical result: \(PSL_2(\mathbb{F}_p)\) is simple for \(p\ge5\). (C) \(|PSL_2(\mathbb{F}_2)|=|GL_2(\mathbb{F}_2)|=6\cong S_3\). (D) \(|PSL_2(\mathbb{F}_3)|=12\cong A_4\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>GL2 - Normal Subgroups</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are normal subgroups of \(GL_2(\mathbb{F}_p)\)?</p>
+<ol type="A"><li>\(SL_2(\mathbb{F}_p)\) (matrices with determinant 1).</li><li>The center \(Z=\{\lambda I:\lambda\in\mathbb{F}_p^*\}\).</li><li>The Sylow \(p\)-subgroup (upper unitriangular matrices).</li><li>The group of scalar matrices is normal.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) \(SL_2\trianglelefteq GL_2\) (kernel of determinant map). (B)(D) The center is always normal; scalar matrices form the center of \(GL_2(\mathbb{F}_p)\). (C) FALSE: the Sylow \(p\)-subgroup is not normal in \(GL_2(\mathbb{F}_p)\) (there are multiple conjugate Sylow \(p\)-subgroups).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>GL2 - Class Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The class equation of a finite group \(G\) is \(|G|=|Z(G)|+\sum_{i}[G:C_G(g_i)]\). Which are TRUE?</p>
+<ol type="A"><li>If \(p\) divides \(|G|\) and \(p\) divides \(|Z(G)|\), then \(G\) has a nontrivial center.</li><li>Groups of order \(p^2\) (\(p\) prime) are abelian.</li><li>A group of order \(p\) (\(p\) prime) is cyclic.</li><li>The class equation implies \(p\mid|Z(G)|\) whenever \(|G|=p^n\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B), (C), (D)</strong></p><p>(A) Redundant — "divides \(|Z(G)|\)" already means nontrivial center. (B) Groups of order \(p^2\) are abelian (by class equation: \(p\mid|Z(G)|\), so \(|Z(G)|\in\{p,p^2\}\); if \(p\), then \(G/Z\) is cyclic implies \(G\) abelian). (C) Cyclic of prime order (Lagrange). (D) Class equation for \(p\)-groups: all conjugacy class sizes are powers of \(p\), and \(|Z(G)|=|G|-\sum\ge1\) implies \(p\mid|Z(G)|\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>GL2 - Conjugacy Classes</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Matrices \(A,B\in GL_2(\mathbb{F}_p)\) are conjugate iff they have the same rational canonical form (or Jordan form over \(\overline{\mathbb{F}_p}\)). Which are TRUE?</p>
+<ol type="A"><li>Conjugate matrices have the same characteristic polynomial.</li><li>Matrices with the same characteristic polynomial are always conjugate over \(\mathbb{F}_p\).</li><li>Conjugate matrices have the same trace and determinant.</li><li>The number of conjugacy classes in \(GL_2(\mathbb{F}_p)\) is \(p^2-p\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C)</strong></p><p>(A)(C) Conjugation by \(g\): \(gAg^{-1}\) has the same characteristic polynomial, trace, and determinant. (B) FALSE: over \(\mathbb{F}_p\), matrices with the same char poly may not be conjugate if it doesn't split (Jordan form requires splitting). (D) FALSE: the number of conjugacy classes in \(GL_2(\mathbb{F}_p)\) is \(p^2-p\) is not generally correct.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>GL2 - Finite Fields</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statements about finite fields \(\mathbb{F}_q\) (where \(q=p^n\)) are TRUE?</p>
+<ol type="A"><li>A finite field of order \(q\) exists iff \(q\) is a prime power.</li><li>The multiplicative group \(\mathbb{F}_q^*\) is cyclic of order \(q-1\).</li><li>The Frobenius map \(\phi(x)=x^p\) is a field automorphism of \(\mathbb{F}_{p^n}\).</li><li>Two finite fields of the same order are isomorphic.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Finite fields exist for all prime powers, and only prime powers (Galois). (B) \(\mathbb{F}_q^*\) is cyclic (every finite subgroup of a field's multiplicative group is cyclic). (C) Frobenius is an automorphism of order \(n\). (D) Uniqueness: \(\mathbb{F}_q\) is the splitting field of \(x^q-x\) over \(\mathbb{F}_p\), unique up to isomorphism.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>GL2 - Simple Groups</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following groups are simple?</p>
+<ol type="A"><li>\(A_n\) for \(n\ge5\) (alternating group).</li><li>\(\mathbb{Z}/p\mathbb{Z}\) for prime \(p\).</li><li>\(S_4\) (symmetric group on 4 elements).</li><li>\(PSL_2(\mathbb{F}_5)\cong A_5\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) \(A_n\) is simple for \(n\ge5\). (B) \(\mathbb{Z}/p\mathbb{Z}\) has no proper subgroups (Lagrange), hence simple. (C) FALSE: \(S_4\) has normal subgroups \(A_4\) and the Klein four-group \(V_4\). (D) \(PSL_2(\mathbb{F}_5)\cong A_5\), which is simple (and of order 60).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>GL2 - Group Homomorphisms</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\phi:G\to H\) be a group homomorphism. Which are TRUE?</p>
+<ol type="A"><li>\(\ker\phi\trianglelefteq G\).</li><li>\(\mathrm{Im}(\phi)\le H\).</li><li>First isomorphism theorem: \(G/\ker\phi\cong\mathrm{Im}(\phi)\).</li><li>If \(\phi\) is surjective, then \(G/\ker\phi\cong H\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) The kernel is always a normal subgroup. (B) The image is a subgroup of \(H\). (C)(D) First isomorphism theorem.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>GL2 - Solvable Groups</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A group \(G\) is solvable if it has a subnormal series with abelian factors. Which are TRUE?</p>
+<ol type="A"><li>Every abelian group is solvable.</li><li>\(S_n\) is solvable for \(n\le4\) but not for \(n\ge5\).</li><li>A group is solvable iff its composition factors are cyclic of prime order.</li><li>\(GL_2(\mathbb{F}_p)\) is solvable for all primes \(p\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Abelian groups are trivially solvable. (B) \(S_n\) solvable for \(n\le4\): \(S_4\supset A_4\supset V_4\supset\{e\}\). For \(n\ge5\): \(A_n\) is simple non-abelian, so \(S_n\) is not solvable. (C) Solvable \(\Leftrightarrow\) all composition factors are \(\mathbb{Z}/p\mathbb{Z}\). (D) FALSE: \(GL_2(\mathbb{F}_p)\) contains \(PSL_2(\mathbb{F}_p)\) (for \(p\ge5\) simple non-abelian) as a quotient — not solvable for \(p\ge5\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>GL2 - p-Groups</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A \(p\)-group is a group of order \(p^n\). Which are TRUE?</p>
+<ol type="A"><li>Every \(p\)-group has a nontrivial center.</li><li>Every group of order \(p^2\) is abelian.</li><li>Every \(p\)-group is solvable.</li><li>Every non-abelian group of order \(p^3\) has center of order \(p\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Class equation for \(p\)-groups forces \(p\mid|Z(G)|\). (B) \(|G|=p^2\Rightarrow G\cong\mathbb{Z}_{p^2}\) or \(\mathbb{Z}_p\times\mathbb{Z}_p\), both abelian. (C) By induction using the center: \(p\)-groups have composition series with \(\mathbb{Z}/p\mathbb{Z}\) factors. (D) For non-abelian \(p^3\): \(G/Z\) cannot be cyclic (else \(G\) abelian), so \(|Z|=p\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>GL2 - Burnside's Lemma</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Burnside's Lemma: the number of orbits of a group \(G\) acting on set \(X\) is \(\frac{1}{|G|}\sum_{g\in G}|X^g|\) where \(X^g=\{x\in X:gx=x\}\). Which are TRUE?</p>
+<ol type="A"><li>This counts the number of distinct colorings up to symmetry.</li><li>It applies to the action of \(G\) by conjugation on itself, counting conjugacy classes.</li><li>When \(G\) acts transitively, the number of orbits is 1.</li><li>The formula gives \(|G/\sim|=\frac{1}{|G|}\sum_g|X^g|\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Pólya enumeration theorem extends this. (B) Conjugation action: \(X^g=C_G(g)\) (centralizer), giving the class equation connection. (C) One orbit by definition of transitivity. (D) Burnside's lemma directly states this.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>GL2 - Cauchy's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Cauchy's Theorem: if prime \(p\mid|G|\), then \(G\) has an element of order \(p\). Which follow?</p>
+<ol type="A"><li>If \(|G|=12\), then \(G\) has elements of orders 2 and 3.</li><li>A group of prime order is cyclic.</li><li>If \(|G|=p\) (prime), then \(G\cong\mathbb{Z}_p\).</li><li>Cauchy's theorem is a special case of Sylow's theorem.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(12=4\cdot3\): primes 2 and 3 divide 12. (B)(C) Group of prime order \(p\): by Cauchy, there's an element of order \(p\); since \(|G|=p\), this element generates \(G\cong\mathbb{Z}_p\). (D) Sylow guarantees Sylow \(p\)-subgroups; Cauchy is the case of order \(p^1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>GL2 - Quotient Groups</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(N\trianglelefteq G\), the quotient group \(G/N\) has order \(|G|/|N|\). Which are TRUE?</p>
+<ol type="A"><li>\(G/N\) is abelian iff \([G,G]\le N\) (the commutator subgroup is in \(N\)).</li><li>If \(G/N\) is cyclic, then \(G\) is abelian.</li><li>The map \(\pi:G\to G/N\) given by \(\pi(g)=gN\) is a surjective group homomorphism.</li><li>If \(G\) is abelian, \(G/N\) is abelian.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) \(G/N\) abelian \(\Leftrightarrow [G,G]\subseteq N\). (B) FALSE: if \(G/Z(G)\) is cyclic, then \(G\) is abelian (a special case), but \(G/N\) cyclic with \(N\ne Z(G)\) need not imply \(G\) abelian. (C) The quotient map is a standard surjective homomorphism. (D) Quotient of abelian is abelian.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>GL2 - Group Actions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A group \(G\) acts on a set \(X\). The orbit-stabilizer theorem says \(|G|=|\mathrm{Orb}(x)|\cdot|\mathrm{Stab}(x)|\). Which are TRUE?</p>
+<ol type="A"><li>If \(G\) acts transitively, all stabilizers are conjugate.</li><li>The action of \(G\) on \(G/H\) by left multiplication is transitive.</li><li>Every action of \(G\) on \(X\) gives a homomorphism \(G\to\mathrm{Sym}(X)\).</li><li>The kernel of the action homomorphism is the largest normal subgroup of \(G\) contained in \(\mathrm{Stab}(x)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) For transitive actions, stabilizers of different points are conjugate. (B) \(G\) acts transitively on \(G/H\) by left multiplication. (C) This is the permutation representation. (D) The kernel is \(\bigcap_{x\in X}\mathrm{Stab}(x)\), which is the largest normal subgroup in any stabilizer.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>GL2 - Structure Theorem Abelian Groups</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Every finite abelian group \(G\) is isomorphic to \(\mathbb{Z}_{n_1}\times\cdots\times\mathbb{Z}_{n_k}\) where \(n_1|n_2|\cdots|n_k\). Which are TRUE?</p>
+<ol type="A"><li>The decomposition (invariant factor form) is unique.</li><li>The elementary divisor form decomposes \(G\) as a product of cyclic \(p\)-groups.</li><li>\(\mathbb{Z}_6\cong\mathbb{Z}_2\times\mathbb{Z}_3\).</li><li>\(\mathbb{Z}_4\times\mathbb{Z}_2\cong\mathbb{Z}_8\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Fundamental theorem of finite abelian groups (two equivalent decompositions). (C) \(\gcd(2,3)=1\Rightarrow\mathbb{Z}_6\cong\mathbb{Z}_2\times\mathbb{Z}_3\). (D) FALSE: \(\mathbb{Z}_4\times\mathbb{Z}_2\) has order 8 but is not cyclic (it has no element of order 8), so \(\not\cong\mathbb{Z}_8\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>GL2 - Permutation Groups</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about the symmetric group \(S_n\)?</p>
+<ol type="A"><li>Every permutation is a product of transpositions.</li><li>Even permutations form the alternating group \(A_n\), which is normal in \(S_n\).</li><li>\([S_n:A_n]=2\).</li><li>The sign (parity) of a permutation is a well-defined group homomorphism \(S_n\to\{+1,-1\}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Every permutation = product of transpositions (not unique). (B) \(A_n=\ker(\mathrm{sgn})\trianglelefteq S_n\). (C) \(|S_n|/|A_n|=n!/(n!/2)=2\). (D) The sign homomorphism is well-defined.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>GL2 - Dihedral Group</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The dihedral group \(D_n\) (symmetries of regular \(n\)-gon) has order \(2n\). Which are TRUE?</p>
+<ol type="A"><li>\(D_n=\langle r,s\mid r^n=s^2=e,\;srs^{-1}=r^{-1}\rangle\).</li><li>\(D_n\) is abelian iff \(n\le2\).</li><li>The rotation subgroup \(\langle r\rangle\cong\mathbb{Z}_n\) is normal in \(D_n\).</li><li>\(D_3\cong S_3\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Standard presentation of \(D_n\). (B) \(D_1\cong\mathbb{Z}_2\) and \(D_2\cong\mathbb{Z}_2\times\mathbb{Z}_2\) are abelian; for \(n\ge3\), \(sr\ne rs\). (C) \(\langle r\rangle\) has index 2, hence normal. (D) \(|D_3|=6=|S_3|\) and both are non-abelian of order 6 — hence isomorphic.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>GL2 - Isomorphism Theorems</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statements are the isomorphism theorems for groups?</p>
+<ol type="A"><li>First: if \(\phi:G\to H\) is a homomorphism, then \(G/\ker\phi\cong\mathrm{Im}(\phi)\).</li><li>Second: if \(H\le G\) and \(N\trianglelefteq G\), then \(HN/N\cong H/(H\cap N)\).</li><li>Third: if \(N\trianglelefteq G\) and \(M\trianglelefteq G\) with \(N\le M\), then \((G/N)/(M/N)\cong G/M\).</li><li>Fourth (lattice): there is a bijection between subgroups of \(G/N\) and subgroups of \(G\) containing \(N\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) First isomorphism theorem. (B) Second (diamond) isomorphism theorem. (C) Third isomorphism theorem. (D) Fourth (correspondence/lattice) isomorphism theorem. All four are standard isomorphism theorems for groups.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

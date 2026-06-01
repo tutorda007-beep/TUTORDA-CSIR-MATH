@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Topology — Dense Subsets and Closure Properties</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Dense - A1 A2 dense, conditions for E∩A1 dense in E</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X\) be a topological space, \(A_1,A_2\) dense in \(X\), and \(E\subseteq X\). Which are TRUE in general?</p>
+<ol type="A"><li>If \(E\) is open, then \(E\cap A_1\) is dense in \(E\).</li><li>If \(E\) is closed, then \(E\cap A_1\) is dense in \(E\).</li><li>\(E\cap A_1\cap A_2\) is dense in \(E\) if \(E\) is open and \(X\) is a Baire space.</li><li>\(A_1\cap A_2\) is dense in \(X\) if \(X\) is a Baire space and both \(A_i\) are open dense.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) If \(E\) is open and \(A_1\) is dense: for any open \(U\subseteq E\), \(U\) is also open in \(X\), so \(U\cap A_1\ne\emptyset\). Thus \(A_1\cap E\) is dense in \(E\). (B) FALSE: e.g. \(E=\mathbb{R}\setminus\mathbb{Q}\) is closed (no, \(\mathbb{R}\setminus\mathbb{Q}\) is not closed). Take \(E=\{0\}\), \(A_1=\mathbb{Q}\): \(E\cap A_1=\{0\}\) is dense in \(E\). Actually for closed sets this can fail. (C)(D) Baire category: countable intersection of open dense sets is dense in a Baire space.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Dense - Definition and Examples</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A subset \(A\) is dense in \(X\) if \(\overline{A}=X\). Which are TRUE?</p>
+<ol type="A"><li>\(\mathbb{Q}\) is dense in \(\mathbb{R}\).</li><li>The irrationals \(\mathbb{R}\setminus\mathbb{Q}\) are dense in \(\mathbb{R}\).</li><li>A dense subset of a metric space must be uncountable.</li><li>The set of polynomials with rational coefficients is dense in \(C[0,1]\) (with sup norm) by Weierstrass.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A)(B) Both \(\mathbb{Q}\) and \(\mathbb{R}\setminus\mathbb{Q}\) are dense in \(\mathbb{R}\). (C) FALSE: \(\mathbb{Q}\) is countable and dense in \(\mathbb{R}\). (D) By Weierstrass approximation + density of rationals in reals.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Dense - Weierstrass Approximation Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Weierstrass approximation theorem: polynomials are dense in \(C[a,b]\). Which follow?</p>
+<ol type="A"><li>Every continuous function on \([a,b]\) can be uniformly approximated by polynomials.</li><li>\(C[a,b]\) is separable.</li><li>Polynomials are dense in \(L^2[a,b]\).</li><li>Trigonometric polynomials are dense in \(C[0,2\pi]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Weierstrass: uniform approximation by polynomials. (B) Polynomials with rational coefficients form a countable dense subset. (C) Since continuous functions are dense in \(L^2\) and polynomials are dense in \(C[a,b]\), polynomials are dense in \(L^2\). (D) The trigonometric version of Weierstrass (Fejér's theorem).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Dense - Closure Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about the closure of sets?</p>
+<ol type="A"><li>\(\overline{A\cup B}=\overline{A}\cup\overline{B}\).</li><li>\(\overline{A\cap B}\subseteq\overline{A}\cap\overline{B}\).</li><li>\(\overline{\overline{A}}=\overline{A}\).</li><li>\(A\subseteq B\Rightarrow\overline{A}\subseteq\overline{B}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Closure distributes over finite unions. (B) The closure of the intersection is contained in the intersection of closures (not necessarily equal). (C) The closure is already closed. (D) Monotonicity of closure.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Dense - Baire Category Theorem Applications</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Using the Baire Category Theorem (BCT) in \(\mathbb{R}\), which are TRUE?</p>
+<ol type="A"><li>\(\mathbb{R}\) is NOT a countable union of closed nowhere-dense sets.</li><li>\(\mathbb{Q}\) is a countable union of nowhere-dense sets (it is of the first category).</li><li>There exists a continuous function on \([0,1]\) that is nowhere differentiable.</li><li>The complement of any first-category set in \(\mathbb{R}\) is dense.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) BCT: \(\mathbb{R}\) is second category. (B) \(\mathbb{Q}=\bigcup_{q\in\mathbb{Q}}\{q\}\), countable union of singletons (nowhere dense). (C) BCT shows the set of nowhere differentiable functions is residual (comeager). (D) The complement of a first-category set in a Baire space is dense.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</small><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Dense - Stone-Weierstrass Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Stone-Weierstrass Theorem: if \(\mathcal{A}\subseteq C(K)\) is a subalgebra that separates points and contains constants, then \(\mathcal{A}\) is dense in \(C(K)\). Which are TRUE?</p>
+<ol type="A"><li>Polynomials satisfy the hypotheses on any compact \(K\subseteq\mathbb{R}\).</li><li>Trigonometric polynomials are dense in \(C([0,2\pi])\) by Stone-Weierstrass.</li><li>The subalgebra of even polynomials is dense in \(C([0,1])\).</li><li>If \(\mathcal{A}\) does not separate points, it need not be dense.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Polynomials: algebra, contains constants, separates points. (B) Trigonometric polynomials with both sin and cos: algebra separating points. (C) FALSE: even polynomials \(\{1,x^2,x^4,\ldots\}\) on \([0,1]\): they do form an algebra and separate points on \([0,1]\), so by Stone-Weierstrass they are dense. Wait: even polynomials evaluated on \([0,1]\) do separate points (since \(x^2\ne y^2\) for \(0\le x\ne y\le1\)). So (C) is TRUE. Corrected: (A)(B)(C)(D) all TRUE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Dense - Interior of Dense Sets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about the interior of dense sets?</p>
+<ol type="A"><li>A dense open set has empty complement in the interior sense.</li><li>The interior of a dense set can be empty (\(\mathbb{Q}^\circ=\emptyset\) in \(\mathbb{R}\)).</li><li>If \(A\) is dense and open, then \(A^c\) is nowhere dense.</li><li>A set is dense iff its complement has empty interior.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B), (C), (D)</strong></p><p>(A) FALSE as stated (too vague). (B) \(\mathbb{Q}^\circ=\emptyset\) since no interval is contained in \(\mathbb{Q}\). (C) If \(A\) is open dense, \(A^c\) is closed with \((A^c)^\circ=\emptyset\) — nowhere dense. (D) \(A\) dense \(\Leftrightarrow\overline{A}=X\Leftrightarrow (A^c)^\circ=\emptyset\) (empty interior of complement).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Dense - Separation Axioms</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which implications hold among separation axioms (\(T_0\subset T_1\subset T_2\subset T_3\subset T_4\))?</p>
+<ol type="A"><li>Hausdorff (T2) implies T1 (singletons are closed).</li><li>Normal (T4) implies regular (T3).</li><li>T1 implies Hausdorff.</li><li>Compact Hausdorff implies normal.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) T2 \(\Rightarrow\) T1: any two points separated by neighborhoods, so singletons are closed. (B) Normal \(\Rightarrow\) regular (stronger separation). (C) FALSE: T1 does NOT imply T2; e.g. the cofinite topology on an infinite set is T1 but not Hausdorff. (D) Compact Hausdorff \(\Rightarrow\) normal (classical theorem).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Dense - G-delta and F-sigma Sets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A \(G_\delta\) set is a countable intersection of open sets; an \(F_\sigma\) set is a countable union of closed sets. Which are TRUE?</p>
+<ol type="A"><li>\(\mathbb{Q}\) is an \(F_\sigma\) set in \(\mathbb{R}\).</li><li>\(\mathbb{Q}\) is a \(G_\delta\) set in \(\mathbb{R}\).</li><li>The irrationals form a \(G_\delta\) set.</li><li>Every closed set is a \(G_\delta\); every open set is an \(F_\sigma\) (in metric spaces).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) \(\mathbb{Q}=\bigcup_{q\in\mathbb{Q}}\{q\}\), countable union of closed sets. (B) FALSE: \(\mathbb{Q}\) is NOT a \(G_\delta\) set in \(\mathbb{R}\) — by BCT, a dense \(G_\delta\) set in a complete metric space must be of the second category, but \(\mathbb{Q}\) is first category. (C) Irrationals = complement of \(\mathbb{Q}\) (\(F_\sigma\)), so irrationals are \(G_\delta\). (D) In metric spaces: closed = \(G_\delta\) (use \(\bigcap_n\{x:d(x,F)<1/n\}\)); open = \(F_\sigma\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Dense - Residual Sets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A set is residual (comeager) if its complement is of the first category. Which are TRUE in a Baire space?</p>
+<ol type="A"><li>Every residual set is dense.</li><li>The intersection of countably many residual sets is residual.</li><li>The set of continuous nowhere-differentiable functions is residual in \(C[0,1]\).</li><li>A residual set and a first-category set can be disjoint.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) In a Baire space, residual sets are dense. (B) Countable intersection of residual = complement of countable union of first-category = complement of first-category = residual. (C) Classical BCT application. (D) E.g. \(\mathbb{Q}\) (first category) and \(\mathbb{R}\setminus\mathbb{Q}\) (residual) are disjoint.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Dense - Dense in Subspace</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\subseteq E\subseteq X\). Which are TRUE?</p>
+<ol type="A"><li>If \(A\) is dense in \(X\), then \(A\cap E\) is dense in \(E\) when \(E\) is open.</li><li>If \(A\) is dense in \(E\) and \(E\) is dense in \(X\), then \(A\) is dense in \(X\).</li><li>\(\mathbb{Z}\) is dense in \(\mathbb{R}\).</li><li>\(E\) is dense in \(\overline{E}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) For open \(E\): any open \(U\subseteq E\) is open in \(X\), so \(U\cap A\ne\emptyset\). (B) Transitivity: \(\overline{A}^X\supseteq\overline{E}^X=X\). (C) FALSE: \(\mathbb{Z}\) is not dense in \(\mathbb{R}\) (the interval \((0.5,1.5)\) contains only one integer, but \((0.1,0.9)\) contains none — so \(\mathbb{Z}\) is not dense). (D) \(E\subseteq\overline{E}\) and \(\overline{E}^{\overline{E}}=\overline{E}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Dense - Continuous Extension</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:A\to Y\) be uniformly continuous with \(A\) dense in \(X\) and \(Y\) complete. Which are TRUE?</p>
+<ol type="A"><li>\(f\) extends to a unique continuous \(\tilde{f}:X\to Y\).</li><li>The extension \(\tilde{f}\) is also uniformly continuous.</li><li>If \(Y\) is not complete, the extension may not exist.</li><li>The extension is given by \(\tilde{f}(x)=\lim_{a\to x}f(a)\) for sequences in \(A\) converging to \(x\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Uniform continuity + completeness of target: unique uniformly continuous extension exists. (C) E.g. the identity on \(\mathbb{Q}\subset\mathbb{R}\) with target \(\mathbb{Q}\): \(\sqrt{2}\) has no limit in \(\mathbb{Q}\). (D) The extension is defined by the limit of any net in \(A\) converging to \(x\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Dense - Product of Dense Sets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\subseteq X\) and \(B\subseteq Y\) be dense subsets. Which are TRUE about \(A\times B\subseteq X\times Y\)?</p>
+<ol type="A"><li>\(A\times B\) is dense in \(X\times Y\).</li><li>If \(X,Y\) are separable, so is \(X\times Y\).</li><li>\(\mathbb{Q}^n\) is dense in \(\mathbb{R}^n\).</li><li>A countable product of separable spaces is separable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) For any open \(U\times V\) in \(X\times Y\): \(U\cap A\ne\emptyset\) and \(V\cap B\ne\emptyset\), so \((U\times V)\cap(A\times B)\ne\emptyset\). (B) \(A\times B\) is countable. (C) Special case. (D) Countable product of separable spaces is separable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Dense - Dense Linear Subspaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about dense subspaces of normed spaces?</p>
+<ol type="A"><li>Polynomials are dense in \(L^p[0,1]\) for \(1\le p<\infty\).</li><li>Smooth compactly supported functions \(C_c^\infty(\mathbb{R})\) are dense in \(L^p(\mathbb{R})\).</li><li>A proper closed subspace of a Banach space can be dense.</li><li>Finite linear combinations of Haar wavelets are dense in \(L^2[0,1]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Polynomials are dense in \(L^p\) for \(p<\infty\) (Weierstrass + approximation). (B) \(C_c^\infty\) is dense in \(L^p\). (C) FALSE: a proper closed subspace is NOT dense (it is a proper closed subset, so its complement is open and non-empty — the closure equals itself). (D) Haar wavelets form a complete orthonormal system in \(L^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Dense - Density in Function Spaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about function spaces?</p>
+<ol type="A"><li>\(C[0,1]\) (continuous functions) is dense in \(L^1[0,1]\).</li><li>Step functions are dense in \(L^p[0,1]\) for \(1\le p<\infty\).</li><li>\(L^\infty[0,1]\) is a dense subspace of \(L^1[0,1]\).</li><li>Simple functions are dense in \(L^p(\mu)\) for any \(\sigma\)-finite measure \(\mu\) and \(1\le p<\infty\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) \(C[0,1]\subset L^1\) and is dense. (B) Step functions approximate continuous functions, hence dense in \(L^p\). (C) FALSE: \(L^\infty\subset L^1\) on \([0,1]\) (since it's a finite measure space), but \(L^\infty\) is NOT dense in \(L^1\) — bounded functions cannot approximate all \(L^1\) functions in \(L^1\) norm. Actually: bounded functions ARE dense in \(L^1\) (truncate). So (C) is TRUE. Let me reconsider: for any \(f\in L^1\), \(\min(|f|,n)\cdot\mathrm{sign}(f)\in L^\infty\) and converges to \(f\) in \(L^1\). So \(L^\infty\) IS dense in \(L^1[0,1]\). (C) TRUE. Answer: (A)(B)(C)(D) all TRUE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Dense - Finite-dimensional Subspaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about finite-dimensional subspaces of normed spaces?</p>
+<ol type="A"><li>Every finite-dimensional subspace of a normed space is closed.</li><li>A finite-dimensional normed space is complete.</li><li>Every infinite-dimensional normed space has a dense proper subspace.</li><li>In infinite-dimensional normed spaces, the unit ball is not compact.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Finite-dimensional subspaces are always closed (they are complete by (B), complete subsets of metric spaces are closed). (B) All norms on \(\mathbb{R}^n\) are equivalent; \(\mathbb{R}^n\) is complete. (C) Take any non-closed dense subspace or a Hamel basis and take the linear span of all but one basis element — this is dense. (D) Riesz's lemma: the unit ball of an infinite-dimensional normed space is not compact.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Dense - Baire Space Examples</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following are Baire spaces?</p>
+<ol type="A"><li>Every complete metric space.</li><li>Every locally compact Hausdorff space.</li><li>\(\mathbb{Q}\) with the usual topology.</li><li>The Cantor set.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) BCT: complete metric spaces are Baire. (B) BCT: locally compact Hausdorff spaces are Baire. (C) FALSE: \(\mathbb{Q}\) is of the first category in itself (\(\mathbb{Q}=\bigcup\{q\}\), each singleton is nowhere dense in \(\mathbb{Q}\)). (D) The Cantor set is compact (hence locally compact) Hausdorff — Baire.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Dense - Density and Continuity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A\) be dense in \(X\) and \(f,g:X\to Y\) be continuous. Which are TRUE?</p>
+<ol type="A"><li>If \(f=g\) on \(A\), then \(f=g\) on all of \(X\) (when \(Y\) is Hausdorff).</li><li>\(f(A)\) is dense in \(f(X)\).</li><li>If \(f\) is an open map, \(f(A)\) is dense in \(Y\).</li><li>Two continuous functions agreeing on a dense subset of a Hausdorff codomain must be equal.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A)(D) If \(f=g\) on \(A\) and \(Y\) is Hausdorff: the set \(\{x:f(x)=g(x)\}\) is closed (in Hausdorff spaces, the diagonal is closed), and it contains the dense set \(A\), so it equals \(X\). (B) \(f(\overline{A})\subseteq\overline{f(A)}\): since \(\overline{A}=X\), \(f(X)\subseteq\overline{f(A)}\), so \(f(A)\) is dense in \(f(X)\). (C) Not necessarily: even an open map doesn't guarantee \(f(A)\) is dense in \(Y\) unless \(f(X)=Y\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Dense - Topological Completeness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A topological space is completely metrizable if it is homeomorphic to a complete metric space. Which are TRUE?</p>
+<ol type="A"><li>\(\mathbb{R}\) and \(\mathbb{Q}\) are both completely metrizable.</li><li>The irrationals \(\mathbb{R}\setminus\mathbb{Q}\) are completely metrizable.</li><li>Every \(G_\delta\) subset of a completely metrizable space is completely metrizable.</li><li>Open subsets of \(\mathbb{R}^n\) are completely metrizable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B), (C), (D)</strong></p><p>(A) FALSE: \(\mathbb{Q}\) is NOT completely metrizable (it's of the first category in itself — BCT would fail if it were complete). (B) The irrationals are homeomorphic to \(\mathbb{N}^\mathbb{N}\) (Baire space), which is completely metrizable. (C) \(G_\delta\) in completely metrizable = completely metrizable (Alexandrov theorem). (D) Open subsets of complete metric spaces are completely metrizable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Dense - Applications of BCT</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Using the Baire Category Theorem, which can be proven?</p>
+<ol type="A"><li>There is no countable basis for \(\mathbb{R}\) as a vector space over \(\mathbb{Q}\).</li><li>A Banach space cannot be a countable union of proper closed subspaces.</li><li>Every complete metric space has a dense open subset.</li><li>The uniform boundedness principle (Banach-Steinhaus theorem).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) If \(\mathbb{R}=\bigcup_n V_n\) (finite-dimensional \(\mathbb{Q}\)-subspaces), each is nowhere dense in \(\mathbb{R}\) — contradicting BCT. (B) BCT: proper closed subspaces have empty interior in a Banach space. (C) FALSE: a BCT statement is that the space itself (being of second category) cannot be first category — it doesn't directly say it has a dense open subset; in fact, many BCT applications involve residual sets. (D) Banach-Steinhaus uses BCT as a key step.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

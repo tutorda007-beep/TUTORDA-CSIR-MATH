@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Linear Algebra — Characteristic Polynomial and Eigenvalues</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Eigenvalues - 2x2 Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The eigenvalues of \(A=\begin{pmatrix}4&1\\2&3\end{pmatrix}\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) 2 and 5</strong></p><p>Characteristic polynomial: \(\det(A-\lambda I)=\lambda^2-7\lambda+10=(\lambda-2)(\lambda-5)=0\). Check: trace\(=4+3=7\) ✓, det\(=12-2=10\) ✓. Eigenvalues: \(\lambda=2,5\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[1 and 6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[2 and 5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3 and 4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[-1 and 8]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Eigenvalues - Cayley-Hamilton</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Cayley–Hamilton theorem states that every matrix satisfies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Its own characteristic polynomial</strong></p><p>Cayley–Hamilton: if \(p(\lambda)=\det(\lambda I-A)\) is the characteristic polynomial of \(A\), then \(p(A)=0\). For \(A=\begin{pmatrix}4&1\\2&3\end{pmatrix}\): \(p(\lambda)=\lambda^2-7\lambda+10\), so \(A^2-7A+10I=0\). This allows expressing \(A^{-1}=\frac{1}{10}(7I-A)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Its own characteristic polynomial (\(p(A)=0\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Its minimal polynomial squared]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A^n = I\) for some \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Its trace equals its determinant]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Eigenvalues - P_A(A^{-1}) for 2x2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a \(2\times2\) matrix \(A\) with characteristic polynomial \(P_A(\lambda)=\lambda^2-s\lambda+d\) (where \(s=\mathrm{tr}(A)\), \(d=\det A\)), which is TRUE about \(P_A(\lambda)-P_{A^{-1}}(\lambda)\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) It is a polynomial of degree \(\leq1\) (not constant in general)</strong></p><p>\(P_{A^{-1}}(\lambda)=\lambda^2-s'\lambda+d'\) where \(s'=\mathrm{tr}(A^{-1})\) and \(d'=1/d\). These differ from \(s,d\) in general, so \(P_A-P_{A^{-1}}\) is a degree-2 polynomial, not necessarily constant. Only if \(A\) is orthogonal (\(A^{-1}=A^T\)) would there be a simpler relationship.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It is always 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is always a nonzero constant]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[It depends on \(A\) and is not constant in general]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It equals the minimal polynomial of \(A\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Eigenvalues - Eigenvalues of A^k</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(\lambda\) is an eigenvalue of \(A\) with eigenvector \(v\), then the eigenvalue of \(A^k\) corresponding to \(v\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\lambda^k\)</strong></p><p>If \(Av=\lambda v\), then \(A^2v=A(\lambda v)=\lambda Av=\lambda^2v\), and by induction \(A^kv=\lambda^kv\). So eigenvalues of \(A^k\) are \(k\)-th powers of eigenvalues of \(A\). This generalises: if \(p\) is a polynomial, \(p(A)v=p(\lambda)v\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(k\lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda^k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda+k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda/k\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Eigenvalues - Sum and Product</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an \(n\times n\) matrix \(A\), the sum of all eigenvalues equals \(\mathrm{tr}(A)\) and the product equals \(\det(A)\). For \(A=\begin{pmatrix}1&2\\3&4\end{pmatrix}\), the eigenvalues sum to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) 5</strong></p><p>\(\mathrm{tr}(A)=1+4=5=\lambda_1+\lambda_2\). \(\det(A)=4-6=-2=\lambda_1\lambda_2\). Characteristic polynomial: \(\lambda^2-5\lambda-2=0\), giving \(\lambda=(5\pm\sqrt{33})/2\). Sum \(=5\), product \(=-2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[-2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[10]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Eigenvalues - Symmetric Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>All eigenvalues of a real symmetric matrix are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Real</strong></p><p>Spectral theorem: a real symmetric matrix has all real eigenvalues and is orthogonally diagonalisable. Proof: if \(Av=\lambda v\), then \(\bar\lambda\|v\|^2=\langle Av,v\rangle=\langle v,Av\rangle=\lambda\|v\|^2\), so \(\bar\lambda=\lambda\), i.e., \(\lambda\in\mathbb{R}\). They need not be distinct or positive.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Positive]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Distinct]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Real]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Complex with positive imaginary part]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Eigenvalues - Orthogonal Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The eigenvalues of an orthogonal matrix \(Q\) (with \(Q^TQ=I\)) satisfy:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(|\lambda|=1\)</strong></p><p>If \(Qv=\lambda v\), then \(\|v\|^2=\|Qv\|^2=|\lambda|^2\|v\|^2\), so \(|\lambda|=1\). Real orthogonal matrices have eigenvalues \(\pm1\) or complex conjugate pairs \(e^{\pm i\theta}\) on the unit circle.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda=1\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(|\lambda|=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda>0\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda\in\{0,1\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Eigenvalues - Characteristic Polynomial of 3x3</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(A=\begin{pmatrix}0&0&1\\1&0&0\\0&1&0\end{pmatrix}\), the characteristic polynomial is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(\lambda^3-1\)</strong></p><p>\(A\) is a permutation matrix (cyclic permutation). \(\det(\lambda I-A)=\lambda^3-1\) (expand along first row). The eigenvalues are the cube roots of unity: \(1, \omega, \omega^2\) where \(\omega=e^{2\pi i/3}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda^3+1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda^3-3\lambda+2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda(\lambda^2-1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda^3-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Eigenvalues - Geometric vs Algebraic Multiplicity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The geometric multiplicity of an eigenvalue \(\lambda\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\dim\ker(A-\lambda I)\)</strong></p><p>Geometric multiplicity = dimension of the eigenspace = \(\dim\ker(A-\lambda I)\). Algebraic multiplicity = multiplicity of \(\lambda\) as a root of the characteristic polynomial. Always: geometric \(\leq\) algebraic. Equality for all eigenvalues \(\Leftrightarrow\) diagonalisable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The multiplicity of \(\lambda\) as a root of the characteristic polynomial]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dim\ker(A-\lambda I)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathrm{rank}(A-\lambda I)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The number of distinct eigenvalues of \(A\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Eigenvalues - Nilpotent Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(A\) is nilpotent (\(A^k=0\) for some \(k\)), then all eigenvalues of \(A\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) 0</strong></p><p>If \(Av=\lambda v\) and \(A^k=0\), then \(0=A^kv=\lambda^kv\), so \(\lambda^k=0\), hence \(\lambda=0\). Conversely, a matrix over \(\mathbb{C}\) is nilpotent iff all its eigenvalues are 0 (by Jordan form). The characteristic polynomial of a nilpotent matrix is \(\lambda^n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Purely imaginary]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pm1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Eigenvalues - Idempotent Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(A^2=A\) (idempotent / projection), the eigenvalues of \(A\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Only 0 and 1</strong></p><p>If \(Av=\lambda v\), then \(A^2v=\lambda^2v=Av=\lambda v\), so \(\lambda^2=\lambda\), giving \(\lambda(\lambda-1)=0\), i.e., \(\lambda=0\) or \(\lambda=1\). The matrix \(A\) is diagonalisable (over \(\mathbb{R}\)) with diagonal entries 0 and 1, corresponding to the projection onto the range along the kernel.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Only 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[0 and/or 1 only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pm1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Eigenvalues - Companion Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The eigenvalues of the companion matrix \(C=\begin{pmatrix}0&0&-c_0\\1&0&-c_1\\0&1&-c_2\end{pmatrix}\) are the roots of:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\lambda^3+c_2\lambda^2+c_1\lambda+c_0\)</strong></p><p>The characteristic polynomial of the companion matrix of \(p(\lambda)=\lambda^n+c_{n-1}\lambda^{n-1}+\cdots+c_0\) is exactly \(p(\lambda)\). This gives a matrix whose eigenvalues are the roots of any given monic polynomial — fundamental in linear systems theory.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda^3-c_2\lambda^2-c_1\lambda-c_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda^3+c_2\lambda^2+c_1\lambda+c_0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(c_0\lambda^3+c_1\lambda^2+c_2\lambda+1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cannot be determined from entries alone]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Eigenvalues - Gershgorin Circle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>By Gershgorin's theorem, every eigenvalue of \(A=\begin{pmatrix}5&1&0\\0&3&2\\1&0&7\end{pmatrix}\) lies in the union of discs:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(|\lambda-5|\leq1\), \(|\lambda-3|\leq2\), \(|\lambda-7|\leq1\)</strong></p><p>Gershgorin: each eigenvalue lies in at least one disc \(|\lambda-a_{ii}|\leq\sum_{j\neq i}|a_{ij}|\). Row 1: centre 5, radius \(|1|+|0|=1\). Row 2: centre 3, radius \(|0|+|2|=2\). Row 3: centre 7, radius \(|1|+|0|=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(|\lambda-5|\leq1\), \(|\lambda-3|\leq2\), \(|\lambda-7|\leq1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|\lambda|\leq5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3\leq|\lambda|\leq7\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|\lambda-5|\leq5\) only]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Eigenvalues - Similar Matrices Share Eigenvalues</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(B=P^{-1}AP\), then \(A\) and \(B\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Have the same characteristic polynomial and eigenvalues</strong></p><p>\(\det(\lambda I-B)=\det(\lambda I-P^{-1}AP)=\det(P^{-1}(\lambda I-A)P)=\det(\lambda I-A)\). So similar matrices have the same characteristic polynomial, hence the same eigenvalues (with the same algebraic multiplicities), same trace, and same determinant.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Are equal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Have the same eigenvectors]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Have the same characteristic polynomial and eigenvalues]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always commute: \(AB=BA\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Eigenvalues - Eigenvalues of A+cI</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(\lambda\) is an eigenvalue of \(A\), then the eigenvalues of \(A+cI\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\lambda+c\)</strong></p><p>If \(Av=\lambda v\), then \((A+cI)v=Av+cv=\lambda v+cv=(\lambda+c)v\). So \(v\) is an eigenvector of \(A+cI\) with eigenvalue \(\lambda+c\). Adding a scalar multiple of the identity shifts all eigenvalues by \(c\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda+c\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(c\lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda^c\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda-c\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Eigenvalues - Positive Definite Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A real symmetric matrix \(A\) is positive definite if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) All eigenvalues are positive</strong></p><p>By the spectral theorem, a real symmetric matrix is orthogonally diagonalisable: \(A=Q\Lambda Q^T\). Then \(x^TAx=x^TQ\Lambda Q^Tx=y^T\Lambda y=\sum\lambda_iy_i^2\). This is positive for all \(x\neq0\) iff all \(\lambda_i>0\). Equivalent: all leading principal minors positive (Sylvester's criterion).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[All entries are positive]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[All eigenvalues are positive]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The determinant is positive]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The trace is positive]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Eigenvalues - Eigenvalues of AB vs BA</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For square matrices \(A\) and \(B\) of the same size, the nonzero eigenvalues of \(AB\) and \(BA\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) The same (nonzero eigenvalues of \(AB\) = nonzero eigenvalues of \(BA\))</strong></p><p>If \(\lambda\neq0\) is an eigenvalue of \(AB\) with \(ABv=\lambda v\), then \(BA(Bv)=B(AB)v=\lambda Bv\), and \(Bv\neq0\) (since \(Bv=0\Rightarrow ABv=0\), contradicting \(\lambda\neq0\)). So \(\lambda\) is also an eigenvalue of \(BA\). The argument is symmetric. Same for rectangular matrices.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Always different]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Related by \(\lambda_{AB}=1/\lambda_{BA}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The same (nonzero eigenvalues coincide)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equal only if \(A\) and \(B\) commute]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Eigenvalues - Minimal Polynomial</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The minimal polynomial of \(A=\begin{pmatrix}2&0\\0&2\end{pmatrix}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\lambda-2\)</strong></p><p>\(A=2I\), so \(A-2I=0\). The minimal polynomial divides every annihilating polynomial. Since \(A-2I=0\), the minimal polynomial is \(\lambda-2\) (degree 1). The characteristic polynomial is \((\lambda-2)^2\). For scalar matrices \(cI\), the minimal polynomial is always \(\lambda-c\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda-2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((\lambda-2)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda^2-4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda^2-4\lambda+4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Eigenvalues - Spectral Radius</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The spectral radius \(\rho(A)=\max|\lambda_i|\) of \(A=\begin{pmatrix}0&2\\2&0\end{pmatrix}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 2</strong></p><p>Eigenvalues: \(\det(\lambda I-A)=\lambda^2-4=0\Rightarrow\lambda=\pm2\). Spectral radius \(=\max(|2|,|-2|)=2\). For a symmetric matrix, the spectral radius equals \(\|A\|_2\) (operator norm). Also \(\rho(A)\leq\|A\|\) for any matrix norm.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Eigenvalues - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A \(2\times2\) real matrix \(A\) has \(\mathrm{tr}(A)=5\) and \(\det(A)=6\). The eigenvalues are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) 2 and 3</strong></p><p>Characteristic polynomial: \(\lambda^2-5\lambda+6=0\Rightarrow(\lambda-2)(\lambda-3)=0\). Eigenvalues are 2 and 3. Check: \(2+3=5\) ✓, \(2\times3=6\) ✓.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[1 and 6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[2 and 3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[-1 and 6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[5 and 1]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

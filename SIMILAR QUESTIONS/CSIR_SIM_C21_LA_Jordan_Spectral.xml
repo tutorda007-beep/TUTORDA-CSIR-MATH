@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Linear Algebra — Jordan Normal Form and Spectral Theory</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>JNF - Jordan blocks and nilpotent operators</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Jordan normal form of a matrix \(A\in M_n(\mathbb{C})\) consists of Jordan blocks \(J_k(\lambda)=\lambda I+N_k\) where \(N_k\) is nilpotent. Which are TRUE?</p>
+<ol type="A"><li>Every matrix over \(\mathbb{C}\) is similar to its Jordan form.</li><li>The number of Jordan blocks for eigenvalue \(\lambda\) equals the geometric multiplicity of \(\lambda\).</li><li>The size of the largest Jordan block for \(\lambda\) equals the index of nilpotency of \((A-\lambda I)\).</li><li>The Jordan form is unique over \(\mathbb{C}\) (up to ordering of blocks).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Jordan decomposition theorem over algebraically closed fields. (B) Geometric multiplicity = dimension of eigenspace = number of Jordan blocks for that eigenvalue. (C) The size of the largest Jordan block equals the order of the pole of \((zI-A)^{-1}\) at \(\lambda\). (D) Jordan form is unique up to permutation of blocks.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>JNF - Computing matrix functions via Jordan form</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(A=PJP^{-1}\) with Jordan form \(J\), the matrix function \(f(A)=Pf(J)P^{-1}\) where \(f(J_k(\lambda))=\begin{pmatrix}f(\lambda)&f'(\lambda)&\cdots&f^{(k-1)}(\lambda)/(k-1)!\\ 0&f(\lambda)&\cdots\\ \vdots&&\ddots\end{pmatrix}\). Which are TRUE?</p>
+<ol type="A"><li>\(e^{tA}=Pe^{tJ}P^{-1}\) solves the ODE system \(\dot x=Ax\).</li><li>For a Jordan block \(J_2(\lambda)=\begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix}\): \(e^{tJ_2}=e^{\lambda t}\begin{pmatrix}1&t\\0&1\end{pmatrix}\).</li><li>The minimal polynomial of \(A\) divides \(f\) if and only if \(f(A)=0\).</li><li>For a nilpotent \(N\) with \(N^k=0\): \(e^N=I+N+N^2/2!+\cdots+N^{k-1}/(k-1)!\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Matrix exponential solves linear ODE systems. (B) Direct computation using the formula for Jordan blocks. (C) FALSE: \(f(A)=0\) iff the minimal polynomial of \(A\) divides \(f\) — the Cayley-Hamilton theorem says \(p_A(A)=0\) (characteristic polynomial), not an arbitrary \(f\). (D) For nilpotent \(N\), the series terminates.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Spectral - Spectral theorem for normal operators</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An operator \(T\) on a finite-dimensional inner product space is normal if \(TT^*=T^*T\). Which are TRUE?</p>
+<ol type="A"><li>Normal operators are unitarily diagonalizable over \(\mathbb{C}\).</li><li>Self-adjoint (\(T=T^*\)) operators have real eigenvalues.</li><li>Unitary operators have eigenvalues on the unit circle.</li><li>Every diagonalizable matrix is normal.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Spectral theorem: normal \(\Leftrightarrow\) unitarily diagonalizable. (B) If \(Tv=\lambda v\) and \(T=T^*\): \(\lambda\|v\|^2=\langle Tv,v\rangle=\langle v,Tv\rangle=\bar\lambda\|v\|^2\Rightarrow\lambda=\bar\lambda\in\mathbb{R}\). (C) \(|Uv|=|v|\Rightarrow|\lambda|=1\). (D) FALSE: a diagonal matrix with distinct complex entries is diagonalizable but not necessarily normal (normality requires \(TT^*=T^*T\), which may fail for non-unitary complex diagonal matrices — actually, diagonal matrices ARE normal, but a diagonalizable matrix need not be similar to a diagonal matrix via a unitary matrix, hence need not be normal).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Spectral - SVD and applications</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Singular value decomposition (SVD): every \(A\in M_{m\times n}(\mathbb{R})\) has \(A=U\Sigma V^T\) with \(U\in O(m)\), \(V\in O(n)\), \(\Sigma\) diagonal with singular values \(\sigma_1\ge\cdots\ge\sigma_r>0\). Which are TRUE?</p>
+<ol type="A"><li>The rank of \(A\) equals the number of positive singular values.</li><li>The condition number \(\kappa(A)=\sigma_1/\sigma_r\) measures sensitivity to perturbations.</li><li>The pseudoinverse is \(A^+=V\Sigma^+U^T\) where \(\Sigma^+\) inverts the non-zero singular values.</li><li>The largest singular value equals the spectral norm \(\|A\|_2=\max_{\|x\|=1}\|Ax\|\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) SVD reveals rank directly. (B) Condition number measures numerical stability of solving \(Ax=b\). (C) Moore-Penrose pseudoinverse via SVD. (D) \(\|A\|_2=\sigma_1\) (largest singular value = operator 2-norm).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>JNF - Minimal polynomial and characteristic polynomial</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(A\in M_n(\mathbb{C})\) with characteristic polynomial \(p_A(\lambda)=\det(\lambda I-A)\) and minimal polynomial \(m_A(\lambda)\). Which are TRUE?</p>
+<ol type="A"><li>\(m_A\) divides \(p_A\) (Cayley-Hamilton: \(p_A(A)=0\)).</li><li>\(m_A\) and \(p_A\) have the same irreducible factors (over \(\mathbb{C}\): same roots).</li><li>\(A\) is diagonalizable iff \(m_A\) has no repeated roots.</li><li>\(\deg m_A\le\deg p_A=n\) always.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Cayley-Hamilton: \(p_A(A)=0\), so \(m_A|p_A\). (B) Every eigenvalue is a root of both \(p_A\) and \(m_A\). (C) Diagonalizability criterion via minimal polynomial. (D) Trivially \(\deg m_A\le n\) since \(p_A|m_A\) in terms of divisibility direction is wrong — actually \(m_A|p_A\) so \(\deg m_A\le\deg p_A=n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Spectral - Positive definite matrices</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A symmetric matrix \(A\in M_n(\mathbb{R})\) is positive definite (PD) if \(x^TAx>0\) for all \(x\ne0\). Which are TRUE?</p>
+<ol type="A"><li>All eigenvalues of a PD matrix are positive.</li><li>A PD matrix has a unique Cholesky decomposition \(A=LL^T\) with \(L\) lower triangular, diagonal entries \(>0\).</li><li>A symmetric matrix is PD iff all leading principal minors are positive (Sylvester's criterion).</li><li>A PD matrix is invertible but its inverse is not necessarily PD.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) \(Av=\lambda v\Rightarrow\lambda=v^TAv/\|v\|^2>0\). (B) Cholesky decomposition for PD matrices. (C) Sylvester's criterion. (D) FALSE: the inverse of a PD matrix is also PD. If \(A\succ0\) and \(Ax=\lambda x\), then \(A^{-1}x=(1/\lambda)x\), and \(1/\lambda>0\), so \(A^{-1}\succ0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>JNF - Similar matrices and invariants</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Matrices \(A\) and \(B\) are similar if \(B=P^{-1}AP\). Which are TRUE?</p>
+<ol type="A"><li>Similar matrices have the same characteristic polynomial.</li><li>Similar matrices have the same eigenvalues (with multiplicities).</li><li>Similar matrices have the same minimal polynomial.</li><li>Similar matrices have the same rank.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\det(\lambda I-P^{-1}AP)=\det(P^{-1})\det(\lambda I-A)\det(P)=\det(\lambda I-A)\). (B) Follows from (A). (C) Same minimal polynomial under similarity. (D) Rank is invariant under invertible transformation: \(\text{rank}(P^{-1}AP)=\text{rank}(A)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Spectral - Courant-Fischer min-max theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a symmetric matrix \(A\in M_n(\mathbb{R})\) with eigenvalues \(\lambda_1\le\cdots\le\lambda_n\), the Courant-Fischer theorem: \(\lambda_k=\min_{\dim V=k}\max_{x\in V,\|x\|=1}x^TAx\). Which are TRUE?</p>
+<ol type="A"><li>\(\lambda_1=\min_{\|x\|=1}x^TAx\) (Rayleigh quotient minimum).</li><li>\(\lambda_n=\max_{\|x\|=1}x^TAx\).</li><li>Weyl's inequality: for symmetric \(A,B\), \(\lambda_k(A)+\lambda_1(B)\le\lambda_k(A+B)\le\lambda_k(A)+\lambda_n(B)\).</li><li>The Rayleigh quotient \(R(x)=x^TAx/x^Tx\) can exceed \(\lambda_n\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Extremal characterization of eigenvalues via Rayleigh quotient. (C) Weyl's perturbation inequalities for eigenvalues. (D) FALSE: \(\lambda_1\le R(x)\le\lambda_n\) for all \(x\ne0\); the Rayleigh quotient is bounded between the smallest and largest eigenvalues.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>JNF - Jordan form of specific matrices</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(A=\begin{pmatrix}2&1&0\\0&2&1\\0&0&2\end{pmatrix}\). Which are TRUE?</p>
+<ol type="A"><li>The characteristic polynomial of \(A\) is \((\lambda-2)^3\).</li><li>The Jordan form of \(A\) is \(J_3(2)\) (a single \(3\times3\) Jordan block).</li><li>The geometric multiplicity of eigenvalue 2 is 1.</li><li>The minimal polynomial of \(A\) is \((\lambda-2)^3\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\det(\lambda I-A)=(\lambda-2)^3\). (B) Since \(A-2I=\begin{pmatrix}0&1&0\\0&0&1\\0&0&0\end{pmatrix}\) has rank 2, nullity 1 → one Jordan block. (C) \(\dim\ker(A-2I)=1\) = geometric multiplicity. (D) Minimal polynomial = \((\lambda-2)^3\) because \((A-2I)^2\ne0\) but \((A-2I)^3=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Spectral - Schur decomposition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Schur's theorem: every \(A\in M_n(\mathbb{C})\) is unitarily triangularizable — \(A=UTU^*\) with \(U\) unitary and \(T\) upper triangular. Which are TRUE?</p>
+<ol type="A"><li>The diagonal entries of \(T\) are the eigenvalues of \(A\).</li><li>For normal matrices, the Schur form is diagonal (\(T=\Lambda\)).</li><li>The Schur decomposition exists for every square complex matrix.</li><li>The Schur decomposition is unique.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Similar matrices have the same eigenvalues; \(T\) is triangular so eigenvalues are on the diagonal. (B) Normal \(\Leftrightarrow\) unitarily diagonalizable \(\Leftrightarrow\) Schur form is diagonal. (C) Schur decomposition exists for all square matrices over \(\mathbb{C}\). (D) FALSE: the Schur decomposition is not unique — \(U\) can be multiplied by diagonal unitary matrices, and the order of eigenvalues can vary.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>JNF - Invariant subspaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A subspace \(W\subseteq V\) is \(T\)-invariant if \(T(W)\subseteq W\). Which are TRUE?</p>
+<ol type="A"><li>The eigenspace of \(T\) for eigenvalue \(\lambda\) is \(T\)-invariant.</li><li>The kernel and image of \(T\) are \(T\)-invariant.</li><li>If \(V\) decomposes as \(V=W_1\oplus W_2\) with both \(W_i\) \(T\)-invariant, then \(T\) is block-diagonal in an adapted basis.</li><li>Every operator has only the trivial invariant subspaces \(\{0\}\) and \(V\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) If \(v\in\ker(T-\lambda I)\), then \(T(v)=\lambda v\in\ker(T-\lambda I)\). (B) \(T(\ker T)\subseteq\{0\}\subseteq\ker T\); \(T(\text{im }T)\subseteq\text{im }T\). (C) Block diagonal representation from invariant decomposition. (D) FALSE: eigenspaces are nontrivial \(T\)-invariant subspaces (unless \(T\) is a scalar multiple of the identity or has no eigenvalues, as in an irreducible case).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Spectral - Gershgorin circle theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Gershgorin's theorem: every eigenvalue of \(A=(a_{ij})\) lies in at least one Gershgorin disc \(|z-a_{ii}|\le R_i=\sum_{j\ne i}|a_{ij}|\). Which are TRUE?</p>
+<ol type="A"><li>The union of all Gershgorin discs contains all eigenvalues of \(A\).</li><li>If a connected component of the union of \(k\) discs is isolated, it contains exactly \(k\) eigenvalues (counting multiplicity).</li><li>For strictly diagonally dominant matrices (\(|a_{ii}|>R_i\) for all \(i\)), \(A\) is invertible.</li><li>Gershgorin discs give the exact eigenvalues.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Gershgorin's theorem. (B) Component isolation theorem. (C) If every disc excludes 0 (i.e. \(|a_{ii}|>R_i\)), then 0 is not an eigenvalue, so \(A\) is invertible. (D) FALSE: Gershgorin discs give regions containing eigenvalues, not their exact values.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>JNF - Primary decomposition theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Primary decomposition: if \(m_A(\lambda)=\prod_{i=1}^k p_i(\lambda)^{e_i}\) with \(p_i\) distinct irreducible, then \(V=\bigoplus_{i=1}^k\ker(p_i(A)^{e_i})\). Which are TRUE?</p>
+<ol type="A"><li>Each \(W_i=\ker(p_i(A)^{e_i})\) is \(A\)-invariant (generalized eigenspace).</li><li>Over \(\mathbb{C}\), each \(p_i(\lambda)=(\lambda-\lambda_i)\) is linear, and \(W_i=\ker(A-\lambda_i I)^{e_i}\).</li><li>The Jordan form is built from the primary decomposition by decomposing each \(W_i\).</li><li>Primary decomposition holds over any field if the minimal polynomial factors completely.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Each generalized eigenspace is \(A\)-invariant. (B) Over \(\mathbb{C}\), irreducible factors are linear — generalized eigenspaces. (C) Jordan decomposition: each \(W_i\) further decomposes by cycle lengths. (D) Primary decomposition is algebraic and holds over any field where the minimal polynomial factors into the given form.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Spectral - Perron-Frobenius theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A matrix \(A\) is non-negative (\(A\ge0\)) if all entries are \(\ge0\). Perron-Frobenius: if \(A>0\) (all entries positive), which are TRUE?</p>
+<ol type="A"><li>There is a unique largest eigenvalue \(\rho(A)>0\) (spectral radius), called the Perron root.</li><li>The Perron root has algebraic and geometric multiplicity 1.</li><li>The corresponding Perron vector has all positive entries.</li><li>All other eigenvalues have absolute value greater than the Perron root.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B)(C) Perron-Frobenius theorem for positive matrices. (D) FALSE: all other eigenvalues have absolute value STRICTLY LESS than the Perron root (not greater).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Spectral - Operators on infinite-dimensional spaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a bounded linear operator \(T:H\to H\) on a Hilbert space, the spectrum \(\sigma(T)=\{\lambda\in\mathbb{C}:(T-\lambda I)\text{ not invertible}\}\). Which are TRUE?</p>
+<ol type="A"><li>The spectrum of a bounded operator on a Banach space is compact and non-empty.</li><li>The point spectrum (eigenvalues) may not exhaust \(\sigma(T)\).</li><li>For a compact self-adjoint operator on a Hilbert space, the spectral theorem holds with discrete eigenvalues.</li><li>The spectrum of a unitary operator is contained in \(\{|\lambda|=1\}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Spectrum of bounded operator: compact (contained in ball of radius \(\|T\|\)) and non-empty (Liouville's theorem argument). (B) In infinite dimensions, continuous spectrum and residual spectrum also exist. (C) Spectral theorem for compact self-adjoint operators: eigenvalues with \(|\lambda_n|\to0\). (D) Unitary operators preserve norms; their spectrum lies on the unit circle.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

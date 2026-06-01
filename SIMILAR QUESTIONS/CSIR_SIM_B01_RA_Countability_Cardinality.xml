@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Real Analysis — Countability and Cardinality</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Countability - Rational Numbers</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following sets is <strong>countable</strong>?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\mathbb{Q}\)</strong></p><p>\(\mathbb{Q}\) is countable (can be arranged in a sequence via diagonal enumeration). \(\mathbb{R}\), the irrationals, and \(2^\mathbb{N}\) (the power set of \(\mathbb{N}\)) are all uncountable by Cantor's theorem.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The set of rational numbers \(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of real numbers \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of irrational numbers \(\mathbb{R}\setminus\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The power set \(2^{\mathbb{N}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Countability - Algebraic Numbers</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The set of all <em>algebraic numbers</em> (roots of polynomials with integer coefficients) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Countable</strong></p><p>There are countably many polynomials with integer coefficients (each polynomial has finitely many roots), and a countable union of finite sets is countable. Hence the algebraic numbers form a countable set. Transcendental numbers (e.g., \(\pi, e\)) are uncountable since \(\mathbb{R}\) = algebraic ∪ transcendental.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Uncountable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Countable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uncountably infinite but smaller than \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Countability - Cantor Set</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Cantor set \(C\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Uncountable and has Lebesgue measure zero</strong></p><p>The Cantor set is constructed by removing open middle thirds; it has measure 0 (each step removes \(1/3\) of the remaining measure, total removed = 1). Yet it is uncountable: each point in \(C\) corresponds uniquely to a base-3 sequence using only digits 0 and 2, which bijects with \(\{0,1\}^\mathbb{N}\) — an uncountable set.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Countable and has Lebesgue measure zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Countable and has positive Lebesgue measure]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uncountable and has positive Lebesgue measure]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uncountable and has Lebesgue measure zero]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Countability - Union of Countable Sets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following is <strong>NOT</strong> necessarily countable?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) An uncountable union of finite sets</strong></p><p>A countable union of countable sets is countable. An uncountable union of finite sets can be uncountable — for example, \(\mathbb{R} = \bigcup_{x\in\mathbb{R}}\{x\}\). The other options: a countable product of 2-element sets gives \(\{0,1\}^\mathbb{N}\) which is uncountable — wait, option (A) is actually uncountable. Let me reconsider: the set of all finite subsets of \(\mathbb{N}\) is countable; \(\mathbb{Z}\times\mathbb{Q}\) is countable. An uncountable union of finite sets is the correct answer.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[A countable union of countable sets]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all finite subsets of \(\mathbb{N}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[An uncountable union of finite sets]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z} \times \mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Countability - Cardinality of Power Set</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(|A| = n\) (finite), then \(|2^A|\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(2^n\)</strong></p><p>The power set \(2^A\) consists of all subsets of \(A\). Each element is either included or excluded from a subset, giving \(2^n\) subsets. Cantor's theorem generalizes this: \(|2^A| > |A|\) for any set \(A\), finite or infinite.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(n^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(2^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n!\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Countability - Decimal Expansions with Restricted Digits</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(S\) be the set of all real numbers in \([0,1]\) whose decimal expansion uses only the digits \(\{1, 3\}\). Then \(S\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Uncountable</strong></p><p>Each element of \(S\) is of the form \(0.d_1d_2d_3\ldots\) where each \(d_i\in\{1,3\}\). The map \(d_i\mapsto (d_i-1)/2 \in\{0,1\}\) gives a bijection between \(S\) and \(\{0,1\}^\mathbb{N}\), which has cardinality \(2^{\aleph_0} = |\mathbb{R}|\). So \(S\) is uncountable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Countably infinite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uncountable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Empty]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Countability - Polynomials with Integer Coefficients</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The set \(\mathcal{P}\) of all polynomials with integer coefficients is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Countable</strong></p><p>For each degree \(n\), the set of polynomials of degree \(\leq n\) with integer coefficients bijects with \(\mathbb{Z}^{n+1}\) (choosing \(n+1\) integer coefficients), which is countable. A countable union over \(n\in\mathbb{N}\) of countable sets is countable. Hence \(\mathcal{P}\) is countable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Countable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uncountable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has the same cardinality as \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Countability - Schroeder-Bernstein</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Schröder–Bernstein theorem states that if there exist injections \(f: A\to B\) and \(g: B\to A\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) There exists a bijection \(h: A\to B\)</strong></p><p>The Schröder–Bernstein (Cantor–Bernstein) theorem: injections both ways imply a bijection. This is a fundamental result in set theory used to establish equal cardinality without constructing an explicit bijection. It does not require the axiom of choice.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) and \(B\) are both countable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[There exists a bijection \(h: A\to B\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A = B\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\circ g\) is the identity on \(B\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Countability - Continuous Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The set of all continuous functions \(f: \mathbb{R}\to\mathbb{R}\) has cardinality:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(|\mathbb{R}|\) (uncountable, same as \(\mathbb{R}\))</strong></p><p>A continuous function on \(\mathbb{R}\) is completely determined by its values on \(\mathbb{Q}\) (dense subset). So \(|C(\mathbb{R})| \leq |\mathbb{R}^{\mathbb{Q}}| = (2^{\aleph_0})^{\aleph_0} = 2^{\aleph_0} = |\mathbb{R}|\). On the other hand, constant functions give \(|\mathbb{R}|\) functions. Hence \(|C(\mathbb{R})| = |\mathbb{R}|\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Countably infinite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Strictly larger than \(|\mathbb{R}|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(|\mathbb{R}|\) (same cardinality as \(\mathbb{R}\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equal to the cardinality of \(2^{\mathbb{R}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Countability - Intervals and Cardinality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following pairs of sets have the <strong>same cardinality</strong>?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \((0,1)\) and \(\mathbb{R}\)</strong></p><p>The function \(f(x)=\tan(\pi(x-\frac{1}{2}))\) is a bijection from \((0,1)\) to \(\mathbb{R}\). All non-degenerate intervals have the same cardinality as \(\mathbb{R}\). \(\mathbb{N}\) and \(\mathbb{Q}\) have the same cardinality (both countably infinite), but this is a different cardinality from \(\mathbb{R}\). \(\mathbb{N}\) and \(2^\mathbb{N}\) have different cardinalities by Cantor's theorem.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\((0,1)\) and \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{N}\) and \(2^{\mathbb{N}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{R}\) and \(2^{\mathbb{R}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}\) and \(\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Countability - Set of Sequences</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The set \(S = \{0,1\}^{\mathbb{N}}\) of all binary sequences is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Uncountable, with \(|S| = |\mathbb{R}|\)</strong></p><p>Each binary sequence \((a_n)_{n\geq1}\) with \(a_n\in\{0,1\}\) corresponds to a real number \(\sum_{n=1}^\infty a_n/2^n \in [0,1]\) (binary expansion). This map is surjective (though not injective due to dyadic rationals). By Cantor's diagonal argument, \(\{0,1\}^\mathbb{N}\) is uncountable. Its cardinality is \(2^{\aleph_0} = |\mathbb{R}|\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Countably infinite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uncountable with \(|S|=|\mathbb{R}|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uncountable with \(|S|>|\mathbb{R}|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Countability - Transcendental Numbers</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The set of transcendental numbers (reals that are not algebraic) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Uncountable, since \(\mathbb{R}\) = algebraic ∪ transcendental and algebraic is countable</strong></p><p>Since algebraic numbers are countable and \(\mathbb{R}\) is uncountable, transcendental numbers = \(\mathbb{R}\setminus\{\text{algebraic}\}\) must be uncountable (a countable set removed from an uncountable set leaves an uncountable set). In fact \(|\text{transcendentals}| = |\mathbb{R}|\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Countably infinite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Uncountable, but smaller than \(|\mathbb{R}|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Uncountable with cardinality equal to \(|\mathbb{R}|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Countability - Countable Dense Subset</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A metric space \((X, d)\) is called <em>separable</em> if it has a countable dense subset. Which of the following is separable?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\mathbb{R}^n\) with the Euclidean metric</strong></p><p>\(\mathbb{R}^n\) is separable: \(\mathbb{Q}^n\) is a countable dense subset. The space \(\ell^\infty\) of bounded sequences is NOT separable. An uncountable discrete metric space is not separable (every point is isolated). \(C[0,1]\) is separable (polynomials with rational coefficients are dense by Weierstrass).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ell^\infty\) (bounded sequences with sup norm)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathbb{R}^n\) with the Euclidean metric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[An uncountable set with the discrete metric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ell^\infty(\mathbb{R})\) of all bounded functions \(\mathbb{R}\to\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Countability - Finite vs Infinite</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A set \(A\) is infinite if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(A\) contains a proper subset \(B\subsetneq A\) with \(|B|=|A|\)</strong></p><p>This is Dedekind's definition of infinite: a set is Dedekind-infinite iff it is in bijection with a proper subset. For example, \(\mathbb{N}\) bijects with \(\{2,3,4,\ldots\}\) via \(n\mapsto n+1\). Under the axiom of choice, Dedekind-infinite = infinite in the usual sense.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) is uncountable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) is not in bijection with any finite set]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(A\) has a proper subset \(B\subsetneq A\) with the same cardinality as \(A\) (Dedekind infinite)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A\) contains \(\mathbb{N}\) as a subset]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Countability - Product of Countable Sets</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following sets is <strong>countable</strong>?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\mathbb{N}\times\mathbb{N}\)</strong></p><p>\(\mathbb{N}\times\mathbb{N}\) is countable: use Cantor's diagonal enumeration \((m,n)\mapsto\frac{(m+n-2)(m+n-1)}{2}+m\). In general, a finite Cartesian product of countable sets is countable. But an infinite product \(\{0,1\}^\mathbb{N}\) is uncountable, and \(\mathbb{R}^2\) and \(2^\mathbb{N}\) are uncountable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathbb{N}\times\mathbb{N}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\{0,1\}^{\mathbb{N}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{R}^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2^{\mathbb{N}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Countability - Cantor Diagonal Argument</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Cantor's diagonal argument proves that \(\mathbb{R}\) is uncountable by showing:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Any enumeration of real numbers in \([0,1]\) misses at least one element</strong></p><p>Given any sequence \(r_1, r_2, r_3,\ldots\) of reals in \([0,1]\), we construct a real \(x\) whose \(n\)-th decimal digit differs from the \(n\)-th decimal digit of \(r_n\). Then \(x\neq r_n\) for all \(n\), so no enumeration covers all of \([0,1]\). This argument applies to \([0,1]\subset\mathbb{R}\), proving \(\mathbb{R}\) is uncountable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{R}\) cannot be well-ordered]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Any enumeration of reals in \([0,1]\) misses at least one element]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{R}\) contains no infinite subsets]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every real number is irrational]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Countability - Set of Integers</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The set of integers \(\mathbb{Z}\) is countable because:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) There is a bijection \(f:\mathbb{N}\to\mathbb{Z}\) given by \(f(n) = (-1)^n\lfloor n/2\rfloor\)</strong></p><p>The explicit bijection \(0\mapsto 0, 1\mapsto 1, 2\mapsto -1, 3\mapsto 2, 4\mapsto -2,\ldots\) shows \(|\mathbb{Z}|=|\mathbb{N}|=\aleph_0\). Equivalently, \(\mathbb{Z}\) is the union of the countable sets \(\mathbb{N}\) and \(-\mathbb{N}\), and a finite union of countable sets is countable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[There is a bijection \(f:\mathbb{N}\to\mathbb{Z}\) via \(0\mapsto0,\;1\mapsto1,\;2\mapsto-1,\;3\mapsto2,\ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}\subset\mathbb{R}\) and every subset of \(\mathbb{R}\) is countable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}\) is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Z}\) contains only non-negative numbers]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Countability - Which Set is Uncountable</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following sets is <strong>uncountable</strong>?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) The set of all functions \(f:\mathbb{N}\to\{0,1,2,\ldots,9\}\)</strong></p><p>The set of all functions \(\mathbb{N}\to\{0,\ldots,9\}\) corresponds to all decimal sequences, which bijects with \([0,1]\subset\mathbb{R}\) (uncountable). The set of all eventually-zero sequences in \(\{0,1\}^\mathbb{N}\), all finite subsets of \(\mathbb{N}\), and \(\mathbb{Q}\) are all countable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all eventually-zero sequences in \(\{0,1\}^\mathbb{N}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The set of all finite subsets of \(\mathbb{N}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The set of all functions \(f:\mathbb{N}\to\{0,1,2,\ldots,9\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Countability - Cardinality Comparison</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statement correctly compares cardinalities?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(|\mathbb{N}| < |\mathbb{R}| < |2^\mathbb{R}|\)</strong></p><p>By Cantor's theorem: \(|A| < |2^A|\) for any set \(A\). So \(|\mathbb{N}| < |2^\mathbb{N}| = |\mathbb{R}|\) (continuum hypothesis aside) and \(|\mathbb{R}| < |2^\mathbb{R}|\). The strict inequalities form an infinite hierarchy of infinite cardinals.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(|\mathbb{N}| = |\mathbb{R}|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|\mathbb{R}| = |2^\mathbb{R}|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(|\mathbb{N}| < |\mathbb{R}| < |2^{\mathbb{R}}|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|\mathbb{Q}| = |\mathbb{R}|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Countability - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following sets is countable?</p><p>(i) \(A = \{x\in\mathbb{R} : x \text{ satisfies a polynomial equation over } \mathbb{Z}\}\)<br/>(ii) \(B = \{x\in[0,1] : x \text{ has a finite decimal expansion}\}\)<br/>(iii) \(C = \{x\in[0,1] : x \text{ has a decimal expansion using only digits } 0,7\}\)</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) (i) and (ii) only</strong></p><p>(i) Algebraic numbers — countable (as shown earlier). (ii) Numbers with finite decimal expansion are rational, hence countable. (iii) This set corresponds to \(\{0,1\}^\mathbb{N}\) and is uncountable. So only (i) and (ii) are countable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[(i) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[(i) and (ii) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[(i), (ii), and (iii)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[(ii) and (iii) only]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

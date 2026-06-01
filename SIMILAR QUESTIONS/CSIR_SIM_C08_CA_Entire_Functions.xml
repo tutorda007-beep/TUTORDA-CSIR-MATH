@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Complex Analysis — Entire Functions and Growth Conditions</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Entire - Set F of entire functions with |f'|≤|f|</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\mathcal{F}=\{f\text{ entire}: |f'(z)|\le|f(z)|\text{ for all }z\in\mathbb{C}\}\). Which are TRUE?</p>
+<ol type="A"><li>\(\mathcal{F}\) contains only functions of the form \(f(z)=ce^{\alpha z}\) with \(|\alpha|\le1\).</li><li>\(\mathcal{F}\) is infinite.</li><li>Every \(f\in\mathcal{F}\) with no zeros must be of the form \(ce^{\alpha z}\).</li><li>The zero function belongs to \(\mathcal{F}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>If \(f\in\mathcal{F}\) and \(f\ne0\), consider \(g=f'/f\). Then \(g\) is entire (if \(f\) has no zeros) with \(|g|\le1\), hence \(g=\alpha\) (constant, by Liouville) with \(|\alpha|\le1\). So \(f=ce^{\alpha z}\). (A) is exactly this: \(\mathcal{F}=\{0\}\cup\{ce^{\alpha z}:|\alpha|\le1,c\ne0\}\). (B) Infinite family of \(\alpha,c\). (C) Direct. (D) \(|0'\|=0\le0=|0|\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Entire - Liouville's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Liouville's Theorem: every bounded entire function is constant. Which follow?</p>
+<ol type="A"><li>The fundamental theorem of algebra (every non-constant polynomial has a complex root).</li><li>A non-constant entire function must be unbounded.</li><li>If \(f\) is entire and \(\mathrm{Re}(f)\) is bounded above, then \(f\) is constant.</li><li>\(\sin z\) and \(\cos z\) are unbounded as functions on \(\mathbb{C}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) If \(p(z)\) has no root, \(1/p(z)\) is entire and bounded — contradicting Liouville. (B) Direct consequence. (C) If \(\mathrm{Re}(f)\le M\), then \(e^f\) is entire with \(|e^f|=e^{\mathrm{Re}(f)}\le e^M\) — bounded, hence constant by Liouville, so \(f\) is constant. (D) \(\sin(iy)=i\sinh y\to\infty\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Entire - Order of Entire Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The order of an entire function \(f\) is \(\rho=\limsup_{r\to\infty}\dfrac{\log\log M(r)}{\log r}\) where \(M(r)=\max_{|z|=r}|f(z)|\). Which are TRUE?</p>
+<ol type="A"><li>Polynomials have order 0.</li><li>\(e^z\) has order 1.</li><li>\(e^{e^z}\) has order \(\infty\) (not finite order).</li><li>\(\sin z\) has order 1.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(M(r)\sim r^n\Rightarrow\log M(r)\sim n\log r\Rightarrow\log\log M(r)\sim\log\log r\Rightarrow\rho=0\). (B) \(M(r)=e^r\Rightarrow\log M(r)=r\Rightarrow\rho=1\). (C) \(\log M(r)\sim e^r\Rightarrow\log\log M(r)\sim r\Rightarrow\rho=\infty\). (D) \(|\sin z|\le e^{|z|}\) and \(|\sin(iy)|=\sinh y\sim e^y/2\Rightarrow M(r)\sim e^r/2\Rightarrow\rho=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Entire - Weierstrass Factorization</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Weierstrass factorization theorem: every entire function \(f\) can be written as \(f(z)=z^m e^{g(z)}\prod_n E_p(z/a_n)\) where \(\{a_n\}\) are the zeros of \(f\). Which are TRUE?</p>
+<ol type="A"><li>The zeros of an entire function form a discrete set in \(\mathbb{C}\).</li><li>An entire function with no zeros can be written as \(e^{g(z)}\) for some entire \(g\).</li><li>An entire function with finitely many zeros is a polynomial times \(e^{g(z)}\).</li><li>\(\sin(\pi z)=\pi z\prod_{n=1}^\infty\left(1-\dfrac{z^2}{n^2}\right)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Zeros of holomorphic functions are isolated (unless identically zero). (B) If \(f\) has no zeros, \(f'/f\) is entire with integral \(g\), giving \(f=ce^g=e^{g+\ln c}\). (C) Factor out the finite product of elementary factors. (D) Hadamard's product formula for \(\sin\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Entire - lim|f(1/z)|=∞ as z→0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\) be entire and \(\lim_{z\to0}|f(1/z)|=\infty\). Which are TRUE?</p>
+<ol type="A"><li>\(f\) has finitely many zeros.</li><li>\(f\) is a polynomial.</li><li>\(f\) can be an entire transcendental function.</li><li>The singularity of \(f(1/z)\) at 0 is a pole, not an essential singularity.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>If \(\lim_{z\to0}|f(1/z)|=\infty\), then \(z=0\) is a pole of \(f(1/z)\). By the Weierstrass-Casorati theorem, if it were an essential singularity, \(f(1/z)\) would be dense near 0, not going to \(\infty\). A pole of order \(n\) at 0 for \(h(z)=f(1/z)\) means \(f(w)\sim cw^n\) as \(|w|\to\infty\), so \(f\) is a polynomial of degree \(n\). (A)(B)(D) TRUE. (C) FALSE: transcendental entire functions grow faster than any polynomial, giving an essential singularity for \(f(1/z)\) at 0 — contradicting the hypothesis.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Entire - Hadamard Three Circles Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Hadamard's Three Circles Theorem: if \(f\) is holomorphic in \(r_1\le|z|\le r_2\) and \(M(r)=\max_{|z|=r}|f|\), then \(\log M(r)\) is convex in \(\log r\). Which follow?</p>
+<ol type="A"><li>\(\log M(r)\le\dfrac{\log(r_2/r)}{\log(r_2/r_1)}\log M(r_1)+\dfrac{\log(r/r_1)}{\log(r_2/r_1)}\log M(r_2)\).</li><li>If \(M(r_1)=M(r_2)\), then \(f\) is constant.</li><li>\(M(r)\le M(r_1)^{\alpha}M(r_2)^{1-\alpha}\) for some \(\alpha\in[0,1]\) depending on \(r\).</li><li>The theorem is used to prove the Phragmen-Lindelöf principle.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A)(C) are equivalent statements of convexity of \(\log M\) in \(\log r\). (B) FALSE: the maximum on each circle being equal does not force \(f\) to be constant (e.g. \(f(z)=1\) has \(M(r)=1\) everywhere — but that's constant). Actually \(M(r_1)=M(r_2)\) with a non-constant \(f\) is possible (e.g. \(f(z)=z/r_1\) has \(M(r_1)=1\) and \(M(r_2)=r_2/r_1\ne1\)). The statement in (B) requires the three-circles inequality, not just two. So (B) is not a direct conclusion. (D) Phragmen-Lindelöf uses similar convexity arguments.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Entire - Zeros of Entire Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statements about the zeros of entire functions are TRUE?</p>
+<ol type="A"><li>An entire function with no zeros is of the form \(e^{g(z)}\).</li><li>An entire function with infinitely many zeros must have them accumulating only at \(\infty\).</li><li>An entire function of order \(\rho\) has at most \(O(r^\rho)\) zeros in \(\{|z|\le r\}\) (Jensen's formula).</li><li>If \(f\) and \(g\) are entire with the same zeros (same multiplicity), then \(f=cg\) for some constant \(c\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Entire with no zeros: \(e^{g(z)}\). (B) Zeros of holomorphic functions are isolated, so accumulate only at the boundary of the domain — for entire functions, only at \(\infty\). (C) Jensen's formula relates the number of zeros to the growth of \(|f|\). (D) FALSE: if \(f\) and \(g\) have the same zeros, then \(f/g\) is entire with no zeros, giving \(f/g=e^h\) for some entire \(h\) — not necessarily constant.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Entire - Casorati-Weierstrass Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Casorati-Weierstrass: if \(z_0\) is an essential singularity of \(f\), then in every punctured neighbourhood of \(z_0\), the image \(f\) is dense in \(\mathbb{C}\). Which follow?</p>
+<ol type="A"><li>Near an essential singularity, \(f\) takes values arbitrarily close to any given complex number.</li><li>Picard's theorem strengthens this: \(f\) actually attains every value except possibly one.</li><li>The function \(e^{1/z}\) near \(z=0\) takes every nonzero value.</li><li>The function \(e^{1/z}\) near \(z=0\) is bounded.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Casorati-Weierstrass (density). (B) Picard's great theorem (with at most one exception). (C) \(e^{1/z}\) has essential singularity at 0 and omits only 0. (D) FALSE: \(|e^{1/z}|=e^{\mathrm{Re}(1/z)}\) is unbounded as \(z\to0^+\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Entire - Polynomials vs Transcendental</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about polynomials vs transcendental entire functions?</p>
+<ol type="A"><li>Polynomials have finitely many zeros; transcendental entire functions may have infinitely many.</li><li>Every polynomial of degree \(n\) has exactly \(n\) zeros (counted with multiplicity).</li><li>A transcendental entire function cannot be a polynomial.</li><li>An entire function that is not a polynomial takes every complex value infinitely often (Little Picard for transcendental functions).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Fundamental theorem of algebra. (C) By definition: a transcendental entire function is entire but not a polynomial. (D) FALSE: transcendental entire functions may omit one value (e.g. \(e^z\) omits 0); they take every other value infinitely often (Great Picard), but one value can be omitted.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Entire - Jensen's Formula</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Jensen's formula: if \(f\) is holomorphic on \(\overline{D(0,r)}\) with \(f(0)\ne0\) and zeros \(a_1,\ldots,a_n\) (with \(|a_k|\le r\)):
+\[\log|f(0)|=\sum_{k=1}^n\log\frac{|a_k|}{r}+\frac{1}{2\pi}\int_0^{2\pi}\log|f(re^{i\theta})|\,d\theta\]
+Which follow?</p>
+<ol type="A"><li>The more zeros inside \(|z|\le r\), the smaller \(\log|f(0)|\) relative to the average of \(\log|f|\) on the circle.</li><li>Jensen's formula implies that entire functions of finite order have controlled zero distribution.</li><li>If \(f\) is zero-free on \(\{|z|\le r\}\), the formula reduces to the mean value property for \(\log|f|\).</li><li>Jensen's formula relates the growth of \(M(r)\) to the number of zeros.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Each term \(\log(|a_k|/r)<0\) reduces \(\log|f(0)|\). (B) Jensen's formula is the starting point for the theory of entire functions of finite order. (C) If no zeros, the sum is empty and we get \(\log|f(0)|=\frac{1}{2\pi}\int\log|f|\) — mean value for harmonic \(\log|f|\). (D) Counting function of zeros \(n(r)\) is related to \(\int_0^r n(t)/t\,dt=\frac{1}{2\pi}\int\log|f(re^{i\theta})|\,d\theta-\log|f(0)|\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Entire - Gamma Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Gamma function \(\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}dt\) (\(\mathrm{Re}(z)>0\)). Which are TRUE?</p>
+<ol type="A"><li>\(\Gamma(n+1)=n!\) for \(n=0,1,2,\ldots\)</li><li>\(\Gamma\) extends to a meromorphic function on \(\mathbb{C}\) with poles at \(0,-1,-2,\ldots\)</li><li>\(\Gamma\) is an entire function.</li><li>\(\Gamma(1/2)=\sqrt{\pi}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) \(\Gamma(1)=1\) and \(\Gamma(z+1)=z\Gamma(z)\). (B) Analytic continuation to \(\mathbb{C}\setminus\{0,-1,-2,\ldots\}\); poles at non-positive integers. (C) FALSE: \(\Gamma\) is NOT entire (it has poles). (D) \(\Gamma(1/2)=\int_0^\infty t^{-1/2}e^{-t}dt=\sqrt{\pi}\) (Gaussian integral substitution).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Entire - Analytic Continuation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about analytic continuation?</p>
+<ol type="A"><li>Analytic continuation is unique: if two analytic functions agree on an open set, they agree on any connected domain containing that set.</li><li>The function \(\sum z^n\) (geometric series) can be analytically continued to \(\mathbb{C}\setminus\{1\}\).</li><li>The Riemann zeta function \(\zeta(s)=\sum n^{-s}\) (for \(\mathrm{Re}(s)>1\)) extends to a meromorphic function on \(\mathbb{C}\).</li><li>Not every holomorphic function can be analytically continued beyond its domain of definition.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Identity theorem for analytic functions. (B) \(\sum z^n=1/(1-z)\), analytically continued to \(\mathbb{C}\setminus\{1\}\). (C) Riemann zeta function has meromorphic continuation to \(\mathbb{C}\) with a simple pole at \(s=1\). (D) E.g. \(\sum z^{n!}\) has the unit circle as a natural boundary — cannot be continued beyond \(|z|<1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Entire - Infinite Products</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An infinite product \(\prod(1+a_n)\) converges (to a nonzero value) if and only if \(\sum a_n\) converges absolutely. Which are TRUE?</p>
+<ol type="A"><li>If \(\sum|a_n|<\infty\), then \(\prod(1+a_n)\) converges absolutely.</li><li>\(\cos(\pi z/2)=\prod_{n=0}^\infty\left(1-\dfrac{z^2}{(2n+1)^2}\right)\).</li><li>The product \(\prod_{n=1}^\infty(1-z^n)\) converges for \(|z|<1\).</li><li>Infinite products are used to represent entire functions with prescribed zeros.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Standard convergence criterion for infinite products. (B) Weierstrass product for \(\cos\). (C) For \(|z|<1\): \(\sum|z^n|=|z|/(1-|z|)<\infty\), so the product converges. (D) Weierstrass factorization uses infinite products.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</small><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Entire - Counting Zeros with Argument Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>How many zeros does \(f(z)=z^7+5z^3+2\) have inside \(|z|=2\)?</p>
+<ol type="A"><li>7</li><li>5</li><li>3</li><li>0</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) 7</strong></p><p>On \(|z|=2\): \(|z^7|=128\) and \(|5z^3+2|\le5\cdot8+2=42<128\). By Rouché, \(z^7+5z^3+2\) and \(z^7\) have the same number of zeros inside \(|z|=2\), namely 7.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>(A) 7</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B) 5</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C) 3</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D) 0</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Entire - Entire Function with Prescribed Growth</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which entire functions have the given growth rate?</p>
+<ol type="A"><li>\(e^{z^2}\) has order 2.</li><li>\(\cos z\) has order 1.</li><li>A polynomial of degree \(n\) has order 0.</li><li>\(e^z+e^{-z}=2\cosh z\) has order 1.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(|e^{z^2}|\le e^{r^2}\Rightarrow\log M(r)\le r^2\Rightarrow\rho=2\). (B) \(|\cos z|\le e^{|z|}\) and \(|\cos(iy)|=\cosh y\sim e^y/2\Rightarrow\rho=1\). (C) Polynomial: \(M(r)\sim r^n\Rightarrow\log\log M(r)/\log r\to0\). (D) \(\cosh z\) behaves like \(e^{|z|}/2\Rightarrow\rho=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Entire - Borel-Carathéodory Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Borel-Carathéodory theorem: if \(f\) is holomorphic on \(\overline{D(0,R)}\) and \(A(r)=\max_{|z|\le r}\mathrm{Re}(f(z))\), then for \(r<R\): \[M(r)\le\frac{2r}{R-r}A(R)+\frac{R+r}{R-r}|f(0)|\]</p>
+<ol type="A"><li>If \(\mathrm{Re}(f)\le M\) everywhere, then \(f\) grows at most linearly.</li><li>The theorem bounds the modulus by the real part.</li><li>If \(\mathrm{Re}(f)\) is bounded above, then \(f\) is constant (by Liouville).</li><li>The theorem is used to prove Hadamard's three lines theorem.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B), (C), (D)</strong></p><p>(A) FALSE: the bound involves \(R\to\infty\) behavior; knowing \(\mathrm{Re}(f)\le M\) gives \(e^f\) bounded, hence \(f\) constant by Liouville — but does not imply linear growth. (B) Directly from the theorem statement. (C) If \(\mathrm{Re}(f)\le M\) for all \(z\), then \(|e^f|\le e^M\), so \(e^f\) is bounded, hence constant by Liouville, giving \(f\) constant. (D) Hadamard's three lines theorem uses Borel-Carathéodory type estimates.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Entire - Residue at Essential Singularity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(f(z)=e^{1/z}\), which are TRUE?</p>
+<ol type="A"><li>\(f\) has an essential singularity at \(z=0\).</li><li>The Laurent expansion at 0 is \(\sum_{n=0}^\infty\frac{1}{n!z^n}\).</li><li>The residue of \(f\) at 0 is 1.</li><li>\(\oint_{|z|=1}e^{1/z}dz=2\pi i\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Essential singularity (infinitely many negative-power terms in Laurent). (B) \(e^{1/z}=\sum_{n=0}^\infty(1/z)^n/n!\). (C) Coefficient of \(1/z\): \(c_{-1}=1\) (the \(n=1\) term is \(1/z\)). (D) By residue theorem: \(\oint=2\pi i\cdot\mathrm{Res}=2\pi i\cdot1=2\pi i\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Entire - Mittag-Leffler Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Mittag-Leffler's theorem: given a sequence \(\{a_n\}\) with no accumulation point in \(\mathbb{C}\) and principal parts \(P_n(z)\), there exists a meromorphic function with prescribed singularities. Which are TRUE?</p>
+<ol type="A"><li>The theorem guarantees existence of a meromorphic function with prescribed poles and principal parts.</li><li>The function is unique (no other meromorphic function has those poles).</li><li>Any two such functions differ by an entire function.</li><li>\(\frac{\pi^2}{\sin^2(\pi z)}=\sum_{n=-\infty}^\infty\frac{1}{(z-n)^2}\) is a Mittag-Leffler expansion.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Mittag-Leffler theorem. (B) FALSE: uniqueness fails — any entire function can be added. (C) Difference of two solutions is entire. (D) Classical Mittag-Leffler expansion for \(\pi^2/\sin^2(\pi z)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Entire - Schwarz Reflection Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Schwarz Reflection Principle: if \(f\) is holomorphic on \(\Omega^+=\Omega\cap\mathbb{H}\), continuous on the real axis portion, and real on \(\Omega\cap\mathbb{R}\), then \(f\) extends to \(\Omega\cup\Omega^-\) by \(f(\bar{z})=\overline{f(z)}\). Which are TRUE?</p>
+<ol type="A"><li>The extension is holomorphic on \(\Omega^+\cup(\Omega\cap\mathbb{R})\cup\Omega^-\).</li><li>The extension satisfies \(f(\bar{z})=\overline{f(z)}\).</li><li>The principle applies to functions continuous on a segment of the real axis taking real values.</li><li>The principle allows us to reflect across any line or circle, not just the real axis.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B)(C) are the statement of Schwarz reflection. (D) By composing with Möbius transformations, one can reflect across any line or circle where the function takes values on that circle/line.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Entire - Blaschke Products</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Blaschke product \(B(z)=\prod_{n=1}^\infty\dfrac{\bar{a}_n}{|a_n|}\cdot\dfrac{z-a_n}{1-\bar{a}_nz}\) with \(|a_n|<1\). Which are TRUE?</p>
+<ol type="A"><li>\(|B(z)|<1\) for \(|z|<1\) and \(|B(z)|=1\) for \(|z|=1\).</li><li>The Blaschke product converges (and is holomorphic on \(\mathbb{D}\)) iff \(\sum(1-|a_n|)<\infty\) (Blaschke condition).</li><li>The zeros of \(B\) are exactly the points \(a_n\).</li><li>Every bounded holomorphic function on \(\mathbb{D}\) is a Blaschke product times a zero-free function.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B)(C) Standard properties of Blaschke products. (D) Inner-outer factorization: every \(H^\infty(\mathbb{D})\) function factors as (Blaschke product) × (singular inner) × (outer function), which includes (D) as a consequence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

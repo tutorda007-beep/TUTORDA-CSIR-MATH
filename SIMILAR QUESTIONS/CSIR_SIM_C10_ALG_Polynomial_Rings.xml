@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Abstract Algebra — Polynomial Rings and Irreducibility</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Poly - p(X)=X^3+nX+1 reducibility</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Consider \(p(X)=X^3+nX+1\in\mathbb{Z}[X]\). Which are TRUE?</p>
+<ol type="A"><li>\(p(X)\) is reducible over \(\mathbb{Z}\) for \(n=-2\) (since \(p(1)=0\)).</li><li>\(p(X)\) is irreducible over \(\mathbb{Z}\) for infinitely many \(n\in\mathbb{Z}\).</li><li>If \(p(X)\) is reducible over \(\mathbb{Z}\), it has a rational root by the rational root theorem.</li><li>\(p(X)\) is always irreducible over \(\mathbb{Q}\) for \(n>0\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) \(p(1)=1+n+1=n+2=0\Rightarrow n=-2\). (B) By Eisenstein or direct argument, infinitely many \(n\) give irreducible polynomials (e.g. \(n=0\): \(X^3+1=(X+1)(X^2-X+1)\) — reducible; \(n=1\): \(X^3+X+1\) has no rational roots \(\pm1\) (check: \(1+1+1=3\ne0\), \(-1-1+1=-1\ne0\)) — irreducible). (C) A cubic over \(\mathbb{Z}\) is reducible iff it has a linear factor, i.e. a rational root. (D) FALSE: \(n=0\) gives \(X^3+1\) which factors.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Poly - Eisenstein Criterion</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Eisenstein's criterion: if \(p\) is prime and \(f(X)=a_nX^n+\cdots+a_0\in\mathbb{Z}[X]\) with \(p\nmid a_n\), \(p\mid a_i\) for \(i<n\), and \(p^2\nmid a_0\), then \(f\) is irreducible over \(\mathbb{Q}\). Which are TRUE?</p>
+<ol type="A"><li>\(X^p-p\) is irreducible over \(\mathbb{Q}\) for any prime \(p\).</li><li>\(X^4+4\) is irreducible over \(\mathbb{Q}\) (apply Eisenstein with \(p=2\)).</li><li>The \(p\)-th cyclotomic polynomial \(\Phi_p(X)=(X^p-1)/(X-1)\) is irreducible over \(\mathbb{Q}\).</li><li>Eisenstein can be applied after a substitution \(X\mapsto X+a\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) \(X^p-p\): Eisenstein with the prime \(p\): \(p\nmid1\), \(p\mid(-p)\), \(p^2\nmid(-p)\) (since \(p^2\nmid p\) for prime \(p\)). Irreducible. (B) FALSE: \(X^4+4=(X^2+2X+2)(X^2-2X+2)\) — Sophie Germain identity. (C) \(\Phi_p(X)=X^{p-1}+\cdots+1\); substituting \(X+1\) and applying Eisenstein with prime \(p\). (D) The substitution \(X\mapsto X+a\) preserves irreducibility; Eisenstein can sometimes be applied after this.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Poly - PIDs and UFDs</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE?</p>
+<ol type="A"><li>Every PID (principal ideal domain) is a UFD.</li><li>\(\mathbb{Z}\) is a PID.</li><li>\(\mathbb{Z}[X]\) is a UFD but NOT a PID.</li><li>Every field is a PID.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) PID \(\Rightarrow\) UFD (fundamental theorem). (B) \(\mathbb{Z}\) has all ideals principal: \((n)\). (C) \(\mathbb{Z}[X]\) is a UFD (Gauss's lemma + \(\mathbb{Z}\) UFD), but not a PID: \((2,X)\) is not principal. (D) In a field, every ideal is \((0)\) or \((1)\), both principal.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Poly - Maximal and Prime Ideals</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(R\) be a commutative ring with unity and \(I\) an ideal. Which are TRUE?</p>
+<ol type="A"><li>\(I\) is maximal iff \(R/I\) is a field.</li><li>\(I\) is prime iff \(R/I\) is an integral domain.</li><li>Every maximal ideal is prime.</li><li>Every prime ideal is maximal (in a PID).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Standard characterizations. (C) Fields are integral domains, so maximal \(\Rightarrow\) prime. (D) FALSE in general: \((0)\) in \(\mathbb{Z}\) is prime but not maximal. In a PID, every nonzero prime ideal is maximal, but \((0)\) may be prime without being maximal.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Poly - Gauss's Lemma</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Gauss's Lemma: a primitive polynomial in \(\mathbb{Z}[X]\) that factors over \(\mathbb{Q}\) factors over \(\mathbb{Z}\). Which follow?</p>
+<ol type="A"><li>If \(f\in\mathbb{Z}[X]\) is irreducible over \(\mathbb{Z}\) and primitive, then it is irreducible over \(\mathbb{Q}\).</li><li>\(\mathbb{Z}[X]\) is a UFD.</li><li>The product of primitive polynomials is primitive.</li><li>An irreducible element of \(\mathbb{Z}[X]\) is either a prime integer or an irreducible primitive polynomial.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Converse of Gauss's lemma. (B) \(\mathbb{Z}\) is UFD and \(F[X]\) for field \(F\) is a PID hence UFD; by Gauss's lemma, \(\mathbb{Z}[X]\) is UFD. (C) Gauss's lemma content: content of product = product of contents; primitive × primitive = primitive. (D) UFD structure of \(\mathbb{Z}[X]\): irreducibles are primes and irreducible primitives.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Poly - Irreducibility over Finite Fields</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about irreducible polynomials over \(\mathbb{F}_p\)?</p>
+<ol type="A"><li>For each \(n\ge1\), there exists an irreducible polynomial of degree \(n\) over \(\mathbb{F}_p\).</li><li>The number of monic irreducible polynomials of degree \(n\) over \(\mathbb{F}_p\) is \(\frac{1}{n}\sum_{d|n}\mu(n/d)p^d\) (Necklace formula).</li><li>\(\mathbb{F}_p[X]/(f(X))\) is a field iff \(f\) is irreducible over \(\mathbb{F}_p\).</li><li>Every polynomial over \(\mathbb{F}_p\) splits completely over \(\mathbb{F}_{p^{n!}}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\mathbb{F}_{p^n}\) exists and is generated by roots of degree-\(n\) irreducibles. (B) Möbius inversion formula for counting irreducibles. (C) \(\mathbb{F}_p[X]/(f)\) is a field iff \(f\) irreducible (maximal ideal). (D) Every finite extension of \(\mathbb{F}_p\) embeds in \(\mathbb{F}_{p^{n!}}\) for large enough \(n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Poly - Rational Root Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Rational Root Theorem: if \(f(X)=a_nX^n+\cdots+a_0\in\mathbb{Z}[X]\) has a rational root \(p/q\) (in lowest terms), then \(p\mid a_0\) and \(q\mid a_n\). Which follow?</p>
+<ol type="A"><li>A monic polynomial in \(\mathbb{Z}[X]\) has only integer rational roots.</li><li>To check irreducibility of a cubic over \(\mathbb{Q}\), it suffices to check for rational roots.</li><li>\(X^3-2\) has no rational roots.</li><li>If \(f\in\mathbb{Z}[X]\) has no rational roots, \(f\) is irreducible over \(\mathbb{Q}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Monic: \(a_n=1\), so \(q\mid1\Rightarrow q=\pm1\Rightarrow p/q=p\in\mathbb{Z}\). (B) A cubic over \(\mathbb{Q}\) is irreducible iff it has no rational roots (else it factors as linear × quadratic). (C) Possible rational roots of \(X^3-2\): \(\pm1,\pm2\); none are roots. (D) FALSE: a degree-4 polynomial with no rational roots may still factor into two irreducible quadratics, e.g. \(X^4+4=(X^2+2X+2)(X^2-2X+2)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Poly - Cyclotomic Polynomials</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The \(n\)-th cyclotomic polynomial \(\Phi_n(X)=\prod_{1\le k\le n,\gcd(k,n)=1}(X-e^{2\pi ik/n})\). Which are TRUE?</p>
+<ol type="A"><li>\(X^n-1=\prod_{d|n}\Phi_d(X)\).</li><li>\(\deg\Phi_n=\phi(n)\) (Euler's totient function).</li><li>\(\Phi_n(X)\) is irreducible over \(\mathbb{Q}\) for all \(n\).</li><li>\(\Phi_p(X)=X^{p-1}+X^{p-2}+\cdots+X+1\) for prime \(p\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Standard factorization of \(X^n-1\). (B) \(\phi(n)\) primitive roots of unity. (C) All cyclotomic polynomials are irreducible over \(\mathbb{Q}\) — classical theorem. (D) For prime \(p\): \(\Phi_p=(X^p-1)/(X-1)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Poly - Ring Homomorphisms</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\phi:R\to S\) be a ring homomorphism. Which are TRUE?</p>
+<ol type="A"><li>\(\ker\phi\) is an ideal of \(R\).</li><li>\(\mathrm{Im}(\phi)\) is a subring of \(S\).</li><li>First isomorphism: \(R/\ker\phi\cong\mathrm{Im}(\phi)\).</li><li>If \(\phi\) is surjective and \(R\) is a field, then \(\phi\) is injective (hence an isomorphism).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B)(C) Standard ring isomorphism theorems. (D) If \(R\) is a field, its only ideals are \((0)\) and \(R\); since \(\phi\) is surjective (onto \(S\ne\{0\}\)), \(\ker\phi\ne R\), so \(\ker\phi=(0)\Rightarrow\phi\) is injective.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Poly - Division Algorithm in F[X]</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In \(F[X]\) for a field \(F\), the division algorithm states: for \(f,g\in F[X]\) with \(g\ne0\), \(\exists!q,r\in F[X]\) with \(f=gq+r\) and \(\deg r<\deg g\). Which follow?</p>
+<ol type="A"><li>\(F[X]\) is a Euclidean domain.</li><li>\(F[X]\) is a PID.</li><li>Every ideal in \(F[X]\) is generated by the GCD of its elements.</li><li>The GCD of two polynomials over \(F\) can be computed by the Euclidean algorithm.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) The Euclidean norm \(\deg f\) gives \(F[X]\) a Euclidean algorithm. (B) Euclidean domain \(\Rightarrow\) PID. (C)(D) In PIDs, ideals are principal and generated by GCDs; the Euclidean algorithm computes GCDs.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Poly - Extension Fields and Minimal Polynomial</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\alpha\) be algebraic over \(F\) with minimal polynomial \(m_\alpha\in F[X]\). Which are TRUE?</p>
+<ol type="A"><li>\(m_\alpha\) is irreducible over \(F\).</li><li>\(F(\alpha)\cong F[X]/(m_\alpha)\).</li><li>\([F(\alpha):F]=\deg m_\alpha\).</li><li>Any polynomial in \(F[X]\) with \(\alpha\) as a root is divisible by \(m_\alpha\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Minimal polynomial is irreducible by minimality and the fact that \(F[X]/(m_\alpha)\) is a field. (B) \(F(\alpha)\cong F[X]/(m_\alpha)\) (evaluation homomorphism with kernel \((m_\alpha)\)). (C) Degree of extension = degree of minimal polynomial. (D) \(m_\alpha\) divides any polynomial vanishing at \(\alpha\) (since \((m_\alpha)\) is maximal hence prime).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</small><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Poly - Reducibility mod p</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f\in\mathbb{Z}[X]\) reduces to an irreducible polynomial over \(\mathbb{F}_p\) (for some prime \(p\) not dividing the leading coefficient), then \(f\) is irreducible over \(\mathbb{Q}\). Which are TRUE?</p>
+<ol type="A"><li>This provides a sufficient condition for irreducibility over \(\mathbb{Q}\).</li><li>If \(f\) reduces mod \(p\) to a product of irreducibles of distinct degrees, those degrees constrain the Galois group.</li><li>If \(f\) is irreducible over \(\mathbb{F}_p\) for every prime \(p\), it is irreducible over \(\mathbb{Q}\).</li><li>The converse is FALSE: an irreducible \(f\) over \(\mathbb{Q}\) may be reducible mod every prime.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Reduction mod \(p\) criterion for irreducibility. (B) The cycle type of Frobenius elements gives information about the Galois group. (C) FALSE: e.g. \(X^4-10X^2+1\) is irreducible over \(\mathbb{Q}\) but reducible mod every prime. (D) TRUE: such polynomials exist — this shows the reduction criterion is not "if and only if".</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Poly - Noetherian Rings</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A ring \(R\) is Noetherian if every ascending chain of ideals stabilizes. Which are TRUE?</p>
+<ol type="A"><li>Every PID is Noetherian.</li><li>If \(R\) is Noetherian, so is \(R[X]\) (Hilbert basis theorem).</li><li>\(\mathbb{Z}[X_1,X_2,\ldots]\) (infinitely many variables) is NOT Noetherian.</li><li>Every subring of a Noetherian ring is Noetherian.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) PIDs are Noetherian (every ideal is principal, hence finitely generated). (B) Hilbert basis theorem. (C) The ideal \((X_1,X_2,\ldots)\) is not finitely generated, so the ring is not Noetherian. (D) FALSE: a subring of a Noetherian ring need not be Noetherian. For example, a polynomial ring over a Noetherian ring has subrings that are not Noetherian.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Poly - Field Extensions Degree</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(F\subseteq K\subseteq L\) are fields, the tower law states \([L:F]=[L:K][K:F]\). Which follow?</p>
+<ol type="A"><li>\([\mathbb{Q}(\sqrt{2},\sqrt{3}):\mathbb{Q}]=4\).</li><li>If \([K:F]=p\) (prime), there are no intermediate fields between \(F\) and \(K\).</li><li>\([\mathbb{C}:\mathbb{Q}]\) is infinite.</li><li>\([\mathbb{Q}(\sqrt[3]{2}):\mathbb{Q}]=3\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \([\mathbb{Q}(\sqrt2,\sqrt3):\mathbb{Q}(\sqrt2)]=2\) and \([\mathbb{Q}(\sqrt2):\mathbb{Q}]=2\), so total = 4. (B) If \([K:F]=p\), any intermediate field \(F\subset E\subset K\) would have \(p=[K:F]=[K:E][E:F]\), forcing \([K:E]=1\) or \([E:F]=1\). (C) \(\mathbb{C}\) is uncountable over \(\mathbb{Q}\). (D) Minimal polynomial of \(\sqrt[3]{2}\) is \(X^3-2\), degree 3.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Poly - Galois Theory Basic</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(K/F\) be a Galois extension with Galois group \(G=\mathrm{Gal}(K/F)\). Which are TRUE?</p>
+<ol type="A"><li>\(|G|=[K:F]\).</li><li>The fundamental theorem: there is a bijection between subgroups of \(G\) and intermediate fields, reversing inclusion.</li><li>A subextension \(E/F\) is Galois iff the corresponding subgroup is normal in \(G\).</li><li>If \(G\cong\mathbb{Z}/n\mathbb{Z}\), then \(K/F\) has a unique subfield of each degree dividing \(n\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(|G|=[K:F]\) for a Galois extension. (B) Fundamental theorem of Galois theory. (C) \(E/F\) Galois \(\Leftrightarrow\mathrm{Gal}(K/E)\trianglelefteq G\). (D) Cyclic Galois group: unique subgroup for each divisor \(\Rightarrow\) unique intermediate field.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Poly - Solvability by Radicals</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A polynomial is solvable by radicals iff its Galois group is solvable. Which are TRUE?</p>
+<ol type="A"><li>All polynomials of degree \(\le4\) are solvable by radicals.</li><li>There exist polynomials of degree 5 not solvable by radicals.</li><li>A generic polynomial of degree \(n\ge5\) has Galois group \(S_n\), which is not solvable.</li><li>The Abel-Ruffini theorem states no general formula for degree \(\ge5\) polynomial solutions exists using radicals.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Galois groups of degree \(\le4\) polynomials are solvable groups (\(S_4\) is solvable). (B) e.g. \(X^5-5X+12\) has Galois group \(S_5\) — not solvable. (C) The "generic" polynomial of degree \(n\) has Galois group \(S_n\). (D) Abel-Ruffini theorem (proved rigorously by Galois theory).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Poly - Constructible Numbers</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A real number \(\alpha\) is constructible iff \([\mathbb{Q}(\alpha):\mathbb{Q}]\) is a power of 2. Which are TRUE?</p>
+<ol type="A"><li>\(\sqrt{2}\) is constructible.</li><li>\(\sqrt[3]{2}\) is not constructible (doubling the cube is impossible).</li><li>\(\cos(2\pi/17)\) is constructible (regular 17-gon is constructible).</li><li>\(\pi\) is constructible.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) \([\mathbb{Q}(\sqrt2):\mathbb{Q}]=2=2^1\). (B) \([\mathbb{Q}(\sqrt[3]{2}):\mathbb{Q}]=3\) (not a power of 2). (C) Gauss: 17 is a Fermat prime \((17=2^4+1)\), so \(\cos(2\pi/17)\) is constructible. (D) FALSE: \(\pi\) is transcendental, hence not algebraic at all, so not constructible.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Poly - Chinese Remainder Theorem for Rings</text></name>
+  <questiontext format="html"><text><![CDATA[<p>CRT for rings: if \(I,J\trianglelefteq R\) with \(I+J=R\), then \(R/(I\cap J)\cong R/I\times R/J\). Which are TRUE?</p>
+<ol type="A"><li>\(\mathbb{Z}/(mn)\cong\mathbb{Z}/m\times\mathbb{Z}/n\) when \(\gcd(m,n)=1\).</li><li>CRT for polynomial rings: \(F[X]/(fg)\cong F[X]/(f)\times F[X]/(g)\) when \(\gcd(f,g)=1\).</li><li>\(I\cap J=IJ\) when \(I+J=R\).</li><li>The isomorphism in CRT is a ring isomorphism, not just a group isomorphism.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\gcd(m,n)=1\Rightarrow m\mathbb{Z}+n\mathbb{Z}=\mathbb{Z}\). (B) Coprime polynomials give the CRT. (C) When \(I+J=R\): \(IJ\subseteq I\cap J\) always; for the other inclusion: \(x\in I\cap J\Rightarrow x=x\cdot1=x(i+j)=xi+xj\in IJ\). (D) The CRT map is a ring isomorphism.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Poly - Integral Domains</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A commutative ring \(R\) is an integral domain if it has no zero divisors. Which are TRUE?</p>
+<ol type="A"><li>Every field is an integral domain.</li><li>Every integral domain can be embedded in its field of fractions.</li><li>\(\mathbb{Z}[i]=\{a+bi:a,b\in\mathbb{Z}\}\) is an integral domain.</li><li>\(\mathbb{Z}/6\mathbb{Z}\) is an integral domain.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Fields have no zero divisors. (B) Field of fractions construction (analogous to \(\mathbb{Q}\) from \(\mathbb{Z}\)). (C) \(\mathbb{Z}[i]\) is a subring of \(\mathbb{C}\), hence an integral domain (in fact a PID, Gaussian integers). (D) FALSE: \(2\cdot3=6\equiv0\pmod6\) with \(2,3\ne0\) — zero divisors exist.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Poly - Module Theory Basics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A module \(M\) over a ring \(R\) generalises a vector space (with \(R\) not necessarily a field). Which are TRUE?</p>
+<ol type="A"><li>Every vector space is a module over its scalar field.</li><li>Every abelian group is a \(\mathbb{Z}\)-module.</li><li>A free \(R\)-module has a basis (a linearly independent spanning set).</li><li>Over a PID, every finitely generated module is a direct sum of cyclic modules.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Vector spaces are modules with the scalar field. (B) Abelian groups have a unique \(\mathbb{Z}\)-module structure: \(n\cdot a=a+a+\cdots+a\). (C) Free modules have bases by definition. (D) Structure theorem for modules over PIDs: \(M\cong R^r\oplus R/(d_1)\oplus\cdots\oplus R/(d_k)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

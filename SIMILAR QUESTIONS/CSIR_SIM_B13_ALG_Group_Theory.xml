@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Abstract Algebra — Group Theory Generators and Subgroups</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Group Theory - Group Axioms</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A non-empty set \(G\) with a binary operation \(*\) is a group if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Closure, associativity, identity, and inverses all hold</strong></p><p>The four group axioms: (1) Closure: \(a*b\in G\) for all \(a,b\in G\). (2) Associativity: \((a*b)*c=a*(b*c)\). (3) Identity: \(\exists e\in G\) with \(e*a=a*e=a\). (4) Inverses: for each \(a\), \(\exists a^{-1}\in G\) with \(a*a^{-1}=a^{-1}*a=e\). Commutativity is NOT required (that's for abelian groups).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Closure and commutativity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Closure and associativity only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Closure, associativity, identity, and inverses]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Closure, commutativity, associativity, and cancellation]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Group Theory - Order of an Element</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In \(\mathbb{Z}_{12}\) (integers mod 12), the order of the element 4 is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) 3</strong></p><p>Order of 4 in \(\mathbb{Z}_{12}\): smallest positive \(n\) with \(4n\equiv0\pmod{12}\). \(4\cdot3=12\equiv0\). So order = 3. Equivalently, order of \(a\) in \(\mathbb{Z}_n\) is \(n/\gcd(n,a)=12/\gcd(12,4)=12/4=3\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[12]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Group Theory - Lagrange's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Lagrange's theorem states: if \(H\) is a subgroup of a finite group \(G\), then \(|H|\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Divides \(|G|\)</strong></p><p>Lagrange: \(|H|\) divides \(|G|\) for any subgroup \(H\leq G\). This follows because the cosets of \(H\) partition \(G\) into equal-sized pieces: \(|G|=[G:H]\cdot|H|\) where \([G:H]\) is the index. Corollary: order of every element divides \(|G|\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Divides \(|G|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equals \(|G|/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is a prime number]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equals \(\sqrt{|G|}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Group Theory - Cyclic Group</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A group \(G\) is cyclic if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) There exists a single element \(g\in G\) such that every element of \(G\) is a power of \(g\)</strong></p><p>Cyclic: \(G=\langle g\rangle=\{g^n:n\in\mathbb{Z}\}\) for some generator \(g\). Every cyclic group is abelian. Finite cyclic groups \(\mathbb{Z}_n\) have exactly \(\phi(d)\) elements of order \(d\) for each \(d|n\). \(\mathbb{Z}\) is the infinite cyclic group (generated by 1 or -1).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It is abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Some single element generates all of \(G\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every element has finite order]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It has a unique subgroup of each order dividing \(|G|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Group Theory - Normal Subgroup</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A subgroup \(N\trianglelefteq G\) (normal) if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(gNg^{-1}=N\) for all \(g\in G\)</strong></p><p>Normal subgroup: \(N\trianglelefteq G\) iff \(gNg^{-1}=N\) for all \(g\in G\) (equivalently, left cosets equal right cosets: \(gN=Ng\)). Normal subgroups are exactly the kernels of group homomorphisms. The quotient group \(G/N\) is well-defined iff \(N\trianglelefteq G\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(N\) is abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N\) has index 2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(gNg^{-1}=N\) for all \(g\in G\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(N\) contains the identity only]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Group Theory - Symmetric Group S3</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The symmetric group \(S_3\) (permutations of 3 elements) has order:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) 6</strong></p><p>\(|S_3|=3!=6\). Elements: identity \(e\), three transpositions \((12),(13),(23)\), and two 3-cycles \((123),(132)\). \(S_3\) is the smallest non-abelian group. It is isomorphic to the dihedral group \(D_3\) (symmetries of an equilateral triangle).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[9]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[12]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Group Theory - Homomorphism Kernel</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(\phi:G\to H\) is a group homomorphism, then \(\ker\phi=\phi^{-1}(\{e_H\})\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) A normal subgroup of \(G\)</strong></p><p>\(\ker\phi\) is always a normal subgroup: if \(\phi(k)=e_H\), then \(\phi(gkg^{-1})=\phi(g)\phi(k)\phi(g)^{-1}=\phi(g)e_H\phi(g)^{-1}=e_H\). So \(gkg^{-1}\in\ker\phi\). First isomorphism theorem: \(G/\ker\phi\cong\mathrm{Im}(\phi)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[A normal subgroup of \(G\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A subgroup of \(H\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always equal to \(\{e_G\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A cyclic subgroup]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Group Theory - Cauchy's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Cauchy's theorem for groups states: if \(p\) is a prime dividing \(|G|\), then \(G\) has:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) An element of order \(p\)</strong></p><p>Cauchy: if prime \(p\mid|G|\), then \(G\) contains an element of order \(p\) (hence a subgroup of order \(p\)). This is a partial converse of Lagrange. Sylow's theorem extends this: if \(p^k\mid|G|\), there is a subgroup of order \(p^k\) (Sylow p-subgroup).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[A normal subgroup of order \(p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[An element of order \(p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A subgroup of index \(p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\) distinct subgroups of the same order]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Group Theory - Matrix Group GL_2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The group \(GL_2(\mathbb{R})\) of \(2\times2\) invertible real matrices:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Is non-abelian and infinite</strong></p><p>\(GL_2(\mathbb{R})\) is infinite (uncountably many invertible matrices) and non-abelian: \(\begin{pmatrix}1&1\\0&1\end{pmatrix}\begin{pmatrix}1&0\\1&1\end{pmatrix}\neq\begin{pmatrix}1&0\\1&1\end{pmatrix}\begin{pmatrix}1&1\\0&1\end{pmatrix}\). It contains \(SL_2(\mathbb{R})\) (det=1) as a normal subgroup of index 2 (in terms of the sign of the determinant).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Is abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Is non-abelian and infinite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is cyclic]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Group Theory - Center of a Group</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The center \(Z(G)=\{z\in G:zg=gz\text{ for all }g\in G\}\) of a group is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) A normal abelian subgroup of \(G\)</strong></p><p>\(Z(G)\) is always a normal subgroup (it commutes with everything, so it is clearly invariant under conjugation). It is abelian (since all its elements commute by definition). For abelian \(G\): \(Z(G)=G\). For \(S_n\) with \(n\geq3\): \(Z(S_n)=\{e\}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[A subgroup that may not be normal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[A normal abelian subgroup of \(G\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equal to the commutator subgroup]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always trivial (only the identity)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Group Theory - First Isomorphism Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(\phi:G\to H\) is a surjective homomorphism with kernel \(K=\ker\phi\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(G/K\cong H\)</strong></p><p>First Isomorphism Theorem: \(G/\ker\phi\cong\mathrm{Im}(\phi)\). If \(\phi\) is surjective, \(\mathrm{Im}(\phi)=H\), so \(G/K\cong H\). The map \(\bar\phi:gK\mapsto\phi(g)\) is a well-defined isomorphism. This is one of the most used theorems in group theory.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(G/K\cong H\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G\cong H\times K\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(K\cong H\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G=K\cup H\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Group Theory - Sylow p-Subgroup</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a finite group \(G\) with \(|G|=p^am\) where \(\gcd(p,m)=1\), a Sylow \(p\)-subgroup is a subgroup of order:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(p^a\)</strong></p><p>A Sylow \(p\)-subgroup has order \(p^a\) (the highest power of \(p\) dividing \(|G|\)). Sylow's theorems: (1) Sylow subgroups exist. (2) All Sylow \(p\)-subgroups are conjugate (hence isomorphic). (3) The number \(n_p\) of Sylow \(p\)-subgroups satisfies \(n_p\equiv1\pmod p\) and \(n_p|m\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(p^a\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p^am\)=|G|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Group Theory - Abelian Group Classification</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Every finite abelian group is isomorphic to a direct product of cyclic groups \(\mathbb{Z}_{n_1}\times\cdots\times\mathbb{Z}_{n_k}\) where:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(n_1|n_2|\cdots|n_k\) (invariant factor decomposition)</strong></p><p>Fundamental theorem of finite abelian groups: every such group is uniquely (up to isomorphism) a product of cyclic groups of orders \(n_1|n_2|\cdots|n_k\) (invariant factors). Alternatively, one uses primary decomposition: each \(\mathbb{Z}_{p^{a_i}}\). For example: \(\mathbb{Z}_{12}\cong\mathbb{Z}_4\times\mathbb{Z}_3\cong\mathbb{Z}_2\times\mathbb{Z}_6\) is NOT an option since \(12=4\times3\) and \(\gcd(4,3)=1\), so \(\mathbb{Z}_{12}\cong\mathbb{Z}_4\times\mathbb{Z}_3\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[All \(n_i\) are prime]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(n_1\mid n_2\mid\cdots\mid n_k\) (invariant factor form)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n_1=n_2=\cdots=n_k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The \(n_i\) can be chosen arbitrarily]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Group Theory - Dihedral Group D4</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The dihedral group \(D_4\) (symmetries of a square) has order:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) 8</strong></p><p>\(D_n\) (symmetries of a regular \(n\)-gon) has order \(2n\). \(D_4\) has order \(2\times4=8\): 4 rotations (by \(0°,90°,180°,270°\)) and 4 reflections. \(D_4\) is non-abelian (reflections and rotations don't commute) and is a common example in group theory.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[8]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[16]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[6]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Group Theory - Subgroup Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A non-empty subset \(H\) of a group \(G\) is a subgroup if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(ab^{-1}\in H\) for all \(a,b\in H\) (one-step subgroup test)</strong></p><p>One-step test: \(H\leq G\) iff \(H\neq\emptyset\) and \(a,b\in H\Rightarrow ab^{-1}\in H\). Setting \(a=b\): \(e\in H\). Setting \(a=e\): \(b^{-1}\in H\). Combined: \(ab^{-1}\in H\) implies closure (\(a(b^{-1})^{-1}=ab\in H\)). Two-step test: closed under multiplication and inverses.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(H\) is finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(H\) is abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(H\neq\emptyset\) and \(a,b\in H\Rightarrow ab^{-1}\in H\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(H\) contains an element of order 1]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Group Theory - Alternating Group A4</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The alternating group \(A_4\) has order 12. Which statement is TRUE about \(A_4\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(A_4\) has no subgroup of order 6</strong></p><p>\(A_4\) is the famous counterexample to the converse of Lagrange: even though 6 divides 12, there is no subgroup of \(A_4\) of order 6. This shows Lagrange's theorem has no converse in general. \(A_4\) is non-abelian but has a normal subgroup of order 4 (the Klein four-group \(V_4\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(A_4\) is abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A_4\) has a subgroup of every order dividing 12]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(A_4\) is cyclic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(A_4\) has NO subgroup of order 6 (counterexample to converse of Lagrange)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Group Theory - Simple Group</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A group \(G\) is simple if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Its only normal subgroups are \(\{e\}\) and \(G\) itself</strong></p><p>Simple groups have no proper nontrivial normal subgroups. The smallest simple group is \(\mathbb{Z}_2\). The smallest nonabelian simple group is \(A_5\) (order 60). The classification of finite simple groups is a major achievement of 20th-century mathematics.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Its only normal subgroups are \(\{e\}\) and \(G\) itself]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It has prime order]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It has no subgroups at all]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Group Theory - Commutator Subgroup</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The commutator subgroup \([G,G]\) (generated by all \(aba^{-1}b^{-1}\)) is the smallest normal subgroup of \(G\) such that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(G/[G,G]\) is abelian</strong></p><p>The commutator subgroup (derived subgroup) \(G'=[G,G]\) is normal and \(G/G'\) is abelian. Moreover, it is the smallest normal subgroup with abelian quotient: if \(N\trianglelefteq G\) and \(G/N\) is abelian, then \(G'\leq N\). For \(S_n\): \([S_n,S_n]=A_n\) (alternating group), and \(S_n/A_n\cong\mathbb{Z}_2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(G/[G,G]\) is cyclic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G/[G,G]\) is simple]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(G/[G,G]\) is abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\([G,G]=G\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Group Theory - p-Group</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A group \(G\) of order \(p^n\) (prime power) has center satisfying:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(Z(G)\neq\{e\}\) (the center is nontrivial)</strong></p><p>Any group of order \(p^n\) (a \(p\)-group) has nontrivial center. Proof using the class equation: \(|G|=|Z(G)|+\sum[G:C_G(x_i)]\) where the sum is over non-central conjugacy classes. Since \(p\mid|G|\) and \(p\mid[G:C_G(x_i)]\) for all non-central \(x_i\), we get \(p\mid|Z(G)|\), so \(|Z(G)|>1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(Z(G)=G\) (always abelian)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(Z(G)\neq\{e\}\) (nontrivial center)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(Z(G)=\{e\}\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|Z(G)|=p\) always]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Group Theory - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A group of order 15 must be:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Cyclic (hence abelian)</strong></p><p>\(15=3\times5\). By Sylow theory: the number of Sylow 3-subgroups divides 5 and is \(\equiv1\pmod3\), so it's 1. Similarly, the number of Sylow 5-subgroups is 1. Both are normal, so \(G\cong\mathbb{Z}_3\times\mathbb{Z}_5\cong\mathbb{Z}_{15}\). Any group of order \(pq\) (distinct primes with \(p<q\) and \(p\nmid q-1\)) is cyclic; here \(3\nmid4\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Non-abelian]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Simple]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Cyclic (isomorphic to \(\mathbb{Z}_{15}\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Of the form \(\mathbb{Z}_3\times\mathbb{Z}_5\times\mathbb{Z}_2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

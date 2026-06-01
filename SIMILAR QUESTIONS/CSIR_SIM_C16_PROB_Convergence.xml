@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Probability — Convergence of Random Variables</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Convergence - X_n→X in prob, implications</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_n\to X\) in probability. Which are necessarily TRUE?</p>
+<ol type="A"><li>\(X_n\to X\) in distribution (weakly).</li><li>\(X_n\to X\) in \(L^2\) (mean square).</li><li>There exists a subsequence \(X_{n_k}\to X\) almost surely.</li><li>\(E[\min(1,|X_n-X|)]\to0\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Convergence in probability implies convergence in distribution. (B) FALSE: convergence in probability does not imply \(L^2\) convergence (e.g. \(X_n=\sqrt{n}\cdot\mathbf{1}_{[0,1/n]}\): \(P(|X_n|>\varepsilon)\to0\) but \(E[X_n^2]=n\cdot1/n=1\not\to0\)). (C) Every sequence converging in probability has an a.s. convergent subsequence. (D) The metric \(d(X,Y)=E[\min(1,|X-Y|)]\) metrizes convergence in probability.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Convergence - Hierarchy of Modes</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which implications among convergence modes are TRUE?</p>
+<ol type="A"><li>a.s. convergence \(\Rightarrow\) convergence in probability.</li><li>\(L^p\) convergence (\(p\ge1\)) \(\Rightarrow\) convergence in probability.</li><li>Convergence in distribution \(\Rightarrow\) convergence in probability.</li><li>\(L^p\) convergence \(\Rightarrow L^q\) convergence when \(p\ge q\ge1\) (on a probability space).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Almost sure \(\Rightarrow\) in probability (by dominated convergence or Egoroff). (B) \(E|X_n-X|^p\to0\Rightarrow P(|X_n-X|>\varepsilon)\le E|X_n-X|^p/\varepsilon^p\to0\). (C) FALSE: convergence in distribution does not imply convergence in probability (e.g. \(X_n=(-1)^nZ\) for fixed standard normal \(Z\): each \(X_n\overset{d}{=}N(0,1)=X\) but \(|X_n-X|=2|Z|>0\) a.s.). (D) Hölder: \(E|X|^q\le(E|X|^p)^{q/p}\) on probability space.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Convergence - Laws of Large Numbers</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,X_2,\ldots\) be i.i.d. with \(E|X_1|<\infty\) and mean \(\mu\). Which are TRUE?</p>
+<ol type="A"><li>Weak LLN: \(\bar X_n\to\mu\) in probability.</li><li>Strong LLN: \(\bar X_n\to\mu\) almost surely.</li><li>If \(E[X_1^2]<\infty\), then \(\bar X_n\to\mu\) in \(L^2\).</li><li>If \(E|X_1|=\infty\), the SLLN fails (i.e., \(\bar X_n\) may not converge a.s.).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Weak and strong LLN under \(E|X|<\infty\). (C) \(E|\bar X_n-\mu|^2=\mathrm{Var}(X_1)/n\to0\). (D) Without finite mean, the SLLN generally fails; the sample mean may diverge.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Convergence - Central Limit Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>CLT: if \(X_i\) are i.i.d. with mean \(\mu\) and variance \(\sigma^2\), then \(\sqrt{n}(\bar X_n-\mu)/\sigma\overset{d}{\to}N(0,1)\). Which are TRUE?</p>
+<ol type="A"><li>The CLT holds under the finite variance condition.</li><li>\(\sqrt{n}(\bar X_n-\mu)\overset{d}{\to}N(0,\sigma^2)\).</li><li>The CLT holds for non-identical but independent variables under Lindeberg's condition.</li><li>The Lyapunov CLT is a special case of Lindeberg's CLT.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Standard CLT statement. (C) Lindeberg's CLT generalizes to non-identical distributions. (D) Lyapunov: if \(\frac{1}{s_n^{2+\delta}}\sum E|X_i-\mu_i|^{2+\delta}\to0\), the CLT holds — special case of Lindeberg.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Convergence - Dominated and Monotone Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about convergence theorems for expectations?</p>
+<ol type="A"><li>DCT: if \(|X_n|\le Y\) a.s. with \(E[Y]<\infty\) and \(X_n\to X\) a.s., then \(E[X_n]\to E[X]\).</li><li>MCT: if \(0\le X_n\uparrow X\) a.s., then \(E[X_n]\uparrow E[X]\) (possibly \(\infty\)).</li><li>Fatou's lemma: \(E[\liminf X_n]\le\liminf E[X_n]\) for non-negative \(X_n\).</li><li>The condition \(|X_n|\le Y\) in DCT can be weakened to uniform integrability.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Dominated Convergence Theorem. (B) Monotone Convergence Theorem. (C) Fatou's lemma. (D) The general DCT holds under uniform integrability: \(X_n\to X\) in probability + UI \(\Rightarrow E[X_n]\to E[X]\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</small><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Convergence - Uniform Integrability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A family \(\{X_\alpha\}\) is uniformly integrable (UI) if \(\sup_\alpha E[|X_\alpha|\mathbf{1}_{|X_\alpha|>M}]\to0\) as \(M\to\infty\). Which are TRUE?</p>
+<ol type="A"><li>Bounded in \(L^p\) for some \(p>1\) implies UI.</li><li>\(X_n\to X\) in \(L^1\) iff \(X_n\to X\) in probability and \(\{X_n\}\) is UI.</li><li>Convergence in \(L^1\) implies UI of the sequence.</li><li>Every finite collection of integrable random variables is UI.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(L^p\) boundedness with \(p>1\Rightarrow\) UI by Hölder. (B) Vitali convergence theorem. (C) \(L^1\) convergence implies UI. (D) A finite collection is always UI.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Convergence - Characteristic Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The characteristic function \(\varphi_X(t)=E[e^{itX}]\). Which are TRUE?</p>
+<ol type="A"><li>If \(\varphi_{X_n}(t)\to\varphi_X(t)\) pointwise, then \(X_n\overset{d}{\to}X\) (Lévy's continuity theorem).</li><li>The characteristic function uniquely determines the distribution.</li><li>For i.i.d. \(X_i\) with \(E[X]=0,\mathrm{Var}(X)=1\): \(\varphi_{S_n/\sqrt{n}}(t)\to e^{-t^2/2}\).</li><li>A distribution is symmetric about 0 iff its characteristic function is real-valued.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Lévy's continuity theorem. (B) Inversion theorem: CF uniquely determines the distribution. (C) CLT via CF: \(\varphi_{X/\sqrt n}(t)^n=(1-t^2/(2n)+o(1/n))^n\to e^{-t^2/2}\). (D) Symmetric about 0 \(\Leftrightarrow X\overset{d}{=}-X\Leftrightarrow\varphi_X(t)=\overline{\varphi_X(t)}\Leftrightarrow\varphi_X\) real.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Convergence - Borel-Cantelli Lemmas</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Borel-Cantelli: let \(\{A_n\}\) be events. Which are TRUE?</p>
+<ol type="A"><li>First BC: if \(\sum P(A_n)<\infty\), then \(P(A_n\text{ i.o.})=0\).</li><li>Second BC: if \(\sum P(A_n)=\infty\) and \(\{A_n\}\) independent, then \(P(A_n\text{ i.o.})=1\).</li><li>The first lemma requires independence.</li><li>If \(\sum P(A_n)=\infty\) without independence, \(P(A_n\text{ i.o.})\) can be 0.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) First BC (no independence needed). (B) Second BC requires independence. (C) FALSE: the first lemma holds for any sequence of events (no independence required). (D) Without independence, \(\sum P(A_n)=\infty\) does not guarantee \(P(\text{i.o.})=1\); e.g. \(A_n=A\) for all \(n\): \(\sum P(A)=\infty\) but \(P(A_n\text{ i.o.})=P(A)\) which can be 0.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Convergence - Delta Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Delta method: if \(\sqrt{n}(T_n-\theta)\overset{d}{\to}N(0,\sigma^2)\) and \(g\) is differentiable at \(\theta\), then \(\sqrt{n}(g(T_n)-g(\theta))\overset{d}{\to}N(0,(g'(\theta))^2\sigma^2)\). Which are TRUE?</p>
+<ol type="A"><li>The delta method derives the asymptotic distribution of functions of estimators.</li><li>For \(T_n=\bar X_n\) (sample mean) and \(g(x)=x^2\): \(\sqrt{n}(\bar X_n^2-\mu^2)\overset{d}{\to}N(0,4\mu^2\sigma^2)\).</li><li>The second-order delta method handles the case \(g'(\theta)=0\).</li><li>The delta method requires \(g\) to be twice differentiable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) The delta method is the main tool for deriving asymptotic distributions of smooth functions of CLT-scale estimators. (B) \(g(x)=x^2\), \(g'(\mu)=2\mu\): variance becomes \((2\mu)^2\sigma^2=4\mu^2\sigma^2\). (C) When \(g'(\theta)=0\), the second-order (quadratic) approximation is used, giving a \(\chi^2\) distribution. (D) FALSE: the first-order delta method only requires differentiability at \(\theta\) (not twice).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Convergence - Almost Sure vs In Probability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about the relationship between a.s. and in-probability convergence?</p>
+<ol type="A"><li>If \(X_n\to X\) a.s., then \(X_n\to X\) in probability.</li><li>There exist sequences converging in probability but NOT almost surely.</li><li>If \(X_n\to X\) in probability, there exists a subsequence converging a.s.</li><li>Convergence in probability is equivalent to: every subsequence has a further subsequence converging a.s.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) a.s. \(\Rightarrow\) in probability. (B) Example: typewriter sequence on \([0,1]\). (C) Standard result. (D) Equivalent characterization of convergence in probability via subsequences.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Convergence - Convergence in Distribution Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(X_n\overset{d}{\to}X\). Which are TRUE?</p>
+<ol type="A"><li>\(g(X_n)\overset{d}{\to}g(X)\) if \(g\) is continuous (continuous mapping theorem).</li><li>\(E[X_n]\to E[X]\).</li><li>If additionally \(X_n\overset{d}{\to}c\) (constant), then \(X_n\overset{p}{\to}c\).</li><li>Slutsky's theorem: if \(X_n\overset{d}{\to}X\) and \(Y_n\overset{p}{\to}c\), then \(X_n+Y_n\overset{d}{\to}X+c\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Continuous mapping theorem. (B) FALSE: convergence in distribution does not preserve moments in general. (C) When the limit is a constant, convergence in distribution \(\Leftrightarrow\) in probability. (D) Slutsky's lemma.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Convergence - Tightness and Prokhorov</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A family of probability measures \(\{\mu_n\}\) on \(\mathbb{R}\) is tight if for every \(\varepsilon>0\), \(\exists K\) compact with \(\mu_n(K)\ge1-\varepsilon\) for all \(n\). Which are TRUE?</p>
+<ol type="A"><li>Prokhorov's theorem: every tight sequence has a weakly convergent subsequence.</li><li>A sequence converging in distribution is tight.</li><li>Tightness + every weak limit is the same distribution \(\Rightarrow\) weak convergence.</li><li>On \(\mathbb{R}\), tightness means \(\sup_n E[|X_n|]<\infty\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Prokhorov's theorem (compactness for weak topology). (B) Weakly convergent sequences are tight (limits are probability measures). (C) Tightness + unique weak limit \(\Rightarrow\) weak convergence. (D) FALSE: bounded moments don't characterize tightness exactly. Tightness on \(\mathbb{R}\) means: \(\forall\varepsilon\)\(\exists M: \sup_n P(|X_n|>M)<\varepsilon\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Convergence - L2 Convergence Implies in Prob</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_n\to X\) in \(L^2\) (mean square): \(E[(X_n-X)^2]\to0\). Which are TRUE?</p>
+<ol type="A"><li>\(E[X_n]\to E[X]\).</li><li>\(\mathrm{Var}(X_n)\to\mathrm{Var}(X)\).</li><li>\(X_n\to X\) in probability.</li><li>\(E[X_n^2]\to E[X^2]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) \(|E[X_n]-E[X]|=|E[X_n-X]|\le\sqrt{E[(X_n-X)^2]}\to0\) (Jensen). (C) \(L^2\Rightarrow L^1\Rightarrow\) in probability. (D) \(E[X_n^2]=(E[X_n^2-X^2])+E[X^2]\). Use \(|E[X_n^2-X^2]|\le E[|X_n-X|(|X_n|+|X|)]\le\|X_n-X\|_2(\|X_n\|_2+\|X\|_2)\to0\). (B) Not necessarily: \(\mathrm{Var}(X_n)=E[X_n^2]-(E[X_n])^2\to E[X^2]-(E[X])^2=\mathrm{Var}(X)\). So (B) IS TRUE. All four are TRUE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Convergence - Markov and Chebyshev Inequalities</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE?</p>
+<ol type="A"><li>Markov: \(P(X\ge t)\le E[X]/t\) for \(X\ge0\), \(t>0\).</li><li>Chebyshev: \(P(|X-\mu|\ge k\sigma)\le1/k^2\).</li><li>Chernoff bound: \(P(X\ge t)\le e^{-st}M_X(s)\) for all \(s>0\) (where \(M_X\) is the MGF).</li><li>The Paley-Zygmund inequality: \(P(X>0)\ge(E[X])^2/E[X^2]\) for \(X\ge0\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Markov's inequality. (B) Chebyshev (apply Markov to \((X-\mu)^2\)). (C) Chernoff bound via MGF. (D) Paley-Zygmund: follows from Cauchy-Schwarz applied to \(E[X]=E[X\mathbf{1}_{X>0}]\le\sqrt{E[X^2]}\sqrt{P(X>0)}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Convergence - Stable Distributions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A distribution is stable if a sum of independent copies (scaled) has the same distribution. Which are TRUE?</p>
+<ol type="A"><li>The normal distribution is stable (Gaussian is \(\alpha=2\) stable).</li><li>The Cauchy distribution is stable with index \(\alpha=1\).</li><li>Stable distributions with \(\alpha<2\) have infinite variance.</li><li>The generalized CLT: if \(X_i\) are i.i.d. with tail \(P(|X|>x)\sim x^{-\alpha}\) (\(0<\alpha<2\)), the normalized sum converges to an \(\alpha\)-stable distribution.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Normal: \(\alpha=2\). (B) Cauchy: \(\alpha=1\). (C) Stable distributions with \(\alpha<2\) have heavy tails and infinite variance. (D) Generalized CLT (Gnedenko-Lévy).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Convergence - Conditional Expectations</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(E[X|\mathcal{F}]\) (conditional expectation given \(\sigma\)-algebra \(\mathcal{F}\)). Which are TRUE?</p>
+<ol type="A"><li>Tower property: \(E[E[X|\mathcal{G}]|\mathcal{F}]=E[X|\mathcal{F}]\) when \(\mathcal{F}\subseteq\mathcal{G}\).</li><li>If \(X\) is \(\mathcal{F}\)-measurable, then \(E[X|\mathcal{F}]=X\).</li><li>If \(X\) is independent of \(\mathcal{F}\), then \(E[X|\mathcal{F}]=E[X]\).</li><li>Jensen's inequality: \(\phi(E[X|\mathcal{F}])\le E[\phi(X)|\mathcal{F}]\) for convex \(\phi\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Tower/smoothing property. (B) If known, conditional expectation is the variable itself. (C) Independence: conditioning gives the unconditional mean. (D) Conditional Jensen's inequality.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Convergence - Martingale Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A sequence \(\{M_n\}\) is a martingale if \(E[M_{n+1}|\mathcal{F}_n]=M_n\). Which are TRUE?</p>
+<ol type="A"><li>If \(\sup_n E[|M_n|]<\infty\), then \(M_n\to M_\infty\) a.s. (martingale convergence).</li><li>If \(\{M_n\}\) is UI, then \(M_n\to M_\infty\) in \(L^1\) as well.</li><li>A non-negative martingale converges a.s.</li><li>The optional stopping theorem: \(E[M_\tau]=E[M_0]\) for bounded stopping times \(\tau\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Martingale convergence theorem (Doob). (B) UI martingale converges in \(L^1\). (C) Non-negative martingales are bounded in \(L^1\), hence converge a.s. by (A). (D) Optional stopping theorem.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Convergence - Moment Generating Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(M_{X_n}(t)\to M_X(t)\) for all \(t\) in a neighborhood of 0, then \(X_n\overset{d}{\to}X\). Which are TRUE?</p>
+<ol type="A"><li>MGF uniquely determines the distribution (when it exists in a neighborhood of 0).</li><li>If \(X_n\overset{d}{\to}X\) and MGFs converge pointwise near 0, then all moments converge.</li><li>The Poisson distribution is the limit of Binomial\((n,p_n)\) when \(np_n\to\lambda\).</li><li>MGF of \(N(\mu,\sigma^2)\) is \(e^{\mu t+\sigma^2t^2/2}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) MGF uniqueness. (B) MGF convergence implies moment convergence. (C) Poisson limit theorem. (D) Normal MGF.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</small><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Convergence - Glivenko-Cantelli</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Glivenko-Cantelli theorem: \(\sup_x|F_n(x)-F(x)|\to0\) a.s. (where \(F_n\) is the empirical CDF). Which are TRUE?</p>
+<ol type="A"><li>The empirical CDF is a consistent estimator of \(F\) uniformly over all \(x\).</li><li>The rate of convergence in the Glivenko-Cantelli theorem is \(O(n^{-1/2})\) in probability.</li><li>The Kolmogorov-Smirnov statistic \(\sqrt{n}\sup|F_n-F|\overset{d}{\to}\) Kolmogorov distribution.</li><li>Glivenko-Cantelli is a uniform SLLN for CDFs.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(D) Glivenko-Cantelli. (B) Dvoretzky-Kiefer-Wolfowitz inequality gives exponential bounds, rate \(O(n^{-1/2})\). (C) The Kolmogorov-Smirnov statistic has a limiting distribution.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Convergence - Continuous Mapping Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(g:\mathbb{R}^k\to\mathbb{R}^m\) be continuous a.e. w.r.t. the distribution of \(X\). Which are TRUE?</p>
+<ol type="A"><li>If \(X_n\overset{d}{\to}X\), then \(g(X_n)\overset{d}{\to}g(X)\).</li><li>If \(X_n\overset{p}{\to}X\), then \(g(X_n)\overset{p}{\to}g(X)\) (when \(g\) is continuous).</li><li>If \(X_n\to X\) a.s., then \(g(X_n)\to g(X)\) a.s.</li><li>The continuous mapping theorem applies to joint convergence: \((X_n,Y_n)\overset{d}{\to}(X,Y)\Rightarrow X_n+Y_n\overset{d}{\to}X+Y\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B)(C) Continuous mapping theorem holds for all three modes of convergence. (D) Joint convergence: addition is a continuous function, so the CMT applies.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

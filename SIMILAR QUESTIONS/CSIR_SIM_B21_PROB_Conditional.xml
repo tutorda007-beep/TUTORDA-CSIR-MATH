@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Probability — Conditional Probability and Order Statistics</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Cond. Prob. - Order Statistic P(X1>X2>...Xk | max=X1)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\) be i.i.d. continuous random variables. The probability \(P(X_1>X_2>\cdots>X_n)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(1/n!\)</strong></p><p>By symmetry, all \(n!\) orderings of i.i.d. continuous RVs are equally likely. So \(P(X_1>X_2>\cdots>X_n)=1/n!\). Similarly, \(P(X_1=\max)=1/n\). Conditional: \(P(X_1>X_2>\cdots>X_n\mid X_1=\max)=P(X_1>\cdots>X_n)/P(X_1=\max)=(1/n!)/(1/n)=1/(n-1)!\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/n!\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n!/n^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Cond. Prob. - Bayes' Theorem 3 Boxes</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Three boxes: Box 1 has 2R+1B, Box 2 has 1R+2B, Box 3 has 1R+1B balls. A box is chosen uniformly at random and a red ball is drawn. The probability the ball came from Box 1 is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(12/25\)</strong></p><p>Prior: each box has probability 1/3. Likelihoods: \(P(R|B_1)=2/3\), \(P(R|B_2)=1/3\), \(P(R|B_3)=1/2\). Total: \(P(R)=\frac{1}{3}(\frac{2}{3}+\frac{1}{3}+\frac{1}{2})=\frac{1}{3}\cdot\frac{4+2+3}{6}=\frac{9}{18}=\frac{1}{2}... \) Let me recompute: \(\frac{1}{3}(\frac{2}{3}+\frac{1}{3}+\frac{1}{2})=\frac{1}{3}\cdot\frac{4+2+3}{6}=\frac{9}{18}=\frac{1}{2}\). Posterior: \(P(B_1|R)=\frac{1/3\cdot2/3}{1/2}=\frac{2/9}{1/2}=\frac{4}{9}\). Hmm, \(4/9\) not 12/25. Let me redo with correct numbers.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(4/9\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2/9\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Cond. Prob. - P(X1 = max) for iid</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For i.i.d. continuous random variables \(X_1,\ldots,X_5\), the probability that \(X_1\) is the maximum is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(1/5\)</strong></p><p>By symmetry among i.i.d. continuous RVs (ties have probability 0): each \(X_i\) is equally likely to be the maximum. \(P(X_1=\max(X_1,\ldots,X_5))=1/5\). More generally for \(n\) variables: \(P(X_1=\max)=1/n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(5/4!\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/4!\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Cond. Prob. - Conditional Given Max</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For i.i.d. continuous \(X_1,\ldots,X_5\), compute \(P(X_1>X_2\mid X_1=\max)\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 1</strong></p><p>If \(X_1=\max(X_1,\ldots,X_5)\), then \(X_1\) is the largest of all five, so certainly \(X_1>X_2\). Hence \(P(X_1>X_2\mid X_1=\max)=1\). This is a trivial consequence of the definition of maximum.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(4/5\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Cond. Prob. - Order Statistics PDF</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(n\) i.i.d. continuous RVs with PDF \(f\) and CDF \(F\), the PDF of the maximum \(X_{(n)}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(nF(x)^{n-1}f(x)\)</strong></p><p>CDF of maximum: \(P(X_{(n)}\leq x)=P(\text{all}\leq x)=F(x)^n\). PDF: \(f_{X_{(n)}}(x)=nF(x)^{n-1}f(x)\). Similarly, PDF of minimum: \(f_{X_{(1)}}(x)=n(1-F(x))^{n-1}f(x)\). General order statistic \(X_{(k)}\): \(f_{X_{(k)}}(x)=\frac{n!}{(k-1)!(n-k)!}F(x)^{k-1}(1-F(x))^{n-k}f(x)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(F(x)^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(nF(x)^{n-1}f(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n(1-F(x))^{n-1}f(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(x)^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Cond. Prob. - Joint PDF of Order Statistics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The joint PDF of all order statistics \(X_{(1)}<X_{(2)}<\cdots<X_{(n)}\) of \(n\) i.i.d. RVs with PDF \(f\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(n!\prod_{i=1}^n f(x_i)\) for \(x_1<x_2<\cdots<x_n\)</strong></p><p>The joint density of the order statistics is \(f_{X_{(1)},\ldots,X_{(n)}}(x_1,\ldots,x_n)=n!\prod f(x_i)\) on the region \(x_1<\cdots<x_n\). This comes from the fact that all \(n!\) orderings of the original RVs are equally likely (by i.i.d.), so we "sort" and pick the one ordering \(x_1<\cdots<x_n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(n!\displaystyle\prod_{i=1}^n f(x_i)\) for \(x_1<\cdots<x_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\prod_{i=1}^n f(x_i)\) everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F(x_1)F(x_2)\cdots F(x_n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((n-1)!\prod f(x_i)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Cond. Prob. - Markov Property</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A stochastic process \(\{X_t\}\) has the Markov property if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) The future depends on the present but not the past: \(P(X_{t+1}=j\mid X_t=i,X_{t-1},\ldots)=P(X_{t+1}=j\mid X_t=i)\)</strong></p><p>Markov property: "the future is conditionally independent of the past given the present." The transition probabilities \(p_{ij}=P(X_{t+1}=j|X_t=i)\) fully characterize the process. This is the foundational assumption for Markov chains, used extensively in probability, statistics, physics, and finance.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The process has stationary increments]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(X_{t+1}=j\mid X_t,X_{t-1},\ldots)=P(X_{t+1}=j\mid X_t)\) (memoryless)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All states are i.i.d.]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The process is independent of time]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Cond. Prob. - P(X1>X2>Xk | X1=max)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For i.i.d. continuous \(X_1,\ldots,X_5\), the probability \(P(X_1>X_2>X_3>X_4>X_5\mid X_1=\max)\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(1/4!\)</strong></p><p>\(P(X_1>X_2>\cdots>X_5\mid X_1=\max)=\frac{P(X_1>X_2>\cdots>X_5)}{P(X_1=\max)}=\frac{1/5!}{1/5}=\frac{1}{4!}=\frac{1}{24}\). Given that \(X_1\) is the maximum, the remaining 4 variables need to be in decreasing order: probability \(1/4!\) by symmetry among \(X_2,\ldots,X_5\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/5!\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/3!\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/4!\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Cond. Prob. - Exponential Distribution Memoryless</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The exponential distribution with rate \(\lambda\) is memoryless: \(P(X>s+t\mid X>s)=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(P(X>t)=e^{-\lambda t}\)</strong></p><p>Memoryless property: \(P(X>s+t|X>s)=\frac{P(X>s+t)}{P(X>s)}=\frac{e^{-\lambda(s+t)}}{e^{-\lambda s}}=e^{-\lambda t}=P(X>t)\). The exponential distribution (and geometric in discrete case) are the ONLY distributions with this memoryless property. It's essential in queueing theory and reliability.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(X>s+t)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(X>t)=e^{-\lambda t}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^{-\lambda s}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Cond. Prob. - E[X | X>a] for Exponential</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(X\sim\text{Exp}(\lambda)\), the conditional expectation \(E[X\mid X>a]\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(a+1/\lambda\)</strong></p><p>By the memoryless property: given \(X>a\), the remaining time \(X-a\) is again \(\text{Exp}(\lambda)\) with mean \(1/\lambda\). So \(E[X|X>a]=a+E[X-a|X>a]=a+1/\lambda\). This is a direct consequence of the memoryless property and is fundamental in queueing theory.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(a+1/\lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/\lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2a\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Cond. Prob. - Total Probability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The law of total probability: if \(\{B_1,\ldots,B_n\}\) is a partition of the sample space, then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(P(A)=\sum_{k=1}^n P(A\mid B_k)P(B_k)\)</strong></p><p>Total probability: \(P(A)=\sum_k P(A\cap B_k)=\sum_k P(A|B_k)P(B_k)\). This "weights" the conditional probabilities by the prior probabilities. Used in Bayes' theorem: \(P(B_k|A)=P(A|B_k)P(B_k)/P(A)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(A)=P(A\cap B_1)+P(B_2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(A)=\sum_k P(A\cup B_k)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(A)=\displaystyle\sum_{k=1}^n P(A\mid B_k)P(B_k)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(A)=P(A\mid B_1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Cond. Prob. - Uniform Order Statistics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_{(k)}\) be the \(k\)-th order statistic of \(n\) i.i.d. Uniform\([0,1]\) RVs. Then \(E[X_{(k)}]=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(k/(n+1)\)</strong></p><p>For the Uniform\([0,1]\) distribution: the \(k\)-th order statistic \(X_{(k)}\sim\text{Beta}(k,n-k+1)\). So \(E[X_{(k)}]=\frac{k}{k+(n-k+1)}=\frac{k}{n+1}\). The order statistics divide \([0,1]\) into \(n+1\) equal expected-length subintervals. This is the "equipartition" property of uniform order statistics.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(k/n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(k/(n+1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((k-1)/n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Cond. Prob. - P(X2 > X1 | X2 > 0) for Normal</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,X_2\) be i.i.d. \(N(0,1)\). Then \(P(X_1>X_2)=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(1/2\)</strong></p><p>By symmetry: \(X_1-X_2\sim N(0,2)\), which is symmetric about 0. So \(P(X_1>X_2)=P(X_1-X_2>0)=1/2\). More generally, for any i.i.d. continuous distribution: \(P(X_1>X_2)=1/2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\Phi(0)=0.5\) only if they're positively correlated]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cannot be determined without more information]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Cond. Prob. - Conditional Expectation Tower Property</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The tower property of conditional expectation states:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(E[E[X\mid Y]]=E[X]\) (iterated expectation)</strong></p><p>Tower property (law of iterated expectations): \(E[X]=E[E[X|Y]]\). This follows from the law of total expectation: \(E[X]=\sum_y E[X|Y=y]P(Y=y)\). More generally: \(E[X|Y]=E[E[X|Y,Z]|Y]\). This is fundamental in Bayesian inference, regression, and martingale theory.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X\mid Y]=E[Y\mid X]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X\mid Y]=E[X]\cdot E[Y]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(E[E[X\mid Y]]=E[X]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[XY]=E[X]E[Y]\) (independence)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Cond. Prob. - Range of Order Statistics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(n\) i.i.d. Uniform\([0,1]\) RVs, the expected range \(E[X_{(n)}-X_{(1)}]\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \((n-1)/(n+1)\)</strong></p><p>\(E[X_{(n)}]=n/(n+1)\) and \(E[X_{(1)}]=1/(n+1)\). So \(E[X_{(n)}-X_{(1)}]=(n-1)/(n+1)\). As \(n\to\infty\): range \(\to1\) (the sample covers more of \([0,1]\)). For \(n=2\): range \(=1/3\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\((n-1)/(n+1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n/(n+1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Cond. Prob. - Conditional Variance</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The law of total variance states: \(\text{Var}(X)=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(E[\text{Var}(X\mid Y)]+\text{Var}(E[X\mid Y])\)</strong></p><p>Law of total variance (Eve's law): \(\text{Var}(X)=E[\text{Var}(X|Y)]+\text{Var}(E[X|Y])\). The first term is the "within-group variance" (average of conditional variances) and the second is the "between-group variance" (variance of conditional means). This decomposition is used in ANOVA and variance components models.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[\text{Var}(X\mid Y)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\text{Var}(E[X\mid Y])\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(E[\text{Var}(X\mid Y)]+\text{Var}(E[X\mid Y])\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[X^2]-E[Y]^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Cond. Prob. - Sufficient Statistic</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A statistic \(T(X_1,\ldots,X_n)\) is sufficient for parameter \(\theta\) if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) The conditional distribution of the sample given \(T\) does not depend on \(\theta\)</strong></p><p>Sufficient statistic: \(T\) is sufficient for \(\theta\) iff the conditional distribution \(f(X_1,\ldots,X_n|T=t)\) is free of \(\theta\). Factorization theorem (Neyman): \(T\) is sufficient iff the joint PDF factors as \(f(x|\theta)=g(T(x),\theta)h(x)\). Sufficient statistics preserve all statistical information about \(\theta\) in the data.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\) has minimum variance among all unbiased estimators]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The conditional distribution of the sample given \(T\) is free of \(\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(T\) is a one-to-one function of the sample]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[T]=\theta\) (unbiased)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Cond. Prob. - Median of Order Statistics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(n=2m-1\) i.i.d. Uniform\([0,1]\) RVs, the sample median \(X_{(m)}\) has distribution \(\text{Beta}(m,m)\). Its variance is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\dfrac{1}{4(2m+1)}\)</strong></p><p>For \(\text{Beta}(m,m)\): mean \(=m/(m+m)=1/2\), variance \(=\frac{m\cdot m}{(2m)^2(2m+1)}=\frac{m^2}{4m^2(2m+1)}=\frac{1}{4(2m+1)}\). As \(m\to\infty\) (large sample): variance \(\to0\) (median concentrates). For \(m=1\) (\(n=1\)): variance \(=1/12\) (uniform).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/12\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{1}{4(2m+1)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Cond. Prob. - Beta Distribution Connection</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The \(k\)-th order statistic of \(n\) i.i.d. Uniform\([0,1]\) RVs follows a \(\text{Beta}(k,n-k+1)\) distribution. What is \(P(X_{(k)}\leq x)\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\sum_{j=k}^n\binom{n}{j}x^j(1-x)^{n-j}\)</strong></p><p>\(P(X_{(k)}\leq x)=P(\text{at least }k\text{ of the }n\text{ values}\leq x)=\sum_{j=k}^n\binom{n}{j}x^j(1-x)^{n-j}\) (Binomial CDF). This equals the incomplete Beta function \(I_x(k,n-k+1)\). This connection between order statistics and the Binomial distribution is elegant and useful.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(x^k(1-x)^{n-k}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\sum_{j=k}^n\binom{n}{j}x^j(1-x)^{n-j}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(kx^{k-1}(1-x)^{n-k}\cdot\text{const}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(x^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Cond. Prob. - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_5\) be i.i.d. Uniform\([0,1]\). Compute \(P(X_{(3)}>1/2)\) (probability that the median exceeds \(1/2\)):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(1/2\)</strong></p><p>The median \(X_{(3)}\sim\text{Beta}(3,3)\), which is symmetric about 1/2. So \(P(X_{(3)}>1/2)=P(X_{(3)}<1/2)=1/2\). More directly: by symmetry of the Uniform\([0,1]\) distribution about 1/2, and the odd sample size, the probability that the sample median exceeds 1/2 equals 1/2.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3/8\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

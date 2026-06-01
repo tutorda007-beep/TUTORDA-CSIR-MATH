@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Linear Algebra — Inner Product and Orthogonal Complement</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Inner Product - Standard on R^n</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The standard inner product on \(\mathbb{R}^n\) is \(\langle x,y\rangle=\sum_{i=1}^n x_iy_i\). Which property does it NOT generally satisfy for \(x\neq y\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(\langle x,y\rangle=\langle y,x\rangle^2\)</strong></p><p>The standard inner product satisfies: (A) linearity in first argument, (B) symmetry \(\langle x,y\rangle=\langle y,x\rangle\), (C) positive definiteness \(\langle x,x\rangle\geq0\) with equality iff \(x=0\). It does NOT satisfy \(\langle x,y\rangle=\langle y,x\rangle^2\) in general — that would require the inner product to equal its own square, which is false.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\langle\alpha x+\beta y,z\rangle=\alpha\langle x,z\rangle+\beta\langle y,z\rangle\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\langle x,y\rangle=\langle y,x\rangle\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\langle x,x\rangle\geq0\) with equality iff \(x=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\langle x,y\rangle=\langle y,x\rangle^2\) for all \(x\neq y\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Inner Product - Cauchy-Schwarz</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Cauchy–Schwarz inequality states: for any inner product space, \(|\langle u,v\rangle|\leq\|u\|\cdot\|v\|\). Equality holds if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(u\) and \(v\) are linearly dependent</strong></p><p>Equality \(|\langle u,v\rangle|=\|u\|\|v\|\) iff \(u=\lambda v\) for some scalar \(\lambda\) (or one of them is zero). Geometrically: equality means the "angle" between \(u\) and \(v\) is 0 or \(\pi\), i.e., they are parallel. Cauchy–Schwarz is used to define angles in abstract inner product spaces.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(u=v\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(u\) and \(v\) are linearly dependent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\langle u,v\rangle=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|u\|=\|v\|=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Inner Product - Orthogonal Complement</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(W\) is a subspace of an inner product space \(V\), then \(V=W\oplus W^\perp\) means:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Every \(v\in V\) has a unique decomposition \(v=w+w^\perp\) with \(w\in W\) and \(w^\perp\in W^\perp\)</strong></p><p>Orthogonal decomposition theorem: for a closed subspace \(W\) of a Hilbert space, \(V=W\oplus W^\perp\). Every vector has a unique decomposition. The component \(w\) is the orthogonal projection of \(v\) onto \(W\). In finite dimensions, all subspaces are closed.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(W=W^\perp\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W\cap W^\perp=V\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Every \(v\in V\) has a unique decomposition \(v=w+w^\perp\) with \(w\in W,\;w^\perp\in W^\perp\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dim W=\dim W^\perp\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Inner Product - Gram-Schmidt</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Apply Gram–Schmidt to \(\{(1,1,0),(1,0,1),(0,1,1)\}\) in \(\mathbb{R}^3\). The first two orthonormal vectors are \(e_1=\frac{1}{\sqrt{2}}(1,1,0)\) and \(e_2=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\frac{1}{\sqrt{6}}(1,-1,2)\)</strong></p><p>Subtract projection: \(v_2=(1,0,1)-\langle(1,0,1),e_1\rangle e_1=(1,0,1)-\frac{1}{\sqrt{2}}\cdot\frac{1}{\sqrt{2}}(1,1,0)=(1,0,1)-\frac{1}{2}(1,1,0)=(\frac{1}{2},-\frac{1}{2},1)\). Normalize: \(\|(\frac{1}{2},-\frac{1}{2},1)\|=\sqrt{\frac{1}{4}+\frac{1}{4}+1}=\sqrt{\frac{6}{4}}=\frac{\sqrt{6}}{2}\). So \(e_2=\frac{2}{\sqrt{6}}(\frac{1}{2},-\frac{1}{2},1)=\frac{1}{\sqrt{6}}(1,-1,2)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\frac{1}{\sqrt{2}}(1,0,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\frac{1}{\sqrt{6}}(1,-1,2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\frac{1}{\sqrt{3}}(1,1,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\frac{1}{\sqrt{2}}(0,1,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Inner Product - Integral Inner Product</text></name>
+  <questiontext format="html"><text><![CDATA[<p>On \(C[0,1]\), the inner product \(\langle f,g\rangle=\displaystyle\int_0^1 f(t)g(t)\,dt\). For the subspace \(W=\{f:f(0)=0\}\), the orthogonal complement \(W^\perp\) contains functions \(h\) satisfying:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(\int_0^1 h(t)f(t)\,dt=0\) for all \(f\in W\)</strong></p><p>By definition: \(h\in W^\perp\Leftrightarrow\langle h,f\rangle=0\) for all \(f\in W\), i.e., \(\int_0^1 h(t)f(t)\,dt=0\) for all \(f\in W=\{f:f(0)=0\}\). In an infinite-dimensional setting, \(W^\perp\) may be trivial unless the inner product has special properties.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(h(0)=1\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(h\) is a constant function]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(h(t)=0\) for all \(t\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\int_0^1 h(t)f(t)\,dt=0\) for all \(f\in W\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Inner Product - Pythagorean Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(u\perp v\) in an inner product space, then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\|u+v\|^2=\|u\|^2+\|v\|^2\)</strong></p><p>Pythagorean theorem: \(\|u+v\|^2=\langle u+v,u+v\rangle=\|u\|^2+2\langle u,v\rangle+\|v\|^2=\|u\|^2+\|v\|^2\) (since \(\langle u,v\rangle=0\)). This generalises to any orthogonal set: \(\|\sum_i u_i\|^2=\sum_i\|u_i\|^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\|u+v\|^2=\|u\|^2+\|v\|^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|u+v\|=\|u\|+\|v\|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|u+v\|^2=(\|u\|+\|v\|)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u=v\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Inner Product - Parallelogram Law</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A norm \(\|\cdot\|\) on a vector space comes from an inner product if and only if it satisfies the parallelogram law:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\|u+v\|^2+\|u-v\|^2=2(\|u\|^2+\|v\|^2)\)</strong></p><p>Jordan–von Neumann theorem: a norm is induced by an inner product iff it satisfies the parallelogram identity. If it does, the inner product is recovered by polarization: \(4\langle u,v\rangle=\|u+v\|^2-\|u-v\|^2\). The \(L^p\) norm for \(p\neq2\) fails this, explaining why \(L^2\) is special among \(L^p\) spaces.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|u+v\|\leq\|u\|+\|v\|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|u+v\|=\|u-v\|\) for all \(u,v\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\|u+v\|^2+\|u-v\|^2=2(\|u\|^2+\|v\|^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|u\|^2+\|v\|^2=\|u+v\|\cdot\|u-v\|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Inner Product - Bessel's Inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(\{e_1,e_2,\ldots\}\) is an orthonormal set in a Hilbert space and \(v\) is any vector, then Bessel's inequality states:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\sum_{k=1}^\infty|\langle v,e_k\rangle|^2\leq\|v\|^2\)</strong></p><p>Bessel's inequality: the sum of squared Fourier coefficients is bounded by the squared norm. Equality (Parseval's identity) holds iff \(\{e_k\}\) is a complete orthonormal system (ONB). The inequality follows from \(0\leq\|v-\sum_{k=1}^N\langle v,e_k\rangle e_k\|^2=\|v\|^2-\sum_{k=1}^N|\langle v,e_k\rangle|^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum_k|\langle v,e_k\rangle|^2\geq\|v\|^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sum_k|\langle v,e_k\rangle|^2\leq\|v\|^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum_k\langle v,e_k\rangle=\|v\|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|v\|=\sup_k|\langle v,e_k\rangle|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Inner Product - Best Approximation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The element of a closed subspace \(W\) that is closest to \(v\in V\) (in the norm induced by the inner product) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) The orthogonal projection \(P_W v\)</strong></p><p>Best approximation theorem: for a closed subspace \(W\) of a Hilbert space, the unique closest element to \(v\) in \(W\) is the orthogonal projection \(P_W v\), characterized by \(v-P_W v\perp W\). This is the foundation of least-squares, Fourier series, and optimal filtering.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The orthogonal projection \(P_W v\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The zero vector]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The vector in \(W\) with largest norm]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(v\) itself, if \(v\in W^\perp\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Inner Product - Self-Adjoint Operator</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A linear operator \(T\) on an inner product space is self-adjoint if \(\langle Tu,v\rangle=\langle u,Tv\rangle\) for all \(u,v\). In matrix terms (for a real space), this means:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \([T]=[T]^T\) (symmetric matrix)</strong></p><p>For a real inner product space with standard basis, self-adjoint = symmetric: \(\langle Ae_i,e_j\rangle=a_{ji}=\langle e_i,Ae_j\rangle=a_{ij}\). In complex case: self-adjoint = Hermitian (\(A=A^*=\bar{A}^T\)). Self-adjoint operators have real eigenvalues and orthogonal eigenspaces (spectral theorem).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\([T]^2=[T]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\([T]=[T]^T\) (symmetric)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\([T]=-[T]^T\) (skew-symmetric)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\([T][T]^T=I\) (orthogonal)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Inner Product - Dimension of W-perp</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a finite-dimensional inner product space \(V\) with \(\dim V=n\) and \(W\) a subspace with \(\dim W=k\), we have \(\dim W^\perp=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(n-k\)</strong></p><p>From the orthogonal decomposition \(V=W\oplus W^\perp\): \(\dim V=\dim W+\dim W^\perp\), so \(\dim W^\perp=n-k\). Also \((W^\perp)^\perp=W\). In infinite dimensions, \((W^\perp)^\perp\) equals the closure of \(W\), not \(W\) itself unless \(W\) is closed.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(n-k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Inner Product - Unitary Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A complex matrix \(U\) is unitary if \(U^*U=I\). The eigenvalues of a unitary matrix all satisfy:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(|\lambda|=1\)</strong></p><p>If \(Uv=\lambda v\), then \(\|v\|^2=\|Uv\|^2=|\lambda|^2\|v\|^2\) (unitary matrices preserve norms), so \(|\lambda|=1\). Unitary matrices generalize orthogonal matrices to \(\mathbb{C}\): they preserve the complex inner product. All eigenvalues lie on the unit circle.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(|\lambda|=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda\in\mathbb{R}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda=\pm1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Inner Product - Fourier Coefficients</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Fourier coefficient of \(f\in L^2[-\pi,\pi]\) with respect to the orthonormal function \(e_n(x)=\frac{1}{\sqrt{2\pi}}e^{inx}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\hat{f}(n)=\frac{1}{\sqrt{2\pi}}\int_{-\pi}^\pi f(x)e^{-inx}dx\)</strong></p><p>The inner product \(\langle f,e_n\rangle=\int_{-\pi}^\pi f(x)\overline{e_n(x)}dx=\frac{1}{\sqrt{2\pi}}\int_{-\pi}^\pi f(x)e^{-inx}dx\). These are the Fourier coefficients. Parseval's identity: \(\sum_{n=-\infty}^\infty|\hat{f}(n)|^2=\|f\|^2=\int_{-\pi}^\pi|f|^2dx\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\frac{1}{2\pi}\int_{-\pi}^\pi f(x)\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\frac{1}{\sqrt{2\pi}}\int_{-\pi}^\pi f(x)e^{-inx}\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\frac{1}{\sqrt{2\pi}}\int_{-\pi}^\pi f(x)e^{inx}\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\int_{-\pi}^\pi f(x)\cos(nx)\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Inner Product - Projection onto Span</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The orthogonal projection of \(v=(1,2,3)\) onto the subspace spanned by \(u=(1,0,0)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \((1,0,0)\)</strong></p><p>\(\text{proj}_u v=\frac{\langle v,u\rangle}{\langle u,u\rangle}u=\frac{1}{1}(1,0,0)=(1,0,0)\). The residual \(v-\text{proj}_u v=(0,2,3)\perp(1,0,0)\) ✓. The orthogonal projection formula: \(P_u=\frac{uu^T}{\|u\|^2}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\((1,0,0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((1,2,3)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((0,2,3)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((2,0,0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Inner Product - Completeness (Parseval)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An orthonormal set \(\{e_k\}\) in a Hilbert space \(H\) is complete (i.e., an ONB) if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\|v\|^2=\sum_k|\langle v,e_k\rangle|^2\) for all \(v\in H\) (Parseval's identity)</strong></p><p>An ONS is complete iff Parseval's identity holds iff the only vector orthogonal to all \(e_k\) is 0 iff span\(\{e_k\}\) is dense in \(H\). These are all equivalent characterizations of an orthonormal basis (ONB) in a Hilbert space.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The set is finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum_k|\langle v,e_k\rangle|^2<\|v\|^2\) for all \(v\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Parseval's identity: \(\|v\|^2=\sum_k|\langle v,e_k\rangle|^2\) for all \(v\in H\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All \(e_k\) are orthogonal to each other]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Inner Product - Normal Operator</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An operator \(T\) is normal if \(TT^*=T^*T\). Which matrix is normal?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\begin{pmatrix}1&i\\-i&1\end{pmatrix}\)</strong></p><p>A matrix \(A\) is normal iff \(AA^*=A^*A\). For \(A=\begin{pmatrix}1&i\\-i&1\end{pmatrix}\): \(A^*=\begin{pmatrix}1&i\\-i&1\end{pmatrix}=A\) (Hermitian!), so \(AA^*=A^2=A^*A\) ✓. Hermitian, unitary, and skew-Hermitian matrices are all normal. Normal matrices are unitarily diagonalizable (complex spectral theorem).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}1&1\\0&1\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\begin{pmatrix}1&i\\-i&1\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}0&1\\0&0\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\begin{pmatrix}1&2\\3&4\end{pmatrix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Inner Product - Triangle Inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In any inner product space, the triangle inequality \(\|u+v\|\leq\|u\|+\|v\|\) follows from:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) The Cauchy–Schwarz inequality</strong></p><p>\(\|u+v\|^2=\|u\|^2+2\langle u,v\rangle+\|v\|^2\leq\|u\|^2+2|\langle u,v\rangle|+\|v\|^2\leq\|u\|^2+2\|u\|\|v\|+\|v\|^2=(\|u\|+\|v\|)^2\). The key step uses Cauchy–Schwarz: \(|\langle u,v\rangle|\leq\|u\|\|v\|\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The Cauchy–Schwarz inequality]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The parallelogram law]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Pythagorean theorem]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bessel's inequality]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Inner Product - Riesz Representation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Riesz representation theorem states: every bounded linear functional \(\phi\) on a Hilbert space \(H\) is of the form:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\phi(v)=\langle v,u\rangle\) for a unique \(u\in H\)</strong></p><p>Riesz representation: every continuous linear functional on a Hilbert space is given by inner product with a unique fixed vector. This establishes the identification \(H\cong H^*\) for Hilbert spaces — they are self-dual. It is the foundation of the weak formulation in PDEs and quantum mechanics (bra-ket notation).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\phi(v)=\|v\|\) for all \(v\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\phi(v)=\|v\|^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\phi(v)=\langle v,u\rangle\) for a unique \(u\in H\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\phi(v)=0\) for all \(v\perp u\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Inner Product - Polynomial Space</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In \(P_2\) with inner product \(\langle p,q\rangle=\int_0^1 p(t)q(t)\,dt\), the orthogonal complement of \(\{1\}\) (constant functions) consists of:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Polynomials \(p\) with \(\int_0^1 p(t)\,dt=0\)</strong></p><p>\(p\perp\{1\}\Leftrightarrow\langle p,1\rangle=\int_0^1 p(t)\cdot1\,dt=0\). In \(P_2\), this is satisfied by e.g. \(p(t)=t-\frac{1}{2}\) and \(q(t)=t^2-\frac{1}{3}\) (after removing the mean). These are related to Legendre polynomials on \([0,1]\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Only the zero polynomial]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Polynomials \(p\) satisfying \(\int_0^1 p(t)\,dt=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All polynomials of odd degree]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All polynomials with \(p(0)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Inner Product - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In \(\mathbb{R}^3\) with standard inner product, let \(W=\{(x,y,z):x+y+z=0\}\). Then \(\dim(W^\perp)=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) 1</strong></p><p>\(W\) is a 2-dimensional subspace (kernel of the linear functional \((x,y,z)\mapsto x+y+z\)). By the orthogonal decomposition: \(\dim W^\perp=3-\dim W=3-2=1\). Explicitly, \(W^\perp=\mathrm{span}\{(1,1,1)\}\) (the normal to the plane \(x+y+z=0\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

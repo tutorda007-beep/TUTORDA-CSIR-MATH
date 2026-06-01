@@ -1,0 +1,262 @@
+================================================================================
+  CSIR NET MATHEMATICS — SIMILAR QUESTIONS FOLDER
+  CONTENT ABSTRACT
+================================================================================
+  Platform  : Moodle LMS (XML Import)
+  Prepared  : TUTORDA LMS
+  Updated   : June 2026
+  Total Files: 50 Moodle XML quiz files + 1 Excel prompt bank
+================================================================================
+
+OVERVIEW
+--------
+This folder contains 50 Moodle XML quiz files organised into two series:
+
+  Part B  (B01–B25)  —  25 files  —  Single-correct MCQs
+  Part C  (C01–C25)  —  25 files  —  Multiple-correct MCQs
+
+Each file covers one topic and contains 10–20 CSIR NET style questions with
+full worked solutions in generalfeedback (HTML + LaTeX MathJax).
+
+MOODLE FORMAT NOTES
+-------------------
+  Question type   : multichoice
+  Category path   : $course$/CSIR NET Mathematics/Similar Questions/Part B (or C)/<Topic>
+  Answer numbering: abc
+  Shuffle answers : true (Part B),  false (Part C)
+
+  Part B  →  single="true",  penalty=0.25,  correct fraction=100,  wrong=0
+  Part C  →  single="false", penalty=0,     fractions split equally among correct answers
+             (e.g. 3 correct → 33.33333 each;  4 correct → 25 each;  2 correct → 50 each)
+
+================================================================================
+  PART B  —  SINGLE CORRECT MCQs  (25 files)
+================================================================================
+
+REAL ANALYSIS (B01–B05)
+  B01  CSIR_SIM_B01_RA_Countability_Cardinality.xml
+       Countability, uncountability, cardinality comparisons, Cantor-Bernstein
+  B02  CSIR_SIM_B02_RA_Sequences_limsup_liminf.xml
+       Sequence limits, limsup/liminf, Bolzano-Weierstrass, Cauchy criterion
+  B03  CSIR_SIM_B03_RA_Series_Convergence.xml
+       Series tests: ratio, root, comparison, Dirichlet, Abel
+  B04  CSIR_SIM_B04_RA_Continuity.xml
+       Continuity, uniform continuity, IVT, extreme value theorem
+  B05  CSIR_SIM_B05_RA_Uniform_Convergence.xml
+       Pointwise vs uniform convergence, Weierstrass M-test, term-by-term integration
+
+LINEAR ALGEBRA (B06–B10)
+  B06  CSIR_SIM_B06_LA_Matrix_Linear_Maps.xml
+       Matrix representation of linear maps, change of basis
+  B07  CSIR_SIM_B07_LA_Eigenvalues_CharPoly.xml
+       Eigenvalues, characteristic polynomial, Cayley-Hamilton
+  B08  CSIR_SIM_B08_LA_Diagonalizability.xml
+       Diagonalizability conditions, algebraic vs geometric multiplicity
+  B09  CSIR_SIM_B09_LA_Rank_Nullity.xml
+       Rank-nullity theorem, row/column spaces, systems of equations
+  B10  CSIR_SIM_B10_LA_Inner_Product.xml
+       Inner product spaces, Gram-Schmidt, orthogonal projections
+
+COMPLEX ANALYSIS (B11–B12)
+  B11  CSIR_SIM_B11_CA_Contour_Integration.xml
+       Cauchy integral formula, residue theorem, contour integrals
+  B12  CSIR_SIM_B12_CA_Entire_Functions.xml
+       Entire functions, Liouville, order of growth, zeros
+
+ABSTRACT ALGEBRA (B13–B14)
+  B13  CSIR_SIM_B13_ALG_Group_Theory.xml
+       Group generators, subgroups, Lagrange's theorem, normal subgroups
+  B14  CSIR_SIM_B14_ALG_Ring_Theory.xml
+       Rings, ideals, quotient rings, ring homomorphisms
+
+DIFFERENTIAL EQUATIONS (B15–B16)
+  B15  CSIR_SIM_B15_ODE_Euler_Cauchy.xml
+       Euler-Cauchy equations, reduction of order, Frobenius method
+  B16  CSIR_SIM_B16_ODE_Eigenvalue_BVP.xml
+       Eigenvalue boundary value problems, regular Sturm-Liouville
+
+PARTIAL DIFFERENTIAL EQUATIONS (B17)
+  B17  CSIR_SIM_B17_PDE_Classification.xml
+       Classification (elliptic/parabolic/hyperbolic), canonical forms
+
+NUMERICAL METHODS (B18)
+  B18  CSIR_SIM_B18_NUM_Iterative_Methods.xml
+       Newton-Raphson, fixed-point iteration, convergence order
+
+CALCULUS OF VARIATIONS (B19)
+  B19  CSIR_SIM_B19_COV_Euler_Lagrange.xml
+       Euler-Lagrange equations, brachistochrone, isoperimetric problems
+
+PROBABILITY (B20–B21)
+  B20  CSIR_SIM_B20_PROB_Combinatorial.xml
+       Combinatorial probability, inclusion-exclusion, counting
+  B21  CSIR_SIM_B21_PROB_Conditional.xml
+       Conditional probability, Bayes' theorem, independence
+
+STOCHASTIC PROCESSES (B22)
+  B22  CSIR_SIM_B22_STOCH_Markov_Absorbing.xml
+       Markov chains, transition matrices, absorbing states, stationary distribution
+
+MATHEMATICAL STATISTICS (B23–B24)
+  B23  CSIR_SIM_B23_STAT_MLE.xml
+       Maximum likelihood estimation, score function, likelihood equations
+  B24  CSIR_SIM_B24_STAT_Wald_Identity.xml
+       Wald's identity, sequential sampling, stopping times
+
+LINEAR PROGRAMMING (B25)
+  B25  CSIR_SIM_B25_LP_Optimization.xml
+       Feasible region vertices, objective function maximization/minimization
+
+================================================================================
+  PART C  —  MULTIPLE CORRECT MCQs  (25 files)
+================================================================================
+
+REAL ANALYSIS (C01–C04, C25)
+  C01  CSIR_SIM_C01_RA_Power_Series.xml
+       Radius of convergence, Abel's theorem, term-by-term operations
+  C02  CSIR_SIM_C02_RA_Metric_Spaces.xml
+       Open/closed sets, completeness, compactness, Baire category
+  C03  CSIR_SIM_C03_RA_Bounded_Variation.xml
+       Functions of bounded variation, Jordan decomposition, Stieltjes integral
+  C04  CSIR_SIM_C04_RA_Differentiability.xml
+       Derivatives in R^n, mean value theorem, Taylor expansion
+  C25  CSIR_SIM_C25_RA_Lebesgue_Fourier.xml
+       Lebesgue measure, MCT/DCT/Fatou, L^p spaces, Fourier series/transform,
+       Radon-Nikodym, Fubini-Tonelli, distribution theory
+
+LINEAR ALGEBRA (C05–C06, C21)
+  C05  CSIR_SIM_C05_LA_Range_Kernel.xml
+       Range, kernel, dimension theorems, linear independence
+  C06  CSIR_SIM_C06_LA_Reflection_Maps.xml
+       Reflections, orthogonal operators, matrix decompositions
+  C21  CSIR_SIM_C21_LA_Jordan_Spectral.xml
+       Jordan normal form, minimal polynomial, SVD, spectral theorem,
+       positive definite matrices, Gershgorin, Perron-Frobenius
+
+COMPLEX ANALYSIS (C07–C08)
+  C07  CSIR_SIM_C07_CA_Mobius.xml
+       Möbius (linear fractional) transformations, cross-ratio, fixed points
+  C08  CSIR_SIM_C08_CA_Entire_Functions.xml
+       Weierstrass factorization, Picard theorems, Nevanlinna
+
+ABSTRACT ALGEBRA (C09–C10)
+  C09  CSIR_SIM_C09_ALG_GL2.xml
+       GL(2,F), SL(2,F), group actions, conjugacy classes
+  C10  CSIR_SIM_C10_ALG_Polynomial_Rings.xml
+       Polynomial rings, irreducibility, UFD, PID, Gauss's lemma
+
+TOPOLOGY (C11–C12)
+  C11  CSIR_SIM_C11_TOP_Open_Covers.xml
+       Compactness, finite subcovers, Heine-Borel, Tychonoff
+  C12  CSIR_SIM_C12_TOP_Dense_Subsets.xml
+       Density, separability, Baire category theorem, nowhere dense
+
+ORDINARY DIFFERENTIAL EQUATIONS (C13, C24)
+  C13  CSIR_SIM_C13_ODE_Sturm_Liouville.xml
+       Regular Sturm-Liouville problems, eigenfunction expansions, orthogonality
+  C24  CSIR_SIM_C24_ODE_Stability_Systems.xml
+       Lyapunov stability, phase portraits, Hartman-Grobman, Poincaré-Bendixson,
+       Routh-Hurwitz, Lotka-Volterra, Floquet theory, bifurcations
+
+PARTIAL DIFFERENTIAL EQUATIONS (C14)
+  C14  CSIR_SIM_C14_PDE_Harmonic.xml
+       Harmonic functions, mean value property, maximum principle, Green's functions
+
+NUMERICAL METHODS (C15)
+  C15  CSIR_SIM_C15_NUM_Runge_Kutta.xml
+       Runge-Kutta methods, order of accuracy, stability, step size
+
+PROBABILITY (C16, C22)
+  C16  CSIR_SIM_C16_PROB_Convergence.xml
+       Convergence modes hierarchy (a.s., L^p, in prob., in distribution),
+       Borel-Cantelli lemma, uniform integrability
+  C22  CSIR_SIM_C22_PROB_CLT_CharFunctions.xml
+       CLT (classical + Lindeberg-Feller), characteristic functions, Lévy continuity,
+       delta method, stable distributions, multivariate CLT, Slutsky
+
+STOCHASTIC PROCESSES (C17)
+  C17  CSIR_SIM_C17_STOCH_Random_Walk.xml
+       Simple symmetric random walk, recurrence/transience, Pólya's theorem,
+       optional stopping, martingale properties
+
+MATHEMATICAL STATISTICS (C18, C23)
+  C18  CSIR_SIM_C18_STAT_Estimation.xml
+       CRLB, sufficient statistics, Rao-Blackwell, UMVUE, consistency,
+       exponential family, MSE decomposition, MLE properties
+  C23  CSIR_SIM_C23_STAT_HypTesting_Bayesian.xml
+       Neyman-Pearson lemma, UMPU tests, conjugate priors, SPRT, Wilks' theorem,
+       chi-squared GOF, Jeffreys prior, MCMC, multiple testing/FDR
+
+CALCULUS OF VARIATIONS (C19)
+  C19  CSIR_SIM_C19_COV_Euler_Lagrange.xml
+       Euler-Lagrange equation (first and second order functionals),
+       Beltrami identity, brachistochrone, isoperimetric problems, Jacobi/Legendre
+       conditions, conjugate points, Noether's theorem, Pontryagin minimum principle
+
+LINEAR PROGRAMMING (C20)
+  C20  CSIR_SIM_C20_LP_Duality.xml
+       Weak/strong duality, complementary slackness, simplex method,
+       transportation problem, Farkas lemma, KKT conditions, convexity,
+       max-flow min-cut, integer programming, dual simplex
+
+================================================================================
+  QUESTION STATISTICS
+================================================================================
+
+  Series  | Files | Avg Qs/file | Total Qs (approx)
+  --------|-------|-------------|------------------
+  Part B  |   25  |     10      |       ~250
+  Part C  |   25  |     15      |       ~375
+  --------|-------|-------------|------------------
+  TOTAL   |   50  |    ~12.5    |       ~625
+
+================================================================================
+  TOPIC COVERAGE MATRIX
+================================================================================
+
+  Topic                        | Part B files | Part C files
+  -----------------------------|-------------|-------------
+  Real Analysis                |  B01–B05    |  C01–C04, C25
+  Linear Algebra               |  B06–B10    |  C05–C06, C21
+  Complex Analysis             |  B11–B12    |  C07–C08
+  Abstract Algebra             |  B13–B14    |  C09–C10
+  Topology                     |    —        |  C11–C12
+  ODE                          |  B15–B16    |  C13, C24
+  PDE                          |  B17        |  C14
+  Numerical Methods            |  B18        |  C15
+  Calculus of Variations       |  B19        |  C19
+  Probability                  |  B20–B21    |  C16, C22
+  Stochastic Processes         |  B22        |  C17
+  Mathematical Statistics      |  B23–B24    |  C18, C23
+  Linear Programming           |  B25        |  C20
+
+================================================================================
+  IMPORT INSTRUCTIONS (Moodle)
+================================================================================
+
+  1. Log in to Moodle as admin / course teacher
+  2. Go to: Course → Question Bank → Import
+  3. Select format: "Moodle XML"
+  4. Upload the desired XML file(s)
+  5. Questions will appear under the category path embedded in the XML:
+       $course$/CSIR NET Mathematics/Similar Questions/Part B/<Topic>
+       $course$/CSIR NET Mathematics/Similar Questions/Part C/<Topic>
+  6. Create a Quiz activity → Add questions from bank → filter by category
+
+================================================================================
+  FILE NAMING CONVENTION
+================================================================================
+
+  CSIR_SIM_{Series}{Number}_{Subject}_{Topic}.xml
+
+  Series  : B (Part B — single correct)  |  C (Part C — multiple correct)
+  Number  : 01–25
+  Subject : RA=Real Analysis, LA=Linear Algebra, CA=Complex Analysis,
+            ALG=Abstract Algebra, TOP=Topology, ODE=Ordinary DE,
+            PDE=Partial DE, NUM=Numerical, COV=Calculus of Variations,
+            PROB=Probability, STOCH=Stochastic Processes,
+            STAT=Statistics, LP=Linear Programming
+
+================================================================================
+  END OF ABSTRACT
+================================================================================

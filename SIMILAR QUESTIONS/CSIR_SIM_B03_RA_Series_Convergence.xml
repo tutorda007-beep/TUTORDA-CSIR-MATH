@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Real Analysis — Series Convergence</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Series - p-Series Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^p}\) converges if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(p>1\)</strong></p><p>The p-series test: \(\sum 1/n^p\) converges iff \(p>1\). For \(p=1\) (harmonic series) it diverges. For \(p\leq0\) the terms don't go to 0. The integral test: \(\int_1^\infty x^{-p}dx\) converges iff \(p>1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\geq1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(p>1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p\geq2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Series - Harmonic Series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=1}^{\infty}\frac{1}{n}\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Diverges (harmonic series)</strong></p><p>The harmonic series diverges. Classic proof: group terms as \(1+\frac{1}{2}+(\frac{1}{3}+\frac{1}{4})+\cdots\geq 1+\frac{1}{2}+\frac{1}{2}+\cdots\to\infty\). Despite \(1/n\to0\), the series diverges — showing that \(a_n\to0\) is necessary but not sufficient for convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Converges to 1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges to \(\ln 2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Diverges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges absolutely]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Series - Ratio Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=0}^{\infty}\frac{n!}{n^n}\) converges because the ratio test gives \(L=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(L=1/e<1\)</strong></p><p>\(\frac{a_{n+1}}{a_n}=\frac{(n+1)!}{(n+1)^{n+1}}\cdot\frac{n^n}{n!}=\left(\frac{n}{n+1}\right)^n\to e^{-1}=1/e<1\). So the ratio test confirms convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(L=1/e<1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(L=1\) (inconclusive)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(L=e>1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(L=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Series - Root Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the series \(\displaystyle\sum_{n=1}^{\infty}\left(\frac{3n}{n+1}\right)^n\), the root test gives:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(L=3>1\), series diverges</strong></p><p>\(|a_n|^{1/n}=\frac{3n}{n+1}=\frac{3}{1+1/n}\to3\). Since \(L=3>1\), the root test says the series diverges. Alternatively, \(a_n\not\to0\) (terms blow up), so the series diverges by the divergence test.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(L=1/3<1\), series converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(L=1\), test inconclusive]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(L=0\), series converges absolutely]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(L=3>1\), series diverges]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Series - Alternating Series Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The alternating series \(\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{\sqrt{n}}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Conditionally convergent</strong></p><p>By Leibniz's alternating series test: \(1/\sqrt{n}\) is decreasing to 0, so \(\sum(-1)^{n+1}/\sqrt{n}\) converges. But \(\sum 1/\sqrt{n}=\sum n^{-1/2}\) diverges (p-series with \(p=1/2<1\)). So the series converges conditionally but not absolutely.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Absolutely convergent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Conditionally convergent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Divergent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Convergent with sum \(\pi/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Series - Comparison Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^2+n}\) converges. Its sum equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(1\)</strong></p><p>Partial fractions: \(\frac{1}{n^2+n}=\frac{1}{n(n+1)}=\frac{1}{n}-\frac{1}{n+1}\). This telescopes: \(S_N=\sum_{n=1}^N\left(\frac{1}{n}-\frac{1}{n+1}\right)=1-\frac{1}{N+1}\to1\). So the sum is 1.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi^2/6\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ln 2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Series - Absolute vs Conditional Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A series \(\sum a_n\) that converges absolutely implies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\sum a_n\) converges and any rearrangement also converges to the same sum</strong></p><p>If \(\sum|a_n|<\infty\), then \(\sum a_n\) converges (since \(\mathbb{R}\) is complete). Moreover, Riemann's rearrangement theorem says only conditionally convergent series can be rearranged to any desired sum; absolutely convergent series are invariant under rearrangement.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum a_n\) diverges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum a_n\) converges but rearrangements may differ]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sum a_n\) converges and any rearrangement converges to the same sum]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_n\to0\) monotonically]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Series - Geometric Series Sum</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The sum \(\displaystyle\sum_{n=0}^{\infty}\frac{2^n}{3^{n+1}}\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(1\)</strong></p><p>\(\sum_{n=0}^\infty\frac{2^n}{3^{n+1}}=\frac{1}{3}\sum_{n=0}^\infty\left(\frac{2}{3}\right)^n=\frac{1}{3}\cdot\frac{1}{1-2/3}=\frac{1}{3}\cdot3=1\). This uses the geometric series formula \(\sum_{n=0}^\infty r^n=\frac{1}{1-r}\) for \(|r|<1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Series - Dirichlet Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=1}^{\infty}\frac{\sin n}{n}\) converges by which test?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Dirichlet's test</strong></p><p>Dirichlet's test: if \(\{b_n\}\) is monotone decreasing to 0 and the partial sums of \(\{a_n\}\) are bounded, then \(\sum a_n b_n\) converges. Here \(a_n=\sin n\) has bounded partial sums (since \(\sum_{k=1}^N\sin k=\text{Im}\sum_{k=1}^N e^{ik}\) is bounded), and \(b_n=1/n\searrow0\). So \(\sum\sin(n)/n\) converges.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Ratio test]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Dirichlet's test]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Comparison test with \(\sum 1/n^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Root test]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Series - Basel Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The exact sum \(\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^2}\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\pi^2/6\)</strong></p><p>This is the Basel problem, solved by Euler (1734). \(\sum_{n=1}^\infty\frac{1}{n^2}=\frac{\pi^2}{6}\approx1.6449\ldots\). Euler's proof used the factorization of \(\sin x/x=\prod_{n=1}^\infty(1-x^2/n^2\pi^2)\) and comparing coefficients.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ln 2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi^2/6\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Series - Raabe's Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Raabe's test is used when the ratio test gives \(L=1\). For \(\sum a_n\) with \(a_n>0\), Raabe's test uses \(\lim_{n\to\infty}n\left(\dfrac{a_n}{a_{n+1}}-1\right)=R\). The series converges if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(R>1\)</strong></p><p>Raabe's test: if \(R=\lim n(a_n/a_{n+1}-1)>1\), the series converges; if \(R<1\), it diverges; if \(R=1\), inconclusive. This test handles borderline cases like \(\sum 1/(n\log n)\) where the ratio test fails.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(R>1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R<1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(R=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Series - Double Sum</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The double series \(\displaystyle\sum_{m=1}^{\infty}\sum_{n=1}^{\infty}\frac{1}{m^2 n^2}\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\pi^4/36\)</strong></p><p>Since both series converge absolutely, we can factor: \(\sum_{m,n}\frac{1}{m^2n^2}=\left(\sum_m\frac{1}{m^2}\right)\left(\sum_n\frac{1}{n^2}\right)=\frac{\pi^2}{6}\cdot\frac{\pi^2}{6}=\frac{\pi^4}{36}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi^2/36\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi^4/36\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi^4/6\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Series - Riemann Rearrangement</text></name>
+  <questiontext format="html"><text><![CDATA[<p>By Riemann's rearrangement theorem, a <em>conditionally convergent</em> series can be rearranged to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Converge to any prescribed real number, or diverge to \(\pm\infty\)</strong></p><p>Riemann's rearrangement theorem: if \(\sum a_n\) converges conditionally (but not absolutely), then for any \(L\in\mathbb{R}\cup\{\pm\infty\}\), there is a rearrangement converging to \(L\). This dramatically shows how conditionally convergent series are sensitive to order, unlike absolutely convergent ones.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Only converge to the same sum]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only diverge to \(\pm\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only converge to a value in a small interval around the original sum]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Converge to any prescribed real number, or diverge to \(\pm\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Series - Telescoping</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The sum \(\displaystyle\sum_{n=1}^{\infty}\frac{1}{n(n+2)}\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(3/4\)</strong></p><p>Partial fractions: \(\frac{1}{n(n+2)}=\frac{1}{2}\left(\frac{1}{n}-\frac{1}{n+2}\right)\). Sum = \(\frac{1}{2}\left[\left(1+\frac{1}{2}\right)-\lim_{N\to\infty}\left(\frac{1}{N+1}+\frac{1}{N+2}\right)\right]=\frac{1}{2}\cdot\frac{3}{2}=\frac{3}{4}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(3/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ln 2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Series - Convergence of sum n!/n^n</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=1}^{\infty}\frac{n!}{n^n}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Convergent</strong></p><p>By the ratio test: \(\frac{a_{n+1}}{a_n}=\left(\frac{n}{n+1}\right)^n\to e^{-1}<1\). So the series converges. By Stirling: \(n!/n^n\sim\sqrt{2\pi n}/e^n\to0\) exponentially fast, confirming rapid convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Divergent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Convergent]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The ratio test is inconclusive]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Convergent only conditionally]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Series - sum 1/(n log n)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=2}^{\infty}\frac{1}{n\ln n}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) Divergent (by the integral test)</strong></p><p>Integral test: \(\int_2^\infty\frac{dx}{x\ln x}=[\ln(\ln x)]_2^\infty=\infty\). So the series diverges. In general \(\sum\frac{1}{n(\ln n)^p}\) converges iff \(p>1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Convergent by the ratio test]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Convergent by comparison with \(\sum 1/n^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Convergent with sum \(\ln(\ln 2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Divergent (integral test: \(\int_2^\infty\frac{dx}{x\ln x}=\infty\))]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Series - Necessary Condition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(\displaystyle\sum_{n=1}^{\infty}a_n\) converges, then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(a_n\to0\)</strong></p><p>Necessary condition for convergence: if \(\sum a_n\) converges, then \(a_n\to0\). The converse is false (harmonic series). This is the divergence test: if \(a_n\not\to0\), the series diverges.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(a_n\to0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum a_n\) converges absolutely]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_n\) is monotone]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(na_n\to0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Series - Convergence of sum 1/n^(1+1/n)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The series \(\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^{1+1/n}}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Divergent</strong></p><p>\(n^{1+1/n}=n\cdot n^{1/n}\to n\cdot1=n\). So \(\frac{1}{n^{1+1/n}}\sim\frac{1}{n}\), diverging like the harmonic series. More precisely, by limit comparison with \(1/n\): \(\frac{1/n^{1+1/n}}{1/n}=n^{-1/n}\to1>0\), so both diverge together.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Convergent (p-series with \(p>1\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Convergent by the root test]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Divergent (limit comparison with \(\sum 1/n\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The ratio test is conclusive and shows convergence]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Series - Abel's Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Abel's test states: if \(\sum a_n\) converges and \(\{b_n\}\) is monotone and bounded, then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\sum a_n b_n\) converges</strong></p><p>Abel's test: convergence of \(\sum a_n\) + monotone bounded \(\{b_n\}\) implies convergence of \(\sum a_n b_n\). This is a strengthening of Dirichlet's test (which requires \(b_n\to0\)). Abel summation (summation by parts) is the key tool in the proof.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum a_n b_n\) diverges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sum a_n b_n\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum a_n b_n\) converges absolutely]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum a_n b_n^2\) converges]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Series - CSIR Style: Identify Convergent Series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following series is <strong>convergent</strong>?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(\sum\frac{(-1)^n}{n^2}\)</strong></p><p>(A) \(\sum\frac{1}{\sqrt{n}}\): p-series with \(p=1/2<1\), diverges. (B) \(\sum\frac{n}{n+1}\): terms \(\to1\neq0\), diverges. (C) \(\sum\frac{1}{n\ln n}\): diverges (integral test). (D) \(\sum\frac{(-1)^n}{n^2}\): absolutely convergent since \(\sum\frac{1}{n^2}=\pi^2/6<\infty\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{n=1}^\infty\frac{1}{\sqrt{n}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{n=1}^\infty\frac{n}{n+1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{n=2}^\infty\frac{1}{n\ln n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\sum_{n=1}^\infty\frac{(-1)^n}{n^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

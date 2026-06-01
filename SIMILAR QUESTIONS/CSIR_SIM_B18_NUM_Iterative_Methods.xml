@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Numerical Methods — Iterative Methods Jacobi Gauss-Seidel</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Numerical - Jacobi Iteration Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Jacobi iteration for \(Ax=b\) converges if the matrix \(A\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Strictly diagonally dominant</strong></p><p>Sufficient condition for convergence of Jacobi: the matrix \(A\) is strictly diagonally dominant, i.e., \(|a_{ii}|>\sum_{j\neq i}|a_{ij}|\) for all \(i\). Under this condition, the spectral radius of the Jacobi iteration matrix \(\rho(D^{-1}(L+U))<1\), guaranteeing convergence. It also ensures Gauss-Seidel converges.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Strictly diagonally dominant]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Positive definite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Invertible]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Numerical - Newton-Raphson Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Newton–Raphson method \(x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}\) has order of convergence:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Quadratic (order 2)</strong></p><p>Near a simple root \(r\) (where \(f'(r)\neq0\)): \(|e_{n+1}|\approx\frac{|f''(r)|}{2|f'(r)|}|e_n|^2\). The error squares at each step — quadratic convergence. For a root of multiplicity \(m>1\): Newton–Raphson has only linear convergence. The modified Newton \(x_{n+1}=x_n-m\frac{f(x_n)}{f'(x_n)}\) restores quadratic convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Linear (order 1)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Super-linear but less than quadratic]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Quadratic (order 2)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cubic (order 3)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Numerical - Gauss-Seidel vs Jacobi</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Gauss-Seidel method differs from Jacobi in that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) It uses updated values immediately within each iteration</strong></p><p>Gauss-Seidel: when computing \(x_i^{(k+1)}\), it uses already-updated values \(x_1^{(k+1)},\ldots,x_{i-1}^{(k+1)}\) (not the old values as in Jacobi). This typically leads to faster convergence — Gauss-Seidel usually converges about twice as fast as Jacobi. Both converge for strictly diagonally dominant or symmetric positive definite matrices.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[It uses already-updated values immediately in each iteration]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It requires the matrix to be symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It only works for upper triangular systems]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It has slower convergence than Jacobi always]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Numerical - Spectral Radius Convergence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An iterative method \(x^{(k+1)}=Mx^{(k)}+c\) converges for any starting vector if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) The spectral radius \(\rho(M)<1\)</strong></p><p>Convergence criterion: the iteration converges iff \(\rho(M)=\max|\lambda_i(M)|<1\). The error satisfies \(e^{(k)}\to0\) iff \(\rho(M)<1\). The rate of convergence is governed by \(\rho(M)\): smaller spectral radius = faster convergence. For the Jacobi matrix \(M_J=-D^{-1}(L+U)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|M\|_2<1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The spectral radius \(\rho(M)<1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(M\) is symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\det(M)<1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Numerical - Condition Number</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The condition number \(\kappa(A)=\|A\|\cdot\|A^{-1}\|\) for a symmetric positive definite matrix equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\lambda_{\max}/\lambda_{\min}\)</strong></p><p>For a symmetric positive definite matrix: \(\|A\|_2=\lambda_{\max}\) and \(\|A^{-1}\|_2=1/\lambda_{\min}\), so \(\kappa_2(A)=\lambda_{\max}/\lambda_{\min}\). A large condition number indicates the system is ill-conditioned: small changes in \(b\) can cause large changes in the solution \(x\). This governs the accuracy of iterative methods.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|A\|^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_{\max}\cdot\lambda_{\min}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda_{\max}/\lambda_{\min}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/\det(A)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Numerical - Bisection Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The bisection method for finding a root of \(f\) on \([a,b]\) (with \(f(a)f(b)<0\)) has order of convergence:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Linear (order 1), halving the interval each step</strong></p><p>Bisection: \(|e_{n+1}|=|e_n|/2\). This is linear convergence with rate \(1/2\). After \(n\) iterations, the error is at most \((b-a)/2^n\). While reliable (always converges), it is slow compared to Newton-Raphson (quadratic) or secant method (superlinear). Number of iterations needed for tolerance \(\epsilon\): \(n\geq\lceil\log_2((b-a)/\epsilon)\rceil\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Linear (order 1), error halved each step]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Quadratic (order 2)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Super-linear (order 1.618...)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cubic (order 3)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Numerical - LU Decomposition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The LU decomposition writes \(A=LU\) where \(L\) is lower triangular and \(U\) is upper triangular. The system \(Ax=b\) is solved by:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Forward substitution for \(Ly=b\), then backward substitution for \(Ux=y\)</strong></p><p>LU solve: (1) \(A=LU\), (2) solve \(Ly=b\) (forward substitution, \(O(n^2)\)), (3) solve \(Ux=y\) (back substitution, \(O(n^2)\)). Total: \(O(n^2)\) per right-hand side after the \(O(n^3)\) factorization. Efficient for multiple right-hand sides.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Back substitution for \(Lb=y\), then forward substitution for \(Uy=x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Solve \(Ux=b\) and \(Ly=x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Forward substitution for \(Ly=b\), then back substitution for \(Ux=y\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Direct inversion of \(A\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Numerical - Fixed Point Iteration</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The fixed-point iteration \(x_{n+1}=g(x_n)\) converges to the fixed point \(x^*=g(x^*)\) if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(|g'(x^*)|<1\)</strong></p><p>Convergence criterion for fixed-point iteration near \(x^*\): if \(|g'(x^*)|<1\), the iteration is locally convergent (linear convergence with rate \(|g'(x^*)|\)). If \(|g'(x^*)|>1\), it diverges. If \(g'(x^*)=0\) (superlinear). Banach's contraction: global convergence if \(|g'(x)|\leq k<1\) for all \(x\) in the interval.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(g'(x^*)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(|g'(x^*)|<1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(g''(x^*)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|g'(x^*)|>1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Numerical - Trapezoidal Rule Error</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The trapezoidal rule \(\int_a^b f(x)\,dx\approx\frac{h}{2}[f(a)+2f(a+h)+\cdots+2f(b-h)+f(b)]\) has truncation error of order:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(O(h^2)\)</strong></p><p>Trapezoidal rule: global error \(E=-\frac{(b-a)h^2}{12}f''(\xi)\) for some \(\xi\in(a,b)\), i.e., \(O(h^2)\). Simpson's rule has error \(O(h^4)\). Midpoint rule: error \(O(h^2)\). The trapezoidal rule is exact for polynomials of degree \(\leq1\) (linear functions); Simpson's rule is exact for degree \(\leq3\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h^4)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(O(h^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h^3)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Numerical - Convergence Condition for System</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the \(3\times3\) system: \(4x+y+z=6\), \(x+5y+z=7\), \(x+y+4z=6\), Jacobi iteration:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Converges, since the system is strictly diagonally dominant</strong></p><p>Row 1: \(|4|>|1|+|1|=2\). Row 2: \(|5|>|1|+|1|=2\). Row 3: \(|4|>|1|+|1|=2\). Strictly diagonally dominant \(\Rightarrow\) Jacobi converges. Unique solution: adding all equations gives \(6x+7y+6z=19\)... Actually solving directly: \(x=y=z=1\) satisfies all three (\(4+1+1=6,1+5+1=7,1+1+4=6\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Converges (strictly diagonally dominant, solution is \(x=y=z=1\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Diverges for all starting vectors]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Convergence depends on the starting vector]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cannot converge since the matrix is not symmetric]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Numerical - Runge-Kutta 4th Order</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The classical 4th order Runge-Kutta method for \(y'=f(x,y)\) has local truncation error of order:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(O(h^5)\) (local), \(O(h^4)\) (global)</strong></p><p>RK4: local truncation error \(O(h^5)\); global error \(O(h^4)\). It uses 4 function evaluations per step: \(k_1=f(x_n,y_n)\), \(k_2=f(x_n+h/2,y_n+hk_1/2)\), \(k_3=f(x_n+h/2,y_n+hk_2/2)\), \(k_4=f(x_n+h,y_n+hk_3)\). Then \(y_{n+1}=y_n+h(k_1+2k_2+2k_3+k_4)/6\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(O(h^5)\) local, \(O(h^4)\) global]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h^3)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(h)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Numerical - Lagrange Interpolation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Lagrange interpolating polynomial through \(n+1\) points \((x_0,y_0),\ldots,(x_n,y_n)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(P(x)=\sum_{k=0}^n y_k\prod_{j\neq k}\frac{x-x_j}{x_k-x_j}\)</strong></p><p>Lagrange form: \(P(x)=\sum_{k=0}^n y_k L_k(x)\) where \(L_k(x)=\prod_{j\neq k}(x-x_j)/(x_k-x_j)\). Each \(L_k(x_j)=\delta_{kj}\). The polynomial has degree \(\leq n\). Error: \(f(x)-P(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}\prod_{k=0}^n(x-x_k)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(P(x)=\displaystyle\sum_{k=0}^n y_k\prod_{j\neq k}\frac{x-x_j}{x_k-x_j}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(x)=\sum_{k=0}^n y_k x^k\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(x)=\sum_{k=0}^n y_k\sin(kx)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P(x)=y_0+y_1(x-x_0)+\ldots\) (Newton divided differences)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Numerical - Simpson's Rule</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Simpson's rule \(\int_a^b f\,dx\approx\frac{h}{3}[f(a)+4f(m)+f(b)]\) (where \(m=(a+b)/2\)) is exact for polynomials of degree up to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 3</strong></p><p>Simpson's rule uses a parabola through 3 points and is derived from the integral of the Lagrange interpolant. It is exact for polynomials of degree \(\leq3\) (even though it uses only 3 points — this is a superconvergence phenomenon). Error: \(-\frac{h^5}{90}f^{(4)}(\xi)\), so global error \(O(h^4)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Numerical - Newton-Raphson Application</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Starting with \(x_0=2\), one iteration of Newton–Raphson for \(f(x)=x^2-3\) gives \(x_1=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(7/4\)</strong></p><p>\(f(x)=x^2-3\), \(f'(x)=2x\). \(x_1=x_0-\frac{f(x_0)}{f'(x_0)}=2-\frac{4-3}{4}=2-\frac{1}{4}=\frac{7}{4}\). Then \(x_2=7/4-\frac{(7/4)^2-3}{2(7/4)}=7/4-\frac{49/16-48/16}{7/2}=7/4-\frac{1/16}{7/2}=7/4-1/56=97/56\approx1.732\approx\sqrt3\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(3/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(7/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(5/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{3}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Numerical - Gaussian Elimination Complexity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Gaussian elimination (without partial pivoting) for an \(n\times n\) system requires approximately how many arithmetic operations?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(O(n^3/3)\) multiplications/divisions</strong></p><p>Gaussian elimination: forward elimination requires \(\sum_{k=1}^{n-1}(n-k)^2\approx n^3/3\) multiplications. Back substitution: \(\sim n^2/2\). Total: \(O(n^3/3)\) dominant term. For large \(n\), this is approximately \(2n^3/3\) flops (floating point operations: each multiplication + addition counts as 1 flop in some conventions).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(n^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(n^4)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(O(n^3)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(O(n^2\log n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Numerical - Rounding Error</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Floating-point arithmetic introduces rounding errors. The machine epsilon \(\epsilon_m\) is defined as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) The smallest \(\epsilon\) such that \(fl(1+\epsilon)>1\)</strong></p><p>Machine epsilon \(\epsilon_m\): the gap between 1 and the next floating-point number. For double precision (64-bit IEEE 754): \(\epsilon_m\approx2.22\times10^{-16}\). Any number \(x\) has relative rounding error \(\leq\epsilon_m/2\): \(|fl(x)-x|/|x|\leq\epsilon_m/2\). This bounds the accuracy of any single floating-point operation.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The smallest positive floating-point number]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The smallest \(\epsilon\) such that \(fl(1+\epsilon)>1\) in the floating-point system]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The maximum absolute error in any computation]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Zero (exact arithmetic has no error)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Numerical - Secant Method Order</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The secant method has order of convergence approximately:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 1.618 (golden ratio, \(\phi=(1+\sqrt5)/2\))</strong></p><p>Secant method: \(x_{n+1}=x_n-f(x_n)\frac{x_n-x_{n-1}}{f(x_n)-f(x_{n-1})}\). Order of convergence: \(\phi=(1+\sqrt5)/2\approx1.618\) (superlinear but subquadratic). Uses 1 function evaluation per step (vs 2 for Newton), so per function evaluation, it's comparable to Newton. More precisely: \(|e_{n+1}|\approx C|e_n|^\phi\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[1 (linear)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2 (quadratic)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\phi=(1+\sqrt{5})/2\approx1.618\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3 (cubic)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Numerical - Pivoting in Gaussian Elimination</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Partial pivoting in Gaussian elimination means:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) At each step, swapping rows to bring the largest absolute value in the column to the pivot position</strong></p><p>Partial pivoting: at each elimination step for column \(k\), find the row \(i\geq k\) with the largest \(|a_{ik}|\) and swap rows \(k\) and \(i\). This avoids division by small numbers (which amplifies errors). Partial pivoting ensures the growth factor is bounded and the computation is stable for most practical matrices.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Permuting all rows and columns to maximize the pivot]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Swapping rows to bring the largest absolute value in the current column to the pivot position]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Using only the diagonal entries as pivots]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Permuting the unknowns to improve sparsity]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Numerical - Jacobi Parameter Condition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the 3×3 system parameterized by \(m\): \(\begin{pmatrix}m&1&1\\1&m&1\\1&1&m\end{pmatrix}x=b\), Jacobi iteration converges if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(|m|>2\)</strong></p><p>The Jacobi matrix for this system has rows: \(x_1^{(k+1)}=(b_1-x_2^{(k)}-x_3^{(k)})/m\), etc. The iteration matrix is \(J=-\frac{1}{m}\begin{pmatrix}0&1&1\\1&0&1\\1&1&0\end{pmatrix}\). Eigenvalues of \(B=\begin{pmatrix}0&1&1\\1&0&1\\1&1&0\end{pmatrix}\) are \(2,-1,-1\). So eigenvalues of \(J\) are \(-2/m,1/m,1/m\). Spectral radius \(=2/|m|\). Convergence: \(2/|m|<1\Rightarrow|m|>2\). Strict diagonal dominance: \(|m|>|1|+|1|=2\). Same condition.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(m>0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|m|>1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(|m|>2\) (strictly diagonally dominant)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m>3\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Numerical - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Gauss-Seidel iteration for \(2x+y=3\), \(x+3y=5\) starting from \((0,0)\): after the first complete iteration, \((x_1,y_1)=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \((3/2, 7/6)\)</strong></p><p>Gauss-Seidel step 1: \(x_1=(3-y_0)/2=(3-0)/2=3/2\). Then use updated \(x_1\): \(y_1=(5-x_1)/3=(5-3/2)/3=(7/2)/3=7/6\). So \((x_1,y_1)=(3/2,7/6)\). True solution: \(x=2/5,y=7/5\) (solving: \(2x+y=3,x+3y=5\Rightarrow y=(5-x)/3\Rightarrow2x+(5-x)/3=3\Rightarrow6x+5-x=9\Rightarrow x=4/5,y=7/5\)). Wait: \(6x+5-x=9\Rightarrow5x=4\Rightarrow x=4/5\). Then \(y=(5-4/5)/3=21/15=7/5\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\((1,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\((3/2,\;7/6)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((3/2,\;5/3)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((4/5,\;7/5)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

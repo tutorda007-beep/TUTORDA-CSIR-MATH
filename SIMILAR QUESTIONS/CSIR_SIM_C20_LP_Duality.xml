@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Linear Programming — Duality Theory and Sensitivity</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>LP - Weak and strong duality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Primal: \(\max c^Tx\) s.t. \(Ax\le b,\ x\ge0\). Dual: \(\min b^Ty\) s.t. \(A^Ty\ge c,\ y\ge0\). Which are TRUE?</p>
+<ol type="A"><li>Weak duality: for any primal feasible \(x\) and dual feasible \(y\), \(c^Tx\le b^Ty\).</li><li>Strong duality: if primal has optimal solution \(x^*\), dual has optimal \(y^*\) with \(c^Tx^*=b^Ty^*\).</li><li>Complementary slackness: \(y_i(b_i-a_i^Tx^*)=0\) and \((A^Ty^*-c)_jx_j^*=0\).</li><li>If the primal is unbounded, the dual is also unbounded.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Weak duality: \(c^Tx=x^T c\le x^T A^Ty=(Ax)^Ty\le b^Ty\). (B) Strong duality (Dantzig). (C) KKT / complementary slackness conditions. (D) FALSE: if the primal is unbounded, then the dual is infeasible (not unbounded).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>LP - Simplex method basis</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In the simplex method for \(\max c^Tx\) s.t. \(Ax=b,\ x\ge0\), a basic feasible solution (BFS) corresponds to a basis \(B\subseteq\{1,\ldots,n\}\) with \(|B|=m\). Which are TRUE?</p>
+<ol type="A"><li>A BFS is determined by setting non-basic variables to 0 and solving \(B_Bx_B=b\).</li><li>The optimal BFS (if it exists) is a vertex of the feasible polytope.</li><li>Reduced costs: \(\bar c_j=c_j-c_B^TB^{-1}A_j\); if all \(\bar c_j\le0\) for non-basic \(j\), the current BFS is optimal.</li><li>The simplex method always terminates in polynomial time.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Basics of the simplex method and its geometric interpretation. (C) Optimality criterion for the simplex method (maximization). (D) FALSE: the simplex method can cycle (without pivoting rules) and in the worst case requires exponential time (Klee-Minty example). Interior-point methods run in polynomial time.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>LP - Dual of standard LP</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Given primal: \(\max 2x_1+3x_2\) s.t. \(x_1+x_2\le4\), \(x_1+3x_2\le6\), \(x_1,x_2\ge0\). The dual is:</p>
+<ol type="A"><li>\(\min 4y_1+6y_2\) s.t. \(y_1+y_2\ge2\), \(y_1+3y_2\ge3\), \(y_1,y_2\ge0\).</li><li>Strong duality guarantees equal optimal values.</li><li>If primal optimal is \(x^*=(3,1)\) with value \(9\), then dual optimal value is also \(9\).</li><li>The dual variables have no economic interpretation.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Dual construction: objective \(b^Ty=4y_1+6y_2\), constraints \(A^Ty\ge c\). (B) Strong duality for LP. (C) Primal optimal value = 9 = dual optimal value. (D) FALSE: dual variables are shadow prices — the marginal value of relaxing each constraint by one unit.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>LP - Convex sets and extreme points</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A feasible polytope \(P=\{x:Ax\le b,x\ge0\}\). Which are TRUE?</p>
+<ol type="A"><li>An extreme point (vertex) of \(P\) is a point that cannot be written as a convex combination of two distinct points of \(P\).</li><li>If \(P\) is bounded and non-empty, the LP has an optimal at a vertex.</li><li>Every BFS of the corresponding equality form corresponds to a vertex of \(P\).</li><li>The set of optimal solutions of an LP is always a single vertex.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Definition of extreme point. (B) Fundamental theorem of LP. (C) One-to-one correspondence between BFS and vertices. (D) FALSE: if multiple vertices achieve the optimum, the entire edge (convex combination) is optimal.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>LP - Transportation problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A transportation problem has \(m\) supply nodes (supply \(s_i\)) and \(n\) demand nodes (demand \(d_j\)), with cost \(c_{ij}\) per unit shipped. Which are TRUE?</p>
+<ol type="A"><li>The problem is balanced if \(\sum s_i=\sum d_j\); otherwise a dummy node is added.</li><li>A basic feasible solution has at most \(m+n-1\) basic variables.</li><li>The transportation problem is always feasible if balanced.</li><li>The transportation simplex requires computing \(m\times n\) reduced costs at each step.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Balancing with a dummy supply or demand node. (B) Transportation BFS: \(m+n-1\) basic variables (constraint matrix has rank \(m+n-1\)). (C) Balanced transportation problems are always feasible. (D) FALSE: the transportation simplex uses \(u_i+v_j\) potential method; reduced cost is \(c_{ij}-u_i-v_j\) and only \((m-1)+(n-1)=m+n-2\) potentials need updating.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>LP - Integer programming and relaxation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An integer linear program (ILP) requires all variables to be integers. Which are TRUE?</p>
+<ol type="A"><li>The LP relaxation (removing integrality) gives a lower bound on the ILP minimum (for minimization).</li><li>For totally unimodular constraint matrices, the LP relaxation has an integer optimal solution.</li><li>0-1 ILPs are NP-hard in general.</li><li>Every LP relaxation optimal solution is automatically integer.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) LP relaxation is less constrained → its optimal is ≤ ILP optimal. (B) Total unimodularity (e.g. transportation, network flow matrices) guarantees integrality of LP vertices. (C) ILP is NP-hard (contains 0-1 knapsack, etc.). (D) FALSE: LP relaxation can have fractional solutions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>LP - Game theory and LP duality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A finite two-player zero-sum game has payoff matrix \(A\). Player I chooses row, Player II chooses column. Which are TRUE?</p>
+<ol type="A"><li>The minimax theorem guarantees a mixed strategy Nash equilibrium: \(\max_x\min_y x^TAy=\min_y\max_x x^TAy\).</li><li>Finding optimal mixed strategies reduces to a linear program.</li><li>LP duality corresponds to the minimax = maximin equality.</li><li>Pure strategy equilibria always exist for finite games.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Von Neumann's minimax theorem. (B) The optimal mixed strategy solves an LP. (C) The LP primal-dual pair corresponds exactly to the minimax-maximin equality. (D) FALSE: pure strategy Nash equilibria do not always exist for finite zero-sum games (e.g. rock-paper-scissors has no pure strategy equilibrium).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>LP - KKT conditions for nonlinear optimization</text></name>
+  <questiontext format="html"><text><![CDATA[<p>KKT conditions: minimize \(f(x)\) s.t. \(g_i(x)\le0\) (\(i=1,\ldots,m\)), \(h_j(x)=0\) (\(j=1,\ldots,p\)). At optimum \(x^*\):</p>
+<ol type="A"><li>Stationarity: \(\nabla f(x^*)+\sum\mu_i\nabla g_i(x^*)+\sum\lambda_j\nabla h_j(x^*)=0\).</li><li>Complementary slackness: \(\mu_i g_i(x^*)=0\), \(\mu_i\ge0\).</li><li>KKT conditions are necessary and sufficient for a global minimum when \(f,g_i\) are convex and \(h_j\) are affine.</li><li>KKT conditions are always sufficient for local optimality.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) KKT necessary conditions. (C) For convex \(f\) and \(g_i\), affine \(h_j\), KKT conditions are necessary and sufficient (Slater's condition + convexity). (D) FALSE: KKT conditions are not sufficient for local optimality in general nonconvex problems.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>LP - Sensitivity analysis</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In sensitivity analysis, we study how the optimal solution changes with data perturbations. For a basis \(B\) optimal with \(c_B,b,A_B\). Which are TRUE?</p>
+<ol type="A"><li>The current basis remains optimal as long as \(\bar c_j=c_j-c_B^TB^{-1}A_j\ge0\) for all non-basic \(j\) (for minimization).</li><li>The current basis remains feasible as long as \(B^{-1}(b+\delta b)\ge0\) under perturbation \(\delta b\).</li><li>Dual prices (shadow prices) give the rate of change of the optimal value w.r.t. RHS perturbations.</li><li>The optimal value is a linear function of the RHS perturbations for all values of perturbation.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Optimality condition for current basis. (B) Feasibility condition under RHS perturbation. (C) Shadow prices = dual variables = \(y^*=c_B^TB^{-1}\). (D) FALSE: the optimal value is piecewise linear in RHS perturbations — it is linear only within the range where the current basis remains optimal and feasible.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>LP - Farkas lemma</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Farkas' lemma: exactly one of the following systems has a solution: (I) \(Ax\le b\) for some \(x\ge0\); (II) \(A^Ty\ge0,\ y\ge0,\ b^Ty<0\). Which are TRUE?</p>
+<ol type="A"><li>Farkas' lemma is equivalent to LP duality.</li><li>It provides a certificate of infeasibility: if (I) is infeasible, then (II) has a solution.</li><li>Farkas' lemma is a special case of the separating hyperplane theorem.</li><li>If (I) has a solution and (II) has a solution, they can coexist.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) LP strong duality follows from Farkas' lemma. (B) Exactly one of (I) or (II) holds — (II) witnesses infeasibility of (I). (C) Farkas follows from separating hyperplane in the cone of feasible directions. (D) FALSE: exactly one holds — mutual exclusion is the content of the lemma.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>LP - Network flow max-flow min-cut</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Max-flow min-cut theorem for a network with source \(s\) and sink \(t\). Which are TRUE?</p>
+<ol type="A"><li>The maximum flow from \(s\) to \(t\) equals the minimum capacity of an \(s\)–\(t\) cut.</li><li>The max-flow problem is a special case of LP.</li><li>Ford-Fulkerson algorithm finds a max-flow by augmenting along residual paths.</li><li>The max-flow min-cut theorem follows from LP strong duality.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Ford-Fulkerson max-flow = min-cut theorem. (B) Flow conservation constraints are linear. (C) Ford-Fulkerson augmenting path algorithm. (D) The LP dual of the max-flow LP is the min-cut LP, and strong duality gives max-flow = min-cut.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>LP - Quadratic programming</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Minimize \(\frac{1}{2}x^TQx+c^Tx\) s.t. \(Ax\le b,\ x\ge0\), where \(Q\) is symmetric. Which are TRUE?</p>
+<ol type="A"><li>If \(Q\) is positive semidefinite, the problem is convex.</li><li>KKT conditions are necessary and sufficient when \(Q\succeq0\).</li><li>The active-set method and interior-point methods can solve convex QPs.</li><li>If \(Q\succ0\), the unconstrained minimizer is \(x^*=-Q^{-1}c\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Convexity of QP when \(Q\succeq0\). (B) Convex QP: KKT necessary and sufficient. (C) Standard QP algorithms. (D) Unconstrained QP: \(\nabla(\frac{1}{2}x^TQx+c^Tx)=Qx+c=0\Rightarrow x=-Q^{-1}c\) when \(Q\succ0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>LP - Degeneracy and cycling</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Degeneracy in LP occurs when a BFS has fewer than \(m\) strictly positive basic variables. Which are TRUE?</p>
+<ol type="A"><li>Degenerate pivots (zero-step) can cause cycling in the simplex method.</li><li>Bland's rule (choose smallest index entering and leaving) prevents cycling.</li><li>Perturbation methods can resolve degeneracy.</li><li>Non-degenerate LPs always terminate in at most \(\binom{n}{m}\) iterations of simplex.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Cycling arises from degenerate pivots in the worst case. (B) Bland's smallest-index anti-cycling rule. (C) Perturbation / lexicographic rule resolves degeneracy. (D) Number of bases is at most \(\binom{n}{m}\); non-degenerate simplex visits each basis at most once.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>LP - Convex function properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A function \(f:\mathbb{R}^n\to\mathbb{R}\) is convex if \(f(\lambda x+(1-\lambda)y)\le\lambda f(x)+(1-\lambda)f(y)\) for all \(\lambda\in[0,1]\). Which are TRUE?</p>
+<ol type="A"><li>A local minimum of a convex function on a convex set is a global minimum.</li><li>The sum of convex functions is convex.</li><li>\(f\) is convex iff its Hessian is PSD (for twice-differentiable \(f\)).</li><li>Every convex function is differentiable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Key property: convex optimization has no spurious local minima. (B) Convexity is preserved under non-negative linear combinations. (C) Second-order characterization of convexity. (D) FALSE: \(f(x)=|x|\) is convex but not differentiable at \(x=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>LP - Dual simplex method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The dual simplex method maintains dual feasibility (optimality of basis) while restoring primal feasibility. Which are TRUE?</p>
+<ol type="A"><li>At each step, a basic variable with negative value (primal infeasible) leaves the basis.</li><li>The dual simplex is useful for post-optimality analysis when adding constraints.</li><li>The dual simplex maintains \(\bar c_j\ge0\) for all non-basic \(j\) throughout.</li><li>The dual simplex can only be applied to maximization problems.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Dual simplex: start from dual-feasible (but primal infeasible) basis, pivot to restore primal feasibility. (B) Adding a constraint may violate primal feasibility — dual simplex re-optimizes efficiently. (C) Maintains \(\bar c\ge0\) (dual feasibility) throughout. (D) FALSE: the dual simplex applies to both minimization and maximization.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

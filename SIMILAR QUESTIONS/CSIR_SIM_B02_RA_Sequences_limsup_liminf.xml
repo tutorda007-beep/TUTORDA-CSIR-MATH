@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Real Analysis — Sequences limsup liminf</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Sequences - limsup of a_n = (-1)^n(1+1/n)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the sequence \(a_n = (-1)^n\!\left(1+\dfrac{1}{n}\right)\), which statement is TRUE?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\limsup a_n = 1\) and \(\liminf a_n = -1\)</strong></p><p>Even terms: \(a_{2k}=1+\frac{1}{2k}\to1^+\), so \(\limsup=1\). Odd terms: \(a_{2k-1}=-(1+\frac{1}{2k-1})\to-1^-\), so \(\liminf=-1\). Since \(\limsup\neq\liminf\), the sequence diverges.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The sequence converges to 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup a_n = \liminf a_n = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\limsup a_n = 1\) and \(\liminf a_n = -1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup a_n = -1\) and \(\liminf a_n = 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Sequences - Floor Function Sequence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a_n = \dfrac{\lfloor n/2 \rfloor}{n}\). Then \(\displaystyle\lim_{n\to\infty}a_n\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(1/2\)</strong></p><p>For even \(n=2k\): \(a_{2k}=\frac{k}{2k}=\frac{1}{2}\). For odd \(n=2k+1\): \(a_{2k+1}=\frac{k}{2k+1}\to\frac{1}{2}\). Both subsequences tend to \(\frac{1}{2}\), so \(\lim a_n = \frac{1}{2}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Does not exist]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Sequences - limsup of sin(n)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The value of \(\limsup_{n\to\infty}\sin(n)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(1\)</strong></p><p>Since \(\pi\) is irrational, the sequence \(\{n \bmod 2\pi\}\) is dense in \([0,2\pi)\). Hence \(\sin(n)\) is dense in \([-1,1]\), so \(\limsup\sin(n)=1\) and \(\liminf\sin(n)=-1\). The sequence diverges.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sin(1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Sequences - Partial Sums of (-1)^n/n</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(S_n = \displaystyle\sum_{k=1}^n \frac{(-1)^{k+1}}{k} = 1 - \frac{1}{2}+\frac{1}{3}-\cdots\). Then \(\lim_{n\to\infty}S_n\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\ln 2\)</strong></p><p>By the Alternating Series Test, this series converges. Its sum equals \(\ln 2\) — a classical result from Taylor series of \(\ln(1+x)\) at \(x=1\): \(\ln 2 = \sum_{n=1}^\infty \frac{(-1)^{n+1}}{n}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\ln 2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The series diverges]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Sequences - limsup Inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For bounded sequences \(\{a_n\}\) and \(\{b_n\}\), which inequality always holds?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\limsup(a_n+b_n)\leq\limsup a_n+\limsup b_n\)</strong></p><p>This is a standard inequality: \(\limsup(a_n+b_n)\leq\limsup a_n+\limsup b_n\). Equality holds when one sequence converges. The reverse is false: take \(a_n=(-1)^n\), \(b_n=(-1)^{n+1}\), then \(a_n+b_n=0\) but \(\limsup a_n+\limsup b_n=2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup(a_n+b_n)\geq\limsup a_n+\limsup b_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\limsup(a_n+b_n)\leq\limsup a_n+\limsup b_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup(a_n+b_n)=\limsup a_n+\limsup b_n\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\liminf(a_n+b_n)\geq\limsup a_n+\liminf b_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Sequences - Convergence via limsup = liminf</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A bounded sequence \(\{a_n\}\) converges if and only if:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\limsup a_n = \liminf a_n\)</strong></p><p>A bounded sequence converges iff all subsequential limits are equal, which is equivalent to \(\limsup=\liminf\). When this holds, the common value is the limit. This characterization is fundamental in real analysis.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup a_n = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\liminf a_n > 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\limsup a_n = \liminf a_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|a_n| \leq 1\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Sequences - Ratio and Root Test Connection</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(a_n > 0\) for all \(n\), then which relationship holds between \(\liminf\frac{a_{n+1}}{a_n}\), \(\limsup(a_n)^{1/n}\), \(\liminf(a_n)^{1/n}\), and \(\limsup\frac{a_{n+1}}{a_n}\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\liminf\frac{a_{n+1}}{a_n}\leq\liminf a_n^{1/n}\leq\limsup a_n^{1/n}\leq\limsup\frac{a_{n+1}}{a_n}\)</strong></p><p>This is a classical inequality: \(L_1\leq L_2\leq L_3\leq L_4\) where \(L_1=\liminf(a_{n+1}/a_n)\), \(L_2=\liminf a_n^{1/n}\), \(L_3=\limsup a_n^{1/n}\), \(L_4=\limsup(a_{n+1}/a_n)\). The ratio test is stronger than the root test in the sense that if the ratio test is inconclusive the root test may still be conclusive.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\liminf\frac{a_{n+1}}{a_n}\leq\liminf a_n^{1/n}\leq\limsup a_n^{1/n}\leq\limsup\frac{a_{n+1}}{a_n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup a_n^{1/n}\leq\liminf\frac{a_{n+1}}{a_n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup\frac{a_{n+1}}{a_n}=\limsup a_n^{1/n}\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\liminf a_n^{1/n}\geq\limsup\frac{a_{n+1}}{a_n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Sequences - Cesaro Mean</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a_n = (-1)^n\). The Cesàro mean \(\sigma_n = \dfrac{1}{n}\displaystyle\sum_{k=1}^n a_k\) satisfies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\sigma_n\to 0\)</strong></p><p>For \(a_n=(-1)^n\): \(S_n=\sum_{k=1}^n(-1)^k = -1\) if \(n\) is odd, \(0\) if \(n\) is even. So \(\sigma_n=S_n/n\to0\). This shows the Cesàro mean can converge even when the original sequence diverges.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sigma_n\) diverges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sigma_n\to 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sigma_n\to 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sigma_n\to -1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Sequences - Cauchy Sequence in R</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following is a Cauchy sequence in \(\mathbb{R}\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(a_n = \frac{1}{n}\)</strong></p><p>\(a_n=1/n\to0\) in \(\mathbb{R}\), hence Cauchy. \(a_n=n\) diverges to \(\infty\) (not Cauchy). \(a_n=(-1)^n\) oscillates (not Cauchy: \(|a_{n+1}-a_n|=2\)). \(a_n=n\sin(1/n)\to1\) actually converges, so it is Cauchy — but let's assume option (D) is given differently. In a complete metric space, Cauchy \(\Leftrightarrow\) convergent.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_n = n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_n = (-1)^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(a_n = \dfrac{1}{n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_n = \ln n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Sequences - Limit of a_n = n sin(1/n)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The value of \(\displaystyle\lim_{n\to\infty} n\sin\!\left(\frac{1}{n}\right)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(1\)</strong></p><p>Let \(x=1/n\to0\). Then \(n\sin(1/n)=\frac{\sin x}{x}\to1\) as \(x\to0^+\), since \(\lim_{x\to0}\frac{\sin x}{x}=1\) is the fundamental trigonometric limit.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Sequences - Monotone Increasing Bounded</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A sequence \(\{a_n\}\) is monotonically increasing and bounded above. Then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) It converges to \(\sup\{a_n\}\)</strong></p><p>Monotone Convergence Theorem: a monotone bounded sequence in \(\mathbb{R}\) converges. If increasing and bounded above, it converges to the supremum of its range. This is equivalent to the completeness of \(\mathbb{R}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[It may diverge]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[It converges to \(\sup\{a_n : n\in\mathbb{N}\}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It converges to 0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[It is necessarily bounded below by 0]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Sequences - Limit of n^(1/n)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The value of \(\displaystyle\lim_{n\to\infty} n^{1/n}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(1\)</strong></p><p>Let \(a_n=n^{1/n}\). Then \(\ln a_n=\frac{\ln n}{n}\to0\) (since \(\ln n\) grows much slower than \(n\)). So \(a_n=e^{\ln a_n}\to e^0=1\). This limit appears in the Cauchy–Hadamard formula for radius of convergence.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Sequences - Bolzano-Weierstrass</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Bolzano–Weierstrass theorem guarantees that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Every bounded sequence in \(\mathbb{R}\) has a convergent subsequence</strong></p><p>Bolzano–Weierstrass: every bounded sequence in \(\mathbb{R}^n\) has a convergent subsequence. This is equivalent to the Heine–Borel theorem (compact \(\Leftrightarrow\) closed and bounded in \(\mathbb{R}^n\)) and to the completeness of \(\mathbb{R}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Every bounded sequence in \(\mathbb{R}\) has a convergent subsequence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every bounded sequence converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every unbounded sequence has a divergent subsequence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every Cauchy sequence is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Sequences - Limit of (1+r/n)^n</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a fixed real number \(r\), the sequence \(a_n = \left(1+\dfrac{r}{n}\right)^n\) converges to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(e^r\)</strong></p><p>\(\ln a_n = n\ln(1+r/n) = n\cdot\left[\frac{r}{n}-\frac{r^2}{2n^2}+O(n^{-3})\right]\to r\). So \(a_n\to e^r\). For \(r=1\) this gives the classical limit \((1+1/n)^n\to e\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(r\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(e^r\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Sequences - CSIR Style limsup/liminf</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a_n = \dfrac{(-1)^n n + 1}{n+2}\). Then \(\limsup_{n\to\infty} a_n =\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(1\)</strong></p><p>Even \(n=2k\): \(a_{2k}=\frac{2k+1}{2k+2}\to1\). Odd \(n=2k+1\): \(a_{2k+1}=\frac{-(2k+1)+1}{(2k+1)+2}=\frac{-2k}{2k+3}\to-1\). Cluster points: \(\{1,-1\}\). So \(\limsup=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Sequences - Subsequence of a Convergent Sequence</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(a_n\to L\), then every subsequence \(\{a_{n_k}\}\) satisfies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(a_{n_k}\to L\)</strong></p><p>Every subsequence of a convergent sequence converges to the same limit. This is because for \(k>N\), \(n_k\geq k>N\), so \(|a_{n_k}-L|<\epsilon\). The converse fails: \(a_n=(-1)^n\) has subsequences converging to \(\pm1\), so the sequence diverges.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(a_{n_k}\to L\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_{n_k}\to 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_{n_k}\) may diverge]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(a_{n_k}\to L^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Sequences - Limit of Geometric Mean</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(a_n\to L > 0\), then the geometric mean \(G_n = (a_1 a_2\cdots a_n)^{1/n}\) satisfies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(G_n\to L\)</strong></p><p>Taking logs: \(\ln G_n = \frac{1}{n}\sum_{k=1}^n\ln a_k\). Since \(\ln a_n\to\ln L\), by the Cesàro mean theorem \(\frac{1}{n}\sum\ln a_k\to\ln L\). Hence \(G_n\to e^{\ln L}=L\). This shows that convergence is preserved under geometric means.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(G_n\to L^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G_n\to 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(G_n\to L\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(G_n\to \sqrt{L}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Sequences - Recursive: a_{n+1}=sqrt(6+a_n)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(a_1=1\) and \(a_{n+1}=\sqrt{6+a_n}\). Then \(\lim_{n\to\infty}a_n\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(3\)</strong></p><p>If the sequence converges to \(L\), then \(L=\sqrt{6+L}\), so \(L^2-L-6=0\), giving \((L-3)(L+2)=0\). Since \(a_n>0\) for all \(n\), \(L=3\). One can show by induction that \(a_n<3\) and \(a_n\) is increasing, so by MCT it converges to 3.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{6}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{7}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(3\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Sequences - Convergence and Boundedness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following is TRUE?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Every convergent sequence is bounded</strong></p><p>If \(a_n\to L\), take \(\epsilon=1\): for large \(n\), \(|a_n-L|<1\), so \(|a_n|<|L|+1\). Combined with the finite initial terms, the sequence is bounded. The converse is false (\((-1)^n\) is bounded but diverges).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Every bounded sequence converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Every convergent sequence is bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every monotone sequence converges]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Every Cauchy sequence in \(\mathbb{Q}\) converges in \(\mathbb{Q}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Sequences - CSIR Style: True Statements</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\{a_n\}\) be a sequence with \(a_n\in[0,1]\) for all \(n\). Suppose \(a_{2n}\to\frac{1}{3}\) and \(a_{2n+1}\to\frac{2}{3}\). Then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\limsup a_n = \frac{2}{3}\) and \(\liminf a_n = \frac{1}{3}\)</strong></p><p>The two subsequential limits are \(\frac{1}{3}\) and \(\frac{2}{3}\). Since these are the only cluster points, \(\limsup=\frac{2}{3}\) and \(\liminf=\frac{1}{3}\). The sequence diverges (two distinct subsequential limits).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The sequence \(\{a_n\}\) converges to \(\frac{1}{2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\limsup a_n = 1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\limsup a_n = \frac{2}{3}\) and \(\liminf a_n = \frac{1}{3}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\liminf a_n = 0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

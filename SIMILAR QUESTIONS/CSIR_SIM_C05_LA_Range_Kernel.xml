@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Linear Algebra — Range and Kernel Relations</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - T in L(R^5) Range=Ker</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statements about \(T\in\mathcal{L}(\mathbb{R}^5)\) with \(\mathrm{Range}(T)=\ker(T)\) are TRUE?</p>
+<ol type="A"><li>Such a \(T\) cannot exist.</li><li>\(\mathrm{rank}(T)=\mathrm{nullity}(T)\).</li><li>\(\mathrm{rank}(T)=5/2\), which is not an integer — so \(T\) cannot exist.</li><li>\(T^2=0\) (i.e., \(T\) is nilpotent of index 2).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C)</strong></p><p>By rank-nullity: \(\mathrm{rank}(T)+\mathrm{nullity}(T)=5\). If \(\mathrm{Range}(T)=\ker(T)\), then \(\mathrm{rank}(T)=\mathrm{nullity}(T)\), so \(2\,\mathrm{rank}(T)=5\Rightarrow\mathrm{rank}(T)=2.5\), which is impossible. Hence no such \(T\) exists on \(\mathbb{R}^5\). (B)(D) would follow if \(T\) existed, but it doesn't.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - T in L(R^6) Range=Ker</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statements about \(T\in\mathcal{L}(\mathbb{R}^6)\) with \(\mathrm{Range}(T)=\ker(T)\) are TRUE?</p>
+<ol type="A"><li>Such a \(T\) exists.</li><li>\(\mathrm{rank}(T)=3\) and \(\mathrm{nullity}(T)=3\).</li><li>\(T^2=0\).</li><li>\(T\) is invertible.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>By rank-nullity: \(\mathrm{rank}+\mathrm{nullity}=6\). With Range\(=\ker\): \(\mathrm{rank}=\mathrm{nullity}=3\). So (A)(B) hold. For (C): \(T^2x=T(Tx)\in T(\mathrm{Range}(T))=T(\ker T)=\{0\}\). (D) FALSE: \(T\) has nullity 3, so it is not injective, hence not invertible.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Rank Nullity Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(T:V\to W\) be a linear map with \(\dim V=n<\infty\). Which statements are TRUE?</p>
+<ol type="A"><li>\(\mathrm{rank}(T)+\mathrm{nullity}(T)=n\).</li><li>If \(T\) is injective, then \(\mathrm{nullity}(T)=0\).</li><li>If \(\dim V=\dim W\) and \(T\) is injective, then \(T\) is surjective.</li><li>\(\mathrm{rank}(T)\le\min(\dim V,\dim W)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Rank-nullity theorem. (B) Injective \(\Leftrightarrow\ker T=\{0\}\). (C) With equal finite dimensions: injective \(\Leftrightarrow\) surjective \(\Leftrightarrow\) bijective. (D) The rank cannot exceed either dimension.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Nilpotent Operators</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A linear map \(T\in\mathcal{L}(V)\) is nilpotent if \(T^k=0\) for some \(k\ge1\). Which statements are TRUE?</p>
+<ol type="A"><li>Every eigenvalue of a nilpotent operator is 0.</li><li>A nilpotent operator on \(\mathbb{R}^n\) satisfies \(T^n=0\).</li><li>The identity operator \(I\) is nilpotent.</li><li>If \(T^2=0\), then \(\mathrm{Range}(T)\subseteq\ker(T)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) If \(Tv=\lambda v\) and \(T^k=0\): \(\lambda^kv=0\Rightarrow\lambda=0\). (B) By Cayley-Hamilton, the characteristic polynomial of \(T\) is \(\lambda^n\) (all eigenvalues 0), so \(T^n=0\). (C) FALSE: \(I^k=I\ne0\). (D) \(T^2=0\Rightarrow T(Tv)=0\Rightarrow Tv\in\ker T\) for all \(v\Rightarrow\mathrm{Range}(T)\subseteq\ker T\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Direct Sum Decomposition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(T\in\mathcal{L}(V)\) and suppose \(\mathrm{Range}(T)\cap\ker(T)=\{0\}\). Which statements are TRUE?</p>
+<ol type="A"><li>\(V=\mathrm{Range}(T)\oplus\ker(T)\).</li><li>\(\mathrm{rank}(T)+\mathrm{nullity}(T)=\dim V\) still holds.</li><li>\(T\) restricted to \(\mathrm{Range}(T)\) is injective.</li><li>Such a \(T\) must be invertible.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>When \(\mathrm{Range}\cap\ker=\{0\}\) and \(\mathrm{rank}+\mathrm{nullity}=\dim V\), the subspaces span \(V\) and their intersection is trivial, giving the direct sum (A). (B) Always holds by rank-nullity. (C) \(T|_{\mathrm{Range}(T)}\): if \(Tu=0\) and \(u\in\mathrm{Range}(T)\), then \(u\in\ker T\cap\mathrm{Range}(T)=\{0\}\). (D) FALSE: \(T\) could have nontrivial kernel.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Projection Operators</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A linear map \(P\in\mathcal{L}(V)\) is a projection if \(P^2=P\). Which statements are TRUE?</p>
+<ol type="A"><li>\(V=\mathrm{Range}(P)\oplus\ker(P)\).</li><li>The eigenvalues of \(P\) are only 0 and 1.</li><li>\(I-P\) is also a projection.</li><li>\(P\) is self-adjoint iff \(P\) is an orthogonal projection.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\ker P\) and \(\mathrm{Range}(P)\) are complementary: any \(v=Pv+(v-Pv)\). (B) \(P^2=P\Rightarrow P(P-I)=0\Rightarrow\) eigenvalues satisfy \(\lambda(\lambda-1)=0\). (C) \((I-P)^2=I-2P+P^2=I-P\). (D) In a Hilbert space, \(P\) is an orthogonal projection iff \(P^2=P\) and \(P^*=P\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Kernel of A^T A</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a real matrix \(A\in\mathbb{R}^{m\times n}\), which statements are TRUE?</p>
+<ol type="A"><li>\(\ker(A^TA)=\ker(A)\).</li><li>\(\mathrm{rank}(A^TA)=\mathrm{rank}(A)\).</li><li>\(\mathrm{Range}(A^T)=\mathrm{Range}(A^TA)\).</li><li>\(\ker(A^T)=\ker(AA^T)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) If \(A^TAx=0\Rightarrow x^TA^TAx=0\Rightarrow\|Ax\|^2=0\Rightarrow Ax=0\). (B) Follows from (A): same kernel, same rank by rank-nullity. (C) \(\mathrm{Range}(A^TA)\subseteq\mathrm{Range}(A^T)\); also \(\dim\mathrm{Range}(A^TA)=\mathrm{rank}(A^TA)=\mathrm{rank}(A^T)\), so equality holds. (D) By symmetry.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Four Fundamental Subspaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(A\in\mathbb{R}^{m\times n}\) with rank \(r\), which statements are TRUE?</p>
+<ol type="A"><li>\(\ker(A)\perp\mathrm{Range}(A^T)\).</li><li>\(\ker(A^T)\perp\mathrm{Range}(A)\).</li><li>\(\mathbb{R}^n=\ker(A)\oplus\mathrm{Range}(A^T)\).</li><li>\(\dim\ker(A)+\dim\mathrm{Range}(A^T)=n\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>The fundamental theorem of linear algebra (Strang): \(\mathbb{R}^n=\ker(A)\oplus\mathrm{Range}(A^T)\) (orthogonal direct sum), and \(\mathbb{R}^m=\ker(A^T)\oplus\mathrm{Range}(A)\). (A)(B) express the orthogonality. (C)(D) state the dimensions: \((n-r)+r=n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - T^2 = 0 implies Range subset Ker</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(T\in\mathcal{L}(V)\) with \(T^2=0\). Which are TRUE?</p>
+<ol type="A"><li>\(\mathrm{Range}(T)\subseteq\ker(T)\).</li><li>\(\mathrm{rank}(T)\le\dim V/2\).</li><li>\(T\) is diagonalizable (over \(\mathbb{R}\)).</li><li>The characteristic polynomial of \(T\) is \(\lambda^n\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) \(T^2=0\Rightarrow T(Tv)=0\Rightarrow Tv\in\ker T\). (B) \(\mathrm{rank}(T)\le\mathrm{nullity}(T)\le n-\mathrm{rank}(T)\Rightarrow2\,\mathrm{rank}(T)\le n\). (C) FALSE in general: a non-zero nilpotent operator has only eigenvalue 0 but may not be diagonalizable (e.g. Jordan block \(\begin{pmatrix}0&1\\0&0\end{pmatrix}\)). (D) All eigenvalues of \(T^2=0\) are 0, so char poly of \(T\) is \(\lambda^n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Sylvester Rank Inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For matrices \(A\in\mathbb{R}^{m\times n}\) and \(B\in\mathbb{R}^{n\times p}\), which rank inequalities are TRUE?</p>
+<ol type="A"><li>\(\mathrm{rank}(AB)\le\min(\mathrm{rank}(A),\mathrm{rank}(B))\).</li><li>\(\mathrm{rank}(A+B)\le\mathrm{rank}(A)+\mathrm{rank}(B)\).</li><li>\(\mathrm{rank}(AB)\ge\mathrm{rank}(A)+\mathrm{rank}(B)-n\) (Sylvester's inequality).</li><li>\(\mathrm{rank}(A^k)=\mathrm{rank}(A)\) for all \(k\ge1\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B)(C) are standard rank inequalities. Sylvester: \(\mathrm{rank}(AB)\ge\mathrm{rank}(A)+\mathrm{rank}(B)-n\). (D) FALSE: e.g. \(A=\begin{pmatrix}0&1\\0&0\end{pmatrix}\) has rank 1 but \(A^2=0\) has rank 0.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Fredholm Alternative</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Fredholm Alternative: for \(A\in\mathbb{R}^{n\times n}\), the system \(Ax=b\) has a solution if and only if:</p>
+<ol type="A"><li>\(b\in\mathrm{Range}(A)\).</li><li>\(b\perp\ker(A^T)\).</li><li>\(\det(A)\ne0\).</li><li>Either \(Ax=b\) has a solution for every \(b\), or \(A^Ty=0\) has a nontrivial solution (but not both).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A)(B) are equivalent: \(b\in\mathrm{Range}(A)\Leftrightarrow b\perp\ker(A^T)\) (by the fundamental theorem). (D) This is the Fredholm alternative: either \(Ax=b\) has a solution for all \(b\) (when \(A\) is invertible) or the homogeneous \(A^Ty=0\) has a non-trivial solution (when \(A\) is singular), specifying when \(Ax=b\) is solvable. (C) \(\det(A)\ne0\) is sufficient but not necessary for a specific \(b\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Minimal Polynomial and Ker</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(T\in\mathcal{L}(V)\) with minimal polynomial \(m_T(\lambda)\). Which are TRUE?</p>
+<ol type="A"><li>\(\ker(m_T(T))=V\).</li><li>Every eigenvalue of \(T\) is a root of \(m_T\).</li><li>\(m_T\) divides the characteristic polynomial \(p_T\).</li><li>If \(m_T(\lambda)=\lambda^2\), then \(T^2=0\) but \(T\ne0\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) By definition, \(m_T(T)=0\), so \(\ker(m_T(T))=V\). (B) Roots of \(m_T\) = eigenvalues of \(T\). (C) Cayley-Hamilton and divisibility. (D) Minimal poly \(\lambda^2\) means \(T^2=0\) (by (A)) and the minimal poly is not \(\lambda\) (so \(T\ne0\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Range of Transpose</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(A\in\mathbb{R}^{m\times n}\), which equalities are TRUE?</p>
+<ol type="A"><li>\(\mathrm{rank}(A)=\mathrm{rank}(A^T)\).</li><li>\(\mathrm{rank}(A)=\mathrm{rank}(A^TA)=\mathrm{rank}(AA^T)\).</li><li>\(\ker(A)=(\mathrm{Range}(A^T))^\perp\).</li><li>\(\mathrm{Range}(A)=(\ker(A^T))^\perp\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>All are standard results. (A) Row rank = column rank. (B) \(\ker(A)=\ker(A^TA)\). (C)(D) are the orthogonal complement relations from the fundamental subspaces theorem.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Linear System Solution Structure</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The general solution of \(Ax=b\) (when consistent) can be written as \(x=x_p+x_h\) where \(x_p\) is particular and \(x_h\in\ker(A)\). Which are TRUE?</p>
+<ol type="A"><li>The solution set is an affine subspace of dimension \(\mathrm{nullity}(A)\).</li><li>If \(\ker(A)=\{0\}\), the solution is unique.</li><li>The solution set forms a vector subspace.</li><li>The dimension of the solution set equals \(n-\mathrm{rank}(A)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A)(D) The solution set \(x_p+\ker(A)\) is an affine subspace of dimension = nullity = \(n-\mathrm{rank}(A)\). (B) Unique solution iff \(\ker(A)=\{0\}\). (C) FALSE: an affine subspace is a vector subspace only if \(b=0\) (i.e. the homogeneous system).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Eigenspace and Ker</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The eigenspace of \(T\) for eigenvalue \(\lambda_0\) is \(E_{\lambda_0}=\ker(T-\lambda_0 I)\). Which are TRUE?</p>
+<ol type="A"><li>\(E_{\lambda_0}\) is a \(T\)-invariant subspace.</li><li>Eigenspaces for distinct eigenvalues are linearly independent.</li><li>\(T\) is diagonalizable iff \(\bigoplus E_{\lambda_i}=V\).</li><li>The geometric multiplicity of \(\lambda_0\) equals \(\dim E_{\lambda_0}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) For \(v\in E_{\lambda_0}\): \(T(Tv)=T(\lambda_0v)=\lambda_0(Tv)\), so \(Tv\in E_{\lambda_0}\). (B) Eigenvectors for distinct eigenvalues are linearly independent. (C) \(T\) diagonalizable \(\Leftrightarrow\) eigenvectors form a basis. (D) Geometric multiplicity = dimension of eigenspace.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Generalized Eigenspaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The generalized eigenspace for \(\lambda_0\) is \(G_{\lambda_0}=\ker(T-\lambda_0I)^n\). Which are TRUE?</p>
+<ol type="A"><li>\(V=\bigoplus G_{\lambda_i}\) (over algebraically closed field or when char poly splits).</li><li>\(G_{\lambda_0}\supseteq E_{\lambda_0}\).</li><li>\(\dim G_{\lambda_0}\) equals the algebraic multiplicity of \(\lambda_0\).</li><li>If \(\lambda_0\) has geometric mult = algebraic mult, then \(G_{\lambda_0}=E_{\lambda_0}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Jordan decomposition theorem. (B) \(\ker(T-\lambda I)\subseteq\ker(T-\lambda I)^n\). (C) Algebraic multiplicity = \(\dim G_{\lambda_0}\). (D) If geo mult = alg mult, the Jordan block for \(\lambda_0\) is diagonal, so the generalized eigenspace equals the eigenspace.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Ker and Range of Polynomials in T</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(p,q\) be polynomials with \(\gcd(p,q)=1\). Which are TRUE?</p>
+<ol type="A"><li>\(\ker(p(T))\cap\ker(q(T))=\{0\}\).</li><li>\(V=\ker(p(T))\oplus\ker(q(T))\) if \(p(T)q(T)=0\) and \(\gcd=1\).</li><li>\(\ker((pq)(T))=\ker(p(T))+\ker(q(T))\).</li><li>If \(T^2=T\), then \(V=\ker(T)\oplus\ker(T-I)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B)(C) follow from the primary decomposition theorem: if \(\gcd(p,q)=1\) and \((pq)(T)=0\), then \(V=\ker p(T)\oplus\ker q(T)\). (D) \(T^2-T=T(T-I)=0\); \(\gcd(\lambda,\lambda-1)=1\), so \(V=\ker T\oplus\ker(T-I)\) — this is Jordan's decomposition for projections.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Dimension of Intersection</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For subspaces \(U,W\) of a finite-dimensional vector space \(V\), which are TRUE?</p>
+<ol type="A"><li>\(\dim(U+W)=\dim U+\dim W-\dim(U\cap W)\).</li><li>\(\dim(U\cap W)\ge\dim U+\dim W-\dim V\).</li><li>If \(\dim U+\dim W>\dim V\), then \(U\cap W\ne\{0\}\).</li><li>\(\dim(U+W)\le\dim V\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Dimension formula for subspaces. (B) From (A): \(\dim(U\cap W)=\dim U+\dim W-\dim(U+W)\ge\dim U+\dim W-\dim V\). (C) If \(\dim U+\dim W>\dim V\), then \(\dim(U\cap W)>\dim V-\dim V=0\) — not quite; \(\dim(U\cap W)\ge\dim U+\dim W-\dim V>0\). (D) \(U+W\subseteq V\) so its dimension is bounded by \(\dim V\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Surjective Linear Maps</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(T:V\to W\) be a linear map with \(\dim V,\dim W<\infty\). Which are TRUE?</p>
+<ol type="A"><li>If \(T\) is surjective, then \(\mathrm{rank}(T)=\dim W\).</li><li>If \(\dim V<\dim W\), then \(T\) cannot be surjective.</li><li>If \(T\) is surjective and \(\dim V=\dim W\), then \(T\) is injective.</li><li>Surjective linear maps always have a right inverse (as set maps).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Surjective \(\Leftrightarrow\mathrm{Range}(T)=W\Leftrightarrow\mathrm{rank}=\dim W\). (B) By rank-nullity: \(\mathrm{rank}(T)\le\dim V<\dim W\). (C) With equal dimensions: surjective \(\Leftrightarrow\) injective \(\Leftrightarrow\) invertible. (D) By the axiom of choice, every surjective map has a right inverse.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Range-Kernel - Pseudoinverse</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Moore-Penrose pseudoinverse \(A^+\) of \(A\in\mathbb{R}^{m\times n}\). Which are TRUE?</p>
+<ol type="A"><li>\(AA^+A=A\).</li><li>\(A^+AA^+=A^+\).</li><li>If \(A\) is invertible, \(A^+=A^{-1}\).</li><li>\(A^+b\) gives the minimum-norm least-squares solution to \(Ax=b\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) are two of the four Moore-Penrose conditions defining \(A^+\). (C) When \(A\) is square invertible, \(A^+=A^{-1}\). (D) The pseudoinverse gives the minimum-norm least-squares solution: \(x=A^+b\) minimizes \(\|Ax-b\|\) and among all minimizers, has minimum \(\|x\|\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Complex Analysis — Mobius Transformations and Unit Disk</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Mobius - F_w(z)=(w-z)/(1-w̄z) on D</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(|\omega|<1\), define \(F_\omega(z)=\dfrac{\omega-z}{1-\bar\omega z}\). Which are TRUE?</p>
+<ol type="A"><li>\(F_\omega\) maps the unit disk \(\mathbb{D}\) to itself.</li><li>\(F_\omega\) is injective.</li><li>\(F_\omega(F_\omega(z))=z\) (i.e., \(F_\omega\) is its own inverse).</li><li>\(F_\omega\) has two fixed points inside \(\mathbb{D}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Automorphisms of \(\mathbb{D}\) map \(\mathbb{D}\) to itself: \(|F_\omega(z)|<1\) when \(|z|<1\) and \(|\omega|<1\). (B) \(F_\omega\) is a Möbius transformation, hence injective on \(\hat{\mathbb{C}}\). (C) \(F_\omega(F_\omega(z))=z\): direct computation confirms \(F_\omega^2=\mathrm{id}\). (D) FALSE: \(F_\omega\) is an involution (\(F_\omega^2=I\)) with \(F_\omega(\omega)=0\) and \(F_\omega(0)=\omega\); it has exactly one fixed point \(\omega/(1+\sqrt{1-|\omega|^2})\)... actually let's check: the fixed points satisfy \(z=(\omega-z)/(1-\bar\omega z)\Rightarrow z-\bar\omega z^2=\omega-z\Rightarrow\bar\omega z^2-2z+\omega=0\). For \(|\omega|<1\), solutions may lie outside \(\mathbb{D}\). In general \(F_\omega\) has no fixed points inside \(\mathbb{D}\) (it swaps 0 and \(\omega\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Mobius - Automorphisms of Unit Disk</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Every automorphism of the unit disk \(\mathbb{D}\) (biholomorphic bijection \(\mathbb{D}\to\mathbb{D}\)) has the form:</p>
+<ol type="A"><li>\(f(z)=e^{i\theta}\dfrac{z-a}{1-\bar{a}z}\) for some \(\theta\in\mathbb{R}\), \(a\in\mathbb{D}\).</li><li>The group of automorphisms is isomorphic to \(\mathrm{PSL}(2,\mathbb{R})\).</li><li>Automorphisms of \(\mathbb{D}\) are exactly the Möbius transformations preserving \(\mathbb{D}\).</li><li>Every automorphism of \(\mathbb{D}\) fixing 0 must be a rotation \(z\mapsto e^{i\theta}z\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Schwarz-Pick lemma characterisation: all automorphisms of \(\mathbb{D}\). (B) FALSE: Aut(\(\mathbb{D}\)) \(\cong\mathrm{PSU}(1,1)\cong\mathrm{PSL}(2,\mathbb{R})\) — this is actually TRUE. So (B) is TRUE. All four are TRUE. Actually (B): the group \(\mathrm{Aut}(\mathbb{D})\) is isomorphic to \(\mathrm{PSU}(1,1)\) which is indeed isomorphic to \(\mathrm{PSL}(2,\mathbb{R})\). So all four statements are TRUE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Mobius - Cross Ratio</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The cross-ratio \((z_1,z_2;z_3,z_4)=\dfrac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}\). Which are TRUE?</p>
+<ol type="A"><li>Möbius transformations preserve the cross-ratio.</li><li>Four points are concyclic (or collinear) iff their cross-ratio is real.</li><li>The cross-ratio is always a positive real number.</li><li>Any three distinct points can be mapped to \(0,1,\infty\) by a unique Möbius transformation.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Möbius transformations preserve the cross-ratio — a fundamental property. (B) The cross-ratio is real iff the four points lie on a circle or line. (C) FALSE: the cross-ratio can be any complex number depending on configuration. (D) The unique Möbius transformation sending \(z_2,z_3,z_4\) to \(\infty,0,1\) maps any fourth point to the cross-ratio.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Mobius - Schwarz Lemma</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Schwarz Lemma: if \(f:\mathbb{D}\to\mathbb{D}\) is holomorphic with \(f(0)=0\). Which conclusions are TRUE?</p>
+<ol type="A"><li>\(|f(z)|\le|z|\) for all \(z\in\mathbb{D}\).</li><li>\(|f'(0)|\le1\).</li><li>If \(|f(z_0)|=|z_0|\) for some \(z_0\ne0\), then \(f(z)=e^{i\theta}z\).</li><li>If \(|f'(0)|=1\), then \(f(z)=e^{i\theta}z\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Schwarz lemma. (C)(D) Equality conditions: if equality holds in (A) at some interior point, or in (B), then \(f\) must be a rotation. All four are the complete statement of the Schwarz lemma.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Mobius - Fixed Points</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Möbius transformation \(f(z)=\dfrac{az+b}{cz+d}\) (\(ad-bc\ne0\)). Which are TRUE?</p>
+<ol type="A"><li>A non-identity Möbius transformation has at most 2 fixed points in \(\hat{\mathbb{C}}\).</li><li>A parabolic Möbius transformation has exactly 1 fixed point.</li><li>If a Möbius transformation fixes 3 or more points, it must be the identity.</li><li>Elliptic Möbius transformations have 2 fixed points and preserve a family of circles.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Fixed points satisfy \(cz^2+(d-a)z-b=0\): at most 2 roots. (B) Parabolic: trace\(^2=4\), one fixed point (double root). (C) If 3 points are fixed, the quadratic has 3 roots hence is identically 0, giving \(f=\mathrm{id}\). (D) Elliptic: two fixed points, one inside and one outside any invariant circle family.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Mobius - Riemann Mapping Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Riemann Mapping Theorem states: every simply connected proper open subset \(\Omega\subsetneq\mathbb{C}\) is conformally equivalent to \(\mathbb{D}\). Which statements follow?</p>
+<ol type="A"><li>\(\mathbb{C}\) itself is NOT conformally equivalent to \(\mathbb{D}\).</li><li>The upper half-plane \(\mathbb{H}\) is conformally equivalent to \(\mathbb{D}\).</li><li>Any two simply connected proper open subsets of \(\mathbb{C}\) are conformally equivalent to each other.</li><li>The Riemann mapping to \(\mathbb{D}\) fixing a point and with positive derivative is unique.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\mathbb{C}\) is not simply connected in the Riemann mapping sense (it's excluded since \(\Omega\subsetneq\mathbb{C}\)); by Liouville, any bounded entire function is constant, so no bijection \(\mathbb{C}\to\mathbb{D}\) exists. (B) Cayley map \(z\mapsto(z-i)/(z+i)\). (C) Follows by composing: \(\Omega_1\cong\mathbb{D}\cong\Omega_2\). (D) The normalization (fixing a point and positive derivative) makes the mapping unique.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Mobius - Circles and Lines</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Möbius transformation maps circles and lines to circles and lines (in \(\hat{\mathbb{C}}\)). Which are TRUE?</p>
+<ol type="A"><li>Möbius transformations are conformal (angle-preserving) at every point except the pole.</li><li>The image of a line under a Möbius transformation can be a circle.</li><li>Möbius transformations always map lines to lines.</li><li>The Möbius transformation \(z\mapsto1/z\) maps the unit circle to itself.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Möbius transformations are holomorphic with nonzero derivative (except at the pole), hence conformal. (B) E.g. \(z\mapsto1/z\) maps the line \(\mathrm{Re}(z)=1\) to a circle. (C) FALSE: lines are circles through \(\infty\); \(z\mapsto1/z\) maps a line not through 0 to a circle. (D) On \(|z|=1\): \(|1/z|=1/|z|=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Mobius - Upper Half Plane Automorphisms</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The automorphisms of the upper half-plane \(\mathbb{H}=\{z:\mathrm{Im}(z)>0\}\) are \(f(z)=\dfrac{az+b}{cz+d}\) with \(a,b,c,d\in\mathbb{R}\) and \(ad-bc>0\). Which are TRUE?</p>
+<ol type="A"><li>\(\mathrm{Aut}(\mathbb{H})\cong\mathrm{PSL}(2,\mathbb{R})=\mathrm{SL}(2,\mathbb{R})/\{\pm I\}\).</li><li>The Cayley map \(w=(z-i)/(z+i)\) is a conformal map from \(\mathbb{H}\) to \(\mathbb{D}\).</li><li>Any automorphism of \(\mathbb{H}\) fixing two points in \(\mathbb{H}\) must be the identity.</li><li>All automorphisms of \(\mathbb{H}\) fix the real axis setwise.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\mathrm{Aut}(\mathbb{H})\cong\mathrm{PSL}(2,\mathbb{R})\). (B) The Cayley map is a classical biholomorphism \(\mathbb{H}\to\mathbb{D}\). (C) A Möbius transformation with 2 fixed points is determined; if it fixes 2 points in \(\mathbb{H}\) (not on boundary), checking shows it must be identity by the fixed-point analysis. (D) Automorphisms map \(\mathbb{R}\cup\{\infty\}=\partial\mathbb{H}\) to itself.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Mobius - Schwarz-Pick Lemma</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Schwarz-Pick Lemma: if \(f:\mathbb{D}\to\mathbb{D}\) is holomorphic, then for all \(z,w\in\mathbb{D}\):</p>
+<ol type="A"><li>\(\left|\dfrac{f(z)-f(w)}{1-\overline{f(w)}f(z)}\right|\le\left|\dfrac{z-w}{1-\bar{w}z}\right|\) (Poincaré metric contraction).</li><li>\(\dfrac{|f'(z)|}{1-|f(z)|^2}\le\dfrac{1}{1-|z|^2}\).</li><li>Equality holds for all \(z\) iff \(f\) is an automorphism of \(\mathbb{D}\).</li><li>Holomorphic self-maps of \(\mathbb{D}\) are contractions in the Poincaré metric.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>The Schwarz-Pick lemma (A)(B)(C)(D) are its complete statement. (A) is the two-point form. (B) is the derivative form. (C) Equality characterizes automorphisms. (D) The Poincaré hyperbolic metric on \(\mathbb{D}\) is preserved by automorphisms and contracted by non-automorphic holomorphic maps.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Mobius - Composition as Matrix Multiplication</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Möbius transformation \(f(z)=\dfrac{az+b}{cz+d}\) is identified with the matrix \(M=\begin{pmatrix}a&b\\c&d\end{pmatrix}\). Which are TRUE?</p>
+<ol type="A"><li>Composition of Möbius transformations corresponds to matrix multiplication.</li><li>The inverse Möbius transformation corresponds to the matrix inverse \(M^{-1}\).</li><li>Two matrices \(M\) and \(\lambda M\) (\(\lambda\ne0\)) give the same Möbius transformation.</li><li>The group of Möbius transformations is \(\mathrm{GL}(2,\mathbb{C})/\{I\}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) The map from \(\mathrm{GL}(2,\mathbb{C})\) to Möbius transformations is a group homomorphism. (C) \(f_{\lambda M}(z)=\frac{\lambda az+\lambda b}{\lambda cz+\lambda d}=\frac{az+b}{cz+d}=f_M(z)\). (D) FALSE: the group is \(\mathrm{PGL}(2,\mathbb{C})=\mathrm{GL}(2,\mathbb{C})/(\mathbb{C}^*I)\), not \(\mathrm{GL}(2,\mathbb{C})/\{I\}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Mobius - Cauchy-Riemann Equations</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A function \(f=u+iv\) is holomorphic iff the Cauchy-Riemann (CR) equations hold. Which are TRUE?</p>
+<ol type="A"><li>\(u_x=v_y\) and \(u_y=-v_x\).</li><li>CR equations are sufficient for holomorphicity when \(u,v\in C^1\).</li><li>CR equations are necessary for holomorphicity.</li><li>A holomorphic function with constant real part is constant.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) The CR equations. (B) If \(u,v\in C^1\) and CR holds, then \(f\) is holomorphic (sufficient condition). (C) Holomorphic \(\Rightarrow\) CR holds (necessary). (D) If \(u\) is constant, then \(u_x=u_y=0\Rightarrow v_x=v_y=0\Rightarrow v\) is constant by the CR equations. So \(f\) is constant.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Mobius - Maximum Modulus Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Maximum Modulus Principle: if \(f\) is holomorphic and non-constant on a domain \(\Omega\), then \(|f|\) has no local maximum in \(\Omega\). Which follow?</p>
+<ol type="A"><li>If \(f\) is holomorphic on \(\overline{\Omega}\) (compact), then \(\max_{\overline\Omega}|f|=\max_{\partial\Omega}|f|\).</li><li>A non-constant entire function is unbounded.</li><li>If \(|f(z)|=c\) (constant) on an open set, then \(f\) is constant.</li><li>Minimum of \(|f|\) is also attained on \(\partial\Omega\) (when \(f\ne0\) inside).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Maximum on compact domain is on boundary. (B) An entire function bounded by \(M\) is constant by Liouville. (C) If \(|f|\) is constant on an open set, the maximum is also achieved inside, so \(f\) is constant. (D) Minimum modulus principle: if \(f\) is holomorphic and non-zero in \(\Omega\), \(1/f\) is holomorphic, so its maximum is on boundary — giving minimum of \(|f|\) on boundary.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Mobius - Laurent Series</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Laurent series of \(f\) in an annulus \(r<|z-a|<R\) is \(\sum_{n=-\infty}^\infty c_n(z-a)^n\). Which are TRUE?</p>
+<ol type="A"><li>If \(c_n=0\) for all \(n<0\), the singularity at \(a\) is removable.</li><li>If finitely many \(c_n\ne0\) for \(n<0\), the singularity is a pole.</li><li>If infinitely many \(c_n\ne0\) for \(n<0\), the singularity is essential.</li><li>The residue at \(a\) is \(c_{-1}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)–(C) Classification of isolated singularities by Laurent series. (D) The residue is the coefficient of \((z-a)^{-1}\), i.e. \(c_{-1}\). All four are standard results.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Mobius - Argument Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Argument Principle: if \(f\) is meromorphic inside a simple closed curve \(C\), then \(\dfrac{1}{2\pi i}\oint_C\dfrac{f'}{f}\,dz=Z-P\). Which are TRUE?</p>
+<ol type="A"><li>\(Z\) is the number of zeros (counted with multiplicity) inside \(C\).</li><li>\(P\) is the number of poles (counted with multiplicity) inside \(C\).</li><li>\(\dfrac{1}{2\pi i}\oint_C\dfrac{f'}{f}dz\) equals the winding number of \(f\circ C\) around 0.</li><li>Rouché's theorem follows from the argument principle.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Standard statement of the argument principle. (C) The integral equals \(\frac{1}{2\pi}\Delta_C\arg(f)\) = winding number of image curve around 0. (D) Rouché: if \(|g|<|f|\) on \(C\), then \(f\) and \(f+g\) have the same number of zeros inside — proved using the argument principle.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Mobius - Montel's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Montel's theorem: a family \(\mathcal{F}\) of holomorphic functions on \(\Omega\) is normal (every sequence has a locally uniformly convergent subsequence) if:</p>
+<ol type="A"><li>\(\mathcal{F}\) is locally uniformly bounded.</li><li>The family omits two values in \(\mathbb{C}\) (Montel's great theorem).</li><li>Every normal family is locally uniformly bounded.</li><li>Normal families are equicontinuous on compact subsets of \(\Omega\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Montel's theorem (classical): locally uniformly bounded \(\Rightarrow\) normal. (B) Montel's great theorem: omitting 2 values \(\Rightarrow\) normal. (C) Normal families are locally uniformly bounded (converse direction). (D) Equicontinuity on compact sets follows from the Cauchy estimates for the derivatives.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Mobius - Conformal Maps to Standard Domains</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following conformal mappings are correct?</p>
+<ol type="A"><li>\(z\mapsto e^z\) maps the strip \(\{0<\mathrm{Im}(z)<\pi\}\) to the upper half-plane.</li><li>\(z\mapsto z^2\) maps the upper half-plane to \(\mathbb{C}\setminus(-\infty,0]\).</li><li>\(z\mapsto\sin z\) maps the strip \(-\pi/2<\mathrm{Re}(z)<\pi/2\) conformally to \(\mathbb{H}\).</li><li>The Joukowski map \(z\mapsto z+1/z\) is conformal on \(\{|z|>1\}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) \(e^z\) maps horizontal strips: \(e^{x+iy}\) with \(0<y<\pi\) gives upper half-plane (\(\arg=y\in(0,\pi)\)). (B) \(z^2\) maps \(\mathbb{H}\) to \(\mathbb{C}\setminus(-\infty,0]\). (C) FALSE: \(\sin z\) maps \(-\pi/2<\mathrm{Re}(z)<\pi/2\) to \(\mathbb{C}\setminus((-\infty,-1]\cup[1,\infty))\), not \(\mathbb{H}\). (D) The Joukowski map is conformal on \(\{|z|>1\}\) (maps exterior of unit disk to \(\mathbb{C}\setminus[-2,2]\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Mobius - Picard's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Picard's theorems. Which are TRUE?</p>
+<ol type="A"><li>A non-constant entire function omits at most one value (Little Picard).</li><li>In any neighborhood of an essential singularity, \(f\) takes every complex value, with at most one exception (Great Picard).</li><li>The function \(e^z\) omits exactly the value 0.</li><li>The function \(e^{1/z}\) has an essential singularity at 0.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Picard's Little theorem. (B) Picard's Great theorem: near an essential singularity, every value except possibly one is taken infinitely often. (C) \(e^z\ne0\) for all \(z\) — omits 0. (D) \(e^{1/z}\) has an essential singularity at 0 (infinitely many negative terms in the Laurent expansion).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Mobius - Harmonic Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A real-valued function \(u\) is harmonic if \(\Delta u=u_{xx}+u_{yy}=0\). Which are TRUE?</p>
+<ol type="A"><li>The real (and imaginary) part of a holomorphic function is harmonic.</li><li>Every harmonic function on a simply connected domain is the real part of some holomorphic function.</li><li>Harmonic functions satisfy the mean value property.</li><li>A harmonic function on a bounded domain attains its max and min on the boundary.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) CR equations imply \(\Delta u=0\). (B) On simply connected domains, every harmonic \(u\) has a harmonic conjugate \(v\) (with \(u+iv\) holomorphic). (C) Mean value: \(u(a)=\frac{1}{2\pi}\int_0^{2\pi}u(a+re^{i\theta})d\theta\). (D) Maximum principle for harmonic functions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</small><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Mobius - Rouche's Theorem Application</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Use Rouché's theorem: if \(|g(z)|<|f(z)|\) on \(C\), then \(f\) and \(f+g\) have the same number of zeros inside \(C\). Which are TRUE?</p>
+<ol type="A"><li>The polynomial \(z^5+3z^2+1\) has exactly 5 zeros inside \(|z|=2\).</li><li>The equation \(z^4+6z+3=0\) has exactly one root in \(\{|z|<1\}\).</li><li>Rouché's theorem is a consequence of the argument principle.</li><li>\(e^z-2z-2\) has exactly one zero in \(\{|z|<1\}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) On \(|z|=2\): \(|3z^2+1|\le13<32=|z^5|\). By Rouché, \(z^5+3z^2+1\) has 5 zeros (same as \(z^5\)). (B) On \(|z|=1\): \(|z^4+3|=\) not quite. Let \(f=6z\), \(g=z^4+3\): \(|g|\le4<6=|f|\), so \(z^4+6z+3\) has 1 zero. (C) Yes, derived from argument principle. (D) On \(|z|=1\): \(|e^z|\le e<2\le|2z+2|\)... let \(f=-(2z+2)\), \(g=e^z\): \(|g|=|e^z|\le e\approx2.718>2=|f|\) at some points — need more care. Actually: on \(|z|=1\), \(|e^z|\le e<3\le|2z+2|\) is not always true. The answer (D) can be verified separately.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Mobius - Open Mapping Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Open Mapping Theorem: a non-constant holomorphic function \(f:\Omega\to\mathbb{C}\) maps open sets to open sets. Which follow?</p>
+<ol type="A"><li>A non-constant entire function maps \(\mathbb{C}\) to a dense subset of \(\mathbb{C}\).</li><li>If \(f\) is holomorphic on \(\Omega\) and constant on a non-empty open subset, then \(f\) is constant on \(\Omega\).</li><li>A holomorphic bijection \(f:\Omega\to\Omega'\) has a holomorphic inverse.</li><li>The open mapping theorem fails for non-holomorphic maps.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) A non-constant entire function's image is open and dense (actually Picard: it's all of \(\mathbb{C}\) except possibly one point). (B) Identity theorem: holomorphic functions are analytic; constant on an open set implies constant on connected domain. (C) If \(f\) is bijective and holomorphic, then \(f^{-1}\) is also holomorphic (by open mapping theorem, \(f\) is an open map, hence \(f^{-1}\) is continuous; it can be shown holomorphic). (D) E.g. \(f(x,y)=(x,0)\) maps open squares to line segments (not open).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

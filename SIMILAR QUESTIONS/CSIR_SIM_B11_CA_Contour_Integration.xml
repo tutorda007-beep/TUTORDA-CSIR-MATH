@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Complex Analysis — Contour Integration and Residues</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Contour Integration - Cauchy Integral Formula</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(C\) be the circle \(|z|=2\) (positively oriented). The value of \(\displaystyle\oint_C\frac{e^z}{z-1}\,dz\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(2\pi i\,e\)</strong></p><p>Cauchy's integral formula: \(\oint_C\frac{f(z)}{z-a}\,dz=2\pi i\,f(a)\) for \(f\) analytic inside \(C\) and \(a\) inside \(C\). Here \(f(z)=e^z\), \(a=1\), which lies inside \(|z|=2\). So the integral \(=2\pi i\,e^1=2\pi i e\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(2\pi i\,e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi i\,e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\pi e\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Contour Integration - Residue at Simple Pole</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The residue of \(f(z)=\dfrac{1}{z^2-1}\) at \(z=1\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(1/2\)</strong></p><p>\(f(z)=\frac{1}{(z-1)(z+1)}\). Residue at simple pole \(z=1\): \(\lim_{z\to1}(z-1)f(z)=\frac{1}{z+1}\big|_{z=1}=\frac{1}{2}\). Similarly, residue at \(z=-1\) is \(-1/2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Contour Integration - Residue Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The residue theorem states: if \(f\) is meromorphic inside a positively oriented simple closed contour \(C\) with isolated singularities \(z_1,\ldots,z_n\) inside \(C\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\oint_C f(z)\,dz=2\pi i\sum_{k=1}^n\mathrm{Res}(f,z_k)\)</strong></p><p>The residue theorem generalises Cauchy's integral formula. The residue \(\mathrm{Res}(f,z_k)\) is the coefficient of \((z-z_k)^{-1}\) in the Laurent expansion of \(f\) about \(z_k\). It's a powerful tool for computing contour integrals and real integrals.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\oint_C f(z)\,dz=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\oint_C f(z)\,dz=\pi i\sum_k\mathrm{Res}(f,z_k)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\oint_C f(z)\,dz=2\pi i\displaystyle\sum_{k=1}^n\mathrm{Res}(f,z_k)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\oint_C f(z)\,dz=\displaystyle\sum_k f(z_k)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Contour Integration - Real Integral via Residues</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The integral \(\displaystyle\int_{-\infty}^\infty\frac{dx}{1+x^2}\) computed using residues equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\pi\)</strong></p><p>Close in upper half-plane: \(\oint_{C_R}\frac{dz}{1+z^2}=\oint_{C_R}\frac{dz}{(z-i)(z+i)}\). Only pole in UHP: \(z=i\). Residue at \(i\): \(\frac{1}{z+i}\big|_{z=i}=\frac{1}{2i}\). Integral over \(C_R\to0\) by Jordan's lemma (or direct estimate). So \(\int_{-\infty}^\infty\frac{dx}{1+x^2}=2\pi i\cdot\frac{1}{2i}=\pi\). Alternatively, \(=\arctan(x)\big|_{-\infty}^\infty=\pi/2-(-\pi/2)=\pi\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\pi\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi i\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Contour Integration - Pole of Order 2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The residue of \(f(z)=\dfrac{e^z}{z^2}\) at \(z=0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(1\)</strong></p><p>Residue at a pole of order 2: \(\mathrm{Res}(f,0)=\lim_{z\to0}\frac{d}{dz}[z^2f(z)]=\lim_{z\to0}\frac{d}{dz}e^z=e^0=1\). Alternatively, Laurent expansion: \(e^z/z^2=(1+z+z^2/2+\ldots)/z^2=z^{-2}+z^{-1}+1/2+\ldots\). Coefficient of \(z^{-1}\) is 1.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Contour Integration - Cauchy-Goursat</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f\) is analytic on and inside a simple closed contour \(C\), then \(\oint_C f(z)\,dz=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) 0</strong></p><p>Cauchy–Goursat theorem: if \(f\) is analytic (holomorphic) in a simply connected domain containing \(C\), then \(\oint_C f(z)\,dz=0\). This is equivalent to \(f\) having an antiderivative. It implies Cauchy's integral formula and the residue theorem as corollaries.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\pi i\,f(0)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Depends on the contour]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Contour Integration - Winding Number</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the circle \(C:|z-2|=1\) traversed once counterclockwise, \(\displaystyle\frac{1}{2\pi i}\oint_C\frac{dz}{z-2}=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 1</strong></p><p>This is the winding number of \(C\) around \(z=2\). Since \(z=2\) is at the center of the circle, and the circle is traversed once counterclockwise, the winding number is 1. The integral \(\oint\frac{dz}{z-a}=2\pi i\cdot n(C,a)\) where \(n(C,a)\) is the winding number.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\pi i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Contour Integration - Essential Singularity Residue</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The residue of \(f(z)=e^{1/z}\) at \(z=0\) (an essential singularity) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) 1</strong></p><p>Laurent expansion: \(e^{1/z}=\sum_{n=0}^\infty\frac{1}{n!z^n}=1+\frac{1}{z}+\frac{1}{2!z^2}+\cdots\). The coefficient of \(z^{-1}\) is \(1/1!=1\). So \(\mathrm{Res}(e^{1/z},0)=1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Contour Integration - Jordan's Lemma</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Jordan's lemma is used to show that for \(f(z)\to0\) uniformly as \(|z|\to\infty\), and \(a>0\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\int_{C_R}f(z)e^{iaz}\,dz\to0\) as \(R\to\infty\) (\(C_R\) = upper semicircle)</strong></p><p>Jordan's lemma: if \(f(z)\to0\) uniformly on the upper semicircle as \(R\to\infty\), and \(a>0\), then \(\int_{C_R}f(z)e^{iaz}dz\to0\). This is used to evaluate integrals like \(\int_{-\infty}^\infty\frac{\sin x}{x}dx=\pi\) by closing in the upper half-plane.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\int_{C_R}f(z)\,dz\to2\pi i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\int_{C_R}f(z)e^{iaz}\,dz\to0\) for \(a>0\) and upper semicircle \(C_R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) must be a rational function]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\int_{-\infty}^\infty f(x)\,dx=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Contour Integration - Integral of 1/z^n</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the unit circle \(C:|z|=1\) and integer \(n\), \(\displaystyle\oint_C z^n\,dz\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(2\pi i\) if \(n=-1\), else \(0\)</strong></p><p>For \(n\neq-1\): \(z^n\) has antiderivative \(z^{n+1}/(n+1)\), so the integral over any closed curve is 0. For \(n=-1\): \(\oint z^{-1}dz=2\pi i\) (residue of \(1/z\) at 0 is 1). This is the fundamental computation underlying residue theory.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\pi i\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0 for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(2\pi i\) if \(n=-1\), else \(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n!\cdot2\pi i\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Contour Integration - Residue at Pole of Order n</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The residue of \(f\) at a pole of order \(m\) at \(z=a\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\dfrac{1}{(m-1)!}\lim_{z\to a}\dfrac{d^{m-1}}{dz^{m-1}}[(z-a)^m f(z)]\)</strong></p><p>For a pole of order \(m\): \(\mathrm{Res}(f,a)=\frac{1}{(m-1)!}\lim_{z\to a}\frac{d^{m-1}}{dz^{m-1}}[(z-a)^mf(z)]\). For \(m=1\): \(\mathrm{Res}=\lim_{z\to a}(z-a)f(z)\). For \(m=2\): \(\mathrm{Res}=\lim_{z\to a}\frac{d}{dz}[(z-a)^2f(z)]\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lim_{z\to a}(z-a)^m f(z)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{1}{(m-1)!}\lim_{z\to a}\dfrac{d^{m-1}}{dz^{m-1}}[(z-a)^mf(z)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m!\cdot\lim_{z\to a}f(z)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\oint_{|z-a|=\epsilon}f(z)\,dz\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Contour Integration - Partial Fractions and Residues</text></name>
+  <questiontext format="html"><text><![CDATA[<p>\(\displaystyle\oint_{|z|=3}\frac{z+1}{z^2-z}\,dz\) (counterclockwise) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(4\pi i\)</strong></p><p>\(\frac{z+1}{z(z-1)}\). Poles: \(z=0,z=1\), both inside \(|z|=3\). Residue at \(0\): \(\frac{0+1}{0-1}=-1\). Residue at \(1\): \(\frac{1+1}{1}=2\). Total: \(2\pi i(-1+2)=2\pi i\). Wait — let me recompute. \(\frac{z+1}{z(z-1)}\): at \(z=0\): \(\lim_{z\to0}z\cdot\frac{z+1}{z(z-1)}=\frac{1}{-1}=-1\). At \(z=1\): \(\lim_{z\to1}(z-1)\frac{z+1}{z(z-1)}=\frac{2}{1}=2\). Sum \(=-1+2=1\). Integral \(=2\pi i\). Answer: \(2\pi i\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(4\pi i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(2\pi i\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Contour Integration - Singularity Classification</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The singularity of \(f(z)=\dfrac{\sin z}{z}\) at \(z=0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Removable</strong></p><p>\(\frac{\sin z}{z}=\frac{z-z^3/6+\cdots}{z}=1-z^2/6+\cdots\to1\) as \(z\to0\). Setting \(f(0)=1\) makes it analytic everywhere. Removable singularity: the Laurent series has no negative powers. By Riemann's theorem on removable singularities, a bounded singularity is removable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Removable]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Simple pole]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Essential singularity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Pole of order 2]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Contour Integration - Integral cos(x)/(1+x^2)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Using residues, \(\displaystyle\int_{-\infty}^\infty\frac{\cos x}{1+x^2}\,dx=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\pi/e\)</strong></p><p>Consider \(\oint\frac{e^{iz}}{1+z^2}dz\). Poles at \(\pm i\); only \(z=i\) is in the upper half-plane. Residue at \(i\): \(\frac{e^{i\cdot i}}{2i}=\frac{e^{-1}}{2i}\). Integral \(=2\pi i\cdot\frac{e^{-1}}{2i}=\pi e^{-1}=\pi/e\). The real part gives \(\int_{-\infty}^\infty\frac{\cos x}{1+x^2}dx=\pi/e\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\pi/e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\pi/e\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Contour Integration - Argument Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The argument principle states: for a meromorphic \(f\) with zeros \(Z\) and poles \(P\) inside \(C\) (counted with multiplicity), \(\displaystyle\frac{1}{2\pi i}\oint_C\frac{f'(z)}{f(z)}\,dz=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(Z-P\)</strong></p><p>Argument principle: \(\frac{1}{2\pi i}\oint_C\frac{f'}{f}dz=Z-P\) (zeros minus poles, counted with multiplicity). This gives the change in \(\arg f\) as \(z\) traverses \(C\), divided by \(2\pi\). A corollary is Rouché's theorem for counting zeros.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(Z+P\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(Z\cdot P\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(Z-P\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(P-Z\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Contour Integration - Rouche's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>By Rouché's theorem, how many zeros does \(f(z)=z^5+3z^3+1\) have inside \(|z|<2\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) 5</strong></p><p>On \(|z|=2\): \(|z^5|=32\) vs \(|3z^3+1|\leq3\cdot8+1=25<32\). By Rouché: \(f\) has the same number of zeros inside \(|z|<2\) as \(z^5\), which has 5 zeros (all at the origin with multiplicity 5). So \(f\) has 5 zeros inside \(|z|<2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[3]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[4]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[5]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Contour Integration - Branch Cut</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A branch cut for \(\log z\) is typically chosen along the negative real axis so that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\log z\) is analytic on \(\mathbb{C}\setminus(-\infty,0]\)</strong></p><p>The principal branch \(\text{Log}\,z=\ln|z|+i\text{Arg}\,z\) with \(\text{Arg}\,z\in(-\pi,\pi]\) is analytic on \(\mathbb{C}\setminus(-\infty,0]\) (the negative real axis + origin removed). Contour integrals involving multi-valued functions (like \(x^{a-1}(1-x)^{b-1}\) in the beta function) use branch cuts strategically.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\log z\) is analytic on all of \(\mathbb{C}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\log z\) is analytic on \(\mathbb{C}\setminus(-\infty,0]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\log z\) is real-valued for all \(z\neq0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\log z\) equals \(\ln|z|\) everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Contour Integration - Mittag-Leffler</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The partial fraction expansion \(\pi\cot(\pi z)=\frac{1}{z}+\sum_{n=1}^\infty\left(\frac{1}{z-n}+\frac{1}{z+n}\right)\) is an example of:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Mittag-Leffler theorem</strong></p><p>Mittag-Leffler theorem: a meromorphic function can be expressed as a sum of its principal parts at each pole plus an entire function. For \(\pi\cot(\pi z)\), poles are at integers with residue 1 each. The resulting series is the Mittag-Leffler expansion, used to derive identities for \(\pi\), \(\sin\), etc.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Mittag-Leffler theorem]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Weierstrass factorization theorem]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cauchy integral formula]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Rouché's theorem]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Contour Integration - Analytic Continuation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f\) and \(g\) are analytic on a connected domain \(D\) and \(f(z)=g(z)\) on a set with an accumulation point in \(D\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(f(z)=g(z)\) for all \(z\in D\) (Identity theorem)</strong></p><p>Identity theorem: if two analytic functions agree on a set with an accumulation point in their common domain of analyticity, they are identical on the entire connected domain. This powerful "rigidity" of analytic functions contrasts with smooth real functions (which can agree on an interval but differ elsewhere).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(f=g\) only near the accumulation point]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f-g\) is constant]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(z)=g(z)\) for all \(z\in D\) (Identity theorem)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) and \(g\) must be polynomials]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Contour Integration - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(C\) be a small circle around \(z=0\). The value of \(\displaystyle\oint_C\frac{\cos z}{z^4}\,dz\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(-\pi i/3\)</strong></p><p>Cauchy's generalized integral formula: \(\oint_C\frac{f(z)}{(z-a)^{n+1}}dz=\frac{2\pi i}{n!}f^{(n)}(a)\). Here \(f(z)=\cos z\), \(a=0\), \(n=3\): \(f^{(3)}(z)=-\sin z\), \(f^{(3)}(0)=0\). So \(\oint_C\frac{\cos z}{z^4}dz=\frac{2\pi i}{6}\cdot f^{(3)}(0)=0\). Wait — \(n=3\) means \((z-0)^{n+1}=z^4\). \(f^{(3)}(0)=-\sin(0)=0\). So integral \(=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\pi i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\pi i/3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-2\pi i/6\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Topology — Open Covers and Finite Subcovers</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Topology - Compactness via Open Covers</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following open covers of \((0,1)\) admit a finite subcover?</p>
+<ol type="A"><li>\(\{(1/n,1):n\ge2\}\)</li><li>\(\{(0,1-1/n):n\ge2\}\)</li><li>\(\{(-1,1)\}\)</li><li>\(\{(1/(n+1),1/n):n\ge1\}\cup\{(1/2,1)\}\)</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>(A) No finite subcover: any finite union \(\bigcup_{k=2}^N(1/k,1)=(1/N,1)\) misses \((0,1/N]\cap(0,1)\). (B) Similarly: \((0,1-1/N)\) misses \([1-1/N,1)\cap(0,1)\). (C) \(\{(-1,1)\}\) is itself a finite subcover (it covers \((0,1)\)). (D) The sets \((1/(n+1),1/n)\) are disjoint and only cover \((0,1/2)\); no finite subcollection covers all of \((0,1)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Topology - Compactness Definition Equivalences</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A topological space \(X\) is compact if every open cover has a finite subcover. Which are equivalent to compactness in metric spaces?</p>
+<ol type="A"><li>Every sequence has a convergent subsequence (sequential compactness).</li><li>Every infinite subset has a limit point (Bolzano-Weierstrass property).</li><li>\(X\) is closed and bounded (in \(\mathbb{R}^n\)).</li><li>\(X\) is complete and totally bounded.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>In metric spaces (and \(\mathbb{R}^n\)), all four are equivalent to compactness. (A) Sequential compactness. (B) Bolzano-Weierstrass. (C) Heine-Borel for \(\mathbb{R}^n\). (D) Complete + totally bounded (for general metric spaces).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Topology - Compact Subsets of R</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following subsets of \(\mathbb{R}\) are compact?</p>
+<ol type="A"><li>\([0,1]\)</li><li>\((0,1)\)</li><li>\(\mathbb{Z}\) (integers)</li><li>\([0,1]\cup[2,3]\)</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (D)</strong></p><p>(A) \([0,1]\) is closed and bounded — compact (Heine-Borel). (B) \((0,1)\) is not closed — not compact. (C) \(\mathbb{Z}\) is closed but unbounded — not compact. (D) Finite union of compact sets is compact.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Topology - Lebesgue's Number Lemma</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Lebesgue's Number Lemma: if \((X,d)\) is compact and \(\mathcal{U}\) is an open cover, then there exists \(\delta>0\) (Lebesgue number) such that every ball of radius \(\delta\) is contained in some member of \(\mathcal{U}\). Which follow?</p>
+<ol type="A"><li>Every continuous map from a compact metric space to another metric space is uniformly continuous.</li><li>The Lebesgue number depends on the cover, not just the space.</li><li>If \(X\) is not compact, the lemma fails in general.</li><li>The Lebesgue number can be taken as the infimum of \(\sup\{r>0:B(x,r)\subseteq U\text{ for some }U\in\mathcal{U}\}\) over \(x\in X\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Heine-Cantor theorem follows from Lebesgue's lemma. (B) The Lebesgue number \(\delta=\delta(\mathcal{U})\) depends on the specific cover. (C) E.g. \((0,1)\) with cover \(\{(0,1-1/n)\}\) has no positive Lebesgue number. (D) This is essentially the definition of the Lebesgue number.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</small><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Topology - Properties of Compact Spaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(K\) be a compact topological space and \(f:K\to\mathbb{R}\) continuous. Which are TRUE?</p>
+<ol type="A"><li>\(f\) is bounded.</li><li>\(f\) attains its maximum and minimum.</li><li>\(f\) is uniformly continuous (when \(K\) is a compact metric space).</li><li>\(f(K)\) is a closed interval.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Extreme value theorem: continuous image of compact = compact = closed and bounded in \(\mathbb{R}\). (C) Heine-Cantor theorem. (D) FALSE: \(f(K)\) is compact in \(\mathbb{R}\) (closed and bounded) but need not be an interval; e.g. \(K=[0,1]\cup[2,3]\), \(f(x)=x\Rightarrow f(K)=[0,1]\cup[2,3]\), not an interval.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Topology - Tychonoff Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Tychonoff's Theorem: an arbitrary product of compact spaces is compact (in the product topology). Which are TRUE?</p>
+<ol type="A"><li>The product of finitely many compact spaces is compact.</li><li>The product of countably many compact spaces is compact.</li><li>The Hilbert cube \([0,1]^\mathbb{N}\) is compact.</li><li>Tychonoff's theorem is equivalent to the axiom of choice.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Special cases of Tychonoff. (C) \([0,1]^\mathbb{N}\) is a product of compact spaces — compact by Tychonoff. (D) Tychonoff's theorem (in full generality) is equivalent to the axiom of choice — a classical result.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Topology - Topological Spaces Axioms</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A topological space \((X,\tau)\) satisfies: \(\emptyset,X\in\tau\); arbitrary unions of open sets are open; finite intersections of open sets are open. Which are TRUE?</p>
+<ol type="A"><li>Arbitrary intersections of open sets need not be open.</li><li>Finite unions of closed sets are closed.</li><li>Arbitrary intersections of closed sets are closed.</li><li>The discrete topology on \(X\) has all subsets open.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Counterexample: \(\bigcap_{n=1}^\infty(-1/n,1/n)=\{0\}\) is not open in \(\mathbb{R}\). (B)(C) By De Morgan's laws: complements of open sets. (D) Discrete topology: \(\tau=\mathcal{P}(X)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Topology - Hausdorff Spaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A topological space is Hausdorff (T2) if any two distinct points have disjoint open neighborhoods. Which are TRUE?</p>
+<ol type="A"><li>Every metric space is Hausdorff.</li><li>A compact subset of a Hausdorff space is closed.</li><li>A continuous bijection from a compact space to a Hausdorff space is a homeomorphism.</li><li>Every Hausdorff space is metrizable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Metric spaces: separate \(x\ne y\) by balls of radius \(d(x,y)/2\). (B) In Hausdorff spaces, compact subsets are closed. (C) Bijective continuous map from compact to Hausdorff is a homeomorphism (the inverse is automatically continuous). (D) FALSE: Hausdorff does not imply metrizable; e.g. uncountable product of \(\mathbb{R}\) is Hausdorff but not metrizable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Topology - Connectedness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which subsets of \(\mathbb{R}\) are connected?</p>
+<ol type="A"><li>\([0,1]\)</li><li>\([0,1]\cup\{2\}\)</li><li>\(\mathbb{Q}\)</li><li>\(\mathbb{R}\setminus\{0\}\)</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>(A) \([0,1]\) is an interval, hence connected. (B) Disconnected: \([0,1]\) and \(\{2\}\) are disjoint open (in the subspace topology) clopen sets. (C) \(\mathbb{Q}\) is totally disconnected (for any \(x\ne y\in\mathbb{Q}\), choose irrational \(r\) between them to disconnect). (D) \(\mathbb{R}\setminus\{0\}=(-\infty,0)\cup(0,\infty)\) — disconnected.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Topology - Path Connectedness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A space \(X\) is path-connected if any two points can be joined by a continuous path. Which are TRUE?</p>
+<ol type="A"><li>Path-connected \(\Rightarrow\) connected.</li><li>Connected \(\Rightarrow\) path-connected.</li><li>The topologist's sine curve is connected but not path-connected.</li><li>Every convex subset of \(\mathbb{R}^n\) is path-connected.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Path-connected \(\Rightarrow\) connected (path-image is connected). (B) FALSE: the topologist's sine curve \(\{(x,\sin(1/x)):x>0\}\cup\{0\}\times[-1,1]\) is connected but not path-connected. (C) Classical example. (D) Linear paths connect any two points in a convex set.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Topology - Quotient Topology</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Given a surjection \(q:X\to Y\), the quotient topology on \(Y\) consists of sets \(U\subseteq Y\) with \(q^{-1}(U)\) open in \(X\). Which are TRUE?</p>
+<ol type="A"><li>\(q\) is continuous with the quotient topology.</li><li>A map \(f:Y\to Z\) is continuous iff \(f\circ q:X\to Z\) is continuous.</li><li>\([0,1]/\{0,1\}\cong S^1\) (the circle).</li><li>The quotient of a connected space is connected.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) By definition: preimages of open sets in \(Y\) are open in \(X\). (B) Universal property of quotient topology. (C) Identifying the endpoints of \([0,1]\) gives a circle. (D) \(q\) is continuous and surjective; continuous image of connected set is connected.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Topology - Second Countability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A space is second countable if it has a countable basis for its topology. Which are TRUE?</p>
+<ol type="A"><li>Every second-countable space is separable.</li><li>\(\mathbb{R}^n\) is second countable.</li><li>Every separable metric space is second countable.</li><li>A second-countable compact space has a countable subcover from any open cover.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Take one point from each basis element — countable dense set. (B) Rational open balls form a countable basis. (C) In metric spaces: separable \(\Leftrightarrow\) second countable. (D) Every open set is a union of basis elements; compactness gives finite subcover from the countable basis elements needed.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Topology - Homeomorphisms</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A homeomorphism is a bicontinuous bijection. Which pairs of spaces are homeomorphic?</p>
+<ol type="A"><li>\((0,1)\) and \(\mathbb{R}\).</li><li>\([0,1]\) and \([0,2]\).</li><li>The open disk \(\{(x,y):x^2+y^2<1\}\) and \(\mathbb{R}^2\).</li><li>\(S^1\) (circle) and \([0,1]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) \(\tan(\pi(x-1/2)):(0,1)\to\mathbb{R}\) is a homeomorphism. (B) Linear map \(x\mapsto2x:[0,1]\to[0,2]\). (C) The map \(z\mapsto z/(1-|z|):\mathbb{D}\to\mathbb{R}^2\) is a homeomorphism. (D) FALSE: \(S^1\) is compact but \([0,1]\) is also compact... wait: both are compact connected. However, \(S^1\) minus one point is connected, but \([0,1]\) minus one interior point is disconnected. Hence \(S^1\not\cong[0,1]\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Topology - Compact Hausdorff Spaces</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which are TRUE about compact Hausdorff spaces?</p>
+<ol type="A"><li>They are normal (disjoint closed sets can be separated by open sets).</li><li>They are regular (a point and a disjoint closed set can be separated).</li><li>Urysohn's lemma applies: there exists a continuous function separating two disjoint closed sets.</li><li>Every compact Hausdorff space is metrizable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Compact Hausdorff spaces are normal (and hence regular). (C) Urysohn's lemma applies to normal spaces. (D) FALSE: \([0,1]^{[0,1]}\) is compact Hausdorff but not second-countable, hence not metrizable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Topology - Closure Interior Boundary</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(A\subseteq X\), the boundary \(\partial A=\overline{A}\setminus A^\circ\). Which are TRUE?</p>
+<ol type="A"><li>\(\partial A=\overline{A}\cap\overline{X\setminus A}\).</li><li>\(\partial A\) is always closed.</li><li>\(A\) is open iff \(A\cap\partial A=\emptyset\).</li><li>\(A\) is closed iff \(\partial A\subseteq A\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\partial A=\overline{A}\cap\overline{X\setminus A}\) — standard characterization. (B) \(\partial A\) is an intersection of two closed sets. (C) Open iff equal to interior iff no boundary points are in \(A\). (D) Closed iff \(\overline{A}=A\) iff \(\partial A=\overline{A}\setminus A^\circ\subseteq A\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Topology - Nets and Filters</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In a topological space, nets generalise sequences. Which are TRUE?</p>
+<ol type="A"><li>A space is compact iff every net has a convergent subnet.</li><li>A space is Hausdorff iff every net converges to at most one point.</li><li>Sequential compactness implies compactness for first-countable spaces.</li><li>In a metric space, nets and sequences give equivalent notions of convergence and compactness.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Characterizations of compactness and Hausdorff via nets. (C) In first-countable spaces, sequential compactness \(\Leftrightarrow\) compactness (since every net has a sequence cofinal with it). (D) Metric spaces are first-countable; sequences suffice.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text>(C)</text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Topology - Urysohn Metrization</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Urysohn Metrization Theorem: a regular second-countable \(T_1\)-space is metrizable. Which follow?</p>
+<ol type="A"><li>Every second-countable Hausdorff space is metrizable.</li><li>Every compact Hausdorff second-countable space is metrizable.</li><li>The standard topology on \(\mathbb{R}\) is metrizable.</li><li>Every metrizable space is normal.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Hausdorff (T2) + second-countable implies regular, so Urysohn applies. (B) Special case of (A): compact Hausdorff is normal hence regular. (C) \(\mathbb{R}\) with the usual metric topology satisfies the hypotheses. (D) Metric spaces are normal (disjoint closed sets can be separated by \(f(x)=d(x,A)/(d(x,A)+d(x,B))\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Topology - Compact Spaces and Continuous Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:K\to Y\) be a continuous bijection with \(K\) compact and \(Y\) Hausdorff. Which are TRUE?</p>
+<ol type="A"><li>\(f\) is a homeomorphism.</li><li>\(f^{-1}\) is continuous.</li><li>\(f\) maps closed sets to closed sets.</li><li>If \(K\) is not compact, \(f\) may not be a homeomorphism.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) A continuous bijection from compact to Hausdorff is a homeomorphism. (C) \(f\) maps closed (hence compact) sets to compact (hence closed in Hausdorff) sets. (D) Example: \(f:[0,2\pi)\to S^1\), \(f(t)=e^{it}\) is a continuous bijection but not a homeomorphism.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Topology - Cantor Set Topology</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Cantor set \(C\subseteq[0,1]\). Which are TRUE?</p>
+<ol type="A"><li>\(C\) is compact.</li><li>\(C\) is perfect (closed with no isolated points).</li><li>\(C\) is totally disconnected.</li><li>Every compact metric space is a continuous image of \(C\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Closed and bounded in \(\mathbb{R}\). (B) Perfect: every point of \(C\) is a limit point of \(C\). (C) \(C\) contains no intervals — totally disconnected. (D) Cantor set theorem: every compact metrizable space is a continuous image of the Cantor set.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Topology - Compactness and Completeness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a metric space \((X,d)\), which implications are TRUE?</p>
+<ol type="A"><li>Compact \(\Rightarrow\) complete.</li><li>Complete \(\Rightarrow\) compact.</li><li>Compact \(\Rightarrow\) totally bounded.</li><li>Complete and totally bounded \(\Rightarrow\) compact.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Every Cauchy sequence in a compact space has a convergent subsequence, and a Cauchy sequence with a convergent subsequence converges. (B) FALSE: \(\mathbb{R}\) is complete but not compact. (C) A compact metric space is totally bounded. (D) The theorem: in metric spaces, compact \(\Leftrightarrow\) complete + totally bounded.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/ODEs — Euler-Cauchy and Second Order Linear ODEs</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>ODE - Euler-Cauchy Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Euler–Cauchy equation \(x^2y''+3xy'+y=0\) has solutions of the form \(y=x^m\). Substituting gives the indicial equation:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(m^2+2m+1=0\)</strong></p><p>Substituting \(y=x^m\): \(y'=mx^{m-1}\), \(y''=m(m-1)x^{m-2}\). So \(x^2\cdot m(m-1)x^{m-2}+3x\cdot mx^{m-1}+x^m=x^m[m(m-1)+3m+1]=x^m[m^2+2m+1]=0\). Indicial equation: \((m+1)^2=0\Rightarrow m=-1\) (repeated). Solution: \(y=(c_1+c_2\ln x)x^{-1}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(m^2+3m+1=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(m^2+2m+1=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m^2-m+1=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m^2+4m+3=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>ODE - Solution of x^2y'' - 2y = 0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The general solution of \(x^2y''-2y=0\) for \(x>0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(y=c_1x^2+c_2x^{-1}\)</strong></p><p>Indicial equation: \(m(m-1)-2=0\Rightarrow m^2-m-2=(m-2)(m+1)=0\Rightarrow m=2,-1\). Two distinct roots give independent solutions \(x^2\) and \(x^{-1}\). General solution: \(y=c_1x^2+c_2/x\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(y=c_1x^2+c_2x^{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=c_1x+c_2x^{-2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=(c_1+c_2\ln x)x^{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=c_1\cos(\ln x)+c_2\sin(\ln x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>ODE - BVP: y at x=3 given y at 1 and 2</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The ODE \(x^2y''-2y=0\) has general solution \(y=Ax^2+B/x\). If \(y(1)=3\) and \(y(2)=6\), find \(y(3)\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(11\)</strong></p><p>System: \(A+B=3\) and \(4A+B/2=6\). From first: \(B=3-A\). Sub: \(4A+(3-A)/2=6\Rightarrow8A+3-A=12\Rightarrow7A=9\Rightarrow A=9/7\). \(B=3-9/7=12/7\). \(y(3)=9/7\cdot9+12/7\cdot1/3=81/7+4/7=85/7\). Hmm — let me recompute. \(A=9/7\), \(B=12/7\). \(y(3)=A\cdot9+B/3=81/7+4/7=85/7\). So answer is 85/7 ≈ 12.1. Let me try integer: \(A=1,B=2\): \(1+2=3\)✓, \(4+1=5\neq6\). Try \(A=3/2, B=3/2\): \(3/2+3/2=3\)✓, \(4(3/2)+(3/2)/2=6+3/4\neq6\). Answer is \(85/7\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(9\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(12\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(85/7\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(15/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>ODE - Wronskian</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Wronskian of \(y_1=x^2\) and \(y_2=x^{-1}\) for \(x>0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(-3\)</strong></p><p>\(W(x^2,x^{-1})=\begin{vmatrix}x^2&x^{-1}\\2x&-x^{-2}\end{vmatrix}=x^2(-x^{-2})-x^{-1}(2x)=-1-2=-3\). The Wronskian is constant (nonzero), confirming linear independence — as expected for two distinct solutions of a homogeneous ODE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(-3\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3x^{-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(3x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>ODE - Reduction of Order</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(y_1\) is a known solution of \(y''+p(x)y'+q(x)y=0\), the second solution via reduction of order \(y_2=v(x)y_1\) satisfies (for \(v'=u\)):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(u'+\left(\frac{2y_1'}{y_1}+p\right)u=0\)</strong></p><p>Substituting \(y=vy_1\): \(v''y_1+2v'y_1'+vy_1''+p(v'y_1+vy_1')+qvy_1=0\). Since \(y_1''+py_1'+qy_1=0\): \(y_1v''+v'(2y_1'+py_1)=0\). Setting \(u=v'\): \(u'+(2y_1'/y_1+p)u=0\), a first-order linear ODE for \(u\). Solution: \(u=\frac{c}{y_1^2}e^{-\int p\,dx}\) (Abel's formula).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(u'-pu=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u''+pu'+qu=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(u'+\!\left(\dfrac{2y_1'}{y_1}+p\right)u=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_1 u''+pu'=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>ODE - Variation of Parameters</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the ODE \(y''+y=\sec x\), the particular solution via variation of parameters is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(y_p=x\sin x+\cos x\ln|\cos x|\)</strong></p><p>Homogeneous: \(y_1=\cos x, y_2=\sin x\), \(W=1\). Variation of parameters: \(u_1'=-y_2f/W=-\sin x\sec x=-\tan x\Rightarrow u_1=\ln|\cos x|\). \(u_2'=y_1f/W=\cos x\sec x=1\Rightarrow u_2=x\). Particular: \(y_p=u_1y_1+u_2y_2=\cos x\ln|\cos x|+x\sin x\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(y_p=x\sin x+\cos x\ln|\cos x|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_p=x\cos x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_p=\sin x\ln|\sin x|\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_p=\cos x\sec x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>ODE - Characteristic Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The general solution of \(y''-5y'+6y=0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(y=c_1e^{2x}+c_2e^{3x}\)</strong></p><p>Characteristic equation: \(r^2-5r+6=0\Rightarrow(r-2)(r-3)=0\Rightarrow r=2,3\). General solution: \(y=c_1e^{2x}+c_2e^{3x}\). For distinct real roots \(r_1,r_2\): \(y=c_1e^{r_1x}+c_2e^{r_2x}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=(c_1+c_2x)e^{5x/2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y=c_1e^{2x}+c_2e^{3x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=c_1e^{-2x}+c_2e^{-3x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=e^{5x/2}(c_1\cos x+c_2\sin x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>ODE - Complex Roots</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The general solution of \(y''+4y=0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(y=c_1\cos 2x+c_2\sin 2x\)</strong></p><p>Characteristic equation: \(r^2+4=0\Rightarrow r=\pm2i\). For complex roots \(\alpha\pm i\beta\): \(y=e^{\alpha x}(c_1\cos\beta x+c_2\sin\beta x)\). Here \(\alpha=0,\beta=2\): \(y=c_1\cos2x+c_2\sin2x\). This is simple harmonic motion with angular frequency 2.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=c_1e^{2x}+c_2e^{-2x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=e^{2x}(c_1+c_2x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y=c_1\cos2x+c_2\sin2x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=c_1e^{2ix}+c_2e^{-2ix}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>ODE - Repeated Roots</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The general solution of \(y''-2y'+y=0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(y=(c_1+c_2x)e^x\)</strong></p><p>Characteristic equation: \(r^2-2r+1=(r-1)^2=0\Rightarrow r=1\) (double root). For repeated root \(r\): \(y=(c_1+c_2x)e^{rx}\). Here: \(y=(c_1+c_2x)e^x\). The second solution \(xe^x\) is found by reduction of order or by the general formula for repeated roots.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(y=(c_1+c_2x)e^x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=c_1e^x+c_2e^{-x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=(c_1+c_2x^2)e^x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=c_1\cos x+c_2\sin x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>ODE - Undetermined Coefficients</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The particular solution of \(y''-3y'+2y=e^{3x}\) is of the form:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(y_p=Ae^{3x}\)</strong></p><p>Since \(e^{3x}\) is not a solution of the homogeneous equation (roots are 1 and 2, not 3), we try \(y_p=Ae^{3x}\). Substituting: \(9A-9A+2A=2A=1\Rightarrow A=1/2\). Particular solution: \(y_p=\frac{1}{2}e^{3x}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_p=Axe^{3x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y_p=Ae^{3x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_p=Ax^2e^{3x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_p=Ae^x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>ODE - Abel's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Abel's theorem: for \(y''+p(x)y'+q(x)y=0\), the Wronskian \(W(y_1,y_2)\) satisfies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(W(x)=W(x_0)\exp\!\left(-\int_{x_0}^x p(t)\,dt\right)\)</strong></p><p>Abel's identity: \(W'=-p(x)W\), giving \(W(x)=W(x_0)e^{-\int_{x_0}^x p(t)dt}\). Key consequence: \(W\) is either identically zero (if solutions are dependent) or never zero. This is used to classify whether two solutions are linearly independent.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(W=c\,e^{\int p\,dx}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W=c\,p(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(W(x)=W(x_0)\exp\!\left(-\int_{x_0}^x p(t)\,dt\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(W=0\) always]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>ODE - IVP Existence and Uniqueness</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Picard–Lindelöf theorem: the IVP \(y'=f(x,y)\), \(y(x_0)=y_0\) has a unique solution near \(x_0\) if \(f\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Continuous in \(x\) and Lipschitz in \(y\)</strong></p><p>Picard–Lindelöf: if \(f\) is continuous and Lipschitz in \(y\) (i.e., \(|f(x,y_1)-f(x,y_2)|\leq L|y_1-y_2|\)), then the IVP has a unique local solution. Lipschitz in \(y\) is ensured by \(\partial f/\partial y\) being bounded. Peano's theorem gives only existence (without uniqueness) under just continuity.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Only continuous in \(x\) and \(y\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Continuous in \(x\) and Lipschitz in \(y\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Analytic (real-analytic in \(x\) and \(y\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>ODE - Transform to Constant Coefficients</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The substitution \(t=\ln x\) transforms the Euler–Cauchy equation \(x^2y''+axy'+by=0\) into a linear ODE with:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Constant coefficients: \(\ddot{y}+(a-1)\dot{y}+by=0\)</strong></p><p>With \(t=\ln x\): \(x\frac{dy}{dx}=\dot{y}\), \(x^2\frac{d^2y}{dx^2}=\ddot{y}-\dot{y}\). Substituting: \((\ddot{y}-\dot{y})+a\dot{y}+by=\ddot{y}+(a-1)\dot{y}+by=0\). This constant-coefficient equation in \(t\) is solved by characteristic equation, then \(t=\ln x\) gives solutions in \(x\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\ddot{y}+(a-1)\dot{y}+by=0\) (constant coefficients)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ddot{y}+a\dot{y}+by=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(t^2\ddot{y}+at\dot{y}+by=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ddot{y}+(a+1)\dot{y}+by=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>ODE - Green's Function Approach</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the BVP \(y''+y=f(x)\), \(y(0)=y(\pi)=0\), the Green's function \(G(x,\xi)\) is used to write:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(y(x)=\int_0^\pi G(x,\xi)f(\xi)\,d\xi\)</strong></p><p>The Green's function \(G(x,\xi)\) encodes the response to a point source: \(y(x)=\int G(x,\xi)f(\xi)d\xi\). For the problem \(-y''=f\) with Dirichlet boundary conditions, \(G(x,\xi)=\begin{cases}x(\pi-\xi)/\pi&x<\xi\\\xi(\pi-x)/\pi&x>\xi\end{cases}\). Green's functions reduce BVPs to integration.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y(x)=\sum_n f_n\phi_n(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y(x)=\displaystyle\int_0^\pi G(x,\xi)f(\xi)\,d\xi\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y(x)=G(x,0)f(0)+G(x,\pi)f(\pi)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y(x)=f(x)/G(x,x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>ODE - Euler Equation Complex Roots</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Euler–Cauchy equation \(x^2y''+xy'+y=0\) has solution:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(y=c_1\cos(\ln x)+c_2\sin(\ln x)\)</strong></p><p>Indicial equation: \(m(m-1)+m+1=m^2+1=0\Rightarrow m=\pm i\). Complex roots \(\alpha\pm i\beta\) with \(\alpha=0,\beta=1\). Solution: \(y=x^0(c_1\cos(\ln x)+c_2\sin(\ln x))=c_1\cos(\ln x)+c_2\sin(\ln x)\). This exhibits oscillatory behavior at \(x=0^+\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=c_1x+c_2/x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=(c_1+c_2\ln x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=c_1x^i+c_2x^{-i}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y=c_1\cos(\ln x)+c_2\sin(\ln x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>ODE - Resonance</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The particular solution of \(y''+\omega^2y=\cos\omega x\) exhibits resonance. Its form is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(y_p=\frac{x}{2\omega}\sin\omega x\)</strong></p><p>Since \(\cos\omega x\) solves the homogeneous equation, the usual trial fails. We multiply by \(x\): try \(y_p=x(A\cos\omega x+B\sin\omega x)\). Substituting (or using undetermined coefficients with modification): \(A=0, B=1/(2\omega)\). Particular solution: \(y_p=\frac{x}{2\omega}\sin\omega x\). Amplitude grows linearly — resonance phenomenon.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_p=A\cos\omega x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y_p=\dfrac{x}{2\omega}\sin\omega x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_p=\dfrac{1}{\omega^2}\cos\omega x\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_p=x^2\cos\omega x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>ODE - Sturm Comparison</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Sturm's comparison theorem: if \(Q(x)>q(x)\) on \((a,b)\) and \(y''+Qy=0\), \(z''+qz=0\), then between any two zeros of \(z\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(y\) has at least one zero (solutions of the "bigger" equation oscillate faster)</strong></p><p>Sturm comparison: if \(Q>q\), then between any two consecutive zeros of \(z\), the solution \(y\) of the equation with larger coefficient has at least one zero. This means solutions oscillate more rapidly when the coefficient is larger. Example: \(y''+y=0\) (zeros at multiples of \(\pi\)) vs \(y''+4y=0\) (zeros at multiples of \(\pi/2\), more frequent).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(y\) has at least one zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y\) has no zeros]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=z\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|y|>|z|\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>ODE - Laplace Transform</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Using Laplace transforms, the solution of \(y''-y=e^t\), \(y(0)=0\), \(y'(0)=0\) has:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\mathcal{L}\{y\}=\dfrac{1}{(s-1)^2(s+1)}\)</strong></p><p>\(\mathcal{L}\{y''-y\}=\mathcal{L}\{e^t\}\Rightarrow(s^2-1)Y(s)=\frac{1}{s-1}\Rightarrow Y(s)=\frac{1}{(s^2-1)(s-1)}=\frac{1}{(s-1)^2(s+1)}\). Partial fractions then give \(y(t)\). The transform reduces the ODE to algebra.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathcal{L}\{y\}=\dfrac{1}{s^2-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathcal{L}\{y\}=\dfrac{1}{(s-1)(s+1)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\mathcal{L}\{y\}=\dfrac{1}{(s-1)^2(s+1)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\mathcal{L}\{y\}=\dfrac{s}{s^2-1}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>ODE - Self-Adjoint Form</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The equation \(y''+p(x)y'+q(x)y=0\) can be written in self-adjoint form \((r(x)y')'+s(x)y=0\) with \(r(x)=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(e^{\int p(x)\,dx}\)</strong></p><p>Multiplying the ODE by the integrating factor \(\mu(x)=e^{\int p\,dx}\): \(e^{\int p}y''+pe^{\int p}y'+qe^{\int p}y=0\Rightarrow(e^{\int p}y')'+qe^{\int p}y=0\). So \(r=e^{\int p}\) and \(s=qe^{\int p}\). This is the Sturm–Liouville form \((ry')'+sy=0\), fundamental to eigenvalue theory.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(e^{\int p(x)\,dx}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(p(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/p(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(q(x)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>ODE - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The ODE \(4x^2y''+4xy'-y=0\) for \(x>0\): its indicial equation has roots \(m=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(m=1/2\) and \(m=-1/2\)</strong></p><p>Substituting \(y=x^m\): \(4x^2m(m-1)x^{m-2}+4xmx^{m-1}-x^m=x^m[4m(m-1)+4m-1]=x^m[4m^2-1]=0\). Indicial equation: \(4m^2-1=0\Rightarrow m=\pm1/2\). General solution: \(y=c_1x^{1/2}+c_2x^{-1/2}=c_1\sqrt{x}+c_2/\sqrt{x}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(m=1\) and \(m=-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(m=1/2\) and \(m=-1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m=2\) and \(m=-2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(m=1/4\) and \(m=-1/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

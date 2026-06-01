@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Mathematical Statistics — Hypothesis Testing and Bayesian Inference</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>HT - Neyman-Pearson Lemma</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Neyman-Pearson lemma: for testing \(H_0:\theta=\theta_0\) vs \(H_1:\theta=\theta_1\), the most powerful (MP) level-\(\alpha\) test rejects \(H_0\) when \(L(\theta_1)/L(\theta_0)>k\). Which are TRUE?</p>
+<ol type="A"><li>The NP lemma gives the uniformly most powerful (UMP) test for simple alternatives.</li><li>The likelihood ratio test is the most powerful at every level \(\alpha\).</li><li>For \(X\sim N(\mu,1)\) testing \(\mu=0\) vs \(\mu=1\): the NP test rejects when \(\bar X>c\).</li><li>The NP lemma gives a UMP test for composite alternatives in general.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) NP lemma: the LR test is the most powerful test for simple \(H_0\) vs simple \(H_1\). (C) For normal: \(L(1)/L(0)=\exp(\bar X n - n/2)>k\Leftrightarrow\bar X>c\). (D) FALSE: for composite alternatives, UMP tests generally do not exist (except in MLR families via Karlin-Rubin).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Bayes - Bayes' theorem and posterior</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Bayesian inference: prior \(\pi(\theta)\), likelihood \(f(x|\theta)\), posterior \(\pi(\theta|x)\propto f(x|\theta)\pi(\theta)\). Which are TRUE?</p>
+<ol type="A"><li>The posterior mean minimizes the posterior expected squared error loss.</li><li>The posterior median minimizes the posterior expected absolute error loss.</li><li>A conjugate prior gives a posterior in the same family as the prior.</li><li>The Bayesian estimator always equals the MLE.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Posterior mean = Bayes estimator under squared error. (B) Posterior median = Bayes estimator under absolute error. (C) Conjugate priors: Beta-Binomial, Normal-Normal, Gamma-Poisson, etc. (D) FALSE: Bayesian estimators (posterior mean/median/mode) generally differ from the MLE, though they coincide asymptotically under certain conditions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>HT - UMPU and similar tests</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A uniformly most powerful unbiased (UMPU) test maximizes power uniformly over \(H_1\) among all unbiased tests (power \(\ge\alpha\)). Which are TRUE?</p>
+<ol type="A"><li>For two-sided hypotheses \(H_1:\theta\ne\theta_0\) in exponential families, the UMPU test exists.</li><li>The UMPU test for normal means (\(\sigma^2\) known) is the two-sided z-test.</li><li>A UMP test is always also UMPU.</li><li>UMPU tests can be found using the theory of similar tests.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) UMPU tests exist for exponential families and normal families. (C) UMP is a stronger optimality criterion; a UMP test is unbiased and maximizes power, so it is UMPU. (D) Similar tests (level exactly \(\alpha\) everywhere on the boundary) are used to derive UMPU tests.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Bayes - Conjugate priors</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which prior-likelihood conjugate pairs are CORRECT?</p>
+<ol type="A"><li>Beta prior + Binomial likelihood \(\to\) Beta posterior.</li><li>Normal prior + Normal likelihood (known variance) \(\to\) Normal posterior for the mean.</li><li>Gamma prior + Poisson likelihood \(\to\) Gamma posterior for the rate.</li><li>Dirichlet prior + Multinomial likelihood \(\to\) Dirichlet posterior.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>All four are standard conjugate pairs: (A) Beta-Binomial; (B) Normal-Normal; (C) Gamma-Poisson; (D) Dirichlet-Multinomial. These are fundamental Bayesian conjugate families.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>HT - Sequential testing and Wald's SPRT</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Wald's Sequential Probability Ratio Test (SPRT) sequentially tests \(H_0:\theta=\theta_0\) vs \(H_1:\theta=\theta_1\), stopping when \(\Lambda_n=\prod_{i=1}^n\frac{f(X_i;\theta_1)}{f(X_i;\theta_0)}\) exceeds \(B\) (reject \(H_0\)) or falls below \(A\) (accept \(H_0\)). Which are TRUE?</p>
+<ol type="A"><li>The SPRT controls both Type I (\(\alpha\)) and Type II (\(\beta\)) error probabilities.</li><li>The boundaries are approximately \(B\approx(1-\beta)/\alpha\) and \(A\approx\beta/(1-\alpha)\).</li><li>Wald's identity ensures that the SPRT terminates with probability 1.</li><li>The SPRT requires a larger sample size than the fixed-sample NP test for the same \(\alpha,\beta\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) SPRT boundaries control error rates. (C) Wald's identity guarantees a.s. termination. (D) FALSE: the SPRT is optimal — by Wald-Wolfowitz theorem, it minimizes expected sample size among all tests with the same or smaller error probabilities.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Bayes - Bayesian vs frequentist interpretation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statements correctly distinguish Bayesian and frequentist approaches?</p>
+<ol type="A"><li>Bayesian: probability represents degree of belief; frequentist: probability is long-run frequency.</li><li>Bayesian credible intervals have the interpretation: posterior probability that \(\theta\in[L,U]\) equals \(1-\alpha\).</li><li>Frequentist confidence intervals: \(P(\theta\in[L(X),U(X)])=1-\alpha\) over repeated samples.</li><li>Bayesian and frequentist methods always give the same numerical answers.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B)(C) Fundamental distinctions between the two paradigms. (D) FALSE: they can give different answers — e.g., credible intervals and confidence intervals have the same width only in special cases (e.g. flat prior for location families), not in general.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>HT - Generalized likelihood ratio test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The generalized LR test: \(\Lambda=\frac{\sup_{\theta\in\Theta_0}L(\theta)}{\sup_{\theta\in\Theta}L(\theta)}\). Reject \(H_0\) when \(-2\log\Lambda>c\). Which are TRUE?</p>
+<ol type="A"><li>Under \(H_0\) with \(k\) restrictions, \(-2\log\Lambda\overset{d}{\to}\chi^2_k\) (Wilks' theorem).</li><li>The GLRT is asymptotically efficient.</li><li>The GLRT coincides with the t-test for normal mean testing.</li><li>Wilks' theorem holds for all sample sizes.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Wilks' theorem: asymptotic chi-squared distribution. (B) Asymptotic efficiency of GLRT. (C) For testing \(\mu=\mu_0\) in \(N(\mu,\sigma^2)\) (unknown \(\sigma^2\)): the GLRT reduces to the t-test. (D) FALSE: Wilks' theorem is asymptotic (\(n\to\infty\)); for small \(n\), the exact distribution differs.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Bayes - Posterior consistency and Bernstein-von Mises</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Bayesian asymptotics: the Bernstein-von Mises (BvM) theorem. Which are TRUE?</p>
+<ol type="A"><li>Under regularity conditions, the posterior concentrates near the true \(\theta_0\) as \(n\to\infty\) (posterior consistency).</li><li>BvM: the posterior \(\pi(\theta|X_1,\ldots,X_n)\) converges to \(N(\hat\theta_{MLE},I(\theta_0)^{-1}/n)\).</li><li>BvM bridges Bayesian and frequentist inference asymptotically.</li><li>BvM holds for all priors (including improper ones).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Posterior consistency under regularity conditions. (B)(C) Bernstein-von Mises theorem: posterior asymptotically normal centered at MLE. (D) FALSE: BvM requires conditions on the prior (positive and continuous at \(\theta_0\)); some improper priors can lead to inconsistent posteriors (Diaconis-Freedman examples).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>HT - Chi-squared goodness of fit</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Chi-squared goodness-of-fit test: \(Q=\sum_{j=1}^k\frac{(O_j-E_j)^2}{E_j}\) where \(O_j\) = observed, \(E_j\) = expected counts. Which are TRUE?</p>
+<ol type="A"><li>Under \(H_0\), \(Q\overset{d}{\to}\chi^2_{k-1}\) when no parameters are estimated.</li><li>If \(p\) parameters are estimated from the data, \(Q\overset{d}{\to}\chi^2_{k-1-p}\).</li><li>The test requires all expected counts \(E_j\ge5\) (rule of thumb).</li><li>The chi-squared test is equivalent to the likelihood ratio test asymptotically.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Pearson chi-squared test: \(k-1\) degrees of freedom (one constraint: total counts sum to \(n\)). (B) Estimating \(p\) parameters reduces df by \(p\). (C) Standard rule of thumb for chi-squared approximation. (D) Pearson statistic and LR statistic are asymptotically equivalent (\(O(n)\) agree to first order).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Bayes - Model selection: BIC and Bayes factor</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For Bayesian model selection: Bayes factor \(B_{01}=p(x|M_0)/p(x|M_1)\). BIC \(=-2\log\hat L+k\log n\). Which are TRUE?</p>
+<ol type="A"><li>A large Bayes factor \(B_{01}\) favors \(M_0\) over \(M_1\).</li><li>BIC approximates \(-2\log\) Bayes factor for large \(n\) (Schwarz approximation).</li><li>BIC penalizes model complexity more than AIC for \(n>e^2\approx7\).</li><li>The Bayes factor requires specifying proper priors for all parameters.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Bayes factor \(>1\) favors \(M_0\). (B) Schwarz BIC approximation to log-marginal likelihood. (C) AIC penalty = \(2k\); BIC penalty = \(k\log n > 2k\) for \(n>e^2\approx 7.4\). (D) Bayes factors require proper priors; with improper priors, marginal likelihoods are undefined (up to scale).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>HT - Nonparametric tests</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statements about nonparametric tests are TRUE?</p>
+<ol type="A"><li>The Wilcoxon signed-rank test is a nonparametric alternative to the one-sample t-test.</li><li>The Mann-Whitney U-test (Wilcoxon rank-sum) is a nonparametric alternative to the two-sample t-test.</li><li>The Kolmogorov-Smirnov test uses the supremum of \(|\hat F_n(x)-F_0(x)|\) as the test statistic.</li><li>Nonparametric tests are always more powerful than parametric tests.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B)(C) Standard nonparametric tests and their descriptions. (D) FALSE: when the parametric model is correctly specified, parametric tests have higher power; nonparametric tests sacrifice power for robustness.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Bayes - Jeffreys prior</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Jeffreys prior: \(\pi_J(\theta)\propto\sqrt{\det I(\theta)}\) where \(I(\theta)\) is Fisher information. Which are TRUE?</p>
+<ol type="A"><li>Jeffreys prior is invariant under reparametrization.</li><li>For \(X\sim\mathrm{Binomial}(n,p)\): Jeffreys prior is \(\mathrm{Beta}(1/2,1/2)\).</li><li>For \(X\sim N(\mu,1)\): Jeffreys prior is the improper uniform prior \(\pi(\mu)\propto1\).</li><li>Jeffreys prior always leads to proper posterior distributions.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Reparametrization invariance is the main motivation for Jeffreys prior. (B) For Binomial: \(I(p)=n/(p(1-p))\), so \(\pi_J(p)\propto p^{-1/2}(1-p)^{-1/2}=\text{Beta}(1/2,1/2)\). (C) For \(N(\mu,1)\): \(I(\mu)=n\) (constant), \(\pi_J(\mu)\propto1\). (D) FALSE: Jeffreys priors are often improper and may lead to improper posteriors in some cases.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>HT - Multiple testing and FDR</text></name>
+  <questiontext format="html"><text><![CDATA[<p>When testing \(m\) hypotheses simultaneously, which are TRUE?</p>
+<ol type="A"><li>Family-wise error rate (FWER): \(P(\text{at least one false rejection})\); Bonferroni correction controls FWER at level \(\alpha/m\) per test.</li><li>False discovery rate (FDR): expected proportion of rejected null hypotheses that are false rejections.</li><li>Benjamini-Hochberg procedure controls FDR at level \(\alpha\) under independence.</li><li>Controlling FWER is less conservative than controlling FDR.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Bonferroni FWER control. (B)(C) FDR and Benjamini-Hochberg (BH) procedure. (D) FALSE: FWER control is MORE conservative than FDR control — FWER requires no false rejections at all, while FDR allows some false rejections as long as their proportion stays small. BH is less conservative than Bonferroni.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Bayes - MCMC and computational Bayes</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Markov Chain Monte Carlo (MCMC) methods sample from the posterior when direct computation is intractable. Which are TRUE?</p>
+<ol type="A"><li>Metropolis-Hastings algorithm generates a Markov chain with the desired posterior as stationary distribution.</li><li>Gibbs sampling iteratively samples each parameter conditional on the others.</li><li>MCMC guarantees exact samples from the posterior.</li><li>Convergence diagnostics (Gelman-Rubin, trace plots) assess MCMC mixing.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A)(B) Standard MCMC algorithms. (C) FALSE: MCMC generates approximate samples from the posterior — convergence to the stationary distribution is asymptotic, and in finite runs samples are only approximately from the posterior. (D) Convergence diagnostics.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>HT - Power and sample size</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a one-sided z-test of \(H_0:\mu=\mu_0\) vs \(H_1:\mu=\mu_1>\mu_0\) with known \(\sigma\). The power is \(1-\beta=\Phi\left(\frac{(\mu_1-\mu_0)\sqrt{n}}{\sigma}-z_\alpha\right)\). Which are TRUE?</p>
+<ol type="A"><li>Power increases as \(n\) increases (larger sample → higher power).</li><li>Power increases as the effect size \((\mu_1-\mu_0)/\sigma\) increases.</li><li>For a given power \(1-\beta\): required \(n\approx\frac{(z_\alpha+z_\beta)^2\sigma^2}{(\mu_1-\mu_0)^2}\).</li><li>Increasing \(\alpha\) (Type I error) decreases power.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Power is increasing in \(n\) and effect size. (C) Standard sample size formula. (D) FALSE: increasing \(\alpha\) (using a larger critical region) increases power — larger \(\alpha\) makes it easier to reject \(H_0\), so power (probability of rejecting \(H_0\) when \(H_1\) is true) increases.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Complex Analysis — Entire Functions and Singularities</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>Entire Functions - Definition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An entire function is a function that is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Analytic (holomorphic) on all of \(\mathbb{C}\)</strong></p><p>Entire functions are analytic on the whole complex plane \(\mathbb{C}\). Examples: polynomials, \(e^z\), \(\sin z\), \(\cos z\), \(\sinh z\). Non-examples: \(1/z\) (pole at 0), \(\log z\) (branch cut), \(\Gamma(z)\) (poles at non-positive integers). By Liouville's theorem, a bounded entire function is constant.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Analytic on a bounded domain only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Analytic on all of \(\mathbb{C}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Analytic on the upper half-plane]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded on all of \(\mathbb{C}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>Entire Functions - Liouville's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Liouville's theorem states that a bounded entire function must be:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Constant</strong></p><p>Liouville: if \(f\) is entire and \(|f(z)|\leq M\) for all \(z\in\mathbb{C}\), then \(f\) is constant. Proof: by Cauchy's estimate \(|f'(z)|\leq M/R\to0\) as \(R\to\infty\), so \(f'=0\). Corollary: the fundamental theorem of algebra (every nonconstant polynomial has a root).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[A polynomial]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Constant]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Periodic]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>Entire Functions - Singularity at Infinity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A nonconstant entire function \(f\) has at \(z=\infty\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Either a pole or an essential singularity</strong></p><p>If \(f\) is entire and nonconstant, then \(z=\infty\) is either a pole (if \(f\) is a polynomial) or an essential singularity (if \(f\) is transcendental, e.g., \(e^z\)). By Picard's theorem, a transcendental entire function takes every value infinitely often with at most one exception.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[A removable singularity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Either a pole (if polynomial) or an essential singularity (if transcendental)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No singularity]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A branch point]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>Entire Functions - Picard's Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Picard's little theorem states: a nonconstant entire function \(f\) takes every complex value:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) With at most one exception</strong></p><p>Little Picard: a nonconstant entire function omits at most one value. Example: \(e^z\) omits 0. Polynomials omit nothing (surjective). Great Picard: in any punctured neighbourhood of an essential singularity, \(f\) takes every value infinitely often with at most one exception. This contrasts with the Casorati–Weierstrass theorem (which only gives density).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Exactly once]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Finitely many times at most]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[With at most one exception (infinitely often for all other values)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[At most finitely many values are omitted]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>Entire Functions - lim|f(1/z)|=inf at 0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f\) is entire and \(\lim_{z\to0}|f(1/z)|=\infty\), then \(f\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) A nonconstant polynomial</strong></p><p>\(\lim_{z\to0}|f(1/z)|=\infty\) means \(z=\infty\) is a pole of \(f\). Since \(f\) is entire, the only singularity can be at \(\infty\). An entire function with a pole at \(\infty\) is a polynomial. If it were transcendental, \(\infty\) would be an essential singularity, not a pole.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[A constant]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[A nonconstant polynomial]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A transcendental entire function like \(e^z\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[An entire function with infinitely many zeros]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>Entire Functions - Weierstrass Factorization</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Weierstrass factorization theorem states that every entire function with zeros \(a_1,a_2,\ldots\) (listed with multiplicity) can be written as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(f(z)=z^m e^{g(z)}\prod_{n=1}^\infty E_{p_n}(z/a_n)\) where \(g\) is entire and \(E_p\) are elementary factors</strong></p><p>Weierstrass factorization: every entire function factors as \(z^m e^{g(z)}\prod E_{p_n}(z/a_n)\), where the elementary factors \(E_p(u)=(1-u)\exp(u+u^2/2+\cdots+u^p/p)\) ensure convergence. For \(\sin\pi z=\pi z\prod_{n=1}^\infty(1-z^2/n^2)\) is a famous example.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(z)=z^m e^{g(z)}\prod_{n}E_{p_n}(z/a_n)\) (Weierstrass product)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(z)=\prod_n(z-a_n)\) (finite product only)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(z)=\sum_n c_n z^n\) (Taylor series only)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f(z)=e^{g(z)}\) for some entire \(g\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>Entire Functions - Essential Singularity Casorati-Weierstrass</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Casorati–Weierstrass theorem: in any deleted neighbourhood of an essential singularity \(z_0\), the image \(f(\{0<|z-z_0|<\delta\})\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Dense in \(\mathbb{C}\)</strong></p><p>Casorati–Weierstrass: the image of any punctured neighbourhood of an essential singularity is dense in \(\mathbb{C}\). Example: near the essential singularity 0 of \(e^{1/z}\), values are dense in \(\mathbb{C}\setminus\{0\}\). Picard's theorem strengthens this: the image actually omits at most one point (not just "is dense").</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Finite]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Dense in \(\mathbb{C}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equal to \(\mathbb{C}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>Entire Functions - Number of Zeros</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An entire function \(f\) that is not a polynomial:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) May have infinitely many zeros (or finitely many, or none)</strong></p><p>A non-polynomial entire function (transcendental) can have any number of zeros: \(e^z\) has none; \(\sin z\) has infinitely many (\(z=n\pi\)); \(e^z-1\) has infinitely many (\(z=2\pi i n\)). By Hadamard's factorization, the zeros must satisfy \(\sum\frac{1}{|a_n|^{\rho+\epsilon}}<\infty\) for the order \(\rho\) of the function.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Has exactly as many zeros as its degree]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[May have 0, finitely many, or infinitely many zeros depending on the function]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Must have infinitely many zeros]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Must have no zeros]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>Entire Functions - Hadamard Order</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The order of an entire function \(f\) is \(\rho=\limsup_{r\to\infty}\frac{\ln\ln M(r)}{\ln r}\) where \(M(r)=\max_{|z|=r}|f(z)|\). The order of \(f(z)=e^{z^2}\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) 2</strong></p><p>For \(f(z)=e^{z^2}\): \(M(r)=e^{r^2}\), so \(\ln M(r)=r^2\), \(\ln\ln M(r)=\ln(r^2)=2\ln r\). Then \(\frac{\ln\ln M(r)}{\ln r}=2\to2\). Order = 2. Generally, order of \(e^{z^n}\) is \(n\); order of a polynomial is 0.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[2]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>Entire Functions - Maximum Modulus Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The maximum modulus principle states: if \(f\) is analytic and nonconstant on a connected open set \(D\), then \(|f|\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Cannot attain its maximum value in the interior of \(D\)</strong></p><p>Maximum modulus principle: a nonconstant analytic function on a connected domain cannot have a local maximum of \(|f|\) at an interior point. The maximum of \(|f|\) on a compact set is attained on the boundary. This is a consequence of the mean value property of harmonic functions (Re\,f and Im\,f are harmonic).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Cannot attain its maximum in the interior of \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Must attain its maximum at the center of \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Is constant on \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Attains its maximum at all points of \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>Entire Functions - Taylor Series Everywhere</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Every entire function has a Taylor series \(\sum_{n=0}^\infty a_n z^n\) that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Converges for all \(z\in\mathbb{C}\) (radius of convergence is \(\infty\))</strong></p><p>An entire function is analytic on all of \(\mathbb{C}\), so its Taylor series centered at 0 has infinite radius of convergence. Conversely, a power series with infinite radius of convergence represents an entire function. Examples: \(e^z=\sum z^n/n!\), \(\sin z=\sum(-1)^n z^{2n+1}/(2n+1)!\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Has finite radius of convergence]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Converges for all \(z\in\mathbb{C}\) (radius of convergence \(=\infty\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges only for \(|z|<1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Converges only at \(z=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>Entire Functions - Open Mapping Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The open mapping theorem states: a nonconstant analytic function on a connected open set maps:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Open sets to open sets</strong></p><p>Open mapping theorem: if \(f\) is analytic and nonconstant on a connected open set \(D\), then \(f(D)\) is open in \(\mathbb{C}\). This fails for real analytic functions (\(f(x)=x^2\) maps \((-1,1)\) to \([0,1)\), not open). This theorem, combined with maximum modulus, shows entire functions cannot be bounded unless constant.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Closed sets to closed sets]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Bounded sets to bounded sets]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Open sets to open sets]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Compact sets to compact sets only]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>Entire Functions - Zeros of Entire Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f\) is entire and \(f(z)\neq0\) for all \(z\in\mathbb{C}\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(f(z)=e^{g(z)}\) for some entire function \(g\)</strong></p><p>If an entire function has no zeros, it is of the form \(e^{g(z)}\) for some entire \(g\). This follows from the Weierstrass factorization theorem (empty product). Conversely, \(e^{g(z)}\) is always nonzero. Combined with Liouville: if bounded and zero-free, then constant (but also expressible as \(e^c\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(f(z)=e^{g(z)}\) for some entire \(g\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) must be constant (Liouville)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) must be a polynomial]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\equiv1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>Entire Functions - Growth and Zeros</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The function \(f(z)=\sin z\) is an entire function of order 1 with zeros at \(z=n\pi\). Its Hadamard product is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\sin z = z\prod_{n=1}^\infty\left(1-\frac{z^2}{n^2\pi^2}\right)\)</strong></p><p>Hadamard factorization of \(\sin z\): \(\sin z=z\prod_{n=1}^\infty\left(1-\frac{z^2}{n^2\pi^2}\right)\). This is the Weierstrass product (elementary factors of order 1 applied to \(\sin z\)). Comparing coefficients gives the Basel formula: \(\sum1/n^2=\pi^2/6\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sin z=\prod_{n=-\infty}^\infty(z-n\pi)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sin z=z\prod_{n=1}^\infty\!\left(1-\dfrac{z^2}{n^2\pi^2}\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sin z=e^z\prod_{n=1}^\infty(1-z/n\pi)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sin z=z(1-z^2/\pi^2)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>Entire Functions - Mean Value Property</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The mean value property of analytic functions states: \(f(a)=\dfrac{1}{2\pi}\displaystyle\int_0^{2\pi}f(a+re^{i\theta})\,d\theta\). This implies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) The value at the center equals the average over any circle</strong></p><p>This is Gauss's mean value theorem: for analytic \(f\), the value at the center of a circle equals the average value on the circle. It's a consequence of Cauchy's integral formula. Since real and imaginary parts are harmonic, harmonic functions also satisfy this property.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[The value at the center equals the average over any circle inside the domain]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) is constant on every circle]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(f\) achieves its minimum at the center]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The integral of \(f\) over every circle is zero]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>Entire Functions - Cauchy's Estimate</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Cauchy's estimate for derivatives: if \(f\) is analytic on \(|z-a|\leq R\) with \(|f|\leq M\), then:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(|f^{(n)}(a)|\leq\dfrac{n!\,M}{R^n}\)</strong></p><p>From the \(n\)-th derivative formula of Cauchy: \(f^{(n)}(a)=\frac{n!}{2\pi i}\oint\frac{f(z)}{(z-a)^{n+1}}dz\). Estimating: \(|f^{(n)}(a)|\leq\frac{n!}{2\pi}\cdot\frac{M}{R^{n+1}}\cdot2\pi R=\frac{n!\,M}{R^n}\). This is used to prove Liouville's theorem and analyticity of convergent power series.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(|f^{(n)}(a)|\leq M/R\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|f^{(n)}(a)|\leq n!\,M\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(|f^{(n)}(a)|\leq\dfrac{n!\,M}{R^n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(|f^{(n)}(a)|\leq M^n\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>Entire Functions - f entire with f(z)=f(z+1)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f\) is an entire function satisfying \(f(z)=f(z+1)\) for all \(z\in\mathbb{C}\), and also \(|f(z)|\leq e^{2\pi|\mathrm{Im}\,z|}\), then \(f\) must be:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) A trigonometric polynomial (linear combination of \(e^{2\pi i n z}\))</strong></p><p>A function periodic with period 1 satisfying the given growth bound has a Fourier series \(f(z)=\sum_{n\in\mathbb{Z}}c_n e^{2\pi inz}\). The growth condition \(|f|\leq e^{2\pi|\text{Im}\,z|}\) means \(c_n=0\) for \(|n|>1\), giving \(f(z)=c_{-1}e^{-2\pi iz}+c_0+c_1e^{2\pi iz}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Constant (by Liouville)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[A trigonometric polynomial \(\sum_{|n|\leq1}c_ne^{2\pi inz}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Identically zero]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[An arbitrary entire function]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>Entire Functions - Hurwitz Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Hurwitz's theorem: if \(f_n\to f\) uniformly on compact subsets of a domain \(D\), each \(f_n\) has no zeros in \(D\), then \(f\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Either has no zeros in \(D\), or is identically zero</strong></p><p>Hurwitz: if \(f_n\) are analytic with no zeros on a connected domain and \(f_n\to f\) uniformly on compact sets, then \(f\) either has no zeros or \(f\equiv0\). This is proved using Rouché's theorem and the argument principle. It's used to show limits of injective analytic functions are injective or constant.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Either has no zeros in \(D\), or is identically zero on \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has exactly one zero in \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Must have zeros in \(D\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Has countably many zeros]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>Entire Functions - Infinite Product for e^z</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following is an entire function with simple zeros at \(z=1,2,3,\ldots\)?</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\dfrac{1}{\Gamma(1-z)}\) (reciprocal of Gamma function shifted)</strong></p><p>The function \(1/\Gamma(1-z)\) is entire (since \(\Gamma\) has poles at non-positive integers, \(1/\Gamma(1-z)\) has zeros at \(z=1,2,3,\ldots\)). By Weierstrass: \(\frac{1}{\Gamma(z)}=ze^{\gamma z}\prod_{n=1}^\infty(1+z/n)e^{-z/n}\). This is a famous Weierstrass product for the gamma function.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\prod_{n=1}^\infty(z-n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sin(\pi z)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{1}{\Gamma(1-z)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^z-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>Entire Functions - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\) be an entire function with \(|f(z)|\leq|z|^5+7\) for all \(z\). Then \(f\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) A polynomial of degree \(\leq5\)</strong></p><p>Since \(|f(z)|\leq|z|^5+7\leq C(1+|z|^5)\) for large \(|z|\), the function \(f\) has at most polynomial growth. By a generalization of Liouville's theorem (using Cauchy's estimates on \(f^{(6)}\)): \(|f^{(6)}(z)|\leq\frac{6!\,C(1+R^5)}{R^6}\to0\) as \(R\to\infty\). So \(f^{(6)}\equiv0\), meaning \(f\) is a polynomial of degree \(\leq5\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[A polynomial of degree \(\leq5\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Constant]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A transcendental entire function]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Identically zero]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

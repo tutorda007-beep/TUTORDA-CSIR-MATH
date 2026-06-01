@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Stochastic Processes — Random Walk and Recurrence</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>RW - Simple Symmetric Random Walk Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(S_n=X_1+\cdots+X_n\) be a simple symmetric random walk on \(\mathbb{Z}\) (\(P(X_i=\pm1)=1/2\)). Which are TRUE?</p>
+<ol type="A"><li>\(S_n\) is periodic with period 2.</li><li>\(S_n\) is irreducible (every state can reach every other state).</li><li>\(S_n\) is null-recurrent (returns to 0 a.s., but expected return time is infinite).</li><li>\(S_n\) is positive recurrent (expected return time to 0 is finite).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Parity: \(S_n=0\) only when \(n\) is even. Period = 2. (B) The walk can reach any integer. (C) Pólya's theorem: the 1D simple symmetric random walk is recurrent. Since the walk returns a.s. but \(E[\text{return time}]=\infty\), it is null-recurrent. (D) FALSE: it is null-recurrent, not positive recurrent.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>RW - Polya Recurrence Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Pólya's theorem on random walks on \(\mathbb{Z}^d\). Which are TRUE?</p>
+<ol type="A"><li>The simple symmetric random walk on \(\mathbb{Z}^1\) is recurrent.</li><li>The simple symmetric random walk on \(\mathbb{Z}^2\) is recurrent.</li><li>The simple symmetric random walk on \(\mathbb{Z}^3\) is transient.</li><li>For \(d\ge3\), the walk returns to the origin a.s.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Pólya: recurrent for \(d\le2\). (C) Transient for \(d\ge3\). (D) FALSE: for \(d\ge3\), the walk is transient — returns occur with probability \(<1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>RW - Gambler's Ruin</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Gambler's Ruin: start at \$k, win \$1 with probability \(p\), lose \$1 with probability \(q=1-p\), stop at 0 or \$N. For \(p=q=1/2\), which are TRUE?</p>
+<ol type="A"><li>Probability of ruin is \(1-k/N\).</li><li>Probability of success (reaching \$N) is \(k/N\).</li><li>Expected duration of the game is \(k(N-k)\).</li><li>For \(p\ne1/2\): ruin probability is \(\frac{(q/p)^N-(q/p)^k}{(q/p)^N-1}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) For fair game: ruin = \(1-k/N\), success = \(k/N\). (C) Expected duration of fair game from \$k: \(k(N-k)\). (D) General ruin formula with \(p\ne1/2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>RW - Reflection Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The reflection principle for simple random walk: for \(a>0\), \(P(\max_{0\le k\le n}S_k\ge a)=2P(S_n\ge a)-P(S_n=a)\). Which follow?</p>
+<ol type="A"><li>\(P(\max_{k\le n}S_k\ge a)\le 2P(S_n\ge a)\).</li><li>For Brownian motion: \(P(\max_{t\le T}B_t\ge a)=2P(B_T\ge a)\).</li><li>The ballot problem: in an election where A gets \(a\) votes and B gets \(b\) votes (\(a>b\)), probability A is always ahead is \((a-b)/(a+b)\).</li><li>The arc-sine law follows from the reflection principle.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Upper bound from the reflection principle. (B) Brownian motion version (continuous-time reflection). (C) Ballot problem (Bertrand ballot theorem). (D) Arc-sine law: the fraction of time BM spends positive has arc-sine distribution, related to the reflection principle.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>RW - Recurrence and Transience Criteria</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a Markov chain on countable state space, which criteria for recurrence are TRUE?</p>
+<ol type="A"><li>State \(i\) is recurrent iff \(\sum_{n=0}^\infty P^n_{ii}=\infty\).</li><li>State \(i\) is transient iff \(\sum_{n=0}^\infty P^n_{ii}<\infty\).</li><li>An irreducible finite Markov chain is always recurrent.</li><li>Recurrence is a class property: if \(i\) is recurrent and \(i\leftrightarrow j\), then \(j\) is recurrent.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Standard recurrence/transience criteria via return probabilities. (C) Finite irreducible chains: all states are visited infinitely often (positive recurrence). (D) Recurrence is a class property in irreducible chains.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>RW - Stationary Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an ergodic (irreducible, aperiodic, positive recurrent) Markov chain with stationary distribution \(\pi\), which are TRUE?</p>
+<ol type="A"><li>\(\pi P=\pi\) and \(\sum_i\pi_i=1\).</li><li>\(P^n_{ij}\to\pi_j\) as \(n\to\infty\) for all \(i,j\).</li><li>\(\pi_i=1/E_i[T_i]\) where \(T_i\) is the first return time to \(i\).</li><li>For a doubly stochastic chain (row and column sums all 1), \(\pi\) is uniform.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Stationary distribution equations. (B) Ergodic theorem for Markov chains. (C) \(\pi_i=1/m_i\) where \(m_i=E_i[T_i]\). (D) Doubly stochastic: uniform measure is stationary.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>RW - Random Walk as Martingale</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the simple symmetric random walk \(S_n\), which are martingales?</p>
+<ol type="A"><li>\(S_n\).</li><li>\(S_n^2-n\).</li><li>\(e^{\theta S_n}(E[e^\theta])^{-n}\) for any \(\theta\).</li><li>\(S_n^3-3nS_n\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(E[S_{n+1}|\mathcal{F}_n]=S_n\) (fair game). (B) \(E[S_{n+1}^2-n-1|\mathcal{F}_n]=S_n^2+1-n-1=S_n^2-n\). (C) Exponential martingale. (D) \(E[S_{n+1}^3-3(n+1)S_{n+1}|\mathcal{F}_n]=S_n^3+3S_n+0-3(n+1)(S_n)=S_n^3-3nS_n\) (check: \(E[S_{n+1}^3|\mathcal{F}_n]=S_n^3+3S_n\), \(3(n+1)E[S_{n+1}|\mathcal{F}_n]=3(n+1)S_n\): result = \(S_n^3+3S_n-3(n+1)S_n=S_n^3-3nS_n\)✓).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>RW - Brownian Motion Definition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Standard Brownian motion \(B_t\) is characterized by. Which are TRUE?</p>
+<ol type="A"><li>\(B_0=0\) a.s.</li><li>Independent increments: \(B_{t_2}-B_{t_1}\perp B_{t_4}-B_{t_3}\) for \(0\le t_1<t_2\le t_3<t_4\).</li><li>Stationary increments: \(B_{t+s}-B_t\sim N(0,s)\) for all \(t,s>0\).</li><li>Almost surely continuous paths.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>All four are the defining properties of standard Brownian motion (Wiener process).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>RW - BM is nowhere differentiable</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Standard Brownian motion \(B_t\). Which are TRUE?</p>
+<ol type="A"><li>Brownian paths are a.s. nowhere differentiable.</li><li>Brownian paths are a.s. Hölder continuous of order \(\alpha<1/2\).</li><li>The quadratic variation of \(B\) on \([0,t]\) is \(t\) a.s.</li><li>Brownian motion is a martingale with respect to its natural filtration.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) BM paths are a.s. nowhere differentiable. (B) Hölder continuity with exponent \(<1/2\) (not \(1/2\) itself). (C) Quadratic variation \([B,B]_t=t\). (D) \(E[B_t|\mathcal{F}_s]=B_s\) for \(t>s\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>RW - Poisson Process</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Poisson process \(N_t\) with rate \(\lambda\). Which are TRUE?</p>
+<ol type="A"><li>\(N_t\sim\mathrm{Poisson}(\lambda t)\).</li><li>Inter-arrival times are i.i.d. \(\mathrm{Exp}(\lambda)\).</li><li>\(N_t-\lambda t\) is a martingale.</li><li>Superposition of two independent Poisson processes with rates \(\lambda_1,\lambda_2\) is Poisson with rate \(\lambda_1+\lambda_2\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Marginal distribution. (B) Memoryless inter-arrivals. (C) Compensated Poisson process is a martingale. (D) Superposition of independent Poisson processes.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>RW - Birth-Death Chains</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A birth-death chain on \(\mathbb{Z}_{\ge0}\) with birth rates \(\lambda_i\) and death rates \(\mu_i\). Which are TRUE?</p>
+<ol type="A"><li>The chain is positive recurrent iff \(\sum_{n=0}^\infty\prod_{k=0}^{n-1}\lambda_k/\mu_{k+1}<\infty\).</li><li>For a simple birth-death chain with \(\lambda_i=\lambda\), \(\mu_i=\mu\): positive recurrent iff \(\lambda<\mu\).</li><li>The stationary distribution satisfies detailed balance: \(\pi_i\lambda_i=\pi_{i+1}\mu_{i+1}\).</li><li>Birth-death chains are always reversible.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Positive recurrence criterion via the series. (B) Simple birth-death: queue stability condition \(\rho=\lambda/\mu<1\). (C) Detailed balance (reversibility) holds for birth-death chains. (D) Birth-death chains satisfy detailed balance, hence are reversible.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>RW - Ito Formula</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Itô's formula: if \(f\in C^2\) and \(X_t=X_0+\int_0^t\mu_s ds+\int_0^t\sigma_s dB_s\), then \(df(X_t)=f'(X_t)dX_t+\frac{1}{2}f''(X_t)\sigma_t^2dt\). Which are TRUE?</p>
+<ol type="A"><li>\(d(B_t^2)=2B_tdB_t+dt\).</li><li>\(d(e^{B_t})=e^{B_t}dB_t+\frac{1}{2}e^{B_t}dt\).</li><li>Itô's formula differs from classical calculus by the \(\frac{1}{2}f''\sigma^2dt\) term.</li><li>Geometric Brownian motion \(S_t=S_0e^{(\mu-\sigma^2/2)t+\sigma B_t}\) solves \(dS_t=\mu S_tdt+\sigma S_tdB_t\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(f(x)=x^2\): \(d(B_t^2)=2B_tdB_t+(1/2)(2)dt=2B_tdB_t+dt\). (B) \(f(x)=e^x\): \(de^{B_t}=e^{B_t}dB_t+(1/2)e^{B_t}dt\). (C) The Itô correction. (D) Classical GBM result.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>RW - Ergodic Theorem for MC</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For an ergodic Markov chain with stationary distribution \(\pi\), the ergodic theorem states that time averages equal space averages. Which are TRUE?</p>
+<ol type="A"><li>\(\frac{1}{n}\sum_{k=0}^{n-1}f(X_k)\to\sum_i\pi_if(i)\) a.s. for any bounded \(f\).</li><li>The ergodic theorem holds for all initial distributions.</li><li>The rate of convergence depends on the spectral gap of the transition matrix.</li><li>For a finite chain: mixing time measures how quickly the chain approaches stationarity.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Birkhoff-type ergodic theorem for Markov chains. (B) By ergodicity, all initial distributions lead to the same limit. (C) Spectral gap \(=1-|\lambda_2|\) where \(\lambda_2\) is the second largest eigenvalue. (D) Mixing time = time to get within \(\varepsilon\) of stationarity.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>RW - Ornstein-Uhlenbeck Process</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Ornstein-Uhlenbeck process: \(dX_t=-\theta X_t\,dt+\sigma dB_t\) (\(\theta>0\)). Which are TRUE?</p>
+<ol type="A"><li>The process is mean-reverting to 0.</li><li>The stationary distribution is \(N(0,\sigma^2/(2\theta))\).</li><li>The solution is \(X_t=X_0e^{-\theta t}+\sigma\int_0^te^{-\theta(t-s)}dB_s\).</li><li>\(X_t\) is a Gaussian process with \(\mathrm{Cov}(X_s,X_t)=\frac{\sigma^2}{2\theta}(e^{-\theta|t-s|}-e^{-\theta(t+s)})\) (for \(X_0=0\)).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) The drift \(-\theta X_t\) pulls back to 0. (B) Stationary variance \(\sigma^2/(2\theta)\). (C) Explicit solution by variation of parameters. (D) Covariance structure of OU process.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>RW - Stopping Times</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A stopping time \(\tau\) is a random time where \(\{\tau\le n\}\in\mathcal{F}_n\). Which are TRUE?</p>
+<ol type="A"><li>The hitting time \(\tau_A=\inf\{n:X_n\in A\}\) is a stopping time.</li><li>If \(\tau_1,\tau_2\) are stopping times, so are \(\tau_1+\tau_2\), \(\min(\tau_1,\tau_2)\), and \(\max(\tau_1,\tau_2)\).</li><li>Optional stopping: for a martingale \(M\), \(E[M_\tau]=E[M_0]\) under appropriate conditions.</li><li>A constant time \(\tau=n_0\) is a stopping time.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Hitting times are stopping times (measurability). (B) Stopping times are closed under arithmetic operations. (C) Optional stopping theorem. (D) Deterministic times are trivially stopping times.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>RW - Renewal Theory</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A renewal process has inter-renewal times \(X_i\overset{iid}{\sim}F\) with \(E[X]=\mu<\infty\). Which are TRUE?</p>
+<ol type="A"><li>The renewal function \(M(t)=E[N(t)]\) satisfies \(M(t)/t\to1/\mu\) as \(t\to\infty\).</li><li>The elementary renewal theorem: \(M(t)\sim t/\mu\).</li><li>The renewal reward theorem: \(R(t)/t\to E[\text{reward}]/\mu\).</li><li>If \(F\) is non-lattice, the key renewal theorem applies: \(M(t+h)-M(t)\to h/\mu\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Elementary renewal theorem. (C) Renewal reward theorem. (D) Key renewal theorem (Blackwell's renewal theorem) for non-lattice distributions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>RW - Branching Processes</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Galton-Watson branching process with offspring distribution \(\{p_k\}\) and mean \(\mu=\sum kp_k\). Which are TRUE?</p>
+<ol type="A"><li>If \(\mu\le1\) and \(p_1<1\), the process goes extinct with probability 1.</li><li>If \(\mu>1\), there is a positive probability of survival.</li><li>The extinction probability \(q\) is the smallest non-negative root of \(q=G(q)\) (where \(G\) is the PGF of offspring).</li><li>For \(\mu=1\) (critical), the process is certain to go extinct.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Subcritical (\(\mu<1\)) and critical (\(\mu=1\)): extinction certain. (B) Supercritical (\(\mu>1\)): \(q<1\) extinction probability. (C) PGF equation for extinction. (D) Critical case: almost sure extinction (despite expected population staying the same).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>RW - Arc-Sine Laws</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The arc-sine laws for simple symmetric random walk (or Brownian motion). Which are TRUE?</p>
+<ol type="A"><li>The proportion of time that \(S_n>0\) converges in distribution to \(\mathrm{Arc\text{-}Sine}(0,1)\) distribution.</li><li>The last time before time \(n\) that the walk is at 0 has an arc-sine distribution.</li><li>The first time the walk reaches its maximum has an arc-sine distribution.</li><li>All three arc-sine laws have the same arc-sine distribution with density \(f(x)=\frac{1}{\pi\sqrt{x(1-x)}}\) on \((0,1)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>The three arc-sine laws of random walks: time spent positive, last return time, and time of maximum all have the same arc-sine distribution. This is a classical result in random walk theory (Feller).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>RW - Markov Property</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A Markov chain \(\{X_n\}\) satisfies the Markov property: \(P(X_{n+1}=j|X_0,\ldots,X_n)=P(X_{n+1}=j|X_n)\). Which are TRUE?</p>
+<ol type="A"><li>The strong Markov property holds at stopping times: \(P(X_{\tau+k}|X_0,\ldots,X_\tau)=P(X_{\tau+k}|X_\tau)\).</li><li>Time-homogeneous chains have \(P(X_{n+1}=j|X_n=i)=p_{ij}\) independent of \(n\).</li><li>The Chapman-Kolmogorov equations: \(P^{m+n}_{ij}=\sum_k P^m_{ik}P^n_{kj}\).</li><li>The Markov property implies independence of past and future given the present.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Strong Markov property. (B) Time-homogeneous definition. (C) Chapman-Kolmogorov equations (\(P^{m+n}=P^m P^n\) as matrix multiplication). (D) Markov = conditional independence of past and future given present.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>RW - Expected Number of Visits</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a random walk \(S_n\), let \(G(i,j)=E_i[\text{number of visits to }j]=\sum_{n=0}^\infty P^n_{ij}\). Which are TRUE?</p>
+<ol type="A"><li>State \(j\) is recurrent iff \(G(j,j)=\infty\).</li><li>State \(j\) is transient iff \(G(j,j)<\infty\).</li><li>For the simple symmetric random walk on \(\mathbb{Z}\): \(G(0,0)=\infty\).</li><li>For a transient chain: \(G(i,j)<\infty\) for all \(i,j\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Recurrent iff expected number of returns is infinite; transient iff finite. (C) 1D symmetric walk is recurrent: \(\sum P^{2n}_{00}=\sum\binom{2n}{n}/4^n=\infty\) (harmonic series rate). (D) For transient chains, the expected number of visits to any state from any starting state is finite.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

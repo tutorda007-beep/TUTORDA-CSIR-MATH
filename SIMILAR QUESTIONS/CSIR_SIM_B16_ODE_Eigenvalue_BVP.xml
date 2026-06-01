@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/ODEs — Eigenvalue Problems and Periodic BVPs</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>BVP - Eigenvalues of y''+lambda*y=0, y(0)=y(pi)=0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the BVP \(y''+\lambda y=0\), \(y(0)=0\), \(y(\pi)=0\), the eigenvalues are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\lambda_n=n^2\) for \(n=1,2,3,\ldots\)</strong></p><p>For \(\lambda>0\): \(y=A\cos\sqrt\lambda x+B\sin\sqrt\lambda x\). \(y(0)=0\Rightarrow A=0\). \(y(\pi)=B\sin\sqrt\lambda\pi=0\Rightarrow\sqrt\lambda\pi=n\pi\Rightarrow\lambda=n^2\). Eigenfunctions: \(y_n=\sin(nx)\). For \(\lambda\leq0\) no nontrivial solutions exist.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_n=n\) for \(n=1,2,\ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda_n=n^2\) for \(n=1,2,\ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_n=(2n-1)^2/4\) for \(n=1,2,\ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[All positive reals]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>BVP - Periodic BVP y''+lambda^2*y=0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(y''+\lambda^2y=0\) with periodic BCs \(y(0)=y(T)\) and \(y'(0)=y'(T)\), the positive values of \(\lambda\) are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\lambda=2n\pi/T\) for \(n=1,2,3,\ldots\)</strong></p><p>General solution: \(y=A\cos\lambda x+B\sin\lambda x\). Periodicity \(y(0)=y(T)\) and \(y'(0)=y'(T)\): \(A=A\cos\lambda T+B\sin\lambda T\) and \(B\lambda=-A\lambda\sin\lambda T+B\lambda\cos\lambda T\). For nontrivial: \(\cos\lambda T=1,\sin\lambda T=0\Rightarrow\lambda T=2n\pi\Rightarrow\lambda=2n\pi/T\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda=n\pi/T\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda=n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda=2n\pi/T\) for \(n=1,2,3,\ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda=(2n+1)\pi/T\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>BVP - Sturm-Liouville Eigenvalues</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A regular Sturm–Liouville problem has eigenvalues that are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Real, countably infinite, and can be ordered as \(\lambda_1<\lambda_2<\lambda_3<\cdots\to\infty\)</strong></p><p>For a regular SL problem: (1) all eigenvalues are real, (2) there are countably infinitely many, (3) they can be ordered \(\lambda_1<\lambda_2<\cdots\), (4) \(\lambda_n\to\infty\). The eigenfunctions form a complete orthogonal basis in \(L^2([a,b],w)\) where \(w\) is the weight function. This is the spectral theorem for SL operators.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Real, countably infinite, increasing to \(+\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Complex in general]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Finitely many]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only negative values]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>BVP - Eigenfunction Orthogonality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Eigenfunctions \(y_m\) and \(y_n\) of a Sturm–Liouville problem corresponding to distinct eigenvalues satisfy:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\int_a^b w(x)y_m(x)y_n(x)\,dx=0\) (orthogonality with weight \(w\))</strong></p><p>SL eigenfunctions corresponding to distinct eigenvalues are orthogonal with respect to the weight function \(w(x)\): \(\int_a^b wy_my_n\,dx=0\) for \(m\neq n\). This is proved using Green's identity for the SL operator. The weight \(w\) comes from the SL equation \((ry')'+sy+\lambda wy=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_m=y_n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\int_a^b w(x)y_m y_n\,dx=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\int_a^b y_m y_n\,dx=1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y_m\cdot y_n=0\) pointwise]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>BVP - Bessel Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Bessel's equation of order \(\nu\) is \(x^2y''+xy'+(x^2-\nu^2)y=0\). Solutions are Bessel functions \(J_\nu(x)\). For integer \(\nu=0\), \(J_0(0)=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) 1</strong></p><p>\(J_0(x)=\sum_{m=0}^\infty\frac{(-1)^m}{(m!)^2}\left(\frac{x}{2}\right)^{2m}=1-\frac{x^2}{4}+\cdots\). So \(J_0(0)=1\). \(J_\nu(0)=0\) for \(\nu>0\), and \(J_0\) has infinitely many zeros on \((0,\infty)\). Bessel functions arise as eigenfunctions of the Laplacian in cylindrical coordinates.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[1]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[0]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>BVP - Legendre Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Legendre equation \((1-x^2)y''-2xy'+n(n+1)y=0\) has polynomial solutions \(P_n(x)\) when \(n\) is a:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Non-negative integer</strong></p><p>Legendre polynomials \(P_n(x)\) are the polynomial solutions to Legendre's equation for \(n=0,1,2,\ldots\). They are orthogonal on \([-1,1]\): \(\int_{-1}^1P_mP_n\,dx=\frac{2}{2n+1}\delta_{mn}\). The equation in self-adjoint form: \(((1-x^2)y')'+n(n+1)y=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Any real number]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Non-negative integer]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Positive even integer only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Prime number]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>BVP - Negative Eigenvalue</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the BVP \(y''+\lambda y=0\), \(y(0)=0\), \(y'(L)=0\) (\(L>0\)), the eigenvalues are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\lambda_n=\dfrac{(2n-1)^2\pi^2}{4L^2}\) for \(n=1,2,\ldots\)</strong></p><p>For \(\lambda>0\): \(y=A\cos\sqrt\lambda x+B\sin\sqrt\lambda x\). \(y(0)=0\Rightarrow A=0\). \(y'(L)=B\sqrt\lambda\cos\sqrt\lambda L=0\Rightarrow\sqrt\lambda L=(2n-1)\pi/2\Rightarrow\lambda_n=\frac{(2n-1)^2\pi^2}{4L^2}\). Eigenfunctions: \(\sin\frac{(2n-1)\pi x}{2L}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_n=n^2\pi^2/L^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_n=n^2\pi^2/(2L)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda_n=\dfrac{(2n-1)^2\pi^2}{4L^2}\) for \(n=1,2,\ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_n=n^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>BVP - Rayleigh Quotient</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The smallest eigenvalue of the SL problem \(-(ry')'-sy=\lambda wy\) on \([a,b]\) can be estimated using the Rayleigh quotient:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\lambda_1=\min_{u\neq0}\dfrac{\int_a^b(ru'^2-su^2)\,dx}{\int_a^b wu^2\,dx}\)</strong></p><p>Rayleigh quotient: \(R[u]=\frac{\int(ru'^2-su^2)dx}{\int wu^2dx}\). The minimum over all admissible \(u\) (satisfying BCs) gives the smallest eigenvalue \(\lambda_1\). This variational characterization is used in functional analysis and is the basis for the Ritz method in numerical analysis.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_1=\max_{u\neq0}R[u]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda_1=\min_{u\neq0}R[u]=\min_{u\neq0}\dfrac{\int(ru'^2-su^2)\,dx}{\int wu^2\,dx}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_1=\int_a^b r(x)\,dx\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_1=0\) always]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>BVP - Fourier Series Expansion</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The function \(f(x)=1\) on \([0,\pi]\) can be expanded in eigenfunctions \(\sin(nx)\) of \(y''+\lambda y=0\), \(y(0)=y(\pi)=0\) as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(f(x)=\displaystyle\sum_{n=1}^\infty\frac{4}{(2n-1)\pi}\sin((2n-1)x)\)</strong></p><p>Fourier sine series of 1 on \([0,\pi]\): \(b_n=\frac{2}{\pi}\int_0^\pi\sin(nx)\,dx=\frac{2}{\pi}\cdot\frac{1-(-1)^n}{n}=\begin{cases}4/(n\pi)&n\text{ odd}\\0&n\text{ even}\end{cases}\). So \(1=\sum_{k=0}^\infty\frac{4}{(2k+1)\pi}\sin((2k+1)x)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{n=1}^\infty\frac{2}{n\pi}\sin(nx)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\sum_{n=1}^\infty\sin(nx)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{2}{\pi}\displaystyle\sum_{n=1}^\infty\sin(nx)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\sum_{n=1,3,5,\ldots}\frac{4}{n\pi}\sin(nx)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>BVP - Singular SL Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Legendre equation on \((-1,1)\) is a singular SL problem because:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) The coefficient \(r(x)=1-x^2\) vanishes at \(x=\pm1\) (the endpoints)</strong></p><p>In SL form: \(((1-x^2)y')'+n(n+1)y=0\), so \(r(x)=1-x^2\). Regular SL requires \(r(x)>0\) on the closed interval \([a,b]\). Here \(r(\pm1)=0\), making it singular. Despite this, the theory extends: eigenfunctions \(P_n(x)\) still form a complete orthogonal set on \((-1,1)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[The eigenvalues are complex]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[There are no boundary conditions]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(r(x)=1-x^2\) vanishes at the endpoints \(x=\pm1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The equation has no solutions]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>BVP - Number of Zeros of Eigenfunctions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the regular SL problem on \([a,b]\), the \(n\)-th eigenfunction \(y_n\) has exactly:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(n-1\) zeros in \((a,b)\)</strong></p><p>Oscillation theorem: the \(n\)-th eigenfunction of a regular SL problem (eigenfunctions ordered by eigenvalue) has exactly \(n-1\) zeros in the open interval \((a,b)\). Example: for \(y''+\lambda y=0\), \(y(0)=y(\pi)=0\): \(y_n=\sin(nx)\) has \(n-1\) zeros in \((0,\pi)\). This is a qualitative property of SL eigenfunctions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\) zeros in \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(n-1\) zeros in \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n+1\) zeros in \([a,b]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No zeros]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>BVP - Minimum Eigenvalue of -y''</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the BVP \(-y''=\lambda y\), \(y(0)=y(1)=0\), the smallest eigenvalue is \(\lambda_1=\pi^2\). By the Rayleigh quotient, for any \(u\in H_0^1(0,1)\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\displaystyle\int_0^1|u'|^2\,dx\geq\pi^2\int_0^1|u|^2\,dx\)</strong></p><p>Poincaré inequality: \(\int_0^1|u'|^2dx\geq\pi^2\int_0^1|u|^2dx\) for all \(u\in H_0^1(0,1)\). Equality at \(u=\sin\pi x\) (first eigenfunction). This is equivalent to \(\lambda_1\geq\pi^2\) and is a fundamental inequality in Sobolev space theory.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\int_0^1|u'|^2\leq\pi^2\int_0^1|u|^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\int_0^1|u|^2\geq\pi^2\int_0^1|u'|^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\displaystyle\int_0^1|u'|^2\geq\pi^2\int_0^1|u|^2\) (Poincaré)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\displaystyle\int_0^1|u'|^2=\int_0^1|u|^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>BVP - Completeness of Eigenfunctions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The eigenfunctions \(\{\sqrt{2/L}\sin(n\pi x/L)\}_{n=1}^\infty\) of the Dirichlet problem on \([0,L]\) form a:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Complete orthonormal set in \(L^2(0,L)\)</strong></p><p>The normalized eigenfunctions form a complete ONS (orthonormal system) in \(L^2(0,L)\): \(\int_0^L\sqrt{2/L}\sin(m\pi x/L)\cdot\sqrt{2/L}\sin(n\pi x/L)dx=\delta_{mn}\). Every \(f\in L^2(0,L)\) can be expanded: \(f=\sum_{n=1}^\infty\langle f,e_n\rangle e_n\), and Parseval's identity holds.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Complete orthonormal set (ONB) in \(L^2(0,L)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Complete but not orthogonal]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Orthogonal but not complete]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Linearly independent but not complete]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>BVP - Hermite Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Hermite equation \(y''-2xy'+2ny=0\) has polynomial solutions \(H_n(x)\) when \(n\) is a:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Non-negative integer</strong></p><p>Hermite polynomials: \(H_0=1,H_1=2x,H_2=4x^2-2,H_3=8x^3-12x,\ldots\). They are orthogonal on \((-\infty,\infty)\) with weight \(e^{-x^2}\): \(\int_{-\infty}^\infty H_mH_ne^{-x^2}dx=\sqrt\pi\cdot2^n n!\delta_{mn}\). They arise in the quantum harmonic oscillator.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Any positive real number]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Non-negative integer]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Positive even integer]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Odd prime]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>BVP - Eigenvalue for y''+y=0, y(0)=0, y'(pi)=0</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(y''+\lambda y=0\), \(y(0)=0\), \(y'(\pi)=0\), the eigenvalues are \(\lambda_n=\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \((2n-1)^2/4\) for \(n=1,2,3,\ldots\)</strong></p><p>\(y=B\sin\sqrt\lambda x\). \(y'(\pi)=B\sqrt\lambda\cos\sqrt\lambda\pi=0\Rightarrow\sqrt\lambda\pi=(2n-1)\pi/2\Rightarrow\lambda=(2n-1)^2/4\). Eigenfunctions: \(\sin\frac{(2n-1)x}{2}\). These arise in heat conduction on a rod with one insulated end.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(n^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\((n\pi)^2/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\((2n-1)^2/4\) for \(n=1,2,\ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n^2/4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>BVP - Periodic Eigenvalues on [-pi, pi]</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the periodic BVP \(-y''=\lambda y\) on \([-\pi,\pi]\) with \(y(-\pi)=y(\pi)\) and \(y'(-\pi)=y'(\pi)\), the eigenvalues are:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\lambda_0=0\) and \(\lambda_n=n^2\) (each with multiplicity 2) for \(n=1,2,\ldots\)</strong></p><p>\(\lambda=0\): \(y=1\) (constant). For \(\lambda=n^2>0\): \(y=A\cos(nx)+B\sin(nx)\), both satisfying periodic BCs (since \(\cos\) and \(\sin\) are \(2\pi\)-periodic). Eigenspace for \(\lambda_n=n^2\) is 2-dimensional. This is the Fourier series setting: eigenfunctions are \(1,\cos(nx),\sin(nx)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_n=n^2\) with multiplicity 1 only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\lambda_0=0\) and \(\lambda_n=n^2\) (multiplicity 2) for \(n=1,2,\ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_n=(2n+1)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No eigenvalues exist]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>BVP - Nodal Domain</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The \(n\)-th eigenfunction of a 1D regular SL problem divides \([a,b]\) into \(n\) intervals (nodal domains). This is because it has:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Exactly \(n-1\) interior zeros, creating \(n\) sign-alternating intervals</strong></p><p>Sturm's oscillation theorem: the \(n\)-th eigenfunction of a regular SL problem has exactly \(n-1\) zeros in the interior \((a,b)\). These zeros divide \([a,b]\) into \(n\) subintervals (nodal domains) where the eigenfunction maintains constant sign. The eigenfunction alternates sign across each zero.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(n-1\) interior zeros, creating \(n\) sign-alternating subintervals]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n\) interior zeros]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No zeros (always positive)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2n\) zeros including the endpoints]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>BVP - Chebyshev Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Chebyshev equation \((1-x^2)y''-xy'+n^2y=0\) is related to Chebyshev polynomials \(T_n(x)\). The key property \(T_n(\cos\theta)=\cos(n\theta)\) shows \(T_n\) has:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(n\) zeros in \((-1,1)\) at \(x=\cos\frac{(2k-1)\pi}{2n}\)</strong></p><p>Chebyshev nodes: zeros of \(T_n(x)=\cos(n\arccos x)\) are at \(x_k=\cos\frac{(2k-1)\pi}{2n}\), \(k=1,\ldots,n\). There are exactly \(n\) zeros in \((-1,1)\). Chebyshev polynomials are optimal for interpolation (minimizing the maximum error), and are orthogonal on \((-1,1)\) with weight \(1/\sqrt{1-x^2}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(n-1\) zeros in \((-1,1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(n\) zeros in \((-1,1)\) at \(\cos\frac{(2k-1)\pi}{2n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No zeros]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n+1\) zeros in \([-1,1]\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>BVP - SL and Heat Equation Connection</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The solution of the heat equation \(u_t=u_{xx}\), \(u(0,t)=u(L,t)=0\), \(u(x,0)=f(x)\) uses SL eigenfunctions as:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(u(x,t)=\sum_{n=1}^\infty b_ne^{-n^2\pi^2t/L^2}\sin(n\pi x/L)\) where \(b_n=\frac{2}{L}\int_0^Lf(x)\sin\frac{n\pi x}{L}dx\)</strong></p><p>Separation of variables: \(X''/X=-n^2\pi^2/L^2\) (from SL), \(T'/T=-n^2\pi^2/L^2\). Solutions \(X_n=\sin(n\pi x/L)\), \(T_n=e^{-n^2\pi^2t/L^2}\). Sum with Fourier coefficients \(b_n\) from the initial condition.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(u=e^{-\lambda_1 t}y_1(x)\) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u=f(x)e^{-t}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(u(x,t)=\displaystyle\sum_{n=1}^\infty b_ne^{-n^2\pi^2t/L^2}\sin(n\pi x/L)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(u=\displaystyle\sum_n b_n\cos(n\pi x/L)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>BVP - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the SL problem \(y''+\lambda y=0\), \(y(0)=0\), \(y(1)+y'(1)=0\), the eigenvalues satisfy:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\tan\sqrt\lambda=-\sqrt\lambda\) (transcendental equation)</strong></p><p>Solutions: \(y=B\sin\sqrt\lambda x\). At \(x=1\): \(B\sin\sqrt\lambda+B\sqrt\lambda\cos\sqrt\lambda=0\Rightarrow\tan\sqrt\lambda=-\sqrt\lambda\). This transcendental equation has countably many solutions \(\lambda_1<\lambda_2<\cdots\), all positive. Unlike Dirichlet BCs, there is no closed form — eigenvalues must be computed numerically.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_n=n^2\pi^2\) for \(n=1,2,\ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\tan\sqrt\lambda=-\sqrt\lambda\) (transcendental)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_n=(n-1/2)^2\pi^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda_n=n^2\) for \(n=0,1,2,\ldots\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

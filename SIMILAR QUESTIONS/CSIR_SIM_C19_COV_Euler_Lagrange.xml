@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Calculus of Variations — Euler-Lagrange and Extremal Theory</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>COV - Euler-Lagrange equation for F(x,y,y')</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The functional \(J[y]=\int_a^b F(x,y,y')\,dx\) with fixed endpoints has extremals satisfying the Euler-Lagrange equation. Which are TRUE?</p>
+<ol type="A"><li>The E-L equation is \(F_y - \frac{d}{dx}F_{y'}=0\).</li><li>If \(F\) does not depend on \(y\) explicitly, then \(F_{y'}=\text{const}\).</li><li>If \(F\) does not depend on \(x\) explicitly, then \(F - y'F_{y'}=\text{const}\) (Beltrami identity).</li><li>Every solution of the E-L equation is a global minimum of \(J\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Euler-Lagrange equation. (B) If \(F_y=0\), E-L gives \(\frac{d}{dx}F_{y'}=0\Rightarrow F_{y'}=\text{const}\) (first integral). (C) Beltrami identity: when \(F_x=0\). (D) FALSE: E-L gives stationary points; further analysis (Jacobi condition, Legendre condition) is needed for global minima.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>COV - Shortest path (geodesic in plane)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The functional \(J[y]=\int_a^b\sqrt{1+y'^2}\,dx\) (arc length). Which are TRUE?</p>
+<ol type="A"><li>The E-L equation reduces to \(\frac{d}{dx}\frac{y'}{\sqrt{1+y'^2}}=0\).</li><li>The extremal is a straight line \(y=c_1x+c_2\).</li><li>The second variation \(\delta^2 J>0\), confirming a minimum.</li><li>The extremal depends on the boundary conditions but is always a parabola.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Since \(F=\sqrt{1+y'^2}\) has no \(y\), E-L gives \(F_{y'}=y'/\sqrt{1+y'^2}=\text{const}\), i.e. \(y'=\text{const}\). (B) So \(y=c_1x+c_2\) — straight line. (C) The second variation for arc length is non-negative (Legendre condition satisfied). (D) FALSE: the extremal is a straight line, not a parabola.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>COV - Brachistochrone problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The brachistochrone problem minimizes travel time \(J[y]=\int_0^a\frac{\sqrt{1+y'^2}}{\sqrt{2gy}}\,dx\). Which are TRUE?</p>
+<ol type="A"><li>The functional has no explicit \(x\)-dependence, so the Beltrami identity applies.</li><li>The extremal is a cycloid.</li><li>The Beltrami identity gives \(\frac{\sqrt{1+y'^2}}{\sqrt{y}}=\text{const}\).</li><li>The extremal is a straight line.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(C) No explicit \(x\) dependence → Beltrami identity: \(F-y'F_{y'}=\sqrt{(1+y'^2)/y}/(anything)=1/\sqrt{y(1+y'^2)}=\text{const}\), equivalently \(y(1+y'^2)=\text{const}\). (B) Solution is a cycloid \(x=r(\theta-\sin\theta),\ y=r(1-\cos\theta)\). (D) FALSE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>COV - Isoperimetric problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The isoperimetric problem: extremize \(J[y]=\int_a^b F\,dx\) subject to the constraint \(K[y]=\int_a^b G\,dx=\ell\). Which are TRUE?</p>
+<ol type="A"><li>We form the augmented functional \(J^*[y]=\int(F-\lambda G)\,dx\) and solve the E-L equation for \(J^*\).</li><li>\(\lambda\) is a Lagrange multiplier determined by the constraint.</li><li>Dido's problem (maximum enclosed area for fixed perimeter) is an isoperimetric problem with extremal a circle.</li><li>The Lagrange multiplier \(\lambda\) must always equal 0.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Standard Lagrange multiplier method for isoperimetric problems. (C) Dido's isoperimetric theorem: the circle encloses maximum area for given perimeter. (D) FALSE: \(\lambda\) is determined by the constraint and is generally nonzero.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>COV - Second variation and Legendre condition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a weak local minimum of \(J[y]=\int_a^b F(x,y,y')\,dx\), which conditions are NECESSARY?</p>
+<ol type="A"><li>Euler-Lagrange equation: \(\delta J=0\).</li><li>Legendre condition: \(F_{y'y'}\ge0\) along the extremal.</li><li>Jacobi condition: no conjugate point in \((a,b]\).</li><li>\(F_{y'y'}&lt;0\) (strict concavity in \(y'\)).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) First necessary condition. (B) Legendre necessary condition for minimum. (C) Jacobi necessary condition: no conjugate points. (D) FALSE: for a minimum we need \(F_{y'y'}\ge0\), not \(<0\); negative \(F_{y'y'}\) would indicate a maximum direction.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>COV - Natural boundary conditions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the functional \(J[y]=\int_a^b F(x,y,y')\,dx\) with free endpoint at \(x=b\), the natural boundary condition is:</p>
+<ol type="A"><li>\(F_{y'}|_{x=b}=0\).</li><li>\(y(b)\) is arbitrary (free endpoint).</li><li>The transversality condition generalizes natural BCs to curves.</li><li>\(y'(b)=0\) always.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Natural boundary condition from the boundary term in integration by parts: \([F_{y'}\eta]_a^b=0\Rightarrow F_{y'}|_{x=b}=0\). (B) By definition of a free endpoint. (C) Transversality conditions generalize to variable endpoints and endpoint curves. (D) FALSE: the condition is on \(F_{y'}\), not necessarily \(y'=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>COV - Minimal surface of revolution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The surface area of revolution \(J[y]=2\pi\int_a^b y\sqrt{1+y'^2}\,dx\). Which are TRUE?</p>
+<ol type="A"><li>The E-L equation (using Beltrami) gives \(y/\sqrt{1+y'^2}=c_1\).</li><li>The extremal is a catenary \(y=c_1\cosh\!\left(\frac{x-c_2}{c_1}\right)\).</li><li>The minimal surface between two circles (Plateau problem) is a catenoid.</li><li>There is always a catenary connecting any two boundary circles.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Beltrami identity for \(F=y\sqrt{1+y'^2}\): \(F-y'F_{y'}=y/\sqrt{1+y'^2}=c_1\), leading to catenary. (C) The catenoid is the minimal surface of revolution. (D) FALSE: for large enough separation between boundary circles, no catenary exists and the minimum is two discs (Goldschmidt discontinuous solution).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>COV - Hamilton's principle and Lagrangian mechanics</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Hamilton's principle: the actual path minimizes the action \(S=\int_{t_1}^{t_2}L(q,\dot q,t)\,dt\) where \(L=T-V\). Which are TRUE?</p>
+<ol type="A"><li>The Euler-Lagrange equations give \(\frac{d}{dt}\frac{\partial L}{\partial\dot q}-\frac{\partial L}{\partial q}=0\).</li><li>For \(L=\frac{1}{2}m\dot x^2-V(x)\), the E-L equation is Newton's second law \(m\ddot x=-V'(x)\).</li><li>Cyclic (ignorable) coordinates lead to conserved momenta.</li><li>The Hamiltonian is always \(H=T+V\) (total energy).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Lagrangian equations of motion. (B) Immediate verification. (C) If \(\partial L/\partial q=0\), then \(p=\partial L/\partial\dot q=\text{const}\) (Noether). (D) FALSE: \(H=\sum p_i\dot q_i-L\). For natural systems (kinetic energy homogeneous degree 2 in \(\dot q\), \(V\) independent of \(\dot q\)), \(H=T+V\). But in general \(H\ne T+V\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>COV - Functionals depending on higher derivatives</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(J[y]=\int_a^b F(x,y,y',y'')\,dx\), the Euler-Lagrange equation is:</p>
+<ol type="A"><li>\(F_y-\frac{d}{dx}F_{y'}+\frac{d^2}{dx^2}F_{y''}=0\).</li><li>Boundary terms involve both \(y\) and \(y'\) at endpoints.</li><li>This arises in beam bending problems (Euler-Bernoulli beam).</li><li>The E-L equation is \(F_y-\frac{d}{dx}F_{y'}=0\) (same as first-order case).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) E-L equation for second-order functionals: \(F_y - \frac{d}{dx}F_{y'} + \frac{d^2}{dx^2}F_{y''}=0\). (B) Natural BCs involve conditions on both \(y'\) and combinations of \(F_{y'}, F_{y''}\) at endpoints. (C) Euler-Bernoulli beam: \(J=\int EI(y'')^2/2\,dx\). (D) FALSE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>COV - Pontryagin minimum principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Pontryagin's minimum principle: minimize \(\int_0^T L(x,u,t)\,dt\) subject to \(\dot x=f(x,u,t)\). The Hamiltonian \(H=L+p^Tf\). Which are TRUE?</p>
+<ol type="A"><li>Necessary condition: \(u^*(t)\) minimizes \(H(x^*,u,p^*,t)\) over all admissible \(u\).</li><li>Adjoint equations: \(\dot p=-\partial H/\partial x\).</li><li>If there are no control constraints, the principle reduces to the Euler-Lagrange equations.</li><li>Pontryagin's principle is valid only for linear systems.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Pontryagin minimum principle. (B) Co-state (adjoint) equation. (C) Without control constraints, minimizing \(H\) over \(u\) gives \(\partial H/\partial u=0\), which together with the adjoint equation gives the E-L equations. (D) FALSE: the principle applies to general nonlinear systems.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>COV - Noether's theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Noether's theorem: if the action is invariant under a continuous one-parameter symmetry, then there is a conserved quantity. Which are TRUE?</p>
+<ol type="A"><li>Time-translation symmetry (\(L\) independent of \(t\)) \(\Rightarrow\) energy conservation.</li><li>Space-translation symmetry \(\Rightarrow\) momentum conservation.</li><li>Rotational symmetry \(\Rightarrow\) angular momentum conservation.</li><li>Noether's theorem applies only to Abelian symmetry groups.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B)(C) Standard applications of Noether's theorem in classical mechanics. (D) FALSE: Noether's theorem applies to continuous symmetry groups including non-Abelian ones (Yang-Mills theories).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>COV - Extremal for J = int y'^2 dx</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(J[y]=\int_0^1 y'^2\,dx\) with \(y(0)=0,\ y(1)=1\). Which are TRUE?</p>
+<ol type="A"><li>The E-L equation is \(y''=0\).</li><li>The extremal is \(y=x\).</li><li>The minimum value of \(J\) is \(1\).</li><li>The minimum value of \(J\) is \(0\) (can be made arbitrarily small by zigzag functions).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) \(F=y'^2\Rightarrow F_y=0,\ F_{y'}=2y'\Rightarrow\frac{d}{dx}(2y')=0\Rightarrow y''=0\). (B) \(y=x\) satisfies BCs and \(y''=0\). (C) \(J[x]=\int_0^1 1\,dx=1\). By Cauchy-Schwarz: \(J[y]\ge(\int_0^1 y'\,dx)^2=1\). So minimum is 1. (D) FALSE: \(J\ge1\) for all admissible \(y\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>COV - Sturm-Liouville via COV</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Rayleigh quotient \(R[y]=\frac{\int_a^b[p(y')^2-qy^2]\,dx}{\int_a^b ry^2\,dx}\) with appropriate BCs. Which are TRUE?</p>
+<ol type="A"><li>The minimum of \(R\) over \(y\ne0\) equals the smallest eigenvalue \(\lambda_1\) of the Sturm-Liouville problem \(-(py')'+qy=\lambda ry\).</li><li>The minimizer is the eigenfunction \(y_1\) corresponding to \(\lambda_1\).</li><li>The \(k\)-th eigenvalue is the minimum of \(R\) over functions orthogonal to \(y_1,\ldots,y_{k-1}\).</li><li>The Rayleigh quotient is always negative.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B) Min-max characterization of eigenvalues via Rayleigh quotient. (C) Min-max (Courant-Fischer) theorem. (D) FALSE: the Rayleigh quotient can be positive, negative, or zero depending on \(p,q,r\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>COV - Multiple variable functionals</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(J[u]=\iint_\Omega F(x,y,u,u_x,u_y)\,dx\,dy\), the E-L equation is:</p>
+<ol type="A"><li>\(F_u-\frac{\partial}{\partial x}F_{u_x}-\frac{\partial}{\partial y}F_{u_y}=0\).</li><li>For \(F=u_x^2+u_y^2\), the E-L equation is Laplace's equation \(\Delta u=0\).</li><li>The functional \(J=\iint(u_x^2+u_y^2)\,dx\,dy\) is the Dirichlet energy; its minimizer (with fixed BCs) is harmonic.</li><li>The E-L equation for Dirichlet energy is the heat equation \(u_t=\Delta u\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) E-L for functionals in 2D. (B) \(F=u_x^2+u_y^2\Rightarrow F_u=0,\ F_{u_x}=2u_x,\ F_{u_y}=2u_y\). E-L: \(-2u_{xx}-2u_{yy}=0\Rightarrow\Delta u=0\). (C) Dirichlet principle. (D) FALSE: the E-L equation for Dirichlet energy is Laplace's equation, not the heat equation.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>COV - Conjugate points and Jacobi equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the extremal of \(J[y]=\int_a^b F(x,y,y')\,dx\), the Jacobi equation is \(\frac{d}{dx}(Pu')-Qu=0\) where \(P=F_{y'y'}\), \(Q=F_{yy}-\frac{d}{dx}F_{yy'}\). A point \(x=c>a\) is conjugate to \(a\) if there is a nonzero solution \(u\) with \(u(a)=u(c)=0\). Which are TRUE?</p>
+<ol type="A"><li>If there is no conjugate point in \((a,b)\), then the extremal is a weak local minimum (assuming Legendre condition \(P>0\)).</li><li>Conjugate points signal loss of minimality.</li><li>For the functional \(J=\int_0^\pi(y'^2-y^2)\,dx\), the extremal \(y=0\) has a conjugate point at \(x=\pi\).</li><li>The absence of conjugate points is sufficient for a global minimum.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Jacobi sufficient condition for weak local minimum. (B) Beyond a conjugate point, the extremal ceases to minimize. (C) For \(F=y'^2-y^2\): Jacobi equation \(u''+u=0\), \(u=\sin x\); \(u(0)=u(\pi)=0\), so conjugate point at \(\pi\). (D) FALSE: absence of conjugate points + Legendre gives a local (not necessarily global) minimum.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

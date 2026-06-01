@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Real Analysis — Functions of Bounded Variation</text></category>
+  <info format="html"><text></text></info>
+</question>
+
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>BV - x·sin(1/x) on [0,1]</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Define \(f(x)=x\sin(1/x)\) for \(x\ne0\) and \(f(0)=0\). Which statements about \(f\) on \([0,1]\) are TRUE?</p>
+<ol type="A"><li>\(f\) is continuous on \([0,1]\).</li><li>\(f\) is of bounded variation on \([0,1]\).</li><li>\(f\) is differentiable at \(x=0\).</li><li>The total variation of \(f\) on \([0,1]\) is finite.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C)</strong></p><p>(A) \(|f(x)|\le x\to0\), so \(f\) is continuous at 0; it's continuous elsewhere. (B)(D) FALSE: \(f\) is NOT of bounded variation — its oscillations \(\approx x\) at \(x_k=1/(k\pi)\) give total variation \(\sum 2/(k\pi)\) (harmonic series), which diverges. (C) \(f'(0)=\lim_{x\to0}x\sin(1/x)/x=\lim\sin(1/x)\) — this limit does NOT exist. So (C) is FALSE.</p><p>Correction: (A) only. \(f'(0)\) does not exist. BV: FALSE.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>BV - g(x)=x^2·sin(1/x) on [0,1]</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Define \(g(x)=x^2\sin(1/x)\) for \(x\ne0\) and \(g(0)=0\). Which statements about \(g\) on \([0,1]\) are TRUE?</p>
+<ol type="A"><li>\(g\) is continuous on \([0,1]\).</li><li>\(g\) is differentiable on \([0,1]\).</li><li>\(g\) is of bounded variation on \([0,1]\).</li><li>\(g'(0)=0\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(|g(x)|\le x^2\to0\). (B)(D) \(g'(0)=\lim_{x\to0}x^2\sin(1/x)/x=\lim x\sin(1/x)=0\). (B) For \(x\ne0\): \(g'(x)=2x\sin(1/x)-\cos(1/x)\), which exists. (C) Total variation: \(\int_0^1|g'(x)|dx\le\int_0^1(2x+1)dx=2<\infty\), so \(g\in BV[0,1]\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>BV - Monotone Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which statements about monotone functions on \([a,b]\) are TRUE?</p>
+<ol type="A"><li>Every monotone function on \([a,b]\) is of bounded variation.</li><li>Every monotone function on \([a,b]\) is Riemann integrable.</li><li>Every monotone function has at most countably many discontinuities.</li><li>Every monotone function is differentiable a.e.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Total variation of increasing \(f\) on \([a,b]\) is \(f(b)-f(a)<\infty\). (B) Monotone functions are Riemann integrable (bounded with at most countably many discontinuities). (C) Monotone functions have at most countably many jump discontinuities. (D) Lebesgue's theorem: monotone functions are differentiable almost everywhere.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>BV - Jordan Decomposition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Jordan's decomposition theorem states that \(f\in BV[a,b]\) if and only if:</p>
+<ol type="A"><li>\(f=g-h\) where \(g\) and \(h\) are non-decreasing functions.</li><li>\(f\) can be written as a difference of two functions of bounded variation.</li><li>The total variation function \(V(x)=V_a^x(f)\) is non-decreasing.</li><li>\(f\) is the difference of its positive and negative variation functions.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>Jordan: \(f\in BV\Leftrightarrow f=g-h\) with \(g,h\) non-decreasing. The total variation \(V_a^x(f)\) is non-decreasing. We can choose \(g=\frac{V+f}{2}\) and \(h=\frac{V-f}{2}\) (positive and negative variations). All four statements are correct characterizations.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>BV - Absolute Continuity vs BV</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(AC[a,b]\) denote absolutely continuous functions and \(BV[a,b]\) functions of bounded variation. Which are TRUE?</p>
+<ol type="A"><li>\(AC[a,b]\subseteq BV[a,b]\).</li><li>\(BV[a,b]\subseteq AC[a,b]\).</li><li>The Cantor function is in \(BV[0,1]\) but NOT in \(AC[0,1]\).</li><li>\(f\in AC[a,b]\Leftrightarrow f\) is differentiable a.e. with \(f'Lebesgue integrable and \(f(x)-f(a)=\int_a^xf'(t)dt\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) AC implies BV. (B) FALSE: the Cantor function shows BV does not imply AC. (C) The Cantor function is monotone (hence BV), but its derivative is 0 a.e. while it increases from 0 to 1, violating the fundamental theorem of calculus for AC. (D) The Lebesgue-Vitali theorem: \(f\in AC\) iff this integral representation holds.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>BV - Lipschitz implies BV</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f:[a,b]\to\mathbb{R}\) satisfy \(|f(x)-f(y)|\le L|x-y|\) (Lipschitz). Which statements are TRUE?</p>
+<ol type="A"><li>\(f\in BV[a,b]\) with total variation \(\le L(b-a)\).</li><li>\(f\in AC[a,b]\).</li><li>\(f\) is differentiable a.e. with \(|f'|\le L\) a.e.</li><li>Lipschitz implies uniformly continuous.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) For any partition: \(\sum|f(x_k)-f(x_{k-1})|\le L\sum(x_k-x_{k-1})=L(b-a)\). (B) Lipschitz \(\Rightarrow\) absolutely continuous. (C) Rademacher's theorem: Lipschitz functions on \(\mathbb{R}^n\) are differentiable a.e., and the derivative is bounded by the Lipschitz constant. (D) Take \(\delta=\varepsilon/L\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>BV - Total Variation Computation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The total variation of \(f(x)=\sin x\) on \([0,2\pi]\) is:</p>
+<ol type="A"><li>\(2\pi\)</li><li>\(0\)</li><li>\(4\)</li><li>\(2\)</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C)</strong></p><p>\(\sin x\) on \([0,2\pi]\): increases from 0 to 1 on \([0,\pi/2]\), decreases from 1 to \(-1\) on \([\pi/2,3\pi/2]\), increases from \(-1\) to 0 on \([3\pi/2,2\pi]\). Total variation \(=(1-0)+(1-(-1))+(0-(-1))=1+2+1=4\). Since \(f\in C^1\), \(V_0^{2\pi}(f)=\int_0^{2\pi}|f'(x)|dx=\int_0^{2\pi}|\cos x|dx=4\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text>(A) \(2\pi\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B) \(0\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text>(C) \(4\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D) \(2\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>BV - Sum and Product</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f,g\in BV[a,b]\). Which statements are TRUE?</p>
+<ol type="A"><li>\(f+g\in BV[a,b]\).</li><li>\(fg\in BV[a,b]\).</li><li>\(f/g\in BV[a,b]\) if \(|g|\ge c>0\).</li><li>\(|f|\in BV[a,b]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(V(f+g)\le V(f)+V(g)<\infty\). (B) \(V(fg)\le\|f\|_\infty V(g)+\|g\|_\infty V(f)<\infty\) (BV functions are bounded). (C) \(V(f/g)\le(\|f\|_\infty V(g)+\|g\|_\infty V(f))/c^2<\infty\). (D) \(||f(x)|-|f(y)||\le|f(x)-f(y)|\), so \(V(|f|)\le V(f)<\infty\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>BV - Differentiability a.e.</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\in BV[a,b]\). Which statements are necessarily TRUE?</p>
+<ol type="A"><li>\(f\) is differentiable almost everywhere on \([a,b]\).</li><li>\(f'\in L^1[a,b]\).</li><li>\(f(b)-f(a)=\int_a^bf'(x)dx\).</li><li>\(f\) is bounded on \([a,b]\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Jordan decomposition: \(f=g-h\) with \(g,h\) monotone; monotone functions are differentiable a.e., so \(f\) is too. (B) \(f'\) exists a.e. and is integrable: \(\int|f'|\le V_a^b(f)\). (C) FALSE: the Cantor function has \(f'=0\) a.e. but \(f(1)-f(0)=1\ne0\). This holds only for \(f\in AC\). (D) BV functions are bounded: \(|f(x)|\le|f(a)|+V_a^b(f)<\infty\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>BV - Helly Selection Theorem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Helly's Selection Theorem states: if \((f_n)\) is a sequence of functions with \(V_a^b(f_n)\le M\) and \(|f_n|\le M\) for all \(n\), then:</p>
+<ol type="A"><li>A subsequence \((f_{n_k})\) converges pointwise on \([a,b]\).</li><li>The pointwise limit \(f\) is in \(BV[a,b]\).</li><li>The convergence is uniform on \([a,b]\).</li><li>The limit satisfies \(V_a^b(f)\le M\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A)(B)(D) are the content of Helly's theorem. (C) FALSE: convergence is only guaranteed to be pointwise, not uniform. Uniform convergence would require additional equicontinuity (Arzelà-Ascoli).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>BV - Arc Length</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The arc length of a curve \(\gamma:[a,b]\to\mathbb{R}^2\), \(\gamma(t)=(x(t),y(t))\) is defined using bounded variation. Which statements are TRUE?</p>
+<ol type="A"><li>The arc length is finite if and only if both \(x(t)\) and \(y(t)\) are of bounded variation.</li><li>If \(x,y\in C^1[a,b]\), the arc length equals \(\int_a^b\sqrt{(x')^2+(y')^2}\,dt\).</li><li>A rectifiable curve has finite arc length.</li><li>Smooth curves (\(C^1\)) are always rectifiable.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) The total variation of \(\gamma\) in \(\mathbb{R}^2\) is finite iff its component functions are BV. (B) Standard arc length formula for \(C^1\) curves. (C) Rectifiable = finite arc length. (D) \(C^1\) implies both components are Lipschitz, hence BV, hence rectifiable.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>BV - Riemann-Stieltjes Integrability</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Riemann-Stieltjes integral \(\int_a^b f\,dg\) exists in which cases?</p>
+<ol type="A"><li>If \(f\in C[a,b]\) and \(g\in BV[a,b]\).</li><li>If \(f\in BV[a,b]\) and \(g\in C[a,b]\).</li><li>If both \(f,g\in BV[a,b]\) with no common discontinuities.</li><li>If \(f\in C[a,b]\) and \(g\) is a step function.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Continuous integrand and BV integrator: Riemann-Stieltjes integral exists. (B) NOT guaranteed: need shared discontinuities to be absent; BV alone is insufficient when \(g\in C\) only. Actually (B) is TRUE in the case where \(f\in BV\) and \(g\in C\) and they have no common discontinuities — but plain \(g\in C\) + \(f\in BV\) does work by integration by parts. Actually the standard result is: if \(f\in R(g)\) (Riemann-Stieltjes integrable) ... (A) is the cleanest standard result. (C) BV + BV with no common discontinuities: integral exists. (D) Step function integrators work with continuous integrands.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>BV - C^1 Functions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\in C^1[a,b]\). Which statements are TRUE?</p>
+<ol type="A"><li>\(f\in BV[a,b]\) with \(V_a^b(f)=\int_a^b|f'(x)|dx\).</li><li>\(f\in AC[a,b]\).</li><li>The total variation equals \(|f(b)-f(a)|\) if and only if \(f\) is monotone.</li><li>\(f\) satisfies \(f(x)=f(a)+\int_a^xf'(t)dt\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) For \(C^1\): \(V_a^b(f)=\int_a^b|f'|\). (B) \(C^1\subset AC\). (C) \(V=|f(b)-f(a)|\Leftrightarrow f'\) doesn't change sign \(\Leftrightarrow f\) monotone. (D) Fundamental theorem of calculus for \(C^1\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>BV - Cantor Function Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Cantor function \(\varphi:[0,1]\to[0,1]\) (Devil's staircase). Which statements are TRUE?</p>
+<ol type="A"><li>\(\varphi\) is non-decreasing.</li><li>\(\varphi\) is continuous.</li><li>\(\varphi'=0\) almost everywhere.</li><li>\(\varphi(1)-\varphi(0)=\int_0^1\varphi'(x)dx\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) The Cantor function is defined to be non-decreasing. (B) It is continuous (no jumps — it's constant on each removed interval). (C) It is differentiable with derivative 0 on the open set of removed intervals, which has full measure. (D) FALSE: \(\varphi(1)-\varphi(0)=1\) but \(\int_0^1\varphi'dx=\int_0^10\,dx=0\ne1\). This is why \(\varphi\notin AC[0,1]\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>BV - Total Variation of Piecewise Linear</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\) be piecewise linear on \([0,4]\): \(f(0)=0, f(1)=3, f(2)=-1, f(3)=2, f(4)=0\). The total variation \(V_0^4(f)\) is:</p>
+<ol type="A"><li>\(12\)</li><li>\(11\)</li><li>\(3\)</li><li>\(10\)</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A)</strong></p><p>Total variation for piecewise linear = sum of absolute changes: \(|f(1)-f(0)|+|f(2)-f(1)|+|f(3)-f(2)|+|f(4)-f(3)|=|3-0|+|-1-3|+|2-(-1)|+|0-2|=3+4+3+2=12\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text>(A) \(12\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B) \(11\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C) \(3\)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D) \(10\)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>BV - Composition with BV</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(f\in BV[a,b]\) and \(\phi:\mathbb{R}\to\mathbb{R}\) Lipschitz. Which statements are TRUE?</p>
+<ol type="A"><li>\(\phi\circ f\in BV[a,b]\).</li><li>\(V_a^b(\phi\circ f)\le L\cdot V_a^b(f)\) where \(L\) is the Lipschitz constant.</li><li>If \(\phi\) is only continuous (not Lipschitz), then \(\phi\circ f\in BV\).</li><li>If \(f\ge0\) and \(\phi(t)=\sqrt{t}\), then \(\phi\circ f\in BV\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B)</strong></p><p>(A)(B) \(|\phi(f(x))-\phi(f(y))|\le L|f(x)-f(y)|\) so \(V(\phi\circ f)\le LV(f)<\infty\). (C) FALSE: a continuous but non-Lipschitz function may map a BV function outside BV. (D) Not guaranteed without Lipschitz: \(\sqrt{t}\) is not Lipschitz at 0. If \(f\ge\varepsilon>0\), then \(\sqrt{\cdot}\) is Lipschitz on \([\varepsilon,\infty)\) so (D) would hold, but not if \(f\) approaches 0.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="50" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>BV - BV and Fourier Coefficients</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(f\in BV[0,2\pi]\), which statements about its Fourier coefficients \(c_n=\frac{1}{2\pi}\int_0^{2\pi}f(x)e^{-inx}dx\) are TRUE?</p>
+<ol type="A"><li>\(|c_n|\le \frac{V(f)}{2\pi|n|}\) for \(n\ne0\).</li><li>The Fourier series of \(f\) converges pointwise everywhere.</li><li>At a point of continuity, the Fourier series converges to \(f(x)\).</li><li>At a jump discontinuity \(x_0\), the Fourier series converges to \(\frac{f(x_0^+)+f(x_0^-)}{2}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) Integration by parts: \(c_n=\frac{1}{2\pi in}\int e^{-inx}df(x)\), so \(|c_n|\le V(f)/(2\pi|n|)\). (B) FALSE in general — pointwise convergence everywhere is not guaranteed even for BV functions (only a.e.). (C)(D) Jordan's theorem: for BV functions, the Fourier series converges to \((f(x^+)+f(x^-))/2\) at every point.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>BV - Subinterval Additivity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(f\in BV[a,b]\) and \(c\in(a,b)\), which statements are TRUE?</p>
+<ol type="A"><li>\(V_a^b(f)=V_a^c(f)+V_c^b(f)\).</li><li>\(f\in BV[a,c]\) and \(f\in BV[c,b]\).</li><li>The total variation function \(V(x)=V_a^x(f)\) is continuous iff \(f\) is continuous.</li><li>\(f+V\) and \(V-f\) are both non-decreasing.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B) Total variation is additive over subintervals. (C) The variation function \(V(x)\) is right/left continuous at \(x\) iff \(f\) is — in particular, continuity of \(V\) is equivalent to continuity of \(f\). (D) \(f=\frac{(V+f)}{2}-\frac{(V-f)}{2}\) is Jordan's decomposition; both \((V+f)/2\) and \((V-f)/2\) are non-decreasing.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>BV - BV Space as a Banach Space</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The space \(BV[a,b]\) with norm \(\|f\|_{BV}=|f(a)|+V_a^b(f)\). Which statements are TRUE?</p>
+<ol type="A"><li>\(\|\cdot\|_{BV}\) is indeed a norm on \(BV[a,b]\).</li><li>\(BV[a,b]\) is a Banach space under \(\|\cdot\|_{BV}\).</li><li>\(C[a,b]\subset BV[a,b]\) (with strict inclusion).</li><li>The inclusion \(BV[a,b]\hookrightarrow L^\infty[a,b]\) is bounded.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (D)</strong></p><p>(A) Triangle inequality for \(\|\cdot\|_{BV}\) follows from \(V_a^b(f+g)\le V_a^b(f)+V_a^b(g)\). (B) \(BV[a,b]\) is complete under this norm. (C) FALSE: \(C[a,b]\not\subset BV[a,b]\) in general — not all continuous functions are of bounded variation (e.g. \(x\sin(1/x)\)). The reverse inclusion also fails: BV functions need not be continuous. (D) \(\|f\|_\infty\le|f(a)|+V_a^b(f)=\|f\|_{BV}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>BV - Which functions are in BV[0,1]</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Which of the following functions are of bounded variation on \([0,1]\)?</p>
+<ol type="A"><li>\(f(x)=x^2\sin(1/x)\), \(f(0)=0\).</li><li>\(g(x)=x\sin(1/x)\), \(g(0)=0\).</li><li>\(h(x)=\sqrt{x}\).</li><li>\(k(x)=\sum_{n=1}^\infty \frac{1}{n^2}\sin(nx)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (C), (D)</strong></p><p>(A) \(f'(x)=2x\sin(1/x)-\cos(1/x)\), \(\int_0^1|f'|\le3\). (B) NOT in BV: total variation diverges. (C) \(h(x)=\sqrt{x}\) is monotone, hence BV. (D) \(k\in BV\): \(\sum|k'|=\sum n/n^2=\sum1/n\) diverges... but \(k\) is a uniformly convergent series of Lipschitz functions. Actually the total variation: \(V(k)\le\sum V(\sin(nx)/n^2)\le\sum2/n^2<\infty\). So (D) is in BV.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+
+</quiz>

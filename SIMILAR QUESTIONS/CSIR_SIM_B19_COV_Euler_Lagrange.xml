@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Calculus of Variations — Euler-Lagrange Equation</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>CoV - Euler-Lagrange Equation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The functional \(J[y]=\displaystyle\int_a^b F(x,y,y')\,dx\) has stationary functions satisfying:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\dfrac{\partial F}{\partial y}-\dfrac{d}{dx}\dfrac{\partial F}{\partial y'}=0\) (Euler-Lagrange equation)</strong></p><p>The E-L equation is derived by computing the first variation \(\delta J=0\) and applying integration by parts. It is a necessary condition for a smooth extremal. The equation may be ODE or PDE depending on the number of independent variables. For \(F=F(x,y')\) (no explicit \(y\)): \(F_{y'}=\text{const}\) (Beltrami identity).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{d}{dx}\dfrac{\partial F}{\partial y}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{\partial F}{\partial y}-\dfrac{d}{dx}\dfrac{\partial F}{\partial y'}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\partial F}{\partial x}+\dfrac{\partial F}{\partial y'}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\partial^2 F}{\partial y'^2}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>CoV - Geodesic on Plane</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The shortest path between two points in the plane is found by minimising \(J[y]=\displaystyle\int_{x_1}^{x_2}\sqrt{1+y'^2}\,dx\). The Euler-Lagrange equation gives:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(y''=0\) (straight lines)</strong></p><p>\(F=\sqrt{1+y'^2}\). \(\partial F/\partial y=0\). E-L: \(-d/dx[y'/\sqrt{1+y'^2}]=0\Rightarrow y'/\sqrt{1+y'^2}=c\Rightarrow y'=\text{const}\Rightarrow y=ax+b\). Straight lines are geodesics in the Euclidean plane, confirming that the shortest path is a straight line (obvious, but the variational derivation is elegant).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y'=\sqrt{1+y^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[y is a parabola]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y''=0\) (straight lines \(y=ax+b\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y'^2=c^2\) but \(y\) may be any function]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>CoV - Brachistochrone</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The brachistochrone problem (fastest descent under gravity) leads to a solution which is a:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Cycloid</strong></p><p>Brachistochrone (Johann Bernoulli, 1696): minimise time \(T=\int\sqrt{(1+y'^2)/(2gy)}dx\). The E-L equation yields the cycloid: \(x=a(\theta-\sin\theta)\), \(y=a(1-\cos\theta)\). The cycloid is the curve traced by a point on a rolling circle. It also has the tautochrone property (equal time from any starting point).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Straight line]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Cycloid]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Parabola]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Catenary]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>CoV - Catenary</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The shape of a hanging chain (catenary) minimises the potential energy. It satisfies the equation:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(y=c_1\cosh\left(\frac{x-c_2}{c_1}\right)\)</strong></p><p>Catenary: minimise \(\int y\sqrt{1+y'^2}dx\). E-L: \(\sqrt{1+y'^2}-y\cdot d/dx[y'/\sqrt{1+y'^2}]=0\). Solving: \(y=c_1\cosh((x-c_2)/c_1)\). The catenary appears in suspension bridges, cables, and is related to minimal surface (catenoid of revolution). \(\cosh\) is the hyperbolic cosine.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(y=c_1\cosh\!\left(\dfrac{x-c_2}{c_1}\right)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=c_1x^2+c_2\) (parabola)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=c_1e^x+c_2e^{-x}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=c_1\sin x+c_2\cos x\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>CoV - First Integral (Beltrami Identity)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If \(F\) does not explicitly depend on \(x\) (i.e., \(\partial F/\partial x=0\)), the E-L equation has a first integral:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(F-y'F_{y'}=\text{const}\) (Beltrami identity)</strong></p><p>When \(F=F(y,y')\) (no explicit \(x\)): differentiating \(F-y'F_{y'}\) along an extremal using E-L gives \(d/dx(F-y'F_{y'})=0\). So \(F-y'F_{y'}=c\) (Beltrami identity / first integral). This reduces the E-L equation (2nd order ODE) to a 1st order ODE, simplifying solution. Used in brachistochrone, geodesic, catenary problems.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(F_{y'}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F_y=\text{const}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(F-y'F_{y'}=\text{const}\) (Beltrami identity)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F+yF_y=\text{const}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>CoV - Isoperimetric Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The isoperimetric problem (maximum area enclosed by a curve of fixed length \(L\)) has solution:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) A circle of circumference \(L\)</strong></p><p>Queen Dido's problem / isoperimetric inequality: among all closed curves of length \(L\), the circle encloses the maximum area \(A=L^2/(4\pi)\). Variational proof: using Lagrange multiplier (isoperimetric constraint), the E-L equation yields a circle. The isoperimetric inequality: \(4\pi A\leq L^2\) with equality for the circle.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[A square]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[A circle of circumference \(L\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[An equilateral triangle]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A parabola]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>CoV - Second Variation</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A necessary condition for \(y^*\) to be a local minimum (not just a stationary point) of \(J\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) The second variation \(\delta^2J\geq0\) for all admissible variations</strong></p><p>Legendre condition: necessary for a minimum is \(F_{y'y'}\geq0\) along the extremal (non-negative second variation). Sufficient conditions include the Jacobi condition (no conjugate points) and Weierstrass excess function. The second variation analysis is analogous to the second derivative test in ordinary calculus.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(J[y^*]=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The first variation \(\delta J=0\) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[The second variation \(\delta^2J\geq0\) (Legendre condition)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y^*\) satisfies \(y^*''=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>CoV - Minimal Surface of Revolution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The surface of revolution \(2\pi\int y\sqrt{1+y'^2}\,dx\) with fixed endpoints has minimal area when \(y\) is a:</p>]]></text></questiontext>
+  <questiontext format="html"><text><![CDATA[<p>The surface of revolution \(2\pi\int_a^b y\sqrt{1+y'^2}\,dx\) with fixed endpoints is minimized when \(y\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) Catenary \(y=c_1\cosh((x-c_2)/c_1)\)</strong></p><p>The Euler-Lagrange equation for \(\int y\sqrt{1+y'^2}dx\) gives the catenary (using Beltrami identity: \(y\sqrt{1+y'^2}-y\cdot y'^2/\sqrt{1+y'^2}=c\Rightarrow y/\sqrt{1+y'^2}=c_1\)). The minimal surface of revolution is a catenoid. If the endpoints are too far apart, the soap film breaks (no minimizer exists — Goldschmidt discontinuous solution).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Catenary \(y=c_1\cosh((x-c_2)/c_1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Parabola \(y=ax^2+b\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Straight line]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Sine curve]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>CoV - J[x]=int_0^1 (x'^2 + x^2) dt, x(0)=0, x(1)=1</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Minimise \(J[x]=\displaystyle\int_0^1(\dot{x}^2+x^2)\,dt\) with \(x(0)=0\), \(x(1)=1\). The Euler-Lagrange equation is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\ddot{x}-x=0\)</strong></p><p>\(F=\dot{x}^2+x^2\). \(F_x=2x\), \(F_{\dot x}=2\dot x\). E-L: \(2x-2\ddot x=0\Rightarrow\ddot x=x\). General solution: \(x=Ae^t+Be^{-t}\). With \(x(0)=0\): \(A+B=0\Rightarrow B=-A\). With \(x(1)=1\): \(A(e-e^{-1})=1\Rightarrow A=1/(e-e^{-1})\). So \(x^*(t)=\sinh(t)/\sinh(1)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ddot{x}+x=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\ddot{x}-x=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dot{x}^2-x=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\ddot{x}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>CoV - x*(1/2) for BVP x(0)=0, x(1)=1</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the extremal of \(J[x]=\int_0^1(\dot{x}^2+x^2)dt\) with \(x(0)=0\), \(x(1)=1\), the value \(x^*(1/2)\) equals:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\dfrac{\sinh(1/2)}{\sinh(1)}=\dfrac{1}{\sqrt{e}-1/\sqrt{e}}\cdot\frac{\sqrt{e}-1/\sqrt{e}}{2}\)</strong></p><p>From the previous: \(x^*(t)=\sinh(t)/\sinh(1)\). At \(t=1/2\): \(x^*(1/2)=\sinh(1/2)/\sinh(1)\). Now \(\sinh(1/2)=(e^{1/2}-e^{-1/2})/2=(\sqrt{e}-1/\sqrt{e})/2\) and \(\sinh(1)=(e-e^{-1})/2=(e-1/e)/2\). So \(x^*(1/2)=\frac{\sqrt{e}-1/\sqrt{e}}{e-1/e}=\frac{\sqrt{e}-1/\sqrt{e}}{e-1/e}\). Numerically \(\approx0.4577\). Closest option: \(\sinh(1/2)/\sinh(1)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(e^{1/2}/e\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sinh(1/2)/\sinh(1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/\sqrt{e}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>CoV - Natural Boundary Conditions</text></name>
+  <questiontext format="html"><text><![CDATA[<p>If the functional \(J[y]=\int_a^bF(x,y,y')dx\) is to be extremised with \(y(a)=y_0\) fixed but \(y(b)\) free (free boundary), the natural boundary condition at \(b\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(F_{y'}(b,y(b),y'(b))=0\)</strong></p><p>Free-end condition: when the right endpoint is free, the transversality condition becomes \(F_{y'}|_{x=b}=0\). This is a natural boundary condition (vs essential boundary conditions which prescribe the value of \(y\)). It arises from the boundary term in integration by parts when deriving the E-L equation with free endpoints.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y(b)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(F_{y'}(b,y(b),y'(b))=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F(b,y(b),y'(b))=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y'(b)=y(b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>CoV - Lagrange Multiplier Method</text></name>
+  <questiontext format="html"><text><![CDATA[<p>To minimise \(J[y]=\int F\,dx\) subject to the constraint \(G[y]=\int G(x,y,y')\,dx=\ell\) (isoperimetric constraint), we form:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) The augmented functional \(J^*[y]=\int(F+\lambda G)\,dx\) and apply E-L to it</strong></p><p>Isoperimetric problem: introduce Lagrange multiplier \(\lambda\) and extremise \(J^*=\int(F+\lambda G)dx\). The E-L equation for \(J^*\) gives: \((F+\lambda G)_y-d/dx(F+\lambda G)_{y'}=0\). The multiplier \(\lambda\) is determined by the constraint \(G[y]=\ell\). This is analogous to Lagrange multipliers in multivariable calculus.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Apply E-L directly to \(J[y]\) and ignore the constraint]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Set \(G[y]=0\) and eliminate the constraint]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Form \(J^*[y]=\int(F+\lambda G)dx\) and apply E-L]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Minimise only the constraint \(G[y]=\ell\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>CoV - Functional with Higher Derivatives</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a functional \(J[y]=\int F(x,y,y',y'')\,dx\), the Euler-Lagrange equation is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(F_y-\frac{d}{dx}F_{y'}+\frac{d^2}{dx^2}F_{y''}=0\)</strong></p><p>For functionals depending on higher derivatives, each derivative adds a term with alternating sign: \(F_y-\frac{d}{dx}F_{y'}+\frac{d^2}{dx^2}F_{y''}-\cdots=0\). For the beam equation (elastic energy \(\sim\int y''^2dx\)): \(F=y''^2\), so \(F_y=0,F_{y'}=0,F_{y''}=2y''\). E-L: \(2\frac{d^2}{dx^2}y''=0\Rightarrow y^{(4)}=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(F_y-\frac{d}{dx}F_{y'}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(F_y-\dfrac{d}{dx}F_{y'}+\dfrac{d^2}{dx^2}F_{y''}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F_{y''}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F_y+F_{y'}+F_{y''}=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>CoV - Hamilton's Principle</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Hamilton's principle in mechanics states that the motion of a system between times \(t_1\) and \(t_2\) extremises the action:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(S=\int_{t_1}^{t_2}L(q,\dot{q},t)\,dt\) where \(L=T-V\) is the Lagrangian</strong></p><p>Hamilton's principle (principle of least action): the physical trajectory extremises \(S=\int L\,dt\) where \(L=T-V\) (kinetic minus potential energy). The E-L equations for this functional give the Euler-Lagrange (Newton's) equations of motion: \(\frac{d}{dt}\frac{\partial L}{\partial\dot q_i}-\frac{\partial L}{\partial q_i}=0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(S=\int_{t_1}^{t_2}(T-V)\,dt\) (action functional)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S=\int_{t_1}^{t_2}(T+V)\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S=\int_{t_1}^{t_2}V\,dt\) only]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S=\int_{t_1}^{t_2}T^2\,dt\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>CoV - Variable Endpoint Problem</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In the variable endpoint (transversality) problem, if the endpoint lies on a curve \(x=\phi(y)\), the transversality condition is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \([F+(y'-\phi^{-1}(y_b)')F_{y'}]_{x=b}=0\)</strong></p><p>Transversality condition: when the terminal point lies on a prescribed curve, the extremal must meet the curve at an angle satisfying a specific orthogonality condition (analogous to perpendicularity in geometry). The exact form depends on the functional. For the arc-length functional, the transversality condition means the extremal is perpendicular to the terminal curve.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y'(b)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(F(b)=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[A transversality condition relating \(F\) and \(F_{y'}\) at the endpoint]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No condition is needed at the free endpoint]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>CoV - Weak vs Strong Extremum</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A weak local minimum of \(J[y]\) is an extremum where \(J[y^*]\leq J[y^*+\eta]\) for all \(\eta\) with:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\|\eta\|_{C^1}\) small (both \(|\eta|\) and \(|\eta'|\) small)</strong></p><p>Weak extremum: \(J[y^*]\leq J[y]\) for all \(y\) close to \(y^*\) in the \(C^1\) norm (small \(|\eta|\) and small \(|\eta'|\)). Strong extremum: close in \(C^0\) norm only (small \(|\eta|\) but \(|\eta'|\) can be large). A strong minimum is also a weak minimum, but not vice versa. The Weierstrass condition is needed for strong minima.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\|\eta\|_{C^1}\) small (both \(\eta\) and \(\eta'\) small)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|\eta\|_{C^0}\) small (only \(\eta\) small)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\|\eta\|_{L^2}\) small]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\eta\) is identically zero everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>CoV - Optimal Control Pontryagin</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Pontryagin Maximum Principle is a generalization of the calculus of variations to:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Optimal control problems where controls may be discontinuous or constrained</strong></p><p>Pontryagin (1956): the maximum principle handles optimal control problems with bounded/discontinuous controls, state constraints, and terminal conditions. For unconstrained smooth problems, it reduces to the E-L equations. It introduces co-state variables (adjoint system) and the Hamiltonian \(H(x,u,\psi)=f(x,u)+\psi g(x,u)\). The optimal control maximises \(H\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Computing the minimum surface area of a soap film]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Optimal control with possibly discontinuous or constrained controls]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Solving only linear optimization problems]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The classical E-L equations without any extension]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>CoV - Conjugate Point</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Jacobi condition for a local minimum of \(J[y]\) requires that the extremal \([a,b]\):</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) Contains no conjugate point of \(a\) in the interior \((a,b]\)</strong></p><p>Jacobi condition: necessary for a weak local minimum is that \((a,b]\) contains no conjugate point of \(a\). A conjugate point is where a solution of the Jacobi equation (the linearised E-L equation) vanishes. If a conjugate point exists inside the interval, the extremal is not a local minimum (it can be made shorter/smaller).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Has the same E-L equation as the original functional]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Contains infinitely many conjugate points]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Contains no conjugate point of \(a\) in the open interval \((a,b)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Satisfies \(F_{y'y'}=0\) everywhere]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>CoV - E-L for Quadratic Functional</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(J[y]=\int_0^T\!(ay'^2+by^2)\,dt\) with \(y(0)=y_0\) and \(y(T)=y_T\), the Euler-Lagrange equation is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(ay''-by=0\) (linear ODE)</strong></p><p>\(F=ay'^2+by^2\). \(F_y=2by\), \(F_{y'}=2ay'\). E-L: \(2by-2ay''=0\Rightarrow ay''-by=0\). If \(b>0\) and \(a>0\): \(y''=\frac{b}{a}y\), hyperbolic type. If \(b<0\): \(y''=-|b/a|y\), trigonometric solutions. The nature of the extremal depends on the sign of \(b/a\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(ay''+by=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(ay''-by=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(2ay'^2-2by^2=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y''=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>CoV - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The extremal of \(J[y]=\displaystyle\int_0^1(y'^2-y^2)\,dt\), \(y(0)=0\), \(y(1)=1\) satisfies the E-L equation \(y''+y=0\). The extremal is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(y=\sin(t)/\sin(1)\)</strong></p><p>E-L for \(F=y'^2-y^2\): \(-2y-2y''=0\Rightarrow y''+y=0\). General solution: \(y=A\cos t+B\sin t\). \(y(0)=0\Rightarrow A=0\). \(y(1)=B\sin(1)=1\Rightarrow B=1/\sin(1)\). Extremal: \(y=\sin(t)/\sin(1)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=t\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=\sinh(t)/\sinh(1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(y=\sin(t)/\sin(1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(y=\cos(t)/\cos(1)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

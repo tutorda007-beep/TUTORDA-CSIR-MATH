@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part B/Mathematical Statistics — Maximum Likelihood Estimation</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 --><question type="multichoice">
+  <name><text>MLE - Definition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Maximum Likelihood Estimator (MLE) of \(\theta\) based on sample \(X_1,\ldots,X_n\) is the value that:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Maximises the likelihood \(L(\theta)=\prod_{i=1}^n f(X_i;\theta)\)</strong></p><p>MLE: \(\hat\theta_{MLE}=\arg\max_\theta L(\theta;\mathbf{X})\). Equivalently, maximise the log-likelihood \(\ell(\theta)=\sum\ln f(X_i;\theta)\) (monotone transformation doesn't change the argmax). MLEs are consistent, asymptotically normal, and asymptotically efficient under regularity conditions.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Minimises the sum of squared residuals]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Maximises the likelihood \(L(\theta)=\prod f(X_i;\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Equals the posterior mean]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Minimises the variance of the estimator]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 --><question type="multichoice">
+  <name><text>MLE - Normal Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For i.i.d. \(X_i\sim N(\mu,\sigma^2)\), the MLE of \(\mu\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\bar{X}=\frac{1}{n}\sum X_i\)</strong></p><p>Log-likelihood: \(\ell(\mu,\sigma^2)=-\frac{n}{2}\ln(2\pi\sigma^2)-\frac{1}{2\sigma^2}\sum(X_i-\mu)^2\). Maximising over \(\mu\): \(\partial\ell/\partial\mu=\frac{1}{\sigma^2}\sum(X_i-\mu)=0\Rightarrow\hat\mu=\bar X\). Also \(\hat\sigma^2=\frac{1}{n}\sum(X_i-\bar X)^2\) (biased, unlike \(S^2=\frac{1}{n-1}\sum(X_i-\bar X)^2\)).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\bar{X}=\frac{1}{n}\sum X_i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Sample median]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Sample mode]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\frac{1}{n-1}\sum X_i\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 --><question type="multichoice">
+  <name><text>MLE - Exponential Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For i.i.d. \(X_i\sim\text{Exp}(\lambda)\) (PDF \(f(x)=\lambda e^{-\lambda x}\)), the MLE of \(\lambda\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(1/\bar{X}\)</strong></p><p>Log-likelihood: \(\ell(\lambda)=n\ln\lambda-\lambda\sum X_i\). Score: \(\partial\ell/\partial\lambda=n/\lambda-\sum X_i=0\Rightarrow\hat\lambda=n/\sum X_i=1/\bar X\). This is a consistent and asymptotically normal estimator. The Fisher information for \(\lambda\) is \(I(\lambda)=1/\lambda^2\), so the Cramér–Rao bound for unbiased estimators of \(\lambda\) is \(\lambda^2/n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n/\max X_i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/\bar{X}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{n/\sum X_i^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 --><question type="multichoice">
+  <name><text>MLE - Uniform Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For i.i.d. \(X_i\sim\text{Uniform}[0,\theta]\), the MLE of \(\theta\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(X_{(n)}=\max(X_1,\ldots,X_n)\)</strong></p><p>Likelihood: \(L(\theta)=\theta^{-n}\mathbf{1}[\theta\geq X_{(n)}]\). This is maximised (as a function of \(\theta\)) at the smallest valid \(\theta\): \(\hat\theta=X_{(n)}\). Although biased (\(E[X_{(n)}]=n\theta/(n+1)\)), the MLE is consistent. Unbiased estimator: \((n+1)X_{(n)}/n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(2\bar{X}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(X_{(n)}=\max(X_1,\ldots,X_n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_{(1)}=\min(X_1,\ldots,X_n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 --><question type="multichoice">
+  <name><text>MLE - Invariance Property</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The invariance property of MLE states: if \(\hat\theta\) is the MLE of \(\theta\), then the MLE of \(g(\theta)\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(g(\hat\theta)\)</strong></p><p>Invariance of MLE: if \(\hat\theta\) is the MLE of \(\theta\), then for any function \(g\), the MLE of \(g(\theta)\) is \(g(\hat\theta)\). This holds even when \(g\) is not monotone (using the induced likelihood). Example: MLE of \(\sigma^2\) for Normal is \(\frac{1}{n}\sum(X_i-\bar X)^2\), so MLE of \(\sigma\) is \(\sqrt{\frac{1}{n}\sum(X_i-\bar X)^2}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(g(E[\hat\theta])\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[g(\theta)]\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(g(\hat\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\theta/g(\hat\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 --><question type="multichoice">
+  <name><text>MLE - Poisson Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For i.i.d. \(X_i\sim\text{Poisson}(\lambda)\), the MLE of \(\lambda\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\bar{X}\)</strong></p><p>Log-likelihood: \(\ell(\lambda)=\sum X_i\ln\lambda-n\lambda-\sum\ln(X_i!)\). Score: \(\partial\ell/\partial\lambda=\sum X_i/\lambda-n=0\Rightarrow\hat\lambda=\bar X\). The MLE equals the method-of-moments estimator (since \(E[X]=\lambda\)). It is UMVUE (uniformly minimum variance unbiased). Fisher information: \(I(\lambda)=n/\lambda\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\bar{X}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/\bar{X}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{\bar{X}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 --><question type="multichoice">
+  <name><text>MLE - Bernoulli Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For i.i.d. \(X_i\sim\text{Bernoulli}(p)\), the MLE of \(p\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\bar{X}=\sum X_i/n\) (sample proportion)</strong></p><p>Log-likelihood: \(\ell(p)=\sum X_i\ln p+(n-\sum X_i)\ln(1-p)\). Score \(=0\Rightarrow\hat p=\bar X\) (sample proportion). This is the UMVUE of \(p\) and achieves the Cramér–Rao lower bound \(p(1-p)/n\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Sample mode (0 or 1)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\bar{X}=\frac{\sum X_i}{n}\) (sample proportion)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}(1-\bar{X})\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1/2]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 --><question type="multichoice">
+  <name><text>MLE - Cramér-Rao Lower Bound</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Cramér–Rao lower bound for the variance of an unbiased estimator \(T(X)\) of \(\theta\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(\dfrac{1}{nI(\theta)}\) where \(I(\theta)\) is the Fisher information per observation</strong></p><p>CR bound: \(\text{Var}(T)\geq\frac{1}{nI(\theta)}\) where \(I(\theta)=E\left[\left(\frac{\partial}{\partial\theta}\ln f(X;\theta)\right)^2\right]=-E\left[\frac{\partial^2}{\partial\theta^2}\ln f(X;\theta)\right]\). An unbiased estimator achieving the bound is called efficient (UMVUE). Under regularity, MLE is asymptotically efficient.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(nI(\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(I(\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\dfrac{1}{nI(\theta)}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\dfrac{\theta^2}{n}\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 --><question type="multichoice">
+  <name><text>MLE - Bounded Support PDF</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_7\) be i.i.d. from PDF \(f(x;\theta)=2x/\theta^2\) for \(0\leq x\leq\theta\). Given observations \(1.2,2.1,1.5,0.8,1.9,2.4,1.1\), the MLE of \(\theta\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (D) \(X_{(7)}=\max=2.4\)</strong></p><p>Likelihood: \(L(\theta)=\prod\frac{2X_i}{\theta^2}=\frac{2^7\prod X_i}{\theta^{14}}\cdot\mathbf{1}[\theta\geq X_{(7)}]\). This is decreasing in \(\theta\) for \(\theta\geq X_{(7)}\), so the maximum is at \(\hat\theta=X_{(7)}=\max=2.4\). The general principle: for decreasing likelihoods on bounded support, MLE = sample maximum.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}\approx1.57\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sqrt{2\overline{X^2}}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2.1 (sample median)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(X_{(7)}=\max=2.4\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 --><question type="multichoice">
+  <name><text>MLE - Score Function</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The score function \(S(\theta)=\partial\ell(\theta)/\partial\theta\) satisfies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(E_\theta[S(\theta)]=0\)</strong></p><p>Under regularity conditions: \(E_\theta[S(\theta)]=E_\theta[\partial_\theta\ln L]=0\). This follows from differentiating \(\int f(x;\theta)dx=1\) under the integral sign. Also: \(\text{Var}(S(\theta))=I(\theta)\) (Fisher information). These are fundamental identities in estimation theory.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[S(\theta)]=I(\theta)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(E_\theta[S(\theta)]=0\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S(\theta)=0\) always]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(S(\theta)>0\) for all \(\theta\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 --><question type="multichoice">
+  <name><text>MLE - Asymptotic Normality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Under regularity conditions, as \(n\to\infty\), the MLE \(\hat\theta_n\) satisfies:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\sqrt{n}(\hat\theta_n-\theta)\xrightarrow{d}N(0,1/I(\theta))\)</strong></p><p>Asymptotic normality of MLE: \(\sqrt n(\hat\theta_n-\theta)\to N(0,I(\theta)^{-1})\) in distribution. This is the Cramér–Rao bound, showing MLE is asymptotically efficient. It justifies constructing approximate confidence intervals: \(\hat\theta\pm z_{\alpha/2}/\sqrt{nI(\hat\theta)}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\sqrt{n}(\hat\theta_n-\theta)\xrightarrow{d}N(0,1/I(\theta))\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\theta_n\to\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\theta_n=\theta\) for large \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\theta_n\sim N(\theta,\sigma^2)\) exactly]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 --><question type="multichoice">
+  <name><text>MLE - Geometric Distribution</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For i.i.d. \(X_i\sim\text{Geometric}(p)\) (PMF \(P(X=k)=(1-p)^{k-1}p\)), the MLE of \(p\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(1/\bar{X}\)</strong></p><p>Log-likelihood: \(\ell(p)=n\ln p+\sum(X_i-1)\ln(1-p)\). Score: \(n/p-\sum(X_i-1)/(1-p)=0\Rightarrow n(1-p)=p\sum(X_i-1)\Rightarrow n-np=np(\bar X-1)\Rightarrow n=np\bar X\Rightarrow\hat p=1/\bar X\). Consistent with method of moments: \(E[X]=1/p\Rightarrow\hat p=1/\bar X\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n/\sum X_i^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/\bar{X}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 --><question type="multichoice">
+  <name><text>MLE - Consistency</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The MLE \(\hat\theta_n\) is consistent means:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\hat\theta_n\xrightarrow{P}\theta\) (converges in probability)</strong></p><p>Consistency: \(\hat\theta_n\to\theta\) in probability as \(n\to\infty\). Under regularity, MLE is consistent. Proof uses the law of large numbers: \(\frac{1}{n}\ell(\theta_0)-\frac{1}{n}\ell(\theta)\to E[\ln f(X;\theta_0)/f(X;\theta)]\geq0\) by Jensen (Kullback–Leibler divergence), with equality iff \(\theta=\theta_0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\theta_n=\theta\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\hat\theta_n\xrightarrow{P}\theta\) as \(n\to\infty\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(E[\hat\theta_n]=\theta\) for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\hat\theta_n\) is the sample mean always]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 --><question type="multichoice">
+  <name><text>MLE - Shifted Exponential</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For i.i.d. \(X_i\sim f(x;\theta)=e^{-(x-\theta)}\) for \(x\geq\theta\) (shifted exponential), the MLE of \(\theta\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(X_{(1)}=\min(X_1,\ldots,X_n)\)</strong></p><p>Likelihood: \(L(\theta)=e^{-\sum(X_i-\theta)}\cdot\mathbf{1}[\theta\leq X_{(1)}]=e^{-n\bar X+n\theta}\cdot\mathbf{1}[\theta\leq X_{(1)}]\). This is increasing in \(\theta\) for \(\theta\leq X_{(1)}\), so the maximum is at \(\hat\theta=X_{(1)}\). For PDFs on \([θ,∞)\), MLE = sample minimum.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(X_{(1)}=\min(X_1,\ldots,X_n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}-1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(X_{(n)}=\max\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 --><question type="multichoice">
+  <name><text>MLE - Fisher Information</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Fisher information for the Poisson model with parameter \(\lambda\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(1/\lambda\)</strong></p><p>\(I(\lambda)=E\left[\left(\frac{\partial}{\partial\lambda}\ln f(X;\lambda)\right)^2\right]\). For Poisson: \(\ln f=X\ln\lambda-\lambda-\ln X!\). \(\partial/\partial\lambda\ln f=X/\lambda-1\). \(I(\lambda)=E[(X/\lambda-1)^2]=\text{Var}(X/\lambda)=\text{Var}(X)/\lambda^2=\lambda/\lambda^2=1/\lambda\). CR bound for unbiased estimators of \(\lambda\): \(\lambda/n\). \(\bar X\) achieves this.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\lambda^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(1/\lambda\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/\lambda^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 --><question type="multichoice">
+  <name><text>MLE - MOM vs MLE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For the Gamma\((\alpha,\beta)\) distribution with PDF \(f(x)=\frac{x^{\alpha-1}e^{-x/\beta}}{\beta^\alpha\Gamma(\alpha)}\), the method-of-moments estimator of \(\beta\) using \(E[X]=\alpha\beta\) and \(E[X^2]=\alpha(\alpha+1)\beta^2\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) \(\hat\beta_{MOM}=\overline{X^2}/\overline{X}-\overline{X}\)</strong></p><p>MOM: set \(E[X]=\alpha\beta=\bar X\) and \(\text{Var}(X)=\alpha\beta^2=S^2\) (sample variance). From these: \(\hat\beta=S^2/\bar X\) (since \(\text{Var}(X)/E[X]=\beta\)). Equivalently: \(\hat\beta=\overline{X^2}/\bar X-\bar X\) using \(E[X^2]-E[X]^2=\alpha\beta^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}/\bar{X^2}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(\hat\beta=S^2/\bar X\) (sample variance / sample mean)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar X^2/S^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/\bar X\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 --><question type="multichoice">
+  <name><text>MLE - Likelihood Ratio Test</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The likelihood ratio test statistic for \(H_0:\theta=\theta_0\) vs \(H_1:\theta\neq\theta_0\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(\Lambda=\dfrac{L(\theta_0)}{L(\hat\theta)}\) (or \(-2\ln\Lambda\))</strong></p><p>LRT: reject \(H_0\) when \(\Lambda=L(\theta_0)/L(\hat\theta)\) is small, equivalently when \(-2\ln\Lambda\) is large. Wilks' theorem: under \(H_0\), \(-2\ln\Lambda\xrightarrow{d}\chi^2_1\) (for a scalar parameter). This gives an asymptotic level-\(\alpha\) test: reject when \(-2\ln\Lambda>\chi^2_{1,\alpha}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(\Lambda=L(\theta_0)/L(\hat\theta)\) (or \(-2\ln\Lambda\sim\chi^2_1\))]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\Lambda=(\hat\theta-\theta_0)/\text{SE}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\Lambda=L(\hat\theta)/L(\theta_0)\) always \(>1\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\Lambda=n(\hat\theta-\theta_0)^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 --><question type="multichoice">
+  <name><text>MLE - Beta Distribution MLE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For i.i.d. \(X_i\sim\text{Beta}(\alpha,1)\) (PDF \(f(x)=\alpha x^{\alpha-1}\) on \([0,1]\)), the MLE of \(\alpha\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (C) \(-n/\sum\ln X_i\)</strong></p><p>Log-likelihood: \(\ell(\alpha)=n\ln\alpha+(\alpha-1)\sum\ln X_i\). Score: \(n/\alpha+\sum\ln X_i=0\Rightarrow\hat\alpha=-n/\sum\ln X_i\). Since \(X_i\in(0,1)\): \(\ln X_i<0\), so \(\sum\ln X_i<0\), making \(\hat\alpha>0\). The Fisher information: \(I(\alpha)=1/\alpha^2\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</small><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}/\bar{X}^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\sum\ln X_i/n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[\(-n/\sum\ln X_i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\exp(-\sum\ln X_i/n)\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 --><question type="multichoice">
+  <name><text>MLE - Biased MLE</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The MLE of \(\sigma^2\) for \(N(\mu,\sigma^2)\) is \(\hat\sigma^2=\frac{1}{n}\sum(X_i-\bar X)^2\). This estimator is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (B) Biased: \(E[\hat\sigma^2]=\frac{n-1}{n}\sigma^2\)</strong></p><p>The MLE \(\hat\sigma^2=\frac{1}{n}\sum(X_i-\bar X)^2\) is biased: \(E[\hat\sigma^2]=\frac{n-1}{n}\sigma^2\neq\sigma^2\). The unbiased version uses \(n-1\): \(S^2=\frac{1}{n-1}\sum(X_i-\bar X)^2\). Despite bias, the MLE is consistent and asymptotically efficient. MLE can be biased, showing MLE ≠ unbiased in general.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html"><text><![CDATA[Unbiased for all \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="100" format="html"><text><![CDATA[Biased: \(E[\hat\sigma^2]=\frac{n-1}{n}\sigma^2\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Unbiased only for large \(n\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Inconsistent]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 --><question type="multichoice">
+  <name><text>MLE - CSIR Style</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(X_1,\ldots,X_n\sim f(x;\theta)=\theta x^{\theta-1}\) on \([0,1]\) (\(\theta>0\)). The MLE of \(\theta\) is:</p>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A) \(-n/\sum_{i=1}^n\ln X_i\)</strong></p><p>This is the Beta\((\theta,1)\) distribution. Log-likelihood: \(\ell(\theta)=n\ln\theta+(\theta-1)\sum\ln X_i\). Score: \(n/\theta+\sum\ln X_i=0\Rightarrow\hat\theta=-n/\sum\ln X_i\). Since \(X_i\in[0,1]\): \(\ln X_i\leq0\), so \(\hat\theta\geq0\). Second derivative: \(-n/\theta^2<0\Rightarrow\) maximum.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0.25</penalty><hidden>0</hidden>
+  <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[\(-n/\displaystyle\sum_{i=1}^n\ln X_i\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(\bar{X}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(1/\bar{X}\)]]></text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text><![CDATA[\(n/\displaystyle\sum\ln X_i\)]]></text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>

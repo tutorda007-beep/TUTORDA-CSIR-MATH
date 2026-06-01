@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category">
+  <category><text>$course$/CSIR NET Mathematics/Similar Questions/Part C/Linear Algebra — Reflection Maps and Inner Products</text></category>
+  <info format="html"><text></text></info>
+</question>
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>Reflection - Householder T_w Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For nonzero \(w\in\mathbb{R}^n\), define the Householder reflection \(T_w(v)=v-2\dfrac{\langle v,w\rangle}{\langle w,w\rangle}w\). Which statements are TRUE?</p>
+<ol type="A"><li>\(\det(T_w)=-1\).</li><li>\(T_w\) preserves the inner product: \(\langle T_w(u),T_w(v)\rangle=\langle u,v\rangle\).</li><li>\(T_w^2=I\) (i.e., \(T_w\) is its own inverse).</li><li>\(T_{2w}=2T_w\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A) Householder reflections are orthogonal with \(\det=-1\) (they reverse orientation). (B) \(T_w\) is orthogonal: it preserves inner products. (C) \(T_w^2=I\): applying the reflection twice returns to the original vector. (D) FALSE: \(T_{2w}(v)=v-2\frac{\langle v,2w\rangle}{\langle 2w,2w\rangle}2w=v-2\frac{\langle v,w\rangle}{\langle w,w\rangle}w=T_w(v)\). So \(T_{2w}=T_w\), not \(2T_w\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Reflection - Orthogonal Operators</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A linear map \(Q:\mathbb{R}^n\to\mathbb{R}^n\) is orthogonal if \(Q^TQ=I\). Which are TRUE?</p>
+<ol type="A"><li>Orthogonal maps preserve the Euclidean norm.</li><li>\(\det(Q)=\pm1\).</li><li>Rotations and reflections in \(\mathbb{R}^2\) are orthogonal.</li><li>The product of two orthogonal matrices is orthogonal.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\|Qv\|^2=v^TQ^TQv=v^Tv=\|v\|^2\). (B) \(\det(Q^TQ)=\det(I)=1\Rightarrow(\det Q)^2=1\). (C) Both are orthogonal (\(\det=1\) for rotations, \(\det=-1\) for reflections). (D) \((Q_1Q_2)^TQ_1Q_2=Q_2^TQ_1^TQ_1Q_2=Q_2^TQ_2=I\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Reflection - Gram-Schmidt Process</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Gram-Schmidt process applied to a basis \(\{v_1,\ldots,v_n\}\) of an inner product space produces an orthonormal basis \(\{e_1,\ldots,e_n\}\). Which are TRUE?</p>
+<ol type="A"><li>\(\mathrm{span}\{e_1,\ldots,e_k\}=\mathrm{span}\{v_1,\ldots,v_k\}\) for each \(k\).</li><li>The process always terminates successfully when the \(v_i\) are linearly independent.</li><li>The resulting \(\{e_i\}\) satisfies \(\langle e_i,e_j\rangle=\delta_{ij}\).</li><li>The process can be used to produce the QR decomposition of a matrix.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) At each step we only take linear combinations within the span. (B) Linear independence guarantees non-zero vectors at each step. (C) Orthonormality by construction. (D) QR: write the original basis as columns of \(A\); Gram-Schmidt gives \(A=QR\) with \(Q\) orthogonal and \(R\) upper triangular.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Reflection - Spectral Theorem Symmetric</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The spectral theorem for real symmetric matrices states: if \(A=A^T\in\mathbb{R}^{n\times n}\), then:</p>
+<ol type="A"><li>All eigenvalues of \(A\) are real.</li><li>Eigenvectors for distinct eigenvalues are orthogonal.</li><li>\(A\) is orthogonally diagonalizable: \(A=Q\Lambda Q^T\) with \(Q\) orthogonal.</li><li>\(A\) has at least one positive eigenvalue.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C)</strong></p><p>(A)(B)(C) are the spectral theorem. (D) FALSE: \(A=-I\) is symmetric with all eigenvalues \(-1<0\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="33.33333" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="0" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>Reflection - Inner Product Properties</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An inner product on a real vector space \(V\) satisfies: for all \(u,v,w\in V\) and \(c\in\mathbb{R}\). Which are TRUE?</p>
+<ol type="A"><li>\(\langle u,v\rangle=\langle v,u\rangle\) (symmetry).</li><li>\(\langle cu+v,w\rangle=c\langle u,w\rangle+\langle v,w\rangle\) (linearity in first argument).</li><li>\(\langle v,v\rangle\ge0\) with equality iff \(v=0\).</li><li>\(\langle u,cv\rangle=c\langle u,v\rangle\) (linearity in second argument, for real inner products).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>All four are properties of a real inner product: (A) symmetry, (B) linearity in first argument, (C) positive definiteness, (D) linearity in second argument (follows from (A) and (B) in the real case).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Reflection - Cauchy-Schwarz Inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The Cauchy-Schwarz inequality: \(|\langle u,v\rangle|\le\|u\|\|v\|\). Which statements follow from Cauchy-Schwarz?</p>
+<ol type="A"><li>The angle between two nonzero vectors \(\theta\) satisfies \(|\cos\theta|\le1\).</li><li>The triangle inequality: \(\|u+v\|\le\|u\|+\|v\|\).</li><li>Equality holds iff \(u\) and \(v\) are linearly dependent.</li><li>In \(\mathbb{R}^n\): \(\left(\sum a_ib_i\right)^2\le\left(\sum a_i^2\right)\left(\sum b_i^2\right)\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\cos\theta=\langle u,v\rangle/(\|u\|\|v\|)\), and Cauchy-Schwarz gives \(|\cos\theta|\le1\). (B) Triangle inequality follows from \(\|u+v\|^2=\|u\|^2+2\langle u,v\rangle+\|v\|^2\le(\|u\|+\|v\|)^2\). (C) Equality: \(u=cv\) for some scalar. (D) Cauchy-Schwarz for \(\mathbb{R}^n\) with standard inner product.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Reflection - Eigenvalues of Orthogonal Matrix</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(Q\in\mathbb{R}^{n\times n}\) be an orthogonal matrix. Which are TRUE?</p>
+<ol type="A"><li>All eigenvalues of \(Q\) have absolute value 1.</li><li>Real eigenvalues of \(Q\) are \(\pm1\).</li><li>Complex eigenvalues of \(Q\) come in conjugate pairs.</li><li>If \(n\) is odd, \(Q\) always has at least one real eigenvalue.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) If \(Qv=\lambda v\): \(\|Qv\|=\|v\|\Rightarrow|\lambda|=1\). (B) Real eigenvalues satisfy \(|\lambda|=1\Rightarrow\lambda=\pm1\). (C) Real matrices have complex eigenvalues in conjugate pairs. (D) For odd \(n\), the characteristic polynomial (degree \(n\), real coefficients) must have at least one real root.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Reflection - Self-Adjoint (Hermitian) Operators</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A linear operator \(T\) on an inner product space is self-adjoint if \(T^*=T\) (where \(T^*\) is the adjoint). Which are TRUE?</p>
+<ol type="A"><li>All eigenvalues of a self-adjoint operator are real.</li><li>Eigenvectors for distinct eigenvalues of a self-adjoint operator are orthogonal.</li><li>A self-adjoint operator is always diagonalizable (in finite dimensions).</li><li>\(\langle Tu,v\rangle=\langle u,Tv\rangle\) for all \(u,v\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A)(B)(C) Spectral theorem for self-adjoint operators. (D) This is the definition of self-adjoint.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Reflection - Singular Value Decomposition</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The singular value decomposition (SVD) of \(A\in\mathbb{R}^{m\times n}\) is \(A=U\Sigma V^T\). Which are TRUE?</p>
+<ol type="A"><li>\(U\in\mathbb{R}^{m\times m}\) and \(V\in\mathbb{R}^{n\times n}\) are orthogonal matrices.</li><li>The diagonal entries of \(\Sigma\) (singular values) are non-negative.</li><li>The number of nonzero singular values equals \(\mathrm{rank}(A)\).</li><li>The columns of \(V\) are eigenvectors of \(A^TA\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(U,V\) are orthogonal. (B) Singular values \(\sigma_i\ge0\). (C) \(\mathrm{rank}(A)=\)number of nonzero \(\sigma_i\). (D) \(A^TAv_i=\sigma_i^2v_i\), so columns of \(V\) are eigenvectors of \(A^TA\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Reflection - Bessel's Inequality</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Let \(\{e_k\}_{k=1}^n\) be an orthonormal set in an inner product space \(V\), and \(v\in V\). Which are TRUE?</p>
+<ol type="A"><li>\(\sum_{k=1}^n|\langle v,e_k\rangle|^2\le\|v\|^2\) (Bessel's inequality).</li><li>Equality holds iff \(v\in\mathrm{span}\{e_1,\ldots,e_n\}\).</li><li>The best approximation of \(v\) from \(\mathrm{span}\{e_k\}\) is \(\hat{v}=\sum\langle v,e_k\rangle e_k\).</li><li>\(\|v-\hat{v}\|^2=\|v\|^2-\sum|\langle v,e_k\rangle|^2\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Bessel's inequality. (B) Parseval: equality iff \(v\) lies in the span. (C) The orthogonal projection onto the span. (D) Pythagorean theorem applied to \(v=\hat{v}+(v-\hat{v})\) with \(\hat{v}\perp(v-\hat{v})\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Reflection - Positive Definite Matrices</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A symmetric matrix \(A\) is positive definite (PD) if \(x^TAx>0\) for all \(x\ne0\). Which are equivalent to PD?</p>
+<ol type="A"><li>All eigenvalues of \(A\) are positive.</li><li>All leading principal minors are positive (Sylvester's criterion).</li><li>\(A=B^TB\) for some invertible \(B\) (Cholesky).</li><li>\(A\) has a unique Cholesky decomposition \(A=LL^T\) with \(L\) lower triangular and positive diagonal.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>All four are equivalent characterizations of a symmetric positive definite matrix. (A) Spectral criterion. (B) Sylvester's criterion. (C) PD iff it can be written as \(B^TB\) with invertible \(B\). (D) The Cholesky decomposition exists and is unique for PD matrices.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Reflection - Unitary Matrices</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A complex matrix \(U\in\mathbb{C}^{n\times n}\) is unitary if \(U^*U=I\). Which are TRUE?</p>
+<ol type="A"><li>Unitary matrices preserve the Hermitian inner product.</li><li>Eigenvalues of unitary matrices lie on the unit circle \(|\lambda|=1\).</li><li>Unitary matrices are diagonalizable over \(\mathbb{C}\).</li><li>The product of two unitary matrices is unitary.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) \(\langle Uu,Uv\rangle=v^*U^*Uu=v^*u=\langle u,v\rangle\). (B) If \(Uv=\lambda v\): \(\|Uv\|=\|v\|\Rightarrow|\lambda|=1\). (C) By the spectral theorem for normal matrices (\(UU^*=U^*U\)). (D) \((U_1U_2)^*U_1U_2=U_2^*U_1^*U_1U_2=U_2^*U_2=I\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q13 -->
+<question type="multichoice">
+  <name><text>Reflection - Adjoint Operator</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For \(T\in\mathcal{L}(V,W)\) (finite-dimensional inner product spaces), the adjoint \(T^*:W\to V\) satisfies \(\langle Tv,w\rangle_W=\langle v,T^*w\rangle_V\). Which are TRUE?</p>
+<ol type="A"><li>\((T^*)^*=T\).</li><li>\((ST)^*=T^*S^*\).</li><li>\(\mathrm{rank}(T^*)=\mathrm{rank}(T)\).</li><li>\(\ker(T^*)=(\mathrm{Range}(T))^\perp\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Double adjoint. (B) Adjoint reverses order. (C) Rank is preserved by taking adjoint. (D) Fundamental relation: \(\ker(T^*)=\mathrm{Range}(T)^\perp\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q14 -->
+<question type="multichoice">
+  <name><text>Reflection - Rotation Matrix R(theta)</text></name>
+  <questiontext format="html"><text><![CDATA[<p>The rotation matrix in \(\mathbb{R}^2\): \(R(\theta)=\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}\). Which are TRUE?</p>
+<ol type="A"><li>\(R(\theta)^T=R(-\theta)\).</li><li>\(R(\theta_1)R(\theta_2)=R(\theta_1+\theta_2)\).</li><li>\(\det(R(\theta))=1\).</li><li>\(R(\theta)\) has eigenvalues \(e^{\pm i\theta}\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Rotation by \(-\theta\) is the transpose. (B) Angle addition formula. (C) \(\cos^2\theta+\sin^2\theta=1\). (D) Characteristic poly: \(\lambda^2-2\cos\theta\lambda+1=0\Rightarrow\lambda=e^{\pm i\theta}\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q15 -->
+<question type="multichoice">
+  <name><text>Reflection - Orthogonal Complement</text></name>
+  <questiontext format="html"><text><![CDATA[<p>For a subspace \(W\) of a finite-dimensional inner product space \(V\), which are TRUE?</p>
+<ol type="A"><li>\(V=W\oplus W^\perp\).</li><li>\((W^\perp)^\perp=W\).</li><li>\(\dim W+\dim W^\perp=\dim V\).</li><li>The orthogonal projection \(P_W\) satisfies \(P_W^2=P_W\) and \(P_W^*=P_W\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>All four are standard properties of orthogonal complements in finite-dimensional inner product spaces. (A) Orthogonal direct sum decomposition. (B) Reflexivity of orthogonal complement in finite dimensions. (C) Dimension count. (D) Orthogonal projections are self-adjoint idempotents.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q16 -->
+<question type="multichoice">
+  <name><text>Reflection - Quadratic Forms</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A quadratic form \(Q(x)=x^TAx\) with \(A\) symmetric. Which are TRUE?</p>
+<ol type="A"><li>Every quadratic form can be diagonalized via an orthogonal change of variables.</li><li>A quadratic form is PD iff all eigenvalues of \(A\) are positive.</li><li>The signature \((p,q)\) of a quadratic form is the number of positive and negative eigenvalues respectively (Sylvester's law).</li><li>If \(Q(x)=x_1^2+2x_1x_2+x_2^2=(x_1+x_2)^2\), then \(Q\) is positive semidefinite.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Spectral theorem allows orthogonal diagonalization of any symmetric \(A\). (B) PD iff all eigenvalues positive. (C) Sylvester's law of inertia: the signature is invariant under congruence transformations. (D) \(Q(x)=(x_1+x_2)^2\ge0\) with equality at \(x_1=-x_2\ne0\): positive semidefinite (not positive definite).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q17 -->
+<question type="multichoice">
+  <name><text>Reflection - Normal Operators</text></name>
+  <questiontext format="html"><text><![CDATA[<p>An operator \(T\) on a complex inner product space is normal if \(TT^*=T^*T\). Which are TRUE?</p>
+<ol type="A"><li>Self-adjoint operators are normal.</li><li>Unitary operators are normal.</li><li>Normal operators are diagonalizable by a unitary matrix.</li><li>If \(T\) is normal and \(Tv=\lambda v\), then \(T^*v=\bar\lambda v\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Self-adjoint: \(TT^*=T^2=T^*T\). (B) Unitary: \(UU^*=I=U^*U\). (C) Spectral theorem for normal operators on complex spaces. (D) For normal \(T\): \(\|Tv-\lambda v\|=\|(T-\lambda I)v\|=\|(T-\lambda I)^*v\|=\|(T^*-\bar\lambda I)v\|\Rightarrow T^*v=\bar\lambda v\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q18 -->
+<question type="multichoice">
+  <name><text>Reflection - Householder in QR</text></name>
+  <questiontext format="html"><text><![CDATA[<p>Householder reflections are used in numerical QR decomposition. Which are TRUE?</p>
+<ol type="A"><li>A Householder reflection can zero out all entries below the pivot in a column.</li><li>The product of Householder matrices is orthogonal.</li><li>Householder QR is numerically more stable than Gram-Schmidt.</li><li>Each Householder reflection takes \(O(n^2)\) operations to apply to an \(n\times n\) matrix.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) A Householder reflection \(H_k\) maps a vector to a multiple of a standard basis vector, zeroing the desired entries. (B) Products of orthogonal matrices are orthogonal. (C) Householder QR is considered numerically more stable. (D) Applying \(H=I-2vv^T\) to a matrix: \(HA=A-2v(v^TA)\) costs \(O(n^2)\).</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q19 -->
+<question type="multichoice">
+  <name><text>Reflection - Spectral Decomposition PSD</text></name>
+  <questiontext format="html"><text><![CDATA[<p>A symmetric matrix \(A\) has spectral decomposition \(A=\sum_{i=1}^n\lambda_i e_ie_i^T\). Which are TRUE?</p>
+<ol type="A"><li>\(A^k=\sum\lambda_i^k e_ie_i^T\) for all integers \(k\) (when \(A\) is invertible for negative \(k\)).</li><li>The pseudoinverse is \(A^+=\sum_{\lambda_i\ne0}\lambda_i^{-1}e_ie_i^T\).</li><li>\(\mathrm{tr}(A)=\sum\lambda_i\).</li><li>\(\det(A)=\prod\lambda_i\).</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>All four follow from the spectral decomposition. (A) Matrix functions via spectral decomposition. (B) Pseudoinverse: invert nonzero eigenvalues. (C) Trace = sum of eigenvalues. (D) Determinant = product of eigenvalues.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+<!-- Q20 -->
+<question type="multichoice">
+  <name><text>Reflection - Parseval's Identity</text></name>
+  <questiontext format="html"><text><![CDATA[<p>In an inner product space with complete orthonormal system \(\{e_k\}\), Parseval's identity states \(\|v\|^2=\sum_k|\langle v,e_k\rangle|^2\). Which follow?</p>
+<ol type="A"><li>Every \(v\) can be written as \(v=\sum_k\langle v,e_k\rangle e_k\).</li><li>\(\langle u,v\rangle=\sum_k\langle u,e_k\rangle\overline{\langle v,e_k\rangle}\).</li><li>The map \(v\mapsto(\langle v,e_k\rangle)\) is an isometric isomorphism to \(\ell^2\).</li><li>In \(L^2([0,2\pi])\), the exponentials \(e^{inx}/\sqrt{2\pi}\) form a complete orthonormal system.</li></ol>]]></text></questiontext>
+  <generalfeedback format="html"><text><![CDATA[<p><strong>Answer: (A), (B), (C), (D)</strong></p><p>(A) Completeness of the orthonormal system. (B) Polarization identity applied to Parseval. (C) This is an isometric isomorphism to \(\ell^2\) (abstract Riesz-Fischer). (D) The Fourier system is complete in \(L^2([0,2\pi])\) — classical result.</p>]]></text></generalfeedback>
+  <defaultgrade>1.0</defaultgrade><penalty>0</penalty><hidden>0</hidden>
+  <single>false</single><shuffleanswers>false</shuffleanswers><answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html"><text>(A)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(B)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(C)</text><feedback format="html"><text></text></feedback></answer>
+  <answer fraction="25" format="html"><text>(D)</text><feedback format="html"><text></text></feedback></answer>
+</question>
+</quiz>
